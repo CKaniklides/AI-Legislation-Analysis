@@ -1,0 +1,3043 @@
+{
+  "regulation": {
+    "bwb_id": "BWBR0040940",
+    "title": "Uitvoeringswet Algemene verordening gegevensbescherming",
+    "type": "Wet (formele wet)",
+    "jurisdiction": "NL",
+    "status": "in_force",
+    "language": "nl",
+    "current_version_effective_from": "2026-09-01",
+    "current_version_article_count": 63,
+    "regulation_permalink": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0",
+    "eu_regulation_implemented": {
+      "number": "(EU) 2016/679",
+      "short_name": "GDPR / AVG",
+      "full_name": "Algemene verordening gegevensbescherming",
+      "note": "UAVG vult nationale keuzeruimte in die de AVG openlaat; bevat niet de AVG zelf."
+    },
+    "note": "Vervangt de eerder gebruikte 2021-07-01 versie uit de RegelRecht-corpus. Tekst rechtstreeks opgehaald van wetten.overheid.nl op 2026-09-09 (geraadpleegd 31-08-2026 volgens de paginabron, gemarkeerd als 'toekomstige tekst' voor inwerkingtreding op 2026-09-01)."
+  },
+  "related_instrument": {
+    "title": "Verzamelwet gegevensbescherming",
+    "bwb_id": "BWBR0052755",
+    "effective_from": "2026-09-01",
+    "note": "Trad in werking op dezelfde datum als de huidige UAVG-versie. Artikel 48b van de UAVG verwijst expliciet naar 'artikel I, onderdeel T, van de Verzamelwet gegevensbescherming' als wijziging van artikel 46. Tekst van deze wet is niet apart opgehaald, alleen de verwijzing vanuit UAVG artikel 48b."
+  },
+  "version_history": [
+    {
+      "effective_date": "2026-09-01",
+      "article_count": 63,
+      "source": "wetten.overheid.nl (rechtstreeks opgehaald)",
+      "event": "Grote wijziging, 23 van de 63 artikelen expliciet gemarkeerd als 'Wijziging per 01-09-2026'; artikelaantal daalt van 234 naar 63. Samenvallend met inwerkingtreding van de Verzamelwet gegevensbescherming."
+    }
+  ],
+  "relationships": {
+    "incoming_references_to_this_regulation": {
+      "status": "retrieved_partial",
+      "note": "Retrieved at article level via LiDO. See per-provision lido_citations.distinct_citing_laws."
+    },
+    "case_law_citations": {
+      "status": "retrieved_partial",
+      "note": "Retrieved at article level via LiDO's linktNaar relationship, incoming direction only. See per-provision lido_citations.distinct_citing_case_law."
+    },
+    "outgoing_references": {
+      "status": "retrieved",
+      "note": "Retrieved at article level via LiDO's LinkAct records, both directions. CONFIRMED FINDING: across all 63 current articles, zero direct outgoing links to any EU regulation (GDPR, NIS2, DORA, or any other) exist in LiDO, despite 'EU-Regelgeving' existing as a real type in LiDO's own vocabulary. Every outgoing citation from UAVG articles goes to either another Dutch BWB law (24 distinct laws) or a Staatsblad publication record (10 distinct). This means LiDO cannot currently supply a ready-made Dutch-to-EU citation link for this law, that connection has to be established some other way (LLM reading, or manual mapping), it is not sitting in this dataset waiting to be queried."
+    },
+    "lido_data_included": true,
+    "lido_note": "Article-level incoming citation data (other laws and case law citing each article) has been merged in per provision, under each provision's 'lido_citations' field, pulled from LiDO's SPARQL endpoint on 2026-09-09/10. This is INCOMING citations only, who cites each article, not what each article itself cites (see the note inside lido_citations for why). LiDO's indexed version of UAVG tops out at 2021-07-01, five versions behind the actual current 2026-09-01 text used for the article text in this file, so citation counts reflect the older article structure and may not perfectly align with current article numbering, especially for articles added or restructured in the 2026-09-01 amendment.",
+    "lido_two_index_finding": "CONFIRMED: LiDO operates at least two distinct indexes with different currency. The SPARQL endpoint's index for BWBR0040940 is stale at 2021-07-01. The portal's index includes citations current to within days of this project's own compilation date. Any future querying of this law via SPARQL should be treated as potentially incomplete for anything after mid-2021 unless this is independently re-verified."
+  },
+  "substantive_text": {
+    "status": "retrieved",
+    "source": "wetten.overheid.nl, https://wetten.overheid.nl/BWBR0040940/2026-09-01/0 (opgehaald 2026-09-09)",
+    "provisions": [
+      {
+        "provision_id": "BWBR0040940-art1",
+        "number": "1",
+        "heading": "Artikel 1. Definities",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "In deze wet en de daarop berustende bepalingen wordt verstaan onder:\n\n- *bijzondere categorieën van persoonsgegevens:* de categorieën van persoonsgegevens, bedoeld in artikel 9, eerste lid, van de verordening\n\n- *Onze Minister:* Onze Minister voor Rechtsbescherming;\n\n- *persoonsgegevens van strafrechtelijke aard:* persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen als bedoeld in artikel 10 van de verordening;\n\n- *verordening:* verordening (EU) 2016/679 van het Europees Parlement en de Raad van 27 april 2016 betreffende de bescherming van natuurlijke personen in verband met verwerking van persoonsgegevens en betreffende het vrije verkeer van die gegevens en tot intrekking van Richtlijn 95/46/EG (algemene verordening gegevensbescherming) (PbEU 2016, L 119).",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel1",
+        "lido_citations": {
+          "incoming": {
+            "total": 14,
+            "distinct_laws": [
+              "BWBR0014194",
+              "BWBR0048064",
+              "BWBR0048168",
+              "BWBR0048336",
+              "BWBR0049813",
+              "BWBR0049962",
+              "BWBR0050740"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2020:1802",
+              "ECLI:NL:GHDHA:2019:3539",
+              "ECLI:NL:PHR:2021:531",
+              "ECLI:NL:PHR:2026:435",
+              "ECLI:NL:RBMNE:2022:297",
+              "ECLI:NL:RBOBR:2025:2446",
+              "ECLI:NL:RBZWB:2025:8299"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569674/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art2",
+        "number": "2",
+        "heading": "Artikel 2. Materiële reikwijdte",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "1 Deze wet en de daarop berustende bepalingen zijn van toepassing op de geheel of gedeeltelijk geautomatiseerde verwerking van persoonsgegevens, alsmede op de verwerking van persoonsgegevens die in een bestand zijn opgenomen of die bestemd zijn om daarin te worden opgenomen.\n\n2 In afwijking van het eerste lid, is deze wet niet van toepassing op de verwerking van persoonsgegevens voor zover daarop de Wet basisregistratie personen of de Kieswet van toepassing is.\n\n3 Behoudens het bepaalde in artikel 3, is deze wet niet van toepassing op de verwerking van persoonsgegevens, bedoeld in artikel 2, tweede lid, van de verordening.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel2",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0004627",
+              "BWBR0033715",
+              "BWBR0036443"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569684/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art2a",
+        "number": "2a",
+        "heading": "Artikel 2a. Inachtneming behoeften kleine, middelgrote en micro-ondernemingen",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "De Autoriteit persoonsgegevens neemt bij de toepassing van de verordening de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124) in aanmerking.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel2a",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBGEL:2023:4071"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569694/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art3",
+        "number": "3",
+        "heading": "Artikel 3. Schakelbepaling verwerkingen buiten werkingssfeer verordening",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "1 Deze wet en de daarop berustende bepalingen zijn mede van toepassing op de verwerking van persoonsgegevens:\n\na. in het kader van activiteiten die buiten de werkingssfeer van het Unierecht vallen;\n\nb. door de krijgsmacht bij de uitvoering van activiteiten die binnen de werkingssfeer van titel V, hoofdstuk 2, van het Verdrag betreffende de Europese Unie vallen.\n\n2 De verordening is van overeenkomstige toepassing op de verwerking van persoonsgegevens, bedoeld in het eerste lid.\n\n3 Het eerste en het tweede lid zijn niet van toepassing op:\n\na. de verwerking van persoonsgegevens door de krijgsmacht, voor zover Onze Minister van Defensie daartoe bij besluit of bij ministeriële regeling beslist met het oog op de inzet of het ter beschikking stellen van de krijgsmacht ter uitvoering van de in artikel 97 van de Grondwet omschreven taken;\n\nb. de verwerking van persoonsgegevens voor zover daarop de Wet op de inlichtingen- en veiligheidsdiensten 2017 van toepassing is.\n\n4 In een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a, kunnen beperkingen en voorschriften worden gegeven.\n\n5 Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a, wordt zo spoedig mogelijk mededeling gedaan aan de Autoriteit persoonsgegevens.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel3",
+        "lido_citations": {
+          "incoming": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0001840",
+              "BWBR0039896"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569704/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art4",
+        "number": "4",
+        "heading": "Artikel 4. Territoriale reikwijdte",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "1 Deze wet en de daarop berustende bepalingen zijn van toepassing op de verwerking van persoonsgegevens in het kader van activiteiten van een vestiging van een verwerkingsverantwoordelijke of een verwerker in Nederland.\n\n2 Deze wet en de daarop berustende bepalingen zijn van toepassing op verwerking van persoonsgegevens van betrokkenen die zich in Nederland bevinden door een niet in de Europese Unie gevestigde verwerkingsverantwoordelijke of verwerker, wanneer de verwerking verband houdt met:\n\na. het aanbieden van goederen of diensten aan deze betrokkenen in Nederland, ongeacht of een betaling door de betrokkenen is vereist; of\n\nb. het monitoren van hun gedrag, voor zover dit gedrag in Nederland plaatsvindt.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel4",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [
+              "BWBR0046007"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2021:3307",
+              "ECLI:NL:RBDHA:2025:14322",
+              "ECLI:NL:RBDHA:2025:26804",
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569714/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art5",
+        "number": "5",
+        "heading": "Artikel 5. Toestemming van wettelijk vertegenwoordiger",
+        "chapter": "Hoofdstuk 1. Algemene bepalingen",
+        "paragraph": null,
+        "text": "1 Indien artikel 8 van de verordening niet van toepassing is en sprake is van toestemming als bedoeld in artikel 4, onderdeel elf, van de verordening en de betrokkene heeft de leeftijd van zestien jaren nog niet bereikt, is in plaats van toestemming van de betrokkene, de toestemming van zijn wettelijk vertegenwoordiger vereist.\n\n2 Indien de betrokkene onder curatele is gesteld, dan wel ten behoeve van de betrokkene een bewind of mentorschap is ingesteld, geldt voor iedere toestemming als bedoeld in artikel 4, onderdeel elf, van de verordening dat, in de plaats van de toestemming van de betrokkene, die van zijn wettelijk vertegenwoordiger is vereist, voor zover het een aangelegenheid betreft waarvoor de betrokkene onbekwaam dan wel onbevoegd is.\n\n3 Toestemming kan te allen tijde worden ingetrokken door:\n\na. de wettelijk vertegenwoordiger;\n\nb. de betrokkene die de leeftijd van twaalf jaren heeft bereikt, en\n\nc. de wettelijk vertegenwoordiger, indien de betrokkene onder curatele is gesteld, dan wel ten behoeve van de betrokkene een bewind of mentorschap is ingesteld, voor zover het een aangelegenheid betreft waarvoor de betrokkene onbekwaam dan wel onbevoegd is.\n\n4 Ten aanzien van de rechten van de betrokkene, bedoeld in hoofdstuk III van de verordening, geldt het volgende:\n\na. indien de betrokkene de leeftijd van twaalf jaren nog niet heeft bereikt, worden deze rechten uitgeoefend door diens wettelijke vertegenwoordiger;\n\nb. indien de betrokkene de leeftijd van twaalf jaren, maar nog niet die van zestien jaren heeft bereikt, kunnen deze rechten, behalve door de betrokkene ook uitgeoefend worden door diens wettelijk vertegenwoordiger;\n\nc. indien de betrokkene onder curatele is gesteld of ten behoeve van hem een bewind of mentorschap is ingesteld, worden deze rechten uitgeoefend door diens wettelijk vertegenwoordiger, voor zover het een aangelegenheid betreft waarvoor de betrokkene onbekwaam dan wel onbevoegd is.\n\n5 Onverminderd artikel 8:21, tweede lid van de Algemene wet bestuursrecht, kan de minderjarige betrokkene die de leeftijd van zestien jaren heeft bereikt in zaken betreffende een schending van zijn rechten uit hoofde van de AVG ten gevolge van een verwerking van zijn persoonsgegevens, zonder bijstand van zijn wettelijk vertegenwoordiger in rechte optreden.\n\n6 Dit artikel is niet van toepassing op hulp- en adviesdiensten die rechtstreeks en kosteloos aan een minderjarige of een onder curatele gestelde of een persoon ten behoeve van wie een bewind of mentorschap is ingesteld worden aangeboden.\n\n7 Het eerste tot en met vierde lid zijn niet van toepassing voor zover een bijzondere regeling geldt op grond van Afdeling 5, titel 7, van Boek 7 van het Burgerlijk Wetboek.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk1/Artikel5",
+        "lido_citations": {
+          "incoming": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0023864"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBNNE:2025:187"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569724/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art6",
+        "number": "6",
+        "heading": "Artikel 6. Oprichting en aanwijzing als toezichthoudende autoriteit",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "1 Er is een Autoriteit persoonsgegevens. De Autoriteit persoonsgegevens bezit rechtspersoonlijkheid.\n\n2 De Autoriteit persoonsgegevens is de toezichthoudende autoriteit, bedoeld in artikel 51, eerste lid, van de verordening.\n\n3 Onverminderd artikel 57 van de verordening, heeft de Autoriteit persoonsgegevens tot taak toe te zien op de verwerking van persoonsgegevens overeenkomstig het bij en krachtens de verordening of de wet bepaalde.\n\n4 Ter uitvoering van een bindende EU-rechtshandeling kunnen, gehoord de Autoriteit persoonsgegevens, bij regeling van Onze Minister aan de Autoriteit persoonsgegevens taken worden opgedragen.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel6",
+        "lido_citations": {
+          "incoming": {
+            "total": 30,
+            "distinct_laws": [
+              "BWBR0001947",
+              "BWBR0014194",
+              "BWBR0022463",
+              "BWBR0041405",
+              "BWBR0041537",
+              "BWBR0041994",
+              "BWBR0042136",
+              "BWBR0042301",
+              "BWBR0049034",
+              "BWBR0050739",
+              "BWBR0051091",
+              "BWBR0051545",
+              "BWBR0051561",
+              "BWBR0051796"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:HR:2023:658",
+              "ECLI:NL:RBDHA:2020:865",
+              "ECLI:NL:RBDHA:2021:3090",
+              "ECLI:NL:RBDHA:2024:16324",
+              "ECLI:NL:RBGEL:2023:6640",
+              "ECLI:NL:RBLIM:2024:8910",
+              "ECLI:NL:RBLIM:2024:8945",
+              "ECLI:NL:RBMNE:2023:7757",
+              "ECLI:NL:RBMNE:2025:6709",
+              "ECLI:NL:RBNNE:2023:821",
+              "ECLI:NL:RBZWB:2025:1568"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569744/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569744/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art7",
+        "number": "7",
+        "heading": "Artikel 7. Samenstelling",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens bestaat uit een voorzitter en twee andere leden.\n\n2 Bij de Autoriteit persoonsgegevens kunnen voorts buitengewone leden worden benoemd. Bij de benoeming van buitengewone leden wordt spreiding over de onderscheidene sectoren van de maatschappij nagestreefd.\n\n3 De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens worden bij koninklijk besluit, op voordracht van Onze Minister, benoemd.\n\n4 De voorzitter voldoet aan de bij of krachtens artikel 5 van de Wet rechtspositie rechterlijke ambtenaren gestelde vereisten voor benoembaarheid tot rechter in een rechtbank.\n\n5 Bij ministeriële regeling worden voorwaarden gesteld en vereiste kwalificaties benoemd waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken, om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens, alsmede regels ten aanzien van de procedure die tot een benoeming als bedoeld in het derde lid leidt.\n\n6 De benoeming, bedoeld in het derde lid, geldt voor een tijdvak van vijf jaar.\n\n7 De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens kunnen eenmaal worden herbenoemd voor een tijdvak van vijf jaar.\n\n8 Op eigen verzoek worden de voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens door Onze Minister ontslagen.\n\n9 Artikel 12 van de Kaderwet zelfstandige bestuursorganen is niet van toepassing.\n\n10 Er is een Raad van advies die de Autoriteit persoonsgegevens adviseert over algemene aspecten van de bescherming van persoonsgegevens. De leden zijn afkomstig uit de onderscheidene sectoren van de maatschappij en worden benoemd door Onze Minister, op voordracht van de voorzitter van de Autoriteit persoonsgegevens. De leden worden benoemd voor ten hoogste vier jaar. Herbenoeming kan tweemaal en telkens voor ten hoogste vier jaar plaatsvinden. Bij ministeriële regeling wordt de vergoeding van de kosten aan de leden van de Raad van advies vastgesteld.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel7",
+        "lido_citations": {
+          "incoming": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0041537",
+              "BWBR0042264",
+              "BWBR0051091",
+              "BWBR0051561"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0008365",
+              "BWBR0020495"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569754/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art8",
+        "number": "8",
+        "heading": "Artikel 8. Disciplinaire maatregelen voorzitter en andere leden",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens, met dien verstande dat:\n\na. de disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de andere leden van de Autoriteit persoonsgegevens door de voorzitter van de Autoriteit persoonsgegevens wordt opgelegd;\n\nb. het in artikel 46c, onderdeel b, genoemde verbod zich in een onderhoud of een gesprek in te laten met partijen of hun advocaten of gemachtigden of een bijzondere inlichting of schriftelijk stuk van hen aan te nemen, niet op de voorzitter en de andere leden van de Autoriteit persoonsgegevens van toepassing is;\n\nc. de disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de voorzitter van de Autoriteit persoonsgegevens door de president van het gerechtshof Den Haag wordt opgelegd.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel8",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 13,
+            "distinct_laws": [
+              "BWBR0008365"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569764/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art9",
+        "number": "9",
+        "heading": "Artikel 9. Rechtspositie voorzitter, andere leden en buitengewone leden",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "De rechtspositie van de voorzitter, de andere leden en de buitengewone leden wordt geregeld bij of krachtens algemene maatregel van bestuur.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel9",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBROT:2020:3430"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569774/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art10",
+        "number": "10",
+        "heading": "Artikel 10. Secretariaat",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "De Autoriteit persoonsgegevens heeft een secretariaat.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel10",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0001947"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2019-173",
+              "stb-2019-385"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569784/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569784/2020-01-01/2020-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art11",
+        "number": "11",
+        "heading": "Artikel 11. Begroting, verantwoording en vertegenwoordigingsbevoegdheid",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens stelt jaarlijks voorafgaand aan het desbetreffende begrotingsjaar een ontwerpbegroting op.\n\n2 In de departementale begroting, bedoeld in artikel 2.1, zesde lid, van de Comptabiliteitswet 2016, kent Onze Minister jaarlijks aan de Autoriteit persoonsgegevens een budget toe ten laste van de rijksbegroting.\n\n3 De Autoriteit persoonsgegevens stelt de begroting vast in overeenstemming met het budget, bedoeld in het tweede lid.\n\n4 De Autoriteit persoonsgegevens wordt in en buiten rechte vertegenwoordigd door de voorzitter en de andere leden, dan wel door een van hen.\n\n5 De leden stellen een verdeling van taken vast en betrekken hierbij zoveel mogelijk de buitengewone leden.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel11",
+        "lido_citations": {
+          "incoming": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 7,
+            "distinct_laws": [
+              "BWBR0020495",
+              "BWBR0039429"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569794/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569794/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art12",
+        "number": "12",
+        "heading": "Artikel 12. Beperking inlichtingenplicht jegens minister",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "Artikel 20 van de Kaderwet zelfstandige bestuursorganen is niet van toepassing indien de Autoriteit persoonsgegevens de informatie van derden heeft verkregen onder de voorwaarde dat het geheime karakter daarvan wordt gehandhaafd.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel12",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0020495"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569804/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art13",
+        "number": "13",
+        "heading": "Artikel 13. Uitzonderingen bevoegdheden inzake beleidsregels, vernietiging en taakverwaarlozing",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.1. Oprichting en inrichting van de Autoriteit persoonsgegevens",
+        "text": "1 De artikelen 21 en 22 van de Kaderwet zelfstandige bestuursorganen zijn niet van toepassing op de Autoriteit persoonsgegevens.\n\n2 Artikel 23 van de Kaderwet zelfstandige bestuursorganen vindt slechts toepassing ten aanzien van het door de Autoriteit persoonsgegevens gevoerde financiële beheer en de administratieve organisatie.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel13",
+        "lido_citations": {
+          "incoming": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0020495"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569814/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art14",
+        "number": "14",
+        "heading": "Artikel 14. Taken en bevoegdheden",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens is bevoegd om de taken uit te voeren en de bevoegdheden uit te oefenen die bij of krachtens de verordening zijn toegekend aan de toezichthoudende autoriteit.\n\n2 Op de voorbereiding van een besluit omtrent goedkeuring van een gedragscode, dan wel de wijziging of uitbreiding daarvan, als bedoeld in artikel 40, vijfde lid, van de verordening is afdeling 3.4 van de Algemene wet bestuursrecht van toepassing.\n\n3 De Autoriteit persoonsgegevens kan in geval van overtreding van het bepaalde in artikel 83, vierde, vijfde of zesde lid, van de verordening een bestuurlijke boete opleggen van ten hoogste de in deze leden genoemde bedragen.\n\n4 De artikelen 5:4 tot en met 5:10a de Algemene wet bestuursrecht zijn van overeenkomstige toepassing op corrigerende maatregelen als bedoeld in artikel 58, tweede lid, onderdelen b tot en met j van de verordening.\n\n5 Onverminderd artikel 4:15 van de Algemene wet bestuursrecht kan de Autoriteit Persoonsgegevens de termijn voor het geven van een beschikking opschorten voor zover dit noodzakelijk is in verband met het naleven van op de Autoriteit Persoonsgegevens rustende verplichtingen op grond van de artikelen 60 tot en met 66 van de verordening. Het derde en vierde lid van artikel 4:15 van de Algemene wet bestuursrecht zijn op deze opschorting van overeenkomstige toepassing.\n\n6 De bestuurlijke boete komt toe aan de Staat.\n\n7 Voordat de Autoriteit Persoonsgegevens beleidsregels vaststelt ter bevordering van een consequente toepassing van de verordening of over de uitoefening van haar handhavingsbevoegdheden, dan raadpleegt zij, voor zover passend, belanghebbende partijen. In de onderbouwing van de beleidsregels gaat de Autoriteit Persoonsgegevens in op hetgeen in de consultatie naar voren is gebracht.\n\n8 Bij ministeriële regeling kunnen nadere regels worden gesteld over de gevallen waarin het zevende lid toepassing vindt.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel14",
+        "lido_citations": {
+          "incoming": {
+            "total": 8,
+            "distinct_laws": [
+              "BWBR0004627",
+              "BWBR0033715",
+              "BWBR0042136",
+              "BWBR0051796"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBDHA:2021:15405",
+              "ECLI:NL:RBMNE:2025:6709",
+              "ECLI:NL:RBNNE:2025:83"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 10,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-247",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569834/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569834/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art15",
+        "number": "15",
+        "heading": "Artikel 15. Toezicht op de naleving",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 Met het toezicht op de naleving van de verordening en op de verwerking van persoonsgegevens overeenkomstig het bij of krachtens de wet bepaalde zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.\n\n2 De in het eerste lid bedoelde personen zijn bevoegd een woning te betreden zonder toestemming van de bewoner.\n\n3 De in het eerste lid bedoelde personen behoeven voor de uitoefening van de in het tweede lid omschreven bevoegdheid de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens, onverminderd het bepaalde in artikel 2 van de Algemene wet op het binnentreden.\n\n4 Geen beroep is mogelijk op een geheimhoudingsplicht, voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens.\n\n5 Dit artikel en titel 5.2 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing voor zover dit noodzakelijk is voor een goede uitoefening van de taken die de Autoriteit persoonsgegevens uitvoert in het kader van hoofdstuk VII van de verordening.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel15",
+        "lido_citations": {
+          "incoming": {
+            "total": 9,
+            "distinct_laws": [
+              "BWBR0042136"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2023:6530",
+              "ECLI:NL:RBGEL:2019:1774",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBOVE:2026:283",
+              "ECLI:NL:RBOVE:2026:284"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0005537",
+              "BWBR0006763"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569844/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art16",
+        "number": "16",
+        "heading": "Artikel 16. Last onder bestuursdwang",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens kan een last onder bestuursdwang opleggen ter handhaving van de bij of krachtens de verordening of deze wet gestelde verplichtingen.\n\n2 De te betalen geldsom van een verbeurde dwangsom komt toe aan de Staat.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel16",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [
+              "BWBR0014194",
+              "BWBR0022463",
+              "BWBR0042136"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2024:1804",
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 8,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-247",
+              "stb-2018-518",
+              "stb-2021-135",
+              "stb-2021-254"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569854/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569854/2019-01-01/2019-01-01",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569854/2021-07-01/2021-07-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art17",
+        "number": "17",
+        "heading": "Artikel 17. Boete bij onrechtmatige verwerking persoonsgegevens strafrechtelijke aard",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens kan in geval van overtreding van het bepaalde in artikel 10 van de verordening of in artikel 31 van deze wet een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, voor een onderneming, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar indien dit bedrag hoger is.\n\n2 Artikel 83, eerste tot en met derde lid, van de verordening zijn van overeenkomstige toepassing.\n\n3 De bestuurlijke boete komt toe aan de Staat.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel17",
+        "lido_citations": {
+          "incoming": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0041994",
+              "BWBR0042136",
+              "BWBR0049034"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2023:6530"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-247",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569864/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569864/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art18",
+        "number": "18",
+        "heading": "Artikel 18. Bestuurlijke boete aan overheden",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens kan in geval van overtreding van het bepaalde in artikel 83, vierde, vijfde of zesde lid, van de verordening door een overheidsinstantie of een overheidsorgaan een bestuurlijke boete opleggen van ten hoogste de in deze leden genoemde bedragen.\n\n2 Artikel 83, eerste tot en met derde lid, van de verordening zijn van toepassing.\n\n3 De bestuurlijke boete komt toe aan de Staat.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel18",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [
+              "BWBR0041994",
+              "BWBR0042136",
+              "BWBR0049034"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBOVE:2024:594"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145",
+              "stb-2018-247",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569874/2018-05-25/2018-05-25",
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569874/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art19",
+        "number": "19",
+        "heading": "Artikel 19. Samenwerking met andere toezichthouders",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit persoonsgegevens is bevoegd om in het belang van een efficiënt en effectief toezicht op de verwerking van persoonsgegevens afspraken te maken met andere toezichthouders en daartoe gezamenlijk met deze toezichthouders samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.\n\n2 De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid, zijn bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens betreffende de verwerking van persoonsgegevens te verstrekken die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel19",
+        "lido_citations": {
+          "incoming": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0042136",
+              "BWBR0050415",
+              "BWBR0051545",
+              "BWBR0051796"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569884/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art20",
+        "number": "20",
+        "heading": "Artikel 20. In rechte optreden tegen inbreuken op verordening inzake doorgifte naar derde land",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 Indien de Autoriteit persoonsgegevens in een onderzoek betreffende de doorgifte van persoonsgegevens naar een land buiten de Europese Unie of naar een internationale organisatie, ingesteld op verzoek van een belanghebbende, gegronde redenen heeft om aan te nemen dat een door de Europese Commissie ten aanzien van het desbetreffende land of de desbetreffende internationale organisatie genomen adequaatheidsbesluit als bedoeld in artikel 45, eerste lid, van de verordening of een door de Europese Commissie genomen besluit met betrekking tot het vaststellen of goedkeuren van standaardbepalingen als bedoeld in artikel 46, tweede lid, onderdelen c en d, van de verordening onvoldoende waarborgen biedt voor een passend niveau van gegevensbescherming, kan de Autoriteit persoonsgegevens bij de Afdeling bestuursrechtspraak van de Raad van State een verzoek indienen om voor recht te verklaren dat het desbetreffende besluit geldig is.\n\n2 Het verzoekschrift wordt ondertekend en bevat ten minste:\n\na. de dagtekening;\n\nb. de gronden van het verzoek;\n\nc. de namen van de belanghebbende en de partij die voorwerp is van het onderzoek, bedoeld in het eerste lid.\n\n3 Bij het verzoekschrift wordt een afschrift overgelegd van het verzoek van de belanghebbende om handhaving van bij of krachtens wet bepaalde regels inzake de bescherming van persoonsgegevens, waarop het in het tweede lid bedoelde verzoekschrift van de Autoriteit persoonsgegevens betrekking heeft en worden andere op de zaak betrekking hebbende stukken meegezonden.\n\n4 Onverminderd artikel 4:15 van de Algemene wet bestuursrecht wordt de termijn voor het geven van een beschikking op het verzoek om handhaving opgeschort gerekend vanaf de dag na die waarop de Autoriteit persoonsgegevens de verzoeker meedeelt dat toepassing is gegeven aan het eerste lid, tot de dag waarop de Afdeling bestuursrechtspraak van de Raad van State een uitspraak als bedoeld in het zesde lid heeft gedaan.\n\n5 Op de behandeling van het verzoek zijn de titels 8.1 en 8.2 van de Algemene wet bestuursrecht van overeenkomstige toepassing, met uitzondering van de artikelen 8:1 tot en met 8:10, 8:41, de afdelingen 8.2.2a en 8.2.4a en de artikelen 8:70, 8:72 en 8:74. De in het tweede lid, onderdeel c, bedoelde partijen worden als partijen in het geding aangemerkt.\n\n6 Indien de Afdeling bestuursrechtspraak van de Raad van State, al dan niet na prejudiciële verwijzing op grond van artikel 267 van het Verdrag inzake de werking van de Europese Unie aan het Hof van Justitie van de Europese Unie, tot het oordeel komt dat het aan haar voorgelegde besluit van de Europese Commissie geldig is, dan verklaart zij dat voor recht. Komt zij, na prejudiciële verwijzing aan het Hof van Justitie van de Europese Unie, tot het oordeel dat het aan haar voorgelegde besluit ongeldig is, dan wijst zij het verzoek af.\n\n7 De Afdeling bestuursrechtspraak van de Raad van State kan besluiten het verzoek aan te houden als er bij het Hof van Justitie van de Europese Unie al een prejudiciële vraag omtrent de geldigheid van het desbetreffende besluit aanhangig is.\n\n8 Tegen het aanhouden van het verzoek door de Afdeling bestuursrechtspraak van de Raad van State, staat geen voorziening open.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel20",
+        "lido_citations": {
+          "incoming": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0042136",
+              "BWBR0052550"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 12,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569894/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art21",
+        "number": "21",
+        "heading": "Artikel 21. Aanwijzing accrediterende instantie",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "Bij ministeriële regeling wordt of de Autoriteit persoonsgegevens of de Raad voor Accreditatie of worden zij beide aangewezen als accrediterende instantie als bedoeld in artikel 43 van de verordening.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel21",
+        "lido_citations": {
+          "incoming": {
+            "total": 4,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:GHARL:2020:126",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:RBGEL:2020:6551",
+              "ECLI:NL:RBNHO:2020:9786"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569904/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art21a",
+        "number": "21a",
+        "heading": "Artikel 21a",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De taak van de Autoriteit persoonsgegevens, bedoeld in artikel 6, derde lid, omvat mede het toezicht op de naleving van de krachtens artikel 3:17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen met betrekking tot de toegang van betaaldienstverleners tot de persoonsgegevens van betaaldienstgebruikers.\n\n2 Met betrekking tot het toezicht, bedoeld in het eerste lid, vindt de samenwerking en uitwisseling van informatie met De Nederlandsche Bank N.V. en andere relevante toezichthouders plaats overeenkomstig artikel 26 van de richtlijn betaaldiensten, bedoeld in artikel 1:1 van de Wet op het financieel toezicht.\n\n3 De Autoriteit persoonsgegevens kan in geval van overtreding van de krachtens artikel 3.17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen aan de overtreder een last opleggen om waar passend, op een nader bepaalde manier en binnen een nader bepaalde termijn, verwerkingen in overeenstemming te brengen met het daar bepaalde. Artikel 16 is van overeenkomstige toepassing.\n\n4 De Autoriteit persoonsgegevens kan in geval van een overtreding van de krachtens artikel 3.17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen aan de overtreder een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, indien dit meer is, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar. Artikel 83, tweede en derde lid, van de verordening is van overeenkomstige toepassing.\n\n5 De bestuurlijke boete en de te betalen geldsom van een verbeurde dwangsom komen toe aan de Staat.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel21a",
+        "lido_citations": {
+          "incoming": {
+            "total": 2,
+            "distinct_laws": [
+              "",
+              "BWBR0020368"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0020368"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-503",
+              "stb-2019-60"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14895184/2019-02-19/2019-02-19"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art21b",
+        "number": "21b",
+        "heading": "Artikel 21b",
+        "chapter": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+        "paragraph": "Paragraaf 2.2. De uitoefening van de taken en bevoegdheden van de Autoriteit persoonsgegevens",
+        "text": "1 De Autoriteit Persoonsgegevens maakt een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie openbaar, behoudens voor zover artikel 5.1, eerste, tweede en vijfde lid van de Wet open overheid, aan openbaarmaking in de weg staan.\n\n2 De openbaarmaking van de beschikking geschiedt niet eerder dan nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt, tenzij de overtreder de beschikking of de inhoud ervan, zelf heeft openbaar gemaakt, heeft doen openbaar maken of heeft aangegeven geen bedenkingen te hebben tegen eerdere openbaarmaking.\n\n3 Indien wordt verzocht om een voorlopige voorziening als bedoeld in artikel 8:81 van de Algemene wet bestuursrecht, wordt de openbaarmaking van de beschikking opgeschort totdat de voorzieningenrechter uitspraak heeft gedaan of het verzoek is ingetrokken.\n\n4 Het eerste tot en met het derde lid zijn mede van toepassing op een door de Autoriteit Persoonsgegevens genomen beslissing op bezwaar strekkend tot het opleggen van een bestuurlijke sanctie.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk2/Artikel21b",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art22",
+        "number": "22",
+        "heading": "Artikel 22. Verwerkingsverbod bijzondere categorieën persoonsgegevens en algemene uitzonderingen uit verordening",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Overeenkomstig artikel 9, eerste lid, van de verordening zijn verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid verboden.\n\n2 Overeenkomstig artikel 9, tweede lid, onderdelen a, c, d, e en f, van de verordening is het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing, indien:\n\na. de betrokkene uitdrukkelijke toestemming heeft gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden;\n\nb. de verwerking noodzakelijk is ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon, indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven;\n\nc. de verwerking wordt verricht door een stichting, een vereniging of een andere instantie zonder winstoogmerk die op politiek, levensbeschouwelijk, godsdienstig of vakbondsgebied werkzaam is, in het kader van haar gerechtvaardigde activiteiten en met passende waarborgen, mits de verwerking uitsluitend betrekking heeft op de leden of de voormalige leden van de instantie of op personen die in verband met haar doeleinden regelmatig contact met haar onderhouden, en de persoonsgegevens niet zonder de toestemming van de betrokkenen buiten die instantie worden verstrekt;\n\nd. de verwerking betrekking heeft op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt; of\n\ne. de verwerking noodzakelijk is voor de instelling, uitoefening of verdediging van een rechtsvordering, of wanneer gerechten handelen in het kader van hun rechtsprekende taken.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel22",
+        "lido_citations": {
+          "incoming": {
+            "total": 39,
+            "distinct_laws": [
+              "BWBR0010256",
+              "BWBR0040912",
+              "BWBR0043161",
+              "BWBR0043932",
+              "BWBR0044489",
+              "BWBR0044490",
+              "BWBR0044491",
+              "BWBR0044493",
+              "BWBR0044494",
+              "BWBR0044495",
+              "BWBR0045297",
+              "BWBR0046101",
+              "BWBR0046851",
+              "BWBR0047587",
+              "BWBR0047760",
+              "BWBR0047968",
+              "BWBR0048965",
+              "BWBR0049469",
+              "BWBR0049941",
+              "BWBR0050543",
+              "BWBR0050547",
+              "BWBR0050552",
+              "BWBR0050559",
+              "BWBR0050823",
+              "BWBR0050825",
+              "BWBR0050925",
+              "BWBR0050932",
+              "BWBR0051347",
+              "BWBR0052224"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:GHARL:2023:3598",
+              "ECLI:NL:PHR:2023:823",
+              "ECLI:NL:RBGEL:2019:1774",
+              "ECLI:NL:RBMNE:2020:73",
+              "ECLI:NL:RBMNE:2020:74",
+              "ECLI:NL:RBMNE:2022:2198",
+              "ECLI:NL:RBMNE:2025:4466",
+              "ECLI:NL:RBNNE:2018:3788",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569934/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art23",
+        "number": "23",
+        "heading": "Artikel 23. Nationaalrechtelijke algemene uitzonderingen",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing, indien:\n\na. de verwerking noodzakelijk is ter voldoening aan een volkenrechtelijke verplichting;\n\nb. de gegevens worden verwerkt door de Autoriteit persoonsgegevens, het College voor de rechten van de mens of een ombudsman als bedoeld in artikel 9:17 van de Algemene wet bestuursrecht, en voor zover de verwerking noodzakelijk is voor de uitvoering van de hun wettelijk opgedragen taken, onder voorwaarde dat bij die uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad; of\n\nc. de verwerking noodzakelijk is in aanvulling op de verwerking van persoonsgegevens van strafrechtelijke aard voor de doeleinden waarvoor deze gegevens worden verwerkt.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel23",
+        "lido_citations": {
+          "incoming": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0010256"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2021:6571",
+              "ECLI:NL:RBMNE:2025:7516",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569944/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art23a",
+        "number": "23a",
+        "heading": "Artikel 23a. Uitzondering voor verplichte accountantsopdrachten",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Dit onderdeel is (nog) niet in werking getreden.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": true,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel23a",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art24",
+        "number": "24",
+        "heading": "Artikel 24. Uitzonderingen voor wetenschappelijk of historisch onderzoek of statistische doeleinden",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Gelet op artikel 9, tweede lid, onderdeel j, van de verordening, is het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing, indien:\n\na. de verwerking noodzakelijk is met het oog op wetenschappelijk of historisch onderzoek of statistische doeleinden overeenkomstig artikel 89, eerste lid, van de verordening;\n\nb. het onderzoek, bedoeld in onderdeel a, een algemeen belang dient;\n\nc. het vragen van uitdrukkelijke toestemming onmogelijk blijkt of een onevenredige inspanning kost; en\n\nd. bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel24",
+        "lido_citations": {
+          "incoming": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0035564"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742",
+              "ECLI:NL:RVS:2020:251"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569954/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art25",
+        "number": "25",
+        "heading": "Artikel 25. Uitzonderingen inzake verwerking persoonsgegevens waaruit ras of etnische afkomst blijkt",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt, niet van toepassing, indien de verwerking geschiedt:\n\na. met het oog op de identificatie van de betrokkene, en slechts voor zover de verwerking voor dat doel onvermijdelijk is; of\n\nb. met het doel personen van een bepaalde etnische of culturele minderheidsgroep een bevoorrechte positie toe te kennen teneinde feitelijke nadelen, verband houdende met de grond ras of etnische afkomst, op te heffen of te verminderen, en slechts voor zover:\n\n1°. de verwerking voor dat doel noodzakelijk is;\n\n2°. de gegevens betrekking hebben op het geboorteland van de betrokkene, diens ouders of diens grootouders, dan wel op andere, bij wet vastgestelde criteria op grond waarvan op objectieve wijze vastgesteld kan worden of iemand tot een bepaalde etnische of culturele minderheidsgroep behoort; en\n\n3°. de betrokkene tegen de verwerking geen schriftelijk bezwaar heeft gemaakt.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel25",
+        "lido_citations": {
+          "incoming": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0010256"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:HR:2026:392",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569964/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art26",
+        "number": "26",
+        "heading": "Artikel 26. Uitzonderingen inzake verwerking persoonsgegevens waaruit politieke opvattingen blijken voor vervulling openbare functies",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken, niet van toepassing, indien de verwerking geschiedt met het oog op de eisen die met betrekking tot politieke opvattingen in redelijkheid kunnen worden gesteld in verband met de vervulling van functies in bestuursorganen en adviescolleges.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel26",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569974/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art27",
+        "number": "27",
+        "heading": "Artikel 27. Uitzonderingen inzake verwerking persoonsgegevens waaruit religieuze of levensbeschouwelijke overtuigingen blijken voor geestelijke verzorging",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken, niet van toepassing, indien de verwerking geschiedt door andere instellingen dan de instellingen, bedoeld in artikel 22, tweede lid, onderdeel c, en voor zover de verwerking noodzakelijk is met het oog op de geestelijke verzorging van de betrokkene, tenzij deze daartegen schriftelijk bezwaar heeft gemaakt.\n\n2 In de gevallen, bedoeld in het eerste lid, worden geen persoonsgegevens aan derden verstrekt zonder toestemming van de betrokkene.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel27",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569984/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art28",
+        "number": "28",
+        "heading": "Artikel 28. Uitzonderingen inzake genetische gegevens",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om genetische gegevens te verwerken niet van toepassing, indien deze verwerking plaatsvindt met betrekking tot de betrokkene bij wie de desbetreffende gegevens zijn verkregen.\n\n2 Gelet op artikel 9, vierde lid, van de verordening, is in andere gevallen dan bedoeld in het eerste lid, het verbod om genetische gegevens te verwerken uitsluitend niet van toepassing indien:\n\na. een zwaarwegend geneeskundig belang prevaleert; of\n\nb. de verwerking noodzakelijk is ten behoeve van wetenschappelijk onderzoek dat een algemeen belang dient of ten behoeve van statistiek, indien:\n\n1°. de betrokkene uitdrukkelijke toestemming heeft gegeven; en\n\n2°. bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad.\n\n3 Toestemming als bedoeld in het tweede lid, onderdeel b, is niet vereist, indien het vragen van uitdrukkelijke toestemming onmogelijk blijkt of een onevenredige inspanning vergt.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel28",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [
+              "BWBR0012983"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14569994/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art29",
+        "number": "29",
+        "heading": "Artikel 29. Uitzonderingen inzake biometrische gegevens",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om biometrische gegevens met het oog op de unieke identificatie van een persoon te verwerken niet van toepassing, indien de verwerking noodzakelijk is voor authenticatie of omwille van beveiligingsdoeleinden en slechts voor zover dit noodzakelijk is vanwege een zwaarwegend algemeen belang van rechtmatige toegang tot bepaalde plaatsen, gebouwen, diensten, producten, informatiesystemen of werkprocessystemen.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel29",
+        "lido_citations": {
+          "incoming": {
+            "total": 3,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:PHR:2025:260",
+              "ECLI:NL:RBAMS:2019:6005",
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570004/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art30",
+        "number": "30",
+        "heading": "Artikel 30. Uitzonderingen inzake gegevens over gezondheid",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Gelet op artikel 9, tweede lid, onderdeel b, van de verordening, is het verbod om gegevens over gezondheid te verwerken niet van toepassing, indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn, en voor zover de verwerking noodzakelijk is voor:\n\na. een goede uitvoering van wettelijke voorschriften, pensioenregelingen of collectieve arbeidsovereenkomsten die voorzien in aanspraken die afhankelijk zijn van de gezondheidstoestand van de betrokkene; of\n\nb. de re-integratie of begeleiding van werknemers of uitkeringsgerechtigden in verband met ziekte of arbeidsongeschiktheid.\n\n2 Gelet op artikel 9, tweede lid, onderdeel g, van de verordening, is het verbod om gegevens over gezondheid te verwerken niet van toepassing, indien de verwerking geschiedt door:\n\na. scholen, voor zover de verwerking met het oog op de speciale begeleiding van leerlingen of het treffen van bijzondere voorzieningen in verband met hun gezondheidstoestand noodzakelijk is;\n\nb. een reclasseringsinstelling, een bijzondere reclasseringsambtenaar, de raad voor de kinderbescherming, de gecertificeerde instelling, bedoeld in artikel 1.1 van de Jeugdwet, of de rechtspersoon, bedoeld in artikel 256, eerste lid, of artikel 302, tweede lid, van Boek 1 van het Burgerlijk Wetboek, voor zover de verwerking noodzakelijk is voor de uitvoering van de aan hen opgedragen wettelijke taken; of\n\nc. Onze Minister en Onze Minister van Justitie en Veiligheid voor zover de verwerking in verband met de tenuitvoerlegging van vrijheidsbenemende maatregelen noodzakelijk is.\n\n3 Gelet op artikel 9, tweede lid, onderdeel g en h, van de verordening, is het verbod om gegevens over gezondheid te verwerken niet van toepassing indien de verwerking geschiedt door:\n\na. hulpverleners, instellingen of voorzieningen voor gezondheidszorg of maatschappelijke dienstverlening, voor zover de verwerking noodzakelijk is met het oog op een goede behandeling of verzorging van de betrokkene dan wel het beheer van de betreffende instelling of beroepspraktijk; of\n\nb. verzekeraars als bedoeld in artikel 1:1 van de Wet op het financieel toezicht of financiële dienstverleners die bemiddelen in verzekeringen als bedoeld in artikel 1:1 van die wet, voor zover de verwerking noodzakelijk is voor:\n\n1°. de beoordeling van het door de verzekeraar te verzekeren risico en de betrokkene geen bezwaar heeft gemaakt; of\n\n2°. de uitvoering van de overeenkomst van verzekering dan wel het assisteren bij het beheer en de uitvoering van de verzekering.\n\n4 Indien toepassing wordt gegeven aan het eerste, tweede of derde lid, worden de gegevens alleen verwerkt door personen die uit hoofde van ambt, beroep of wettelijk voorschrift dan wel krachtens een overeenkomst tot geheimhouding zijn verplicht. Indien de verwerkingsverantwoordelijke persoonlijk gegevens verwerkt en op hem niet reeds uit hoofde van ambt, beroep of wettelijk voorschrift een geheimhoudingsplicht rust, is hij verplicht tot geheimhouding van de gegevens, behoudens voor zover de wet hem tot mededeling verplicht of uit zijn taak de noodzaak voortvloeit dat de gegevens worden meegedeeld aan anderen die krachtens het eerste, tweede of derde lid bevoegd zijn tot verwerking daarvan.\n\n5 Het verbod om andere bijzondere categorieën van persoonsgegevens te verwerken is niet van toepassing, indien de verwerking noodzakelijk is in aanvulling op de verwerking van gegevens over gezondheid, bedoeld in het derde lid, aanhef en onderdeel a, met het oog op een goede behandeling of verzorging van de betrokkene.\n\n6 Bij algemene maatregel van bestuur kunnen omtrent de toepassing van het eerste lid en het derde lid, aanhef en onderdeel b, nadere regels worden gesteld.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel30",
+        "lido_citations": {
+          "incoming": {
+            "total": 19,
+            "distinct_laws": [
+              "BWBR0013267",
+              "BWBR0042012",
+              "BWBR0048336"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHARL:2019:10906",
+              "ECLI:NL:GHARL:2020:4544",
+              "ECLI:NL:GHARL:2023:4604",
+              "ECLI:NL:PHR:2019:631",
+              "ECLI:NL:PHR:2023:574",
+              "ECLI:NL:PHR:2024:416",
+              "ECLI:NL:RBGEL:2021:4809",
+              "ECLI:NL:RBMNE:2021:21",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBNNE:2024:1872",
+              "ECLI:NL:RBOBR:2022:5442",
+              "ECLI:NL:RBROT:2020:3430",
+              "ECLI:NL:RBROT:2022:8103"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 6,
+            "distinct_laws": [
+              "BWBR0002656",
+              "BWBR0020368",
+              "BWBR0034925"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570014/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art30a",
+        "number": "30a",
+        "heading": "Artikel 30a. Uitzonderingen inzake gegevens over de gezondheid – overdracht van dossiers door hulpverleners",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Onder verwerking als bedoeld in artikel 30, derde lid, aanhef en onder a, worden met het oog op het voldoen aan de bewaarplicht, bedoeld in artikel 454, derde lid, van Boek 7 van het Burgerlijk Wetboek, en het bijbehorende beheer, mede de volgende handelingen verstaan:\n\na. dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek door de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten overdragen aan een hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening die zorg gaat dragen voor het bewaren en beheren van de dossiers;\n\nb. dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek bewaren en beheren door een andere hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening, dan de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten.\n\n2 In een geval als bedoeld in het eerste lid, onder a, wordt de betrokkene geïnformeerd over de overdracht en gewezen op de van toepassing zijnde rechten. Indien het informeren onmogelijk is of onevenredig veel inspanning vergt of de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim, wordt in ieder geval tijdig in algemene bewoordingen brede kenbaarheid gegeven aan de gegevensverwerking.\n\n3 Als in een geval als bedoeld in het eerste lid, onder b, de betrokkene op grond van artikel 14, vijfde lid, onder b of d, van de verordening niet wordt geïnformeerd, wordt als passende maatregel in ieder geval tijdig in algemene bewoordingen brede kenbaarheid gegeven aan de gegevensverwerking.\n\n4 Het overdragen van dossiers, bedoeld in het eerste lid, geschiedt kosteloos.\n\n5 Bij regeling van Onze Minister van Volksgezondheid, Welzijn en Sport kunnen nadere regels worden gesteld over de toepassing van het eerste, tweede of derde lid.\n\n6 In situaties als bedoeld in het eerste lid, mag de overdracht van dossiers plaatsvinden zonder de toestemming van de patiënt als bedoeld in artikel 457, eerste lid, eerste volzin, van Boek 7 van het Burgerlijk Wetboek.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel30a",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art30b",
+        "number": "30b",
+        "heading": "Artikel 30b. Uitzonderingen inzake gegevens over de gezondheid – overdracht van dossiers door anderen dan hulpverleners",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.1. Bijzondere categorieën van persoonsgegevens",
+        "text": "1 Gelet op artikel 9, tweede lid, onderdeel h, van de verordening, is het verbod om gegevens over gezondheid te verwerken niet van toepassing op het overdragen van dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek met het oog op het voldoen aan de bewaarplicht, bedoeld in artikel 454, derde lid, van Boek 7 van het Burgerlijk Wetboek, en het bijbehorende beheer door degene die geen hulpverlener is aan een hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening, als deze hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening zorg gaat dragen voor het bewaren en beheren van de dossiers.\n\n2 De artikelen 30, vierde lid, en 30a, derde tot en met zesde lid, zijn van overeenkomstige toepassing.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel30b",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art31",
+        "number": "31",
+        "heading": "Artikel 31. Uitzonderingen op de verplichting tot verwerking onder overheidstoezicht",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.2. Persoonsgegevens van strafrechtelijke aard",
+        "text": "Onverminderd artikel 10 van de verordening mogen persoonsgegevens van strafrechtelijke aard alleen worden verwerkt voor zover dit krachtens de artikelen 32 en 33 is toegestaan.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel31",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:PHR:2021:531",
+              "ECLI:NL:PHR:2026:435",
+              "ECLI:NL:RBMNE:2022:2198",
+              "ECLI:NL:RBMNE:2022:297",
+              "ECLI:NL:RBROT:2023:7694"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570034/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art32",
+        "number": "32",
+        "heading": "Artikel 32. Algemene uitzonderingsgronden inzake gegevens van strafrechtelijke aard",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.2. Persoonsgegevens van strafrechtelijke aard",
+        "text": "Gelet op artikel 10 van de verordening mogen persoonsgegevens van strafrechtelijke aard worden verwerkt, indien:\n\na. de betrokkene uitdrukkelijke toestemming heeft gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden;\n\nb. de verwerking noodzakelijk is ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon, indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven;\n\nc. de verwerking betrekking heeft op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt;\n\nd. de verwerking noodzakelijk is voor de instelling, uitoefening of onderbouwing van een rechtsvordering, of wanneer gerechten handelen in het kader van hun rechtsprekende taken;\n\ne. de verwerking noodzakelijk is om redenen van zwaarwegend algemeen belang als bedoeld in artikel 23, onderdelen a en b; of\n\nf. de verwerking noodzakelijk is met het oog op wetenschappelijk of historisch onderzoek of statistische doeleinden overeenkomstig artikel 89, eerste lid, van de verordening, en is voldaan aan de voorwaarden, bedoeld in artikel 24, onderdelen b tot en met d.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel32",
+        "lido_citations": {
+          "incoming": {
+            "total": 11,
+            "distinct_laws": [
+              "BWBR0027464"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:GHARL:2022:8676",
+              "ECLI:NL:GHARL:2023:3598",
+              "ECLI:NL:PHR:2021:531",
+              "ECLI:NL:PHR:2021:83",
+              "ECLI:NL:PHR:2023:823",
+              "ECLI:NL:RBAMS:2021:6571",
+              "ECLI:NL:RBMNE:2022:2198",
+              "ECLI:NL:RBMNE:2022:297"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570044/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art33",
+        "number": "33",
+        "heading": "Artikel 33. Overige uitzonderingsgronden inzake gegevens van strafrechtelijke aard",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.2. Persoonsgegevens van strafrechtelijke aard",
+        "text": "1 Gelet op artikel 10 van de verordening mogen persoonsgegevens van strafrechtelijke aard worden verwerkt, indien:\n\na. de verwerking geschiedt door organen die krachtens de wet zijn belast met de toepassing van het strafrecht, dan wel door verwerkingsverantwoordelijken die deze hebben verkregen krachtens de Wet politiegegevens of de Wet justitiële en strafvorderlijke gegevens;\n\nb. de verwerking geschiedt door en ten behoeve van publiekrechtelijke samenwerkingsverbanden van verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken, indien:\n\n1°. de verwerking noodzakelijk is voor de uitvoering van de taak van deze verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken; en\n\n2°. bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad; of\n\nc. de verwerking noodzakelijk is in aanvulling op de verwerking van gegevens over gezondheid, bedoeld in artikel 30, derde lid, aanhef en onderdeel a, met het oog op een goede behandeling of verzorging van de betrokkene.\n\n2 Persoonsgegevens van strafrechtelijke aard mogen worden verwerkt door de verwerkingsverantwoordelijke die deze gegevens ten eigen behoeve verwerkt:\n\na. ter beoordeling van een verzoek van betrokkene om een beslissing over hem te nemen of aan hem een prestatie te leveren; of\n\nb. ter bescherming van zijn belangen, voor zover het gaat om strafbare feiten die zijn of op grond van feiten en omstandigheden naar verwachting zullen worden gepleegd jegens hem of jegens personen die in zijn dienst zijn.\n\n3 Persoonsgegevens van strafrechtelijke aard over personeel in dienst van de verwerkingsverantwoordelijke mogen uitsluitend worden verwerkt, indien dit geschiedt overeenkomstig regels die zijn vastgesteld in overeenstemming met de procedure bedoeld in de Wet op de ondernemingsraden.\n\n4 Persoonsgegevens van strafrechtelijke aard mogen ten behoeve van derden worden verwerkt:\n\na. door verwerkingsverantwoordelijken die optreden krachtens een vergunning op grond van de Wet particuliere beveiligingsorganisaties en recherchebureaus;\n\nb. indien deze derde een rechtspersoon is die in dezelfde groep is verbonden als bedoeld in artikel 24b van Boek 2 van het Burgerlijk Wetboek; of\n\nc. indien de Autoriteit persoonsgegevens met inachtneming van het vijfde lid een vergunning voor de verwerking heeft verleend.\n\n5 Persoonsgegevens van strafrechtelijke aard mogen worden verwerkt indien de verwerking noodzakelijk is voor een door een accountant te verrichten bij wettelijk voorschrift voorgeschreven opdracht.\n\n6 Een vergunning als bedoeld in het vierde lid, onderdeel c, kan slechts worden verleend, indien de verwerking noodzakelijk is met het oog op een zwaarwegend belang van derden en bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad. Aan de vergunning kunnen voorschriften worden verbonden.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel33",
+        "lido_citations": {
+          "incoming": {
+            "total": 18,
+            "distinct_laws": [
+              "BWBR0010256",
+              "BWBR0027464",
+              "BWBR0042136",
+              "BWBR0052550"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2025:1828",
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:GHARL:2022:8676",
+              "ECLI:NL:GHARL:2023:3598",
+              "ECLI:NL:GHDHA:2023:1262",
+              "ECLI:NL:PHR:2021:531",
+              "ECLI:NL:PHR:2024:1013",
+              "ECLI:NL:RBMNE:2022:2198",
+              "ECLI:NL:RBMNE:2022:297",
+              "ECLI:NL:RBOBR:2025:3519",
+              "ECLI:NL:RBOVE:2025:2068",
+              "ECLI:NL:RBROT:2023:7694"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 7,
+            "distinct_laws": [
+              "BWBR0002747",
+              "BWBR0003045",
+              "BWBR0008973",
+              "BWBR0014194",
+              "BWBR0022463"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570054/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art34",
+        "number": "34",
+        "heading": "Artikel 34. Toepasselijkheid Algemene wet bestuursrecht bij beslissing van bestuursorganen",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.3. Rechtsbescherming",
+        "text": "Een schriftelijke beslissing op een verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening wordt genomen binnen de in artikel 12, derde lid, van de verordening genoemde termijnen en geldt, voor zover deze is genomen door een bestuursorgaan, als een besluit in de zin van de Algemene wet bestuursrecht.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel34",
+        "lido_citations": {
+          "incoming": {
+            "total": 94,
+            "distinct_laws": [
+              "BWBR0004627",
+              "BWBR0042107",
+              "BWBR0044344",
+              "BWBR0045494",
+              "BWBR0051828",
+              "BWBR0052093"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2021:459",
+              "ECLI:NL:GHARL:2020:10564",
+              "ECLI:NL:GHARL:2022:1322",
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:GHDHA:2021:2343",
+              "ECLI:NL:PHR:2021:617",
+              "ECLI:NL:PHR:2021:618",
+              "ECLI:NL:PHR:2021:619",
+              "ECLI:NL:PHR:2021:831",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:PHR:2022:346",
+              "ECLI:NL:PHR:2024:750",
+              "ECLI:NL:RBAMS:2019:2001",
+              "ECLI:NL:RBAMS:2019:2166",
+              "ECLI:NL:RBAMS:2019:8329",
+              "ECLI:NL:RBAMS:2020:5174",
+              "ECLI:NL:RBAMS:2021:619",
+              "ECLI:NL:RBAMS:2021:7494",
+              "ECLI:NL:RBAMS:2022:1605",
+              "ECLI:NL:RBAMS:2022:2082",
+              "ECLI:NL:RBAMS:2023:2140",
+              "ECLI:NL:RBAMS:2024:3141",
+              "ECLI:NL:RBDHA:2019:12031",
+              "ECLI:NL:RBDHA:2020:12154",
+              "ECLI:NL:RBDHA:2021:13450",
+              "ECLI:NL:RBDHA:2021:2722",
+              "ECLI:NL:RBDHA:2021:4427",
+              "ECLI:NL:RBDHA:2021:4428",
+              "ECLI:NL:RBDHA:2021:4429",
+              "ECLI:NL:RBDHA:2021:4430",
+              "ECLI:NL:RBDHA:2021:4431",
+              "ECLI:NL:RBDHA:2023:943",
+              "ECLI:NL:RBDHA:2024:21452",
+              "ECLI:NL:RBDHA:2024:4473",
+              "ECLI:NL:RBDHA:2024:616",
+              "ECLI:NL:RBDHA:2025:20030",
+              "ECLI:NL:RBGEL:2021:854",
+              "ECLI:NL:RBGEL:2023:2267",
+              "ECLI:NL:RBGEL:2024:201",
+              "ECLI:NL:RBLIM:2021:4060",
+              "ECLI:NL:RBLIM:2024:9227",
+              "ECLI:NL:RBMNE:2019:2434",
+              "ECLI:NL:RBMNE:2019:5430",
+              "ECLI:NL:RBMNE:2020:2424",
+              "ECLI:NL:RBMNE:2021:1865",
+              "ECLI:NL:RBMNE:2021:2249",
+              "ECLI:NL:RBMNE:2021:3645",
+              "ECLI:NL:RBMNE:2022:1821",
+              "ECLI:NL:RBMNE:2022:2565",
+              "ECLI:NL:RBMNE:2022:3302",
+              "ECLI:NL:RBMNE:2022:4535",
+              "ECLI:NL:RBMNE:2022:4536",
+              "ECLI:NL:RBMNE:2023:151",
+              "ECLI:NL:RBMNE:2023:6960",
+              "ECLI:NL:RBMNE:2026:429",
+              "ECLI:NL:RBNHO:2021:8514",
+              "ECLI:NL:RBNHO:2023:3730",
+              "ECLI:NL:RBNHO:2023:860",
+              "ECLI:NL:RBNHO:2025:6183",
+              "ECLI:NL:RBNHO:2026:132",
+              "ECLI:NL:RBNNE:2023:4854",
+              "ECLI:NL:RBNNE:2026:502",
+              "ECLI:NL:RBOVE:2022:1336",
+              "ECLI:NL:RBOVE:2025:2502",
+              "ECLI:NL:RBROT:2020:515",
+              "ECLI:NL:RBROT:2022:5657",
+              "ECLI:NL:RBROT:2023:168",
+              "ECLI:NL:RBZWB:2020:2658",
+              "ECLI:NL:RBZWB:2020:3052",
+              "ECLI:NL:RBZWB:2020:3789",
+              "ECLI:NL:RBZWB:2021:756",
+              "ECLI:NL:RBZWB:2024:8729",
+              "ECLI:NL:RVS:2020:898",
+              "ECLI:NL:RVS:2020:900",
+              "ECLI:NL:RVS:2020:901",
+              "ECLI:NL:RVS:2021:111",
+              "ECLI:NL:RVS:2021:2129",
+              "ECLI:NL:RVS:2021:2397",
+              "ECLI:NL:RVS:2022:230",
+              "ECLI:NL:RVS:2022:319",
+              "ECLI:NL:RVS:2022:688",
+              "ECLI:NL:RVS:2023:2004",
+              "ECLI:NL:RVS:2023:2072",
+              "ECLI:NL:RVS:2023:3145",
+              "ECLI:NL:RVS:2025:3869",
+              "ECLI:NL:RVS:2025:5891",
+              "ECLI:NL:RVS:2025:987",
+              "ECLI:NL:RVS:2026:483"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570074/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art35",
+        "number": "35",
+        "heading": "Artikel 35. Toepasselijkheid burgerlijk recht bij beslissing van niet-bestuursorganen",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.3. Rechtsbescherming",
+        "text": "1 Indien de beslissing op een verzoek als bedoeld in artikel 34 is genomen door een ander dan een bestuursorgaan, kan de belanghebbende zich tot de rechtbank wenden met het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen.\n\n2 Het verzoekschrift wordt ingediend binnen zes weken na ontvangst van het antwoord van de verwerkingsverantwoordelijke. Indien de verwerkingsverantwoordelijke niet binnen de in artikel 12, derde lid, van de verordening genoemde termijnen heeft geantwoord, is de indiening van het verzoekschrift niet aan een termijn gebonden.\n\n3 De rechtbank wijst het verzoek toe, voor zover zij dit gegrond oordeelt. Alvorens de rechtbank beslist, stelt zij zo nodig de belanghebbenden in de gelegenheid hun zienswijze naar voren te brengen.\n\n4 De indiening van het verzoekschrift behoeft niet door een advocaat te geschieden.\n\n5 De derde afdeling van de vijfde titel van het Tweede Boek van het Wetboek van Burgerlijke Rechtsvordering is van overeenkomstige toepassing.\n\n6 De rechtbank kan partijen en anderen verzoeken binnen een door haar te bepalen termijn schriftelijke inlichtingen te geven en onder hen berustende stukken in te zenden. De verwerkingsverantwoordelijke en belanghebbende zijn verplicht aan dit verzoek te voldoen. De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel35",
+        "lido_citations": {
+          "incoming": {
+            "total": 212,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2019:3966",
+              "ECLI:NL:GHAMS:2021:1465",
+              "ECLI:NL:GHAMS:2021:2068",
+              "ECLI:NL:GHAMS:2021:312",
+              "ECLI:NL:GHAMS:2021:3161",
+              "ECLI:NL:GHAMS:2021:459",
+              "ECLI:NL:GHAMS:2022:2192",
+              "ECLI:NL:GHAMS:2022:3023",
+              "ECLI:NL:GHAMS:2023:1221",
+              "ECLI:NL:GHAMS:2023:796",
+              "ECLI:NL:GHAMS:2026:1138",
+              "ECLI:NL:GHARL:2019:10345",
+              "ECLI:NL:GHARL:2020:10564",
+              "ECLI:NL:GHARL:2020:126",
+              "ECLI:NL:GHARL:2020:4769",
+              "ECLI:NL:GHARL:2022:1322",
+              "ECLI:NL:GHARL:2022:1623",
+              "ECLI:NL:GHARL:2022:4856",
+              "ECLI:NL:GHARL:2023:7768",
+              "ECLI:NL:GHARL:2025:1076",
+              "ECLI:NL:GHARL:2025:44",
+              "ECLI:NL:GHARL:2025:695",
+              "ECLI:NL:GHARL:2025:8679",
+              "ECLI:NL:GHARL:2026:1050",
+              "ECLI:NL:GHDHA:2020:1180",
+              "ECLI:NL:GHDHA:2021:1924",
+              "ECLI:NL:GHDHA:2021:2343",
+              "ECLI:NL:GHDHA:2021:2793",
+              "ECLI:NL:GHDHA:2021:912",
+              "ECLI:NL:GHDHA:2025:1243",
+              "ECLI:NL:GHSHE:2021:1301",
+              "ECLI:NL:GHSHE:2021:2252",
+              "ECLI:NL:GHSHE:2022:1511",
+              "ECLI:NL:GHSHE:2022:1772",
+              "ECLI:NL:GHSHE:2022:80",
+              "ECLI:NL:GHSHE:2023:3911",
+              "ECLI:NL:HR:2021:1814",
+              "ECLI:NL:HR:2023:1216",
+              "ECLI:NL:HR:2024:1372",
+              "ECLI:NL:PHR:2018:1384",
+              "ECLI:NL:PHR:2019:502",
+              "ECLI:NL:PHR:2021:831",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:PHR:2022:462",
+              "ECLI:NL:PHR:2022:902",
+              "ECLI:NL:PHR:2024:416",
+              "ECLI:NL:PHR:2024:750",
+              "ECLI:NL:RBAMS:2018:5142",
+              "ECLI:NL:RBAMS:2019:2166",
+              "ECLI:NL:RBAMS:2019:3355",
+              "ECLI:NL:RBAMS:2019:3857",
+              "ECLI:NL:RBAMS:2019:4363",
+              "ECLI:NL:RBAMS:2019:4418",
+              "ECLI:NL:RBAMS:2019:5182",
+              "ECLI:NL:RBAMS:2019:645",
+              "ECLI:NL:RBAMS:2019:6817",
+              "ECLI:NL:RBAMS:2019:7103",
+              "ECLI:NL:RBAMS:2019:7705",
+              "ECLI:NL:RBAMS:2019:9887",
+              "ECLI:NL:RBAMS:2020:2183",
+              "ECLI:NL:RBAMS:2020:5174",
+              "ECLI:NL:RBAMS:2020:7536",
+              "ECLI:NL:RBAMS:2020:7574",
+              "ECLI:NL:RBAMS:2021:1020",
+              "ECLI:NL:RBAMS:2021:1721",
+              "ECLI:NL:RBAMS:2021:174",
+              "ECLI:NL:RBAMS:2021:3161",
+              "ECLI:NL:RBAMS:2021:3420",
+              "ECLI:NL:RBAMS:2021:405",
+              "ECLI:NL:RBAMS:2021:532",
+              "ECLI:NL:RBAMS:2021:619",
+              "ECLI:NL:RBAMS:2021:794",
+              "ECLI:NL:RBAMS:2022:152",
+              "ECLI:NL:RBAMS:2022:2342",
+              "ECLI:NL:RBAMS:2022:2345",
+              "ECLI:NL:RBAMS:2022:4661",
+              "ECLI:NL:RBAMS:2022:5286",
+              "ECLI:NL:RBAMS:2022:5506",
+              "ECLI:NL:RBAMS:2022:621",
+              "ECLI:NL:RBAMS:2023:2523",
+              "ECLI:NL:RBAMS:2023:3488",
+              "ECLI:NL:RBAMS:2023:3670",
+              "ECLI:NL:RBAMS:2023:399",
+              "ECLI:NL:RBAMS:2023:4548",
+              "ECLI:NL:RBAMS:2023:5257",
+              "ECLI:NL:RBAMS:2023:5509",
+              "ECLI:NL:RBAMS:2023:5510",
+              "ECLI:NL:RBAMS:2023:559",
+              "ECLI:NL:RBAMS:2023:5743",
+              "ECLI:NL:RBAMS:2023:6456",
+              "ECLI:NL:RBAMS:2023:6530",
+              "ECLI:NL:RBAMS:2023:773",
+              "ECLI:NL:RBAMS:2023:7739",
+              "ECLI:NL:RBAMS:2024:1439",
+              "ECLI:NL:RBAMS:2024:5879",
+              "ECLI:NL:RBAMS:2025:1943",
+              "ECLI:NL:RBAMS:2025:3052",
+              "ECLI:NL:RBAMS:2025:6000",
+              "ECLI:NL:RBAMS:2025:7030",
+              "ECLI:NL:RBAMS:2025:882",
+              "ECLI:NL:RBDHA:2019:14670",
+              "ECLI:NL:RBDHA:2019:1988",
+              "ECLI:NL:RBDHA:2019:4323",
+              "ECLI:NL:RBDHA:2019:6302",
+              "ECLI:NL:RBDHA:2020:12154",
+              "ECLI:NL:RBDHA:2021:13450",
+              "ECLI:NL:RBDHA:2021:759",
+              "ECLI:NL:RBDHA:2021:9925",
+              "ECLI:NL:RBDHA:2022:13802",
+              "ECLI:NL:RBDHA:2022:3353",
+              "ECLI:NL:RBDHA:2023:21425",
+              "ECLI:NL:RBDHA:2024:4473",
+              "ECLI:NL:RBDHA:2025:1113",
+              "ECLI:NL:RBDHA:2025:1138",
+              "ECLI:NL:RBDHA:2025:16243",
+              "ECLI:NL:RBDHA:2025:20030",
+              "ECLI:NL:RBDHA:2025:24938",
+              "ECLI:NL:RBDHA:2025:26804",
+              "ECLI:NL:RBGEL:2019:1774",
+              "ECLI:NL:RBGEL:2020:6551",
+              "ECLI:NL:RBGEL:2024:266",
+              "ECLI:NL:RBGEL:2025:1815",
+              "ECLI:NL:RBGEL:2025:5218",
+              "ECLI:NL:RBLIM:2020:6702",
+              "ECLI:NL:RBLIM:2021:2862",
+              "ECLI:NL:RBLIM:2021:4060",
+              "ECLI:NL:RBLIM:2022:1444",
+              "ECLI:NL:RBLIM:2022:6330",
+              "ECLI:NL:RBLIM:2025:12926",
+              "ECLI:NL:RBLIM:2025:4107",
+              "ECLI:NL:RBMNE:2018:5020",
+              "ECLI:NL:RBMNE:2019:1255",
+              "ECLI:NL:RBMNE:2019:2434",
+              "ECLI:NL:RBMNE:2019:3644",
+              "ECLI:NL:RBMNE:2019:5203",
+              "ECLI:NL:RBMNE:2020:2232",
+              "ECLI:NL:RBMNE:2020:3304",
+              "ECLI:NL:RBMNE:2020:5410",
+              "ECLI:NL:RBMNE:2021:1354",
+              "ECLI:NL:RBMNE:2021:1355",
+              "ECLI:NL:RBMNE:2021:6564",
+              "ECLI:NL:RBMNE:2022:1358",
+              "ECLI:NL:RBMNE:2022:2320",
+              "ECLI:NL:RBMNE:2022:2321",
+              "ECLI:NL:RBMNE:2022:2565",
+              "ECLI:NL:RBMNE:2022:3438",
+              "ECLI:NL:RBMNE:2023:7659",
+              "ECLI:NL:RBMNE:2024:3622",
+              "ECLI:NL:RBMNE:2024:6857",
+              "ECLI:NL:RBMNE:2025:6141",
+              "ECLI:NL:RBMNE:2025:6857",
+              "ECLI:NL:RBMNE:2026:2289",
+              "ECLI:NL:RBMNE:2026:429",
+              "ECLI:NL:RBNHO:2019:4283",
+              "ECLI:NL:RBNHO:2020:9786",
+              "ECLI:NL:RBNHO:2021:4235",
+              "ECLI:NL:RBNHO:2021:5101",
+              "ECLI:NL:RBNHO:2022:6525",
+              "ECLI:NL:RBNHO:2023:14261",
+              "ECLI:NL:RBNHO:2023:3730",
+              "ECLI:NL:RBNHO:2025:1087",
+              "ECLI:NL:RBNHO:2025:15561",
+              "ECLI:NL:RBNHO:2026:132",
+              "ECLI:NL:RBNNE:2019:5063",
+              "ECLI:NL:RBNNE:2021:738",
+              "ECLI:NL:RBNNE:2022:1231",
+              "ECLI:NL:RBNNE:2022:479",
+              "ECLI:NL:RBNNE:2024:3928",
+              "ECLI:NL:RBNNE:2024:4473",
+              "ECLI:NL:RBNNE:2026:502",
+              "ECLI:NL:RBOBR:2019:6316",
+              "ECLI:NL:RBOBR:2020:2534",
+              "ECLI:NL:RBOBR:2021:2159",
+              "ECLI:NL:RBOBR:2021:5776",
+              "ECLI:NL:RBOBR:2022:5442",
+              "ECLI:NL:RBOVE:2018:4797",
+              "ECLI:NL:RBOVE:2019:3754",
+              "ECLI:NL:RBOVE:2019:3755",
+              "ECLI:NL:RBOVE:2021:2147",
+              "ECLI:NL:RBOVE:2022:1336",
+              "ECLI:NL:RBOVE:2023:1948",
+              "ECLI:NL:RBOVE:2024:2855",
+              "ECLI:NL:RBOVE:2026:283",
+              "ECLI:NL:RBOVE:2026:284",
+              "ECLI:NL:RBROT:2018:7070",
+              "ECLI:NL:RBROT:2019:10387",
+              "ECLI:NL:RBROT:2020:13357",
+              "ECLI:NL:RBROT:2020:293",
+              "ECLI:NL:RBROT:2020:515",
+              "ECLI:NL:RBROT:2021:7210",
+              "ECLI:NL:RBROT:2022:7239",
+              "ECLI:NL:RBROT:2023:12066",
+              "ECLI:NL:RBROT:2023:168",
+              "ECLI:NL:RBROT:2024:11437",
+              "ECLI:NL:RBROT:2024:4670",
+              "ECLI:NL:RBROT:2024:6248",
+              "ECLI:NL:RBROT:2024:9298",
+              "ECLI:NL:RBROT:2025:10112",
+              "ECLI:NL:RBROT:2025:11248",
+              "ECLI:NL:RBROT:2025:11287",
+              "ECLI:NL:RBROT:2026:3605",
+              "ECLI:NL:RBROT:2026:882",
+              "ECLI:NL:RBZWB:2019:1336",
+              "ECLI:NL:RBZWB:2021:1970",
+              "ECLI:NL:RBZWB:2021:756",
+              "ECLI:NL:RBZWB:2022:6636",
+              "ECLI:NL:RBZWB:2023:166",
+              "ECLI:NL:RBZWB:2025:1568",
+              "ECLI:NL:RBZWB:2025:7551",
+              "ECLI:NL:RVS:2020:1743",
+              "ECLI:NL:RVS:2023:2072",
+              "ECLI:NL:RVS:2023:289"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0001827",
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570084/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art36",
+        "number": "36",
+        "heading": "Artikel 36. Geschilbeslechting door Autoriteit persoonsgegevens of via gedragscode",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.3. Rechtsbescherming",
+        "text": "1 De belanghebbende kan zich ook binnen de termijn bepaald voor het instellen van beroep op grond van de Algemene wet bestuursrecht, dan wel die, bedoeld in artikel 35, tweede lid, tot de Autoriteit persoonsgegevens wenden met het verzoek te bemiddelen of te adviseren in zijn geschil met de verwerkingsverantwoordelijke, dan wel gebruik maken van een geschillenbeslechtingsregeling als bedoeld in artikel 40, tweede lid, onderdeel k, van de verordening, op grond van een goedgekeurde gedragscode als bedoeld in artikel 40, vijfde lid, van de verordening. In dat geval kan het beroep in afwijking van artikel 6:7 van de Algemene wet bestuursrecht nog worden ingesteld dan wel de procedure ingevolge artikel 35 nog aanhangig worden gemaakt nadat de belanghebbende van de Autoriteit persoonsgegevens bericht heeft ontvangen dat de behandeling van de zaak is beëindigd of ingevolge de geschillenbeslechtingsregeling, bericht heeft ontvangen dat de behandeling van de zaak is beëindigd, doch uiterlijk zes weken na dat tijdstip.\n\n2 Tijdens de behandeling van het beroep en de procedure, bedoeld in het eerste lid, kunnen de instanties die zijn belast met de behandeling van het geschil, advies van de Autoriteit persoonsgegevens inwinnen.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel36",
+        "lido_citations": {
+          "incoming": {
+            "total": 11,
+            "distinct_laws": [
+              "BWBR0041688",
+              "BWBR0042136"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHSHE:2022:80",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:RBGEL:2024:200",
+              "ECLI:NL:RBNHO:2023:860"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570094/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art37",
+        "number": "37",
+        "heading": "Artikel 37. Vertegenwoordiging van betrokkenen",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.3. Rechtsbescherming",
+        "text": "Een verwerking kan niet ten grondslag worden gelegd aan een vordering als bedoeld in artikel 305a, van Boek 3 van het Burgerlijk Wetboek of een beroep ingesteld in een bestuursrechtelijke procedure door een belanghebbende in de zin van artikel 1:2, derde lid, van de Algemene wet bestuursrecht, voor zover degene die door deze verwerking wordt getroffen, daartegen bezwaar heeft.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel37",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [
+              "BWBR0033715"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2021:7647",
+              "ECLI:NL:RBAMS:2023:6694",
+              "ECLI:NL:RBAMS:2024:4264",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0005291",
+              "BWBR0005537"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570104/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art38",
+        "number": "38",
+        "heading": "Artikel 38. Opschortende werking bezwaar en beroep",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.3. Rechtsbescherming",
+        "text": "De werking van de beschikking tot oplegging van de bestuurlijke boete wordt opgeschort totdat de bezwaar- of beroepstermijn is verstreken of, indien bezwaar is gemaakt of beroep is ingesteld, totdat op het bezwaar of het beroep is beslist.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel38",
+        "lido_citations": {
+          "incoming": {
+            "total": 4,
+            "distinct_laws": [
+              "BWBR0033715"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBGEL:2020:3159",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570114/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art39",
+        "number": "39",
+        "heading": "Artikel 39. Geheimhoudingsplicht",
+        "chapter": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+        "paragraph": "Paragraaf 3.4. De functionaris voor gegevensbescherming",
+        "text": "De functionaris voor gegevensbescherming, bedoeld in de artikelen 37 tot en met 39 van de verordening, is verplicht tot geheimhouding van hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden, tenzij de betrokkene in bekendmaking toestemt.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk3/Artikel39",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570134/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art40",
+        "number": "40",
+        "heading": "Artikel 40. Uitzonderingen op verbod geautomatiseerde individuele besluitvorming",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 Artikel 22, eerste lid, van de verordening geldt niet indien de in die bepaling bedoelde geautomatiseerde individuele besluitvorming, anders dan op basis van profilering, noodzakelijk is om te voldoen aan een wettelijke verplichting die op de verwerkingsverantwoordelijke rust of noodzakelijk is voor de vervulling van een taak van algemeen belang.\n\n2 Bij de geautomatiseerde individuele besluitvorming, bedoeld in het eerste lid, treft de verwerkingsverantwoordelijke passende maatregelen die strekken tot bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene.\n\n3 Indien de verwerkingsverantwoordelijke geen bestuursorgaan is, dan zijn passende maatregelen als bedoeld in het tweede lid, in ieder geval getroffen indien het recht op menselijke tussenkomst, het recht voor betrokkene om zijn standpunt kenbaar te maken en het recht om het besluit aan te vechten, zijn geborgd.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel40",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [
+              "BWBR0009019"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570164/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art41",
+        "number": "41",
+        "heading": "Artikel 41. Uitzonderingen op rechten betrokkene en plichten verwerkingsverantwoordelijke",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 De verwerkingsverantwoordelijke kan de verplichtingen en rechten, bedoeld in de artikelen 12 tot en met 21 en artikel 34 van de verordening, buiten toepassing laten voor zover zulks noodzakelijk en evenredig is ter waarborging van:\n\na. de nationale veiligheid;\n\nb. landsverdediging;\n\nc. de openbare veiligheid;\n\nd. de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid;\n\ne. andere belangrijke doelstellingen van algemeen belang van de Europese Unie of van Nederland, met name een belangrijk economisch of financieel belang van de Europese Unie of van Nederland, met inbegrip van monetaire, budgettaire en fiscale aangelegenheden, volksgezondheid en sociale zekerheid;\n\nf. de bescherming van de onafhankelijkheid van de rechter en gerechtelijke procedures;\n\ng. de voorkoming, het onderzoek, de opsporing en de vervolging van schendingen van de beroepscodes voor gereglementeerde beroepen;\n\nh. een taak op het gebied van toezicht, inspectie of regelgeving die verband houdt, al is het incidenteel, met de uitoefening van het openbaar gezag in de gevallen, bedoeld in de onderdelen a, b, c, d, e en g;\n\ni. de bescherming van de betrokkene of van de rechten en vrijheden van anderen; of\n\nj. de inning van civielrechtelijke vorderingen.\n\n2 Bij de toepassing van het eerste lid houdt de verwerkingsverantwoordelijke rekening met in ieder geval, voor zover van toepassing:\n\na. de doeleinden van de verwerking of van de categorieën van verwerking;\n\nb. de categorieën van persoonsgegevens;\n\nc. het toepassingsgebied van de ingevoerde beperkingen;\n\nd. de waarborgen ter voorkoming van misbruik of onrechtmatige toegang of doorgifte;\n\ne. de specificatie van de verwerkingsverantwoordelijke of de categorieën van verwerkingsverantwoordelijken;\n\nf. de opslagperiodes en de toepasselijke waarborgen, rekening houdend met de aard, de omvang en de doeleinden van de verwerking of van de categorieën van verwerking;\n\ng. de risico's voor de rechten en vrijheden van de betrokkenen; en\n\nh. het recht van betrokkenen om van de beperking op de hoogte te worden gesteld, tenzij dit afbreuk kan doen aan het doel van de beperking.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel41",
+        "lido_citations": {
+          "incoming": {
+            "total": 106,
+            "distinct_laws": [
+              "BWBR0009398",
+              "BWBR0010256",
+              "BWBR0034925",
+              "BWBR0035362",
+              "BWBR0042096",
+              "BWBR0044930",
+              "BWBR0046483",
+              "BWBR0050665",
+              "BWBR0050740",
+              "BWBR0050899"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2022:2192",
+              "ECLI:NL:GHAMS:2023:796",
+              "ECLI:NL:GHARL:2023:7768",
+              "ECLI:NL:GHARL:2024:2100",
+              "ECLI:NL:GHARL:2025:7218",
+              "ECLI:NL:GHARL:2026:1050",
+              "ECLI:NL:GHDHA:2021:2793",
+              "ECLI:NL:GHDHA:2023:875",
+              "ECLI:NL:GHSHE:2024:2602",
+              "ECLI:NL:HR:2024:1372",
+              "ECLI:NL:PHR:2021:83",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:PHR:2022:762",
+              "ECLI:NL:PHR:2023:823",
+              "ECLI:NL:PHR:2024:416",
+              "ECLI:NL:PHR:2024:750",
+              "ECLI:NL:RBAMS:2019:4418",
+              "ECLI:NL:RBAMS:2019:6331",
+              "ECLI:NL:RBAMS:2021:1018",
+              "ECLI:NL:RBAMS:2021:1019",
+              "ECLI:NL:RBAMS:2021:1020",
+              "ECLI:NL:RBAMS:2021:6826",
+              "ECLI:NL:RBAMS:2023:1831",
+              "ECLI:NL:RBAMS:2023:5257",
+              "ECLI:NL:RBAMS:2024:4019",
+              "ECLI:NL:RBAMS:2024:8830",
+              "ECLI:NL:RBAMS:2025:3052",
+              "ECLI:NL:RBDHA:2018:10910",
+              "ECLI:NL:RBDHA:2019:13029",
+              "ECLI:NL:RBDHA:2021:13435",
+              "ECLI:NL:RBDHA:2021:15451",
+              "ECLI:NL:RBDHA:2021:931",
+              "ECLI:NL:RBDHA:2023:22166",
+              "ECLI:NL:RBDHA:2023:22167",
+              "ECLI:NL:RBDHA:2023:22168",
+              "ECLI:NL:RBDHA:2023:22169",
+              "ECLI:NL:RBDHA:2024:14477",
+              "ECLI:NL:RBDHA:2025:1113",
+              "ECLI:NL:RBDHA:2025:1138",
+              "ECLI:NL:RBDHA:2025:6422",
+              "ECLI:NL:RBGEL:2020:7103",
+              "ECLI:NL:RBGEL:2023:1646",
+              "ECLI:NL:RBGEL:2025:277",
+              "ECLI:NL:RBGEL:2026:1698",
+              "ECLI:NL:RBLIM:2021:5246",
+              "ECLI:NL:RBLIM:2022:4404",
+              "ECLI:NL:RBLIM:2026:284",
+              "ECLI:NL:RBLIM:2026:447",
+              "ECLI:NL:RBMNE:2020:4507",
+              "ECLI:NL:RBMNE:2020:5410",
+              "ECLI:NL:RBMNE:2022:1345",
+              "ECLI:NL:RBMNE:2023:7141",
+              "ECLI:NL:RBMNE:2024:2150",
+              "ECLI:NL:RBMNE:2024:7789",
+              "ECLI:NL:RBMNE:2025:1029",
+              "ECLI:NL:RBMNE:2025:6080",
+              "ECLI:NL:RBMNE:2025:6587",
+              "ECLI:NL:RBMNE:2025:7516",
+              "ECLI:NL:RBMNE:2025:91",
+              "ECLI:NL:RBNHO:2019:4283",
+              "ECLI:NL:RBNHO:2023:7865",
+              "ECLI:NL:RBNHO:2024:8577",
+              "ECLI:NL:RBNHO:2025:3908",
+              "ECLI:NL:RBNNE:2024:1214",
+              "ECLI:NL:RBNNE:2024:3226",
+              "ECLI:NL:RBNNE:2026:1495",
+              "ECLI:NL:RBOBR:2022:5442",
+              "ECLI:NL:RBOBR:2024:2398",
+              "ECLI:NL:RBOBR:2024:5039",
+              "ECLI:NL:RBOVE:2025:2172",
+              "ECLI:NL:RBOVE:2026:715",
+              "ECLI:NL:RBROT:2020:13357",
+              "ECLI:NL:RBROT:2021:13605",
+              "ECLI:NL:RBROT:2022:7239",
+              "ECLI:NL:RBROT:2023:1189",
+              "ECLI:NL:RBROT:2023:7182",
+              "ECLI:NL:RBROT:2023:7183",
+              "ECLI:NL:RBROT:2024:10919",
+              "ECLI:NL:RBROT:2024:2310",
+              "ECLI:NL:RBROT:2025:14934",
+              "ECLI:NL:RBROT:2025:8811",
+              "ECLI:NL:RBZWB:2020:1326",
+              "ECLI:NL:RBZWB:2020:2150",
+              "ECLI:NL:RBZWB:2022:5457",
+              "ECLI:NL:RBZWB:2025:7551",
+              "ECLI:NL:RVS:2023:394",
+              "ECLI:NL:RVS:2024:376",
+              "ECLI:NL:RVS:2025:1319",
+              "ECLI:NL:RVS:2025:2316",
+              "ECLI:NL:RVS:2026:226"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570174/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art42",
+        "number": "42",
+        "heading": "Artikel 42. Uitzondering op meldplicht datalekken aan de betrokkene",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "Artikel 34 van de verordening is niet van toepassing op financiële ondernemingen als bedoeld in de Wet op het financieel toezicht.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel42",
+        "lido_citations": {
+          "incoming": {
+            "total": 2,
+            "distinct_laws": [
+              "BWBR0034925"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2020:4507"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0020368"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570184/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art43",
+        "number": "43",
+        "heading": "Artikel 43. Uitzonderingen inzake journalistieke doeleinden of academische, artistieke of literaire uitdrukkingsvormen",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 Deze wet, met uitzondering van de artikelen 1, 2, 3, 4 en 5, eerste en tweede lid, is niet van toepassing op de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van uitsluitend academische, artistieke of literaire uitdrukkingsvormen.\n\n2 De navolgende hoofdstukken en artikelen van de verordening zijn niet van toepassing op de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van academische, artistieke of literaire uitdrukkingsvormen:\n\na. artikel 7, derde lid, en artikel 11, tweede lid:\n\nb. hoofdstuk III;\n\nc. hoofdstuk IV, met uitzondering van de artikelen 24, 25, 28, 29 en 32;\n\nd. hoofdstuk V;\n\ne. hoofdstuk VI; en\n\nf. hoofdstuk VII.\n\n3 De artikelen 9 en 10 van de verordening zijn niet van toepassing voor zover de verwerking van de in die artikelen bedoelde gegevens noodzakelijk is voor het journalistieke doel of de academische, artistieke of literaire uitdrukkingsvorm.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel43",
+        "lido_citations": {
+          "incoming": {
+            "total": 21,
+            "distinct_laws": [
+              "BWBR0049262"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2018:3546",
+              "ECLI:NL:GHAMS:2022:3023",
+              "ECLI:NL:GHSHE:2022:3450",
+              "ECLI:NL:PHR:2018:941",
+              "ECLI:NL:RBAMS:2018:7397",
+              "ECLI:NL:RBAMS:2019:4533",
+              "ECLI:NL:RBAMS:2019:645",
+              "ECLI:NL:RBAMS:2020:1728",
+              "ECLI:NL:RBAMS:2023:3617",
+              "ECLI:NL:RBAMS:2023:4466",
+              "ECLI:NL:RBAMS:2025:10200",
+              "ECLI:NL:RBLIM:2024:7694",
+              "ECLI:NL:RBMNE:2020:24",
+              "ECLI:NL:RBMNE:2020:4237",
+              "ECLI:NL:RBMNE:2020:5111",
+              "ECLI:NL:RBMNE:2023:7751",
+              "ECLI:NL:RBNHO:2020:8537",
+              "ECLI:NL:RBOVE:2023:826",
+              "ECLI:NL:RBZWB:2018:4139",
+              "ECLI:NL:RVS:2023:1046"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570194/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art44",
+        "number": "44",
+        "heading": "Artikel 44. Uitzonderingen inzake wetenschappelijk onderzoek en statistiek",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "Indien een verwerking wordt verricht door instellingen of diensten voor wetenschappelijk onderzoek of statistiek, en de nodige voorzieningen zijn getroffen om te verzekeren dat de persoonsgegevens uitsluitend voor statistische of wetenschappelijke doeleinden kunnen worden gebruikt, kan de verwerkingsverantwoordelijke de artikelen 15, 16 en 18 van de verordening buiten toepassing laten.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel44",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570204/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art45",
+        "number": "45",
+        "heading": "Artikel 45. Uitzonderingen inzake archivering in het algemeen belang",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 De artikelen 15, 16, 18, eerste lid, onderdeel a, en 20 van de verordening zijn niet van toepassing bij de verwerking van persoonsgegevens die deel uitmaken van:\n\na. archiefbescheiden die voor blijvende bewaring berusten bij archiefbewaarplaatsen als bedoeld in artikel 1, onderdeel f, van de Archiefwet 1995; of\n\nb. andere archiefcollecties van blijvende waarde voor het algemeen belang die voor blijvende bewaring berusten bij andere voor het publiek toegankelijke instellingen die geen winstoogmerk hebben en waarvan de activiteiten in hoofdzaak uit publieke middelen worden bekostigd, of waarvan de leden van het bestuursorgaan, het leidinggevend orgaan of het toezichthoudend orgaan voor meer dan de helft door de staat, zijn territoriale lichamen of andere publiekrechtelijke instellingen zijn aangewezen.\n\n2 Betrokkene heeft het recht om inzage te verkrijgen in de archiefbescheiden, tenzij verzoeken om inzage zodanig ongericht zijn dat deze in redelijkheid niet kunnen worden ingewilligd.\n\n3 Betrokkene heeft het recht om, in geval van onjuiste persoonsgegevens, zijn eigen lezing aan de desbetreffende archiefbescheiden toe te voegen.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel45",
+        "lido_citations": {
+          "incoming": {
+            "total": 3,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:PHR:2024:750",
+              "ECLI:NL:RBNHO:2021:8514",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0007376"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570214/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art46",
+        "number": "46",
+        "heading": "Artikel 46. Verwerking nationaal identificatienummer",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "Een nummer dat ter identificatie van een persoon bij wet is voorgeschreven, wordt bij de verwerking van persoonsgegevens slechts gebruikt ter uitvoering van de desbetreffende wet dan wel voor doeleinden bij de wet bepaald.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel46",
+        "lido_citations": {
+          "incoming": {
+            "total": 34,
+            "distinct_laws": [
+              "BWBR0017449",
+              "BWBR0017613",
+              "BWBR0027859",
+              "BWBR0029333",
+              "BWBR0035779",
+              "BWBR0038338",
+              "BWBR0040886",
+              "BWBR0045754"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBAMS:2019:2295",
+              "ECLI:NL:RBDHA:2024:13303",
+              "ECLI:NL:RBDHA:2025:13596",
+              "ECLI:NL:RBGEL:2024:6965",
+              "ECLI:NL:RBLIM:2024:2976",
+              "ECLI:NL:RBMNE:2020:73",
+              "ECLI:NL:RBNNE:2026:1804",
+              "ECLI:NL:RBOBR:2025:2446",
+              "ECLI:NL:RBOBR:2025:5815",
+              "ECLI:NL:RBOBR:2025:8214",
+              "ECLI:NL:RBOVE:2022:3758",
+              "ECLI:NL:RBOVE:2024:3389",
+              "ECLI:NL:RBROT:2024:4405",
+              "ECLI:NL:RBZWB:2024:2435",
+              "ECLI:NL:RBZWB:2024:4576",
+              "ECLI:NL:RBZWB:2025:2138",
+              "ECLI:NL:RBZWB:2025:3257",
+              "ECLI:NL:RBZWB:2025:6435",
+              "ECLI:NL:RBZWB:2025:7624",
+              "ECLI:NL:RBZWB:2026:2742",
+              "ECLI:NL:RVS:2025:3096",
+              "ECLI:NL:RVS:2025:4557",
+              "ECLI:NL:RVS:2026:2690",
+              "ECLI:NL:RVS:2026:607"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570224/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art47",
+        "number": "47",
+        "heading": "Artikel 47. Uitzonderingen op rechten betrokkene bij openbare registers",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 De artikelen 15, 16, 18 en 19 van de verordening zijn niet van toepassing op bij de wet ingestelde openbare registers, indien bij of krachtens die wet een bijzondere procedure voor de verbetering, aanvulling, verwijdering of afscherming van gegevens is geregeld.\n\n2 Artikel 21 van de verordening is niet van toepassing op bij de wet ingestelde openbare registers.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel47",
+        "lido_citations": {
+          "incoming": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0009019"
+            ],
+            "distinct_case_law": [
+              "ECLI:NL:RBDHA:2025:20030",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBROT:2021:11762",
+              "ECLI:NL:RBZWB:2026:2742"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570234/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art47a",
+        "number": "47a",
+        "heading": "Artikel 47a. Tijdelijke commissies en adviescolleges",
+        "chapter": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+        "paragraph": null,
+        "text": "1 Een commissie als bedoeld in artikel 1, onderdeel b, van de Wet vergoedingen adviescolleges en commissies, dan wel een adviescollege dat is ingesteld op grond van artikel 5 of 6 van de Kaderwet adviescolleges, die voor bepaalde tijd wordt ingesteld bij koninklijk of ministerieel besluit of ministeriele regeling, kan persoonsgegevens verwerken, indien in de instellingsregeling of het instellingsbesluit is opgenomen:\n\na. de taak van algemeen belang als bedoeld in artikel 6, onderdeel e van de verordening en het doel ten behoeve waarvan de persoonsgegevens worden verwerkt;\n\nb. de verwerkingsverantwoordelijke voor de gegevensverwerking; en\n\nc. de maximale bewaartermijn.\n\n2 In afwijking van artikel 46 kan in de instellingsregeling of het instellingsbesluit worden bepaald dat de commissie of het adviescollege ten behoeve van het in de instellingsregeling of instellingsbesluit opgenomen doel nummers die dienen ter identificatie als bedoeld in artikel 46 kan verwerken. In de instellingsregeling worden passende waarborgen voor de rechten en vrijheden van de betrokkene vastgesteld.\n\n3 Gelet op artikel 9, aanhef en onder g, en artikel 10 van de verordening is het verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken door een commissie of adviescollege als bedoeld in het eerste lid niet van toepassing indien:\n\na. de verwerking noodzakelijk is in het kader van een taak van zwaarwegend algemeen belang, die in de instellingsregeling is opgenomen;\n\nb. het vragen van uitdrukkelijke toestemming onmogelijk blijkt of een onevenredige inspanning vergt; en\n\nc. er in de instellingsregeling of instellingsbesluit voldoende passende en specifieke waarborgen zijn opgenomen ter bescherming van de grondrechten en fundamentele belangen van de betrokkene.\n\n4 Indien een commissie of adviescollege als bedoeld in het eerste lid, bijzondere categorieën van persoonsgegevens of persoonsgegevens van strafrechtelijke aard verwerkt, stelt de commissie of het adviescollege voorafgaand aan haar opheffing een verslag op over de wijze waarop deze persoonsgegevens zijn verwerkt.\n\n5 Indien een commissie of adviescollege als bedoeld in het eerste lid gegevens over de gezondheid verwerkt, is artikel 30, vierde lid van overeenkomstige toepassing.\n\n6 De instellingsregeling of het instellingsbesluit waarin een commissie als bedoeld in het eerste lid wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens, wordt onverwijld meegedeeld aan beide kamers der Staten-Generaal.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk4/Artikel47a",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art48",
+        "number": "48",
+        "heading": "Artikel 48. Overgangsrecht",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "1 Degene die voorafgaand aan de inwerkingtreding van deze wet is benoemd als lid van het College bescherming persoonsgegevens, is van rechtswege benoemd als lid van de Autoriteit persoonsgegevens.\n\n2 Degene die voorafgaand aan de inwerkingtreding van deze wet is benoemd als voorzitter van het College bescherming persoonsgegevens, is van rechtswege benoemd als voorzitter van de Autoriteit persoonsgegevens.\n\n3 Voor het bepalen van het tijdvak van de benoeming, bedoeld in artikel 7, vijfde lid, geldt het tijdvak, vervuld als voorzitter van het College bescherming persoonsgegevens, voorafgaand aan de inwerkingtreding van deze wet als een tijdvak, vervuld als voorzitter van de Autoriteit persoonsgegevens.\n\n4 Op de leden van het College bescherming persoonsgegevens die zijn benoemd of herbenoemd voor 1 januari 2014, blijft artikel 53, derde lid, eerste, tweede en derde volzin, van de Wet bescherming persoonsgegevens van toepassing, zoals dat luidde voor dat tijdstip.\n\n5 De ambtenaar die voorafgaand aan de inwerkingtreding van deze wet is benoemd in het secretariaat van het College bescherming persoonsgegevens, is van rechtswege benoemd als ambtenaar in het secretariaat van de Autoriteit persoonsgegevens.\n\n6 Besluiten die voorafgaand aan de inwerkingtreding van deze wet zijn genomen door het College bescherming persoonsgegevens gelden van rechtswege als besluiten, genomen door de Autoriteit persoonsgegevens.\n\n7 In wettelijke procedures en rechtsgedingen waarbij het College bescherming persoonsgegevens voorafgaand aan de inwerkingtreding van deze wet is betrokken, treedt de Autoriteit persoonsgegevens van rechtswege in de plaats van het College bescherming persoonsgegevens.\n\n8 Op wettelijke procedures en rechtsgedingen waarbij het College bescherming persoonsgegevens voorafgaand aan de inwerkingtreding van deze wet is betrokken, is het recht van toepassing zoals dit gold voorafgaand aan de inwerkingtreding van deze wet.\n\n9 In samenwerkingsprotocollen treedt op het tijdstip van inwerkingtreding van deze wet de Autoriteit persoonsgegevens van rechtswege in de plaats van het College bescherming persoonsgegevens.\n\n10 Op schriftelijke verzoeken als bedoeld in artikel 46 van de Wet bescherming persoonsgegevens, rechtsgedingen op basis van artikel 49 van de Wet bescherming persoonsgegevens en vorderingen op basis van artikel 50 van de Wet bescherming persoonsgegevens, die op het moment van inwerkingtreding van deze wet reeds aanhangig zijn bij de rechtbank is het recht van toepassing zoals dit gold voorafgaand aan de inwerkingtreding van deze wet.\n\n11 Een verklaring van rechtmatigheid van de gegevensverwerking die voorafgaand aan de inwerkingtreding van deze wet is afgegeven op grond van artikel 32, vijfde lid, in samenhang met artikel 22, vierde lid, onder c, van de Wet bescherming persoonsgegevens, geldt van rechtswege als een vergunning in de zin van artikel 33, vierde lid, onder c, van deze wet.\n\n12 Voor zover deze wet daarin niet voorziet, kunnen bij algemene maatregel van bestuur regels of nadere regels worden gesteld omtrent de invoering van de verordening of deze wet.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel48",
+        "lido_citations": {
+          "incoming": {
+            "total": 33,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2019:3232",
+              "ECLI:NL:GHAMS:2020:648",
+              "ECLI:NL:GHARL:2019:3665",
+              "ECLI:NL:GHARL:2019:7410",
+              "ECLI:NL:GHARL:2019:7537",
+              "ECLI:NL:GHARL:2019:9352",
+              "ECLI:NL:GHARL:2020:3374",
+              "ECLI:NL:GHARL:2023:3598",
+              "ECLI:NL:GHDHA:2019:2398",
+              "ECLI:NL:GHDHA:2021:827",
+              "ECLI:NL:GHDHA:2023:1262",
+              "ECLI:NL:GHSHE:2021:1301",
+              "ECLI:NL:PHR:2021:133",
+              "ECLI:NL:RBAMS:2018:4896",
+              "ECLI:NL:RBDHA:2019:6145",
+              "ECLI:NL:RBDHA:2019:6302",
+              "ECLI:NL:RBDHA:2020:7608",
+              "ECLI:NL:RBDHA:2020:865",
+              "ECLI:NL:RBGEL:2018:5551",
+              "ECLI:NL:RBMNE:2018:5594",
+              "ECLI:NL:RBMNE:2019:2639",
+              "ECLI:NL:RBMNE:2019:4011",
+              "ECLI:NL:RBMNE:2019:5430",
+              "ECLI:NL:RBMNE:2021:575",
+              "ECLI:NL:RBMNE:2025:7838",
+              "ECLI:NL:RBOBR:2018:3609",
+              "ECLI:NL:RBOBR:2019:1647",
+              "ECLI:NL:RBOVE:2018:5151",
+              "ECLI:NL:RBZWB:2021:2046",
+              "ECLI:NL:RVS:2020:898",
+              "ECLI:NL:RVS:2020:899",
+              "ECLI:NL:RVS:2020:900",
+              "ECLI:NL:RVS:2020:901"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 9,
+            "distinct_laws": [
+              "BWBR0011468"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570254/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art48a",
+        "number": "48a",
+        "heading": "Artikel 48a. Overgangsrecht II",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "1 [Red: Wijzigt deze wet.]\n\n2 [Red: Wijzigt deze wet.]\n\n3 Op het tijdstip van inwerkingtreding van dit artikel zijn de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst, van rechtswege ontslagen en aangesteld als ambtenaar in dienst van de Autoriteit persoonsgegevens. De overgang van de in de vorige volzin bedoelde ambtenaren vindt plaats met een rechtspositie die als geheel ten minste gelijkwaardig is aan die welke voor elk van hen gold op de dag voor de datum van inwerkingtreding van dit artikel.\n\n4 Onze Minister bepaalt in overeenstemming met Onze Minister van Financiën welke vermogensbestanddelen van de Staat worden toebedeeld aan de Autoriteit persoonsgegevens.\n\n5 De in het vierde lid bedoelde vermogensbestanddelen gaan op het tijdstip van inwerkingtreding van dit artikel onder algemene titel over op tegen een door Onze Minister in overeenstemming met Onze Minister van Financiën te bepalen waarde.\n\n6 Ingeval krachtens het vierde en het vijfde lid registergoederen overgaan, doet Onze Minister van Financiën de overgang van die registergoederen onverwijld inschrijven in de openbare registers, bedoeld in afdeling 2 van titel 1 van Boek 3 van het Burgerlijk Wetboek. Artikel 24, eerste lid, van Boek 3 van het Burgerlijk Wetboek is niet van toepassing.\n\n7 In wettelijke procedures en rechtsgedingen, waarbij de Autoriteit persoonsgegevens is betrokken, treedt op het tijdstip van inwerkingtreding van dit artikel de Autoriteit persoonsgegevens in de plaats van de Staat dan wel Onze Minister.\n\n8 In zaken waarin voor het tijdstip van inwerkingtreding van dit artikel aan de Nationale ombudsman is verzocht een onderzoek te doen dan wel de Nationale ombudsman een onderzoek heeft ingesteld naar een gedraging die kan worden toegerekend aan de Autoriteit persoonsgegevens, treedt de Autoriteit persoonsgegevens op dat tijdstip als bestuursorgaan in de zin van de Wet Nationale ombudsman in de plaats van Onze Minister.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel48a",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 5,
+            "distinct_laws": [
+              "BWBR0003372",
+              "BWBR0005291"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-247",
+              "stb-2018-518"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570264/2019-01-01/2019-01-01"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art48b",
+        "number": "48b",
+        "heading": "Artikel 48b. Overgangsrecht III",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "Het tweede lid van artikel 46, zoals dat luidde voor inwerkingtreding van artikel I, onderdeel T, van de Verzamelwet gegevensbescherming, blijft van toepassing ten aanzien van die algemene maatregelen van bestuur die voor deze inwerkingtreding reeds waren gebaseerd op deze delegatiegrondslag.",
+        "changed_effective_2026_09_01": true,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel48b",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [],
+          "note": "No LiDO article-level record found (LiDO's UAVG copy tops out at 2021-07-01)."
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art49",
+        "number": "49",
+        "heading": "Artikel 49. Samenloop",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "[Red: Wijzigt deze wet.]",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel49",
+        "lido_citations": {
+          "incoming": {
+            "total": 1,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:RBMNE:2025:7838"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570274/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art50",
+        "number": "50",
+        "heading": "Artikel 50. Evaluatie",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "Onze Minister zendt binnen drie jaar na de inwerkingtreding van deze wet, en vervolgens telkens na vier jaar, aan de Staten-Generaal een verslag over de effecten van deze wet in de praktijk en over de uitvoering van de wet in de praktijk.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel50",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570284/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art51",
+        "number": "51",
+        "heading": "Artikel 51. Intrekking Wet bescherming persoonsgegevens",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "De Wet bescherming persoonsgegevens wordt ingetrokken.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel51",
+        "lido_citations": {
+          "incoming": {
+            "total": 6,
+            "distinct_laws": [],
+            "distinct_case_law": [
+              "ECLI:NL:GHAMS:2019:3074",
+              "ECLI:NL:GHAMS:2021:1716",
+              "ECLI:NL:GHAMS:2021:4055",
+              "ECLI:NL:GHAMS:2023:821",
+              "ECLI:NL:PHR:2022:1154",
+              "ECLI:NL:RBOBR:2019:858"
+            ],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 3,
+            "distinct_laws": [
+              "BWBR0011468"
+            ],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": true,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570294/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art52",
+        "number": "52",
+        "heading": "Artikel 52. Citeertitel verordening",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "Verordening (EU) 2016/679 van het Europees Parlement en de Raad van 27 april 2016 betreffende de bescherming van natuurlijke personen in verband met verwerking van persoonsgegevens en betreffende het vrije verkeer van die gegevens en tot intrekking van Richtlijn 95/46/EG (algemene verordening gegevensbescherming) (PbEU 2016, L 119) wordt in overige wetgeving aangehaald als: Algemene verordening gegevensbescherming.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel52",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570304/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art53",
+        "number": "53",
+        "heading": "Artikel 53. Inwerkingtreding",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "De artikelen van deze wet treden in werking op een bij koninklijk besluit te bepalen tijdstip, dat voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel53",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570314/2018-05-25/2018-05-25"
+          ]
+        }
+      },
+      {
+        "provision_id": "BWBR0040940-art54",
+        "number": "54",
+        "heading": "Artikel 54. Citeertitel wet",
+        "chapter": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+        "paragraph": null,
+        "text": "Deze wet wordt aangehaald als: Uitvoeringswet Algemene verordening gegevensbescherming.",
+        "changed_effective_2026_09_01": false,
+        "not_yet_in_force": false,
+        "url": "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0/Hoofdstuk5/Artikel54",
+        "lido_citations": {
+          "incoming": {
+            "total": 0,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": []
+          },
+          "outgoing": {
+            "total": 2,
+            "distinct_laws": [],
+            "distinct_case_law": [],
+            "distinct_official_publications": [
+              "stb-2018-144",
+              "stb-2018-145"
+            ]
+          },
+          "has_case_law": false,
+          "cites_eu_regulation_directly": false,
+          "lido_snapshot_uris": [
+            "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0040940/14570324/2018-05-25/2018-05-25"
+          ]
+        }
+      }
+    ],
+    "provision_count": 63
+  },
+  "sources": [
+    "https://wetten.overheid.nl/BWBR0040940/2026-09-01/0",
+    "https://github.com/MinBZK/regelrecht-corpus/tree/main/regulation/nl/wet/uitvoeringswet_algemene_verordening_gegevensbescherming"
+  ],
+  "compiled_on": "2026-09-09",
+  "lido_portal_confirmed_citations": {
+    "source": "https://linkeddata.overheid.nl/front/portal/ (the LiDO portal, distinct from the SPARQL endpoint)",
+    "retrieved_on": "2026-09-15",
+    "important_note": "These three citations were found via the LiDO portal's human-facing search interface, NOT the SPARQL endpoint. The SPARQL endpoint, queried against the exact same BWB id (BWBR0040940), returns no version of this law newer than 2021-07-01, confirmed with an explicitly ordered query (ORDER BY DESC(?date)), ruling out query error as the cause. The portal shows real citations dated as recently as 2026-09-01 and 2026-09-03. This is now a directly demonstrated, reproducible finding that LiDO's portal and its SPARQL endpoint are backed by different indexes with different currency, not a single consistent dataset. Confirmed independently by Marc van Opijnen (email, 2026-09-14), who noted 'different types of indexes' behind the data and is escalating internally.",
+    "citations": [
+      {
+        "type": "law",
+        "title": "Data Protection Omnibus Act (Verzamelwet gegevensbescherming), Article I",
+        "bwb_id": "BWBR0052755",
+        "effective_date": "2026-09-01",
+        "lido_uri": "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0052755/17795334/2026-09-01/2026-09-01",
+        "significance": "Confirms, from the citing side, the connection this project already found from UAVG's own side: UAVG Article 48b explicitly names the Verzamelwet gegevensbescherming as having amended Article 46. This is now a bidirectionally confirmed relationship, found independently from both directions."
+      },
+      {
+        "type": "zbo_regulation",
+        "title": "Decision adopting Policy Rules on Disclosure by the Dutch Data Protection Authority 2026, Annex 3",
+        "bwb_id": "BWBR0053066",
+        "effective_date": "2026-09-01",
+        "lido_uri": "http://linkeddata.overheid.nl/terms/bwb/id/BWBR0053066/17859564/2026-09-01/2026-09-01",
+        "significance": "The Autoriteit Persoonsgegevens updating its own disclosure policy rules the same day UAVG itself changed, a direct example of downstream regulatory adjustment following legislative amendment."
+      },
+      {
+        "type": "case_law",
+        "title": "District Court of The Hague, kort geding, C/09/707288 / KG ZA 26-669",
+        "ecli": "ECLI:NL:RBDHA:2026:25194",
+        "decision_date": "2026-09-03",
+        "lido_uri": "http://linkeddata.overheid.nl/terms/jurisprudentie/id/ECLI:NL:RBDHA:2026:25194",
+        "significance": "A summary injunction proceeding citing UAVG only two days after this dataset's own compilation date, the most current real-world evidence of this law's active use found anywhere in this project."
+      }
+    ]
+  }
+}

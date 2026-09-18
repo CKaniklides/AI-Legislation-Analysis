@@ -1,0 +1,1403 @@
+{
+  "regulation": {
+    "celex": "32024R1689",
+    "oj_reference": "L_202401689",
+    "title": "Verordening (EU) 2024/1689 tot vaststelling van geharmoniseerde regels betreffende artificiële intelligentie (Verordening artificiële intelligentie / AI-verordening)",
+    "date_signature": "2024-06-13",
+    "date_document": "2024-06-13",
+    "date_publication": "2024-07-12",
+    "type": "Verordening (EU)",
+    "jurisdiction": "EU",
+    "language_of_this_file": "nl",
+    "legislative_procedure": "2021/0106(COD)",
+    "eu_legislative_summary": "http://publications.europa.eu/resource/legissum/4762484",
+    "responsible_commission_department": "CNECT (DG Communications Networks, Content and Technology)",
+    "eea_relevant": true,
+    "note": "This is a companion/reference dataset, not a replacement for either uploaded source file. Both /mnt/user-data/uploads/legal_text_nl__1_.html and metadata__1_.xml remain untouched."
+  },
+  "PHASED_APPLICABILITY_SCHEDULE": {
+    "importance": "CRITICAL -- this was missed entirely in the first version of this file, see correction_log below.",
+    "entry_into_force": "2024-08-01",
+    "phased_applicability_dates": [
+      {
+        "date": "2025-02-02",
+        "known_content": "Prohibited AI practices (art. 5) and AI-literacy obligations become applicable."
+      },
+      {
+        "date": "2025-08-02",
+        "known_content": "GPAI (general-purpose AI model) obligations, governance structure, and penalty provisions become applicable."
+      },
+      {
+        "date": "2026-08-02",
+        "known_content": "Most remaining obligations become applicable, including most high-risk AI system requirements (Annex III) and transparency obligations."
+      },
+      {
+        "date": "2027-08-02",
+        "known_content": "High-risk AI systems that are safety components under existing product-safety legislation (Annex I) become subject to the Regulation."
+      }
+    ],
+    "review_deadlines": [
+      "2027-08-02",
+      "2028-08-02",
+      "2029-08-01",
+      "2029-08-02",
+      "2030-08-02",
+      "2030-12-31",
+      "2031-08-02"
+    ],
+    "note": "These specific dates were extracted directly from the metadata (date_entry-into-force and date_deadline literal values on the oj/L_202401689 record); the 'known_content' descriptions for each phase-in date are general public knowledge about the AI Act's structure, not sourced from this metadata file itself, and should be verified against the actual text (articles 111-113) before being relied on for a specific finding -- especially since, per the CRITICAL_FINDING below, the uploaded HTML's articles 111-113 have themselves been amended by the Digital Omnibus and the HTML does not reflect that. GRAPH-VALIDATION NOTE: 2027-08-02 is recorded in the metadata under BOTH date_entry-into-force and date_deadline -- it is the date Annex I high-risk systems become subject to the Regulation AND is separately flagged as a deadline (likely a related reporting/review obligation). Both facts are now preserved; the first version of this file's review_deadlines list omitted the deadline instance of this date, found only during the rdflib graph-validation pass."
+  },
+  "CRITICAL_FINDING_source_text_is_outdated": {
+    "severity": "HIGH -- directly affects every finding built on legal_text_nl.html",
+    "finding": "legal_text_nl__1_.html was generated 2024-10-17. The Digital Omnibus amendment took effect 2026-07-27. Confirmed directly: none of the six articles the Digital Omnibus inserted (4a, 60a, 75a, 75b, 75c, 75d) exist anywhere in the HTML file.",
+    "consequence": "Any provision-level text extracted from legal_text_nl.html for the 42 amended articles, 6 inserted articles, or 4 amended annexes listed below should be treated as pre-amendment text, not current law.",
+    "recommended_action": "Re-fetch the AI Act's Dutch ELI text against the 2026-07-27 consolidated version before using it for any finding involving these articles/annexes."
+  },
+  "amendment_history": {
+    "enacting_amendment": {
+      "instrument": "Digital Omnibus",
+      "oj_reference": "L_202601744",
+      "effective_date": "2026-07-27",
+      "distinct_locations_amended": 88,
+      "new_articles_inserted": [
+        "4a",
+        "60a",
+        "75a",
+        "75b",
+        "75c",
+        "75d"
+      ],
+      "distinct_existing_articles_amended": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "10",
+        "11",
+        "17",
+        "25",
+        "27",
+        "28",
+        "29",
+        "30",
+        "40",
+        "42",
+        "43",
+        "50",
+        "56",
+        "57",
+        "58",
+        "60",
+        "63",
+        "64",
+        "69",
+        "70",
+        "72",
+        "75",
+        "76",
+        "77",
+        "95",
+        "96",
+        "97",
+        "99",
+        "111",
+        "113"
+      ],
+      "distinct_annexes_amended": [
+        "I",
+        "III",
+        "VIII",
+        "XIV"
+      ],
+      "all_88_locations": [
+        {
+          "node_id": "A0",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1d",
+          "readable_location": "Artikel 75 lid 1d",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A1",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "readable_location": "Artikel 27 lid 4",
+          "article_number": "27",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A15",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 111 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 111 lid 2",
+          "article_number": "111",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A19",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 3 {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 14",
+          "readable_location": "Artikel 3 punt 14",
+          "article_number": "3",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A22",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 113 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (a)",
+          "readable_location": "Artikel 113 lid 3 punt (a)",
+          "article_number": "113",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A27",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {TIT|http://publications.europa.eu/resource/authority/fd_370/TIT}",
+          "readable_location": "Artikel 75 titel [UNVERIFIED interpretation]",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A28",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 77 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+          "readable_location": "Artikel 77 lid 1",
+          "article_number": "77",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A30",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 99 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (da)",
+          "readable_location": "Artikel 99 lid 4 punt (da)",
+          "article_number": "99",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A32",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 29 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "readable_location": "Artikel 29 lid 4",
+          "article_number": "29",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A39",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 60a",
+          "readable_location": "Artikel 60a",
+          "article_number": "60a",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A43",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3a",
+          "readable_location": "Artikel 57 lid 3a",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A55",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 28 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 8",
+          "readable_location": "Artikel 28 lid 8",
+          "article_number": "28",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A60",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1e",
+          "readable_location": "Artikel 75 lid 1e",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A63",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 10",
+          "readable_location": "Artikel 57 lid 10",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A67",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 10 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5",
+          "readable_location": "Artikel 10 lid 5",
+          "article_number": "10",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A79",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 3 {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 14b",
+          "readable_location": "Artikel 3 punt 14b",
+          "article_number": "3",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A88",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 77 {TIT|http://publications.europa.eu/resource/authority/fd_370/TIT}",
+          "readable_location": "Artikel 77 titel [UNVERIFIED interpretation]",
+          "article_number": "77",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A90",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 6 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1c",
+          "readable_location": "Artikel 6 lid 1c",
+          "article_number": "6",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A93",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+          "readable_location": "Artikel 57 lid 1 alinea 1",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A95",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 40 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "readable_location": "Artikel 40 lid 2 alinea",
+          "article_number": "40",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A98",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 10 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+          "readable_location": "Artikel 10 lid 1",
+          "article_number": "10",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A99",
+          "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} B {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 21",
+          "readable_location": "Bijlage I Afdeling B punt 21",
+          "article_number": null,
+          "annex_number": "I",
+          "location_type": "annex",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A106",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75d",
+          "readable_location": "Artikel 75d",
+          "article_number": "75d",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A111",
+          "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} VIII {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} B {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 7",
+          "readable_location": "Bijlage VIII Afdeling B punt 7",
+          "article_number": null,
+          "annex_number": "VIII",
+          "location_type": "annex",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A115",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 97 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+          "readable_location": "Artikel 97 lid 6",
+          "article_number": "97",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A119",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1a",
+          "readable_location": "Artikel 75 lid 1a",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A122",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 63 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+          "readable_location": "Artikel 63 lid 1",
+          "article_number": "63",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A125",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 96 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 2",
+          "readable_location": "Artikel 96 lid 1 alinea 2",
+          "article_number": "96",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A127",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75b",
+          "readable_location": "Artikel 75b",
+          "article_number": "75b",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A186",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 25 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+          "readable_location": "Artikel 25 lid 4 alinea 1",
+          "article_number": "25",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A191",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 58 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {TXT|http://publications.europa.eu/resource/authority/fd_370/TXT}",
+          "readable_location": "Artikel 58 lid 1 alinea 1 tekst/aanhef [UNVERIFIED interpretation]",
+          "article_number": "58",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A193",
+          "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} A {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 1",
+          "readable_location": "Bijlage I Afdeling A punt 1",
+          "article_number": null,
+          "annex_number": "I",
+          "location_type": "annex",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A195",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 57 lid 3",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A201",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+          "readable_location": "Artikel 75 lid 1",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A393",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2a",
+          "readable_location": "Artikel 75 lid 2a",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A394",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1c",
+          "readable_location": "Artikel 75 lid 1c",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A395",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 25 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 25 lid 2",
+          "article_number": "25",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A396",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (bb)",
+          "readable_location": "Artikel 5 lid 1 alinea 1 punt (bb)",
+          "article_number": "5",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A398",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 30 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 30 lid 2",
+          "article_number": "30",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A399",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 58 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (d)",
+          "readable_location": "Artikel 58 lid 1 alinea 1 punt (d)",
+          "article_number": "58",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A402",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 10 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+          "readable_location": "Artikel 10 lid 6",
+          "article_number": "10",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A403",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 14",
+          "readable_location": "Artikel 57 lid 14",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A434",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1b",
+          "readable_location": "Artikel 75 lid 1b",
+          "article_number": "75",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A436",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 2 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 7",
+          "readable_location": "Artikel 2 lid 7",
+          "article_number": "2",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A437",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 97 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 97 lid 3",
+          "article_number": "97",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A438",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5",
+          "readable_location": "Artikel 27 lid 5",
+          "article_number": "27",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A440",
+          "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} XIV",
+          "readable_location": "Bijlage XIV",
+          "article_number": null,
+          "annex_number": "XIV",
+          "location_type": "annex",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A441",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 96 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (a)",
+          "readable_location": "Artikel 96 lid 1 alinea 1 punt (a)",
+          "article_number": "96",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A444",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 60 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 60 lid 2",
+          "article_number": "60",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A446",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 11 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 2",
+          "readable_location": "Artikel 11 lid 1 alinea 2",
+          "article_number": "11",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A448",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 76 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "readable_location": "Artikel 76 lid 1 alinea",
+          "article_number": "76",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A450",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 17 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 17 lid 2",
+          "article_number": "17",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A452",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 1 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (g)",
+          "readable_location": "Artikel 1 lid 2 punt (g)",
+          "article_number": "1",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A458",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 43 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 43 lid 3",
+          "article_number": "43",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A460",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 111 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "readable_location": "Artikel 111 lid 4",
+          "article_number": "111",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A462",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 28 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 9",
+          "readable_location": "Artikel 28 lid 9",
+          "article_number": "28",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A465",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 72 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 72 lid 3",
+          "article_number": "72",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A469",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 69 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 69 lid 2",
+          "article_number": "69",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A473",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75c",
+          "readable_location": "Artikel 75c",
+          "article_number": "75c",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A476",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 4a",
+          "readable_location": "Artikel 4a",
+          "article_number": "4a",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A487",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 95 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "readable_location": "Artikel 95 lid 4",
+          "article_number": "95",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A489",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 96 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (g)",
+          "readable_location": "Artikel 96 lid 1 alinea 1 punt (g)",
+          "article_number": "96",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A493",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 42 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 42 lid 3",
+          "article_number": "42",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A497",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 75a",
+          "readable_location": "Artikel 75a",
+          "article_number": "75a",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A498",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 56 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+          "readable_location": "Artikel 56 lid 6",
+          "article_number": "56",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A500",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 6 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1a",
+          "readable_location": "Artikel 6 lid 1a",
+          "article_number": "6",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A502",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 4",
+          "readable_location": "Artikel 4",
+          "article_number": "4",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A506",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 2 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 2 lid 2",
+          "article_number": "2",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A515",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 99 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+          "readable_location": "Artikel 99 lid 1",
+          "article_number": "99",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A519",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 70 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 8",
+          "readable_location": "Artikel 70 lid 8",
+          "article_number": "70",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A522",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1b",
+          "readable_location": "Artikel 5 lid 1b",
+          "article_number": "5",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A523",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 2 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 13",
+          "readable_location": "Artikel 2 lid 13",
+          "article_number": "2",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A525",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (ba)",
+          "readable_location": "Artikel 5 lid 1 alinea 1 punt (ba)",
+          "article_number": "5",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A527",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 6 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1b",
+          "readable_location": "Artikel 6 lid 1b",
+          "article_number": "6",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A535",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 9 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (e)",
+          "readable_location": "Artikel 57 lid 9 punt (e)",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A538",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 3 {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 14a",
+          "readable_location": "Artikel 3 punt 14a",
+          "article_number": "3",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A541",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 77 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1b",
+          "readable_location": "Artikel 77 lid 1b",
+          "article_number": "77",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A544",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 64 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "readable_location": "Artikel 64 lid 3",
+          "article_number": "64",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A553",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5",
+          "readable_location": "Artikel 57 lid 5",
+          "article_number": "57",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A555",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 99 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6a",
+          "readable_location": "Artikel 99 lid 6a",
+          "article_number": "99",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A556",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 113 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (d)",
+          "readable_location": "Artikel 113 lid 3 punt (d)",
+          "article_number": "113",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A558",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 77 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1a",
+          "readable_location": "Artikel 77 lid 1a",
+          "article_number": "77",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A561",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 113 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (c)",
+          "readable_location": "Artikel 113 lid 3 punt (c)",
+          "article_number": "113",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A563",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 50 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 7",
+          "readable_location": "Artikel 50 lid 7",
+          "article_number": "50",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A564",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 60 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+          "readable_location": "Artikel 60 lid 1 alinea 1",
+          "article_number": "60",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A566",
+          "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} VIII {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} B {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 9",
+          "readable_location": "Bijlage VIII Afdeling B punt 9",
+          "article_number": null,
+          "annex_number": "VIII",
+          "location_type": "annex",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A568",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 97 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+          "readable_location": "Artikel 97 lid 2",
+          "article_number": "97",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        },
+        {
+          "node_id": "A576",
+          "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1a",
+          "readable_location": "Artikel 5 lid 1a",
+          "article_number": "5",
+          "annex_number": null,
+          "location_type": "article",
+          "effective_date": "2026-07-27",
+          "amended_by_oj": "http://publications.europa.eu/resource/oj/L_202601744"
+        }
+      ],
+      "new_annexes_inserted": [
+        "XIV"
+      ],
+      "annex_insertion_note": "Confirmed directly: legal_text_nl.html contains Annexes I through XIII only (id='anx_I' through 'anx_XIII'); no anx_XIV exists anywhere in the file. Since Bijlage XIV appears as a Digital Omnibus amendment target, it is almost certainly a wholly NEW annex added by that amendment, the same situation as the six newly-inserted articles (4a, 60a, 75a-75d). Found during a second double-check pass -- the original build listed 'XIV' in distinct_annexes_amended without flagging that it doesn't exist yet in the source, an inconsistency with how the new articles were already flagged."
+    },
+    "corrigenda": {
+      "count": 4,
+      "note": "CORRECTED in this rebuild -- see correction_log. Dates and OJ references now confirmed directly from owl:sameAs identifier-equivalence blocks in the file (a record type distinct from both the main bibliographic record and the OWL annotation axioms).",
+      "items": [
+        {
+          "corrigendum_number": "32024R1689R(01)",
+          "date": "2025-10-09",
+          "oj_reference": "L_202590802"
+        },
+        {
+          "corrigendum_number": "32024R1689R(02)",
+          "date": "2025-12-19",
+          "oj_reference": "L_202591038"
+        },
+        {
+          "corrigendum_number": "32024R1689R(03)",
+          "date": "2026-03-27",
+          "oj_reference": "L_202690258"
+        },
+        {
+          "corrigendum_number": "32024R1689R(04)",
+          "date": "2026-05-04",
+          "oj_reference": "L_202690343"
+        }
+      ]
+    },
+    "pending_amendment_proposals_not_yet_in_force": {
+      "count": 2,
+      "note": "Commission proposals to further amend the AI Act, additional to and separate from the Digital Omnibus. Not yet law.",
+      "items": [
+        {
+          "commission_document": "COM_2025_1023_FIN",
+          "year": 2025,
+          "full_uri": "http://publications.europa.eu/resource/comnat/COM_2025_1023_FIN",
+          "status": "PROPOSED, NOT YET IN FORCE",
+          "note": "resource_legal_amendment_proposed_by_resource_legal -- a Commission proposal to further amend the AI Act, distinct from and in addition to the already-enacted Digital Omnibus amendment. Content/scope not retrievable from this metadata file alone."
+        },
+        {
+          "commission_document": "COM_2025_0836_FIN",
+          "year": 2025,
+          "full_uri": "http://publications.europa.eu/resource/comnat/COM_2025_0836_FIN",
+          "status": "PROPOSED, NOT YET IN FORCE",
+          "note": "resource_legal_amendment_proposed_by_resource_legal -- a Commission proposal to further amend the AI Act, distinct from and in addition to the already-enacted Digital Omnibus amendment. Content/scope not retrievable from this metadata file alone."
+        }
+      ]
+    },
+    "confirmed_amends_at_enactment": {
+      "count": 9,
+      "note": "Directly confirmed via the amends / resource_legal_amends_resource_legal predicates on the oj/L_202401689 record (not inferred from the HTML's title text, though it matches).",
+      "targets": [
+        "32008R0300",
+        "32013R0167",
+        "32013R0168",
+        "32014R0090",
+        "32016L0797",
+        "32018R0858",
+        "32018R1139",
+        "32019R2144",
+        "32020L1828"
+      ]
+    },
+    "precise_locations_where_ai_act_amends_the_9_other_instruments": {
+      "count": 14,
+      "note": "Found in a final verification pass after the user asked to double-check everything. These are OWL annotation-axiom records using the AI Act's OJ-reference identifier (oj/L_202401689) as annotatedSource rather than its celex identifier -- a third identifier form used inconsistently across this file's annotation records, which is why an earlier pass (filtering only on the celex form) missed these 14 entirely. All effective 2026-08-02, the AI Act's main general-applicability date.",
+      "locations": [
+        {
+          "node_id": "A167",
+          "target": "http://publications.europa.eu/resource/celex/32008R0300",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 4 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "effective_date": "2026-08-02",
+          "target_short": "32008R0300",
+          "readable_location": "Artikel 4 lid 3 alinea"
+        },
+        {
+          "node_id": "A233",
+          "target": "http://publications.europa.eu/resource/celex/32016L0797",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 12",
+          "effective_date": "2026-08-02",
+          "target_short": "32016L0797",
+          "readable_location": "Artikel 5 lid 12"
+        },
+        {
+          "node_id": "A270",
+          "target": "http://publications.europa.eu/resource/celex/32018R0858",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 5 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R0858",
+          "readable_location": "Artikel 5 lid 4"
+        },
+        {
+          "node_id": "A278",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 19 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 19 lid 4"
+        },
+        {
+          "node_id": "A315",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 47 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 47 lid 3"
+        },
+        {
+          "node_id": "A324",
+          "target": "http://publications.europa.eu/resource/celex/32013R0168",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 22 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "effective_date": "2026-08-02",
+          "target_short": "32013R0168",
+          "readable_location": "Artikel 22 lid 5 alinea"
+        },
+        {
+          "node_id": "A341",
+          "target": "http://publications.europa.eu/resource/celex/32014R0090",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 8 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 5",
+          "effective_date": "2026-08-02",
+          "target_short": "32014R0090",
+          "readable_location": "Artikel 8 alinea 5"
+        },
+        {
+          "node_id": "A350",
+          "target": "http://publications.europa.eu/resource/celex/32019R2144",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 11 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "effective_date": "2026-08-02",
+          "target_short": "32019R2144",
+          "readable_location": "Artikel 11 lid 3"
+        },
+        {
+          "node_id": "A360",
+          "target": "http://publications.europa.eu/resource/celex/32013R0167",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 17 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "effective_date": "2026-08-02",
+          "target_short": "32013R0167",
+          "readable_location": "Artikel 17 lid 5 alinea"
+        },
+        {
+          "node_id": "A366",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 57 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN}",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 57 alinea"
+        },
+        {
+          "node_id": "A373",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 17 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 17 lid 3"
+        },
+        {
+          "node_id": "A383",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 58 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 58 lid 3"
+        },
+        {
+          "node_id": "A512",
+          "target": "http://publications.europa.eu/resource/celex/32018R1139",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 43 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+          "effective_date": "2026-08-02",
+          "target_short": "32018R1139",
+          "readable_location": "Artikel 43 lid 4"
+        },
+        {
+          "node_id": "A574",
+          "target": "http://publications.europa.eu/resource/celex/32020L1828",
+          "property": "resource_legal_amends_resource_legal",
+          "raw_location": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 68",
+          "effective_date": "2026-08-02",
+          "target_short": "32020L1828",
+          "readable_location": "Bijlage I punt 68"
+        }
+      ]
+    }
+  },
+  "cites_in_recitals_and_articles": {
+    "total_distinct_targets": 64,
+    "decoded_high_relevance_subset": {
+      "32016R0679": "GDPR (Algemene verordening gegevensbescherming)",
+      "32022R2065": "Digital Services Act (DSA)",
+      "32022R0868": "Data Governance Act",
+      "32023R2854": "Data Act (Dataverordening) -- same regulation as the Uitvoeringswet dataverordening dataset already built",
+      "32019R1020": "Market Surveillance Regulation",
+      "32019R0881": "Cybersecurity Act (EU) -- establishes ENISA and the EU cybersecurity certification framework",
+      "32022L2557": "CER Directive (Critical Entities Resilience) -- the directive Wwke implements",
+      "31985L0374": "Product Liability Directive (1985)",
+      "32017R0745": "Medical Devices Regulation",
+      "32017R0746": "In Vitro Diagnostic Medical Devices Regulation",
+      "32018R1725": "Regulation on data protection by EU institutions",
+      "32013R0575": "Capital Requirements Regulation (CRR)",
+      "32013L0036": "Capital Requirements Directive (CRD IV)",
+      "32009L0138": "Solvency II Directive",
+      "32016L0680": "Law Enforcement Directive (GDPR's law-enforcement counterpart)",
+      "32012R1025": "European Standardisation Regulation",
+      "32008R0765": "Regulation setting requirements for accreditation and market surveillance",
+      "32024R0900": "Regulation reinforcing the Union standardisation framework"
+    },
+    "note": "64 distinct 'cites'/'work_cites_work' targets total in the AI Act's own bibliographic record (recitals + articles). 18 above are decoded for immediate relevance to this project's own corpus (GDPR, Data Act, Cybersecurity Act, CER Directive all directly overlap with instruments already in this project); the remaining ~46 are mostly Treaty articles, other sector regulations (medical devices, financial services, standardisation) and procedural references, preserved in full below but not individually decoded in this pass.",
+    "full_raw_list_preserved": true,
+    "full_raw_list": [
+      "12016E%2FPRO%2F21",
+      "12016E%2FPRO%2F22",
+      "12016E%2FTXT",
+      "12016E261",
+      "12016E290",
+      "12016M%2FPRO%2F21",
+      "12016M%2FPRO%2F22",
+      "12016M%2FTXT",
+      "12016M002",
+      "12016M004",
+      "12016M005",
+      "12016M006",
+      "12016P%2FTXT",
+      "12016P024",
+      "12016P039",
+      "21994A1223%2807%29",
+      "22010A0127%2801%29",
+      "31985L0374",
+      "32002F0584",
+      "32002L0014",
+      "32002L0058",
+      "32003H0361",
+      "32005L0029",
+      "32006L0042",
+      "32008D0768",
+      "32008L0048",
+      "32008R0765",
+      "32009L0138",
+      "32009R0810",
+      "32011R0182",
+      "32012R1025",
+      "32013L0032",
+      "32013L0036",
+      "32013R0575",
+      "32013R1024",
+      "32014L0017",
+      "32014L0031",
+      "32014L0032",
+      "32016L0097",
+      "32016L0680",
+      "32016L0943",
+      "32016L2102",
+      "32016Q0512%2801%29",
+      "32016R0679",
+      "32017R0745",
+      "32017R0746",
+      "32018R1725",
+      "32019L0790",
+      "32019L0882",
+      "32019L1937",
+      "32019R0881",
+      "32019R1020",
+      "32022L2557",
+      "32022R0868",
+      "32022R2065",
+      "32023R0988",
+      "32023R2854",
+      "32024D01459",
+      "32024R0900",
+      "52020IP0275",
+      "52021AB0040",
+      "52021AE2482",
+      "52021AR2682",
+      "52022XC0629%2804%29"
+    ]
+  },
+  "case_law": {
+    "preliminary_ruling_references_count": 3,
+    "cases": [
+      {
+        "case_reference": "C_202600276",
+        "year": 2026,
+        "touches": [
+          "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 113",
+          "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} III {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 8",
+          "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 86 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1"
+        ]
+      },
+      {
+        "case_reference": "C_202501080",
+        "year": 2025,
+        "touches": [
+          "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 86",
+          "{CONSID|http://publications.europa.eu/resource/authority/fd_370/CONSID} 8",
+          "{CONSID|http://publications.europa.eu/resource/authority/fd_370/CONSID} 7",
+          "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 95 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (a)",
+          "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 86 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1"
+        ]
+      },
+      {
+        "case_reference": "C_202503261",
+        "year": 2025,
+        "touches": [
+          "{CONSID|http://publications.europa.eu/resource/authority/fd_370/CONSID} 61"
+        ]
+      }
+    ]
+  },
+  "filtering_methodology": {
+    "total_rdf_description_blocks": 7327,
+    "primary_subject_records_for_ai_act": 2,
+    "primary_subject_record_identifiers": [
+      "http://publications.europa.eu/resource/celex/32024R1689",
+      "http://publications.europa.eu/resource/oj/L_202401689"
+    ],
+    "total_blocks_touching_ai_act_via_any_known_identifier": 154,
+    "noise_ratio": "97.9% of all records in this file are unrelated to the AI Act (154/7327 relevant, corrected figure).",
+    "total_annotation_records_touching_ai_act": 140,
+    "reconciliation_note": "Final tally: 2 primary subject records + 140 annotation records + 7 owl:sameAs identifier-equivalence records (4 corrigenda + 1 main-document triple + 2 unaccounted, both confirmed to be a single consolidation-history record split across two identifier forms) + 5 miscellaneous (4 corrigenda's own bibliographic records + 1 generic OJ-L collection index, correctly excluded as true noise) = 154 total, fully reconciled with zero remaining unclassified records."
+  },
+  "correction_log": {
+    "purpose": "Documents what was wrong in the first version of this companion file, per the user's request to double-check before relying on it.",
+    "corrections": [
+      {
+        "issue": "Searched only for rdf:about=celex/32024R1689 as the AI Act's subject record. Missed a second, larger primary record under rdf:about=oj/L_202401689, which turned out to hold the richest data in the entire file.",
+        "impact": "Missed entirely: the phased applicability schedule (5 dates), 7 review deadlines, the confirmed 'amends' list (had it from the HTML title only, now independently confirmed), and 64 'cites' targets including GDPR, DSA, Data Act, Cybersecurity Act, and CER Directive -- all highly relevant to this project's own corpus.",
+        "fixed": true
+      },
+      {
+        "issue": "Reported the 4 corrigenda's article/paragraph locations and dates as 'not retrievable from this metadata file.' This was wrong -- they were retrievable, just encoded in a third record type (owl:sameAs identifier-equivalence blocks) that the first pass's search patterns did not check.",
+        "impact": "All 4 corrigenda now have confirmed exact dates (2025-10-09, 2025-12-19, 2026-03-27, 2026-05-04).",
+        "fixed": true
+      },
+      {
+        "issue": "Total 'blocks touching AI Act' was reported as 128 in the first informal check, then 118 in a more careful recheck, neither of which searched using all three of the AI Act's known identifier strings (celex id, OJ reference, and ELI URI) together.",
+        "impact": "Corrected total is 154.",
+        "fixed": true
+      },
+      {
+        "issue": "A second verification pass found that annotation-type OWL axiom records identify the AI Act using three different identifier forms across the file (celex id, OJ reference, and in a few cases the ELI URI) inconsistently. The first rebuild of this file checked only the celex form for annotation records, missing 28 additional annotation records that use the OJ-reference form.",
+        "impact": "Of those 28: 14 are genuinely new and valuable -- precise article/paragraph locations where the AI Act itself amends the 9 other regulations/directives it modifies (e.g. exactly which paragraph of Regulation 2019/2144 or Regulation 2018/1139 was changed), all now added. The remaining 14 are redundant reifications of facts already captured elsewhere in this file (the phased dates, the document date, the adopts-relationship) and add no new information.",
+        "fixed": true
+      },
+      {
+        "issue": "Terminology in decoded location strings was not verified against the actual AI Act text on first build. Two of seven authority-table codes were mislabeled: PTA was decoded as 'onderdeel' (should be 'punt' -- confirmed via the real citation format 'lid 1, punt c)' used throughout); SCT was decoded as 'Sectie' (should be 'Afdeling' -- confirmed via Annex I's own heading 'Afdeling A'). Additionally, distinct_annexes_amended listed 'XIV' without flagging that Annex XIV does not exist anywhere in legal_text_nl.html (file only contains Annexes I-XIII) -- it is a wholly new annex, same situation as the six newly-inserted articles, but this had not been flagged in parallel.",
+        "impact": "25 of the 88 Digital Omnibus location strings were re-decoded with corrected terminology. The 14 reverse-amendment locations needed no changes (none used the affected codes). Two further codes (TIT, TXT) were found not previously seen; decoded as best-guess ('titel', 'tekst') per standard EU authority-table conventions but explicitly flagged as unverified, since -- unlike the other codes -- they cannot be checked against a static pre-amendment text search.",
+        "found_via": "User-requested double-check pass, cross-referencing every decode label against actual phrases in legal_text_nl.html rather than trusting the original regex-based inference.",
+        "fixed": true
+      }
+    ],
+    "unchanged_and_reconfirmed": [
+      "88 distinct Digital Omnibus amendment locations (verified twice now, stable)",
+      "2 pending amendment proposals not yet in force",
+      "3 preliminary-ruling case references"
+    ],
+    "note": "This log and validation_methodology together document two independent rounds of double-checking: the first (validation_methodology) verified data COMPLETENESS via rdflib graph parsing against the prior regex-based extraction; the second (this final entry) verified data ACCURACY of the Dutch legal terminology used to describe each location, by checking against the actual source text. Both were requested by the user rather than volunteered proactively, which is itself worth noting for future work: terminology verification should be a standard step, not something done only when asked."
+  },
+  "compiled_on": "2026-09-17",
+  "sources": [
+    "/mnt/user-data/uploads/metadata__1_.xml (original, untouched)",
+    "/mnt/user-data/uploads/legal_text_nl__1_.html (original, untouched)"
+  ],
+  "validation_methodology": {
+    "tool": "rdflib (proper RDF graph parsing), replacing the regex-based extraction used in the first two versions of this file",
+    "method": "1) Parsed metadata.xml as an actual RDF graph (28,871 triples, 7,327 subjects). 2) Computed the full owl:sameAs equivalence class for the AI Act's celex identifier -- this automatically found the same 4 equivalent identifiers (celex, cellar, eli, oj) that had previously been found only by manual inspection, with no risk of missing a form. 3) Queried ALL triples where any equivalent identifier is subject or object -- 755 as subject, 142 as object, both counts and their full predicate breakdowns cross-checked with zero unclassified triples remaining. 4) Queried all OWL Axiom (reified/annotated) nodes with any equivalent identifier as annotatedSource -- 140 nodes, matching the manually-corrected count. 5) For each of the 4 corrigenda, independently resolved THEIR OWN owl:sameAs equivalence class to confirm their dates, rather than trusting a single record's literal values.",
+    "cross_validation_results": {
+      "88_digital_omnibus_amendment_locations": "IDENTICAL set, graph vs. prior manual extraction (zero differences)",
+      "14_ai_act_amends_others_locations": "IDENTICAL set (zero differences)",
+      "4_corrigenda_dates": "IDENTICAL (zero differences)",
+      "entry_into_force_dates": "IDENTICAL (zero differences)",
+      "64_cites_list": "IDENTICAL (zero differences)",
+      "9_amends_list": "IDENTICAL (zero differences)",
+      "deadline_dates": "ONE difference found and fixed -- 2027-08-02 was missing from the deadline list (it is both an entry-into-force date and, separately, a deadline; only the former had been recorded)."
+    },
+    "conclusion": "With one small exception (now fixed), the graph-based method independently reproduced every number in the manually-corrected version of this file. This is real evidence the extraction is now complete for the AI Act, not just a repeated assertion of confidence. The same graph-based method, not repeated manual regex work, will be used for GDPR, NIS2, and DORA."
+  },
+  "decode_terminology_verification": {
+    "purpose": "Location-code labels (AR, PA, PO, etc.) are EU Publications Office authority-table codes with no dictionary shipped in this metadata file. Each was checked against actual usage in legal_text_nl.html rather than assumed.",
+    "verified_against_actual_text": {
+      "AR = Artikel": "confirmed, 'Artikel 1' etc. appear throughout",
+      "PA = lid": "confirmed, 'lid 1' appears 136 times",
+      "PO = punt (numbered point)": "confirmed via Article 3's numbered definitions (point 14 = 'veiligheidscomponent', checked directly)",
+      "PTA = punt (lettered point)": "CORRECTED after initial mislabeling as 'onderdeel'. Verified: the citation format 'lid 1, punt c)' is used throughout the actual text; 'onderdeel' appears 12 times in the document but never in this citation role.",
+      "AN = Bijlage": "confirmed, 'BIJLAGE I' heading and 'bijlage I' inline references both present",
+      "SCT = Afdeling": "CORRECTED after initial mislabeling as 'Sectie'. Verified: Annex I's own text reads 'Afdeling A' / would read 'Afdeling B'; 'Sectie A' does not appear anywhere in the document.",
+      "ALN = alinea": "confirmed, 'eerste alinea' appears in running text in exactly this structural role"
+    },
+    "NOT independently verified": {
+      "TIT": "Assumed 'titel' (article heading) based on standard EU authority-table conventions, but this cannot be confirmed against the current text since it refers to a heading being changed, which is not something a static text search can validate the way a citation format can.",
+      "TXT": "Assumed 'tekst'/aanhef (chapeau text before lettered sub-points), same limitation as TIT."
+    },
+    "recommendation": "Treat any location decoded using TIT or TXT as directionally correct (something in that article/paragraph changed) but do not rely on the specific 'heading' vs 'chapeau text' distinction without confirming against the actual amended text once re-fetched."
+  }
+}

@@ -1,0 +1,560 @@
+{
+  "regulation": {
+    "celex": "32022R2554",
+    "oj_reference": "JOL_2022_333_R_0001",
+    "title": "Verordening (EU) 2022/2554 betreffende digitale operationele weerbaarheid voor de financiele sector en tot wijziging van Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011 (DORA)",
+    "date_signature": "2022-12-14",
+    "date_publication": "2022-12-27",
+    "date_end_of_validity": "9999-12-31",
+    "date_end_of_validity_note": "EU legislative drafting's standard sentinel value for 'no defined expiration date' -- DORA has no sunset clause. Found during a third double-check pass; not in the first two versions of this file.",
+    "legislative_procedure": "2020/0266(COD)",
+    "type": "Verordening (EU)",
+    "jurisdiction": "EU",
+    "language_of_this_file": "nl",
+    "in_force": true,
+    "note": "Companion/reference dataset, not a replacement for either uploaded source file. Both legal_text_nl.html and metadata.xml remain untouched at /mnt/user-data/uploads/."
+  },
+  "SOURCE_TEXT_CURRENCY_FINDING": {
+    "html_generated_on": "2024-07-25",
+    "finding": "UNLIKE GDPR (zero amendments found) and LIKE the AI Act (confirmed outdated), DORA's source text has a currency problem, but of a different kind: no full amending instrument (no 'Digital Omnibus'-style relationship) was found for DORA's own text, but 6 of its 9 corrigenda (text corrections) postdate the HTML's generation date. These are likely smaller, targeted corrections rather than substantive new provisions, but they are NOT reflected in the uploaded HTML and their specific content is not visible in this metadata file either (no location detail is provided for any of DORA's 9 corrigenda).",
+    "corrigenda_missing_from_source": [
+      "L_202590620",
+      "L_202490822",
+      "L_202490634",
+      "L_202590941",
+      "L_202590167",
+      "L_202590770"
+    ],
+    "recommendation": "Re-fetch DORA's text from EUR-Lex and diff against the uploaded HTML before treating any provision as certainly current, particularly given 6 undated-content corrections are unaccounted for."
+  },
+  "amendment_history": {
+    "amendments_to_own_text": {
+      "count": 0,
+      "note": "No amendment (as opposed to correction) relationship found for DORA's own text -- same category of finding as GDPR."
+    },
+    "dora_amends_9_other_regulations": {
+      "count_of_regulations_amended_at_enactment": 5,
+      "targets": [
+        "32009R1060 (Credit Rating Agencies Regulation)",
+        "32012R0648 (EMIR)",
+        "32014R0600 (MiFIR)",
+        "32014R0909 (CSDR)",
+        "32016R1011 (Benchmarks Regulation)"
+      ],
+      "total_precise_locations": 29,
+      "note": "Found under two separate reified annotation property names ('amends', 7 records, and 'resource_legal_amends_resource_legal', 22 records) which turned out to be genuinely distinct, non-duplicate location records rather than a parsing artifact -- confirmed by checking their node IDs and content directly. Both variants preserved and combined. EMIR (648/2012) receives the most amendments (14 locations), consistent with its central role in financial market infrastructure that DORA's ICT risk framework extends into.",
+      "by_target_regulation": {
+        "32009R1060": [
+          {
+            "target_regulation": "32009R1060",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} III {PO|http://publications.europa.eu/resource/authority/fd_370/PO} 12",
+            "readable_location": "Bijlage III punt 12",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32009R1060",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} A {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+            "readable_location": "Bijlage I Afdeling A lid 4 alinea 1",
+            "effective_date": "2025-01-17"
+          }
+        ],
+        "32012R0648": [
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 80 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+            "readable_location": "Artikel 80 lid 1",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 34 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+            "readable_location": "Artikel 34 lid 1",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 26 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+            "readable_location": "Artikel 26 lid 3",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} III {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} III {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (a)",
+            "readable_location": "Bijlage III Afdeling III punt (a)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 56 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+            "readable_location": "Artikel 56 lid 3 alinea 1",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} III {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} II {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (c)",
+            "readable_location": "Bijlage III Afdeling II punt (c)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 34 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+            "readable_location": "Artikel 34 lid 3 alinea 1",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} II {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (c)",
+            "readable_location": "Bijlage I Afdeling II punt (c)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 79 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+            "readable_location": "Artikel 79 lid 2",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 26 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+            "readable_location": "Artikel 26 lid 6",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} II {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (b)",
+            "readable_location": "Bijlage I Afdeling II punt (b)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} III {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} II {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (f)",
+            "readable_location": "Bijlage III Afdeling II punt (f)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AN|http://publications.europa.eu/resource/authority/fd_370/AN} I {SCT|http://publications.europa.eu/resource/authority/fd_370/SCT} II {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (a)",
+            "readable_location": "Bijlage I Afdeling II punt (a)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32012R0648",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 79 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+            "readable_location": "Artikel 79 lid 1",
+            "effective_date": "2025-01-17"
+          }
+        ],
+        "32014R0600": [
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27g {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 8 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (c)",
+            "readable_location": "Artikel 27g lid 8 punt (c)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27g {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+            "readable_location": "Artikel 27g lid 4",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27i {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+            "readable_location": "Artikel 27i lid 3",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27h {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5",
+            "readable_location": "Artikel 27h lid 5",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27i {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 5 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (b)",
+            "readable_location": "Artikel 27i lid 5 punt (b)",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0600",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 27h {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 8 {PTA|http://publications.europa.eu/resource/authority/fd_370/PTA} (e)",
+            "readable_location": "Artikel 27h lid 8 punt (e)",
+            "effective_date": "2025-01-17"
+          }
+        ],
+        "32014R0909": [
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 3",
+            "readable_location": "Artikel 45 lid 3",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 4",
+            "readable_location": "Artikel 45 lid 4",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 2",
+            "readable_location": "Artikel 45 lid 2",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 1",
+            "readable_location": "Artikel 45 lid 1",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+            "readable_location": "Artikel 45 lid 6",
+            "effective_date": "2025-01-17"
+          },
+          {
+            "target_regulation": "32014R0909",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 45 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 7 {ALN|http://publications.europa.eu/resource/authority/fd_370/ALN} 1",
+            "readable_location": "Artikel 45 lid 7 alinea 1",
+            "effective_date": "2025-01-17"
+          }
+        ],
+        "32016R1011": [
+          {
+            "target_regulation": "32016R1011",
+            "raw_location_code": "{AR|http://publications.europa.eu/resource/authority/fd_370/AR} 6 {PA|http://publications.europa.eu/resource/authority/fd_370/PA} 6",
+            "readable_location": "Artikel 6 lid 6",
+            "effective_date": "2025-01-17"
+          }
+        ]
+      },
+      "cross_validation_consolidated_versions": {
+        "note": "DORA's own consolidated_by list (19 entries) includes 10 entries beyond DORA's own 9 -- these belong to the 5 regulations DORA amends, and confirm the amendments took effect: each of the 5 shows a consolidated version dated exactly 2025-01-17, matching DORA's application date and the effective_date on all 29 amendment locations above. Found during a third double-check pass; the first two versions of this file only examined the 9 entries matching DORA's own celex prefix and never looked at the remaining 10, despite consolidated_by's total count (19) being visible from the very first predicate breakdown.",
+        "items": [
+          "2009R1060/20250117",
+          "2009R1060/20250117_0080010",
+          "2012R0648/20250117",
+          "2012R0648/20250117_0220010",
+          "2014R0600/20250117",
+          "2014R0600/20250117_0090010",
+          "2014R0909/20250117",
+          "2014R0909/20250117_0050010",
+          "2016R1011/20250117",
+          "2016R1011/20250117_0050010"
+        ]
+      }
+    },
+    "corrigenda": {
+      "count": 9,
+      "note": "More corrigenda than either the AI Act (4) or GDPR (3) -- consistent with DORA being a large, technical, heavily cross-referenced regulation.",
+      "items": [
+        {
+          "target": "JOL_2023_116_R_0017",
+          "date": "2023-05-04",
+          "postdates_html_generation": false
+        },
+        {
+          "target": "L_202590620",
+          "date": "2025-07-30",
+          "postdates_html_generation": true
+        },
+        {
+          "target": "L_202490822",
+          "date": "2024-12-19",
+          "postdates_html_generation": true
+        },
+        {
+          "target": "L_202490634",
+          "date": "2024-10-25",
+          "postdates_html_generation": true
+        },
+        {
+          "target": "L_202590941",
+          "date": "2025-11-21",
+          "postdates_html_generation": true
+        },
+        {
+          "target": "L_202590167",
+          "date": "2025-02-20",
+          "postdates_html_generation": true
+        },
+        {
+          "target": "JOL_2023_163_R_0011",
+          "date": "2023-06-29",
+          "postdates_html_generation": false
+        },
+        {
+          "target": "L_202490177",
+          "date": "2024-03-12",
+          "postdates_html_generation": false
+        },
+        {
+          "target": "L_202590770",
+          "date": "2025-10-01",
+          "postdates_html_generation": true
+        }
+      ]
+    },
+    "pending_amendment_proposal_not_yet_in_force": {
+      "count": 1,
+      "document": "COM_2023_0360_FIN",
+      "status": "PROPOSED, NOT YET IN FORCE",
+      "note": "Only one pending proposal (vs. 2 for both the AI Act and GDPR)."
+    },
+    "adopts": {
+      "target": "52020PC0595",
+      "name": "The original European Commission proposal for DORA",
+      "effective_date": "2022-12-14",
+      "note": "Matches DORA's own date_signature -- confirms and dates the legislative_procedure field (2020/0266(COD))."
+    }
+  },
+  "completed_by_technical_standards": {
+    "count": 10,
+    "note": "A relationship type not seen in either the AI Act or GDPR companion files: DORA is 'completed_by' 10 separate Regulatory/Implementing Technical Standards (RTS/ITS) dated June 2024 through July 2025. This is characteristic of DORA's design, which delegates extensive technical detail to ESA-drafted standards rather than specifying it in the regulation itself -- directly relevant to this project's 'layering' concept, since these RTS/ITS are a whole additional tier of DORA-derived law not represented anywhere else in this dataset or in legal_text_nl.html.",
+    "items": [
+      {
+        "technical_standard": "L_202500420",
+        "effective_date": "2025-04-13"
+      },
+      {
+        "technical_standard": "L_202501190",
+        "effective_date": "2025-07-08"
+      },
+      {
+        "technical_standard": "L_202401774",
+        "effective_date": "2024-07-15"
+      },
+      {
+        "technical_standard": "L_202500301",
+        "effective_date": "2025-03-12"
+      },
+      {
+        "technical_standard": "L_202500532",
+        "effective_date": "2025-07-22"
+      },
+      {
+        "technical_standard": "L_202500295",
+        "effective_date": "2025-03-05"
+      },
+      {
+        "technical_standard": "L_202401502",
+        "effective_date": "2024-06-19"
+      },
+      {
+        "technical_standard": "L_202401773",
+        "effective_date": "2024-07-15"
+      },
+      {
+        "technical_standard": "L_202401772",
+        "effective_date": "2024-07-15"
+      },
+      {
+        "technical_standard": "L_202401505",
+        "effective_date": "2024-06-19"
+      }
+    ],
+    "additional_related_instruments_not_in_completed_by_but_in_basis_for": {
+      "items": [
+        "904EA07D53A3410EA307E73D7DEB8CF98B10184AD82789E6E2FC862DA20FD451",
+        "Ares(2023)7798010",
+        "C_202403997",
+        "C_202601701",
+        "L_202402956",
+        "L_202500302"
+      ],
+      "count": 6,
+      "note": "CORRECTED during double-check: the first version of this section only listed 2 of these 6 items (L_202402956, L_202500302), silently omitting the other 4. Found by precisely computing basis_for's remainder after subtracting both the 9 consolidated-version entries and the 10 completed_by entries (9+10+6=25, confirmed exact), rather than eyeballing the list. Of the 6: 2 (L_202402956, L_202500302) are plausibly additional RTS/ITS given their L_2024/L_2025 numbering pattern matching completed_by's own instruments; 2 (C_202403997, C_202601701) are OJ 'C-series' references (typically opinions, notices, or committee documents rather than binding acts); 1 (Ares(2023)7798010) is an internal Commission correspondence reference; 1 is an opaque internal-system hash with no human-readable identifier available in this metadata. None of these 6 are independently confirmed beyond their raw identifiers."
+    }
+  },
+  "cites_in_recitals_and_articles": {
+    "total_distinct_targets": 39,
+    "full_raw_list": [
+      "12016E127",
+      "12016E290",
+      "12016E291",
+      "12016M005",
+      "32006L0043",
+      "32009L0065",
+      "32009L0110",
+      "32009L0138",
+      "32010R1093",
+      "32010R1094",
+      "32010R1095",
+      "32011L0061",
+      "32013L0034",
+      "32013L0036",
+      "32013R0575",
+      "32013R1024",
+      "32014L0059",
+      "32014L0065",
+      "32014R0806",
+      "32015L2366",
+      "32016L0097",
+      "32016L1148",
+      "32016L2341",
+      "32016Q0512(01)",
+      "32016R0679",
+      "32017R2402",
+      "32018R1725",
+      "32019L2034",
+      "32019R0881",
+      "32019R2033",
+      "32020R1503",
+      "32022L2555",
+      "32022L2556",
+      "32022L2557",
+      "52011XC0114(04)",
+      "52018DC0109",
+      "52020AE5040",
+      "52021AB0020",
+      "52021XX0615(02)"
+    ],
+    "decoded_high_relevance_subset": {
+      "32016R0679": "GDPR -- already in this project's corpus",
+      "32022L2555": "NIS2 Directive -- the directive Cbw implements, already in this project's corpus",
+      "32022L2557": "CER Directive -- the directive Wwke implements (declined from this project's corpus as non-digital-law, but DORA cites it directly)",
+      "32016L1148": "The original NIS1 Directive (NIS2's predecessor)",
+      "32019R0881": "EU Cybersecurity Act (ENISA regulation) -- also cited by the AI Act",
+      "32013R0575": "Capital Requirements Regulation (CRR)",
+      "32013L0036": "Capital Requirements Directive (CRD IV)",
+      "32009L0138": "Solvency II Directive",
+      "32014L0065": "MiFID II",
+      "32015L2366": "PSD2 (Payment Services Directive)",
+      "32010R1093": "Regulation establishing EBA",
+      "32010R1094": "Regulation establishing EIOPA",
+      "32010R1095": "Regulation establishing ESMA"
+    }
+  },
+  "citation_volume": {
+    "distinct_citing_documents": 78,
+    "note": "Much smaller than GDPR's 2,265 or the AI Act's larger citation base, consistent with DORA being newer (2022) and sector-specific (financial services only).",
+    "full_raw_list_of_citing_documents": [
+      "62023CC0256",
+      "COM_2023_0207_FIN",
+      "COM_2023_0209_FIN",
+      "COM_2023_0365_FIN",
+      "COM_2023_0366_FIN",
+      "COM_2023_0367_FIN",
+      "COM_2023_0369_FIN",
+      "COM_2023_0505_FIN",
+      "COM_2023_0570_FIN",
+      "COM_2024_0021_FIN",
+      "COM_2024_0198_FIN",
+      "COM_2024_0198_FIN2",
+      "COM_2024_0300_FIN",
+      "COM_2024_0574_FIN",
+      "COM_2025_0066_FIN",
+      "COM_2025_0837_FIN",
+      "COM_2025_0943_FIN",
+      "COM_2026_0011_FIN",
+      "COM_2026_0119_FIN",
+      "COM_2026_0300_FIN",
+      "COM_2026_0321_FIN",
+      "COM_2026_0502_FIN",
+      "COM_2026_0577_FIN",
+      "C_202403869",
+      "C_202405923",
+      "C_202503724",
+      "C_202503725",
+      "C_202504415",
+      "C_202600599",
+      "C_202602617",
+      "C_202602621",
+      "C_202603225",
+      "C_202603229",
+      "C_202603549",
+      "C_202603683",
+      "C_202603795",
+      "JOC_2023_020_R_0001",
+      "JOC_2023_047_R_0007",
+      "JOC_2023_161_R_0009",
+      "JOC_2023_180_R_0001",
+      "JOC_2023_209_R_0001",
+      "JOC_2023_209_R_0002",
+      "JOC_2023_213_R_0001",
+      "JOC_2023_213_R_0002",
+      "JOC_2023_294_R_0001",
+      "JOIN_2025_0130_FIN",
+      "JOL_2022_333_R_0002",
+      "JOL_2022_333_R_0003",
+      "JOL_2022_333_R_0004",
+      "JOL_2023_150_R_0002",
+      "L_202302854",
+      "L_202400886",
+      "L_202401366",
+      "L_202401619",
+      "L_202402277",
+      "L_202402847",
+      "L_202500038",
+      "L_202500299",
+      "L_202500303",
+      "L_202500305",
+      "L_202500381",
+      "L_202500413",
+      "L_202500414",
+      "L_202500765",
+      "L_202500770",
+      "L_202501001",
+      "L_202501125",
+      "L_202501143",
+      "L_202501355",
+      "L_202501681",
+      "SWD_2023_0224_FIN",
+      "SWD_2023_0231_FIN",
+      "SWD_2023_0663_FIN",
+      "SWD_2025_0836_FIN",
+      "SWD_2025_0943_FIN",
+      "SWD_2026_0002_FIN",
+      "SWD_2026_0011_FIN",
+      "SWD_2026_0502_FIN"
+    ]
+  },
+  "basis_for": {
+    "count": 25,
+    "note": "9 of these 25 entries are simply DORA's own numbered consolidated-version history restated under this predicate (base + 8 sub-versions, consistent with 9 corrigenda producing 9 consolidated states) -- not new information, redundant with corrigenda above. The remaining entries substantially overlap with completed_by_technical_standards (see cross-check above).",
+    "full_raw_list": [
+      "2022R2554/20221227",
+      "2022R2554/20221227_0000010",
+      "2022R2554/20221227_0000020",
+      "2022R2554/20221227_0000030",
+      "2022R2554/20221227_0000040",
+      "2022R2554/20221227_0000050",
+      "2022R2554/20221227_0000060",
+      "2022R2554/20221227_0000070",
+      "2022R2554/20221227_0000080",
+      "904EA07D53A3410EA307E73D7DEB8CF98B10184AD82789E6E2FC862DA20FD451",
+      "Ares(2023)7798010",
+      "C_202403997",
+      "C_202601701",
+      "L_202401502",
+      "L_202401505",
+      "L_202401772",
+      "L_202401773",
+      "L_202401774",
+      "L_202402956",
+      "L_202500295",
+      "L_202500301",
+      "L_202500302",
+      "L_202500420",
+      "L_202500532",
+      "L_202501190"
+    ]
+  },
+  "decode_terminology_verification": {
+    "verified_directly_against_dora_text": {
+      "AR = Artikel": "confirmed",
+      "PA = lid": "confirmed, 282 occurrences of ' lid '",
+      "PO/PTA = punt": "confirmed, 149 occurrences of 'punt'",
+      "ALN = alinea": "confirmed, 57 occurrences",
+      "SCT = Afdeling": "confirmed, 6 occurrences of 'Afdeling', 0 of 'Sectie'",
+      "AN = Bijlage": "N/A for DORA's own text (0 annexes, like GDPR), but confirmed correctly used for the ANNEXES OF THE REGULATIONS DORA AMENDS (e.g. 'Bijlage III Afdeling III punt (a)' targets EMIR's own Annex III), consistent with the same pattern already seen in GDPR's implicit-repeal case."
+    },
+    "no_new_unverified_codes": "Unlike GDPR, DORA introduced no new location-code formats or unexplained codes -- all codes found (ALN, AN, AR, PA, PO, PTA, SCT) were already verified in the AI Act and/or GDPR passes and re-confirmed here against DORA's own text specifically, not assumed from prior verification alone."
+  },
+  "compiled_on": "2026-09-17",
+  "sources": [
+    "/mnt/user-data/uploads/metadata__1_.xml (original, untouched)",
+    "/mnt/user-data/uploads/legal_text_nl__1_.html (original, untouched)"
+  ]
+}

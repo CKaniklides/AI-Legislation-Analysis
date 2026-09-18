@@ -1,0 +1,104 @@
+{
+  "regulation": {
+    "bwb_id": "BWBR0009950",
+    "title": "Telecommunicatiewet",
+    "citeertitel_short": "Tw",
+    "type": "Wet (formele wet)",
+    "jurisdiction": "NL",
+    "status": "in_force",
+    "language": "nl",
+    "authority": "Economische Zaken",
+    "current_version_effective_from": "2025-09-01",
+    "current_version_effective_until": "2026-06-30",
+    "regulation_permalink": "https://wetten.overheid.nl/BWBR0009950/2025-09-01",
+    "note": "Grote, brede wet met honderden artikelen over telecommunicatie in het algemeen. Dit dataset richt zich uitsluitend op Hoofdstuk 11 (Bescherming van persoonsgegevens en de persoonlijke levenssfeer), specifiek Artikel 11.7a, niet op de wet als geheel."
+  },
+  "target_provision": {
+    "provision_id": "BWBR0009950-art11.7a",
+    "number": "11.7a",
+    "heading": "Artikel 11.7a",
+    "chapter": "Hoofdstuk 11. Bescherming van persoonsgegevens en de persoonlijke levenssfeer",
+    "paragraph": "§ 11.1. Algemene bepalingen",
+    "common_name": "Cookiebepaling (cookie provision)",
+    "eu_directive_implemented": {
+      "number": "2002/58/EG",
+      "article": "Artikel 5, derde lid",
+      "short_name": "ePrivacy-richtlijn (Bijzondere privacyrichtlijn)",
+      "note": "Bevestigd in de eigen memorie van toelichting bij de introductie van dit artikel in 2012 (Kamerstuk 33902, nr. 3): 'Artikel 11.7a vormt de implementatie van artikel 5, derde lid, van richtlijn 2002/58/EG.'"
+    },
+    "text_status": "reconstructed_from_corroborating_sources",
+    "text_status_warning": "BELANGRIJK: dit is NIET een directe, woordelijke kopie van een enkele officiele wetten.overheid.nl-pagina. De volledige regeling (Telecommunicatiewet) is te groot om in een enkele ophaling volledig op te halen en de ophaling brak af voordat Hoofdstuk 11 werd bereikt. Deze tekst is samengesteld uit meerdere onderling consistente fragmenten uit betrouwbare secundaire bronnen (Maxius.nl, InView, en de oorspronkelijke memorie van toelichting op zoek.officielebekendmakingen.nl). De structuur en inhoud komen overeen, maar de exacte woordelijke tekst moet geverifieerd worden tegen wetten.overheid.nl zelf voordat dit artikel wordt gebruikt als letterlijk citaat in een bevinding, op dezelfde manier als de gedeeltelijk samengevatte artikelen in het Cbw-dataset zijn gemarkeerd.",
+    "text_reconstructed": "1 Onverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken abonnee of gebruiker: a. is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en b. zijn toestemming heeft verleend. 2 De in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie. 3 Het bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft: a. die uitsluitend geschiedt ten behoeve van de uitvoering van de overdracht van een communicatie over een elektronisch communicatienetwerk, b. die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren, of c. mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker, om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.",
+    "note_on_gdpr_cross_reference": "Let op de expliciete verwijzing naar de Algemene verordening gegevensbescherming in lid 1. Dit artikel is de Nederlandse implementatie van de ePrivacy-richtlijn, maar verwijst binnen zijn eigen tekst direct naar de AVG voor de invulling van 'duidelijke en volledige informatie'. Dit is een directe, in de wettekst zelf zichtbare koppeling tussen twee van de vier hoofddatasets in dit project (UAVG/AVG en dit artikel), en een concreet voorbeeld van de vertikale/horizontale gelaagdheid die Lotte in de eerste bijeenkomst noemde.",
+    "url": "https://wetten.overheid.nl/BWBR0009950/2025-09-01/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a"
+  },
+  "version_history": [
+    {
+      "effective_date": "2012-06-05",
+      "event": "Nieuw (introductie van artikel 11.7a in de Telecommunicatiewet)",
+      "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
+      "kamerstukken": "32549"
+    },
+    {
+      "effective_date": "2013-01-01",
+      "event": "Wijziging",
+      "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
+      "kamerstukken": "32549"
+    },
+    {
+      "effective_date": "2015-03-11",
+      "event": "Wijziging (o.a. toevoeging derde uitzondering voor cookies met geringe privacygevolgen, na internetconsultatie 'Aanpassing artikel 11.7a')",
+      "source_publication": "Stb. 2015, 100 / Stb. 2015, 101",
+      "kamerstukken": "33902"
+    },
+    {
+      "effective_date": "2018-07-28",
+      "event": "Wijziging (terugwerkende kracht t/m 25-05-2018, samenvallend met inwerkingtreding AVG)",
+      "source_publication": "Stb. 2018, 247 / Stb. 2018, 248",
+      "kamerstukken": "34939"
+    },
+    {
+      "effective_date": "2025-09-01",
+      "event": "Huidige geldende versie",
+      "effective_until": "2026-06-30"
+    },
+    {
+      "effective_date": "2026-07-01",
+      "event": "Geplande wijziging, geldig t/m 14-08-2026",
+      "note": "Nog niet inhoudelijk geverifieerd wat er wijzigt."
+    },
+    {
+      "effective_date": "2026-08-15",
+      "event": "Volgende geplande wijziging na 2026-07-01",
+      "note": "Datum valt samen met de inwerkingtreding van de Cyberbeveiligingswet en de Wwke. Nog niet bevestigd of dit verband houdt met elkaar of toeval is, waard om te verifieren."
+    }
+  ],
+  "stability_note": "Dit artikel is al vijf keer gewijzigd sinds introductie in 2012, en heeft nog twee geplande wijzigingen alleen al in 2026 (01-07 en 15-08). Dat is een opvallend hoge wijzigingsfrequentie voor een enkel artikel over een periode van 14 jaar, en een sterk signaal voor de bestendigheid-dimensie uit het Staat van de wetgeving-kader. Vergelijk met UAVG, waar de grote wijziging op 2026-09-01 plaatsvond, en de Cbw, die op 2026-08-15 volledig in werking trad, mogelijk relevant om te onderzoeken of deze drie data samenhangen.",
+  "relationships": {
+    "lido_data_included": false,
+    "lido_note": "Nog niet gecontroleerd. Zelfde procedure als bij UAVG en de Cbw: eerst controleren of BWBR0009950 uberhaupt bestaat als Wet-type in LiDO, dan Artikel-type gefilterd op dit BWB id, specifiek zoekend naar het artikelnummer 11.7a in het label of identifier.",
+    "incoming_references_to_this_regulation": {
+      "status": "retrieved_partial_from_wetstechnische_informatie",
+      "note": "Officiele wetstechnische informatie-pagina (geraadpleegd) toont drie expliciete verwijzingen naar dit artikel: Wetboek van Strafvordering, artikelen 126nba, 126uba en 126zpa (bevoegdheden tot onderzoek van telecommunicatie/randapparatuur in strafzaken). Daarnaast verwijzingen naar het hoofdstuk als geheel vanuit de eigen wet (art. 18.3, 18.8, 7.5), de Regeling universele dienstverlening en eindgebruikersbelangen (art. 2.2), en het Besluit doorberekening kosten ACM (art. 8)."
+    },
+    "case_law_citations": {
+      "status": "not_retrieved",
+      "note": "Vereist LiDO."
+    },
+    "outgoing_references": {
+      "status": "retrieved_partial_from_text",
+      "known_references": [
+        "Algemene verordening gegevensbescherming (AVG/GDPR), expliciet genoemd in lid 1",
+        "Richtlijn 2002/58/EG (ePrivacy-richtlijn), artikel 5 lid 3, geimplementeerd door dit artikel als geheel"
+      ]
+    }
+  },
+  "sources": [
+    "https://wetten.overheid.nl/BWBR0009950/2025-09-01/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a/informatie",
+    "https://maxius.nl/telecommunicatiewet/artikel11.7a",
+    "https://www.inview.nl/openCitation/idf7a9f29cc1b347d7939fbeac57e83d08/telecommunicatiewet-artikel-11-7a",
+    "https://zoek.officielebekendmakingen.nl/kst-33902-3.html",
+    "https://www.eerstekamer.nl/wetsvoorstel/33902_wijziging_artikel_11_7a"
+  ],
+  "compiled_on": "2026-09-10"
+}

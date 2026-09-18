@@ -1,0 +1,84 @@
+@prefix lido: <http://linkeddata.overheid.nl/terms/> .
+@prefix bwb: <http://linkeddata.overheid.nl/terms/bwb/id/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix jip: <https://jip2026.tudelft.nl/terms/> .
+
+# ============================================================
+# Besluit EU-verordeningen Wft (BWBR0049497), Bijlage 35
+# Current version effective from 2026-08-15
+# ============================================================
+
+bwb:BWBR0049497 a lido:Amvb ;
+    rdfs:label "Besluit EU-verordeningen Wft" ;
+    lido:heeftBWBId "BWBR0049497" ;
+    jip:jurisdiction "NL" ;
+    jip:status "in_force" ;
+    lido:heeftInwerkingtredingsdatum "2026-08-15"^^xsd:date ;
+    dcterms:source <https://wetten.overheid.nl/BWBR0049497/2026-08-15> .
+
+bwb:BWBR0049497-bijlage35 a lido:Bijlage ;
+    lido:isOnderdeelVanRegeling bwb:BWBR0049497 ;
+    lido:heeftOnderdeelNummer "35" ;
+    dcterms:title "Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)" ;
+    jip:implementeert [ a jip:EURegelgeving ; dcterms:identifier "(EU) 2022/2554" ; rdfs:label "DORA" ] ;
+    dcterms:source <https://wetten.overheid.nl/jci1.3:c:BWBR0049497&bijlage=35&z=2026-08-15&g=2026-08-15> .
+
+# --- Compliance check, recorded as project metadata ---
+bwb:BWBR0049497-bijlage35 jip:hasComplianceCheck """Checked 2026-09-15: Re-verified directly against wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie. Version still shows 'geldend van 15-08-2026 t/m heden'. Incoming reference list unchanged (still only the Machtigingsbesluit, Artikel 2). No corrections needed to this dataset's content.""" .
+
+# --- Version history ---
+bwb:BWBR0049497-bijlage35 jip:hasVersionEvent [ jip:date "2024-04-01"^^xsd:date ; jip:event """Nieuwe-regeling (hele besluit trad in werking; bijlage 35 bevatte destijds Verordening (EU) 2023/2830, veiling van broeikasgasemissierechten)""" ] .
+bwb:BWBR0049497-bijlage35 jip:hasVersionEvent [ jip:date "2025-01-17"^^xsd:date ; jip:event """Bijlage 35 vervangen: DORA (EU 2022/2554) ingevoegd als nieuwe bijlage 35. Oude bijlage 35 (veiling broeikasgasemissierechten) vernummerd tot bijlage 38.""" ] .
+bwb:BWBR0049497-bijlage35 jip:hasVersionEvent [ jip:date "2026-08-15"^^xsd:date ; jip:event """Wijziging van bijlage 35 (aard van de wijziging niet opgehaald; zie bronpublicatie voor details)""" ] .
+
+# --- Relationships (incoming/outgoing references) ---
+bwb:BWBR0051566 lido:linktNaar bwb:BWBR0049497-bijlage35 ;
+    jip:citingArticle "Artikel 2" .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Verordening (EU) 2023/1114 (MiCAR - cryptoactivamarkten)" ; jip:context "definieert 'aanbieders van cryptoactivadiensten' en 'activagerelateerde tokens'" ; jip:relationshipType "defines_term" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Verordening (EU) nr. 2016/1011 (Benchmarks)" ; jip:context "definieert 'cruciale benchmarks'" ; jip:relationshipType "defines_term" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Verordening (EU) 2020/1503 (CSPR - crowdfundingdienstverleners)" ; jip:context "definieert 'crowdfundingdienstverleners'" ; jip:relationshipType "defines_term" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Verordening (EU) nr. 909/2014 (CSDR - centrale effectenbewaarinstellingen)" ; jip:context "definieert 'centrale effectenbewaarinstellingen'" ; jip:relationshipType "defines_term" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Verordening (EU) nr. 1024/2013 (SSM - bankentoezicht ECB)" ; jip:context "bepaalt wanneer ECB in plaats van DNB bevoegd is" ; jip:relationshipType "conditions_competence" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Richtlijn 2013/36/EU (CRD - kapitaalvereisten)" ; jip:context "lidstaatoptie: reikwijdte-uitzondering voor bepaalde instellingen" ; jip:relationshipType "national_option_reference" ] .
+bwb:BWBR0049497-bijlage35 jip:referencesInText [ dcterms:title "Cyberbeveiligingswet" ; jip:context "lidstaatoptie: aanvullende meldplicht ICT-incidenten bij nationaal CSIRT" ; jip:relationshipType "national_option_reference" ] .
+
+# --- Provisions (the five numbered parts of the annex) ---
+jip:BWBR0049497-bijlage35-p1 a jip:Provision ;
+    jip:isPartOf bwb:BWBR0049497-bijlage35 ;
+    jip:number "1" ;
+    dcterms:title "Bevoegde autoriteit in de zin van de verordening" ;
+    jip:text """1. Bevoegde autoriteit in de zin van de verordening\n\nDe Autoriteit Financiële Markten: ten aanzien van:\n- aanbieders van cryptoactivadiensten als bedoeld in artikel 3, eerste lid, onderdeel 15 van Verordening (EU) 2023/1114 (cryptoactiva);\n- adviseurs, voor zover zij adviseren over verzekeringen;\n- beheerders van beleggingsinstellingen;\n- beheerders van cruciale benchmarks als bedoeld in artikel 20, eerste lid, onderdeel b, van Verordening (EU) nr. 2016/1011 (benchmarks);\n- beheerders van icbe's;\n- beleggingsondernemingen;\n- bemiddelaars in verzekeringen;\n- crowdfundingdienstverleners als bedoeld in artikel 2, eerste lid, onderdeel e, van Verordening (EU) 2020/1503 (CSPR);\n- datarapporteringdienstverleners;\n- gevolmachtigde agenten of ondergevolmachtigde agenten;\n- handelsplatformen;\n- herverzekeringsbemiddelaars.\n\nDe Nederlandsche Bank: ten aanzien van:\n- banken, tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht);\n- betaaldienstverleners;\n- centrale effectenbewaarinstellingen als bedoeld in artikel 2, eerste lid, onderdeel 1, van Verordening (EU) nr. 909/2014 (CSDR);\n- centrale tegenpartijen;\n- elektronischgeldinstellingen;\n- premiepensioeninstellingen;\n- uitgevers van activagerelateerde tokens als bedoeld in artikel 3, eerste lid, onderdelen 6 en 10, van Verordening (EU) 2023/1114 (cryptoactiva);\n- verzekeraars.""" .
+
+jip:BWBR0049497-bijlage35-p2 a jip:Provision ;
+    jip:isPartOf bwb:BWBR0049497-bijlage35 ;
+    jip:number "2" ;
+    dcterms:title "Handhaving door middel van last onder dwangsom of bestuurlijke boete" ;
+    jip:text """2. Handhaving door middel van last onder dwangsom of bestuurlijke boete\n\n[Tabel met boetecategorieën per artikel van de verordening; artikelen 5 t/m 10 (boetecategorie 3), 11 (lid-specifiek, categorie 1-3), 12 t/m 30 (grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2), 41 (RTS, categorie 2), 42 derde en zesde lid (categorie 2), 45 (categorie 1). Zie brondocument voor de volledige tabel met alle artikelnummers en bijbehorende boetecategorieën.]""" .
+
+jip:BWBR0049497-bijlage35-p3 a jip:Provision ;
+    jip:isPartOf bwb:BWBR0049497-bijlage35 ;
+    jip:number "3" ;
+    dcterms:title "Openbaarmaking overtredingen" ;
+    jip:text """3. Openbaarmaking overtredingen\n\nDe bevoegde autoriteit kan bij een overtreding van het bij of krachtens de verordening bepaalde de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken.""" .
+
+jip:BWBR0049497-bijlage35-p4 a jip:Provision ;
+    jip:isPartOf bwb:BWBR0049497-bijlage35 ;
+    jip:number "4" ;
+    dcterms:title "Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)" ;
+    jip:text """4. Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)\n\nDe verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten).""" .
+
+jip:BWBR0049497-bijlage35-p5 a jip:Provision ;
+    jip:isPartOf bwb:BWBR0049497-bijlage35 ;
+    jip:number "5" ;
+    dcterms:title "Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)" ;
+    jip:text """5. Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)\n\nBanken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.""" .
+
+# --- Structured enforcement fine table ---
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "5 t/m 10" ; jip:fineCategory "3" ; jip:detail "" ] .
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "11" ; jip:fineCategory "1-3 (lid-specifiek)" ; jip:detail "categorie verschilt per lid" ] .
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "12 t/m 30" ; jip:fineCategory "3" ; jip:detail "grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2" ] .
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "41" ; jip:fineCategory "2" ; jip:detail "RTS" ] .
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "42" ; jip:fineCategory "2" ; jip:detail "derde en zesde lid" ] .
+bwb:BWBR0049497-bijlage35 jip:hasEnforcementCategory [ jip:articleRange "45" ; jip:fineCategory "1" ; jip:detail "" ] .
