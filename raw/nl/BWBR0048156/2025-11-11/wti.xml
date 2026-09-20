@@ -1,0 +1,2233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wetstechnische-informatie xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:overheid="http://standaarden.overheid.nl/owms/terms/" xmlns:owms="http://standaarden.overheid.nl/bwb/owms/" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-WTI/2016-1/xsd/wti_2016-1.xsd" bwb-id="BWBR0048156">
+  <algemene-informatie gegenereerd="2026-09-19T04:02:09">
+    <eerstverantwoordelijke>Binnenlandse Zaken en Koninkrijksrelaties</eerstverantwoordelijke>
+    <afkortingen>
+      <afkorting>Wdo</afkorting>
+    </afkortingen>
+    <citeertitel status="officieel">Wet digitale overheid</citeertitel>
+    <citeertitels>
+      <citeertitel status="officieel" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">Wet digitale overheid</citeertitel>
+    </citeertitels>
+    <soort-regeling>wet</soort-regeling>
+    <identificatienummer>BWBR0048156</identificatienummer>
+    <rechtsgebieden>
+      <rechtsgebied>
+        <hoofdgebied>Staats- en bestuursrecht</hoofdgebied>
+        <specifiekgebied>Bestuursrecht</specifiekgebied>
+      </rechtsgebied>
+    </rechtsgebieden>
+    <overheidsdomeinen>
+      <overheidsdomein>Overheid, bestuur en koninkrijk</overheidsdomein>
+    </overheidsdomeinen>
+  </algemene-informatie>
+  <gerelateerde-regelgeving gegenereerd="2026-09-19T04:02:09">
+    <regeling>
+      <wetsfamilie>
+        <gerelateerde-regeling bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+          <extref doc="jci1.3:c:BWBR0048156" bwb-id="BWBR0048156">Wet digitale overheid</extref>
+        </gerelateerde-regeling>
+      </wetsfamilie>
+      <grondslag-voor>
+        <gerelateerde-regeling bwb-id="BWBR0052600" geldig-tot="9999-12-31" geldig-van="2026-04-24" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-04-24">
+          <extref doc="jci1.3:c:BWBR0052600" bwb-id="BWBR0052600">Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref doc="jci1.3:c:BWBR0037987" bwb-id="BWBR0037987">Besluit digitale overheid</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0048168" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref doc="jci1.3:c:BWBR0048168" bwb-id="BWBR0048168">Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0048167" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref doc="jci1.3:c:BWBR0048167" bwb-id="BWBR0048167">Regeling voorzieningen Wdo</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0048225" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref doc="jci1.3:c:BWBR0048225" bwb-id="BWBR0048225">Besluit beveiligde verbinding met overheidswebsites en -webapplicaties</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0040936" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+          <extref doc="jci1.3:c:BWBR0040936" bwb-id="BWBR0040936">Tijdelijk besluit digitale toegankelijkheid overheid</extref>
+        </gerelateerde-regeling>
+      </grondslag-voor>
+      <verwijzing-door>
+        <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="2024-04-01" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+          <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=1" bwb-id="BWBR0037987" label-id="13525404">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">
+          <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=1" bwb-id="BWBR0037987" label-id="13525404">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0048167" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref label="Regeling voorzieningen Wdo" groep="artikel" doc="jci1.3:c:BWBR0048167&amp;artikel=1" bwb-id="BWBR0048167" label-id="16663534">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0048168" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+          <extref label="Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening" groep="artikel" doc="jci1.3:c:BWBR0048168&amp;artikel=1" bwb-id="BWBR0048168" label-id="16663804">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0050531" geldig-tot="2025-07-01" geldig-van="2025-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-01-01">
+          <extref label="Regeling tarieven Dienst Wegverkeer 2025" groep="bijlage" doc="jci1.3:c:BWBR0050531&amp;bijlage=VII" bwb-id="BWBR0050531" label-id="17203824">VII</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0050531" geldig-tot="2026-01-01" geldig-van="2025-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-07-01">
+          <extref label="Regeling tarieven Dienst Wegverkeer 2025" groep="bijlage" doc="jci1.3:c:BWBR0050531&amp;bijlage=VII" bwb-id="BWBR0050531" label-id="17203824">VII</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0051526" geldig-tot="9999-12-31" geldig-van="2025-09-23" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-09-23">
+          <extref label="Regeling bijzondere uitkering digitalisering BES" groep="artikel" doc="jci1.3:c:BWBR0051526&amp;artikel=8" bwb-id="BWBR0051526" label-id="17431034">8</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0052034" geldig-tot="9999-12-31" geldig-van="2026-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-01-01">
+          <extref label="Aanwijzingsbesluit elektronische kanalen Ministerie van BZK 2025" groep="bijlage" doc="jci1.3:c:BWBR0052034&amp;bijlage=3" bwb-id="BWBR0052034" label-id="17595114">3</extref>
+        </gerelateerd-regelingelement>
+      </verwijzing-door>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="16661094" groep="artikel" label="Artikel 2">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0052600" geldig-tot="9999-12-31" geldig-van="2026-04-24" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-04-24">
+            <extref doc="jci1.3:c:BWBR0052600" bwb-id="BWBR0052600">Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=1" bwb-id="BWBR0048156" label-id="16661084">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="bijlage" doc="jci1.3:c:BWBR0048156" bwb-id="BWBR0048156" label-id="16661514">bij artikel 2, tweede lid, onder a, van de Wet digitale overheid</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22b" bwb-id="BWBR0048156" label-id="17487784">22b</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048167" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling voorzieningen Wdo" groep="artikel" doc="jci1.3:c:BWBR0048167&amp;artikel=1" bwb-id="BWBR0048167" label-id="16663534">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0052600" geldig-tot="9999-12-31" geldig-van="2026-04-24" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-04-24">
+            <extref label="Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid" groep="aanhef" doc="jci1.3:c:BWBR0052600" bwb-id="BWBR0052600" label-id="17748114">aanhef</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0052600" geldig-tot="9999-12-31" geldig-van="2026-04-24" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-04-24">
+            <extref label="Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0052600&amp;artikel=1" bwb-id="BWBR0052600" label-id="17748124">1</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661304" groep="artikel" label="Artikel 16">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref doc="jci1.3:c:BWBR0037987" bwb-id="BWBR0037987">Besluit digitale overheid</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=28" bwb-id="BWBR0048156" label-id="16661464">28</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661164" groep="artikel" label="Artikel 6">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0048168" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref doc="jci1.3:c:BWBR0048168" bwb-id="BWBR0048168">Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22d" bwb-id="BWBR0048156" label-id="17487804">22d</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048168" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening" groep="aanhef" doc="jci1.3:c:BWBR0048168" bwb-id="BWBR0048168" label-id="16663794">aanhef</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661214" groep="artikel" label="Artikel 10">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0048167" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref doc="jci1.3:c:BWBR0048167" bwb-id="BWBR0048167">Regeling voorzieningen Wdo</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048167" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling voorzieningen Wdo" groep="aanhef" doc="jci1.3:c:BWBR0048167" bwb-id="BWBR0048167" label-id="16663524">aanhef</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661114" groep="artikel" label="Artikel 3">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0048225" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref doc="jci1.3:c:BWBR0048225" bwb-id="BWBR0048225">Besluit beveiligde verbinding met overheidswebsites en -webapplicaties</extref>
+          </gerelateerde-regeling>
+          <gerelateerde-regeling bwb-id="BWBR0040936" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref doc="jci1.3:c:BWBR0040936" bwb-id="BWBR0040936">Tijdelijk besluit digitale toegankelijkheid overheid</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=2" bwb-id="BWBR0048156" label-id="16661094">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="2023-07-01" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=28" bwb-id="BWBR0048156" label-id="16661464">28</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=28" bwb-id="BWBR0048156" label-id="16661464">28</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=29" bwb-id="BWBR0048156" label-id="16661474">29</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22b" bwb-id="BWBR0048156" label-id="17487784">22b</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22d" bwb-id="BWBR0048156" label-id="17487804">22d</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048225" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Besluit beveiligde verbinding met overheidswebsites en -webapplicaties" groep="aanhef" doc="jci1.3:c:BWBR0048225" bwb-id="BWBR0048225" label-id="16674584">aanhef</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661144" groep="artikel" label="Artikel 5">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2026-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="artikel" doc="jci1.3:c:BWBR0005537&amp;artikel=2:19" bwb-id="BWBR0005537" label-id="16683474">2:19</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2026-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="artikel" doc="jci1.3:c:BWBR0005537&amp;artikel=2:27" bwb-id="BWBR0005537" label-id="16683594">2:27</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2027-01-01" geldig-van="2026-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="artikel" doc="jci1.3:c:BWBR0005537&amp;artikel=2:10" bwb-id="BWBR0005537" label-id="2814134">2:10</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2027-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2027-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="artikel" doc="jci1.3:c:BWBR0005537&amp;artikel=2:10" bwb-id="BWBR0005537" label-id="2814134">2:10</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0006622" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wegenverkeerswet 1994" groep="artikel" doc="jci1.3:c:BWBR0006622&amp;artikel=107" bwb-id="BWBR0006622" label-id="2958274">107</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0006622" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wegenverkeerswet 1994" groep="artikel" doc="jci1.3:c:BWBR0006622&amp;artikel=111" bwb-id="BWBR0006622" label-id="2958374">111</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0006622" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wegenverkeerswet 1994" groep="artikel" doc="jci1.3:c:BWBR0006622&amp;artikel=121" bwb-id="BWBR0006622" label-id="2958494">121</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0006622" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wegenverkeerswet 1994" groep="artikel" doc="jci1.3:c:BWBR0006622&amp;artikel=126" bwb-id="BWBR0006622" label-id="2958574">126</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008038" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling vaststelling modellen rijbewijzen en daarmee verband houdende formulieren" groep="artikel" doc="jci1.3:c:BWBR0008038&amp;artikel=2a" bwb-id="BWBR0008038" label-id="12782214">2a</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008038" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling vaststelling modellen rijbewijzen en daarmee verband houdende formulieren" groep="artikel" doc="jci1.3:c:BWBR0008038&amp;artikel=2c" bwb-id="BWBR0008038" label-id="12782234">2c</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008074" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Reglement rijbewijzen" groep="artikel" doc="jci1.3:c:BWBR0008074&amp;artikel=152" bwb-id="BWBR0008074" label-id="75384">152</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008074" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Reglement rijbewijzen" groep="artikel" doc="jci1.3:c:BWBR0008074&amp;artikel=105a" bwb-id="BWBR0008074" label-id="8545254">105a</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008074" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Reglement rijbewijzen" groep="artikel" doc="jci1.3:c:BWBR0008074&amp;artikel=145" bwb-id="BWBR0008074" label-id="75254">145</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="2024-01-01" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=2" bwb-id="BWBR0008144" label-id="4941784">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="2024-06-28" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=2" bwb-id="BWBR0008144" label-id="4941784">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="2025-12-04" geldig-van="2024-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-07-01">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=2" bwb-id="BWBR0008144" label-id="4941784">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="2024-07-01" geldig-van="2024-06-28" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-06-28">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=2" bwb-id="BWBR0008144" label-id="4941784">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="2026-01-01" geldig-van="2025-12-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-12-04">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=2" bwb-id="BWBR0008144" label-id="4941784">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="2024-04-01" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=1" bwb-id="BWBR0037987" label-id="13525404">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=1" bwb-id="BWBR0037987" label-id="13525404">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0041604" geldig-tot="2026-04-01" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling gegevensverstrekking uit het rijbewijzenregister" groep="artikel" doc="jci1.3:c:BWBR0041604&amp;artikel=4" bwb-id="BWBR0041604" label-id="14838874">4</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0041604" geldig-tot="9999-12-31" geldig-van="2026-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-04-01">
+            <extref label="Regeling gegevensverstrekking uit het rijbewijzenregister" groep="artikel" doc="jci1.3:c:BWBR0041604&amp;artikel=4" bwb-id="BWBR0041604" label-id="14838874">4</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=1" bwb-id="BWBR0048156" label-id="16661084">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=8" bwb-id="BWBR0048156" label-id="16661194">8</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=10" bwb-id="BWBR0048156" label-id="16661214">10</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=29" bwb-id="BWBR0048156" label-id="16661474">29</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661084" groep="artikel" label="Artikel 1">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=9d" bwb-id="BWBR0037987" label-id="16820484">9d</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22b" bwb-id="BWBR0048156" label-id="17487784">22b</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048168" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening" groep="artikel" doc="jci1.3:c:BWBR0048168&amp;artikel=1" bwb-id="BWBR0048168" label-id="16663804">1</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661134" groep="artikel" label="Artikel 4">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=18" bwb-id="BWBR0048156" label-id="16661334">18</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661204" groep="artikel" label="Artikel 9">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=6" bwb-id="BWBR0037987" label-id="13525474">6</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=1" bwb-id="BWBR0048156" label-id="16661084">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=19" bwb-id="BWBR0048156" label-id="16661344">19</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661234" groep="artikel" label="Artikel 11">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=5f" bwb-id="BWBR0037987" label-id="16820414">5f</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=6" bwb-id="BWBR0037987" label-id="13525474">6</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=1" bwb-id="BWBR0048156" label-id="16661084">1</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=5" bwb-id="BWBR0048156" label-id="16661144">5</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=19" bwb-id="BWBR0048156" label-id="16661344">19</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661344" groep="artikel" label="Artikel 19">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0037987" geldig-tot="9999-12-31" geldig-van="2024-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-01-01">
+            <extref label="Besluit digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0037987&amp;artikel=5f" bwb-id="BWBR0037987" label-id="16820414">5f</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661514" groep="bijlage" label="Bijlage">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=2" bwb-id="BWBR0048156" label-id="16661094">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661454" groep="artikel" label="Artikel 27">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0006622" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wegenverkeerswet 1994" groep="artikel" doc="jci1.3:c:BWBR0006622&amp;artikel=111" bwb-id="BWBR0006622" label-id="2958374">111</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0008144" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Regeling taken Dienst Wegverkeer" groep="artikel" doc="jci1.3:c:BWBR0008144&amp;artikel=3" bwb-id="BWBR0008144" label-id="4941794">3</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661184" groep="artikel" label="Artikel 7">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=18" bwb-id="BWBR0048156" label-id="16661334">18</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=29" bwb-id="BWBR0048156" label-id="16661474">29</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22c" bwb-id="BWBR0048156" label-id="17487794">22c</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22d" bwb-id="BWBR0048156" label-id="17487804">22d</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661194" groep="artikel" label="Artikel 8">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=18" bwb-id="BWBR0048156" label-id="16661334">18</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22d" bwb-id="BWBR0048156" label-id="17487804">22d</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661254" groep="artikel" label="Artikel 13">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661264" groep="artikel" label="Artikel 14">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661274" groep="artikel" label="Artikel 15">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=17" bwb-id="BWBR0048156" label-id="16661324">17</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=18" bwb-id="BWBR0048156" label-id="16661334">18</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=29" bwb-id="BWBR0048156" label-id="16661474">29</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22c" bwb-id="BWBR0048156" label-id="17487794">22c</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2025-11-11" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-11">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=22d" bwb-id="BWBR0048156" label-id="17487804">22d</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661364" groep="artikel" label="Artikel 20">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-05-12" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-05-12">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=29" bwb-id="BWBR0048156" label-id="16661474">29</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661374" groep="artikel" label="Artikel 21">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=18" bwb-id="BWBR0048156" label-id="16661334">18</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16661384" groep="artikel" label="Artikel 22">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0048156" geldig-tot="9999-12-31" geldig-van="2023-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2023-07-01">
+            <extref label="Wet digitale overheid" groep="artikel" doc="jci1.3:c:BWBR0048156&amp;artikel=25" bwb-id="BWBR0048156" label-id="16661434">25</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+    </regelingelementen>
+  </gerelateerde-regelgeving>
+  <wijzigingen gegenereerd="2026-09-19T04:02:10">
+    <regeling>
+      <datum>
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+        </details>
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+        </details>
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>35868</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>159</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+        </details>
+      </datum>
+      <datum waarde="2025-11-11">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>36639</dossiernummer>
+              <ondertekening>2025-10-01</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                <publicatiedatum>2025-11-06</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>304</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2025-11-03</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                <publicatiedatum>2025-11-06</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>326</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2023-07-01">
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2023-04-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>160</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2023-04-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>160</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>35868</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>159</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2023-04-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>160</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2023-05-12">
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>34972</dossiernummer>
+              <ondertekening>2023-03-24</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>158</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2023-04-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                <publicatiedatum>2023-05-11</publicatiedatum>
+                <publicatiejaar>2023</publicatiejaar>
+                <publicatienummer>160</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="16661054">
+        <datum waarde="2023-05-12" versie-id="29402962">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661064">
+        <datum waarde="2023-05-12" versie-id="29402972">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661074">
+        <datum waarde="2023-05-12" versie-id="29402982">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661084">
+        <datum waarde="2023-07-01" label="Artikel 1" versie-id="29402992">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661094">
+        <datum waarde="2023-07-01" label="Artikel 2" versie-id="29403002">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661104">
+        <datum waarde="2023-07-01" label="Hoofdstuk 1" versie-id="29403012">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661114">
+        <datum waarde="2023-05-12" label="Artikel 3" versie-id="29403022">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661124">
+        <datum waarde="2023-05-12" label="Hoofdstuk 2" versie-id="29403032">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661134">
+        <datum label="Artikel 4" versie-id="29403042">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661144">
+        <datum label="Artikel 5" versie-id="29405402">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+        <datum waarde="2023-07-01" label="Artikel 5" versie-id="29403052">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661154">
+        <datum waarde="2023-07-01" label="Hoofdstuk 3" versie-id="29403062">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661164">
+        <datum waarde="2023-07-01" label="Artikel 6" versie-id="29403072">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661174">
+        <datum waarde="2023-07-01" label="§ 4.1" versie-id="29403082">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661184">
+        <datum label="Artikel 7" versie-id="29403092">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661194">
+        <datum waarde="2023-07-01" label="Artikel 8" versie-id="29403102">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661204">
+        <datum label="Artikel 9" versie-id="29406512">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>35868</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>159</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <opmerkingen>
+              <opmerking type="Inwtr">
+                <al>Treedt in werking op het tijdstip waarop de Wet digitale overheid
+    in werking treedt.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661214">
+        <datum waarde="2023-07-01" label="Artikel 10" versie-id="29403122">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661224">
+        <datum waarde="2023-07-01" label="§ 4.2" versie-id="29403132">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661234">
+        <datum label="Artikel 11" versie-id="29406522">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>35868</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>159</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <opmerkingen>
+              <opmerking type="Inwtr">
+                <al>Treedt in werking op het tijdstip waarop de Wet digitale overheid
+    in werking treedt.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661244">
+        <datum label="Artikel 12" versie-id="29403152">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661254">
+        <datum label="Artikel 13" versie-id="29403162">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661264">
+        <datum label="Artikel 14" versie-id="29406532">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>35868</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>159</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <opmerkingen>
+              <opmerking type="Inwtr">
+                <al>Treedt in werking op het tijdstip waarop de Wet digitale overheid
+    in werking treedt.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661274">
+        <datum label="Artikel 15" versie-id="29403182">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661284">
+        <datum label="§ 4.3" versie-id="29403192">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661294">
+        <datum waarde="2023-07-01" label="Hoofdstuk 4" versie-id="29403202">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661304">
+        <datum label="Artikel 16" versie-id="29405422">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+        <datum waarde="2023-07-01" label="Artikel 16" versie-id="29403212">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661314">
+        <datum waarde="2023-07-01" label="Hoofdstuk 5" versie-id="29403222">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661324">
+        <datum label="Artikel 17" versie-id="29405432">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+        <datum waarde="2023-07-01" label="Artikel 17" versie-id="29403232">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661334">
+        <datum waarde="2023-07-01" label="Artikel 18" versie-id="29403242">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661344">
+        <datum waarde="2023-07-01" label="Artikel 19" versie-id="29403252">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661354">
+        <datum waarde="2023-07-01" label="Hoofdstuk 6" versie-id="29403262">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661364">
+        <datum waarde="2023-05-12" label="Artikel 20" versie-id="29403272">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661374">
+        <datum label="Artikel 21" versie-id="29403282">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661384">
+        <datum label="Artikel 22" versie-id="29403292">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661394">
+        <datum waarde="2023-05-12" label="Hoofdstuk 7" versie-id="29403302">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661404">
+        <datum waarde="2023-07-01" label="Artikel 23" versie-id="29403312">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661414">
+        <datum label="Artikel 23a" versie-id="29403322">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661424">
+        <datum label="Artikel 24" versie-id="29403332">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661434">
+        <datum waarde="2023-07-01" label="Artikel 25" versie-id="29403342">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661444">
+        <datum waarde="2023-07-01" label="Artikel 26" versie-id="29403352">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661454">
+        <datum waarde="2023-07-01" label="Artikel 27" versie-id="29403362">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661464">
+        <datum waarde="2023-07-01" label="Artikel 28" versie-id="29405442">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2023-05-12" label="Artikel 28" versie-id="29403372">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661474">
+        <datum waarde="2023-05-12" label="Artikel 29" versie-id="29403382">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661484">
+        <datum waarde="2023-05-12" label="Artikel 30" versie-id="29403392">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661494">
+        <datum waarde="2023-05-12" label="Hoofdstuk 8" versie-id="29403402">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661504">
+        <datum waarde="2023-05-12" versie-id="29403412">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661514">
+        <datum waarde="2023-07-01" label="Bijlage" versie-id="29406542">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>35868</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-159">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>159</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+            <opmerkingen>
+              <opmerking type="Inwtr">
+                <al>Treedt in werking op het tijdstip waarop de Wet digitale overheid
+    in werking treedt.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+          <details isvoorafgaand="true">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2023-04-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-160">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>160</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16661524">
+        <datum waarde="2023-05-12" versie-id="29403432">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>34972</dossiernummer>
+                <ondertekening>2023-03-24</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2023-158">
+                  <publicatiedatum>2023-05-11</publicatiedatum>
+                  <publicatiejaar>2023</publicatiejaar>
+                  <publicatienummer>158</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487774">
+        <datum waarde="2025-11-11" label="Artikel 22a" versie-id="31033492">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+            <opmerkingen>
+              <opmerking type="Alg">
+                <al>Met ingang van 11 november 2025 zijn de Wet digitale overheid en
+    de daarop berustende bepalingen mede van toepassing in de openbare
+    lichamen Bonaire, Sint Eustatius en Saba met uitzondering van de
+    artikelen 3, 4, 5, eerste lid, onderdeel g, en zesde lid, 6, 7, 9,
+    11 tot en met 15, 16, tweede en derde lid, 17, derde, vijfde en
+    zevende lid, 21, 22, en 24.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487784">
+        <datum waarde="2025-11-11" label="Artikel 22b" versie-id="31033502">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487794">
+        <datum waarde="2025-11-11" label="Artikel 22c" versie-id="31033512">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487804">
+        <datum waarde="2025-11-11" label="Artikel 22d" versie-id="31033522">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487814">
+        <datum waarde="2025-11-11" label="Artikel 22e" versie-id="31033532">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17487824">
+        <datum waarde="2025-11-11" label="Hoofdstuk 7A" versie-id="31033542">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36639</dossiernummer>
+                <ondertekening>2025-10-01</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-304">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>304</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-11-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-326">
+                  <publicatiedatum>2025-11-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>326</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+    </regelingelementen>
+  </wijzigingen>
+  <owms:meta owms-version="4.0">
+    <owms:kern>
+      <dcterms:identifier>BWBR0048156</dcterms:identifier>
+      <dcterms:title xml:lang="nl">Wet digitale overheid</dcterms:title>
+      <dcterms:language>nl</dcterms:language>
+      <dcterms:type>wet</dcterms:type>
+      <dcterms:modified>2026-09-19</dcterms:modified>
+      <overheid:authority>Binnenlandse Zaken en Koninkrijksrelaties</overheid:authority>
+    </owms:kern>
+  </owms:meta>
+</wetstechnische-informatie>

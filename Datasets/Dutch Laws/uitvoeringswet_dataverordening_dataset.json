@@ -1,245 +1,1098 @@
 {
-  "regulation": {
-    "bwb_id": null,
-    "bwb_id_status": "STILL UNCONFIRMED after three separate search attempts (title, Stb. citation, BWBR-prefix guesses). Confirmed instead, from two independent sources (NJB, Eerste Kamer): Wet van 29 oktober 2025, published as Stb. 2025, 372 (corrected by Stb. 2025, 372-n1 for a date typo), KetenID WGK014687, Kamerstukken dossier TK/EK 36733 (ingediend 22 april 2025; TK hamerstuk 2 oktober 2025; EK hamerstuk 28 oktober 2025). Entry into force 21 November 2025 is now confirmed by a second independent source, not just the ACM's own announcement. The BWB-id itself was not surfaced by search and should be read directly off the wetten.overheid.nl URL once available, rather than guessed from the Stb./KetenID pattern.",
-    "kamerstuk_dossier": "36733",
-    "title": "Uitvoeringswet dataverordening",
-    "type": "Wet (formele wet)",
-    "jurisdiction": "NL",
-    "status": "in_force",
-    "language": "nl",
-    "authority": "Economische Zaken en Klimaat (mede: Binnenlandse Zaken en Koninkrijksrelaties; Rechtsbescherming)",
-    "current_version_effective_from": "2025-11-21",
-    "regulation_permalink": null,
-    "eu_regulation_implemented": {
-      "number": "(EU) 2023/2854",
-      "short_name": "Dataverordening / Data Act",
-      "full_name": "Verordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828",
-      "note": "Confirmed in the law's own Artikel 1 definition. Regulation, thin national layer: this Uitvoeringswet does not restate the Dataverordening's substantive rules, only designates competent authorities, a data coordinator, cooperation mechanisms, and sanctioning powers, per the master reference's classification for this instrument."
-    },
-    "note": "Full name per EK dossier 36733: 'Uitvoering van Verordening (EU) 2023/2854 ... (Dataverordening) (Uitvoeringswet dataverordening)'. Distinct from the Uitvoeringswet datagovernanceverordening (kst 36451), which implements a different regulation (Data Governance Act, (EU) 2022/868) and should not be confused with this one despite the similar name.",
-    "enactment": {
-      "wet_van": "29-10-2025",
-      "staatsblad": "Stb. 2025, 372",
-      "staatsblad_correction": "Stb. 2025, 372-n1 (12-12-2025, corrects a typo in the enactment date in the original publication)",
-      "keten_id": "WGK014687",
-      "kamerstukken_dossier": "36733"
-    }
+ "regulation": {
+  "bwb_id": "BWBR0051796",
+  "bwb_id_status": "RESOLVED 2026-09-19: confirmed via KOOP SRU title search (overheidbwb.titel=\"dataverordening\", the correct index — dcterms.title is not a supported index on this connection, discovered by querying the SRU explain document). Exact title match ('Uitvoeringswet dataverordening'), and cross-checked on two further independent fields before trusting it: geldigheidsperiode_startdatum = 2025-11-21 (matches this file's own current_version_effective_from exactly) and authority = 'Economische Zaken' (matches). Superseded the three-failed-search-attempts note below, kept for history.",
+  "kamerstuk_dossier": "36733",
+  "title": "Uitvoeringswet dataverordening",
+  "type": "Wet (formele wet)",
+  "jurisdiction": "NL",
+  "status": "in_force",
+  "language": "nl",
+  "authority": "Economische Zaken en Klimaat (mede: Binnenlandse Zaken en Koninkrijksrelaties; Rechtsbescherming)",
+  "current_version_effective_from": "2025-11-21",
+  "regulation_permalink": "https://wetten.overheid.nl/BWBR0051796/2025-11-21",
+  "eu_regulation_implemented": {
+   "number": "(EU) 2023/2854",
+   "short_name": "Dataverordening / Data Act",
+   "full_name": "Verordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828",
+   "note": "Confirmed in the law's own Artikel 1 definition. Regulation, thin national layer: this Uitvoeringswet does not restate the Dataverordening's substantive rules, only designates competent authorities, a data coordinator, cooperation mechanisms, and sanctioning powers, per the master reference's classification for this instrument."
   },
-  "coverage_note": {
-    "status": "COMPLETE",
-    "articles_retrieved": "Artikelen 1-14 (all), text pasted directly by the user from the live wetten.overheid.nl page (Geldend van 21-11-2025 t/m heden, geraadpleegd 17-09-2026).",
-    "text_fidelity_note": "All provisions verified_against_official_source. Articles 9-12 are editorial-note-only amending articles ([Red: Wijzigt ...]) whose operative content has already been merged into the target laws (Awb, Databankenwet, Wet handhaving consumentenbescherming, Wet hergebruik overheidsinformatie); this matches the convention already used for the Cbw's own §16.5 amending articles."
-  },
-  "version_history": [
-    {
-      "effective_date": "2025-11-21",
-      "event": "Wet in werking getreden (Uitvoeringswet dataverordening)",
-      "note": "Article 13 of the law itself specifies entry into force on 2025-09-12, contingent on Staatsblad publication timing; secondary sources (ACM, Security Management) confirm actual entry into force was 2025-11-21, when ACM's supervisory powers activated. This is the date used as current_version_effective_from above. The master reference's corpus table entry ('In force since: Oct 2025') is imprecise against this and should be corrected to 21 November 2025."
-    }
-  ],
-  "relationships": {
-    "lido_data_included": true,
-    "lido_status": "retrieved_partial",
-    "lido_portal_check_status": "checked",
-    "lido_note": "Portal checked directly by the user (LiDO spiegel-lijstweergave) for incoming references. SPARQL endpoint was NOT separately checked this session, so this dataset does not yet have the SPARQL-vs-portal comparison that the Cbw dataset has; that comparison is an open item. Portal returned 6 incoming citations: 5 to Algemene wet bestuursrecht (BWBR0005537), Bijlage 2, at five different consolidated-version dates (2025-11-21, 2026-01-01, 2026-07-01, 2026-08-01, 2026-08-15) -- consistent with this law's own Artikel 9 ('Wijzigt de Algemene wet bestuursrecht'), i.e. the Awb's Bijlage 2 has been re-consolidated multiple times since and each version still carries the reference back to this law's provisions, most likely the sanctioning powers in Artikel 8 being listed among Awb's special administrative-law competences; and 1 to the ACM Organisatie-, mandaat-, volmacht- en machtigingsbesluit 2013 (BWBR0033508), Artikel 3.5, dated 2025-12-25 -- confirming the ACM's internal mandate decree was updated to operationalize the competent-authority and datacoordinator roles this law assigns it in Artikelen 3 and 4.",
-    "incoming_references_to_this_regulation": {
-      "status": "retrieved_partial",
-      "source": "LiDO portal (spiegel-lijstweergave), checked 2026-09-17",
-      "total": 6,
-      "breakdown_by_instrument_type": {
-        "Wet (Awb, Bijlage 2, repeated across 5 consolidated versions)": 5,
-        "ZBO Regulation (ACM mandate decree)": 1
-      },
-      "note": "See relationships.lido_note for detail. The 5 Awb hits are the same underlying citation persisting across Awb's own version history, not 5 distinct citing provisions."
-    },
-    "case_law_citations": {
-      "status": "not_retrieved",
-      "note": "Not checked this session."
-    },
-    "outgoing_references": {
-      "status": "retrieved_partial_from_text",
-      "known_references": [
-        "Verordening (EU) 2023/2854 (Dataverordening), the regulation this law implements, referenced throughout",
-        "Uitvoeringswet Algemene verordening gegevensbescherming (UAVG), art. 6 lid 1 (AP's own constituting provision) and art. 14 leden 1/4/5 and art. 19 lid 2 (cross-applied for personal-data-related enforcement and cooperation)",
-        "Instellingswet Autoriteit Consument en Markt, art. 2 lid 1 and art. 7 lid 3 onderdeel a",
-        "Wet handhaving consumentenbescherming, art. 1 and its bijlage onderdeel a (carve-out from ACM/AP sanctioning powers for consumer-protection-law infringements)",
-        "Wetboek van Strafrecht, art. 23 lid 4 (sixth-category fine amount, used as the administrative fine ceiling for ACM sanctions)"
-      ]
-    }
-  },
-  "substantive_text": {
-    "status": "retrieved_complete",
-    "source": "Pasted directly by the user from wetten.overheid.nl (Geldend van 21-11-2025 t/m heden, geraadpleegd 17-09-2026); exact permalink not yet captured in this session.",
-    "provisions": [
-      {
-        "provision_id": "BWB_UNCONFIRMED-art1",
-        "number": "1",
-        "heading": "Artikel 1. Begripsbepaling",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "In deze wet en de daarop berustende bepalingen wordt verstaan onder:\n\nAutoriteit Consument en Markt: Autoriteit Consument en Markt als bedoeld in artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt;\n\nAutoriteit persoonsgegevens: Autoriteit persoonsgegevens als bedoeld in artikel 6, eerste lid, van de Uitvoeringswet Algemene verordening gegevensbescherming;\n\ndataverordening: Verordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828 (Dataverordening)."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art2",
-        "number": "2",
-        "heading": "Artikel 2. Geschillenbeslechtingsorgaan",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 De Autoriteit Consument en Markt certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar.\n\n2 De Autoriteit Consument en Markt geeft uitvoering aan artikel 10, zesde lid, van de dataverordening.\n\n3 De Autoriteit Consument en Markt kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken indien het orgaan:\n\na. niet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of\n\nb. niet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art3",
-        "number": "3",
-        "heading": "Artikel 3. Aanwijzing bevoegde autoriteiten",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 De Autoriteit Consument en Markt is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening.\n\n2 Als bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.\n\n3 De Autoriteit persoonsgegevens is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening.\n\n4 Als bevoegde autoriteit heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening. In afwijking in zoverre van de eerste volzin, is artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming van overeenkomstige toepassing voor zover het de verwerking van persoonsgegevens betreft.\n\n5 In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art4",
-        "number": "4",
-        "heading": "Artikel 4. Aanwijzing datacoördinator",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "De Autoriteit Consument en Markt is de datacoördinator, bedoeld in artikel 37, tweede lid, van de dataverordening."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art5",
-        "number": "5",
-        "heading": "Artikel 5. Aanwijzing toezichthouders",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 Met het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening is belast de Autoriteit Consument en Markt.\n\n2 Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.\n\n3 In afwijking van het eerste lid zijn met het toezicht op de naleving van artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.\n\n4 Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.\n\n5 Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art6",
-        "number": "6",
-        "heading": "Artikel 6. Samenwerking ACM en AP",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 De Autoriteit Consument en Markt en de Autoriteit persoonsgegevens zijn bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.\n\n2 Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art7",
-        "number": "7",
-        "heading": "Artikel 7. Samenwerking ACM en andere bevoegde autoriteiten",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 De Autoriteit Consument en Markt is bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.\n\n2 Bij ministeriële regeling kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art8",
-        "number": "8",
-        "heading": "Artikel 8. Sanctionering",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "1 De Autoriteit Consument en Markt is ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid, bevoegd tot oplegging van:\n\na. een last onder bestuursdwang; of\n\nb. een bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.\n\n2 De Autoriteit persoonsgegevens is ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid, bevoegd tot oplegging van:\n\na. een last onder bestuursdwang; of\n\nb. een bestuurlijke boete van ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening.\n\n3 De te betalen geldsom van een verbeurde dwangsom krachtens het tweede lid, onderdeel a, en de bestuurlijke boete, bedoeld in het tweede lid, onderdeel b, komt toe aan de Staat.\n\n4 Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.\n\n5 Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art9",
-        "number": "9",
-        "heading": "Artikel 9. Wijziging Algemene wet bestuursrecht",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "[Red: Wijzigt de Algemene wet bestuursrecht.]"
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art10",
-        "number": "10",
-        "heading": "Artikel 10. Wijziging Databankenwet",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "[Red: Wijzigt de Databankenwet.]"
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art11",
-        "number": "11",
-        "heading": "Artikel 11. Wijziging Wet handhaving consumentenbescherming",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "[Red: Wijzigt de Wet handhaving consumentenbescherming.]"
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art12",
-        "number": "12",
-        "heading": "Artikel 12. Wijziging Wet hergebruik overheidsinformatie",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "[Red: Wijzigt de Wet hergebruik van overheidsinformatie.]"
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art13",
-        "number": "13",
-        "heading": "Artikel 13. Inwerkingtreding",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "Deze wet treedt in werking met ingang van 12 september 2025. Indien het Staatsblad waarin deze wet wordt geplaatst, wordt uitgegeven na 11 september 2025, treedt zij in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst."
-      },
-      {
-        "provision_id": "BWB_UNCONFIRMED-art14",
-        "number": "14",
-        "heading": "Artikel 14. Citeertitel",
-        "chapter": null,
-        "paragraph": null,
-        "text_fidelity": "verified_against_official_source",
-        "url": null,
-        "text": "Deze wet wordt aangehaald als: Uitvoeringswet dataverordening."
-      }
-    ],
-    "provision_count": 14
-  },
-  "key_provisions_for_this_project": {
-    "competent_authority_split": {
-      "articles": [
-        "art3",
-        "art4",
-        "art5"
-      ],
-      "note": "ACM is the default competent authority, supervisor, and data coordinator for the Dataverordening; AP takes over specifically wherever personal-data processing is involved (art. 4 lid 12, art. 5 leden 7-8, art. 6 lid 2 onderdeel b, hoofdstuk V except art. 20). This split is the concrete national mechanism behind the GDPR/IoT tension flagged in the master reference: any dataset finding involving connected-device data that is also personal data needs to check both ACM and AP jurisdiction under this law."
-    },
-    "sanctioning_ceiling": {
-      "article": "art8",
-      "note": "ACM's fine ceiling is the higher of the Wetboek van Strafrecht's sixth-category amount or 10% of the offender's EU-wide annual turnover -- a GDPR-style (art. 83 AVG) turnover-based penalty structure applied outside data protection law, worth comparing against UAVG/AVG and Cbw fine structures for consistency."
-    }
-  },
-  "sources": [
-    "User-provided paste of wetten.overheid.nl, Uitvoeringswet dataverordening, geldend van 21-11-2025 t/m heden (permalink not yet captured)",
-    "User-provided LiDO portal results (spiegel-lijstweergave), checked 2026-09-17",
-    "https://www.eerstekamer.nl/wetsvoorstel/36733_uitvoeringswet",
-    "https://www.acm.nl/nl/node/28519",
-    "https://www.securitymanagement.nl/toezicht-op-europese-dataverordening-officieel-van-start/"
-  ],
-  "compiled_on": "2026-09-17",
-  "compliance_check": {
-    "checked_on": "2026-09-17",
-    "result": "initial_build_open_items",
-    "note": "First build of this dataset. 'status: in_force' based on the pasted live text's own 'Geldend van 21-11-2025 t/m heden' header, not independently re-fetched this session. Open items before this can be treated as fully complete: (1) confirm the actual BWB-id and permalink directly against wetten.overheid.nl -- provision_id and url fields currently use an explicit placeholder rather than a fabricated id; (2) run the SPARQL-endpoint check to compare against the portal results already gathered, matching the Cbw precedent; (3) correct the master reference's corpus-table date ('Oct 2025') to the confirmed 21 November 2025; (4) verify whether this dataset should distinguish itself clearly from the similarly-named Uitvoeringswet datagovernanceverordening (kst 36451) in any cross-referencing done elsewhere in the corpus."
+  "note": "Full name per EK dossier 36733: 'Uitvoering van Verordening (EU) 2023/2854 ... (Dataverordening) (Uitvoeringswet dataverordening)'. Distinct from the Uitvoeringswet datagovernanceverordening (kst 36451), which implements a different regulation (Data Governance Act, (EU) 2022/868) and should not be confused with this one despite the similar name.",
+  "enactment": {
+   "wet_van": "29-10-2025",
+   "staatsblad": "Stb. 2025, 372",
+   "staatsblad_correction": "Stb. 2025, 372-n1 (12-12-2025, corrects a typo in the enactment date in the original publication)",
+   "keten_id": "WGK014687",
+   "kamerstukken_dossier": "36733"
   }
+ },
+ "coverage_note": {
+  "status": "COMPLETE",
+  "articles_retrieved": "Artikelen 1-14 (all), text pasted directly by the user from the live wetten.overheid.nl page (Geldend van 21-11-2025 t/m heden, geraadpleegd 17-09-2026).",
+  "text_fidelity_note": "All provisions verified_against_official_source. Articles 9-12 are editorial-note-only amending articles ([Red: Wijzigt ...]) whose operative content has already been merged into the target laws (Awb, Databankenwet, Wet handhaving consumentenbescherming, Wet hergebruik overheidsinformatie); this matches the convention already used for the Cbw's own §16.5 amending articles."
+ },
+ "version_history": [
+  {
+   "effective_date": "2025-11-21",
+   "event": "Wet in werking getreden (Uitvoeringswet dataverordening)",
+   "note": "Article 13 of the law itself specifies entry into force on 2025-09-12, contingent on Staatsblad publication timing; secondary sources (ACM, Security Management) confirm actual entry into force was 2025-11-21, when ACM's supervisory powers activated. This is the date used as current_version_effective_from above. The master reference's corpus table entry ('In force since: Oct 2025') is imprecise against this and should be corrected to 21 November 2025."
+  }
+ ],
+ "relationships": {
+  "lido_data_included": true,
+  "lido_status": "retrieved_partial",
+  "lido_portal_check_status": "checked",
+  "lido_note": "Portal checked directly by the user (LiDO spiegel-lijstweergave) for incoming references. SPARQL endpoint was NOT separately checked this session, so this dataset does not yet have the SPARQL-vs-portal comparison that the Cbw dataset has; that comparison is an open item. Portal returned 6 incoming citations: 5 to Algemene wet bestuursrecht (BWBR0005537), Bijlage 2, at five different consolidated-version dates (2025-11-21, 2026-01-01, 2026-07-01, 2026-08-01, 2026-08-15) -- consistent with this law's own Artikel 9 ('Wijzigt de Algemene wet bestuursrecht'), i.e. the Awb's Bijlage 2 has been re-consolidated multiple times since and each version still carries the reference back to this law's provisions, most likely the sanctioning powers in Artikel 8 being listed among Awb's special administrative-law competences; and 1 to the ACM Organisatie-, mandaat-, volmacht- en machtigingsbesluit 2013 (BWBR0033508), Artikel 3.5, dated 2025-12-25 -- confirming the ACM's internal mandate decree was updated to operationalize the competent-authority and datacoordinator roles this law assigns it in Artikelen 3 and 4.",
+  "incoming_references_to_this_regulation": {
+   "status": "retrieved_partial",
+   "source": "LiDO portal (spiegel-lijstweergave), checked 2026-09-17",
+   "total": 6,
+   "breakdown_by_instrument_type": {
+    "Wet (Awb, Bijlage 2, repeated across 5 consolidated versions)": 5,
+    "ZBO Regulation (ACM mandate decree)": 1
+   },
+   "note": "See relationships.lido_note for detail. The 5 Awb hits are the same underlying citation persisting across Awb's own version history, not 5 distinct citing provisions."
+  },
+  "case_law_citations": {
+   "status": "not_retrieved",
+   "note": "Not checked this session."
+  },
+  "outgoing_references": {
+   "status": "retrieved_partial_from_text",
+   "known_references": [
+    "Verordening (EU) 2023/2854 (Dataverordening), the regulation this law implements, referenced throughout",
+    "Uitvoeringswet Algemene verordening gegevensbescherming (UAVG), art. 6 lid 1 (AP's own constituting provision) and art. 14 leden 1/4/5 and art. 19 lid 2 (cross-applied for personal-data-related enforcement and cooperation)",
+    "Instellingswet Autoriteit Consument en Markt, art. 2 lid 1 and art. 7 lid 3 onderdeel a",
+    "Wet handhaving consumentenbescherming, art. 1 and its bijlage onderdeel a (carve-out from ACM/AP sanctioning powers for consumer-protection-law infringements)",
+    "Wetboek van Strafrecht, art. 23 lid 4 (sixth-category fine amount, used as the administrative fine ceiling for ACM sanctions)"
+   ]
+  }
+ },
+ "substantive_text": {
+  "status": "retrieved_complete_official_xml",
+  "source": "KOOP BWB toestand XML, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0051796/2025-11-21_0/xml/BWBR0051796_2025-11-21_0.xml (opgehaald 2026-09-19 via pipeline/acquire.py + pipeline/parse.py, sha256-hashed under raw/nl/BWBR0051796/)",
+  "provisions": [
+   {
+    "provision_id": "BWBR0051796-art1",
+    "number": "1",
+    "heading": "Artikel 1. Begripsbepaling",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel1",
+    "text": "In deze wet en de daarop berustende bepalingen wordt verstaan onder:\n\nAutoriteit Consument en Markt: Autoriteit Consument en Markt als bedoeld in artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt;\n\nAutoriteit persoonsgegevens: Autoriteit persoonsgegevens als bedoeld in artikel 6, eerste lid, van de Uitvoeringswet Algemene verordening gegevensbescherming;\n\ndataverordening:\nVerordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828 (Dataverordening).",
+    "jci": "jci1.3:c:BWBR0051796&artikel=1&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0033043",
+      "text": "artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt",
+      "paragraph_number": null
+     },
+     {
+      "bwb_id": "BWBR0040940",
+      "text": "artikel 6, eerste lid, van de Uitvoeringswet Algemene verordening gegevensbescherming",
+      "paragraph_number": null
+     },
+     {
+      "bwb_id": null,
+      "text": "Verordening (EU) 2023/2854",
+      "paragraph_number": null
+     },
+     {
+      "bwb_id": null,
+      "text": "Verordening (EU) 2017/2394",
+      "paragraph_number": null
+     },
+     {
+      "bwb_id": null,
+      "text": "Richtlijn (EU) 2020/1828",
+      "paragraph_number": null
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087082",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608303",
+    "version_id": "31087082",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art2",
+    "number": "2",
+    "heading": "Artikel 2. Geschillenbeslechtingsorgaan",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel2",
+    "text": "1\nDe Autoriteit Consument en Markt certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar.\n\n2\nDe Autoriteit Consument en Markt geeft uitvoering aan artikel 10, zesde lid, van de dataverordening.\n\n3\nDe Autoriteit Consument en Markt kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken indien het orgaan:\n\na.\nniet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of\n\nb.\nniet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=2&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087092",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "De Autoriteit Consument en Markt certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=2&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": []
+     },
+     {
+      "text": "De Autoriteit Consument en Markt geeft uitvoering aan artikel 10, zesde lid, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=2&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": []
+     },
+     {
+      "text": "De Autoriteit Consument en Markt kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken indien het orgaan:\n\na.\nniet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of\n\nb.\nniet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=2&lid=3&z=2025-11-21&g=2025-11-21",
+      "number": "3",
+      "points": [
+       "a",
+       "b"
+      ]
+     }
+    ],
+    "element_id": "17608313",
+    "version_id": "31087092",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "1",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": "op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening",
+      "action": "certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar",
+      "recipient_body": [],
+      "deadline": {
+       "value": null,
+       "unit": null,
+       "from": null,
+       "raw": "voor ten hoogste vijf jaar"
+      },
+      "thresholds": [
+       "ten hoogste vijf jaar"
+      ],
+      "conditions": [
+       "op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "2",
+      "deontic": "OBLIGATION",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "geeft uitvoering aan artikel 10, zesde lid, van de dataverordening",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "3",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": "indien het orgaan:\n\na.\nniet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of\n\nb.\nniet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening.",
+      "action": "kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "niet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening",
+       "niet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art3",
+    "number": "3",
+    "heading": "Artikel 3. Aanwijzing bevoegde autoriteiten",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel3",
+    "text": "1\nDe Autoriteit Consument en Markt is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening.\n\n2\nAls bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.\n\n3\nDe Autoriteit persoonsgegevens is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening.\n\n4\nAls bevoegde autoriteit heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening. In afwijking in zoverre van de eerste volzin, is artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming van overeenkomstige toepassing voor zover het de verwerking van persoonsgegevens betreft.\n\n5\nIn afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=3&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0040940",
+      "text": "artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming",
+      "paragraph_number": "4"
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087102",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "De Autoriteit Consument en Markt is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=3&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": []
+     },
+     {
+      "text": "Als bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=3&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": []
+     },
+     {
+      "text": "De Autoriteit persoonsgegevens is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=3&lid=3&z=2025-11-21&g=2025-11-21",
+      "number": "3",
+      "points": []
+     },
+     {
+      "text": "Als bevoegde autoriteit heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening. In afwijking in zoverre van de eerste volzin, is artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming van overeenkomstige toepassing voor zover het de verwerking van persoonsgegevens betreft.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=3&lid=4&z=2025-11-21&g=2025-11-21",
+      "number": "4",
+      "points": []
+     },
+     {
+      "text": "In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=3&lid=5&z=2025-11-21&g=2025-11-21",
+      "number": "5",
+      "points": []
+     }
+    ],
+    "element_id": "17608323",
+    "version_id": "31087102",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "1",
+      "deontic": "DEFINITION",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': 'bedoeld in artikel 37, eerste lid, van de dataverordening'}, pass2={'deontic': 'DEFINITION', 'deference': 'artikel 37, eerste lid, van de dataverordening'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "2",
+      "deontic": "COMPETENCE",
+      "addressee": "de Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening'}, pass2={'deontic': 'DEFINITION', 'deference': 'artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "3",
+      "deontic": "DEFINITION",
+      "addressee": null,
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': 'bedoeld in artikel 37, eerste lid, van de dataverordening'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "4",
+      "deontic": "COMPETENCE",
+      "addressee": "de Autoriteit persoonsgegevens",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "voor zover het de verwerking van persoonsgegevens betreft"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.93,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'In afwijking in zoverre van de eerste volzin'}, pass2={'deontic': 'COMPETENCE', 'deference': 'artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming van overeenkomstige toepassing'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art4",
+    "number": "4",
+    "heading": "Artikel 4. Aanwijzing datacoördinator",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel4",
+    "text": "De Autoriteit Consument en Markt is de datacoördinator, bedoeld in artikel 37, tweede lid, van de dataverordening.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=4&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087112",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608333",
+    "version_id": "31087112",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": null,
+      "deontic": "DEFINITION",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "is de datacoördinator",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [],
+      "deference": "bedoeld in artikel 37, tweede lid, van de dataverordening",
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art5",
+    "number": "5",
+    "heading": "Artikel 5. Aanwijzing toezichthouders",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel5",
+    "text": "1\nMet het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening is belast de Autoriteit Consument en Markt.\n\n2\nMet het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.\n\n3\nIn afwijking van het eerste lid zijn met het toezicht op de naleving van artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.\n\n4\nHet eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.\n\n5\nHet eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=5&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0020586",
+      "text": "artikel 1 van de Wet handhaving consumentenbescherming",
+      "paragraph_number": "4"
+     },
+     {
+      "bwb_id": "BWBR0020586",
+      "text": "bijlage bij die wet",
+      "paragraph_number": "4"
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087122",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "Met het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening is belast de Autoriteit Consument en Markt.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=5&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": []
+     },
+     {
+      "text": "Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=5&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": []
+     },
+     {
+      "text": "In afwijking van het eerste lid zijn met het toezicht op de naleving van artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=5&lid=3&z=2025-11-21&g=2025-11-21",
+      "number": "3",
+      "points": []
+     },
+     {
+      "text": "Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=5&lid=4&z=2025-11-21&g=2025-11-21",
+      "number": "4",
+      "points": []
+     },
+     {
+      "text": "Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=5&lid=5&z=2025-11-21&g=2025-11-21",
+      "number": "5",
+      "points": []
+     }
+    ],
+    "element_id": "17608343",
+    "version_id": "31087122",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "1",
+      "deontic": "COMPETENCE",
+      "addressee": "de Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "Met het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening is belast",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "2",
+      "deontic": "COMPETENCE",
+      "addressee": "de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "met uitzondering van artikel 20"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "3",
+      "deontic": "COMPETENCE",
+      "addressee": "de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "voor zover het de verwerking van persoonsgegevens betreft"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.9,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'In afwijking van het eerste lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "4",
+      "deontic": "DEFERENCE",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.96,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid is niet van toepassing op'}, pass2={'deontic': 'DEFINITION', 'deference': 'artikel 1 van de Wet handhaving consumentenbescherming; onderdeel a van de bijlage bij die wet'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "5",
+      "deontic": "DEFERENCE",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.96,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste en tweede lid zijn niet van toepassing'}, pass2={'deontic': 'NONE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art6",
+    "number": "6",
+    "heading": "Artikel 6. Samenwerking ACM en AP",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel6",
+    "text": "1\nDe Autoriteit Consument en Markt en de Autoriteit persoonsgegevens zijn bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.\n\n2\nOnverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=6&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0040940",
+      "text": "artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming",
+      "paragraph_number": "2"
+     },
+     {
+      "bwb_id": "BWBR0033043",
+      "text": "artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt",
+      "paragraph_number": "2"
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087132",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "De Autoriteit Consument en Markt en de Autoriteit persoonsgegevens zijn bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=6&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": []
+     },
+     {
+      "text": "Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=6&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": []
+     }
+    ],
+    "element_id": "17608353",
+    "version_id": "31087132",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "1",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "in het belang van een efficiënt en effectief toezicht op de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "2",
+      "deontic": "OBLIGATION",
+      "addressee": "de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": "desgevraagd",
+      "action": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+      "recipient_body": [
+       "de Autoriteit Consument en Markt",
+       "de Autoriteit persoonsgegevens"
+      ],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "die noodzakelijk zijn voor de uitvoering van deze wet"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art7",
+    "number": "7",
+    "heading": "Artikel 7. Samenwerking ACM en andere bevoegde autoriteiten",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel7",
+    "text": "1\nDe Autoriteit Consument en Markt is bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.\n\n2\nBij ministeriële regeling kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=7&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087142",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "De Autoriteit Consument en Markt is bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=7&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": []
+     },
+     {
+      "text": "Bij ministeriële regeling kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=7&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": []
+     }
+    ],
+    "element_id": "17608363",
+    "version_id": "31087142",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "2",
+      "deontic": "COMPETENCE",
+      "addressee": "Bij ministeriële regeling",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet",
+      "recipient_body": [
+       "de bevoegde autoriteiten"
+      ],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "die noodzakelijk zijn voor de uitvoering van deze wet"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "1",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": null,
+      "action": "afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen",
+      "recipient_body": [
+       "andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+      ],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "in het belang van een efficiënt en effectief toezicht op de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.94,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art8",
+    "number": "8",
+    "heading": "Artikel 8. Sanctionering",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel8",
+    "text": "1\nDe Autoriteit Consument en Markt is ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid, bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.\n\n2\nDe Autoriteit persoonsgegevens is ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid, bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening.\n\n3\nDe te betalen geldsom van een verbeurde dwangsom krachtens het tweede lid, onderdeel a, en de bestuurlijke boete, bedoeld in het tweede lid, onderdeel b, komt toe aan de Staat.\n\n4\nHet eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.\n\n5\nHet eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=8&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0001854",
+      "text": "artikel 23, vierde lid, van het Wetboek van Strafrecht",
+      "paragraph_number": "1"
+     },
+     {
+      "bwb_id": "BWBR0020586",
+      "text": "artikel 1 van de Wet handhaving consumentenbescherming",
+      "paragraph_number": "4"
+     },
+     {
+      "bwb_id": "BWBR0020586",
+      "text": "bijlage bij die wet",
+      "paragraph_number": "4"
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087152",
+    "section": null,
+    "paragraphs": [
+     {
+      "text": "De Autoriteit Consument en Markt is ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid, bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=8&lid=1&z=2025-11-21&g=2025-11-21",
+      "number": "1",
+      "points": [
+       "a",
+       "b"
+      ]
+     },
+     {
+      "text": "De Autoriteit persoonsgegevens is ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid, bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=8&lid=2&z=2025-11-21&g=2025-11-21",
+      "number": "2",
+      "points": [
+       "a",
+       "b"
+      ]
+     },
+     {
+      "text": "De te betalen geldsom van een verbeurde dwangsom krachtens het tweede lid, onderdeel a, en de bestuurlijke boete, bedoeld in het tweede lid, onderdeel b, komt toe aan de Staat.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=8&lid=3&z=2025-11-21&g=2025-11-21",
+      "number": "3",
+      "points": []
+     },
+     {
+      "text": "Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=8&lid=4&z=2025-11-21&g=2025-11-21",
+      "number": "4",
+      "points": []
+     },
+     {
+      "text": "Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.",
+      "jci": "jci1.3:c:BWBR0051796&artikel=8&lid=5&z=2025-11-21&g=2025-11-21",
+      "number": "5",
+      "points": []
+     }
+    ],
+    "element_id": "17608373",
+    "version_id": "31087152",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733",
+    "norms": [
+     {
+      "number": "1",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit Consument en Markt",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": "ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid",
+      "action": "bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [
+       "10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie",
+       "het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht"
+      ],
+      "conditions": [
+       "voor zover het niet de verwerking van persoonsgegevens betreft",
+       "indien dat meer is"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.99,
+      "extraction_model": "gpt-5.6-luna",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "2",
+      "deontic": "COMPETENCE",
+      "addressee": "De Autoriteit persoonsgegevens",
+      "addressee_type": "COMPETENT_AUTHORITY",
+      "trigger_event": "ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid",
+      "action": "bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening",
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [
+       "ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening"
+      ],
+      "conditions": [
+       "voor zover het de verwerking van persoonsgegevens betreft"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "3",
+      "deontic": "DEFINITION",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [
+       "de Staat"
+      ],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "gpt-5.6-terra",
+      "extracted_on": "2026-09-20",
+      "human_verified": false
+     },
+     {
+      "number": "4",
+      "deontic": "DEFERENCE",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet."
+      ],
+      "deference": null,
+      "extraction_confidence": 0.98,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet.'}, pass2={'deontic': 'NONE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     },
+     {
+      "number": "5",
+      "deontic": "DEFERENCE",
+      "addressee": null,
+      "addressee_type": null,
+      "trigger_event": null,
+      "action": null,
+      "recipient_body": [],
+      "deadline": null,
+      "thresholds": [],
+      "conditions": [
+       "ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening"
+      ],
+      "deference": null,
+      "extraction_confidence": 0.96,
+      "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+      "extracted_on": "2026-09-21",
+      "human_verified": false,
+      "extraction_uncertain": true,
+      "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste en tweede lid zijn niet van toepassing'}, pass2={'deontic': 'NONE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+     }
+    ]
+   },
+   {
+    "provision_id": "BWBR0051796-art9",
+    "number": "9",
+    "heading": "Artikel 9. Wijziging Algemene wet bestuursrecht",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel9",
+    "text": "[Red: Wijzigt de Algemene wet bestuursrecht.]",
+    "jci": "jci1.3:c:BWBR0051796&artikel=9&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0005537",
+      "text": "Algemene wet bestuursrecht",
+      "paragraph_number": null
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087162",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608383",
+    "version_id": "31087162",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art10",
+    "number": "10",
+    "heading": "Artikel 10. Wijziging Databankenwet",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel10",
+    "text": "[Red: Wijzigt de Databankenwet.]",
+    "jci": "jci1.3:c:BWBR0051796&artikel=10&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0010591",
+      "text": "Databankenwet",
+      "paragraph_number": null
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087172",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608393",
+    "version_id": "31087172",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art11",
+    "number": "11",
+    "heading": "Artikel 11. Wijziging Wet handhaving consumentenbescherming",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel11",
+    "text": "[Red: Wijzigt de Wet handhaving consumentenbescherming.]",
+    "jci": "jci1.3:c:BWBR0051796&artikel=11&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0020586",
+      "text": "Wet handhaving consumentenbescherming",
+      "paragraph_number": null
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087182",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608403",
+    "version_id": "31087182",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art12",
+    "number": "12",
+    "heading": "Artikel 12. Wijziging Wet hergebruik overheidsinformatie",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel12",
+    "text": "[Red: Wijzigt de Wet hergebruik van overheidsinformatie.]",
+    "jci": "jci1.3:c:BWBR0051796&artikel=12&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [
+     {
+      "bwb_id": "BWBR0036795",
+      "text": "Wet hergebruik overheidsinformatie",
+      "paragraph_number": null
+     }
+    ],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087192",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608413",
+    "version_id": "31087192",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art13",
+    "number": "13",
+    "heading": "Artikel 13. Inwerkingtreding",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel13",
+    "text": "Deze wet treedt in werking met ingang van 12 september 2025. Indien het Staatsblad waarin deze wet wordt geplaatst, wordt uitgegeven na 11 september 2025, treedt zij in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=13&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087202",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608423",
+    "version_id": "31087202",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   },
+   {
+    "provision_id": "BWBR0051796-art14",
+    "number": "14",
+    "heading": "Artikel 14. Citeertitel",
+    "chapter": null,
+    "text_fidelity": "official_xml",
+    "url": "https://wetten.overheid.nl/BWBR0051796/2025-11-21/0/Artikel14",
+    "text": "Deze wet wordt aangehaald als: Uitvoeringswet dataverordening.",
+    "jci": "jci1.3:c:BWBR0051796&artikel=14&z=2025-11-21&g=2025-11-21",
+    "effect": "nieuwe-regeling",
+    "extref": [],
+    "intref": [],
+    "source_ref": "raw/nl/BWBR0051796/2025-11-21/toestand.xml#versie-id=31087212",
+    "section": null,
+    "paragraphs": [],
+    "element_id": "17608433",
+    "version_id": "31087212",
+    "source_publication": "Stb.2025-372",
+    "dossier_number": "36733"
+   }
+  ],
+  "provision_count": 14
+ },
+ "key_provisions_for_this_project": {
+  "competent_authority_split": {
+   "articles": [
+    "art3",
+    "art4",
+    "art5"
+   ],
+   "note": "ACM is the default competent authority, supervisor, and data coordinator for the Dataverordening; AP takes over specifically wherever personal-data processing is involved (art. 4 lid 12, art. 5 leden 7-8, art. 6 lid 2 onderdeel b, hoofdstuk V except art. 20). This split is the concrete national mechanism behind the GDPR/IoT tension flagged in the master reference: any dataset finding involving connected-device data that is also personal data needs to check both ACM and AP jurisdiction under this law."
+  },
+  "sanctioning_ceiling": {
+   "article": "art8",
+   "note": "ACM's fine ceiling is the higher of the Wetboek van Strafrecht's sixth-category amount or 10% of the offender's EU-wide annual turnover -- a GDPR-style (art. 83 AVG) turnover-based penalty structure applied outside data protection law, worth comparing against UAVG/AVG and Cbw fine structures for consistency."
+  }
+ },
+ "sources": [
+  "User-provided paste of wetten.overheid.nl, Uitvoeringswet dataverordening, geldend van 21-11-2025 t/m heden (permalink not yet captured)",
+  "User-provided LiDO portal results (spiegel-lijstweergave), checked 2026-09-17",
+  "https://www.eerstekamer.nl/wetsvoorstel/36733_uitvoeringswet",
+  "https://www.acm.nl/nl/node/28519",
+  "https://www.securitymanagement.nl/toezicht-op-europese-dataverordening-officieel-van-start/"
+ ],
+ "compiled_on": "2026-09-17",
+ "compliance_check": {
+  "checked_on": "2026-09-17",
+  "result": "initial_build_open_items",
+  "note": "First build of this dataset. 'status: in_force' based on the pasted live text's own 'Geldend van 21-11-2025 t/m heden' header, not independently re-fetched this session. Open items before this can be treated as fully complete: (1) confirm the actual BWB-id and permalink directly against wetten.overheid.nl -- provision_id and url fields currently use an explicit placeholder rather than a fabricated id; (2) run the SPARQL-endpoint check to compare against the portal results already gathered, matching the Cbw precedent; (3) correct the master reference's corpus-table date ('Oct 2025') to the confirmed 21 November 2025; (4) verify whether this dataset should distinguish itself clearly from the similarly-named Uitvoeringswet datagovernanceverordening (kst 36451) in any cross-referencing done elsewhere in the corpus."
+ },
+ "compliance_check_round_2": {
+  "checked_on": "2026-09-19",
+  "result": "bwb_id_resolved_all_provisions_confirmed",
+  "note": "Resolved the BWB-id (see regulation.bwb_id_status) and re-fetched the actual official XML. All 14 provisions diffed against this file's existing text: every one matches exactly once typography (curly quotes, non-breaking spaces, en-dashes) is normalized — the same harmless pattern found across every other dataset in this corpus, not a content discrepancy. No substantive corrections were needed for this instrument, unlike the Cbw. provision_id and url now use the real BWB-id instead of the BWB_UNCONFIRMED placeholder."
+ }
 }

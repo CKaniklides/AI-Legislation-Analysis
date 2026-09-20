@@ -1,0 +1,3651 @@
+[
+ {
+  "uid": "nl:BWBR0048156:art1@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=1&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "1",
+  "heading": "Artikel 1. Definities",
+  "chapter": "Hoofdstuk 1. Algemeen",
+  "section": null,
+  "text": "In deze wet en de daarop berustende bepalingen wordt verstaan onder:\n\n–\n\naangewezen organisatie: organisatie als bedoeld in artikel 2, tweede lid;\n\n–\n\nattribuut: uniek kenmerk of gegeven van een natuurlijke persoon, onderneming of rechtspersoon;\n\n–\n\nauthenticatie: elektronisch proces voor de verificatie en bevestiging van de identiteit van een natuurlijke persoon, onderneming of rechtspersoon;\n\n–\n\nauthenticatiedienst: partij die op basis van een identificatiemiddel een authenticatieverklaring afgeeft;\n\n–\n\nbedrijfs- en organisatiemiddel: identificatiemiddel voor een onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon dat wordt uitgegeven aan een natuurlijke persoon die blijkens een aan dat middel gekoppelde of te koppelen machtiging van een erkende machtigingsdienst bevoegd is om namens die onderneming of rechtspersoon te handelen en waarmee deze onderneming of rechtspersoon toegang kan krijgen tot elektronische dienstverlening;\n\n–\n\nbetrouwbaarheidsniveau: mate waarin vertrouwen kan worden gesteld in een identificatiemiddel;\n\n–\n\neIDAS-verordening:\nVerordening (EU) nr. 910/2014 van het Europees Parlement en de Raad van 23 juli 2014 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt en tot intrekking van Richtlijn 1999/93/EG (Pb EU 2014, L 257) en de krachtens deze verordening vastgestelde uitvoeringshandelingen;\n\n–\n\nelektronische dienstverlening: verlening van elektronische diensten aan natuurlijke personen, ondernemingen of rechtspersonen ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, door een bestuursorgaan als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht of een aangewezen organisatie;\n\n–\n\nerkende dienst: middelenuitgever, authenticatiedienst, ontsluitende dienst of machtigingsdienst die is erkend op grond van artikel 9 of 11 van deze wet.\n\n–\n\nidentificatiemiddel: elektronisch middel dat persoonsidentificatiegegevens bevat en gebruikt wordt voor de authenticatie van een natuurlijke persoon, rechtspersoon of onderneming die toegang wenst tot elektronische dienstverlening;\n\n–\n\nmachtigingsdienst: partij die ten behoeve van toegang tot dienstverlening een elektronische verklaring afgeeft waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon optreedt namens een andere natuurlijke persoon, onderneming of rechtspersoon;\n\n–\n\nmiddelenuitgever: partij die zorg draagt voor de uitgifte van erkende identificatiemiddelen aan natuurlijke personen, rechtspersonen of ondernemingen;\n\n–\n\nonline identiteit: de voorziening, bedoeld in artikel 5, eerste lid, onder g;\n\n–\n\nontsluitende dienst: partij die het elektronisch verkeer tussen een bestuursorgaan of aangewezen organisatie en erkende authenticatiediensten, middelenuitgevers en machtigingsdiensten routeert teneinde toegang tot elektronische dienstverlening te faciliteren;\n\n–\n\nOnze Minister: Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties;\n\n–\n\nprivaat identificatiemiddel: niet van rijkswege uitgegeven aan een natuurlijke persoon, onderneming of rechtspersoon verstrekt identificatiemiddel;\n\n–\n\npubliek identificatiemiddel: van rijkswege uitgegeven aan een natuurlijke persoon verstrekt identificatiemiddel;\n\n–\n\ntoegelaten identificatiemiddel: identificatiemiddel voor een natuurlijke persoon dat is aangewezen of erkend ingevolge artikel 9.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29402992",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661084",
+  "element_id": "16745253",
+  "version_id": "29402992",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=5",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=6",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "6 van de Handelsregisterwet 2007",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=8",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "artikel 8, aanhef en onderdeel a, van die wet",
+    "paragraph_number": null
+   },
+   {
+    "doc": "32014R0910",
+    "bwb_id": null,
+    "identifier_scheme": "Celex",
+    "target_article": null,
+    "label": "verordening",
+    "text": "Verordening (EU) nr. 910/2014",
+    "paragraph_number": null
+   },
+   {
+    "doc": "31999L0093",
+    "bwb_id": null,
+    "identifier_scheme": "Celex",
+    "target_article": null,
+    "label": "richtlijn",
+    "text": "Richtlijn 1999/93/EG",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0005537&artikel=1:1",
+    "bwb_id": "BWBR0005537",
+    "identifier_scheme": null,
+    "target_article": "1:1",
+    "label": null,
+    "text": "artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+    "paragraph_number": null
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, tweede lid",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "11",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onder g",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9",
+    "paragraph_number": null
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 448,
+   "xref_intra_instrument": 5,
+   "xref_inter_instrument": 4,
+   "xref_cross_jurisdiction": 2,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art2@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "2",
+  "heading": "Artikel 2. Reikwijdte",
+  "chapter": "Hoofdstuk 1. Algemeen",
+  "section": null,
+  "text": "1\nVoor zover in deze wet, uitgezonderd artikel 3, wordt verwezen naar bestuursorganen, wordt hieronder verstaan bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht.\n\n2\nVoor zover in deze wet wordt verwezen naar aangewezen organisaties, wordt gedoeld op:\n\na.\nde organisaties behorende tot een in de bijlage bij deze wet aangewezen categorie, en\n\nb.\nde organisaties die bij besluit, als bedoeld in het zesde lid, zijn aangewezen.\n\n3\nVoor de toepassing van deze wet worden rechterlijke instanties gelijkgesteld met bestuursorganen en aangewezen organisaties, tenzij bij of krachtens deze wet anders is bepaald. Onder rechterlijke instanties wordt verstaan:\n\na.\nde gerechten bedoeld in artikel 2 van de Wet op de Rechterlijke Organisatie;\n\nb.\nde Afdeling bestuursrechtspraak van de Raad van State;\n\nc.\nhet College van Beroep voor het bedrijfsleven;\n\nd.\nde Centrale Raad van Beroep.\n\n4\nOp de voordracht van Onze Minister in overeenstemming met Onze Minister die het mede aangaat, kunnen bij algemene maatregel van bestuur categorieën van organisaties aan de bijlage, bedoeld in het tweede lid onderdeel a, worden toegevoegd indien die categorie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.\n\n5\nOp de voordracht van Onze Minister in overeenstemming met Onze Minister die het mede aangaat, kunnen bij algemene maatregel van bestuur categorieën van organisaties van de bijlage, bedoeld in het tweede lid onderdeel a, worden verwijderd indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.\n\n6\nBij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat kan een organisatiedie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, voor de toepassing van deze wet worden aangewezen.\n\n7\nBij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat kan de aanwijzing van een organisatie worden ingetrokken indien die organisatie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.\n\n8\nVan een besluit tot aanwijzing of intrekking wordt mededeling gedaan door plaatsing in de Staatscourant.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Voor zover in deze wet, uitgezonderd artikel 3, wordt verwezen naar bestuursorganen, wordt hieronder verstaan bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Voor zover in deze wet wordt verwezen naar aangewezen organisaties, wordt gedoeld op:\n\na.\nde organisaties behorende tot een in de bijlage bij deze wet aangewezen categorie, en\n\nb.\nde organisaties die bij besluit, als bedoeld in het zesde lid, zijn aangewezen.",
+    "points": [
+     "a",
+     "b"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Voor de toepassing van deze wet worden rechterlijke instanties gelijkgesteld met bestuursorganen en aangewezen organisaties, tenzij bij of krachtens deze wet anders is bepaald. Onder rechterlijke instanties wordt verstaan:\n\na.\nde gerechten bedoeld in artikel 2 van de Wet op de Rechterlijke Organisatie;\n\nb.\nde Afdeling bestuursrechtspraak van de Raad van State;\n\nc.\nhet College van Beroep voor het bedrijfsleven;\n\nd.\nde Centrale Raad van Beroep.",
+    "points": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Op de voordracht van Onze Minister in overeenstemming met Onze Minister die het mede aangaat, kunnen bij algemene maatregel van bestuur categorieën van organisaties aan de bijlage, bedoeld in het tweede lid onderdeel a, worden toegevoegd indien die categorie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Op de voordracht van Onze Minister in overeenstemming met Onze Minister die het mede aangaat, kunnen bij algemene maatregel van bestuur categorieën van organisaties van de bijlage, bedoeld in het tweede lid onderdeel a, worden verwijderd indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat kan een organisatiedie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, voor de toepassing van deze wet worden aangewezen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "Bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat kan de aanwijzing van een organisatie worden ingetrokken indien die organisatie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Van een besluit tot aanwijzing of intrekking wordt mededeling gedaan door plaatsing in de Staatscourant.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&lid=8&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403002",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661094",
+  "element_id": "16745263",
+  "version_id": "29403002",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0005537&artikel=1:1",
+    "bwb_id": "BWBR0005537",
+    "identifier_scheme": null,
+    "target_article": "1:1",
+    "label": null,
+    "text": "artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0001830&artikel=2",
+    "bwb_id": "BWBR0001830",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2 van de Wet op de Rechterlijke Organisatie",
+    "paragraph_number": "3"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "bijlage",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "bijlage",
+    "paragraph_number": "4"
+   },
+   {
+    "doc": "",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "bijlage",
+    "paragraph_number": "5"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 341,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 2,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 1,
+    "behoudens": 0,
+    "voor zover": 2,
+    "mits": 0,
+    "indien": 3,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art3@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "3",
+  "heading": "Artikel 3. Standaarden",
+  "chapter": "Hoofdstuk 2. Algemene regels",
+  "section": null,
+  "text": "1\nDe volgende organen passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe, voor zover die standaard ingevolge het derde lid op hen van toepassing is:\n\na.\nbestuursorganen;\n\nb.\norganen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht;\n\nc.\nrechtspersonen met een wettelijke taak als bedoeld in artikel 1.1 van de Comptabiliteitswet 2016.\n\n2\nBij algemene maatregel van bestuur kan een standaard worden aangewezen, indien:\n\na.\naanwijzing van die standaard noodzakelijk en proportioneel is gelet op de goede werking, de veiligheid, de betrouwbaarheid, de duurzame toegankelijkheid of de doelmatigheid van het elektronische verkeer, dan wel noodzakelijk is ter uitvoering van verdragen of bindende besluiten van volkenrechtelijke organisaties;\n\nb.\nde standaard tot stand is gekomen volgens een voor eenieder toegankelijke procedure, en\n\nc.\nde standaard openbaar toegankelijk en kosteloos bruikbaar is en over de specificaties ervan blijvend vrijelijk kan worden beschikt of waarvan de specificaties blijvend kunnen worden verkregen tegen een redelijke vergoeding.\n\n3\nBij algemene maatregel van bestuur wordt bepaald:\n\na.\nhet functionele toepassingsbereik van een aangewezen standaard,\n\nb.\nde organen waarvoor de verplichting tot toepassing van een aangewezen standaard geldt, en\n\nc.\nde datum waarop de verplichting tot toepassing van een aangewezen standaard ingaat.\n\n4\nBij algemene maatregel van bestuur kunnen nadere regels worden gesteld. Onder meer kan worden bepaald dat organen op hun website een actuele verklaring over de toepassing van de aangewezen standaard publiceren en kan worden bepaald dat organen aan Onze Minister een verklaring van een auditor overleggen waaruit blijkt of de aangewezen standaard wordt toegepast. In voorkomend geval worden regels gesteld over de wijze van rapportage respectievelijk publicatie.\n\n5\nOnze Minister kan een aanwijzing geven aan een orgaan waarvoor de verplichting tot toepassing van een aangewezen standaard geldt, indien dit orgaan een gedragslijn hanteert die strijdig is met een aangewezen standaard.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "De volgende organen passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe, voor zover die standaard ingevolge het derde lid op hen van toepassing is:\n\na.\nbestuursorganen;\n\nb.\norganen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht;\n\nc.\nrechtspersonen met een wettelijke taak als bedoeld in artikel 1.1 van de Comptabiliteitswet 2016.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij algemene maatregel van bestuur kan een standaard worden aangewezen, indien:\n\na.\naanwijzing van die standaard noodzakelijk en proportioneel is gelet op de goede werking, de veiligheid, de betrouwbaarheid, de duurzame toegankelijkheid of de doelmatigheid van het elektronische verkeer, dan wel noodzakelijk is ter uitvoering van verdragen of bindende besluiten van volkenrechtelijke organisaties;\n\nb.\nde standaard tot stand is gekomen volgens een voor eenieder toegankelijke procedure, en\n\nc.\nde standaard openbaar toegankelijk en kosteloos bruikbaar is en over de specificaties ervan blijvend vrijelijk kan worden beschikt of waarvan de specificaties blijvend kunnen worden verkregen tegen een redelijke vergoeding.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Bij algemene maatregel van bestuur wordt bepaald:\n\na.\nhet functionele toepassingsbereik van een aangewezen standaard,\n\nb.\nde organen waarvoor de verplichting tot toepassing van een aangewezen standaard geldt, en\n\nc.\nde datum waarop de verplichting tot toepassing van een aangewezen standaard ingaat.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Bij algemene maatregel van bestuur kunnen nadere regels worden gesteld. Onder meer kan worden bepaald dat organen op hun website een actuele verklaring over de toepassing van de aangewezen standaard publiceren en kan worden bepaald dat organen aan Onze Minister een verklaring van een auditor overleggen waaruit blijkt of de aangewezen standaard wordt toegepast. In voorkomend geval worden regels gesteld over de wijze van rapportage respectievelijk publicatie.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Onze Minister kan een aanwijzing geven aan een orgaan waarvoor de verplichting tot toepassing van een aangewezen standaard geldt, indien dit orgaan een gedragslijn hanteert die strijdig is met een aangewezen standaard.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&lid=5&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403022",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-05-12",
+  "label_id": "16661114",
+  "element_id": "16745283",
+  "version_id": "29403022",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0005537&artikel=1:1",
+    "bwb_id": "BWBR0005537",
+    "identifier_scheme": null,
+    "target_article": "1:1",
+    "label": null,
+    "text": "artikel 1:1, tweede lid, van de Algemene wet bestuursrecht",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0039429&artikel=1.1",
+    "bwb_id": "BWBR0039429",
+    "identifier_scheme": null,
+    "target_article": "1.1",
+    "label": null,
+    "text": "artikel 1.1 van de Comptabiliteitswet 2016",
+    "paragraph_number": "1"
+   }
+  ],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 306,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 2,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 2,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art4@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "4",
+  "heading": "Artikel 4. Informatieveiligheid",
+  "chapter": "Hoofdstuk 3. De generieke digitale infrastructuur",
+  "section": null,
+  "text": "1\nBestuursorganen en aangewezen organisaties voldoen aan bij of krachtens algemene maatregel van bestuur te stellen regels met betrekking tot de werking, betrouwbaarheid en beveiliging van de toegang tot elektronische diensten op verschillende betrouwbaarheidsniveaus.\n\n2\nBestuursorganen en aangewezen organisaties overleggen aan Onze Minister een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels.\n\n3\nBij of krachtens algemene maatregel van bestuur worden regels gesteld over de wijze waarop bestuursorganen en aangewezen organisaties aantonen dat zij aan de regels, bedoeld in het eerste lid, voldoen.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Bestuursorganen en aangewezen organisaties voldoen aan bij of krachtens algemene maatregel van bestuur te stellen regels met betrekking tot de werking, betrouwbaarheid en beveiliging van de toegang tot elektronische diensten op verschillende betrouwbaarheidsniveaus.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bestuursorganen en aangewezen organisaties overleggen aan Onze Minister een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Bij of krachtens algemene maatregel van bestuur worden regels gesteld over de wijze waarop bestuursorganen en aangewezen organisaties aantonen dat zij aan de regels, bedoeld in het eerste lid, voldoen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&lid=3&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403042",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661134",
+  "element_id": "16745303",
+  "version_id": "29403042",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 92,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art5@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "5",
+  "heading": "Artikel 5. Verantwoordelijkheid voor het beheer",
+  "chapter": "Hoofdstuk 3. De generieke digitale infrastructuur",
+  "section": null,
+  "text": "1\nOnze Minister draagt zorg voor de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur, waaronder infrastructuur:\n\na.\nvoor de uitgifte aan natuurlijke personen die beschikken over een burgerservicenummer en het gebruik door die personen van publieke identificatiemiddelen op verschillende betrouwbaarheidsniveaus;\n\nb.\ndie het mogelijk maakt dat een elektronische verklaring wordt afgegeven waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens een andere natuurlijke persoon, onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening;\n\nc.\ndie het mogelijk maakt dat identificatiemiddelen door natuurlijke personen, ondernemingen of rechtspersonen worden gebruikt voor de toegangsverlening tot de elektronische diensten van bestuursorganen en aangewezen organisaties;\n\nd.\ndie het mogelijk maakt dat een natuurlijke persoon, onderneming of rechtspersoon die een elektronische dienst afneemt bij een bestuursorgaan of aangewezen organisatie aan de hand van een uniek identificerend nummer geïdentificeerd kan worden;\n\ne.\ndie het mogelijk maakt het stelsel voor identificatie van ondernemingen en rechtspersonen te beheren;\n\nf.\nvoor elektronisch berichtenverkeer met en informatieverschaffing aan natuurlijke personen, ondernemingen en rechtspersonen.\n\nOnze Minister bevordert de interoperabiliteit tussen deze infrastructuur en de diensten en bedrijfs- en organisatiemiddelen, bedoeld in artikel 11, eerste en tweede lid;\n\ng.\n\n[Red: dit onderdeel is nog niet in werking getreden.]\n\n2\nOnze Minister draagt zorg voor een voorziening:\n\na.\ndie het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor bestuursorganen en aangewezen organisaties toegankelijke wijze te ontsluiten;\n\nb.\ndie het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door Nederland ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor openbare instanties als bedoeld in artikel 3 van de eIDAS-verordening, in andere lidstaten toegankelijke wijze te ontsluiten.\n\n3\nOnder toegankelijke wijze van ontsluiten, bedoeld in het tweede lid onder a, wordt mede verstaan toevoeging aan de met de authenticatie van het betrokken identificatiemiddel ontvangen set persoonsidentificatiegegevens van een burgerservicenummer of andere aan de natuurlijke persoon, onderneming of rechtspersoon gekoppelde gegevens, voor zover die gegevens noodzakelijk zijn om de betrokken natuurlijke persoon, onderneming of rechtspersoon ten behoeve van het verrichten van de elektronische dienstverlening in hun systemen te herkennen en voor zover die gegevens niet middels een andere voorziening op betrouwbare wijze toegevoegd kunnen worden aan de bij de toegang met identificatiemiddelen, bedoeld in het tweede lid, onderdeel a, verkregen persoonsidentificatiegegevens.\n\n4\nDe Dienst Wegverkeer, bedoeld in artikel 4a van de Wegenverkeerswet 1994, draagt namens Onze Minister zorg voor het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs. Aan de Dienst Wegverkeer kunnen bij ministeriële regeling overige taken worden opgedragen die samenhangen met het plaatsen van een publiek identificatiemiddel op het rijbewijs.\n\n5\nBij of krachtens algemene maatregel van bestuur kunnen, met het oog op de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur, regels worden gesteld, waaronder met betrekking tot andere dan de in het eerste lid, onderdelen a tot en met e, en tweede lid genoemde voorzieningen en met betrekking tot de voorziening, bedoeld in het eerste lid, onderdeel f, waarbij aan de daarbij bepaalde bestuursorganen en aangewezen organisaties een aansluitplicht kan worden opgelegd.\n\n6\n\n[Red: Dit lid is nog niet in werking getreden.]",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister draagt zorg voor de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur, waaronder infrastructuur:\n\na.\nvoor de uitgifte aan natuurlijke personen die beschikken over een burgerservicenummer en het gebruik door die personen van publieke identificatiemiddelen op verschillende betrouwbaarheidsniveaus;\n\nb.\ndie het mogelijk maakt dat een elektronische verklaring wordt afgegeven waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens een andere natuurlijke persoon, onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening;\n\nc.\ndie het mogelijk maakt dat identificatiemiddelen door natuurlijke personen, ondernemingen of rechtspersonen worden gebruikt voor de toegangsverlening tot de elektronische diensten van bestuursorganen en aangewezen organisaties;\n\nd.\ndie het mogelijk maakt dat een natuurlijke persoon, onderneming of rechtspersoon die een elektronische dienst afneemt bij een bestuursorgaan of aangewezen organisatie aan de hand van een uniek identificerend nummer geïdentificeerd kan worden;\n\ne.\ndie het mogelijk maakt het stelsel voor identificatie van ondernemingen en rechtspersonen te beheren;\n\nf.\nvoor elektronisch berichtenverkeer met en informatieverschaffing aan natuurlijke personen, ondernemingen en rechtspersonen.\n\nOnze Minister bevordert de interoperabiliteit tussen deze infrastructuur en de diensten en bedrijfs- en organisatiemiddelen, bedoeld in artikel 11, eerste en tweede lid;\n\ng.\n\n[Red: dit onderdeel is nog niet in werking getreden.]",
+    "points": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e",
+     "f",
+     "g"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Onze Minister draagt zorg voor een voorziening:\n\na.\ndie het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor bestuursorganen en aangewezen organisaties toegankelijke wijze te ontsluiten;\n\nb.\ndie het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door Nederland ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor openbare instanties als bedoeld in artikel 3 van de eIDAS-verordening, in andere lidstaten toegankelijke wijze te ontsluiten.",
+    "points": [
+     "a",
+     "b"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Onder toegankelijke wijze van ontsluiten, bedoeld in het tweede lid onder a, wordt mede verstaan toevoeging aan de met de authenticatie van het betrokken identificatiemiddel ontvangen set persoonsidentificatiegegevens van een burgerservicenummer of andere aan de natuurlijke persoon, onderneming of rechtspersoon gekoppelde gegevens, voor zover die gegevens noodzakelijk zijn om de betrokken natuurlijke persoon, onderneming of rechtspersoon ten behoeve van het verrichten van de elektronische dienstverlening in hun systemen te herkennen en voor zover die gegevens niet middels een andere voorziening op betrouwbare wijze toegevoegd kunnen worden aan de bij de toegang met identificatiemiddelen, bedoeld in het tweede lid, onderdeel a, verkregen persoonsidentificatiegegevens.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "De Dienst Wegverkeer, bedoeld in artikel 4a van de Wegenverkeerswet 1994, draagt namens Onze Minister zorg voor het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs. Aan de Dienst Wegverkeer kunnen bij ministeriële regeling overige taken worden opgedragen die samenhangen met het plaatsen van een publiek identificatiemiddel op het rijbewijs.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Bij of krachtens algemene maatregel van bestuur kunnen, met het oog op de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur, regels worden gesteld, waaronder met betrekking tot andere dan de in het eerste lid, onderdelen a tot en met e, en tweede lid genoemde voorzieningen en met betrekking tot de voorziening, bedoeld in het eerste lid, onderdeel f, waarbij aan de daarbij bepaalde bestuursorganen en aangewezen organisaties een aansluitplicht kan worden opgelegd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&lid=6&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403052",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661144",
+  "element_id": "16745313",
+  "version_id": "29403052",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0006622&artikel=4a",
+    "bwb_id": "BWBR0006622",
+    "identifier_scheme": null,
+    "target_article": "4a",
+    "label": null,
+    "text": "artikel 4a van de Wegenverkeerswet 1994",
+    "paragraph_number": "4"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11, eerste en tweede lid",
+    "paragraph_number": "1"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 551,
+   "xref_intra_instrument": 1,
+   "xref_inter_instrument": 1,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 2,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art6@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "6",
+  "heading": "Artikel 6. Betrouwbaarheidsniveaus",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.1. Algemeen",
+  "text": "1\nBij elektronische dienstverlening waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, verlenen bestuursorganen en aangewezen organisaties uitsluitend toegang tot de dienstverlening indien gebruik wordt gemaakt van identificatiemiddelen die ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau hebben.\n\n2\nBestuursorganen en aangewezen organisaties bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is en doen daarvan op bij die regeling gestelde wijze mededeling.\n\n3\nBestuursorganen en aangewezen organisaties bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten machtiging op een bepaald betrouwbaarheidsniveau vereist is.\n\n4\nBij ministeriële regeling kunnen regels worden gesteld over het gedurende een bepaalde periode toestaan van toegang tot diensten, waarvoor volgens de krachtens het tweede lid gestelde regels authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, met gebruikmaking van door Onze Minister aangewezen identificatiemiddelen die het betrouwbaarheidsniveau laag respectievelijk substantieel hebben. Voor een identificatiemiddel op betrouwbaarheidsniveau laag geldt dat sprake moet zijn van ten minste twee authenticatiefactoren zoals bedoeld in de eIDAS-verordening.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Bij elektronische dienstverlening waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, verlenen bestuursorganen en aangewezen organisaties uitsluitend toegang tot de dienstverlening indien gebruik wordt gemaakt van identificatiemiddelen die ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau hebben.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bestuursorganen en aangewezen organisaties bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is en doen daarvan op bij die regeling gestelde wijze mededeling.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Bestuursorganen en aangewezen organisaties bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten machtiging op een bepaald betrouwbaarheidsniveau vereist is.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Bij ministeriële regeling kunnen regels worden gesteld over het gedurende een bepaalde periode toestaan van toegang tot diensten, waarvoor volgens de krachtens het tweede lid gestelde regels authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, met gebruikmaking van door Onze Minister aangewezen identificatiemiddelen die het betrouwbaarheidsniveau laag respectievelijk substantieel hebben. Voor een identificatiemiddel op betrouwbaarheidsniveau laag geldt dat sprake moet zijn van ten minste twee authenticatiefactoren zoals bedoeld in de eIDAS-verordening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&lid=4&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403072",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661164",
+  "element_id": "16745333",
+  "version_id": "29403072",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 178,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 1,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art7@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "7",
+  "heading": "Artikel 7. Acceptatie",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.2. Elektronische dienstverlening aan burgers",
+  "text": "1\nBestuursorganen accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nalle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel.\n\n2\nAangewezen organisaties en rechterlijke instanties accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nonverminderd het bepaalde in artikel 6 van de eIDAS-verordening, alle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel indien dit is bepaald bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat.\n\n3\nIn afwijking van het in het eerste en tweede lid bepaalde, accepteren bestuursorganen, aangewezen organisaties en rechterlijke instanties bij hun dienstverlening aan een natuurlijk persoon alle erkende bedrijfs- en organisatiemiddelen, indien en voor zover dat middel wordt gebruikt in de toegang van een door die natuurlijke persoon gemachtigde houder die met dat middel handelt namens een onderneming of rechtspersoon.\n\n4\nEen bestuursorgaan, aangewezen organisatie of rechterlijke instantie kan volgens bij ministeriële regeling te stellen regels voor een welbepaalde doelgroep afwijken van het gestelde in het eerste lid, onderdeel a, respectievelijk het tweede lid onderdeel a, indien acceptatie van niet-toegelaten identificatiemiddelen onder uitsluiting van toegelaten identificatiemiddelen noodzakelijk is gelet op de aard van de dienstverlening of de aard van de doelgroep.\n\n5\nBestuursorganen en aangewezen organisaties accepteren bij hun elektronische dienstverlening aan natuurlijke personen in de uitoefening van beroep of bedrijf waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, ook een toegelaten identificatiemiddel indien en voor zover dit bij regeling van Onze Minister in overeenstemming met Onze Ministers die het aangaat is bepaald.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Bestuursorganen accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nalle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Aangewezen organisaties en rechterlijke instanties accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nonverminderd het bepaalde in artikel 6 van de eIDAS-verordening, alle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel indien dit is bepaald bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "In afwijking van het in het eerste en tweede lid bepaalde, accepteren bestuursorganen, aangewezen organisaties en rechterlijke instanties bij hun dienstverlening aan een natuurlijk persoon alle erkende bedrijfs- en organisatiemiddelen, indien en voor zover dat middel wordt gebruikt in de toegang van een door die natuurlijke persoon gemachtigde houder die met dat middel handelt namens een onderneming of rechtspersoon.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Een bestuursorgaan, aangewezen organisatie of rechterlijke instantie kan volgens bij ministeriële regeling te stellen regels voor een welbepaalde doelgroep afwijken van het gestelde in het eerste lid, onderdeel a, respectievelijk het tweede lid onderdeel a, indien acceptatie van niet-toegelaten identificatiemiddelen onder uitsluiting van toegelaten identificatiemiddelen noodzakelijk is gelet op de aard van de dienstverlening of de aard van de doelgroep.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Bestuursorganen en aangewezen organisaties accepteren bij hun elektronische dienstverlening aan natuurlijke personen in de uitoefening van beroep of bedrijf waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, ook een toegelaten identificatiemiddel indien en voor zover dit bij regeling van Onze Minister in overeenstemming met Onze Ministers die het aangaat is bepaald.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&lid=5&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403092",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661184",
+  "element_id": "16745353",
+  "version_id": "29403092",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdeel b",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdeel b",
+    "paragraph_number": "2"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 329,
+   "xref_intra_instrument": 2,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 2,
+    "mits": 0,
+    "indien": 4,
+    "niet van toepassing indien": 0,
+    "onverminderd": 1,
+    "in afwijking van": 1
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art8@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "8",
+  "heading": "Artikel 8. Gebruik in publieke domein",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.2. Elektronische dienstverlening aan burgers",
+  "text": "1\nEen publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, worden uitsluitend gebruikt voor de toegang tot elektronische dienstverlening door bestuursorganen en aangewezen organisaties.\n\n2\nBij ministeriële regeling kan worden bepaald dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens kan worden gebruikt voor de toegang tot daarbij bepaalde elektronische diensten, anders dan diensten ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, van aangewezen organisaties.\n\n3\nBij ministeriële regeling kan Onze Minister in overeenstemming met Onze Minister die het aangaat bepalen dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens ten behoeve van aangewezen organisaties kan worden gebruikt voor het verlenen van toegang tot een systeem voor de elektronische uitwisseling van gegevens waarbij het burgerservicenummer wordt verwerkt, anders dan een systeem voor elektronische dienstverlening.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, worden uitsluitend gebruikt voor de toegang tot elektronische dienstverlening door bestuursorganen en aangewezen organisaties.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij ministeriële regeling kan worden bepaald dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens kan worden gebruikt voor de toegang tot daarbij bepaalde elektronische diensten, anders dan diensten ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, van aangewezen organisaties.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Bij ministeriële regeling kan Onze Minister in overeenstemming met Onze Minister die het aangaat bepalen dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens ten behoeve van aangewezen organisaties kan worden gebruikt voor het verlenen van toegang tot een systeem voor de elektronische uitwisseling van gegevens waarbij het burgerservicenummer wordt verwerkt, anders dan een systeem voor elektronische dienstverlening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&lid=3&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403102",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661194",
+  "element_id": "16745363",
+  "version_id": "29403102",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdeel b",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdeel b",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdeel b",
+    "paragraph_number": "3"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 151,
+   "xref_intra_instrument": 3,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art9@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "9",
+  "heading": "Artikel 9. Toelaten van identificatiemiddelen en diensten",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.2. Elektronische dienstverlening aan burgers",
+  "text": "1\nOnze Minister wijst een publiek identificatiemiddel aan als toegelaten identificatiemiddel indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben mede betrekking op uitgifte en beëindiging van de middelen.\n\n2\nOnze Minister laat een privaat identificatiemiddel toe door verlening van een erkenning, indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben in ieder geval betrekking op uitgifte en beëindiging van de middelen.\n\n3\nOnze Minister laat een private ontsluitende dienst toe door verlening van een erkenning, indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. Hierbij kan ontsluiting van alle toegelaten middelen worden opgelegd.\n\n4\nEen houder van een erkenning als bedoeld in het tweede of derde lid voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen. De eisen behelzen in ieder geval een leveringsplicht en regels inzake te hanteren tarieven.\n\n5\nBij de aanvraag voor een erkenning wordt een verklaring gevoegd van een geaccrediteerde certificerende instelling, waaraan het vermoeden kan worden ontleend dat is voldaan aan de eisen die gelden voor de betreffende houder van de erkenning of dat middel.\n\n6\nOnze Minister weigert een erkenning indien niet wordt voldaan aan de eisen bedoeld in het tweede of derde lid. Hij weigert tevens indien zwaarwegende redenen zich tegen erkenning verzetten. Hiervan is sprake in geval ernstig gevaar bestaat voor de cyberveiligheid of staatsveiligheid of in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt. Alvorens te beslissen op een aanvraag kan het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, om een advies als bedoeld in artikel 9 van die wet worden gevraagd.\n\n7\nOnze Minister kan een erkenning wijzigen, schorsen of intrekken indien niet wordt voldaan aan de eisen bedoeld in het tweede of derde lid, de eisen, voorschriften of beperkingen bedoeld in het vierde lid, of in geval van zwaarwegende redenen als bedoeld in het zesde lid. Bij schorsing en intrekking kan de houder worden verplicht zijn activiteiten voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen.\n\n8\nEen erkenning kan op verzoek van de houder worden ingetrokken. Onze Minister kan bij dit besluit de houder verplichten zijn activiteiten voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen.\n\n9\nBij of krachtens algemene maatregel van bestuur worden nadere regels gesteld over de procedure van erkenning, wijziging, schorsing of intrekking en de in dat verband over te leggen gegevens en informatie.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister wijst een publiek identificatiemiddel aan als toegelaten identificatiemiddel indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben mede betrekking op uitgifte en beëindiging van de middelen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Onze Minister laat een privaat identificatiemiddel toe door verlening van een erkenning, indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben in ieder geval betrekking op uitgifte en beëindiging van de middelen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Onze Minister laat een private ontsluitende dienst toe door verlening van een erkenning, indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. Hierbij kan ontsluiting van alle toegelaten middelen worden opgelegd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Een houder van een erkenning als bedoeld in het tweede of derde lid voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen. De eisen behelzen in ieder geval een leveringsplicht en regels inzake te hanteren tarieven.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Bij de aanvraag voor een erkenning wordt een verklaring gevoegd van een geaccrediteerde certificerende instelling, waaraan het vermoeden kan worden ontleend dat is voldaan aan de eisen die gelden voor de betreffende houder van de erkenning of dat middel.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Onze Minister weigert een erkenning indien niet wordt voldaan aan de eisen bedoeld in het tweede of derde lid. Hij weigert tevens indien zwaarwegende redenen zich tegen erkenning verzetten. Hiervan is sprake in geval ernstig gevaar bestaat voor de cyberveiligheid of staatsveiligheid of in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt. Alvorens te beslissen op een aanvraag kan het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, om een advies als bedoeld in artikel 9 van die wet worden gevraagd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "Onze Minister kan een erkenning wijzigen, schorsen of intrekken indien niet wordt voldaan aan de eisen bedoeld in het tweede of derde lid, de eisen, voorschriften of beperkingen bedoeld in het vierde lid, of in geval van zwaarwegende redenen als bedoeld in het zesde lid. Bij schorsing en intrekking kan de houder worden verplicht zijn activiteiten voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Een erkenning kan op verzoek van de houder worden ingetrokken. Onze Minister kan bij dit besluit de houder verplichten zijn activiteiten voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=8&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "9",
+    "text": "Bij of krachtens algemene maatregel van bestuur worden nadere regels gesteld over de procedure van erkenning, wijziging, schorsing of intrekking en de in dat verband over te leggen gegevens en informatie.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&lid=9&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403112",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661204",
+  "element_id": "16745373",
+  "version_id": "29403112",
+  "source_publication": null,
+  "effect": null,
+  "dossier_number": null,
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0013798&artikel=8",
+    "bwb_id": "BWBR0013798",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur",
+    "paragraph_number": "6"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0013798&artikel=9",
+    "bwb_id": "BWBR0013798",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9 van die wet",
+    "paragraph_number": "6"
+   }
+  ],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 549,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 2,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 2,
+    "mits": 0,
+    "indien": 6,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art10@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=10&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "10",
+  "heading": "Artikel 10. Regels ten aanzien van gebruik",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.2. Elektronische dienstverlening aan burgers",
+  "text": "1\nDe gebruiker van een toegelaten identificatiemiddel neemt alle nodige maatregelen om misbruik, diefstal, verlies of verspreiding van zijn identificatiemiddel te voorkomen.\n\n2\nBij ministeriële regeling worden regels gesteld met betrekking tot het gebruik van publieke identificatiemiddelen en de voorzieningen, bedoeld in artikel 5, eerste lid.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "De gebruiker van een toegelaten identificatiemiddel neemt alle nodige maatregelen om misbruik, diefstal, verlies of verspreiding van zijn identificatiemiddel te voorkomen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=10&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij ministeriële regeling worden regels gesteld met betrekking tot het gebruik van publieke identificatiemiddelen en de voorzieningen, bedoeld in artikel 5, eerste lid.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=10&lid=2&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403122",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661214",
+  "element_id": "16745383",
+  "version_id": "29403122",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid",
+    "paragraph_number": "2"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 46,
+   "xref_intra_instrument": 1,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art11@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "11",
+  "heading": "Artikel 11. Erkenning bedrijfs- en organisatiemiddel en bijbehorende diensten",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.3. Elektronische dienstverlening aan bedrijven",
+  "text": "1\nOnze Minister erkent een middelenuitgever met betrekking tot een door die dienst uit te geven bedrijfs- en organisatiemiddel en het bijbehorende betrouwbaarheidsniveau, indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels.\n\n2\nOnze Minister erkent een authenticatiedienst op het betrouwbaarheidsniveau van het bedrijfs- en organisatiemiddel waarvoor hij erkend wenst te worden, indien de dienst voldoet aan de daartoe voor dat betrouwbaarheidsniveau bij of krachtens algemene maatregel van bestuur gestelde regels.\n\n3\nOnze Minister erkent een ontsluitende dienst of een machtigingsdienst indien de dienst voldoet aan de met betrekking tot die dienst bij of krachtens algemene maatregel van bestuur gestelde regels.\n\n4\nDe regels, bedoeld in het eerste tot en met derde lid, hebben betrekking op de werking, interoperabiliteit, beveiliging en betrouwbaarheid van de diensten of het bedrijfs- en organisatiemiddel en maken waar nodig een onderscheid in de regels voor de diensten. Daarbij kunnen tevens regels worden gesteld over de interoperabiliteit tussen de erkende diensten en bedrijfs- en organisatiemiddelen en de infrastructuur, bedoeld in artikel 5, eerste lid, de voorzieningen, bedoeld in artikel 5, tweede lid, of de toegelaten middelen.\n\n5\nBij de aanvraag om erkenning wordt in elk geval een certificaat van conformiteit verstrekt, die is afgegeven door een door Onze Minister aan te wijzen conformiteitsbeoordelingsinstantie. Bij of krachtens algemene maatregel van bestuur worden regels gesteld aan de aanvraag om erkenning en de procedure van verlening van erkenning, het certificaat van conformiteit, de conformiteitsbeoordeling en de eisen waaraan een instantie die een dergelijke conformiteitsbeoordeling uitvoert, moet voldoen.\n\n6\nAan een erkenning kunnen voorschriften of beperkingen worden verbonden.\n\n7\nAlvorens te beslissen op een aanvraag tot erkenning kan het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, om een advies als bedoeld in artikel 9 van die wet worden gevraagd.\n\n8\nOnze Minister weigert een aanvraag tot erkenning, indien zwaarwegende redenen zich tegen erkenning verzetten. Van dergelijke redenen is sprake in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister erkent een middelenuitgever met betrekking tot een door die dienst uit te geven bedrijfs- en organisatiemiddel en het bijbehorende betrouwbaarheidsniveau, indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Onze Minister erkent een authenticatiedienst op het betrouwbaarheidsniveau van het bedrijfs- en organisatiemiddel waarvoor hij erkend wenst te worden, indien de dienst voldoet aan de daartoe voor dat betrouwbaarheidsniveau bij of krachtens algemene maatregel van bestuur gestelde regels.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Onze Minister erkent een ontsluitende dienst of een machtigingsdienst indien de dienst voldoet aan de met betrekking tot die dienst bij of krachtens algemene maatregel van bestuur gestelde regels.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "De regels, bedoeld in het eerste tot en met derde lid, hebben betrekking op de werking, interoperabiliteit, beveiliging en betrouwbaarheid van de diensten of het bedrijfs- en organisatiemiddel en maken waar nodig een onderscheid in de regels voor de diensten. Daarbij kunnen tevens regels worden gesteld over de interoperabiliteit tussen de erkende diensten en bedrijfs- en organisatiemiddelen en de infrastructuur, bedoeld in artikel 5, eerste lid, de voorzieningen, bedoeld in artikel 5, tweede lid, of de toegelaten middelen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Bij de aanvraag om erkenning wordt in elk geval een certificaat van conformiteit verstrekt, die is afgegeven door een door Onze Minister aan te wijzen conformiteitsbeoordelingsinstantie. Bij of krachtens algemene maatregel van bestuur worden regels gesteld aan de aanvraag om erkenning en de procedure van verlening van erkenning, het certificaat van conformiteit, de conformiteitsbeoordeling en de eisen waaraan een instantie die een dergelijke conformiteitsbeoordeling uitvoert, moet voldoen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Aan een erkenning kunnen voorschriften of beperkingen worden verbonden.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "Alvorens te beslissen op een aanvraag tot erkenning kan het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur, om een advies als bedoeld in artikel 9 van die wet worden gevraagd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Onze Minister weigert een aanvraag tot erkenning, indien zwaarwegende redenen zich tegen erkenning verzetten. Van dergelijke redenen is sprake in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&lid=8&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403142",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661234",
+  "element_id": "16745403",
+  "version_id": "29403142",
+  "source_publication": null,
+  "effect": null,
+  "dossier_number": null,
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0013798&artikel=8",
+    "bwb_id": "BWBR0013798",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "artikel 8 van de Wet bevordering integriteitsbeoordelingen",
+    "paragraph_number": "7"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0013798&artikel=9",
+    "bwb_id": "BWBR0013798",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9 van die wet",
+    "paragraph_number": "7"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid",
+    "paragraph_number": "4"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 372,
+   "xref_intra_instrument": 1,
+   "xref_inter_instrument": 2,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 4,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art12@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "12",
+  "heading": "Artikel 12. Aanwijzing van attributen",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.3. Elektronische dienstverlening aan bedrijven",
+  "text": "1\nOnze Minister kan een attribuut aanwijzen dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen als bedoeld in artikel 15, eerste lid, ten behoeve van bepaalde elektronische dienstverlening op het niveau substantieel of hoog en daartoe door de op grond van artikel 11 erkende diensten moeten worden gehanteerd.\n\n2\nIndien een attribuut is opgenomen in een register, dat berust op een wettelijk voorschrift, neemt Onze Minister het besluit tot aanwijzing van dat attribuut in overeenstemming met Onze Minister die het mede aangaat.\n\n3\nVan een besluit tot aanwijzing doet Onze Minister mededeling in de Staatscourant.\n\n4\nIndien een attribuut wordt aangewezen worden bij ministeriële regeling regels gesteld over de wijze waarop het aangewezen attribuut door de erkende diensten bij hun activiteiten moet worden betrokken, voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister kan een attribuut aanwijzen dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen als bedoeld in artikel 15, eerste lid, ten behoeve van bepaalde elektronische dienstverlening op het niveau substantieel of hoog en daartoe door de op grond van artikel 11 erkende diensten moeten worden gehanteerd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Indien een attribuut is opgenomen in een register, dat berust op een wettelijk voorschrift, neemt Onze Minister het besluit tot aanwijzing van dat attribuut in overeenstemming met Onze Minister die het mede aangaat.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Van een besluit tot aanwijzing doet Onze Minister mededeling in de Staatscourant.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Indien een attribuut wordt aangewezen worden bij ministeriële regeling regels gesteld over de wijze waarop het aangewezen attribuut door de erkende diensten bij hun activiteiten moet worden betrokken, voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&lid=4&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403152",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661244",
+  "element_id": "16745413",
+  "version_id": "29403152",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "artikel 15, eerste lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11",
+    "paragraph_number": "1"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 146,
+   "xref_intra_instrument": 2,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 2,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art13@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "13",
+  "heading": "Artikel 13. Rechten en plichten voor erkende diensten",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.3. Elektronische dienstverlening aan bedrijven",
+  "text": "1\nEen krachtens artikel 11 erkende dienst voldoet aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen. De eisen behelzen in ieder geval een leveringsplicht en kunnen regels inzake te hanteren tarieven behelzen. Artikel 11, derde lid, is van overeenkomstige toepassing op de te stellen regels.\n\n2\nEen erkende ontsluitende dienst ontsluit alle erkende bedrijfs- en organisatiemiddelen, alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening en alle op grond van artikel 12 aangewezen attributen.\n\n3\nEen erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is. Voor hun diensten brengen zij geen kosten bij de erkende ontsluitende dienst in rekening.\n\n4\nBij of krachtens algemene maatregel van bestuur kunnen regels worden gesteld over de ontsluiting en medewerking, bedoeld in het derde lid en over de samenwerking tussen de erkende diensten.\n\n5\nIndien dit naar zijn oordeel voor een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening noodzakelijk is, kan Onze Minister een erkende dienst bindende aanwijzingen geven. Bij of krachtens algemene maatregel van bestuur worden hieromtrent nadere regels gesteld.\n\n6\nOnze Minister kan een erkende dienst ontheffing verlenen van bij of krachtens artikel 13 gestelde regels, indien deze regels in de weg staan aan technologische ontwikkelingen aangaande een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening. Bij ministeriële regeling kunnen nadere regels worden gesteld over een verzoek om of verlening van een ontheffing.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Een krachtens artikel 11 erkende dienst voldoet aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen. De eisen behelzen in ieder geval een leveringsplicht en kunnen regels inzake te hanteren tarieven behelzen. Artikel 11, derde lid, is van overeenkomstige toepassing op de te stellen regels.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Een erkende ontsluitende dienst ontsluit alle erkende bedrijfs- en organisatiemiddelen, alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening en alle op grond van artikel 12 aangewezen attributen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is. Voor hun diensten brengen zij geen kosten bij de erkende ontsluitende dienst in rekening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Bij of krachtens algemene maatregel van bestuur kunnen regels worden gesteld over de ontsluiting en medewerking, bedoeld in het derde lid en over de samenwerking tussen de erkende diensten.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Indien dit naar zijn oordeel voor een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening noodzakelijk is, kan Onze Minister een erkende dienst bindende aanwijzingen geven. Bij of krachtens algemene maatregel van bestuur worden hieromtrent nadere regels gesteld.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Onze Minister kan een erkende dienst ontheffing verlenen van bij of krachtens artikel 13 gestelde regels, indien deze regels in de weg staan aan technologische ontwikkelingen aangaande een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening. Bij ministeriële regeling kunnen nadere regels worden gesteld over een verzoek om of verlening van een ontheffing.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&lid=6&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403162",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661254",
+  "element_id": "16745423",
+  "version_id": "29403162",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "artikel 15, eerste lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=12&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "12",
+    "label": null,
+    "text": "artikel 12",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "artikel 13",
+    "paragraph_number": "6"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 301,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 2,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art14@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "14",
+  "heading": "Artikel 14. Intrekking en overdracht van erkenning",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.3. Elektronische dienstverlening aan bedrijven",
+  "text": "1\nEen erkenning kan op verzoek van de erkende dienst worden ingetrokken. De erkende dienst voegt bij zijn verzoek een beëindigingsplan. Bij ministeriële regeling kunnen nadere eisen gesteld worden aan het beëindigingsplan.\n\n2\nGelijktijdig met een besluit tot intrekking op verzoek kan Onze Minister de betrokken dienst de verplichting opleggen zijn activiteiten in de toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen.\n\n3\nOnze Minister kan een erkenning intrekken of voor een bij dat besluit te bepalen periode schorsen indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid. Gelijktijdig met een besluit tot intrekking, kan Onze Minister de betrokken dienst de verplichting opleggen tot het opstellen van een beëindigingplan als bedoeld in het eerste lid.\n\n4\nEen erkenning kan op verzoek van de erkende dienst worden overgedragen op een andere rechtspersoon, voor zover die rechtspersoon voldoet aan de bij of krachtens artikel 13 gestelde eisen. Onze Minister verleent geen toestemming voor overdracht indien daarmee naar zijn oordeel de daadwerkelijke mededinging wordt of dreigt te worden verstoord of indien de continuïteit van een betrouwbare toegang tot elektronische dienstverlening met erkende bedrijfs- en organisatiemiddelen als gevolg van die overdracht in het geding dreigt te komen.\n\n5\nBij het besluit tot toestemming voor overdracht kan Onze Minister:\n\na.\nde voorschriften en beperkingen, verbonden aan de oorspronkelijke erkenning, wijzigen en bepalen;\n\nb.\nde verzoekende dienst de verplichting opleggen zijn activiteiten in de toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen.\n\n6\nMet de intrekking van een erkenning van een middelenuitgever vervalt tevens de erkenning van de bedrijfs- en organisatiemiddelen die door die middelenuitgever worden uitgegeven.\n\n7\nDe erkende dienst waarvan de erkenning wordt ingetrokken of overgedragen draagt er zorg voor dat alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend, worden overgedragen aan Onze Minister.\n\n8\nVan een besluit als bedoeld in dit artikel doet Onze Minister mededeling in de Staatscourant.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Een erkenning kan op verzoek van de erkende dienst worden ingetrokken. De erkende dienst voegt bij zijn verzoek een beëindigingsplan. Bij ministeriële regeling kunnen nadere eisen gesteld worden aan het beëindigingsplan.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Gelijktijdig met een besluit tot intrekking op verzoek kan Onze Minister de betrokken dienst de verplichting opleggen zijn activiteiten in de toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Onze Minister kan een erkenning intrekken of voor een bij dat besluit te bepalen periode schorsen indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid. Gelijktijdig met een besluit tot intrekking, kan Onze Minister de betrokken dienst de verplichting opleggen tot het opstellen van een beëindigingplan als bedoeld in het eerste lid.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Een erkenning kan op verzoek van de erkende dienst worden overgedragen op een andere rechtspersoon, voor zover die rechtspersoon voldoet aan de bij of krachtens artikel 13 gestelde eisen. Onze Minister verleent geen toestemming voor overdracht indien daarmee naar zijn oordeel de daadwerkelijke mededinging wordt of dreigt te worden verstoord of indien de continuïteit van een betrouwbare toegang tot elektronische dienstverlening met erkende bedrijfs- en organisatiemiddelen als gevolg van die overdracht in het geding dreigt te komen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Bij het besluit tot toestemming voor overdracht kan Onze Minister:\n\na.\nde voorschriften en beperkingen, verbonden aan de oorspronkelijke erkenning, wijzigen en bepalen;\n\nb.\nde verzoekende dienst de verplichting opleggen zijn activiteiten in de toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening voort te zetten gedurende een door Onze Minister te bepalen periode, voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen.",
+    "points": [
+     "a",
+     "b"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Met de intrekking van een erkenning van een middelenuitgever vervalt tevens de erkenning van de bedrijfs- en organisatiemiddelen die door die middelenuitgever worden uitgegeven.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "De erkende dienst waarvan de erkenning wordt ingetrokken of overgedragen draagt er zorg voor dat alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend, worden overgedragen aan Onze Minister.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Van een besluit als bedoeld in dit artikel doet Onze Minister mededeling in de Staatscourant.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&lid=8&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403172",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661264",
+  "element_id": "16745433",
+  "version_id": "29403172",
+  "source_publication": null,
+  "effect": null,
+  "dossier_number": null,
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikelen 11",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "13",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "artikel 13",
+    "paragraph_number": "4"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 415,
+   "xref_intra_instrument": 3,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 3,
+    "mits": 0,
+    "indien": 3,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art15@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "15",
+  "heading": "Artikel 15. Acceptatie bedrijfs- en organisatiemiddelen",
+  "chapter": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+  "section": "Paragraaf 4.3. Elektronische dienstverlening aan bedrijven",
+  "text": "1\nDit artikel is van toepassing op elektronische dienstverlening, waarvoor ingevolge de regels, bedoeld in artikel 6, tweede lid, authenticatie op het betrouwbaarheidsniveau substantieel of hoog is vereist, aan ondernemingen of rechtspersonen die ingevolge de Handelsregisterwet 2007 worden of kunnen worden ingeschreven in het handelsregister.\n\n2\nOnverminderd het bepaalde in artikel 7, accepteren bestuursorganen en aangewezen organisaties bij de toegang tot hun elektronische dienstverlening alle en uitsluitend erkende bedrijfs- en organisatiemiddelen en door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening aan die onderneming of rechtspersoon. Bestuursorganen en aangewezen organisaties accepteren in elk geval een van de op grond van artikel 11, derde lid, erkende ontsluitende diensten.\n\n3\nDe plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren, is niet van toepassing ten aanzien van:\n\na.\nhet aanmaken van en de toegang tot een beveiligde elektronische postbus die deel uitmaakt van de elektronische omgeving van het centraal loket, bedoeld in artikel 1 van de Dienstenwet, voor een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is;\n\nb.\nelektronische dienstverlening die plaatsvindt via het centraal loket, bedoeld in artikel 1 van de Dienstenwet, aan een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is.\n\n4\nEen bestuursorgaan of aangewezen organisatie kan, in afwijking van artikel 7, eerste lid, onderdeel a, onderscheidenlijk tweede lid, onderdeel a, een natuurlijk persoon die een onderneming drijft en bij de toegang tot elektronische dienstverlening gebruik maakt van een toegelaten identificatiemiddel, de toegang tot elektronische dienstverlening weigeren, indien aan dat middel het voor de dienstverlening noodzakelijke nummer ter identificatie van de onderneming niet is verbonden.\n\n5\nIn geval ten behoeve van elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep het gebruik van een ander bedrijfs- of organisatiemiddel dan een erkend bedrijfs- of organisatiemiddel gewenst is, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep, kan Onze Minister een bedrijfs- of organisatiemiddel aanwijzen dat voor een bij dat besluit te bepalen periode tevens voor de toegang tot die dienstverlening gebruikt mag worden.\n\n6\nBij het besluit, bedoeld in het vijfde lid, wordt bepaald op welke dienstverlening, beroepsgroep en bestuursorganen of aangewezen organisaties de aanwijzing betrekking heeft. Aan het besluit kunnen voorschriften worden verbonden.\n\n7\nEen besluit als bedoeld in het vijfde lid wordt niet genomen ten aanzien van een bedrijfs- of organisatiemiddel dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid.\n\n8\nDit artikel laat onverlet de plicht, bedoeld in artikel 6 van de eIDAS-verordening, tot wederzijdse erkenning van een identificatiemiddel dat behoort tot een door een andere lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld stelsel, voor zover een bestuursorgaan of aangewezen organisatie is aan te merken als openbare instantie als bedoeld in artikel 3, onderdeel 7, van de eIDAS-verordening.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Dit artikel is van toepassing op elektronische dienstverlening, waarvoor ingevolge de regels, bedoeld in artikel 6, tweede lid, authenticatie op het betrouwbaarheidsniveau substantieel of hoog is vereist, aan ondernemingen of rechtspersonen die ingevolge de Handelsregisterwet 2007 worden of kunnen worden ingeschreven in het handelsregister.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Onverminderd het bepaalde in artikel 7, accepteren bestuursorganen en aangewezen organisaties bij de toegang tot hun elektronische dienstverlening alle en uitsluitend erkende bedrijfs- en organisatiemiddelen en door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening aan die onderneming of rechtspersoon. Bestuursorganen en aangewezen organisaties accepteren in elk geval een van de op grond van artikel 11, derde lid, erkende ontsluitende diensten.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren, is niet van toepassing ten aanzien van:\n\na.\nhet aanmaken van en de toegang tot een beveiligde elektronische postbus die deel uitmaakt van de elektronische omgeving van het centraal loket, bedoeld in artikel 1 van de Dienstenwet, voor een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is;\n\nb.\nelektronische dienstverlening die plaatsvindt via het centraal loket, bedoeld in artikel 1 van de Dienstenwet, aan een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is.",
+    "points": [
+     "a",
+     "b"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Een bestuursorgaan of aangewezen organisatie kan, in afwijking van artikel 7, eerste lid, onderdeel a, onderscheidenlijk tweede lid, onderdeel a, een natuurlijk persoon die een onderneming drijft en bij de toegang tot elektronische dienstverlening gebruik maakt van een toegelaten identificatiemiddel, de toegang tot elektronische dienstverlening weigeren, indien aan dat middel het voor de dienstverlening noodzakelijke nummer ter identificatie van de onderneming niet is verbonden.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "In geval ten behoeve van elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep het gebruik van een ander bedrijfs- of organisatiemiddel dan een erkend bedrijfs- of organisatiemiddel gewenst is, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep, kan Onze Minister een bedrijfs- of organisatiemiddel aanwijzen dat voor een bij dat besluit te bepalen periode tevens voor de toegang tot die dienstverlening gebruikt mag worden.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Bij het besluit, bedoeld in het vijfde lid, wordt bepaald op welke dienstverlening, beroepsgroep en bestuursorganen of aangewezen organisaties de aanwijzing betrekking heeft. Aan het besluit kunnen voorschriften worden verbonden.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "Een besluit als bedoeld in het vijfde lid wordt niet genomen ten aanzien van een bedrijfs- of organisatiemiddel dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Dit artikel laat onverlet de plicht, bedoeld in artikel 6 van de eIDAS-verordening, tot wederzijdse erkenning van een identificatiemiddel dat behoort tot een door een andere lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld stelsel, voor zover een bestuursorgaan of aangewezen organisatie is aan te merken als openbare instantie als bedoeld in artikel 3, onderdeel 7, van de eIDAS-verordening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&lid=8&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403182",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661274",
+  "element_id": "16745443",
+  "version_id": "29403182",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0021777",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "Handelsregisterwet 2007",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0026759&artikel=1",
+    "bwb_id": "BWBR0026759",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1 van de Dienstenwet",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0026759&artikel=1",
+    "bwb_id": "BWBR0026759",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1 van de Dienstenwet",
+    "paragraph_number": "3"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "artikel 6, tweede lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "artikel 7",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11, derde lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "artikel 7, eerste lid, onderdeel a, onderscheidenlijk tweede lid, onderdeel a",
+    "paragraph_number": "4"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 511,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 3,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 1,
+    "niet van toepassing indien": 0,
+    "onverminderd": 1,
+    "in afwijking van": 1
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art16@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "16",
+  "heading": "Artikel 16. Bescherming persoonsgegevens",
+  "chapter": "Hoofdstuk 5. Bescherming van persoonsgegevens",
+  "section": null,
+  "text": "1\nOnze Minister, alsmede bestuursorganen en aangewezen organisaties verwerken persoonsgegevens, waaronder het burgerservicenummer, voor zover dit noodzakelijk is voor de goede uitvoering van hun taken en verplichtingen ingevolge deze wet, in het bijzonder het bieden van goede en veilige toegang tot elektronische dienstverlening en het voorkomen van misbruik of oneigenlijk gebruik van de toegang tot elektronische dienstverlening.\n\n2\n\n[Red: Dit lid is nog niet in werking getreden.]\n\n3\n\n[Red: Dit lid is nog niet in werking getreden.]\n\n4\nBij algemene maatregel van bestuur worden regels gesteld over de persoonsgegevens die worden verwerkt, aan wie deze gegevens worden verstrekt en hoe lang deze worden bewaard.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister, alsmede bestuursorganen en aangewezen organisaties verwerken persoonsgegevens, waaronder het burgerservicenummer, voor zover dit noodzakelijk is voor de goede uitvoering van hun taken en verplichtingen ingevolge deze wet, in het bijzonder het bieden van goede en veilige toegang tot elektronische dienstverlening en het voorkomen van misbruik of oneigenlijk gebruik van de toegang tot elektronische dienstverlening.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Bij algemene maatregel van bestuur worden regels gesteld over de persoonsgegevens die worden verwerkt, aan wie deze gegevens worden verstrekt en hoe lang deze worden bewaard.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&lid=4&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403212",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661304",
+  "element_id": "16745473",
+  "version_id": "29403212",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 104,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art17@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "17",
+  "heading": "Artikel 17. Toezicht en handhaving",
+  "chapter": "Hoofdstuk 6. Naleving",
+  "section": null,
+  "text": "1\nMet het toezicht op de naleving van het bepaalde bij of krachtens artikel 3 door overheidsorganen op het niveau van het Rijk en van het bepaalde bij of krachtens de artikelen 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van het Rijk en door de aangewezen organisaties zijn belast de bij besluit van Onze Minister die het aangaat aangewezen ambtenaren.\n\n2\nMet het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15 door bestuursorganen op het niveau van de provincies zijn belast de bij besluit van Onze Minister aangewezen ambtenaren.\n\n3\n\n[Red: Dit lid is nog niet in werking getreden.]\n\n4\nMet het toezicht op de naleving van het bepaalde bij of krachtens artikel 4 en het bepaalde bij of krachtens artikel 8, tweede en derde lid, zijn belast de bij besluit van Onze Minister aangewezen ambtenaren.\n\n5\n\n[Red: Dit lid is nog niet in werking getreden.]\n\n6\nVan een besluit als bedoeld in het eerste, tweede, vierde en vijfde lid wordt mededeling gedaan door plaatsing in de Staatscourant.\n\n7\n\n[Red: Dit lid is nog niet in werking getreden.]\n\n8\nOnze Minister kan degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid, daartoe opdracht heeft gegeven of feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid, een bestuurlijke boete opleggen van ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht, per overtreding die is begaan.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Met het toezicht op de naleving van het bepaalde bij of krachtens artikel 3 door overheidsorganen op het niveau van het Rijk en van het bepaalde bij of krachtens de artikelen 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van het Rijk en door de aangewezen organisaties zijn belast de bij besluit van Onze Minister die het aangaat aangewezen ambtenaren.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Met het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15 door bestuursorganen op het niveau van de provincies zijn belast de bij besluit van Onze Minister aangewezen ambtenaren.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Met het toezicht op de naleving van het bepaalde bij of krachtens artikel 4 en het bepaalde bij of krachtens artikel 8, tweede en derde lid, zijn belast de bij besluit van Onze Minister aangewezen ambtenaren.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=5&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "6",
+    "text": "Van een besluit als bedoeld in het eerste, tweede, vierde en vijfde lid wordt mededeling gedaan door plaatsing in de Staatscourant.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=6&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "7",
+    "text": "[Red: Dit lid is nog niet in werking getreden.]",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=7&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "8",
+    "text": "Onze Minister kan degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid, daartoe opdracht heeft gegeven of feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid, een bestuurlijke boete opleggen van ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht, per overtreding die is begaan.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=17&lid=8&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403232",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661324",
+  "element_id": "16745493",
+  "version_id": "29403232",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0001854&artikel=23",
+    "bwb_id": "BWBR0001854",
+    "identifier_scheme": null,
+    "target_article": "23",
+    "label": null,
+    "text": "artikel 23, vierde lid, van het Wetboek van Strafrecht",
+    "paragraph_number": "8"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "artikelen 6",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "7",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "8, eerste lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikelen 3",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "6",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "7",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "8, eerste lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "4",
+    "label": null,
+    "text": "artikel 4",
+    "paragraph_number": "4"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "artikel 8, tweede en derde lid",
+    "paragraph_number": "4"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9, vierde, zevende of achtste lid",
+    "paragraph_number": "8"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "11",
+    "paragraph_number": "8"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "13",
+    "paragraph_number": "8"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=14&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "14",
+    "label": null,
+    "text": "14, tweede en derde lid",
+    "paragraph_number": "8"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 285,
+   "xref_intra_instrument": 16,
+   "xref_inter_instrument": 1,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art18@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=18&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "18",
+  "heading": "Artikel 18. Bijzondere bevoegdheden",
+  "chapter": "Hoofdstuk 6. Naleving",
+  "section": null,
+  "text": "1\nOnze Minister kan de toegang tot elektronische dienstverlening van een bestuursorgaan of een aangewezen organisatie onderbreken of doen onderbreken indien sprake is van:\n\na.\neen ernstige storing of ernstige aantasting van de werking, beveiliging of betrouwbaarheid van de elektronische dienstverlening of de dreiging daarvan,\n\nb.\nmisbruik of oneigenlijk gebruik van de toegang tot elektronische dienstverlening of de dreiging daarvan, of\n\nc.\nniet-naleving door het betrokken bestuursorgaan of de betrokken aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8, 15 en 21 bepaalde.\n\n2\nEen bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening. Het bestuursorgaan of de aangewezen organisatie verstrekt daarbij alle benodigde informatie.\n\n3\nDe desbetreffende toezichthouder stelt Onze Minister onverwijld in kennis van niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde. De toezichthouder verstrekt daarbij alle benodigde informatie.\n\n4\nOnze Minister kan de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel onderbreken of doen onderbreken bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister kan de toegang tot elektronische dienstverlening van een bestuursorgaan of een aangewezen organisatie onderbreken of doen onderbreken indien sprake is van:\n\na.\neen ernstige storing of ernstige aantasting van de werking, beveiliging of betrouwbaarheid van de elektronische dienstverlening of de dreiging daarvan,\n\nb.\nmisbruik of oneigenlijk gebruik van de toegang tot elektronische dienstverlening of de dreiging daarvan, of\n\nc.\nniet-naleving door het betrokken bestuursorgaan of de betrokken aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8, 15 en 21 bepaalde.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=18&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Een bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening. Het bestuursorgaan of de aangewezen organisatie verstrekt daarbij alle benodigde informatie.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=18&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "De desbetreffende toezichthouder stelt Onze Minister onverwijld in kennis van niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde. De toezichthouder verstrekt daarbij alle benodigde informatie.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=18&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Onze Minister kan de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel onderbreken of doen onderbreken bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=18&lid=4&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403242",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661334",
+  "element_id": "16745503",
+  "version_id": "29403242",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "4",
+    "label": null,
+    "text": "artikelen 4",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "7",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "8",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=21&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "21",
+    "label": null,
+    "text": "21",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "4",
+    "label": null,
+    "text": "artikelen 4",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "7",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "8",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": "3"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 211,
+   "xref_intra_instrument": 9,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 1,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art19@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=19&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "19",
+  "heading": "Artikel 19. Informatieverstrekking",
+  "chapter": "Hoofdstuk 6. Naleving",
+  "section": null,
+  "text": "1\nBestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten verstrekken aan Onze Minister desgevraagd en uit eigen beweging de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen.\n\n2\nOnze Minister verstrekt gegevens en inlichtingen aan bestuursorganen en aangewezen organisaties, aan de ingevolge artikel 9, tweede of derde lid, toegelaten houder van een erkenning of aan een ingevolge artikel 11 erkende middelenuitgever of dienst over de inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening voor zover dit noodzakelijk is voor een goede uitoefening van hun taken of te verlenen diensten in het kader van deze wet.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten verstrekken aan Onze Minister desgevraagd en uit eigen beweging de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=19&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Onze Minister verstrekt gegevens en inlichtingen aan bestuursorganen en aangewezen organisaties, aan de ingevolge artikel 9, tweede of derde lid, toegelaten houder van een erkenning of aan een ingevolge artikel 11 erkende middelenuitgever of dienst over de inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening voor zover dit noodzakelijk is voor een goede uitoefening van hun taken of te verlenen diensten in het kader van deze wet.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=6&artikel=19&lid=2&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403252",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661344",
+  "element_id": "16745513",
+  "version_id": "29403252",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9, tweede of derde lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikel 9, tweede of derde lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11",
+    "paragraph_number": "2"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 136,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art20@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=20&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "20",
+  "heading": "Artikel 20. Leges voor verstrekking publiek identificatiemiddel",
+  "chapter": "Hoofdstuk 7. Financiële bepalingen",
+  "section": null,
+  "text": "1\nDe kosten die het Rijk maakt samenhangend met de productie en de verstrekking van een publiek identificatiemiddel worden door het Rijk ten laste gebracht van de verkrijger van dit middel.\n\n2\nBij ministeriële regeling wordt, voor zover deze vergoeding niet krachtens een andere wet wordt vastgesteld, per publiek identificatiemiddel het bedrag ter vergoeding van de kosten, bedoeld in het eerste lid, vastgesteld en kan de wijze van betaling worden vastgesteld.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "De kosten die het Rijk maakt samenhangend met de productie en de verstrekking van een publiek identificatiemiddel worden door het Rijk ten laste gebracht van de verkrijger van dit middel.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=20&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij ministeriële regeling wordt, voor zover deze vergoeding niet krachtens een andere wet wordt vastgesteld, per publiek identificatiemiddel het bedrag ter vergoeding van de kosten, bedoeld in het eerste lid, vastgesteld en kan de wijze van betaling worden vastgesteld.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=20&lid=2&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403272",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-05-12",
+  "label_id": "16661364",
+  "element_id": "16745533",
+  "version_id": "29403272",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 71,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 1,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art21@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=21&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "21",
+  "heading": "Artikel 21. Doorberekening kosten",
+  "chapter": "Hoofdstuk 7. Financiële bepalingen",
+  "section": null,
+  "text": "De kosten die het Rijk maakt samenhangend met de uitvoering van de artikelen 5 en 9 worden door Onze Minister ten laste gebracht van de bestuursorganen, aangewezen organisaties en andere organen die het betreft. Bij ministeriële regeling worden hierover regels gesteld.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403282",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661374",
+  "element_id": "16745543",
+  "version_id": "29403282",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikelen 5",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "9",
+    "paragraph_number": null
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 41,
+   "xref_intra_instrument": 2,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=22&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22",
+  "heading": "Artikel 22. Doorberekening aanvraag erkenning en toezicht op naleving erkenningseisen",
+  "chapter": "Hoofdstuk 7. Financiële bepalingen",
+  "section": null,
+  "text": "1\nOnze Minister kan een heffing opleggen ter vergoeding van kosten overeenkomstig een door hem vastgesteld tarief ter zake van de volgende handelingen:\n\na.\nde behandeling van een aanvraag tot erkenning als bedoeld in de artikelen 9 en 11;\n\nb.\nhet toezicht op de naleving van het bepaalde bij of krachtens de artikelen 9 en 13.\n\n2\nBij of krachtens algemene maatregel van bestuur worden regels gesteld over de hoogte en het opleggen van de heffing, waarbij onderscheid kan worden gemaakt tussen verschillende categorieën handelingen als bedoeld in het eerste lid.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Onze Minister kan een heffing opleggen ter vergoeding van kosten overeenkomstig een door hem vastgesteld tarief ter zake van de volgende handelingen:\n\na.\nde behandeling van een aanvraag tot erkenning als bedoeld in de artikelen 9 en 11;\n\nb.\nhet toezicht op de naleving van het bepaalde bij of krachtens de artikelen 9 en 13.",
+    "points": [
+     "a",
+     "b"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=22&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij of krachtens algemene maatregel van bestuur worden regels gesteld over de hoogte en het opleggen van de heffing, waarbij onderscheid kan worden gemaakt tussen verschillende categorieën handelingen als bedoeld in het eerste lid.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=22&lid=2&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403292",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661384",
+  "element_id": "16745553",
+  "version_id": "29403292",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikelen 9",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "11",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "artikelen 9",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "13",
+    "paragraph_number": "1"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 91,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22a@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22a&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22a",
+  "heading": "Artikel 22a",
+  "chapter": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+  "section": null,
+  "text": "Deze wet en de daarop berustende bepalingen zijn mede van toepassing in de openbare lichamen Bonaire, Sint Eustatius en Saba, met inachtneming van dit hoofdstuk, met ingang van een bij Koninklijk Besluit te bepalen tijdstip, dat voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=31033492",
+  "in_force_status": "in_force",
+  "in_force_from": "2025-11-11",
+  "label_id": "17487774",
+  "element_id": "17587113",
+  "version_id": "31033492",
+  "source_publication": "Stb.2025-304",
+  "effect": "nieuw",
+  "dossier_number": "36639",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 47,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22b@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22b",
+  "heading": "Artikel 22b",
+  "chapter": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+  "section": null,
+  "text": "1\nVoor de toepassing van artikel 1 wordt onder «onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon» verstaan «onderneming of rechtspersoon als bedoeld in artikel 3 onderscheidenlijk 4 van de Handelsregisterwet 2009 BES».\n\n2\nVoor de toepassing van artikel 1 en artikel 2, eerste lid, wordt onder «bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».\n\n3\nVoor de toepassing van artikel 2, derde lid, wordt onder «rechterlijke instanties» verstaan:\n\na.\nde Gerechten in eerste aanleg, bedoeld in artikel 1, onderdeel f, van de Rijkswet Gemeenschappelijk Hof van Justitie;\n\nb.\nhet Hof, bedoeld in artikel 1, onderdeel e, van de Rijkswet Gemeenschappelijk Hof van Justitie;\n\nc.\nde Hoge Raad, bedoeld in artikel 1, onderdeel h, van de Rijkswet Gemeenschappelijk Hof van Justitie.\n\n4\nVoor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel a, wordt onder «bestuursorganen» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».\n\n5\nVoor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel b, wordt onder «organen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht» verstaan «organen als bedoeld in artikel 2, eerste lid, onderdelen a tot en met d, van de Wet administratieve rechtspraak BES».",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Voor de toepassing van artikel 1 wordt onder «onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon» verstaan «onderneming of rechtspersoon als bedoeld in artikel 3 onderscheidenlijk 4 van de Handelsregisterwet 2009 BES».",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Voor de toepassing van artikel 1 en artikel 2, eerste lid, wordt onder «bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Voor de toepassing van artikel 2, derde lid, wordt onder «rechterlijke instanties» verstaan:\n\na.\nde Gerechten in eerste aanleg, bedoeld in artikel 1, onderdeel f, van de Rijkswet Gemeenschappelijk Hof van Justitie;\n\nb.\nhet Hof, bedoeld in artikel 1, onderdeel e, van de Rijkswet Gemeenschappelijk Hof van Justitie;\n\nc.\nde Hoge Raad, bedoeld in artikel 1, onderdeel h, van de Rijkswet Gemeenschappelijk Hof van Justitie.",
+    "points": [
+     "a",
+     "b",
+     "c"
+    ],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Voor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel a, wordt onder «bestuursorganen» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Voor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel b, wordt onder «organen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht» verstaan «organen als bedoeld in artikel 2, eerste lid, onderdelen a tot en met d, van de Wet administratieve rechtspraak BES».",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22b&lid=5&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=31033502",
+  "in_force_status": "in_force",
+  "in_force_from": "2025-11-11",
+  "label_id": "17487784",
+  "element_id": "17587123",
+  "version_id": "31033502",
+  "source_publication": "Stb.2025-304",
+  "effect": "nieuw",
+  "dossier_number": "36639",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=5",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=6",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "6 van de Handelsregisterwet 2007",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0021777&artikel=8",
+    "bwb_id": "BWBR0021777",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "artikel 8, aanhef en onderdeel a, van die wet",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028503&artikel=3",
+    "bwb_id": "BWBR0028503",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028503&artikel=4",
+    "bwb_id": "BWBR0028503",
+    "identifier_scheme": null,
+    "target_article": "4",
+    "label": null,
+    "text": "4 van de Handelsregisterwet 2009 BES",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0005537&artikel=1:1",
+    "bwb_id": "BWBR0005537",
+    "identifier_scheme": null,
+    "target_article": "1:1",
+    "label": null,
+    "text": "artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028455&artikel=2",
+    "bwb_id": "BWBR0028455",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, eerste lid, van de Wet administratieve rechtspraak BES",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028070&artikel=1",
+    "bwb_id": "BWBR0028070",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1, onderdeel f, van de Rijkswet Gemeenschappelijk Hof van Justitie",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028070&artikel=1",
+    "bwb_id": "BWBR0028070",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1, onderdeel e, van de Rijkswet Gemeenschappelijk Hof van Justitie",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028070&artikel=1",
+    "bwb_id": "BWBR0028070",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1, onderdeel h, van de Rijkswet Gemeenschappelijk Hof van Justitie",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028455&artikel=2",
+    "bwb_id": "BWBR0028455",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, eerste lid, van de Wet administratieve rechtspraak BES",
+    "paragraph_number": "4"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0005537&artikel=1:1",
+    "bwb_id": "BWBR0005537",
+    "identifier_scheme": null,
+    "target_article": "1:1",
+    "label": null,
+    "text": "artikel 1:1, tweede lid, van de Algemene wet bestuursrecht",
+    "paragraph_number": "5"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0028455&artikel=2",
+    "bwb_id": "BWBR0028455",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, eerste lid, onderdelen a tot en met d, van de Wet administratieve rechtspraak BES",
+    "paragraph_number": "5"
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=1&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=1&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "1",
+    "label": null,
+    "text": "artikel 1",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, eerste lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=1&artikel=2&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "2",
+    "label": null,
+    "text": "artikel 2, derde lid",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3, eerste lid, onderdeel a",
+    "paragraph_number": "4"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3, eerste lid, onderdeel b",
+    "paragraph_number": "5"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 254,
+   "xref_intra_instrument": 6,
+   "xref_inter_instrument": 13,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22c@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22c&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22c",
+  "heading": "Artikel 22c",
+  "chapter": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+  "section": null,
+  "text": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c, en artikel 15, achtste lid, zijn niet van toepassing in een openbaar lichaam.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=31033512",
+  "in_force_status": "in_force",
+  "in_force_from": "2025-11-11",
+  "label_id": "17487794",
+  "element_id": "17587133",
+  "version_id": "31033512",
+  "source_publication": "Stb.2025-304",
+  "effect": "nieuw",
+  "dossier_number": "36639",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "artikel 15, achtste lid",
+    "paragraph_number": null
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 24,
+   "xref_intra_instrument": 2,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22d@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22d&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22d",
+  "heading": "Artikel 22d",
+  "chapter": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+  "section": null,
+  "text": "Met het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van de openbare lichamen Bonaire, Sint Eustatius en Saba zijn belast de bij besluit van Onze Minister aangewezen ambtenaren.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=31033522",
+  "in_force_status": "in_force",
+  "in_force_from": "2025-11-11",
+  "label_id": "17487804",
+  "element_id": "17587143",
+  "version_id": "31033522",
+  "source_publication": "Stb.2025-304",
+  "effect": "nieuw",
+  "dossier_number": "36639",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikelen 3",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.1&artikel=6&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "6",
+    "label": null,
+    "text": "6",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "7",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=8&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "8",
+    "label": null,
+    "text": "8, eerste lid",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": null
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 46,
+   "xref_intra_instrument": 5,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art22e@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=7A&artikel=22e&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "22e",
+  "heading": "Artikel 22e",
+  "chapter": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+  "section": null,
+  "text": "Bij regeling van Onze Minister kunnen regels worden gesteld over een bijzondere uitkering aan de openbare lichamen ter bekostiging van de transitie naar digitale dienstverlening in de openbare lichamen Bonaire, Sint Eustatius en Saba.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=31033532",
+  "in_force_status": "in_force",
+  "in_force_from": "2025-11-11",
+  "label_id": "17487814",
+  "element_id": "17587153",
+  "version_id": "31033532",
+  "source_publication": "Stb.2025-304",
+  "effect": "nieuw",
+  "dossier_number": "36639",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 34,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art23@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=23&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "23",
+  "heading": "Artikel 23. Evaluatie",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "Onze Minister zendt binnen drie jaar na de inwerkingtreding van deze wet aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk. In het bijzonder wordt hierbij aandacht geschonken aan de getroffen maatregelen op het gebied van beveiliging, privacybescherming en de toegankelijkheid van elektronische dienstverlening.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403312",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661404",
+  "element_id": "16745573",
+  "version_id": "29403312",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 52,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art23a@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=23a&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "23a",
+  "heading": "Artikel 23a",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "[Red: vervallen]",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403322",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661414",
+  "element_id": "16745583",
+  "version_id": "29403322",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 2,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art24@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "24",
+  "heading": "Artikel 24. Overgangsrecht bedrijfs- en organisatiemiddel",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "1\nEen middelenuitgever of authenticatiedienst die onmiddellijk voor inwerkingtreding van dit artikel partij was bij een privaat stelsel van afspraken aangaande elektronische toegangsdiensten met de Staat wordt gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van dit artikel, geacht erkend te zijn op grond van artikel 11, eerste, onderscheidenlijk tweede lid met betrekking tot het bedrijfs- en organisatiemiddel dat door hem in het kader van die afspraken wordt uitgegeven. Gedurende die 18 maanden wordt het betrokken bedrijfs- en organisatiemiddel geacht een erkend bedrijfs- en organisatiemiddel te zijn, met uitzondering van een bedrijfs- en organisatiemiddel dat binnen het stelsel functioneert op het niveau 1.\n\n2\nEen ontsluitende dienst of een machtigingsdienst die onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten, wordt gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, geacht erkend te zijn op grond van artikel 11, derde lid.\n\n3\nVoor erkenning overeenkomstig dit overgangsrecht heeft te gelden dat een dienst of middel dat is toegetreden tot het private stelsel op niveau 4, niveau 3, niveau 2 of niveau 2+ wordt geacht erkend te zijn op het betrouwbaarheidsniveau hoog, substantieel onderscheidenlijk laag.\n\n4\nDit artikel is niet van toepassing op partijen die binnen het private stelsel, bedoeld in het eerste en tweede lid, uitsluitend activiteiten op het niveau 1 uitvoeren.\n\n5\nEen bedrijfs- of organisatiemiddel dat voor inwerkingtreding van artikel 11 werd gebruikt voor elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep, wordt geacht op grond van artikel 15, vijfde lid, aangewezen te zijn gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet. Deze erkenning van rechtswege vervalt na 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, of zoveel eerder als Onze Minister dat middel op grond van artikel 15, vijfde lid, heeft aangewezen.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Een middelenuitgever of authenticatiedienst die onmiddellijk voor inwerkingtreding van dit artikel partij was bij een privaat stelsel van afspraken aangaande elektronische toegangsdiensten met de Staat wordt gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van dit artikel, geacht erkend te zijn op grond van artikel 11, eerste, onderscheidenlijk tweede lid met betrekking tot het bedrijfs- en organisatiemiddel dat door hem in het kader van die afspraken wordt uitgegeven. Gedurende die 18 maanden wordt het betrokken bedrijfs- en organisatiemiddel geacht een erkend bedrijfs- en organisatiemiddel te zijn, met uitzondering van een bedrijfs- en organisatiemiddel dat binnen het stelsel functioneert op het niveau 1.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Een ontsluitende dienst of een machtigingsdienst die onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten, wordt gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, geacht erkend te zijn op grond van artikel 11, derde lid.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Voor erkenning overeenkomstig dit overgangsrecht heeft te gelden dat een dienst of middel dat is toegetreden tot het private stelsel op niveau 4, niveau 3, niveau 2 of niveau 2+ wordt geacht erkend te zijn op het betrouwbaarheidsniveau hoog, substantieel onderscheidenlijk laag.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Dit artikel is niet van toepassing op partijen die binnen het private stelsel, bedoeld in het eerste en tweede lid, uitsluitend activiteiten op het niveau 1 uitvoeren.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&lid=4&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "5",
+    "text": "Een bedrijfs- of organisatiemiddel dat voor inwerkingtreding van artikel 11 werd gebruikt voor elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep, wordt geacht op grond van artikel 15, vijfde lid, aangewezen te zijn gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet. Deze erkenning van rechtswege vervalt na 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, of zoveel eerder als Onze Minister dat middel op grond van artikel 15, vijfde lid, heeft aangewezen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=24&lid=5&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403332",
+  "in_force_status": "not_yet_in_force",
+  "in_force_from": null,
+  "label_id": "16661424",
+  "element_id": "16745593",
+  "version_id": "29403332",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11, eerste, onderscheidenlijk tweede lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11, derde lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "artikel 11",
+    "paragraph_number": "5"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "artikel 15, vijfde lid",
+    "paragraph_number": "5"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 341,
+   "xref_intra_instrument": 4,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art25@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=25&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "25",
+  "heading": "Artikel 25. Parlementaire betrokkenheid bij gedelegeerde regelgeving",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "1\nEen voordracht voor een krachtens de artikelen 4, 5, vijfde en zesde lid, 9, 11, 13 en 22 te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd.\n\n2\nDe voordracht voor een krachtens artikel 16, vierde lid, vast te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd, tenzij binnen deze termijn door of namens een van de Kamers of door ten minste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven het onderwerp van de algemene maatregel van bestuur bij wet te regelen.\n\n3\nEen krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur wordt aan beide Kamers der Staten-Generaal overgelegd. Hij treedt in werking op een tijdstip dat nadat vier weken na de overlegging zijn verstreken bij koninklijk besluit wordt vastgesteld, tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld. In dat geval wordt een daartoe strekkende voorstel van wet zo spoedig mogelijk ingediend. Indien het voorstel van wet wordt ingetrokken of indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen, wordt de algemene maatregel van bestuur ingetrokken.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Een voordracht voor een krachtens de artikelen 4, 5, vijfde en zesde lid, 9, 11, 13 en 22 te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=25&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "De voordracht voor een krachtens artikel 16, vierde lid, vast te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd, tenzij binnen deze termijn door of namens een van de Kamers of door ten minste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven het onderwerp van de algemene maatregel van bestuur bij wet te regelen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=25&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur wordt aan beide Kamers der Staten-Generaal overgelegd. Hij treedt in werking op een tijdstip dat nadat vier weken na de overlegging zijn verstreken bij koninklijk besluit wordt vastgesteld, tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld. In dat geval wordt een daartoe strekkende voorstel van wet zo spoedig mogelijk ingediend. Indien het voorstel van wet wordt ingetrokken of indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen, wordt de algemene maatregel van bestuur ingetrokken.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=25&lid=3&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403342",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661434",
+  "element_id": "16745603",
+  "version_id": "29403342",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=4&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "4",
+    "label": null,
+    "text": "artikelen 4",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "5, vijfde en zesde lid",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=9&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "9",
+    "label": null,
+    "text": "9",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=11&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "11",
+    "label": null,
+    "text": "11",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=13&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "13",
+    "label": null,
+    "text": "13",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=22&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "22",
+    "label": null,
+    "text": "22",
+    "paragraph_number": "1"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "16",
+    "label": null,
+    "text": "artikel 16, vierde lid",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, zesde lid",
+    "paragraph_number": "3"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 249,
+   "xref_intra_instrument": 8,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 2,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 2,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art26@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=26&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "26",
+  "heading": "Artikel 26. Innovatie",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "1\nBij algemene maatregel van bestuur kan bij wijze van experiment, met het oog op het onderzoeken van nieuwe methoden waarmee authenticatie doeltreffender en veiliger kan plaatsvinden, worden afgeweken van de bij of krachtens deze wet geldende bepalingen.\n\n2\nBij toepassing van het eerste lid wordt geregeld door welke bestuursorganen of aangewezen organisaties, op welke wijze en gedurende welke periode van de wet wordt afgeweken.\n\n3\nEen experiment als bedoeld in het eerste lid duurt ten hoogste vier jaar.\n\n4\nOnze Minister zendt negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van het experiment, alsmede een standpunt inzake de voortzetting anders dan als experiment.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Bij algemene maatregel van bestuur kan bij wijze van experiment, met het oog op het onderzoeken van nieuwe methoden waarmee authenticatie doeltreffender en veiliger kan plaatsvinden, worden afgeweken van de bij of krachtens deze wet geldende bepalingen.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=26&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "Bij toepassing van het eerste lid wordt geregeld door welke bestuursorganen of aangewezen organisaties, op welke wijze en gedurende welke periode van de wet wordt afgeweken.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=26&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "Een experiment als bedoeld in het eerste lid duurt ten hoogste vier jaar.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=26&lid=3&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "4",
+    "text": "Onze Minister zendt negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van het experiment, alsmede een standpunt inzake de voortzetting anders dan als experiment.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=26&lid=4&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403352",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661444",
+  "element_id": "16745613",
+  "version_id": "29403352",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 127,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art27@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=27&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "27",
+  "heading": "Artikel 27. Wijziging Wegenverkeerswet 1994",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "[Red: Wijzigt de Wegenverkeerswet 1994.]",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403362",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661454",
+  "element_id": "16745623",
+  "version_id": "29403362",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "onbekend",
+    "bwb_id": "BWBR0006622",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "Wegenverkeerswet 1994",
+    "paragraph_number": null
+   }
+  ],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 5,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 1,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art28@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=28&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "28",
+  "heading": "Artikel 28. Omhangen",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "Na de inwerkingtreding van deze wet berust\n\na.\nhet Besluit verwerking persoonsgegevens generieke digitale infrastructuur op artikel 16, vierde lid, van deze wet;\n\nb.\nhet Tijdelijk besluit digitale toegankelijkheid overheid op artikel 3, tweede en derde lid, van deze wet.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29405442",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-07-01",
+  "label_id": "16661464",
+  "element_id": "16745633",
+  "version_id": "29405442",
+  "source_publication": "Stb.2023-158",
+  "effect": "wijziging",
+  "dossier_number": "34972",
+  "extref": [
+   {
+    "doc": "jci1.3:c:BWBR0037987",
+    "bwb_id": "BWBR0037987",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "Besluit verwerking persoonsgegevens generieke digitale infrastructuur",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0040936",
+    "bwb_id": "BWBR0040936",
+    "identifier_scheme": null,
+    "target_article": null,
+    "label": null,
+    "text": "Tijdelijk besluit digitale toegankelijkheid overheid",
+    "paragraph_number": null
+   }
+  ],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=5&artikel=16&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "16",
+    "label": null,
+    "text": "artikel 16, vierde lid",
+    "paragraph_number": null
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikel 3, tweede en derde lid",
+    "paragraph_number": null
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 40,
+   "xref_intra_instrument": 2,
+   "xref_inter_instrument": 2,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 1
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art29@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=29&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "29",
+  "heading": "Artikel 29. Inwerkingtreding",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "1\nDeze wet treedt in werking op een bij koninklijk besluit te bepalen tijdstip, dat voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld.\n\n2\nDe artikelen 3 en 20 van deze wet treden in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst.\n\n3\nDe in de artikelen 7 en 15 opgenomen acceptatieplichten zijn voor een bestuursorgaan of aangewezen organisatie niet eerder van toepassing dan nadat dat bestuursorgaan of die aangewezen organisatie kan worden aangesloten op de in artikel 5, eerste lid, onderdelen a tot en met e, en tweede lid bedoelde infrastructuur en voorzieningen overeenkomstig het bij regeling van Onze Minister, gehoord Onze Ministers die het mede aangaat, op te stellen aansluitschema. Het aansluitschema kan erin voorzien dat de acceptatieplichten voor verschillende diensten van een bestuursorgaan of aangewezen organisatie op verschillende momenten van toepassing worden. De regeling met aansluitschema wordt gepubliceerd in de Staatscourant.",
+  "paragraphs": [
+   {
+    "number": "1",
+    "text": "Deze wet treedt in werking op een bij koninklijk besluit te bepalen tijdstip, dat voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=29&lid=1&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "2",
+    "text": "De artikelen 3 en 20 van deze wet treden in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=29&lid=2&z=2025-11-11&g=2025-11-11"
+   },
+   {
+    "number": "3",
+    "text": "De in de artikelen 7 en 15 opgenomen acceptatieplichten zijn voor een bestuursorgaan of aangewezen organisatie niet eerder van toepassing dan nadat dat bestuursorgaan of die aangewezen organisatie kan worden aangesloten op de in artikel 5, eerste lid, onderdelen a tot en met e, en tweede lid bedoelde infrastructuur en voorzieningen overeenkomstig het bij regeling van Onze Minister, gehoord Onze Ministers die het mede aangaat, op te stellen aansluitschema. Het aansluitschema kan erin voorzien dat de acceptatieplichten voor verschillende diensten van een bestuursorgaan of aangewezen organisatie op verschillende momenten van toepassing worden. De regeling met aansluitschema wordt gepubliceerd in de Staatscourant.",
+    "points": [],
+    "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=29&lid=3&z=2025-11-11&g=2025-11-11"
+   }
+  ],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403382",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-05-12",
+  "label_id": "16661474",
+  "element_id": "16745643",
+  "version_id": "29403382",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=2&artikel=3&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "3",
+    "label": null,
+    "text": "artikelen 3",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=7&artikel=20&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "20",
+    "label": null,
+    "text": "20",
+    "paragraph_number": "2"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.2&artikel=7&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "7",
+    "label": null,
+    "text": "artikelen 7",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=4&paragraaf=4.3&artikel=15&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "15",
+    "label": null,
+    "text": "15",
+    "paragraph_number": "3"
+   },
+   {
+    "doc": "jci1.3:c:BWBR0048156&hoofdstuk=3&artikel=5&z=2025-11-11&g=2025-11-11",
+    "bwb_id": "BWBR0048156",
+    "identifier_scheme": null,
+    "target_article": "5",
+    "label": null,
+    "text": "artikel 5, eerste lid, onderdelen a tot en met e, en tweede lid",
+    "paragraph_number": "3"
+   }
+  ],
+  "norms": [],
+  "features": {
+   "n_words": 157,
+   "xref_intra_instrument": 5,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ },
+ {
+  "uid": "nl:BWBR0048156:art30@2025-11-11",
+  "jci": "jci1.3:c:BWBR0048156&hoofdstuk=8&artikel=30&z=2025-11-11&g=2025-11-11",
+  "eli": null,
+  "celex": null,
+  "instrument_id": "BWBR0048156",
+  "jurisdiction": "NL",
+  "language": "nl",
+  "article": "30",
+  "heading": "Artikel 30. Citeertitel",
+  "chapter": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+  "section": null,
+  "text": "Deze wet wordt aangehaald als: Wet digitale overheid.",
+  "paragraphs": [],
+  "text_fidelity": "official_xml",
+  "source_ref": "raw/nl/BWBR0048156/2025-11-11/toestand.xml#versie-id=29403392",
+  "in_force_status": "in_force",
+  "in_force_from": "2023-05-12",
+  "label_id": "16661484",
+  "element_id": "16745653",
+  "version_id": "29403392",
+  "source_publication": "Stb.2023-158",
+  "effect": "nieuwe-regeling",
+  "dossier_number": "34972",
+  "extref": [],
+  "intref": [],
+  "norms": [],
+  "features": {
+   "n_words": 8,
+   "xref_intra_instrument": 0,
+   "xref_inter_instrument": 0,
+   "xref_cross_jurisdiction": 0,
+   "conditional_operators": {
+    "tenzij": 0,
+    "behoudens": 0,
+    "voor zover": 0,
+    "mits": 0,
+    "indien": 0,
+    "niet van toepassing indien": 0,
+    "onverminderd": 0,
+    "in afwijking van": 0
+   },
+   "max_condition_depth": 0
+  }
+ }
+]

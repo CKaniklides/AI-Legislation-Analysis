@@ -1,0 +1,2460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wetstechnische-informatie xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:overheid="http://standaarden.overheid.nl/owms/terms/" xmlns:owms="http://standaarden.overheid.nl/bwb/owms/" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-WTI/2016-1/xsd/wti_2016-1.xsd" bwb-id="BWBR0049497">
+  <algemene-informatie gegenereerd="2026-08-04T04:18:32">
+    <eerstverantwoordelijke>Financiën</eerstverantwoordelijke>
+    <citeertitel status="officieel">Besluit EU-verordeningen Wft</citeertitel>
+    <citeertitels>
+      <citeertitel status="officieel" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">Besluit EU-verordeningen Wft</citeertitel>
+    </citeertitels>
+    <soort-regeling>AMvB</soort-regeling>
+    <identificatienummer>BWBR0049497</identificatienummer>
+    <rechtsgebieden>
+      <rechtsgebied>
+        <hoofdgebied>Bank- en effectenrecht, financiering</hoofdgebied>
+        <specifiekgebied>Toezicht bank- en kredietwezen</specifiekgebied>
+      </rechtsgebied>
+    </rechtsgebieden>
+    <overheidsdomeinen>
+      <overheidsdomein>Financiën</overheidsdomein>
+    </overheidsdomeinen>
+  </algemene-informatie>
+  <gerelateerde-regelgeving gegenereerd="2026-08-04T04:18:33">
+    <regeling>
+      <grondslagen>
+        <grondslag bwb-id="BWBR0020368" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">
+          <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:3a" bwb-id="BWBR0020368" verwijzing-id="3298022">Artikelen 1:3a, vierde lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:24" bwb-id="BWBR0020368" verwijzing-id="3298023">1:24, derde lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:25" bwb-id="BWBR0020368" verwijzing-id="3298024">1:25, derde lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:25a" bwb-id="BWBR0020368" verwijzing-id="3298025">1:25a, tweede lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:25c" bwb-id="BWBR0020368" verwijzing-id="3298026">1:25c</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:50a" bwb-id="BWBR0020368" verwijzing-id="3298027">1:50a</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:79" bwb-id="BWBR0020368" verwijzing-id="3298028">1:79, eerste lid, onderdeel b</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:80" bwb-id="BWBR0020368" verwijzing-id="3298029">1:80, onderdeel b</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:81" bwb-id="BWBR0020368" verwijzing-id="3298030">1:81, derde lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:82" bwb-id="BWBR0020368" verwijzing-id="3298031">1:82, tweede lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:87" bwb-id="BWBR0020368" verwijzing-id="3298032">1:87, vierde lid</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:94" bwb-id="BWBR0020368" verwijzing-id="3298033">1:94, eerste lid, onderdeel h</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=1:97" bwb-id="BWBR0020368" verwijzing-id="3298034">1:97, derde lid, onderdeel b</extref>, <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=3:28a" bwb-id="BWBR0020368" verwijzing-id="3298035">artikel 3:28a, eerste lid</extref>, en <extref label="Wet op het financieel toezicht" groep="artikel" doc="jci1.3:c:BWBR0020368&amp;artikel=4:27a" bwb-id="BWBR0020368" verwijzing-id="3298036">4:27a, derde lid</extref>, Wet op het financieel toezicht</grondslag>
+      </grondslagen>
+      <wetsfamilie>
+        <gerelateerde-regeling bwb-id="BWBR0049497" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">
+          <extref doc="jci1.3:c:BWBR0049497" bwb-id="BWBR0049497">Besluit EU-verordeningen Wft</extref>
+        </gerelateerde-regeling>
+        <gerelateerde-regeling bwb-id="BWBR0020368" geldig-tot="9999-12-31" geldig-van="2024-04-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2024-04-01">
+          <extref doc="jci1.3:c:BWBR0020368" bwb-id="BWBR0020368">Wet op het financieel toezicht</extref>
+        </gerelateerde-regeling>
+      </wetsfamilie>
+      <grondslag-voor>
+        <gerelateerde-regeling bwb-id="BWBR0052598" geldig-tot="9999-12-31" geldig-van="2026-05-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-05-04">
+          <extref doc="jci1.3:c:BWBR0052598" bwb-id="BWBR0052598">Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014</extref>
+        </gerelateerde-regeling>
+      </grondslag-voor>
+      <verwijzing-door>
+        <gerelateerd-regelingelement bwb-id="BWBR0044472" geldig-tot="9999-12-31" geldig-van="2026-07-30" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-07-30">
+          <extref label="Algemeen boetetoemetingsbeleid DNB" groep="tekst" doc="jci1.3:c:BWBR0044472" bwb-id="BWBR0044472" label-id="15684014">tekst</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+          <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=1" bwb-id="BWBR0051566" label-id="17440844">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+          <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0052118" geldig-tot="9999-12-31" geldig-van="2026-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-01-01">
+          <extref label="Aanwijzingsbesluit elektronische verzending formele berichten DNB" groep="artikel" doc="jci1.3:c:BWBR0052118&amp;artikel=1" bwb-id="BWBR0052118" label-id="17623254">1</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0052875" geldig-tot="9999-12-31" geldig-van="2026-08-15" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-08-15">
+          <extref label="Cyberbeveiligingsbesluit" groep="artikel" doc="jci1.3:c:BWBR0052875&amp;artikel=30" bwb-id="BWBR0052875" label-id="17819614">30</extref>
+        </gerelateerd-regelingelement>
+      </verwijzing-door>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="16967334" groep="artikel" label="Artikel 2">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0052598" geldig-tot="9999-12-31" geldig-van="2026-05-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-05-04">
+            <extref doc="jci1.3:c:BWBR0052598" bwb-id="BWBR0052598">Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0052598" geldig-tot="9999-12-31" geldig-van="2026-05-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-05-04">
+            <extref label="Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014" groep="aanhef" doc="jci1.3:c:BWBR0052598" bwb-id="BWBR0052598" label-id="17747694">aanhef</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967554" groep="bijlage" label="Bijlage 10">
+        <grondslag-voor>
+          <gerelateerde-regeling bwb-id="BWBR0052598" geldig-tot="9999-12-31" geldig-van="2026-05-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-05-04">
+            <extref doc="jci1.3:c:BWBR0052598" bwb-id="BWBR0052598">Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014</extref>
+          </gerelateerde-regeling>
+        </grondslag-voor>
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0052598" geldig-tot="9999-12-31" geldig-van="2026-05-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-05-04">
+            <extref label="Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014" groep="aanhef" doc="jci1.3:c:BWBR0052598" bwb-id="BWBR0052598" label-id="17747694">aanhef</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967464" groep="bijlage" label="Bijlage 1">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967474" groep="bijlage" label="Bijlage 2">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967484" groep="bijlage" label="Bijlage 3">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967494" groep="bijlage" label="Bijlage 4">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967504" groep="bijlage" label="Bijlage 5">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967514" groep="bijlage" label="Bijlage 6">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967524" groep="bijlage" label="Bijlage 7">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967534" groep="bijlage" label="Bijlage 8">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967544" groep="bijlage" label="Bijlage 9">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967564" groep="bijlage" label="Bijlage 11">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967574" groep="bijlage" label="Bijlage 12">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967584" groep="bijlage" label="Bijlage 13">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967594" groep="bijlage" label="Bijlage 14">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967604" groep="bijlage" label="Bijlage 15">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967614" groep="bijlage" label="Bijlage 16">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967624" groep="bijlage" label="Bijlage 17">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967634" groep="bijlage" label="Bijlage 18">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967644" groep="bijlage" label="Bijlage 19">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967654" groep="bijlage" label="Bijlage 20">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967664" groep="bijlage" label="Bijlage 21">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967674" groep="bijlage" label="Bijlage 22">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967684" groep="bijlage" label="Bijlage 23">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967694" groep="bijlage" label="Bijlage 24">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967704" groep="bijlage" label="Bijlage 25">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967714" groep="bijlage" label="Bijlage 26">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967724" groep="bijlage" label="Bijlage 27">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967734" groep="bijlage" label="Bijlage 28">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967744" groep="bijlage" label="Bijlage 29">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967754" groep="bijlage" label="Bijlage 30">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967764" groep="bijlage" label="Bijlage 31">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967774" groep="bijlage" label="Bijlage 32">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967784" groep="bijlage" label="Bijlage 33">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967794" groep="bijlage" label="Bijlage 34">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="16967804" groep="bijlage" label="Bijlage 35">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17216374" groep="bijlage" label="Bijlage 36">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17242744" groep="bijlage" label="Bijlage 38">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17288394" groep="bijlage" label="Bijlage 37">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0051566" geldig-tot="9999-12-31" geldig-van="2025-10-04" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-10-04">
+            <extref label="Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector" groep="artikel" doc="jci1.3:c:BWBR0051566&amp;artikel=2" bwb-id="BWBR0051566" label-id="17440854">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+    </regelingelementen>
+  </gerelateerde-regelgeving>
+  <wijzigingen gegenereerd="2026-08-04T04:18:34">
+    <regeling>
+      <datum waarde="2026-08-15">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2026-07-08</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2026-189">
+                <publicatiedatum>2026-07-10</publicatiedatum>
+                <publicatiejaar>2026</publicatiejaar>
+                <publicatienummer>189</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2026-07-08</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2026-189">
+                <publicatiedatum>2026-07-10</publicatiedatum>
+                <publicatiejaar>2026</publicatiejaar>
+                <publicatienummer>189</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-07-15">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2025-07-03</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-187">
+                <publicatiedatum>2025-07-14</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>187</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2025-07-03</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-187">
+                <publicatiedatum>2025-07-14</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>187</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-03-18">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2025-02-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-67">
+                <publicatiedatum>2025-03-17</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>67</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2025-02-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-67">
+                <publicatiedatum>2025-03-17</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>67</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-03-07">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2025-02-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-53">
+                <publicatiedatum>2025-03-06</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>53</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2025-02-26</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-53">
+                <publicatiedatum>2025-03-06</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>53</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-01-17">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2024-11-25</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                <publicatiedatum>2024-12-03</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>379</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2024-11-25</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                <publicatiedatum>2024-12-03</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>379</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-01-15">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2025-01-13</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-5">
+                <publicatiedatum>2025-01-14</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>5</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2025-01-13</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-5">
+                <publicatiedatum>2025-01-14</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>5</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2025-01-01">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2024-12-02</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-388">
+                <publicatiedatum>2024-12-09</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>388</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2024-12-02</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-388">
+                <publicatiedatum>2024-12-09</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>388</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2024-12-17">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2024-12-11</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-404">
+                <publicatiedatum>2024-12-16</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>404</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2024-12-11</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-404">
+                <publicatiedatum>2024-12-16</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>404</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2024-07-16">
+        <details>
+          <betreft>wijziging</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2024-07-04</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                <publicatiedatum>2024-07-15</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>216</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2024-07-04</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                <publicatiedatum>2024-07-15</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>216</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+      <datum waarde="2024-04-01">
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <ondertekening>2024-03-15</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                <publicatiedatum>2024-03-25</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>68</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <ondertekening>2024-03-15</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                <publicatiedatum>2024-03-25</publicatiedatum>
+                <publicatiejaar>2024</publicatiejaar>
+                <publicatienummer>67</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="16967294">
+        <datum waarde="2024-04-01" versie-id="30015752">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967304">
+        <datum waarde="2024-04-01" versie-id="30015762">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967314">
+        <datum waarde="2024-04-01" versie-id="30015772">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967324">
+        <datum waarde="2024-04-01" label="Artikel 1" versie-id="30015782">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967334">
+        <datum waarde="2024-04-01" label="Artikel 2" versie-id="30015792">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967344">
+        <datum waarde="2024-04-01" label="Artikel 3" versie-id="30015802">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967354">
+        <datum waarde="2024-04-01" label="Artikel 4" versie-id="30015812">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967364">
+        <datum waarde="2024-04-01" label="Artikel 5" versie-id="30015822">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967374">
+        <datum waarde="2024-04-01" label="Artikel 6" versie-id="30015832">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967384">
+        <datum waarde="2024-04-01" label="Artikel 7" versie-id="30015842">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967394">
+        <datum waarde="2024-04-01" label="Artikel 8" versie-id="30015852">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967404">
+        <datum waarde="2024-04-01" label="Artikel 9" versie-id="30015862">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967414">
+        <datum waarde="2024-04-01" label="Artikel 10" versie-id="30015872">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967424">
+        <datum waarde="2024-04-01" label="Artikel 11" versie-id="30015882">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967434">
+        <datum waarde="2024-04-01" label="Artikel 12" versie-id="30015892">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967444">
+        <datum waarde="2024-04-01" label="Artikel 13" versie-id="30015902">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967454">
+        <datum waarde="2024-04-01" versie-id="30015912">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967464">
+        <datum waarde="2024-04-01" label="Bijlage 1" versie-id="30015922">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967474">
+        <datum waarde="2024-04-01" label="Bijlage 2" versie-id="30015932">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967484">
+        <datum waarde="2024-07-16" label="Bijlage 3" versie-id="30227232">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 3" versie-id="30015942">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967494">
+        <datum waarde="2025-03-07" label="Bijlage 4" versie-id="30641652">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2025-02-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-53">
+                  <publicatiedatum>2025-03-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>53</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-02-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-53">
+                  <publicatiedatum>2025-03-06</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>53</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 4" versie-id="30015952">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967504">
+        <datum waarde="2025-07-15" label="Bijlage 5" versie-id="30811152">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2025-07-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-187">
+                  <publicatiedatum>2025-07-14</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>187</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-07-03</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-187">
+                  <publicatiedatum>2025-07-14</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>187</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2025-01-17" label="Bijlage 5" versie-id="30554952">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 5" versie-id="30015962">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967514">
+        <datum waarde="2024-04-01" label="Bijlage 6" versie-id="30015972">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967524">
+        <datum waarde="2024-04-01" label="Bijlage 7" versie-id="30015982">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967534">
+        <datum waarde="2025-01-15" label="Bijlage 8" versie-id="30561222">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2025-01-13</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-5">
+                  <publicatiedatum>2025-01-14</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>5</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-01-13</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-5">
+                  <publicatiedatum>2025-01-14</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>5</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 8" versie-id="30015992">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967544">
+        <datum waarde="2024-04-01" label="Bijlage 9" versie-id="30016002">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967554">
+        <datum waarde="2024-07-16" label="Bijlage 10" versie-id="30227242">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 10" versie-id="30016012">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967564">
+        <datum waarde="2024-04-01" label="Bijlage 11" versie-id="30016022">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967574">
+        <datum waarde="2024-07-16" label="Bijlage 12" versie-id="30227252">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 12" versie-id="30016032">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967584">
+        <datum waarde="2024-04-01" label="Bijlage 13" versie-id="30016042">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967594">
+        <datum waarde="2024-04-01" label="Bijlage 14" versie-id="30016052">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967604">
+        <datum waarde="2024-04-01" label="Bijlage 15" versie-id="30016062">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967614">
+        <datum waarde="2025-01-01" label="Bijlage 16" versie-id="30470082">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-12-02</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-388">
+                  <publicatiedatum>2024-12-09</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>388</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-12-02</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-388">
+                  <publicatiedatum>2024-12-09</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>388</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 16" versie-id="30016072">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967624">
+        <datum waarde="2024-04-01" label="Bijlage 17" versie-id="30016082">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967634">
+        <datum waarde="2024-04-01" label="Bijlage 18" versie-id="30016092">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967644">
+        <datum waarde="2024-07-16" label="Bijlage 19" versie-id="30227262">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 19" versie-id="30016102">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967654">
+        <datum waarde="2024-04-01" label="Bijlage 20" versie-id="30016112">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967664">
+        <datum waarde="2024-07-16" label="Bijlage 21" versie-id="30227272">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 21" versie-id="30016122">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967674">
+        <datum waarde="2024-04-01" label="Bijlage 22" versie-id="30016132">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967684">
+        <datum waarde="2024-04-01" label="Bijlage 23" versie-id="30016142">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967694">
+        <datum waarde="2024-04-01" label="Bijlage 24" versie-id="30016152">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967704">
+        <datum waarde="2024-04-01" label="Bijlage 25" versie-id="30016162">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967714">
+        <datum waarde="2024-04-01" label="Bijlage 26" versie-id="30016172">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967724">
+        <datum waarde="2024-04-01" label="Bijlage 27" versie-id="30016182">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967734">
+        <datum waarde="2024-04-01" label="Bijlage 28" versie-id="30016192">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967744">
+        <datum waarde="2024-04-01" label="Bijlage 29" versie-id="30016202">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967754">
+        <datum waarde="2024-04-01" label="Bijlage 30" versie-id="30016212">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967764">
+        <datum waarde="2024-07-16" label="Bijlage 31" versie-id="30227282">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-07-04</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-216">
+                  <publicatiedatum>2024-07-15</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>216</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 31" versie-id="30016222">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967774">
+        <datum waarde="2024-04-01" label="Bijlage 32" versie-id="30016232">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967784">
+        <datum waarde="2024-04-01" label="Bijlage 33" versie-id="30016242">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967794">
+        <datum waarde="2024-04-01" label="Bijlage 34" versie-id="30016252">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967804">
+        <datum waarde="2026-08-15" label="Bijlage 35" versie-id="31709142">
+          <details isvoorafgaand="false">
+            <betreft>wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2026-07-08</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2026-189">
+                  <publicatiedatum>2026-07-10</publicatiedatum>
+                  <publicatiejaar>2026</publicatiejaar>
+                  <publicatienummer>189</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2026-07-08</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2026-189">
+                  <publicatiedatum>2026-07-10</publicatiedatum>
+                  <publicatiejaar>2026</publicatiejaar>
+                  <publicatienummer>189</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2025-01-17" label="Bijlage 35" versie-id="30554972">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+        <datum waarde="2024-04-01" label="Bijlage 35" versie-id="30016262">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+            <opmerkingen>
+              <opmerking type="Alg">
+                <al>Door Stb. 2024/379 vernummerd tot bijlage 38.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="16967814">
+        <datum waarde="2024-04-01" versie-id="30016272">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-68">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>68</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-03-15</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-67">
+                  <publicatiedatum>2024-03-25</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17216374">
+        <datum waarde="2024-12-17" label="Bijlage 36" versie-id="30493502">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-12-11</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-404">
+                  <publicatiedatum>2024-12-16</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>404</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-12-11</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-404">
+                  <publicatiedatum>2024-12-16</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>404</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17242744">
+        <datum waarde="2025-01-17" label="Bijlage 38" versie-id="30554982">
+          <details isvoorafgaand="false">
+            <betreft>vernummerd-wijziging</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2024-11-25</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2024-379">
+                  <publicatiedatum>2024-12-03</publicatiedatum>
+                  <publicatiejaar>2024</publicatiejaar>
+                  <publicatienummer>379</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+            <opmerkingen>
+              <opmerking type="Alg">
+                <al>Voorheen bijlage 35.</al>
+              </opmerking>
+            </opmerkingen>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17288394">
+        <datum waarde="2025-03-18" label="Bijlage 37" versie-id="30649322">
+          <details isvoorafgaand="false">
+            <betreft>nieuw</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <ondertekening>2025-02-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-67">
+                  <publicatiedatum>2025-03-17</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <ondertekening>2025-02-26</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-67">
+                  <publicatiedatum>2025-03-17</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>67</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+    </regelingelementen>
+  </wijzigingen>
+  <owms:meta owms-version="4.0">
+    <owms:kern>
+      <dcterms:identifier>BWBR0049497</dcterms:identifier>
+      <dcterms:title xml:lang="nl">Besluit EU-verordeningen Wft</dcterms:title>
+      <dcterms:language>nl</dcterms:language>
+      <dcterms:type>AMvB</dcterms:type>
+      <dcterms:modified>2026-08-04</dcterms:modified>
+      <overheid:authority>Financiën</overheid:authority>
+    </owms:kern>
+  </owms:meta>
+</wetstechnische-informatie>

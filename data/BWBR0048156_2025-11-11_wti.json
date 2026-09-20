@@ -1,0 +1,1296 @@
+{
+ "instrument_id": "BWBR0048156",
+ "incoming_references_instrument_level": [
+  {
+   "bwb_id": "BWBR0037987",
+   "doc": "jci1.3:c:BWBR0037987&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Besluit digitale overheid",
+   "text": "1",
+   "valid_from": "2024-01-01",
+   "valid_until": "2024-04-01"
+  },
+  {
+   "bwb_id": "BWBR0037987",
+   "doc": "jci1.3:c:BWBR0037987&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Besluit digitale overheid",
+   "text": "1",
+   "valid_from": "2024-04-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0048167",
+   "doc": "jci1.3:c:BWBR0048167&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Regeling voorzieningen Wdo",
+   "text": "1",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0048168",
+   "doc": "jci1.3:c:BWBR0048168&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening",
+   "text": "1",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0050531",
+   "doc": "jci1.3:c:BWBR0050531&bijlage=VII",
+   "unit": {
+    "kind": "bijlage",
+    "value": "VII"
+   },
+   "label": "Regeling tarieven Dienst Wegverkeer 2025",
+   "text": "VII",
+   "valid_from": "2025-01-01",
+   "valid_until": "2025-07-01"
+  },
+  {
+   "bwb_id": "BWBR0050531",
+   "doc": "jci1.3:c:BWBR0050531&bijlage=VII",
+   "unit": {
+    "kind": "bijlage",
+    "value": "VII"
+   },
+   "label": "Regeling tarieven Dienst Wegverkeer 2025",
+   "text": "VII",
+   "valid_from": "2025-07-01",
+   "valid_until": "2026-01-01"
+  },
+  {
+   "bwb_id": "BWBR0051526",
+   "doc": "jci1.3:c:BWBR0051526&artikel=8",
+   "unit": {
+    "kind": "artikel",
+    "value": "8"
+   },
+   "label": "Regeling bijzondere uitkering digitalisering BES",
+   "text": "8",
+   "valid_from": "2025-09-23",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0052034",
+   "doc": "jci1.3:c:BWBR0052034&bijlage=3",
+   "unit": {
+    "kind": "bijlage",
+    "value": "3"
+   },
+   "label": "Aanwijzingsbesluit elektronische kanalen Ministerie van BZK 2025",
+   "text": "3",
+   "valid_from": "2026-01-01",
+   "valid_until": "9999-12-31"
+  }
+ ],
+ "incoming_references_by_article_label_id": {
+  "16661094": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Wet digitale overheid",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156",
+    "unit": null,
+    "label": "Wet digitale overheid",
+    "text": "bij artikel 2, tweede lid, onder a, van de Wet digitale overheid",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22b",
+    "unit": {
+     "kind": "artikel",
+     "value": "22b"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22b",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048167",
+    "doc": "jci1.3:c:BWBR0048167&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Regeling voorzieningen Wdo",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0052600",
+    "doc": "jci1.3:c:BWBR0052600",
+    "unit": null,
+    "label": "Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid",
+    "text": "aanhef",
+    "valid_from": "2026-04-24",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0052600",
+    "doc": "jci1.3:c:BWBR0052600&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid",
+    "text": "1",
+    "valid_from": "2026-04-24",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661304": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=28",
+    "unit": {
+     "kind": "artikel",
+     "value": "28"
+    },
+    "label": "Wet digitale overheid",
+    "text": "28",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661164": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22d",
+    "unit": {
+     "kind": "artikel",
+     "value": "22d"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22d",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048168",
+    "doc": "jci1.3:c:BWBR0048168",
+    "unit": null,
+    "label": "Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening",
+    "text": "aanhef",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661214": [
+   {
+    "bwb_id": "BWBR0048167",
+    "doc": "jci1.3:c:BWBR0048167",
+    "unit": null,
+    "label": "Regeling voorzieningen Wdo",
+    "text": "aanhef",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661114": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Wet digitale overheid",
+    "text": "2",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=28",
+    "unit": {
+     "kind": "artikel",
+     "value": "28"
+    },
+    "label": "Wet digitale overheid",
+    "text": "28",
+    "valid_from": "2023-05-12",
+    "valid_until": "2023-07-01"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=28",
+    "unit": {
+     "kind": "artikel",
+     "value": "28"
+    },
+    "label": "Wet digitale overheid",
+    "text": "28",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=29",
+    "unit": {
+     "kind": "artikel",
+     "value": "29"
+    },
+    "label": "Wet digitale overheid",
+    "text": "29",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22b",
+    "unit": {
+     "kind": "artikel",
+     "value": "22b"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22b",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22d",
+    "unit": {
+     "kind": "artikel",
+     "value": "22d"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22d",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048225",
+    "doc": "jci1.3:c:BWBR0048225",
+    "unit": null,
+    "label": "Besluit beveiligde verbinding met overheidswebsites en -webapplicaties",
+    "text": "aanhef",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661144": [
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&artikel=2:19",
+    "unit": {
+     "kind": "artikel",
+     "value": "2:19"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2:19",
+    "valid_from": "2026-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&artikel=2:27",
+    "unit": {
+     "kind": "artikel",
+     "value": "2:27"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2:27",
+    "valid_from": "2026-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&artikel=2:10",
+    "unit": {
+     "kind": "artikel",
+     "value": "2:10"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2:10",
+    "valid_from": "2026-01-01",
+    "valid_until": "2027-01-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&artikel=2:10",
+    "unit": {
+     "kind": "artikel",
+     "value": "2:10"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2:10",
+    "valid_from": "2027-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0006622",
+    "doc": "jci1.3:c:BWBR0006622&artikel=107",
+    "unit": {
+     "kind": "artikel",
+     "value": "107"
+    },
+    "label": "Wegenverkeerswet 1994",
+    "text": "107",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0006622",
+    "doc": "jci1.3:c:BWBR0006622&artikel=111",
+    "unit": {
+     "kind": "artikel",
+     "value": "111"
+    },
+    "label": "Wegenverkeerswet 1994",
+    "text": "111",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0006622",
+    "doc": "jci1.3:c:BWBR0006622&artikel=121",
+    "unit": {
+     "kind": "artikel",
+     "value": "121"
+    },
+    "label": "Wegenverkeerswet 1994",
+    "text": "121",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0006622",
+    "doc": "jci1.3:c:BWBR0006622&artikel=126",
+    "unit": {
+     "kind": "artikel",
+     "value": "126"
+    },
+    "label": "Wegenverkeerswet 1994",
+    "text": "126",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008038",
+    "doc": "jci1.3:c:BWBR0008038&artikel=2a",
+    "unit": {
+     "kind": "artikel",
+     "value": "2a"
+    },
+    "label": "Regeling vaststelling modellen rijbewijzen en daarmee verband houdende formulieren",
+    "text": "2a",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008038",
+    "doc": "jci1.3:c:BWBR0008038&artikel=2c",
+    "unit": {
+     "kind": "artikel",
+     "value": "2c"
+    },
+    "label": "Regeling vaststelling modellen rijbewijzen en daarmee verband houdende formulieren",
+    "text": "2c",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008074",
+    "doc": "jci1.3:c:BWBR0008074&artikel=152",
+    "unit": {
+     "kind": "artikel",
+     "value": "152"
+    },
+    "label": "Reglement rijbewijzen",
+    "text": "152",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008074",
+    "doc": "jci1.3:c:BWBR0008074&artikel=105a",
+    "unit": {
+     "kind": "artikel",
+     "value": "105a"
+    },
+    "label": "Reglement rijbewijzen",
+    "text": "105a",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008074",
+    "doc": "jci1.3:c:BWBR0008074&artikel=145",
+    "unit": {
+     "kind": "artikel",
+     "value": "145"
+    },
+    "label": "Reglement rijbewijzen",
+    "text": "145",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "2",
+    "valid_from": "2023-07-01",
+    "valid_until": "2024-01-01"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "2",
+    "valid_from": "2024-01-01",
+    "valid_until": "2024-06-28"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "2",
+    "valid_from": "2024-07-01",
+    "valid_until": "2025-12-04"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "2",
+    "valid_from": "2024-06-28",
+    "valid_until": "2024-07-01"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "2",
+    "valid_from": "2025-12-04",
+    "valid_until": "2026-01-01"
+   },
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "1",
+    "valid_from": "2024-01-01",
+    "valid_until": "2024-04-01"
+   },
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "1",
+    "valid_from": "2024-04-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0041604",
+    "doc": "jci1.3:c:BWBR0041604&artikel=4",
+    "unit": {
+     "kind": "artikel",
+     "value": "4"
+    },
+    "label": "Regeling gegevensverstrekking uit het rijbewijzenregister",
+    "text": "4",
+    "valid_from": "2023-07-01",
+    "valid_until": "2026-04-01"
+   },
+   {
+    "bwb_id": "BWBR0041604",
+    "doc": "jci1.3:c:BWBR0041604&artikel=4",
+    "unit": {
+     "kind": "artikel",
+     "value": "4"
+    },
+    "label": "Regeling gegevensverstrekking uit het rijbewijzenregister",
+    "text": "4",
+    "valid_from": "2026-04-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Wet digitale overheid",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=8",
+    "unit": {
+     "kind": "artikel",
+     "value": "8"
+    },
+    "label": "Wet digitale overheid",
+    "text": "8",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=10",
+    "unit": {
+     "kind": "artikel",
+     "value": "10"
+    },
+    "label": "Wet digitale overheid",
+    "text": "10",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=29",
+    "unit": {
+     "kind": "artikel",
+     "value": "29"
+    },
+    "label": "Wet digitale overheid",
+    "text": "29",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661084": [
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=9d",
+    "unit": {
+     "kind": "artikel",
+     "value": "9d"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "9d",
+    "valid_from": "2024-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22b",
+    "unit": {
+     "kind": "artikel",
+     "value": "22b"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22b",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048168",
+    "doc": "jci1.3:c:BWBR0048168&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661134": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=18",
+    "unit": {
+     "kind": "artikel",
+     "value": "18"
+    },
+    "label": "Wet digitale overheid",
+    "text": "18",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661204": [
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=6",
+    "unit": {
+     "kind": "artikel",
+     "value": "6"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "6",
+    "valid_from": "2024-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Wet digitale overheid",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=19",
+    "unit": {
+     "kind": "artikel",
+     "value": "19"
+    },
+    "label": "Wet digitale overheid",
+    "text": "19",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661234": [
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=5f",
+    "unit": {
+     "kind": "artikel",
+     "value": "5f"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "5f",
+    "valid_from": "2024-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=6",
+    "unit": {
+     "kind": "artikel",
+     "value": "6"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "6",
+    "valid_from": "2024-01-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=1",
+    "unit": {
+     "kind": "artikel",
+     "value": "1"
+    },
+    "label": "Wet digitale overheid",
+    "text": "1",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=5",
+    "unit": {
+     "kind": "artikel",
+     "value": "5"
+    },
+    "label": "Wet digitale overheid",
+    "text": "5",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=19",
+    "unit": {
+     "kind": "artikel",
+     "value": "19"
+    },
+    "label": "Wet digitale overheid",
+    "text": "19",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661344": [
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987&artikel=5f",
+    "unit": {
+     "kind": "artikel",
+     "value": "5f"
+    },
+    "label": "Besluit digitale overheid",
+    "text": "5f",
+    "valid_from": "2024-01-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661454": [
+   {
+    "bwb_id": "BWBR0006622",
+    "doc": "jci1.3:c:BWBR0006622&artikel=111",
+    "unit": {
+     "kind": "artikel",
+     "value": "111"
+    },
+    "label": "Wegenverkeerswet 1994",
+    "text": "111",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0008144",
+    "doc": "jci1.3:c:BWBR0008144&artikel=3",
+    "unit": {
+     "kind": "artikel",
+     "value": "3"
+    },
+    "label": "Regeling taken Dienst Wegverkeer",
+    "text": "3",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661184": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=18",
+    "unit": {
+     "kind": "artikel",
+     "value": "18"
+    },
+    "label": "Wet digitale overheid",
+    "text": "18",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=29",
+    "unit": {
+     "kind": "artikel",
+     "value": "29"
+    },
+    "label": "Wet digitale overheid",
+    "text": "29",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22c",
+    "unit": {
+     "kind": "artikel",
+     "value": "22c"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22c",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22d",
+    "unit": {
+     "kind": "artikel",
+     "value": "22d"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22d",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661194": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=18",
+    "unit": {
+     "kind": "artikel",
+     "value": "18"
+    },
+    "label": "Wet digitale overheid",
+    "text": "18",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22d",
+    "unit": {
+     "kind": "artikel",
+     "value": "22d"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22d",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661254": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661264": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661274": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=17",
+    "unit": {
+     "kind": "artikel",
+     "value": "17"
+    },
+    "label": "Wet digitale overheid",
+    "text": "17",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=18",
+    "unit": {
+     "kind": "artikel",
+     "value": "18"
+    },
+    "label": "Wet digitale overheid",
+    "text": "18",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=29",
+    "unit": {
+     "kind": "artikel",
+     "value": "29"
+    },
+    "label": "Wet digitale overheid",
+    "text": "29",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22c",
+    "unit": {
+     "kind": "artikel",
+     "value": "22c"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22c",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=22d",
+    "unit": {
+     "kind": "artikel",
+     "value": "22d"
+    },
+    "label": "Wet digitale overheid",
+    "text": "22d",
+    "valid_from": "2025-11-11",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661364": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=29",
+    "unit": {
+     "kind": "artikel",
+     "value": "29"
+    },
+    "label": "Wet digitale overheid",
+    "text": "29",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661374": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=18",
+    "unit": {
+     "kind": "artikel",
+     "value": "18"
+    },
+    "label": "Wet digitale overheid",
+    "text": "18",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661384": [
+   {
+    "bwb_id": "BWBR0048156",
+    "doc": "jci1.3:c:BWBR0048156&artikel=25",
+    "unit": {
+     "kind": "artikel",
+     "value": "25"
+    },
+    "label": "Wet digitale overheid",
+    "text": "25",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ]
+ },
+ "legal_basis_for_instrument_level": [
+  {
+   "bwb_id": "BWBR0052600",
+   "doc": "jci1.3:c:BWBR0052600",
+   "unit": null,
+   "label": null,
+   "text": "Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid",
+   "valid_from": "2026-04-24",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0037987",
+   "doc": "jci1.3:c:BWBR0037987",
+   "unit": null,
+   "label": null,
+   "text": "Besluit digitale overheid",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0048168",
+   "doc": "jci1.3:c:BWBR0048168",
+   "unit": null,
+   "label": null,
+   "text": "Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0048167",
+   "doc": "jci1.3:c:BWBR0048167",
+   "unit": null,
+   "label": null,
+   "text": "Regeling voorzieningen Wdo",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0048225",
+   "doc": "jci1.3:c:BWBR0048225",
+   "unit": null,
+   "label": null,
+   "text": "Besluit beveiligde verbinding met overheidswebsites en -webapplicaties",
+   "valid_from": "2023-07-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0040936",
+   "doc": "jci1.3:c:BWBR0040936",
+   "unit": null,
+   "label": null,
+   "text": "Tijdelijk besluit digitale toegankelijkheid overheid",
+   "valid_from": "2023-05-12",
+   "valid_until": "9999-12-31"
+  }
+ ],
+ "legal_basis_for_by_article_label_id": {
+  "16661094": [
+   {
+    "bwb_id": "BWBR0052600",
+    "doc": "jci1.3:c:BWBR0052600",
+    "unit": null,
+    "label": null,
+    "text": "Besluit aanwijzing gegevensuitwisselingsentiteit Energiewet als aangewezen organisatie onder de Wet digitale overheid",
+    "valid_from": "2026-04-24",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661304": [
+   {
+    "bwb_id": "BWBR0037987",
+    "doc": "jci1.3:c:BWBR0037987",
+    "unit": null,
+    "label": null,
+    "text": "Besluit digitale overheid",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661164": [
+   {
+    "bwb_id": "BWBR0048168",
+    "doc": "jci1.3:c:BWBR0048168",
+    "unit": null,
+    "label": null,
+    "text": "Regeling betrouwbaarheidsniveaus authenticatie elektronische dienstverlening",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661214": [
+   {
+    "bwb_id": "BWBR0048167",
+    "doc": "jci1.3:c:BWBR0048167",
+    "unit": null,
+    "label": null,
+    "text": "Regeling voorzieningen Wdo",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "16661114": [
+   {
+    "bwb_id": "BWBR0048225",
+    "doc": "jci1.3:c:BWBR0048225",
+    "unit": null,
+    "label": null,
+    "text": "Besluit beveiligde verbinding met overheidswebsites en -webapplicaties",
+    "valid_from": "2023-07-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0040936",
+    "doc": "jci1.3:c:BWBR0040936",
+    "unit": null,
+    "label": null,
+    "text": "Tijdelijk besluit digitale toegankelijkheid overheid",
+    "valid_from": "2023-05-12",
+    "valid_until": "9999-12-31"
+   }
+  ]
+ },
+ "statutory_authority_for_instrument_level": [],
+ "statutory_authority_for_by_article_label_id": {}
+}

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><toestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bwb-ng-vast-deel="http://wetten.overheid.nl/id/BWBR0051796/2025-11-21/0" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-toestand/2016-1/xsd/toestand_2016-1.xsd" bwb-id="BWBR0051796" inwerkingtreding="2025-11-21"><bwb-inputbestand/><bwb-wijzigingen/><redactionele-correcties><redactionele-correctie label-id="17508514" oud-revisie-id="44506331" nieuw-revisie-id="44610741"/></redactionele-correcties><wetgeving dtdversie="2.0" soort="wet" stam-id="17608253" versie-id="31087232" id="C44506511" label-id="17508694" inwerkingtredingsdatum="2025-11-21">
+  <intitule bwb-ng-variabel-deel="/Intitule" stam-id="17608273" versie-id="31087052" id="C44610741" label-id="17508514" inwerking="2025-11-21" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">Wet van 29 oktober 2025 tot uitvoering van Verordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828 (Dataverordening) (Uitvoeringswet dataverordening) [KetenID WGK014687]<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref><rectificatie><publicatie soort="Stb" urlidentifier="stb-2025-372-n1"><publicatiejaar/><publicatienr>372-n1</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum></publicatie></rectificatie></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></intitule>
+  <citeertitel bwb-ng-variabel-deel="/Citeertitel" status="officieel" stam-id="17608283" versie-id="31087062" id="C44506341" label-id="17508524" inwerking="2025-11-21" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20">Uitvoeringswet dataverordening<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></citeertitel>
+  <wet-besluit>
+    <aanhef bwb-ng-variabel-deel="/Aanhef" stam-id="17608293" versie-id="31087072" id="C44506351" label-id="17508534" inwerking="2025-11-21" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <wij>Wij Willem-Alexander, bij de gratie Gods, Koning der Nederlanden, Prins van Oranje-Nassau, enz. enz. enz.</wij>
+  <considerans>
+    <considerans.al>Allen, die deze zullen zien of horen lezen, saluut! doen te weten:</considerans.al>
+    <considerans.al>Alzo Wij in overweging genomen hebben, dat het noodzakelijk is regels te stellen ter uitvoering van <extref doc="32023R2854" label="verordening" reeks="Celex">Verordening (EU) 2023/2854</extref> van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van <extref doc="32017R2394" label="verordening" reeks="Celex">Verordening (EU) 2017/2394</extref> en <extref doc="32020L1828" label="richtlijn" reeks="Celex">Richtlijn (EU) 2020/1828</extref> (Dataverordening);</considerans.al>
+  </considerans>
+  <afkondiging>
+    <al>Zo is het, dat Wij, de Afdeling advisering van de Raad van State gehoord, en met gemeen overleg der Staten-Generaal, hebben goedgevonden en verstaan, gelijk Wij goedvinden en verstaan bij deze:</al>
+  </afkondiging>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></aanhef>
+    <wettekst>
+      <artikel bwb-ng-variabel-deel="/Artikel1" stam-id="17608303" versie-id="31087082" id="C44506361" label-id="17508544" inwerking="2025-11-21" label="Artikel 1" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">1</nr>
+    <titel status="officieel">Begripsbepaling</titel>
+  </kop>
+  <al>In deze wet en de daarop berustende bepalingen wordt verstaan onder:</al>
+  <lijst level="single" nr-sluiting="." start="1" type="ongemarkeerd">
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeel_1">
+      <al>
+        <nadruk type="cur">Autoriteit Consument en Markt:</nadruk> Autoriteit Consument en Markt als bedoeld in <extref doc="jci1.3:c:BWBR0033043&amp;artikel=2" label-id="12115324" verwijzing-id="3404551" bwb-id="BWBR0033043">artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt</extref>;</al>
+    </li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeel_2">
+      <al>
+        <nadruk type="cur">Autoriteit persoonsgegevens:</nadruk> Autoriteit persoonsgegevens als bedoeld in <extref doc="jci1.3:c:BWBR0040940&amp;artikel=6" label-id="14569744" verwijzing-id="3404552" bwb-id="BWBR0040940">artikel 6, eerste lid, van de Uitvoeringswet Algemene verordening gegevensbescherming</extref>;</al>
+    </li>
+    <li bwb-ng-variabel-deel="/Artikel1/Onderdeel_3">
+      <al>
+        <nadruk type="cur">dataverordening:</nadruk>
+        <extref doc="32023R2854" label="verordening" reeks="Celex">Verordening (EU) 2023/2854</extref> van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van <extref doc="32017R2394" label="verordening" reeks="Celex">Verordening (EU) 2017/2394</extref> en <extref doc="32020L1828" label="richtlijn" reeks="Celex">Richtlijn (EU) 2020/1828</extref> (Dataverordening).</al>
+    </li>
+  </lijst>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=1&amp;g=2025-11-21" onderdeel="artikel=1" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=1"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=1" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=1"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel2" stam-id="17608313" versie-id="31087092" id="C44506371" label-id="17508554" inwerking="2025-11-21" label="Artikel 2" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">2</nr>
+    <titel status="officieel">Geschillenbeslechtingsorgaan</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel2/Lid1" label-id="17508554L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De Autoriteit Consument en Markt certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel2/Lid2" label-id="17508554L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De Autoriteit Consument en Markt geeft uitvoering aan artikel 10, zesde lid, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel2/Lid3" label-id="17508554L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>De Autoriteit Consument en Markt kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken indien het orgaan:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Artikel2/Lid3/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>niet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;lid=3&amp;o=a&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel2/Lid3/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>niet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;lid=3&amp;o=b&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;lid=3&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=3"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=2&amp;g=2025-11-21" onderdeel="artikel=2" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=2"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=2" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=2"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel3" stam-id="17608323" versie-id="31087102" id="C44506381" label-id="17508564" inwerking="2025-11-21" label="Artikel 3" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">3</nr>
+    <titel status="officieel">Aanwijzing bevoegde autoriteiten</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel3/Lid1" label-id="17508564L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De Autoriteit Consument en Markt is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel3/Lid2" label-id="17508564L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Als bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel3/Lid3" label-id="17508564L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>De Autoriteit persoonsgegevens is de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;lid=3&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel3/Lid4" label-id="17508564L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Als bevoegde autoriteit heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening. In afwijking in zoverre van de eerste volzin, is <extref doc="jci1.3:c:BWBR0040940&amp;artikel=14" label-id="14569834" verwijzing-id="3404553" bwb-id="BWBR0040940">artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming</extref> van overeenkomstige toepassing voor zover het de verwerking van persoonsgegevens betreft.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;lid=4&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=4"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel3/Lid5" label-id="17508564L5">
+    <lidnr status="officieel">5</lidnr>
+    <al>In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;lid=5&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=5"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=3&amp;g=2025-11-21" onderdeel="artikel=3" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=3"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=3" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=3"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel4" stam-id="17608333" versie-id="31087112" id="C44506391" label-id="17508574" inwerking="2025-11-21" label="Artikel 4" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">4</nr>
+    <titel status="officieel">Aanwijzing datacoördinator</titel>
+  </kop>
+  <al>De Autoriteit Consument en Markt is de datacoördinator, bedoeld in artikel 37, tweede lid, van de dataverordening.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=4&amp;g=2025-11-21" onderdeel="artikel=4" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=4"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=4&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=4" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=4"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel5" stam-id="17608343" versie-id="31087122" id="C44506401" label-id="17508584" inwerking="2025-11-21" label="Artikel 5" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">5</nr>
+    <titel status="officieel">Aanwijzing toezichthouders</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid1" label-id="17508584L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>Met het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening is belast de Autoriteit Consument en Markt.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid2" label-id="17508584L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid3" label-id="17508584L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>In afwijking van het eerste lid zijn met het toezicht op de naleving van artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;lid=3&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid4" label-id="17508584L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in <extref doc="jci1.3:c:BWBR0020586&amp;artikel=1.1" label-id="8731874" verwijzing-id="3404554" bwb-id="BWBR0020586">artikel 1 van de Wet handhaving consumentenbescherming</extref> ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de <extref label-id="8733134" verwijzing-id="3404555" bwb-id="BWBR0020586" doc="onbekend">bijlage bij die wet</extref>.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;lid=4&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=4"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel5/Lid5" label-id="17508584L5">
+    <lidnr status="officieel">5</lidnr>
+    <al>Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;lid=5&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=5"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=5&amp;g=2025-11-21" onderdeel="artikel=5" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=5"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=5" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=5"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel6" stam-id="17608353" versie-id="31087132" id="C44506411" label-id="17508594" inwerking="2025-11-21" label="Artikel 6" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">6</nr>
+    <titel status="officieel">Samenwerking ACM en AP</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel6/Lid1" label-id="17508594L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De Autoriteit Consument en Markt en de Autoriteit persoonsgegevens zijn bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=6&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel6/Lid2" label-id="17508594L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Onverminderd <extref doc="jci1.3:c:BWBR0040940&amp;artikel=19" label-id="14569884" verwijzing-id="3404556" bwb-id="BWBR0040940">artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming</extref> en <extref doc="jci1.3:c:BWBR0033043&amp;artikel=7" label-id="12115374" verwijzing-id="3404557" bwb-id="BWBR0033043">artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt</extref> zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=6&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=6&amp;g=2025-11-21" onderdeel="artikel=6" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=6"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=6&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=6" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=6"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel7" stam-id="17608363" versie-id="31087142" id="C44506421" label-id="17508604" inwerking="2025-11-21" label="Artikel 7" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">7</nr>
+    <titel status="officieel">Samenwerking ACM en andere bevoegde autoriteiten</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid1" label-id="17508604L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De Autoriteit Consument en Markt is bevoegd om in het belang van een efficiënt en effectief toezicht op de dataverordening afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen. Een samenwerkingsprotocol wordt bekendgemaakt in de Staatscourant.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=7&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel7/Lid2" label-id="17508604L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>Bij ministeriële regeling kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=7&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=7&amp;g=2025-11-21" onderdeel="artikel=7" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=7"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=7&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=7" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=7"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel8" stam-id="17608373" versie-id="31087152" id="C44506431" label-id="17508614" inwerking="2025-11-21" label="Artikel 8" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">8</nr>
+    <titel status="officieel">Sanctionering</titel>
+  </kop>
+  <lid bwb-ng-variabel-deel="/Artikel8/Lid1" label-id="17508614L1">
+    <lidnr status="officieel">1</lidnr>
+    <al>De Autoriteit Consument en Markt is ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid, bevoegd tot oplegging van:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Artikel8/Lid1/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>een last onder bestuursdwang; of</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=1&amp;o=a&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel8/Lid1/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>een bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in <extref doc="jci1.3:c:BWBR0001854&amp;artikel=23" label-id="2962974" verwijzing-id="3404558" bwb-id="BWBR0001854">artikel 23, vierde lid, van het Wetboek van Strafrecht</extref> of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=1&amp;o=b&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=1&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=1"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel8/Lid2" label-id="17508614L2">
+    <lidnr status="officieel">2</lidnr>
+    <al>De Autoriteit persoonsgegevens is ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid, bevoegd tot oplegging van:</al>
+    <lijst level="single" nr-sluiting="." start="1" type="expliciet">
+      <li bwb-ng-variabel-deel="/Artikel8/Lid2/Onderdeela">
+        <li.nr>a.</li.nr>
+        <al>een last onder bestuursdwang; of</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=2&amp;o=a&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=a"/></jcis></meta-data></li>
+      <li bwb-ng-variabel-deel="/Artikel8/Lid2/Onderdeelb">
+        <li.nr>b.</li.nr>
+        <al>een bestuurlijke boete van ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening.</al>
+      <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=2&amp;o=b&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="o=b"/></jcis></meta-data></li>
+    </lijst>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=2&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=2"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel8/Lid3" label-id="17508614L3">
+    <lidnr status="officieel">3</lidnr>
+    <al>De te betalen geldsom van een verbeurde dwangsom krachtens het tweede lid, onderdeel a, en de bestuurlijke boete, bedoeld in het tweede lid, onderdeel b, komt toe aan de Staat.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=3&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=3"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel8/Lid4" label-id="17508614L4">
+    <lidnr status="officieel">4</lidnr>
+    <al>Het eerste lid is niet van toepassing op inbreuken of inbreuken binnen de Unie als bedoeld in <extref doc="jci1.3:c:BWBR0020586&amp;artikel=1.1" label-id="8731874" verwijzing-id="3404559" bwb-id="BWBR0020586">artikel 1 van de Wet handhaving consumentenbescherming</extref> ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de <extref label-id="8733134" verwijzing-id="3404560" bwb-id="BWBR0020586" doc="onbekend">bijlage bij die wet</extref>.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=4&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=4"/></jcis></meta-data></lid>
+  <lid bwb-ng-variabel-deel="/Artikel8/Lid5" label-id="17508614L5">
+    <lidnr status="officieel">5</lidnr>
+    <al>Het eerste en tweede lid zijn niet van toepassing ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening.</al>
+  <meta-data><jcis><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;lid=5&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="lid=5"/></jcis></meta-data></lid>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=8&amp;g=2025-11-21" onderdeel="artikel=8" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=8"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=8" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=8"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel9" stam-id="17608383" versie-id="31087162" id="C44506441" label-id="17508624" inwerking="2025-11-21" label="Artikel 9" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">9</nr>
+    <titel status="officieel">Wijziging <extref doc="jci1.3:c:BWBR0005537" label-id="2816734" verwijzing-id="3404561" bwb-id="BWBR0005537">Algemene wet bestuursrecht</extref></titel>
+  </kop>
+  <al>
+    <redactie type="vervanging">Wijzigt de Algemene wet bestuursrecht.</redactie>
+  </al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=9&amp;g=2025-11-21" onderdeel="artikel=9" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=9"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=9&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=9" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=9"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel10" stam-id="17608393" versie-id="31087172" id="C44506451" label-id="17508634" inwerking="2025-11-21" label="Artikel 10" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">10</nr>
+    <titel status="officieel">Wijziging <extref doc="jci1.3:c:BWBR0010591" label-id="1860264" verwijzing-id="3404562" bwb-id="BWBR0010591">Databankenwet</extref></titel>
+  </kop>
+  <al>
+    <redactie type="vervanging">Wijzigt de Databankenwet.</redactie>
+  </al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=10&amp;g=2025-11-21" onderdeel="artikel=10" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=10"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=10&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=10" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=10"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel11" stam-id="17608403" versie-id="31087182" id="C44506461" label-id="17508644" inwerking="2025-11-21" label="Artikel 11" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">11</nr>
+    <titel status="officieel">Wijziging <extref doc="jci1.3:c:BWBR0020586" label-id="8733144" verwijzing-id="3404563" bwb-id="BWBR0020586">Wet handhaving consumentenbescherming</extref></titel>
+  </kop>
+  <al>
+    <redactie type="vervanging">Wijzigt de Wet handhaving consumentenbescherming.</redactie>
+  </al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=11&amp;g=2025-11-21" onderdeel="artikel=11" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=11"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=11&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=11" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=11"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel12" stam-id="17608413" versie-id="31087192" id="C44506471" label-id="17508654" inwerking="2025-11-21" label="Artikel 12" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">12</nr>
+    <titel status="officieel">Wijziging <extref doc="jci1.3:c:BWBR0036795" label-id="13178284" verwijzing-id="3404564" bwb-id="BWBR0036795">Wet hergebruik overheidsinformatie</extref></titel>
+  </kop>
+  <al>
+    <redactie type="vervanging">Wijzigt de Wet hergebruik van overheidsinformatie.</redactie>
+  </al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=12&amp;g=2025-11-21" onderdeel="artikel=12" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=12"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=12&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=12" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=12"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel13" stam-id="17608423" versie-id="31087202" id="C44506481" label-id="17508664" inwerking="2025-11-21" label="Artikel 13" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">13</nr>
+    <titel status="officieel">Inwerkingtreding</titel>
+  </kop>
+  <al>Deze wet treedt in werking met ingang van 12 september 2025. Indien het Staatsblad waarin deze wet wordt geplaatst, wordt uitgegeven na 11 september 2025, treedt zij in werking met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=13&amp;g=2025-11-21" onderdeel="artikel=13" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=13"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=13&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=13" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=13"/></jcis></meta-data></artikel>
+      <artikel bwb-ng-variabel-deel="/Artikel14" stam-id="17608433" versie-id="31087212" id="C44506491" label-id="17508674" inwerking="2025-11-21" label="Artikel 14" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <kop>
+    <label>Artikel</label>
+    <nr status="officieel">14</nr>
+    <titel status="officieel">Citeertitel</titel>
+  </kop>
+  <al>Deze wet wordt aangehaald als: Uitvoeringswet dataverordening.</al>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;artikel=14&amp;g=2025-11-21" onderdeel="artikel=14" korte-verwijzing="1.0:c:BWBR0051796&amp;artikel=14"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;artikel=14&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="artikel=14" korte-verwijzing="jci1.3:c:BWBR0051796&amp;artikel=14"/></jcis></meta-data></artikel>
+    </wettekst>
+    <wetsluiting bwb-ng-variabel-deel="/SlotformulierEnOndertekening" stam-id="17608443" versie-id="31087222" id="C44506501" label-id="17508684" inwerking="2025-11-21" bron="Stb.2025-372" effect="nieuwe-regeling" ondertekening_bron="2025-10-29" publicatie_bron="2025-11-20" publicatie_iwt="2025-11-20" status="goed">
+  <slotformulering>
+    <al>Lasten en bevelen dat deze in het Staatsblad zal worden geplaatst en dat alle ministeries, autoriteiten, colleges en ambtenaren die zulks aangaat, aan de nauwkeurige uitvoering de hand zullen houden.</al>
+  </slotformulering>
+  <gegeven>
+    <label>Gegeven te </label>
+    <dagtekening>
+      <plaats>’s-Gravenhage</plaats>
+      <datum isodatum="2025-10-29">29 oktober 2025</datum>
+    </dagtekening>
+    <koning>Willem-Alexander</koning>
+  </gegeven>
+  <ondertekening>
+    <functie>De Minister van Economische Zaken,</functie>
+    <naam>
+      <voornaam>V.P.G.</voornaam>
+      <achternaam>Karremans</achternaam>
+    </naam>
+  </ondertekening>
+  <ondertekening>
+    <functie>De Staatssecretaris van Binnenlandse Zaken en Koninkrijksrelaties,</functie>
+    <naam>
+      <voornaam> E. van</voornaam>
+      <achternaam>Marum</achternaam>
+    </naam>
+  </ondertekening>
+  <ondertekening>
+    <functie>De Staatssecretaris van Justitie en Veiligheid,</functie>
+    <naam>
+      <voornaam>A.C.L.</voornaam>
+      <achternaam>Rutte</achternaam>
+    </naam>
+  </ondertekening>
+  <uitgifte>
+    <datum isodatum="2025-11-20">de <nadruk type="cur">twintigste</nadruk> november 2025</datum>
+    <ondertekening>
+      <functie>De Minister van Justitie en Veiligheid,</functie>
+      <naam>
+        <voornaam>F. van</voornaam>
+        <achternaam>Oosten</achternaam>
+      </naam>
+    </ondertekening>
+  </uitgifte>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata></meta-data></wetsluiting>
+  </wet-besluit>
+<meta-data><brondata><oorspronkelijk><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie></oorspronkelijk><inwerkingtreding><publicatie effect="nieuwe-regeling" soort="Stb" urlidentifier="stb-2025-372"><publicatiejaar>2025</publicatiejaar><publicatienr>372</publicatienr><uitgiftedatum isodatum="2025-11-20">20-11-2025</uitgiftedatum><ondertekeningsdatum isodatum="2025-10-29">29-10-2025</ondertekeningsdatum><dossierref dossier="36733">36733</dossierref></publicatie><inwerkingtreding.datum isodatum="2025-11-21">21-11-2025</inwerkingtreding.datum></inwerkingtreding></brondata><jcis><jci versie="1.0" verwijzing="1.0:c:BWBR0051796&amp;g=2025-11-21" onderdeel="wetgeving" korte-verwijzing="1.0:c:BWBR0051796"/><jci versie="1.3" verwijzing="jci1.3:c:BWBR0051796&amp;z=2025-11-21&amp;g=2025-11-21" onderdeel="wetgeving" korte-verwijzing="jci1.3:c:BWBR0051796"/></jcis></meta-data></wetgeving></toestand>

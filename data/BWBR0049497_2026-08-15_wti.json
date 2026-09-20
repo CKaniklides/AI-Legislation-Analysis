@@ -1,0 +1,101 @@
+{
+ "instrument_id": "BWBR0049497",
+ "incoming_references_instrument_level": [
+  {
+   "bwb_id": "BWBR0044472",
+   "doc": "jci1.3:c:BWBR0044472",
+   "unit": null,
+   "label": "Algemeen boetetoemetingsbeleid DNB",
+   "text": "tekst",
+   "valid_from": "2026-07-30",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0051566",
+   "doc": "jci1.3:c:BWBR0051566&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector",
+   "text": "1",
+   "valid_from": "2025-10-04",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0051566",
+   "doc": "jci1.3:c:BWBR0051566&artikel=2",
+   "unit": {
+    "kind": "artikel",
+    "value": "2"
+   },
+   "label": "Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector",
+   "text": "2",
+   "valid_from": "2025-10-04",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0052118",
+   "doc": "jci1.3:c:BWBR0052118&artikel=1",
+   "unit": {
+    "kind": "artikel",
+    "value": "1"
+   },
+   "label": "Aanwijzingsbesluit elektronische verzending formele berichten DNB",
+   "text": "1",
+   "valid_from": "2026-01-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0052875",
+   "doc": "jci1.3:c:BWBR0052875&artikel=30",
+   "unit": {
+    "kind": "artikel",
+    "value": "30"
+   },
+   "label": "Cyberbeveiligingsbesluit",
+   "text": "30",
+   "valid_from": "2026-08-15",
+   "valid_until": "9999-12-31"
+  }
+ ],
+ "incoming_references_by_article_label_id": {
+  "16967334": [
+   {
+    "bwb_id": "BWBR0052598",
+    "doc": "jci1.3:c:BWBR0052598",
+    "unit": null,
+    "label": "Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014",
+    "text": "aanhef",
+    "valid_from": "2026-05-04",
+    "valid_until": "9999-12-31"
+   }
+  ]
+ },
+ "legal_basis_for_instrument_level": [
+  {
+   "bwb_id": "BWBR0052598",
+   "doc": "jci1.3:c:BWBR0052598",
+   "unit": null,
+   "label": null,
+   "text": "Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014",
+   "valid_from": "2026-05-04",
+   "valid_until": "9999-12-31"
+  }
+ ],
+ "legal_basis_for_by_article_label_id": {
+  "16967334": [
+   {
+    "bwb_id": "BWBR0052598",
+    "doc": "jci1.3:c:BWBR0052598",
+    "unit": null,
+    "label": null,
+    "text": "Besluit uitgestelde openbaarmaking volume uitgevoerde transacties overheidsschuldinstrumenten in verband met Verordening (EU) nr. 600/2014 van het Europees Parlement en de Raad van 15 mei 2014",
+    "valid_from": "2026-05-04",
+    "valid_until": "9999-12-31"
+   }
+  ]
+ },
+ "statutory_authority_for_instrument_level": [],
+ "statutory_authority_for_by_article_label_id": {}
+}

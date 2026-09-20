@@ -1,353 +1,616 @@
 {
-  "regulation": {
-    "bwb_id": "BWBR0049497",
-    "title": "Besluit EU-verordeningen Wft",
-    "type": "AMvB (algemene maatregel van bestuur)",
-    "authority": "Ministerie van Financiën (beleid), gepubliceerd door Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
-    "language": "nl",
-    "current_version_effective_from": "2026-08-15",
-    "current_version_source_publication": "Stb. 2026, 189",
-    "regulation_permalink": "https://wetten.overheid.nl/BWBR0049497/2026-08-15",
-    "regulation_metadata_page": "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/informatie",
-    "note": "Dit besluit bundelt 38 bijlagen, elk voor een aparte EU-verordening op het gebied van financiële markten. Bijlage 35 is een van deze 38.",
-    "jurisdiction": "NL",
-    "status": "in_force"
+ "regulation": {
+  "bwb_id": "BWBR0049497",
+  "title": "Besluit EU-verordeningen Wft",
+  "type": "AMvB (algemene maatregel van bestuur)",
+  "authority": "Ministerie van Financiën (beleid), gepubliceerd door Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+  "language": "nl",
+  "current_version_effective_from": "2026-08-15",
+  "current_version_source_publication": "Stb. 2026, 189",
+  "regulation_permalink": "https://wetten.overheid.nl/BWBR0049497/2026-08-15",
+  "regulation_metadata_page": "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/informatie",
+  "note": "Dit besluit bundelt 38 bijlagen, elk voor een aparte EU-verordening op het gebied van financiële markten. Bijlage 35 is een van deze 38.",
+  "jurisdiction": "NL",
+  "status": "in_force"
+ },
+ "bijlage_35": {
+  "number": 35,
+  "current_title": "Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
+  "eu_regulation": {
+   "number": "(EU) 2022/2554",
+   "short_name": "DORA",
+   "full_name": "Digital Operational Resilience Act",
+   "description": "Verordening van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector, en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011",
+   "oj_reference": "PbEU 2022, L 333"
   },
-  "bijlage_35": {
-    "number": 35,
-    "current_title": "Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
-    "eu_regulation": {
-      "number": "(EU) 2022/2554",
-      "short_name": "DORA",
-      "full_name": "Digital Operational Resilience Act",
-      "description": "Verordening van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector, en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011",
-      "oj_reference": "PbEU 2022, L 333"
-    },
-    "permalink_current_version": "https://wetten.overheid.nl/jci1.3:c:BWBR0049497&bijlage=35&z=2026-08-15&g=2026-08-15",
-    "metadata_page_current_version": "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie",
-    "version_history": [
+  "permalink_current_version": "https://wetten.overheid.nl/jci1.3:c:BWBR0049497&bijlage=35&z=2026-08-15&g=2026-08-15",
+  "metadata_page_current_version": "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie",
+  "version_history": [
+   {
+    "effective_date": "2024-04-01",
+    "event": "Nieuwe-regeling (hele besluit trad in werking; bijlage 35 bevatte destijds Verordening (EU) 2023/2830, veiling van broeikasgasemissierechten)",
+    "signed": "2024-03-15",
+    "source_publication": "Stb. 2024, 67 / Stb. 2024, 68"
+   },
+   {
+    "effective_date": "2025-01-17",
+    "event": "Bijlage 35 vervangen: DORA (EU 2022/2554) ingevoegd als nieuwe bijlage 35. Oude bijlage 35 (veiling broeikasgasemissierechten) vernummerd tot bijlage 38.",
+    "signed": "2024-11-25",
+    "source_publication": "Stb. 2024, 379"
+   },
+   {
+    "effective_date": "2026-08-15",
+    "event": "Wijziging van bijlage 35 (aard van de wijziging niet opgehaald; zie bronpublicatie voor details)",
+    "signed": "2026-07-08",
+    "source_publication": "Stb. 2026, 189",
+    "source_publication_url": "https://zoek.officielebekendmakingen.nl/stb-2026-189.html"
+   }
+  ],
+  "relationships": {
+   "based_on_delegated_regulation": [],
+   "policy_rules_and_circulars": [],
+   "incoming_references_to_this_bijlage": [
+    {
+     "title": "Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector",
+     "bwb_id": "BWBR0051566",
+     "referencing_article": "Artikel 2",
+     "url": "https://wetten.overheid.nl/jci1.3:c:BWBR0051566&artikel=2&g=2026-08-15&z=2026-09-09",
+     "note": "Nieuw sinds de vorige controle (versie 2025-03-18 toonde nog 'Geen' voor alle vier relatiecategorieën)."
+    }
+   ],
+   "incoming_references_to_parent_chapter": [],
+   "outgoing_references_from_bijlage_text": {
+    "status": "retrieved",
+    "references": [
+     {
+      "regulation": "Verordening (EU) 2023/1114 (MiCAR - cryptoactivamarkten)",
+      "context": "definieert 'aanbieders van cryptoactivadiensten' en 'activagerelateerde tokens'",
+      "bwb_bijlage": 36,
+      "relationship_type": "defines_term"
+     },
+     {
+      "regulation": "Verordening (EU) nr. 2016/1011 (Benchmarks)",
+      "context": "definieert 'cruciale benchmarks'",
+      "bwb_bijlage": 19,
+      "relationship_type": "defines_term"
+     },
+     {
+      "regulation": "Verordening (EU) 2020/1503 (CSPR - crowdfundingdienstverleners)",
+      "context": "definieert 'crowdfundingdienstverleners'",
+      "bwb_bijlage": 31,
+      "relationship_type": "defines_term"
+     },
+     {
+      "regulation": "Verordening (EU) nr. 909/2014 (CSDR - centrale effectenbewaarinstellingen)",
+      "context": "definieert 'centrale effectenbewaarinstellingen'",
+      "bwb_bijlage": 12,
+      "relationship_type": "defines_term"
+     },
+     {
+      "regulation": "Verordening (EU) nr. 1024/2013 (SSM - bankentoezicht ECB)",
+      "context": "bepaalt wanneer ECB in plaats van DNB bevoegd is",
+      "bwb_bijlage": null,
+      "relationship_type": "conditions_competence"
+     },
+     {
+      "regulation": "Richtlijn 2013/36/EU (CRD - kapitaalvereisten)",
+      "context": "lidstaatoptie: reikwijdte-uitzondering voor bepaalde instellingen",
+      "bwb_bijlage": null,
+      "relationship_type": "national_option_reference"
+     },
+     {
+      "regulation": "Cyberbeveiligingswet",
+      "context": "lidstaatoptie: aanvullende meldplicht ICT-incidenten bij nationaal CSIRT",
+      "bwb_bijlage": null,
+      "relationship_type": "national_option_reference"
+     }
+    ]
+   }
+  },
+  "substantive_text": {
+   "status": "retrieved_complete_official_xml",
+   "source": "KOOP BWB toestand XML, https://repository.officiele-overheidspublicaties.nl/bwb/BWBR0049497/2026-08-15_0/xml/BWBR0049497_2026-08-15_0.xml (opgehaald 2026-09-19 via pipeline/acquire.py + parse_bijlage(), sha256-hashed under raw/nl/BWBR0049497/)",
+   "full_text": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)\n\nVerordening (EU) nr. 2022/2554 van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011 (PbEU 2022, L 333)\n\n1. Bevoegde autoriteit in de zin van de verordening\n\nDe Autoriteit Financiële Markten: ten aanzien van:\n- aanbieders van cryptoactivadiensten als bedoeld in artikel 3, eerste lid, onderdeel 15 van Verordening (EU) 2023/1114 (cryptoactiva);\n- adviseurs, voor zover zij adviseren over verzekeringen;\n- beheerders van beleggingsinstellingen;\n- beheerders van cruciale benchmarks als bedoeld in artikel 20, eerste lid, onderdeel b, van Verordening (EU) nr. 2016/1011 (benchmarks);\n- beheerders van icbe's;\n- beleggingsondernemingen;\n- bemiddelaars in verzekeringen;\n- crowdfundingdienstverleners als bedoeld in artikel 2, eerste lid, onderdeel e, van Verordening (EU) 2020/1503 (CSPR);\n- datarapporteringdienstverleners;\n- gevolmachtigde agenten of ondergevolmachtigde agenten;\n- handelsplatformen;\n- herverzekeringsbemiddelaars.\n\nDe Nederlandsche Bank: ten aanzien van:\n- banken, tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht);\n- betaaldienstverleners;\n- centrale effectenbewaarinstellingen als bedoeld in artikel 2, eerste lid, onderdeel 1, van Verordening (EU) nr. 909/2014 (CSDR);\n- centrale tegenpartijen;\n- elektronischgeldinstellingen;\n- premiepensioeninstellingen;\n- uitgevers van activagerelateerde tokens als bedoeld in artikel 3, eerste lid, onderdelen 6 en 10, van Verordening (EU) 2023/1114 (cryptoactiva);\n- verzekeraars.\n\n2. Handhaving door middel van last onder dwangsom of bestuurlijke boete\n\n[Tabel met boetecategorieën per artikel van de verordening; artikelen 5 t/m 10 (boetecategorie 3), 11 (lid-specifiek, categorie 1-3), 12 t/m 30 (grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2), 41 (RTS, categorie 2), 42 derde en zesde lid (categorie 2), 45 (categorie 1). Zie brondocument voor de volledige tabel met alle artikelnummers en bijbehorende boetecategorieën.]\n\n3. Openbaarmaking overtredingen\n\nDe bevoegde autoriteit kan bij een overtreding van het bij of krachtens de verordening bepaalde de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken.\n\n4. Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)\n\nDe verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten).\n\n5. Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)\n\nBanken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.",
+   "note_on_table": "Superseded 2026-09-19: the table-aware parser now reads this table directly and completely (see enforcement_fine_table.source_note). This note is kept, struck through in spirit, as a record that the previous build's limitation was real and explicitly disclosed, not silently wrong.",
+   "preamble_text": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)\n\nVerordening (EU) nr. 2022/2554 van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011 (PbEU 2022, L 333)",
+   "provisions": [
+    {
+     "provision_id": "BWBR0049497-bijlage35-p1",
+     "number": 1,
+     "heading": "Bevoegde autoriteit in de zin van de verordening",
+     "text": "De Autoriteit Financiële Markten: ten aanzien van:\n\n–\naanbieders van cryptoactivadiensten als bedoeld in artikel 3, eerste lid, onderdeel 15 van Verordening (EU) 2023/1114 (cryptoactiva);\n\n–\nadviseurs, voor zover zij adviseren over verzekeringen;\n\n–\nbeheerders van beleggingsinstellingen;\n\n–\nbeheerders van cruciale benchmarks als bedoeld in artikel 20, eerste lid, onderdeel b, van Verordening (EU) nr. 2016/1011 (benchmarks);\n\n–\nbeheerders van icbe’s;\n\n–\nbeleggingsondernemingen;\n\n–\nbemiddelaars in verzekeringen;\n\n–\ncrowdfundingdienstverleners als bedoeld in artikel 2, eerste lid, onderdeel e, van Verordening (EU) 2020/1503 (CSPR);\n\n–\ndatarapporteringdienstverleners;\n\n–\ngevolmachtigde agenten of ondergevolmachtigde agenten;\n\n–\nhandelsplatformen;\n\n–\nherverzekeringsbemiddelaars.\n\nDe Nederlandsche Bank: ten aanzien van:\n\n–\nbanken, tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht);\n\n–\nbetaaldienstverleners;\n\n–\ncentrale effectenbewaarinstellingen als bedoeld in artikel 2, eerste lid, onderdeel 1, van Verordening (EU) nr. 909/2014 (CSDR);\n\n–\ncentrale tegenpartijen;\n\n–\nelektronischgeldinstellingen;\n\n–\npremiepensioeninstellingen;\n\n–\nuitgevers van activagerelateerde tokens als bedoeld in artikel 3, eerste lid, onderdelen 6 en 10, van Verordening (EU) 2023/1114 (cryptoactiva);\n\n–\nverzekeraars.",
+     "text_fidelity": "official_xml",
+     "source_ref": "raw/nl/BWBR0049497/2026-08-15/toestand.xml#versie-id=None",
+     "norms": [
       {
-        "effective_date": "2024-04-01",
-        "event": "Nieuwe-regeling (hele besluit trad in werking; bijlage 35 bevatte destijds Verordening (EU) 2023/2830, veiling van broeikasgasemissierechten)",
-        "signed": "2024-03-15",
-        "source_publication": "Stb. 2024, 67 / Stb. 2024, 68"
-      },
-      {
-        "effective_date": "2025-01-17",
-        "event": "Bijlage 35 vervangen: DORA (EU 2022/2554) ingevoegd als nieuwe bijlage 35. Oude bijlage 35 (veiling broeikasgasemissierechten) vernummerd tot bijlage 38.",
-        "signed": "2024-11-25",
-        "source_publication": "Stb. 2024, 379"
-      },
-      {
-        "effective_date": "2026-08-15",
-        "event": "Wijziging van bijlage 35 (aard van de wijziging niet opgehaald; zie bronpublicatie voor details)",
-        "signed": "2026-07-08",
-        "source_publication": "Stb. 2026, 189",
-        "source_publication_url": "https://zoek.officielebekendmakingen.nl/stb-2026-189.html"
+       "number": null,
+       "deontic": "COMPETENCE",
+       "addressee": null,
+       "addressee_type": "COMPETENT_AUTHORITY",
+       "trigger_event": null,
+       "action": null,
+       "recipient_body": [],
+       "deadline": null,
+       "thresholds": [],
+       "conditions": [
+        "tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht)"
+       ],
+       "deference": null,
+       "extraction_confidence": 0.93,
+       "extraction_model": "gpt-5.6-terra",
+       "extracted_on": "2026-09-20",
+       "human_verified": false
       }
+     ]
+    },
+    {
+     "provision_id": "BWBR0049497-bijlage35-p2",
+     "number": 2,
+     "heading": "Handhaving door middel van last onder dwangsom of bestuurlijke boete",
+     "text": "Last onder dwangsom – Artikelen: 5 tot en met 10 | Bestuurlijke boete – Artikelen: 5 tot en met 10 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 11, eerste tot en met tiende lid | Bestuurlijke boete – Artikelen: 11, eerste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: (geen) | Bestuurlijke boete – Artikelen: 11, tweede tot en met achtste lid | Bestuurlijke boete – Boetecategorie: 2\n\nLast onder dwangsom – Artikelen: (geen) | Bestuurlijke boete – Artikelen: 11, negende en tiende lid | Bestuurlijke boete – Boetecategorie: 1\n\nLast onder dwangsom – Artikelen: 12 | Bestuurlijke boete – Artikelen: 12 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 13 | Bestuurlijke boete – Artikelen: 13, eerste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: (geen) | Bestuurlijke boete – Artikelen: 13, tweede tot en met zevende lid | Bestuurlijke boete – Boetecategorie: 2\n\nLast onder dwangsom – Artikelen: 14 | Bestuurlijke boete – Artikelen: 14 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 15 (RTS), voor zover betrekking hebbende op artikel 6, vijfde lid, 9, tweede lid, 9 vierde lid,10, eerste lid, 11, eerste lid | Bestuurlijke boete – Artikelen: 15 (RTS), voor zover betrekking hebbende op artikel 6, vijfde lid, 9, tweede lid, 9 vierde lid,10, eerste lid, 11, eerste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 15 (RTS), voor zover betrekking hebbende op artikel 11, derde en zesde lid | Bestuurlijke boete – Artikelen: 15 (RTS), voor zover betrekking hebbende op artikel 11, derde en zesde lid | Bestuurlijke boete – Boetecategorie: 2\n\nLast onder dwangsom – Artikelen: 16, eerste en tweede lid | Bestuurlijke boete – Artikelen: 16, eerste en tweede lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 16, derde lid (RTS) | Bestuurlijke boete – Artikelen: 16, derde lid (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 17 | Bestuurlijke boete – Artikelen: 17, eerste, en tweede lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 18, eerste en tweede lid | Bestuurlijke boete – Artikelen: 18, eerste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: (geen) | Bestuurlijke boete – Artikelen: 18, tweede lid | Bestuurlijke boete – Boetecategorie: 1\n\nLast onder dwangsom – Artikelen: 18, derde lid (RTS) | Bestuurlijke boete – Artikelen: 18, derde lid (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 19, eerste, derde en vierde lid | Bestuurlijke boete – Artikelen: 19, eerste, derde en vierde lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 20, onderdeel a (RTS) | Bestuurlijke boete – Artikelen: 20, onderdeel a (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 20, onderdeel b (ITS) | Bestuurlijke boete – Artikelen: 20, onderdeel b (ITS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 24 en 25 | Bestuurlijke boete – Artikelen: 24 en 25 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 26, eerste lid, eerste volzin, tweede tot en met achtste lid | Bestuurlijke boete – Artikelen: 26, eerste lid, eerste volzin, tweede tot en met zesde en achtste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 26, elfde lid (RTS) | Bestuurlijke boete – Artikelen: 26, elfde lid (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 27 | Bestuurlijke boete – Artikelen: 27 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 28, eerste tot en met achtste lid | Bestuurlijke boete – Artikelen: 28, eerste tot en met achtste lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 28, negende lid (ITS) | Bestuurlijke boete – Artikelen: 28, negende lid (ITS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 28, tiende lid (RTS) | Bestuurlijke boete – Artikelen: 28, tiende lid (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 29 | Bestuurlijke boete – Artikelen: 29 | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 30, eerste tot en met derde lid | Bestuurlijke boete – Artikelen: 30, eerste tot en met derde lid | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 30, vijfde lid (RTS) | Bestuurlijke boete – Artikelen: 30, vijfde lid (RTS) | Bestuurlijke boete – Boetecategorie: 3\n\nLast onder dwangsom – Artikelen: 41 (RTS) | Bestuurlijke boete – Artikelen: 41 (RTS) | Bestuurlijke boete – Boetecategorie: 2\n\nLast onder dwangsom – Artikelen: 42, derde en zesde lid | Bestuurlijke boete – Artikelen: 42, derde en zesde lid | Bestuurlijke boete – Boetecategorie: 2\n\nLast onder dwangsom – Artikelen: 45 | Bestuurlijke boete – Artikelen: 45 | Bestuurlijke boete – Boetecategorie: 1",
+     "text_fidelity": "official_xml",
+     "source_ref": "raw/nl/BWBR0049497/2026-08-15/toestand.xml#versie-id=None",
+     "norms": [
+      {
+       "number": null,
+       "deontic": "DEFINITION",
+       "addressee": null,
+       "addressee_type": null,
+       "trigger_event": null,
+       "action": null,
+       "recipient_body": [],
+       "deadline": null,
+       "thresholds": [
+        "Boetecategorie: 1",
+        "Boetecategorie: 2",
+        "Boetecategorie: 3"
+       ],
+       "conditions": [
+        "voor zover betrekking hebbende op artikel 6, vijfde lid, 9, tweede lid, 9 vierde lid,10, eerste lid, 11, eerste lid",
+        "voor zover betrekking hebbende op artikel 11, derde en zesde lid"
+       ],
+       "deference": null,
+       "extraction_confidence": 0.99,
+       "extraction_model": "gpt-5.6-luna",
+       "extracted_on": "2026-09-20",
+       "human_verified": false
+      }
+     ]
+    },
+    {
+     "provision_id": "BWBR0049497-bijlage35-p3",
+     "number": 3,
+     "heading": "Openbaarmaking overtredingen",
+     "text": "De bevoegde autoriteit kan bij een overtreding van het bij of krachtens de verordening bepaalde de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken.",
+     "text_fidelity": "official_xml",
+     "source_ref": "raw/nl/BWBR0049497/2026-08-15/toestand.xml#versie-id=None",
+     "norms": [
+      {
+       "number": null,
+       "deontic": "PERMISSION",
+       "addressee": "De bevoegde autoriteit",
+       "addressee_type": "COMPETENT_AUTHORITY",
+       "trigger_event": "bij een overtreding van het bij of krachtens de verordening bepaalde",
+       "action": "de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken",
+       "recipient_body": [],
+       "deadline": null,
+       "thresholds": [],
+       "conditions": [],
+       "deference": null,
+       "extraction_confidence": 0.99,
+       "extraction_model": "gpt-5.6-luna",
+       "extracted_on": "2026-09-20",
+       "human_verified": false
+      }
+     ]
+    },
+    {
+     "provision_id": "BWBR0049497-bijlage35-p4",
+     "number": 4,
+     "heading": "Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)",
+     "text": "De verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten).",
+     "text_fidelity": "official_xml",
+     "source_ref": "raw/nl/BWBR0049497/2026-08-15/toestand.xml#versie-id=None",
+     "norms": [
+      {
+       "number": null,
+       "deontic": "DEFERENCE",
+       "addressee": null,
+       "addressee_type": null,
+       "trigger_event": null,
+       "action": null,
+       "recipient_body": [],
+       "deadline": null,
+       "thresholds": [],
+       "conditions": [
+        "op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten)"
+       ],
+       "deference": null,
+       "extraction_confidence": 0.98,
+       "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+       "extracted_on": "2026-09-21",
+       "human_verified": false,
+       "extraction_uncertain": true,
+       "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'De verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten).'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+      }
+     ]
+    },
+    {
+     "provision_id": "BWBR0049497-bijlage35-p5",
+     "number": 5,
+     "heading": "Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)",
+     "text": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.",
+     "text_fidelity": "official_xml",
+     "source_ref": "raw/nl/BWBR0049497/2026-08-15/toestand.xml#versie-id=None",
+     "norms": [
+      {
+       "number": null,
+       "deontic": "OBLIGATION",
+       "addressee": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen",
+       "addressee_type": "REGULATED_ENTITY",
+       "trigger_event": "de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening",
+       "action": "doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt",
+       "recipient_body": [
+        "het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt"
+       ],
+       "deadline": null,
+       "thresholds": [],
+       "conditions": [],
+       "deference": null,
+       "extraction_confidence": 0.98,
+       "extraction_model": "gpt-5.6-luna",
+       "extracted_on": "2026-09-20",
+       "human_verified": false
+      }
+     ]
+    }
+   ],
+   "enforcement_fine_table": {
+    "structured_from_note": false,
+    "source_note": "Rebuilt from the official XML's own CALS table markup via pipeline/parse.py's table-aware extraction (handles the table's two-row, column-spanning header and reads every row directly — no manual summarization). Supersedes the previous hand-curated 'categories' summary, which its own source_note said could not represent the table's column structure faithfully; that summary also collapsed the 'last onder dwangsom' and 'bestuurlijke boete' article ranges into one field even where the real table gives them different ranges (e.g. article 11: 'last onder dwangsom' covers lid 1-10 as one entry, 'bestuurlijke boete' splits the same article into three separate fine categories by lid range).",
+    "columns": [
+     "Last onder dwangsom – Artikelen",
+     "Bestuurlijke boete – Artikelen",
+     "Bestuurlijke boete – Boetecategorie"
     ],
-    "relationships": {
-      "based_on_delegated_regulation": [],
-      "policy_rules_and_circulars": [],
-      "incoming_references_to_this_bijlage": [
-        {
-          "title": "Machtigingsbesluit verstrekking justitiële gegevens beoordeling betrouwbaarheid van specifieke personen in de financiële sector",
-          "bwb_id": "BWBR0051566",
-          "referencing_article": "Artikel 2",
-          "url": "https://wetten.overheid.nl/jci1.3:c:BWBR0051566&artikel=2&g=2026-08-15&z=2026-09-09",
-          "note": "Nieuw sinds de vorige controle (versie 2025-03-18 toonde nog 'Geen' voor alle vier relatiecategorieën)."
-        }
-      ],
-      "incoming_references_to_parent_chapter": [],
-      "outgoing_references_from_bijlage_text": {
-        "status": "retrieved",
-        "references": [
-          {
-            "regulation": "Verordening (EU) 2023/1114 (MiCAR - cryptoactivamarkten)",
-            "context": "definieert 'aanbieders van cryptoactivadiensten' en 'activagerelateerde tokens'",
-            "bwb_bijlage": 36,
-            "relationship_type": "defines_term"
-          },
-          {
-            "regulation": "Verordening (EU) nr. 2016/1011 (Benchmarks)",
-            "context": "definieert 'cruciale benchmarks'",
-            "bwb_bijlage": 19,
-            "relationship_type": "defines_term"
-          },
-          {
-            "regulation": "Verordening (EU) 2020/1503 (CSPR - crowdfundingdienstverleners)",
-            "context": "definieert 'crowdfundingdienstverleners'",
-            "bwb_bijlage": 31,
-            "relationship_type": "defines_term"
-          },
-          {
-            "regulation": "Verordening (EU) nr. 909/2014 (CSDR - centrale effectenbewaarinstellingen)",
-            "context": "definieert 'centrale effectenbewaarinstellingen'",
-            "bwb_bijlage": 12,
-            "relationship_type": "defines_term"
-          },
-          {
-            "regulation": "Verordening (EU) nr. 1024/2013 (SSM - bankentoezicht ECB)",
-            "context": "bepaalt wanneer ECB in plaats van DNB bevoegd is",
-            "bwb_bijlage": null,
-            "relationship_type": "conditions_competence"
-          },
-          {
-            "regulation": "Richtlijn 2013/36/EU (CRD - kapitaalvereisten)",
-            "context": "lidstaatoptie: reikwijdte-uitzondering voor bepaalde instellingen",
-            "bwb_bijlage": null,
-            "relationship_type": "national_option_reference"
-          },
-          {
-            "regulation": "Cyberbeveiligingswet",
-            "context": "lidstaatoptie: aanvullende meldplicht ICT-incidenten bij nationaal CSIRT",
-            "bwb_bijlage": null,
-            "relationship_type": "national_option_reference"
-          }
-        ]
-      }
-    },
-    "substantive_text": {
-      "status": "retrieved",
-      "source": "user-provided full-text download from wetten.overheid.nl (BWBR0049497, geldend van 15-08-2026 t/m heden, zichtdatum 09-09-2026)",
-      "full_text": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)\n\nVerordening (EU) nr. 2022/2554 van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011 (PbEU 2022, L 333)\n\n1. Bevoegde autoriteit in de zin van de verordening\n\nDe Autoriteit Financiële Markten: ten aanzien van:\n- aanbieders van cryptoactivadiensten als bedoeld in artikel 3, eerste lid, onderdeel 15 van Verordening (EU) 2023/1114 (cryptoactiva);\n- adviseurs, voor zover zij adviseren over verzekeringen;\n- beheerders van beleggingsinstellingen;\n- beheerders van cruciale benchmarks als bedoeld in artikel 20, eerste lid, onderdeel b, van Verordening (EU) nr. 2016/1011 (benchmarks);\n- beheerders van icbe's;\n- beleggingsondernemingen;\n- bemiddelaars in verzekeringen;\n- crowdfundingdienstverleners als bedoeld in artikel 2, eerste lid, onderdeel e, van Verordening (EU) 2020/1503 (CSPR);\n- datarapporteringdienstverleners;\n- gevolmachtigde agenten of ondergevolmachtigde agenten;\n- handelsplatformen;\n- herverzekeringsbemiddelaars.\n\nDe Nederlandsche Bank: ten aanzien van:\n- banken, tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht);\n- betaaldienstverleners;\n- centrale effectenbewaarinstellingen als bedoeld in artikel 2, eerste lid, onderdeel 1, van Verordening (EU) nr. 909/2014 (CSDR);\n- centrale tegenpartijen;\n- elektronischgeldinstellingen;\n- premiepensioeninstellingen;\n- uitgevers van activagerelateerde tokens als bedoeld in artikel 3, eerste lid, onderdelen 6 en 10, van Verordening (EU) 2023/1114 (cryptoactiva);\n- verzekeraars.\n\n2. Handhaving door middel van last onder dwangsom of bestuurlijke boete\n\n[Tabel met boetecategorieën per artikel van de verordening; artikelen 5 t/m 10 (boetecategorie 3), 11 (lid-specifiek, categorie 1-3), 12 t/m 30 (grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2), 41 (RTS, categorie 2), 42 derde en zesde lid (categorie 2), 45 (categorie 1). Zie brondocument voor de volledige tabel met alle artikelnummers en bijbehorende boetecategorieën.]\n\n3. Openbaarmaking overtredingen\n\nDe bevoegde autoriteit kan bij een overtreding van het bij of krachtens de verordening bepaalde de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken.\n\n4. Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)\n\nDe verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten).\n\n5. Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)\n\nBanken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.",
-      "note_on_table": "De handhavingstabel (onderdeel 2) is in de brontekst een layout-tabel met regeleinden die niet 1-op-1 als platte tekst overneembaar is zonder de kolomstructuur te verliezen. Zie het origineel voor de exacte boetecategorie per artikellid.",
-      "preamble_text": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)\n\nVerordening (EU) nr. 2022/2554 van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector en tot wijziging van de Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011 (PbEU 2022, L 333)",
-      "provisions": [
-        {
-          "provision_id": "BWBR0049497-bijlage35-p1",
-          "number": 1,
-          "heading": "Bevoegde autoriteit in de zin van de verordening",
-          "text": "1. Bevoegde autoriteit in de zin van de verordening\n\nDe Autoriteit Financiële Markten: ten aanzien van:\n- aanbieders van cryptoactivadiensten als bedoeld in artikel 3, eerste lid, onderdeel 15 van Verordening (EU) 2023/1114 (cryptoactiva);\n- adviseurs, voor zover zij adviseren over verzekeringen;\n- beheerders van beleggingsinstellingen;\n- beheerders van cruciale benchmarks als bedoeld in artikel 20, eerste lid, onderdeel b, van Verordening (EU) nr. 2016/1011 (benchmarks);\n- beheerders van icbe's;\n- beleggingsondernemingen;\n- bemiddelaars in verzekeringen;\n- crowdfundingdienstverleners als bedoeld in artikel 2, eerste lid, onderdeel e, van Verordening (EU) 2020/1503 (CSPR);\n- datarapporteringdienstverleners;\n- gevolmachtigde agenten of ondergevolmachtigde agenten;\n- handelsplatformen;\n- herverzekeringsbemiddelaars.\n\nDe Nederlandsche Bank: ten aanzien van:\n- banken, tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht);\n- betaaldienstverleners;\n- centrale effectenbewaarinstellingen als bedoeld in artikel 2, eerste lid, onderdeel 1, van Verordening (EU) nr. 909/2014 (CSDR);\n- centrale tegenpartijen;\n- elektronischgeldinstellingen;\n- premiepensioeninstellingen;\n- uitgevers van activagerelateerde tokens als bedoeld in artikel 3, eerste lid, onderdelen 6 en 10, van Verordening (EU) 2023/1114 (cryptoactiva);\n- verzekeraars."
-        },
-        {
-          "provision_id": "BWBR0049497-bijlage35-p2",
-          "number": 2,
-          "heading": "Handhaving door middel van last onder dwangsom of bestuurlijke boete",
-          "text": "2. Handhaving door middel van last onder dwangsom of bestuurlijke boete\n\n[Tabel met boetecategorieën per artikel van de verordening; artikelen 5 t/m 10 (boetecategorie 3), 11 (lid-specifiek, categorie 1-3), 12 t/m 30 (grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2), 41 (RTS, categorie 2), 42 derde en zesde lid (categorie 2), 45 (categorie 1). Zie brondocument voor de volledige tabel met alle artikelnummers en bijbehorende boetecategorieën.]"
-        },
-        {
-          "provision_id": "BWBR0049497-bijlage35-p3",
-          "number": 3,
-          "heading": "Openbaarmaking overtredingen",
-          "text": "3. Openbaarmaking overtredingen\n\nDe bevoegde autoriteit kan bij een overtreding van het bij of krachtens de verordening bepaalde de overtreding en de naam van de overtreder door middel van een openbare verklaring openbaar maken."
-        },
-        {
-          "provision_id": "BWBR0049497-bijlage35-p4",
-          "number": 4,
-          "heading": "Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)",
-          "text": "4. Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)\n\nDe verordening is niet van toepassing op instellingen als bedoeld in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU (kapitaalvereisten)."
-        },
-        {
-          "provision_id": "BWBR0049497-bijlage35-p5",
-          "number": 5,
-          "heading": "Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)",
-          "text": "5. Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)\n\nBanken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt."
-        }
-      ],
-      "enforcement_fine_table": {
-        "structured_from_note": true,
-        "source_note": "De handhavingstabel (onderdeel 2) is in de brontekst een layout-tabel met regeleinden die niet 1-op-1 als platte tekst overneembaar is zonder de kolomstructuur te verliezen. Zie het origineel voor de exacte boetecategorie per artikellid.",
-        "categories": [
-          {
-            "article_range": "5 t/m 10",
-            "fine_category": 3,
-            "detail": null
-          },
-          {
-            "article_range": "11",
-            "fine_category": "1-3 (lid-specifiek)",
-            "detail": "categorie verschilt per lid"
-          },
-          {
-            "article_range": "12 t/m 30",
-            "fine_category": 3,
-            "detail": "grotendeels categorie 3, enkele RTS/ITS-bepalingen categorie 2"
-          },
-          {
-            "article_range": "41",
-            "fine_category": 2,
-            "detail": "RTS"
-          },
-          {
-            "article_range": "42",
-            "fine_category": 2,
-            "detail": "derde en zesde lid"
-          },
-          {
-            "article_range": "45",
-            "fine_category": 1,
-            "detail": null
-          }
-        ]
-      }
-    }
-  },
-  "all_38_bijlagen_index": [
-    {
-      "nr": 1,
-      "regulation": "Verordening (EG) nr. 1060/2009 (CRA - ratingbureaus)"
-    },
-    {
-      "nr": 2,
-      "regulation": "Verordening (EU) nr. 583/2010 (KII - essentiële beleggersinformatie)"
-    },
-    {
-      "nr": 3,
-      "regulation": "Verordening (EU) nr. 236/2012 (SSR - short selling en kredietverzuimswaps)"
-    },
-    {
-      "nr": 4,
-      "regulation": "Verordening (EU) nr. 260/2012 (SEPA - betaaldiensten)"
-    },
-    {
-      "nr": 5,
-      "regulation": "Verordening (EU) nr. 648/2012 (EMIR - OTC-derivaten, centrale tegenpartijen en transactieregisters)"
-    },
-    {
-      "nr": 6,
-      "regulation": "Verordening (EU) nr. 345/2013 (EuVECA - Europese durfkapitaalfondsen)"
-    },
-    {
-      "nr": 7,
-      "regulation": "Verordening (EU) nr. 346/2013 (EuSEF - Europese sociaalondernemerschapsfondsen)"
-    },
-    {
-      "nr": 8,
-      "regulation": "Verordening (EU) nr. 575/2013 (CRR - kapitaalvereisten)"
-    },
-    {
-      "nr": 9,
-      "regulation": "Verordening (EU) nr. 596/2014 (MAR - marktmisbruik)"
-    },
-    {
-      "nr": 10,
-      "regulation": "Verordening (EU) nr. 600/2014 (MiFIR - markten voor financiële instrumenten)"
-    },
-    {
-      "nr": 11,
-      "regulation": "Verordening (EU) nr. 806/2014 (SRMR - gemeenschappelijk afwikkelingsmechanisme)"
-    },
-    {
-      "nr": 12,
-      "regulation": "Verordening (EU) nr. 909/2014 (CSDR - centrale effectenbewaarinstellingen)"
-    },
-    {
-      "nr": 13,
-      "regulation": "Verordening (EU) nr. 1286/2014 (PRIIPs - beleggingsproducten)"
-    },
-    {
-      "nr": 14,
-      "regulation": "Verordening (EU) 2015/35 (Gedelegeerde verordening Solvabiliteit II)"
-    },
-    {
-      "nr": 15,
-      "regulation": "Verordening (EU) 2015/63 (RFR - afwikkelingsfonds)"
-    },
-    {
-      "nr": 16,
-      "regulation": "Verordening (EU) 2015/751 (MIF - afwikkelingsvergoedingen kaartbetalingen)"
-    },
-    {
-      "nr": 17,
-      "regulation": "Verordening (EU) 2015/760 (ELTIF - Europese langetermijnbeleggingsinstellingen)"
-    },
-    {
-      "nr": 18,
-      "regulation": "Verordening (EU) 2015/2365 (SFTR - effectenfinancieringstransacties)"
-    },
-    {
-      "nr": 19,
-      "regulation": "Verordening (EU) 2016/1011 (Benchmarks)"
-    },
-    {
-      "nr": 20,
-      "regulation": "Verordening (EU) 2017/565 (Gedelegeerde verordening markten financiële instrumenten 2014)"
-    },
-    {
-      "nr": 21,
-      "regulation": "Verordening (EU) 2017/1129 (Prospectus)"
-    },
-    {
-      "nr": 22,
-      "regulation": "Verordening (EU) 2017/1131 (MMFR - geldmarktfondsen)"
-    },
-    {
-      "nr": 23,
-      "regulation": "Verordening (EU) 2017/2358 (IDD POG - productontwikkeling en -governance)"
-    },
-    {
-      "nr": 24,
-      "regulation": "Verordening (EU) 2017/2359 (IDD COB - verzekeringen met beleggingscomponent)"
-    },
-    {
-      "nr": 25,
-      "regulation": "Verordening (EU) 2017/2402 (SECR - securitisaties)"
-    },
-    {
-      "nr": 26,
-      "regulation": "Verordening (EU) 2019/1156 (grensoverschrijdende distributie ICBE's)"
-    },
-    {
-      "nr": 27,
-      "regulation": "Verordening (EU) 2019/1238 (PEPP - pan-Europees persoonlijk pensioenproduct)"
-    },
-    {
-      "nr": 28,
-      "regulation": "Verordening (EU) 2019/2033 (IFR - prudentiële vereisten beleggingsondernemingen)"
-    },
-    {
-      "nr": 29,
-      "regulation": "Verordening (EU) 2019/2088 (SFDR - informatieverschaffing duurzaamheid)"
-    },
-    {
-      "nr": 30,
-      "regulation": "Verordening (EU) 2020/852 (Taxonomie - kader duurzame beleggingen)"
-    },
-    {
-      "nr": 31,
-      "regulation": "Verordening (EU) 2020/1503 (CSPR - Crowdfundingdienstverleners voor bedrijven)"
-    },
-    {
-      "nr": 32,
-      "regulation": "Verordening (EU) 2021/23 (CCPRRR - herstel en afwikkeling centrale tegenpartijen)"
-    },
-    {
-      "nr": 33,
-      "regulation": "Verordening (EU) 2021/1230 (CBPR - grensoverschrijdende betalingen)"
-    },
-    {
-      "nr": 34,
-      "regulation": "Verordening (EU) 2022/858 (DLTPRR - DLT pilot regime)"
-    },
-    {
-      "nr": 35,
-      "regulation": "Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
-      "this_is_the_target": true
-    },
-    {
-      "nr": 36,
-      "regulation": "Verordening (EU) 2023/1114 (MiCAR - cryptoactivamarkten)"
-    },
-    {
-      "nr": 37,
-      "regulation": "Verordening (EU) 2023/2631 (EuGBR - Europese groene obligaties)"
-    },
-    {
-      "nr": 38,
-      "regulation": "Verordening (EU) 2023/2830 (veiling van broeikasgasemissierechten)",
-      "note": "Dit was tot 17-01-2025 bijlage 35."
-    }
-  ],
-  "sources": [
-    "https://wetten.overheid.nl/BWBR0049497/2026-08-15",
-    "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie",
-    "https://wetten.overheid.nl/BWBR0049497/2025-03-18/0/Bijlage35/informatie"
-  ],
-  "compiled_on": "2026-09-09",
-  "compliance_check": {
-    "checked_on": "2026-09-15",
-    "result": "confirmed_current_no_changes",
-    "note": "Re-verified directly against wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie. Version still shows 'geldend van 15-08-2026 t/m heden'. Incoming reference list unchanged (still only the Machtigingsbesluit, Artikel 2). No corrections needed to this dataset's content."
+    "rows": [
+     {
+      "Last onder dwangsom – Artikelen": "5 tot en met 10",
+      "Bestuurlijke boete – Artikelen": "5 tot en met 10",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "11, eerste tot en met tiende lid",
+      "Bestuurlijke boete – Artikelen": "11, eerste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "(geen)",
+      "Bestuurlijke boete – Artikelen": "11, tweede tot en met achtste lid",
+      "Bestuurlijke boete – Boetecategorie": "2"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "(geen)",
+      "Bestuurlijke boete – Artikelen": "11, negende en tiende lid",
+      "Bestuurlijke boete – Boetecategorie": "1"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "12",
+      "Bestuurlijke boete – Artikelen": "12",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "13",
+      "Bestuurlijke boete – Artikelen": "13, eerste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "(geen)",
+      "Bestuurlijke boete – Artikelen": "13, tweede tot en met zevende lid",
+      "Bestuurlijke boete – Boetecategorie": "2"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "14",
+      "Bestuurlijke boete – Artikelen": "14",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "15 (RTS), voor zover betrekking hebbende op artikel 6, vijfde lid, 9, tweede lid, 9 vierde lid,10, eerste lid, 11, eerste lid",
+      "Bestuurlijke boete – Artikelen": "15 (RTS), voor zover betrekking hebbende op artikel 6, vijfde lid, 9, tweede lid, 9 vierde lid,10, eerste lid, 11, eerste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "15 (RTS), voor zover betrekking hebbende op artikel 11, derde en zesde lid",
+      "Bestuurlijke boete – Artikelen": "15 (RTS), voor zover betrekking hebbende op artikel 11, derde en zesde lid",
+      "Bestuurlijke boete – Boetecategorie": "2"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "16, eerste en tweede lid",
+      "Bestuurlijke boete – Artikelen": "16, eerste en tweede lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "16, derde lid (RTS)",
+      "Bestuurlijke boete – Artikelen": "16, derde lid (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "17",
+      "Bestuurlijke boete – Artikelen": "17, eerste, en tweede lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "18, eerste en tweede lid",
+      "Bestuurlijke boete – Artikelen": "18, eerste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "(geen)",
+      "Bestuurlijke boete – Artikelen": "18, tweede lid",
+      "Bestuurlijke boete – Boetecategorie": "1"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "18, derde lid (RTS)",
+      "Bestuurlijke boete – Artikelen": "18, derde lid (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "19, eerste, derde en vierde lid",
+      "Bestuurlijke boete – Artikelen": "19, eerste, derde en vierde lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "20, onderdeel a (RTS)",
+      "Bestuurlijke boete – Artikelen": "20, onderdeel a (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "20, onderdeel b (ITS)",
+      "Bestuurlijke boete – Artikelen": "20, onderdeel b (ITS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "24 en 25",
+      "Bestuurlijke boete – Artikelen": "24 en 25",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "26, eerste lid, eerste volzin, tweede tot en met achtste lid",
+      "Bestuurlijke boete – Artikelen": "26, eerste lid, eerste volzin, tweede tot en met zesde en achtste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "26, elfde lid (RTS)",
+      "Bestuurlijke boete – Artikelen": "26, elfde lid (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "27",
+      "Bestuurlijke boete – Artikelen": "27",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "28, eerste tot en met achtste lid",
+      "Bestuurlijke boete – Artikelen": "28, eerste tot en met achtste lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "28, negende lid (ITS)",
+      "Bestuurlijke boete – Artikelen": "28, negende lid (ITS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "28, tiende lid (RTS)",
+      "Bestuurlijke boete – Artikelen": "28, tiende lid (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "29",
+      "Bestuurlijke boete – Artikelen": "29",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "30, eerste tot en met derde lid",
+      "Bestuurlijke boete – Artikelen": "30, eerste tot en met derde lid",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "30, vijfde lid (RTS)",
+      "Bestuurlijke boete – Artikelen": "30, vijfde lid (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "3"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "41 (RTS)",
+      "Bestuurlijke boete – Artikelen": "41 (RTS)",
+      "Bestuurlijke boete – Boetecategorie": "2"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "42, derde en zesde lid",
+      "Bestuurlijke boete – Artikelen": "42, derde en zesde lid",
+      "Bestuurlijke boete – Boetecategorie": "2"
+     },
+     {
+      "Last onder dwangsom – Artikelen": "45",
+      "Bestuurlijke boete – Artikelen": "45",
+      "Bestuurlijke boete – Boetecategorie": "1"
+     }
+    ]
+   }
   }
+ },
+ "all_38_bijlagen_index": [
+  {
+   "nr": 1,
+   "regulation": "Verordening (EG) nr. 1060/2009 (CRA - ratingbureaus)"
+  },
+  {
+   "nr": 2,
+   "regulation": "Verordening (EU) nr. 583/2010 (KII - essentiële beleggersinformatie)"
+  },
+  {
+   "nr": 3,
+   "regulation": "Verordening (EU) nr. 236/2012 (SSR - short selling en kredietverzuimswaps)"
+  },
+  {
+   "nr": 4,
+   "regulation": "Verordening (EU) nr. 260/2012 (SEPA - betaaldiensten)"
+  },
+  {
+   "nr": 5,
+   "regulation": "Verordening (EU) nr. 648/2012 (EMIR - OTC-derivaten, centrale tegenpartijen en transactieregisters)"
+  },
+  {
+   "nr": 6,
+   "regulation": "Verordening (EU) nr. 345/2013 (EuVECA - Europese durfkapitaalfondsen)"
+  },
+  {
+   "nr": 7,
+   "regulation": "Verordening (EU) nr. 346/2013 (EuSEF - Europese sociaalondernemerschapsfondsen)"
+  },
+  {
+   "nr": 8,
+   "regulation": "Verordening (EU) nr. 575/2013 (CRR - kapitaalvereisten)"
+  },
+  {
+   "nr": 9,
+   "regulation": "Verordening (EU) nr. 596/2014 (MAR - marktmisbruik)"
+  },
+  {
+   "nr": 10,
+   "regulation": "Verordening (EU) nr. 600/2014 (MiFIR - markten voor financiële instrumenten)"
+  },
+  {
+   "nr": 11,
+   "regulation": "Verordening (EU) nr. 806/2014 (SRMR - gemeenschappelijk afwikkelingsmechanisme)"
+  },
+  {
+   "nr": 12,
+   "regulation": "Verordening (EU) nr. 909/2014 (CSDR - centrale effectenbewaarinstellingen)"
+  },
+  {
+   "nr": 13,
+   "regulation": "Verordening (EU) nr. 1286/2014 (PRIIPs - beleggingsproducten)"
+  },
+  {
+   "nr": 14,
+   "regulation": "Verordening (EU) 2015/35 (Gedelegeerde verordening Solvabiliteit II)"
+  },
+  {
+   "nr": 15,
+   "regulation": "Verordening (EU) 2015/63 (RFR - afwikkelingsfonds)"
+  },
+  {
+   "nr": 16,
+   "regulation": "Verordening (EU) 2015/751 (MIF - afwikkelingsvergoedingen kaartbetalingen)"
+  },
+  {
+   "nr": 17,
+   "regulation": "Verordening (EU) 2015/760 (ELTIF - Europese langetermijnbeleggingsinstellingen)"
+  },
+  {
+   "nr": 18,
+   "regulation": "Verordening (EU) 2015/2365 (SFTR - effectenfinancieringstransacties)"
+  },
+  {
+   "nr": 19,
+   "regulation": "Verordening (EU) 2016/1011 (Benchmarks)"
+  },
+  {
+   "nr": 20,
+   "regulation": "Verordening (EU) 2017/565 (Gedelegeerde verordening markten financiële instrumenten 2014)"
+  },
+  {
+   "nr": 21,
+   "regulation": "Verordening (EU) 2017/1129 (Prospectus)"
+  },
+  {
+   "nr": 22,
+   "regulation": "Verordening (EU) 2017/1131 (MMFR - geldmarktfondsen)"
+  },
+  {
+   "nr": 23,
+   "regulation": "Verordening (EU) 2017/2358 (IDD POG - productontwikkeling en -governance)"
+  },
+  {
+   "nr": 24,
+   "regulation": "Verordening (EU) 2017/2359 (IDD COB - verzekeringen met beleggingscomponent)"
+  },
+  {
+   "nr": 25,
+   "regulation": "Verordening (EU) 2017/2402 (SECR - securitisaties)"
+  },
+  {
+   "nr": 26,
+   "regulation": "Verordening (EU) 2019/1156 (grensoverschrijdende distributie ICBE's)"
+  },
+  {
+   "nr": 27,
+   "regulation": "Verordening (EU) 2019/1238 (PEPP - pan-Europees persoonlijk pensioenproduct)"
+  },
+  {
+   "nr": 28,
+   "regulation": "Verordening (EU) 2019/2033 (IFR - prudentiële vereisten beleggingsondernemingen)"
+  },
+  {
+   "nr": 29,
+   "regulation": "Verordening (EU) 2019/2088 (SFDR - informatieverschaffing duurzaamheid)"
+  },
+  {
+   "nr": 30,
+   "regulation": "Verordening (EU) 2020/852 (Taxonomie - kader duurzame beleggingen)"
+  },
+  {
+   "nr": 31,
+   "regulation": "Verordening (EU) 2020/1503 (CSPR - Crowdfundingdienstverleners voor bedrijven)"
+  },
+  {
+   "nr": 32,
+   "regulation": "Verordening (EU) 2021/23 (CCPRRR - herstel en afwikkeling centrale tegenpartijen)"
+  },
+  {
+   "nr": 33,
+   "regulation": "Verordening (EU) 2021/1230 (CBPR - grensoverschrijdende betalingen)"
+  },
+  {
+   "nr": 34,
+   "regulation": "Verordening (EU) 2022/858 (DLTPRR - DLT pilot regime)"
+  },
+  {
+   "nr": 35,
+   "regulation": "Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
+   "this_is_the_target": true
+  },
+  {
+   "nr": 36,
+   "regulation": "Verordening (EU) 2023/1114 (MiCAR - cryptoactivamarkten)"
+  },
+  {
+   "nr": 37,
+   "regulation": "Verordening (EU) 2023/2631 (EuGBR - Europese groene obligaties)"
+  },
+  {
+   "nr": 38,
+   "regulation": "Verordening (EU) 2023/2830 (veiling van broeikasgasemissierechten)",
+   "note": "Dit was tot 17-01-2025 bijlage 35."
+  }
+ ],
+ "sources": [
+  "https://wetten.overheid.nl/BWBR0049497/2026-08-15",
+  "https://wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie",
+  "https://wetten.overheid.nl/BWBR0049497/2025-03-18/0/Bijlage35/informatie"
+ ],
+ "compiled_on": "2026-09-09",
+ "compliance_check": {
+  "checked_on": "2026-09-15",
+  "result": "confirmed_current_no_changes",
+  "note": "Re-verified directly against wetten.overheid.nl/BWBR0049497/2026-08-15/0/Bijlage35/informatie. Version still shows 'geldend van 15-08-2026 t/m heden'. Incoming reference list unchanged (still only the Machtigingsbesluit, Artikel 2). No corrections needed to this dataset's content."
+ },
+ "compliance_check_round_2": {
+  "checked_on": "2026-09-19",
+  "method": "Built dedicated <bijlage>/<divisie>-aware parsing (parse_bijlage() in pipeline/parse.py) since Bijlage 35 is structurally an annex inside a larger regulation, not a standalone <artikel>-based law like the other five Dutch datasets. Diffed all 5 provisions against this file's existing text.",
+  "result": "official_xml_upgrade_plus_enforcement_table_completed",
+  "provisions_updated": 5,
+  "provisions_1_3_4_5_finding": "Identical content once the heading-number prefix the old text duplicated inline is accounted for; remaining byte differences are the source's own '–' list-marker vs. the old text's plain '-', same pattern seen across every other dataset in this corpus.",
+  "provision_2_finding": "The enforcement/fine table — explicitly flagged by the previous build as not extractable without losing its column structure — is now fully and accurately extracted: 32 rows, both enforcement-mechanism columns kept distinct. See enforcement_fine_table for the complete structured result and substantive_text.provisions[#2].text for the equivalent rendered as text."
+ }
 }

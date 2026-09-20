@@ -1,0 +1,74 @@
+[
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "26",
+  "paragraph_number": "2",
+  "unit_text": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid:\n\na.\ngeeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": {
+   "deontic": "OBLIGATION",
+   "addressee": "de entiteit",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid",
+   "action": "geeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
+   "recipient_body": [],
+   "deadline_raw": null,
+   "thresholds": [],
+   "conditions": [],
+   "deference": null,
+   "extraction_confidence": 0.97
+  },
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "22",
+  "paragraph_number": "1",
+  "unit_text": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555 , bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht. Onverminderd de ontvangen feedback van toezichthouders blijven financiële entiteiten volledig verantwoordelijk voor de behandeling en de gevolgen van de ICT-gerelateerde incidenten die op grond van artikel 19, lid 1, zijn gerapporteerd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": {
+   "deontic": "COMPETENCE",
+   "addressee": "de bevoegde autoriteit",
+   "addressee_type": "COMPETENT_AUTHORITY",
+   "trigger_event": "na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen",
+   "action": "bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht",
+   "recipient_body": [
+    "de financiële entiteit"
+   ],
+   "deadline_raw": "tijdig",
+   "thresholds": [],
+   "conditions": [
+    "waar mogelijk"
+   ],
+   "deference": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555",
+   "extraction_confidence": 0.9
+  },
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ },
+ {
+  "instrument_id": "BWBR0051796-art3",
+  "article": "3",
+  "paragraph_number": "5",
+  "unit_text": "In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.",
+  "reason": "validation_failed",
+  "pass1": {
+   "deontic": "DEFERENCE",
+   "addressee": null,
+   "addressee_type": null,
+   "trigger_event": null,
+   "action": null,
+   "recipient_body": [],
+   "deadline_raw": null,
+   "thresholds": [],
+   "conditions": [
+    "voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft"
+   ],
+   "deference": "In afwijking van het eerste lid",
+   "extraction_confidence": 0.98
+  },
+  "pass2": null,
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ }
+]

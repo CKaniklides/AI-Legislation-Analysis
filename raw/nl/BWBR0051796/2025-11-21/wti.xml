@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wetstechnische-informatie xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:overheid="http://standaarden.overheid.nl/owms/terms/" xmlns:owms="http://standaarden.overheid.nl/bwb/owms/" xsi:noNamespaceSchemaLocation="https://repository.officiele-overheidspublicaties.nl/Schema/BWB-WTI/2016-1/xsd/wti_2016-1.xsd" bwb-id="BWBR0051796">
+  <algemene-informatie gegenereerd="2026-08-28T04:37:17">
+    <eerstverantwoordelijke>Economische Zaken</eerstverantwoordelijke>
+    <citeertitel status="officieel">Uitvoeringswet dataverordening</citeertitel>
+    <citeertitels>
+      <citeertitel status="officieel" geldig-tot="9999-12-31" geldig-van="2025-11-21" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-21">Uitvoeringswet dataverordening</citeertitel>
+    </citeertitels>
+    <soort-regeling>wet</soort-regeling>
+    <identificatienummer>BWBR0051796</identificatienummer>
+    <rechtsgebieden>
+      <rechtsgebied>
+        <hoofdgebied>Informatierecht</hoofdgebied>
+        <specifiekgebied>ICT-recht</specifiekgebied>
+      </rechtsgebied>
+      <rechtsgebied>
+        <hoofdgebied>Privacy</hoofdgebied>
+      </rechtsgebied>
+      <rechtsgebied>
+        <hoofdgebied>Staats- en bestuursrecht</hoofdgebied>
+        <specifiekgebied>Staatsrecht</specifiekgebied>
+      </rechtsgebied>
+    </rechtsgebieden>
+    <overheidsdomeinen>
+      <overheidsdomein>Economie en ondernemen</overheidsdomein>
+      <overheidsdomein>Overheid, bestuur en koninkrijk</overheidsdomein>
+    </overheidsdomeinen>
+  </algemene-informatie>
+  <gerelateerde-regelgeving gegenereerd="2026-08-28T04:37:17">
+    <regeling>
+      <wetsfamilie>
+        <gerelateerde-regeling bwb-id="BWBR0051796" geldig-tot="9999-12-31" geldig-van="2025-11-21" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-11-21">
+          <extref doc="jci1.3:c:BWBR0051796" bwb-id="BWBR0051796">Uitvoeringswet dataverordening</extref>
+        </gerelateerde-regeling>
+      </wetsfamilie>
+      <verwijzing-door>
+        <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2032-10-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2032-10-01">
+          <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2032-10-01" geldig-van="2027-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2027-01-01">
+          <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-01" geldig-van="2026-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-07-01">
+          <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-15" geldig-van="2026-08-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-08-01">
+          <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+        </gerelateerd-regelingelement>
+        <gerelateerd-regelingelement bwb-id="BWBR0033508" geldig-tot="9999-12-31" geldig-van="2025-12-25" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-12-25">
+          <extref label="Besluit organisatie, mandaat, volmacht en machtiging ACM 2013" groep="artikel" doc="jci1.3:c:BWBR0033508&amp;artikel=3.5" bwb-id="BWBR0033508" label-id="12251134">3.5</extref>
+        </gerelateerd-regelingelement>
+      </verwijzing-door>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="17508554" groep="artikel" label="Artikel 2">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2032-10-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2032-10-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2032-10-01" geldig-van="2027-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2027-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-01" geldig-van="2026-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-07-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-15" geldig-van="2026-08-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-08-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17508584" groep="artikel" label="Artikel 5">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2032-10-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2032-10-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2032-10-01" geldig-van="2027-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2027-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-01" geldig-van="2026-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-07-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-15" geldig-van="2026-08-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-08-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0047095" geldig-tot="9999-12-31" geldig-van="2025-12-25" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-12-25">
+            <extref label="Besluit aanwijzing toezichthouders ACM 2022" groep="artikel" doc="jci1.3:c:BWBR0047095&amp;artikel=2" bwb-id="BWBR0047095" label-id="16392984">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17508614" groep="artikel" label="Artikel 8">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="9999-12-31" geldig-van="2032-10-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2032-10-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2032-10-01" geldig-van="2027-01-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2027-01-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-01" geldig-van="2026-07-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-07-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+          <gerelateerd-regelingelement bwb-id="BWBR0005537" geldig-tot="2026-08-15" geldig-van="2026-08-01" zichtbaar-tot="9999-12-31" zichtbaar-van="2026-08-01">
+            <extref label="Algemene wet bestuursrecht" groep="bijlage" doc="jci1.3:c:BWBR0005537&amp;bijlage=2" bwb-id="BWBR0005537" label-id="11995284">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+      <regelingelement label-id="17508564" groep="artikel" label="Artikel 3">
+        <verwijzing-door>
+          <gerelateerd-regelingelement bwb-id="BWBR0047095" geldig-tot="9999-12-31" geldig-van="2025-12-25" zichtbaar-tot="9999-12-31" zichtbaar-van="2025-12-25">
+            <extref label="Besluit aanwijzing toezichthouders ACM 2022" groep="artikel" doc="jci1.3:c:BWBR0047095&amp;artikel=2" bwb-id="BWBR0047095" label-id="16392984">2</extref>
+          </gerelateerd-regelingelement>
+        </verwijzing-door>
+      </regelingelement>
+    </regelingelementen>
+  </gerelateerde-regelgeving>
+  <wijzigingen gegenereerd="2026-08-28T04:37:18">
+    <regeling>
+      <datum waarde="2025-11-21">
+        <details>
+          <betreft>nieuwe-regeling</betreft>
+          <ontstaansbron>
+            <bron type="oorspronkelijk">
+              <dossiernummer>36733</dossiernummer>
+              <ondertekening>2025-10-29</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                <publicatiedatum>2025-11-20</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>372</publicatienummer>
+                <rectificatie soort="Stb" urlidentifier="stb-2025-372-n1">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372-n1</publicatienummer>
+                </rectificatie>
+              </bekendmaking>
+            </bron>
+          </ontstaansbron>
+          <inwerkingtreding>
+            <bron xsi:type="bron_groot" type="oorspronkelijk">
+              <dossiernummer>36733</dossiernummer>
+              <ondertekening>2025-10-29</ondertekening>
+              <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                <publicatiedatum>2025-11-20</publicatiedatum>
+                <publicatiejaar>2025</publicatiejaar>
+                <publicatienummer>372</publicatienummer>
+              </bekendmaking>
+            </bron>
+          </inwerkingtreding>
+        </details>
+      </datum>
+    </regeling>
+    <regelingelementen>
+      <regelingelement label-id="17508514">
+        <datum waarde="2025-11-21" versie-id="31087052">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                  <rectificatie soort="Stb" urlidentifier="stb-2025-372-n1">
+                    <publicatiedatum>2025-11-20</publicatiedatum>
+                    <publicatiejaar>2025</publicatiejaar>
+                    <publicatienummer>372-n1</publicatienummer>
+                  </rectificatie>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508524">
+        <datum waarde="2025-11-21" versie-id="31087062">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508534">
+        <datum waarde="2025-11-21" versie-id="31087072">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508544">
+        <datum waarde="2025-11-21" label="Artikel 1" versie-id="31087082">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508554">
+        <datum waarde="2025-11-21" label="Artikel 2" versie-id="31087092">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508564">
+        <datum waarde="2025-11-21" label="Artikel 3" versie-id="31087102">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508574">
+        <datum waarde="2025-11-21" label="Artikel 4" versie-id="31087112">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508584">
+        <datum waarde="2025-11-21" label="Artikel 5" versie-id="31087122">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508594">
+        <datum waarde="2025-11-21" label="Artikel 6" versie-id="31087132">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508604">
+        <datum waarde="2025-11-21" label="Artikel 7" versie-id="31087142">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508614">
+        <datum waarde="2025-11-21" label="Artikel 8" versie-id="31087152">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508624">
+        <datum waarde="2025-11-21" label="Artikel 9" versie-id="31087162">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508634">
+        <datum waarde="2025-11-21" label="Artikel 10" versie-id="31087172">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508644">
+        <datum waarde="2025-11-21" label="Artikel 11" versie-id="31087182">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508654">
+        <datum waarde="2025-11-21" label="Artikel 12" versie-id="31087192">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508664">
+        <datum waarde="2025-11-21" label="Artikel 13" versie-id="31087202">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508674">
+        <datum waarde="2025-11-21" label="Artikel 14" versie-id="31087212">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508684">
+        <datum waarde="2025-11-21" versie-id="31087222">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+      <regelingelement label-id="17508694">
+        <datum waarde="2025-11-21" versie-id="31087232">
+          <details isvoorafgaand="false">
+            <betreft>nieuwe-regeling</betreft>
+            <ontstaansbron>
+              <bron type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </ontstaansbron>
+            <inwerkingtreding>
+              <bron xsi:type="bron_groot" type="oorspronkelijk">
+                <dossiernummer>36733</dossiernummer>
+                <ondertekening>2025-10-29</ondertekening>
+                <bekendmaking soort="Stb" urlidentifier="stb-2025-372">
+                  <publicatiedatum>2025-11-20</publicatiedatum>
+                  <publicatiejaar>2025</publicatiejaar>
+                  <publicatienummer>372</publicatienummer>
+                </bekendmaking>
+              </bron>
+            </inwerkingtreding>
+          </details>
+        </datum>
+      </regelingelement>
+    </regelingelementen>
+  </wijzigingen>
+  <owms:meta owms-version="4.0">
+    <owms:kern>
+      <dcterms:identifier>BWBR0051796</dcterms:identifier>
+      <dcterms:title xml:lang="nl">Uitvoeringswet dataverordening</dcterms:title>
+      <dcterms:language>nl</dcterms:language>
+      <dcterms:type>wet</dcterms:type>
+      <dcterms:modified>2026-08-28</dcterms:modified>
+      <overheid:authority>Economische Zaken</overheid:authority>
+    </owms:kern>
+  </owms:meta>
+</wetstechnische-informatie>

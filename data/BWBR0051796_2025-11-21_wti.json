@@ -1,0 +1,247 @@
+{
+ "instrument_id": "BWBR0051796",
+ "incoming_references_instrument_level": [
+  {
+   "bwb_id": "BWBR0005537",
+   "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+   "unit": {
+    "kind": "bijlage",
+    "value": "2"
+   },
+   "label": "Algemene wet bestuursrecht",
+   "text": "2",
+   "valid_from": "2032-10-01",
+   "valid_until": "9999-12-31"
+  },
+  {
+   "bwb_id": "BWBR0005537",
+   "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+   "unit": {
+    "kind": "bijlage",
+    "value": "2"
+   },
+   "label": "Algemene wet bestuursrecht",
+   "text": "2",
+   "valid_from": "2027-01-01",
+   "valid_until": "2032-10-01"
+  },
+  {
+   "bwb_id": "BWBR0005537",
+   "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+   "unit": {
+    "kind": "bijlage",
+    "value": "2"
+   },
+   "label": "Algemene wet bestuursrecht",
+   "text": "2",
+   "valid_from": "2026-07-01",
+   "valid_until": "2026-08-01"
+  },
+  {
+   "bwb_id": "BWBR0005537",
+   "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+   "unit": {
+    "kind": "bijlage",
+    "value": "2"
+   },
+   "label": "Algemene wet bestuursrecht",
+   "text": "2",
+   "valid_from": "2026-08-01",
+   "valid_until": "2026-08-15"
+  },
+  {
+   "bwb_id": "BWBR0033508",
+   "doc": "jci1.3:c:BWBR0033508&artikel=3.5",
+   "unit": {
+    "kind": "artikel",
+    "value": "3.5"
+   },
+   "label": "Besluit organisatie, mandaat, volmacht en machtiging ACM 2013",
+   "text": "3.5",
+   "valid_from": "2025-12-25",
+   "valid_until": "9999-12-31"
+  }
+ ],
+ "incoming_references_by_article_label_id": {
+  "17508554": [
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2032-10-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2027-01-01",
+    "valid_until": "2032-10-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-07-01",
+    "valid_until": "2026-08-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-08-01",
+    "valid_until": "2026-08-15"
+   }
+  ],
+  "17508584": [
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2032-10-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2027-01-01",
+    "valid_until": "2032-10-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-07-01",
+    "valid_until": "2026-08-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-08-01",
+    "valid_until": "2026-08-15"
+   },
+   {
+    "bwb_id": "BWBR0047095",
+    "doc": "jci1.3:c:BWBR0047095&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Besluit aanwijzing toezichthouders ACM 2022",
+    "text": "2",
+    "valid_from": "2025-12-25",
+    "valid_until": "9999-12-31"
+   }
+  ],
+  "17508614": [
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2032-10-01",
+    "valid_until": "9999-12-31"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2027-01-01",
+    "valid_until": "2032-10-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-07-01",
+    "valid_until": "2026-08-01"
+   },
+   {
+    "bwb_id": "BWBR0005537",
+    "doc": "jci1.3:c:BWBR0005537&bijlage=2",
+    "unit": {
+     "kind": "bijlage",
+     "value": "2"
+    },
+    "label": "Algemene wet bestuursrecht",
+    "text": "2",
+    "valid_from": "2026-08-01",
+    "valid_until": "2026-08-15"
+   }
+  ],
+  "17508564": [
+   {
+    "bwb_id": "BWBR0047095",
+    "doc": "jci1.3:c:BWBR0047095&artikel=2",
+    "unit": {
+     "kind": "artikel",
+     "value": "2"
+    },
+    "label": "Besluit aanwijzing toezichthouders ACM 2022",
+    "text": "2",
+    "valid_from": "2025-12-25",
+    "valid_until": "9999-12-31"
+   }
+  ]
+ },
+ "legal_basis_for_instrument_level": [],
+ "legal_basis_for_by_article_label_id": {},
+ "statutory_authority_for_instrument_level": [],
+ "statutory_authority_for_by_article_label_id": {}
+}

@@ -1,104 +1,177 @@
 {
-  "regulation": {
-    "bwb_id": "BWBR0009950",
-    "title": "Telecommunicatiewet",
-    "citeertitel_short": "Tw",
-    "type": "Wet (formele wet)",
-    "jurisdiction": "NL",
-    "status": "in_force",
-    "language": "nl",
-    "authority": "Economische Zaken",
-    "current_version_effective_from": "2025-09-01",
-    "current_version_effective_until": "2026-06-30",
-    "regulation_permalink": "https://wetten.overheid.nl/BWBR0009950/2025-09-01",
-    "note": "Grote, brede wet met honderden artikelen over telecommunicatie in het algemeen. Dit dataset richt zich uitsluitend op Hoofdstuk 11 (Bescherming van persoonsgegevens en de persoonlijke levenssfeer), specifiek Artikel 11.7a, niet op de wet als geheel."
+ "regulation": {
+  "bwb_id": "BWBR0009950",
+  "title": "Telecommunicatiewet",
+  "citeertitel_short": "Tw",
+  "type": "Wet (formele wet)",
+  "jurisdiction": "NL",
+  "status": "in_force",
+  "language": "nl",
+  "authority": "Economische Zaken",
+  "current_version_effective_from": "2025-09-01",
+  "current_version_effective_until": "2026-06-30",
+  "regulation_permalink": "https://wetten.overheid.nl/BWBR0009950/2025-09-01",
+  "note": "Grote, brede wet met honderden artikelen over telecommunicatie in het algemeen. Dit dataset richt zich uitsluitend op Hoofdstuk 11 (Bescherming van persoonsgegevens en de persoonlijke levenssfeer), specifiek Artikel 11.7a, niet op de wet als geheel."
+ },
+ "target_provision": {
+  "provision_id": "BWBR0009950-art11.7a",
+  "number": "11.7a",
+  "heading": "Artikel 11.7a",
+  "chapter": "Hoofdstuk 11. Bescherming van persoonsgegevens en de persoonlijke levenssfeer",
+  "common_name": "Cookiebepaling (cookie provision)",
+  "eu_directive_implemented": {
+   "number": "2002/58/EG",
+   "article": "Artikel 5, derde lid",
+   "short_name": "ePrivacy-richtlijn (Bijzondere privacyrichtlijn)",
+   "note": "Bevestigd in de eigen memorie van toelichting bij de introductie van dit artikel in 2012 (Kamerstuk 33902, nr. 3): 'Artikel 11.7a vormt de implementatie van artikel 5, derde lid, van richtlijn 2002/58/EG.'"
   },
-  "target_provision": {
-    "provision_id": "BWBR0009950-art11.7a",
-    "number": "11.7a",
-    "heading": "Artikel 11.7a",
-    "chapter": "Hoofdstuk 11. Bescherming van persoonsgegevens en de persoonlijke levenssfeer",
-    "paragraph": "§ 11.1. Algemene bepalingen",
-    "common_name": "Cookiebepaling (cookie provision)",
-    "eu_directive_implemented": {
-      "number": "2002/58/EG",
-      "article": "Artikel 5, derde lid",
-      "short_name": "ePrivacy-richtlijn (Bijzondere privacyrichtlijn)",
-      "note": "Bevestigd in de eigen memorie van toelichting bij de introductie van dit artikel in 2012 (Kamerstuk 33902, nr. 3): 'Artikel 11.7a vormt de implementatie van artikel 5, derde lid, van richtlijn 2002/58/EG.'"
-    },
-    "text_status": "reconstructed_from_corroborating_sources",
-    "text_status_warning": "BELANGRIJK: dit is NIET een directe, woordelijke kopie van een enkele officiele wetten.overheid.nl-pagina. De volledige regeling (Telecommunicatiewet) is te groot om in een enkele ophaling volledig op te halen en de ophaling brak af voordat Hoofdstuk 11 werd bereikt. Deze tekst is samengesteld uit meerdere onderling consistente fragmenten uit betrouwbare secundaire bronnen (Maxius.nl, InView, en de oorspronkelijke memorie van toelichting op zoek.officielebekendmakingen.nl). De structuur en inhoud komen overeen, maar de exacte woordelijke tekst moet geverifieerd worden tegen wetten.overheid.nl zelf voordat dit artikel wordt gebruikt als letterlijk citaat in een bevinding, op dezelfde manier als de gedeeltelijk samengevatte artikelen in het Cbw-dataset zijn gemarkeerd.",
-    "text_reconstructed": "1 Onverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken abonnee of gebruiker: a. is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en b. zijn toestemming heeft verleend. 2 De in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie. 3 Het bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft: a. die uitsluitend geschiedt ten behoeve van de uitvoering van de overdracht van een communicatie over een elektronisch communicatienetwerk, b. die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren, of c. mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker, om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.",
-    "note_on_gdpr_cross_reference": "Let op de expliciete verwijzing naar de Algemene verordening gegevensbescherming in lid 1. Dit artikel is de Nederlandse implementatie van de ePrivacy-richtlijn, maar verwijst binnen zijn eigen tekst direct naar de AVG voor de invulling van 'duidelijke en volledige informatie'. Dit is een directe, in de wettekst zelf zichtbare koppeling tussen twee van de vier hoofddatasets in dit project (UAVG/AVG en dit artikel), en een concreet voorbeeld van de vertikale/horizontale gelaagdheid die Lotte in de eerste bijeenkomst noemde.",
-    "url": "https://wetten.overheid.nl/BWBR0009950/2025-09-01/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a"
-  },
-  "version_history": [
-    {
-      "effective_date": "2012-06-05",
-      "event": "Nieuw (introductie van artikel 11.7a in de Telecommunicatiewet)",
-      "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
-      "kamerstukken": "32549"
-    },
-    {
-      "effective_date": "2013-01-01",
-      "event": "Wijziging",
-      "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
-      "kamerstukken": "32549"
-    },
-    {
-      "effective_date": "2015-03-11",
-      "event": "Wijziging (o.a. toevoeging derde uitzondering voor cookies met geringe privacygevolgen, na internetconsultatie 'Aanpassing artikel 11.7a')",
-      "source_publication": "Stb. 2015, 100 / Stb. 2015, 101",
-      "kamerstukken": "33902"
-    },
-    {
-      "effective_date": "2018-07-28",
-      "event": "Wijziging (terugwerkende kracht t/m 25-05-2018, samenvallend met inwerkingtreding AVG)",
-      "source_publication": "Stb. 2018, 247 / Stb. 2018, 248",
-      "kamerstukken": "34939"
-    },
-    {
-      "effective_date": "2025-09-01",
-      "event": "Huidige geldende versie",
-      "effective_until": "2026-06-30"
-    },
-    {
-      "effective_date": "2026-07-01",
-      "event": "Geplande wijziging, geldig t/m 14-08-2026",
-      "note": "Nog niet inhoudelijk geverifieerd wat er wijzigt."
-    },
-    {
-      "effective_date": "2026-08-15",
-      "event": "Volgende geplande wijziging na 2026-07-01",
-      "note": "Datum valt samen met de inwerkingtreding van de Cyberbeveiligingswet en de Wwke. Nog niet bevestigd of dit verband houdt met elkaar of toeval is, waard om te verifieren."
-    }
+  "text_status": "official_xml",
+  "text_status_warning": null,
+  "text_reconstructed": null,
+  "note_on_gdpr_cross_reference": "Let op de expliciete verwijzing naar de Algemene verordening gegevensbescherming in lid 1. Dit artikel is de Nederlandse implementatie van de ePrivacy-richtlijn, maar verwijst binnen zijn eigen tekst direct naar de AVG voor de invulling van 'duidelijke en volledige informatie'. Dit is een directe, in de wettekst zelf zichtbare koppeling tussen twee van de vier hoofddatasets in dit project (UAVG/AVG en dit artikel), en een concreet voorbeeld van de vertikale/horizontale gelaagdheid die Lotte in de eerste bijeenkomst noemde.",
+  "url": "https://wetten.overheid.nl/BWBR0009950/2026-08-15/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a",
+  "text": "1\nOnverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken gebruiker:\n\na.\nis voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en\n\nb.\ndaarvoor toestemming heeft verleend.\n\n2\nDe in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie.\n\n3\nHet bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft:\n\na.\nmet als uitsluitend doel de communicatie over een elektronisch communicatienetwerk uit te voeren,\n\nb.\ndie strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren of – mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker – om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.\n\n4\nEen handeling als bedoeld in het eerste lid, die tot doel heeft gegevens over het gebruik van verschillende diensten van de informatiemaatschappij door de gebruiker of de abonnee te verzamelen, combineren of analyseren zodat de betrokken gebruiker of abonnee anders behandeld kan worden, wordt vermoed een verwerking van persoonsgegevens te zijn.\n\n5\nDe toegang van de gebruiker tot een dienst van de informatiemaatschappij die wordt geleverd door of namens een krachtens publiekrecht ingestelde rechtspersoon wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid.\n\n6\nBij of krachtens algemene maatregel van bestuur kunnen in overeenstemming met Onze Minister van Veiligheid en Justitie nadere regels worden gegeven met betrekking tot de in het eerste lid, onder a en b, genoemde vereisten en de in het derde lid genoemde uitzonderingen.",
+  "text_fidelity": "official_xml",
+  "text_reconstructed_superseded_2026_09_19": "1 Onverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken abonnee of gebruiker: a. is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en b. zijn toestemming heeft verleend. 2 De in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie. 3 Het bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft: a. die uitsluitend geschiedt ten behoeve van de uitvoering van de overdracht van een communicatie over een elektronisch communicatienetwerk, b. die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren, of c. mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker, om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.",
+  "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&z=2026-08-15&g=2026-08-15",
+  "effect": "wijziging",
+  "extref": [],
+  "intref": [],
+  "reconstruction_discrepancy_explained": "The reconstructed text was not fabricated noise: it matches the 2015-2018 version of this article, not the current one. Its lid 3 splits into three onderdelen (a/b/c), which exactly matches the 2015-03-11 amendment's own description in this file's version_history (“toevoeging derde uitzondering”). The current text (confirmed against the official XML, effect=\"wijziging\", bron=\"Stb.2018-247\", in force since 2018-07-28) merges that split into two onderdelen and changes lid 1's wording (‘de betrokken gebruiker’ not ‘de betrokken abonnee of gebruiker’; ‘daarvoor toestemming’ not ‘zijn toestemming’). The secondary sources used for the reconstruction (Maxius.nl, InView) were very likely showing a cached pre-2018 version, not a random or hallucinated one.",
+  "section": "§ 11.1. Algemene bepalingen",
+  "paragraphs": [
+   {
+    "text": "Onverminderd de Algemene verordening gegevensbescherming is het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker, alleen toegestaan op voorwaarde dat de betrokken gebruiker:\n\na.\nis voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en\n\nb.\ndaarvoor toestemming heeft verleend.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=1&z=2026-08-15&g=2026-08-15",
+    "number": "1",
+    "points": [
+     "a",
+     "b"
+    ]
+   },
+   {
+    "text": "De in het eerste lid, onder a en b, genoemde vereisten zijn ook van toepassing in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=2&z=2026-08-15&g=2026-08-15",
+    "number": "2",
+    "points": []
+   },
+   {
+    "text": "Het bepaalde in het eerste lid is niet van toepassing indien het de opslag of toegang betreft:\n\na.\nmet als uitsluitend doel de communicatie over een elektronisch communicatienetwerk uit te voeren,\n\nb.\ndie strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren of – mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker – om informatie te verkrijgen over de kwaliteit of effectiviteit van een geleverde dienst van de informatiemaatschappij.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=3&z=2026-08-15&g=2026-08-15",
+    "number": "3",
+    "points": [
+     "a",
+     "b"
+    ]
+   },
+   {
+    "text": "Een handeling als bedoeld in het eerste lid, die tot doel heeft gegevens over het gebruik van verschillende diensten van de informatiemaatschappij door de gebruiker of de abonnee te verzamelen, combineren of analyseren zodat de betrokken gebruiker of abonnee anders behandeld kan worden, wordt vermoed een verwerking van persoonsgegevens te zijn.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=4&z=2026-08-15&g=2026-08-15",
+    "number": "4",
+    "points": []
+   },
+   {
+    "text": "De toegang van de gebruiker tot een dienst van de informatiemaatschappij die wordt geleverd door of namens een krachtens publiekrecht ingestelde rechtspersoon wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=5&z=2026-08-15&g=2026-08-15",
+    "number": "5",
+    "points": []
+   },
+   {
+    "text": "Bij of krachtens algemene maatregel van bestuur kunnen in overeenstemming met Onze Minister van Veiligheid en Justitie nadere regels worden gegeven met betrekking tot de in het eerste lid, onder a en b, genoemde vereisten en de in het derde lid genoemde uitzonderingen.",
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&lid=6&z=2026-08-15&g=2026-08-15",
+    "number": "6",
+    "points": []
+   }
   ],
-  "stability_note": "Dit artikel is al vijf keer gewijzigd sinds introductie in 2012, en heeft nog twee geplande wijzigingen alleen al in 2026 (01-07 en 15-08). Dat is een opvallend hoge wijzigingsfrequentie voor een enkel artikel over een periode van 14 jaar, en een sterk signaal voor de bestendigheid-dimensie uit het Staat van de wetgeving-kader. Vergelijk met UAVG, waar de grote wijziging op 2026-09-01 plaatsvond, en de Cbw, die op 2026-08-15 volledig in werking trad, mogelijk relevant om te onderzoeken of deze drie data samenhangen.",
-  "relationships": {
-    "lido_data_included": false,
-    "lido_note": "Nog niet gecontroleerd. Zelfde procedure als bij UAVG en de Cbw: eerst controleren of BWBR0009950 uberhaupt bestaat als Wet-type in LiDO, dan Artikel-type gefilterd op dit BWB id, specifiek zoekend naar het artikelnummer 11.7a in het label of identifier.",
-    "incoming_references_to_this_regulation": {
-      "status": "retrieved_partial_from_wetstechnische_informatie",
-      "note": "Officiele wetstechnische informatie-pagina (geraadpleegd) toont drie expliciete verwijzingen naar dit artikel: Wetboek van Strafvordering, artikelen 126nba, 126uba en 126zpa (bevoegdheden tot onderzoek van telecommunicatie/randapparatuur in strafzaken). Daarnaast verwijzingen naar het hoofdstuk als geheel vanuit de eigen wet (art. 18.3, 18.8, 7.5), de Regeling universele dienstverlening en eindgebruikersbelangen (art. 2.2), en het Besluit doorberekening kosten ACM (art. 8)."
-    },
-    "case_law_citations": {
-      "status": "not_retrieved",
-      "note": "Vereist LiDO."
-    },
-    "outgoing_references": {
-      "status": "retrieved_partial_from_text",
-      "known_references": [
-        "Algemene verordening gegevensbescherming (AVG/GDPR), expliciet genoemd in lid 1",
-        "Richtlijn 2002/58/EG (ePrivacy-richtlijn), artikel 5 lid 3, geimplementeerd door dit artikel als geheel"
-      ]
-    }
+  "element_id": "11745153",
+  "version_id": "25173042",
+  "source_publication": "Stb.2018-247",
+  "dossier_number": "34939"
+ },
+ "version_history": [
+  {
+   "effective_date": "2012-06-05",
+   "event": "Nieuw (introductie van artikel 11.7a in de Telecommunicatiewet)",
+   "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
+   "kamerstukken": "32549",
+   "wti_versie_id": "19410222"
   },
-  "sources": [
-    "https://wetten.overheid.nl/BWBR0009950/2025-09-01/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a/informatie",
-    "https://maxius.nl/telecommunicatiewet/artikel11.7a",
-    "https://www.inview.nl/openCitation/idf7a9f29cc1b347d7939fbeac57e83d08/telecommunicatiewet-artikel-11-7a",
-    "https://zoek.officielebekendmakingen.nl/kst-33902-3.html",
-    "https://www.eerstekamer.nl/wetsvoorstel/33902_wijziging_artikel_11_7a"
-  ],
-  "compiled_on": "2026-09-10"
+  {
+   "effective_date": "2013-01-01",
+   "event": "Wijziging",
+   "source_publication": "Stb. 2012, 235 / Stb. 2012, 236",
+   "kamerstukken": "32549",
+   "wti_versie_id": "19410362"
+  },
+  {
+   "effective_date": "2015-03-11",
+   "event": "Wijziging (o.a. toevoeging derde uitzondering voor cookies met geringe privacygevolgen, na internetconsultatie 'Aanpassing artikel 11.7a')",
+   "source_publication": "Stb. 2015, 100 / Stb. 2015, 101",
+   "kamerstukken": "33902",
+   "wti_versie_id": "22210202"
+  },
+  {
+   "effective_date": "2018-07-28",
+   "event": "Wijziging (terugwerkende kracht t/m 25-05-2018, samenvallend met inwerkingtreding AVG)",
+   "source_publication": "Stb. 2018, 247 / Stb. 2018, 248",
+   "kamerstukken": "34939",
+   "wti_versie_id": "25173042"
+  },
+  {
+   "effective_date": "2025-09-01",
+   "event": "Huidige geldende versie",
+   "effective_until": "2026-06-30",
+   "confirmed_does_not_touch_this_article": "Confirmed 2026-09-19: this is a toestand date for the Telecommunicatiewet as a whole (a 380-article law with dozens of toestanden), not an amendment to article 11.7a specifically. The WTI's own per-article change record (regelingelement label-id 11717424) lists exactly four dates for this article -- 2012-06-05, 2013-01-01, 2015-03-11, 2018-07-28 -- and nothing since. Independently confirmed by versie-id=25173042 being identical across the 2025-09-01, 2026-07-01 and 2026-08-15 toestanden checked directly."
+  },
+  {
+   "effective_date": "2026-07-01",
+   "event": "Geplande wijziging, geldig t/m 14-08-2026",
+   "note": "Nog niet inhoudelijk geverifieerd wat er wijzigt.",
+   "confirmed_does_not_touch_this_article": "Confirmed 2026-09-19: this is a toestand date for the Telecommunicatiewet as a whole (a 380-article law with dozens of toestanden), not an amendment to article 11.7a specifically. The WTI's own per-article change record (regelingelement label-id 11717424) lists exactly four dates for this article -- 2012-06-05, 2013-01-01, 2015-03-11, 2018-07-28 -- and nothing since. Independently confirmed by versie-id=25173042 being identical across the 2025-09-01, 2026-07-01 and 2026-08-15 toestanden checked directly."
+  },
+  {
+   "effective_date": "2026-08-15",
+   "event": "Volgende geplande wijziging na 2026-07-01",
+   "note": "Datum valt samen met de inwerkingtreding van de Cyberbeveiligingswet en de Wwke. Nog niet bevestigd of dit verband houdt met elkaar of toeval is, waard om te verifieren.",
+   "confirmed_does_not_touch_this_article": "Confirmed 2026-09-19: this is a toestand date for the Telecommunicatiewet as a whole (a 380-article law with dozens of toestanden), not an amendment to article 11.7a specifically. The WTI's own per-article change record (regelingelement label-id 11717424) lists exactly four dates for this article -- 2012-06-05, 2013-01-01, 2015-03-11, 2018-07-28 -- and nothing since. Independently confirmed by versie-id=25173042 being identical across the 2025-09-01, 2026-07-01 and 2026-08-15 toestanden checked directly."
+  }
+ ],
+ "stability_note": "CORRECTED 2026-09-19 (see compliance_check; previous version of this note is preserved in stability_note_superseded_2026_09_19 for history, but was based on a law-level/article-level conflation, not a real finding). This article has in fact been stable since 2018-07-28: one substantive amendment in 2015 (adding a third exception) and one in 2018 (aligning with GDPR's entry into force), and none since -- confirmed both by the official XML's own versie-id being unchanged across three toestanden 2025-09-01 through 2026-08-15, and independently by the WTI's own per-article change record listing no date after 2018-07-28. The 2026-07-01 and 2026-08-15 dates that previously drove a 'high amendment frequency' claim are toestand dates for the 380-article Telecommunicatiewet as a whole, triggered by changes elsewhere in the law -- attributing a law-level version event to one specific article was the underlying error. UC-S3 (context.md 6.4) should be corrected on this basis: this article does NOT demonstrate high volatility.",
+ "relationships": {
+  "lido_data_included": false,
+  "lido_note": "Nog niet gecontroleerd. Zelfde procedure als bij UAVG en de Cbw: eerst controleren of BWBR0009950 uberhaupt bestaat als Wet-type in LiDO, dan Artikel-type gefilterd op dit BWB id, specifiek zoekend naar het artikelnummer 11.7a in het label of identifier. NOTE 2026-09-19: still not checked via LiDO itself; the WTI cross-check above is a different, confirmed-reliable source for incoming citations (see docs/adr/0003-wti-primary-citation-source.md) and was used instead for this pass.",
+  "incoming_references_to_this_regulation": {
+   "status": "retrieved_partial_from_wetstechnische_informatie",
+   "note": "Officiele wetstechnische informatie-pagina (geraadpleegd) toont drie expliciete verwijzingen naar dit artikel: Wetboek van Strafvordering, artikelen 126nba, 126uba en 126zpa (bevoegdheden tot onderzoek van telecommunicatie/randapparatuur in strafzaken). Daarnaast verwijzingen naar het hoofdstuk als geheel vanuit de eigen wet (art. 18.3, 18.8, 7.5), de Regeling universele dienstverlening en eindgebruikersbelangen (art. 2.2), en het Besluit doorberekening kosten ACM (art. 8).",
+   "wti_confirmation": "Confirmed directly via the official WTI file (raw/nl/BWBR0009950/2026-08-15/wti.xml): the three Wetboek van Strafvordering citations (126nba, 126uba, 126zpa) are exactly right -- found in the WTI's own verwijzing-door block for this article's regelingelement (label-id 11717424). The other previously-claimed incoming references (this law's own arts. 18.3/18.8/7.5, the Regeling universele dienstverlening, the Besluit doorberekening kosten ACM) were not re-checked against the WTI in this pass -- scope was the three Strafvordering citations and the version history specifically."
+  },
+  "case_law_citations": {
+   "status": "not_retrieved",
+   "note": "Vereist LiDO."
+  },
+  "outgoing_references": {
+   "status": "retrieved_partial_from_text",
+   "known_references": [
+    "Algemene verordening gegevensbescherming (AVG/GDPR), expliciet genoemd in lid 1",
+    "Richtlijn 2002/58/EG (ePrivacy-richtlijn), artikel 5 lid 3, geimplementeerd door dit artikel als geheel"
+   ]
+  }
+ },
+ "sources": [
+  "https://wetten.overheid.nl/BWBR0009950/2025-09-01/0/Hoofdstuk11/Paragraaf11.1/Artikel11.7a/informatie",
+  "https://maxius.nl/telecommunicatiewet/artikel11.7a",
+  "https://www.inview.nl/openCitation/idf7a9f29cc1b347d7939fbeac57e83d08/telecommunicatiewet-artikel-11-7a",
+  "https://zoek.officielebekendmakingen.nl/kst-33902-3.html",
+  "https://www.eerstekamer.nl/wetsvoorstel/33902_wijziging_artikel_11_7a"
+ ],
+ "compiled_on": "2026-09-10",
+ "stability_note_superseded_2026_09_19": "Dit artikel is al vijf keer gewijzigd sinds introductie in 2012, en heeft nog twee geplande wijzigingen alleen al in 2026 (01-07 en 15-08). Dat is een opvallend hoge wijzigingsfrequentie voor een enkel artikel over een periode van 14 jaar, en een sterk signaal voor de bestendigheid-dimensie uit het Staat van de wetgeving-kader. Vergelijk met UAVG, waar de grote wijziging op 2026-09-01 plaatsvond, en de Cbw, die op 2026-08-15 volledig in werking trad, mogelijk relevant om te onderzoeken of deze drie data samenhangen.",
+ "compliance_check": {
+  "checked_on": "2026-09-19",
+  "result": "text_fixed_stability_note_corrected",
+  "method": "Fetched the official BWB toestand XML for the full Telecommunicatiewet (380 articles) directly via pipeline/acquire.py + pipeline/parse.py -- the fetch that previously broke partway through Chapter 4 at a 150,000-token budget completed in a single request as raw XML (2.0 MB). Also fetched and cross-checked the official WTI file directly.",
+  "text_finding": "The reconstructed text was genuinely wrong for the current law, missing lid 4-6 entirely and differing in wording in leden 1 and 3 -- but not randomly: it matches the law's own 2015-2018 version almost exactly (see target_provision.reconstruction_discrepancy_explained). Replaced with the verified current text (all 6 leden), text_fidelity now official_xml.",
+  "stability_note_finding": "The 'five amendments, two more in 2026' claim was a level-of-granularity error: those 2026 dates are toestand dates for the whole 380-article law, not amendments to this specific article. Confirmed via two independent checks (versie-id stability across toestanden; the WTI's own per-article change record) that this article has not changed since 2018-07-28. See stability_note for the correction and architecture_and_implementation_strategy.md section 0.4 for the original discovery of this error.",
+  "this_was_the_most_urgent_open_item": "context.md section 3.1B flagged this dataset as actively unreliable and the single most urgent open item in the whole project. Resolved."
+ }
 }
