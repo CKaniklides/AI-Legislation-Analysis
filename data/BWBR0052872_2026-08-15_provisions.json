@@ -580,7 +580,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "5",
@@ -603,7 +604,95 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": "entiteiten die domeinnaamregistratiediensten verlenen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is van toepassing op die entiteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien zij hun hoofdvestiging of vertegenwoordiger in Nederland hebben"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': 'Het bepaalde bij of krachtens deze wet'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is het bepaalde bij of krachtens de artikelen 42, 60 en 61 van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Onverminderd het eerste, derde en vierde lid'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "essentiële entiteiten en belangrijke entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is het bepaalde bij of krachtens deze wet met betrekking tot essentiële entiteiten en belangrijke entiteiten van toepassing op de volgende entiteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien zij hun hoofdvestiging of vertegenwoordiger in Nederland hebben en hun diensten verlenen of hun activiteiten verrichten in Nederland of een andere lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'In afwijking van het eerste lid'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "DEFERENCE",
+    "addressee": "die aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien zij hun diensten in Nederland aanbieden",
+    "action": "is het bepaalde bij of krachtens deze wet met betrekking tot essentiële entiteiten en belangrijke entiteiten die aanbieders van openbare elektronische communicatienetwerken of aanbieders van openbare elektronische communicatiediensten zijn, van toepassing op die aanbieders",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien zij hun diensten in Nederland aanbieden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'In afwijking van het eerste lid'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -688,7 +777,38 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "Deze wet",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "is niet van toepassing op:",
+    "recipient_body": [
+     "het Ministerie van Defensie",
+     "de inlichtingen- en veiligheidsdiensten, bedoeld in de Wet op de inlichtingen- en veiligheidsdiensten 2017",
+     "het openbaar ministerie",
+     "de politie",
+     "de veiligheidsregio’s, bedoeld in artikel 9 van de Wet veiligheidsregio’s",
+     "indien van toepassing, de andere bij algemene maatregel van bestuur aangewezen overheidsinstanties die in hoofdzaak activiteiten uitvoeren op het gebied van nationale veiligheid, openbare veiligheid, defensie of rechtshandhaving, met inbegrip van het voorkomen, onderzoeken, opsporen en vervolgen van strafbare feiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van artikel 96",
+     "indien van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'met uitzondering van artikel\\xa096'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -817,7 +937,30 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "Deze wet",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op de entiteiten die zijn uitgezonderd van de Verordening (EU) 2022/2554 op grond van artikel 2, vierde lid, van die verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'op grond van artikel\\xa02, vierde lid, van die verordening'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 27,
    "xref_intra_instrument": 0,
@@ -908,7 +1051,28 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': 'artikel\\xa03, vierde lid, van de bijlage bij Aanbeveling 2003/361/EG niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -993,7 +1157,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -1013,7 +1178,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -1060,7 +1226,32 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister die het aangaat",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan worden aangewezen als essentiële entiteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "16 januari 2023"
+    ],
+    "conditions": [
+     "op grond van de Wet beveiliging netwerk- en informatiesystemen is aangewezen als aanbieder van een essentiële dienst"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'na overleg met Onze Minister'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 45,
    "xref_intra_instrument": 0,
@@ -1136,7 +1327,31 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister van Onderwijs, Cultuur en Wetenschap",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan een instelling voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek als essentiële entiteit worden aangewezen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Bij regeling of besluit",
+     "na overleg met Onze Minister"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -1230,7 +1445,30 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is artikel 3, vierde lid, van de bijlage bij de Aanbeveling 2003/361/EG niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Ten aanzien van het bepaalde in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'artikel\\xa03, vierde lid, van de bijlage bij de Aanbeveling 2003/361/EG niet van toepassing'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -1308,7 +1546,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -1327,7 +1566,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -1494,26 +1734,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
-   },
-   {
-    "number": "1",
-    "deontic": "DEFINITION",
-    "addressee": "De bevoegde autoriteit",
-    "addressee_type": "COMPETENT_AUTHORITY",
-    "trigger_event": null,
-    "action": "is voor de entiteiten in de sectoren en subsectoren, genoemd in bijlage 1 en bijlage 2 van deze wet:",
-    "recipient_body": [],
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "voor de entiteiten in de sectoren en subsectoren, genoemd in bijlage 1 en bijlage 2 van deze wet"
-    ],
-    "deference": null,
-    "extraction_confidence": 0.99,
-    "extraction_model": "gpt-5.6-luna",
-    "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -1532,7 +1754,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "4",
@@ -1552,7 +1775,96 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "paragraph_index": 3
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": "De bevoegde autoriteit, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten, van een op grond van artikel 6, eerste lid, van de Wet weerbaarheid kritieke entiteiten aangewezen kritieke entiteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is tevens de bevoegde autoriteit in de zin van deze wet voor die entiteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "van een op grond van artikel 6, eerste lid, van de Wet weerbaarheid kritieke entiteiten aangewezen kritieke entiteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': 'bedoeld in artikel\\xa08 van de Wet weerbaarheid kritieke entiteiten'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "het zorgen voor de bestuursrechtelijke handhaving van het bepaalde bij of krachtens deze wet ten aanzien van essentiële entiteiten, belangrijke entiteiten, entiteiten die domeinnaamregistratiediensten verlenen en leden van het bestuur van essentiële entiteiten en belangrijke entiteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "DEFINITION",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is voor de entiteiten in de sectoren en subsectoren, genoemd in bijlage 1 en bijlage 2 van deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de entiteiten in de sectoren en subsectoren, genoemd in bijlage 1 en bijlage 2 van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
     "human_verified": false
+   },
+   {
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is voor de entiteiten in de sectoren en subsectoren, genoemd in bijlage 1 en bijlage 2 van deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "genoemd in bijlage 1 en bijlage 2 van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -1674,7 +1986,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "2",
@@ -1691,7 +2004,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "5",
@@ -1715,7 +2029,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "1",
@@ -1736,7 +2051,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "7",
@@ -1753,7 +2069,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 6
    },
    {
     "number": "3",
@@ -1776,7 +2093,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "4",
@@ -1795,7 +2113,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    }
   ],
   "features": {
@@ -1883,7 +2202,31 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt een CSIRT aangewezen als de coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Bij of krachtens algemene maatregel van bestuur"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on []; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -1930,7 +2273,28 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de cybercrisisbeheerautoriteit, bedoeld in artikel 9, eerste lid, van de NIS2-richtlijn, en heeft in die hoedanigheid de taken die zijn opgenomen in het nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons, genoemd in artikel 20.",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'de taken die zijn opgenomen in het nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons, genoemd in artikel\\xa020'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 37,
    "xref_intra_instrument": 0,
@@ -1994,7 +2358,79 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister respectievelijk Onze Minister die het aangaat",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In het kader van de nationale cyberbeveiligingsstrategie",
+    "action": "stelt Onze Minister respectievelijk Onze Minister die het aangaat beleid vast over de in artikel 7, tweede lid, van de NIS2-richtlijn genoemde onderwerpen die onder zijn beleidsverantwoordelijkheid vallen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die onder zijn beleidsverantwoordelijkheid vallen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'in artikel\\xa07, tweede lid, van de NIS2-richtlijn genoemde onderwerpen'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "beoordeelt in overeenstemming met Onze Ministers die het aangaan de nationale cyberbeveiligingsstrategie regelmatig en ten minste om de vijf jaar, op basis van kernprestatie-indicatoren",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste om de vijf jaar"
+    },
+    "thresholds": [
+     "ten minste om de vijf jaar"
+    ],
+    "conditions": [
+     "op basis van kernprestatie-indicatoren"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'in overeenstemming met Onze Ministers die het aangaan; in overeenstemming met Onze Minister die het aangaat'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "stelt in overeenstemming met Onze Ministers die het aangaan een nationale cyberbeveiligingsstrategie als bedoeld in artikel 7, eerste lid, van de NIS2-richtlijn vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 105,
    "xref_intra_instrument": 0,
@@ -2172,7 +2608,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -2191,7 +2628,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -2212,7 +2650,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "5",
@@ -2231,7 +2670,55 @@
     "extraction_confidence": 0.96,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "zij",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer de entiteit overweegt welke maatregelen als bedoeld in het derde lid, onderdeel d, passend zijn",
+    "action": "houdt zij rekening met",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'als bedoeld in het derde lid, onderdeel d'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "De voordracht voor een krachtens het vijfde lid vast te stellen algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+    "action": "wordt niet eerder gedaan dan vier weken",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "vier weken"
+    },
+    "thresholds": [],
+    "conditions": [
+     "krachtens het vijfde lid vast te stellen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deadline_raw']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2324,7 +2811,73 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "essentiële entiteiten en belangrijke entiteiten die aanbieders van openbare elektronische communicatienetwerken of aanbieders van openbare elektronische communicatiediensten zijn",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Het eerste lid'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister die het aangaat",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In het kader van de beoordeling van de noodzaak, bedoeld in het eerste lid",
+    "action": "beoordeelt Onze Minister die het aangaat in elk geval of beheersmaatregelen mogelijk en realiseerbaar zijn die de nationale veiligheidsrisico’s die in het geding zijn voldoende beschermen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de nationale veiligheidsrisico’s die in het geding zijn voldoende beschermen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in het eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "een essentiële entiteit of een belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien dat naar het oordeel van Onze Minister die het aangaat, ter uitwerking van artikel 21, noodzakelijk is om risico’s voor de beveiliging van netwerk- en informatiesystemen die de nationale veiligheid raken te beheersen of om incidenten die de nationale veiligheid raken te voorkomen",
+    "action": "uitsluitend gebruik te maken van producten of diensten van anderen dan de daarbij door Onze Minister die het aangaat genoemde partij",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in de daarbij aangewezen onderdelen van haar netwerk- en informatiesystemen",
+     "die: a. een staat, entiteit of persoon is waarvan bekend is of waarvoor gronden zijn te vermoeden dat deze de intentie heeft om de beveiliging van de netwerk- en informatiesystemen van de essentiële entiteit of belangrijke entiteit aan te tasten of om incidenten bij de essentiële entiteit of belangrijke entiteit te veroorzaken; of b. nauwe banden heeft met of onder invloed staat van een staat, entiteit of persoon als bedoeld in onderdeel a, of een entiteit of persoon is ten aanzien van wie er gronden zijn om dergelijke banden of invloed te vermoeden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'ter uitwerking van artikel\\xa021'}, pass2={'deontic': 'OBLIGATION', 'deference': 'in overeenstemming met Onze Minister'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2404,7 +2957,30 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien sectorspecifieke rechtshandelingen van de Europese Unie voorschrijven dat een essentiële entiteit of belangrijke entiteit risicobeheersmaatregelen op het gebied van cyberbeveiliging neemt",
+    "action": "is artikel 21 niet van toepassing op die entiteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien deze verplichtingen ten minste gelijkwaardig zijn aan de verplichtingen, bedoeld in artikel 21"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'artikel 21'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Sectorspecifieke rechtshandelingen van de Europese Unie die gelijkwaardige verplichtingen voorschrijven, prevaleren boven artikel 21.'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2483,7 +3059,30 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer en voor zover een entiteit optreedt als verlener van vertrouwensdiensten die niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Het eerste lid is niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2636,7 +3235,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -2653,7 +3253,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "6",
@@ -2670,7 +3271,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "12",
@@ -2689,7 +3291,207 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 11
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "houdt de kennis en vaardigheden, bedoeld in het tweede lid, aantoonbaar actueel",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in het tweede lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "de inwerkingtreding van het tweede lid",
+    "action": "voldoet binnen twee jaar na de inwerkingtreding van het tweede lid aan het bepaalde in het tweede lid",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van het tweede lid",
+     "raw": "binnen twee jaar na de inwerkingtreding van het tweede lid"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'aan het bepaalde in het tweede lid'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "bezit ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit een certificaat, waaruit de deelname blijkt aan een training die de onderwerpen, bedoeld in het tweede lid, behandelt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Met het oog op het aantonen van de kennis en vaardigheden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "number": "10",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "iedere vennoot van die vennootschap onder firma",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien de essentiële entiteit of belangrijke entiteit een vennootschap onder firma is",
+    "action": "is het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing op iedere vennoot van die vennootschap onder firma",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de essentiële entiteit of belangrijke entiteit een vennootschap onder firma is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'DEFERENCE', 'deference': 'het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "7",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de natuurlijke persoon of natuurlijke personen die namens die rechtspersoon zitting heeft of hebben in het bestuur van de essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "OTHER",
+    "trigger_event": "Indien een rechtspersoon het bestuur of een lid van het bestuur van een essentiële entiteit of belangrijke entiteit is",
+    "action": "is het bepaalde bij of krachtens het tweede tot en met zesde lid van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien een rechtspersoon het bestuur of een lid van het bestuur van een essentiële entiteit of belangrijke entiteit is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'het bepaalde bij of krachtens het tweede tot en met zesde lid'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "13",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien artikel 21 niet van toepassing is op die entiteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'artikel\\xa021'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "9",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "iedere maat van die maatschap",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien de essentiële entiteit of belangrijke entiteit een maatschap is",
+    "action": "is het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing op iedere maat van die maatschap",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de essentiële entiteit of belangrijke entiteit een maatschap is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'het bepaalde bij of krachtens het eerste tot en met zesde lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "11",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de beherende vennoten van die commanditaire vennootschap",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien de essentiële entiteit of belangrijke entiteit een commanditaire vennootschap is",
+    "action": "is het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing op de beherende vennoten van die commanditaire vennootschap",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de essentiële entiteit of belangrijke entiteit een commanditaire vennootschap is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'DEFERENCE', 'deference': 'het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "8",
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "de uitvoerende bestuurders van die essentiële entiteit of belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien de essentiële entiteit of belangrijke entiteit toepassing heeft gegeven aan de artikelen 129a of 239a van Boek 2 van het Burgerlijk Wetboek",
+    "action": "is het bepaalde bij of krachtens het eerste tot en met zesde lid uitsluitend van toepassing op de uitvoerende bestuurders van die essentiële entiteit of belangrijke entiteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de essentiële entiteit of belangrijke entiteit toepassing heeft gegeven aan de artikelen 129a of 239a van Boek 2 van het Burgerlijk Wetboek"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2782,7 +3584,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -2802,7 +3605,8 @@
     "extraction_confidence": 0.94,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -2821,7 +3625,8 @@
     "extracted_on": "2026-09-21",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'overeenkomstig de artikelen 26 tot en met 29'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'overeenkomstig de artikelen 26 tot en met 29'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding.",
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -2842,7 +3647,8 @@
     "extracted_on": "2026-09-21",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'bij of krachtens algemene maatregel van bestuur'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'bij of krachtens algemene maatregel van bestuur'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding.",
+    "paragraph_index": 3
    }
   ],
   "features": {
@@ -2925,7 +3731,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-22",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -2956,7 +3763,8 @@
     "extracted_on": "2026-09-22",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in artikel 27, eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in artikel 27, eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding.",
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -3034,8 +3842,8 @@
      "haar bevoegde autoriteit"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": 72,
+     "unit": "hour",
      "from": null,
      "raw": "onverwijld of, indien dat niet mogelijk is, binnen 72 uur"
     },
@@ -3051,7 +3859,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -3065,8 +3874,8 @@
      "haar bevoegde autoriteit"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": 24,
+     "unit": "hour",
      "from": null,
      "raw": "onverwijld of, indien dat niet mogelijk is, binnen 24 uur"
     },
@@ -3080,7 +3889,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -3239,7 +4049,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -3263,7 +4074,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -3335,8 +4147,8 @@
      "de ontvangers van haar diensten"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": null,
      "raw": "onverwijld"
     },
@@ -3348,7 +4160,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -3361,8 +4174,8 @@
      "de ontvangers van haar diensten"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": null,
      "raw": "onverwijld"
     },
@@ -3374,7 +4187,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -3455,7 +4269,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -3477,7 +4292,8 @@
     "extracted_on": "2026-09-21",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'de verplichtingen uit de artikelen 25 tot en met 30 niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': 'sectorspecifieke rechtshandelingen van de Europese Unie'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'de verplichtingen uit de artikelen 25 tot en met 30 niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': 'sectorspecifieke rechtshandelingen van de Europese Unie'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding.",
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -3556,7 +4372,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -3577,7 +4394,8 @@
     "extracted_on": "2026-09-21",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid is niet van toepassing'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid is niet van toepassing'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Het eerste lid'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding.",
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -3662,7 +4480,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -3681,7 +4500,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -3706,7 +4526,8 @@
     "extraction_confidence": 0.93,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -3792,7 +4613,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -3809,7 +4631,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -3828,7 +4651,8 @@
     "extraction_confidence": 0.96,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    }
   ],
   "features": {
@@ -3977,7 +4801,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -3999,7 +4824,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -4012,8 +4838,8 @@
      "de meldende entiteit"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": 24,
+     "unit": "hour",
      "from": "ontvangst van de vroegtijdige waarschuwing",
      "raw": "onverwijld en zo mogelijk binnen 24 uur na ontvangst van de vroegtijdige waarschuwing"
     },
@@ -4027,7 +4853,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -4264,7 +5091,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -4286,7 +5114,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "5",
@@ -4310,7 +5139,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "3",
@@ -4329,7 +5159,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "2",
@@ -4343,8 +5174,8 @@
      "Enisa"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": null,
      "raw": "onverwijld"
     },
@@ -4360,7 +5191,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -4440,7 +5272,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -4461,7 +5294,8 @@
     "extraction_confidence": 0.96,
     "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-20",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -4628,7 +5462,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -4647,7 +5482,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -4737,7 +5573,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -4756,7 +5593,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    }
   ],
   "features": {
@@ -4849,7 +5687,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -4868,7 +5707,8 @@
     "extraction_confidence": 0.97,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "2",
@@ -4897,7 +5737,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -4957,7 +5798,52 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister die het aangaat",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan bij regeling of besluit, in overeenstemming met Onze Minister, een essentiële entiteit, een belangrijke entiteit of entiteit die domeinnaamregistratiediensten verleent ontheffen van de verplichtingen, bedoeld in artikel 44",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de desbetreffende entiteit uitsluitend activiteiten verricht op het gebied van nationale veiligheid, openbare veiligheid, defensie of rechtshandhaving of uitsluitend diensten verleent aan een overheidsinstantie als bedoeld in artikel 5, eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'in overeenstemming met Onze Minister'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer en voor zover een entiteit optreedt als verlener van vertrouwensdiensten die niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "vertrouwensdiensten die niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Het eerste lid is niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 110,
    "xref_intra_instrument": 0,
@@ -5138,7 +6024,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "5",
@@ -5167,7 +6054,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "2",
@@ -5188,7 +6076,63 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de volgende entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor zover zij een essentiële entiteit of belangrijke entiteit zijn",
+    "action": "verstrekken de volgende entiteiten aan het centrale contactpunt de informatie, bedoeld in het derde lid van dit artikel, middels het daarvoor opgezette mechanisme",
+    "recipient_body": [
+     "het centrale contactpunt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover zij een essentiële entiteit of belangrijke entiteit zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in artikel 27, eerste lid, van de NIS2-richtlijn'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De entiteiten, bedoeld in het eerste en tweede lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien het eerste, tweede en derde lid na 17 januari 2025 in werking treden",
+    "action": "verstrekken zij de informatie, bedoeld in het derde lid, binnen één maand na de inwerkingtreding van die leden",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van die leden",
+     "raw": "binnen één maand na de inwerkingtreding van die leden"
+    },
+    "thresholds": [
+     "17 januari 2025",
+     "één maand"
+    ],
+    "conditions": [
+     "Indien het eerste, tweede en derde lid na 17 januari 2025 in werking treden",
+     "Indien een entiteit na de inwerkingtreding van het eerste, tweede en derde lid kwalificeert als een entiteit, bedoeld in het eerste en tweede lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -5267,7 +6211,30 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer en voor zover een entiteit optreedt als verlener van vertrouwensdiensten die niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die niet uitsluitend worden gebruikt binnen systemen die gesloten zijn als gevolg van een wettelijke regeling of een overeenkomst tussen een bepaalde groep deelnemers"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Het eerste lid is niet van toepassing'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -5374,7 +6341,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -5391,7 +6359,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -5408,7 +6377,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -5419,8 +6389,8 @@
     "action": "maken de domeinnaamregistratiegegevens, die geen persoonsgegevens zijn, onverwijld na de registratie van een domeinnaam openbaar",
     "recipient_body": [],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": "van een domeinnaam",
      "raw": "onverwijld na de registratie van een domeinnaam"
     },
@@ -5432,7 +6402,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "5",
@@ -5449,7 +6420,30 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister van Economische Zaken",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen nadere regels worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Bij regeling van Onze Minister van Economische Zaken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'DEFERENCE', 'deference': 'Bij regeling van Onze Minister van Economische Zaken'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -5539,7 +6533,82 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De registers voor topleveldomeinnamen en de entiteiten die domeinnaamregistratiediensten verlenen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "ontvangst van het verzoek",
+    "action": "beantwoorden een verzoek om toegang als bedoeld in het eerste lid",
+    "recipient_body": [],
+    "deadline": {
+     "value": 72,
+     "unit": "hour",
+     "from": "ontvangst van het verzoek",
+     "raw": "binnen 72 uur na ontvangst van het verzoek"
+    },
+    "thresholds": [
+     "72 uur"
+    ],
+    "conditions": [
+     "indien dat niet mogelijk is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'als bedoeld in het eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister van Economische Zaken",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen nadere regels worden gesteld ten aanzien van het bepaalde in dit artikel",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'DEFERENCE', 'deference': 'Bij regeling van Onze Minister van Economische Zaken'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "addressee": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt",
+    "action": "verleent op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt, toegang tot specifieke gegevens over de registratie van domeinnamen",
+    "recipient_body": [
+     "een legitieme partij die daar om verzoekt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on []; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -5681,7 +6750,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -5702,7 +6772,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "2",
@@ -5732,7 +6803,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -5847,7 +6919,33 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "wisselen relevante informatie uit",
+    "recipient_body": [
+     "essentiële entiteiten",
+     "belangrijke entiteiten",
+     "entiteiten die domeinnaamregistratiediensten verlenen",
+     "gemeenschappen van entiteiten als bedoeld in artikel 29 van de NIS2-richtlijn"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'als bedoeld in artikel\\xa029 van de NIS2-richtlijn'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 27,
    "xref_intra_instrument": 0,
@@ -5923,7 +7021,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -5945,7 +7044,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -6112,7 +7212,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -6131,7 +7232,78 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "De betrokken bevoegde autoriteit, bedoeld in artikel 15",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan de betrokken bevoegde autoriteit, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten, verzoeken om toezichts- en handhavingsbevoegdheden uit te oefenen of uit te laten oefenen voor de naleving van het bepaalde bij of krachtens de Wet weerbaarheid kritieke entiteiten door een essentiële entiteit die tevens kritieke entiteit als bedoeld in de Wet weerbaarheid kritieke entiteiten is",
+    "recipient_body": [
+     "de betrokken bevoegde autoriteit, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "door een essentiële entiteit die tevens kritieke entiteit als bedoeld in de Wet weerbaarheid kritieke entiteiten is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PERMISSION', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "voor zover in die uitvoeringshandelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+    "action": "is van overeenkomstige toepassing op het toezicht op de naleving van en de handhaving van het bepaalde in de op grond van artikel 13, zesde lid, van de CER-richtlijn vastgestelde uitvoeringshandelingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "artikel 13, zesde lid"
+    ],
+    "conditions": [
+     "in die uitvoeringshandelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het vierde lid is van overeenkomstige toepassing'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Het vierde lid'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+    "action": "is van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Het tweede lid is van overeenkomstige toepassing'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Het tweede lid is van overeenkomstige toepassing op de beoordeling van de naleving van en de uitoefening van toezichts- en handhavingsbevoegdheden met betrekking tot het bepaalde in de op grond van de artikelen\\xa021, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel\\xa024, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -6246,7 +7418,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -6267,7 +7440,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -6363,7 +7537,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -6384,7 +7559,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "3",
@@ -6408,7 +7584,66 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Wanneer de bevoegde autoriteit bij toezicht of handhaving er kennis van krijgt dat een overtreding van de artikelen 21, 25, 26, 27, 28, 29 of 30 door een essentiële entiteit of belangrijke entiteit een inbreuk in verband met persoonsgegevens als bedoeld in artikel 4, onderdeel 12, van de Algemene verordening gegevensbescherming kan inhouden, die op grond van artikel 33 van die verordening moet worden gemeld",
+    "action": "stelt zij de Autoriteit persoonsgegevens dan wel de bevoegde toezichthoudende autoriteiten, bedoeld in de artikelen 55 en 56 van de Algemene verordening gegevensbescherming daarvan onverwijld in kennis",
+    "recipient_body": [
+     "de Autoriteit persoonsgegevens",
+     "de bevoegde toezichthoudende autoriteiten, bedoeld in de artikelen 55 en 56 van de Algemene verordening gegevensbescherming"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": "qualitative_urgent",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [
+     "artikelen 21, 25, 26, 27, 28, 29 of 30",
+     "artikel 4, onderdeel 12",
+     "artikel 33",
+     "artikelen 55 en 56"
+    ],
+    "conditions": [
+     "door een essentiële entiteit of belangrijke entiteit",
+     "die op grond van artikel 33 van die verordening moet worden gemeld"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'op grond van artikel 33 van die verordening moet worden gemeld'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "een overtreding van het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+    "action": "zijn van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'DEFINITION', 'deference': 'Het tweede, derde en vierde lid zijn van overeenkomstige toepassing'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Het tweede, derde en vierde lid zijn van overeenkomstige toepassing'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -6621,7 +7856,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -6647,7 +7883,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "6",
@@ -6664,7 +7901,109 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "naar aanleiding van een gemotiveerd verzoek om bijstand van een bevoegde autoriteit van een andere lidstaat van de Europese Unie die ten aanzien van de betrokken entiteit krachtens artikel 26, eerste lid, onderdeel b, van de NIS2-richtlijn jurisdictie heeft",
+    "action": "toezichts- en handhavingsmaatregelen nemen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen de grenzen van dat verzoek"
+    },
+    "thresholds": [],
+    "conditions": [
+     "wanneer die entiteit in Nederland diensten verleent of waarvan een netwerk- en informatiesysteem zich in Nederland bevindt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'Onverminderd het eerste lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voordat de bevoegde autoriteit het verzoek afwijst",
+    "action": "raadpleegt zij de betrokken bevoegde autoriteit van de andere lidstaat van de Europese Unie over de voorgenomen afwijzing en, wanneer de lidstaat daartoe verzoekt, de Europese Commissie en Enisa",
+    "recipient_body": [
+     "de betrokken bevoegde autoriteit van de andere lidstaat van de Europese Unie",
+     "de Europese Commissie",
+     "Enisa"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer de lidstaat daartoe verzoekt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In het kader van de samenwerking",
+    "action": "informeert de bevoegde autoriteit het centrale contactpunt over de door haar genomen toezichts- en handhavingsmaatregelen met betrekking tot een entiteit als bedoeld in het eerste lid",
+    "recipient_body": [
+     "het centrale contactpunt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met betrekking tot een entiteit als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.94,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "addressee": "het centrale contactpunt",
+    "addressee_type": "OTHER",
+    "trigger_event": "waarna",
+    "action": "informeert over die genomen toezichts- en handhavingsmaatregelen",
+    "recipient_body": [
+     "de betrokken bevoegde autoriteit van een andere lidstaat van de Europese Unie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.91,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -6771,7 +8110,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -6790,7 +8130,32 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "wanneer die entiteit haar hoofdvestiging heeft in die andere lidstaat",
+    "action": "gemotiveerd verzoeken om bijstand ten aanzien van de volgende entiteiten",
+    "recipient_body": [
+     "een bevoegde autoriteit van een andere lidstaat van de Europese Unie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer die entiteit haar hoofdvestiging heeft in die andere lidstaat"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'Onverminderd het eerste lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -6874,7 +8239,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -6893,7 +8259,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -6910,7 +8277,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    }
   ],
   "features": {
@@ -7035,7 +8403,52 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "De verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid door de bevoegde autoriteit",
+    "action": "geschiedt alleen voor zover de verwerking van deze gegevens noodzakelijk is voor de uitoefening van haar taken op grond van deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen voor zover de verwerking van deze gegevens noodzakelijk is voor de uitoefening van haar taken op grond van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "het CSIRT",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid door het CSIRT",
+    "action": "geschiedt alleen voor zover de verwerking van deze gegevens noodzakelijk is voor de uitoefening van haar taken op grond van artikel 16, tweede lid, onderdelen a tot en met e",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen voor zover de verwerking van deze gegevens noodzakelijk is voor de uitoefening van haar taken op grond van artikel 16, tweede lid, onderdelen a tot en met e"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 135,
    "xref_intra_instrument": 0,
@@ -7124,7 +8537,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -7150,7 +8564,28 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "worden regels gesteld over de periode gedurende welke de persoonsgegevens die bij of krachtens deze wet zijn verwerkt, worden bewaard",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'Bij of krachtens algemene maatregel van bestuur worden regels gesteld over de periode gedurende welke de persoonsgegevens die bij of krachtens deze wet zijn verwerkt, worden bewaard.'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -7236,7 +8671,30 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "De Wet open overheid",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "vertrouwelijke gegevens als bedoeld in het eerste lid",
+    "action": "is niet van toepassing op vertrouwelijke gegevens als bedoeld in het eerste lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "behalve voor zover die gegevens milieu-informatie inhouden als bedoeld in artikel 19.1a van de Wet milieubeheer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'De eerste volzin geldt ook als de gegevens bij een ander overheidsorgaan berusten na verstrekking op grond van dit artikel.'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -7389,7 +8847,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -7410,7 +8869,50 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de toezichthouders",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Ten behoeve van het verlenen van de bijstand, bedoeld in het tweede lid",
+    "action": "hun toezichthoudende bevoegdheden toepassen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'bedoeld in het tweede lid'}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De ambtenaren, bedoeld in het eerste lid",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zijn tevens belast met het verlenen van bijstand als bedoeld in artikel 60 aan een bevoegde autoriteit van een andere lidstaat van de Europese Unie",
+    "recipient_body": [
+     "een bevoegde autoriteit van een andere lidstaat van de Europese Unie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'als bedoeld in artikel\\xa060'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -7457,7 +8959,30 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de toepassing van de artikelen 70, 72, eerste lid, onderdeel c, 73 tot en met 78, 80, 83, eerste lid, onderdeel c, 84 tot en met 87 en 89 tot en met 93",
+    "action": "rekening met de omstandigheden van elk afzonderlijk geval, alsmede",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Onverminderd artikel 3:4, tweede lid, van de Algemene wet bestuursrecht"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'Onverminderd artikel\\xa03:4, tweede lid, van de Algemene wet bestuursrecht'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 241,
    "xref_intra_instrument": 0,
@@ -7546,7 +9071,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "4",
@@ -7563,7 +9089,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "1",
@@ -7581,6 +9108,52 @@
     "deference": null,
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "addressee": "De controlefunctionaris",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het monitoren van de naleving van het bepaalde bij of krachtens de artikelen 21 en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie, door de betrokken essentiële entiteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.94,
+    "extraction_model": "gpt-5.6-terra",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "addressee": "De controlefunctionaris",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het informeren van de bevoegde autoriteit en het bestuur van de betrokken essentiële entiteit over de naleving van het bepaalde bij of krachtens de artikelen 21 en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie, door de betrokken essentiële entiteit",
+    "recipient_body": [
+     "de bevoegde autoriteit",
+     "het bestuur van de betrokken essentiële entiteit"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.94,
+    "extraction_model": "gpt-5.6-terra",
     "extracted_on": "2026-09-23",
     "human_verified": false
    }
@@ -7658,7 +9231,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -7675,7 +9249,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -7773,7 +9348,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -7790,7 +9366,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "5",
@@ -7807,7 +9384,50 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Het onderzoek",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt uitgevoerd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'door de bevoegde autoriteit voorgeschreven wijze'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De essentiële entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "draagt de kosten van het onderzoek",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de kosten naar het oordeel van de bevoegde autoriteit redelijkerwijs moeten worden gedragen door de bevoegde autoriteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'naar het oordeel van de bevoegde autoriteit'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -7854,7 +9474,30 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "een door de entiteit begane overtreding van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+    "action": "onderdelen van een door de entiteit begane overtreding van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie, openbaar te maken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'op een door de bevoegde autoriteit bepaalde wijze'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 98,
    "xref_intra_instrument": 0,
@@ -8083,7 +9726,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "1",
@@ -8102,7 +9746,31 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "nadat zij alle in het derde lid genoemde maatregelen heeft opgelegd aan de betrokken entiteit en deze maatregelen niet ertoe hebben geleid dat de overtreding is beëindigd",
+    "action": "kan het besluit, bedoeld in het eerste lid, alleen nemen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "nadat zij alle in het derde lid genoemde maatregelen heeft opgelegd aan de betrokken entiteit en deze maatregelen niet ertoe hebben geleid dat de overtreding is beëindigd",
+     "nadat zij één of meer van de in het derde lid genoemde maatregelen heeft opgelegd aan de betrokken entiteit, de opgelegde maatregel of maatregelen niet ertoe hebben geleid dat de overtreding is beëindigd en het opleggen van de andere in het derde lid genoemde maatregel of maatregelen naar het oordeel van de bevoegde autoriteit niet ertoe zullen leiden dat de betrokken entiteit de overtreding beëindigt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'naar het oordeel van de bevoegde autoriteit'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -8259,7 +9927,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -8285,7 +9954,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "4",
@@ -8304,7 +9974,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "1",
@@ -8325,7 +9996,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -8499,7 +10171,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "5",
@@ -8516,7 +10189,101 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "in geval van overtreding van het bepaalde bij of krachtens de artikelen 21, 21a en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+    "action": "De boete bedraagt ten hoogste",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "€ 10.000.000,–",
+     "2% van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de essentiële entiteit behoort",
+     "€ 1.000.000,–"
+    ],
+    "conditions": [
+     "indien het laatstbedoelde bedrag hoger is",
+     "in geval van een andere overtreding"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de overtreding, bedoeld in het tweede lid",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFINITION', 'deference': 'Artikel 184 van het Wetboek van Strafrecht'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van overtreding van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+    "action": "aan een essentiële entiteit een bestuurlijke boete opleggen",
+    "recipient_body": [
+     "een essentiële entiteit"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+     "tezamen met of na het geven van een waarschuwing aan de betrokken entiteit over de overtreding",
+     "tezamen met of na de toepassing van de artikelen 38, 70, 72, eerste lid, onderdeel c, 73, 74, 75, 76, 77 of 78"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen\\xa021, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel\\xa024, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van overtreding van artikel 5:20, eerste lid, van de Algemene wet bestuursrecht",
+    "action": "kan tevens aan een essentiële entiteit een bestuurlijke boete opleggen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -8563,7 +10330,31 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de bevoegde autoriteit het bewijs, de aanwijzing of informatie heeft van een mogelijke overtreding door een belangrijke entiteit van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+    "action": "zijn alleen van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover de bevoegde autoriteit het bewijs, de aanwijzing of informatie heeft van een mogelijke overtreding door een belangrijke entiteit van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 101,
    "xref_intra_instrument": 0,
@@ -8639,7 +10430,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -8656,7 +10448,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -8754,7 +10547,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "5",
@@ -8771,7 +10565,79 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "Het onderzoek wordt uitgevoerd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'op een door de bevoegde autoriteit voorgeschreven wijze'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "een belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De bevoegde autoriteit kan een belangrijke entiteit verplichten om",
+    "action": "de resultaten van dat onderzoek binnen een bij het besluit gestelde redelijke termijn te verstrekken aan de bevoegde autoriteit",
+    "recipient_body": [
+     "de bevoegde autoriteit"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een bij het besluit gestelde redelijke termijn"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deadline_raw', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De belangrijke entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "draagt de kosten van het onderzoek",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de kosten naar het oordeel van de bevoegde autoriteit redelijkerwijs moeten worden gedragen door de bevoegde autoriteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'naar het oordeel van de bevoegde autoriteit'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -8883,7 +10749,35 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "een belangrijke entiteit een bindende aanwijzing geven om binnen een daarbij gestelde redelijke termijn de daarin omschreven handelingen te verrichten of de daarin omschreven maatregelen te nemen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een daarbij gestelde redelijke termijn"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'ter naleving van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 103,
    "xref_intra_instrument": 0,
@@ -9054,7 +10948,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "4",
@@ -9073,7 +10968,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "1",
@@ -9096,7 +10992,75 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van overtreding van artikel 5:20, eerste lid, van de Algemene wet bestuursrecht",
+    "action": "kan tevens aan een belangrijke entiteit een bestuurlijke boete opleggen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de overtreding, bedoeld in het tweede lid",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Artikel 184 van het Wetboek van Strafrecht'}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "in geval van overtreding van het bepaalde bij of krachtens de artikelen 21, 21a en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+    "action": "De boete bedraagt ten hoogste",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "€ 7.000.000,–",
+     "1,4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de belangrijke entiteit behoort",
+     "€ 1.000.000,–"
+    ],
+    "conditions": [
+     "indien het laatstbedoelde bedrag hoger is",
+     "voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -9399,7 +11363,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -9419,7 +11384,70 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt opgeschort",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "totdat het besluit onherroepelijk is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Verzet",
+    "action": "schorst de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de overtreding, bedoeld in het eerste lid, onderdeel b",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Artikel 184 van het Wetboek van Strafrecht'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -9585,7 +11613,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -9604,7 +11633,68 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "het besluit tot oplegging van de boete",
+    "action": "wordt opgeschort",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "Verzet",
+    "addressee_type": "OTHER",
+    "trigger_event": "Verzet",
+    "action": "schorst de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de overtreding, bedoeld in het eerste lid, onderdeel b",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Artikel 184 van het Wetboek van Strafrecht'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -9687,7 +11777,35 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de inwerkingtreding van deze wet",
+    "action": "zendt binnen twee jaar na de inwerkingtreding van deze wet aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk, en vervolgens elke drie jaar",
+    "recipient_body": [
+     "de Staten-Generaal"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van deze wet",
+     "raw": "binnen twee jaar na de inwerkingtreding van deze wet"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -9779,7 +11897,32 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Indien de melding ziet op een inbreuk op de beveiliging van netwerk- en informatiesystemen die aanzienlijke gevolgen kan hebben voor de continuïteit van de door de melder verleende dienst als bedoeld in artikel 10, eerste lid, onderdeel b, van de Wet beveiliging netwerk- en informatiesystemen",
+    "action": "zendt Onze Minister de melding door aan de bevoegde autoriteit",
+    "recipient_body": [
+     "de bevoegde autoriteit"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien voor de inwerkingtreding van artikel 106 een melding als bedoeld in artikel 10 of 13 van de Wet beveiliging netwerk- en informatiesystemen is gedaan, en artikel 25 met ingang van de dag van de inwerkingtreding van laatstgenoemd artikel van toepassing is op de melder"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'als bedoeld in artikel 10, eerste lid, onderdeel b, van de Wet beveiliging netwerk- en informatiesystemen'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -9872,7 +12015,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "4",
@@ -9892,7 +12036,58 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met dien verstande dat onder «CSIRT» wordt verstaan: Onze Minister of de andere instantie, bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFERENCE', 'deference': 'Artikel 16, tweede lid, aanhef en onderdeel e, en derde lid'}, pass2={'deontic': 'DEFERENCE', 'deference': 'Artikel\\xa016, tweede lid, aanhef en onderdeel\\xa0e, en derde lid, is van overeenkomstige toepassing, met dien verstande dat onder «CSIRT» wordt verstaan: Onze Minister of de andere instantie, bedoeld in het eerste lid.'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "De organisaties, niet zijnde essentiële entiteiten of belangrijke entiteiten, die op de dag voorafgaand aan de inwerkingtreding van artikel 106 vitale aanbieder dan wel andere aanbieder die onderdeel is van de Rijksoverheid zijn als bedoeld in artikel 3, eerste lid, van de Wet beveiliging netwerk- en informatiesystemen, zoals die wet luidde op de dag voorafgaand aan de inwerkingtreding van artikel 106",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "bijstand bij het treffen van maatregelen om de continuïteit van hun diensten te waarborgen of te herstellen",
+    "recipient_body": [
+     "Onze Minister",
+     "een andere in afwijking hiervan bij of krachtens algemene maatregel van bestuur hiervoor aan te wijzen instantie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "niet zijnde essentiële entiteiten of belangrijke entiteiten",
+     "op de dag voorafgaand aan de inwerkingtreding van artikel 106",
+     "als bedoeld in artikel 3, eerste lid, van de Wet beveiliging netwerk- en informatiesystemen",
+     "zoals die wet luidde op de dag voorafgaand aan de inwerkingtreding van artikel 106"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PERMISSION', 'deference': 'in afwijking hiervan'}, pass2={'deontic': 'PERMISSION', 'deference': 'in afwijking hiervan bij of krachtens algemene maatregel van bestuur hiervoor aan te wijzen instantie'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -10143,7 +12338,28 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'NONE', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 8,
    "xref_intra_instrument": 0,
@@ -10188,7 +12404,28 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'NONE', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 6,
    "xref_intra_instrument": 0,
@@ -10618,7 +12855,28 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De Wet beveiliging netwerk- en informatiesystemen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt ingetrokken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 8,
    "xref_intra_instrument": 0,
@@ -10663,7 +12921,35 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "treedt in werking",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "op een bij koninklijk besluit te bepalen tijdstip"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor de verschillende artikelen of onderdelen daarvan verschillend kan worden vastgesteld"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': 'bij koninklijk besluit'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 25,
    "xref_intra_instrument": 0,

@@ -1,74 +1,2544 @@
 [
  {
   "instrument_id": "BWBR0052872",
-  "article": "26",
-  "paragraph_number": "2",
-  "unit_text": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid:\n\na.\ngeeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
+  "article": "43",
+  "paragraph_number": "1",
+  "unit_text": "In het belang van de goede uitvoering van deze wet beheert Onze Minister een nationaal register van essentiële entiteiten, belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen.",
   "reason": "validation_failed",
   "pass1": null,
-  "pass2": {
-   "deontic": "OBLIGATION",
-   "addressee": "de entiteit",
-   "addressee_type": "REGULATED_ENTITY",
-   "trigger_event": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid",
-   "action": "geeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
-   "recipient_body": [],
-   "deadline_raw": null,
-   "thresholds": [],
-   "conditions": [],
-   "deference": null,
-   "extraction_confidence": 0.97
-  },
-  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0051796",
+  "article": "3",
+  "paragraph_number": "2",
+  "unit_text": "Als bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "19",
+  "paragraph_number": "6",
+  "unit_text": "De collegiale toetsingen omvatten fysieke of virtuele bezoeken ter plaatse en informatie-uitwisselingen elders. In overeenstemming met het beginsel van goede samenwerking verstrekt de aan een collegiale toetsing onderworpen lidstaat de aangewezen cyberbeveiligingsdeskundigen de informatie die nodig is voor de beoordeling, onverminderd het Unie- of nationale recht inzake de bescherming van vertrouwelijke of gerubriceerde informatie en de bescherming van essentiële staatsfuncties, zoals de nationale veiligheid. De samenwerkingsgroep ontwikkelt in samenwerking met de Commissie en Enisa passende gedragscodes ter ondersteuning van de werkmethoden van de aangewezen cyberbeveiligingsdeskundigen. Alle informatie die via de collegiale toetsing wordt verkregen, wordt uitsluitend voor dat doel gebruikt. De cyberbeveiligingsdeskundigen die aan de collegiale toetsing deelnemen, maken geen gevoelige of vertrouwelijke informatie die zij uit hoofde van die collegiale toetsing hebben verkregen, bekend aan derden.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "40",
+  "paragraph_number": null,
+  "unit_text": "Uiterlijk op 17 oktober 2027 en vervolgens om de 36 maanden evalueert de Commissie de werking van deze richtlijn en brengt zij daarover verslag uit aan het Europees Parlement en aan de Raad. In het verslag wordt met name de relevantie van de omvang van de betrokken entiteiten, en de sectoren, subsectoren en types van de in de bijlagen I en II bedoelde entiteiten voor het functioneren van de economie en de samenleving met betrekking tot cyberbeveiliging beoordeeld. Daartoe en teneinde de strategische en operationele samenwerking verder te bevorderen, houdt de Commissie rekening met de verslagen van de samenwerkingsgroep en het CSIRT-netwerk over de opgedane ervaring op strategisch en operationeel niveau. Het verslag gaat zo nodig vergezeld van een wetgevingsvoorstel.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
  },
  {
   "instrument_id": "32022R2554",
-  "article": "22",
-  "paragraph_number": "1",
-  "unit_text": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555 , bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht. Onverminderd de ontvangen feedback van toezichthouders blijven financiële entiteiten volledig verantwoordelijk voor de behandeling en de gevolgen van de ICT-gerelateerde incidenten die op grond van artikel 19, lid 1, zijn gerapporteerd.",
+  "article": "27",
+  "paragraph_number": "2",
+  "unit_text": "Bij het inzetten van interne testers zorgen de financiële entiteiten ervoor dat, naast de vereisten van lid 1, de volgende voorwaarden worden vervuld:\n\na) dergelijk inzetten van interne testers is goedgekeurd door de relevante bevoegde autoriteit of de overeenkomstig artikel 26, leden 9 en 10, aangewezen enige overheidsinstantie;\n\nb) de relevante bevoegde autoriteit heeft geverifieerd dat de financiële entiteit voldoende middelen heeft ingezet en heeft ervoor gezorgd dat belangenconflicten gedurende de hele ontwerp- en uitvoeringsfase van de test worden voorkomen, en\n\nc) de verstrekker van inlichtingen over dreigingen is extern ten opzichte van de financiële entiteit.",
   "reason": "validation_failed",
   "pass1": null,
-  "pass2": {
-   "deontic": "COMPETENCE",
-   "addressee": "de bevoegde autoriteit",
-   "addressee_type": "COMPETENT_AUTHORITY",
-   "trigger_event": "na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen",
-   "action": "bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht",
-   "recipient_body": [
-    "de financiële entiteit"
-   ],
-   "deadline_raw": "tijdig",
-   "thresholds": [],
-   "conditions": [
-    "waar mogelijk"
-   ],
-   "deference": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555",
-   "extraction_confidence": 0.9
-  },
-  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+  "pass2": null
  },
  {
-  "instrument_id": "BWBR0051796-art3",
-  "article": "3",
-  "paragraph_number": "5",
-  "unit_text": "In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.",
+  "instrument_id": "32024R1689",
+  "article": "30",
+  "paragraph_number": "3",
+  "unit_text": "Bij de in lid 2 van dit artikel bedoelde aanmelding worden de conformiteitsbeoordelingsactiviteiten, de conformiteitsbeoordelingsmodule(s), de soorten AI-systemen in kwestie en de desbetreffende bekwaamheidsattestatie uitvoerig beschreven. Indien een aanmelding niet gebaseerd is op een accreditatiecertificaat als bedoeld in artikel 29, lid 2, verschaft de aanmeldende autoriteit de Commissie en de andere lidstaten de bewijsstukken waaruit de bekwaamheid van de conformiteitsbeoordelingsinstantie blijkt, evenals de regeling die waarborgt dat de instantie regelmatig wordt gecontroleerd en zal blijven voldoen aan de eisen van artikel 31.",
   "reason": "validation_failed",
-  "pass1": {
-   "deontic": "DEFERENCE",
-   "addressee": null,
-   "addressee_type": null,
-   "trigger_event": null,
-   "action": null,
-   "recipient_body": [],
-   "deadline_raw": null,
-   "thresholds": [],
-   "conditions": [
-    "voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft"
-   ],
-   "deference": "In afwijking van het eerste lid",
-   "extraction_confidence": 0.98
-  },
-  "pass2": null,
-  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "77",
+  "paragraph_number": "2",
+  "unit_text": "Uiterlijk op 2 november 2024 stelt elke lidstaat de in lid 1 bedoelde overheidsinstanties of -organen vast en maakt de lijst openbaar. De lidstaten stellen de Commissie en de andere lidstaten in kennis van de lijst en houden deze up-to-date.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "75",
+  "paragraph_number": "3",
+  "unit_text": "Indien een markttoezichtautoriteit haar onderzoek naar het AI-systeem met een hoog risico niet kan afronden omdat zij geen toegang heeft tot bepaalde informatie met betrekking tot het AI-model voor algemene doeleinden, hoewel zij al het nodige heeft gedaan om die informatie te verkrijgen, kan zij een met redenen omkleed verzoek indienen bij het AI-bureau, waarmee de toegang tot die informatie wordt afgedwongen. In dat geval verstrekt het AI-bureau de verzoekende autoriteit onverwijld, en in ieder geval binnen dertig dagen, alle informatie die het relevant acht om vast te stellen of een AI-systeem met een hoog risico non-conform is. Markttoezichtautoriteiten waarborgen dat de door hen verkregen informatie overeenkomstig artikel 78 van deze verordening vertrouwelijk wordt behandeld. De procedure van hoofdstuk VI van Verordening (EU) 2019/1020 is van overeenkomstige toepassing.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "112",
+  "paragraph_number": "5",
+  "unit_text": "Uiterlijk op 2 augustus 2028 evalueert de Commissie de werking van het AI-bureau, de vraag of het Bureau voldoende bevoegdheden heeft gekregen om zijn taken uit te voeren en of het voor de correcte uitvoering en handhaving van deze verordening relevant en noodzakelijk zou zijn om het AI-bureau en zijn handhavingsbevoegdheden op te schalen en zijn middelen uit te breiden. De Commissie dient dit evaluatieverslag in bij het Europees Parlement en bij de raad.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "9",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Lid 1 is niet van toepassing wanneer aan een van de onderstaande voorwaarden is voldaan:\n\na) de betrokkene heeft uitdrukkelijke toestemming gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden, behalve indien in Unierecht of lidstatelijk recht is bepaald dat het in lid 1 genoemde verbod niet door de betrokkene kan worden opgeheven;\n\nb) de verwerking is noodzakelijk met het oog op de uitvoering van verplichtingen en de uitoefening van specifieke rechten van de verwerkingsverantwoordelijke of de betrokkene op het gebied van het arbeidsrecht en het socialezekerheids- en socialebeschermingsrecht, voor zover zulks is toegestaan bij Unierecht of lidstatelijk recht of bij een collectieve overeenkomst op grond van lidstatelijk recht die passende waarborgen voor de grondrechten en de fundamentele belangen van de betrokkene biedt;\n\nc) de verwerking is noodzakelijk ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven;\n\nd) de verwerking wordt verricht door een stichting, een vereniging of een andere instantie zonder winstoogmerk die op politiek, levensbeschouwelijk, godsdienstig of vakbondsgebied werkzaam is, in het kader van haar gerechtvaardigde activiteiten en met passende waarborgen, mits de verwerking uitsluitend betrekking heeft op de leden of de voormalige leden van de instantie of op personen die in verband met haar doeleinden regelmatig contact met haar onderhouden, en de persoonsgegevens niet zonder de toestemming van de betrokkenen buiten die instantie worden verstrekt;\n\ne) de verwerking heeft betrekking op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt;\n\nf) de verwerking is noodzakelijk voor de instelling, uitoefening of onderbouwing van een rechtsvordering of wanneer gerechten handelen in het kader van hun rechtsbevoegdheid;\n\ng) de verwerking is noodzakelijk om redenen van zwaarwegend algemeen belang, op grond van Unierecht of lidstatelijk recht, waarbij de evenredigheid met het nagestreefde doel wordt gewaarborgd, de wezenlijke inhoud van het recht op bescherming van persoonsgegevens wordt geëerbiedigd en passende en specifieke maatregelen worden getroffen ter bescherming van de grondrechten en de fundamentele belangen van de betrokkene;\n\nh) de verwerking is noodzakelijk voor doeleinden van preventieve of arbeidsgeneeskunde, voor de beoordeling van de arbeidsgeschiktheid van de werknemer, medische diagnosen, het verstrekken van gezondheidszorg of sociale diensten of behandelingen dan wel het beheren van gezondheidszorgstelsels en -diensten of sociale stelsels en diensten, op grond van Unierecht of lidstatelijk recht, of uit hoofde van een overeenkomst met een gezondheidswerker en behoudens de in lid 3 genoemde voorwaarden en waarborgen;\n\ni) de verwerking is noodzakelijk om redenen van algemeen belang op het gebied van de volksgezondheid, zoals bescherming tegen ernstige grensoverschrijdende gevaren voor de gezondheid of het waarborgen van hoge normen inzake kwaliteit en veiligheid van de gezondheidszorg en van geneesmiddelen of medische hulpmiddelen, op grond van Unierecht of lidstatelijk recht waarin passende en specifieke maatregelen zijn opgenomen ter bescherming van de rechten en vrijheden van de betrokkene, met name van het beroepsgeheim;\n\nj) de verwerking is noodzakelijk met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden overeenkomstig artikel 89, lid 1, op grond van Unierecht of lidstatelijk recht, waarbij de evenredigheid met het nagestreefde doel wordt gewaarborgd, de wezenlijke inhoud van het recht op bescherming van persoonsgegevens wordt geëerbiedigd en passende en specifieke maatregelen worden getroffen ter bescherming van de grondrechten en de belangen van de betrokkene.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "PROHIBITION",
+    "addressee": "de verwerking",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer aan een van de onderstaande voorwaarden is voldaan"
+    ],
+    "deference": "Lid 1",
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": []
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "6",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "De verwerking is alleen rechtmatig indien en voor zover aan ten minste een van de onderstaande voorwaarden is voldaan:\n\na) de betrokkene heeft toestemming gegeven voor de verwerking van zijn persoonsgegevens voor een of meer specifieke doeleinden;\n\nb) de verwerking is noodzakelijk voor de uitvoering van een overeenkomst waarbij de betrokkene partij is, of om op verzoek van de betrokkene vóór de sluiting van een overeenkomst maatregelen te nemen;\n\nc) de verwerking is noodzakelijk om te voldoen aan een wettelijke verplichting die op de verwerkingsverantwoordelijke rust;\n\nd) de verwerking is noodzakelijk om de vitale belangen van de betrokkene of van een andere natuurlijke persoon te beschermen;\n\ne) de verwerking is noodzakelijk voor de vervulling van een taak van algemeen belang of van een taak in het kader van de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is opgedragen;\n\nf) de verwerking is noodzakelijk voor de behartiging van de gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde, behalve wanneer de belangen of de grondrechten en de fundamentele vrijheden van de betrokkene die tot bescherming van persoonsgegevens nopen, zwaarder wegen dan die belangen, met name wanneer de betrokkene een kind is.\n\nDe eerste alinea, punt f), geldt niet voor de verwerking door overheidsinstanties in het kader van de uitoefening van hun taken.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "De verwerking is alleen rechtmatig indien en voor zover aan ten minste een van de onderstaande voorwaarden is voldaan",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste een van de onderstaande voorwaarden"
+    ],
+    "conditions": [
+     "De eerste alinea, punt f), geldt niet voor de verwerking door overheidsinstanties in het kader van de uitoefening van hun taken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": []
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "6",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "De rechtsgrond voor de in lid 1, punten c) en e), bedoelde verwerking moet worden vastgesteld bij:\n\na) Unierecht; of\n\nb) lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is.\n\nHet doel van de verwerking wordt in die rechtsgrond vastgesteld of is met betrekking tot de in lid 1, punt e), bedoelde verwerking noodzakelijk voor de vervulling van een taak van algemeen belang of voor de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is verleend. Die rechtsgrond kan specifieke bepalingen bevatten om de toepassing van de regels van deze verordening aan te passen, met inbegrip van de algemene voorwaarden inzake de rechtmatigheid van verwerking door de verwerkingsverantwoordelijke; de types verwerkte gegevens; de betrokkenen; de entiteiten waaraan en de doeleinden waarvoor de persoonsgegevens mogen worden verstrekt; de doelbinding; de opslagperioden; en de verwerkingsactiviteiten en -procedures, waaronder maatregelen om te zorgen voor een rechtmatige en behoorlijke verwerking, zoals die voor andere specifieke verwerkingssituaties als bedoeld in hoofdstuk IX. Het Unierecht of het lidstatelijke recht moet beantwoorden aan een doelstelling van algemeen belang en moet evenredig zijn met het nagestreefde gerechtvaardigde doel.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De rechtsgrond voor de in lid 1, punten c) en e), bedoelde verwerking",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet worden vastgesteld bij",
+    "recipient_body": [
+     "Unierecht",
+     "lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "de in lid 1, punten c) en e), bedoelde verwerking"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het doel van de verwerking",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt in die rechtsgrond vastgesteld",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.93
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het Unierecht of het lidstatelijke recht",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet beantwoorden aan een doelstelling van algemeen belang",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het Unierecht of het lidstatelijke recht",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet evenredig zijn met het nagestreefde gerechtvaardigde doel",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De rechtsgrond",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet worden vastgesteld",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de in lid 1, punten c) en e), bedoelde verwerking",
+     "bij: a) Unierecht; of b) lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het doel van de verwerking",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt in die rechtsgrond vastgesteld",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "of is met betrekking tot de in lid 1, punt e), bedoelde verwerking noodzakelijk voor de vervulling van een taak van algemeen belang of voor de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is verleend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.94
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "Die rechtsgrond",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "kan specifieke bepalingen bevatten",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "om de toepassing van de regels van deze verordening aan te passen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het Unierecht of het lidstatelijke recht",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet beantwoorden aan een doelstelling van algemeen belang",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "een doelstelling van algemeen belang"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Het Unierecht of het lidstatelijke recht",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "moet evenredig zijn met het nagestreefde gerechtvaardigde doel",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "het nagestreefde gerechtvaardigde doel"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ]
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "14",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "De leden 1 tot en met 4 zijn niet van toepassing wanneer en voor zover:\n\na) de betrokkene reeds over de informatie beschikt;\n\nb) het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden, behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen, of voor zover de in lid 1 van dit artikel bedoelde verplichting de verwezenlijking van de doeleinden van die verwerking onmogelijk dreigt te maken of ernstig in het gedrang dreigt te brengen. In dergelijke gevallen neemt de verwerkingsverantwoordelijke passende maatregelen om de rechten, de vrijheden en de gerechtvaardigde belangen van de betrokkene te beschermen, waaronder het openbaar maken van de informatie;\n\nc) het verkrijgen of verstrekken van de gegevens uitdrukkelijk is voorgeschreven bij Unie- of lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is en dat recht voorziet in passende maatregelen om de gerechtvaardigde belangen van de betrokkene te beschermen; of\n\nd) de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim in het kader van Unierecht of lidstatelijke recht, waaronder een statutaire geheimhoudingsplicht.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "wanneer en voor zover",
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "de betrokkene reeds over de informatie beschikt",
+     "het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen",
+     "het verkrijgen of verstrekken van de gegevens uitdrukkelijk is voorgeschreven bij Unie- of lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is en dat recht voorziet in passende maatregelen om de gerechtvaardigde belangen van de betrokkene te beschermen",
+     "de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim in het kader van Unierecht of lidstatelijke recht, waaronder een statutaire geheimhoudingsplicht"
+    ],
+    "deference": "behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "In dergelijke gevallen",
+    "action": "neemt de verwerkingsverantwoordelijke passende maatregelen om de rechten, de vrijheden en de gerechtvaardigde belangen van de betrokkene te beschermen",
+    "recipient_body": [
+     "de betrokkene"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden, behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen, of voor zover de in lid 1 van dit artikel bedoelde verplichting de verwezenlijking van de doeleinden van die verwerking onmogelijk dreigt te maken of ernstig in het gedrang dreigt te brengen"
+    ],
+    "deference": "behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "In dergelijke gevallen",
+    "action": "het openbaar maken van de informatie",
+    "recipient_body": [
+     "de betrokkene"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden, behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen, of voor zover de in lid 1 van dit artikel bedoelde verplichting de verwezenlijking van de doeleinden van die verwerking onmogelijk dreigt te maken of ernstig in het gedrang dreigt te brengen"
+    ],
+    "deference": "behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen",
+    "extraction_confidence": 0.9
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "wanneer en voor zover",
+    "action": "De leden 1 tot en met 4 zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "de betrokkene reeds over de informatie beschikt",
+     "het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen",
+     "het verkrijgen of verstrekken van de gegevens uitdrukkelijk is voorgeschreven bij Unie- of lidstatelijk recht dat op de verwerkingsverantwoordelijke van toepassing is en dat recht voorziet in passende maatregelen om de gerechtvaardigde belangen van de betrokkene te beschermen",
+     "de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim in het kader van Unierecht of lidstatelijke recht, waaronder een statutaire geheimhoudingsplicht"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "In dergelijke gevallen",
+    "action": "neemt de verwerkingsverantwoordelijke passende maatregelen om de rechten, de vrijheden en de gerechtvaardigde belangen van de betrokkene te beschermen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden, behoudens de in artikel 89, lid 1, bedoelde voorwaarden en waarborgen, of voor zover de in lid 1 van dit artikel bedoelde verplichting de verwezenlijking van de doeleinden van die verwerking onmogelijk dreigt te maken of ernstig in het gedrang dreigt te brengen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   }
+  ]
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "28",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "De verwerking door een verwerker wordt geregeld in een overeenkomst of andere rechtshandeling krachtens het Unierecht of het lidstatelijke recht die de verwerker ten aanzien van de verwerkingsverantwoordelijke bindt, en waarin het onderwerp en de duur van de verwerking, de aard en het doel van de verwerking, het soort persoonsgegevens en de categorieën van betrokkenen, en de rechten en verplichtingen van de verwerkingsverantwoordelijke worden omschreven. Die overeenkomst of andere rechtshandeling bepaalt met name dat de verwerker:\n\na) de persoonsgegevens uitsluitend verwerkt op basis van schriftelijke instructies van de verwerkingsverantwoordelijke, onder meer met betrekking tot doorgiften van persoonsgegevens aan een derde land of een internationale organisatie, tenzij een op de verwerker van toepassing zijnde Unierechtelijke of lidstaatrechtelijke bepaling hem tot verwerking verplicht; in dat geval stelt de verwerker de verwerkingsverantwoordelijke, voorafgaand aan de verwerking, in kennis van dat wettelijk voorschrift, tenzij die wetgeving deze kennisgeving om gewichtige redenen van algemeen belang verbiedt;\n\nb) waarborgt dat de tot het verwerken van de persoonsgegevens gemachtigde personen zich ertoe hebben verbonden vertrouwelijkheid in acht te nemen of door een passende wettelijke verplichting van vertrouwelijkheid zijn gebonden;\n\nc) alle overeenkomstig artikel 32 vereiste maatregelen neemt;\n\nd) aan de in de leden 2 en 4 bedoelde voorwaarden voor het in dienst nemen van een andere verwerker voldoet;\n\ne) rekening houdend met de aard van de verwerking, de verwerkingsverantwoordelijke door middel van passende technische en organisatorische maatregelen, voor zover mogelijk, bijstand verleent bij het vervullen van diens plicht om verzoeken om uitoefening van de in hoofdstuk III vastgestelde rechten van de betrokkene te beantwoorden;\n\nf) rekening houdend met de aard van de verwerking en de hem ter beschikking staande informatie de verwerkingsverantwoordelijke bijstand verleent bij het doen nakomen van de verplichtingen uit hoofde van de artikelen 32 tot en met 36;\n\ng) na afloop van de verwerkingsdiensten, naargelang de keuze van de verwerkingsverantwoordelijke, alle persoonsgegevens wist of deze aan hem terugbezorgt, en bestaande kopieën verwijdert, tenzij opslag van de persoonsgegevens Unierechtelijk of lidstaatrechtelijk is verplicht;\n\nh) de verwerkingsverantwoordelijke alle informatie ter beschikking stelt die nodig is om de nakoming van de in dit artikel neergelegde verplichtingen aan te tonen en audits, waaronder inspecties, door de verwerkingsverantwoordelijke of een door de verwerkingsverantwoordelijke gemachtigde controleur mogelijk maakt en eraan bijdraagt.\n\nWaar het gaat om de eerste alinea, punt h), stelt de verwerker de verwerkingsverantwoordelijke onmiddellijk in kennis indien naar zijn mening een instructie inbreuk oplevert op deze verordening of op andere Unierechtelijke of lidstaatrechtelijke bepalingen inzake gegevensbescherming.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "12",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Enisa ontwikkelt en onderhoudt, na raadpleging van de samenwerkingsgroep, een Europese kwetsbaarheidsdatabase. Daartoe stelt Enisa de passende informatiesystemen, beleidsmaatregelen en procedures vast en onderhoudt deze, alsook de noodzakelijke technische en organisatorische maatregelen om de veiligheid en integriteit van de Europese kwetsbaarheidsdatabase te waarborgen, met name om entiteiten, ongeacht of zij binnen het toepassingsgebied van deze richtlijn vallen, en hun leveranciers van netwerk- en informatiesystemen, in staat te stellen de in ICT-producten of ICT-diensten aanwezige algemeen bekende kwetsbaarheden op een vrijwillige basis bekend te maken en te registreren. Alle belanghebbenden krijgen toegang tot de informatie over de kwetsbaarheden die in de Europese kwetsbaarheidsdatabase is opgenomen. Die database omvat:\n\na) informatie die de kwetsbaarheid beschrijft;\n\nb) de betrokken ICT-producten of ICT-diensten en de ernst van de kwetsbaarheid in het licht van de omstandigheden waarin deze kan worden uitgebuit;\n\nc) de beschikbaarheid van gerelateerde patches en, bij gebrek aan beschikbare patches, door de bevoegde autoriteiten of de CSIRT’s bepaalde richtsnoeren voor gebruikers van kwetsbare ICT-producten en ICT-diensten over de wijze waarop de risico’s die voortvloeien uit bekendgemaakte kwetsbaarheden kunnen worden beperkt.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "ontwikkelt en onderhoudt, na raadpleging van de samenwerkingsgroep, een Europese kwetsbaarheidsdatabase",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Daartoe",
+    "action": "stelt Enisa de passende informatiesystemen, beleidsmaatregelen en procedures vast en onderhoudt deze, alsook de noodzakelijke technische en organisatorische maatregelen om de veiligheid en integriteit van de Europese kwetsbaarheidsdatabase te waarborgen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ongeacht of zij binnen het toepassingsgebied van deze richtlijn vallen",
+     "op een vrijwillige basis"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "Alle belanghebbenden",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "krijgen toegang tot de informatie over de kwetsbaarheden die in de Europese kwetsbaarheidsdatabase is opgenomen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "ontwikkelt en onderhoudt, na raadpleging van de samenwerkingsgroep, een Europese kwetsbaarheidsdatabase",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "na raadpleging van de samenwerkingsgroep"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Daartoe",
+    "action": "stelt Enisa de passende informatiesystemen, beleidsmaatregelen en procedures vast en onderhoudt deze",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Daartoe",
+    "action": "de noodzakelijke technische en organisatorische maatregelen om de veiligheid en integriteit van de Europese kwetsbaarheidsdatabase te waarborgen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "entiteiten, ongeacht of zij binnen het toepassingsgebied van deze richtlijn vallen, en hun leveranciers van netwerk- en informatiesystemen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "op een vrijwillige basis bekend te maken en te registreren",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "in ICT-producten of ICT-diensten aanwezige algemeen bekende kwetsbaarheden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.94
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Alle belanghebbenden",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "krijgen toegang tot de informatie over de kwetsbaarheden die in de Europese kwetsbaarheidsdatabase is opgenomen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.96
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "11",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "De CSIRT’s voldoen aan de volgende eisen:\n\na) de CSIRT’s garanderen een hoge mate van beschikbaarheid van hun communicatiekanalen door zwakke punten (single points of failure) te voorkomen, en beschikken over diverse middelen waarlangs te allen tijde contact met hen kan worden opgenomen en contact met anderen kan worden opgenomen; ze specificeren communicatiekanalen duidelijk en delen ze mee aan de gebruikersgroep en de samenwerkingspartners;\n\nb) de lokalen en werkruimten van de CSIRT’s en de ondersteunende informatiesystemen bevinden zich op beveiligde locaties;\n\nc) de CSIRT’s worden, met het oog op doeltreffende en efficiënte overdrachten, uitgerust met een adequaat systeem voor het beheren en routeren van verzoeken;\n\nd) de CSIRT’s waarborgen de vertrouwelijkheid en betrouwbaarheid van hun activiteiten;\n\ne) de CSIRT’s beschikken over voldoende personeel om te allen tijde de beschikbaarheid van hun diensten te garanderen, en zij zorgen ervoor dat hun personeel naar behoren wordt opgeleid;\n\nf) de CSIRT’s zijn uitgerust met redundante systemen en reservewerkruimten om de continuïteit van hun diensten te waarborgen.\n\nDe CSIRT’s kunnen deelnemen aan internationale samenwerkingsnetwerken.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "garanderen een hoge mate van beschikbaarheid van hun communicatiekanalen door zwakke punten (single points of failure) te voorkomen, en beschikken over diverse middelen waarlangs te allen tijde contact met hen kan worden opgenomen en contact met anderen kan worden opgenomen; ze specificeren communicatiekanalen duidelijk en delen ze mee aan de gebruikersgroep en de samenwerkingspartners",
+    "recipient_body": [
+     "de gebruikersgroep en de samenwerkingspartners"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de lokalen en werkruimten van de CSIRT’s en de ondersteunende informatiesystemen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "bevinden zich op beveiligde locaties",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "worden, met het oog op doeltreffende en efficiënte overdrachten, uitgerust met een adequaat systeem voor het beheren en routeren van verzoeken",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met het oog op doeltreffende en efficiënte overdrachten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "waarborgen de vertrouwelijkheid en betrouwbaarheid van hun activiteiten",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikken over voldoende personeel om te allen tijde de beschikbaarheid van hun diensten te garanderen, en zij zorgen ervoor dat hun personeel naar behoren wordt opgeleid",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "voldoende personeel"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zijn uitgerust met redundante systemen en reservewerkruimten om de continuïteit van hun diensten te waarborgen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "kunnen deelnemen aan internationale samenwerkingsnetwerken",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voldoen aan de volgende eisen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "garanderen een hoge mate van beschikbaarheid van hun communicatiekanalen door zwakke punten (single points of failure) te voorkomen, en beschikken over diverse middelen waarlangs te allen tijde contact met hen kan worden opgenomen en contact met anderen kan worden opgenomen; ze specificeren communicatiekanalen duidelijk en delen ze mee aan de gebruikersgroep en de samenwerkingspartners",
+    "recipient_body": [
+     "de gebruikersgroep",
+     "de samenwerkingspartners"
+    ],
+    "deadline_raw": "te allen tijde",
+    "thresholds": [
+     "een hoge mate van beschikbaarheid"
+    ],
+    "conditions": [
+     "door zwakke punten (single points of failure) te voorkomen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de lokalen en werkruimten van de CSIRT’s en de ondersteunende informatiesystemen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "bevinden zich op beveiligde locaties",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "worden, met het oog op doeltreffende en efficiënte overdrachten, uitgerust met een adequaat systeem voor het beheren en routeren van verzoeken",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met het oog op doeltreffende en efficiënte overdrachten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "waarborgen de vertrouwelijkheid en betrouwbaarheid van hun activiteiten",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikken over voldoende personeel om te allen tijde de beschikbaarheid van hun diensten te garanderen, en zij zorgen ervoor dat hun personeel naar behoren wordt opgeleid",
+    "recipient_body": [],
+    "deadline_raw": "te allen tijde",
+    "thresholds": [
+     "voldoende personeel"
+    ],
+    "conditions": [
+     "om te allen tijde de beschikbaarheid van hun diensten te garanderen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zijn uitgerust met redundante systemen en reservewerkruimten om de continuïteit van hun diensten te waarborgen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "om de continuïteit van hun diensten te waarborgen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "kunnen deelnemen aan internationale samenwerkingsnetwerken",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "15",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "Het CSIRT-netwerk heeft de volgende taken:\n\na) het uitwisselen van informatie over de capaciteiten van de CSIRT’s;\n\nb) het vergemakkelijken van het delen, overdragen en uitwisselen van technologie en relevante maatregelen, beleidsmaatregelen, instrumenten, processen, beste praktijken, en kaders tussen de CSIRT’s;\n\nc) het uitwisselen van relevante informatie over incidenten, bijna-incidenten, cyberdreigingen, risico’s en kwetsbaarheden;\n\nd) het uitwisselen van informatie over publicaties en aanbevelingen op het gebied van cyberbeveiliging;\n\ne) het zorgen voor interoperabiliteit met betrekking tot specificaties en protocollen voor informatie-uitwisseling;\n\nf) op verzoek van een lid van het CSIRT-netwerk dat mogelijkerwijs gevolgen ondervindt van een incident, het uitwisselen en bespreken van informatie over dat incident en de daarmee samenhangende cyberdreigingen, risico’s en kwetsbaarheden;\n\ng) op verzoek van een lid van het CSIRT-netwerk, het bespreken en waar mogelijk uitvoeren van een gecoördineerde respons op een incident dat binnen de jurisdictie van die lidstaat is vastgesteld;\n\nh) het verlenen van bijstand aan de lidstaten bij de aanpak van grensoverschrijdende incidenten uit hoofde van deze richtlijn;\n\ni) het samenwerken, uitwisselen van beste praktijken en verlenen van bijstand aan de CSIRT’s die op grond van artikel 12, lid 1, zijn aangewezen als coördinatoren, waar het gaat om het beheer van de gecoördineerde openbaarmaking van kwetsbaarheden die aanzienlijke gevolgen kunnen hebben voor entiteiten in meer dan één lidstaat;\n\nj) het bespreken en identificeren van verdere vormen van operationele samenwerking, ook met betrekking tot:\n\ni) categorieën van cyberdreigingen en -incidenten;\n\nii) vroegtijdige waarschuwingen;\n\niii) wederzijdse bijstand;\n\niv) beginselen en regelingen voor coördinatie als antwoord op grensoverschrijdende risico’s en incidenten;\n\nv) op verzoek van een lidstaat, bijdragen aan het in artikel 9, lid 4, bedoelde nationale plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons;\n\nk) het informeren van de samenwerkingsgroep over zijn activiteiten en over de verdere vormen van operationele samenwerking, besproken op grond van punt j), en zo nodig het verzoeken om richtsnoeren in dat verband;\n\nl) het opmaken van de balans van cyberbeveiligingsoefeningen, ook van de door Enisa georganiseerde oefeningen;\n\nm) op verzoek van een individueel CSIRT, het bespreken van de capaciteiten en de paraatheid van dat CSIRT;\n\nn) het samenwerken en uitwisselen van informatie met centra voor beveiligingsoperaties (“Security Operations Centres” — SOC’s) op regionaal en Unieniveau om het gemeenschappelijk situationeel bewustzijn inzake incidenten en cyberdreigingen in de hele Unie te verbeteren;\n\no) indien van toepassing, het bespreken van de in artikel 19, lid 9, bedoelde collegiale-toetsingsverslagen;\n\np) het verstrekken van richtsnoeren om de convergentie van de operationele praktijken te vergemakkelijken waar het gaat om de toepassing van de bepalingen van dit artikel inzake operationele samenwerking.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het uitwisselen van informatie over de capaciteiten van de CSIRT’s",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het vergemakkelijken van het delen, overdragen en uitwisselen van technologie en relevante maatregelen, beleidsmaatregelen, instrumenten, processen, beste praktijken, en kaders tussen de CSIRT’s",
+    "recipient_body": [
+     "de CSIRT’s"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het uitwisselen van relevante informatie over incidenten, bijna-incidenten, cyberdreigingen, risico’s en kwetsbaarheden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het uitwisselen van informatie over publicaties en aanbevelingen op het gebied van cyberbeveiliging",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het zorgen voor interoperabiliteit met betrekking tot specificaties en protocollen voor informatie-uitwisseling",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": "op verzoek van een lid van het CSIRT-netwerk dat mogelijkerwijs gevolgen ondervindt van een incident",
+    "action": "het uitwisselen en bespreken van informatie over dat incident en de daarmee samenhangende cyberdreigingen, risico’s en kwetsbaarheden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "dat mogelijkerwijs gevolgen ondervindt van een incident"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": "op verzoek van een lid van het CSIRT-netwerk",
+    "action": "het bespreken en waar mogelijk uitvoeren van een gecoördineerde respons op een incident dat binnen de jurisdictie van die lidstaat is vastgesteld",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "dat binnen de jurisdictie van die lidstaat is vastgesteld"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het verlenen van bijstand aan de lidstaten bij de aanpak van grensoverschrijdende incidenten uit hoofde van deze richtlijn",
+    "recipient_body": [
+     "de lidstaten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "uit hoofde van deze richtlijn",
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het samenwerken, uitwisselen van beste praktijken en verlenen van bijstand aan de CSIRT’s die op grond van artikel 12, lid 1, zijn aangewezen als coördinatoren, waar het gaat om het beheer van de gecoördineerde openbaarmaking van kwetsbaarheden die aanzienlijke gevolgen kunnen hebben voor entiteiten in meer dan één lidstaat",
+    "recipient_body": [
+     "de CSIRT’s die op grond van artikel 12, lid 1, zijn aangewezen als coördinatoren"
+    ],
+    "deadline_raw": null,
+    "thresholds": [
+     "meer dan één lidstaat"
+    ],
+    "conditions": [
+     "waar het gaat om het beheer van de gecoördineerde openbaarmaking van kwetsbaarheden die aanzienlijke gevolgen kunnen hebben voor entiteiten in meer dan één lidstaat"
+    ],
+    "deference": "op grond van artikel 12, lid 1",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het bespreken en identificeren van verdere vormen van operationele samenwerking",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ook met betrekking tot: categorieën van cyberdreigingen en -incidenten; vroegtijdige waarschuwingen; wederzijdse bijstand; beginselen en regelingen voor coördinatie als antwoord op grensoverschrijdende risico’s en incidenten; op verzoek van een lidstaat, bijdragen aan het in artikel 9, lid 4, bedoelde nationale plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": "op verzoek van een lidstaat",
+    "action": "bijdragen aan het in artikel 9, lid 4, bedoelde nationale plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "in artikel 9, lid 4, bedoelde",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het informeren van de samenwerkingsgroep over zijn activiteiten en over de verdere vormen van operationele samenwerking, besproken op grond van punt j), en zo nodig het verzoeken om richtsnoeren in dat verband",
+    "recipient_body": [
+     "de samenwerkingsgroep"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "zo nodig"
+    ],
+    "deference": "op grond van punt j)",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het opmaken van de balans van cyberbeveiligingsoefeningen, ook van de door Enisa georganiseerde oefeningen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": "op verzoek van een individueel CSIRT",
+    "action": "het bespreken van de capaciteiten en de paraatheid van dat CSIRT",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het samenwerken en uitwisselen van informatie met centra voor beveiligingsoperaties (“Security Operations Centres” — SOC’s) op regionaal en Unieniveau om het gemeenschappelijk situationeel bewustzijn inzake incidenten en cyberdreigingen in de hele Unie te verbeteren",
+    "recipient_body": [
+     "centra voor beveiligingsoperaties (“Security Operations Centres” — SOC’s) op regionaal en Unieniveau"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "op regionaal en Unieniveau",
+     "in de hele Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het bespreken van de in artikel 19, lid 9, bedoelde collegiale-toetsingsverslagen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "deference": "in artikel 19, lid 9, bedoelde",
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "het verstrekken van richtsnoeren om de convergentie van de operationele praktijken te vergemakkelijken waar het gaat om de toepassing van de bepalingen van dit artikel inzake operationele samenwerking",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "waar het gaat om de toepassing van de bepalingen van dit artikel inzake operationele samenwerking"
+    ],
+    "deference": "van dit artikel",
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": []
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "32",
+  "paragraph_number": "4",
+  "paragraph_index": 3,
+  "unit_text": "De lidstaten zorgen ervoor dat hun bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten, de bevoegdheid hebben om ten minste:\n\na) waarschuwingen te geven over inbreuken door de betrokken entiteiten op deze richtlijn;\n\nb) bindende aanwijzingen vast te stellen, met inbegrip van aanwijzingen inzake de noodzakelijke maatregelen om een incident te voorkomen of te verhelpen alsook uiterste termijnen voor de uitvoering van dergelijke maatregelen en voor verslaggeving over de uitvoering ervan, of een bevel uit te vaardigen waarin de betrokken entiteiten worden verplicht de vastgestelde tekortkomingen of de inbreuken op deze richtlijn te verhelpen;\n\nc) de betrokken entiteiten te gelasten een einde te maken aan gedragingen die inbreuk maken op deze richtlijn en af te zien van herhaling van die gedragingen;\n\nd) de betrokken entiteiten te gelasten er op een gespecificeerde wijze en binnen een gespecificeerde termijn voor te zorgen dat hun maatregelen voor het beheer van cyberbeveiligingsrisico’s in overeenstemming zijn met artikel 21 of te voldoen aan de in artikel 23 vastgestelde rapportageverplichtingen;\n\ne) de betrokken entiteiten te gelasten de natuurlijke of rechtspersonen aan wie zij diensten verlenen of voor wie zij activiteiten uitvoeren die mogelijkerwijs door een significante cyberdreiging worden beïnvloed, in kennis te stellen van de aard van de dreiging en alle mogelijke beschermings- of herstelmaatregelen die deze natuurlijke of rechtspersonen kunnen nemen als reactie op die dreiging;\n\nf) de betrokken entiteiten te gelasten de naar aanleiding van een beveiligingsaudit gedane aanbevelingen binnen een redelijke termijn uit te voeren;\n\ng) een controlefunctionaris aan te wijzen die gedurende een bepaalde periode duidelijk omschreven taken heeft om erop toe te zien dat de betrokken entiteiten aan de artikelen 21 en 23 voldoen;\n\nh) de betrokken entiteiten te gelasten aspecten van inbreuken op deze richtlijn op een bepaalde manier openbaar te maken;\n\ni) op grond van artikel 34 een administratieve geldboete op te leggen of de oplegging ervan door de bevoegde organen of rechterlijke instanties overeenkomstig het nationale recht te verzoeken bovenop een of meer van de in punten a) tot en met h) van dit lid bedoelde maatregelen.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat hun bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten, de bevoegdheid hebben om ten minste",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "waarschuwingen te geven over inbreuken door de betrokken entiteiten op deze richtlijn",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "bindende aanwijzingen vast te stellen, met inbegrip van aanwijzingen inzake de noodzakelijke maatregelen om een incident te voorkomen of te verhelpen alsook uiterste termijnen voor de uitvoering van dergelijke maatregelen en voor verslaggeving over de uitvoering ervan, of een bevel uit te vaardigen waarin de betrokken entiteiten worden verplicht de vastgestelde tekortkomingen of de inbreuken op deze richtlijn te verhelpen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "de betrokken entiteiten te gelasten een einde te maken aan gedragingen die inbreuk maken op deze richtlijn en af te zien van herhaling van die gedragingen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "de betrokken entiteiten te gelasten er op een gespecificeerde wijze en binnen een gespecificeerde termijn voor te zorgen dat hun maatregelen voor het beheer van cyberbeveiligingsrisico’s in overeenstemming zijn met artikel 21 of te voldoen aan de in artikel 23 vastgestelde rapportageverplichtingen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": "binnen een gespecificeerde termijn",
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "de betrokken entiteiten te gelasten de natuurlijke of rechtspersonen aan wie zij diensten verlenen of voor wie zij activiteiten uitvoeren die mogelijkerwijs door een significante cyberdreiging worden beïnvloed, in kennis te stellen van de aard van de dreiging en alle mogelijke beschermings- of herstelmaatregelen die deze natuurlijke of rechtspersonen kunnen nemen als reactie op die dreiging",
+    "recipient_body": [
+     "de natuurlijke of rechtspersonen aan wie zij diensten verlenen of voor wie zij activiteiten uitvoeren"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "die mogelijkerwijs door een significante cyberdreiging worden beïnvloed"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "de betrokken entiteiten te gelasten de naar aanleiding van een beveiligingsaudit gedane aanbevelingen binnen een redelijke termijn uit te voeren",
+    "recipient_body": [],
+    "deadline_raw": "binnen een redelijke termijn",
+    "thresholds": [],
+    "conditions": [
+     "naar aanleiding van een beveiligingsaudit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "een controlefunctionaris aan te wijzen die gedurende een bepaalde periode duidelijk omschreven taken heeft om erop toe te zien dat de betrokken entiteiten aan de artikelen 21 en 23 voldoen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "de betrokken entiteiten te gelasten aspecten van inbreuken op deze richtlijn op een bepaalde manier openbaar te maken",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "hun bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "op grond van artikel 34 een administratieve geldboete op te leggen of de oplegging ervan door de bevoegde organen of rechterlijke instanties overeenkomstig het nationale recht te verzoeken bovenop een of meer van de in punten a) tot en met h) van dit lid bedoelde maatregelen",
+    "recipient_body": [
+     "de bevoegde organen of rechterlijke instanties"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "op grond van artikel 34",
+     "overeenkomstig het nationale recht",
+     "bovenop een of meer van de in punten a) tot en met h) van dit lid bedoelde maatregelen"
+    ],
+    "deference": "bovenop een of meer van de in punten a) tot en met h) van dit lid bedoelde maatregelen",
+    "extraction_confidence": 0.97
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten",
+    "action": "zorgen ervoor dat hun bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten, de bevoegdheid hebben om ten minste:",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van essentiële entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "33",
+  "paragraph_number": "4",
+  "paragraph_index": 3,
+  "unit_text": "De lidstaten zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten, ten minste de bevoegdheid hebben om:\n\na) waarschuwingen te geven over inbreuken op deze richtlijn door de betrokken entiteiten;\n\nb) bindende aanwijzingen vast te stellen of een bevel uit te vaardigen waarin de betrokken entiteiten worden verplicht de vastgestelde tekortkomingen of de inbreuk op deze richtlijn te verhelpen;\n\nc) de betrokken entiteiten te gelasten een einde te maken aan gedragingen die inbreuk maken op deze richtlijn en af te zien van herhaling van die gedragingen;\n\nd) de betrokken entiteiten te gelasten er op een gespecificeerde wijze en binnen een gespecificeerde termijn voor te zorgen dat hun maatregelen voor het beheer van cyberbeveiligingsrisico’s in overeenstemming zijn met artikel 21 of te voldoen aan de in artikel 23 vastgestelde rapportageverplichtingen;\n\ne) de betrokken entiteiten te gelasten de natuurlijke of rechtspersonen ten aanzien van wie zij diensten verlenen of activiteiten uitvoeren die mogelijkerwijs door een significante cyberdreiging worden beïnvloed, in kennis te stellen van de aard van de dreiging en alle mogelijke beschermings- of herstelmaatregelen die deze natuurlijke of rechtspersonen kunnen nemen als reactie op die dreiging;\n\nf) de betrokken entiteiten te gelasten de naar aanleiding van een beveiligingsaudit gedane aanbevelingen binnen een redelijke termijn uit te voeren;\n\ng) de betrokken entiteiten te gelasten aspecten van inbreuken op deze richtlijn op een bepaalde manier openbaar te maken;\n\nh) op grond van artikel 34 een administratieve geldboete op te leggen of de oplegging ervan door de bevoegde organen of rechterlijke instanties overeenkomstig het nationale recht te verzoeken bovenop een van de in de punten a) tot en met g) van dit lid bedoelde maatregelen.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten, ten minste de bevoegdheid hebben om:",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": [
+     "ten aanzien van belangrijke entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "waarschuwingen te geven over inbreuken op deze richtlijn door de betrokken entiteiten",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "over inbreuken op deze richtlijn door de betrokken entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "bindende aanwijzingen vast te stellen of een bevel uit te vaardigen waarin de betrokken entiteiten worden verplicht de vastgestelde tekortkomingen of de inbreuk op deze richtlijn te verhelpen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "de betrokken entiteiten te gelasten een einde te maken aan gedragingen die inbreuk maken op deze richtlijn en af te zien van herhaling van die gedragingen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "de betrokken entiteiten te gelasten er op een gespecificeerde wijze en binnen een gespecificeerde termijn voor te zorgen dat hun maatregelen voor het beheer van cyberbeveiligingsrisico’s in overeenstemming zijn met artikel 21 of te voldoen aan de in artikel 23 vastgestelde rapportageverplichtingen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": "binnen een gespecificeerde termijn",
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming zijn met artikel 21",
+     "te voldoen aan de in artikel 23 vastgestelde rapportageverplichtingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "de betrokken entiteiten te gelasten de natuurlijke of rechtspersonen ten aanzien van wie zij diensten verlenen of activiteiten uitvoeren die mogelijkerwijs door een significante cyberdreiging worden beïnvloed, in kennis te stellen van de aard van de dreiging en alle mogelijke beschermings- of herstelmaatregelen die deze natuurlijke of rechtspersonen kunnen nemen als reactie op die dreiging",
+    "recipient_body": [
+     "de natuurlijke of rechtspersonen ten aanzien van wie zij diensten verlenen of activiteiten uitvoeren die mogelijkerwijs door een significante cyberdreiging worden beïnvloed"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "die mogelijkerwijs door een significante cyberdreiging worden beïnvloed"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "de betrokken entiteiten te gelasten de naar aanleiding van een beveiligingsaudit gedane aanbevelingen binnen een redelijke termijn uit te voeren",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": "binnen een redelijke termijn",
+    "thresholds": [],
+    "conditions": [
+     "naar aanleiding van een beveiligingsaudit gedane aanbevelingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "de betrokken entiteiten te gelasten aspecten van inbreuken op deze richtlijn op een bepaalde manier openbaar te maken",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "op grond van artikel 34 een administratieve geldboete op te leggen of de oplegging ervan door de bevoegde organen of rechterlijke instanties overeenkomstig het nationale recht te verzoeken bovenop een van de in de punten a) tot en met g) van dit lid bedoelde maatregelen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "op grond van artikel 34",
+     "overeenkomstig het nationale recht",
+     "bovenop een van de in de punten a) tot en met g) van dit lid bedoelde maatregelen"
+    ],
+    "deference": "bovenop een van de in de punten a) tot en met g) van dit lid bedoelde maatregelen",
+    "extraction_confidence": 0.97
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten, ten minste de bevoegdheid hebben om",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "2",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Onverminderd de leden 3 en 4 is deze verordening van toepassing op de volgende entiteiten:\n\na) kredietinstellingen;\n\nb) betalingsinstellingen, met inbegrip van bij Richtlijn (EU) 2015/2366 vrijgestelde betalingsinstellingen;\n\nc) aanbieders van rekeninginformatiediensten;\n\nd) instellingen voor elektronisch geld, met inbegrip van krachtens Richtlijn 2009/110/EG vrijgestelde instellingen voor elektronisch geld;\n\ne) beleggingsondernemingen;\n\nf) aanbieders van cryptoactivadiensten met een vergunning op grond van een Verordening van het Europees Parlement en de Raad betreffende markten in cryptoactiva en tot wijziging van Verordeningen (EU) nr. 1093/2010 en (EU) nr. 1095/2010 en Richtlijnen 2013/36/EU en (EU) 2019/1937 (“de verordening betreffende markten in cryptoactiva”) en emittenten van asset-referenced tokens;\n\ng) centrale effectenbewaarinstellingen;\n\nh) centrale tegenpartijen;\n\ni) handelsplatformen;\n\nj) transactieregisters;\n\nk) beheerders van alternatieve beleggingsinstellingen;\n\nl) beheermaatschappijen;\n\nm) aanbieders van datarapporteringsdiensten;\n\nn) verzekerings- en herverzekeringsondernemingen;\n\no) verzekeringstussenpersonen, herverzekeringstussenpersonen en nevenverzekeringstussenpersonen;\n\np) instellingen voor bedrijfspensioenvoorziening;\n\nq) ratingbureaus;\n\nr) beheerders van kritieke benchmarks;\n\ns) aanbieders van crowdfundingdiensten;\n\nt) securitisatieregisters;\n\nu) derde aanbieders van ICT-diensten.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "DEFINITION",
+    "addressee": "de volgende entiteiten",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "is deze verordening van toepassing op de volgende entiteiten",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "Onverminderd de leden 3 en 4"
+    ],
+    "deference": "Onverminderd de leden 3 en 4",
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": []
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "11",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Financiële entiteiten voeren het ICT-bedrijfscontinuïteitsbeleid uit via specifieke, aangepaste en gedocumenteerde regelingen, plannen, procedures en mechanismen die erop gericht zijn:\n\na) de continuïteit van de kritieke of belangrijke functies van de financiële entiteit te verzekeren;\n\nb) op een snelle, passende en doeltreffende wijze een respons en een oplossing te bieden voor alle ICT-gerelateerde incidenten waarbij de schade wordt beperkt en prioriteit wordt verleend aan de hervatting van de activiteiten en aan herstelmaatregelen;\n\nc) onverwijld specifieke plannen in werking te stellen om inperkingsmaatregelen, -processen en -technologieën mogelijk te maken die aangepast zijn aan elk type ICT-gerelateerd incident en waarmee verdere schade kan worden voorkomen, alsmede op maat gesneden respons- en herstelprocedures in overeenstemming met artikel 12;\n\nd) de voorlopige effecten, schade en verliezen te ramen;\n\ne) maatregelen voor communicatie en crisisbeheersing op te stellen die garanderen dat aan alle betrokken interne personeelsleden en externe belanghebbenden geactualiseerde informatie wordt verstrekt overeenkomstig artikel 14, en verslag uit te brengen aan de bevoegde autoriteiten overeenkomstig artikel 19.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voeren het ICT-bedrijfscontinuïteitsbeleid uit via specifieke, aangepaste en gedocumenteerde regelingen, plannen, procedures en mechanismen die erop gericht zijn",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "de continuïteit van de kritieke of belangrijke functies van de financiële entiteit te verzekeren",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "op een snelle, passende en doeltreffende wijze een respons en een oplossing te bieden voor alle ICT-gerelateerde incidenten waarbij de schade wordt beperkt en prioriteit wordt verleend aan de hervatting van de activiteiten en aan herstelmaatregelen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "onverwijld specifieke plannen in werking te stellen om inperkingsmaatregelen, -processen en -technologieën mogelijk te maken die aangepast zijn aan elk type ICT-gerelateerd incident en waarmee verdere schade kan worden voorkomen, alsmede op maat gesneden respons- en herstelprocedures in overeenstemming met artikel 12",
+    "recipient_body": [],
+    "deadline_raw": "onverwijld",
+    "thresholds": [],
+    "conditions": [],
+    "deference": "in overeenstemming met artikel 12",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "de voorlopige effecten, schade en verliezen te ramen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "maatregelen voor communicatie en crisisbeheersing op te stellen die garanderen dat aan alle betrokken interne personeelsleden en externe belanghebbenden geactualiseerde informatie wordt verstrekt overeenkomstig artikel 14, en verslag uit te brengen aan de bevoegde autoriteiten overeenkomstig artikel 19",
+    "recipient_body": [
+     "alle betrokken interne personeelsleden en externe belanghebbenden",
+     "de bevoegde autoriteiten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 14; overeenkomstig artikel 19",
+    "extraction_confidence": 0.97
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voeren het ICT-bedrijfscontinuïteitsbeleid uit via specifieke, aangepaste en gedocumenteerde regelingen, plannen, procedures en mechanismen die erop gericht zijn:",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "35",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Voor de uitvoering van de in deze afdeling omschreven taken beschikt de lead overseer ten aanzien van de kritieke derde aanbieders van ICT-diensten over de bevoegdheid om:\n\na) alle relevante informatie en documentatie overeenkomstig artikel 37 op te vragen;\n\nb) algemene onderzoeken en inspecties te verrichten overeenkomstig respectievelijk de artikelen 38 en 39;\n\nc) na afloop van de oversightactiviteiten te verzoeken om verslagen met vermelding van de ondernomen acties of de corrigerende maatregelen die door de kritieke derde aanbieders van ICT-diensten zijn genomen met betrekking tot de in punt d) bedoelde aanbevelingen;\n\nd) aanbevelingen uit te vaardigen met betrekking tot de in artikel 33, lid 3, bedoelde gebieden, met name over:     Voor de toepassing van punt iv) van dit punt zenden derde aanbieders van ICT-diensten de informatie inzake uitbesteding aan de lead overseer toe, en gebruiken daarbij het in artikel 41, lid 1, punt b), bedoelde model.\n\ni) het gebruik van specifieke ICT-beveiligings- en kwaliteitsvereisten of -processen, met name met betrekking tot de uitrol van patches, updates, encryptie en andere beveiligingsmaatregelen die de lead overseer relevant acht om de ICT-beveiliging van diensten voor financiële entiteiten te waarborgen;\n\nii) het gebruik van voorwaarden, met inbegrip van de technische uitvoering ervan, voor het verlenen van ICT-diensten aan financiële entiteiten door derde aanbieders van ICT-diensten, die de lead overseer relevant acht om het ontstaan van zwakke punten (“single points of failure”), de uitbreiding daarvan te voorkomen, of om mogelijke systemische effecten in de hele financiële sector van de Unie te beperken in geval van ICT-concentratierisico;\n\niii) geplande uitbestedingen waarbij de lead overseer van oordeel is dat verdere uitbesteding — inclusief uitbestedingsregelingen die de kritieke derde aanbieders van ICT-diensten voornemens zijn te treffen met derde aanbieders van ICT-diensten of met in een derde land gevestigde ICT-subcontractanten — risico’s voor de levering van diensten door de financiële entiteit of risico’s voor de financiële stabiliteit met zich mee kan brengen, op basis van onderzoek van de overeenkomstig de artikelen 37 en 38 verzamelde informatie;\n\niv) het stopzetten van verdere uitbestedingsregelingen, wanneer aan de volgende cumulatieve voorwaarden is voldaan:\n\n— de beoogde subcontractant is een in een derde land gevestigde derde aanbieder van ICT-diensten of een in een derde land gevestigde ICT-subcontractant;\n\n— de uitbesteding heeft betrekking op kritieke of belangrijke functies van de financiële entiteit, en\n\n— de lead overseer is van oordeel dat dit soort uitbesteding een duidelijk en ernstig risico vormt voor de financiële stabiliteit van de Unie of voor financiële entiteiten, inclusief voor het vermogen van financiële entiteiten om aan toezichtvereisten te voldoen.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de uitvoering van de in deze afdeling omschreven taken",
+    "action": "alle relevante informatie en documentatie overeenkomstig artikel 37 op te vragen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van de kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": "overeenkomstig artikel 37",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de uitvoering van de in deze afdeling omschreven taken",
+    "action": "algemene onderzoeken en inspecties te verrichten overeenkomstig respectievelijk de artikelen 38 en 39",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van de kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": "overeenkomstig respectievelijk de artikelen 38 en 39",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "na afloop van de oversightactiviteiten",
+    "action": "te verzoeken om verslagen met vermelding van de ondernomen acties of de corrigerende maatregelen die door de kritieke derde aanbieders van ICT-diensten zijn genomen met betrekking tot de in punt d) bedoelde aanbevelingen",
+    "recipient_body": [
+     "de kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van de kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": "de in punt d) bedoelde aanbevelingen",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de uitvoering van de in deze afdeling omschreven taken",
+    "action": "aanbevelingen uit te vaardigen met betrekking tot de in artikel 33, lid 3, bedoelde gebieden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van de kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": "de in artikel 33, lid 3, bedoelde gebieden",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor de toepassing van punt iv) van dit punt",
+    "action": "de informatie inzake uitbesteding aan de lead overseer toe",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "gebruiken daarbij het in artikel 41, lid 1, punt b), bedoelde model"
+    ],
+    "deference": "het in artikel 41, lid 1, punt b), bedoelde model",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor de toepassing van punt iv) van dit punt",
+    "action": "gebruiken daarbij het in artikel 41, lid 1, punt b), bedoelde model",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "het in artikel 41, lid 1, punt b), bedoelde model",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "wanneer aan de volgende cumulatieve voorwaarden is voldaan",
+    "action": "het stopzetten van verdere uitbestedingsregelingen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "de beoogde subcontractant is een in een derde land gevestigde derde aanbieder van ICT-diensten of een in een derde land gevestigde ICT-subcontractant",
+     "de uitbesteding heeft betrekking op kritieke of belangrijke functies van de financiële entiteit",
+     "de lead overseer is van oordeel dat dit soort uitbesteding een duidelijk en ernstig risico vormt voor de financiële stabiliteit van de Unie of voor financiële entiteiten, inclusief voor het vermogen van financiële entiteiten om aan toezichtvereisten te voldoen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.95
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de uitvoering van de in deze afdeling omschreven taken",
+    "action": "over de bevoegdheid om",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "alle relevante informatie en documentatie overeenkomstig artikel 37 op te vragen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "algemene onderzoeken en inspecties te verrichten overeenkomstig respectievelijk de artikelen 38 en 39",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "na afloop van de oversightactiviteiten",
+    "action": "te verzoeken om verslagen met vermelding van de ondernomen acties of de corrigerende maatregelen die door de kritieke derde aanbieders van ICT-diensten zijn genomen met betrekking tot de in punt d) bedoelde aanbevelingen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "aanbevelingen uit te vaardigen met betrekking tot de in artikel 33, lid 3, bedoelde gebieden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met name over:",
+     "het gebruik van specifieke ICT-beveiligings- en kwaliteitsvereisten of -processen",
+     "het gebruik van voorwaarden, met inbegrip van de technische uitvoering ervan, voor het verlenen van ICT-diensten aan financiële entiteiten door derde aanbieders van ICT-diensten",
+     "geplande uitbestedingen waarbij de lead overseer van oordeel is dat verdere uitbesteding — inclusief uitbestedingsregelingen die de kritieke derde aanbieders van ICT-diensten voornemens zijn te treffen met derde aanbieders van ICT-diensten of met in een derde land gevestigde ICT-subcontractanten — risico’s voor de levering van diensten door de financiële entiteit of risico’s voor de financiële stabiliteit met zich mee kan brengen, op basis van onderzoek van de overeenkomstig de artikelen 37 en 38 verzamelde informatie",
+     "het stopzetten van verdere uitbestedingsregelingen, wanneer aan de volgende cumulatieve voorwaarden is voldaan"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor de toepassing van punt iv) van dit punt",
+    "action": "de informatie inzake uitbesteding aan de lead overseer toe, en gebruiken daarbij het in artikel 41, lid 1, punt b), bedoelde model",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van punt iv) van dit punt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ]
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "58",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Vanaf 17 januari 2028 voert de Commissie, na raadpleging van de ETA’s en het ESRB, naargelang van het geval, een evaluatie uit en dient zij bij het Europees Parlement en de Raad een verslag in, in voorkomend geval vergezeld van een wetgevingsvoorstel. De evaluatie bevat ten minste het volgende:\n\na) de criteria voor de aanwijzing van kritieke derde aanbieders van ICT-diensten overeenkomstig artikel 31, lid 2;\n\nb) het vrijwillige karakter van het melden van significante cyberdreigingen als bedoeld in artikel 19;\n\nc) de in artikel 31, lid 12, bedoelde regeling en de bevoegdheden van de lead overseer als bedoeld in artikel 35, lid 1, punt d), iv), eerste streepje, met het oog op de evaluatie van de doeltreffendheid van die bepalingen met betrekking tot het waarborgen van doeltreffend oversight van kritieke derde aanbieders van ICT-diensten die in een derde land zijn gevestigd, en van de noodzaak om een dochteronderneming in de Unie op te richten. Voor de toepassing van de eerste alinea van dit punt omvat de evaluatie een analyse van de in artikel 31, lid 12, bedoelde regeling, met inbegrip van wat betreft de toegang van financiële entiteiten uit de Unie tot diensten uit derde landen en de beschikbaarheid van diensten op de markt van de Unie, en houdt zij rekening met verdere ontwikkelingen op de markten voor de onder deze verordening vallende diensten, de praktische ervaring van financiële entiteiten en financiële toezichthouders met betrekking tot de toepassing van en het toezicht op die regeling, en alle relevante ontwikkelingen op het gebied van regelgeving en toezicht die op internationaal niveau plaatsvinden.\n\nd) de wenselijkheid om financiële entiteiten als bedoeld in artikel 2, lid 3, punt e), die gebruikmaken van geautomatiseerde verkoopsystemen, in het toepassingsgebied van deze verordening op te nemen in het licht van toekomstige marktontwikkelingen met betrekking tot het gebruik van dergelijke systemen;\n\ne) de werking en doeltreffendheid van het JON bij het ondersteunen van de consistentie van het oversight en de efficiëntie van de uitwisseling van informatie binnen het toezichtkader.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Vanaf 17 januari 2028",
+    "action": "voert de Commissie, na raadpleging van de ETA’s en het ESRB, naargelang van het geval, een evaluatie uit en dient zij bij het Europees Parlement en de Raad een verslag in, in voorkomend geval vergezeld van een wetgevingsvoorstel",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline_raw": "Vanaf 17 januari 2028",
+    "thresholds": [],
+    "conditions": [
+     "na raadpleging van de ETA’s en het ESRB",
+     "naargelang van het geval",
+     "in voorkomend geval vergezeld van een wetgevingsvoorstel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Vanaf 17 januari 2028",
+    "action": "voert de Commissie, na raadpleging van de ETA’s en het ESRB, naargelang van het geval, een evaluatie uit en dient zij bij het Europees Parlement en de Raad een verslag in, in voorkomend geval vergezeld van een wetgevingsvoorstel",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline_raw": "Vanaf 17 januari 2028",
+    "thresholds": [],
+    "conditions": [
+     "na raadpleging van de ETA’s en het ESRB, naargelang van het geval",
+     "in voorkomend geval vergezeld van een wetgevingsvoorstel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de evaluatie",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "bevat ten minste het volgende",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste het volgende"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ]
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "9",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.\n\nBij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgende gewaarborgd:\n\na) uitsluiting of beperking van op grond van lid 2 vastgestelde en geëvalueerde risico’s voor zover technisch haalbaar door middel van een adequaat ontwerp en ontwikkeling van het AI-systeem met een hoog risico;\n\nb) waar passend worden adequate maatregelen voor beperking en controle genomen voor het aanpakken van risico’s die niet kunnen worden uitgesloten;\n\nc) verstrekking van op grond van artikel 13 vereiste informatie en waar passend opleiding voor gebruiksverantwoordelijken.\n\nTeneinde de risico’s in verband met het gebruik van het AI-systeem met een hoog risico weg te nemen of te beperken, wordt naar behoren aandacht besteed aan de te verwachten technische kennis, ervaring, scholing en opleiding van de gebruiksverantwoordelijke en de vermoedelijke context waarin het systeem dient te worden gebruikt.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De in lid 2, punt d), bedoelde risicobeheersmaatregelen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.93
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": "OTHER",
+    "trigger_event": "Bij het vaststellen van de passendste risicobeheersmaatregelen",
+    "action": "wordt het volgende gewaarborgd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.9
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "uitsluiting of beperking van op grond van lid 2 vastgestelde en geëvalueerde risico’s voor zover technisch haalbaar door middel van een adequaat ontwerp en ontwikkeling van het AI-systeem met een hoog risico",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "voor zover technisch haalbaar"
+    ],
+    "conditions": [],
+    "deference": "op grond van lid 2",
+    "extraction_confidence": 0.88
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": "OTHER",
+    "trigger_event": "waar passend",
+    "action": "worden adequate maatregelen voor beperking en controle genomen voor het aanpakken van risico’s die niet kunnen worden uitgesloten",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend",
+     "risico’s die niet kunnen worden uitgesloten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.9
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": "OTHER",
+    "trigger_event": "waar passend",
+    "action": "verstrekking van op grond van artikel 13 vereiste informatie en waar passend opleiding voor gebruiksverantwoordelijken",
+    "recipient_body": [
+     "gebruiksverantwoordelijken"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "deference": "op grond van artikel 13",
+    "extraction_confidence": 0.89
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": "OTHER",
+    "trigger_event": "Teneinde de risico’s in verband met het gebruik van het AI-systeem met een hoog risico weg te nemen of te beperken",
+    "action": "wordt naar behoren aandacht besteed aan de te verwachten technische kennis, ervaring, scholing en opleiding van de gebruiksverantwoordelijke en de vermoedelijke context waarin het systeem dient te worden gebruikt",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.91
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Bij het vaststellen van de passendste risicobeheersmaatregelen",
+    "action": "wordt het volgende gewaarborgd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover technisch haalbaar",
+     "waar passend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Teneinde de risico’s in verband met het gebruik van het AI-systeem met een hoog risico weg te nemen of te beperken",
+    "action": "wordt naar behoren aandacht besteed aan de te verwachten technische kennis, ervaring, scholing en opleiding van de gebruiksverantwoordelijke en de vermoedelijke context waarin het systeem dient te worden gebruikt",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.91
+   }
+  ]
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "62",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "De lidstaten ondernemen de volgende acties:\n\na) kmo's, met inbegrip van start-ups, die een maatschappelijke zetel of een bijkantoor in de Unie hebben, prioritaire toegang verlenen tot de AI-testomgevingen voor regelgeving voor zover zij aan de toelatingsvoorwaarden en selectiecriteria voldoen; de prioritaire toegang sluit niet uit dat andere dan de in dit lid bedoelde kmo’s, met inbegrip van start-ups, toegang krijgen tot de AI-testomgeving voor regelgeving, mits zij ook aan de toelatingsvoorwaarden en selectiecriteria voldoen;\n\nb) specifieke bewustmakings- en opleidingsactiviteiten organiseren over de toepassing van deze verordening, afgestemd op de behoeften van kmo’s, met inbegrip van start-ups, gebruiksverantwoordelijken en, in voorkomend geval, lokale overheidsinstanties;\n\nc) bestaande specifieke communicatiekanalen benutten en, waar passend, nieuwe opzetten voor communicatie met kmo’s, met inbegrip van start-ups, gebruiksverantwoordelijken, andere innovatoren en, in voorkomend geval, lokale overheidsinstanties, om advies te verstrekken en te reageren op vragen over de uitvoering van deze verordening, onder meer met betrekking tot deelname aan AI-testomgevingen voor regelgeving;\n\nd) de deelname van kmo’s en andere relevante belanghebbenden aan het proces voor de ontwikkeling van normen faciliteren.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "ondernemen de volgende acties",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "kmo's, met inbegrip van start-ups, die een maatschappelijke zetel of een bijkantoor in de Unie hebben, prioritaire toegang verlenen tot de AI-testomgevingen voor regelgeving",
+    "recipient_body": [
+     "kmo's, met inbegrip van start-ups, die een maatschappelijke zetel of een bijkantoor in de Unie hebben"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover zij aan de toelatingsvoorwaarden en selectiecriteria voldoen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "specifieke bewustmakings- en opleidingsactiviteiten organiseren over de toepassing van deze verordening, afgestemd op de behoeften van kmo’s, met inbegrip van start-ups, gebruiksverantwoordelijken en, in voorkomend geval, lokale overheidsinstanties",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "bestaande specifieke communicatiekanalen benutten en, waar passend, nieuwe opzetten voor communicatie met kmo’s, met inbegrip van start-ups, gebruiksverantwoordelijken, andere innovatoren en, in voorkomend geval, lokale overheidsinstanties, om advies te verstrekken en te reageren op vragen over de uitvoering van deze verordening, onder meer met betrekking tot deelname aan AI-testomgevingen voor regelgeving",
+    "recipient_body": [
+     "kmo’s, met inbegrip van start-ups, gebruiksverantwoordelijken, andere innovatoren en, in voorkomend geval, lokale overheidsinstanties"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "de deelname van kmo’s en andere relevante belanghebbenden aan het proces voor de ontwikkeling van normen faciliteren",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "ondernemen de volgende acties",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   }
+  ]
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "60",
+  "paragraph_number": "4",
+  "paragraph_index": 3,
+  "unit_text": "Aanbieders of potentiële aanbieders mogen alleen testen onder reële omstandigheden als is voldaan aan alle volgende voorwaarden:\n\na) de aanbieder of potentiële aanbieder heeft een plan voor tests onder reële omstandigheden opgesteld en ingediend bij de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest;\n\nb) de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest, heeft het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden goedgekeurd; indien de markttoezichtautoriteit binnen dertig dagen geen antwoord heeft gegeven, worden het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden geacht te zijn goedgekeurd; indien het nationale recht niet voorziet in een stilzwijgende goedkeuring, blijft het testen onder reële omstandigheden onderworpen aan een toestemming;\n\nc) de aanbieder of potentiële aanbieder, met uitzondering van aanbieders of potentiële aanbieders van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden rechtshandhaving, migratie, asiel en grenstoezichtsbeheer en AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III, heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 71, lid 4, met een Uniebreed uniek identificatienummer en de in bijlage IX gespecificeerde informatie; de aanbieder of potentiële aanbieder van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer, heeft het testen onder reële omstandigheden geregistreerd in het beveiligde niet-openbare gedeelte van de EU-databank overeenkomstig artikel 49, lid 4, punt d), met een Uniebreed uniek identificatienummer en de daarin gespecificeerde informatie; de aanbieder of potentiële aanbieder van in punt 2 van bijlage III bedoelde AI-systemen met een hoog risico heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 49, lid 5;\n\nd) de aanbieder of potentiële aanbieder die onder reële omstandigheden test, is in de Unie gevestigd of heeft een in de Unie gevestigde wettelijke vertegenwoordiger aangewezen;\n\ne) gegevens die zijn verzameld en verwerkt met het oog op het testen onder reële omstandigheden mogen alleen aan derde landen worden doorgegeven mits er passende en toepasselijke waarborgen uit hoofde van het Unierecht worden toegepast;\n\nf) het testen onder reële omstandigheden duurt niet langer dan nodig is om de doelstellingen ervan te verwezenlijken en in geen geval langer dan zes maanden, met een mogelijke verlenging van nog eens zes maanden indien de aanbieder of potentiële aanbieder de markttoezichtautoriteit daar vooraf van in kennis stelt, met een uitleg waarom een dergelijke verlenging noodzakelijk is;\n\ng) proefpersonen die onder reële omstandigheden worden getest en die tot kwetsbare groepen behoren vanwege hun leeftijd of handicap, worden naar behoren beschermd;\n\nh) indien een aanbieder of potentiële aanbieder het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken, worden zij geïnformeerd over alle aspecten van het testen die relevant zijn voor hun beslissing om deel te nemen, en krijgen zij de relevante gebruiksinstructies van het AI-systeem als bedoeld in artikel 13; de aanbieder of potentiële aanbieder en de gebruiksverantwoordelijke of potentiële gebruiksverantwoordelijke sluiten een overeenkomst waarin hun taken en verantwoordelijkheden worden gespecificeerd teneinde te waarborgen dat de bepalingen voor het testen onder reële omstandigheden uit hoofde van deze verordening en ander toepasselijk Unie- en nationaal recht worden nageleefd;\n\ni) de proefpersonen die onder reële omstandigheden worden getest, hebben geïnformeerde toestemming gegeven overeenkomstig artikel 61, of, in het geval van rechtshandhaving, indien het vragen om geïnformeerde toestemming het testen van het AI-systeem onder reële omstandigheden onmogelijk zou maken, de test zelf en het resultaat van de test onder reële omstandigheden hebben geen negatieve gevolgen voor de proefpersonen en hun persoonsgegevens worden na de uitvoering van test gewist;\n\nj) op het testen onder reële omstandigheden wordt daadwerkelijk toezicht gehouden door de aanbieder of potentiële aanbieder, alsook door gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken via personen die voldoende zijn gekwalificeerd op het relevante gebied en beschikken over de nodige capaciteiten, opleiding en bevoegdheden om hun taken uit te voeren;\n\nk) de voorspellingen, aanbevelingen of beslissingen van het AI-systeem kunnen daadwerkelijk worden teruggedraaid en genegeerd.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "PERMISSION",
+    "addressee": "Aanbieders of potentiële aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "testen onder reële omstandigheden",
+    "action": "mogen alleen testen onder reële omstandigheden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "als is voldaan aan alle volgende voorwaarden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "testen onder reële omstandigheden",
+    "action": "heeft een plan voor tests onder reële omstandigheden opgesteld en ingediend bij de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest",
+    "recipient_body": [
+     "de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden goedgekeurd",
+    "recipient_body": [],
+    "deadline_raw": "binnen dertig dagen",
+    "thresholds": [
+     "dertig dagen"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de markttoezichtautoriteit binnen dertig dagen geen antwoord heeft gegeven",
+    "action": "worden het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden geacht te zijn goedgekeurd",
+    "recipient_body": [],
+    "deadline_raw": "binnen dertig dagen",
+    "thresholds": [
+     "dertig dagen"
+    ],
+    "conditions": [
+     "indien de markttoezichtautoriteit binnen dertig dagen geen antwoord heeft gegeven"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 71, lid 4, met een Uniebreed uniek identificatienummer en de in bijlage IX gespecificeerde informatie",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van aanbieders of potentiële aanbieders van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden rechtshandhaving, migratie, asiel en grenstoezichtsbeheer en AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III"
+    ],
+    "deference": "overeenkomstig artikel 71, lid 4",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd in het beveiligde niet-openbare gedeelte van de EU-databank overeenkomstig artikel 49, lid 4, punt d), met een Uniebreed uniek identificatienummer en de daarin gespecificeerde informatie",
+    "recipient_body": [
+     "het beveiligde niet-openbare gedeelte van de EU-databank"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 49, lid 4, punt d)",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder van in punt 2 van bijlage III bedoelde AI-systemen met een hoog risico",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 49, lid 5",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 49, lid 5",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "gegevens die zijn verzameld en verwerkt met het oog op het testen onder reële omstandigheden",
+    "action": "mogen alleen aan derde landen worden doorgegeven mits er passende en toepasselijke waarborgen uit hoofde van het Unierecht worden toegepast",
+    "recipient_body": [
+     "derde landen"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "mits er passende en toepasselijke waarborgen uit hoofde van het Unierecht worden toegepast"
+    ],
+    "deference": "uit hoofde van het Unierecht",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "PROHIBITION",
+    "addressee": "het testen onder reële omstandigheden",
+    "addressee_type": "OTHER",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "duurt niet langer dan nodig is om de doelstellingen ervan te verwezenlijken en in geen geval langer dan zes maanden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "zes maanden"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "met een mogelijke verlenging van nog eens zes maanden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "nog eens zes maanden"
+    ],
+    "conditions": [
+     "indien de aanbieder of potentiële aanbieder de markttoezichtautoriteit daar vooraf van in kennis stelt, met een uitleg waarom een dergelijke verlenging noodzakelijk is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "proefpersonen die onder reële omstandigheden worden getest en die tot kwetsbare groepen behoren vanwege hun leeftijd of handicap",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "onder reële omstandigheden worden getest",
+    "action": "worden naar behoren beschermd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "die tot kwetsbare groepen behoren vanwege hun leeftijd of handicap"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken",
+    "action": "worden zij geïnformeerd over alle aspecten van het testen die relevant zijn voor hun beslissing om deel te nemen, en krijgen zij de relevante gebruiksinstructies van het AI-systeem als bedoeld in artikel 13",
+    "recipient_body": [
+     "een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien een aanbieder of potentiële aanbieder het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deference": "als bedoeld in artikel 13",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder en de gebruiksverantwoordelijke of potentiële gebruiksverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden organiseert in samenwerking",
+    "action": "sluiten een overeenkomst waarin hun taken en verantwoordelijkheden worden gespecificeerd teneinde te waarborgen dat de bepalingen voor het testen onder reële omstandigheden uit hoofde van deze verordening en ander toepasselijk Unie- en nationaal recht worden nageleefd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien een aanbieder of potentiële aanbieder het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deference": "uit hoofde van deze verordening en ander toepasselijk Unie- en nationaal recht",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de proefpersonen die onder reële omstandigheden worden getest",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "onder reële omstandigheden worden getest",
+    "action": "hebben geïnformeerde toestemming gegeven overeenkomstig artikel 61",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 61",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "in het geval van rechtshandhaving, indien het vragen om geïnformeerde toestemming het testen van het AI-systeem onder reële omstandigheden onmogelijk zou maken",
+    "action": "de test zelf en het resultaat van de test onder reële omstandigheden hebben geen negatieve gevolgen voor de proefpersonen en hun persoonsgegevens worden na de uitvoering van test gewist",
+    "recipient_body": [
+     "de proefpersonen"
+    ],
+    "deadline_raw": "na de uitvoering van test",
+    "thresholds": [],
+    "conditions": [
+     "in het geval van rechtshandhaving",
+     "indien het vragen om geïnformeerde toestemming het testen van het AI-systeem onder reële omstandigheden onmogelijk zou maken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder, alsook door gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "wordt daadwerkelijk toezicht gehouden door de aanbieder of potentiële aanbieder, alsook door gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken via personen die voldoende zijn gekwalificeerd op het relevante gebied en beschikken over de nodige capaciteiten, opleiding en bevoegdheden om hun taken uit te voeren",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "de voorspellingen, aanbevelingen of beslissingen van het AI-systeem",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "kunnen daadwerkelijk worden teruggedraaid en genegeerd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "PERMISSION",
+    "addressee": "Aanbieders of potentiële aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "testen onder reële omstandigheden",
+    "action": "mogen alleen testen onder reële omstandigheden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "als is voldaan aan alle volgende voorwaarden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "testen onder reële omstandigheden",
+    "action": "heeft een plan voor tests onder reële omstandigheden opgesteld en ingediend bij de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest",
+    "recipient_body": [
+     "de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de markttoezichtautoriteit in de lidstaat waar onder reële omstandigheden moet worden getest",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "heeft het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden goedgekeurd",
+    "recipient_body": [],
+    "deadline_raw": "binnen dertig dagen",
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "worden het testen onder reële omstandigheden en het plan voor tests onder reële omstandigheden geacht te zijn goedgekeurd",
+    "recipient_body": [],
+    "deadline_raw": "binnen dertig dagen",
+    "thresholds": [],
+    "conditions": [
+     "indien de markttoezichtautoriteit binnen dertig dagen geen antwoord heeft gegeven"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.95
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 71, lid 4, met een Uniebreed uniek identificatienummer en de in bijlage IX gespecificeerde informatie",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van aanbieders of potentiële aanbieders van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden rechtshandhaving, migratie, asiel en grenstoezichtsbeheer en AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III"
+    ],
+    "deference": "overeenkomstig artikel 71, lid 4",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder van in de punten 1, 6 en 7 van bijlage III bedoelde AI-systemen met een hoog risico op de gebieden van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd in het beveiligde niet-openbare gedeelte van de EU-databank overeenkomstig artikel 49, lid 4, punt d), met een Uniebreed uniek identificatienummer en de daarin gespecificeerde informatie",
+    "recipient_body": [
+     "het beveiligde niet-openbare gedeelte van de EU-databank"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 49, lid 4, punt d)",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder van in punt 2 van bijlage III bedoelde AI-systemen met een hoog risico",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "heeft het testen onder reële omstandigheden geregistreerd overeenkomstig artikel 49, lid 5",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 49, lid 5",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder die onder reële omstandigheden test",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "onder reële omstandigheden test",
+    "action": "is in de Unie gevestigd of heeft een in de Unie gevestigde wettelijke vertegenwoordiger aangewezen",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "gegevens die zijn verzameld en verwerkt met het oog op het testen onder reële omstandigheden",
+    "action": "mogen alleen aan derde landen worden doorgegeven mits er passende en toepasselijke waarborgen uit hoofde van het Unierecht worden toegepast",
+    "recipient_body": [
+     "derde landen"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "mits er passende en toepasselijke waarborgen uit hoofde van het Unierecht worden toegepast"
+    ],
+    "deference": "uit hoofde van het Unierecht",
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "PROHIBITION",
+    "addressee": "het testen onder reële omstandigheden",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "duurt niet langer dan nodig is om de doelstellingen ervan te verwezenlijken en in geen geval langer dan zes maanden",
+    "recipient_body": [],
+    "deadline_raw": "in geen geval langer dan zes maanden",
+    "thresholds": [
+     "zes maanden"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.97
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "de aanbieder of potentiële aanbieder de markttoezichtautoriteit daar vooraf van in kennis stelt, met een uitleg waarom een dergelijke verlenging noodzakelijk is",
+    "action": "met een mogelijke verlenging van nog eens zes maanden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "nog eens zes maanden"
+    ],
+    "conditions": [
+     "de aanbieder of potentiële aanbieder de markttoezichtautoriteit daar vooraf van in kennis stelt",
+     "met een uitleg waarom een dergelijke verlenging noodzakelijk is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.95
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "proefpersonen die onder reële omstandigheden worden getest en die tot kwetsbare groepen behoren vanwege hun leeftijd of handicap",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "onder reële omstandigheden worden getest",
+    "action": "worden naar behoren beschermd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "die tot kwetsbare groepen behoren vanwege hun leeftijd of handicap"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken",
+    "action": "worden zij geïnformeerd over alle aspecten van het testen die relevant zijn voor hun beslissing om deel te nemen, en krijgen zij de relevante gebruiksinstructies van het AI-systeem als bedoeld in artikel 13",
+    "recipient_body": [
+     "een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien een aanbieder of potentiële aanbieder het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deference": "als bedoeld in artikel 13",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder en de gebruiksverantwoordelijke of potentiële gebruiksverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken",
+    "action": "sluiten een overeenkomst waarin hun taken en verantwoordelijkheden worden gespecificeerd teneinde te waarborgen dat de bepalingen voor het testen onder reële omstandigheden uit hoofde van deze verordening en ander toepasselijk Unie- en nationaal recht worden nageleefd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien een aanbieder of potentiële aanbieder het testen onder reële omstandigheden organiseert in samenwerking met een of meer gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken"
+    ],
+    "deference": "uit hoofde van deze verordening en ander toepasselijk Unie- en nationaal recht",
+    "extraction_confidence": 0.96
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de proefpersonen die onder reële omstandigheden worden getest",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "onder reële omstandigheden worden getest",
+    "action": "hebben geïnformeerde toestemming gegeven overeenkomstig artikel 61",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig artikel 61",
+    "extraction_confidence": 0.98
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "in het geval van rechtshandhaving, indien het vragen om geïnformeerde toestemming het testen van het AI-systeem onder reële omstandigheden onmogelijk zou maken",
+    "action": "de test zelf en het resultaat van de test onder reële omstandigheden hebben geen negatieve gevolgen voor de proefpersonen en hun persoonsgegevens worden na de uitvoering van test gewist",
+    "recipient_body": [],
+    "deadline_raw": "na de uitvoering van test",
+    "thresholds": [],
+    "conditions": [
+     "in het geval van rechtshandhaving",
+     "indien het vragen om geïnformeerde toestemming het testen van het AI-systeem onder reële omstandigheden onmogelijk zou maken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.95
+   },
+   {
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder of potentiële aanbieder, alsook door gebruiksverantwoordelijken of potentiële gebruiksverantwoordelijken via personen die voldoende zijn gekwalificeerd op het relevante gebied en beschikken over de nodige capaciteiten, opleiding en bevoegdheden om hun taken uit te voeren",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het testen onder reële omstandigheden",
+    "action": "wordt daadwerkelijk toezicht gehouden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.94
+   },
+   {
+    "deontic": "PERMISSION",
+    "addressee": "de voorspellingen, aanbevelingen of beslissingen van het AI-systeem",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "kunnen daadwerkelijk worden teruggedraaid en genegeerd",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98
+   }
+  ]
  }
 ]

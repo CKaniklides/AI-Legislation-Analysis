@@ -1,0 +1,168 @@
+
+=== Cbw (full) (data/BWBR0052872_2026-08-15_provisions.json) ===
+  111 provision(s) in scope, 5 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [1/5] Artikel 50. (verzoeken om toegang tot gegevens over registratie van domeinnamen) para 1 -- queued
+  [2/5] Artikel 4. (toepassingsbereik en jurisdictie) para 2 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [3/5] Artikel 60. (samenwerking met en bijstandsverzoek van de bevoegde autoriteit van een andere lidstaat van de Europese Unie) para 5 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [4/5] Artikel 43. (nationaal register van entiteiten) para 1 -- queued
+  [5/5] Artikel 70. (controlefunctionaris) para 2 -- finalized
+
+=== UAVG (full) (data/BWBR0040940_2026-09-01_provisions.json) ===
+  63 provision(s) in scope, 0 extraction unit(s)
+
+=== Wdo (full) (data/BWBR0048156_2025-11-11_provisions.json) ===
+  36 provision(s) in scope, 0 extraction unit(s)
+
+=== Telecommunicatiewet, Hoofdstuk 11 only (privacy/ePrivacy provisions) (data/BWBR0009950_2026-08-15_provisions.json) ===
+  25 provision(s) in scope, 0 extraction unit(s)
+
+=== Uitvoeringswet dataverordening (full) (data/BWBR0051796_2025-11-21_provisions.json) ===
+  14 provision(s) in scope, 2 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [1/2] Artikel 2. Geschillenbeslechtingsorgaan para 1 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [2/2] Artikel 3. Aanwijzing bevoegde autoriteiten para 2 -- queued
+
+=== GDPR (full) (data/32016R0679_original_provisions.json) ===
+  99 provision(s) in scope, 23 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [1/23] Artikel 23. Beperkingen para 2 -- queued
+  [2/23] Artikel 15. Recht van inzage van de betrokkene para 1 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [3/23] Artikel 14. Te verstrekken informatie wanneer de persoonsgegevens niet van de betrokkene zijn verkregen para 2 -- queued
+  [4/23] Artikel 6. Rechtmatigheid van de verwerking para 3 -- queued
+  [5/23] Artikel 35. Gegevensbeschermingseffectbeoordeling para 7 -- queued
+  [6/23] Artikel 38. Positie van de functionaris voor gegevensbescherming para 4 -- finalized
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [7/23] Artikel 40. Gedragscodes para 6 -- queued
+  [8/23] Artikel 6. Rechtmatigheid van de verwerking para 1 -- queued
+  [9/23] Artikel 14. Te verstrekken informatie wanneer de persoonsgegevens niet van de betrokkene zijn verkregen para 5 -- queued
+  [10/23] Artikel 13. Te verstrekken informatie wanneer persoonsgegevens bij de betrokkene worden verzameld para 2 -- queued
+  [11/23] Artikel 47. Bindende bedrijfsvoorschriften para 1 -- queued
+  [12/23] Artikel 41. Toezicht op goedgekeurde gedragscodes para 4 -- queued
+  [13/23] Artikel 5. Beginselen inzake verwerking van persoonsgegevens para 1 -- queued
+  [14/23] Artikel 75. Secretariaat para 6 -- finalized
+  [15/23] Artikel 50. Internationale samenwerking voor de bescherming van persoonsgegevens (whole provision) -- queued
+  [16/23] Artikel 74. Taken van de voorzitter para 1 -- queued
+  [17/23] Artikel 83. Algemene voorwaarden voor het opleggen van administratieve geldboeten para 5 -- queued
+  [18/23] Artikel 28. Verwerker para 3 -- queued
+  [19/23] Artikel 65. Geschillenbeslechting door het Comité para 1 -- queued
+  [20/23] Artikel 9. Verwerking van bijzondere categorieën van persoonsgegevens para 2 -- queued
+  [21/23] Artikel 58. Bevoegdheden para 3 -- queued
+  [22/23] Artikel 58. Bevoegdheden para 2 -- queued
+  [23/23] Artikel 49. Afwijkingen voor specifieke situaties para 1 -- queued
+
+=== NIS2 (full) (data/32022L2555_original_provisions.json) ===
+  46 provision(s) in scope, 15 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [1/15] Artikel 28. Database met domeinnaamregistratiegegevens para 2 -- queued
+  [2/15] Artikel 21. Maatregelen voor het beheer van cyberbeveiligingsrisico’s para 2 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [deadline parser] unrecognised phrasing, value/unit left null: 'Uiterlijk op 17 april 2025 en vervolgens om de twee jaar'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'Uiterlijk op 17 april 2025 en vervolgens om de twee jaar'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'Uiterlijk op 17 april 2025 en vervolgens om de twee jaar'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'Uiterlijk op 17 april 2025 en vervolgens om de twee jaar'
+  [3/15] Artikel 3. Essentiële en belangrijke entiteiten para 5 -- queued
+  [4/15] Artikel 32. Toezichts- en handhavingsmaatregelen met betrekking tot essentiële entiteiten para 2 -- queued
+  [5/15] Artikel 12. Gecoördineerde bekendmaking van de kwetsbaarheden en een Europese kwetsbaarheidsdatabase para 2 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [6/15] Artikel 26. Jurisdictie en territorialiteit para 1 -- queued
+  [7/15] Artikel 11. Eisen, technische capaciteiten en taken van de CSIRT’s para 1 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [8/15] Artikel 33. Toezichts- en handhavingsmaatregelen met betrekking tot belangrijke entiteiten para 2 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [9/15] Artikel 19. Collegiale toetsingen para 1 -- queued
+  [10/15] Artikel 40. Evaluatie (whole provision) -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [11/15] Artikel 19. Collegiale toetsingen para 6 -- queued
+  [12/15] Artikel 32. Toezichts- en handhavingsmaatregelen met betrekking tot essentiële entiteiten para 4 -- queued
+  [13/15] Artikel 33. Toezichts- en handhavingsmaatregelen met betrekking tot belangrijke entiteiten para 4 -- queued
+  [14/15] Artikel 37. Wederzijdse bijstand para 1 -- queued
+  [15/15] Artikel 15. CSIRT-netwerk para 3 -- queued
+
+=== DORA (full) (data/32022R2554_original_provisions.json) ===
+  64 provision(s) in scope, 19 extraction unit(s)
+    [deadline parser] unrecognised phrasing, value/unit left null: 'binnen de overeenkomstig artikel 20, eerste alinea, punt a), ii), vast te stellen termijnen'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'binnen de overeenkomstig artikel 20, eerste alinea, punt a), ii), vast te stellen termijnen'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'binnen de overeenkomstig artikel 20, eerste alinea, punt a), ii), vast te stellen termijnen'
+  [1/19] Artikel 19. Rapportage van ernstige ICT-gerelateerde incidenten en vrijwillige melding van significante cyberdreigingen para 4 -- finalized
+  [2/19] Artikel 2. Toepassingsgebied para 1 -- queued
+  [3/19] Artikel 21. Centralisatie van meldingen van ernstige ICT-gerelateerde incidenten para 2 -- queued
+  [4/19] Artikel 27. Vereisten voor testers voor het uitvoeren van TLPT para 2 -- queued
+  [5/19] Artikel 7. ICT-systemen, -protocollen en -instrumenten (whole provision) -- queued
+  [6/19] Artikel 31. Aanwijzing van kritieke derde aanbieders van ICT-diensten para 8 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [7/19] Artikel 11. Respons en herstel para 2 -- queued
+  [8/19] Artikel 32. Structuur van het oversightkader para 4 -- finalized
+  [9/19] Artikel 28. Algemene beginselen para 4 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [10/19] Artikel 22. Feedback van toezichthouders para 1 -- queued
+  [11/19] Artikel 36. Uitoefening van de bevoegdheden van de lead overseer buiten de Unie para 1 -- queued
+  [12/19] Artikel 51. Uitoefening van de bevoegdheid tot het nemen van administratieve strafmaatregelen en corrigerende maatregelen para 1 -- queued
+  [13/19] Artikel 35. Bevoegdheden van de lead overseer para 1 -- queued
+    [deadline parser] unrecognised phrasing, value/unit left null: 'tijdig'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'tijdig'
+    [deadline parser] unrecognised phrasing, value/unit left null: 'tijdig'
+  [14/19] Artikel 17. Beheerproces voor ICT-gerelateerde incidenten para 3 -- finalized
+  [15/19] Artikel 16. Vereenvoudigd kader voor ICT-risicobeheer para 1 -- queued
+  [16/19] Artikel 50. Administratieve strafmaatregelen en corrigerende maatregelen para 2 -- queued
+  [17/19] Artikel 30. Belangrijke contractuele bepalingen para 3 -- queued
+  [18/19] Artikel 37. Verzoek om informatie para 3 -- queued
+  [19/19] Artikel 58. Evaluatieclausule para 1 -- queued
+
+=== AI Act (full, pre-Digital-Omnibus per ADR-0004) (data/32024R1689_original_provisions.json) ===
+  113 provision(s) in scope, 25 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [1/25] Artikel 6. Classificatieregels voor AI-systemen met een hoog risico para 1 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [2/25] Artikel 14. Menselijk toezicht para 4 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [3/25] Artikel 9. Systeem voor risicobeheer para 5 -- queued
+  [4/25] Artikel 17. Systeem voor kwaliteitsbeheer para 1 -- queued
+  [5/25] Artikel 6. Classificatieregels voor AI-systemen met een hoog risico para 3 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [deadline parser] unrecognised phrasing, value/unit left null: 'Voordat een AI-systeem met een hoog risico als bedoeld in artikel 6, lid 2, in gebruik wordt gesteld'
+  [6/25] Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico para 1 -- queued
+  [7/25] Artikel 25. Verantwoordelijkheden in de AI-waardeketen para 1 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [8/25] Artikel 30. Aanmeldingsprocedure para 3 -- queued
+  [9/25] Artikel 54. Gemachtigden van aanbieders van AI-modellen voor algemene doeleinden para 3 -- queued
+  [10/25] Artikel 68. Wetenschappelijk panel van onafhankelijke deskundigen para 3 -- finalized
+  [11/25] Artikel 70. Aanwijzing van nationale bevoegde autoriteiten en centrale contactpunten para 5 -- queued
+  [12/25] Artikel 10. Data en datagovernance para 5 -- queued
+  [13/25] Artikel 68. Wetenschappelijk panel van onafhankelijke deskundigen para 2 -- finalized
+  [14/25] Artikel 22. Gemachtigden van aanbieders van AI-systemen met een hoog risico para 3 -- queued
+  [15/25] Artikel 99. Sancties para 7 -- queued
+  [16/25] Artikel 77. Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten para 2 -- queued
+  [17/25] Artikel 75. Wederzijdse bijstand, markttoezicht en controle van AI-systemen voor algemene doeleinden para 3 -- queued
+  [18/25] Artikel 62. Maatregelen voor aanbieders en gebruiksverantwoordelijken, met name kmo’s, met inbegrip van start-ups para 1 -- queued
+  [19/25] Artikel 79. Procedure op nationaal niveau voor de omgang met AI-systemen die een risico vormen para 6 -- queued
+  [20/25] Artikel 99. Sancties para 4 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [21/25] Artikel 112. Evaluatie en toetsing para 8 -- finalized
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [22/25] Artikel 112. Evaluatie en toetsing para 5 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [23/25] Artikel 36. Wijzigingen in de aanmelding para 7 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [24/25] Artikel 60. Testen van AI-systemen met een hoog risico onder reële omstandigheden buiten AI-testomgevingen voor regelgeving para 4 -- queued
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [25/25] Artikel 58. Gedetailleerde regelingen voor, en werking van, AI-testomgevingen voor regelgeving para 2 -- queued
+
+=== Bijlage 35 (DORA competent-authority designation) (Datasets/Dutch Laws/bijlage35_dataset.json) ===
+  5 provision(s) in scope, 0 extraction unit(s)
+
+89 unit(s) processed, 9 norms[] entries finalized, 80 sent to the review queue -> data/stage6_review_queue.json

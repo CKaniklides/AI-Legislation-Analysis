@@ -1,0 +1,52 @@
+[
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "17",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Bij of krachtens algemene maatregel van bestuur wordt een CSIRT aangewezen als de coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden.",
+  "reason": "two_pass_disagreement",
+  "pass1": [
+   {
+    "deontic": "COMPETENCE",
+    "addressee": null,
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "wordt een CSIRT aangewezen als de coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "Bij of krachtens algemene maatregel van bestuur"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt een CSIRT aangewezen als de coördinator",
+    "recipient_body": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Bij of krachtens algemene maatregel van bestuur",
+    "extraction_confidence": 0.98
+   }
+  ]
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "4",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "In afwijking van het eerste lid is het bepaalde bij of krachtens deze wet met betrekking tot essentiële entiteiten en belangrijke entiteiten die aanbieders van openbare elektronische communicatienetwerken of aanbieders van openbare elektronische communicatiediensten zijn, van toepassing op die aanbieders, indien zij hun diensten in Nederland aanbieden.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": []
+ }
+]

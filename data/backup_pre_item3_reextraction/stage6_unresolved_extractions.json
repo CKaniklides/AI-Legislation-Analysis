@@ -1,0 +1,389 @@
+[
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "26",
+  "paragraph_number": "2",
+  "unit_text": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid:\n\na.\ngeeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": {
+   "deontic": "OBLIGATION",
+   "addressee": "de entiteit",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Bij de vroegtijdige waarschuwing, bedoeld in het eerste lid",
+   "action": "geeft de entiteit aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt;\n\nb.\ngeeft de entiteit aan of het significante incident grensoverschrijdende gevolgen kan hebben; en\n\nc.\nverstrekt de entiteit de contactgegevens van de functionaris die verantwoordelijk is voor de melding.",
+   "recipient_body": [],
+   "deadline_raw": null,
+   "thresholds": [],
+   "conditions": [],
+   "deference": null,
+   "extraction_confidence": 0.97
+  },
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "22",
+  "paragraph_number": "1",
+  "unit_text": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555 , bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht. Onverminderd de ontvangen feedback van toezichthouders blijven financiële entiteiten volledig verantwoordelijk voor de behandeling en de gevolgen van de ICT-gerelateerde incidenten die op grond van artikel 19, lid 1, zijn gerapporteerd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": {
+   "deontic": "COMPETENCE",
+   "addressee": "de bevoegde autoriteit",
+   "addressee_type": "COMPETENT_AUTHORITY",
+   "trigger_event": "na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen",
+   "action": "bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht",
+   "recipient_body": [
+    "de financiële entiteit"
+   ],
+   "deadline_raw": "tijdig",
+   "thresholds": [],
+   "conditions": [
+    "waar mogelijk"
+   ],
+   "deference": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555",
+   "extraction_confidence": 0.9
+  },
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ },
+ {
+  "instrument_id": "BWBR0051796-art3",
+  "article": "3",
+  "paragraph_number": "5",
+  "unit_text": "In afwijking van het eerste lid is de Autoriteit persoonsgegevens de bevoegde autoriteit, bedoeld in artikel 37, eerste lid, van de dataverordening voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft.",
+  "reason": "validation_failed",
+  "pass1": {
+   "deontic": "DEFERENCE",
+   "addressee": null,
+   "addressee_type": null,
+   "trigger_event": null,
+   "action": null,
+   "recipient_body": [],
+   "deadline_raw": null,
+   "thresholds": [],
+   "conditions": [
+    "voor artikel 6, eerste lid, van de dataverordening voor zover het de verwerking van persoonsgegevens betreft"
+   ],
+   "deference": "In afwijking van het eerste lid",
+   "extraction_confidence": 0.98
+  },
+  "pass2": null,
+  "retried_with": "gpt-5.6-terra (reasoning:medium)"
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "4",
+  "paragraph_number": "2",
+  "unit_text": "In afwijking van het eerste lid is het bepaalde bij of krachtens deze wet met betrekking tot essentiële entiteiten en belangrijke entiteiten die aanbieders van openbare elektronische communicatienetwerken of aanbieders van openbare elektronische communicatiediensten zijn, van toepassing op die aanbieders, indien zij hun diensten in Nederland aanbieden.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "17",
+  "paragraph_number": "1",
+  "unit_text": "Bij of krachtens algemene maatregel van bestuur wordt een CSIRT aangewezen als de coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "43",
+  "paragraph_number": "1",
+  "unit_text": "In het belang van de goede uitvoering van deze wet beheert Onze Minister een nationaal register van essentiële entiteiten, belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "50",
+  "paragraph_number": "1",
+  "unit_text": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent, verleent op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt, toegang tot specifieke gegevens over de registratie van domeinnamen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "60",
+  "paragraph_number": "5",
+  "unit_text": "In het kader van de samenwerking informeert de bevoegde autoriteit het centrale contactpunt over de door haar genomen toezichts- en handhavingsmaatregelen met betrekking tot een entiteit als bedoeld in het eerste lid, waarna het centrale contactpunt de betrokken bevoegde autoriteit van een andere lidstaat van de Europese Unie informeert over die genomen toezichts- en handhavingsmaatregelen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0052872",
+  "article": "70",
+  "paragraph_number": "2",
+  "unit_text": "De controlefunctionaris is een onafhankelijke deskundige zijnde een natuurlijk persoon en heeft tot taak:\n\na.\nhet monitoren van de naleving van het bepaalde bij of krachtens de artikelen 21 en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie, door de betrokken essentiële entiteit; en\n\nb.\nhet informeren van de bevoegde autoriteit en het bestuur van de betrokken essentiële entiteit over de naleving van het bepaalde bij of krachtens de artikelen 21 en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie, door de betrokken essentiële entiteit.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0040940",
+  "article": "48",
+  "paragraph_number": "9",
+  "unit_text": "In samenwerkingsprotocollen treedt op het tijdstip van inwerkingtreding van deze wet de Autoriteit persoonsgegevens van rechtswege in de plaats van het College bescherming persoonsgegevens.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0051796",
+  "article": "3",
+  "paragraph_number": "4",
+  "unit_text": "Als bevoegde autoriteit heeft de Autoriteit persoonsgegevens de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met g en j, van de dataverordening. In afwijking in zoverre van de eerste volzin, is artikel 14, eerste, vierde en vijfde lid van de Uitvoeringswet Algemene verordening gegevensbescherming van overeenkomstige toepassing voor zover het de verwerking van persoonsgegevens betreft.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0051796",
+  "article": "2",
+  "paragraph_number": "1",
+  "unit_text": "De Autoriteit Consument en Markt certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "BWBR0051796",
+  "article": "3",
+  "paragraph_number": "2",
+  "unit_text": "Als bevoegde autoriteit heeft de Autoriteit Consument en Markt de taken en bevoegdheden, bedoeld in artikel 37, vijfde lid, onderdelen a tot en met i, van de dataverordening.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "30",
+  "paragraph_number": "4",
+  "unit_text": "Desgevraagd stellen de verwerkingsverantwoordelijke of de verwerker en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke of de verwerker het register ter beschikking van de toezichthoudende autoriteit.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "38",
+  "paragraph_number": "4",
+  "unit_text": "Betrokkenen kunnen met de functionaris voor gegevensbescherming contact opnemen over alle aangelegenheden die verband houden met de verwerking van hun gegevens en met de uitoefening van hun rechten uit hoofde van deze verordening.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "40",
+  "paragraph_number": "6",
+  "unit_text": "Wanneer de ontwerpgedragscode, de wijziging of uitbreiding wordt goedgekeurd overeenkomstig lid 5, en indien de gedragscode in kwestie geen betrekking heeft op verwerkingsactiviteiten in verschillende lidstaten, registreert de toezichthoudende autoriteit de gedragscode en maakt zij deze bekend.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "41",
+  "paragraph_number": "4",
+  "unit_text": "Onverminderd de taken en bevoegdheden van de bevoegde toezichthoudende autoriteit en de bepalingen van hoofdstuk VIII neemt een in lid 1 van dit artikel bedoeld orgaan, mits er passende waarborgen zijn, de nodige maatregelen ingeval een verwerkingsverantwoordelijke of verwerker een inbreuk pleegt op de gedragscode, waaronder schorsing of uitsluiting van de betrokken verwerkingsverantwoordelijke of verwerker van de gedragscode. Het orgaan stelt de bevoegde toezichthoudende autoriteit in kennis van die maatregelen en van de redenen daarvoor.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "50",
+  "paragraph_number": null,
+  "unit_text": "Ten aanzien van derde landen en internationale organisaties nemen de Commissie en de toezichthoudende autoriteiten de nodige maatregelen om:\n\na) procedures voor internationale samenwerking te ontwikkelen, zodat de effectieve handhaving van de wetgeving inzake de bescherming van persoonsgegevens wordt vergemakkelijkt;\n\nb) internationale wederzijdse bijstand te bieden bij de handhaving van de wetgeving inzake de bescherming van persoonsgegevens, onder meer door kennisgeving, doorverwijzing van klachten, bijstand bij onderzoeken en uitwisseling van informatie, voor zover er passende waarborgen voor de bescherming van persoonsgegevens en andere grondrechten en fundamentele vrijheden bestaan;\n\nc) belanghebbenden te betrekken bij besprekingen en activiteiten om de internationale samenwerking bij de handhaving van de wetgeving inzake de bescherming van persoonsgegevens te bevorderen; en\n\nd) de uitwisseling en het documenteren van wetgeving en praktijken inzake de bescherming van persoonsgegevens te bevorderen, onder meer betreffende jurisdictiegeschillen met derde landen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "57",
+  "paragraph_number": "1",
+  "unit_text": "Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:\n\na) zij monitort en handhaaft de toepassing van deze verordening;\n\nb) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de risico's, regels, waarborgen en rechten in verband met de verwerking. Bijzondere aandacht wordt besteed aan specifiek op kinderen gerichte activiteiten;\n\nc) zij verleent overeenkomstig het recht van de lidstaat, advies aan het nationale parlement, de regering, en andere instellingen en organen over wetgevingsinitiatieven en bestuursmaatregelen in verband met de bescherming van de rechten en vrijheden van natuurlijke personen op het gebied van verwerking;\n\nd) zij maakt de verwerkingsverantwoordelijken en de verwerkers beter bekend met hun verplichtingen uit hoofde van deze verordening;\n\ne) zij verstrekt desgevraagd informatie aan iedere betrokkene over de uitoefening van zijn rechten uit hoofde van deze verordening en werkt daartoe in voorkomend geval samen met de toezichthoudende autoriteiten in andere lidstaten;\n\nf) zij behandelt klachten van betrokkenen, of van organen, organisaties of verenigingen overeenkomstig artikel 80, onderzoekt de inhoud van de klacht in de mate waarin dat gepast is en stelt de klager binnen een redelijke termijn in kennis van de vooruitgang en het resultaat van het onderzoek, met name indien verder onderzoek of coördinatie met een andere toezichthoudende autoriteit noodzakelijk is;\n\ng) zij werkt samen met andere toezichthoudende autoriteiten, onder meer door informatie te delen en wederzijdse bijstand te bieden, teneinde de samenhang in de toepassing en de handhaving van deze verordening te waarborgen;\n\nh) zij verricht onderzoeken naar de toepassing van deze verordening, onder meer op basis van informatie die zij van een andere toezichthoudende autoriteit of een andere overheidsinstantie ontvangt;\n\ni) zij volgt de relevante ontwikkelingen voor zover deze een impact hebben op de bescherming van persoonsgegevens, met name de ontwikkelingen in informatie- en communicatietechnologieën en handelspraktijken;\n\nj) zij stelt de in artikel 28, lid 8, en artikel 46, lid 2, onder d), bedoelde standaardcontractbepalingen vast;\n\nk) zij stelt een lijst op met betrekking tot het vereiste inzake een gegevensbeschermingseffectbeoordeling overeenkomstig artikel 35, lid 4, en houdt deze lijst bij;\n\nl) zij verstrekt advies over de in artikel 36, lid 2, bedoelde verwerkingsactiviteiten;\n\nm) zij bevordert de opstelling van gedragscodes uit hoofde van artikel 40, lid 1, geeft advies en keurt, overeenkomstig artikel 40, lid 5, gedragscodes goed die voldoende waarborgen leveren;\n\nn) zij bevordert de invoering van certificeringsmechanismen voor gegevensbescherming en van gegevensbeschermingszegels en -merktekens overeenkomstig artikel 42, lid 1, en keurt de criteria voor certificering uit hoofde van artikel 42, lid 5, goed;\n\no) waar van toepassing verricht zij een periodieke toetsing van de overeenkomstig artikel 42, lid 7, afgegeven certificeringen;\n\np) zij zorgt voor het opstellen en het bekendmaken van de criteria voor de accreditatie van een orgaan voor het toezicht op gedragscodes op grond van artikel 41 en van een certificeringsorgaan op grond van artikel 43;\n\nq) zij zorgt voor de accreditatie van een orgaan voor het toezicht op gedragscodes op grond van artikel 41 en van een certificeringsorgaan op grond van artikel 43;\n\nr) zij geeft toestemming voor de in artikel 46, lid 3, bedoelde contractuele en andere bepalingen;\n\ns) zij keurt overeenkomstig artikel 47 bindende bedrijfsvoorschriften goed;\n\nt) zij levert een bijdrage aan de activiteiten van het Comité;\n\nu) zij houdt interne registers bij van inbreuken op deze verordening en van overeenkomstig artikel 58, lid 2, getroffen maatregelen; en\n\nv) zij verricht alle andere taken die verband houden met de bescherming van persoonsgegevens.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32016R0679",
+  "article": "64",
+  "paragraph_number": "3",
+  "unit_text": "Het Comité brengt in de in de leden 1 en 2 bedoelde gevallen een advies uit over de aan het Comité voorgelegde aangelegenheid, mits het daarover niet eerder advies heeft uitgebracht. Dat advies wordt binnen acht weken vastgesteld met gewone meerderheid van de leden van het Comité. Die termijn kan met zes weken worden verlengd, rekening houdend met de complexiteit van de aangelegenheid. Met het in lid 1 bedoelde ontwerpbesluit, dat overeenkomstig lid 5 onder de leden van het Comité wordt verspreid, wordt een lid dat niet binnen een redelijke, door de voorzitter aangegeven termijn bezwaar heeft aangetekend, geacht in te stemmen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "19",
+  "paragraph_number": "1",
+  "unit_text": "Uiterlijk op 17 januari 2025 stelt de samenwerkingsgroep – met bijstand van de Commissie, Enisa en, voor zover relevant, het CSIRT-netwerk — de methodologie en de organisatorische aspecten van collegiale toetsingen vast teneinde lessen te trekken uit gedeelde ervaringen, het wederzijdse vertrouwen te versterken, een hoog gemeenschappelijk cyberbeveiligingsniveau te bewerkstelligen, en de cyberbeveiligingscapaciteiten en het cyberbeveiligingsbeleid van de lidstaten die voor de tenuitvoerlegging van deze richtlijn nodig zijn, te versterken. Deelname aan collegiale toetsingen is vrijwillig. De collegiale toetsingen worden uitgevoerd door cyberbeveiligingsdeskundigen. De cyberbeveiligingsdeskundigen worden aangewezen door ten minste twee andere lidstaten dan de lidstaat die wordt geëvalueerd.\n\nDe collegiale toetsingen hebben betrekking op ten minste een van de volgende zaken:\n\na) de mate van uitvoering van de in de artikelen 21 en 23 bedoelde risicobeheersmaatregelen en rapportageverplichtingen op het gebied van cyberbeveiliging;\n\nb) het niveau van de capaciteiten, met inbegrip van de beschikbare financiële, technische en personele middelen, en de doeltreffendheid van de uitoefening van de taken van de bevoegde autoriteiten;\n\nc) de operationele capaciteit van de CSIRT’s;\n\nd) de mate van uitvoering van de in artikel 37 bedoelde wederzijdse bijstand;\n\ne) de mate van uitvoering van het in artikel 29 bedoelde kader voor de uitwisseling van informatie over cyberbeveiliging;\n\nf) specifieke kwesties van grens- of sectoroverschrijdende aard.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "19",
+  "paragraph_number": "6",
+  "unit_text": "De collegiale toetsingen omvatten fysieke of virtuele bezoeken ter plaatse en informatie-uitwisselingen elders. In overeenstemming met het beginsel van goede samenwerking verstrekt de aan een collegiale toetsing onderworpen lidstaat de aangewezen cyberbeveiligingsdeskundigen de informatie die nodig is voor de beoordeling, onverminderd het Unie- of nationale recht inzake de bescherming van vertrouwelijke of gerubriceerde informatie en de bescherming van essentiële staatsfuncties, zoals de nationale veiligheid. De samenwerkingsgroep ontwikkelt in samenwerking met de Commissie en Enisa passende gedragscodes ter ondersteuning van de werkmethoden van de aangewezen cyberbeveiligingsdeskundigen. Alle informatie die via de collegiale toetsing wordt verkregen, wordt uitsluitend voor dat doel gebruikt. De cyberbeveiligingsdeskundigen die aan de collegiale toetsing deelnemen, maken geen gevoelige of vertrouwelijke informatie die zij uit hoofde van die collegiale toetsing hebben verkregen, bekend aan derden.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022L2555",
+  "article": "40",
+  "paragraph_number": null,
+  "unit_text": "Uiterlijk op 17 oktober 2027 en vervolgens om de 36 maanden evalueert de Commissie de werking van deze richtlijn en brengt zij daarover verslag uit aan het Europees Parlement en aan de Raad. In het verslag wordt met name de relevantie van de omvang van de betrokken entiteiten, en de sectoren, subsectoren en types van de in de bijlagen I en II bedoelde entiteiten voor het functioneren van de economie en de samenleving met betrekking tot cyberbeveiliging beoordeeld. Daartoe en teneinde de strategische en operationele samenwerking verder te bevorderen, houdt de Commissie rekening met de verslagen van de samenwerkingsgroep en het CSIRT-netwerk over de opgedane ervaring op strategisch en operationeel niveau. Het verslag gaat zo nodig vergezeld van een wetgevingsvoorstel.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "7",
+  "paragraph_number": null,
+  "unit_text": "Om ICT-risico aan te pakken en te beheren, gebruiken en onderhouden financiële entiteiten geactualiseerde ICT-systemen, -protocollen en -instrumenten die:\n\na) geschikt zijn gezien de omvang van de verrichtingen ter ondersteuning van hun activiteiten, in overeenstemming met het evenredigheidsbeginsel als bedoeld in artikel 4;\n\nb) betrouwbaar zijn;\n\nc) voldoende capaciteit hebben voor een nauwkeurige verwerking van de gegevens die nodig zijn voor de uitvoering van activiteiten en de tijdige verlening van diensten, en om zo nodig volumepieken in orders, orderberichten of transacties op te vangen, onder meer wanneer nieuwe technologie wordt ingevoerd;\n\nd) technologisch gezien voldoende weerbaar zijn om indien nodig in gespannen marktomstandigheden of andere ongunstige situaties naar behoren te voorzien in bijkomende gegevensverwerking.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "12",
+  "paragraph_number": "7",
+  "unit_text": "Bij herstel van een ICT-gerelateerd incident verrichten financiële entiteiten de benodigde controles, ook meerdere controles, waaronder afstemmingen, om ervoor te zorgen dat het hoogste niveau van gegevensintegriteit wordt gehandhaafd. Deze controles worden ook verricht bij het reconstrueren van gegevens van externe belanghebbenden om te waarborgen dat alle gegevens consistent zijn tussen de systemen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "14",
+  "paragraph_number": "1",
+  "unit_text": "Als onderdeel van het kader voor ICT-risicobeheer als bedoeld in artikel 6, lid 1, beschikken financiële entiteiten over crisiscommunicatieplannen die het mogelijk maken ten minste ernstige ICT-gerelateerde incidenten of kwetsbaarheden op verantwoordelijke wijze bekend te maken aan cliënten en tegenpartijen en, in voorkomend geval, aan het publiek.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "22",
+  "paragraph_number": "1",
+  "unit_text": "Onverminderd de technische input, het advies of de corrigerende maatregelen en de daaropvolgende follow-up die, in voorkomend geval, overeenkomstig het nationale recht door de CSIRT’s kunnen worden verstrekt op grond van Richtlijn (EU) 2022/2555 , bevestigt de bevoegde autoriteit na ontvangst van de in artikel 19, lid 4, bedoelde eerste kennisgeving en verslagen, de ontvangst ervan en kan zij, waar mogelijk, tijdig relevante en evenredige feedback of richtsnoeren op hoog niveau aan de financiële entiteit verstrekken, met name door relevante geanonimiseerde informatie en inlichtingen over soortgelijke bedreigingen beschikbaar te stellen, en kan zij de op het niveau van de financiële entiteit toegepaste corrigerende maatregelen bespreken en onderzoeken hoe de nadelige effecten in de financiële sector zo veel mogelijk kunnen worden beperkt en verzacht. Onverminderd de ontvangen feedback van toezichthouders blijven financiële entiteiten volledig verantwoordelijk voor de behandeling en de gevolgen van de ICT-gerelateerde incidenten die op grond van artikel 19, lid 1, zijn gerapporteerd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "24",
+  "paragraph_number": "3",
+  "unit_text": "Bij de uitvoering van het in lid 1 van dit artikel bedoelde programma voor het testen van de digitale operationele weerbaarheid volgen andere financiële entiteiten dan micro-ondernemingen een risicogebaseerde benadering, waarbij rekening wordt gehouden met de criteria van artikel 4, lid 2, en met het veranderende landschap van het ICT-risico, eventuele specifieke risico’s waaraan de betrokken financiële entiteit wordt of kan worden blootgesteld, de kritieke aard van informatieactiva en verleende diensten, alsmede alle andere factoren die de financiële entiteit passend acht.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "27",
+  "paragraph_number": "2",
+  "unit_text": "Bij het inzetten van interne testers zorgen de financiële entiteiten ervoor dat, naast de vereisten van lid 1, de volgende voorwaarden worden vervuld:\n\na) dergelijk inzetten van interne testers is goedgekeurd door de relevante bevoegde autoriteit of de overeenkomstig artikel 26, leden 9 en 10, aangewezen enige overheidsinstantie;\n\nb) de relevante bevoegde autoriteit heeft geverifieerd dat de financiële entiteit voldoende middelen heeft ingezet en heeft ervoor gezorgd dat belangenconflicten gedurende de hele ontwerp- en uitvoeringsfase van de test worden voorkomen, en\n\nc) de verstrekker van inlichtingen over dreigingen is extern ten opzichte van de financiële entiteit.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32022R2554",
+  "article": "36",
+  "paragraph_number": "2",
+  "unit_text": "Onverminderd de respectieve bevoegdheden van de instellingen van de Unie en van de lidstaten, sluiten de EBA, de ESMA of de Eiopa voor de toepassing van lid 1 regelingen voor administratieve samenwerking met de betrokken autoriteit van het derde land teneinde de inspecties in het betrokken derde land door de lead overseer en zijn voor die missie in dat derde land aangewezen team, vlot te laten verlopen. Deze samenwerkingsregelingen scheppen geen wettelijke verplichtingen voor de Unie en haar lidstaten en beletten de lidstaten en hun bevoegde autoriteiten niet om bilaterale of multilaterale regelingen met die derde landen en hun betrokken autoriteiten te sluiten.\n\nIn die samenwerkingsregelingen worden ten minste de volgende elementen gespecificeerd:\n\na) de procedures voor de coördinatie van uit hoofde van deze verordening uitgevoerde oversightactiviteiten en elke overeenkomstige door de betrokken autoriteit van het derde land in kwestie uitgevoerde monitoring van het ICT-risico van derde aanbieders in de financiële sector, met inbegrip van details over het toezenden door de lead overseer en zijn team, van de toestemming van de betrokken autoriteit van het derde land in kwestie om algemene onderzoeken en inspecties ter plaatse uit te voeren, zoals bedoeld in lid 1, eerste alinea, op het grondgebied dat onder de jurisdictie van de betrokken autoriteit van het derde land valt;\n\nb) het mechanisme voor het doorgeven van relevante informatie tussen de EBA, de ESMA of de Eiopa, en de betrokken autoriteit van het derde land in kwestie, met name in verband met informatie waar de lead overseer uit hoofde van artikel 37 om kan verzoeken;\n\nc) de mechanismen voor snelle kennisgeving door de betrokken autoriteit van het derde land in kwestie aan de EBA, de ESMA of de Eiopa, van gevallen waarbij vermoed wordt dat een in een derde land gevestigde derde aanbieder van ICT-diensten die overeenkomstig artikel 31, lid 1, punt a), als cruciaal is aangewezen, de vereisten heeft overtreden die hij krachtens het toepasselijke recht van het derde land in kwestie moet naleven bij het verlenen van diensten aan financiële instellingen in dat derde land, evenals de toegepaste rechtsmiddelen en sancties;\n\nd) het regelmatig doorgeven van updates over ontwikkelingen op het gebied van regelgeving en toezicht inzake de monitoring van het ICT-risico van derde aanbieders van financiële instellingen in het derde land in kwestie;\n\ne) de details om indien nodig de deelname van een vertegenwoordiger van de betrokken autoriteit van het derde land aan de door de lead overseer en het aangewezen team uitgevoerde inspecties, mogelijk te maken.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "26",
+  "paragraph_number": "11",
+  "unit_text": "Onverminderd artikel 50 van deze verordening informeren gebruiksverantwoordelijken van in bijlage III bedoelde AI-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen, de natuurlijke personen dat het AI-systeem met een hoog risico op hen wordt toegepast. Op AI-systemen met een hoog risico die voor rechtshandhavingsdoeleinden worden gebruikt, is artikel 13 van Richtlijn (EU) 2016/680 van toepassing.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "30",
+  "paragraph_number": "3",
+  "unit_text": "Bij de in lid 2 van dit artikel bedoelde aanmelding worden de conformiteitsbeoordelingsactiviteiten, de conformiteitsbeoordelingsmodule(s), de soorten AI-systemen in kwestie en de desbetreffende bekwaamheidsattestatie uitvoerig beschreven. Indien een aanmelding niet gebaseerd is op een accreditatiecertificaat als bedoeld in artikel 29, lid 2, verschaft de aanmeldende autoriteit de Commissie en de andere lidstaten de bewijsstukken waaruit de bekwaamheid van de conformiteitsbeoordelingsinstantie blijkt, evenals de regeling die waarborgt dat de instantie regelmatig wordt gecontroleerd en zal blijven voldoen aan de eisen van artikel 31.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "70",
+  "paragraph_number": "5",
+  "unit_text": "Bij de uitvoering van hun taken voldoen de nationale bevoegde autoriteiten aan de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "77",
+  "paragraph_number": "2",
+  "unit_text": "Uiterlijk op 2 november 2024 stelt elke lidstaat de in lid 1 bedoelde overheidsinstanties of -organen vast en maakt de lijst openbaar. De lidstaten stellen de Commissie en de andere lidstaten in kennis van de lijst en houden deze up-to-date.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "75",
+  "paragraph_number": "3",
+  "unit_text": "Indien een markttoezichtautoriteit haar onderzoek naar het AI-systeem met een hoog risico niet kan afronden omdat zij geen toegang heeft tot bepaalde informatie met betrekking tot het AI-model voor algemene doeleinden, hoewel zij al het nodige heeft gedaan om die informatie te verkrijgen, kan zij een met redenen omkleed verzoek indienen bij het AI-bureau, waarmee de toegang tot die informatie wordt afgedwongen. In dat geval verstrekt het AI-bureau de verzoekende autoriteit onverwijld, en in ieder geval binnen dertig dagen, alle informatie die het relevant acht om vast te stellen of een AI-systeem met een hoog risico non-conform is. Markttoezichtautoriteiten waarborgen dat de door hen verkregen informatie overeenkomstig artikel 78 van deze verordening vertrouwelijk wordt behandeld. De procedure van hoofdstuk VI van Verordening (EU) 2019/1020 is van overeenkomstige toepassing.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "100",
+  "paragraph_number": "2",
+  "unit_text": "Voor de niet-naleving van het verbod op de in artikel 5 bedoelde AI-praktijken gelden administratieve geldboeten tot 1 500 000 EUR.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "112",
+  "paragraph_number": "5",
+  "unit_text": "Uiterlijk op 2 augustus 2028 evalueert de Commissie de werking van het AI-bureau, de vraag of het Bureau voldoende bevoegdheden heeft gekregen om zijn taken uit te voeren en of het voor de correcte uitvoering en handhaving van deze verordening relevant en noodzakelijk zou zijn om het AI-bureau en zijn handhavingsbevoegdheden op te schalen en zijn middelen uit te breiden. De Commissie dient dit evaluatieverslag in bij het Europees Parlement en bij de raad.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ },
+ {
+  "instrument_id": "32024R1689",
+  "article": "112",
+  "paragraph_number": "8",
+  "unit_text": "Voor de toepassing van de leden 1 tot en met 7 verstrekken de AI-board, de lidstaten en nationale bevoegde autoriteiten onverwijld informatie aan de Commissie op haar verzoek.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null
+ }
+]

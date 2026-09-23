@@ -172,7 +172,54 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien het orgaan: a. niet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening; of b. niet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening.",
+    "action": "kan een beschikking tot certificering tot geschillenbeslechtingsorgaan intrekken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "niet langer voldoet aan de voorwaarden, bedoeld in artikel 10, vijfde lid, van de dataverordening",
+     "niet voldoet aan artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'bedoeld in artikel 10, vijfde lid, van de dataverordening; artikel 10, tweede, vierde, zevende, achtste, negende of tiende lid, van de dataverordening'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening",
+    "action": "certificeert op een verzoek als bedoeld in artikel 10, vijfde lid, van de dataverordening een orgaan als geschillenbeslechtingsorgaan voor ten hoogste vijf jaar",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste vijf jaar"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on []; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -278,7 +325,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -297,7 +345,30 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "de bevoegde autoriteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover het de verwerking van persoonsgegevens betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -316,7 +387,10 @@
     "in afwijking van": 1
    },
    "max_condition_depth": 0
-  }
+  },
+  "_empty_paragraph_indices": [
+   3
+  ]
  },
  {
   "uid": "nl:BWBR0051796:art4@2025-11-21",
@@ -473,7 +547,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "1",
@@ -492,7 +567,75 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zijn belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'met uitzondering van artikel 20'}, pass2={'deontic': 'COMPETENCE', 'deference': 'bij besluit van de Autoriteit persoonsgegevens aangewezen personen'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROHIBITION', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "voor zover het de verwerking van persoonsgegevens betreft",
+    "action": "belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "het toezicht op de naleving van artikel 6, eerste lid, van de dataverordening",
+     "voor zover het de verwerking van persoonsgegevens betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'In afwijking van het eerste lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -589,7 +732,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -611,7 +755,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    }
   ],
   "features": {
@@ -692,7 +837,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -713,7 +859,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -846,7 +993,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "5",
@@ -865,7 +1013,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "2",
@@ -886,7 +1035,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -909,7 +1059,28 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "Het eerste lid",
+    "addressee_type": "OTHER",
+    "trigger_event": "inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROHIBITION', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -966,7 +1137,28 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'NONE', 'deference': None}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 6,
    "xref_intra_instrument": 0,
@@ -1094,7 +1286,28 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "Wijzigt de Wet handhaving consumentenbescherming.",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'NONE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 6,
    "xref_intra_instrument": 0,
@@ -1212,7 +1425,35 @@
   "dossier_number": "36733",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Deze wet treedt in werking",
+    "action": "treedt in werking met ingang van 12 september 2025",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "met ingang van 12 september 2025"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Indien het Staatsblad waarin deze wet wordt geplaatst, wordt uitgegeven na 11 september 2025"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'DEFINITION', 'deference': None}, pass2={'deontic': 'DEFINITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 46,
    "xref_intra_instrument": 0,

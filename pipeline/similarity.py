@@ -76,14 +76,30 @@ def _cosine_similarity_matrix(vectors: list[list[float]]):
     return normalized @ normalized.T
 
 
-def semantic_candidate_pairs(client, texts: list[str], k: int = 8) -> set[tuple[int, int]]:
+def semantic_candidate_pairs(client, texts: list[str], k: int = 8,
+                              groups: "list[str] | None" = None,
+                              k_within: "int | None" = None) -> set[tuple[int, int]]:
     """Returns {(i, j), ...} index pairs into `texts` (i < j) where j is among i's
     top-k most similar OTHER texts by embedding cosine similarity, or vice versa (kNN
     isn't symmetric, so both directions are unioned). Top-k rather than a fixed
     similarity-score cutoff on purpose: an absolute cosine threshold is notoriously
     corpus-dependent and would need calibration against a labelled sample we don't
     have yet (Stage 9); bounding by k avoids inventing a number that hasn't been
-    checked against anything."""
+    checked against anything.
+
+    `groups` (2026-09-24, item 9) -- one label per text (e.g. instrument_id) -- splits
+    each node's top-k into two SEPARATE budgets, k_within (same group) and k (cross
+    group), rather than one shared top-k. Checked directly why this matters: without
+    grouping, candidate generation excluded ALL within-instrument semantic pairs
+    entirely (a separate, even harder restriction than what this fixes) on the
+    assumption that citation adjacency covers same-instrument relatedness well enough --
+    but articles genuinely don't always cite every related provision in the same law
+    (e.g. two amendments added years apart covering similar ground). Once within-
+    instrument pairs ARE allowed, they need their OWN budget: same-instrument text is
+    typically much closer in embedding space (shared drafting boilerplate, defined
+    terms, structure) than a genuinely useful cross-instrument match, so a single
+    shared top-k would let within-instrument neighbours crowd cross-instrument ones out
+    of the same budget entirely."""
     import numpy as np
 
     embeddings = compute_embeddings(client, texts)
@@ -91,13 +107,32 @@ def semantic_candidate_pairs(client, texts: list[str], k: int = 8) -> set[tuple[
     sim = _cosine_similarity_matrix(vectors)
     np.fill_diagonal(sim, -1.0)
 
-    pairs = set()
     n = len(texts)
-    k = min(k, n - 1) if n > 1 else 0
+    pairs = set()
+
+    if groups is None:
+        k = min(k, n - 1) if n > 1 else 0
+        for i in range(n):
+            top_k_idx = np.argsort(sim[i])[::-1][:k]
+            for j in top_k_idx:
+                if sim[i][j] <= 0:
+                    continue
+                pairs.add((min(i, int(j)), max(i, int(j))))
+        return pairs
+
+    k_within = k if k_within is None else k_within
+    groups_arr = np.array(groups)
     for i in range(n):
-        top_k_idx = np.argsort(sim[i])[::-1][:k]
-        for j in top_k_idx:
-            if sim[i][j] <= 0:
+        same_group = groups_arr == groups_arr[i]
+        same_group[i] = False  # never match a node to itself
+        for mask, budget in ((same_group, k_within), (~same_group, k)):
+            idxs = np.where(mask)[0]
+            if len(idxs) == 0 or budget <= 0:
                 continue
-            pairs.add((min(i, int(j)), max(i, int(j))))
+            local_sim = sim[i][idxs]
+            top = idxs[np.argsort(local_sim)[::-1][:min(budget, len(idxs))]]
+            for j in top:
+                if sim[i][j] <= 0:
+                    continue
+                pairs.add((min(i, int(j)), max(i, int(j))))
     return pairs

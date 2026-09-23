@@ -2465,13 +2465,15 @@
     "number": "5",
     "text": "Voor zover het de verlening van vergunningen voor het gebruik van frequentieruimte door of ten behoeve van commerciële media-instellingen als bedoeld in artikel 1.1 van de Mediawet 2008 betreft, geschiedt de in het vierde lid bedoelde keuze in overeenstemming met Onze Minister van Onderwijs, Cultuur en Wetenschap.",
     "points": [],
-    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=3&paragraaf=3.5&artikel=3.10&lid=5&z=2026-08-15&g=2026-08-15"
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=3&paragraaf=3.5&artikel=3.10&lid=5&z=2026-08-15&g=2026-08-15",
+    "numbering_status": "inconsistent"
    },
    {
     "number": "5",
     "text": "Voor zover de in het vierde lid bedoelde keuze betrekking heeft op het al dan niet toepassen van een financieel bod bij de toepassing van de vergelijkende toets, geschiedt deze tevens in overeenstemming met Onze Minister van Financiën.",
     "points": [],
-    "jci": null
+    "jci": null,
+    "numbering_status": "inconsistent"
    },
    {
     "number": "6",
@@ -18859,7 +18861,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "2",
@@ -18878,7 +18881,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -18895,7 +18899,28 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "Een abonnee",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "kan de verleende toestemming, bedoeld in het tweede lid, onderdeel a, op elk moment intrekken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'deference']; pass1={'deontic': 'PERMISSION', 'deference': 'bedoeld in het tweede lid, onderdeel a'}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19020,7 +19045,8 @@
     "extraction_confidence": 0.93,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -19039,7 +19065,55 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de in artikel 11.2 bedoelde aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "nadere verplichtingen en beperkingen worden opgelegd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers",
+     "ten behoeve van de veiligheid en beveiliging van de door hen aangeboden netwerken en diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'Bij of krachtens algemene maatregel van bestuur'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De in artikel 11.2 bedoelde aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "dragen er zorg voor dat de abonnees worden geïnformeerd over",
+    "recipient_body": [
+     "de abonnees"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover het andere maatregelen betreft dan die welke de aanbieder op grond van het eerste lid gehouden is te treffen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'op grond van het eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19151,8 +19225,8 @@
      "degene wiens persoonsgegevens het betreft"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": null,
      "raw": "onverwijld"
     },
@@ -19164,7 +19238,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "7",
@@ -19183,7 +19258,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 6
    },
    {
     "number": "3",
@@ -19203,7 +19279,103 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "houdt een overzicht bij van alle inbreuken in verband met persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'de in het derde lid bedoelde gegevens'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "een inbreuk op de beveiliging, bedoeld in artikel 11.3, die nadelige gevolgen heeft voor de bescherming van persoonsgegevens die zijn verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie",
+    "action": "stelt de Autoriteit persoonsgegevens onverwijld in kennis van een inbreuk op de beveiliging, bedoeld in artikel 11.3, die nadelige gevolgen heeft voor de bescherming van persoonsgegevens die zijn verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": "qualitative_urgent",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'bedoeld in artikel 11.3'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "de aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de aanbieder naar het oordeel van de Autoriteit persoonsgegevens gepaste technische beschermingsmaatregelen heeft genomen waardoor de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens",
+    "action": "De kennisgeving, bedoeld in het tweede lid, is niet vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "naar het oordeel van de Autoriteit persoonsgegevens",
+     "gepaste technische beschermingsmaatregelen",
+     "de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'bedoeld in het tweede lid'}, pass2={'deontic': 'PROHIBITION', 'deference': 'naar het oordeel van de Autoriteit persoonsgegevens'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de aanbieder van een openbare elektronische communicatiedienst geen kennisgeving als bedoeld in het tweede lid doet",
+    "action": "van de aanbieder verlangen dat hij die persoon alsnog in kennis stelt van de inbreuk",
+    "recipient_body": [
+     "de persoon wiens persoonsgegevens het betreft"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien het van oordeel is dat de inbreuk in verband met persoonsgegevens waarschijnlijk ongunstige gevolgen zal hebben voor de persoonlijke levenssfeer van de persoon wiens persoonsgegevens het betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': 'als bedoeld in het tweede lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19290,7 +19462,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -19309,7 +19482,28 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "regels worden gesteld ten aanzien van de keuzemogelijkheden voor de wijze van betaling van geleverde elektronische communicatiediensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'Bij algemene maatregel van bestuur kunnen'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19449,7 +19643,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "2",
@@ -19473,7 +19668,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -19492,7 +19688,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "6",
@@ -19513,7 +19710,50 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "zodra deze verkeersgegevens niet langer nodig zijn ten behoeve van de overbrenging van communicatie",
+    "action": "verwijderen dan wel anonimiseren de door hen verwerkte en opgeslagen verkeersgegevens met betrekking tot abonnees of gebruikers",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'OBLIGATION', 'deference': 'onverminderd het tweede, derde en vijfde lid'}, pass2={'deontic': 'OBLIGATION', 'deference': 'onverminderd het tweede, derde en vijfde lid'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "personen die werkzaam zijn onder het gezag van de aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De verwerking van verkeersgegevens in overeenstemming met het eerste tot en met vierde lid",
+    "action": "moet beperkt blijven tot hetgeen noodzakelijk is om die activiteiten te kunnen uitvoeren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen geschieden door personen die werkzaam zijn onder het gezag van de aanbieder voor facturering, verkeersbeheer, behandeling van verzoeken om inlichtingen van klanten, opsporing van fraude alsmede marktonderzoek of verkoopactiviteiten met betrekking tot elektronische communicatiediensten of de levering van diensten met toegevoegde waarde"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'in overeenstemming met het eerste tot en met vierde lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19634,7 +19874,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "5",
@@ -19653,7 +19894,105 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder van de toegevoegde waardedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het eerste lid, onderdeel b",
+    "action": "verstrekt de aanbieder van de toegevoegde waardedienst aan de abonnee of gebruiker de volgende informatie",
+    "recipient_body": [
+     "de abonnee",
+     "gebruiker"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het eerste lid, onderdeel b"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'als bedoeld in het eerste lid, onderdeel b'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "Een abonnee of gebruiker",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": null,
+    "action": "kan de verleende toestemming voor de verwerking van de hem betreffende gegevens op elk moment intrekken",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "op elk moment"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'PERMISSION', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "de aanbieder van de dienst met toegevoegde waarde",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De verwerking van de gegevens ten behoeve van de levering van een dienst met toegevoegde waarde als bedoeld in het eerste lid, onderdeel b",
+    "action": "is slechts toegestaan voor zover en voor zolang dat noodzakelijk is voor de levering van de desbetreffende dienst",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover en voor zolang dat noodzakelijk is voor de levering van de desbetreffende dienst"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PERMISSION', 'deference': 'In afwijking van de eerste volzin; Artikel 11.5, tweede lid, laatste volzin, is van overeenkomstige toepassing'}, pass2={'deontic': 'PERMISSION', 'deference': 'Artikel 11.5, tweede lid, laatste volzin, is van overeenkomstige toepassing'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "6",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "De verwerking van de gegevens mag slechts plaatsvinden door personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk zijn om de dienst met toegevoegde waarde te kunnen aanbieden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'bedoeld in het tweede lid, onder d'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -19737,7 +20076,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -19757,7 +20097,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -19777,7 +20118,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    }
   ],
   "features": {
@@ -19824,7 +20166,28 @@
   "dossier_number": "34939",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "paragraph_index": null,
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de gegevensbeschermingsautoriteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'DEFINITION', 'deference': 'bedoeld in artikel 19, tweede lid, van de eidas-verordening'}, pass2={'deontic': 'DEFINITION', 'deference': 'artikel 19, tweede lid, van de eidas-verordening'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   }
+  ],
   "features": {
    "n_words": 15,
    "xref_intra_instrument": 0,
@@ -19922,7 +20285,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "5",
@@ -19941,7 +20305,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "1",
@@ -19960,7 +20325,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "4",
@@ -19977,7 +20343,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "3",
@@ -19996,7 +20363,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    }
   ],
   "features": {
@@ -20187,7 +20555,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "3",
@@ -20207,7 +20576,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "9",
@@ -20226,7 +20596,8 @@
     "extraction_confidence": 0.96,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 8
    },
    {
     "number": "6",
@@ -20247,7 +20618,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "5",
@@ -20268,7 +20640,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "10",
@@ -20287,7 +20660,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 9
    },
    {
     "number": "4",
@@ -20308,7 +20682,103 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
+   },
+   {
+    "number": "7",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "degene namens wie de communicatie wordt overgebracht",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij dat gebruik",
+    "action": "te allen tijde de volgende gegevens te worden vermeld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Op het gebruik van elektronische berichten voor de in het eerste lid bedoelde doeleinden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'de vereisten van artikel 15e, eerste lid, onderdelen a tot en met c, van boek 3 van het Burgerlijk Wetboek van overeenkomstige toepassing'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de verzender",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij het gebruik van andere dan de in het eerste lid bedoelde middelen voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen",
+    "action": "geeft de verzender de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens",
+    "recipient_body": [
+     "de desbetreffende natuurlijke persoon"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen",
+     "bij iedere boodschap"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'Het eerste lid is van overeenkomstige toepassing'}, pass2={'deontic': 'OBLIGATION', 'deference': 'Het eerste lid is van overeenkomstige toepassing op het gebruik van andere dan de in het eerste lid bedoelde middelen voor het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden aan natuurlijke personen.'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "8",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "de verzender",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden met gebruik van een openbare telefoondienst",
+    "action": "maakt de verzender geen gebruik van de mogelijkheden tot blokkering, bedoeld in artikel 11.9, eerste lid, onderdeel a",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor commerciële, ideële of charitatieve doeleinden",
+     "met gebruik van een openbare telefoondienst"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'bedoeld in artikel 11.9, eerste lid, onderdeel a'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "11",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+    "action": "De voordracht voor een krachtens het tiende lid vast te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+     "raw": "vier weken nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'PROCEDURAL', 'deference': None}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -20414,7 +20884,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "1",
@@ -20433,7 +20904,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "2",
@@ -20452,7 +20924,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "6",
@@ -20472,7 +20945,52 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Het bepaalde in het eerste lid",
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien het de opslag of toegang betreft: met als uitsluitend doel de communicatie over een elektronisch communicatienetwerk uit te voeren",
+     "indien het de opslag of toegang betreft: die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren",
+     "mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'Het bepaalde in het eerste lid'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "een krachtens publiekrecht ingestelde rechtspersoon",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De toegang van de gebruiker tot een dienst van de informatiemaatschappij die wordt geleverd door of namens een krachtens publiekrecht ingestelde rechtspersoon",
+    "action": "wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'als bedoeld in het eerste lid'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -20620,7 +21138,28 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij het vastleggen van de maatregelen",
+    "action": "houdt de Autoriteit Consument en Markt zoveel mogelijk rekening met de door de Europese Commissie gemaakte opmerkingen en aanbevelingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -20717,7 +21256,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "1",
@@ -20736,7 +21276,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    }
   ],
   "features": {
@@ -20913,7 +21454,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "6",
@@ -20932,7 +21474,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "11",
@@ -20951,7 +21494,8 @@
     "extraction_confidence": 0.97,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 10
    },
    {
     "number": "10",
@@ -20977,7 +21521,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 9
    },
    {
     "number": "9",
@@ -20996,7 +21541,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 8
    },
    {
     "number": "3",
@@ -21013,7 +21559,141 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien er communicatie over een dergelijk alarmnummer wordt afgewikkeld",
+    "action": "gelijktijdig de daarop betrekking hebbende locatiegegevens te verstrekken",
+    "recipient_body": [
+     "de aangewezen beheerders van een alarmnummer voor publieke diensten, bedoeld in het eerste lid"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gelijktijdig"
+    },
+    "thresholds": [],
+    "conditions": [
+     "die locatiegegevens kan verwerken omtrent abonnees of gebruikers",
+     "ook indien de abonnee of gebruiker, voor zover het betreft de locatiegegevens als bedoeld in artikel 11.5a, op de voet van het vijfde lid van dat artikel, gebruik heeft gemaakt van de mogelijkheid om tijdelijk de verwerking van de hem betreffende locatiegegevens te beletten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'op de voet van het vijfde lid van dat artikel'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "5",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "noodhulpdiensten",
+    "addressee_type": "OTHER",
+    "trigger_event": "Verstrekking van nummers en gegevens met het oog op de hulpverlening in noodsituaties",
+    "action": "vindt slechts plaats",
+    "recipient_body": [
+     "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen noodhulpdiensten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "slechts"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PROHIBITION', 'deference': 'in overeenstemming met Onze Minister'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "7",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de beheerder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "worden bewaard",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "twee maanden",
+     "zes maanden",
+     "24 uur"
+    ],
+    "conditions": [
+     "indien de nummers en gegevens betrekking hebben op gevallen waarin kennelijk sprake is van een verzoek om hulpverlening in een noodsituatie",
+     "indien de nummers en gegevens betrekking hebben op gevallen waarin kennelijk sprake is van misbruik van een alarmnummer voor publieke diensten",
+     "in alle overige gevallen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "8",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De op grond van het eerste lid aangewezen beheerder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "vergoedt de kosten die zijn gemoeid met het verstrekken van de gegevens, bedoeld in het eerste lid, onderdeel a, en, voor zover deze niet overeenkomen met het fysieke adres van het netwerkaansluitpunt, van de gegevens, bedoeld in het eerste lid, onderdeel b",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover deze niet overeenkomen met het fysieke adres van het netwerkaansluitpunt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'op grond van het eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "1",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbaar elektronisch communicatienetwerk dat wordt gebruikt om uitgaande gesprekken naar een nummer in het nummerplan aan te bieden, en de aanbieder van een openbare betaaltelefoon of spraakcommunicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien er elektronische communicatie met een alarmnummer wordt afgewikkeld",
+    "action": "het nummer van het oproepende netwerkaansluitpunt te verstrekken",
+    "recipient_body": [
+     "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen beheerders van een alarmnummer voor publieke diensten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gelijktijdig"
+    },
+    "thresholds": [],
+    "conditions": [
+     "ook indien bij dat netwerkaansluitpunt gebruik wordt gemaakt van een in artikel 11.9, tweede lid, onder a, bedoelde blokkeringsmogelijkheid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -21192,7 +21872,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "3",
@@ -21205,8 +21886,8 @@
      "de aanbieder"
     ],
     "deadline": {
-     "value": 0,
-     "unit": "immediate",
+     "value": null,
+     "unit": "qualitative_urgent",
      "from": null,
      "raw": "onverwijld"
     },
@@ -21218,7 +21899,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 2
    },
    {
     "number": "4",
@@ -21235,7 +21917,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 3
    },
    {
     "number": "1",
@@ -21258,7 +21941,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "6",
@@ -21279,7 +21963,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "7",
@@ -21296,7 +21981,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 6
    },
    {
     "number": "5",
@@ -21317,7 +22003,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    }
   ],
   "features": {
@@ -21423,7 +22110,51 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "onder beperkingen worden verleend",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "de aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "nakoming van de desbetreffende verplichtingen technisch niet haalbaar is of onevenredig veel financiële lasten voor de aanbieder met zich meebrengt",
+    "action": "kan uitsluitend worden verleend",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "deze betrekking heeft op abonneelijnen verbonden met analoge centrales",
+     "nakoming van de desbetreffende verplichtingen technisch niet haalbaar is of onevenredig veel financiële lasten voor de aanbieder met zich meebrengt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PERMISSION', 'deference': 'als bedoeld in het eerste lid'}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -21593,7 +22324,60 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "PROHIBITION",
+    "addressee": "de aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De verkeers- en locatiegegevens die de aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten bewaren op grond van artikel 13.2a, tweede lid",
+    "action": "niet voor andere doelen verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij het gegevens betreft waarvan de verwerking op grond van de artikelen 11.5 en 11.5a is toegestaan en de verwerking plaatsvindt met inachtneming van die artikelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'op grond van de artikelen 11.5 en 11.5a'}, pass2={'deontic': 'PROHIBITION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "PERMISSION",
+    "addressee": "Aanbieders van openbare elektronische communicatienetwerken en openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien en voor zolang dat noodzakelijk is voor een onderzoek als bedoeld in artikel 11.11, vierde en vijfde lid",
+    "action": "verkeersgegevens verwerken",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "beëindiging van een onderzoek als bedoeld in artikel 11",
+     "raw": "voor een periode van ten hoogste drie maanden na beëindiging van een onderzoek als bedoeld in artikel 11.11, vierde lid"
+    },
+    "thresholds": [
+     "ten hoogste drie maanden"
+    ],
+    "conditions": [
+     "in afwijking van artikel 11.5, eerste lid",
+     "indien en voor zolang dat noodzakelijk is voor een onderzoek als bedoeld in artikel 11.11, vierde en vijfde lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'PERMISSION', 'deference': 'in afwijking van artikel 11.5, eerste lid'}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -21700,7 +22484,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "5",
@@ -21722,7 +22507,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
    },
    {
     "number": "6",
@@ -21746,7 +22532,72 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "COMPETENCE",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "nadere regels worden gegeven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met betrekking tot de in het eerste en derde lid bedoelde maatregelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'Bij of krachtens algemene maatregel van bestuur'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "aanbieders van spraakcommunicatiediensten of internettoegangsdiensten die deze diensten over de openbare elektronische communicatienetwerken aanbieden en aanbieders van openbare elektronische communicatienetwerken waarover spraakcommunicatiediensten of internettoegangsdiensten worden aangeboden",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "in geval van door calamiteiten veroorzaakte netwerkuitval of in geval van overmacht",
+    "action": "alle noodzakelijke maatregelen om de beschikbaarheid van deze diensten zo volledig mogelijk te waarborgen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Onverminderd het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'Onverminderd het eerste lid'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "2",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "nemen bij of krachtens algemene maatregel van bestuur vastgestelde technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun netwerken of diensten te beheersen, teneinde de gevolgen van beveiligingsincidenten op de nationale veiligheid of openbare orde te beperken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': 'bij of krachtens algemene maatregel van bestuur vastgestelde'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -21989,7 +22840,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 1
    },
    {
     "number": "6",
@@ -22006,7 +22858,8 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 5
    },
    {
     "number": "1",
@@ -22025,7 +22878,8 @@
     "extraction_confidence": 0.99,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 0
    },
    {
     "number": "5",
@@ -22042,7 +22896,57 @@
     "extraction_confidence": 0.98,
     "extraction_model": "gpt-5.6-luna",
     "extracted_on": "2026-09-23",
-    "human_verified": false
+    "human_verified": false,
+    "paragraph_index": 4
+   },
+   {
+    "number": "3",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "een aanbieder als bedoeld in het eerste lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien het continuïteitsplan naar het oordeel van Onze Minister onvoldoende bijdraagt aan de in het eerste lid bedoelde continuïteit",
+    "action": "een technische of organisatorische maatregel te treffen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een bepaalde termijn"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Indien het continuïteitsplan naar het oordeel van Onze Minister onvoldoende bijdraagt aan de in het eerste lid bedoelde continuïteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+   },
+   {
+    "number": "4",
+    "paragraph_index": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de in het eerste lid bedoelde aanbieder of aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor een aangewezen antenne-opstelpunt",
+    "action": "dragen de in het eerste lid bedoelde aanbieder of aanbieders zorg voor de opstelling en de uitvoering van een gezamenlijk continuïteitsplan dat voorziet in onderlinge afstemming van de maatregelen, bedoeld in het eerste lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor een aangewezen antenne-opstelpunt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+    "extracted_on": "2026-09-23",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -22695,13 +23599,15 @@
     "number": "3",
     "text": "In afwijking van het tweede lid kan de Autoriteit Consument en Markt in uitzonderlijke omstandigheden ambtshalve of op verzoek van partijen voorlopige maatregelen nemen, indien er een dringende noodzaak is om te handelen teneinde de mededinging of de belangen van eindgebruikers te beschermen.",
     "points": [],
-    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=12&paragraaf=12.2&sub-paragraaf=12.2.1&artikel=12.8&lid=3&z=2026-08-15&g=2026-08-15"
+    "jci": "jci1.3:c:BWBR0009950&hoofdstuk=12&paragraaf=12.2&sub-paragraaf=12.2.1&artikel=12.8&lid=3&z=2026-08-15&g=2026-08-15",
+    "numbering_status": "inconsistent"
    },
    {
     "number": "3",
     "text": "De Autoriteit Consument en Markt neemt het besluit over de geschilbeslechting uiterlijk een maand na het advies van BEREC en schort in afwachting van dat advies de beslistermijn, bedoeld in artikel 12.5, eerste lid, op.",
     "points": [],
-    "jci": null
+    "jci": null,
+    "numbering_status": "inconsistent"
    }
   ],
   "text_fidelity": "official_xml",

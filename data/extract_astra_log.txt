@@ -1,0 +1,58 @@
+
+=== Cbw (full) (data/BWBR0052872_2026-08-15_provisions.json) ===
+  111 provision(s) in scope, 1 extraction unit(s)
+  [1/1] Artikel 43. (nationaal register van entiteiten) -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== UAVG (full) (data/BWBR0040940_2026-09-01_provisions.json) ===
+  63 provision(s) in scope, 0 extraction unit(s)
+
+=== Wdo (full) (data/BWBR0048156_2025-11-11_provisions.json) ===
+  36 provision(s) in scope, 0 extraction unit(s)
+
+=== Telecommunicatiewet, Hoofdstuk 11 only (privacy/ePrivacy provisions) (data/BWBR0009950_2026-08-15_provisions.json) ===
+  25 provision(s) in scope, 0 extraction unit(s)
+
+=== Uitvoeringswet dataverordening (full) (data/BWBR0051796_2025-11-21_provisions.json) ===
+  14 provision(s) in scope, 1 extraction unit(s)
+  [1/1] Artikel 3. Aanwijzing bevoegde autoriteiten -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== GDPR (full) (data/32016R0679_original_provisions.json) ===
+  99 provision(s) in scope, 5 extraction unit(s)
+  [1/5] Artikel 6. Rechtmatigheid van de verwerking -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [2/5] Artikel 28. Verwerker -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [3/5] Artikel 14. Te verstrekken informatie wanneer de persoonsgegevens niet van de betrokkene zijn verkregen -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [4/5] Artikel 9. Verwerking van bijzondere categorieën van persoonsgegevens -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [5/5] Artikel 6. Rechtmatigheid van de verwerking -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== NIS2 (full) (data/32022L2555_original_provisions.json) ===
+  46 provision(s) in scope, 7 extraction unit(s)
+  [1/7] Artikel 11. Eisen, technische capaciteiten en taken van de CSIRT’s -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [2/7] Artikel 32. Toezichts- en handhavingsmaatregelen met betrekking tot essentiële entiteiten -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [3/7] Artikel 40. Evaluatie -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [4/7] Artikel 33. Toezichts- en handhavingsmaatregelen met betrekking tot belangrijke entiteiten -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [5/7] Artikel 19. Collegiale toetsingen -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [6/7] Artikel 12. Gecoördineerde bekendmaking van de kwetsbaarheden en een Europese kwetsbaarheidsdatabase -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [7/7] Artikel 15. CSIRT-netwerk -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== DORA (full) (data/32022R2554_original_provisions.json) ===
+  64 provision(s) in scope, 5 extraction unit(s)
+  [1/5] Artikel 11. Respons en herstel -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [2/5] Artikel 27. Vereisten voor testers voor het uitvoeren van TLPT -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [3/5] Artikel 58. Evaluatieclausule -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [4/5] Artikel 2. Toepassingsgebied -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [5/5] Artikel 35. Bevoegdheden van de lead overseer -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== AI Act (full, pre-Digital-Omnibus per ADR-0004) (data/32024R1689_original_provisions.json) ===
+  113 provision(s) in scope, 7 extraction unit(s)
+  [1/7] Artikel 9. Systeem voor risicobeheer -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [2/7] Artikel 75. Wederzijdse bijstand, markttoezicht en controle van AI-systemen voor algemene doeleinden -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [3/7] Artikel 30. Aanmeldingsprocedure -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [4/7] Artikel 62. Maatregelen voor aanbieders en gebruiksverantwoordelijken, met name kmo’s, met inbegrip van start-ups -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [5/7] Artikel 60. Testen van AI-systemen met een hoog risico onder reële omstandigheden buiten AI-testomgevingen voor regelgeving -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [6/7] Artikel 112. Evaluatie en toetsing -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+  [7/7] Artikel 77. Bevoegdheden van de autoriteiten voor de bescherming van de grondrechten -- ERROR: Error code: 400 - {'error': {'message': "Unsupported value: 'none' is not supported with the 'gpt-6-astra' model. Supported values are: 'low', 'medium', 'high', 'xhigh', and 'max'.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_value'}}
+
+=== Bijlage 35 (DORA competent-authority designation) (Datasets/Dutch Laws/bijlage35_dataset.json) ===
+  5 provision(s) in scope, 0 extraction unit(s)
+
+26 unit(s) processed, 0 norms[] entries finalized, 26 sent to the review queue -> data/stage6_review_queue.json

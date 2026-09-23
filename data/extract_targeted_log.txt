@@ -1,0 +1,37 @@
+
+=== Cbw (full) (data/BWBR0052872_2026-08-15_provisions.json) ===
+  111 provision(s) in scope, 7 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [1/7] Artikel 15. (aanwijzing en taken bevoegde autoriteit) para 1 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+    [pass validation] attempt 1 failed verbatim check, retrying
+  [2/7] Artikel 70. (controlefunctionaris) para 2 -- queued
+  [3/7] Artikel 4. (toepassingsbereik en jurisdictie) para 2 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [4/7] Artikel 43. (nationaal register van entiteiten) para 1 -- queued
+  [5/7] Artikel 60. (samenwerking met en bijstandsverzoek van de bevoegde autoriteit van een andere lidstaat van de Europese Unie) para 5 -- queued
+  [6/7] Artikel 17. (aanwijzing en taken coördinator bekendmaking kwetsbaarheden) para 1 -- queued
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [7/7] Artikel 50. (verzoeken om toegang tot gegevens over registratie van domeinnamen) para 1 -- queued
+
+=== UAVG (full) (data/BWBR0040940_2026-09-01_provisions.json) ===
+  63 provision(s) in scope, 1 extraction unit(s)
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 1 failed verbatim check, retrying
+    [pass validation] attempt 2 failed verbatim check, giving up on this pass
+  [1/1] Artikel 48. Overgangsrecht para 9 -- queued
+
+=== Wdo (full) (data/BWBR0048156_2025-11-11_provisions.json) ===
+  36 provision(s) in scope, 0 extraction unit(s)
+
+8 unit(s) processed, 0 norms[] entries finalized, 8 sent to the review queue -> data/stage6_review_queue.json

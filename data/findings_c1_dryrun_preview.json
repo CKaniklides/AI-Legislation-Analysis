@@ -1,0 +1,612 @@
+{
+ "findings": [
+  {
+   "finding_id": "F-C1-25f9e688c83c",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)",
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art26@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "26",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 24,
+    "deadline_b_hours": 72,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-b379640a229c",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (arithmetic, no AI)",
+    "recipient identity confirmed by name",
+    "both norms cleanly extracted",
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "2"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 72,
+    "deadline_b_hours": 24,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-6f43a404bdab",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)",
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "eu:32022L2555:art23@original",
+     "instrument_id": "32022L2555",
+     "article": "23",
+     "paragraph_number": "4"
+    }
+   ],
+   "criteria_fired": [
+    "trigger_keyword_match",
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 72,
+    "deadline_b_hours": 24,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": {
+    "exempted_norm": "BWBR0052872 art. 27",
+    "source_article": "BWBR0052872 art. 31",
+    "condition_text": "1\nIndien sectorspecifieke rechtshandelingen van de Europese Unie voorschrijven dat een essentiële entiteit of belangrijke entiteit significante incidenten moet melden en indien deze eisen ten minste gelijkwaardig zijn aan die uit deze wet, zijn de verplichtingen uit de artikelen 25 tot en met 30 niet van toepassing op die specifieke entiteit.\n\n2\nDe eisen, bedoeld in het eerste lid, worden geacht gelijkwaardig te zijn wanneer de sectorspecifieke rechtshandeling voorziet in onmiddellijke toegang, in voorkomend geval automatisch en rechtstreeks, tot de meldingen van incidenten door het CSIRT, de bevoegde autoriteit of het centrale contactpunt, en wanneer de eisen voor het melden van significante incidenten ten minste een vergelijkbare uitwerking hebben als de eisen, bedoeld in de artikelen 25 tot en met 30, 36 en 39, eerste en tweede lid."
+   },
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-83f8e8e9ce9d",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art68@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "68",
+     "paragraph_number": "2"
+    },
+    {
+     "uid": "eu:32016R0679:art60@original",
+     "instrument_id": "32016R0679",
+     "article": "60",
+     "paragraph_number": "2"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "een bevoegde autoriteit van een andere lidstaat van de Europese Unie"
+    ],
+    "recipient_b": [
+     "andere betrokken toezichthoudende autoriteiten"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-d0e33535a301",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art77@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "77",
+     "paragraph_number": null
+    },
+    {
+     "uid": "nl:BWBR0052872:art78@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "78",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "de instantie of organisatie die een certificering of vergunning heeft afgegeven"
+    ],
+    "recipient_b": [
+     "de burgerlijke rechter van de rechtbank van het arrondissement waarbinnen de vestigingsplaats van de bevoegde autoriteit is gelegen"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-9f2e5544edc2",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "andere toezichthouders"
+    ],
+    "recipient_b": [
+     "andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": {
+    "exempted_norm": "BWBR0040940 art. 19",
+    "source_article": "BWBR0040940 art. 35",
+    "condition_text": "1\nIndien de beslissing op een verzoek als bedoeld in artikel 34 is genomen door een ander dan een bestuursorgaan, kan de belanghebbende zich tot de rechtbank wenden met het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen.\n\n2\nHet verzoekschrift wordt ingediend binnen zes weken na ontvangst van het antwoord van de verwerkingsverantwoordelijke. Indien de verwerkingsverantwoordelijke niet binnen de in artikel 12, derde lid, van de verordening genoemde termijnen heeft geantwoord, is de indiening van het verzoekschrift niet aan een termijn gebonden.\n\n3\nDe rechtbank wijst het verzoek toe, voor zover zij dit gegrond oordeelt. Alvorens de rechtbank beslist, stelt zij zo nodig de belanghebbenden in de gelegenheid hun zienswijze naar voren te brengen.\n\n4\nDe indiening van het verzoekschrift behoeft niet door een advocaat te geschieden.\n\n5\nDe derde afdeling van de vijfde titel van het Tweede Boek van het Wetboek van Burgerlijke Rechtsvordering is van overeenkomstige toepassing.\n\n6\nDe rechtbank kan partijen en anderen verzoeken binnen een door haar te bepalen termijn schriftelijke inlichtingen te geven en onder hen berustende stukken in te zenden. De verwerkingsverantwoordelijke en belanghebbende zijn verplicht aan dit verzoek te voldoen. De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
+   },
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-c73ff1ac234d",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art58@original",
+     "instrument_id": "32016R0679",
+     "article": "58",
+     "paragraph_number": "3"
+    },
+    {
+     "uid": "eu:32016R0679:art58@original",
+     "instrument_id": "32016R0679",
+     "article": "58",
+     "paragraph_number": "3"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "andere instellingen en organen",
+     "de regering van de lidstaat",
+     "het nationaal parlement",
+     "het publiek"
+    ],
+    "recipient_b": [
+     "certificeringsorganen"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-8e9c9a8180ad",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art74@original",
+     "instrument_id": "32016R0679",
+     "article": "74",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "eu:32016R0679:art74@original",
+     "instrument_id": "32016R0679",
+     "article": "74",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "het Comité"
+    ],
+    "recipient_b": [
+     "de betrokken toezichthoudende autoriteiten",
+     "de leidende toezichthoudende autoriteit"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-947efd8f7848",
+   "category": "contradiction",
+   "subtype": "threshold_mismatch",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (arithmetic, no AI)",
+    "same underlying violation type confirmed by content overlap",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art83@original",
+     "instrument_id": "32016R0679",
+     "article": "83",
+     "paragraph_number": "6"
+    },
+    {
+     "uid": "eu:32024R1689:art99@original",
+     "instrument_id": "32024R1689",
+     "article": "99",
+     "paragraph_number": "3"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "kind": "euro",
+    "value_a": 20000000.0,
+    "value_b": 35000000.0,
+    "delta": 15000000.0
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-c4d38d2a518d",
+   "category": "contradiction",
+   "subtype": "threshold_mismatch",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (arithmetic, no AI)",
+    "same underlying violation type confirmed by content overlap",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art83@original",
+     "instrument_id": "32016R0679",
+     "article": "83",
+     "paragraph_number": "6"
+    },
+    {
+     "uid": "eu:32024R1689:art99@original",
+     "instrument_id": "32024R1689",
+     "article": "99",
+     "paragraph_number": "5"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "kind": "euro",
+    "value_a": 20000000.0,
+    "value_b": 7500000.0,
+    "delta": 12500000.0
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-1212b0cb6f19",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32022L2555:art14@original",
+     "instrument_id": "32022L2555",
+     "article": "14",
+     "paragraph_number": "4"
+    },
+    {
+     "uid": "eu:32022L2555:art14@original",
+     "instrument_id": "32022L2555",
+     "article": "14",
+     "paragraph_number": "4"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "de bevoegde autoriteiten"
+    ],
+    "recipient_b": [
+     "het CSIRT-netwerk en EU-CyCLONe"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-799efc393f8a",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32022R2554:art37@original",
+     "instrument_id": "32022R2554",
+     "article": "37",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "eu:32024R1689:art91@original",
+     "instrument_id": "32024R1689",
+     "article": "91",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "De lead overseer"
+    ],
+    "recipient_b": [
+     "De Commissie"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  }
+ ],
+ "suppressed": []
+}
