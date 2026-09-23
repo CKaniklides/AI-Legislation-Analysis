@@ -126,7 +126,25 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt verstaan onder",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 448,
    "xref_intra_instrument": 5,
@@ -284,7 +302,109 @@
     "paragraph_number": "5"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien die categorie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+    "action": "kunnen bij algemene maatregel van bestuur categorieën van organisaties aan de bijlage, bedoeld in het tweede lid onderdeel a, worden toegevoegd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "betrouwbaarheidsniveau substantieel of hoog"
+    ],
+    "conditions": [
+     "Op de voordracht van Onze Minister in overeenstemming met Onze Minister die het mede aangaat"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Van een besluit tot aanwijzing of intrekking",
+    "action": "wordt mededeling gedaan door plaatsing in de Staatscourant",
+    "recipient_body": [
+     "de Staatscourant"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat",
+    "action": "kan een organisatiedie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, voor de toepassing van deze wet worden aangewezen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "betrouwbaarheidsniveau substantieel of hoog"
+    ],
+    "conditions": [
+     "elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt hieronder verstaan bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor zover in deze wet, uitgezonderd artikel 3"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+    "action": "kunnen bij algemene maatregel van bestuur categorieën van organisaties van de bijlage, bedoeld in het tweede lid onderdeel a, worden verwijderd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "betrouwbaarheidsniveau substantieel of hoog"
+    ],
+    "conditions": [
+     "indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 341,
    "xref_intra_instrument": 4,
@@ -391,7 +511,105 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De volgende organen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover die standaard ingevolge het derde lid op hen van toepassing is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "wordt bepaald",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan een standaard worden aangewezen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "aanwijzing van die standaard noodzakelijk en proportioneel is gelet op de goede werking, de veiligheid, de betrouwbaarheid, de duurzame toegankelijkheid of de doelmatigheid van het elektronische verkeer, dan wel noodzakelijk is ter uitvoering van verdragen of bindende besluiten van volkenrechtelijke organisaties",
+     "de standaard tot stand is gekomen volgens een voor eenieder toegankelijke procedure",
+     "de standaard openbaar toegankelijk en kosteloos bruikbaar is en over de specificaties ervan blijvend vrijelijk kan worden beschikt of waarvan de specificaties blijvend kunnen worden verkregen tegen een redelijke vergoeding"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien dit orgaan een gedragslijn hanteert die strijdig is met een aangewezen standaard",
+    "action": "kan een aanwijzing geven",
+    "recipient_body": [
+     "een orgaan waarvoor de verplichting tot toepassing van een aangewezen standaard geldt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien dit orgaan een gedragslijn hanteert die strijdig is met een aangewezen standaard"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "organen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "een actuele verklaring over de toepassing van de aangewezen standaard publiceren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "In voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 306,
    "xref_intra_instrument": 0,
@@ -455,7 +673,27 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Bestuursorganen en aangewezen organisaties",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "overleggen aan Onze Minister een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 92,
    "xref_intra_instrument": 0,
@@ -568,7 +806,84 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "draagt zorg voor een voorziening",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor bestuursorganen en aangewezen organisaties toegankelijke wijze te ontsluiten",
+     "die het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door Nederland ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor openbare instanties als bedoeld in artikel 3 van de eIDAS-verordening, in andere lidstaten toegankelijke wijze te ontsluiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Onder toegankelijke wijze van ontsluiten, bedoeld in het tweede lid onder a",
+    "action": "toevoeging aan de met de authenticatie van het betrokken identificatiemiddel ontvangen set persoonsidentificatiegegevens van een burgerservicenummer of andere aan de natuurlijke persoon, onderneming of rechtspersoon gekoppelde gegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover die gegevens noodzakelijk zijn om de betrokken natuurlijke persoon, onderneming of rechtspersoon ten behoeve van het verrichten van de elektronische dienstverlening in hun systemen te herkennen",
+     "voor zover die gegevens niet middels een andere voorziening op betrouwbare wijze toegevoegd kunnen worden aan de bij de toegang met identificatiemiddelen, bedoeld in het tweede lid, onderdeel a, verkregen persoonsidentificatiegegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "bestuursorganen en aangewezen organisaties",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "een aansluitplicht kan worden opgelegd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met het oog op de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 551,
    "xref_intra_instrument": 1,
@@ -638,7 +953,51 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Bestuursorganen en aangewezen organisaties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is",
+    "action": "bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is en doen daarvan op bij die regeling gestelde wijze mededeling",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "volgens bij ministeriële regeling te stellen regels",
+     "op bij die regeling gestelde wijze"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "bestuursorganen en aangewezen organisaties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "elektronische dienstverlening waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+    "action": "uitsluitend toegang tot de dienstverlening indien gebruik wordt gemaakt van identificatiemiddelen die ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau hebben",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "betrouwbaarheidsniveau substantieel",
+     "betrouwbaarheidsniveau hoog",
+     "ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau"
+    ],
+    "conditions": [
+     "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 178,
    "xref_intra_instrument": 0,
@@ -741,7 +1100,29 @@
     "paragraph_number": "2"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Aangewezen organisaties en rechterlijke instanties",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+    "action": "accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "betrouwbaarheidsniveau substantieel of hoog"
+    ],
+    "conditions": [
+     "indien dit is bepaald bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat"
+    ],
+    "deference": "onverminderd het bepaalde in artikel 6 van de eIDAS-verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 329,
    "xref_intra_instrument": 2,
@@ -833,7 +1214,50 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan worden bepaald dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens kan worden gebruikt voor de toegang tot daarbij bepaalde elektronische diensten, anders dan diensten ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, van aangewezen organisaties",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "anders dan diensten ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "bepalen dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens ten behoeve van aangewezen organisaties kan worden gebruikt voor het verlenen van toegang tot een systeem voor de elektronische uitwisseling van gegevens waarbij het burgerservicenummer wordt verwerkt, anders dan een systeem voor elektronische dienstverlening",
+    "recipient_body": [
+     "aangewezen organisaties"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met Onze Minister die het aangaat",
+     "waarbij het burgerservicenummer wordt verwerkt",
+     "anders dan een systeem voor elektronische dienstverlening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 151,
    "xref_intra_instrument": 3,
@@ -952,7 +1376,67 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "wijst een publiek identificatiemiddel aan als toegelaten identificatiemiddel",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het tweede of derde lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "een verklaring",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij de aanvraag voor een erkenning",
+    "action": "wordt een verklaring gevoegd van een geaccrediteerde certificerende instelling",
+    "recipient_body": [
+     "een geaccrediteerde certificerende instelling"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waaraan het vermoeden kan worden ontleend dat is voldaan aan de eisen die gelden voor de betreffende houder van de erkenning of dat middel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 549,
    "xref_intra_instrument": 0,
@@ -1020,7 +1504,42 @@
     "paragraph_number": "2"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden regels gesteld met betrekking tot het gebruik van publieke identificatiemiddelen en de voorzieningen, bedoeld in artikel 5, eerste lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De gebruiker van een toegelaten identificatiemiddel",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "neemt alle nodige maatregelen om misbruik, diefstal, verlies of verspreiding van zijn identificatiemiddel te voorkomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 46,
    "xref_intra_instrument": 1,
@@ -1143,7 +1662,44 @@
     "paragraph_number": "4"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "Aan een erkenning",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "kunnen voorschriften of beperkingen worden verbonden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien zwaarwegende redenen zich tegen erkenning verzetten",
+    "action": "weigert een aanvraag tot erkenning",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 372,
    "xref_intra_instrument": 1,
@@ -1232,7 +1788,27 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "erkende diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien een attribuut wordt aangewezen",
+    "action": "moet worden betrokken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 146,
    "xref_intra_instrument": 2,
@@ -1351,7 +1927,44 @@
     "paragraph_number": "6"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Een erkende ontsluitende dienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "ontsluit alle erkende bedrijfs- en organisatiemiddelen, alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening en alle op grond van artikel 12 aangewezen attributen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is",
+    "recipient_body": [
+     "erkende ontsluitende dienst"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 301,
    "xref_intra_instrument": 4,
@@ -1476,7 +2089,108 @@
     "paragraph_number": "4"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "6",
+    "deontic": "DEFINITION",
+    "addressee": "een middelenuitgever",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "de intrekking van een erkenning van een middelenuitgever",
+    "action": "vervalt tevens de erkenning van de bedrijfs- en organisatiemiddelen die door die middelenuitgever worden uitgegeven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid",
+    "action": "kan een erkenning intrekken of voor een bij dat besluit te bepalen periode schorsen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
+    "action": "de verzoekende dienst de verplichting opleggen zijn activiteiten in de toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening voort te zetten",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gedurende een door Onze Minister te bepalen periode"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "De erkende dienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "waarvan de erkenning wordt ingetrokken of overgedragen",
+    "action": "draagt er zorg voor dat alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend, worden overgedragen aan Onze Minister",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "een besluit als bedoeld in dit artikel",
+    "action": "doet Onze Minister mededeling in de Staatscourant",
+    "recipient_body": [
+     "de Staatscourant"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 415,
    "xref_intra_instrument": 3,
@@ -1638,7 +2352,65 @@
     "paragraph_number": "4"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In geval ten behoeve van elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep het gebruik van een ander bedrijfs- of organisatiemiddel dan een erkend bedrijfs- of organisatiemiddel gewenst is, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep",
+    "action": "kan Onze Minister een bedrijfs- of organisatiemiddel aanwijzen dat voor een bij dat besluit te bepalen periode tevens voor de toegang tot die dienstverlening gebruikt mag worden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor een bij dat besluit te bepalen periode"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PROHIBITION",
+    "addressee": "Een besluit als bedoeld in het vijfde lid",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "een bedrijfs- of organisatiemiddel dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid",
+    "action": "wordt niet genomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PROCEDURAL",
+    "addressee": "het besluit",
+    "addressee_type": "OTHER",
+    "trigger_event": "Bij het besluit, bedoeld in het vijfde lid",
+    "action": "wordt bepaald op welke dienstverlening, beroepsgroep en bestuursorganen of aangewezen organisaties de aanwijzing betrekking heeft",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bedoeld in het vijfde lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 511,
    "xref_intra_instrument": 4,
@@ -1708,7 +2480,78 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister, alsmede bestuursorganen en aangewezen organisaties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "verwerken persoonsgegevens, waaronder het burgerservicenummer",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dit noodzakelijk is voor de goede uitvoering van hun taken en verplichtingen ingevolge deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden regels gesteld over de persoonsgegevens die worden verwerkt, aan wie deze gegevens worden verstrekt en hoe lang deze worden bewaard",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 104,
    "xref_intra_instrument": 0,
@@ -1957,7 +2800,135 @@
     "paragraph_number": "8"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de bij besluit van Onze Minister die het aangaat aangewezen ambtenaren",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "Met het toezicht op de naleving van het bepaalde bij of krachtens artikel 3 door overheidsorganen op het niveau van het Rijk en van het bepaalde bij of krachtens de artikelen 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van het Rijk en door de aangewezen organisaties zijn belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "de bij besluit van Onze Minister aangewezen ambtenaren",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "Met het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15 door bestuursorganen op het niveau van de provincies zijn belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "door bestuursorganen op het niveau van de provincies"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Van een besluit als bedoeld in het eerste, tweede, vierde en vijfde lid",
+    "action": "wordt mededeling gedaan door plaatsing in de Staatscourant",
+    "recipient_body": [
+     "de Staatscourant"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid, daartoe opdracht heeft gegeven of feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid",
+    "action": "een bestuurlijke boete opleggen van ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht, per overtreding die is begaan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie"
+    ],
+    "conditions": [
+     "per overtreding die is begaan"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 285,
    "xref_intra_instrument": 16,
@@ -2113,7 +3084,73 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel",
+    "action": "de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel onderbreken of doen onderbreken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De desbetreffende toezichthouder",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde",
+    "action": "stelt Onze Minister onverwijld in kennis van niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Een bestuursorgaan of een aangewezen organisatie",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
+    "action": "stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 211,
    "xref_intra_instrument": 9,
@@ -2208,7 +3245,53 @@
     "paragraph_number": "2"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "desgevraagd en uit eigen beweging",
+    "action": "verstrekken aan Onze Minister desgevraagd en uit eigen beweging de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op grond van artikel 9, tweede of derde lid,",
+     "op grond van artikel 11"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "over de inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening",
+    "action": "verstrekt gegevens en inlichtingen",
+    "recipient_body": [
+     "bestuursorganen en aangewezen organisaties",
+     "de ingevolge artikel 9, tweede of derde lid, toegelaten houder van een erkenning",
+     "een ingevolge artikel 11 erkende middelenuitgever of dienst"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dit noodzakelijk is voor een goede uitoefening van hun taken of te verlenen diensten in het kader van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 136,
    "xref_intra_instrument": 4,
@@ -2266,7 +3349,27 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "het Rijk",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "ten laste gebracht van de verkrijger van dit middel",
+    "recipient_body": [
+     "de verkrijger van dit middel"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 71,
    "xref_intra_instrument": 0,
@@ -2428,7 +3531,27 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Bij of krachtens algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden regels gesteld over de hoogte en het opleggen van de heffing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waarbij onderscheid kan worden gemaakt tussen verschillende categorieën handelingen als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 91,
    "xref_intra_instrument": 4,
@@ -2726,7 +3849,103 @@
     "paragraph_number": "5"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt onder «onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon» verstaan «onderneming of rechtspersoon als bedoeld in artikel 3 onderscheidenlijk 4 van de Handelsregisterwet 2009 BES»",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van artikel 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt onder «rechterlijke instanties» verstaan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van artikel 2, derde lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt onder «bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES»",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van artikel 1 en artikel 2, eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Voor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel a",
+    "action": "wordt onder «bestuursorganen» verstaan «bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES»",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel a"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt onder «organen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht» verstaan «organen als bedoeld in artikel 2, eerste lid, onderdelen a tot en met d, van de Wet administratieve rechtspraak BES»",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van het bepaalde bij of krachtens artikel 3, eerste lid, onderdeel b"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 254,
    "xref_intra_instrument": 6,
@@ -2790,7 +4009,27 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROHIBITION",
+    "addressee": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c, en artikel 15, achtste lid",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in een openbaar lichaam"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 24,
    "xref_intra_instrument": 2,
@@ -2881,7 +4120,27 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "COMPETENCE",
+    "addressee": "de bij besluit van Onze Minister aangewezen ambtenaren",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "Met het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van de openbare lichamen Bonaire, Sint Eustatius en Saba zijn belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "door bestuursorganen op het niveau van de openbare lichamen Bonaire, Sint Eustatius en Saba"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 46,
    "xref_intra_instrument": 5,
@@ -2971,7 +4230,32 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de inwerkingtreding van deze wet",
+    "action": "zendt binnen drie jaar na de inwerkingtreding van deze wet aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk",
+    "recipient_body": [
+     "de Staten-Generaal"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van deze wet",
+     "raw": "binnen drie jaar na de inwerkingtreding van deze wet"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 52,
    "xref_intra_instrument": 0,
@@ -3016,7 +4300,25 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 2,
    "xref_intra_instrument": 0,
@@ -3129,7 +4431,80 @@
     "paragraph_number": "5"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "PROHIBITION",
+    "addressee": "partijen die binnen het private stelsel, bedoeld in het eerste en tweede lid, uitsluitend activiteiten op het niveau 1 uitvoeren",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "Dit artikel is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "niveau 1"
+    ],
+    "conditions": [
+     "binnen het private stelsel, bedoeld in het eerste en tweede lid",
+     "uitsluitend activiteiten op het niveau 1 uitvoeren"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "Een ontsluitende dienst of een machtigingsdienst die onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten",
+    "action": "wordt gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, geacht erkend te zijn op grond van artikel 11, derde lid",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "inwerkingtreding van deze wet",
+     "raw": "gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van deze wet"
+    },
+    "thresholds": [
+     "18 maanden"
+    ],
+    "conditions": [
+     "onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "een dienst of middel dat is toegetreden tot het private stelsel op niveau 4, niveau 3, niveau 2 of niveau 2+",
+    "action": "wordt geacht erkend te zijn op het betrouwbaarheidsniveau hoog, substantieel onderscheidenlijk laag",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "niveau 4",
+     "niveau 3",
+     "niveau 2",
+     "niveau 2+"
+    ],
+    "conditions": [
+     "Voor erkenning overeenkomstig dit overgangsrecht"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 341,
    "xref_intra_instrument": 4,
@@ -3266,7 +4641,39 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur wordt aan beide Kamers der Staten-Generaal overgelegd",
+    "action": "wordt aan beide Kamers der Staten-Generaal overgelegd",
+    "recipient_body": [
+     "beide Kamers der Staten-Generaal"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "vier weken na de overlegging zijn verstreken",
+     "raw": "nadat vier weken na de overlegging zijn verstreken"
+    },
+    "thresholds": [
+     "vier weken",
+     "tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers"
+    ],
+    "conditions": [
+     "tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld",
+     "Indien het voorstel van wet wordt ingetrokken",
+     "indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 249,
    "xref_intra_instrument": 8,
@@ -3336,7 +4743,77 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROCEDURAL",
+    "addressee": "bestuursorganen of aangewezen organisaties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij toepassing van het eerste lid",
+    "action": "wordt geregeld door welke bestuursorganen of aangewezen organisaties, op welke wijze en gedurende welke periode van de wet wordt afgeweken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Een experiment als bedoeld in het eerste lid",
+    "action": "duurt ten hoogste vier jaar",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten hoogste vier jaar"
+    },
+    "thresholds": [
+     "vier jaar"
+    ],
+    "conditions": [
+     "als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
+    "action": "zendt negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van het experiment, alsmede een standpunt inzake de voortzetting anders dan als experiment",
+    "recipient_body": [
+     "de Staten-Generaal"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid"
+    },
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 127,
    "xref_intra_instrument": 0,
@@ -3391,7 +4868,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 5,
    "xref_intra_instrument": 0,
@@ -3474,7 +4969,25 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Na de inwerkingtreding van deze wet",
+    "action": "berust",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 40,
    "xref_intra_instrument": 2,
@@ -3584,7 +5097,30 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst",
+    "action": "treden in werking",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van uitgifte van het Staatsblad waarin zij wordt geplaatst",
+     "raw": "met ingang van de dag na de datum van uitgifte van het Staatsblad waarin zij wordt geplaatst"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 157,
    "xref_intra_instrument": 5,
@@ -3629,7 +5165,25 @@
   "dossier_number": "34972",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt aangehaald als: Wet digitale overheid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 8,
    "xref_intra_instrument": 0,

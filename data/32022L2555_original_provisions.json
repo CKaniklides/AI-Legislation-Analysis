@@ -42,7 +42,43 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art2@original",
@@ -154,6 +190,125 @@
     "new": "aanbieders van domeinnaamsysteemdiensten",
     "reason": "Corrigendum (EUR-Lex marker C1/B): scope correction, DNS service providers vs. domain-registration service providers are separately listed entity categories under NIS2's own Annex II -- confirmed by diffing against the corrigenda-corrected consolidated text (02022L2555-20221227) fetched 2026-09-19."
    }
+  ],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "kunnen bepalen dat deze richtlijn van toepassing is op",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": "entiteiten die domeinnaamregistratiediensten verrichten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ongeacht hun omvang"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PROHIBITION",
+    "addressee": "overheidsinstanties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "activiteiten uitvoeren op het gebied van nationale veiligheid, openbare veiligheid, defensie of rechtshandhaving, met inbegrip van het voorkomen, onderzoeken, opsporen en vervolgen van strafbare feiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": "entiteiten die worden aangemerkt als een kritieke entiteit uit hoofde van Richtlijn (EU) 2022/2557",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ongeacht hun omvang"
+    ],
+    "deference": "uit hoofde van Richtlijn (EU) 2022/2557",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "Deze richtlijn",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "is van toepassing op publieke of particuliere entiteiten van een in de bijlagen I en II bedoeld type die in aanmerking komen als middelgrote ondernemingen uit hoofde van artikel 2 van de bijlage bij Aanbeveling 2003/361/EG, of de in lid 1 van dat artikel vastgestelde plafonds voor middelgrote ondernemingen overschrijden, en die hun diensten verlenen of hun activiteiten verrichten in de Unie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "de in lid 1 van dat artikel vastgestelde plafonds voor middelgrote ondernemingen"
+    ],
+    "conditions": [
+     "publieke of particuliere entiteiten van een in de bijlagen I en II bedoeld type",
+     "die in aanmerking komen als middelgrote ondernemingen uit hoofde van artikel 2 van de bijlage bij Aanbeveling 2003/361/EG",
+     "of de in lid 1 van dat artikel vastgestelde plafonds voor middelgrote ondernemingen overschrijden",
+     "en die hun diensten verlenen of hun activiteiten verrichten in de Unie"
+    ],
+    "deference": "Artikel 3, lid 4, van de bijlage bij die aanbeveling geldt niet voor de toepassing van deze richtlijn.",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "11",
+    "deontic": "PROHIBITION",
+    "addressee": "de verstrekking van informatie",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "omvatten niet de verstrekking van informatie waarvan de bekendmaking strijdig zou zijn met de wezenlijke belangen van nationale veiligheid van de lidstaten, openbare veiligheid of defensie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waarvan de bekendmaking strijdig zou zijn met de wezenlijke belangen van nationale veiligheid van de lidstaten, openbare veiligheid of defensie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
   ]
  },
  {
@@ -219,7 +374,84 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "stellen de lidstaten een lijst op van essentiële en belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 april 2025"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "melden",
+    "recipient_body": [
+     "de Commissie en de samenwerkingsgroep",
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 april 2025 en vervolgens om de twee jaar"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PERMISSION",
+    "addressee": "lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "op verzoek van de Commissie",
+    "action": "mogen lidstaten aan de Commissie de namen melden van de essentiële en belangrijke entiteiten als bedoeld in lid 5, punt b)",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Tot 17 april 2025"
+    },
+    "thresholds": [
+     "17 april 2025"
+    ],
+    "conditions": [
+     "als bedoeld in lid 5, punt b)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art4@original",
@@ -269,7 +501,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "bepaalt de Commissie richtsnoeren ter verduidelijking van de toepassing van de leden 1 en 2",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 juli 2023"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art5@original",
@@ -303,7 +559,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "bepalingen vast te stellen of te handhaven die een hoger cyberbeveiligingsniveau waarborgen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "mits dergelijke bepalingen stroken met de in het Unierecht vastgelegde verplichtingen van de lidstaten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art6@original",
@@ -343,6 +620,27 @@
     "old": "bij de consument ter plaatse",
     "new": "bij de klant ter plaatse",
     "reason": "Corrigendum (EUR-Lex marker C2/B), in the 'aanbieder van beheerde diensten' definition: 'consument' (consumer, implying B2C) corrected to 'klant' (client), removing an unintended B2C-only implication from a definition that should be provider-type-neutral."
+   }
+  ],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt verstaan onder",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van deze richtlijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
    }
   ]
  },
@@ -399,7 +697,76 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "een nationale cyberbeveiligingsstrategie vaststellen die voorziet in de strategische doelstellingen, de middelen die nodig zijn om die doelstellingen te behalen, en passende beleids- en regelgevingsmaatregelen, om een hoog niveau van cyberbeveiliging te bereiken en te handhaven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "na de vaststelling ervan",
+    "action": "stellen de Commissie in kennis van hun nationale cyberbeveiligingsstrategieën",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "ervan",
+     "raw": "binnen drie maanden na de vaststelling ervan"
+    },
+    "thresholds": [],
+    "conditions": [
+     "informatie die verband houdt met hun nationale veiligheid kan worden uitgesloten van dergelijke kennisgevingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "beoordelen hun nationale cyberbeveiligingsstrategieën regelmatig en ten minste om de vijf jaar op basis van kernprestatie-indicatoren, en werken deze zo nodig bij",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste om de vijf jaar"
+    },
+    "thresholds": [],
+    "conditions": [
+     "zo nodig"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art8@original",
@@ -464,7 +831,134 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "gaat over tot het aanwijzen of instellen van een of meer bevoegde autoriteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "een of meer bevoegde autoriteiten"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Wanneer een lidstaat slechts één bevoegde autoriteit aanwijst of instelt uit hoofde van lid 1",
+    "action": "gaat over tot het aanwijzen of instellen van een centraal contactpunt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "slechts één bevoegde autoriteit"
+    ],
+    "conditions": [
+     "uit hoofde van lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Elk centraal contactpunt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "vervult een verbindingsfunctie om te zorgen voor grensoverschrijdende samenwerking van de autoriteiten van zijn lidstaat met de relevante autoriteiten van andere lidstaten en in voorkomend geval met de Commissie en Enisa, alsmede om te zorgen voor sectoroverschrijdende samenwerking met andere bevoegde autoriteiten binnen zijn lidstaat",
+    "recipient_body": [
+     "de autoriteiten van zijn lidstaat",
+     "de relevante autoriteiten van andere lidstaten",
+     "de Commissie",
+     "Enisa",
+     "andere bevoegde autoriteiten binnen zijn lidstaat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De in lid 1 bedoelde bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "monitoren op de tenuitvoerlegging van deze richtlijn op nationaal niveau",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "stelt de Commissie onverwijld in kennis van de identiteit van de in lid 1 bedoelde bevoegde autoriteit en van het in lid 3 bedoelde centrale contactpunt, van de taken van die autoriteiten en van alle latere wijzigingen ervan",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat hun bevoegde autoriteiten en centrale contactpunten over voldoende middelen beschikken om de hun toegewezen taken doeltreffend en efficiënt uit te voeren en aldus de doelstellingen van deze richtlijn te verwezenlijken",
+    "recipient_body": [
+     "hun bevoegde autoriteiten en centrale contactpunten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art9@original",
@@ -524,7 +1018,107 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "in het geval van een crisis",
+    "action": "stelt vast welke capaciteiten, middelen en procedures in het geval van een crisis voor de toepassing van deze richtlijn kunnen worden ingezet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de toepassing van deze richtlijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "gaat over tot het aanwijzen of instellen van een of meer bevoegde autoriteiten die verantwoordelijk zijn voor het beheer van grootschalige cyberbeveiligingsincidenten en crises (cybercrisisbeheerautoriteiten)",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "een lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Wanneer een lidstaat meer dan één cybercrisisbeheerautoriteit aanwijst of instelt uit hoofde van lid 1",
+    "action": "moet hij duidelijk aangeven welke van die bevoegde autoriteiten moet dienen als coördinator voor het beheer van grootschalige cyberbeveiligingsincidenten en crises",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "meer dan één cybercrisisbeheerautoriteit"
+    ],
+    "conditions": [
+     "uit hoofde van lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "stelt een nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "na de aanwijzing of instelling van de in lid 1 bedoelde cybercrisisbeheerautoriteit",
+    "action": "stelt elke lidstaat de Commissie in kennis van de identiteit van zijn autoriteit en van alle latere wijzigingen ervan",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "of instelling van de in lid 1 bedoelde cybercrisisbeheerautoriteit",
+     "raw": "Binnen drie maanden na de aanwijzing of instelling van de in lid 1 bedoelde cybercrisisbeheerautoriteit"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art10@original",
@@ -609,7 +1203,147 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat elk CSIRT over voldoende middelen beschikt om zijn in artikel 11, lid 3, omschreven taken doeltreffend uit te voeren",
+    "recipient_body": [
+     "elk CSIRT"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat elk CSIRT over een passende, veilige en weerbare communicatie- en informatie-infrastructuur beschikt waardoor informatie kan worden uitgewisseld met essentiële en belangrijke entiteiten en andere relevante belanghebbenden",
+    "recipient_body": [
+     "essentiële en belangrijke entiteiten",
+     "andere relevante belanghebbenden"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen voor een doeltreffende, efficiënte en veilige samenwerking van hun CSIRT’s in het CSIRT-netwerk",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PERMISSION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "kunnen samenwerkingsrelaties tot stand brengen met de nationale computer security incident response teams van derde landen",
+    "recipient_body": [
+     "de nationale computer security incident response teams van derde landen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "PERMISSION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen samenwerken met nationale computer security incident response teams van derde landen of gelijkwaardige organen van derde landen, met name om hen bijstand op het gebied van cyberbeveiliging te verlenen",
+    "recipient_body": [
+     "nationale computer security incident response teams van derde landen",
+     "gelijkwaardige organen van derde landen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de ontwikkeling van hun CSIRT’s",
+    "action": "de hulp van Enisa inroepen",
+    "recipient_body": [
+     "Enisa"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "stelt de Commissie onverwijld in kennis van de identiteit van het in lid 1 van dit artikel bedoelde CSIRT en van het CSIRT dat als coördinator is aangewezen op grond van artikel 12, lid 1, van hun respectieve taken met betrekking tot essentiële en belangrijke entiteiten, en van elke latere wijziging ervan",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art11@original",
@@ -669,7 +1403,87 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "voldoen aan de volgende eisen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De CSIRT’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "brengen samenwerkingsrelaties tot stand met relevante belanghebbenden in de particuliere sector",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "teneinde de doelstellingen van deze richtlijn te verwezenlijken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de CSIRT’s",
+    "addressee_type": "OTHER",
+    "trigger_event": "Om de in lid 4 bedoelde samenwerking te vergemakkelijken",
+    "action": "bevorderen de CSIRT’s de invoering en het gebruik van gemeenschappelijke of gestandaardiseerde praktijken, classificatieschema’s en taxonomieën met betrekking tot:",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met betrekking tot procedures voor de incidentenbehandeling",
+     "met betrekking tot crisisbeheer",
+     "met betrekking tot gecoördineerde bekendmaking van kwetsbaarheden uit hoofde van artikel 12, lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat hun CSIRT’s gezamenlijk over de noodzakelijke technische capaciteiten beschikken om de in lid 3 bedoelde taken uit te voeren",
+    "recipient_body": [
+     "hun CSIRT’s"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "om de in lid 3 bedoelde taken uit te voeren"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art12@original",
@@ -714,7 +1528,30 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat natuurlijke of rechtspersonen, desgevraagd anoniem, melding kunnen maken van een kwetsbaarheid aan het als coördinator aangewezen CSIRT",
+    "recipient_body": [
+     "het als coördinator aangewezen CSIRT"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "desgevraagd anoniem"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art13@original",
@@ -779,7 +1616,98 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten, het centrale contactpunt en de CSIRT’s van dezelfde lidstaat",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Wanneer zij afzonderlijk bestaan",
+    "action": "werken de bevoegde autoriteiten, het centrale contactpunt en de CSIRT’s van dezelfde lidstaat met elkaar samen om de in deze richtlijn vastgestelde verplichtingen na te komen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Wanneer zij afzonderlijk bestaan"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "de op grond van deze richtlijn ingediende meldingen van incidenten, cyberdreigingen en bijna-incidenten",
+    "action": "hun centrale contactpunten in kennis stellen van de op grond van deze richtlijn ingediende meldingen van incidenten, cyberdreigingen en bijna-incidenten",
+    "recipient_body": [
+     "hun centrale contactpunten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "voor de in de artikelen 23 en 30 bedoelde meldingen",
+    "action": "vereenvoudigen de rapportage met technische middelen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Om te garanderen dat de taken en verplichtingen van de bevoegde autoriteiten, de centrale contactpunten en de CSIRT’s doeltreffend worden uitgevoerd",
+    "action": "zorgen de lidstaten, voor zover mogelijk, voor passende samenwerking tussen die organen en rechtshandhavingsautoriteiten, gegevensbeschermingsautoriteiten, de nationale autoriteiten uit hoofde van Verordeningen (EG) nr. 300/2008 en (EU) 2018/1139, de toezichthoudende organen uit hoofde van Verordening (EU) nr. 910/2014, de bevoegde autoriteiten uit hoofde van Verordening (EU) 2022/2554, de nationale regulerende instanties uit hoofde van Richtlijn (EU) 2018/1972, de bevoegde autoriteiten uit hoofde van Richtlijn (EU) 2022/2557, alsmede de bevoegde autoriteiten uit hoofde van andere sectorspecifieke rechtshandelingen van de Unie, in die lidstaat",
+    "recipient_body": [
+     "de bevoegde autoriteiten",
+     "de centrale contactpunten",
+     "de CSIRT’s",
+     "rechtshandhavingsautoriteiten",
+     "gegevensbeschermingsautoriteiten",
+     "de nationale autoriteiten uit hoofde van Verordeningen (EG) nr. 300/2008 en (EU) 2018/1139",
+     "de toezichthoudende organen uit hoofde van Verordening (EU) nr. 910/2014",
+     "de bevoegde autoriteiten uit hoofde van Verordening (EU) 2022/2554",
+     "de nationale regulerende instanties uit hoofde van Richtlijn (EU) 2018/1972",
+     "de bevoegde autoriteiten uit hoofde van Richtlijn (EU) 2022/2557",
+     "de bevoegde autoriteiten uit hoofde van andere sectorspecifieke rechtshandelingen van de Unie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover mogelijk",
+     "in die lidstaat"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art14@original",
@@ -859,7 +1787,152 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De samenwerkingsgroep",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "voert zijn taken uit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op basis van de in lid 7 bedoelde tweejaarlijkse werkprogramma’s"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De samenwerkingsgroep",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "dient de in de eerste alinea, punt r), bedoelde verslagen in bij de Commissie, het Europees Parlement en de Raad",
+    "recipient_body": [
+     "de Commissie",
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat hun vertegenwoordigers op doeltreffende, efficiënte en veilige wijze samenwerken binnen de samenwerkingsgroep",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "de samenwerkingsgroep",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "stelt de samenwerkingsgroep een werkprogramma op",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 1 februari 2024, en vervolgens om de twee jaar"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PERMISSION",
+    "addressee": "De samenwerkingsgroep",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "verzoeken om een technisch verslag over geselecteerde onderwerpen",
+    "recipient_body": [
+     "het CSIRT-netwerk"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "De samenwerkingsgroep",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "komt regelmatig en in ieder geval ten minste eenmaal per jaar bijeen met de krachtens Richtlijn (EU) 2022/2557 opgerichte groep voor de weerbaarheid van kritieke entiteiten",
+    "recipient_body": [
+     "de krachtens Richtlijn (EU) 2022/2557 opgerichte groep voor de weerbaarheid van kritieke entiteiten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste eenmaal per jaar"
+    },
+    "thresholds": [
+     "ten minste eenmaal per jaar"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt een samenwerkingsgroep opgericht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Om de strategische samenwerking en de uitwisseling van informatie tussen de lidstaten te ondersteunen en te vergemakkelijken, alsook om het vertrouwen te vergroten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art15@original",
@@ -924,7 +1997,77 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt een netwerk van nationale CSIRT’s opgericht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "verzorgt het secretariaat en verleent bijstand aan de samenwerking tussen de CSIRT’s",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Het CSIRT-netwerk",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "stelt zijn reglement van orde vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "Het CSIRT-netwerk en EU-CyCLONe",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "komen procedurele regelingen overeen en werken op basis daarvan samen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art16@original",
@@ -994,7 +2137,119 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "EU-CyCLONe",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "stelt zijn reglement van orde vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt opgericht om het gecoördineerde beheer van grootschalige cyberbeveiligingsincidenten en crises op operationeel niveau te ondersteunen en te zorgen voor een regelmatige uitwisseling van relevante informatie tussen de lidstaten en de instellingen, organen en agentschappen van de Unie",
+    "recipient_body": [
+     "de lidstaten",
+     "de instellingen, organen en agentschappen van de Unie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "EU-CyCLONe",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "brengt regelmatig verslag uit aan de samenwerkingsgroep over het beheer van grootschalige cyberbeveiligingsincidenten en crises, alsook trends, waarbij met name aandacht wordt besteed aan de gevolgen ervan voor essentiële en belangrijke entiteiten",
+    "recipient_body": [
+     "de samenwerkingsgroep"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "regelmatig"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "EU-CyCLONe",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Uiterlijk op 17 juli 2024 en vervolgens om de 18 maanden",
+    "action": "dient EU-CyCLONe bij het Europees Parlement en de Raad een beoordelingsverslag over zijn werkzaamheden in",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 juli 2024 en vervolgens om de 18 maanden"
+    },
+    "thresholds": [
+     "17 juli 2024",
+     "18 maanden"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "bestaat uit de vertegenwoordigers van de cybercrisisbeheerautoriteiten van de lidstaten alsmede, in gevallen waarin een potentieel of aan de gang zijnd grootschalig cyberbeveiligingsincident een aanzienlijke impact heeft of dreigt te hebben op diensten en activiteiten die binnen het toepassingsgebied van deze richtlijn vallen, de Commissie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in gevallen waarin een potentieel of aan de gang zijnd grootschalig cyberbeveiligingsincident een aanzienlijke impact heeft of dreigt te hebben op diensten en activiteiten die binnen het toepassingsgebied van deze richtlijn vallen",
+     "In andere gevallen",
+     "Indien nodig"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art17@original",
@@ -1028,7 +2283,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "COMPETENCE",
+    "addressee": "De Unie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "indien nodig",
+    "action": "internationale overeenkomsten met derde landen of internationale organisaties sluiten die hun deelname aan bepaalde activiteiten van de samenwerkingsgroep, het CSIRT-netwerk en EU-CyCLONe mogelijk maken en organiseren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig artikel 218 VWEU"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art18@original",
@@ -1078,7 +2354,52 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "stelt in samenwerking met de Commissie en de samenwerkingsgroep een tweejaarlijks verslag over de stand van zaken op het gebied van cyberbeveiliging in de Unie op en legt dat verslag voor aan het Europees Parlement",
+    "recipient_body": [
+     "het Europees Parlement"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "tweejaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Het verslag",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "bevat specifieke beleidsaanbevelingen om tekortkomingen te verhelpen en het cyberbeveiligingsniveau in de Unie te verhogen, en een samenvatting van de bevindingen over incidenten en cyberdreigingen voor de specifieke periode uit de overeenkomstig artikel 7, lid 6, van Verordening (EU) 2019/881 door Enisa opgestelde technische situatieverslagen inzake de EU-cyberbeveiliging Enisa",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de specifieke periode uit de overeenkomstig artikel 7, lid 6, van Verordening (EU) 2019/881 door Enisa opgestelde technische situatieverslagen inzake de EU-cyberbeveiliging Enisa"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art19@original",
@@ -1158,7 +2479,159 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De Commissie en Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "De Commissie en Enisa nemen als waarnemers deel aan de collegiale toetsingen.",
+    "action": "nemen als waarnemers deel aan de collegiale toetsingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "specifieke kwesties als bedoeld in lid 1, punt f), ter collegiale toetsing voorleggen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Vóór de aanvang van de collegiale toetsing",
+    "action": "kunnen de lidstaten een zelfbeoordeling van de geëvalueerde aspecten verrichten en die zelfbeoordeling aan de aangewezen cyberbeveiligingsdeskundigen verstrekken",
+    "recipient_body": [
+     "de aangewezen cyberbeveiligingsdeskundigen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Vóór de aanvang van een collegiale toetsing als bedoeld in lid 1",
+    "action": "stellen de lidstaten de deelnemende lidstaten in kennis van de reikwijdte ervan, met inbegrip van de krachtens lid 3 voorgelegde specifieke kwesties",
+    "recipient_body": [
+     "de deelnemende lidstaten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Vóór de aanvang van een collegiale toetsing als bedoeld in lid 1"
+    },
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "Cyberbeveiligingsdeskundigen die deelnemen aan collegiale toetsingen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "stellen verslagen op over de bevindingen en conclusies van de collegiale toetsingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PROHIBITION",
+    "addressee": "dezelfde in die lidstaat geëvalueerde aspecten",
+    "addressee_type": "OTHER",
+    "trigger_event": "Nadat een lidstaat aan een collegiale toetsing is onderworpen",
+    "action": "worden dezelfde in die lidstaat geëvalueerde aspecten niet meer aan een collegiale toetsing onderworpen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gedurende de twee jaar die volgen op de afsluiting van de collegiale toetsing"
+    },
+    "thresholds": [
+     "twee jaar"
+    ],
+    "conditions": [
+     "tenzij de lidstaat daarom verzoekt",
+     "tenzij dat wordt overeengekomen na een voorstel van de samenwerkingsgroep"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "voordat met de collegiale toetsing wordt begonnen",
+    "action": "zorgen ervoor dat elk risico van belangenconflicten met betrekking tot de aangewezen cyberbeveiligingsdeskundigen aan de andere lidstaten, de samenwerkingsgroep, de Commissie en Enisa wordt gemeld",
+    "recipient_body": [
+     "de andere lidstaten",
+     "de samenwerkingsgroep",
+     "de Commissie",
+     "Enisa"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voordat met de collegiale toetsing wordt begonnen"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art20@original",
@@ -1203,7 +2676,26 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat de leden van de bestuursorganen van essentiële en belangrijke entiteiten een opleiding moeten volgen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art21@original",
@@ -1263,7 +2755,118 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De in lid 1 bedoelde maatregelen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zijn gebaseerd op een benadering die alle gevaren omvat en tot doel heeft netwerk- en informatiesystemen en de fysieke omgeving van die systemen tegen incidenten te beschermen, en omvatten ten minste het volgende",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten minste het volgende"
+    ],
+    "conditions": [
+     "wanneer gepast",
+     "in voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat essentiële en belangrijke entiteiten passende en evenredige technische, operationele en organisatorische maatregelen nemen om de risico’s voor de beveiliging van de netwerk- en informatiesystemen die deze entiteiten voor hun werkzaamheden of voor het verlenen van hun diensten gebruiken, te beheren en om incidenten te voorkomen of de gevolgen van incidenten voor de afnemers van hun diensten en voor andere diensten te beperken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Rekening houdend met de stand van de techniek en, indien van toepassing, de desbetreffende Europese en internationale normen, alsook met de uitvoeringskosten",
+     "Bij de beoordeling van de evenredigheid van die maatregelen wordt naar behoren rekening gehouden met de mate waarin de entiteit aan risico’s is blootgesteld, de omvang van de entiteit en de kans dat zich incidenten voordoen en de ernst ervan, met inbegrip van de maatschappelijke en economische gevolgen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "wanneer zij overwegen welke maatregelen als bedoeld in lid 2, punt d), van dit artikel passend zijn",
+    "action": "zorgen ervoor dat de entiteiten, wanneer zij overwegen welke maatregelen als bedoeld in lid 2, punt d), van dit artikel passend zijn, rekening houden met de specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener en met de algemene kwaliteit van de producten en de cyberbeveiligingspraktijken van hun leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures",
+    "recipient_body": [
+     "de entiteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met inbegrip van hun veilige ontwikkelingsprocedures"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "een entiteit die vaststelt dat zij niet voldoet aan de in lid 2 bedoelde maatregelen",
+    "action": "zien erop toe dat een entiteit die vaststelt dat zij niet voldoet aan de in lid 2 bedoelde maatregelen, onverwijld alle noodzakelijke, passende en evenredige corrigerende maatregelen neemt",
+    "recipient_body": [],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "niet voldoet aan de in lid 2 bedoelde maatregelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "stelt de Commissie uitvoeringshandelingen vast met de technische en methodologische vereisten van de in lid 2 bedoelde maatregelen met betrekking tot DNS-dienstverleners, registers voor topleveldomeinnamen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, aanbieders van onlinemarktplaatsen, van onlinezoekmachines en van platforms voor socialenetwerkdiensten en aanbieders van vertrouwensdiensten",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art22@original",
@@ -1308,7 +2911,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "De samenwerkingsgroep",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "gecoördineerde beveiligingsrisicobeoordelingen van specifieke kritieke ICT-diensten, ICT-systemen of ICT-producttoeleveringsketens uitvoeren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art23@original",
@@ -1710,7 +3334,49 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "De Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "indien is vastgesteld dat het niveau van cyberbeveiliging onvoldoende is",
+    "action": "gedelegeerde handelingen vast te stellen om deze richtlijn aan te vullen door te bepalen welke categorieën van essentiële en belangrijke entiteiten verplicht zijn om bepaalde ICT-producten, ICT -diensten en ICT -processen te gebruiken of een certificaat te verkrijgen in het kader van een Europese cyberbeveiligingsregeling die op grond van artikel 49 van Verordening (EU) 2019/881 is vastgesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien is vastgesteld dat het niveau van cyberbeveiliging onvoldoende is"
+    ],
+    "deference": "overeenkomstig artikel 38; op grond van artikel 49 van Verordening (EU) 2019/881; overeenkomstig artikel 56 van Verordening (EU) 2019/881",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Indien er geen passende Europese cyberbeveiligingscertificeringsregeling voor de toepassing van lid 2 van dit artikel beschikbaar is",
+    "action": "Enisa verzoeken een potentiële regeling op te stellen",
+    "recipient_body": [
+     "Enisa"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "na raadpleging van de samenwerkingsgroep en de Europese Groep voor cyberbeveiligingscertificering"
+    ],
+    "deference": "op grond van artikel 48, lid 2, van Verordening (EU) 2019/881",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art25@original",
@@ -1755,7 +3421,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "moedigen de lidstaten, zonder het gebruik van een bepaald type technologie op te leggen of te bevoordelen, het gebruik aan van Europese en internationale normen en technische specificaties die relevant zijn voor de beveiliging van netwerk- en informatiesystemen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zonder het gebruik van een bepaald type technologie op te leggen of te bevoordelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art26@original",
@@ -1815,7 +3502,108 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "een entiteit als bedoeld in lid 1, punt b), niet in de Unie is gevestigd, maar diensten in de Unie aanbiedt",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien een entiteit als bedoeld in lid 1, punt b), niet in de Unie is gevestigd, maar diensten in de Unie aanbiedt",
+    "action": "wijst zij een vertegenwoordiger in de Unie aan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "De entiteit is niet in de Unie gevestigd maar biedt diensten in de Unie aan."
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "Binnen het toepassingsgebied van deze richtlijn vallende entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "worden geacht onder de jurisdictie te vallen van de lidstaat waar zij zijn gevestigd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "behalve in het geval van:",
+     "aanbieders van openbare elektronischecommunicatienetwerken of aanbieders van openbare elektronischecommunicatiediensten",
+     "DNS-dienstverleners, registers voor topleveldomeinnamen, entiteiten die domeinnaamregistratiediensten verlenen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, alsmede aanbieders van onlinemarktplaatsen, van onlinezoekmachines of van platforms voor socialenetwerkdiensten",
+     "overheidsinstanties"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": "een entiteit als bedoeld in lid 1, punt b)",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De aanwijzing van een vertegenwoordiger door een entiteit als bedoeld in lid 1, punt b)",
+    "action": "doet geen afbreuk aan juridische stappen die tegen de entiteit zelf kunnen worden ingesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "Lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "een verzoek om wederzijdse bijstand hebben ontvangen",
+    "action": "passende toezichts- en handhavingsmaatregelen nemen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "binnen de grenzen van dat verzoek",
+     "ten aanzien van de betrokken entiteit die op hun grondgebied diensten verleent of waarvan een netwerk- en informatiesysteem zich op hun grondgebied bevindt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "een in lid 1, punt b), bedoelde entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor de toepassing van deze richtlijn",
+    "action": "wordt een in lid 1, punt b), bedoelde entiteit geacht haar hoofdvestiging in de Unie te hebben in de lidstaat waar de beslissingen met betrekking tot de maatregelen voor het beheer van cyberbeveiligingsrisico’s hoofdzakelijk worden genomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien niet kan worden bepaald welke lidstaat dat is",
+     "of indien dergelijke besluiten niet in de Unie worden genomen",
+     "Indien niet kan worden bepaald welke lidstaat dat is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art27@original",
@@ -1875,7 +3663,105 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de in lid 1 bedoelde entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "eventuele wijzigingen in de gegevens die zij op grond van lid 2 hebben ingediend",
+    "action": "in kennis stellen van eventuele wijzigingen in de gegevens die zij op grond van lid 2 hebben ingediend",
+    "recipient_body": [
+     "de bevoegde autoriteit"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "waarop de wijziging van kracht is geworden",
+     "raw": "binnen drie maanden na de datum waarop de wijziging van kracht is geworden"
+    },
+    "thresholds": [
+     "drie maanden"
+    ],
+    "conditions": [
+     "de in lid 1 bedoelde entiteiten",
+     "de gegevens die zij op grond van lid 2 hebben ingediend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de in lid 1 bedoelde entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "de volgende informatie uiterlijk op 17 januari 2025 bij de bevoegde autoriteiten indienen",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 januari 2025"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "op basis van de informatie die is ontvangen van de centrale contactpunten in overeenstemming met lid 4",
+    "action": "creëert en onderhoudt een register van DNS-dienstverleners, registers voor topleveldomeinnamen, entiteiten die domeinnaamregistratiediensten verlenen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, alsmede aanbieders van onlinemarktplaatsen, van onlinezoekmachines en van platforms voor socialenetwerkdiensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "het centrale contactpunt van de betrokken lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Na ontvangst van de in de leden 2 en 3 bedoelde informatie, met uitzondering van de in lid 2, punt f), bedoelde informatie",
+    "action": "zendt het centrale contactpunt van de betrokken lidstaat deze zonder onnodige vertraging door naar Enisa",
+    "recipient_body": [
+     "Enisa"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "zonder onnodige vertraging"
+    },
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van de in lid 2, punt f), bedoelde informatie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art28@original",
@@ -1940,7 +3826,71 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de registers voor topleveldomeinnamen en de entiteiten die domeinnaamregistratiediensten verlenen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "over beleidslijnen en procedures, waaronder verificatieprocedures, beschikken om ervoor te zorgen dat de in lid 1 bedoelde databases juiste en volledige informatie bevatten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "op rechtmatige en naar behoren gemotiveerde verzoeken van legitieme toegangvragende partijen",
+    "action": "toegang verlenen tot specifieke met gegevens over de registratie van domeinnamen",
+    "recipient_body": [
+     "legitieme toegangvragende partijen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig het Uniegegevensbeschermingsrecht van de Unie"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de registers voor topleveldomeinnamen en de entiteiten die domeinnaamregistratiediensten verlenen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "na de registratie van een domeinnaam",
+    "action": "de domeinnaamregistratiegegevens die geen persoonsgegevens zijn, openbaar maken",
+    "recipient_body": [],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": "van een domeinnaam",
+     "raw": "onverwijld na de registratie van een domeinnaam"
+    },
+    "thresholds": [],
+    "conditions": [
+     "de domeinnaamregistratiegegevens die geen persoonsgegevens zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art29@original",
@@ -2000,7 +3950,70 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat de informatie-uitwisseling plaatsvindt binnen gemeenschappen van essentiële en belangrijke entiteiten en, indien van toepassing, hun leveranciers of dienstverleners",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "wanneer dat uitwisselen van informatie",
+    "action": "zorgen ervoor dat binnen het toepassingsgebied van deze richtlijn vallende entiteiten en, indien van toepassing, andere entiteiten die niet binnen het toepassingsgebied van deze richtlijn vallen, op vrijwillige basis onderling relevante informatie over cyberbeveiliging kunnen uitwisselen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "binnen het toepassingsgebied van deze richtlijn vallende entiteiten",
+     "indien van toepassing, andere entiteiten die niet binnen het toepassingsgebied van deze richtlijn vallen",
+     "op vrijwillige basis",
+     "beoogt incidenten te voorkomen, te detecteren, erop te reageren of ervan te herstellen of de gevolgen ervan te beperken",
+     "het niveau van de cyberbeveiliging verhoogt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Enisa",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "ondersteunt de invoering van de in lid 2 bedoelde informatie-uitwisselingsregelingen op het gebied van cyberbeveiliging door beste praktijken uit te wisselen en richtsnoeren te verstekken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de in lid 2 bedoelde informatie-uitwisselingsregelingen op het gebied van cyberbeveiliging"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art30@original",
@@ -2045,7 +4058,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022L2555:art31@original",
@@ -2100,7 +4114,67 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat hun bevoegde autoriteiten effectief toezicht houden op en de noodzakelijke maatregelen nemen om te zorgen voor de naleving van deze richtlijn",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij de aanpak van incidenten die leiden tot inbreuken in verband met persoonsgegevens",
+    "action": "werken de bevoegde autoriteiten nauw samen met de toezichthoudende autoriteiten uit hoofde van Verordening (EU) 2016/679",
+    "recipient_body": [
+     "de toezichthoudende autoriteiten uit hoofde van Verordening (EU) 2016/679"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "onverminderd de bevoegdheid en taken van de toezichthoudende autoriteiten krachtens die verordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "kunnen hun bevoegde autoriteiten toestaan prioriteit te geven aan toezichtstaken",
+    "recipient_body": [
+     "hun bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bij de uitvoering van hun in de artikelen 32 en 33 bedoelde toezichthoudende taken",
+     "volgens een risicogebaseerde benadering"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art32@original",
@@ -2185,7 +4259,179 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat de toezichts- of handhavingsmaatregelen die met betrekking tot de in deze richtlijn vastgestelde verplichtingen aan essentiële entiteiten worden opgelegd, doeltreffend, evenredig en afschrikkend zijn",
+    "recipient_body": [
+     "essentiële entiteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met betrekking tot de in deze richtlijn vastgestelde verplichtingen",
+     "rekening houdend met de omstandigheden van elk afzonderlijk geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij de uitoefening van hun bevoegdheden uit hoofde van lid 2, punt e), f) of g)",
+    "action": "vermelden de bevoegde autoriteiten het doel van het verzoek en specificeren zij de gevraagde informatie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "uit hoofde van lid 2, punt e), f) of g)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de uitoefening van hun toezichthoudende taken met betrekking tot essentiële entiteiten",
+    "action": "zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun toezichthoudende taken met betrekking tot essentiële entiteiten de bevoegdheid hebben om deze entiteiten te onderwerpen aan ten minste",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": [
+     "met betrekking tot essentiële entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij het nemen van de in lid 4 of 5 bedoelde handhavingsmaatregelen",
+    "action": "eerbiedigen de bevoegde autoriteiten de rechten van de verdediging en houden zij rekening met de omstandigheden van elk afzonderlijk geval, en houden zij ten minste naar behoren rekening met",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de in lid 4 of 5 bedoelde handhavingsmaatregelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat elke natuurlijke persoon die verantwoordelijk is voor of optreedt als wettelijke vertegenwoordiger van een essentiële entiteit op basis van de bevoegdheid om deze te vertegenwoordigen, de bevoegdheid om namens deze entiteit beslissingen te nemen of de bevoegdheid om controle uit te oefenen op deze entiteit, de bevoegdheid heeft om ervoor te zorgen dat deze entiteit deze richtlijn nakomt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "elke natuurlijke persoon die verantwoordelijk is voor of optreedt als wettelijke vertegenwoordiger van een essentiële entiteit op basis van de bevoegdheid om deze te vertegenwoordigen, de bevoegdheid om namens deze entiteit beslissingen te nemen of de bevoegdheid om controle uit te oefenen op deze entiteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Alvorens dergelijke maatregelen vast te stellen",
+    "action": "stellen de bevoegde autoriteiten de betrokken entiteiten in kennis van hun voorlopige bevindingen",
+    "recipient_body": [
+     "de betrokken entiteiten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "een redelijke termijn"
+    },
+    "thresholds": [],
+    "conditions": [
+     "behalve in naar behoren gemotiveerde gevallen waarin onmiddellijk optreden om incidenten te voorkomen of erop te reageren anders zou worden belemmerd"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "wanneer zij hun toezichts- en handhavingsbevoegdheden uitoefenen",
+    "action": "zorgen ervoor dat hun uit hoofde van deze richtlijn bevoegde autoriteiten de relevante uit hoofde van Richtlijn (EU) 2022/2557 bevoegde autoriteiten binnen dezelfde lidstaat in kennis stellen",
+    "recipient_body": [
+     "de relevante uit hoofde van Richtlijn (EU) 2022/2557 bevoegde autoriteiten binnen dezelfde lidstaat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "om ervoor te zorgen dat een entiteit die op grond van Richtlijn (EU) 2022/2557 als kritieke entiteit wordt aangemerkt, voldoet aan deze richtlijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "wanneer zij hun toezichts- en handhavingsbevoegdheden uitoefenen",
+    "action": "het oversightforum dat is opgericht op grond van artikel 32, lid 1, van Verordening (EU) 2022/2554 in kennis stellen",
+    "recipient_body": [
+     "het oversightforum dat is opgericht op grond van artikel 32, lid 1, van Verordening (EU) 2022/2554"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "om ervoor te zorgen dat een essentiële entiteit die op grond van artikel 31 van Verordening (EU) 2022/2554 als kritieke derde aanbieder van ICT-diensten is aangewezen, voldoet aan deze richtlijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art33@original",
@@ -2250,7 +4496,111 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun toezichthoudende taken met betrekking tot belangrijke entiteiten de bevoegdheid hebben om deze entiteiten te onderwerpen aan ten minste:",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": [
+     "bij de uitoefening van hun toezichthoudende taken met betrekking tot belangrijke entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Artikel 32, leden 6 tot en met 8, is van overeenkomstige toepassing op de toezichts- en handhavingsmaatregelen waarin dit artikel voorziet voor belangrijke entiteiten.",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij de uitoefening van hun bevoegdheden uit hoofde van lid 2, punt d), e) of f)",
+    "action": "vermelden de bevoegde autoriteiten het doel van het verzoek en de gevraagde informatie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "uit hoofde van lid 2, punt d), e) of f)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten",
+    "action": "zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun handhavingsbevoegdheden ten aanzien van belangrijke entiteiten, ten minste de bevoegdheid hebben om:",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van belangrijke entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Wanneer het bewijs, de aanwijzing of informatie wordt geleverd dat een belangrijke entiteit beweerdelijk deze richtlijn, en met name de artikelen 21 en 23, niet nakomt",
+    "action": "zorgen de lidstaten ervoor dat de bevoegde autoriteiten zo nodig maatregelen nemen door middel van toezichtmaatregelen achteraf",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zo nodig",
+     "rekening houdend met de omstandigheden van ieder afzonderlijk geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art34@original",
@@ -2325,7 +4675,134 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Administratieve geldboeten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden opgelegd bovenop een of meer van de in artikel 32, lid 4, punten a) tot en met h), artikel 32, lid 5, en artikel 33, lid 4, punten a) tot en met g), bedoelde maatregelen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.86,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "belangrijke entiteiten die inbreuk maken op artikel 21 of 23",
+    "action": "zorgen ervoor dat belangrijke entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 van dit artikel onderworpen worden aan administratieve geldboeten met een maximumbedrag van ten minste 7 000 000 EUR of ten minste 1,4 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de belangrijke entiteit behoort, afhankelijk van welk bedrag hoger is",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "7 000 000 EUR",
+     "1,4 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de belangrijke entiteit behoort"
+    ],
+    "conditions": [
+     "overeenkomstig de leden 2 en 3 van dit artikel",
+     "afhankelijk van welk bedrag hoger is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "voorzien in de bevoegdheid om dwangsommen op te leggen om een essentiële of belangrijke entiteit te dwingen een inbreuk op deze richtlijn te staken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met een voorafgaand besluit van de bevoegde autoriteit"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "essentiële entiteiten die inbreuk maken op artikel 21 of 23",
+    "action": "zorgen ervoor dat essentiële entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 van dit artikel onderworpen worden aan administratieve geldboeten met een maximumbedrag van ten minste 10 000 000 EUR of ten minste 2 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de essentiële entiteit behoort, afhankelijk van welk bedrag hoger is",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten minste 10 000 000 EUR",
+     "ten minste 2 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar"
+    ],
+    "conditions": [
+     "overeenkomstig de leden 2 en 3 van dit artikel",
+     "afhankelijk van welk bedrag hoger is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PERMISSION",
+    "addressee": "elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "bepalen of en in welke mate administratieve geldboeten kunnen worden opgelegd aan overheidsinstanties",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Onverminderd de bevoegdheden van de bevoegde autoriteiten uit hoofde van de artikelen 32 en 33",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "die lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Indien het rechtsstelsel van een lidstaat niet in administratieve geldboeten voorziet",
+    "action": "stelt de Commissie uiterlijk op 17 oktober 2024 in kennis van de wettelijke bepalingen die hij op grond van dit lid vaststelt, en onverwijld van eventuele latere wijzigingswetten of wijzigingen die daarop van invloed zijn",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Indien het rechtsstelsel van een lidstaat niet in administratieve geldboeten voorziet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art35@original",
@@ -2375,7 +4852,36 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "er bij toezicht of handhaving kennis van krijgen dat de inbreuk door een essentiële of belangrijke entiteit op de in de artikelen 21 en 23 van deze richtlijn vastgestelde verplichtingen een inbreuk in verband met persoonsgegevens zoals gedefinieerd in artikel 4, punt 12, van Verordening (EU) 2016/679 kan inhouden, die op grond van artikel 33 van die verordening moet worden gemeld",
+    "action": "stellen zij de bevoegde toezichthoudende autoriteiten als bedoeld in de artikelen 55 en 56 van die verordening daarvan onverwijld in kennis",
+    "recipient_body": [
+     "de bevoegde toezichthoudende autoriteiten als bedoeld in de artikelen 55 en 56 van die verordening"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "de inbreuk ... kan inhouden",
+     "die op grond van artikel 33 van die verordening moet worden gemeld"
+    ],
+    "deference": "op grond van artikel 33 van die verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art36@original",
@@ -2409,7 +4915,33 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "stellen de Commissie uiterlijk op 17 januari 2025 in kennis van deze regels en maatregelen en stellen haar onverwijld in kennis van eventuele latere wijzigingen daarvan",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 januari 2025"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art37@original",
@@ -2454,7 +4986,53 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten van de betrokken lidstaten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Wanneer een entiteit diensten verricht in meer dan één lidstaat, of indien zij diensten verricht in een of meer lidstaten en haar netwerk- en informatiesystemen zich in een of meer andere lidstaten bevinden",
+    "action": "werken de bevoegde autoriteiten van de betrokken lidstaten met elkaar samen en verlenen ze elkaar indien nodig bijstand",
+    "recipient_body": [
+     "de bevoegde autoriteiten van de betrokken lidstaten"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "meer dan één lidstaat",
+     "een of meer lidstaten",
+     "een of meer andere lidstaten"
+    ],
+    "conditions": [
+     "indien nodig"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "de bevoegde autoriteiten van verschillende lidstaten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In voorkomend geval",
+    "action": "gezamenlijke toezichtsacties uitvoeren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in onderlinge overeenstemming"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art38@original",
@@ -2519,7 +5097,98 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "gedelegeerde handelingen vast te stellen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "onder de in dit artikel neergelegde voorwaarden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Zodra de Commissie een gedelegeerde handeling heeft vastgesteld",
+    "action": "doet zij daarvan gelijktijdig kennisgeving aan het Europees Parlement en de Raad",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gelijktijdig"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "Het Europees Parlement of de Raad",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "kan de in artikel 24, lid 2, bedoelde bevoegdheidsdelegatie te allen tijde intrekken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PROCEDURAL",
+    "addressee": "het Europees Parlement noch de Raad",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Een op grond van artikel 24, lid 2, vastgestelde gedelegeerde handeling",
+    "action": "treedt alleen in werking",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van de handeling aan het Europees Parlement en de Raad",
+     "raw": "binnen een termijn van twee maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad"
+    },
+    "thresholds": [
+     "twee maanden",
+     "twee maanden"
+    ],
+    "conditions": [
+     "indien het Europees Parlement noch de Raad daartegen binnen een termijn van twee maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad bezwaar heeft gemaakt",
+     "of indien zowel het Europees Parlement als de Raad voor het verstrijken van die termijn de Commissie hebben meegedeeld dat zij daartegen geen bezwaar zullen maken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art39@original",
@@ -2569,7 +5238,67 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Wanneer naar dit lid wordt verwezen",
+    "action": "is artikel 5 van Verordening (EU) nr. 182/2011 van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PROCEDURAL",
+    "addressee": "De Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "wordt bijgestaan door een comité",
+    "recipient_body": [
+     "een comité"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PROCEDURAL",
+    "addressee": "de voorzitter van het comité",
+    "addressee_type": "OTHER",
+    "trigger_event": "Wanneer het advies van het comité via een schriftelijke procedure moet worden verkregen",
+    "action": "wordt deze procedure zonder gevolg beëindigd",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen de termijn voor het uitbrengen van het advies"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art40@original",
@@ -2603,7 +5332,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022L2555:art41@original",
@@ -2648,7 +5378,33 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "gaan de lidstaten over tot de vaststelling en bekendmaking van de noodzakelijke bepalingen om aan deze richtlijn te voldoen",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art42@original",
@@ -2682,7 +5438,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt artikel 19 geschrapt",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "met ingang van 18 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art43@original",
@@ -2716,7 +5496,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "worden de artikelen 40 en 41 geschrapt",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "met ingang van 18 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art44@original",
@@ -2750,7 +5554,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "Richtlijn (EU) 2016/1148",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "wordt ingetrokken",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "met ingang van 18 oktober 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art45@original",
@@ -2784,7 +5612,33 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "Deze richtlijn",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "de bekendmaking ervan in het Publicatieblad van de Europese Unie",
+    "action": "treedt in werking",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "die van de bekendmaking ervan in het Publicatieblad van de Europese Unie",
+     "raw": "op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie"
+    },
+    "thresholds": [
+     "de twintigste dag"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022L2555:art46@original",
@@ -2818,6 +5672,25 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  }
 ]

@@ -1,0 +1,143 @@
+{
+ "findings": [
+  {
+   "finding_id": "F-C1-0001",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (arithmetic or a direct lookup, no AI)",
+    "recipient identity confirmed by name",
+    "both norms cleanly extracted"
+   ],
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1"
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "andere toezichthouders",
+     "de Staatscourant"
+    ],
+    "recipient_b": [
+     "andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+    ]
+   },
+   "llm_adjudication": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-0002",
+   "category": "contradiction",
+   "subtype": "duty_conflict",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "resolved by AI judgement (duty conflict), not a deterministic computation -- never eligible for Tier 1 regardless of how confident the model was",
+    "the model could not reach a firm verdict either way from the text alone -- genuinely uncertain, not a confirmed non-conflict, so still worth a look"
+   ],
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art22c@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "22c",
+     "paragraph_number": null
+    },
+    {
+     "uid": "eu:32016R0679:art49@original",
+     "instrument_id": "32016R0679",
+     "article": "49",
+     "paragraph_number": "3"
+    }
+   ],
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": null,
+   "llm_adjudication": {
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "criterion_fired": "Both provisions state that other provisions are inapplicable, but the supplied text does not identify the content of the referenced provisions or establish that the two inapplicability rules impose mutually exclusive duties on the same actor for the same trigger.",
+    "evidence_span_a": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c, en artikel 15, achtste lid, zijn niet van toepassing in een openbaar lichaam.",
+    "evidence_span_b": "Lid 1, eerste alinea, onder a), b) en c) en tweede alinea, zijn niet van toepassing op activiteiten die door overheidsinstanties worden verricht bij de uitoefening van hun openbare bevoegdheden.",
+    "confidence": 0.98
+   },
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-0003",
+   "category": "contradiction",
+   "subtype": "duty_conflict",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "resolved by AI judgement (duty conflict), not a deterministic computation -- never eligible for Tier 1 regardless of how confident the model was",
+    "model-reported confidence: 0.99"
+   ],
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art11.10@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "11.10",
+     "paragraph_number": "4"
+    },
+    {
+     "uid": "nl:BWBR0009950:art11.10@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "11.10",
+     "paragraph_number": "3"
+    }
+   ],
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": null,
+   "llm_adjudication": {
+    "verdict": "CONTRADICTION",
+    "criterion_fired": "Norm A restricts the administrator's provision of numbers and data to specified purposes, while Norm B requires administrators to record the provided numbers and data for those same purposes. The duties concern different actions (verstrekking versus vastlegging) and are not mutually exclusive; therefore, there is no genuine contradiction.",
+    "evidence_span_a": "Verstrekking van nummers en gegevens door de beheerder vindt slechts plaats met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten.",
+    "evidence_span_b": "De verstrekte nummers, alsmede de in het eerste lid, onder b, en de in het tweede lid, bedoelde gegevens worden door de beheerders, bedoeld in het eerste lid, vastgelegd met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten.",
+    "confidence": 0.99
+   },
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "report_eligible": false
+  }
+ ],
+ "suppressed": []
+}

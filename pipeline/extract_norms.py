@@ -47,6 +47,7 @@ Usage:
 import argparse
 import json
 import re
+import threading
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
@@ -124,14 +125,23 @@ def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
 # once the review queue surfaces phrasing it doesn't recognise.
 # ---------------------------------------------------------------------------
 
+# Numeric patterns are checked BEFORE the vague qualifiers below. Real drafting
+# routinely states both in one phrase -- "onverwijld of, indien dat niet mogelijk is,
+# binnen 24 uur ..." (Cbw art. 26), "zonder onredelijke vertraging en, indien mogelijk,
+# uiterlijk 72 uur ..." (GDPR art. 33) -- and the specific figure is the operative,
+# comparable deadline; "onverwijld"/"zonder onredelijke vertraging" is a qualifier on
+# it, not a competing deadline. Checking "onverwijld" first (the original ordering)
+# silently discarded the 24-hour figure whenever it appeared earlier in the string --
+# caught only by checking this parser's output against the project's own flagship
+# Cbw-vs-GDPR example, where it made the comparison impossible.
 _DEADLINE_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [
-    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": 0, "unit": "immediate"}),
-    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": 0, "unit": "immediate"}),
-    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),
     (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+uur\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "hour"}),
     (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+(werk)?dag(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "day"}),
     (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+we(e)?k(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "week"}),
     (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+maand(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "month"}),
+    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": 0, "unit": "immediate"}),
+    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": 0, "unit": "immediate"}),
+    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),
 ]
 
 # What the deadline is measured from, e.g. "nadat hij er kennis van heeft genomen" ->
@@ -167,7 +177,14 @@ _SCHEMA_FIELDS_NOTE = (
     "Every span you return for addressee, action, trigger_event and deadline_raw must "
     "be a verbatim, word-for-word substring of the paragraph text -- copy it exactly, "
     "do not paraphrase or summarise it. If a field genuinely does not apply to this "
-    "paragraph, return null (or an empty list for the list fields), never invent a value."
+    "paragraph, return null (or an empty list for the list fields), never invent a value. "
+    "For deadline_raw specifically: a sentence often states both a vague qualifier "
+    "('onverwijld', 'zonder onredelijke vertraging') AND a specific figure ('binnen 24 "
+    "uur', 'uiterlijk 72 uur') as a fallback or outer bound on the same duty -- when both "
+    "appear, extract the phrase containing the specific number, not the vague qualifier "
+    "alone, since the number is what a later comparison against another law's deadline "
+    "actually needs. Extract the vague qualifier only when no specific figure is present "
+    "anywhere in the paragraph."
 )
 
 _FRAMING_DIRECT = (
@@ -202,11 +219,21 @@ def _build_input(framing: str, article_heading: str, unit_text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Source scope -- the incident-reporting anchor set, nothing else, per Stage 6's
-# "prioritise" design constraint. Three schema shapes are handled uniformly by
-# get_provisions()/get_paragraphs() below: standard pipeline output (NL and EU both
-# use `paragraphs[]`), and the two hand-built flat files (Bijlage 35, no paragraphs
-# at all -- one unit per numbered sub-provision).
+# Source scope -- widened to the full corpus (2026-09-23 decision), superseding the
+# incident-reporting-only anchor set now that C1 has been validated against it. One
+# deliberate exclusion kept: the Telecommunicatiewet is scoped to Hoofdstuk 11
+# ("Bescherming van persoonsgegevens en de persoonlijke levenssfeer") only, not its
+# other 359 articles (spectrum policy, cable rights-of-way, telecom market-dominance
+# rules, wiretapping procedure) -- none of that is "digital law" in this project's
+# sense, and extracting it would waste most of the run's budget on content that cannot
+# possibly relate to GDPR/NIS2/DORA/AI Act, while adding noise to candidate generation.
+#
+# Uitvoeringswet dataverordening now reads from the STANDARD pipeline file
+# (data/BWBR0051796_2025-11-21_provisions.json) instead of the hand-built
+# Datasets/ file used for the anchor set -- fixing, not working around, the citation-
+# graph uid mismatch documented in detect_c1_contradiction.py's module docstring: the
+# standard file already carries the same `uid` values the graph indexes, so no
+# reconstruction is needed once this is the source of truth going forward.
 # ---------------------------------------------------------------------------
 
 
@@ -220,34 +247,58 @@ class SourceSpec:
 
 SOURCES = [
     SourceSpec(
-        label="Cbw ch. 8 (incident reporting)",
+        label="Cbw (full)",
         path="data/BWBR0052872_2026-08-15_provisions.json",
         get_provisions=lambda root: root,
-        in_scope=lambda p: bool(p.get("chapter")) and "Hoofdstuk 8" in p["chapter"],
+        in_scope=lambda p: True,
     ),
     SourceSpec(
-        label="GDPR arts. 33-34",
+        label="UAVG (full)",
+        path="data/BWBR0040940_2026-09-01_provisions.json",
+        get_provisions=lambda root: root,
+        in_scope=lambda p: True,
+    ),
+    SourceSpec(
+        label="Wdo (full)",
+        path="data/BWBR0048156_2025-11-11_provisions.json",
+        get_provisions=lambda root: root,
+        in_scope=lambda p: True,
+    ),
+    SourceSpec(
+        label="Telecommunicatiewet, Hoofdstuk 11 only (privacy/ePrivacy provisions)",
+        path="data/BWBR0009950_2026-08-15_provisions.json",
+        get_provisions=lambda root: root,
+        in_scope=lambda p: bool(p.get("chapter")) and "Hoofdstuk 11" in p["chapter"],
+    ),
+    SourceSpec(
+        label="Uitvoeringswet dataverordening (full)",
+        path="data/BWBR0051796_2025-11-21_provisions.json",
+        get_provisions=lambda root: root,
+        in_scope=lambda p: True,
+    ),
+    SourceSpec(
+        label="GDPR (full)",
         path="data/32016R0679_original_provisions.json",
         get_provisions=lambda root: root,
-        in_scope=lambda p: p["article"] in ("33", "34"),
+        in_scope=lambda p: True,
     ),
     SourceSpec(
-        label="NIS2 art. 23",
+        label="NIS2 (full)",
         path="data/32022L2555_original_provisions.json",
         get_provisions=lambda root: root,
-        in_scope=lambda p: p["article"] == "23",
+        in_scope=lambda p: True,
     ),
     SourceSpec(
-        label="DORA arts. 17-23",
+        label="DORA (full)",
         path="data/32022R2554_original_provisions.json",
         get_provisions=lambda root: root,
-        in_scope=lambda p: p["article"] in {str(i) for i in range(17, 24)},
+        in_scope=lambda p: True,
     ),
     SourceSpec(
-        label="Uitvoeringswet dataverordening, competence provisions (arts. 2-8)",
-        path="Datasets/Dutch Laws/uitvoeringswet_dataverordening_dataset.json",
-        get_provisions=lambda root: root["substantive_text"]["provisions"],
-        in_scope=lambda p: str(p["number"]) in {"2", "3", "4", "5", "6", "7", "8"},
+        label="AI Act (full, pre-Digital-Omnibus per ADR-0004)",
+        path="data/32024R1689_original_provisions.json",
+        get_provisions=lambda root: root,
+        in_scope=lambda p: True,
     ),
     SourceSpec(
         label="Bijlage 35 (DORA competent-authority designation)",
@@ -424,7 +475,12 @@ def _provision_key(p: dict) -> tuple:
     )
 
 
-def retry_queue(client, model: str, reasoning_effort: str = "none") -> None:
+def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency: int = 10) -> None:
+    """Parallelized 2026-09-23 for full-corpus scale (768-item queues are impractical
+    one at a time). A single lock guards both the per-source file writes and the queue
+    file's own state -- the critical section is just local dict/list bookkeeping plus a
+    JSON dump, not the network call, so serializing it costs nothing next to the API
+    latency this is actually trying to parallelize."""
     queue_path = ROOT / "data" / "stage6_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
@@ -438,40 +494,70 @@ def retry_queue(client, model: str, reasoning_effort: str = "none") -> None:
         by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
         loaded.append((root, path, by_key))
 
-    remaining_queue = []
-    n_resolved = 0
     retried_with_label = model if reasoning_effort == "none" else f"{model} (reasoning:{reasoning_effort})"
+    lock = threading.Lock()
+    remaining_queue: list = []
+    n_resolved = 0
+    dirty_paths: set = set()
 
-    for idx, item in enumerate(queue):
+    def relocate(item):
         key = (str(item["instrument_id"]), str(item["article"]))
-        provision = path = root = None
         for candidate_root, candidate_path, by_key in loaded:
             if key in by_key:
-                provision, path, root = by_key[key], candidate_path, candidate_root
-                break
+                return by_key[key], candidate_path, candidate_root
+        return None, None, None
 
+    unresolved_lookup = []  # items that couldn't even be relocated -- no retry possible
+    to_retry = []
+    for item in queue:
+        provision, path, root = relocate(item)
         if provision is None:
-            print(f"  [warn] could not relocate provision for {key} -- keeping queue entry as-is")
-            remaining_queue.append(item)
+            unresolved_lookup.append(item)
         else:
-            unit = Unit(provision, item["paragraph_number"], item["unit_text"],
-                        provision.get("heading") or f"Article {item['article']}")
-            print(f"  retrying {key} para {item['paragraph_number']} with {model} "
-                  f"(reasoning: {reasoning_effort})")
-            norm, new_item = extract_unit(client, model, unit, reasoning_effort)
+            to_retry.append((item, provision, path, root))
+    remaining_queue.extend(unresolved_lookup)
+    for item in unresolved_lookup:
+        print(f"  [warn] could not relocate provision for "
+              f"{(item['instrument_id'], item['article'])} -- keeping queue entry as-is")
+
+    def process(entry):
+        item, provision, path, root = entry
+        key = (str(item["instrument_id"]), str(item["article"]))
+        unit = Unit(provision, item["paragraph_number"], item["unit_text"],
+                    provision.get("heading") or f"Article {item['article']}")
+        norm, new_item = extract_unit(client, model, unit, reasoning_effort)
+        with lock:
+            nonlocal n_resolved
             if norm is not None:
                 provision.setdefault("norms", []).append(norm)
                 n_resolved += 1
-                path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+                dirty_paths.add(path)
             else:
                 new_item["retried_with"] = retried_with_label
                 remaining_queue.append(new_item)
+        return key, item["paragraph_number"], norm is not None
 
-        # Persisted after every item, same crash-safety reasoning as main(): what's on
-        # disk right now is (items already decided) + (items not yet reached) -- correct
-        # at any point, not just at the end.
-        queue_path.write_text(json.dumps(remaining_queue + queue[idx + 1:], ensure_ascii=False, indent=1),
-                               encoding="utf-8")
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    with ThreadPoolExecutor(max_workers=concurrency) as ex:
+        futures = {ex.submit(process, entry): entry for entry in to_retry}
+        for i, fut in enumerate(as_completed(futures), 1):
+            key, para, resolved = fut.result()
+            print(f"  [{i}/{len(to_retry)}] retried {key} para {para} with {model} "
+                  f"(reasoning: {reasoning_effort}) -- {'resolved' if resolved else 'still unresolved'}",
+                  flush=True)
+            if i % 25 == 0 or i == len(to_retry):
+                with lock:
+                    for root, path, _ in loaded:
+                        if path in dirty_paths:
+                            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+                    queue_path.write_text(json.dumps(remaining_queue, ensure_ascii=False, indent=1),
+                                           encoding="utf-8")
+
+    # Final flush, covers any tail not caught by the periodic checkpoint above.
+    for root, path, _ in loaded:
+        if path in dirty_paths:
+            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+    queue_path.write_text(json.dumps(remaining_queue, ensure_ascii=False, indent=1), encoding="utf-8")
 
     print(f"\nretried {len(queue)} queued unit(s) with {model} (reasoning: {reasoning_effort}): "
           f"{n_resolved} resolved, {len(remaining_queue)} still unresolved")
@@ -639,6 +725,11 @@ def main():
                           "deliberately when retrying items that disagreed even under a "
                           "stronger model, to test reasoning depth as a separate lever "
                           "from model choice")
+    ap.add_argument("--concurrency", type=int, default=10,
+                     help="parallel units in flight per source -- each unit still makes its "
+                          "own 2 sequential passes internally, so actual concurrent API calls "
+                          "run up to ~2x this. Full-corpus scale (2026-09-23: ~2,000 new "
+                          "paragraphs) is impractical run strictly sequentially.")
     args = ap.parse_args()
 
     client = None
@@ -651,12 +742,14 @@ def main():
         return
 
     if args.retry_queue:
-        retry_queue(client, args.model, args.reasoning_effort)
+        retry_queue(client, args.model, args.reasoning_effort, args.concurrency)
         return
 
     n_processed = 0
     n_finalized = 0
     n_queued = 0
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
 
     for spec in SOURCES:
         if args.only and args.only.lower() not in spec.label.lower():
@@ -669,25 +762,48 @@ def main():
         units = _iter_units(in_scope_provisions)
 
         print(f"\n=== {spec.label} ({spec.path}) ===")
-        print(f"  {len(in_scope_provisions)} provision(s) in scope, {len(units)} extraction unit(s)")
+        print(f"  {len(in_scope_provisions)} provision(s) in scope, {len(units)} extraction unit(s)", flush=True)
 
         if args.dry_run:
             continue
 
-        for unit in units:
-            if args.limit is not None and n_processed >= args.limit:
-                break
-            n_processed += 1
-            print(f"  [{n_processed}] {unit.article_heading} "
-                  f"{'para ' + unit.paragraph_number if unit.paragraph_number else '(whole provision)'}")
+        remaining = args.limit - n_processed if args.limit is not None else None
+        batch = units[:remaining] if remaining is not None else units
+        if not batch:
+            break
+
+        write_lock = threading.Lock()
+
+        def process_unit(unit: Unit):
             norm, queue_item = extract_unit(client, args.model, unit, args.reasoning_effort)
-            if norm is not None:
-                unit.provision["norms"].append(norm)
-                n_finalized += 1
-            else:
-                _save_queue_item(queue_item)
-                n_queued += 1
-            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+            with write_lock:
+                if norm is not None:
+                    unit.provision["norms"].append(norm)
+                else:
+                    _save_queue_item(queue_item)
+                # Crash-safe, same reasoning as before: written after every unit, not just
+                # at the end -- the lock serializes the write, not the (parallel) API calls.
+                path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+            return norm is not None
+
+        with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
+            future_to_unit = {ex.submit(process_unit, u): u for u in batch}
+            for i, fut in enumerate(as_completed(future_to_unit), 1):
+                unit = future_to_unit[fut]
+                n_processed += 1
+                try:
+                    finalized = fut.result()
+                except Exception as e:
+                    print(f"  [{i}/{len(batch)}] {unit.article_heading} -- ERROR: {e}", flush=True)
+                    n_queued += 1
+                    continue
+                if finalized:
+                    n_finalized += 1
+                else:
+                    n_queued += 1
+                print(f"  [{i}/{len(batch)}] {unit.article_heading} "
+                      f"{'para ' + unit.paragraph_number if unit.paragraph_number else '(whole provision)'} "
+                      f"-- {'finalized' if finalized else 'queued'}", flush=True)
 
         if args.limit is not None and n_processed >= args.limit:
             break
@@ -696,7 +812,7 @@ def main():
         return
 
     print(f"\n{n_processed} unit(s) processed, {n_finalized} norms[] entries finalized, "
-          f"{n_queued} sent to the review queue -> data/stage6_review_queue.json")
+          f"{n_queued} sent to the review queue -> data/stage6_review_queue.json", flush=True)
 
 
 if __name__ == "__main__":

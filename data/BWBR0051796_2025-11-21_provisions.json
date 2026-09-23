@@ -71,7 +71,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt verstaan onder",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 89,
    "xref_intra_instrument": 0,
@@ -138,7 +156,25 @@
   "dossier_number": "36733",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "geeft uitvoering aan artikel 10, zesde lid, van de dataverordening",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 96,
    "xref_intra_instrument": 0,
@@ -224,7 +260,46 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de bevoegde autoriteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening"
+    ],
+    "deference": "bedoeld in artikel 37, eerste lid, van de dataverordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de bevoegde autoriteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening"
+    ],
+    "deference": "bedoeld in artikel 37, eerste lid, van de dataverordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 237,
    "xref_intra_instrument": 0,
@@ -269,7 +344,25 @@
   "dossier_number": "36733",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de datacoördinator",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "bedoeld in artikel 37, tweede lid, van de dataverordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 17,
    "xref_intra_instrument": 0,
@@ -364,7 +457,44 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "PROHIBITION",
+    "addressee": "Het eerste en tweede lid",
+    "addressee_type": "OTHER",
+    "trigger_event": "gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening",
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Met het toezicht op de naleving van de hoofdstukken II, met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening",
+    "action": "is belast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, en 6, tweede lid, onderdeel b, III, IV, artikel 20, en hoofdstukken VI tot en met VIII, en artikel 37, elfde en twaalfde lid, van de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 261,
    "xref_intra_instrument": 0,
@@ -441,7 +571,49 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "afspraken te maken en daartoe samenwerkingsprotocollen vast te stellen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het belang van een efficiënt en effectief toezicht op de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "uit eigen beweging en desgevraagd",
+    "action": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+    "recipient_body": [
+     "de Autoriteit Consument en Markt",
+     "de Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk zijn voor de uitvoering van deze wet"
+    ],
+    "deference": "Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 99,
    "xref_intra_instrument": 0,
@@ -499,7 +671,51 @@
   "dossier_number": "36733",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen regels worden gesteld over het verstrekken van gegevens tussen de Autoriteit Consument en Markt en de bevoegde autoriteiten, bedoeld in het eerste lid, die noodzakelijk zijn voor de uitvoering van deze wet",
+    "recipient_body": [
+     "de Autoriteit Consument en Markt",
+     "de bevoegde autoriteiten, bedoeld in het eerste lid"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk zijn voor de uitvoering van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "afspraken te maken met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening en daartoe gezamenlijk met deze bevoegde autoriteiten samenwerkingsprotocollen vast te stellen",
+    "recipient_body": [
+     "andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het belang van een efficiënt en effectief toezicht op de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 97,
    "xref_intra_instrument": 0,
@@ -609,7 +825,93 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "komt toe aan de Staat",
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "krachtens het tweede lid, onderdeel a",
+     "bedoeld in het tweede lid, onderdeel b"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PROHIBITION",
+    "addressee": "Het eerste en tweede lid",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "ter handhaving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, eerste lid, voor zover het de verwerking van persoonsgegevens betreft, en tweede lid, onderdeel b, 14, 17, tweede lid, derde lid, eerste volzin, en vierde lid, laatste twee volzinnen, 18, eerste en vierde lid, 19, 21, tweede, derde, vierde en vijfde lid, en 22, tweede lid",
+    "action": "bevoegd tot oplegging van",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste het bedrag, genoemd in artikel 40, vierde lid, van de dataverordening"
+    ],
+    "conditions": [
+     "voor zover het de verwerking van persoonsgegevens betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "ter handhaving van de artikelen 3, 4, eerste, tweede, vierde, vijfde, zesde, zevende, achtste, negende, tiende, elfde, dertiende en veertiende lid, 5, eerste, derde, vierde, vijfde, zesde, negende, tiende en elfde lid, 6, eerste lid, voor zover het niet de verwerking van persoonsgegevens betreft, en tweede lid, onderdelen a, c, d, e, f, g en h, 8, eerste, derde en vierde lid, 9, eerste, tweede, vierde en zevende lid, 10, derde lid, 11, eerste, tweede en vijfde lid, 20, eerste en tweede lid, 23, 25, eerste lid, tweede volzin, en vierde lid, 26, 27, 28, 29, eerste, tweede, derde, vierde, vijfde en zesde lid, 30, eerste, tweede, derde, vierde en vijfde lid, 31, derde lid, 32, eerste, derde, vierde en vijfde lid, 33, eerste lid, 34, tweede lid, 36, eerste en tweede lid, en 37, twaalfde lid",
+    "action": "bevoegd tot oplegging van:\n\na.\neen last onder bestuursdwang; of\n\nb.\neen bestuurlijke boete van ten hoogste het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht of, indien dat meer is, 10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie.",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "10% van de jaaromzet van de overtreder in het voorgaande boekjaar in de Europese Unie",
+     "het bedrag dat is vastgesteld voor de zesde categorie, bedoeld in artikel 23, vierde lid, van het Wetboek van Strafrecht"
+    ],
+    "conditions": [
+     "voor zover het niet de verwerking van persoonsgegevens betreft",
+     "indien dat meer is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 405,
    "xref_intra_instrument": 0,
@@ -719,7 +1021,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 4,
    "xref_intra_instrument": 0,
@@ -829,7 +1149,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 7,
    "xref_intra_instrument": 0,
@@ -919,7 +1257,25 @@
   "dossier_number": "36733",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt aangehaald als: Uitvoeringswet dataverordening",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 7,
    "xref_intra_instrument": 0,

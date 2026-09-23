@@ -47,7 +47,62 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "worden in deze verordening uniforme vereisten vastgesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "de financiële entiteiten die overeenkomstig de nationale voorschriften tot omzetting van artikel 3 van Richtlijn (EU) 2022/2555 als essentiële of belangrijke entiteiten zijn aangewezen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "wordt deze verordening voor de toepassing van artikel 4 van die richtlijn beschouwd als een sectorspecifieke rechtshandeling van de Unie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Met betrekking tot de financiële entiteiten die overeenkomstig de nationale voorschriften tot omzetting van artikel 3 van Richtlijn (EU) 2022/2555 als essentiële of belangrijke entiteiten zijn aangewezen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFERENCE",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "laat de verantwoordelijkheid van de lidstaten inzake essentiële staatsfuncties op het gebied van de openbare veiligheid, defensie en nationale veiligheid overeenkomstig het Unierecht onverlet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "overeenkomstig het Unierecht",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art2@original",
@@ -102,7 +157,49 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "worden de in lid 1, punten a) tot en met t), bedoelde entiteiten “financiële entiteiten” genoemd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "lid 1, punten a) tot en met t)"
+    ],
+    "conditions": [
+     "Voor de toepassing van deze verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Wanneer een lidstaat van deze mogelijkheid gebruikmaakt",
+    "action": "uitsluiten van het toepassingsgebied van deze verordening",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "entiteiten als bedoeld in artikel 2, lid 5, punten 4) tot en met 23), van Richtlijn 2013/36/EU die op hun respectieve grondgebied gevestigd zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art3@original",
@@ -136,7 +233,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art4@original",
@@ -186,7 +284,67 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "staat de toepassing door financiële entiteiten van de hoofdstukken III en IV en hoofdstuk V, afdeling I, in verhouding tot hun omvang en algehele risicoprofiel en tot de aard, schaal en complexiteit van hun diensten, activiteiten en verrichtingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zoals specifiek bepaald in de desbetreffende regels van die hoofdstukken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.86,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "passen de bij hoofdstuk II ingevoerde regels toe",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig het evenredigheidsbeginsel",
+     "rekening houdend met hun omvang, algehele risicoprofiel en de aard, schaal en complexiteit van hun diensten, activiteiten en verrichtingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "wanneer zij de consistentie van het kader voor ICT-risicobeheer toetsen",
+    "action": "houden rekening met de toepassing van het evenredigheidsbeginsel door financiële entiteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op basis van de verslagen die op verzoek van de bevoegde autoriteiten krachtens artikel 6, lid 5, en artikel 16, lid 2, zijn ingediend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art5@original",
@@ -241,7 +399,45 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "stellen een taak vast om de overeenkomsten met derde aanbieders van ICT-diensten met betrekking tot het gebruik van deze diensten te monitoren, of wijzen een lid van het hoger leidinggevend personeel aan dat verantwoordelijk is voor het toezicht op de desbetreffende risicoblootstelling en de relevante documentatie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Andere financiële entiteiten dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De leden van het leidinggevend orgaan van de financiële entiteit",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "onderhouden actief voldoende kennis en vaardigheden om ICT-risico en de gevolgen daarvan voor de verrichtingen van de financiële entiteit te begrijpen en te beoordelen, onder meer door regelmatig specifieke opleidingen te volgen die in verhouding staan tot het te beheren ICT-risico",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art6@original",
@@ -326,7 +522,114 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikken over een solide, alomvattend en goed gedocumenteerd kader voor ICT-risicobeheer",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als onderdeel van hun algemeen risicobeheersysteem"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Op verzoek van de bevoegde autoriteiten",
+    "action": "verstrekken zij aan die autoriteiten volledige en geactualiseerde informatie over ICT-risico en over hun kader voor ICT-risicobeheer",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Overeenkomstig hun kader voor ICT-risicobeheer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "de financiële entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "omvat een strategie voor digitale operationele weerbaarheid waarin de wijze van tenuitvoerlegging van het kader wordt vastgesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig hoofdstuk IV van deze verordening",
+     "die overeenkomstig artikel 14 openbaar moeten worden gemaakt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.86,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Op basis van de conclusies van de interne audit",
+    "action": "stellen financiële entiteiten een formeel follow-upproces vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Het kader voor ICT-risicobeheer",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer zich ernstige ICT-gerelateerde incidenten voordoen",
+    "action": "gedocumenteerd en geëvalueerd",
+    "recipient_body": [
+     "de bevoegde autoriteit"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste eenmaal per jaar"
+    },
+    "thresholds": [],
+    "conditions": [
+     "of periodiek in het geval van micro-ondernemingen",
+     "na toezichtinstructies of -conclusies die voortvloeien uit relevante tests of auditprocessen op het gebied van digitale operationele weerbaarheid",
+     "indien zij daarom verzoekt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art7@original",
@@ -360,7 +663,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art8@original",
@@ -430,7 +734,90 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "bij elke belangrijke wijziging in de netwerk- en informatiesysteeminfrastructuur en in de processen of procedures die van invloed zijn op hun door ICT ondersteunde bedrijfsfuncties en informatie- of ICT-activa",
+    "action": "verrichten een risicobeoordeling",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Andere financiële entiteiten dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "identificeren en documenteren alle processen die afhankelijk zijn van derde aanbieders van ICT-diensten en identificeren interconnecties met derde aanbieders van ICT-diensten die diensten verlenen die kritieke of belangrijke functies ondersteunen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "identificeren alle informatie- en ICT-activa, met inbegrip van die welke zich op afgelegen locaties bevinden, netwerkmiddelen en hardware-uitrusting, en inventariseren die welke zij cruciaal achten. Zij inventariseren de configuratie van de informatie- en ICT-activa en de verbanden en onderlinge afhankelijkheden tussen de verschillende informatie- en ICT-activa.",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met inbegrip van die welke zich op afgelegen locaties bevinden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor en na de aansluiting van technologieën, toepassingen of systemen",
+    "action": "verrichten regelmatig en ten minste eenmaal per jaar een specifieke ICT-risicobeoordeling op alle legacy-ICT-systemen en in ieder geval voor en na de aansluiting van technologieën, toepassingen of systemen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste eenmaal per jaar"
+    },
+    "thresholds": [
+     "ten minste eenmaal per jaar"
+    ],
+    "conditions": [
+     "Andere financiële entiteiten dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art9@original",
@@ -485,7 +872,55 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zorgen voor het ontwerp, de aanbesteding en de uitvoering van ICT-beveiligingsbeleidslijnen, -procedures, -protocollen en -instrumenten die er op gericht zijn de weerbaarheid, continuïteit en beschikbaarheid van ICT-systemen, met name die welke kritieke of belangrijke functies ondersteunen, te waarborgen alsmede hoge normen inzake beschikbaarheid, authenticiteit, integriteit en vertrouwelijkheid van gegevens, zowel in rusttoestand, bij gebruik als bij doorvoer, te handhaven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met name die welke kritieke of belangrijke functies ondersteunen",
+     "zowel in rusttoestand, bij gebruik als bij doorvoer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "In het kader van het in artikel 6, lid 1, bedoelde kader voor ICT-risicobeheer",
+    "action": "zorgen financiële entiteiten voor het volgende",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval",
+     "op grond van een op risico’s gebaseerde aanpak",
+     "alleen voor legitieme en goedgekeurde functies en activiteiten noodzakelijk",
+     "uitgaande van de resultaten van goedgekeurde processen van gegevensclassificatie en ICT-risicobeoordeling",
+     "die uitgaan van een op risicobeoordeling gebaseerde aanpak",
+     "teneinde te garanderen dat alle veranderingen in ICT-systemen op gecontroleerde wijze worden geregistreerd, getest, beoordeeld, goedgekeurd, ingevoerd en geverifieerd",
+     "Voor de toepassing van de eerste alinea, punt b)",
+     "Voor de toepassing van de eerste alinea, punt e)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art10@original",
@@ -540,7 +975,43 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zetten voldoende middelen en capaciteiten in om toezicht te houden op activiteiten van gebruikers en het optreden van ICT-anomalieën en ICT-gerelateerde incidenten, met name cyberaanvallen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Aanbieders van datarapporteringsdiensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikken daarnaast over systemen die transactiemeldingen doeltreffend op volledigheid kunnen controleren, omissies en aperte fouten kunnen opsporen en om hernieuwde transmissie van die meldingen kunnen verzoeken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art11@original",
@@ -630,7 +1101,85 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voeren passende ICT-bedrijfscontinuïteitsplannen in, handhaven deze en zorgen voor periodieke tests",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met name wat betreft kritieke of belangrijke functies die zijn uitbesteed of via contractuele overeenkomsten met derde aanbieders van ICT-diensten zijn overeengekomen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer hun ICT-bedrijfscontinuïteitsplannen en ICT-respons- en herstelplannen worden geactiveerd",
+    "action": "houden gemakkelijk toegankelijke registers bij van hun activiteiten vóór en tijdens storingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "op hun verzoek",
+    "action": "verstrekken de bevoegde autoriteiten op hun verzoek een raming van de geaggregeerde jaarlijkse kosten en verliezen als gevolg van ernstige ICT-gerelateerde incidenten",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "Centrale effectenbewaarinstellingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verstrekken de bevoegde autoriteiten kopieën van de resultaten van de ICT-bedrijfscontinuïteitstests of van soortgelijke oefeningen",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art12@original",
@@ -700,7 +1249,128 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zetten back-upsystemen op die kunnen worden geactiveerd in overeenstemming met het back-upbeleid, de back-upprocedures, en de terugzettings- en herstelprocedures en -methoden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer financiële entiteiten back-upgegevens terugzetten met behulp van eigen systemen",
+    "action": "maken zij gebruik van ICT-systemen die fysiek of logisch gescheiden zijn van het bron-ICT-systeem",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "te allen tijde"
+    },
+    "thresholds": [],
+    "conditions": [
+     "met behulp van eigen systemen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "ontwikkelen en documenteren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als onderdeel van hun kader voor ICT-risicobeheer",
+     "Teneinde het terugzetten van ICT-systemen en gegevens te verzekeren met een minimale uitval en een beperkte verstoring en beperkt verlies"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "houden ICT-capaciteiten in reserve met middelen, capaciteiten en functies die geschikt zijn om te voorzien in de zakelijke behoeften",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Andere financiële entiteiten dan micro-ondernemingen",
+     "Micro-ondernemingen gaan op basis van hun risicoprofiel na of dergelijke reservecapaciteiten behouden moeten worden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Centrale effectenbewaarinstellingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "handhaven ten minste één secundaire verwerkingslocatie, met adequate middelen, capaciteiten, functies en personeelsvoorziening om te voorzien in de zakelijke behoeften",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten minste één secundaire verwerkingslocatie"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij het bepalen van de doelstellingen inzake hersteltijd en herstelpunt voor elke functie",
+    "action": "houden financiële entiteiten rekening met de vraag of het een kritieke of belangrijke functie betreft en met het potentiële algemene effect op de marktefficiëntie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "of het een kritieke of belangrijke functie betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art13@original",
@@ -770,7 +1440,114 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikken over capaciteiten en personele middelen om informatie te verzamelen over kwetsbaarheden en cyberdreigingen, ICT-gerelateerde incidenten, met name cyberaanvallen, en om de waarschijnlijke gevolgen ervan voor hun digitale operationele weerbaarheid te analyseren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Het leidinggevend ICT-personeel",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "brengt bij het leidinggevend orgaan ten minste jaarlijks verslag uit over de in lid 3 bedoelde bevindingen en doet aanbevelingen",
+    "recipient_body": [
+     "het leidinggevend orgaan"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste jaarlijks"
+    },
+    "thresholds": [
+     "ten minste jaarlijks"
+    ],
+    "conditions": [
+     "over de in lid 3 bedoelde bevindingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zien toe erop toe dat hun strategie voor digitale operationele weerbaarheid als bedoeld in artikel 6, lid 8, op doeltreffende wijze wordt uitgevoerd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in artikel 6, lid 8"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "ontwikkelen bewustmakingsprogramma’s op het gebied van ICT-beveiliging en opleidingen inzake digitale operationele weerbaarheid als verplichte modules in de opleidingsprogramma’s voor het personeel",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Die programma’s en opleidingen zijn van toepassing op alle werknemers en hoger leidinggevend personeel",
+     "hebben een niveau van complexiteit dat in verhouding staat tot hun takenpakket",
+     "In voorkomend geval",
+     "overeenkomstig artikel 30, lid 2, punt i)"
+    ],
+    "deference": "overeenkomstig artikel 30, lid 2, punt i)",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "houden voortdurend toezicht op relevante technologische ontwikkelingen, ook om inzicht te krijgen in de mogelijke effecten van de invoering van deze nieuwe technologieën op de ICT-beveiligingsvereisten en de digitale operationele weerbaarheid. Zij blijven op de hoogte van de meest recente processen voor ICT-risicobeheer, om bestaande of nieuwe vormen van cyberaanvallen doeltreffend aan te pakken.",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Andere financiële entiteiten dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art14@original",
@@ -820,7 +1597,53 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voeren financiële entiteiten een communicatiebeleid in voor het interne personeel en externe belanghebbenden",
+    "recipient_body": [
+     "het interne personeel",
+     "externe belanghebbenden"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Als onderdeel van het kader voor ICT-risicobeheer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "één persoon in de financiële entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "wordt belast met de uitvoering van de communicatiestrategie voor ICT-gerelateerde incidenten en vervult daartoe de rol van woordvoerder bij het publiek en de media",
+    "recipient_body": [
+     "het publiek",
+     "de media"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "Ten minste één persoon"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art15@original",
@@ -854,7 +1677,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art16@original",
@@ -904,7 +1728,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art17@original",
@@ -1791,7 +2616,74 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer tests worden uitgevoerd door een interne tester",
+    "action": "zorgen zij ervoor dat belangenconflicten gedurende de hele ontwerp- en uitvoeringsfase van de test worden voorkomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dan micro-ondernemingen",
+     "Wanneer tests worden uitgevoerd door een interne tester"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "alle problemen die tijdens de uitvoering van de tests aan het licht zijn gekomen",
+    "action": "stellen procedures en beleidslijnen vast om alle problemen die tijdens de uitvoering van de tests aan het licht zijn gekomen, te prioriteren, te classificeren en te verhelpen, en stellen interne valideringsmethoden vast om na te gaan of alle vastgestelde zwakheden, gebreken of lacunes volledig worden aangepakt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dan micro-ondernemingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "Andere financiële entiteiten dan micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat ten minste eenmaal per jaar passende tests worden uitgevoerd op alle ICT-systemen en -toepassingen die kritieke of belangrijke functies ondersteunen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ten minste eenmaal per jaar"
+    },
+    "thresholds": [
+     "ten minste eenmaal per jaar"
+    ],
+    "conditions": [
+     "die kritieke of belangrijke functies ondersteunen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art25@original",
@@ -1841,7 +2733,65 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Centrale effectenbewaarinstellingen en centrale tegenpartijen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voordat nieuwe of bestaande toepassingen en infrastructuurcomponenten, en ICT-diensten ter ondersteuning van kritieke of belangrijke functies van de financiële entiteit worden ingezet of opnieuw worden ingezet",
+    "action": "verrichten kwetsbaarheidsbeoordelingen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Het testprogramma voor digitale operationele weerbaarheid bedoeld in artikel 24",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voorziet, overeenkomstig de criteria in artikel 4, lid 2, in de uitvoering van passende tests, zoals kwetsbaarheidsbeoordelingen en -scans, opensourceanalyses, netwerkbeveiligingsbeoordelingen, kloofanalyses, beoordelingen van fysieke beveiliging, vragenlijsten en scanningsoftwareoplossingen, beoordelingen van broncodes indien mogelijk, scenariogebaseerde tests, compatibiliteitstests, prestatietests, eind-tot-eindtests en penetratietests",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig de criteria in artikel 4, lid 2",
+     "indien mogelijk"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de micro-ondernemingen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voor de uitvoering van de in lid 1 bedoelde tests",
+    "action": "combineren de micro-ondernemingen een op risico’s gebaseerde aanpak met een strategische planning van ICT-tests, en houden zij hierbij naar behoren rekening met het noodzakelijke evenwicht tussen enerzijds de hoeveelheid middelen en tijd die aan de in dit artikel bedoelde ICT-tests moet worden toegewezen, en anderzijds de urgentie, het soort risico, de kritieke aard van informatieactiva en van de geleverde diensten, alsmede alle andere relevante factoren, met inbegrip van het vermogen van de financiële entiteit om berekende risico’s te nemen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de in lid 1 bedoelde tests"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art26@original",
@@ -1931,7 +2881,88 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de financiële entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer derde aanbieders van ICT-diensten binnen het toepassingsgebied van de TLPT vallen",
+    "action": "neemt de financiële entiteit de nodige maatregelen en waarborgen om de deelname van deze derde aanbieders van ICT-diensten aan de TLPT te waarborgen en behoudt de financiële entiteit de volledige verantwoordelijkheid voor het waarborgen van de naleving van deze verordening",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "derde aanbieders van ICT-diensten binnen het toepassingsgebied van de TLPT vallen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "bepalen alle relevante onderliggende ICT-systemen, -processen en technologieën ter ondersteuning van kritieke of belangrijke functies en ICT-diensten, met inbegrip van die ter ondersteuning van uitbestede of met derde aanbieders van ICT-diensten contractueel overeengekomen kritieke of belangrijke functies",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "passen de financiële entiteiten doeltreffende risicobeheerscontroles toe om de risico’s van potentiële effecten op gegevens, schade aan activa en verstoring van kritieke of belangrijke functies, diensten of activiteiten bij de financiële entiteit zelf, bij haar tegenhangers of in de financiële sector te mitigeren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Met de medewerking van derde aanbieders van ICT-diensten en andere betrokken partijen, inclusief testers, maar exclusief de bevoegde autoriteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "11",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 juli 2024 voor aan de Commissie",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art27@original",
@@ -1981,7 +3012,45 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zorgen ervoor dat de contracten met externe testers een degelijk beheer van de resultaten van de TLPT opleggen en dat de gegevensverwerking daarvan, met inbegrip van het genereren, opslaan, aggregeren, ontwerpen, rapporteren, communiceren of vernietigen van resultaten, geen risico’s voor de financiële entiteit meebrengt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor het uitvoeren van TLPT",
+    "action": "maken voor het uitvoeren van TLPT alleen gebruik van testers die",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art28@original",
@@ -2066,7 +3135,122 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "op verzoek",
+    "action": "stellen de bevoegde autoriteit op verzoek het volledige informatieregister of desgevraagd specifieke onderdelen daarvan ter beschikking, samen met alle informatie die noodzakelijk wordt geacht om doeltreffend toezicht op de financiële entiteit mogelijk te maken",
+    "recipient_body": [
+     "de bevoegde autoriteit"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer die contractuele overeenkomsten kritieke of belangrijke functies betreffen",
+    "action": "letten financiële entiteiten er vóór het sluiten van de overeenkomsten op dat derde aanbieders van ICT-diensten gebruikmaken van de meest actuele en hoogste normen voor informatiebeveiliging",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "vóór het sluiten van de overeenkomsten"
+    },
+    "thresholds": [],
+    "conditions": [
+     "die contractuele overeenkomsten kritieke of belangrijke functies betreffen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Bij het ontwikkelen van die ontwerpen van technische reguleringsnormen",
+    "action": "leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 januari 2024 voor aan de Commissie",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 januari 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "leggen deze ontwerpen van technische uitvoeringsnormen uiterlijk op 17 januari 2024 voor aan de Commissie",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 januari 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "bij ernstige overtreding van de toepasselijke wetten, voorschriften of contractuele voorwaarden door de derde aanbieder van ICT-diensten",
+    "action": "zorgen ervoor dat contractuele overeenkomsten inzake het gebruik van ICT-diensten in elk van de volgende omstandigheden kunnen worden beëindigd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bij ernstige overtreding van de toepasselijke wetten, voorschriften of contractuele voorwaarden door de derde aanbieder van ICT-diensten",
+     "in omstandigheden die in de loop van de monitoring van het ICT-risico van derde aanbieders worden vastgesteld, waarvan wordt aangenomen dat deze wijzigingen kunnen brengen in de uitvoering van de functies waarin de contractuele overeenkomst voorziet, met inbegrip van materiële wijzigingen die de overeenkomst of de situatie van de derde aanbieder van ICT-diensten nadelig beïnvloeden",
+     "bij klaarblijkelijke zwakheden van de derde aanbieder van ICT-diensten in verband met zijn algemeen beheer van het ICT-risico en in het bijzonder met de manier waarop hij zorgt voor de beschikbaarheid, authenticiteit, integriteit en vertrouwelijkheid van persoonlijke of anderszins gevoelige gegevens of niet-persoonsgebonden gegevens",
+     "indien de bevoegde autoriteit niet langer doeltreffend toezicht kan uitoefenen op de financiële entiteit ten gevolge van de voorwaarden van of de omstandigheden in verband met de respectieve contractuele overeenkomst"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art29@original",
@@ -2111,7 +3295,49 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Wanneer de contractuele overeenkomsten inzake het gebruik van ICT-diensten die kritieke of belangrijke functies ondersteunen de mogelijkheid inhouden dat een derde aanbieder ICT-diensten die een kritieke of belangrijke functie ondersteunen verder uitbesteedt aan andere derde aanbieders van ICT-diensten",
+    "action": "wegen de financiële entiteiten de baten en risico’s af die uit een dergelijke uitbesteding kunnen voortkomen, met name in het geval van een in een derde land gevestigde ICT-subcontractant",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met name in het geval van een in een derde land gevestigde ICT-subcontractant"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het identificeren en beoordelen van de in artikel 28, lid 4, punt c), bedoelde risico’s",
+    "action": "houden financiële entiteiten eveneens rekening met de vraag of de beoogde sluiting van een contractuele overeenkomst inzake ICT-diensten die kritieke of belangrijke functies ondersteunen, zou leiden tot een van de volgende situaties waarin",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de beoogde sluiting van een contractuele overeenkomst inzake ICT-diensten die kritieke of belangrijke functies ondersteunen, zou leiden tot een van de volgende situaties waarin:",
+     "zij een contract sluiten met een derde aanbieder van ICT-diensten die niet gemakkelijk substitueerbaar is",
+     "zij beschikken over meerdere contractuele overeenkomsten inzake de verlening van ICT-diensten die kritieke of belangrijke functies ondersteunen, met dezelfde derde aanbieder van ICT-diensten of met nauw verbonden derde aanbieders van ICT-diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art30@original",
@@ -2171,7 +3397,67 @@
     "in afwijking van": 1
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De rechten en plichten van de financiële entiteit en van de derde aanbieder van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "worden duidelijk toegewezen en schriftelijk vastgesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "financiële entiteiten en derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij onderhandelingen over contractuele overeenkomsten",
+    "action": "houden financiële entiteiten en derde aanbieders van ICT-diensten rekening met het gebruik van modelcontractbepalingen die door overheidsinstanties zijn ontwikkeld voor specifieke diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 juli 2024 voor aan de Commissie",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art31@original",
@@ -2271,7 +3557,241 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is gebaseerd op alle volgende criteria met betrekking tot door de derde aanbieder van ICT-diensten geleverde ICT-diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "De in lid 1, punt a), bedoelde aanwijzing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PROCEDURAL",
+    "addressee": "de derde aanbieder van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien de derde aanbieder van ICT-diensten tot een groep behoort",
+    "action": "wordt met de in lid 2 bedoelde criteria rekening gehouden met betrekking tot de ICT-diensten die door de groep als geheel worden verleend",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de derde aanbieder van ICT-diensten tot een groep behoort"
+    ],
+    "deference": "de in lid 2 bedoelde criteria",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zorgen via het Gemengd Comité en op aanbeveling van het overeenkomstig artikel 32, lid 1, opgerichte oversightforum voor het volgende",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "na een beoordeling die rekening houdt met de in lid 2 gespecificeerde criteria",
+     "voor iedere kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deference": "op aanbeveling van het overeenkomstig artikel 32, lid 1, opgerichte oversightforum",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "Kritieke derde aanbieders van ICT-diensten die deel uitmaken van een groep",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "wijzen één rechtspersoon als coördinatiepunt aan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die deel uitmaken van een groep"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "De Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "een gedelegeerde handeling in aanvulling op deze verordening vast te stellen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2024"
+    },
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig artikel 57",
+     "waarin de in lid 2 van dit artikel genoemde criteria verder worden gespecificeerd"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PROHIBITION",
+    "addressee": "De in lid 1, punt a), bedoelde aanwijzing",
+    "addressee_type": "OTHER",
+    "trigger_event": "de Commissie een gedelegeerde handeling overeenkomstig lid 6 heeft vastgesteld",
+    "action": "wordt niet gebruikt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De derde aanbieder van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Nadat een derde aanbieder van ICT-diensten als cruciaal is aangewezen",
+    "action": "stelt de financiële entiteiten waaraan hij diensten verleent in kennis van zijn aanwijzing als cruciaal",
+    "recipient_body": [
+     "de financiële entiteiten waaraan hij diensten verleent"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "de ETA’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Jaarlijks",
+    "action": "stellen de ETA’s via het Gemengd Comité de lijst op van kritieke derde aanbieders van ICT-diensten op het niveau van de Unie, en publiceren en actualiseren zij deze lijst",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Jaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de toepassing van lid 1, punt a)",
+    "action": "zenden de bevoegde autoriteiten de in artikel 28, lid 3, derde alinea, bedoelde verslagen jaarlijks en op geaggregeerde basis toe aan het overeenkomstig artikel 32 opgerichte toezichtforum",
+    "recipient_body": [
+     "het overeenkomstig artikel 32 opgerichte toezichtforum"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "jaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van lid 1, punt a)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "13",
+    "deontic": "OBLIGATION",
+    "addressee": "De in lid 12 bedoelde kritieke derde aanbieder van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "alle wijzigingen in de beheersstructuur van de in de Unie gevestigde dochteronderneming",
+    "action": "stelt de lead overseer in kennis van alle wijzigingen in de beheersstructuur van de in de Unie gevestigde dochteronderneming",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in lid 12 bedoelde",
+     "in de Unie gevestigde"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "12",
+    "deontic": "OBLIGATION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "een in een derde land gevestigde derde aanbieder van ICT-diensten die overeenkomstig lid 1, punt a), als cruciaal is aangewezen",
+    "action": "maken alleen gebruik van de diensten van een in een derde land gevestigde derde aanbieder van ICT-diensten die overeenkomstig lid 1, punt a), als cruciaal is aangewezen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "g",
+     "raw": "binnen de twaalf maanden na de aanwijzing"
+    },
+    "thresholds": [],
+    "conditions": [
+     "indien deze laatste binnen de twaalf maanden na de aanwijzing een dochteronderneming in de Unie heeft gevestigd"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art32@original",
@@ -2351,7 +3871,144 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Het Gemengd Comité",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "richt overeenkomstig artikel 57, lid 1, van Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010 het oversightforum op als subcomité ter ondersteuning van de werkzaamheden van het Gemengd Comité en van de lead overseer als bedoeld in artikel 31, lid 1, punt b), op het gebied van ICT-risico van derde aanbieders in alle financiële sectoren",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig artikel 57, lid 1, van Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010",
+     "op het gebied van ICT-risico van derde aanbieders in alle financiële sectoren"
+    ],
+    "deference": "overeenkomstig artikel 57, lid 1, van Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "het oversightforum",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "worden door het oversightforum aangesteld uit een groep deskundigen die op basis van een openbare en transparante sollicitatieprocedure zijn geselecteerd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op basis van een openbare en transparante sollicitatieprocedure"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Elke lidstaat",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": null,
+    "action": "wijst de bevoegde autoriteit aan waarvan een personeelslid de in lid 4, eerste alinea, punt b), bedoelde vertegenwoordiger op hoog niveau zal zijn, en stelt de lead overseer daarvan in kennis",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Het oversightforum",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "verricht jaarlijks een collectieve beoordeling van de resultaten en bevindingen van de oversightactiviteiten voor alle kritieke derde aanbieders van ICT-diensten en bevordert coördinatiemaatregelen om de digitale operationele weerbaarheid van financiële entiteiten te vergroten, beste praktijken voor de aanpak van het ICT-concentratierisico aan te moedigen en limiterende instrumenten voor sectoroverschrijdende risico-overdrachten te onderzoeken",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "jaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor alle kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "dienen, via het Gemengd Comité en op basis van de voorbereidende werkzaamheden van het oversightforum jaarlijks een verslag in",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad",
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "jaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "de ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "vaardigen de ETA’s voor de toepassing van deze afdeling uiterlijk op 17 juli 2024 richtsnoeren uit betreffende de samenwerking tussen de ETA’s en de bevoegde autoriteiten betreffende de nadere procedures en voorwaarden voor de toewijzing en uitvoering van taken tussen de bevoegde autoriteiten en de ETA’s alsook de details over de uitwisseling van informatie die de bevoegde autoriteiten nodig hebben om de follow-up van aanbevelingen krachtens artikel 35, lid 1, punt d), aan het adres van de kritieke derde aanbieders van ICT-diensten, te waarborgen",
+    "recipient_body": [
+     "de bevoegde autoriteiten",
+     "de ETA’s"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2024"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor de toepassing van deze afdeling"
+    ],
+    "deference": "Overeenkomstig artikel 16 van de Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art33@original",
@@ -2411,7 +4068,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de overeenkomstig artikel 31, lid 1, punt b), aangestelde lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "oefent het oversight uit over de aangewezen kritieke derde aanbieders van ICT-diensten en is voor alle aan het oversight gerelateerde aangelegenheden het eerste contactpunt voor die kritieke derde aanbieders van ICT-diensten",
+    "recipient_body": [
+     "de aangewezen kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig artikel 31, lid 1, punt b)",
+     "aangewezen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art34@original",
@@ -2461,7 +4142,71 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseers",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de toepassing van lid 1",
+    "action": "stellen de lead overseers een gemeenschappelijk oversightprotocol op met gedetailleerde procedures voor de dagelijkse coördinatie en waarmee snelle uitwisselingen en reacties gewaarborgd kunnen worden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor de toepassing van lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de drie overeenkomstig artikel 31, lid 1, punt b), aangestelde lead overseers",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zetten de drie overeenkomstig artikel 31, lid 1, punt b), aangestelde lead overseers een JON op om onderling te overleggen tijdens de voorbereidende fasen en om de uitvoering te coördineren van oversightactiviteiten ten aanzien van de respectieve kritieke derde aanbieders van ICT-diensten waarop zij toezien, alsook gedurende elke activiteit die overeenkomstig artikel 42 noodzakelijk kan zijn",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tijdens de voorbereidende fasen",
+     "gedurende elke activiteit die overeenkomstig artikel 42 noodzakelijk kan zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "De lead overseers",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen op ad-hocbasis een beroep doen op de ECB en Enisa voor technisch advies, praktijkervaring delen of deelnemen aan specifieke coördinatievergaderingen van het JON",
+    "recipient_body": [
+     "de ECB",
+     "Enisa",
+     "het JON"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op ad-hocbasis"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art35@original",
@@ -2551,7 +4296,72 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 3
-  }
+  },
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Kritieke derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "werken te goeder trouw samen met de lead overseer en ondersteunen hem bij de uitvoering van zijn taken",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "het resultaat van de uitoefening van de in lid 1, punten a) en b), bedoelde bevoegdheden",
+    "action": "stelt het JON in kennis van het resultaat van de uitoefening van de in lid 1, punten a) en b), bedoelde bevoegdheden",
+    "recipient_body": [
+     "het JON",
+     "het JON en aan de bevoegde autoriteiten van de financiële entiteiten die gebruikmaken van de ICT-diensten van die kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "maakt alle opgelegde dwangsommen openbaar",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij die openbaarmaking de financiële markten ernstig in gevaar zou brengen of onevenredige schade zou toebrengen aan de betrokken partijen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art36@original",
@@ -2601,7 +4411,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Wanneer de oversightdoelstellingen niet kunnen worden bereikt via interactie met de voor de toepassing van artikel 31, lid 12, opgerichte dochteronderneming, of via oversightactiviteiten in bedrijfsruimten die zich in de Unie bevinden",
+    "action": "kan de lead overseer de in de volgende bepalingen bedoelde bevoegdheden uitoefenen in alle bedrijfsruimten in een derde land die eigendom zijn van, of gebruikt worden door een kritieke derde aanbieder van ICT-diensten bij het verlenen van diensten aan financiële entiteiten in de Unie, in verband met de bedrijfsactiviteiten, functies of diensten — inclusief administratieve, commerciële of operationele kantoren, bedrijfsruimten, gronden, gebouwen of andere eigendommen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de lead overseer is van mening dat een inspectie in een derde land noodzakelijk is om hem in staat te stellen zijn taken uit hoofde van deze verordening volledig en doeltreffend uit te voeren",
+     "de inspectie in een derde land houdt rechtstreeks verband met het verlenen van ICT-diensten aan financiële entiteiten in de Unie",
+     "de betrokken kritieke derde aanbieder van ICT-diensten stemt in met het uitvoeren van een inspectie in een derde land",
+     "de betrokken autoriteit van het derde land is door de lead overseer officieel in kennis gesteld en heeft geen bezwaar gemaakt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art37@original",
@@ -2661,7 +4495,106 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "hij",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Wanneer de lead overseer krachtens lid 1 bij besluit informatieverstrekking gelast",
+    "action": "neemt hij het volgende in acht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij het toezenden van een verzoek om informatie krachtens lid 1",
+    "action": "neemt de lead overseer het volgende in acht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "krachtens lid 1"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "kritieke derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "alle informatie die hij nodig heeft om zijn taken uit hoofde van deze verordening uit te voeren, te verstrekken",
+    "recipient_body": [
+     "De lead overseer"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De vertegenwoordigers van de kritieke derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verstrekken de gevraagde informatie",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "het besluit inzake informatieverstrekking",
+    "action": "zendt onverwijld een afschrift van het besluit inzake informatieverstrekking aan de bevoegde autoriteiten van de financiële entiteiten die gebruikmaken van de diensten van de betrokken kritieke derde aanbieders van ICT-diensten en aan het JON",
+    "recipient_body": [
+     "de bevoegde autoriteiten van de financiële entiteiten die gebruikmaken van de diensten van de betrokken kritieke derde aanbieders van ICT-diensten",
+     "het JON"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art38@original",
@@ -2721,7 +4654,86 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De vertegenwoordigers van kritieke derde aanbieders van ICT-diensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "op basis van een besluit van de lead overseer",
+    "action": "zich aan het onderzoek te onderwerpen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De functionarissen van de lead overseer en andere door hem voor de uitvoering van de in lid 1 bedoelde onderzoeken gemachtigde personen",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "na overlegging van een schriftelijke machtiging waarin het onderwerp en het doel van het onderzoek zijn vermeld",
+    "action": "oefenen hun bevoegdheden uit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de uitvoering van de in lid 1 bedoelde onderzoeken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "registers, data, procedures en alle overig voor de uitvoering van zijn taken relevant materiaal te onderzoeken, ongeacht de drager waarop dit materiaal opgeslagen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "geruime tijd vóór de start van het onderzoek",
+    "action": "stelt de bevoegde organen van de financiële entiteit die gebruikmaakt van de ICT-diensten van die kritieke derde aanbieder van ICT-diensten, geruime tijd vóór de start van het onderzoek in kennis van het voorgenomen onderzoek en van de identiteit van de gemachtigde personen",
+    "recipient_body": [
+     "de bevoegde organen van de financiële entiteit die gebruikmaakt van de ICT-diensten van die kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "geruime tijd vóór de start van het onderzoek"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art39@original",
@@ -2791,7 +4803,112 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voor de uitoefening van de in de eerste alinea bedoelde bevoegdheden",
+    "action": "raadpleegt de lead overseer het JON",
+    "recipient_body": [
+     "het JON"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "vóór de start ervan",
+    "action": "stelt de bevoegde autoriteiten van de financiële entiteit die gebruikmaakt van de derde aanbieder van ICT-diensten, geruime tijd vóór de start ervan in kennis van de inspectie",
+    "recipient_body": [
+     "de bevoegde autoriteiten van de financiële entiteit die gebruikmaakt van de derde aanbieder van ICT-diensten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "geruime tijd vóór de start ervan"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": "De inspectie",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "heeft betrekking op alle ICT-systemen, -netwerken, -apparatuur, -informatie en -data die worden gebruikt voor of bijdragen tot het verlenen van ICT-diensten aan financiële entiteiten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die worden gebruikt voor of bijdragen tot het verlenen van ICT-diensten aan financiële entiteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Vóór een geplande inspectie ter plaatse",
+    "action": "stelt de lead overseer de kritieke derde aanbieder van ICT-diensten in kennis van de inspectie en neemt hierbij een redelijke termijn in acht",
+    "recipient_body": [
+     "de kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij dit niet mogelijk is vanwege een nood- of crisissituatie",
+     "of de kennisgeving zou leiden tot een situatie waarin de inspectie of audit niet langer doeltreffend is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de door de lead overseer gemachtigde functionarissen en andere personen constateren dat een kritieke derde aanbieder van ICT-diensten zich verzet tegen een krachtens dit artikel gelaste inspectie",
+    "action": "stelt de lead overseer de kritieke derde aanbieder van ICT-diensten in kennis van de gevolgen van dit verzet, met inbegrip van de mogelijkheid voor de bevoegde autoriteiten van de financiële entiteit om van de financiële entiteit te vereisen dat zij de contractuele overeenkomsten met de kritieke derde aanbieder van ICT-diensten beëindigt",
+    "recipient_body": [
+     "de kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art40@original",
@@ -2846,7 +4963,96 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "bestaat uit functionarissen van:",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "(op vrijwillige basis)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Bij het uitvoeren van oversightactiviteiten, met name algemene onderzoeken of inspecties",
+    "action": "wordt de lead overseer bijgestaan door een gezamenlijk onderzoeksteam",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor iedere toezichtactiviteit bij een kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de kritieke derde aanbieder van ICT-diensten en de bevoegde autoriteiten van de financiële entiteit waarvoor de dienstverlener ICT-diensten werkt",
+    "addressee_type": "OTHER",
+    "trigger_event": "de in lid 3 bedoelde aanbevelingen",
+    "action": "worden onverwijld in kennis gesteld van de in lid 3 bedoelde aanbevelingen",
+    "recipient_body": [],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de voltooiing van een onderzoek of een inspectie",
+    "action": "doet de lead overseer, na raadpleging van het oversightforum, aanbevelingen aan de kritieke derde aanbieder van ICT-diensten",
+    "recipient_body": [
+     "de kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van een onderzoek of een inspectie",
+     "raw": "Binnen drie maanden na de voltooiing van een onderzoek of een inspectie"
+    },
+    "thresholds": [],
+    "conditions": [
+     "na raadpleging van het oversightforum",
+     "overeenkomstig de in artikel 35 bedoelde bevoegdheden"
+    ],
+    "deference": "overeenkomstig de in artikel 35 bedoelde bevoegdheden",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art41@original",
@@ -2891,7 +5097,50 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "stellen via het Gemengd Comité ontwerpen van technische reguleringsnormen op tot nadere omschrijving van:",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 juli 2024 voor aan de Commissie",
+    "recipient_body": [
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2024"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art42@original",
@@ -2981,7 +5230,118 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "De kritieke derde aanbieder van ICT-diensten die gevolgen ondervindt van een in lid 6 bedoeld besluit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "een in lid 6 bedoeld besluit",
+    "action": "werkt volledig samen met de getroffen financiële entiteit, met name bij het tijdelijk staken of beëindigen van hun contractuele overeenkomsten",
+    "recipient_body": [
+     "de getroffen financiële entiteit"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Na ontvangst van de in artikel 35, lid 1, punt c), bedoelde meldingen en voordat een besluit als bedoeld in lid 6 van dit artikel wordt genomen",
+    "action": "kunnen de bevoegde autoriteiten op vrijwillige basis de overeenkomstig Richtlijn (EU) 2022/2555 aangewezen of ingestelde bevoegde autoriteiten raadplegen",
+    "recipient_body": [
+     "de overeenkomstig Richtlijn (EU) 2022/2555 aangewezen of ingestelde bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die verantwoordelijk zijn voor het toezicht op een essentiële of belangrijke entiteit die onder die richtlijn valt en die is aangewezen als een kritieke derde aanbieder van ICT-diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "stellen de lead overseer regelmatig in kennis van de aanpak en de maatregelen die zij in het kader van hun toezichttaken ten aanzien van financiële entiteiten hebben gehanteerd, alsmede van de contractuele overeenkomsten die deze entiteiten hebben gesloten met kritieke derde aanbieders van ICT-diensten die niet of slechts gedeeltelijk zijn ingegaan op de aan hen gerichte aanbevelingen van de lead overseer",
+    "recipient_body": [
+     "de lead overseer"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "regelmatig"
+    },
+    "thresholds": [],
+    "conditions": [
+     "kritieke derde aanbieders van ICT-diensten die niet of slechts gedeeltelijk zijn ingegaan op de aan hen gerichte aanbevelingen van de lead overseer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PERMISSION",
+    "addressee": "de lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Indien een kritieke derde aanbieder van ICT-diensten weigert de aanbevelingen op te volgen door voor een andere aanpak te kiezen dan die welke door de lead overseer wordt aanbevolen, en indien deze afwijkende keus negatieve gevolgen kan hebben voor een groot aantal financiële entiteiten of voor een aanzienlijk deel van de financiële sector, en indien afzonderlijke waarschuwingen van bevoegde autoriteiten niet hebben geleid tot een consistente aanpak om het potentiële risico voor de financiële stabiliteit te beperken",
+    "action": "niet-bindende en niet-openbare adviezen aan de bevoegde autoriteiten uitbrengen om consistente en convergente vervolgmaatregelen voor het toezicht te bevorderen, naargelang het geval",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "een groot aantal financiële entiteiten",
+     "een aanzienlijk deel van de financiële sector"
+    ],
+    "conditions": [
+     "na raadpleging van het oversightforum"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "11",
+    "deontic": "PERMISSION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "op verzoek",
+    "action": "nadere toelichtingen geven op de gedane aanbevelingen",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art43@original",
@@ -3026,7 +5386,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De lead overseer",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "brengt overeenkomstig de in lid 2 van dit artikel bedoelde gedelegeerde handeling kritieke derde aanbieders van ICT-diensten vergoedingen in rekening die de noodzakelijke uitgaven van de lead overseer in verband met de uitvoering van de oversighttaken uit hoofde van deze verordening volledig dekken",
+    "recipient_body": [
+     "kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "overeenkomstig de in lid 2 van dit artikel bedoelde gedelegeerde handeling",
+     "in verband met de uitvoering van de oversighttaken uit hoofde van deze verordening"
+    ],
+    "deference": "overeenkomstig de in lid 2 van dit artikel bedoelde gedelegeerde handeling",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art44@original",
@@ -3071,7 +5455,35 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De ETA’s",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "dienen via het Gemengd Comité om de vijf jaar een gezamenlijk vertrouwelijk verslag in bij het Parlement, de Raad en de Commissie",
+    "recipient_body": [
+     "het Parlement",
+     "de Raad",
+     "de Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "om de vijf jaar"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art45@original",
@@ -3121,7 +5533,74 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROCEDURAL",
+    "addressee": "de regelingen voor informatie-uitwisseling",
+    "addressee_type": "OTHER",
+    "trigger_event": "Voor de toepassing van lid 1, punt c)",
+    "action": "worden in de regelingen voor informatie-uitwisseling de voorwaarden voor deelname bepaald en, in voorkomend geval, nadere bepalingen voor de betrokkenheid van overheidsinstanties en de hoedanigheid waarin deze instanties bij bedoelde regelingen kunnen worden betrokken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Een financiële entiteit",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "na goedkeuring van haar deelname in de vertrouwensgemeenschap",
+    "action": "stelt de bevoegde autoriteiten, na goedkeuring van haar deelname in de vertrouwensgemeenschap, in kennis van haar deelname aan de in lid 1 bedoelde regelingen voor informatie-uitwisseling, en, in voorkomend geval, van de beëindiging van haar deelname zodra deze beëindiging van kracht wordt",
+    "recipient_body": [
+     "de bevoegde autoriteiten"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "zodra deze beëindiging van kracht wordt"
+    },
+    "thresholds": [],
+    "conditions": [
+     "na goedkeuring van haar deelname in de vertrouwensgemeenschap",
+     "in voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "Financiële entiteiten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "onderling informatie en inlichtingen over cyberdreiging uitwisselen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dit: a) bedoeld is om de digitale operationele weerbaarheid van de financiële entiteiten te versterken, met name via bewustmaking van cyberdreigingen, beperking of belemmering van de mogelijkheid tot verdere verspreiding van cyberdreigingen, ondersteuning van defensiecapaciteiten, technieken voor dreigingsdetectie, risicobeperkende strategieën en respons- en herstelfasen; b) gebeurt binnen vertrouwensgemeenschappen van financiële entiteiten; c) gedaan wordt via regelingen voor informatie-uitwisseling die de potentieel gevoelige aard van de gedeelde informatie beschermen en waarvoor gedragsregels gelden waarin de vertrouwelijkheid van bedrijfsinformatie, de bescherming van persoonsgegevens overeenkomstig Verordening (EU) 2016/679 en de richtsnoeren inzake mededingingsbeleid volledig worden gerespecteerd."
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art46@original",
@@ -3155,7 +5634,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art47@original",
@@ -3210,7 +5690,50 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In voorkomend geval",
+    "action": "alle relevante technische adviezen en bijstand inwinnen bij de overeenkomstig Richtlijn (EU) 2022/2555 aangewezen of ingestelde bevoegde autoriteiten, en kunnen zij samenwerkingsregelingen treffen voor een effectieve coördinatie van een snelle respons",
+    "recipient_body": [
+     "de overeenkomstig Richtlijn (EU) 2022/2555 aangewezen of ingestelde bevoegde autoriteiten"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "In voorkomend geval"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "de ETA’s en de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "deelnemen aan de activiteiten van de samenwerkingsgroep",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor aangelegenheden die hun toezicht op de financiële entiteiten betreffen",
+     "voor aangelegenheden met betrekking tot de essentiële of belangrijke entiteiten die onder Richtlijn (EU) 2022/2555 vallen en die overeenkomstig artikel 31 van deze verordening ook zijn aangewezen als kritieke derde aanbieders van ICT-diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art48@original",
@@ -3255,7 +5778,31 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "werken nauw samen met elkaar en, indien van toepassing, met de lead overseer",
+    "recipient_body": [
+     "elkaar",
+     "de lead overseer"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art49@original",
@@ -3300,7 +5847,52 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "De ETA’s",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen via het Gemengd Comité en in samenwerking met de bevoegde autoriteiten de nationale afwikkelingsautoriteiten als bedoeld in artikel 3 van Richtlijn 2014/59/EU, de ECB, de Gemeenschappelijke Afwikkelingsraad als het om informatie gaat met betrekking tot entiteiten die onder het toepassingsgebied van Verordening (EU) nr. 806/2014 vallen, het ESRB en Enisa — alle voor zover van toepassing — regelingen invoeren voor de uitwisseling tussen financiële sectoren van doeltreffende praktijken, zulks met de bedoeling de situatiekennis en de opsporing van gemeenschappelijke cyberkwetsbaarheden en sectoroverschrijdende risico’s te verbeteren",
+    "recipient_body": [
+     "de nationale afwikkelingsautoriteiten als bedoeld in artikel 3 van Richtlijn 2014/59/EU",
+     "de ECB",
+     "de Gemeenschappelijke Afwikkelingsraad",
+     "het ESRB",
+     "Enisa"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alle voor zover van toepassing",
+     "als het om informatie gaat met betrekking tot entiteiten die onder het toepassingsgebied van Verordening (EU) nr. 806/2014 vallen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten, de ETA’s en de ECB",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "werken onderling nauw samen en wisselen informatie uit om hun taken overeenkomstig de artikelen 47 tot en met 54 te verrichten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art50@original",
@@ -3365,7 +5957,62 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "De in lid 1 bedoelde bevoegdheden",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "toegang te verkrijgen tot documenten en gegevens, in enigerlei vorm, die de bevoegde autoriteit relevant acht voor het verrichten van haar taken, en een kopie hiervan te ontvangen of te maken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor inbreuken op de voorschriften van deze verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "een besluit waarbij de in lid 2, punt c), genoemde administratieve strafmaatregelen of corrigerende maatregelen worden genomen",
+    "action": "zien erop toe dat een besluit waarbij de in lid 2, punt c), genoemde administratieve strafmaatregelen of corrigerende maatregelen worden genomen, naar behoren gemotiveerd is en vatbaar is voor beroep",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "hebben alle bevoegdheden inzake toezicht, onderzoek en oplegging van strafmaatregelen die noodzakelijk zijn om hun taken uit hoofde van deze verordening te verrichten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art51@original",
@@ -3410,7 +6057,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art52@original",
@@ -3455,7 +6103,47 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "voor inbreuken waarop krachtens hun nationale recht strafrechtelijke maatregelen staan",
+    "action": "geen regels voor administratieve strafmaatregelen of corrigerende maatregelen vast te stellen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "Indien de lidstaten ervoor hebben gekozen strafrechtelijke maatregelen vast te stellen voor inbreuken op deze verordening",
+    "action": "zorgen zij voor passende maatregelen waardoor de bevoegde autoriteiten over alle noodzakelijke bevoegdheden beschikken om met de gerechtelijke, de met vervolging belaste of de strafrechtelijke autoriteiten in hun rechtsgebied in contact te treden ter verkrijging van specifieke informatie met betrekking tot strafrechtelijke onderzoeken of procedures ten aanzien van mogelijke inbreuken op deze verordening",
+    "recipient_body": [
+     "de gerechtelijke, de met vervolging belaste of de strafrechtelijke autoriteiten in hun rechtsgebied"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de lidstaten ervoor hebben gekozen strafrechtelijke maatregelen vast te stellen voor inbreuken op deze verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art53@original",
@@ -3489,7 +6177,38 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De lidstaten",
+    "addressee_type": "MEMBER_STATE",
+    "trigger_event": "wettelijke en bestuursrechtelijke bepalingen ter uitvoering van dit hoofdstuk",
+    "action": "stellen uiterlijk op 17 januari 2025 de Commissie, de ESMA, de EBA en de Eiopa in kennis van de wettelijke en bestuursrechtelijke bepalingen ter uitvoering van dit hoofdstuk, met inbegrip van eventuele strafrechtelijke bepalingen die van toepassing zijn",
+    "recipient_body": [
+     "de Commissie",
+     "de ESMA",
+     "de EBA",
+     "de Eiopa"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 januari 2025"
+    },
+    "thresholds": [],
+    "conditions": [
+     "eventuele strafrechtelijke bepalingen die van toepassing zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art54@original",
@@ -3554,7 +6273,123 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "nadat de natuurlijke of rechtspersoon op wie een dergelijke maatregel van toepassing is, van deze maatregel in kennis is gesteld",
+    "action": "maken op hun officiële website onverwijld alle niet voor beroep vatbare besluiten tot het nemen van administratieve strafmaatregelen bekend",
+    "recipient_body": [],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "alle niet voor beroep vatbare besluiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De in lid 1 bedoelde bekendmaking",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "bevat informatie over het type en de aard van de inbreuk, de identiteit van de verantwoordelijke natuurlijke of rechtspersoon en de getroffen strafmaatregelen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "na de beoordeling van een geval van oordeel is dat de bekendmaking van de identiteit in het geval van rechtspersonen of van de identiteit en persoonsgegevens in het geval van natuurlijke personen onevenredige effecten kan hebben — waaronder risico’s voor de bescherming van persoonsgegevens — de stabiliteit van de financiële markten of het verloop van een lopend onderzoek in gevaar kan brengen, of, voor zover dit kan worden bepaald, de betrokken natuurlijke of rechtspersonen onevenredige schade zou kunnen berokkenen",
+    "action": "kiest zij een van de volgende oplossingen voor het besluit waarbij een administratieve strafmaatregel wordt genomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de in punten a) en b) genoemde keuzemogelijkheden ontoereikend worden geacht om te garanderen dat er geen gevaar bestaat voor de stabiliteit van de financiële markten",
+     "indien de effecten van de bekendmaking niet in verhouding staan tot de clementie van de genomen strafmaatregel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "een bevoegde autoriteit",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "een bevoegde autoriteit een besluit tot het nemen van een administratieve strafmaatregel bekendmaakt dat vatbaar is voor beroep bij gerechtelijke autoriteiten",
+    "action": "maakt de bevoegde autoriteit deze informatie en, in een later stadium, verdere informatie over het resultaat van een eventueel beroep onverwijld bekend op haar officiële website",
+    "recipient_body": [
+     "op haar officiële website"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "dat vatbaar is voor beroep bij gerechtelijke autoriteiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "een bekendmaking als bedoeld in de leden 1 tot en met 4",
+    "action": "zorgen ervoor dat een bekendmaking als bedoeld in de leden 1 tot en met 4 slechts op hun officiële website blijft staan gedurende de periode die nodig is voor de inwerkingtreding van dit artikel",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "niet langer dan vijf jaar vanaf de bekendmaking ervan"
+    },
+    "thresholds": [
+     "vijf jaar"
+    ],
+    "conditions": [
+     "slechts op hun officiële website",
+     "gedurende de periode die nodig is voor de inwerkingtreding van dit artikel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art55@original",
@@ -3609,7 +6444,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de bevoegde autoriteiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Alle uitwisseling van informatie tussen de bevoegde autoriteiten krachtens deze verordening die betrekking heeft op exploitatie- of bedrijfsomstandigheden en andere economische of persoonlijke zaken",
+    "action": "wordt als vertrouwelijk beschouwd en valt onder de vereisten van het beroepsgeheim",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de bevoegde autoriteit op het moment van de mededeling verklaart dat deze informatie kan worden bekendgemaakt of de bekendmaking ervan noodzakelijk is voor gerechtelijke procedures"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art56@original",
@@ -3654,7 +6510,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art57@original",
@@ -3719,7 +6576,144 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "COMPETENCE",
+    "addressee": "Het Europees Parlement of de Raad",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "kan de in artikel 31, lid 6, en artikel 43, lid 2, bedoelde bevoegdheidsdelegatie te allen tijde intrekken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Zodra de Commissie een gedelegeerde handeling heeft vastgesteld",
+    "action": "doet zij daarvan gelijktijdig kennisgeving aan het Europees Parlement en de Raad",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gelijktijdig"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Vóór de vaststelling van een gedelegeerde handeling",
+    "action": "raadpleegt de Commissie de door elke lidstaat aangewezen deskundigen overeenkomstig de beginselen die zijn neergelegd in het Interinstitutioneel Akkoord van 13 april 2016 over beter wetgeven",
+    "recipient_body": [
+     "de door elke lidstaat aangewezen deskundigen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "gedelegeerde handelingen vast te stellen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "onder de in dit artikel neergelegde voorwaarden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "stelt uiterlijk negen maanden voor het einde van de termijn van vijf jaar een verslag op over de bevoegdheidsdelegatie",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk negen maanden voor het einde van de termijn van vijf jaar"
+    },
+    "thresholds": [
+     "vijf jaar",
+     "negen maanden",
+     "drie maanden"
+    ],
+    "conditions": [
+     "tenzij het Europees Parlement of de Raad zich uiterlijk drie maanden voor het einde van elke termijn tegen deze verlenging verzet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PROCEDURAL",
+    "addressee": "het Europees Parlement noch de Raad",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "Een overeenkomstig artikel 31, lid 6, en artikel 43, lid 2, vastgestelde gedelegeerde handeling",
+    "action": "treedt alleen in werking",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "van de handeling aan het Europees Parlement en de Raad",
+     "raw": "binnen een termijn van drie maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad"
+    },
+    "thresholds": [
+     "drie maanden"
+    ],
+    "conditions": [
+     "indien het Europees Parlement noch de Raad daartegen binnen een termijn van drie maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad bezwaar heeft gemaakt",
+     "indien zowel het Europees Parlement als de Raad voor het verstrijken van die termijn de Commissie hebben medegedeeld dat zij daartegen geen bezwaar zullen maken"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art58@original",
@@ -3769,7 +6763,63 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": null,
+    "action": "een evaluatie uit en dient zij een verslag in bij het Europees Parlement en de Raad",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Uiterlijk op 17 januari 2026"
+    },
+    "thresholds": [],
+    "conditions": [
+     "waar van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de Commissie",
+    "addressee_type": "EU_INSTITUTION",
+    "trigger_event": "bij de herziening van Richtlijn (EU) 2015/2366",
+    "action": "legt de Commissie, bij de herziening van Richtlijn (EU) 2015/2366, uiterlijk op 17 juli 2023 een verslag voor aan het Europees Parlement en aan de Raad",
+    "recipient_body": [
+     "het Europees Parlement",
+     "de Raad"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op 17 juli 2023"
+    },
+    "thresholds": [],
+    "conditions": [
+     "In het kader van de herziening van Richtlijn (EU) 2015/2366"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art59@original",
@@ -3803,7 +6853,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 2
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Een ratingbureau",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer het niet beschikt over een goede administratieve of boekhoudkundige organisatie, interne controleprocedures, effectieve risicobeoordelingsprocedures of effectieve controle- of beveiligingsvoorzieningen voor het beheer van ICT-systemen in overeenstemming met Verordening (EU) 2022/2554 , of door niet de in dat punt vereiste besluitvormingsprocedures of organisatiestructuren te volgen en te handhaven",
+    "action": "beschikt over een goede administratieve en boekhoudkundige organisatie, adequate interne controleprocedures, effectieve risicobeoordelingsprocedures en effectieve controle- en beveiligingsvoorzieningen voor het beheer van ICT-systemen in overeenstemming met Verordening (EU) 2022/2554",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met Verordening (EU) 2022/2554"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.86,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art60@original",
@@ -3837,7 +6908,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 4
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art61@original",
@@ -3871,7 +6943,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": []
  },
  {
   "uid": "eu:32022R2554:art62@original",
@@ -3905,7 +6978,26 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 3
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Een APA",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "voldoet aan de vereisten inzake de beveiliging van netwerk- en informatiesystemen van Verordening (EU) 2022/2554",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art63@original",
@@ -3939,7 +7031,28 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "Een beheerder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "beschikt voor kritieke benchmarks over een goede administratieve en boekhoudkundige organisatie, adequate interne controleprocedures, effectieve risicobeoordelingsprocedures en effectieve controle- en beveiligingsvoorzieningen voor het beheer van ICT-systemen in overeenstemming met Verordening (EU) 2022/2554 van het Europees Parlement en de Raad (*5).",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor kritieke benchmarks"
+    ],
+    "deference": "in overeenstemming met Verordening (EU) 2022/2554 van het Europees Parlement en de Raad (*5)",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ]
  },
  {
   "uid": "eu:32022R2554:art64@original",
@@ -3973,6 +7086,7 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "norms": []
  }
 ]

@@ -25,7 +25,25 @@
   "dossier_number": "36264",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt verstaan onder",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 106,
    "xref_intra_instrument": 0,
@@ -118,7 +136,25 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "zijn van toepassing op de geheel of gedeeltelijk geautomatiseerde verwerking van persoonsgegevens, alsmede op de verwerking van persoonsgegevens die in een bestand zijn opgenomen of die bestemd zijn om daarin te worden opgenomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 99,
    "xref_intra_instrument": 1,
@@ -163,7 +199,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "bij de toepassing van de verordening",
+    "action": "neemt bij de toepassing van de verordening de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124) in aanmerking",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124)"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 49,
    "xref_intra_instrument": 0,
@@ -264,7 +320,92 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "In een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen beperkingen en voorschriften worden gegeven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het derde lid, onderdeel a"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "is van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op de verwerking van persoonsgegevens, bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+    "addressee_type": "OTHER",
+    "trigger_event": "Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+    "action": "wordt zo spoedig mogelijk mededeling gedaan aan de Autoriteit persoonsgegevens",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": "asap",
+     "from": null,
+     "raw": "zo spoedig mogelijk"
+    },
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het derde lid, onderdeel a"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PROHIBITION",
+    "addressee": "Het eerste en het tweede lid",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "zijn niet van toepassing op",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover Onze Minister van Defensie daartoe bij besluit of bij ministeriële regeling beslist met het oog op de inzet of het ter beschikking stellen van de krijgsmacht ter uitvoering van de in artikel 97 van de Grondwet omschreven taken",
+     "voor zover daarop de Wet op de inlichtingen- en veiligheidsdiensten 2017 van toepassing is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 199,
    "xref_intra_instrument": 0,
@@ -325,7 +466,45 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "Deze wet en de daarop berustende bepalingen",
+    "addressee_type": "OTHER",
+    "trigger_event": "de verwerking van persoonsgegevens in het kader van activiteiten van een vestiging van een verwerkingsverantwoordelijke of een verwerker in Nederland",
+    "action": "zijn van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "een niet in de Europese Unie gevestigde verwerkingsverantwoordelijke of verwerker",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "wanneer de verwerking verband houdt met:",
+    "action": "zijn van toepassing op verwerking van persoonsgegevens van betrokkenen die zich in Nederland bevinden door een niet in de Europese Unie gevestigde verwerkingsverantwoordelijke of verwerker",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "het aanbieden van goederen of diensten aan deze betrokkenen in Nederland, ongeacht of een betaling door de betrokkenen is vereist",
+     "het monitoren van hun gedrag, voor zover dit gedrag in Nederland plaatsvindt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 106,
    "xref_intra_instrument": 0,
@@ -440,7 +619,48 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "zijn wettelijk vertegenwoordiger",
+    "addressee_type": "OTHER",
+    "trigger_event": "Indien de betrokkene onder curatele is gesteld, dan wel ten behoeve van de betrokkene een bewind of mentorschap is ingesteld",
+    "action": "die van zijn wettelijk vertegenwoordiger is vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover het een aangelegenheid betreft waarvoor de betrokkene onbekwaam dan wel onbevoegd is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "de minderjarige betrokkene die de leeftijd van zestien jaren heeft bereikt",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "in zaken betreffende een schending van zijn rechten uit hoofde van de AVG ten gevolge van een verwerking van zijn persoonsgegevens",
+    "action": "zonder bijstand van zijn wettelijk vertegenwoordiger in rechte optreden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "de leeftijd van zestien jaren"
+    ],
+    "conditions": [
+     "in zaken betreffende een schending van zijn rechten uit hoofde van de AVG ten gevolge van een verwerking van zijn persoonsgegevens"
+    ],
+    "deference": "Onverminderd artikel 8:21, tweede lid van de Algemene wet bestuursrecht",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 418,
    "xref_intra_instrument": 0,
@@ -510,7 +730,63 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "bezit rechtspersoonlijkheid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "is de toezichthoudende autoriteit",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "bedoeld in artikel 51, eerste lid, van de verordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Ter uitvoering van een bindende EU-rechtshandeling",
+    "action": "aan de Autoriteit persoonsgegevens taken worden opgedragen",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "gehoord de Autoriteit persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 84,
    "xref_intra_instrument": 0,
@@ -635,7 +911,124 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "Bij ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden voorwaarden gesteld en vereiste kwalificaties benoemd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken",
+     "om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "PERMISSION",
+    "addressee": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen eenmaal worden herbenoemd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "eenmaal",
+     "een tijdvak van vijf jaar"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "De benoeming, bedoeld in het derde lid",
+    "action": "geldt voor een tijdvak van vijf jaar",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "vijf jaar"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Op eigen verzoek",
+    "action": "ontslagen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "Er is een Raad van advies die de Autoriteit persoonsgegevens adviseert over algemene aspecten van de bescherming van persoonsgegevens",
+    "recipient_body": [
+     "de Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste vier jaar",
+     "tweemaal",
+     "telkens voor ten hoogste vier jaar"
+    ],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 298,
    "xref_intra_instrument": 0,
@@ -816,7 +1209,30 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": "de voorzitter en de andere leden van de Autoriteit persoonsgegevens",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met uitzondering van onderdeel b",
+     "met uitzondering van het eerste lid, onderdeel b",
+     "met uitzondering van het eerste lid, onderdeel c, en zesde lid",
+     "met uitzondering van onderdeel d"
+    ],
+    "deference": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 190,
    "xref_intra_instrument": 0,
@@ -861,7 +1277,25 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": "De rechtspositie van de voorzitter, de andere leden en de buitengewone leden",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt geregeld bij of krachtens algemene maatregel van bestuur",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 21,
    "xref_intra_instrument": 0,
@@ -906,7 +1340,25 @@
   "dossier_number": "35073",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "heeft een secretariaat",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 6,
    "xref_intra_instrument": 0,
@@ -992,7 +1444,92 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "stelt de begroting vast",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met het budget, bedoeld in het tweede lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "jaarlijks",
+    "action": "kent Onze Minister jaarlijks aan de Autoriteit persoonsgegevens een budget toe ten laste van de rijksbegroting",
+    "recipient_body": [
+     "de Autoriteit persoonsgegevens"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "jaarlijks"
+    },
+    "thresholds": [],
+    "conditions": [
+     "In de departementale begroting, bedoeld in artikel 2.1, zesde lid, van de Comptabiliteitswet 2016"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De leden",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "stellen een verdeling van taken vast en betrekken hierbij zoveel mogelijk de buitengewone leden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "jaarlijks voorafgaand aan het desbetreffende begrotingsjaar",
+    "action": "stelt jaarlijks voorafgaand aan het desbetreffende begrotingsjaar een ontwerpbegroting op",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "jaarlijks voorafgaand aan het desbetreffende begrotingsjaar"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 103,
    "xref_intra_instrument": 0,
@@ -1133,7 +1670,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PROHIBITION",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 45,
    "xref_intra_instrument": 0,
@@ -1255,7 +1810,103 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "de taken uit te voeren en de bevoegdheden uit te oefenen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "bij of krachtens de verordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "komt toe aan de Staat",
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PROCEDURAL",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "de voorbereiding van een besluit omtrent goedkeuring van een gedragscode, dan wel de wijziging of uitbreiding daarvan",
+    "action": "is afdeling 3.4 van de Algemene wet bestuursrecht van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in artikel 40, vijfde lid, van de verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen nadere regels worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "over de gevallen waarin het zevende lid toepassing vindt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "OBLIGATION",
+    "addressee": "de Autoriteit Persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Voordat de Autoriteit Persoonsgegevens beleidsregels vaststelt ter bevordering van een consequente toepassing van de verordening of over de uitoefening van haar handhavingsbevoegdheden",
+    "action": "raadpleegt zij, voor zover passend, belanghebbende partijen",
+    "recipient_body": [
+     "belanghebbende partijen"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover passend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 290,
    "xref_intra_instrument": 0,
@@ -1350,7 +2001,84 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "zijn van overeenkomstige toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dit noodzakelijk is voor een goede uitoefening van de taken die de Autoriteit persoonsgegevens uitvoert in het kader van hoofdstuk VII van de verordening"
+    ],
+    "deference": "Dit artikel en titel 5.2 van de Algemene wet bestuursrecht",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PROHIBITION",
+    "addressee": "een geheimhoudingsplicht",
+    "addressee_type": "OTHER",
+    "trigger_event": "inlichtingen of medewerking wordt verlangd",
+    "action": "Geen beroep is mogelijk op een geheimhoudingsplicht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "De in het eerste lid bedoelde personen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "een woning te betreden zonder toestemming van de bewoner",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De in het eerste lid bedoelde personen",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "behoeven voor de uitoefening van de in het tweede lid omschreven bevoegdheid de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor de uitoefening van de in het tweede lid omschreven bevoegdheid"
+    ],
+    "deference": "onverminderd het bepaalde in artikel 2 van de Algemene wet op het binnentreden",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 182,
    "xref_intra_instrument": 0,
@@ -1408,7 +2136,46 @@
   "dossier_number": "35256",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "een verbeurde dwangsom",
+    "action": "komt toe aan de Staat",
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan een last onder bestuursdwang opleggen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ter handhaving van de bij of krachtens de verordening of deze wet gestelde verplichtingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 38,
    "xref_intra_instrument": 0,
@@ -1482,7 +2249,67 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van overtreding van het bepaalde in artikel 10 van de verordening of in artikel 31 van deze wet",
+    "action": "een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, voor een onderneming, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar indien dit bedrag hoger is",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "20.000.000 euro",
+     "4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar"
+    ],
+    "conditions": [
+     "voor een onderneming",
+     "indien dit bedrag hoger is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "komt toe aan de Staat",
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Artikel 83, eerste tot en met derde lid, van de verordening zijn van overeenkomstige toepassing.",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 80,
    "xref_intra_instrument": 1,
@@ -1546,7 +2373,48 @@
   "dossier_number": "34939",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "komt toe aan de Staat",
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van overtreding van het bepaalde in artikel 83, vierde, vijfde of zesde lid, van de verordening door een overheidsinstantie of een overheidsorgaan",
+    "action": "een bestuurlijke boete opleggen van ten hoogste de in deze leden genoemde bedragen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste de in deze leden genoemde bedragen"
+    ],
+    "conditions": [
+     "door een overheidsinstantie of een overheidsorgaan"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 66,
    "xref_intra_instrument": 0,
@@ -1604,7 +2472,52 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "afspraken te maken met andere toezichthouders en daartoe gezamenlijk met deze toezichthouders samenwerkingsprotocollen vast te stellen",
+    "recipient_body": [
+     "andere toezichthouders",
+     "de Staatscourant"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het belang van een efficiënt en effectief toezicht op de verwerking van persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "desgevraagd",
+    "action": "aan elkaar de gegevens betreffende de verwerking van persoonsgegevens te verstrekken die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting",
+    "recipient_body": [
+     "De Autoriteit persoonsgegevens",
+     "de toezichthouders, bedoeld in het eerste lid"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 96,
    "xref_intra_instrument": 0,
@@ -1793,7 +2706,118 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "Het verzoekschrift",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "wordt ondertekend en bevat ten minste:",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "Bij het verzoekschrift",
+    "addressee_type": "OTHER",
+    "trigger_event": "Bij het verzoekschrift",
+    "action": "wordt een afschrift overgelegd van het verzoek van de belanghebbende om handhaving van bij of krachtens wet bepaalde regels inzake de bescherming van persoonsgegevens, waarop het in het tweede lid bedoelde verzoekschrift van de Autoriteit persoonsgegevens betrekking heeft en worden andere op de zaak betrekking hebbende stukken meegezonden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "COMPETENCE",
+    "addressee": "De Afdeling bestuursrechtspraak van de Raad van State",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "als er bij het Hof van Justitie van de Europese Unie al een prejudiciële vraag omtrent de geldigheid van het desbetreffende besluit aanhangig is",
+    "action": "kan besluiten het verzoek aan te houden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als er bij het Hof van Justitie van de Europese Unie al een prejudiciële vraag omtrent de geldigheid van het desbetreffende besluit aanhangig is"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "PROHIBITION",
+    "addressee": "de Afdeling bestuursrechtspraak van de Raad van State",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "het aanhouden van het verzoek door de Afdeling bestuursrechtspraak van de Raad van State",
+    "action": "staat geen voorziening open",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PROCEDURAL",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de Autoriteit persoonsgegevens de verzoeker meedeelt dat toepassing is gegeven aan het eerste lid",
+    "action": "de termijn voor het geven van een beschikking op het verzoek om handhaving opgeschort gerekend vanaf de dag na die waarop de Autoriteit persoonsgegevens de verzoeker meedeelt dat toepassing is gegeven aan het eerste lid, tot de dag waarop de Afdeling bestuursrechtspraak van de Raad van State een uitspraak als bedoeld in het zesde lid heeft gedaan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Onverminderd artikel 4:15 van de Algemene wet bestuursrecht",
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Indien de Autoriteit persoonsgegevens in een onderzoek betreffende de doorgifte van persoonsgegevens naar een land buiten de Europese Unie of naar een internationale organisatie, ingesteld op verzoek van een belanghebbende, gegronde redenen heeft om aan te nemen dat een door de Europese Commissie ten aanzien van het desbetreffende land of de desbetreffende internationale organisatie genomen adequaatheidsbesluit als bedoeld in artikel 45, eerste lid, van de verordening of een door de Europese Commissie genomen besluit met betrekking tot het vaststellen of goedkeuren van standaardbepalingen als bedoeld in artikel 46, tweede lid, onderdelen c en d, van de verordening onvoldoende waarborgen biedt voor een passend niveau van gegevensbescherming",
+    "action": "bij de Afdeling bestuursrechtspraak van de Raad van State een verzoek indienen om voor recht te verklaren dat het desbetreffende besluit geldig is",
+    "recipient_body": [
+     "de Afdeling bestuursrechtspraak van de Raad van State"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in een onderzoek betreffende de doorgifte van persoonsgegevens naar een land buiten de Europese Unie of naar een internationale organisatie",
+     "ingesteld op verzoek van een belanghebbende",
+     "een door de Europese Commissie ten aanzien van het desbetreffende land of de desbetreffende internationale organisatie genomen adequaatheidsbesluit als bedoeld in artikel 45, eerste lid, van de verordening of een door de Europese Commissie genomen besluit met betrekking tot het vaststellen of goedkeuren van standaardbepalingen als bedoeld in artikel 46, tweede lid, onderdelen c en d, van de verordening onvoldoende waarborgen biedt voor een passend niveau van gegevensbescherming"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 504,
    "xref_intra_instrument": 0,
@@ -1838,7 +2862,30 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROCEDURAL",
+    "addressee": "ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "wordt of de Autoriteit persoonsgegevens of de Raad voor Accreditatie of worden zij beide aangewezen als accrediterende instantie als bedoeld in artikel 43 van de verordening",
+    "recipient_body": [
+     "de Autoriteit persoonsgegevens",
+     "de Raad voor Accreditatie"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in artikel 43 van de verordening"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 29,
    "xref_intra_instrument": 0,
@@ -1970,7 +3017,51 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [
+     "de Staat"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "COMPETENCE",
+    "addressee": "De Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "in geval van een overtreding van de krachtens artikel 3.17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen",
+    "action": "aan de overtreder een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, indien dit meer is, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar",
+    "recipient_body": [
+     "de overtreder"
+    ],
+    "deadline": null,
+    "thresholds": [
+     "20.000.000 euro",
+     "4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar"
+    ],
+    "conditions": [
+     "indien dit meer is"
+    ],
+    "deference": "Artikel 83, tweede en derde lid, van de verordening is van overeenkomstige toepassing.",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 240,
    "xref_intra_instrument": 2,
@@ -2059,7 +3150,75 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROHIBITION",
+    "addressee": "de overtreder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt",
+    "action": "De openbaarmaking van de beschikking geschiedt niet eerder",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt",
+     "raw": "nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt"
+    },
+    "thresholds": [
+     "tien werkdagen"
+    ],
+    "conditions": [
+     "tenzij de overtreder de beschikking of de inhoud ervan, zelf heeft openbaar gemaakt, heeft doen openbaar maken of heeft aangegeven geen bedenkingen te hebben tegen eerdere openbaarmaking"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": "een door de Autoriteit Persoonsgegevens genomen beslissing op bezwaar strekkend tot het opleggen van een bestuurlijke sanctie",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "zijn mede van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de openbaarmaking van de beschikking",
+    "addressee_type": "OTHER",
+    "trigger_event": "Indien wordt verzocht om een voorlopige voorziening als bedoeld in artikel 8:81 van de Algemene wet bestuursrecht",
+    "action": "wordt de openbaarmaking van de beschikking opgeschort",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "totdat de voorzieningenrechter uitspraak heeft gedaan of het verzoek is ingetrokken"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Indien wordt verzocht om een voorlopige voorziening als bedoeld in artikel 8:81 van de Algemene wet bestuursrecht"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 160,
    "xref_intra_instrument": 0,
@@ -2123,7 +3282,25 @@
   "dossier_number": "36264",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PROHIBITION",
+    "addressee": "verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verboden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Overeenkomstig artikel 9, eerste lid, van de verordening",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 269,
    "xref_intra_instrument": 0,
@@ -2178,7 +3355,31 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "de verwerking",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "de verwerking noodzakelijk is ter voldoening aan een volkenrechtelijke verplichting",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+     "indien:",
+     "de verwerking noodzakelijk is ter voldoening aan een volkenrechtelijke verplichting",
+     "de gegevens worden verwerkt door de Autoriteit persoonsgegevens, het College voor de rechten van de mens of een ombudsman als bedoeld in artikel 9:17 van de Algemene wet bestuursrecht, en voor zover de verwerking noodzakelijk is voor de uitvoering van de hun wettelijk opgedragen taken, onder voorwaarde dat bij die uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad",
+     "de verwerking noodzakelijk is in aanvulling op de verwerking van persoonsgegevens van strafrechtelijke aard voor de doeleinden waarvoor deze gegevens worden verwerkt"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.97,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 128,
    "xref_intra_instrument": 0,
@@ -2246,7 +3447,51 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "indien de verwerking noodzakelijk is voor een door een accountant te verrichten bij wettelijk voorschrift voorgeschreven opdracht",
+    "action": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de verwerking noodzakelijk is voor een door een accountant te verrichten bij wettelijk voorschrift voorgeschreven opdracht"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid",
+    "action": "wordt voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid, pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening toegepast en vervolgens onafgebroken gecontinueerd",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Op persoonsgegevens waarop de geheimhoudingsplicht, bedoeld in artikel 457, eerste lid, van boek 7 van het Burgerlijk Wetboek rust dan wel heeft gerust"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 98,
    "xref_intra_instrument": 0,
@@ -2381,7 +3626,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "indien de verwerking geschiedt met het oog op de eisen die met betrekking tot politieke opvattingen in redelijkheid kunnen worden gesteld in verband met de vervulling van functies in bestuursorganen en adviescolleges",
+    "action": "is het verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken, niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de verwerking geschiedt met het oog op de eisen die met betrekking tot politieke opvattingen in redelijkheid kunnen worden gesteld in verband met de vervulling van functies in bestuursorganen en adviescolleges"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 57,
    "xref_intra_instrument": 0,
@@ -2449,7 +3714,49 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "andere instellingen dan de instellingen, bedoeld in artikel 22, tweede lid, onderdeel c",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de verwerking geschiedt door andere instellingen dan de instellingen, bedoeld in artikel 22, tweede lid, onderdeel c",
+    "action": "het verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken, niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover de verwerking noodzakelijk is met het oog op de geestelijke verzorging van de betrokkene",
+     "tenzij deze daartegen schriftelijk bezwaar heeft gemaakt"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PROHIBITION",
+    "addressee": "geen persoonsgegevens",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "In de gevallen, bedoeld in het eerste lid",
+    "action": "worden geen persoonsgegevens aan derden verstrekt",
+    "recipient_body": [
+     "derden"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zonder toestemming van de betrokkene"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 90,
    "xref_intra_instrument": 1,
@@ -2518,7 +3825,50 @@
   "dossier_number": "36264",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "de betrokkene bij wie de desbetreffende gegevens zijn verkregen",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "indien deze verwerking plaatsvindt met betrekking tot de betrokkene bij wie de desbetreffende gegevens zijn verkregen",
+    "action": "genetische gegevens te verwerken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+     "indien deze verwerking plaatsvindt met betrekking tot de betrokkene bij wie de desbetreffende gegevens zijn verkregen"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "het verbod om genetische gegevens te verwerken",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "in andere gevallen dan bedoeld in het eerste lid",
+    "action": "uitsluitend niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "een zwaarwegend geneeskundig belang prevaleert",
+     "de verwerking noodzakelijk is ten behoeve van wetenschappelijk onderzoek dat een algemeen belang dient of ten behoeve van statistiek",
+     "de betrokkene uitdrukkelijke toestemming heeft gegeven",
+     "bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad"
+    ],
+    "deference": "Gelet op artikel 9, vierde lid, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 153,
    "xref_intra_instrument": 0,
@@ -2563,7 +3913,27 @@
   "dossier_number": "36264",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "het verbod om biometrische gegevens met het oog op de unieke identificatie van een persoon te verwerken",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de verwerking noodzakelijk is voor authenticatie of omwille van beveiligingsdoeleinden",
+    "action": "niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "slechts voor zover dit noodzakelijk is vanwege een zwaarwegend algemeen belang van rechtmatige toegang tot bepaalde plaatsen, gebouwen, diensten, producten, informatiesystemen of werkprocessystemen"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 67,
    "xref_intra_instrument": 0,
@@ -2694,7 +4064,64 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+    "action": "een goede uitvoering van wettelijke voorschriften, pensioenregelingen of collectieve arbeidsovereenkomsten die voorzien in aanspraken die afhankelijk zijn van de gezondheidstoestand van de betrokkene",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover de verwerking noodzakelijk is voor: a. een goede uitvoering van wettelijke voorschriften, pensioenregelingen of collectieve arbeidsovereenkomsten die voorzien in aanspraken die afhankelijk zijn van de gezondheidstoestand van de betrokkene; of b. de re-integratie of begeleiding van werknemers of uitkeringsgerechtigden in verband met ziekte of arbeidsongeschiktheid"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel b, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "hulpverleners, instellingen of voorzieningen voor gezondheidszorg of maatschappelijke dienstverlening,",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de verwerking geschiedt door:",
+    "action": "het verbod om gegevens over gezondheid te verwerken niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover de verwerking noodzakelijk is met het oog op een goede behandeling of verzorging van de betrokkene dan wel het beheer van de betreffende instelling of beroepspraktijk",
+     "voor zover de verwerking noodzakelijk is voor: de beoordeling van het door de verzekeraar te verzekeren risico en de betrokkene geen bezwaar heeft gemaakt; of de uitvoering van de overeenkomst van verzekering dan wel het assisteren bij het beheer en de uitvoering van de verzekering"
+    ],
+    "deference": "Gelet op artikel 9, tweede lid, onderdeel g en h, van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen omtrent de toepassing van het eerste lid en het derde lid, aanhef en onderdeel b, nadere regels worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 553,
    "xref_intra_instrument": 0,
@@ -2826,7 +4253,83 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de betrokkene",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "In een geval als bedoeld in het eerste lid, onder a",
+    "action": "wordt de betrokkene geïnformeerd over de overdracht en gewezen op de van toepassing zijnde rechten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien het informeren onmogelijk is of onevenredig veel inspanning vergt of de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister van Volksgezondheid, Welzijn en Sport",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen nadere regels worden gesteld over de toepassing van het eerste, tweede of derde lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Het overdragen van dossiers, bedoeld in het eerste lid",
+    "action": "geschiedt kosteloos",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek door de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten overdragen aan een hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening die zorg gaat dragen voor het bewaren en beheren van de dossiers",
+    "recipient_body": [
+     "een hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening die zorg gaat dragen voor het bewaren en beheren van de dossiers"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Onder verwerking als bedoeld in artikel 30, derde lid, aanhef en onder a",
+     "met het oog op het voldoen aan de bewaarplicht, bedoeld in artikel 454, derde lid, van Boek 7 van het Burgerlijk Wetboek, en het bijbehorende beheer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 327,
    "xref_intra_instrument": 1,
@@ -2913,7 +4416,25 @@
     "paragraph_number": "2"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFERENCE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "De artikelen 30, vierde lid, en 30a, derde tot en met zesde lid, zijn van overeenkomstige toepassing.",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 126,
    "xref_intra_instrument": 2,
@@ -2977,7 +4498,27 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "persoonsgegevens van strafrechtelijke aard",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "alleen worden verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover dit krachtens de artikelen 32 en 33 is toegestaan"
+    ],
+    "deference": "Onverminderd artikel 10 van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 25,
    "xref_intra_instrument": 2,
@@ -3041,7 +4582,27 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "mogen persoonsgegevens van strafrechtelijke aard worden verwerkt",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "mogen persoonsgegevens van strafrechtelijke aard worden verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:\n\na.\nde betrokkene uitdrukkelijke toestemming heeft gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden;\n\nb.\nde verwerking noodzakelijk is ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon, indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven;\n\nc.\nde verwerking betrekking heeft op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt;\n\nd.\nde verwerking noodzakelijk is voor de instelling, uitoefening of onderbouwing van een rechtsvordering, of wanneer gerechten handelen in het kader van hun rechtsprekende taken;\n\ne.\nde verwerking noodzakelijk is om redenen van zwaarwegend algemeen belang als bedoeld in artikel 23, onderdelen a en b; of\n\nf.\nde verwerking noodzakelijk is met het oog op wetenschappelijk of historisch onderzoek of statistische doeleinden overeenkomstig artikel 89, eerste lid, van de verordening, en is voldaan aan de voorwaarden, bedoeld in artikel 24, onderdelen b tot en met d."
+    ],
+    "deference": "Gelet op artikel 10 van de verordening",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 169,
    "xref_intra_instrument": 2,
@@ -3192,7 +4753,68 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "Persoonsgegevens van strafrechtelijke aard",
+    "addressee_type": "OTHER",
+    "trigger_event": "indien de verwerking noodzakelijk is voor een door een accountant te verrichten bij wettelijk voorschrift voorgeschreven opdracht",
+    "action": "mogen worden verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de verwerking noodzakelijk is voor een door een accountant te verrichten bij wettelijk voorschrift voorgeschreven opdracht"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "organen die krachtens de wet zijn belast met de toepassing van het strafrecht",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "de verwerking geschiedt door organen die krachtens de wet zijn belast met de toepassing van het strafrecht",
+    "action": "mogen persoonsgegevens van strafrechtelijke aard worden verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de verwerking geschiedt door organen die krachtens de wet zijn belast met de toepassing van het strafrecht, dan wel door verwerkingsverantwoordelijken die deze hebben verkregen krachtens de Wet politiegegevens of de Wet justitiële en strafvorderlijke gegevens",
+     "de verwerking geschiedt door en ten behoeve van publiekrechtelijke samenwerkingsverbanden van verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken, indien de verwerking noodzakelijk is voor de uitvoering van de taak van deze verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken en bij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad",
+     "de verwerking noodzakelijk is in aanvulling op de verwerking van gegevens over gezondheid, bedoeld in artikel 30, derde lid, aanhef en onderdeel a, met het oog op een goede behandeling of verzorging van de betrokkene"
+    ],
+    "deference": "Gelet op artikel 10 van de verordening",
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "de verwerkingsverantwoordelijke die deze gegevens ten eigen behoeve verwerkt",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "mogen worden verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "ter beoordeling van een verzoek van betrokkene om een beslissing over hem te nemen of aan hem een prestatie te leveren",
+     "ter bescherming van zijn belangen, voor zover het gaat om strafbare feiten die zijn of op grond van feiten en omstandigheden naar verwachting zullen worden gepleegd jegens hem of jegens personen die in zijn dienst zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 415,
    "xref_intra_instrument": 1,
@@ -3376,7 +4998,65 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "de belanghebbende",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "de beslissing op een verzoek als bedoeld in artikel 34 is genomen door een ander dan een bestuursorgaan",
+    "action": "zich tot de rechtbank wenden met het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen",
+    "recipient_body": [
+     "de rechtbank"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "door een ander dan een bestuursorgaan"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PERMISSION",
+    "addressee": "De indiening van het verzoekschrift",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "behoeft niet door een advocaat te geschieden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De verwerkingsverantwoordelijke en belanghebbende",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "De rechtbank kan partijen en anderen verzoeken",
+    "action": "aan dit verzoek te voldoen",
+    "recipient_body": [
+     "De rechtbank"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing.",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 225,
    "xref_intra_instrument": 1,
@@ -3463,7 +5143,29 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "de instanties die zijn belast met de behandeling van het geschil",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Tijdens de behandeling van het beroep en de procedure, bedoeld in het eerste lid",
+    "action": "advies van de Autoriteit persoonsgegevens inwinnen",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 188,
    "xref_intra_instrument": 1,
@@ -3527,7 +5229,27 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROHIBITION",
+    "addressee": "degene die door deze verwerking wordt getroffen",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "voor zover degene die door deze verwerking wordt getroffen, daartegen bezwaar heeft",
+    "action": "kan niet ten grondslag worden gelegd aan een vordering als bedoeld in artikel 305a, van Boek 3 van het Burgerlijk Wetboek of een beroep ingesteld in een bestuursrechtelijke procedure door een belanghebbende in de zin van artikel 1:2, derde lid, van de Algemene wet bestuursrecht",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover degene die door deze verwerking wordt getroffen, daartegen bezwaar heeft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 59,
    "xref_intra_instrument": 0,
@@ -3617,7 +5339,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "De functionaris voor gegevensbescherming",
+    "addressee_type": "OTHER",
+    "trigger_event": "op grond van een klacht of een verzoek van betrokkene",
+    "action": "is verplicht tot geheimhouding van hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de betrokkene in bekendmaking toestemt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 42,
    "xref_intra_instrument": 0,
@@ -3681,7 +5423,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "de verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Bij de geautomatiseerde individuele besluitvorming, bedoeld in het eerste lid",
+    "action": "treft de verwerkingsverantwoordelijke passende maatregelen die strekken tot bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 130,
    "xref_intra_instrument": 0,
@@ -3759,7 +5521,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "De verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "kan de verplichtingen en rechten, bedoeld in de artikelen 12 tot en met 21 en artikel 34 van de verordening, buiten toepassing laten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover zulks noodzakelijk en evenredig is ter waarborging van: de nationale veiligheid; landsverdediging; de openbare veiligheid; de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid; andere belangrijke doelstellingen van algemeen belang van de Europese Unie of van Nederland, met name een belangrijk economisch of financieel belang van de Europese Unie of van Nederland, met inbegrip van monetaire, budgettaire en fiscale aangelegenheden, volksgezondheid en sociale zekerheid; de bescherming van de onafhankelijkheid van de rechter en gerechtelijke procedures; de voorkoming, het onderzoek, de opsporing en de vervolging van schendingen van de beroepscodes voor gereglementeerde beroepen; een taak op het gebied van toezicht, inspectie of regelgeving die verband houdt, al is het incidenteel, met de uitoefening van het openbaar gezag in de gevallen, bedoeld in de onderdelen a, b, c, d, e en g; de bescherming van de betrokkene of van de rechten en vrijheden van anderen; of de inning van civielrechtelijke vorderingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 341,
    "xref_intra_instrument": 0,
@@ -3976,7 +5758,27 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PERMISSION",
+    "addressee": "de verwerkingsverantwoordelijke",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien een verwerking wordt verricht door instellingen of diensten voor wetenschappelijk onderzoek of statistiek, en de nodige voorzieningen zijn getroffen om te verzekeren dat de persoonsgegevens uitsluitend voor statistische of wetenschappelijke doeleinden kunnen worden gebruikt",
+    "action": "kan de verwerkingsverantwoordelijke de artikelen 15, 16 en 18 van de verordening buiten toepassing laten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de nodige voorzieningen zijn getroffen om te verzekeren dat de persoonsgegevens uitsluitend voor statistische of wetenschappelijke doeleinden kunnen worden gebruikt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 50,
    "xref_intra_instrument": 0,
@@ -4053,7 +5855,66 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "Betrokkene",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "verzoeken om inzage zodanig ongericht zijn dat deze in redelijkheid niet kunnen worden ingewilligd",
+    "action": "het recht om inzage te verkrijgen in de archiefbescheiden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij verzoeken om inzage zodanig ongericht zijn dat deze in redelijkheid niet kunnen worden ingewilligd"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "Betrokkene",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "in geval van onjuiste persoonsgegevens",
+    "action": "zijn eigen lezing aan de desbetreffende archiefbescheiden toe te voegen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PROHIBITION",
+    "addressee": "de verordening",
+    "addressee_type": "OTHER",
+    "trigger_event": "bij de verwerking van persoonsgegevens die deel uitmaken van",
+    "action": "zijn niet van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "voor meer dan de helft"
+    ],
+    "conditions": [
+     "archiefbescheiden die voor blijvende bewaring berusten bij archiefbewaarplaatsen als bedoeld in artikel 1, onderdeel f, van de Archiefwet 1995",
+     "andere archiefcollecties van blijvende waarde voor het algemeen belang die voor blijvende bewaring berusten bij andere voor het publiek toegankelijke instellingen die geen winstoogmerk hebben en waarvan de activiteiten in hoofdzaak uit publieke middelen worden bekostigd, of waarvan de leden van het bestuursorgaan, het leidinggevend orgaan of het toezichthoudend orgaan voor meer dan de helft door de staat, zijn territoriale lichamen of andere publiekrechtelijke instellingen zijn aangewezen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 165,
    "xref_intra_instrument": 0,
@@ -4302,7 +6163,55 @@
     "paragraph_number": "5"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "Een commissie als bedoeld in artikel 1, onderdeel b, van de Wet vergoedingen adviescolleges en commissies, dan wel een adviescollege dat is ingesteld op grond van artikel 5 of 6 van de Kaderwet adviescolleges, die voor bepaalde tijd wordt ingesteld bij koninklijk of ministerieel besluit of ministeriele regeling",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien in de instellingsregeling of het instellingsbesluit is opgenomen",
+    "action": "kan persoonsgegevens verwerken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor bepaalde tijd wordt ingesteld bij koninklijk of ministerieel besluit of ministeriele regeling",
+     "indien in de instellingsregeling of het instellingsbesluit is opgenomen: a. de taak van algemeen belang als bedoeld in artikel 6, onderdeel e van de verordening en het doel ten behoeve waarvan de persoonsgegevens worden verwerkt; b. de verwerkingsverantwoordelijke voor de gegevensverwerking; en c. de maximale bewaartermijn."
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "De instellingsregeling of het instellingsbesluit",
+    "addressee_type": "OTHER",
+    "trigger_event": "waarin een commissie als bedoeld in het eerste lid wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens",
+    "action": "wordt onverwijld meegedeeld aan beide kamers der Staten-Generaal",
+    "recipient_body": [
+     "beide kamers der Staten-Generaal"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "waarin een commissie als bedoeld in het eerste lid wordt ingesteld",
+     "waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 374,
    "xref_intra_instrument": 3,
@@ -4494,7 +6403,181 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "DEFINITION",
+    "addressee": "Degene die voorafgaand aan de inwerkingtreding van deze wet is benoemd als voorzitter van het College bescherming persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": "voorafgaand aan de inwerkingtreding van deze wet is benoemd als voorzitter van het College bescherming persoonsgegevens",
+    "action": "is van rechtswege benoemd als voorzitter van de Autoriteit persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "DEFINITION",
+    "addressee": "Degene die voorafgaand aan de inwerkingtreding van deze wet is benoemd als lid van het College bescherming persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": "voorafgaand aan de inwerkingtreding van deze wet is benoemd als lid van het College bescherming persoonsgegevens",
+    "action": "is van rechtswege benoemd als lid van de Autoriteit persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voorafgaand aan de inwerkingtreding van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "DEFINITION",
+    "addressee": "de Autoriteit persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "In wettelijke procedures en rechtsgedingen waarbij het College bescherming persoonsgegevens voorafgaand aan de inwerkingtreding van deze wet is betrokken",
+    "action": "treedt de Autoriteit persoonsgegevens van rechtswege in de plaats van het College bescherming persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voorafgaand aan de inwerkingtreding van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": "de leden van het College bescherming persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": "die zijn benoemd of herbenoemd voor 1 januari 2014",
+    "action": "blijft artikel 53, derde lid, eerste, tweede en derde volzin, van de Wet bescherming persoonsgegevens van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "1 januari 2014"
+    ],
+    "conditions": [
+     "zoals dat luidde voor dat tijdstip"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "DEFINITION",
+    "addressee": "Besluiten die voorafgaand aan de inwerkingtreding van deze wet zijn genomen door het College bescherming persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": "voorafgaand aan de inwerkingtreding van deze wet zijn genomen",
+    "action": "gelden van rechtswege als besluiten, genomen door de Autoriteit persoonsgegevens",
+    "recipient_body": [
+     "de Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "DEFINITION",
+    "addressee": "De ambtenaar die voorafgaand aan de inwerkingtreding van deze wet is benoemd in het secretariaat van het College bescherming persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": "voorafgaand aan de inwerkingtreding van deze wet is benoemd in het secretariaat van het College bescherming persoonsgegevens",
+    "action": "is van rechtswege benoemd als ambtenaar in het secretariaat van de Autoriteit persoonsgegevens",
+    "recipient_body": [
+     "het secretariaat van de Autoriteit persoonsgegevens"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voorafgaand aan de inwerkingtreding van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "8",
+    "deontic": "DEFINITION",
+    "addressee": "het College bescherming persoonsgegevens",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "wettelijke procedures en rechtsgedingen waarbij het College bescherming persoonsgegevens voorafgaand aan de inwerkingtreding van deze wet is betrokken",
+    "action": "is het recht van toepassing zoals dit gold voorafgaand aan de inwerkingtreding van deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voorafgaand aan de inwerkingtreding van deze wet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "DEFINITION",
+    "addressee": "het recht",
+    "addressee_type": "OTHER",
+    "trigger_event": "op het moment van inwerkingtreding van deze wet reeds aanhangig zijn bij de rechtbank",
+    "action": "is het recht van toepassing zoals dit gold voorafgaand aan de inwerkingtreding van deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Op schriftelijke verzoeken als bedoeld in artikel 46 van de Wet bescherming persoonsgegevens, rechtsgedingen op basis van artikel 49 van de Wet bescherming persoonsgegevens en vorderingen op basis van artikel 50 van de Wet bescherming persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "12",
+    "deontic": "COMPETENCE",
+    "addressee": "bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "regels of nadere regels worden gesteld omtrent de invoering van de verordening of deze wet",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor zover deze wet daarin niet voorziet"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 452,
    "xref_intra_instrument": 1,
@@ -4626,7 +6709,42 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 319,
    "xref_intra_instrument": 1,
@@ -4691,7 +6809,27 @@
     "paragraph_number": null
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "voor inwerkingtreding van artikel I, onderdeel T, van de Verzamelwet gegevensbescherming",
+    "action": "blijft van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die voor deze inwerkingtreding reeds waren gebaseerd op deze delegatiegrondslag"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 41,
    "xref_intra_instrument": 1,
@@ -4736,7 +6874,25 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 4,
    "xref_intra_instrument": 0,
@@ -4845,7 +7001,25 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt ingetrokken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 6,
    "xref_intra_instrument": 0,
@@ -4890,7 +7064,25 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt in overige wetgeving aangehaald als: Algemene verordening gegevensbescherming",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 56,
    "xref_intra_instrument": 0,
@@ -4980,7 +7172,25 @@
   "dossier_number": "34851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": "wordt aangehaald als: Uitvoeringswet Algemene verordening gegevensbescherming",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 9,
    "xref_intra_instrument": 0,

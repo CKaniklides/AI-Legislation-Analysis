@@ -18669,7 +18669,25 @@
   "dossier_number": "34939",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 368,
    "xref_intra_instrument": 0,
@@ -18714,7 +18732,25 @@
   "dossier_number": "34939",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "zorg voor de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers van zijn netwerk, onderscheidenlijk zijn dienst",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Onverminderd de Algemene verordening gegevensbescherming en het overigens bij of krachtens deze wet bepaalde",
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 53,
    "xref_intra_instrument": 0,
@@ -18803,7 +18839,65 @@
    }
   ],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het tweede lid, onderdeel a",
+    "action": "verstrekt de aanbieder aan de abonnee de volgende informatie",
+    "recipient_body": [
+     "de abonnee"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het tweede lid, onderdeel a"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PROHIBITION",
+    "addressee": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "onthouden zich van het aftappen, afluisteren of anderszins onderscheppen of controleren van de communicatie via een openbaar elektronisch communicatienetwerk of openbare elektronische communicatiedienst en de daarmee verband houdende gegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij en voor zover: a. de betrokken abonnee voor deze handelingen zijn uitdrukkelijke toestemming heeft gegeven; b. deze handelingen noodzakelijk zijn om de integriteit en de veiligheid van de netwerken en diensten van de betrokken aanbieder te waarborgen; c. deze handelingen noodzakelijk zijn voor het overbrengen van informatie via de netwerken en diensten van de betrokken aanbieder, of d. deze handelingen noodzakelijk zijn ter uitvoering van een wettelijk voorschrift of rechterlijk bevel"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "dragen de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst zorg voor het vertrouwelijke karakter van de communicatie en de daarmee verband houdende gegevens via hun netwerken onderscheidenlijk hun diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": "Onverminderd het Wetboek van Strafrecht en het overigens bij of krachtens deze wet bepaalde",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 247,
    "xref_intra_instrument": 0,
@@ -18908,7 +19002,46 @@
     "paragraph_number": "4"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De maatregelen als bedoeld in het eerste lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "waarborgen dat slechts daartoe gemachtigd personeel voor wettelijk toegestane doeleinden toegang heeft tot de persoonsgegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor wettelijk toegestane doeleinden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.93,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De in artikel 11.2 bedoelde aanbieders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "treffen in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers passende technische en organisatorische maatregelen ten behoeve van de veiligheid en beveiliging van de door hen aangeboden netwerken en diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "rekening houdend met de stand van de techniek en de kosten van de tenuitvoerlegging"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 271,
    "xref_intra_instrument": 3,
@@ -19006,7 +19139,73 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder, bedoeld in het eerste lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "een inbreuk in verband met persoonsgegevens",
+    "action": "stelt degene wiens persoonsgegevens het betreft onverwijld in kennis van een inbreuk in verband met persoonsgegevens",
+    "recipient_body": [
+     "degene wiens persoonsgegevens het betreft"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "indien de inbreuk waarschijnlijk ongunstige gevolgen zal hebben voor diens persoonlijke levenssfeer"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij of krachtens algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "nadere regels worden gegeven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met betrekking tot de in dit artikel bedoelde eisen met betrekking tot het verstrekken van informatie en de kennisgeving"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De kennisgeving aan de Autoriteit persoonsgegevens en de persoon wiens persoonsgegevens het betreft",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "omvat in ieder geval de aard van de inbreuk in verband met persoonsgegevens, de instanties waar meer informatie over de inbreuk kan worden verkregen en de aanbevolen maatregelen om de negatieve gevolgen van de inbreuk te beperken",
+    "recipient_body": [
+     "Autoriteit persoonsgegevens",
+     "de persoon wiens persoonsgegevens het betreft"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 351,
    "xref_intra_instrument": 1,
@@ -19073,7 +19272,46 @@
   "dossier_number": "33186",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van oproepende gebruikers en opgeroepen abonnees regels worden gesteld met betrekking tot het specificeren van nota's voor geleverde elektronische communicatiediensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van oproepende gebruikers en opgeroepen abonnees"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "op diens verzoek",
+    "action": "geleverde elektronische communicatiediensten door middel van geheel of gedeeltelijk niet-gespecificeerde nota's in rekening te brengen",
+    "recipient_body": [
+     "de abonnee"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 170,
    "xref_intra_instrument": 0,
@@ -19186,7 +19424,98 @@
     "paragraph_number": "6"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "de verwerking van verkeersgegevens ten behoeve van de doeleinden, bedoeld in het derde lid",
+    "action": "stelt de abonnee of gebruiker in kennis van de soorten verkeersgegevens die worden verwerkt voor de in het tweede en derde lid bedoelde doeleinden alsmede omtrent de duur van de verwerking",
+    "recipient_body": [
+     "de abonnee of gebruiker"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voorafgaand aan het verkrijgen van de in dat lid bedoelde toestemming van de abonnee of gebruiker"
+    },
+    "thresholds": [],
+    "conditions": [
+     "Voor zover het de verwerking van verkeersgegevens ten behoeve van de doeleinden, bedoeld in het derde lid betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "PERMISSION",
+    "addressee": "De aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verkeersgegevens verwerken die noodzakelijk zijn voor facturering, waaronder het opstellen van een factuur voor een abonnee of voor degene die zich tegenover de aanbieder rechtens verbonden heeft die factuur te voldoen, dan wel ten behoeve van een betaling van verleende toegang",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "tot het einde van de wettelijke termijn waarbinnen de factuur in rechte kan worden betwist of de betaling in rechte kan worden afgedwongen"
+    },
+    "thresholds": [],
+    "conditions": [
+     "die noodzakelijk zijn voor facturering"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "De aanbieder van elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor zover en voor zolang dat noodzakelijk is voor:\n\na.\nmarktonderzoek of verkoopactiviteiten met betrekking tot elektronische communicatiediensten, of\n\nb.\nde levering van diensten met toegevoegde waarde",
+    "action": "de in het eerste lid bedoelde verkeersgegevens verwerken",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "mits de abonnee of de gebruiker waarop de verkeersgegevens betrekking hebben daarvoor voorafgaand aan de verwerking zijn toestemming heeft gegeven"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PERMISSION",
+    "addressee": "De aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "mag de verkeersgegevens verstrekken",
+    "recipient_body": [
+     "personen en instanties die zijn belast met de berechting van enig geschil dan wel de beslissing van een geschil als bedoeld in de artikelen 12.1, 12.2 voor zover van toepassing, of 12.9"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover van toepassing"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 393,
    "xref_intra_instrument": 3,
@@ -19286,7 +19615,47 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "de verwerking van locatiegegevens, niet zijnde verkeersgegevens, betreffende abonnees of gebruikers van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "is slechts geoorloofd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "deze gegevens zijn geanonimiseerd",
+     "de desbetreffende abonnee of gebruiker voor de verwerking van deze gegevens toestemming heeft gegeven ten behoeve van de levering van een dienst met toegevoegde waarde"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een dienst met toegevoegde waarde",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voor elke overbrenging van communicatie of elke verbinding met het openbare elektronische communicatienetwerk dat gebruikt wordt voor de levering van de desbetreffende dienst",
+    "action": "biedt aan de abonnee of gebruiker wiens gegevens worden verwerkt de mogelijkheid om kosteloos en op eenvoudige wijze de verwerking van diens gegevens tijdelijk te beletten",
+    "recipient_body": [
+     "de abonnee of gebruiker wiens gegevens worden verwerkt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 337,
    "xref_intra_instrument": 1,
@@ -19350,7 +19719,67 @@
   "dossier_number": "34413",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "PROHIBITION",
+    "addressee": "De in het eerste lid bedoelde persoonsgegevens",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "worden niet voor andere doeleinden verzameld of verwerkt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de betrokkene daarvoor zijn uitdrukkelijke toestemming heeft gegeven"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Verleners van vertrouwensdiensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "verwerken alleen persoonsgegevens die van de betrokkene zelf of met diens uitdrukkelijke toestemming zijn verkregen, en voor zover de verwerking van deze persoonsgegevens voor het verlenen van de vertrouwensdienst is vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen persoonsgegevens die van de betrokkene zelf of met diens uitdrukkelijke toestemming zijn verkregen",
+     "voor zover de verwerking van deze persoonsgegevens voor het verlenen van de vertrouwensdienst is vereist"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "de betrokkene",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "indien de verwerking van de in het eerste lid bedoelde persoonsgegevens noodzakelijk is ten behoeve van de opsporing van fraude, of indien de verwerking overigens bij of krachtens de wet wordt gevorderd",
+    "action": "is de uitdrukkelijke toestemming van de betrokkene niet vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de verwerking van de in het eerste lid bedoelde persoonsgegevens noodzakelijk is ten behoeve van de opsporing van fraude",
+     "of indien de verwerking overigens bij of krachtens de wet wordt gevorderd"
+    ],
+    "deference": "In afwijking van het tweede lid",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 108,
    "xref_intra_instrument": 0,
@@ -19474,7 +19903,102 @@
   "dossier_number": "35421",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "indien de abonnee daarvoor toestemming heeft verleend",
+    "action": "worden uitsluitend persoonsgegevens van een abonnee opgenomen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de abonnee daarvoor toestemming heeft verleend",
+     "blijft deze beperkt tot de door hem daarbij aangegeven persoonsgegevens"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "DEFINITION",
+    "addressee": "abonnees die natuurlijke personen zijn",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Dit artikel is van toepassing op"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Eenieder die een algemeen beschikbare abonneelijst uitgeeft of een algemeen beschikbare abonnee-informatiedienst verzorgt",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand",
+    "action": "stelt de abonnee voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand kosteloos op de hoogte van",
+    "recipient_body": [
+     "de abonnee"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PERMISSION",
+    "addressee": "De abonnee",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": null,
+    "action": "kosteloos hem betreffende persoonsgegevens in een algemeen beschikbare abonneelijst of in het voor een abonnee-informatiedienst gebruikte abonneebestand te verifiëren, te laten verbeteren of te laten verwijderen",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de abonnee",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "de verwerking van persoonsgegevens in een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand betrekking heeft op andere doeleinden dan het bieden van de mogelijkheid tot het zoeken van nummers aan de hand van gegevens betreffende de naam in combinatie met gegevens betreffende het adres en huisnummer, postcode en woonplaats van de abonnee",
+    "action": "afzonderlijke toestemming van de abonnee vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Voor zover de verwerking van persoonsgegevens in een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand betrekking heeft op andere doeleinden dan het bieden van de mogelijkheid tot het zoeken van nummers aan de hand van gegevens betreffende de naam in combinatie met gegevens betreffende het adres en huisnummer, postcode en woonplaats van de abonnee"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 271,
    "xref_intra_instrument": 0,
@@ -19645,7 +20169,148 @@
     "paragraph_number": "8"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PROHIBITION",
+    "addressee": "de verzender",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Het gebruik van automatische oproep- en communicatiesystemen zonder menselijke tussenkomst, faxen en elektronische berichten voor het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden",
+    "action": "is verboden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij de verzender kan aantonen dat de desbetreffende eindgebruiker daarvoor voorafgaand toestemming heeft verleend"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "PERMISSION",
+    "addressee": "de verzender",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden aan een rechtspersoon of een natuurlijke persoon die handelt in de uitoefening van zijn beroep of bedrijf",
+    "action": "geen voorafgaande toestemming vereist",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien: de verzender gebruik maakt van elektronische contactgegevens die door de desbetreffende eindgebruiker voor het ontvangen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden zijn bestemd en bekendgemaakt en deze worden gebruikt in overeenstemming met de door de eindgebruiker aan de contactgegevens verbonden doeleinden",
+     "de desbetreffende eindgebruiker is gevestigd buiten de Europese Economische Ruimte en voldaan wordt aan de in het desbetreffende land geldende voorschriften met betrekking tot het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden"
+    ],
+    "deference": "In afwijking van het eerste en tweede lid",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "COMPETENCE",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "nadere regels worden gesteld over het gebruik van contactgegevens en het bieden van de gelegenheid verzet aan te tekenen tegen dat gebruik",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bedoeld in het tweede, vierde, vijfde en zesde lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.96,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "PERMISSION",
+    "addressee": "een uitgever van dagbladen, weekbladen, tijdschriften en andere ten minste driemaal per jaar periodiek verschijnende uitgaven of een houder van een vergunning als bedoeld in de artikelen 3, 9 of 27b van de Wet op de Kansspelen",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "gebruik maken van contactgegevens als bedoeld in het vierde lid",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [
+     "ten minste driemaal per jaar"
+    ],
+    "conditions": [
+     "onder de in dat lid bedoelde voorwaarden"
+    ],
+    "deference": "In afwijking van het tweede lid",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "PERMISSION",
+    "addressee": "een ideële of charitatieve organisatie",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "die kan aantonen dat zij gebruik maakt van contactgegevens die zij heeft verkregen in het kader van een schenking aan die ideële of charitatieve organisatie of, voor zover zij gebruik maakt van andere dan de in het eerste lid bedoelde middelen, van contactgegevens die zij heeft verkregen in het kader van vrijwilligerswerk bij die organisatie of het bijwonen van manifestaties van die organisatie",
+    "action": "deze contactgegevens gebruiken voor het overbrengen van ongevraagde communicatie voor eigen ideële of charitatieve doeleinden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "mits zij de betreffende eindgebruiker duidelijk en expliciet de gelegenheid heeft geboden om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van die contactgegevens",
+     "op het moment dat zij worden verzameld",
+     "ingeval de abonnee of gebruiker zich bij de verzameling niet tegen het gebruik heeft verzet, bij iedere verzonden boodschap"
+    ],
+    "deference": "In afwijking van het eerste en tweede lid",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kan een termijn worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "gedurende welke de contactgegevens, bedoeld in het vijfde en zesde lid, ten hoogste kunnen worden gebruikt voor het overbrengen van ongevraagde communicatie voor ideële of charitatieve doeleinden of door een uitgever of vergunninghouder als bedoeld in het zesde lid aan natuurlijke personen met gebruik van andere dan de in het eerste lid bedoelde middelen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "PERMISSION",
+    "addressee": "een verzender die kan aantonen dat hij gebruik maakt van elektronische contactgegevens die hij heeft verkregen van zijn klanten in het kader van de verkoop van een product of dienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "mits de verzender de betreffende eindgebruiker duidelijk en expliciet de gelegenheid heeft geboden om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van die elektronische contactgegevens",
+    "action": "die elektronische contactgegevens gebruiken voor het overbrengen van ongevraagde communicatie voor commerciële doeleinden ten behoeve van eigen gelijksoortige producten of diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "In afwijking van het eerste lid",
+     "kan aantonen dat hij gebruik maakt van elektronische contactgegevens die hij heeft verkregen van zijn klanten in het kader van de verkoop van een product of dienst",
+     "voor commerciële doeleinden ten behoeve van eigen gelijksoortige producten of diensten"
+    ],
+    "deference": "In afwijking van het eerste lid",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 887,
    "xref_intra_instrument": 1,
@@ -19733,7 +20398,83 @@
   "dossier_number": "34939",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "DEFINITION",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": "Een handeling als bedoeld in het eerste lid, die tot doel heeft gegevens over het gebruik van verschillende diensten van de informatiemaatschappij door de gebruiker of de abonnee te verzamelen, combineren of analyseren zodat de betrokken gebruiker of abonnee anders behandeld kan worden",
+    "action": "wordt vermoed een verwerking van persoonsgegevens te zijn",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PROHIBITION",
+    "addressee": "de betrokken gebruiker",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker",
+    "action": "is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "alleen toegestaan op voorwaarde dat de betrokken gebruiker:"
+    ],
+    "deference": "Onverminderd de Algemene verordening gegevensbescherming",
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "De in het eerste lid, onder a en b, genoemde vereisten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie",
+    "action": "zijn ook van toepassing",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op een andere wijze dan door middel van een elektronisch communicatienetwerk"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij of krachtens algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "nadere regels worden gegeven",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met Onze Minister van Veiligheid en Justitie",
+     "met betrekking tot de in het eerste lid, onder a en b, genoemde vereisten en de in het derde lid genoemde uitzonderingen"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 334,
    "xref_intra_instrument": 0,
@@ -19778,7 +20519,25 @@
   "dossier_number": "35421",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 2,
    "xref_intra_instrument": 0,
@@ -19836,7 +20595,34 @@
   "dossier_number": "33186",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "de Autoriteit Consument en Markt",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "Indien de Autoriteit Consument en Markt met bevoegde nationale instanties in andere lidstaten maatregelen overeen komt aangaande grensoverschrijdende samenwerking bij de handhaving van hoofdstuk 11 waarbij grensoverschrijdende gegevensstromen betrokken zijn",
+    "action": "verstrekt de Autoriteit Consument en Markt de Europese Commissie ruime tijd voordat die maatregelen worden vastgelegd een samenvatting van de redenen voor optreden, de geplande afspraken en de voorgestelde aanpak",
+    "recipient_body": [
+     "de Europese Commissie"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "ruime tijd voordat die maatregelen worden vastgelegd"
+    },
+    "thresholds": [],
+    "conditions": [
+     "waarbij grensoverschrijdende gegevensstromen betrokken zijn"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 87,
    "xref_intra_instrument": 0,
@@ -19915,7 +20701,44 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij ministeriële regeling",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden nadere regels gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst die door middel van dat netwerk of als onderdeel van die dienst nummeridentificatie aanbiedt",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "biedt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien nummeridentificatie als bedoeld in artikel 1.1, wordt aangeboden"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 258,
    "xref_intra_instrument": 1,
@@ -20072,7 +20895,127 @@
     "paragraph_number": "2"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "4",
+    "deontic": "PROHIBITION",
+    "addressee": "de beheerder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Verstrekking van nummers en gegevens door de beheerder",
+    "action": "vindt slechts plaats met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "degene die op grond van artikel 141 of 142 van het Wetboek van Strafvordering is belast met de opsporing van strafbare feiten",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "het oog op de bestrijding van het misbruik van een alarmnummer voor publieke diensten",
+    "action": "Verstrekking van nummers en gegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "vindt slechts plaats aan degene die op grond van artikel 141 of 142 van het Wetboek van Strafvordering is belast met de opsporing van strafbare feiten"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "11",
+    "deontic": "OBLIGATION",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "worden regels gesteld met betrekking tot de nauwkeurigheid en betrouwbaarheid van de te verstrekken gegevens",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bedoeld in het eerste en tweede lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.97,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "10",
+    "deontic": "PERMISSION",
+    "addressee": "De beheerders, bedoeld in het eerste lid",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "de bij het alarmnummer voor publieke diensten ingekomen oproepen vast te leggen en voor ten hoogste twee maanden te bewaren",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voor ten hoogste twee maanden"
+    },
+    "thresholds": [
+     "ten hoogste twee maanden"
+    ],
+    "conditions": [
+     "ten behoeve van de controle op de effectiviteit van de hulpverlening in noodsituaties"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "9",
+    "deontic": "OBLIGATION",
+    "addressee": "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "De bekendmaking van het besluit tot aanwijzing van de beheerders, bedoeld in het eerste lid, en de publieke diensten, bedoeld in het vierde lid",
+    "action": "geschiedt door plaatsing in de Staatscourant",
+    "recipient_body": [
+     "de Staatscourant"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "de beheerders",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "vastgelegd",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 711,
    "xref_intra_instrument": 2,
@@ -20117,7 +21060,25 @@
   "dossier_number": "34271",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "PROHIBITION",
+    "addressee": "Een faciliteit om het nummer van het netwerkaansluitpunt van waaruit een verbinding tot stand wordt gebracht, dan wel het nummer waarmee een individuele gebruiker van dat netwerkaansluitpunt kan worden geïdentificeerd aan het netwerkaansluitpunt waarmee die verbinding tot stand komt te verstrekken",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "wordt niet gebruikt om de opgeroepen gebruiker onjuiste informatie te verstrekken met betrekking tot dat netwerkaansluitpunt of die individuele gebruiker",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 61,
    "xref_intra_instrument": 0,
@@ -20213,7 +21174,152 @@
   "dossier_number": "28851",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "OBLIGATION",
+    "addressee": "het verzoek",
+    "addressee_type": "OTHER",
+    "trigger_event": null,
+    "action": "voldoet aan de volgende vereisten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "3",
+    "deontic": "OBLIGATION",
+    "addressee": "De verzoeker",
+    "addressee_type": "OTHER",
+    "trigger_event": "hinderlijke of kwaadwillige oproepen, die plaats hebben gevonden na indiening van het verzoek, bedoeld in het eerste lid",
+    "action": "informeert de aanbieder onverwijld omtrent hinderlijke of kwaadwillige oproepen",
+    "recipient_body": [
+     "de aanbieder"
+    ],
+    "deadline": {
+     "value": 0,
+     "unit": "immediate",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [
+     "na indiening van het verzoek, bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "4",
+    "deontic": "OBLIGATION",
+    "addressee": "De aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "naar aanleiding van het verzoek",
+    "action": "stelt naar aanleiding van het verzoek een onderzoek in, teneinde vast te stellen of tot verstrekking van de gegevens, bedoeld in het eerste lid, dient te worden overgegaan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "Een abonnee die last heeft van hinderlijke of kwaadwillige oproepen",
+    "addressee_type": "DATA_SUBJECT",
+    "trigger_event": "waarbij de verstrekking van het nummer van het oproepende netwerkaansluitpunt is geblokkeerd",
+    "action": "verzoeken om het nummer van de oproepende abonnee en de beschikbare daarop betrekking hebbende naam-, adres-, postcode- en woonplaatsgegevens, te verstrekken",
+    "recipient_body": [
+     "de aanbieder van een openbaar elektronisch communicatienetwerk",
+     "van een openbare elektronische communicatiedienst"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die last heeft van hinderlijke of kwaadwillige oproepen",
+     "waarbij de verstrekking van het nummer van het oproepende netwerkaansluitpunt is geblokkeerd"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "OBLIGATION",
+    "addressee": "de aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Van de gegevensverstrekking aan een verzoeker",
+    "action": "mededeling gedaan aan de abonnee",
+    "recipient_body": [
+     "de abonnee"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wiens gegevens het betreft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "7",
+    "deontic": "COMPETENCE",
+    "addressee": "Bij algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "kunnen nadere regels worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "OBLIGATION",
+    "addressee": "de desbetreffende aanbieder",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": "Indien bij het onderzoek blijkt dat het oproepende nummer toebehoort aan een abonnee van een andere aanbieder",
+    "action": "verleent de desbetreffende aanbieder op een daartoe strekkend verzoek van de met het onderzoek belaste aanbieder medewerking aan het onderzoek en verstrekt, indien het onderzoek daartoe aanleiding geeft, de beschikbare op het oproepende nummer betrekking hebbende naam-, adres-, postcode- en woonplaatsgegevens aan de aanbieder die met het onderzoek belast is",
+    "recipient_body": [
+     "de aanbieder die met het onderzoek belast is"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien het onderzoek daartoe aanleiding geeft"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 312,
    "xref_intra_instrument": 0,
@@ -20299,7 +21405,27 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "een aanbieder van een openbaar elektronisch communicatienetwerk en een aanbieder van een openbare elektronische communicatiedienst",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "ontheffing worden verleend van de verplichtingen die voortvloeien uit de artikelen 11.4, eerste lid, onderdeel b, en 11.9 tot en met 11.11",
+    "recipient_body": [
+     "Autoriteit Consument en Markt"
+    ],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 107,
    "xref_intra_instrument": 2,
@@ -20449,7 +21575,27 @@
     "paragraph_number": "3"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "PERMISSION",
+    "addressee": "Aanbieders van openbare elektronische communicatienetwerken en openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "kunnen de artikelen 11.5, 11.5a en 11.9, eerste lid, buiten toepassing laten",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien dit noodzakelijk is in het belang van: a. de nationale veiligheid; b. de voorkoming, opsporing en vervolging van strafbare feiten; c. de bescherming van een persoon die in levensgevaar verkeert"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 189,
    "xref_intra_instrument": 9,
@@ -20535,7 +21681,74 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Aanbieders van openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "nemen passende en evenredige technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun diensten te beheersen, waaronder in voorkomend geval versleuteling, teneinde de gevolgen van beveiligingsincidenten op gebruikers en op andere netwerken en diensten zo laag mogelijk te houden",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval",
+     "gezien de stand van de techniek"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "de verplichting opleggen om binnen een bepaalde termijn maatregelen te treffen",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een bepaalde termijn"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "een aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "een beveiligingscontrole te laten uitvoeren door een gekwalificeerde onafhankelijke deskundige en om de resultaten van dat onderzoek binnen een bij het besluit gestelde redelijke termijn aan Onze Minister te verstrekken",
+    "recipient_body": [
+     "Onze Minister"
+    ],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een bepaalde termijn"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 346,
    "xref_intra_instrument": 0,
@@ -20580,7 +21793,25 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 2,
    "xref_intra_instrument": 0,
@@ -20625,7 +21856,25 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "number": null,
+    "deontic": "NONE",
+    "addressee": null,
+    "addressee_type": null,
+    "trigger_event": null,
+    "action": null,
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 1.0,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 2,
    "xref_intra_instrument": 0,
@@ -20717,7 +21966,85 @@
     "paragraph_number": "1"
    }
   ],
-  "norms": [],
+  "norms": [
+   {
+    "number": "2",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "een aanbieder als bedoeld in het eerste lid de verplichting opleggen om binnen een bepaalde termijn een veiligheidscontrole te laten uitvoeren door een onafhankelijke deskundige",
+    "recipient_body": [],
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een bepaalde termijn"
+    },
+    "thresholds": [],
+    "conditions": [
+     "een aanbieder als bedoeld in het eerste lid"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "6",
+    "deontic": "COMPETENCE",
+    "addressee": "algemene maatregel van bestuur",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": null,
+    "action": "nadere regels worden gesteld",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "1",
+    "deontic": "OBLIGATION",
+    "addressee": "Een aanbieder van een bij of krachtens algemene maatregel van bestuur aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, alsmede een aanbieder van een openbaar elektronisch communicatienetwerk dat bestaat uit radioapparaten die geschikt zijn voor het verspreiden van programma’s en dat door een aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, wordt ondersteund",
+    "addressee_type": "REGULATED_ENTITY",
+    "trigger_event": null,
+    "action": "draagt, ieder voor zich, zorg voor de opstelling en de uitvoering van een continuïteitsplan dat een beschrijving bevat van de technische en organisatorische maatregelen die de aanbieder neemt om de risico’s voor de veiligheid in en op het opstelpunt te beheersen voor zover van belang voor de continuïteit van de verspreiding van programma's door middel van openbare elektronische communicatienetwerken die worden ondersteund door dat opstelpunt",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover van belang voor de continuïteit van de verspreiding van programma's door middel van openbare elektronische communicatienetwerken die worden ondersteund door dat opstelpunt"
+    ],
+    "deference": null,
+    "extraction_confidence": 0.99,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   },
+   {
+    "number": "5",
+    "deontic": "COMPETENCE",
+    "addressee": "Onze Minister",
+    "addressee_type": "COMPETENT_AUTHORITY",
+    "trigger_event": "de in het vierde lid bedoelde aanbieders geen overeenstemming kunnen bereiken over het gezamenlijke continuïteitsplan",
+    "action": "voorschriften geven inzake het tot stand brengen van het plan",
+    "recipient_body": [],
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "deference": null,
+    "extraction_confidence": 0.98,
+    "extraction_model": "gpt-5.6-luna",
+    "extracted_on": "2026-09-23",
+    "human_verified": false
+   }
+  ],
   "features": {
    "n_words": 305,
    "xref_intra_instrument": 1,
