@@ -626,7 +626,7 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
     file's own state -- the critical section is just local dict/list bookkeeping plus a
     JSON dump, not the network call, so serializing it costs nothing next to the API
     latency this is actually trying to parallelize."""
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
+    queue_path = ROOT / "data" / "stage6_norm_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
         print("review queue is empty -- nothing to retry")
@@ -747,7 +747,7 @@ def _pick_deontic(d1: str, d2: str) -> str:
 
 
 def resolve_queue_conservatively() -> None:
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
+    queue_path = ROOT / "data" / "stage6_norm_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
         print("review queue is empty -- nothing to resolve")
@@ -894,7 +894,7 @@ def resolve_queue_conservatively() -> None:
             path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"  wrote back -> {path.relative_to(ROOT)}")
 
-    dropped_path = ROOT / "data" / "stage6_unresolved_extractions.json"
+    dropped_path = ROOT / "data" / "stage6_norm_unresolved_extractions.json"
     existing_dropped = json.loads(dropped_path.read_text(encoding="utf-8")) if dropped_path.exists() else []
     existing_dropped.extend(dropped)
     dropped_path.write_text(json.dumps(existing_dropped, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -903,14 +903,14 @@ def resolve_queue_conservatively() -> None:
 
     print(f"{n_resolved} norms[] entries finalized with the non-suppressing default "
           f"(flagged extraction_uncertain=true), {len(dropped)} dropped -- no verbatim-"
-          f"grounded data to fall back on -- logged to data/stage6_unresolved_extractions.json")
+          f"grounded data to fall back on -- logged to data/stage6_norm_unresolved_extractions.json")
 
 
 def _save_queue_item(item: dict) -> None:
     """Persisted immediately, one item at a time -- see main()'s docstring note on
     crash-safety. Replaces any existing queue record for the same unit rather than
     piling up a duplicate next to it."""
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
+    queue_path = ROOT / "data" / "stage6_norm_review_queue.json"
     existing = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     key = (item["instrument_id"], item["article"], item["paragraph_number"])
     existing = [r for r in existing if (r["instrument_id"], r["article"], r["paragraph_number"]) != key]
@@ -933,10 +933,10 @@ def main():
     ap.add_argument("--limit", type=int, default=None,
                      help="stop after this many units total, across all sources")
     ap.add_argument("--retry-queue", action="store_true",
-                     help="re-attempt data/stage6_review_queue.json's items with --model "
+                     help="re-attempt data/stage6_norm_review_queue.json's items with --model "
                           "instead of running the anchor set from scratch")
     ap.add_argument("--resolve-queue", action="store_true",
-                     help="finalize whatever remains in data/stage6_review_queue.json using "
+                     help="finalize whatever remains in data/stage6_norm_review_queue.json using "
                           "the non-suppressing conservative default (see resolve_queue_conservatively "
                           "docstring), instead of retrying with a model. No API calls made.")
     ap.add_argument("--reasoning-effort", default="none",
@@ -1047,7 +1047,7 @@ def main():
         return
 
     print(f"\n{n_processed} unit(s) processed, {n_finalized} norms[] entries finalized, "
-          f"{n_queued} sent to the review queue -> data/stage6_review_queue.json", flush=True)
+          f"{n_queued} sent to the review queue -> data/stage6_norm_review_queue.json", flush=True)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Stage 6 — Extract the definition layer.
 
+Same two-pass, verbatim-grounded extraction discipline as extract_norms.py, applied
+to explicit legal definitions ("wordt verstaan onder", "betekent", ...) instead of
+norms. See ExtractedDefinition/ExtractedDefinitionsResponse below for the schema and
+the two _FRAMING_* prompts for what each pass is told to do.
+
+SOURCE FILES ARE NEVER MODIFIED (2026-09-25 change). Every source listed in SOURCES
+is read once from its ROOT-relative path and, from that point on, all reads and
+writes for this run happen against a mirrored WORKING COPY under --output-dir
+(default: definitions_run/, alongside ROOT) instead. The original under data/ or
+Datasets/ is opened read-only, exactly once per source, the first time that source
+is touched under a given output directory -- after that, the working copy already
+carries everything the original would, plus whatever this pipeline has since
+resolved, so the original is never consulted again. This means:
+  - re-running with the same --output-dir picks up exactly where the last run left
+    off, same as before (paragraphs already resolved are skipped, same _iter_units
+    logic as always) -- nothing about resumability changed;
+  - re-running with a *different* --output-dir starts a clean second copy from the
+    untouched original, which is what makes before/after pipeline comparisons safe
+    without a separate manual snapshot step;
+  - the review queue and unresolved-extractions files live under --output-dir too
+    (not under data/ anymore), since they're this run's state, not the corpus's.
+"""
 import argparse
 import json
 import re
@@ -26,6 +51,7 @@ ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")  # picks up OPENAI_API_KEY from a .env file in the project root
 
 DEFAULT_MODEL = "gpt-5.6-luna"  # single config value -- see module docstring
+DEFAULT_OUTPUT_DIR = "definitions_run"  # relative to ROOT unless --output-dir is absolute
 
 
 Deontic = Literal[
@@ -185,6 +211,10 @@ def _build_input(framing: str, article_heading: str, unit_text: str) -> str:
 # graph uid mismatch documented in detect_c1_contradiction.py's module docstring: the
 # standard file already carries the same `uid` values the graph indexes, so no
 # reconstruction is needed once this is the source of truth going forward.
+#
+# Every `path` below is still resolved relative to ROOT for the ORIGINAL, read-only
+# copy of each source -- see _load_working_copy for how the actual read/write target
+# (under --output-dir) is derived from the same relative path.
 # ---------------------------------------------------------------------------
 
 
@@ -260,6 +290,35 @@ SOURCES = [
 ]
 
 
+def _load_working_copy(output_root: Path, spec: SourceSpec, create: bool = True) -> tuple[dict, Path]:
+    """Loads this source's WORKING COPY -- the file that actually accumulates
+    definitions[]/_empty_def_paragraph_indices across runs -- so ROOT/spec.path (the
+    original corpus file) is only ever opened for READING, and only the very first
+    time this source is touched under this particular output_root.
+
+    out_path = output_root / spec.path, mirroring the original's relative layout
+    (including the nested "Datasets/Dutch Laws/..." case) under output_root instead
+    of under ROOT.
+
+    If out_path already exists, this run is a continuation of earlier work under the
+    same --output-dir: read it, and the original is not consulted at all. If it
+    doesn't exist yet, seed it from the untouched original -- create=True (the normal
+    case) writes that seed to disk immediately, so a crash right after seeding still
+    leaves a valid, resumable copy rather than losing the seed; create=False (used
+    only by --dry-run) returns the seeded content in memory without writing anything,
+    so a dry run never creates files or directories as a side effect.
+    """
+    out_path = output_root / spec.path
+    if out_path.exists():
+        return json.loads(out_path.read_text(encoding="utf-8")), out_path
+    original_path = ROOT / spec.path
+    root = json.loads(original_path.read_text(encoding="utf-8"))
+    if create:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+    return root, out_path
+
+
 @dataclass
 class Unit:
     provision: dict          # live reference into the loaded JSON -- mutated in place
@@ -270,28 +329,32 @@ class Unit:
 
 
 def _iter_units(provisions: list[dict]) -> list[Unit]:
-    """Skips a paragraph that already has a finalized norms[] entry, so re-running this
-    script (e.g. after a --limit smoke test, or after fixing something and resuming) does
-    not duplicate norms already written -- the script has no other record of what it has
-    already processed, so this check is the only thing that makes re-running safe.
+    """Skips a paragraph that already has a finalized definitions[] entry, so
+    re-running this script against the same working copy (e.g. after a --limit smoke
+    test, or after fixing something and resuming) does not duplicate definitions
+    already written -- the working copy has no other record of what it has already
+    processed, so this check is the only thing that makes re-running safe.
 
-    Tracks "already done" by paragraph_index, not the displayed number (2026-09-24 fix):
-    checked directly against real data -- three articles in this corpus have two
+    Tracks "already done" by paragraph_index, not the displayed number (2026-09-24
+    fix): checked directly against real data -- three articles in this corpus have two
     paragraphs sharing the same displayed number (a genuine numbering artifact in the
     source HTML/XML, not a parser bug; see migrate_paragraph_index.py's module
     docstring). Tracking by number alone would make _iter_units() believe the SECOND
-    paragraph was already done as soon as the first one got a norm, silently skipping it
-    forever. Falls back to number-based tracking only for a norm written before this
-    field existed (paragraph_index absent -- pre-migration data)."""
+    paragraph was already done as soon as the first one got a definition, silently
+    skipping it forever. Falls back to number-based tracking only for a definition
+    written before this field existed (paragraph_index absent -- pre-migration data)."""
     units = []
     for p in provisions:
         heading = p.get("heading") or f"Article {p.get('article') or p.get('number')}"
         p.setdefault("definitions", [])
-        # _empty_paragraph_indices (2026-09-24, item 3): a paragraph can now resolve to
-        # ZERO norms (both passes agreeing there's no independent rule here) -- that's a
-        # genuinely resolved, useful result, not "not yet processed", so it needs its
-        # own persisted marker; norms[] alone can no longer tell "done with nothing to
-        # show" apart from "never attempted", now that an empty result is possible.
+        # _empty_def_paragraph_indices (2026-09-24, item 3): a paragraph can now
+        # resolve to ZERO definitions (both passes agreeing there's no independent
+        # definition here) -- that's a genuinely resolved, useful result, not "not yet
+        # processed", so it needs its own persisted marker; definitions[] alone can no
+        # longer tell "done with nothing to show" apart from "never attempted", now
+        # that an empty result is possible. Field name is namespaced (_empty_DEF_...)
+        # so it never collides with the norms pipeline's own _empty_paragraph_indices
+        # marker when both pipelines' working copies share a provision file.
         done_indices = ({n["paragraph_index"] for n in p["definitions"] if n.get("paragraph_index") is not None}
                         | set(p.get("_empty_def_paragraph_indices") or []))
         done_numbers_legacy = {n["number"] for n in p["definitions"] if n.get("paragraph_index") is None}
@@ -463,12 +526,13 @@ def _definitions_agree(d1: ExtractedDefinition, d2: ExtractedDefinition) -> bool
 
 def extract_unit(client, model: str, unit: Unit,
                   reasoning_effort: str = "none") -> tuple[Optional[list[dict]], Optional[dict]]:
-    """Returns (finalized_norms_or_None, review_queue_item_or_None) -- exactly one of
-    the two is non-None. `finalized_norms` can be an EMPTY list (2026-09-24, item 3):
-    both passes confirming "no independent norm here" is itself a resolved, useful
-    result, not a failure -- distinct from None, which means still unresolved.
-    Returning the queue item instead of mutating a shared list lets the caller persist
-    it immediately, so a crash on unit N+1 doesn't lose unit N's result."""
+    """Returns (finalized_definitions_or_None, review_queue_item_or_None) -- exactly
+    one of the two is non-None. `finalized_definitions` can be an EMPTY list
+    (2026-09-24, item 3): both passes confirming "no independent definition here" is
+    itself a resolved, useful result, not a failure -- distinct from None, which means
+    still unresolved. Returning the queue item instead of mutating a shared list lets
+    the caller persist it immediately, so a crash on unit N+1 doesn't lose unit N's
+    result."""
     pass1 = _run_pass(client, model, _FRAMING_DIRECT, unit.article_heading, unit.text, reasoning_effort)
     pass2 = _run_pass(client, model, _FRAMING_STEPBACK, unit.article_heading, unit.text, reasoning_effort)
     base = {
@@ -485,7 +549,7 @@ def extract_unit(client, model: str, unit: Unit,
                       "pass2": [n.model_dump() for n in pass2] if pass2 is not None else None}
 
     if len(pass1) != len(pass2):
-        # The two passes disagree on HOW MANY independent norms this paragraph
+        # The two passes disagree on HOW MANY independent definitions this paragraph
         # contains -- not something to guess at (which count is "right"?), so this is
         # queued distinctly from a same-count field disagreement, and NOT auto-resolved
         # by resolve_queue_conservatively() (see that function's own note).
@@ -525,13 +589,17 @@ def _provision_key(p: dict) -> tuple:
     )
 
 
-def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency: int = 10) -> None:
+def retry_queue(client, model: str, output_root: Path, reasoning_effort: str = "none",
+                 concurrency: int = 10) -> None:
     """Parallelized 2026-09-23 for full-corpus scale (768-item queues are impractical
     one at a time). A single lock guards both the per-source file writes and the queue
     file's own state -- the critical section is just local dict/list bookkeeping plus a
     JSON dump, not the network call, so serializing it costs nothing next to the API
-    latency this is actually trying to parallelize."""
-    queue_path = ROOT / "data" / "stage6_def_review_queue.json"
+    latency this is actually trying to parallelize.
+
+    Operates entirely on the working copy under output_root, same as main() -- the
+    original corpus files are never touched here either."""
+    queue_path = output_root / "stage6_def_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
         print("review queue is empty -- nothing to retry")
@@ -539,8 +607,7 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
 
     loaded = []  # (root, path, {provision_key: provision})
     for spec in SOURCES:
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
+        root, path = _load_working_copy(output_root, spec, create=True)
         by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
         loaded.append((root, path, by_key))
 
@@ -626,20 +693,8 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
 # confirmation before ANY finding is reportable (Part 6, report_eligible),
 # so the honest fix is to push these through now with a documented,
 # non-hiding default, not to gate the whole pipeline on a lawyer's calendar.
-#
-# The asymmetry that makes a *default* safe here: `deference` is the one
-# field that can make a real problem invisible (Part 5, C1's resolution
-# filter drops a pair entirely once one side defers) -- so an uncertain
-# deference call defaults to null, never guessed at, so nothing gets
-# silently suppressed. `deontic` decides whether a norm is even considered
-# for detection at all (only OBLIGATION/PROHIBITION/PERMISSION/COMPETENCE
-# are eligible) -- so an uncertain deontic call defaults toward whichever
-# reading keeps the norm eligible, for the same reason: excluding it by
-# mistake is the direction that hides something, including it by mistake
-# just means a human dismisses a harmless candidate later, same as any
-# other false positive the system already expects to produce.
 # ---------------------------------------------------------------------------
-def resolve_queue_conservatively() -> None:
+def resolve_queue_conservatively(output_root: Path) -> None:
     """Definitions have no analogue of `deontic`/`deference` -- there's no field here
     whose omission silently hides a real problem downstream, and no field that gates
     eligibility for later processing the way `deontic` did for norms. So there's no
@@ -647,8 +702,10 @@ def resolve_queue_conservatively() -> None:
     resolved by taking pass1 as the base entry (an arbitrary but consistent choice --
     neither pass is more authoritative than the other) and flagging every field the two
     passes disagreed on in `uncertainty_note`, so a human reviewing it later knows
-    exactly what was left unconfirmed rather than trusting the merged value blindly."""
-    queue_path = ROOT / "data" / "stage6_def_review_queue.json"
+    exactly what was left unconfirmed rather than trusting the merged value blindly.
+
+    Operates entirely on the working copy under output_root -- same as retry_queue."""
+    queue_path = output_root / "stage6_def_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
         print("review queue is empty -- nothing to resolve")
@@ -656,8 +713,7 @@ def resolve_queue_conservatively() -> None:
 
     loaded = []
     for spec in SOURCES:
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
+        root, path = _load_working_copy(output_root, spec, create=True)
         by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
         loaded.append((root, path, by_key))
 
@@ -784,9 +840,9 @@ def resolve_queue_conservatively() -> None:
     for root, path, _ in loaded:
         if path in dirty_paths:
             path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
-            print(f"  wrote back -> {path.relative_to(ROOT)}")
+            print(f"  wrote back -> {path}")
 
-    dropped_path = ROOT / "data" / "stage6_def_unresolved_extractions.json"
+    dropped_path = output_root / "stage6_def_unresolved_extractions.json"
     existing_dropped = json.loads(dropped_path.read_text(encoding="utf-8")) if dropped_path.exists() else []
     existing_dropped.extend(dropped)
     dropped_path.write_text(json.dumps(existing_dropped, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -795,14 +851,15 @@ def resolve_queue_conservatively() -> None:
 
     print(f"{n_resolved} definitions[] entries finalized with the conservative default "
           f"(flagged extraction_uncertain=true), {len(dropped)} dropped -- no verbatim-"
-          f"grounded data to fall back on -- logged to data/stage6_def_unresolved_extractions.json")
+          f"grounded data to fall back on -- logged to {dropped_path}")
 
 
-def _save_queue_item(item: dict) -> None:
+def _save_queue_item(item: dict, output_root: Path) -> None:
     """Persisted immediately, one item at a time -- see main()'s docstring note on
     crash-safety. Replaces any existing queue record for the same unit rather than
-    piling up a duplicate next to it."""
-    queue_path = ROOT / "data" / "stage6_def_review_queue.json"
+    piling up a duplicate next to it. Lives under output_root, same as everything
+    else this run produces."""
+    queue_path = output_root / "stage6_def_review_queue.json"
     existing = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     key = (item["instrument_id"], item["article"], item["paragraph_number"])
     existing = [r for r in existing if (r["instrument_id"], r["article"], r["paragraph_number"]) != key]
@@ -810,24 +867,36 @@ def _save_queue_item(item: dict) -> None:
     queue_path.write_text(json.dumps(existing, ensure_ascii=False, indent=1), encoding="utf-8")
 
 def main():
-    """Writes the source file back to disk after every single unit, not once per source
-    at the end -- a ~200-call run over a real network will occasionally hit a transient
-    connection error partway through a source (seen in practice), and without per-unit
-    persistence everything done in that source since its last write would be silently
-    lost when the process dies. The extra disk I/O this costs is negligible next to an
-    API call's latency."""
+    """Writes the working copy back to disk after every single unit, not once per
+    source at the end -- a ~200-call run over a real network will occasionally hit a
+    transient connection error partway through a source (seen in practice), and
+    without per-unit persistence everything done in that source since its last write
+    would be silently lost when the process dies. The extra disk I/O this costs is
+    negligible next to an API call's latency.
+
+    The ORIGINAL source files under data/ and Datasets/ are opened read-only and never
+    written to; every write in this script targets the working copy under
+    --output-dir instead. See _load_working_copy and the module docstring."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR,
+                     help="where this run's working copy of the data, plus its review "
+                          "queue and unresolved-extractions files, are kept. Relative "
+                          "paths are resolved against the project root. The original "
+                          "source files are only ever read, never written to. Reuse "
+                          "the same --output-dir across invocations to resume/continue "
+                          "a run; use a different one to start a clean comparison copy.")
     ap.add_argument("--dry-run", action="store_true",
-                     help="print scope and unit counts, make no API calls")
+                     help="print scope and unit counts, make no API calls, create no "
+                          "files (including the working copy)")
     ap.add_argument("--only", default=None, help="substring match against a source's label")
     ap.add_argument("--limit", type=int, default=None,
                      help="stop after this many units total, across all sources")
     ap.add_argument("--retry-queue", action="store_true",
-                     help="re-attempt data/stage6_def_review_queue.json's items with --model "
+                     help="re-attempt this run's review queue items with --model "
                           "instead of running the anchor set from scratch")
     ap.add_argument("--resolve-queue", action="store_true",
-                     help="finalize whatever remains in data/stage6_def_review_queue.json using "
+                     help="finalize whatever remains in this run's review queue using "
                           "the conservative default (see resolve_queue_conservatively "
                           "docstring), instead of retrying with a model. No API calls made.")
     ap.add_argument("--reasoning-effort", default="none",
@@ -843,17 +912,32 @@ def main():
                           "paragraphs) is impractical run strictly sequentially.")
     args = ap.parse_args()
 
+    output_root = Path(args.output_dir)
+    if not output_root.is_absolute():
+        output_root = ROOT / output_root
+    print(f"working copy / output directory: {output_root}")
+
     client = None
     if not args.dry_run:
         from openai import OpenAI
         client = OpenAI()  # reads OPENAI_API_KEY from the environment
+        output_root.mkdir(parents=True, exist_ok=True)
+        # Warm the response schema ONCE, single-threaded, before any worker thread
+        # calls client.responses.parse(..., text_format=ExtractedDefinitionsResponse).
+        # Building a Pydantic model's JSON schema for the first time isn't thread-safe;
+        # if several threads trigger that first build concurrently (exactly what a
+        # --concurrency > 1 run's first batch does), it can race into a RecursionError
+        # ("maximum recursion depth exceeded") on every thread at once. Triggering the
+        # build here, before the thread pool exists, means every worker thread hits an
+        # already-populated cache instead.
+        ExtractedDefinitionsResponse.model_json_schema()
 
     if args.resolve_queue:
-        resolve_queue_conservatively()
+        resolve_queue_conservatively(output_root)
         return
 
     if args.retry_queue:
-        retry_queue(client, args.model, args.reasoning_effort, args.concurrency)
+        retry_queue(client, args.model, output_root, args.reasoning_effort, args.concurrency)
         return
 
     n_processed = 0
@@ -866,8 +950,11 @@ def main():
         if args.only and args.only.lower() not in spec.label.lower():
             continue
 
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
+        # create=not args.dry_run: a dry run reads whatever working copy already
+        # exists (to report accurate remaining-work counts on a resumed run) or falls
+        # back to the untouched original in memory (first run) -- either way it never
+        # creates output_root or writes a file, per --dry-run's contract.
+        root, path = _load_working_copy(output_root, spec, create=not args.dry_run)
         all_provisions = spec.get_provisions(root)
         in_scope_provisions = [p for p in all_provisions if spec.in_scope(p)]
         units = _iter_units(in_scope_provisions)
@@ -906,9 +993,11 @@ def main():
                         # processed"; recorded so _iter_units doesn't re-offer it forever.
                         unit.provision.setdefault("_empty_def_paragraph_indices", []).append(unit.paragraph_index)
                 else:
-                    _save_queue_item(queue_item)
+                    _save_queue_item(queue_item, output_root)
                 # Crash-safe, same reasoning as before: written after every unit, not just
                 # at the end -- the lock serializes the write, not the (parallel) API calls.
+                # `path` here is the working copy under output_root -- the original under
+                # ROOT/spec.path is never written to.
                 path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
             return definitions is not None
 
@@ -938,8 +1027,9 @@ def main():
         return
 
     print(f"\n{n_processed} unit(s) processed, {n_finalized} definitions[] entries finalized, "
-          f"{n_queued} sent to the review queue -> data/stage6_def_review_queue.json", flush=True)
+          f"{n_queued} sent to the review queue -> {output_root / 'stage6_def_review_queue.json'}",
+          flush=True)
 
-    
+
 if __name__ == "__main__":
     main()
