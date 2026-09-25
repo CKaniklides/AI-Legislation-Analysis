@@ -1,0 +1,269 @@
+[1mdiff --git a/pipeline/my_edited-norms.py b/pipeline/my_edited-norms.py[m
+[1mdeleted file mode 100644[m
+[1mindex 331c7b8..0000000[m
+[1m--- a/pipeline/my_edited-norms.py[m
+[1m+++ /dev/null[m
+[36m@@ -1,1225 +0,0 @@[m
+[31m-# -*- coding: utf-8 -*-[m
+[31m-"""[m
+[31m-Stage 6 — Extract the norm layer (architecture doc Part 4, Stage 6 / Part 3.1).[m
+[31m-[m
+[31m-For every paragraph (or whole article, where a provision has no `paragraphs`) that[m
+[31m-carries an independent rule, extract one `norms[]` entry: who must do what, by when,[m
+[31m-under what conditions, with what deference to another provision. This is the first[m
+[31m-stage that calls a model — everything before it (parse.py, parse_eu.py, parse_wti.py,[m
+[31m-graph.py, features.py) is deterministic code with no model calls, and everything after[m
+[31m-Stage 6's own deterministic guardrails (Part 5) stays deterministic wherever the fact is[m
+[31m-computable at all.[m
+[31m-[m
+[31m-Design constraints, all from the architecture doc, none optional:[m
+[31m-  - Structured Outputs, strict mode. The API returns JSON conforming to `ExtractedNorm`[m
+[31m-    or the call fails -- no free prose to parse, no prompted-JSON convention.[m
+[31m-  - Verbatim spans. `addressee`, `action`, `trigger_event` and `deadline_raw` must each[m
+[31m-    be a literal substring of the paragraph text (checked in code below, not trusted from[m
+[31m-    the prompt). A non-matching span is a failed pass: retried once, then treated as[m
+[31m-    failed. This is what stops the model from inventing details that aren't there.[m
+[31m-  - Deadlines are parsed, not read. The model returns only `deadline_raw` (the phrase);[m
+[31m-    `_parse_deadline()` below -- plain regex, no model -- turns "binnen 24 uur",[m
+[31m-    "onverwijld", "uiterlijk 72 uur nadat ..." into {value, unit, from}. The model never[m
+[31m-    produces the number a later comparison depends on.[m
+[31m-  - Two-pass, temperature 0, different framings. Run extraction twice per unit with[m
+[31m-    different instruction phrasing; only write a `norms[]` entry when both passes[m
+[31m-    validate AND agree on deontic/deadline/deference. Anything else (a validation[m
+[31m-    failure that survives its retry, or a two-pass disagreement) is written to the[m
+[31m-    review queue instead of silently guessed at -- `human_verified` stays false either[m
+[31m-    way, but an unresolved item isn't allowed to masquerade as a resolved one.[m
+[31m-  - Model is a single config value (MODEL below), not hardcoded per call site, so[m
+[31m-    switching from gpt-5.6-luna to gpt-5.6-terra is a one-line change. Per the[m
+[31m-    2026-09-20 decision: start on gpt-5.6-luna for everything; escalate a stage only[m
+[31m-    when this script's own review-queue rate says so, not on a guess.[m
+[31m-  - Prioritise. Full-corpus extraction is not attempted here. SOURCES below is exactly[m
+[31m-    the doc's incident-reporting anchor set: Cbw ch. 8, GDPR arts. 33-34, NIS2 art. 23,[m
+[31m-    DORA arts. 17-23, Bijlage 35, and the Uitvoeringswet dataverordening's competence[m
+[31m-    provisions (arts. 2-8 -- the designation/cooperation/sanctioning articles; 9-12 are[m
+[31m-    amendments to other laws and 13-14 are final provisions, neither in scope for norm[m
+[31m-    extraction).[m
+[31m-[m
+[31m-Usage:[m
+[31m-    python extract_norms.py --dry-run          # verify scope/counts, no API key needed[m
+[31m-    python extract_norms.py --only "Cbw"       # run one source[m
+[31m-    python extract_norms.py --limit 5          # smoke-test on the first 5 units total[m
+[31m-    python extract_norms.py                    # run the full anchor set[m
+[31m-"""[m
+[31m-import argparse[m
+[31m-import json, os, re, sys[m
+[31m-import threading[m
+[31m-from dataclasses import dataclass[m
+[31m-from datetime import date[m
+[31m-from pathlib import Path[m
+[31m-from typing import Callable, Literal, Optional[m
+[31m-[m
+[31m-from dotenv import load_dotenv[m
+[31m-[m
+[31m-# Windows consoles routinely default to a legacy codepage (e.g. cp1253) that can't[m
+[31m-# encode the Dutch legal text this script prints (curly quotes, non-breaking spaces,[m
+[31m-# accented characters) -- confirmed directly: a real run crashed mid-way through[m
+[31m-# resolve_queue_conservatively() on an ordinary print() over real deadline text,[m
+[31m-# losing no data (writes had already happened) but stopping before completion for a[m
+[31m-# reason that had nothing to do with the extraction logic itself.[m
+[31m-if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":[m
+[31m-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")[m
+[31m-from pydantic import BaseModel[m
+[31m-[m
+[31m-ROOT = Path(__file__).resolve().parent.parent[m
+[31m-load_dotenv(ROOT / ".env")  # picks up OPENAI_API_KEY from a .env file in the project root[m
+[31m-[m
+[31m-DEFAULT_MODEL = "gpt-5.6-luna"  # single config value -- see module docstring[m
+[31m-[m
+[31m-[m
+[31m-# ---------------------------------------------------------------------------[m
+[31m-# The norms[] entry schema (architecture doc Part 3.1), split into what the[m
+[31m-# model produces (ExtractedNorm) and the deterministic post-processing that[m
+[31m-# turns it into the documented entry shape (see _finalize_norm below).[m
+[31m-# ---------------------------------------------------------------------------[m
+[31m-[m
+[31m-Deontic = Literal[[m
+[31m-    "OBLIGATION", "PROHIBITION", "PERMISSION", "DEFINITION",[m
+[31m-    "COMPETENCE", "DEFERENCE", "PROCEDURAL", "NONE",[m
+[31m-][m
+[31m-[m
+[31m-# Deliberately a small, fixed vocabulary, not free text: C1's candidate-generation[m
+[31m-# pre-filter (Part 5) drops pairs whose addressee_type differs, which only means[m
+[31m-# something if the same handful of categories is used consistently across all ten[m
+[31m-# instruments rather than each extraction inventing its own label.[m
+[31m-AddresseeType = Literal[[m
+[31m-    "REGULATED_ENTITY", "COMPETENT_AUTHORITY", "MEMBER_STATE",[m
+[31m-    "EU_INSTITUTION", "DATA_SUBJECT", "OTHER",[m
+[31m-][m
+[31m-[m
+[31m-[m
+[31m-class ExtractedNorm(BaseModel):[m
+[31m-    """What the model returns for ONE independent norm. Verbatim-checked fields[m
+[31m-    (addressee, action, trigger_event, deadline_raw) are validated against the source[m
+[31m-    text by _verbatim_ok() below, never trusted outright.[m
+[31m-[m
+[31m-    A single unit (paragraph, or whole article where there are no paragraphs) can[m
+[31m-    contain zero, one, or several of these (2026-09-24, item 3) -- see[m
+[31m-    ExtractedNormsResponse. Splitting a paragraph into independent norms is itself a[m
+[31m-    judgement call the model makes, same discipline as every other field here: not[m
+[31m-    verified line-by-line against a human annotation (that would need Stage 9's[m
+[31m-    labelled sample), but grounded the same way everything else in Stage 6 is --[m
+[31m-    verbatim spans, two independently-framed passes, disagreement queued rather than[m
+[31m-    silently guessed at."""[m
+[31m-    deontic: Deontic[m
+[31m-    addressee: Optional[str][m
+[31m-    addressee_type: Optional[AddresseeType][m
+[31m-    trigger_event: Optional[str][m
+[31m-    action: Optional[str][m
+[31m-    recipient_body: list[str][m
+[31m-    deadline_raw: Optional[str]  # e.g. "binnen 24 uur" -- parsed deterministically, not by the model[m
+[31m-    thresholds: list[str][m
+[31m-    conditions: list[str][m
+[31m-    deference: Optional[str][m
+[31m-    extraction_confidence: float[m
+[31m-[m
+[31m-[m
+[31m-class ExtractedNormsResponse(BaseModel):[m
+[31m-    """The model's actual per-call response (2026-09-24, item 3): a paragraph[m
+[31m-    routinely bundles more than one independent duty in one sentence ("shall X, and[m
+[31m-    shall not disclose Y to any third party") -- the earlier one-ExtractedNorm-per-call[m
+[31m-    schema had no way to represent a second bundled duty at all; it was silently[m
+[31m-    dropped, not flagged, not queued, just never asked for. An empty list is a valid,[m
+[31m-    useful answer (a paragraph that states no independent rule at all -- pure[m
+[31m-    definitions, cross-references, procedural text)."""[m
+[31m-    norms: list[ExtractedNorm][m
+[31m-[m
+[31m-[m
+[31m-VERBATIM_FIELDS = ("addressee", "action", "trigger_event", "deadline_raw")[m
+[31m-[m
+[31m-[m
+[31m-def _normalize(s: str) -> str:[m
+[31m-    return re.sub(r"\s+", " ", s).strip().lower()[m
+[31m-[m
+[31m-[m
+[31m-def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:[m
+[31m-    haystack = _normalize(source_text)[m
+[31m-    for field_name in VERBATIM_FIELDS:[m
+[31m-        span = getattr(norm, field_name)[m
+[31m-        if span is None:[m
+[31m-            continue[m
+[31m-        if _normalize(span) not in haystack:[m
+[31m-            return False[m
+[31m-    return True[m
+[31m-[m
+[31m-[m
+[31m-# ---------------------------------------------------------------------------[m
+[31m-# Deterministic deadline parser. First-pass lexicon, same spirit as features.py's[m
+[31m-# RARITY_CUTOFF -- covers the phrasing actually seen in the anchor set (Cbw ch. 8,[m
+[31m-# GDPR 33/34, NIS2 23, DORA 17-23) and should be extended, not trusted as exhaustive,[m
+[31m-# once the review queue surfaces phrasing it doesn't recognise.[m
+[31m-# ---------------------------------------------------------------------------[m
+[31m-[m
+[31m-_NUMERIC_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [[m
+[31m-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+uur\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "hour"}),[m
+[31m-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+(werk)?dag(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "day"}),[m
+[31m-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+we(e)?k(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "week"}),[m
+[31m-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+maand(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "month"}),[m
+[31m-][m
+[31m-[m
+[31m-_QUALITATIVE_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [[m
+[31m-    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),[m
+[31m-    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),[m
+[31m-    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),[m
+[31m-][m
+[31m-[m
+[31m-_DEADLINE_PATTERNS = _NUMERIC_PATTERNS + _QUALITATIVE_PATTERNS[m
+[31m- [m
+[31m-_FROM_RE = re.compile(r"\bna(?:dat)?\s+(.+?)(?:[,.;]|$)", re.I)[m
+[31m- [m
+[31m-# # What the deadline is measured from, e.g. "nadat hij er kennis van heeft genomen" ->[m
+[31m-# # "kennis van heeft genomen". Best-effort text capture, not a normalized taxonomy of[m
+[31m-# # trigger types -- flagged as a heuristic like everything else in this section.[m
+[31m-# _FROM_RE = re.compile(r"\bna(dat)?\s+(?:hij|zij|het|de\s+\w+)?\s*(.+?)(?:[,.;]|$)", re.I)[m
+[31m-[m
+[31m-_UNIT_WORD = r"(?:uur|uren|dag|dagen|werkdag|werkdagen|kalenderdag|kalenderdagen|week|weken|maand|maanden|jaar|jaren)"[m
+[31m-_NUMBER_WORD = (r"(?:twee|drie|vier|vijf|zes|zeven|acht|negen|tien|elf|twaalf|"[m
+[31m-                r"vierentwintig|achtenveertig|tweeënzeventig|tweeenzeventig)")[m
+[31m-_NUMERIC_HINT_RE = re.compile(rf"\d|\b(?:{_UNIT_WORD}|{_NUMBER_WORD})\b", re.I)[m
+[31m- [m
+[31m-# Deduplicated record of deadline phrases no pattern recognised, so extending the[m
+[31m-# lexicon is driven by real corpus phrasing instead of guesses.[m
+[31m-UNRECOGNISED_LOG_PATH = ROOT / "data" / "stage6_unrecognised_deadlines.json"[m
+[31m-_unrecognised_lock = threading.Lock()   # main()/retry_queue() call this from a thread pool[m
+[31m-_unrecognised_seen: Optional[dict] = None  # normalized phrase -> record, loaded lazily[m
+[31m-_log_warned = False[m
+[31m-[m
+[31m-def _warn_log_problem(msg: str) -> None:[m
+[31m-    """One line to stderr, first time only -- reported, never raised, never repeated[m
+[31m-    once per phrase."""[m
+[31m-    global _log_warned[m
+[31m-    if not _log_warned:[m
+[31m-        _log_warned = True[m
+[31m-        print(f"    [deadline log] {msg}", file=sys.stderr)[m
+[31m- [m
+[31m- [m
+[31m-def _load_unrecognised_log() -> dict:[m
+[31m-    """Never raises. A missing file is an empty log. A file that exists but can't be[m
+[31m-    read as a list of {"phrase": ...} records is renamed aside (kept, not deleted) and[m
+[31m-    the log starts fresh -- otherwise one bad write would break every later run."""[m
+[31m-    try:[m
+[31m-        if not UNRECOGNISED_LOG_PATH.exists():[m
+[31m-            return {}[m
+[31m-        records = json.loads(UNRECOGNISED_LOG_PATH.read_text(encoding="utf-8"))[m
+[31m-        if not isinstance(records, list):[m
+[31m-            raise ValueError("expected a JSON list of records")[m
+[31m-        return {_normalize(r["phrase"]): r for r in records}[m
+[31m-    except Exception as e:[m
+[31m-        _warn_log_problem(f"{UNRECOGNISED_LOG_PATH.name} unreadable ({e!r}); "[m
+[31m-                          f"setting it aside and starting a fresh log")[m
+[31m-        try:[m
+[31m-            UNRECOGNISED_LOG_PATH.replace(UNRECOGNISED_LOG_PATH.with_name([m
+[31m-                f"{UNRECOGNISED_LOG_PATH.name}.corrupt-{date.today().isoformat()}"))[m
+[31m-        except Exception:[m
+[31m-            pass[m
+[31m-        return {}[m
+[31m- [m
+[31m- [m
+[31m-def _persist_unrecognised_log(records: dict) -> None:[m
+[31m-    """Atomic: write a sibling temp file, then rename it over the real one. A crash[m
+[31m-    mid-write leaves the previous COMPLETE file, never a truncated one. May raise --[m
+[31m-    the caller handles it."""[m
+[31m-    UNRECOGNISED_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)[m
+[31m-    tmp = UNRECOGNISED_LOG_PATH.with_name(f"{UNRECOGNISED_LOG_PATH.name}.{os.getpid()}.tmp")[m
+[31m-    tmp.write_text([m
+[31m-        json.dumps(sorted(records.values(), key=lambda r: r["phrase"]),[m
+[31m-                   ensure_ascii=False, indent=1),[m
+[31m-        encoding="utf-8")[m
+[31m-    tmp.replace(UNRECOGNISED_LOG_PATH)[m
+[31m- [m
+[31m- [m
+[31m-def _log_unrecognised_deadline(raw: str, kind: str = "unrecognised",[m
+[31m-                                parsed_as: Optional[dict] = None) -> bool:[m
+[31m-    """Record `raw` once (deduplicated on normalized text). Returns True only the first[m
+[31m-    time a phrase is seen, so callers print once instead of once per call[m
+[31m-    (_parse_deadline runs several times per norm). NEVER raises.[m
+[31m- [m
+[31m-    kind: "unrecognised" -- nothing matched at all.[m
+[31m-          "partial"      -- something matched, but a number/unit word is still[m
+[31m-                            unaccounted for (a dropped bound, or a spelled-out number[m
+[31m-                            next to a qualifier that then "won" silently).[m
+[31m-    If persisting fails, the record stays in memory and is written by the next[m
+[31m-    successful call."""[m
+[31m-    global _unrecognised_seen[m
+[31m-    try:[m
+[31m-        key = _normalize(raw)[m
+[31m-        with _unrecognised_lock:[m
+[31m-            if _unrecognised_seen is None:[m
+[31m-                _unrecognised_seen = _load_unrecognised_log()[m
+[31m-            if key in _unrecognised_seen:[m
+[31m-                return False[m
+[31m-            _unrecognised_seen[key] = {"phrase": raw, "kind": kind, "parsed_as": parsed_as,[m
+[31m-                                       "first_seen": date.today().isoformat()}[m
+[31m-            try:[m
+[31m-                _persist_unrecognised_log(_unrecognised_seen)[m
+[31m-            except Exception as e:[m
+[31m-                _warn_log_problem(f"could not write {UNRECOGNISED_LOG_PATH} ({e!r}); "[m
+[31m-                                  f"continuing without persisting the log")[m
+[31m-            return True[m
+[31m-    except Exception as e:  # belt and braces: the log must never take a worker down[m
+[31m-   

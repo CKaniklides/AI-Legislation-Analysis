@@ -1,51 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Stage 6 — Extract the norm layer (architecture doc Part 4, Stage 6 / Part 3.1).
 
-For every paragraph (or whole article, where a provision has no `paragraphs`) that
-carries an independent rule, extract one `norms[]` entry: who must do what, by when,
-under what conditions, with what deference to another provision. This is the first
-stage that calls a model — everything before it (parse.py, parse_eu.py, parse_wti.py,
-graph.py, features.py) is deterministic code with no model calls, and everything after
-Stage 6's own deterministic guardrails (Part 5) stays deterministic wherever the fact is
-computable at all.
-
-Design constraints, all from the architecture doc, none optional:
-  - Structured Outputs, strict mode. The API returns JSON conforming to `ExtractedNorm`
-    or the call fails -- no free prose to parse, no prompted-JSON convention.
-  - Verbatim spans. `addressee`, `action`, `trigger_event` and `deadline_raw` must each
-    be a literal substring of the paragraph text (checked in code below, not trusted from
-    the prompt). A non-matching span is a failed pass: retried once, then treated as
-    failed. This is what stops the model from inventing details that aren't there.
-  - Deadlines are parsed, not read. The model returns only `deadline_raw` (the phrase);
-    `_parse_deadline()` below -- plain regex, no model -- turns "binnen 24 uur",
-    "onverwijld", "uiterlijk 72 uur nadat ..." into {value, unit, from}. The model never
-    produces the number a later comparison depends on.
-  - Two-pass, temperature 0, different framings. Run extraction twice per unit with
-    different instruction phrasing; only write a `norms[]` entry when both passes
-    validate AND agree on deontic/deadline/deference. Anything else (a validation
-    failure that survives its retry, or a two-pass disagreement) is written to the
-    review queue instead of silently guessed at -- `human_verified` stays false either
-    way, but an unresolved item isn't allowed to masquerade as a resolved one.
-  - Model is a single config value (MODEL below), not hardcoded per call site, so
-    switching from gpt-5.6-luna to gpt-5.6-terra is a one-line change. Per the
-    2026-09-20 decision: start on gpt-5.6-luna for everything; escalate a stage only
-    when this script's own review-queue rate says so, not on a guess.
-  - Prioritise. Full-corpus extraction is not attempted here. SOURCES below is exactly
-    the doc's incident-reporting anchor set: Cbw ch. 8, GDPR arts. 33-34, NIS2 art. 23,
-    DORA arts. 17-23, Bijlage 35, and the Uitvoeringswet dataverordening's competence
-    provisions (arts. 2-8 -- the designation/cooperation/sanctioning articles; 9-12 are
-    amendments to other laws and 13-14 are final provisions, neither in scope for norm
-    extraction).
-
-Usage:
-    python extract_norms.py --dry-run          # verify scope/counts, no API key needed
-    python extract_norms.py --only "Cbw"       # run one source
-    python extract_norms.py --limit 5          # smoke-test on the first 5 units total
-    python extract_norms.py                    # run the full anchor set
-"""
 import argparse
-import json, os, re, sys
+import json
+import re
+import sys
 import threading
 from dataclasses import dataclass
 from datetime import date
@@ -53,6 +10,7 @@ from pathlib import Path
 from typing import Callable, Literal, Optional
 
 from dotenv import load_dotenv
+from parse_deadline import _parse_deadline
 
 # Windows consoles routinely default to a legacy codepage (e.g. cp1253) that can't
 # encode the Dutch legal text this script prints (curly quotes, non-breaking spaces,
@@ -70,12 +28,6 @@ load_dotenv(ROOT / ".env")  # picks up OPENAI_API_KEY from a .env file in the pr
 DEFAULT_MODEL = "gpt-5.6-luna"  # single config value -- see module docstring
 
 
-# ---------------------------------------------------------------------------
-# The norms[] entry schema (architecture doc Part 3.1), split into what the
-# model produces (ExtractedNorm) and the deterministic post-processing that
-# turns it into the documented entry shape (see _finalize_norm below).
-# ---------------------------------------------------------------------------
-
 Deontic = Literal[
     "OBLIGATION", "PROHIBITION", "PERMISSION", "DEFINITION",
     "COMPETENCE", "DEFERENCE", "PROCEDURAL", "NONE",
@@ -91,51 +43,50 @@ AddresseeType = Literal[
 ]
 
 
-class ExtractedNorm(BaseModel):
-    """What the model returns for ONE independent norm. Verbatim-checked fields
-    (addressee, action, trigger_event, deadline_raw) are validated against the source
-    text by _verbatim_ok() below, never trusted outright.
+class ExtractedDefinition(BaseModel):
+    """What the model returns for ONE independent legal definition.
 
-    A single unit (paragraph, or whole article where there are no paragraphs) can
-    contain zero, one, or several of these (2026-09-24, item 3) -- see
-    ExtractedNormsResponse. Splitting a paragraph into independent norms is itself a
-    judgement call the model makes, same discipline as every other field here: not
-    verified line-by-line against a human annotation (that would need Stage 9's
-    labelled sample), but grounded the same way everything else in Stage 6 is --
-    verbatim spans, two independently-framed passes, disagreement queued rather than
-    silently guessed at."""
-    deontic: Deontic
-    addressee: Optional[str]
-    addressee_type: Optional[AddresseeType]
-    trigger_event: Optional[str]
-    action: Optional[str]
-    recipient_body: list[str]
-    deadline_raw: Optional[str]  # e.g. "binnen 24 uur" -- parsed deterministically, not by the model
-    thresholds: list[str]
+    Verbatim-checked fields (term, definition_raw) are validated against the
+    source text by _verbatim_ok() below, never trusted outright.
+
+    A single unit (paragraph, or whole article where there are no paragraphs)
+    can contain zero, one, or several independent definitions.
+    """
+
+    # Legal location
+    document: Optional[str]
+    chapter: Optional[str]
+    section: Optional[str]
+
+    # Definition
+    term: str
+    definition_raw: str
+    scope: Optional[str]
+
+    # Qualifiers
     conditions: list[str]
-    deference: Optional[str]
-    extraction_confidence: float
+    exceptions: list[str]
+    references: list[str]
+
+    definition_confidence: float
+
+class ExtractedDefinitionsResponse(BaseModel):
+    """The model's actual per-call response for legal definitions.
+
+    An empty list is valid when the text contains no independent definitions.
+    """
+
+    definitions: list[ExtractedDefinition]
 
 
-class ExtractedNormsResponse(BaseModel):
-    """The model's actual per-call response (2026-09-24, item 3): a paragraph
-    routinely bundles more than one independent duty in one sentence ("shall X, and
-    shall not disclose Y to any third party") -- the earlier one-ExtractedNorm-per-call
-    schema had no way to represent a second bundled duty at all; it was silently
-    dropped, not flagged, not queued, just never asked for. An empty list is a valid,
-    useful answer (a paragraph that states no independent rule at all -- pure
-    definitions, cross-references, procedural text)."""
-    norms: list[ExtractedNorm]
-
-
-VERBATIM_FIELDS = ("addressee", "action", "trigger_event", "deadline_raw")
+VERBATIM_FIELDS = ("term", "definition_raw")
 
 
 def _normalize(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
-def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
+def _verbatim_ok(norm: ExtractedDefinition, source_text: str) -> bool:
     haystack = _normalize(source_text)
     for field_name in VERBATIM_FIELDS:
         span = getattr(norm, field_name)
@@ -145,231 +96,69 @@ def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
             return False
     return True
 
-
-# ---------------------------------------------------------------------------
-# Deterministic deadline parser. First-pass lexicon, same spirit as features.py's
-# RARITY_CUTOFF -- covers the phrasing actually seen in the anchor set (Cbw ch. 8,
-# GDPR 33/34, NIS2 23, DORA 17-23) and should be extended, not trusted as exhaustive,
-# once the review queue surfaces phrasing it doesn't recognise.
-# ---------------------------------------------------------------------------
-
-_NUMERIC_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+uur\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "hour"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+(werk)?dag(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "day"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+we(e)?k(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "week"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+maand(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "month"}),
-]
-
-_QUALITATIVE_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [
-    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),
-]
-
-_DEADLINE_PATTERNS = _NUMERIC_PATTERNS + _QUALITATIVE_PATTERNS
- 
-_FROM_RE = re.compile(r"\bna(?:dat)?\s+(.+?)(?:[,.;]|$)", re.I)
- 
-# # What the deadline is measured from, e.g. "nadat hij er kennis van heeft genomen" ->
-# # "kennis van heeft genomen". Best-effort text capture, not a normalized taxonomy of
-# # trigger types -- flagged as a heuristic like everything else in this section.
-# _FROM_RE = re.compile(r"\bna(dat)?\s+(?:hij|zij|het|de\s+\w+)?\s*(.+?)(?:[,.;]|$)", re.I)
-
-_UNIT_WORD = r"(?:uur|uren|dag|dagen|werkdag|werkdagen|kalenderdag|kalenderdagen|week|weken|maand|maanden|jaar|jaren)"
-_NUMBER_WORD = (r"(?:twee|drie|vier|vijf|zes|zeven|acht|negen|tien|elf|twaalf|"
-                r"vierentwintig|achtenveertig|tweeënzeventig|tweeenzeventig)")
-_NUMERIC_HINT_RE = re.compile(rf"\d|\b(?:{_UNIT_WORD}|{_NUMBER_WORD})\b", re.I)
- 
-# Deduplicated record of deadline phrases no pattern recognised, so extending the
-# lexicon is driven by real corpus phrasing instead of guesses.
-UNRECOGNISED_LOG_PATH = ROOT / "data" / "stage6_unrecognised_deadlines.json"
-_unrecognised_lock = threading.Lock()   # main()/retry_queue() call this from a thread pool
-_unrecognised_seen: Optional[dict] = None  # normalized phrase -> record, loaded lazily
-_log_warned = False
-
-def _warn_log_problem(msg: str) -> None:
-    """One line to stderr, first time only -- reported, never raised, never repeated
-    once per phrase."""
-    global _log_warned
-    if not _log_warned:
-        _log_warned = True
-        print(f"    [deadline log] {msg}", file=sys.stderr)
- 
- 
-def _load_unrecognised_log() -> dict:
-    """Never raises. A missing file is an empty log. A file that exists but can't be
-    read as a list of {"phrase": ...} records is renamed aside (kept, not deleted) and
-    the log starts fresh -- otherwise one bad write would break every later run."""
-    try:
-        if not UNRECOGNISED_LOG_PATH.exists():
-            return {}
-        records = json.loads(UNRECOGNISED_LOG_PATH.read_text(encoding="utf-8"))
-        if not isinstance(records, list):
-            raise ValueError("expected a JSON list of records")
-        return {_normalize(r["phrase"]): r for r in records}
-    except Exception as e:
-        _warn_log_problem(f"{UNRECOGNISED_LOG_PATH.name} unreadable ({e!r}); "
-                          f"setting it aside and starting a fresh log")
-        try:
-            UNRECOGNISED_LOG_PATH.replace(UNRECOGNISED_LOG_PATH.with_name(
-                f"{UNRECOGNISED_LOG_PATH.name}.corrupt-{date.today().isoformat()}"))
-        except Exception:
-            pass
-        return {}
- 
- 
-def _persist_unrecognised_log(records: dict) -> None:
-    """Atomic: write a sibling temp file, then rename it over the real one. A crash
-    mid-write leaves the previous COMPLETE file, never a truncated one. May raise --
-    the caller handles it."""
-    UNRECOGNISED_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
-    tmp = UNRECOGNISED_LOG_PATH.with_name(f"{UNRECOGNISED_LOG_PATH.name}.{os.getpid()}.tmp")
-    tmp.write_text(
-        json.dumps(sorted(records.values(), key=lambda r: r["phrase"]),
-                   ensure_ascii=False, indent=1),
-        encoding="utf-8")
-    tmp.replace(UNRECOGNISED_LOG_PATH)
- 
- 
-def _log_unrecognised_deadline(raw: str, kind: str = "unrecognised",
-                                parsed_as: Optional[dict] = None) -> bool:
-    """Record `raw` once (deduplicated on normalized text). Returns True only the first
-    time a phrase is seen, so callers print once instead of once per call
-    (_parse_deadline runs several times per norm). NEVER raises.
- 
-    kind: "unrecognised" -- nothing matched at all.
-          "partial"      -- something matched, but a number/unit word is still
-                            unaccounted for (a dropped bound, or a spelled-out number
-                            next to a qualifier that then "won" silently).
-    If persisting fails, the record stays in memory and is written by the next
-    successful call."""
-    global _unrecognised_seen
-    try:
-        key = _normalize(raw)
-        with _unrecognised_lock:
-            if _unrecognised_seen is None:
-                _unrecognised_seen = _load_unrecognised_log()
-            if key in _unrecognised_seen:
-                return False
-            _unrecognised_seen[key] = {"phrase": raw, "kind": kind, "parsed_as": parsed_as,
-                                       "first_seen": date.today().isoformat()}
-            try:
-                _persist_unrecognised_log(_unrecognised_seen)
-            except Exception as e:
-                _warn_log_problem(f"could not write {UNRECOGNISED_LOG_PATH} ({e!r}); "
-                                  f"continuing without persisting the log")
-            return True
-    except Exception as e:  # belt and braces: the log must never take a worker down
-        _warn_log_problem(f"unexpected logging error ({e!r})")
-        return False
- 
- 
-def _earliest_hit(patterns, raw: str):
-    """The pattern match that starts earliest in `raw` (ties: list order), as
-    (match, extractor), or None."""
-    hits = []
-    for i, (pattern, extractor) in enumerate(patterns):
-        m = pattern.search(raw)
-        if m:
-            hits.append((m.start(), i, m, extractor))
-    if not hits:
-        return None
-    _, _, m, extractor = min(hits, key=lambda h: (h[0], h[1]))
-    return m, extractor
- 
- 
-def _parse_deadline(raw: Optional[str]) -> Optional[dict]:
-    if not raw:
-        return None
-    parsed = {"value": None, "unit": None, "from": None, "raw": raw}
-    hit = _earliest_hit(_NUMERIC_PATTERNS, raw) or _earliest_hit(_QUALITATIVE_PATTERNS, raw)
-    if hit is None:
-        if _log_unrecognised_deadline(raw, kind="unrecognised"):
-            print(f"    [deadline parser] unrecognised phrasing, logged to "
-                  f"{UNRECOGNISED_LOG_PATH.name}: {raw!r}")
-    else:
-        m, extractor = hit
-        parsed.update(extractor(m))
-        # Anything still number-like OUTSIDE the matched span means information was
-        # dropped: a second bound ("binnen 24 uur, uiterlijk 72 uur"), or a figure the
-        # lexicon can't read sitting next to a qualifier that won ("onverwijld en
-        # uiterlijk binnen zes uur"). The returned value is unchanged -- this only makes
-        # the loss visible.
-        leftover = raw[:m.start()] + " " + raw[m.end():]
-        if _NUMERIC_HINT_RE.search(leftover):
-            if _log_unrecognised_deadline(raw, kind="partial",
-                                          parsed_as={"value": parsed["value"], "unit": parsed["unit"]}):
-                print(f"    [deadline parser] partial parse (a figure was left unaccounted for), "
-                      f"logged to {UNRECOGNISED_LOG_PATH.name}: {raw!r}")
-    from_m = _FROM_RE.search(raw)
-    if from_m:
-        parsed["from"] = from_m.group(1).strip()
-    return parsed
-
 # ---------------------------------------------------------------------------
 # Prompting. Two independent framings of the same schema -- the two-pass check's
 # whole point is that agreement between differently-worded instructions is stronger
 # evidence than one pass at high confidence.
 # ---------------------------------------------------------------------------
 
+
 _SCHEMA_FIELDS_NOTE = (
-    "Every span you return for addressee, action, trigger_event and deadline_raw must "
-    "be a verbatim, word-for-word substring of the paragraph text -- copy it exactly, "
-    "do not paraphrase or summarise it. If a field genuinely does not apply to this "
-    "norm, return null (or an empty list for the list fields), never invent a value. "
-    "For deadline_raw specifically: a sentence often states both a vague qualifier "
-    "('onverwijld', 'zonder onredelijke vertraging') AND a specific figure ('binnen 24 "
-    "uur', 'uiterlijk 72 uur') as a fallback or outer bound on the same duty -- when both "
-    "appear, extract the phrase containing the specific number, not the vague qualifier "
-    "alone, since the number is what a later comparison against another law's deadline "
-    "actually needs. Extract the vague qualifier only when no specific figure is present "
-    "anywhere in the paragraph."
+    "The fields `term` and `definition_raw` must be copied verbatim from the "
+    "paragraph text. Do not paraphrase, translate, shorten, or reconstruct them. "
+    "`term` is the exact legal term being defined. `definition_raw` is the exact "
+    "text that states what that term means, including wording that is grammatically "
+    "part of the definition. Do not include surrounding introductory wording such "
+    "as 'voor de toepassing van deze verordening wordt verstaan onder' unless that "
+    "wording is itself part of the definition. Do not include a separate condition, "
+    "exception, or cross-reference merely because it appears nearby; put those in "
+    "their dedicated fields when they qualify the definition. If no independent "
+    "legal definition is present, return an empty list."
 )
 
-# 2026-09-24, item 3: a paragraph may state more than one INDEPENDENT norm in a single
-# sentence -- the classic shape is "shall X, and shall not disclose Y to any third
-# party", one obligation and one prohibition in one breath. Made explicit and given a
-# worked boundary case (both directions: don't split, don't merge) because "independent
-# norm" is a genuine judgement call, not something the model will get right from the
-# field list alone.
-_MULTI_NORM_NOTE = (
-    "\n\nA paragraph may state ZERO, ONE, or SEVERAL independent norms -- return one "
-    "entry in `norms` for each. Two norms are INDEPENDENT when they have a different "
-    "deontic (e.g. one OBLIGATION and one PROHIBITION) or clearly different actions, "
-    "even if they share the same sentence and the same addressee. Example: 'de "
-    "aanbieder meldt het incident binnen 24 uur, en verstrekt geen persoonsgegevens aan "
-    "derden zonder toestemming' is TWO norms (an OBLIGATION to report, a PROHIBITION on "
-    "disclosure) -- do not merge them into one. Conversely, do NOT split a single duty "
-    "into multiple entries just because it has several qualifying clauses, conditions, "
-    "or a list of required contents (e.g. a report that 'must contain a, b, and c' is "
-    "still ONE norm; a, b, c belong in that one norm's own fields, not three norms). If "
-    "the paragraph states no independent rule at all (pure definitions, a cross-"
-    "reference, procedural text with no actor/action of its own), return an empty list."
+
+_MULTI_DEFINITION_NOTE = (
+    "\n\nA paragraph may state ZERO, ONE, or SEVERAL independent definitions. "
+    "Return one entry in `definitions` for each independently defined legal term. "
+    "For example, if the paragraph separately defines 'incident' and 'ernstig "
+    "incident', return two definitions. Do not merge separate defined terms merely "
+    "because they occur in the same sentence or paragraph. Conversely, do not split "
+    "one definition into several definitions merely because its meaning contains "
+    "multiple clauses, conditions, examples, or qualifications."
 )
 
 _FRAMING_DIRECT = (
-    "You are extracting the compliance obligation(s) from one paragraph of Dutch or EU "
-    "digital-law legislation. Read the paragraph and, for each independent norm it "
-    "states, extract: who it addresses (addressee, addressee_type), what triggers the "
-    "obligation (trigger_event), what must be done (action), who receives it "
-    "(recipient_body), any deadline as it literally appears in the text (deadline_raw), "
-    "any numeric thresholds (thresholds), any conditions that limit when the rule "
-    "applies (conditions), and whether the text explicitly defers to another provision "
-    "(deference, e.g. from 'onverminderd', 'in afwijking van', 'is niet van toepassing "
-    "indien'). "
-    + _SCHEMA_FIELDS_NOTE + _MULTI_NORM_NOTE
+    "You are extracting legal definitions from one paragraph of Dutch or EU "
+    "digital-law legislation. Identify every independent legal definition explicitly "
+    "established in this paragraph. A definition states what a legal term means, "
+    "such as wording equivalent to 'wordt verstaan onder', 'betekent', or another "
+    "formulation that explicitly establishes the meaning of a term. "
+    "For each independent definition extract the defined term (`term`) and the "
+    "definition itself (`definition_raw`) exactly as stated in the text. Also "
+    "extract any explicit scope, conditions, exceptions, and references that "
+    "qualify that definition. "
+    "Do not infer a definition merely because a technical or important term is "
+    "mentioned. Do not extract obligations, prohibitions, permissions, competence "
+    "rules, or procedural requirements as definitions. "
+    "A paragraph may contain ZERO, ONE, or SEVERAL independent definitions. "
+    "If it contains no independent legal definition, return an empty list. "
+    + _SCHEMA_FIELDS_NOTE + _MULTI_DEFINITION_NOTE
 )
 
 _FRAMING_STEPBACK = (
-    "You are verifying a legal-compliance extraction, so read carefully rather than "
-    "pattern-matching. First work out, for this one paragraph only, exactly what "
-    "rule(s) it imposes and on whom -- do not assume anything the text does not "
-    "explicitly state, and do not pull in obligations from other paragraphs you may "
-    "recognise from context. Then, for each independent norm, populate: deontic, "
-    "addressee, addressee_type, trigger_event, action, recipient_body, deadline_raw, "
-    "thresholds, conditions, deference. "
-    + _SCHEMA_FIELDS_NOTE + _MULTI_NORM_NOTE
+    "Read this paragraph as a legal text and determine whether it explicitly "
+    "establishes one or more legal definitions. First identify which terms, if any, "
+    "are legally defined by this paragraph. Do not assume that a word is a defined "
+    "term merely because it is technical, important, capitalized, or used repeatedly. "
+    "Then, for each independent definition, populate `term`, `definition_raw`, "
+    "`scope`, `conditions`, `exceptions`, and `references`. "
+    "Do not extract obligations, prohibitions, permissions, competence rules, or "
+    "procedural requirements as definitions. "
+    "A paragraph may contain ZERO, ONE, or SEVERAL independent definitions. "
+    "If there is no independent legal definition, return an empty list. "
+    + _SCHEMA_FIELDS_NOTE + _MULTI_DEFINITION_NOTE
 )
+
 
 
 def _build_input(framing: str, article_heading: str, unit_text: str) -> str:
@@ -497,21 +286,23 @@ def _iter_units(provisions: list[dict]) -> list[Unit]:
     units = []
     for p in provisions:
         heading = p.get("heading") or f"Article {p.get('article') or p.get('number')}"
-        p.setdefault("norms", [])
+        p.setdefault("definitions", [])
         # _empty_paragraph_indices (2026-09-24, item 3): a paragraph can now resolve to
         # ZERO norms (both passes agreeing there's no independent rule here) -- that's a
         # genuinely resolved, useful result, not "not yet processed", so it needs its
         # own persisted marker; norms[] alone can no longer tell "done with nothing to
         # show" apart from "never attempted", now that an empty result is possible.
-        done_indices = ({n["paragraph_index"] for n in p["norms"] if n.get("paragraph_index") is not None}
+        done_indices = ({n["paragraph_index"] for n in p["definitions"] if n.get("paragraph_index") is not None}
                         | set(p.get("_empty_paragraph_indices") or []))
-        done_numbers_legacy = {n["number"] for n in p["norms"] if n.get("paragraph_index") is None}
+        done_numbers_legacy = {n["number"] for n in p["definitions"] if n.get("paragraph_index") is None}
         paragraphs = p.get("paragraphs") or []
         if paragraphs:
             for idx, para in enumerate(paragraphs):
-                if idx in done_indices or para["number"] in done_numbers_legacy:
-                    continue
-                units.append(Unit(p, para["number"], idx, para["text"], heading))
+                number = para['number']
+                text = para['text']
+                if (idx not in done_indices and number not in done_numbers_legacy):
+                    units.append(Unit(p,number,idx,text,heading,))
+
         elif None not in done_indices and None not in done_numbers_legacy:
             units.append(Unit(p, None, None, p["text"], heading))
     return units
@@ -545,46 +336,27 @@ def _call_with_network_retries(client, **kwargs):
 
 
 def _run_pass(client, model: str, framing: str, heading: str, text: str,
-              reasoning_effort: str = "none") -> Optional[list[ExtractedNorm]]:
+              reasoning_effort: str = "none") -> Optional[list[ExtractedDefinition]]:
     prompt = _build_input(framing, heading, text)
     kwargs = dict(
         model=model,
         input=prompt,
-        text_format=ExtractedNormsResponse,
-        # Default "none": Stage 6 extraction is closer to structured reading than to
-        # reasoning (architecture doc, Stage 6) -- it doesn't need the reasoning dial
-        # turned up for the ordinary case. Raised deliberately (e.g. "medium") when
-        # retrying items that disagreed even after a stronger model -- at that point
-        # the open question is specifically whether more reasoning depth, not a
-        # different model, resolves the ambiguity.
+        text_format=ExtractedDefinitionsResponse,
         reasoning={"effort": reasoning_effort},
     )
     if reasoning_effort == "none":
-        # temperature=0 is what makes the two-pass check meaningful (deterministic
-        # output per framing) -- but confirmed against the live API that this model
-        # family rejects `temperature` outright once reasoning is actually engaged
-        # (BadRequestError: "temperature is not supported with this model" at
-        # reasoning_effort="medium"), so it's only safe to pass at effort "none".
         kwargs["temperature"] = 0
+
     for attempt in range(2):  # one retry if ANY returned norm fails verbatim validation
         resp = _call_with_network_retries(client, **kwargs)
-        norms = resp.output_parsed.norms
-        if all(_verbatim_ok(n, text) for n in norms):
-            return norms
-        print(f"    [pass validation] attempt {attempt + 1} failed verbatim check, "
-              f"{'retrying' if attempt == 0 else 'giving up on this pass'}")
+        definitions = resp.output_parsed.definitions
+        if all(_verbatim_ok(n, text) for n in definitions):
+            return definitions
+        print(
+            f"    [definition pass validation] attempt {attempt + 1} failed "
+            f"verbatim check, {'retrying' if attempt == 0 else 'giving up'}"
+        )
     return None
-
-def _word_overlap(a: str, b: str) -> float:
-    """Shared words / words in the SHORTER side, on normalized text; 0.0 if either side
-    has no words. Dividing by the shorter side means a subset scores 1.0 -- deliberately
-    tolerant of one pass being more verbose than the other, but it also means a shared
-    stopword ("de") counts like any other word."""
-    wa, wb = set(_normalize(a).split()), set(_normalize(b).split())
-    if not wa or not wb:
-        return 0.0
-    return len(wa & wb) / min(len(wa), len(wb))
- 
 
 
 def _text_fields_agree(a: Optional[str], b: Optional[str], min_overlap: float = 0.5) -> bool:
@@ -599,9 +371,12 @@ def _text_fields_agree(a: Optional[str], b: Optional[str], min_overlap: float = 
         return True
     if not na or not nb:
         return False
-    return _word_overlap(na, nb) >= min_overlap
+    wa, wb = set(na.split()), set(nb.split())
+    if not wa or not wb:
+        return na == nb
+    return len(wa & wb) / min(len(wa), len(wb)) >= min_overlap
 
- 
+
 def _list_fields_agree(a: Optional[list], b: Optional[list], min_overlap: float = 0.5) -> bool:
     """recipient_body/thresholds/conditions compared as sets of normalized strings,
     with the same overlap tolerance as _text_fields_agree and for the same reason."""
@@ -612,65 +387,34 @@ def _list_fields_agree(a: Optional[list], b: Optional[list], min_overlap: float 
         return False
     return len(sa & sb) / min(len(sa), len(sb)) >= min_overlap
 
-def _from_compatible(fa: Optional[str], fb: Optional[str], min_overlap: float = 0.5) -> bool:
-    """Do two deadline clock-starts ("from") agree? (2026-09-24 fix.) Verbatim capture
-    means two passes that extract slightly different extents of the same deadline give
-    different `from` text, so equality manufactured disagreements. Now: overlap-tolerant
-    like the other free-text fields, and a MISSING `from` on either side is compatible
-    (one pass simply stopped its span before "nadat ..."). Two clearly different starting
-    events -- "kennisname" vs "de melding door een derde" -- still disagree, which is what
-    the original `from` comparison was added to catch."""
-    na, nb = _normalize(fa or ""), _normalize(fb or "")
-    if not na or not nb:
-        return True
-    return _word_overlap(na, nb) >= min_overlap
- 
- 
-def _deadlines_agree(a: Optional[str], b: Optional[str]) -> bool:
-    pa, pb = _parse_deadline(a), _parse_deadline(b)
-    if pa is None or pb is None:
-        return pa == pb
-    if pa["value"] is None and pb["value"] is None:
-        if pa["unit"] is not None and pa["unit"] == pb["unit"]:
-            return _from_compatible(pa["from"], pb["from"])
-        return _normalize(pa["raw"]) == _normalize(pb["raw"])
-    return (pa["value"] == pb["value"] and pa["unit"] == pb["unit"]
-            and _from_compatible(pa["from"], pb["from"]))
 
-def _finalize_norm(norm: ExtractedNorm, paragraph_number: Optional[str], paragraph_index: Optional[int],
-                    norm_index: int, model: str, reasoning_effort: str = "none") -> dict:
+def _finalize_definition(
+    definition: ExtractedDefinition,
+    paragraph_number: Optional[str],
+    paragraph_index: Optional[int],
+    definition_index: int,
+    model: str,
+    reasoning_effort: str = "none",
+) -> dict:
     model_label = model if reasoning_effort == "none" else f"{model} (reasoning:{reasoning_effort})"
     return {
         "number": paragraph_number,
         "paragraph_index": paragraph_index,
-        # norm_index (2026-09-24, item 3): position among the norms finalized for THIS
-        # paragraph -- needed once a paragraph can yield more than one, so each stays
-        # independently addressable (paragraph_index alone is no longer unique once a
-        # paragraph produces 2+ norms).
-        "norm_index": norm_index,
-        "deontic": norm.deontic,
-        "addressee": norm.addressee,
-        "addressee_type": norm.addressee_type,
-        "trigger_event": norm.trigger_event,
-        "action": norm.action,
-        "recipient_body": norm.recipient_body,
-        "deadline": _parse_deadline(norm.deadline_raw),
-        "thresholds": norm.thresholds,
-        "conditions": norm.conditions,
-        "deference": norm.deference,
-        "extraction_confidence": norm.extraction_confidence,
+        "definition_index": definition_index,
+        "term": definition.term,
+        "definition_raw": definition.definition_raw,
+        "scope": definition.scope,
+        "conditions": definition.conditions,
+        "exceptions": definition.exceptions,
+        "references": definition.references,
+        "definition_confidence": definition.definition_confidence,
         "extraction_model": model_label,
         "extracted_on": date.today().isoformat(),
         "human_verified": False,
     }
-
-
-def _norm_overlap_score(a: ExtractedNorm, b: ExtractedNorm) -> float:
-    """Combined similarity used only to ALIGN two passes' norm lists to each other when
-    a paragraph yields more than one (2026-09-24, item 3) -- not itself a pass/fail
-    agreement check (that's _norms_agree, run per aligned pair afterwards)."""
-    score = 1.0 if a.deontic == b.deontic else 0.0
-    for fa, fb in ((a.action, b.action), (a.trigger_event, b.trigger_event), (a.addressee, b.addressee)):
+def _definition_overlap_score(a: ExtractedDefinition, b: ExtractedDefinition) -> float:
+    score = 0.0
+    for fa, fb in ((a.term, b.term), (a.definition_raw, b.definition_raw)):
         na, nb = _normalize(fa or ""), _normalize(fb or "")
         if not na or not nb:
             continue
@@ -680,50 +424,40 @@ def _norm_overlap_score(a: ExtractedNorm, b: ExtractedNorm) -> float:
     return score
 
 
-def _align_norms(list1: list[ExtractedNorm], list2: list[ExtractedNorm]
-                  ) -> list[tuple[Optional[ExtractedNorm], Optional[ExtractedNorm]]]:
-    """Greedy best-match pairing between two passes' norm lists, by descending overlap
-    score -- appropriate for the small lists (almost always 0-3) one paragraph produces;
-    a paragraph with a genuinely large, ambiguous number of candidate norms is exactly
-    the kind of case worth a human's eyes anyway. Unmatched entries on either side pair
-    with None -- signals a count/alignment mismatch to the caller, handled as a
-    disagreement rather than guessed at."""
-    scored = [(_norm_overlap_score(n1, n2), i1, i2)
-              for i1, n1 in enumerate(list1) for i2, n2 in enumerate(list2)]
+def _align_definitions(
+    list1: list[ExtractedDefinition],
+    list2: list[ExtractedDefinition],
+) -> list[tuple[Optional[ExtractedDefinition], Optional[ExtractedDefinition]]]:
+    scored = [
+        (_definition_overlap_score(d1, d2), i1, i2)
+        for i1, d1 in enumerate(list1)
+        for i2, d2 in enumerate(list2)
+    ]
     scored.sort(key=lambda t: -t[0])
+
     used1, used2 = set(), set()
     pairs = []
+
     for score, i1, i2 in scored:
         if i1 in used1 or i2 in used2 or score <= 0:
             continue
         used1.add(i1)
         used2.add(i2)
         pairs.append((list1[i1], list2[i2]))
-    pairs.extend((n1, None) for i1, n1 in enumerate(list1) if i1 not in used1)
-    pairs.extend((None, n2) for i2, n2 in enumerate(list2) if i2 not in used2)
+
+    pairs.extend((d1, None) for i, d1 in enumerate(list1) if i not in used1)
+    pairs.extend((None, d2) for i, d2 in enumerate(list2) if i not in used2)
     return pairs
 
 
-def _norms_agree(n1: ExtractedNorm, n2: ExtractedNorm) -> bool:
-    """Field-specific agreement for one aligned pair (2026-09-24 fix, item 10): the old
-    check only compared deontic/deadline/deference, then saved pass1's addressee/
-    action/recipient_body/thresholds/conditions wholesale -- meaning two passes could
-    wildly disagree on WHO the norm addresses or WHAT it requires and still get
-    finalized as "agreed", as long as those three specific fields happened to match.
-    Every field detection actually reads is now checked; free-text fields use word
-    overlap rather than exact-string equality (see _text_fields_agree's own note),
-    since two differently-framed prompts routinely paraphrase the same verbatim span."""
+def _definitions_agree(d1: ExtractedDefinition, d2: ExtractedDefinition) -> bool:
     return (
-        n1.deontic == n2.deontic
-        and n1.addressee_type == n2.addressee_type
-        and _deadlines_agree(n1.deadline_raw, n2.deadline_raw)
-        and _normalize(n1.deference or "") == _normalize(n2.deference or "")
-        and _text_fields_agree(n1.addressee, n2.addressee)
-        and _text_fields_agree(n1.action, n2.action)
-        and _text_fields_agree(n1.trigger_event, n2.trigger_event)
-        and _list_fields_agree(n1.recipient_body, n2.recipient_body)
-        and _list_fields_agree(n1.thresholds, n2.thresholds)
-        and _list_fields_agree(n1.conditions, n2.conditions)
+        _text_fields_agree(d1.term, d2.term)
+        and _text_fields_agree(d1.definition_raw, d2.definition_raw)
+        and _text_fields_agree(d1.scope, d2.scope)
+        and _list_fields_agree(d1.conditions, d2.conditions)
+        and _list_fields_agree(d1.exceptions, d2.exceptions)
+        and _list_fields_agree(d1.references, d2.references)
     )
 
 
@@ -755,20 +489,20 @@ def extract_unit(client, model: str, unit: Unit,
         # contains -- not something to guess at (which count is "right"?), so this is
         # queued distinctly from a same-count field disagreement, and NOT auto-resolved
         # by resolve_queue_conservatively() (see that function's own note).
-        return None, {**base, "reason": "two_pass_disagreement", "disagreement_kind": "norm_count_mismatch",
+        return None, {**base, "reason": "two_pass_disagreement", "disagreement_kind": "definition_count_mismatch",
                       "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
 
-    aligned = _align_norms(pass1, pass2)
+    aligned = _align_definitions(pass1, pass2)
     if any(n1 is None or n2 is None for n1, n2 in aligned):
         return None, {**base, "reason": "two_pass_disagreement",
-                      "disagreement_kind": "norm_alignment_ambiguous",
+                      "disagreement_kind": "definition_alignment_ambiguous",
                       "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
 
-    if not all(_norms_agree(n1, n2) for n1, n2 in aligned):
+    if not all(_definitions_agree(n1, n2) for n1, n2 in aligned):
         return None, {**base, "reason": "two_pass_disagreement",
                       "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
 
-    finalized = [_finalize_norm(n1, unit.paragraph_number, unit.paragraph_index, idx, model, reasoning_effort)
+    finalized = [_finalize_definition(n1, unit.paragraph_number, unit.paragraph_index, idx, model, reasoning_effort)
                  for idx, (n1, n2) in enumerate(aligned)]
     return finalized, None
 
@@ -841,12 +575,12 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
         key = (str(item["instrument_id"]), str(item["article"]))
         unit = Unit(provision, item["paragraph_number"], item.get("paragraph_index"), item["unit_text"],
                     provision.get("heading") or f"Article {item['article']}")
-        norms, new_item = extract_unit(client, model, unit, reasoning_effort)
+        definitions, new_item = extract_unit(client, model, unit, reasoning_effort)
         with lock:
             nonlocal n_resolved
-            if norms is not None:
-                if norms:
-                    provision.setdefault("norms", []).extend(norms)
+            if definitions is not None:
+                if definitions:
+                    provision.setdefault("definitions", []).extend(definitions)
                 elif unit.paragraph_index is not None:
                     provision.setdefault("_empty_paragraph_indices", []).append(unit.paragraph_index)
                 n_resolved += 1
@@ -854,7 +588,7 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
             else:
                 new_item["retried_with"] = retried_with_label
                 remaining_queue.append(new_item)
-        return key, item["paragraph_number"], norms is not None
+        return key, item["paragraph_number"], definitions is not None
 
     from concurrent.futures import ThreadPoolExecutor, as_completed
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
@@ -905,19 +639,15 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
 # just means a human dismisses a harmless candidate later, same as any
 # other false positive the system already expects to produce.
 # ---------------------------------------------------------------------------
-
-ACTIONABLE_DEONTICS = {"OBLIGATION", "PROHIBITION", "PERMISSION", "COMPETENCE"}
-
-
-def _pick_deontic(d1: str, d2: str) -> str:
-    if d1 in ACTIONABLE_DEONTICS and d2 not in ACTIONABLE_DEONTICS:
-        return d1
-    if d2 in ACTIONABLE_DEONTICS and d1 not in ACTIONABLE_DEONTICS:
-        return d2
-    return d1  # both actionable, both not, or identical -- no basis to prefer one
-
-
 def resolve_queue_conservatively() -> None:
+    """Definitions have no analogue of `deontic`/`deference` -- there's no field here
+    whose omission silently hides a real problem downstream, and no field that gates
+    eligibility for later processing the way `deontic` did for norms. So there's no
+    asymmetric "non-suppressing default" to apply per field; a disagreement is instead
+    resolved by taking pass1 as the base entry (an arbitrary but consistent choice --
+    neither pass is more authoritative than the other) and flagging every field the two
+    passes disagreed on in `uncertainty_note`, so a human reviewing it later knows
+    exactly what was left unconfirmed rather than trusting the merged value blindly."""
     queue_path = ROOT / "data" / "stage6_review_queue.json"
     queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
     if not queue:
@@ -943,18 +673,18 @@ def resolve_queue_conservatively() -> None:
                 provision, path, root = by_key[key], candidate_path, candidate_root
                 break
         if provision is None:
-            print(f"  [warn] could not relocate provision for {key} -- dropping without a norm")
+            print(f"  [warn] could not relocate provision for {key} -- dropping without a definition")
             dropped.append(item)
             continue
 
-        # pass1/pass2 are LISTS of norm dicts now (2026-09-24, item 3) -- one unit can
-        # yield zero, one, or several independent norms. norm_count_mismatch/
-        # norm_alignment_ambiguous (extract_unit's own distinct disagreement_kinds) are
-        # NOT auto-resolved here: there's no safe "conservative default" for "the two
-        # passes disagree on HOW MANY norms exist" the way there is for a single
+        # pass1/pass2 are LISTS of definition dicts (2026-09-24, item 3) -- one unit can
+        # yield zero, one, or several independent definitions. definition_count_mismatch/
+        # definition_alignment_ambiguous (extract_unit's own distinct disagreement_kinds)
+        # are NOT auto-resolved here: there's no safe "conservative default" for "the two
+        # passes disagree on HOW MANY definitions exist" the way there is for a single
         # mismatched field on an already-agreed-count pair -- guessing which count is
         # right is exactly the kind of judgement call this function exists to avoid.
-        if item.get("disagreement_kind") in ("norm_count_mismatch", "norm_alignment_ambiguous"):
+        if item.get("disagreement_kind") in ("definition_count_mismatch", "definition_alignment_ambiguous"):
             dropped.append(item)
             continue
 
@@ -965,11 +695,10 @@ def resolve_queue_conservatively() -> None:
             # verbatim check that still failed after its own retry). The old code
             # dropped these uniformly, discarding genuinely grounded extractions on the
             # assumption that "validation_failed" meant neither pass was usable, which
-            # isn't what the data actually shows. Every norm in the single grounded
-            # pass's list becomes a provisional norm, same non-suppressing deference
-            # default as the two-pass case below, tagged uncertain for exactly the
-            # reason it's less confirmed (one reading, not two independently agreeing
-            # ones) -- only genuinely dropped when BOTH passes are null.
+            # isn't what the data actually shows. Every definition in the single
+            # grounded pass's list becomes a provisional definition, tagged uncertain for
+            # exactly the reason it's less confirmed (one reading, not two independently
+            # agreeing ones) -- only genuinely dropped when BOTH passes are null.
             grounded = item.get("pass1") if item.get("pass1") is not None else item.get("pass2")
             if grounded is None:
                 dropped.append(item)
@@ -977,21 +706,17 @@ def resolve_queue_conservatively() -> None:
             if not grounded and item.get("paragraph_index") is not None:
                 provision.setdefault("_empty_paragraph_indices", []).append(item["paragraph_index"])
             for idx, g in enumerate(grounded):
-                norm = {
+                definition = {
                     "number": item["paragraph_number"],
                     "paragraph_index": item.get("paragraph_index"),
-                    "norm_index": idx,
-                    "deontic": g["deontic"],
-                    "addressee": g["addressee"],
-                    "addressee_type": g["addressee_type"],
-                    "trigger_event": g["trigger_event"],
-                    "action": g["action"],
-                    "recipient_body": g["recipient_body"],
-                    "deadline": _parse_deadline(g["deadline_raw"]),
-                    "thresholds": g["thresholds"],
+                    "definition_index": idx,
+                    "term": g["term"],
+                    "definition_raw": g["definition_raw"],
+                    "scope": g["scope"],
                     "conditions": g["conditions"],
-                    "deference": None,  # non-suppressing default -- see module note above
-                    "extraction_confidence": g["extraction_confidence"],
+                    "exceptions": g["exceptions"],
+                    "references": g["references"],
+                    "definition_confidence": g["definition_confidence"],
                     "extraction_model": "conservative-default (single-pass: the other pass "
                                          "failed validation entirely)",
                     "extracted_on": date.today().isoformat(),
@@ -1005,58 +730,54 @@ def resolve_queue_conservatively() -> None:
                         "ends up inside an actual candidate finding."
                     ),
                 }
-                provision.setdefault("norms", []).append(norm)
+                provision.setdefault("definitions", []).append(definition)
             n_resolved += 1
             dirty_paths.add(path)
             continue
 
-        # Plain field-level disagreement, matched norm count (item 3): re-align the two
-        # passes' stored lists the same way extract_unit did in memory, then apply the
-        # SAME per-field conservative-default merge as before, per aligned pair.
-        p1_norms = [ExtractedNorm(**d) for d in item["pass1"]]
-        p2_norms = [ExtractedNorm(**d) for d in item["pass2"]]
-        aligned = _align_norms(p1_norms, p2_norms)
-        if any(n1 is None or n2 is None for n1, n2 in aligned):
+        # Plain field-level disagreement, matched definition count (item 3): re-align
+        # the two passes' stored lists the same way extract_unit did in memory, then
+        # merge each aligned pair -- pass1 as the base, every disagreeing field logged.
+        p1_defs = [ExtractedDefinition(**d) for d in item["pass1"]]
+        p2_defs = [ExtractedDefinition(**d) for d in item["pass2"]]
+        aligned = _align_definitions(p1_defs, p2_defs)
+        if any(d1 is None or d2 is None for d1, d2 in aligned):
             # Defensive only -- extract_unit wouldn't have written this reason if
             # alignment were ambiguous, but never guess if it somehow is.
             dropped.append(item)
             continue
         if not aligned and item.get("paragraph_index") is not None:
             provision.setdefault("_empty_paragraph_indices", []).append(item["paragraph_index"])
-        for idx, (p1, p2) in enumerate(aligned):
-            diffs = [f for f in ("deontic", "deadline_raw", "deference")
-                     if getattr(p1, f) != getattr(p2, f)]
-            deontic = _pick_deontic(p1.deontic, p2.deontic)
-            base = p1 if deontic == p1.deontic else p2
+        for idx, (d1, d2) in enumerate(aligned):
+            diffs = [f for f in ("term", "definition_raw", "scope", "conditions", "exceptions", "references")
+                     if getattr(d1, f) != getattr(d2, f)]
+            base = d1  # arbitrary but consistent -- see function docstring
 
-            norm = {
+            definition = {
                 "number": item["paragraph_number"],
                 "paragraph_index": item.get("paragraph_index"),
-                "norm_index": idx,
-                "deontic": deontic,
-                "addressee": base.addressee,
-                "addressee_type": base.addressee_type,
-                "trigger_event": base.trigger_event,
-                "action": base.action,
-                "recipient_body": base.recipient_body,
-                "deadline": _parse_deadline(base.deadline_raw),
-                "thresholds": base.thresholds,
+                "definition_index": idx,
+                "term": base.term,
+                "definition_raw": base.definition_raw,
+                "scope": base.scope,
                 "conditions": base.conditions,
-                "deference": None,  # non-suppressing default -- see module note above
-                "extraction_confidence": min(p1.extraction_confidence, p2.extraction_confidence),
+                "exceptions": base.exceptions,
+                "references": base.references,
+                "definition_confidence": min(d1.definition_confidence, d2.definition_confidence),
                 "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
                 "extracted_on": date.today().isoformat(),
                 "human_verified": False,
                 "extraction_uncertain": True,
                 "uncertainty_note": (
                     f"two independent extraction passes disagreed on {diffs}; "
-                    f"pass1={{'deontic': {p1.deontic!r}, 'deference': {p1.deference!r}}}, "
-                    f"pass2={{'deontic': {p2.deontic!r}, 'deference': {p2.deference!r}}} "
-                    "-- resolved to the non-suppressing default rather than a human pre-clearing "
-                    "it; revisit if this norm ends up inside an actual candidate finding."
+                    f"pass1={{'term': {d1.term!r}, 'definition_raw': {d1.definition_raw!r}}}, "
+                    f"pass2={{'term': {d2.term!r}, 'definition_raw': {d2.definition_raw!r}}} "
+                    "-- resolved to pass1's reading with the disagreement recorded here rather "
+                    "than a human pre-clearing it; revisit if this definition ends up inside an "
+                    "actual candidate finding."
                 ),
             }
-            provision.setdefault("norms", []).append(norm)
+            provision.setdefault("definitions", []).append(definition)
         n_resolved += 1
         dirty_paths.add(path)
 
@@ -1072,7 +793,7 @@ def resolve_queue_conservatively() -> None:
 
     queue_path.write_text(json.dumps([], ensure_ascii=False, indent=1), encoding="utf-8")
 
-    print(f"{n_resolved} norms[] entries finalized with the non-suppressing default "
+    print(f"{n_resolved} definitions[] entries finalized with the conservative default "
           f"(flagged extraction_uncertain=true), {len(dropped)} dropped -- no verbatim-"
           f"grounded data to fall back on -- logged to data/stage6_unresolved_extractions.json")
 
@@ -1087,7 +808,6 @@ def _save_queue_item(item: dict) -> None:
     existing = [r for r in existing if (r["instrument_id"], r["article"], r["paragraph_number"]) != key]
     existing.append(item)
     queue_path.write_text(json.dumps(existing, ensure_ascii=False, indent=1), encoding="utf-8")
-
 
 def main():
     """Writes the source file back to disk after every single unit, not once per source
@@ -1108,7 +828,7 @@ def main():
                           "instead of running the anchor set from scratch")
     ap.add_argument("--resolve-queue", action="store_true",
                      help="finalize whatever remains in data/stage6_review_queue.json using "
-                          "the non-suppressing conservative default (see resolve_queue_conservatively "
+                          "the conservative default (see resolve_queue_conservatively "
                           "docstring), instead of retrying with a model. No API calls made.")
     ap.add_argument("--reasoning-effort", default="none",
                      choices=["none", "minimal", "low", "medium", "high", "xhigh", "max"],
@@ -1175,13 +895,13 @@ def main():
         write_lock = threading.Lock()
 
         def process_unit(unit: Unit):
-            norms, queue_item = extract_unit(client, args.model, unit, args.reasoning_effort)
+            definitions, queue_item = extract_unit(client, args.model, unit, args.reasoning_effort)
             with write_lock:
-                if norms is not None:
-                    if norms:
-                        unit.provision.setdefault("norms", []).extend(norms)
+                if definitions is not None:
+                    if definitions:
+                        unit.provision.setdefault("definitions", []).extend(definitions)
                     elif unit.paragraph_index is not None:
-                        # Confirmed by both passes: no independent norm in this
+                        # Confirmed by both passes: no independent definition in this
                         # paragraph -- a real, resolved result (item 3), not "not yet
                         # processed"; recorded so _iter_units doesn't re-offer it forever.
                         unit.provision.setdefault("_empty_paragraph_indices", []).append(unit.paragraph_index)
@@ -1190,7 +910,7 @@ def main():
                 # Crash-safe, same reasoning as before: written after every unit, not just
                 # at the end -- the lock serializes the write, not the (parallel) API calls.
                 path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
-            return norms is not None
+            return definitions is not None
 
         with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
             future_to_unit = {ex.submit(process_unit, u): u for u in batch}
@@ -1217,9 +937,9 @@ def main():
     if args.dry_run:
         return
 
-    print(f"\n{n_processed} unit(s) processed, {n_finalized} norms[] entries finalized, "
+    print(f"\n{n_processed} unit(s) processed, {n_finalized} definitions[] entries finalized, "
           f"{n_queued} sent to the review queue -> data/stage6_review_queue.json", flush=True)
 
-
+    
 if __name__ == "__main__":
     main()

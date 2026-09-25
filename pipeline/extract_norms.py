@@ -55,6 +55,7 @@ from pathlib import Path
 from typing import Callable, Literal, Optional
 
 from dotenv import load_dotenv
+from parse_deadline import _parse_deadline
 
 # Windows consoles routinely default to a legacy codepage (e.g. cp1253) that can't
 # encode the Dutch legal text this script prints (curly quotes, non-breaking spaces,
@@ -146,63 +147,6 @@ def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
         if _normalize(span) not in haystack:
             return False
     return True
-
-
-# ---------------------------------------------------------------------------
-# Deterministic deadline parser. First-pass lexicon, same spirit as features.py's
-# RARITY_CUTOFF -- covers the phrasing actually seen in the anchor set (Cbw ch. 8,
-# GDPR 33/34, NIS2 23, DORA 17-23) and should be extended, not trusted as exhaustive,
-# once the review queue surfaces phrasing it doesn't recognise.
-# ---------------------------------------------------------------------------
-
-# Numeric patterns are checked BEFORE the vague qualifiers below. Real drafting
-# routinely states both in one phrase -- "onverwijld of, indien dat niet mogelijk is,
-# binnen 24 uur ..." (Cbw art. 26), "zonder onredelijke vertraging en, indien mogelijk,
-# uiterlijk 72 uur ..." (GDPR art. 33) -- and the specific figure is the operative,
-# comparable deadline; "onverwijld"/"zonder onredelijke vertraging" is a qualifier on
-# it, not a competing deadline. Checking "onverwijld" first (the original ordering)
-# silently discarded the 24-hour figure whenever it appeared earlier in the string --
-# caught only by checking this parser's output against the project's own flagship
-# Cbw-vs-GDPR example, where it made the comparison impossible.
-_DEADLINE_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+uur\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "hour"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+(werk)?dag(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "day"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+we(e)?k(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "week"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+maand(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "month"}),
-    # "onverwijld"/"onmiddellijk" are QUALITATIVE urgency standards ("as soon as
-    # reasonably possible"), not a literal commitment to act at time zero (2026-09-24
-    # fix) -- the old value=0 treated a judgment-call duty as if it were exactly as
-    # precise and comparable as a real numeric deadline like "binnen 24 uur". Given the
-    # same non-numeric treatment as "zo spoedig mogelijk" below (value=None, excluded
-    # from _deadline_hours() arithmetic in detect_c1_contradiction.py, same as "asap"
-    # already was) rather than a hardcoded fake zero.
-    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),
-]
-
-# What the deadline is measured from, e.g. "nadat hij er kennis van heeft genomen" ->
-# "kennis van heeft genomen". Best-effort text capture, not a normalized taxonomy of
-# trigger types -- flagged as a heuristic like everything else in this section.
-_FROM_RE = re.compile(r"\bna(dat)?\s+(?:hij|zij|het|de\s+\w+)?\s*(.+?)(?:[,.;]|$)", re.I)
-
-
-def _parse_deadline(raw: Optional[str]) -> Optional[dict]:
-    if not raw:
-        return None
-    parsed = {"value": None, "unit": None, "from": None, "raw": raw}
-    for pattern, extractor in _DEADLINE_PATTERNS:
-        m = pattern.search(raw)
-        if m:
-            parsed.update(extractor(m))
-            break
-    else:
-        print(f"    [deadline parser] unrecognised phrasing, value/unit left null: {raw!r}")
-    from_m = _FROM_RE.search(raw)
-    if from_m:
-        parsed["from"] = from_m.group(2).strip()
-    return parsed
-
 
 # ---------------------------------------------------------------------------
 # Prompting. Two independent framings of the same schema -- the two-pass check's
