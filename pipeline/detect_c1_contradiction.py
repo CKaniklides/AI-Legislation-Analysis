@@ -152,7 +152,19 @@ class NormRecord:
 
 
 def _norm_id(r: "NormRecord") -> str:
-    return f"{r.instrument_id}:{r.article}:{r.norm.get('paragraph_index')}:{r.norm.get('number')}"
+    """Real, confirmed bug fixed here (2026-09-24, surfaced while building C2): this
+    identity omitted norm_index -- the field added earlier this session specifically to
+    distinguish multiple norms Stage 6 extracts from the SAME paragraph. Checked
+    directly against the live corpus: 76 (instrument, article, paragraph_index, number)
+    groups hold 2+ genuinely different norms (different deontic and/or action text), all
+    sharing one identity string under the old formula. Worse, checked against the
+    actual candidate set this pipeline generates: 847 groups of DIFFERENT candidate
+    pairs collapsed to the same _pair_id, 124 of which already have a live adjudication
+    cache entry -- meaning any sibling pair sharing that id would silently be treated as
+    "already cached" and receive another pair's verdict without ever actually being
+    checked. norm_index is None for the ~95% of norms that are the only one in their
+    paragraph, so this is a strict refinement, not a behavior change for those."""
+    return f"{r.instrument_id}:{r.article}:{r.norm.get('paragraph_index')}:{r.norm.get('number')}:{r.norm.get('norm_index')}"
 
 
 def _pair_id(a: "NormRecord", b: "NormRecord") -> str:
@@ -1359,10 +1371,21 @@ def build_finding(a: NormRecord, b: NormRecord, candidate: dict, subtype: str,
             subtype, deterministic_result, llm, needs_recheck_reason, challenge),
         "challenge": challenge.model_dump() if challenge else None,
         "provisions": [
+            # norm_index AND paragraph_index (2026-09-24, alongside the _norm_id fix
+            # above): a paragraph can hold more than one extracted norm, so
+            # paragraph_number alone doesn't tell a reviewer -- or C2's own cross-check
+            # against this file -- WHICH norm at that paragraph is meant. norm_index
+            # alone isn't quite enough either: the one confirmed real case in this
+            # corpus (AI Act art. 73, two separate lid-divs both DISPLAYING "11") has
+            # norm_index=None on both sides, and only paragraph_index (the actual list
+            # position) tells them apart. Storing both is what lets a future exact
+            # match reuse c1._norm_id()'s own full identity, not a partial one.
             {"uid": a.graph_uid, "instrument_id": a.instrument_id, "article": a.article,
-             "paragraph_number": a.norm.get("number")},
+             "paragraph_number": a.norm.get("number"), "norm_index": a.norm.get("norm_index"),
+             "paragraph_index": a.norm.get("paragraph_index")},
             {"uid": b.graph_uid, "instrument_id": b.instrument_id, "article": b.article,
-             "paragraph_number": b.norm.get("number")},
+             "paragraph_number": b.norm.get("number"), "norm_index": b.norm.get("norm_index"),
+             "paragraph_index": b.norm.get("paragraph_index")},
         ],
         "criteria_fired": [c for c, hit in [("graph_adjacency", candidate["graph_hit"]),
                                              ("trigger_keyword_match", candidate["trigger_hit"]),
