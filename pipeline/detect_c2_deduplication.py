@@ -34,22 +34,38 @@ Decisions made directly with the project owner (2026-09-24), rather than guessed
    gap is visible in the data instead of silently absent.
 2. Runs over the WHOLE corpus in one pass, not a pilot on the incident-reporting anchor
    cluster first.
-3. Only `deontic == "OBLIGATION"` norms are candidates. A duplicated COMPLIANCE BURDEN
-   is what this category flags (per the architecture doc's own framing -- "confirm
-   'substantially the same nature' for the COMPLIANCE ACTION"), and
-   PROHIBITION/COMPETENCE norms don't carry a "do this" action to compare the same way.
-4. Candidates are restricted to `addressee_type == REGULATED_ENTITY` (revised twice,
-   2026-09-24, each time on checked evidence rather than a priori theory). First cut
-   excluded only `EU_INSTITUTION`, after the first real run's only findings turned out
-   to be Commission-internal legislative-drafting boilerplate. That still left
-   `COMPETENT_AUTHORITY`/`MEMBER_STATE` in scope on the theory that the Ministry's own
-   authorities could bear a genuine duplicate burden too -- but checked directly against
-   the next full run's 19 findings, EVERY finding where both sides were
-   `COMPETENT_AUTHORITY` was an inter-authority RELAY chain (one authority telling
-   another about an incident it already received), not a duplicate burden, while every
-   `REGULATED_ENTITY`-vs-`REGULATED_ENTITY` finding was substantively about the real
-   compliance burden -- a clean, exceptionless split. See `ALLOWED_ADDRESSEE_TYPES`'s
-   own note for the full reasoning.
+3. `deontic in ("OBLIGATION", "PROHIBITION", "COMPETENCE")` are all candidates (revised
+   2026-09-24, explicit request, from an original OBLIGATION-only scope). A duplicated
+   PROHIBITION ("two laws ban the same act") or a duplicated administrative-penalty
+   clause (which this schema encodes as an OBLIGATION -- there is no separate
+   SANCTION/PENALTY deontic type) is exactly as real a burden as a duplicated reporting
+   duty, and a duplicated COMPETENCE (two laws granting the identical power to the
+   identical authority) is the same idea applied to a power instead of a duty. See
+   `_c2_eligible()`'s own note for exactly which addressee types each deontic allows.
+4. Candidates are restricted to `addressee_type == REGULATED_ENTITY` FOR
+   OBLIGATION/PROHIBITION specifically (revised twice, 2026-09-24, each time on checked
+   evidence rather than a priori theory). First cut excluded only `EU_INSTITUTION`, after
+   the first real run's only findings turned out to be Commission-internal
+   legislative-drafting boilerplate. That still left `COMPETENT_AUTHORITY`/`MEMBER_STATE`
+   in scope on the theory that the Ministry's own authorities could bear a genuine
+   duplicate burden too -- but checked directly against the next full run's 19 findings,
+   EVERY finding where both sides were `COMPETENT_AUTHORITY` was an inter-authority RELAY
+   chain (one authority telling another about an incident it already received), not a
+   duplicate burden, while every `REGULATED_ENTITY`-vs-`REGULATED_ENTITY` finding was
+   substantively about the real compliance burden -- a clean, exceptionless split. See
+   `ALLOWED_ADDRESSEE_TYPES`'s own note for the full reasoning.
+5. `COMPETENCE` was tried with `COMPETENT_AUTHORITY` reopened as an allowed addressee,
+   then reverted (2026-09-24) on a clean negative result, not assumed safe in advance:
+   ALL 17 of 17 COMPETENCE-vs-COMPETENCE findings that came back were "authority A holds
+   power P under law A; authority B holds power P under law B" (independent supervisory
+   powers -- e.g. fining power -- each granted by its own regime), never a genuine
+   duplicated burden. `COMPETENCE` now uses the same REGULATED_ENTITY-only scope as
+   OBLIGATION/PROHIBITION -- see `COMPETENCE_ALLOWED_ADDRESSEE_TYPES`'s own note.
+6. Penalty/sanction clauses are covered without a new deontic type (2026-09-24): there
+   is no SANCTION/PENALTY deontic in the extraction schema -- a "you will be fined for
+   non-compliance" clause is itself an OBLIGATION norm. `PENALTY_TRIGGER_KEYWORDS` is a
+   second keyword family (alongside the incident/notification one) so these get
+   discovered at all; see its own note for the GDPR art. 83 example that motivated it.
 
 Usage:
     python detect_c2_deduplication.py             # full run
@@ -229,22 +245,75 @@ def _gate_text(r: c1.NormRecord) -> str:
 # COMPLIANCE BURDEN anyone would want simplified -- this category is about duplicated
 # burden, not duplicated legal text for its own sake.
 #
-# Narrowed to REGULATED_ENTITY only (2026-09-24, reversing an earlier decision on new
-# evidence, per an external review): originally kept COMPETENT_AUTHORITY/MEMBER_STATE in
-# scope on the theory that the Ministry's OWN authorities could bear a genuine duplicate
-# burden too, not just companies. Checked directly against the first full run's 19
-# findings, though: EVERY SINGLE ONE of the 8 findings where both sides were
-# COMPETENT_AUTHORITY was an inter-authority RELAY chain (Cbw's CSIRT/central contact
-# point telling another authority about an incident it already received) -- structurally
-# different from duplication (the same actor doing the same thing twice under two laws),
-# and arguably the kind of routing machinery the Digital Omnibus's proposed "single
-# entry point" is meant to formalize, not the problem it exists to fix. Meanwhile ALL 9
-# REGULATED_ENTITY-vs-REGULATED_ENTITY findings, including both Medium-confidence ones,
-# were substantively about the real compliance burden. A clean, exceptionless split in
-# the actual data -- simpler and better-evidenced than building new "duty role family"
-# or "recipient role compatibility" classifiers to filter the relay chains out
-# after the fact.
+# Narrowed to REGULATED_ENTITY only for OBLIGATION/PROHIBITION (2026-09-24, reversing an
+# earlier decision on new evidence, per an external review): originally kept
+# COMPETENT_AUTHORITY/MEMBER_STATE in scope on the theory that the Ministry's OWN
+# authorities could bear a genuine duplicate burden too, not just companies. Checked
+# directly against the first full run's 19 findings, though: EVERY SINGLE ONE of the 8
+# findings where both sides were COMPETENT_AUTHORITY was an inter-authority RELAY chain
+# (Cbw's CSIRT/central contact point telling another authority about an incident it
+# already received) -- structurally different from duplication (the same actor doing the
+# same thing twice under two laws), and arguably the kind of routing machinery the
+# Digital Omnibus's proposed "single entry point" is meant to formalize, not the problem
+# it exists to fix. Meanwhile ALL 9 REGULATED_ENTITY-vs-REGULATED_ENTITY findings,
+# including both Medium-confidence ones, were substantively about the real compliance
+# burden. A clean, exceptionless split in the actual data.
 ALLOWED_ADDRESSEE_TYPES = {"REGULATED_ENTITY"}
+
+# COMPETENCE tried a wider addressee scope once (COMPETENT_AUTHORITY + REGULATED_ENTITY),
+# on the theory that the richer verdict schema (same_actor_role, recipient_relation) might
+# correctly separate a genuine relay chain from a real duplicate this time, unlike the old
+# binary schema. Checked the ACTUAL output after running, not assumed safe in advance --
+# and it was a clean, unanimous negative: all 17 of 17 COMPETENCE-vs-COMPETENCE findings
+# that came back were "authority A holds power P under law A; authority B holds power P
+# under law B" (e.g. GDPR's AP, DORA's ACM/DNB/AFM, and Cbw's competent authority each
+# separately empowered to fine or investigate under their OWN respective regime). That is
+# not duplicated burden on anyone -- no regulated entity does the same work twice; every
+# regulatory regime has always granted its own supervisory authority its own toolkit, and
+# the richer schema didn't change that verdict because the ACTOR bearing the "duty" here
+# is the regulator itself, not a regulated entity, which same_actor_role doesn't capture.
+# Reverted to REGULATED_ENTITY only, same as OBLIGATION/PROHIBITION -- of the corpus's 316
+# COMPETENCE norms, only 6 are addressed to a REGULATED_ENTITY, so this stays a narrow
+# category, but a narrow-and-correct one beats a bigger one that's uniformly wrong.
+COMPETENCE_ALLOWED_ADDRESSEE_TYPES = {"REGULATED_ENTITY"}
+
+
+def _c2_eligible(r: c1.NormRecord) -> bool:
+    """Which norms enter C2's candidate population at all (2026-09-24, extended beyond
+    OBLIGATION to PROHIBITION and COMPETENCE, per explicit request): a duplicated
+    PROHIBITION ("two laws ban the same thing") or a duplicated administrative
+    penalty/sanction clause (itself an OBLIGATION-deontic norm in this schema -- see
+    module docstring's decision 3 update) is exactly as real a compliance burden as a
+    duplicated reporting OBLIGATION, and there is no separate SANCTION/PENALTY deontic
+    type in the extraction schema to gate on instead."""
+    deontic = r.norm["deontic"]
+    addr = r.norm.get("addressee_type")
+    if deontic in ("OBLIGATION", "PROHIBITION"):
+        return addr in ALLOWED_ADDRESSEE_TYPES
+    if deontic == "COMPETENCE":
+        return addr in COMPETENCE_ALLOWED_ADDRESSEE_TYPES
+    return False
+
+
+# Penalty/sanction keyword family (2026-09-24, explicit request): the existing
+# NOTIFICATION_TRIGGER_KEYWORDS family only bridges incident/breach vocabulary gaps --
+# checked directly, GDPR art. 83 already has a genuine "if you don't comply, you are
+# fined" norm addressed to a REGULATED_ENTITY ("een onderneming... 4% van de... jaaromzet"),
+# already technically eligible under the OBLIGATION+REGULATED_ENTITY population, but
+# NEVER discovered as a candidate because no signal's vocabulary covers fines/sanctions
+# at all. This is the same "independently belongs to the family" check as
+# _trigger_keyword_hit, applied to a different, curated lexicon.
+PENALTY_TRIGGER_KEYWORDS = {
+    "boete", "sanctie", "dwangsom", "geldboete", "bestuurlijke", "strafmaatregel",
+    "corrigerende maatregel", "handhavingsmaatregel", "intrekking", "schorsing",
+}
+
+
+def _penalty_keyword_hit(a: c1.NormRecord, b: c1.NormRecord) -> bool:
+    def in_family(rec: c1.NormRecord) -> bool:
+        blob = f"{rec.norm.get('trigger_event') or ''} {rec.norm.get('action') or ''}".lower()
+        return any(kw in blob for kw in PENALTY_TRIGGER_KEYWORDS)
+    return in_family(a) and in_family(b)
 
 
 def _cosine_scores(client, texts: list[str], pairs: set) -> list[tuple[int, int, float]]:
@@ -271,8 +340,7 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
     # were lost this way, including two from Telecommunicatiewet art. 11.3a itself (the
     # content of the very notification duty this module already treats as a real
     # finding). The word-count gate below is now the ONLY eligibility filter.
-    all_obligations = [r for r in records if r.norm["deontic"] == "OBLIGATION"
-                       and r.norm.get("addressee_type") in ALLOWED_ADDRESSEE_TYPES]
+    all_obligations = [r for r in records if _c2_eligible(r)]
     obligations = [r for r in all_obligations
                    if len(c1._content_words(_gate_text(r))) >= MIN_TRIGGER_CONTENT_WORDS]
     # Embedding text falls back to action when trigger_event is empty (2026-09-24, a
@@ -310,12 +378,17 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
     # vocabulary gaps embeddings miss, exactly as it does in C1.
     from itertools import combinations
     keyword_hit_idx = set()
+    penalty_hit_idx = set()
     for i, j in combinations(range(len(obligations)), 2):
         a, b = obligations[i], obligations[j]
-        if a.instrument_id != b.instrument_id and c1._trigger_keyword_hit(a, b):
+        if a.instrument_id == b.instrument_id:
+            continue
+        if c1._trigger_keyword_hit(a, b):
             keyword_hit_idx.add((i, j))
+        if _penalty_keyword_hit(a, b):
+            penalty_hit_idx.add((i, j))
 
-    candidate_idx = semantic_hit_idx | keyword_hit_idx
+    candidate_idx = semantic_hit_idx | keyword_hit_idx | penalty_hit_idx
 
     drop_counts = {"too_generic_trigger": len(all_obligations) - len(obligations),
                    "addressee_mismatch": 0, "same_instrument": 0, "vertical": 0,
@@ -338,7 +411,8 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
         if frozenset({_norm_key(a), _norm_key(b)}) in c1_labelled:
             drop_counts["already_c1"] += 1
             continue
-        signals = {"semantic_hit": (i, j) in semantic_hit_idx, "keyword_hit": (i, j) in keyword_hit_idx}
+        signals = {"semantic_hit": (i, j) in semantic_hit_idx, "keyword_hit": (i, j) in keyword_hit_idx,
+                   "penalty_hit": (i, j) in penalty_hit_idx}
         pairs.append((a, b, signals))
 
     return pairs, drop_counts, len(candidate_idx)
@@ -717,6 +791,8 @@ def build_finding(a: c1.NormRecord, b: c1.NormRecord, burden: dict, verdict: Dup
         criteria.append("trigger_event_embedding_similarity")
     if signals.get("keyword_hit"):
         criteria.append("trigger_event_keyword_family_match")
+    if signals.get("penalty_hit"):
+        criteria.append("penalty_keyword_family_match")
     return {
         "finding_id": f"F-C2-{c1._pair_id(a, b)}",
         "category": "deduplication",
@@ -813,15 +889,15 @@ def main():
     print(f"  {len(records)} eligible norms loaded, {len(c1_labelled)} pair(s) already "
           f"labelled by C1 (excluded from C2 entirely)", flush=True)
 
-    print(f"  finding candidate pairs among OBLIGATION norms by trigger_event embedding "
-          f"similarity (top-{args.semantic_k} cross-instrument, top-"
-          f"{args.semantic_k_within} within-instrument) OR trigger-keyword-family match "
-          f"(reused from C1, bridges vocabulary gaps embeddings miss -- see module "
-          f"docstring), both gated on addressee_type match...", flush=True)
+    print(f"  finding candidate pairs among OBLIGATION/PROHIBITION/COMPETENCE norms by "
+          f"trigger_event embedding similarity (top-{args.semantic_k} cross-instrument, "
+          f"top-{args.semantic_k_within} within-instrument) OR trigger-keyword-family "
+          f"match OR penalty-keyword-family match (both reused/added -- see module "
+          f"docstring), all gated on addressee_type match...", flush=True)
     pairs, drop_counts, n_candidates = generate_pairs(
         client, records, g, c1_labelled, args.semantic_k, args.semantic_k_within)
-    print(f"  {drop_counts['too_generic_trigger']} OBLIGATION norm(s) excluded before "
-          f"matching (trigger_event+action too short/generic, <{MIN_TRIGGER_CONTENT_WORDS} "
+    print(f"  {drop_counts['too_generic_trigger']} norm(s) excluded before matching "
+          f"(trigger_event+action too short/generic, <{MIN_TRIGGER_CONTENT_WORDS} "
           f"combined content words)", flush=True)
     print(f"  {n_candidates} candidate index-pair(s) (embedding OR keyword signal); "
           f"dropped {drop_counts['addressee_mismatch']} (addressee_type mismatch), "
