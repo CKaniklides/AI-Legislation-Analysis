@@ -1,0 +1,79 @@
+[ok] L1a loader instrument_id: every provision resolves its own instrument_id
+[RED] L1b silent drop: addressee_type None: 52 of 1767 eligible-deontic norms (2.9%) are dropped before candidate generation because addressee_type is null; by source: {'BWBR0052872': 11, 'BWBR0040940': 6, 'BWBR0048156': 5, 'BWBR0009950': 3, 'BWBR0051796': 1, '32016R0679': 5, '32022R2554': 3, '32024R1689': 18}
+        e.g. BWBR0052872 art 12(2) PROHIBITION addressee=None action='is artikel\xa03, vierde lid, van de bijlage bij de Aanbeveling 2003/361/E'
+        e.g. BWBR0052872 art 25(4) COMPETENCE addressee=None action='kunnen bij of krachtens algemene maatregel van bestuur naast de hiervo'
+        e.g. BWBR0052872 art 65(1) OBLIGATION addressee=None action='worden regels gesteld over de periode gedurende welke de persoonsgegev'
+        dropped: BWBR0052872 art 12(2) PROHIBITION addressee=None action='is artikel\xa03, vierde lid, van de bijlage bij de Aanbeveling 2003/361/E'
+        dropped: BWBR0052872 art 25(4) COMPETENCE addressee=None action='kunnen bij of krachtens algemene maatregel van bestuur naast de hiervo'
+        dropped: BWBR0052872 art 65(1) OBLIGATION addressee=None action='worden regels gesteld over de periode gedurende welke de persoonsgegev'
+        dropped: BWBR0052872 art 67(None) PROHIBITION addressee=None action='de verstrekking van informatie waarvan de bekendmaking strijdig is met'
+        dropped: BWBR0052872 art 68(4) OBLIGATION addressee=None action='mededeling gedaan door plaatsing in de Staatscourant'
+        dropped: BWBR0052872 art 80(3) OBLIGATION addressee=None action='De boete bedraagt ten hoogste'
+        dropped: BWBR0052872 art 80(6) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0052872 art 87(6) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0052872 art 87(3) COMPETENCE addressee=None action='De boete bedraagt ten hoogste'
+        dropped: BWBR0052872 art 91(5) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0052872 art 93(5) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0040940 art 5(7) PROHIBITION addressee=None action='zijn niet van toepassing'
+        dropped: BWBR0040940 art 21a(2) OBLIGATION addressee=None action='vindt de samenwerking en uitwisseling van informatie met De Nederlands'
+        dropped: BWBR0040940 art 22(2) PROHIBITION addressee=None action='het verbod om bijzondere categorieën van persoonsgegevens te verwerken'
+        dropped: BWBR0040940 art 30a(4) OBLIGATION addressee=None action='geschiedt kosteloos'
+        dropped: BWBR0040940 art 47(2) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0040940 art 51(None) OBLIGATION addressee=None action='wordt ingetrokken'
+        dropped: BWBR0048156 art 2(8) OBLIGATION addressee=None action='wordt mededeling gedaan door plaatsing in de Staatscourant'
+        dropped: BWBR0048156 art 11(4) COMPETENCE addressee=None action='kunnen tevens regels worden gesteld over de interoperabiliteit tussen '
+        dropped: BWBR0048156 art 17(6) OBLIGATION addressee=None action='wordt mededeling gedaan door plaatsing in de Staatscourant'
+        dropped: BWBR0048156 art 25(1) PROHIBITION addressee=None action='Een voordracht voor een krachtens de artikelen\xa04, 5, vijfde en zesde l'
+        dropped: BWBR0048156 art 26(3) OBLIGATION addressee=None action='duurt ten hoogste vier jaar'
+        dropped: BWBR0009950 art 11.7(11) PROHIBITION addressee=None action='De voordracht voor een krachtens het tiende lid vast te stellen algeme'
+        dropped: BWBR0009950 art 11.7a(3) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: BWBR0009950 art 11.12(3) COMPETENCE addressee=None action='onder beperkingen worden verleend'
+        dropped: BWBR0051796 art 5(4) PROHIBITION addressee=None action='is niet van toepassing'
+        dropped: 32016R0679 art 1(3) PROHIBITION addressee=None action='beperkt noch verboden'
+        dropped: 32016R0679 art 2(2) PROHIBITION addressee=None action='is niet van toepassing op de verwerking van persoonsgegevens'
+        dropped: 32016R0679 art 34(2) OBLIGATION addressee=None action='bevat een omschrijving, in duidelijke en eenvoudige taal, van de aard '
+        dropped: 32016R0679 art 34(3) OBLIGATION addressee=None action='komt er in de plaats daarvan een openbare mededeling of een soortgelij'
+        dropped: 32016R0679 art 34(3) PROHIBITION addressee=None action='de mededeling zou onevenredige inspanningen vergen'
+        dropped: 32022R2554 art 10(2) COMPETENCE addressee=None action='maken meerdere controlelagen mogelijk en bepalen waarschuwingsdrempels'
+        dropped: 32022R2554 art 13(2) OBLIGATION addressee=None action='wordt bepaald of de vastgestelde procedures zijn gevolgd en of de geno'
+        dropped: 32022R2554 art 30(3) OBLIGATION addressee=None action='bijzonderheden te verschaffen over het toepassingsgebied, te volgen pr'
+        dropped: 32024R1689 art 2(8) PROHIBITION addressee=None action='is niet van toepassing op onderzoeks-, test- of ontwikkelingsactivitei'
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het in gebruik stellen of het gebruiken van '
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het in gebruik stellen of het gebruiken van '
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het in gebruik stellen of het gebruiken van '
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het voor dit specifieke doel in gebruik stel'
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het voor dit specifieke doel in gebruik stel'
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het voor dit specifieke doel in gebruik stel'
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het in de handel brengen, het voor dit specifieke doel in gebruik stel'
+        dropped: 32024R1689 art 5(1) PROHIBITION addressee=None action='het gebruik van systemen voor biometrische identificatie op afstand in'
+        dropped: 32024R1689 art 6(8) OBLIGATION addressee=None action='doen geen afbreuk aan het in deze verordening bepaalde algemene niveau'
+        dropped: 32024R1689 art 9(8) OBLIGATION addressee=None action='Het testen van AI-systemen met een hoog risico vindt, zoals passend, i'
+        dropped: 32024R1689 art 10(2) OBLIGATION addressee=None action='worden onderworpen aan praktijken op het gebied van databeheer die str'
+        dropped: 32024R1689 art 49(4) OBLIGATION addressee=None action='vindt de in de leden 1, 2 en 3 van dit artikel bedoelde registratie pl'
+        dropped: 32024R1689 art 53(7) OBLIGATION addressee=None action='worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwel'
+        dropped: 32024R1689 art 55(3) OBLIGATION addressee=None action='worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwel'
+        dropped: 32024R1689 art 59(1) PROHIBITION addressee=None action='persoonsgegevens die in de testomgeving worden aangemaakt mogen niet b'
+        dropped: 32024R1689 art 59(1) PROHIBITION addressee=None action='de verwerking van persoonsgegevens in het kader van de testomgeving ma'
+        dropped: 32024R1689 art 113(None) OBLIGATION addressee=None action='treedt in werking op de twintigste dag na die van de bekendmaking erva'
+[ok] L1c norm identity: 0 _norm_id values are shared by 2+ records (their pairs would share a pair_id and a cache entry)
+[info] L1d 516 of 1745 records lack paragraph_index and use the number-keyed text fallback (the path that can attach the wrong paragraph's text)
+[ok] L1e text attached to norm: 0 record(s) whose extracted action shares no content word with the paragraph text attached as its evidence (possible wrong paragraph)
+[info] candidate population: 20500 pairs (from 1745 records)
+[info] L2 records that never appear in ANY candidate pair: 15/1745 (1%); worst instruments: BWBR0009950 1/74, 32016R0679 4/317, BWBR0040940 1/86, 32022L2555 2/194, 32022R2554 3/324
+[info] L2b candidate pairs never judged by any pass: 8333/20500 (41%)
+[RED] L2b coverage skew: instrument pairs (>=40 candidates) with under half their candidates ever judged: 32022R2554x32022R2554 164/1319; 32016R0679xBWBR0051796 20/125; 32022L2555x32022L2555 136/550; 32016R0679x32016R0679 200/808; 32024R1689x32024R1689 274/800; 32022R2554x32024R1689 674/1872; 32016R0679x32022R2554 542/1287; 32016R0679x32024R1689 798/1806; 32016R0679x32022L2555 274/616
+[ok] L3 symmetry: predicates giving different answers for (A,B) vs (B,A): none
+[ok] L4 candidate order-invariance: 793 vs 793 pairs; symmetric difference 0
+[ok] L5a unique finding_id: 0 duplicated ids
+[ok] L5b findings resolve to norms: 0 non-definitional findings cite a norm not in the loaded corpus
+[ok] L5c self-pairs: 0 findings compare a norm with itself
+[ok] L5d one pair, two findings: 0 norm pairs appear in 2+ findings
+[ok] L5e evidence verbatim (silent only): 0 of 64 quoted evidence spans are not verbatim AND not flagged via needs_recheck_reason (1 more are non-verbatim but already caught+demoted -- not counted as red)
+[ok] L6a supersede completeness: 0 strict findings sit on pairs the graded pass already decided
+[ok] L6b graded findings match their verdict: 0 graded findings whose current cached final verdict is not a tension/missing-context
+[ok] L6c resolved ids absent: 0 ids both live and listed as resolved
+[ok] L7a report_eligible/human_verified: no finding is marked report-eligible or human-verified (the system never certifies)
+[info] L7b (subtype, tier, incompatibility_established) counts: {('standard_collision', 'Low', False): 2, ('competence_competition', 'Low', True): 3, ('competence_competition', 'High', True): 1, ('duty_conflict', 'Low', None): 1, ('definitional_mismatch', 'Medium', True): 29, ('definitional_mismatch', 'Low', None): 64, ('definitional_mismatch', 'Low', True): 1, ('missing_context', 'Low', None): 7, ('sensitive_data_tension', 'Low', None): 4, ('legal_tension', 'Low', None): 1, ('classification_mismatch', 'Low', None): 1, ('sensitive_data_tension', 'Medium', None): 4, ('legal_tension', 'Low', True): 1, ('permission_prohibition_conflict', 'Low', None): 11, ('permission_prohibition_conflict', 'Medium', None): 2}
+[ok] L7c High tier without established incompatibility: High-confidence findings whose incompatibility is NOT established: [] -- 'High' then means 'mechanically clean comparison', not 'likely a real conflict'
+[ok] L8a scale words: 0 threshold strings with a scale word (miljoen/million...) parsed to a small euro amount
+[ok] L8b multi-tier fines compared tier-blind: 0 threshold_mismatch finding(s) involve a norm with 2+ same-kind amounts; route_subtype returns the FIRST unequal pair of tiers, so which tiers were compared is arbitrary

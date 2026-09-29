@@ -44,6 +44,7 @@ import json
 import re
 import sys
 import threading
+from collections import Counter
 from dataclasses import dataclass
 from datetime import date
 from itertools import combinations
@@ -189,6 +190,77 @@ def _graph_uid(p: dict, instrument_id: str) -> Optional[str]:
     return None
 
 
+# Addressee-type inference for norms the extractor left addressee_type=None on (2026-09-28
+# fix, diagnosing-bugs audit finding #2). Checked directly: 52 of 1,767 eligible-deontic
+# norms carry no addressee_type and were being silently dropped before candidate generation
+# ever ran -- among them ALL EIGHT of the AI Act's own art. 5(1) prohibited-practices list
+# (the "verboden AI-praktijken" flagship provisions) and art. 10(2)'s data-governance duty,
+# central to this report's own most-discussed finding (GDPR 9 vs. AI Act 10(5)).
+#
+# First excluded outright (verified against the actual corpus text below, not guessed): text
+# patterns that are not a real addressee-bearing duty at all, so inheriting a sibling's
+# addressee would be fabricating one, not finding one.
+_NOT_A_DUTY_ACTION_RE = re.compile(
+    r"^(is|zijn)\s+niet\s+van\s+toepassing"      # applicability carve-out (8 occurrences)
+    r"|treedt\s+in\s+werking"                     # entry into force (1)
+    r"|^wordt\s+ingetrokken"                      # repeal (1)
+    r"|doen\s+geen\s+afbreuk\s+aan"                # savings clause (1)
+    r"|^(de|een)\s+voordracht\s+voor"              # nomination-procedure citation fragment (3)
+    r"|^is\s+artikel\s+\d",                        # bare cross-reference citation fragment (1)
+    re.I)
+# AI Act art. 53(7)/55(3) ("worden verwerkt overeenkomstig de in artikel 78 vastgelegde
+# vertrouwelijkheidsverplichtingen"): checked directly against art. 78 and against these two
+# articles' own siblings -- this clause is about the CONFIDENTIALITY DUTY OF WHOEVER RECEIVES
+# the technical documentation (the AI Office / national authorities), not of the providers who
+# supply it, even though every other norm in both articles is REGULATED_ENTITY-addressed.
+# Sibling-majority inheritance would silently attach the wrong addressee here, so these two are
+# hand-excluded rather than inferred. AI Act art. 49(4) ("vindt de ... registratie plaats in een
+# beveiligd niet-openbaar gedeelte...") is similarly ambiguous -- its own paragraph (lid 4) mixes
+# a REGULATED_ENTITY registration duty with a COMPETENT_AUTHORITY access rule -- left excluded
+# for the same reason.
+_ADDRESSEE_INFERENCE_HAND_EXCLUDED = {
+    ("32024R1689", "53", "7"), ("32024R1689", "55", "3"), ("32024R1689", "49", "4"),
+}
+# Whole-article vote genuinely tied, each verified by hand against the article's actual text
+# (2026-09-28) rather than left to Counter.most_common's arbitrary insertion-order tie-break,
+# which was checked and confirmed silently wrong on the first of these two: AI Act art. 5(1)'s
+# 8 prohibited-practice entries tied 2 COMPETENT_AUTHORITY / 2 REGULATED_ENTITY across the
+# article and were all getting COMPETENT_AUTHORITY -- wrong, since the two COMPETENT_AUTHORITY
+# siblings are about reporting on law-enforcement remote-biometric-ID use (a different lid
+# entirely), while the two REGULATED_ENTITY siblings ("elk gebruik van systemen...") use nearly
+# the same verb phrase ("in de handel brengen"/"in gebruik stellen"/"gebruiken van") as the 8
+# tied entries themselves -- the AI Act's own standard formula for addressing providers/
+# deployers/importers/distributors. Cbw art. 25(4) ties 1 COMPETENT_AUTHORITY / 1
+# REGULATED_ENTITY; its action text ("kunnen bij of krachtens algemene maatregel van bestuur...
+# worden vastgesteld") is close to verbatim the same AMvB rule-making-delegation formula as its
+# COMPETENT_AUTHORITY sibling, not the REGULATED_ENTITY sibling's unrelated incident-reporting
+# duty.
+_ADDRESSEE_INFERENCE_TIE_OVERRIDE = {
+    ("32024R1689", "5"): "REGULATED_ENTITY",
+    ("BWBR0052872", "25"): "COMPETENT_AUTHORITY",
+}
+
+
+def _infer_addressee_type(instrument_id: str, article: str, norm: dict, all_norms: list[dict]) -> Optional[str]:
+    if _NOT_A_DUTY_ACTION_RE.search(norm.get("action") or ""):
+        return None
+    if (instrument_id, article, str(norm.get("number"))) in _ADDRESSEE_INFERENCE_HAND_EXCLUDED:
+        return None
+    siblings = [s for s in all_norms if s is not norm and s.get("addressee_type")]
+    if not siblings:
+        return None
+    pidx = norm.get("paragraph_index")
+    if pidx is not None:
+        same_para = [s["addressee_type"] for s in siblings if s.get("paragraph_index") == pidx]
+        if same_para and len(set(same_para)) == 1:
+            return same_para[0]
+    tally = Counter(s["addressee_type"] for s in siblings)
+    top, top_n = tally.most_common(1)[0]
+    if top_n > sum(tally.values()) / 2:  # strict majority only -- a tie is NOT decided by
+        return top                        # insertion order (see the override table above)
+    return _ADDRESSEE_INFERENCE_TIE_OVERRIDE.get((instrument_id, article))
+
+
 def load_all_norm_records() -> list[NormRecord]:
     records = []
     for path, get_provisions in SOURCES:
@@ -216,17 +288,24 @@ def load_all_norm_records() -> list[NormRecord]:
             # extracted before the migration ran (paragraph_index absent).
             by_number = {str(para.get("number")): para["text"] for para in para_list}
 
-            for norm in p.get("norms", []):
+            all_norms = p.get("norms", [])
+            for norm in all_norms:
                 if norm["deontic"] not in ELIGIBLE_DEONTICS:
                     continue
-                if norm.get("addressee_type") is None:
+                addressee_type = norm.get("addressee_type")
+                inferred = False
+                if addressee_type is None:
+                    addressee_type = _infer_addressee_type(instrument_id, article, norm, all_norms)
+                    inferred = addressee_type is not None
+                if addressee_type is None:
                     continue
                 pidx = norm.get("paragraph_index")
                 if pidx is not None and 0 <= pidx < len(para_list):
                     text = para_list[pidx]["text"]
                 else:
                     text = by_number.get(str(norm.get("number")), p.get("text", ""))
-                records.append(NormRecord(norm, p, instrument_id, article, heading, text, graph_uid))
+                norm_rec = {**norm, "addressee_type": addressee_type} if inferred else norm
+                records.append(NormRecord(norm_rec, p, instrument_id, article, heading, text, graph_uid))
     return records
 
 
@@ -255,6 +334,136 @@ def _trigger_keyword_hit(a: NormRecord, b: NormRecord) -> bool:
         blob = f"{rec.norm.get('trigger_event') or ''} {rec.norm.get('action') or ''}".lower()
         return any(kw in blob for kw in NOTIFICATION_TRIGGER_KEYWORDS)
     return in_family(a) and in_family(b)
+
+
+# Risk-classification keyword family (2026-09-28, per an external ground-truth check
+# against data/real_conflicts): GDPR art. 35(1)/36(1) (the DPIA trigger and its
+# follow-on consultation duty) never became a candidate against AI Act art. 6(4) (a
+# provider's own documented high-risk self-assessment) -- checked directly, addressee
+# matched but none of the existing three signals fired. Verified before trusting it:
+# both sides literally share the phrase "hoog risico" (GDPR 35(1): "...waarschijnlijk
+# een hoog risico inhoudt..."; AI Act 6(4): "...geen hoog risico inhoudt..."), so this
+# is a real shared phrase, not a guessed synonym. Bare "hoog risico" alone was checked
+# and rejected as a keyword: it's the AI Act's own pervasive background term (143 of
+# ~700 AI Act norms use it), so pairing on it alone would flood candidate generation.
+# Requiring it to co-occur with an assessment/classification word narrows this to
+# exactly 38 norms corpus-wide (36 AI Act + 2 GDPR, both of which are art. 35(1)/36(1))
+# -- specifically about CLASSIFYING something as high-risk, which is what this ground-
+# truth pair is actually about, not the AI Act's general high-risk-system obligations.
+# Checked against r.text, not trigger_event/action, for the same reason as C2's own
+# impact-assessment/documentation families (detect_c2_deduplication.py): AI Act 6(4)'s
+# "hoog risico" appears in its full text but was summarized out of the extracted
+# trigger_event/action fields.
+RISK_CLASSIFICATION_KEYWORDS = {"beoordeling", "classificatie", "indeling", "indelen"}
+
+
+def _risk_classification_hit(a: NormRecord, b: NormRecord) -> bool:
+    def in_family(rec: NormRecord) -> bool:
+        blob = rec.text.lower()
+        return "hoog risico" in blob and any(kw in blob for kw in RISK_CLASSIFICATION_KEYWORDS)
+    return in_family(a) and in_family(b)
+
+
+# Effective addressee (2026-09-28, per an external ground-truth check against
+# data/real_conflicts, INC-0009a): NIS2 is a DIRECTIVE, so its own text is drafted as
+# "Member States shall ensure that entities do X", not "entities shall do X" -- Stage 6
+# extraction correctly captures the literal grammatical addressee (Member State), but
+# that silently blocks EVERY comparison between NIS2's own core duties and GDPR/AI Act/
+# DORA's directly-addressed ones, in both this file and detect_c2_deduplication.py,
+# since both require addressee_type to match exactly. Checked directly: of NIS2's 68
+# MEMBER_STATE-addressed norms, 18 follow this exact "ensure/require THAT entities
+# [verb]" pattern where the entity is genuinely the one doing the compliance work --
+# including the two flagship provisions this project has repeatedly relied on (art.
+# 21's risk-management duty, art. 23's incident-reporting duty). The other ~50 are
+# genuine Member-State-only duties (designating an authority, notifying the
+# Commission, adopting a national strategy) and must NOT be reinterpreted.
+#
+# This does NOT change the extracted addressee_type field itself (still literally
+# correct) -- it only widens what a MEMBER_STATE-addressed norm is allowed to be
+# CANDIDATE-matched against, by requiring "dat" (that) to be preceded by an ensure/
+# require verb and followed, within the same sentence, by a whole-word "entiteit"
+# (word-boundary required -- "identiteit" contains "entiteit" as a bare substring,
+# a real false-positive risk checked and ruled out directly). Verified against real
+# output before trusting it: 16 of 18 matches are genuine; the 2 remaining (art. 32
+# ¶¶ 9-10, about authorities coordinating with the DORA oversight forum) are an
+# accepted false-positive cost for a candidate-generation signal, not a final verdict
+# -- adjudication correctly rejects them either way.
+_ENSURES_ENTITY_VERB_RE = re.compile(r"(zorg\w*|zien\s+erop|ziet\s+erop|vereisen|schrijv\w*|verplicht\w*)", re.I)
+_ENTITEIT_WORD_RE = re.compile(r"\bentiteit", re.I)
+
+
+def _nis2_directive_is_entity_facing(r: NormRecord) -> bool:
+    if r.instrument_id != "32022L2555" or r.norm.get("addressee_type") != "MEMBER_STATE":
+        return False
+    text = f"{r.norm.get('action') or ''}. {r.text}"
+    for sentence in re.split(r"(?<=[.;])\s+", text):
+        for m in re.finditer(r"\bdat\b", sentence, re.I):
+            before, after = sentence[max(0, m.start() - 45):m.start()], sentence[m.end():m.end() + 70]
+            if _ENSURES_ENTITY_VERB_RE.search(before) and _ENTITEIT_WORD_RE.search(after):
+                return True
+    return False
+
+
+# Data-subject-right addressee (2026-09-28, per an external ground-truth check,
+# found while validating C1 against data/real_conflicts's INC-0007): GDPR art. 22 --
+# literally the "right not to be subject to automated decision-making" clause, the
+# single most on-point provision for that ground-truth case -- never became a
+# candidate, because "de betrokkene heeft het recht niet te worden onderworpen aan..."
+# (the data subject HAS THE RIGHT not to be subjected to...) is grammatically about
+# who HOLDS the right, not who bears the correlative duty (the controller). Same
+# underlying pattern as the NIS2 fix above (grammatical subject != who actually
+# complies), showing up as a rights-clause instead of a directive's "ensure that"
+# clause.
+#
+# Checked directly, corpus-wide, before trusting this (8 DATA_SUBJECT norms total,
+# not just these two): a broad "contains 'recht'" check is too loose -- it also
+# matches UAVG art. 30a(2)'s "gewezen op de van toepassing zijnde RECHTEN" (informed
+# of the applicable rights, a different construction) and BWBR0040940 art. 37 (a
+# rule about court-claim admissibility that happens to mention "Burgerlijk Wetboek",
+# nothing to do with a data-subject right at all). The precise, narrow marker that
+# correctly matches ONLY the two genuine cases (GDPR art. 15(2) and 22(1), both
+# literally "heeft de betrokkene het recht...") and excludes all 6 others is "heeft
+# ... het recht" specifically, not just "recht" anywhere in the text.
+_DATA_SUBJECT_RIGHT_RE = re.compile(r"\bheeft\b.{0,20}\bhet\s+recht\b", re.I)
+
+
+def _data_subject_right_is_entity_facing(r: NormRecord) -> bool:
+    return r.norm.get("addressee_type") == "DATA_SUBJECT" and bool(_DATA_SUBJECT_RIGHT_RE.search(r.text))
+
+
+def _effective_addressee_types(r: NormRecord) -> set:
+    base = {r.norm.get("addressee_type")}
+    if _nis2_directive_is_entity_facing(r):
+        base.add("REGULATED_ENTITY")
+    if _data_subject_right_is_entity_facing(r):
+        base.add("REGULATED_ENTITY")
+    return base
+
+
+# Automated-decision-making / human-oversight concept pair (2026-09-28, per an external
+# review of the real_conflicts ground-truth check): GDPR art. 22's right not to be
+# subject to purely automated decisions and the AI Act's human-oversight design/
+# assignment duties (arts. 14, 26) never became a candidate -- checked directly, they
+# share no vocabulary at all (GDPR: "geautomatiseerde besluitvorming", "profilering";
+# AI Act: "menselijk toezicht", "mens-machine-interface"), a genuinely asymmetric pair
+# like C1's existing CONCEPT_PAIR_FAMILIES entries, not a same-family case. Kept as its
+# own dedicated function rather than added to CONCEPT_PAIR_FAMILIES/_concept_pair_hit:
+# that function reads trigger_event/action only, and checked directly, several of these
+# phrases (e.g. "geautomatiseerde besluitvorming", "toezichtmaatregelen") were
+# summarized out of those fields and only survive in the full paragraph text -- the
+# same lesson as C2's impact-assessment/documentation families. Widening
+# _concept_pair_hit itself to full text would also silently change candidate volume
+# for the three existing, already-validated families, an unrelated and unverified
+# side effect; a separate function avoids that.
+_AUTOMATED_DECISION_TERMS = {"geautomatiseerde verwerking", "geautomatiseerde besluitvorming", "profilering"}
+_HUMAN_OVERSIGHT_TERMS = {"menselijk toezicht", "mens-machine-interface", "toezichtmaatregelen"}
+
+
+def _automated_decision_oversight_hit(a: NormRecord, b: NormRecord) -> bool:
+    ta, tb = a.text.lower(), b.text.lower()
+    a_auto, a_oversight = any(kw in ta for kw in _AUTOMATED_DECISION_TERMS), any(kw in ta for kw in _HUMAN_OVERSIGHT_TERMS)
+    b_auto, b_oversight = any(kw in tb for kw in _AUTOMATED_DECISION_TERMS), any(kw in tb for kw in _HUMAN_OVERSIGHT_TERMS)
+    return (a_auto and b_oversight) or (a_oversight and b_auto)
 
 
 def _concept_pair_hit(a: NormRecord, b: NormRecord) -> bool:
@@ -304,7 +513,7 @@ def generate_candidates(records: list[NormRecord], g: nx.MultiDiGraph,
     n = len(records)
     for i, j in combinations(range(n), 2):
         a, b = records[i], records[j]
-        if a.norm["addressee_type"] != b.norm["addressee_type"]:
+        if not (_effective_addressee_types(a) & _effective_addressee_types(b)):
             continue
         # No in-force gate here (2026-09-23 decision): a not-yet-in-force provision can
         # still genuinely contradict something already in force -- catching that before
@@ -318,10 +527,15 @@ def generate_candidates(records: list[NormRecord], g: nx.MultiDiGraph,
         # citation or shared drafting context; this signal exists to bridge instruments
         # that share neither vocabulary nor a citation link.
         concept_hit = cross_instrument and _concept_pair_hit(a, b)
-        if not (graph_hit or trigger_hit or semantic_hit or concept_hit):
+        risk_classification_hit = cross_instrument and _risk_classification_hit(a, b)
+        automation_oversight_hit = cross_instrument and _automated_decision_oversight_hit(a, b)
+        if not (graph_hit or trigger_hit or semantic_hit or concept_hit or risk_classification_hit
+                or automation_oversight_hit):
             continue
         candidates.append({"a": a, "b": b, "graph_hit": graph_hit, "trigger_hit": trigger_hit,
-                            "semantic_hit": semantic_hit, "concept_hit": concept_hit})
+                            "semantic_hit": semantic_hit, "concept_hit": concept_hit,
+                            "risk_classification_hit": risk_classification_hit,
+                            "automation_oversight_hit": automation_oversight_hit})
     return candidates
 
 
@@ -513,6 +727,34 @@ _DUTCH_STOPWORDS = {
     "bestuurlijke", "boete", "bedrag", "jaaromzet", "boekjaar", "voorgaande", "hoogste",
     "indien", "wereldwijde", "totale", "opleggen", "oplegging", "overtreder", "overtreding",
     "geval", "meer",
+    # EU-regulation-drafted fine-clause boilerplate (2026-09-28 fix, diagnosing-bugs audit
+    # finding #3): the exclusion above was built and verified only against Dutch national-law
+    # fine phrasing ("bestuurlijke boete... jaaromzet..."). Checked directly: ALL 8
+    # threshold_mismatch findings between GDPR/NIS2/AI Act fine articles -- the report's own
+    # Part 1 flagship findings -- were passing _same_function's "same violation type" gate
+    # purely on this EU-regulation phrasing ("administratieve geldboeten... onderneming...
+    # onderworpen"), never on any word describing WHICH violation is being fined. The stored
+    # confidence_reasons text ("same underlying violation type confirmed by content overlap")
+    # was therefore false for all 8: GDPR 83(6) (non-compliance with a supervisory order),
+    # NIS2 34(4)/(5) (an essential/important entity's own arts. 21/23 breach) and AI Act
+    # 99(3)/(5) (a prohibited-practice violation, or supplying incorrect information) are
+    # three genuinely different violations, not one shared violation type. Adding the
+    # EU-phrasing equivalents closes the same gap the Dutch-boilerplate fix above already
+    # closed for national law.
+    "administratieve", "geldboeten", "geldboete", "onderneming", "ondernemingen",
+    "onderworpen", "naleving", "hoger",
+    # "krachtens" ("pursuant to"/"under") -- a generic legal connective, same class as
+    # "artikel"/"lid"/"bedoeld" above (2026-09-28 fix, found while spot-checking the two
+    # NEW threshold_mismatch findings the addressee-recovery fix surfaced: Cbw art. 80(3)/
+    # 87(3) vs. UAVG art. 21a(4) passed _same_function on this ONE shared word alone --
+    # both action fragments are short, so one generic connective clears the 15% overlap
+    # bar with nothing to do with which violation either fine actually punishes).
+    "krachtens",
+    # "overeenkomstig" ("in accordance with") -- same class, found the same way
+    # immediately after: GDPR art. 58(2) vs. its own art. 58(3) (a WITHIN-instrument
+    # false competence_competition, two unrelated DPA powers -- accrediting certification
+    # bodies vs. ordering rectification/erasure) passed _same_function on this ONE word.
+    "overeenkomstig",
 }
 
 
@@ -1200,9 +1442,193 @@ def _definitions_context(rec: "NormRecord", definitions: dict, label: str) -> st
             f"(context for norm {label} -- not itself a norm being compared):\n{lines}\n")
 
 
-def adjudicate_duty_conflict(client, model: str, a: NormRecord, b: NormRecord) -> AdjudicationResult:
+# ---------------------------------------------------------------------------
+# Reference expansion (2026-09-26, confirmed necessary by direct evidence, same problem
+# class C2 hit and fixed for AI Act art. 73): sampled the 354 INSUFFICIENT_EVIDENCE
+# duty_conflict verdicts on file and at least 66 of them explicitly say the compared
+# paragraph's substance is defined in ANOTHER paragraph that was never shown to the
+# model -- e.g. "Norm B's referenced second paragraph is not provided, so the precise
+# content... cannot be assessed" and "the content of Norm A's first through sixth
+# paragraphs is not provided". The model was right given what it was shown; it just
+# wasn't shown the paragraph its own comparison depends on.
+#
+# _referenced_paragraph_numbers (above) already exists but is used ONLY by
+# check_deference_suppresses's same-article ordinal-word check ("eerste lid"). Deliberately
+# NOT widened in place here -- that function's behaviour is already relied on in
+# production and widening it to also match numeric "lid 1" style would silently change
+# deference suppression too, an unrelated and unverified side effect. A separate,
+# numeric-inclusive variant is used for context-building only (mirrors
+# detect_c2_deduplication.py's own _referenced_paragraph_numbers_c2, built for the same
+# reason: EU-regulation translated text uses numeric "lid 1", not Cbw's ordinal-word
+# style, and this pipeline's own corpus mixes both).
+# ---------------------------------------------------------------------------
+
+_NUMERIC_LID_RE = re.compile(r"\blid\s+(\d+)\b", re.I)
+
+
+def _referenced_paragraph_numbers_ctx(text: str) -> set:
+    return {int(m.group(1)) for m in _NUMERIC_LID_RE.finditer(text)} | _referenced_paragraph_numbers(text)
+
+
+# Paragraphs with no eligible norm of their own (2026-09-28, found via data/
+# real_conflicts's INC-0008, GDPR art. 9 vs. AI Act art. 10(5)): the two index builders
+# below were built ONLY from eligible-norm records, so any paragraph that never became
+# an OBLIGATION/PROHIBITION/COMPETENCE norm was invisible as reference context no matter
+# how central it was. GDPR art. 9(2) -- the full list of exceptions to the art. 9(1)
+# prohibition on processing special-category data ("Lid 1 is niet van toepassing
+# wanneer...", items a-j, ~4,000 characters) -- has no norm at all in the extracted
+# data, so the model adjudicating art. 9(1) vs. AI Act art. 10(5) genuinely could not
+# see whether an exception applies, and (correctly, given what it was shown) returned
+# INSUFFICIENT_EVIDENCE citing exactly that. Checked directly: the text was never
+# missing from the SOURCE (every provision keeps its full `paragraphs` list, 5,081
+# characters for art. 9 alone) -- it just never reached the index. Corrects an earlier
+# wrong claim in this project's notes that Stage 6 lacks a PERMISSION category: the raw
+# extraction has 235 PERMISSION norms (plus DEFINITION, PROCEDURAL, DEFERENCE), they are
+# simply filtered out of C1's comparison pool by ELIGIBLE_DEONTICS.
+#
+# Strictly additive: paragraphs that already have an eligible norm are untouched, so
+# every context block built before this change is unchanged; this only ADDS context for
+# paragraphs that were previously invisible.
+_OTHER_ARTICLE_PREFIX_RE = re.compile(r"artikel\s+\d+[a-z]*(?:\.\d+)?\s*,?\s*$", re.I)
+
+
+def _own_article_paragraph_references(text: str) -> set:
+    """Like _referenced_paragraph_numbers_ctx, but skips a "lid N" / "eerste lid" that is
+    immediately qualified by "artikel M," -- that names a paragraph of a DIFFERENT
+    article ("artikel 89, lid 1"), and counting it as a same-article reference would
+    wrongly link this paragraph to its own article's paragraph N. Only used for the raw
+    paragraphs with no structured fields to scan (long free text, more prone to this);
+    the existing eligible-norm path is deliberately left exactly as it was."""
+    nums = set()
+    for m in _NUMERIC_LID_RE.finditer(text):
+        if _OTHER_ARTICLE_PREFIX_RE.search(text[max(0, m.start() - 30):m.start()]):
+            continue
+        nums.add(int(m.group(1)))
+    for m in _LID_REFERENCE_RE.finditer(text):
+        if _OTHER_ARTICLE_PREFIX_RE.search(text[max(0, m.start() - 30):m.start()]):
+            continue
+        nums.add(_DUTCH_ORDINALS[m.group(1).lower()])
+    return nums
+
+
+def _uncovered_source_paragraphs(records: list["NormRecord"]) -> list[dict]:
+    covered = {(r.instrument_id, r.article, r.text) for r in records}
+    out = []
+    for path, get_provisions in SOURCES:
+        root = json.loads((ROOT / path).read_text(encoding="utf-8"))
+        for p in get_provisions(root):
+            if "instrument_id" in p:
+                iid = p["instrument_id"]
+            elif "uitvoeringswet" in path.lower():
+                iid = "BWBR0051796"
+            elif "bijlage35" in path.lower():
+                iid = "BWBR0049497"
+            else:
+                continue
+            article = str(p.get("article") or p.get("number"))
+            for para in (p.get("paragraphs") or []):
+                text = para.get("text")
+                if text and (iid, article, text) not in covered:
+                    out.append({"instrument_id": iid, "article": article,
+                                "number": str(para.get("number")), "text": text})
+    return out
+
+
+def _build_paragraph_text_index(records: list["NormRecord"]) -> dict:
+    """(instrument_id, article, paragraph_number) -> LIST of that paragraph's own
+    text(s), not a single string -- this corpus has at least one real case (AI Act art.
+    73) where two distinct paragraph-list positions both display the number "11" with
+    genuinely different text, so a reference to "lid 11" cannot be resolved to a single
+    answer from the number alone. Every distinct text is kept and shown to the LLM,
+    labelled ambiguous when there's more than one, rather than silently guessing.
+    Also includes paragraphs with no eligible norm of their own (see
+    _uncovered_source_paragraphs's note)."""
+    index: dict = {}
+    for r in records:
+        key = (r.instrument_id, r.article, str(r.norm.get("number")))
+        texts = index.setdefault(key, [])
+        if r.text not in texts:
+            texts.append(r.text)
+    for para in _uncovered_source_paragraphs(records):
+        texts = index.setdefault((para["instrument_id"], para["article"], para["number"]), [])
+        if para["text"] not in texts:
+            texts.append(para["text"])
+    return index
+
+
+def _build_reverse_reference_index(records: list["NormRecord"]) -> dict:
+    """(instrument_id, article, referenced_paragraph_number) -> {paragraph numbers of
+    OTHER norms in that article that reference it}. The forward direction alone leaves a
+    real asymmetry: a substantive paragraph 1 never learns that paragraph 2/3 exist and
+    specify ITS deadline/procedure -- only 2/3 learn about 1. This is the mirror lookup,
+    built once from every norm's own reference blob. Also scans the full text of
+    paragraphs with no eligible norm (see _uncovered_source_paragraphs's note) -- e.g.
+    GDPR art. 9(2)'s "Lid 1 is niet van toepassing wanneer..." registers as referring
+    back to art. 9(1)."""
+    from collections import defaultdict
+    reverse = defaultdict(set)
+    for r in records:
+        blob = " ".join(str(r.norm.get(f) or "") for f in
+                         ("trigger_event", "action", "deference", "conditions"))
+        own_number = str(r.norm.get("number"))
+        for num in _referenced_paragraph_numbers_ctx(blob):
+            if str(num) == own_number:
+                continue
+            reverse[(r.instrument_id, r.article, str(num))].add(own_number)
+    for para in _uncovered_source_paragraphs(records):
+        for num in _own_article_paragraph_references(para["text"]):
+            if str(num) == para["number"]:
+                continue
+            reverse[(para["instrument_id"], para["article"], str(num))].add(para["number"])
+    return reverse
+
+
+def _paragraph_context_line(key: tuple, num, paragraph_text_index: dict, tag: str) -> Optional[str]:
+    texts = paragraph_text_index.get(key) or []
+    if not texts:
+        return None
+    if len(texts) == 1:
+        return f"  lid {num} ({tag}): {texts[0]}"
+    joined = " -- OR (ambiguous, source has multiple paragraphs displaying this number) -- ".join(texts)
+    return f"  lid {num} ({tag}, ambiguous in the source): {joined}"
+
+
+def _reference_context(r: "NormRecord", paragraph_text_index: dict,
+                        reverse_reference_index: dict, label: str) -> str:
+    blob = " ".join(str(r.norm.get(f) or "") for f in
+                     ("trigger_event", "action", "deference", "conditions"))
+    own_number = str(r.norm.get("number"))
+    lines = []
+    for num in sorted(_referenced_paragraph_numbers_ctx(blob)):
+        if str(num) == own_number:
+            continue
+        line = _paragraph_context_line((r.instrument_id, r.article, str(num)), num,
+                                        paragraph_text_index, "referenced by this norm")
+        if line:
+            lines.append(line)
+    referencing_nums = reverse_reference_index.get((r.instrument_id, r.article, own_number), set())
+    for num in sorted(referencing_nums, key=lambda x: (len(x), x)):
+        line = _paragraph_context_line((r.instrument_id, r.article, num), num, paragraph_text_index,
+                                        "refers back to THIS norm -- may qualify it, create "
+                                        "exceptions to it, or specify its deadline/procedure")
+        if line:
+            lines.append(line)
+    if not lines:
+        return ""
+    return (f"\nRelated paragraph(s) from {r.instrument_id} art. {r.article} -- context "
+            f"for norm {label}, not itself part of the norm being compared:\n"
+            + "\n".join(lines) + "\n")
+
+
+def adjudicate_duty_conflict(client, model: str, a: NormRecord, b: NormRecord,
+                              paragraph_text_index: Optional[dict] = None,
+                              reverse_reference_index: Optional[dict] = None) -> AdjudicationResult:
     definitions = load_definitions_by_instrument()
     def_context = _definitions_context(a, definitions, "A") + _definitions_context(b, definitions, "B")
+    ref_context = ""
+    if paragraph_text_index is not None and reverse_reference_index is not None:
+        ref_context = (_reference_context(a, paragraph_text_index, reverse_reference_index, "A")
+                       + _reference_context(b, paragraph_text_index, reverse_reference_index, "B"))
 
     def build_prompt(retry_note: Optional[str] = None) -> str:
         note = (f"\nYour previous response was rejected: {retry_note}. "
@@ -1236,7 +1662,7 @@ def adjudicate_duty_conflict(client, model: str, a: NormRecord, b: NormRecord) -
             f"Provision text: {b.text}\n"
             f"Extracted: deontic={b.norm['deontic']}, action={b.norm.get('action')!r}, "
             f"conditions={b.norm.get('conditions')}\n"
-            + def_context
+            + def_context + ref_context
         )
 
     verdict = None
@@ -1390,7 +1816,11 @@ def build_finding(a: NormRecord, b: NormRecord, candidate: dict, subtype: str,
         "criteria_fired": [c for c, hit in [("graph_adjacency", candidate["graph_hit"]),
                                              ("trigger_keyword_match", candidate["trigger_hit"]),
                                              ("semantic_similarity", candidate.get("semantic_hit")),
-                                             ("concept_pair_match", candidate.get("concept_hit"))] if hit],
+                                             ("concept_pair_match", candidate.get("concept_hit")),
+                                             ("risk_classification_keyword_match",
+                                              candidate.get("risk_classification_hit")),
+                                             ("automated_decision_oversight_match",
+                                              candidate.get("automation_oversight_hit"))] if hit],
         "deterministic_result": deterministic_result,
         "llm_adjudication": llm.model_dump() if llm else None,
         "needs_recheck_reason": needs_recheck_reason,
@@ -1478,6 +1908,8 @@ def main():
     records = load_all_norm_records()
     g = nx.read_gexf(DATA / "graph.gexf")
     print(f"  {len(records)} eligible norms (deontic in {ELIGIBLE_DEONTICS}, addressee_type known)", flush=True)
+    paragraph_text_index = _build_paragraph_text_index(records)
+    reverse_reference_index = _build_reverse_reference_index(records)
 
     semantic_pairs = None
     if not args.no_semantic:
@@ -1497,7 +1929,8 @@ def main():
 
     candidates = generate_candidates(records, g, semantic_pairs)
     print(f"  {len(candidates)} candidate pair(s) after addressee_type gate + "
-          f"(graph adjacency OR trigger-keyword match OR semantic similarity)", flush=True)
+          f"(graph adjacency OR trigger-keyword match OR semantic similarity OR "
+          f"concept-pair match OR risk-classification-keyword match)", flush=True)
 
     # threshold_mismatch joins standard_collision/competence_competition as
     # deterministic (arithmetic, or a direct lookup); deontic_polarity_conflict still
@@ -1662,7 +2095,8 @@ def main():
           flush=True)
     from concurrent.futures import ThreadPoolExecutor, as_completed
     with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
-        future_to_p = {ex.submit(adjudicate_duty_conflict, client, args.model, p["a"], p["b"]): p
+        future_to_p = {ex.submit(adjudicate_duty_conflict, client, args.model, p["a"], p["b"],
+                                  paragraph_text_index, reverse_reference_index): p
                        for p in to_call_p}
         for done, fut in enumerate(as_completed(future_to_p), 1):
             p = future_to_p[fut]

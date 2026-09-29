@@ -287,11 +287,15 @@ def _c2_eligible(r: c1.NormRecord) -> bool:
     duplicated reporting OBLIGATION, and there is no separate SANCTION/PENALTY deontic
     type in the extraction schema to gate on instead."""
     deontic = r.norm["deontic"]
-    addr = r.norm.get("addressee_type")
+    # c1._effective_addressee_types() (2026-09-28), not the bare field: a NIS2 Directive
+    # norm phrased "Member States ensure that entities do X" is effectively entity-
+    # facing even though its literal grammatical addressee is MEMBER_STATE -- see that
+    # function's own note (found via the same real_conflicts ground-truth check).
+    effective = c1._effective_addressee_types(r)
     if deontic in ("OBLIGATION", "PROHIBITION"):
-        return addr in ALLOWED_ADDRESSEE_TYPES
+        return bool(effective & ALLOWED_ADDRESSEE_TYPES)
     if deontic == "COMPETENCE":
-        return addr in COMPETENCE_ALLOWED_ADDRESSEE_TYPES
+        return bool(effective & COMPETENCE_ALLOWED_ADDRESSEE_TYPES)
     return False
 
 
@@ -313,6 +317,54 @@ def _penalty_keyword_hit(a: c1.NormRecord, b: c1.NormRecord) -> bool:
     def in_family(rec: c1.NormRecord) -> bool:
         blob = f"{rec.norm.get('trigger_event') or ''} {rec.norm.get('action') or ''}".lower()
         return any(kw in blob for kw in PENALTY_TRIGGER_KEYWORDS)
+    return in_family(a) and in_family(b)
+
+
+# Impact/risk-assessment keyword family (2026-09-28, per an external ground-truth check
+# against data/real_conflicts): GDPR art. 35's DPIA and AI Act art. 27's fundamental-
+# rights impact assessment are a human-verified real duplication (that source's own
+# INC-0002/INC-0005), but they never became a C2 candidate at all -- checked directly,
+# zero of the three existing signals fired for any sub-pair. Verified before trusting
+# it: GDPR art. 35's own heading uses "gegevensbeschermingseffectbeoordeling" and AI Act
+# art. 27's own heading/text uses "effectbeoordeling(en) op het gebied van de
+# grondrechten" -- both literally contain "effectbeoordeling", a real shared substring,
+# not a guessed synonym.
+#
+# Checked against r.text, not trigger_event/action (2026-09-28 fix, found on the first
+# real attempt): AI Act art. 27(2)'s own action/trigger_event/conditions fields never
+# mention "effectbeoordeling" at all -- Stage 6's extraction summarized the paragraph's
+# main clause but dropped its middle sentence ("...kan... gebruik maken van eerder
+# uitgevoerde effectbeoordelingen..."), which is exactly where the word lives. The
+# trigger_event/action fields other signals use are a deliberately narrow summary and
+# structurally can't be relied on here; the full paragraph text (r.text) is what every
+# other part of this pipeline already treats as authoritative for prompt content, so
+# using it for keyword matching too is consistent, not a special case.
+IMPACT_ASSESSMENT_KEYWORDS = {"effectbeoordeling", "risicobeoordeling"}
+
+
+def _impact_assessment_keyword_hit(a: c1.NormRecord, b: c1.NormRecord) -> bool:
+    def in_family(rec: c1.NormRecord) -> bool:
+        return any(kw in rec.text.lower() for kw in IMPACT_ASSESSMENT_KEYWORDS)
+    return in_family(a) and in_family(b)
+
+
+# Documentation/logging/record-keeping keyword family (2026-09-28, same ground-truth
+# check, INC-0005): GDPR art. 30's processing register and art. 32's security duty vs.
+# AI Act art. 12's automatic logging and art. 11's technical documentation are a
+# second human-verified real duplication that also never became a candidate. Verified
+# against real text: GDPR art. 30 uses "register" repeatedly ("houdt een register van
+# de verwerkingsactiviteiten"), AI Act art. 12/26 use "logs" and art. 11 uses "technische
+# documentatie". Deliberately NOT the bare substring "log" -- checked directly, that
+# matches inside "technologie"/"technologieën" (13 of 29 raw hits in this corpus), which
+# says nothing about record-keeping; "logs" (with the s, as the corpus's own text quotes
+# it: `("logs")`) avoids that collision entirely. Checked against r.text, same reason
+# and same fix as the impact-assessment family above.
+DOCUMENTATION_KEYWORDS = {"register", "registreren", "logs", "logboek", "technische documentatie"}
+
+
+def _documentation_keyword_hit(a: c1.NormRecord, b: c1.NormRecord) -> bool:
+    def in_family(rec: c1.NormRecord) -> bool:
+        return any(kw in rec.text.lower() for kw in DOCUMENTATION_KEYWORDS)
     return in_family(a) and in_family(b)
 
 
@@ -379,6 +431,8 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
     from itertools import combinations
     keyword_hit_idx = set()
     penalty_hit_idx = set()
+    impact_hit_idx = set()
+    documentation_hit_idx = set()
     for i, j in combinations(range(len(obligations)), 2):
         a, b = obligations[i], obligations[j]
         if a.instrument_id == b.instrument_id:
@@ -387,8 +441,12 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
             keyword_hit_idx.add((i, j))
         if _penalty_keyword_hit(a, b):
             penalty_hit_idx.add((i, j))
+        if _impact_assessment_keyword_hit(a, b):
+            impact_hit_idx.add((i, j))
+        if _documentation_keyword_hit(a, b):
+            documentation_hit_idx.add((i, j))
 
-    candidate_idx = semantic_hit_idx | keyword_hit_idx | penalty_hit_idx
+    candidate_idx = semantic_hit_idx | keyword_hit_idx | penalty_hit_idx | impact_hit_idx | documentation_hit_idx
 
     drop_counts = {"too_generic_trigger": len(all_obligations) - len(obligations),
                    "addressee_mismatch": 0, "same_instrument": 0, "vertical": 0,
@@ -396,7 +454,7 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
     pairs = []
     for i, j in candidate_idx:
         a, b = obligations[i], obligations[j]
-        if a.norm["addressee_type"] != b.norm["addressee_type"]:
+        if not (c1._effective_addressee_types(a) & c1._effective_addressee_types(b)):
             drop_counts["addressee_mismatch"] += 1
             continue
         if a.instrument_id == b.instrument_id:
@@ -412,7 +470,8 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
             drop_counts["already_c1"] += 1
             continue
         signals = {"semantic_hit": (i, j) in semantic_hit_idx, "keyword_hit": (i, j) in keyword_hit_idx,
-                   "penalty_hit": (i, j) in penalty_hit_idx}
+                   "penalty_hit": (i, j) in penalty_hit_idx, "impact_hit": (i, j) in impact_hit_idx,
+                   "documentation_hit": (i, j) in documentation_hit_idx}
         pairs.append((a, b, signals))
 
     return pairs, drop_counts, len(candidate_idx)
@@ -793,6 +852,10 @@ def build_finding(a: c1.NormRecord, b: c1.NormRecord, burden: dict, verdict: Dup
         criteria.append("trigger_event_keyword_family_match")
     if signals.get("penalty_hit"):
         criteria.append("penalty_keyword_family_match")
+    if signals.get("impact_hit"):
+        criteria.append("impact_assessment_keyword_family_match")
+    if signals.get("documentation_hit"):
+        criteria.append("documentation_keyword_family_match")
     return {
         "finding_id": f"F-C2-{c1._pair_id(a, b)}",
         "category": "deduplication",
@@ -891,9 +954,10 @@ def main():
 
     print(f"  finding candidate pairs among OBLIGATION/PROHIBITION/COMPETENCE norms by "
           f"trigger_event embedding similarity (top-{args.semantic_k} cross-instrument, "
-          f"top-{args.semantic_k_within} within-instrument) OR trigger-keyword-family "
-          f"match OR penalty-keyword-family match (both reused/added -- see module "
-          f"docstring), all gated on addressee_type match...", flush=True)
+          f"top-{args.semantic_k_within} within-instrument) OR trigger-keyword-family, "
+          f"penalty-keyword-family, impact-assessment-keyword-family, or documentation-"
+          f"keyword-family match (see module docstring), all gated on addressee_type "
+          f"match...", flush=True)
     pairs, drop_counts, n_candidates = generate_pairs(
         client, records, g, c1_labelled, args.semantic_k, args.semantic_k_within)
     print(f"  {drop_counts['too_generic_trigger']} norm(s) excluded before matching "

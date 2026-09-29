@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+WARNING (2026-09-28): do not run this on its own. It rewrites the WHOLE of findings_c1.json
+from the strict duty-conflict cache and knows nothing about the findings other detectors append
+(definitional_mismatch, legal_tension, missing_context) -- running it alone once silently
+dropped every definitional finding. Use rebuild_c1_all.py, which runs this and then re-appends
+the others in the right order.
+
 One-off (2026-09-24): rebuilds data/findings_c1.json from the CURRENT adjudication
 cache and CURRENT code, with no new LLM calls. Needed after adding paragraph_index to
 build_finding()'s provisions dict (alongside norm_index, per an external review) --
@@ -81,8 +87,17 @@ def main():
         else:
             finalize(p, verdict, None, challenge)
 
+    # Graded second pass (2026-09-28, detect_c1_legal_tension.py): a strict INSUFFICIENT_EVIDENCE/
+    # needs_recheck finding whose pair the graded cascade resolved to COMPATIBLE/UNRELATED is not a
+    # finding any more -- removed here, ids kept under "resolved_by_graded_pass" so it stays auditable.
+    import detect_c1_legal_tension as lt
+    superseded_ids = lt.superseded_finding_ids(lt.final_verdicts())
+    resolved = [f["finding_id"] for f in findings if f["finding_id"] in superseded_ids]
+    findings = [f for f in findings if f["finding_id"] not in superseded_ids]
+
     out_path = DATA / "findings_c1.json"
-    out_path.write_text(json.dumps({"findings": findings, "suppressed": suppressed},
+    out_path.write_text(json.dumps({"findings": findings, "suppressed": suppressed,
+                                    "resolved_by_graded_pass": resolved},
                                     ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"  {n_from_cache} cache-backed pair(s) processed -> {len(findings)} finding(s), "
           f"{len(suppressed)} suppressed -> {out_path.relative_to(ROOT)}", flush=True)

@@ -1,0 +1,68 @@
+3 3 : stellen de lidstaten een lijst op van essentiële en belangrijke entiteiten en entiteiten die domeinnaamregistr
+3 4 : vereisen de lidstaten van de in dat lid bedoelde entiteiten dat zij ten minste de volgende informatie aan de b
+7 3 : stellen de Commissie in kennis van hun nationale cyberbeveiligingsstrategieën
+7 4 : beoordelen hun nationale cyberbeveiligingsstrategieën regelmatig en ten minste om de vijf jaar op basis van ke
+7 1 : een nationale cyberbeveiligingsstrategie vaststellen die voorziet in de strategische doelstellingen, de middel
+7 2 : stellen de lidstaten met name beleid vast
+8 1 : gaat over tot het aanwijzen of instellen van een of meer bevoegde autoriteiten
+8 3 : gaat over tot het aanwijzen of instellen van een centraal contactpunt
+8 6 : stelt de Commissie onverwijld in kennis van de identiteit van de in lid 1 bedoelde bevoegde autoriteit en van 
+8 5 : zorgen ervoor dat hun bevoegde autoriteiten en centrale contactpunten over voldoende middelen beschikken om de
+9 3 : stelt vast welke capaciteiten, middelen en procedures in het geval van een crisis voor de toepassing van deze 
+9 1 : gaat over tot het aanwijzen of instellen van een of meer bevoegde autoriteiten die verantwoordelijk zijn voor 
+9 2 : moet hij duidelijk aangeven welke van die bevoegde autoriteiten moet dienen als coördinator voor het beheer va
+9 5 : stelt elke lidstaat de Commissie in kennis van de identiteit van zijn autoriteit en van alle latere wijziginge
+9 4 : stelt een nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons vast
+10 2 : zorgen ervoor dat elk CSIRT over voldoende middelen beschikt om zijn in artikel 11, lid 3, omschreven taken do
+10 3 : zorgen ervoor dat elk CSIRT over een passende, veilige en weerbare communicatie- en informatie-infrastructuur 
+10 6 : zorgen voor een doeltreffende, efficiënte en veilige samenwerking van hun CSIRT’s in het CSIRT-netwerk
+10 9 : stelt de Commissie onverwijld in kennis van de identiteit van het in lid 1 van dit artikel bedoelde CSIRT en v
+10 1 : gaat over tot het aanwijzen of instellen van een of meer CSIRT’s
+11 2 : zorgen ervoor dat hun CSIRT’s gezamenlijk over de noodzakelijke technische capaciteiten beschikken om de in li
+12 1 : wijst een van zijn CSIRT’s aan als coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarhed
+12 1 : zorgen ervoor dat natuurlijke of rechtspersonen, desgevraagd anoniem, melding kunnen maken van een kwetsbaarhe
+13 3 : hun centrale contactpunten in kennis stellen van de op grond van deze richtlijn ingediende meldingen van incid
+13 6 : vereenvoudigen de rapportage met technische middelen
+13 4 : zorgen de lidstaten, voor zover mogelijk, voor passende samenwerking tussen die organen en rechtshandhavingsau
+13 2 : zorgen ervoor dat hun CSIRT’s of, in voorkomend geval, hun bevoegde autoriteiten, meldingen ontvangen van sign
+13 5 : zien erop toe dat hun uit hoofde van deze richtlijn bevoegde autoriteiten en hun uit hoofde van Richtlijn (EU)
+14 5 : zorgen ervoor dat hun vertegenwoordigers op doeltreffende, efficiënte en veilige wijze samenwerken binnen de s
+19 4 : stellen de lidstaten de deelnemende lidstaten in kennis van de reikwijdte ervan, met inbegrip van de krachtens
+19 8 : zorgen ervoor dat elk risico van belangenconflicten met betrekking tot de aangewezen cyberbeveiligingsdeskundi
+20 2 : zorgen ervoor dat de leden van de bestuursorganen van essentiële en belangrijke entiteiten een opleiding moete
+20 1 : zorgen ervoor dat de bestuursorganen van essentiële en belangrijke entiteiten de door deze entiteiten genomen 
+21 1 : zorgen ervoor dat essentiële en belangrijke entiteiten passende en evenredige technische, operationele en orga
+21 3 : zorgen ervoor dat de entiteiten, wanneer zij overwegen welke maatregelen als bedoeld in lid 2, punt d), van di
+21 4 : zien erop toe dat een entiteit die vaststelt dat zij niet voldoet aan de in lid 2 bedoelde maatregelen, onverw
+23 1 : zorgt ervoor dat essentiële en belangrijke entiteiten elk incident dat aanzienlijke gevolgen heeft voor de ver
+23 2 : ervoor dat essentiële en belangrijke entiteiten de ontvangers van hun diensten die mogelijkerwijs door een sig
+23 4 : zorgen ervoor dat de betrokken entiteiten, voor de in lid 1 bedoelde melding, bij het CSIRT of, indien van toe
+25 1 : moedigen de lidstaten, zonder het gebruik van een bepaald type technologie op te leggen of te bevoordelen, het
+27 4 : zendt het centrale contactpunt van de betrokken lidstaat deze zonder onnodige vertraging door naar Enisa
+27 2 : de in lid 1 bedoelde entiteiten dat zij de volgende informatie uiterlijk op 17 januari 2025 bij de bevoegde au
+28 5 : toegang verlenen tot specifieke met gegevens over de registratie van domeinnamen
+28 6 : schrijven de lidstaten voor dat registers voor topleveldomeinnamen en entiteiten die domeinnaamregistratiedien
+28 2 : schrijven de lidstaten voor dat de database met domeinnaamregistratiegegevens over de registratie van domeinna
+29 2 : zorgen ervoor dat de informatie-uitwisseling plaatsvindt binnen gemeenschappen van essentiële en belangrijke e
+29 1 : zorgen ervoor dat binnen het toepassingsgebied van deze richtlijn vallende entiteiten en, indien van toepassin
+29 3 : faciliteren de vaststelling van de in lid 2 van dit artikel bedoelde informatie-uitwisselingsregelingen op het
+29 4 : zorgen ervoor dat essentiële en belangrijke entiteiten de bevoegde autoriteiten in kennis stellen van hun deel
+30 1 : zorgen ervoor dat, naast de in artikel 23 geregelde meldingsplicht, op vrijwillige basis meldingen bij de CSIR
+31 1 : zorgen ervoor dat hun bevoegde autoriteiten effectief toezicht houden op en de noodzakelijke maatregelen nemen
+31 4 : zorgen de lidstaten ervoor dat de bevoegde autoriteiten bij het toezicht op de naleving door overheidsinstanti
+32 1 : zorgen ervoor dat de toezichts- of handhavingsmaatregelen die met betrekking tot de in deze richtlijn vastgest
+32 6 : zorgen ervoor dat elke natuurlijke persoon die verantwoordelijk is voor of optreedt als wettelijke vertegenwoo
+32 9 : zorgen ervoor dat hun uit hoofde van deze richtlijn bevoegde autoriteiten de relevante uit hoofde van Richtlij
+32 10 : het oversightforum dat is opgericht op grond van artikel 32, lid 1, van Verordening (EU) 2022/2554 in kennis s
+32 5 : zorgen de lidstaten ervoor dat hun bevoegde autoriteiten de bevoegdheid hebben om een termijn vast te stellen 
+32 2 : zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun toezichthoudende taken met betrekking to
+33 1 : zorgen de lidstaten ervoor dat de bevoegde autoriteiten zo nodig maatregelen nemen door middel van toezichtmaa
+33 6 : het oversightforum dat is opgericht op grond van artikel 32, lid 1, van Verordening (EU) 2022/2554 in kennis s
+33 2 : zorgen ervoor dat de bevoegde autoriteiten bij de uitoefening van hun toezichthoudende taken met betrekking to
+34 5 : zorgen ervoor dat belangrijke entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 
+34 4 : zorgen ervoor dat essentiële entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 v
+34 8 : stelt de Commissie uiterlijk op 17 oktober 2024 in kennis van de wettelijke bepalingen die hij op grond van di
+34 1 : zorgen ervoor dat de administratieve geldboeten die uit hoofde van dit artikel aan essentiële en belangrijke e
+36 None : stellen de Commissie uiterlijk op 17 januari 2025 in kennis van deze regels en maatregelen en stellen haar onv
+41 1 : gaan de lidstaten over tot de vaststelling en bekendmaking van de noodzakelijke bepalingen om aan deze richtli
+41 2 : wordt in de bepalingen zelf of bij de officiële bekendmaking daarvan naar deze richtlijn verwezen

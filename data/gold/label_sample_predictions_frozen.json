@@ -1,0 +1,1030 @@
+[
+ {
+  "luna": {
+   "shared_subject": "Incident reporting and regulatory handling during the transition from the Dutch Wbni regime to the newer ICT-incident regime",
+   "strongest_case_for_tension": "Both provisions concern information about serious or significant ICT incidents and the involvement of competent authorities. One could argue that the transitional forwarding of a Wbni notification under Article 95 might overlap with, or duplicate, the cross-border notification and follow-up process described in Article 19.",
+   "strongest_case_for_compatibility": "Article 95 governs the legal reclassification and forwarding of an existing Wbni notification by the Dutch minister, while Article 19 governs subsequent assessment, notification and protective measures by specified EU financial-sector authorities. The provisions impose no incompatible duty, prohibition, deadline or content requirement; the forwarding under Article 95 can supply information that is then handled under Article 19.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "wordt de op grond van de Wet beveiliging netwerk- en informatiesystemen gedane melding aangemerkt als een vroegtijdige waarschuwing van een significant incident als bedoeld in artikel 26",
+   "evidence_span_b": "Na ontvangst van informatie overeenkomstig lid 6 beoordelen de EBA, de ESMA of de Eiopa en de ECB, in overleg met Enisa en in samenwerking met de relevante bevoegde autoriteit, of het ernstige ICT-gerelateerde incident relevant is voor andere bevoegde autoriteiten van andere lidstaten.",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-001",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Informatie en meldingen die een toezichthoudende of bevoegde autoriteit van een entiteit kan verlangen",
+   "strongest_case_for_tension": "Artikel 58 geeft een toezichthoudende autoriteit ruime bevoegdheid om informatie van een verwerkingsverantwoordelijke of verwerker te gelasten of te verkrijgen. Artikel 30 bepaalt echter dat een vrijwillige melding de meldende entiteit niet mag blootstellen aan bijkomende verplichtingen waaraan zij zonder die melding niet onderworpen zou zijn geweest; een informatieverzoek naar aanleiding van zo’n melding zou daarom mogelijk als verboden bijkomende verplichting kunnen worden gezien.",
+   "strongest_case_for_compatibility": "Artikel 58 betreft de onderzoeksbevoegdheden van toezichthoudende autoriteiten onder de AVG, terwijl artikel 30 de gevolgen van vrijwillige meldingen onder de NIS2-richtlijn regelt. De bepalingen kunnen beide worden nageleefd: een autoriteit kan haar bestaande onderzoeksbevoegdheid uitoefenen, terwijl de vrijwillige melding zelf geen nieuwe materiële verplichtingen voor de meldende entiteit creëert.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "de verwerkingsverantwoordelijke, de verwerker en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke of van verwerker te gelasten alle voor de uitvoering van haar taken vereiste informatie te verstrekken",
+   "evidence_span_b": "mag vrijwillige melding er niet toe leiden dat de meldende entiteit bijkomende verplichtingen worden opgelegd waaraan zij niet onderworpen zou zijn geweest indien zij de melding niet had ingediend",
+   "confidence": 0.9
+  },
+  "luna_recheck": null,
+  "sample_id": "S-002",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Cybersecurity governance obligations for essential or important entities",
+   "strongest_case_for_tension": "Both provisions concern cybersecurity obligations within covered entities, so an entity may need to implement the measures in Article 21 while also ensuring that every board member has certified training. In practice, the Article 21 requirement to use multifactor authentication or secure communications could require technical measures that untrained board members cannot competently assess, creating an operational dependency, but the texts do not make the duties incompatible.",
+   "strongest_case_for_compatibility": "Article 21 imposes cybersecurity risk-management and protection measures on the entity, while Article 24 imposes a training-certificate requirement on each board member. The entity can satisfy both by implementing the Article 21 measures and ensuring its board members complete the required training; neither provision requires conduct that the other forbids.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "omvatten ten minste het volgende:",
+   "evidence_span_b": "ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit een certificaat",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-003",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "ICT-incidenten involving personal-data breaches at financial entities",
+   "strongest_case_for_tension": "Both provisions may apply after the same serious ICT incident if it also constitutes a personal-data breach. The GDPR provision requires a prompt supervisory-authority notification, while Article 13 requires a post-incident evaluation and, for non-micro financial entities, sharing implemented changes on request; these parallel obligations could compete for limited incident-response resources, but the texts do not make their requirements incompatible.",
+   "strongest_case_for_compatibility": "The provisions impose different, sequentially compatible duties: Article 33 requires the controller to notify the competent data-protection authority within 72 hours where the breach is likely to risk individuals’ rights, whereas Article 13 requires financial entities to analyse causes, identify improvements, and assess response procedures after disruption caused by a serious ICT incident. Nothing in Article 13 prohibits or delays notification, and notification under Article 33 does not prevent conducting the required evaluation.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Indien een inbreuk in verband met persoonsgegevens heeft plaatsgevonden, meldt de verwerkingsverantwoordelijke deze zonder onredelijke vertraging en, indien mogelijk, uiterlijk 72 uur nadat hij er kennis van heeft genomen, aan de overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit, tenzij het niet waarschijnlijk is dat de inbreuk in verband met persoonsgegevens een risico inhoudt voor de rechten en vrijheden van natuurlijke personen.",
+   "evidence_span_b": "Financiële entiteiten verrichten ICT-gerelateerde post-incidentevaluaties na verstoringen van hun kernactiviteiten ten gevolge van een ernstig ICT-gerelateerd incident, analyseren daarbij de oorzaken van de verstoring en identificeren de verbeteringen die moeten worden aangebracht in de ICT-activiteiten of in het kader van het ICT-bedrijfscontinuïteitsbeleid als bedoeld in artikel 11.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-004",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "The central contact point’s handling and sharing of incident information",
+   "strongest_case_for_tension": "Provision A requires the central contact point to notify the CSIRT and competent authority when information from another Member State indicates effects on services in the Netherlands. Provision B requires it, on request, to forward reports received under paragraph 1 to central contact points of other involved Member States; if the same information is subject to a confidentiality or onward-disclosure restriction not shown here, the duties could pull in different directions.",
+   "strongest_case_for_compatibility": "The provisions impose different, sequential information-sharing duties rather than incompatible ones. The central contact point can notify the Dutch CSIRT and competent authority under A and also forward the relevant reports to other involved Member States on request under B; neither text forbids the other action.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "stelt het betrokken CSIRT en de betrokken bevoegde autoriteit daarvan op de hoogte",
+   "evidence_span_b": "stuurt het centrale contactpunt de op grond van lid 1 ontvangen meldingen door naar de centrale contactpunten van de andere betrokken lidstaten",
+   "confidence": 0.98
+  },
+  "luna_recheck": "evidence_span_a is not a verbatim substring of norm A's provision text",
+  "terra": {
+   "shared_subject": "Cross-border exchange and onward communication of significant-incident information by national central contact points.",
+   "strongest_case_for_tension": "Both provisions regulate what a central contact point does with incident information involving other Member States. One might read Article 23 as making forwarding to other Member States conditional on a request from the CSIRT or competent authority, while Article 39 creates an automatic domestic notification duty after receipt of information from another Member State.",
+   "strongest_case_for_compatibility": "The provisions concern different directions and recipients of information: Provision B concerns forwarding Article 23(1) notifications to other involved Member States' central contact points, whereas Provision A concerns notifying the Dutch CSIRT and competent authority when information received from another Member State indicates effects in the Netherlands. A central contact point can comply with both: forward outbound information when requested and separately notify its domestic bodies when the Article 39 condition is met.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Als uit gegevens die het centrale contactpunt heeft ontvangen van een centraal contactpunt van een andere lidstaat van de Europese Unie blijkt dat een daar gemeld incident, bijna-incident of cyberdreiging gevolgen heeft voor de verlening van de diensten van een essentiële entiteit of belangrijke entiteit in Nederland, stelt het centrale contactpunt het betrokken CSIRT en de betrokken bevoegde autoriteit daarvan op de hoogte.",
+   "evidence_span_b": "Op verzoek van het CSIRT of de bevoegde autoriteit stuurt het centrale contactpunt de op grond van lid 1 ontvangen meldingen door naar de centrale contactpunten van de andere betrokken lidstaten.",
+   "confidence": 0.96
+  },
+  "terra_recheck": null,
+  "sample_id": "S-005",
+  "final_verdict": "COMPATIBLE",
+  "escalated": true,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Organisations subject to both the security-incident notification duty and GDPR processing-record rules",
+   "strongest_case_for_tension": "Provision A requires a covered bestuursorgaan or aangewezen organisatie to notify the Minister immediately of a security or integrity breach involving its own electronic service and to provide all necessary information. Provision B exempts enterprises or organisations with fewer than 250 employees from the referenced processing-record obligations unless one of its listed conditions applies, so an apparent tension could arise if the notification information would itself have to be recorded in a processing register that B exempts.",
+   "strongest_case_for_compatibility": "The provisions impose different duties: A concerns immediate notification of specified incidents to the Minister, while B concerns whether certain organisations must maintain a register of processing activities. Nothing in B forbids notification or makes notification conditional on maintaining such a register, and the text does not establish that A's required information must be entered in that register.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Een bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening.",
+   "evidence_span_b": "De in de leden 1 en 2 bedoelde verplichtingen zijn niet van toepassing op ondernemingen of organisaties die minder dan 250 personen in dienst hebben, tenzij het waarschijnlijk is dat de verwerking die zij verrichten een risico inhoudt voor de rechten en vrijheden van de betrokkenen, de verwerking niet incidenteel is, of de verwerking bijzondere categorieën van gegevens, als bedoeld in artikel 9, lid 1, of persoonsgegevens in verband met strafrechtelijke veroordelingen en strafbare feiten als bedoeld in artikel 10 betreft.",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-006",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "A competent supervisory authority’s draft decision and B publication of final, non-appealable administrative sanctions",
+   "strongest_case_for_tension": "Provision A prohibits the competent supervisory authority from adopting its draft decision within the specified period, while provision B requires competent authorities to publish non-appealable administrative-sanction decisions without delay after notifying the affected person. If the draft decision is itself an administrative-sanction decision that has become non-appealable, the authority might appear both barred from adopting it and required to publish it.",
+   "strongest_case_for_compatibility": "The provisions regulate different stages and apparently different subject matters: A concerns a draft decision submitted for the Committee’s opinion under the listed GDPR matters, whereas B concerns publication of final, non-appealable administrative sanctions. A does not prohibit publication, and B does not require adoption of the draft decision within A’s prohibited period. The shown text does not establish that A’s draft decision is an administrative sanction covered by B.",
+   "verdict": "MISSING_CONTEXT",
+   "concrete_scenario": null,
+   "missing_reference": "A provision establishing that the draft decision referred to in GDPR Article 64(1) is, or becomes, a non-appealable administrative-sanction decision covered by DORA Article 54, together with the applicable timing/status rules.",
+   "decisive_exception": null,
+   "evidence_span_a": "De bevoegde toezichthoudende autoriteit stelt haar in lid 1 bedoelde ontwerpbesluit niet vast binnen de in lid 3 bedoelde termijn.",
+   "evidence_span_b": "De bevoegde autoriteiten maken op hun officiële website onverwijld alle niet voor beroep vatbare besluiten tot het nemen van administratieve strafmaatregelen bekend, nadat de natuurlijke of rechtspersoon op wie een dergelijke maatregel van toepassing is, van deze maatregel in kennis is gesteld.",
+   "confidence": 0.93
+  },
+  "luna_recheck": null,
+  "terra": {
+   "shared_subject": "A competent authority’s handling of administrative decisions",
+   "strongest_case_for_tension": "If the same authority were preparing a decision that both fell within GDPR Article 64(1) and constituted a DORA administrative penalty, Article 64 could temporarily prevent adoption while Article 54 reflects a policy of prompt public disclosure of final penalties. This is only a timing concern, however: Article 54 is triggered only after a final, non-appealable penalty decision exists and the affected person has been notified.",
+   "strongest_case_for_compatibility": "The provisions regulate sequentially distinct matters. Article 64 prevents adoption of specified GDPR draft decisions during the Committee-opinion period, whereas Article 54 requires publication only of already-adopted, non-appealable DORA administrative penalties after notification; neither requires an authority to adopt a decision during Article 64’s waiting period.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De bevoegde toezichthoudende autoriteit stelt haar in lid 1 bedoelde ontwerpbesluit niet vast binnen de in lid 3 bedoelde termijn.",
+   "evidence_span_b": "De bevoegde autoriteiten maken op hun officiële website onverwijld alle niet voor beroep vatbare besluiten tot het nemen van administratieve strafmaatregelen bekend, nadat de natuurlijke of rechtspersoon op wie een dergelijke maatregel van toepassing is, van deze maatregel in kennis is gesteld.",
+   "confidence": 0.95
+  },
+  "terra_recheck": null,
+  "sample_id": "S-007",
+  "final_verdict": "COMPATIBLE",
+  "escalated": true,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Access to and possible transfer of domain-registration personal data",
+   "strongest_case_for_tension": "Provision A obliges the domain-name registry or registrar to provide specific registration data to a legitimate party on a lawful and properly justified request. If those data are personal data and the disclosure entails a transfer to a third country or international organisation, Provision B permits that transfer only after the GDPR Chapter V conditions have been met, so A could appear to require disclosure that B conditionally restricts.",
+   "strongest_case_for_compatibility": "Provision A does not require disclosure to a third country or international organisation, nor does it dispense with other applicable legal requirements. Provision B therefore operates as an additional condition where its territorial and subject-matter triggers apply; a registry or registrar can comply with both by granting access only where the Chapter V conditions are satisfied.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent, verleent op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt, toegang tot specifieke gegevens over de registratie van domeinnaam",
+   "evidence_span_b": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan",
+   "confidence": 0.97
+  },
+  "luna_recheck": "evidence_span_a is not a verbatim substring of norm A's provision text",
+  "terra": {
+   "shared_subject": "Disclosure of domain-name registration data, potentially including personal data, to a requesting party outside the EU/EEA.",
+   "strongest_case_for_tension": "Article 50 requires a top-level-domain registry or domain-registration service to provide access to specific registration data following a lawful, duly reasoned request by a legitimate party. If the requester is in a third country and the registration data are personal data, providing that access is a transfer for which GDPR Article 44 permits transfer only when the Chapter V conditions are met.",
+   "strongest_case_for_compatibility": "Article 50 applies only to a “rechtmatig” (lawful) request and does not specifically require disclosure to third-country recipients. That condition can be applied consistently with the GDPR: the registry grants access only where the requested disclosure, including any international transfer, meets the GDPR requirements.",
+   "verdict": "PERMISSION_CONFLICT",
+   "concrete_scenario": "A Dutch domain-name registrar receives a duly motivated request from a legitimate U.S. trademark-enforcement firm for registrant contact details linked to an allegedly fraudulent domain. The request meets Article 50's national-law criteria, but the data identify a natural person and access from the United States would be a third-country transfer. If no GDPR Chapter V transfer mechanism applies, Article 50 appears to require disclosure while Article 44 prevents that transfer.",
+   "missing_reference": null,
+   "decisive_exception": "Whether a GDPR Chapter V transfer basis is available—especially an adequacy decision under Article 45, appropriate safeguards under Article 46, or an Article 49 derogation. Article 44 makes these conditions decisive, but the displayed text does not establish that any applies.",
+   "evidence_span_a": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent, verleent op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt, toegang tot specifieke gegevens over de registratie van domeinnamen.",
+   "evidence_span_b": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan;",
+   "confidence": 0.79
+  },
+  "terra_recheck": null,
+  "sample_id": "S-008",
+  "final_verdict": "PERMISSION_CONFLICT",
+  "escalated": true,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Personal-data breaches and enforcement by authorities",
+   "strongest_case_for_tension": "Provision A prohibits the competent authority from imposing a second administrative fine for the same conduct after an AP/GDPR fine under Article 58(2)(i). Provision B allows a supervisory authority to compel the controller to notify the data subject, so one might initially see enforcement under B as an additional consequence concerning the same breach.",
+   "strongest_case_for_compatibility": "The provisions impose different measures on different subjects and address different matters: A limits duplicate administrative fines by a competent authority, while B authorizes a supervisory authority to require communication of a breach to data subjects. A does not prohibit notification or an order to notify, and B does not require or authorize a second fine.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging als die waarvoor de bestuurlijke boete op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming is opgelegd.",
+   "evidence_span_b": "kan de toezichthoudende autoriteit, na beraad over de kans dat de inbreuk in verband met persoonsgegevens een hoog risico met zich meebrengt, de verwerkingsverantwoordelijke daartoe verplichten",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-009",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Incidenten waarbij een hoog-risico-AI-systeem betrokken is en die tevens een inbreuk in verband met persoonsgegevens vormen",
+   "strongest_case_for_tension": "Beide bepalingen kunnen op hetzelfde incident van toepassing zijn, maar zij regelen verschillende handelingen: A vereist documentatie van alle persoonsgegevensinbreuken, terwijl B een melding van een ernstig incident onmiddellijk en uiterlijk binnen tien dagen vereist zodra een causaal verband wordt vastgesteld of vermoed. Als de documentatieplicht in A zou worden opgevat als een voorafgaande of volledige vastlegging vóór melding, kan de korte meldingstermijn van B daarmee praktisch botsen, maar A zegt dat niet.",
+   "strongest_case_for_compatibility": "A verplicht tot documentatie en B verplicht, onder zijn eigen voorwaarden, tot melding; die verplichtingen kunnen gelijktijdig worden nagekomen. Geen van beide bepalingen verbiedt de andere handeling, stelt een onverenigbare termijn voor dezelfde melding vast, of bepaalt dat documentatie eerst moet zijn voltooid voordat melding plaatsvindt.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De verwerkingsverantwoordelijke documenteert alle inbreuken in verband met persoonsgegevens, met inbegrip van de feiten omtrent de inbreuk in verband met persoonsgegevens, de gevolgen daarvan en de genomen corrigerende maatregelen.",
+   "evidence_span_b": "doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident.",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-010",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Regulatory compliance by financial entities that may also qualify as important entities under NIS2",
+   "strongest_case_for_tension": "Provision A imposes an administrative-fine regime for important entities that infringe Articles 21 or 23, while Provision B requires financial entities to devote sufficient resources and capabilities to monitoring users and ICT anomalies and incidents. A possible tension is that resources devoted to monitoring may reduce funds available to meet a fine, but that is only an economic consequence, not an incompatibility between the duties.",
+   "strongest_case_for_compatibility": "The provisions impose different obligations: A directs Member States to ensure that qualifying important entities are subject to potentially substantial fines after specified infringements, whereas B directly requires financial entities to maintain monitoring resources and capabilities. An entity can maintain those capabilities and, if it breaches Articles 21 or 23, also be subject to the fine; compliance with B does not prevent compliance with A.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De lidstaten zorgen ervoor dat belangrijke entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 van dit artikel onderworpen worden aan administratieve geldboeten",
+   "evidence_span_b": "Financiële entiteiten zetten voldoende middelen en capaciteiten in om toezicht te houden op activiteiten van gebruikers en het optreden van ICT-anomalieën en ICT-gerelateerde incidenten, met name cyberaanvallen.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-011",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Bevoegde autoriteiten en hun bestuursrechtelijke handhavingsbevoegdheden",
+   "strongest_case_for_tension": "Beide bepalingen betreffen de bevoegdheden of taken van een bevoegde autoriteit. Men zou kunnen aanvoeren dat artikel 15 van BWBR0052872 de handhaving beperkt tot de daarin genoemde NIS2-entiteiten en bestuurders, terwijl artikel 50 van Verordening (EU) 2022/2554 minimaal bevoegdheden voorschrijft voor financiële entiteiten en corrigerende maatregelen.",
+   "strongest_case_for_compatibility": "De bepalingen leggen geen tegenstrijdige verplichtingen op. Artikel 15 wijst taken toe voor de bestuursrechtelijke handhaving van de NIS2-wet, terwijl artikel 50 bevoegdheden voorschrijft voor toezicht en corrigerende maatregelen onder de DORA-verordening; dezelfde autoriteit kan beide bevoegdheden naast elkaar uitoefenen, voor zover zij daarvoor bevoegd is.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "het zorgen voor de bestuursrechtelijke handhaving van het bepaalde bij of krachtens deze wet ten aanzien van essentiële entiteiten, belangrijke entiteiten, entiteiten die domeinnaamregistratiediensten verlenen en leden van het bestuur van essentiële entiteiten en belangrijke entiteiten;",
+   "evidence_span_b": "corrigerende maatregelen te eisen voor inbreuken op de voorschriften van deze verordening.",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-012",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Samenwerking en informatie-uitwisseling rond incidenten en cyberincidenten",
+   "strongest_case_for_tension": "Beide bepalingen zien op incidenten en kunnen dezelfde persoonsgegevens of forensische informatie raken. Artikel 58 verplicht bevoegde autoriteiten om alle noodzakelijke gegevens, waaronder persoonsgegevens, met de Autoriteit Persoonsgegevens uit te wisselen, terwijl artikel 11 CSIRT’s taken geeft om incidenten te analyseren, forensische gegevens te verzamelen en informatie over incidenten te verspreiden; zonder nadere regels over gegevensdeling zou dat in een concreet geval kunnen leiden tot spanning over welke informatie aan welke instantie mag of moet worden verstrekt.",
+   "strongest_case_for_compatibility": "De bepalingen leggen verschillende, naast elkaar uitvoerbare taken op aan verschillende actoren: bevoegde autoriteiten werken samen met de Autoriteit Persoonsgegevens, terwijl CSIRT’s cyberdreigingen en incidenten monitoren, analyseren en daarop reageren. Artikel 11 verbiedt de in artikel 58 bedoelde uitwisseling niet, en artikel 58 verplicht CSIRT’s evenmin om hun taken anders uit te voeren; beide kunnen dus gelijktijdig worden nageleefd.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De bevoegde autoriteiten werken samen met de Autoriteit persoonsgegevens bij de behandeling van incidenten die leiden tot inbreuken in verband met persoonsgegevens en wisselen in het kader van die samenwerking alle daarvoor noodzakelijke gegevens uit, waaronder persoonsgegevens.",
+   "evidence_span_b": "het verzamelen en analyseren van forensische gegevens en het zorgen voor dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging;",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-013",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Supervision and compliance concerning the processing of personal data",
+   "strongest_case_for_tension": "Provision A removes reliance on a duty of confidentiality when information or cooperation is demanded concerning the actor’s own involvement in processing personal data. Provision B requires the data protection officer to advise, monitor compliance, cooperate with, and act as a contact point for the supervisory authority, which could involve confidential information or cooperation concerning processing.",
+   "strongest_case_for_compatibility": "Provision B assigns tasks to the data protection officer but does not itself require the officer to disclose information that another rule protects as confidential. Provision A merely establishes that confidentiality cannot be invoked in the specified supervisory context, so the provisions can operate together without imposing incompatible duties.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Geen beroep is mogelijk op een geheimhoudingsplicht, voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens.",
+   "evidence_span_b": "d) met de toezichthoudende autoriteit samenwerken;",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-014",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Governance and security obligations of entities and electronic-communications providers",
+   "strongest_case_for_tension": "The provisions could overlap if a vennootschap onder firma is both an essential or important entity and an operator of a public electronic communications network or service. In that situation, Article 24 extends the rules in its first through sixth paragraphs to each partner, while Article 11a.1 imposes security-measure obligations on the provider; however, neither text requires conduct that contradicts the other.",
+   "strongest_case_for_compatibility": "The provisions impose different, cumulative obligations: Article 24 concerns applying governance rules to each partner of a qualifying vennootschap onder firma, whereas Article 11a.1 requires providers to take prescribed technical, operational and organisational security measures. Both can be complied with simultaneously, and the texts show no incompatible duty, prohibition, deadline, or benchmark.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Indien de essentiële entiteit of belangrijke entiteit een vennootschap onder firma is, is het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing op iedere vennoot van die vennootschap onder firma.",
+   "evidence_span_b": "Aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten nemen bij of krachtens algemene maatregel van bestuur vastgestelde technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun netwerken of diensten te beheersen, teneinde de gevolgen van beveiligingsincidenten op de nationale veiligheid of openbare orde te beperken.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-015",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "ICT-security and incident-related obligations",
+   "strongest_case_for_tension": "Provision A requires a bestuursorgaan or aangewezen organisatie to notify the Minister immediately of a breach or misuse involving its own electronic service and to provide all necessary information. Provision B requires certain exempt financial entities to maintain ICT-risk-management, monitoring, protection, detection, and incident-handling measures, so an entity could potentially be subject to both sets of obligations if it falls within both categories.",
+   "strongest_case_for_compatibility": "The provisions impose different, complementary duties: A is an immediate notification and information duty for specified public-service actors, while B is a preventive and operational ICT-risk-management framework for specified financial entities. Nothing in B forbids notification or information-sharing, and nothing in A prevents the entity from implementing B's controls.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Een bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening.",
+   "evidence_span_b": "de in de eerste alinea vermelde entiteiten:",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-016",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "De verwerkingsverantwoordelijke of de verwerker",
+   "strongest_case_for_tension": "Beide bepalingen kunnen dezelfde verwerkingsverantwoordelijke of verwerker en toezichthoudende autoriteit raken, maar art. 37 vereist het meedelen van contactgegevens terwijl art. 42 bij certificering noodzakelijke informatie en toegang tot verwerkingsactiviteiten vereist. Men zou kunnen aanvoeren dat het verstrekken van informatie of toegang in een certificeringsprocedure botst met beperkingen op het delen van gegevens, maar geen van beide getoonde bepalingen verbiedt de andere handeling.",
+   "strongest_case_for_compatibility": "De verplichtingen hebben verschillende inhoud en triggers: art. 37 ziet op contactgegevens van de functionaris voor gegevensbescherming, terwijl art. 42 alleen geldt wanneer de verwerking aan een certificeringsmechanisme wordt onderworpen en ziet op informatie en toegang die voor die procedure noodzakelijk zijn. Beide verplichtingen kunnen zonder tegenstrijdigheid worden nagekomen.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De verwerkingsverantwoordelijke of de verwerker maakt de contactgegevens van de functionaris voor gegevensbescherming bekend en deelt die mee aan de toezichthoudende autoriteit.",
+   "evidence_span_b": "De verwerkingsverantwoordelijke of de verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt, verstrekt aan het in artikel 43 bedoelde certificeringsorgaan, of, waar van toepassing, aan de bevoegde toezichthoudende autoriteit de voor de uitvoering van de certificeringsprocedure noodzakelijke informatie en verleent het orgaan of de autoriteit toegang tot zijn verwerkingsactiviteiten.",
+   "confidence": 0.99
+  },
+  "luna_recheck": null,
+  "sample_id": "S-017",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "A trust-service provider reporting a significant incident affecting the provision of its trust services.",
+   "strongest_case_for_tension": "Both provisions impose a 24-hour deadline for a trust-service provider, but B requires a distinct early warning and then an incident report containing an initial assessment within 72 hours, whereas A describes a single incident notification within 24 hours. This could create a procedural question if the 24-hour notification under A is treated as replacing, rather than satisfying, B’s early-warning requirement.",
+   "strongest_case_for_compatibility": "The provisions can be satisfied together: the provider can submit B’s early warning within 24 hours, while also making A’s required notification within 24 hours, and then submit B’s fuller incident report within 72 hours. B expressly contains a trust-service-provider-specific 24-hour rule, so the texts do not require incompatible conduct or deadlines.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "onverwijld of, indien dat niet mogelijk is, binnen 24 uur nadat zij kennis heeft gekregen van het significante incident een melding van het significante incident in bij haar CSIRT en haar bevoegde autoriteit",
+   "evidence_span_b": "In afwijking van de eerste alinea, punt b), meldt een verlener van vertrouwensdiensten significante incidenten die gevolgen hebben voor de verlening van zijn vertrouwensdiensten onverwijld, en in elk geval binnen 24 uur nadat hij kennis heeft gekregen van het significante incident, bij het CSIRT of, indien van toepassing, de bevoegde autoriteit.",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-018",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Compliance by public bodies or other legally tasked entities with requests for information or cooperation concerning personal-data processing",
+   "strongest_case_for_tension": "Provision A removes reliance on a confidentiality obligation when information or cooperation is demanded concerning the actor’s own involvement in processing personal data. Provision B requires specified bodies and legally tasked legal persons to apply designated electronic-communication standards, so a confidentiality rule could theoretically obstruct compliance with that standard if the required electronic communication would disclose protected information.",
+   "strongest_case_for_compatibility": "The provisions impose different duties: A concerns whether confidentiality may be invoked against a demand for information or cooperation, while B concerns applying designated standards for electronic traffic. Applying an electronic standard does not itself require disclosure of confidential information, and A expressly addresses demands connected with the actor’s own involvement rather than ordinary standards compliance.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Geen beroep is mogelijk op een geheimhoudingsplicht, voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens.",
+   "evidence_span_b": "De volgende organen passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe, voor zover die standaard ingevolge het derde lid op hen van toepassing is:",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-019",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": null,
+   "strongest_case_for_tension": "Both provisions concern information associated with network or domain-related services, so one might initially suspect that the reporting obligation could require disclosure connected with the network-access-point or user-identification information addressed by provision B. If such information were required under provision A and its disclosure were used to provide the called user with incorrect information, the two norms could point in opposite directions.",
+   "strongest_case_for_compatibility": "Provision A requires specified registration information—such as the entity’s name, address, contact details, and possibly IP ranges—to be supplied to the Minister for a national register. Provision B prohibits using a facility for transmitting network-access-point or individual-user numbers to provide the called user with incorrect information; supplying accurate register information to the Minister does not itself constitute that prohibited use or communication.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Een essentiële entiteit, belangrijke entiteit en een entiteit die domeinnaamregistratiediensten verleent verstrekt ten behoeve van de registratie in het nationale register, bedoeld in artikel 43, aan Onze Minister de volgende informatie middels het daarvoor opgezette mechanisme:",
+   "evidence_span_b": "Een faciliteit om het nummer van het netwerkaansluitpunt van waaruit een verbinding tot stand wordt gebracht, dan wel het nummer waarmee een individuele gebruiker van dat netwerkaansluitpunt kan worden geïdentificeerd aan het netwerkaansluitpunt waarmee die verbinding tot stand komt te verstrekken, wordt niet gebruikt om de opgeroepen gebruiker onjuiste informatie te verstrekken met betrekking tot dat netwerkaansluitpunt of die individuele gebruiker.",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-020",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": null,
+   "strongest_case_for_tension": "A provider of a general-purpose AI model may need to transfer personal data to a third country or international organisation while preparing or supplying the documentation required by provision B. Provision A permits such a transfer only if the GDPR Chapter V conditions are met, so the transfer-related restriction could impede immediate disclosure if those conditions are not satisfied.",
+   "strongest_case_for_compatibility": "Provision B requires documentation and information to be prepared and made available, but it does not require transferring personal data to a third country or international organisation. A provider can comply with B while complying with A, for example by using non-personal information, anonymisation, or a Chapter V transfer mechanism where personal data is involved.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan",
+   "evidence_span_b": "informatie en documentatie opstellen, up-to-date houden en beschikbaar stellen voor aanbieders van AI-systemen die het AI-model voor algemene doeleinden in hun AI-systemen willen integreren",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-021",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Ministerial powers concerning electronic-service identification and access",
+   "strongest_case_for_tension": "Both provisions concern ministerial intervention in electronic services involving identification means. One could argue that designating an attribute requires recognised services to use it, while the other permits interruption of access through an authorised or recognised identification means, potentially preventing that designated-attribute-based service from being used.",
+   "strongest_case_for_compatibility": "The provisions confer different, sequential powers: Article 12 permits the Minister to designate an attribute for recognised services to use, whereas Article 18 permits access to be interrupted when misuse or improper use is suspected. A service may use the designated attribute when access remains available, and access may be interrupted when the separate misuse trigger exists; nothing requires continued access despite that trigger.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Onze Minister kan een attribuut aanwijzen dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen",
+   "evidence_span_b": "Onze Minister kan de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel onderbreken of doen onderbreken bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel.",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-022",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Reporting incidents involving a high-risk AI system that also cause a personal-data breach",
+   "strongest_case_for_tension": "Both provisions may apply to the same provider and incident, but they impose different reporting triggers, recipients, and deadlines: GDPR reporting is generally due within 72 hours of awareness, while the AI Act provision may require immediate reporting and, for a widespread breach or specified serious incident, reporting within two days. The provisions also identify different authorities, so simultaneous compliance may require separate reports rather than one report satisfying both.",
+   "strongest_case_for_compatibility": "The duties concern distinct legal obligations and can be performed cumulatively: the provider can report the personal-data breach to the competent data-protection authority and the serious AI incident to the market-surveillance authority. The AI Act's two-day maximum is not incompatible with GDPR's 72-hour maximum, because reporting within two days also falls within 72 hours; different recipients and content do not prevent compliance with both.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "meldt de verwerkingsverantwoordelijke deze zonder onredelijke vertraging en, indien mogelijk, uiterlijk 72 uur nadat hij er kennis van heeft genomen, aan de overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit",
+   "evidence_span_b": "melden ernstige incidenten bij de markttoezichtautoriteiten van de lidstaten waarin dat incident heeft plaatsgevonden",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-023",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Entities such as DNS providers, cloud-computing providers, and online platforms under Directive (EU) 2022/2555",
+   "strongest_case_for_tension": "Both provisions concern overlapping categories of digital-service entities, so they may appear to impose related administrative or compliance burdens. However, Article 21 concerns Commission implementing acts specifying cybersecurity-risk-management requirements, while Article 27 concerns ENISA’s creation and maintenance of a register based on information transmitted by national contact points; neither requires or forbids conduct that conflicts with the other.",
+   "strongest_case_for_compatibility": "An entity can comply with the cybersecurity measures specified under Article 21 while also being included in ENISA’s register under Article 27. The provisions have different addressees and functions: Article 21 directs the Commission to adopt implementing acts, whereas Article 27 directs ENISA to maintain a register and provide access to competent authorities.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Uiterlijk op 17 oktober 2024 stelt de Commissie uitvoeringshandelingen vast met de technische en methodologische vereisten van de in lid 2 bedoelde maatregelen",
+   "evidence_span_b": "Enisa creëert en onderhoudt een register van DNS-dienstverleners, registers voor topleveldomeinnamen, entiteiten die domeinnaamregistratiediensten verlenen, aanbieders van cloudcomputingdiensten",
+   "confidence": 0.99
+  },
+  "luna_recheck": null,
+  "sample_id": "S-024",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Cybersecurity and personal-data incident oversight involving competent authorities and CSIRTs",
+   "strongest_case_for_tension": "Provision A prohibits the competent authority from imposing a second administrative fine for the same conduct after a GDPR fine has been imposed. Provision B requires CSIRTs to monitor, analyse and respond to incidents, which could involve the same underlying personal-data incident and potentially lead to enforcement activity, creating a possible overlap in institutional responses.",
+   "strongest_case_for_compatibility": "Provision B assigns operational monitoring, assistance and incident-response tasks to CSIRTs; it does not require them to impose administrative fines. Provision A only restricts duplicate fines by a competent authority for the same conduct, so both provisions can be fully complied with without conflict.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging",
+   "evidence_span_b": "De CSIRT’s hebben de volgende taken:",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-025",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "The supervisory and enforcement powers of the Autoriteit persoonsgegevens concerning obligations under article 3.17(7) of the Wet op het financieel toezicht.",
+   "strongest_case_for_tension": "Provision A authorizes the Autoriteit persoonsgegevens to impose a substantial administrative fine for violations of the relevant obligations. Provision B assigns that same authority the supervisory task of monitoring compliance with those obligations concerning payment-service providers’ access to users’ personal data. One might argue that the supervisory task and the sanctioning power overlap, potentially raising a question about whether the authority may both supervise and fine.",
+   "strongest_case_for_compatibility": "The provisions impose no incompatible duty or prohibition. Provision B defines the authority’s supervisory competence, while provision A provides a sanction available when a violation is established; supervision can naturally include detecting violations and enforcement can follow. Nothing in either text limits the other power or makes their simultaneous exercise impossible.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De Autoriteit persoonsgegevens kan in geval van een overtreding van de krachtens artikel 3.17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen aan de overtreder een bestuurlijke boete opleggen",
+   "evidence_span_b": "De taak van de Autoriteit persoonsgegevens, bedoeld in artikel 6, derde lid, omvat mede het toezicht op de naleving van de krachtens artikel 3:17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-026",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "The Cooperation Group’s tasks under Article 14 of Directive (EU) 2022/2555",
+   "strongest_case_for_tension": "The provisions are labelled as competence and obligation, so one might argue that Provision A merely confers authority while Provision B imposes duties, potentially raising a question about whether the listed activities are discretionary or mandatory. However, the operative Dutch text is identical, and no different legal effect is expressed in the provisions themselves.",
+   "strongest_case_for_compatibility": "Both provisions state that the Cooperation Group has the same listed tasks and expressly require submission of the reports referred to in point r). The competence/obligation labels do not create a textual conflict because the same body can be competent to perform tasks and obliged to perform them.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De samenwerkingsgroep heeft de volgende taken:",
+   "evidence_span_b": "De samenwerkingsgroep heeft de volgende taken:",
+   "confidence": 0.99
+  },
+  "luna_recheck": null,
+  "sample_id": "S-027",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "ICT and cybersecurity obligations",
+   "strongest_case_for_tension": "Provision A permits the Minister to impose an independent security audit and reporting obligation on providers of public electronic communications networks or services. Provision B requires financial entities to use ICT technologies and processes that achieve specified security, availability, integrity, confidentiality, and data-protection outcomes; if an entity falls within both categories, the audit obligation could add compliance costs and operational requirements, but the texts do not make those requirements incompatible.",
+   "strongest_case_for_compatibility": "The provisions regulate different matters: A concerns a Minister’s competence to require a security inspection and delivery of its results from public electronic communications providers, while B imposes substantive ICT-security requirements on financial entities. An actor subject to both can perform the audit and report its results while also using ICT solutions meeting B’s requirements; neither provision forbids the other.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Onze Minister kan een aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten de verplichting opleggen om binnen een bepaalde termijn een beveiligingscontrole te laten uitvoeren door een gekwalificeerde onafhankelijke deskundige",
+   "evidence_span_b": "maken financiële entiteiten gebruik van ICT-technologieën en -processen die geschikt zijn overeenkomstig artikel 4",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-028",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Commission implementing acts establishing technical requirements or common specifications",
+   "strongest_case_for_tension": "Both provisions empower the Commission to adopt implementing acts containing technical specifications or requirements. A possible tension is that Article 21 requires such acts for specified cybersecurity-risk-management measures by a fixed date, while Article 41 permits common specifications only under additional conditions concerning failed or inadequate harmonised standards, potentially suggesting different preconditions for Commission action.",
+   "strongest_case_for_compatibility": "The provisions concern different substantive regimes and different addressees: Article 21 concerns cybersecurity-risk-management measures for specified digital and trust-service entities, whereas Article 41 concerns requirements for high-risk AI systems and certain general-purpose AI obligations. Article 21 also does not require the Commission to use the common-specifications mechanism in Article 41, so both implementing powers can operate independently without an actor being unable to comply with both.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Uiterlijk op 17 oktober 2024 stelt de Commissie uitvoeringshandelingen vast met de technische en methodologische vereisten van de in lid 2 bedoelde maatregelen",
+   "evidence_span_b": "De Commissie kan uitvoeringshandelingen vaststellen tot vaststelling van gemeenschappelijke specificaties voor de eisen van afdeling 2 van dit hoofdstuk",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-029",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Member States’ provision of resources and budgetary arrangements for public authorities",
+   "strongest_case_for_tension": "Provision A requires financial supervision of each supervisory authority without compromising its independence, while Provision B requires competent authorities and contact points to have sufficient resources to perform their tasks effectively and efficiently. One might argue that resource allocation or financial oversight could give the supervising body influence over the authority and thereby threaten independence.",
+   "strongest_case_for_compatibility": "The provisions impose duties on Member States that can be fulfilled simultaneously: a Member State can provide sufficient resources and effective financial oversight while preserving the supervisory authority’s independence and separate public annual budget. Provision B does not prescribe a particular funding or oversight mechanism, and Provision A does not prohibit adequate resourcing.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Elke lidstaat zorgt ervoor dat op elke toezichthoudende autoriteit financieel toezicht wordt uitgeoefend zonder dat daarbij de onafhankelijkheid van de toezichthoudende autoriteit in het gedrang komt",
+   "evidence_span_b": "De lidstaten zorgen ervoor dat hun bevoegde autoriteiten en centrale contactpunten over voldoende middelen beschikken om de hun toegewezen taken doeltreffend en efficiënt uit te voeren",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-030",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": null,
+   "strongest_case_for_tension": "Provision A requires specified recognised service providers to cooperate with an authorised unlocking service and prohibits them from charging that service. Provision B restricts high-risk AI providers’ processing of special-category personal data and requires deletion, non-disclosure, and access controls; however, it does not regulate the cooperation or fees described in A.",
+   "strongest_case_for_compatibility": "The provisions govern different actors, subject matters, and triggers: A concerns cooperation and charges among recognised digital-identity services, while B concerns exceptional processing of special-category personal data by providers of high-risk AI systems. Nothing in B forbids the cooperation or fee-free provision required by A, and nothing in A authorises or requires the processing of such data.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst verlenen aan een erkende ontsluitende dienst alle benodigde medewerking",
+   "evidence_span_b": "mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken",
+   "confidence": 0.99
+  },
+  "luna_recheck": null,
+  "sample_id": "S-031",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Reporting or communicating incidents involving personal data and high-risk AI systems",
+   "strongest_case_for_tension": "If a high-risk AI serious incident is also a personal-data breach, Article 34 can make communication to the data subject unnecessary when one of its conditions is met, while Article 73 requires an incident notification immediately and no later than ten days after awareness in the specified death-related case. This could create an apparent conflict if the Article 73 notification is understood to require notifying the affected person directly and Article 34's exemption applies.",
+   "strongest_case_for_compatibility": "The provisions regulate different communications and triggers: Article 34 concerns communication of a personal-data breach to the data subject, whereas Article 73 concerns reporting a serious AI incident by the provider or deployer. Article 73 does not state that its notification must be made to the data subject, so both duties can be fulfilled through separate communications, with Article 34 exempting only its own communication duty where applicable.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De in lid 1 bedoelde mededeling aan de betrokkene is niet vereist wanneer een van de volgende voorwaarden is vervuld:",
+   "evidence_span_b": "doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident.",
+   "confidence": 0.93
+  },
+  "luna_recheck": null,
+  "sample_id": "S-032",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Authorities involved in regulatory supervision and enforcement",
+   "strongest_case_for_tension": "Provision A prohibits the competent authority from imposing a second administrative fine under specified national-law provisions for the same conduct after a GDPR fine has been imposed. Provision B obliges the notifying authority to provide the Commission with all relevant information on request, so a broad reading might suggest an information-sharing duty that could encompass information about such enforcement matters.",
+   "strongest_case_for_compatibility": "The provisions impose different duties on different regulatory processes: A limits duplicate punishment for the same conduct, while B requires information about the notification or maintenance of a notified body's competence. Providing information to the Commission does not itself impose a second fine, and nothing in B requires the authority to violate A.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging",
+   "evidence_span_b": "De aanmeldende autoriteit verstrekt de Commissie op verzoek alle relevante informatie over de aanmelding of het op peil houden van de bekwaamheid van de betrokken aangemelde instantie.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-033",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Personal-data processing and data-breach consequences",
+   "strongest_case_for_tension": "Provision A removes a notification requirement when the data are rendered unintelligible through appropriate technical measures. Provision B separately imposes liability for damage caused by processing that infringes the GDPR, so encryption-based non-notification does not itself eliminate possible compensation liability.",
+   "strongest_case_for_compatibility": "The provisions impose different legal consequences: A concerns whether breach notification is required, while B concerns civil liability for damage caused by GDPR-infringing processing. An operator can comply with A's notification exception and still comply with B by avoiding infringing processing or compensating any damage; neither provision requires or forbids the conduct required by the other.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De kennisgeving, bedoeld in het tweede lid, is niet vereist indien de aanbieder naar het oordeel van de Autoriteit persoonsgegevens gepaste technische beschermingsmaatregelen heeft genomen waardoor de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens.",
+   "evidence_span_b": "Elke verwerkingsverantwoordelijke die bij verwerking is betrokken, is aansprakelijk voor de schade die wordt veroorzaakt door verwerking die inbreuk maakt op deze verordening.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-034",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Use of a public identification means or related facility in electronic public services, alongside GDPR processing where identification is not required",
+   "strongest_case_for_tension": "Provision A restricts use of the public identification means and facility to access to electronic services provided by public authorities and designated organisations. Provision B requires a controller, where identification is not required and the person cannot be identified, to notify the person if possible; this could appear difficult if access is provided without identifying the user, but B does not require use of the public identification means or prescribe a contrary access method.",
+   "strongest_case_for_compatibility": "Provision A governs the permitted use of a particular public identification means for access, while provision B governs the controller’s duties when identification is unnecessary or impossible. A service can comply with both by using the identification means only for covered electronic services and, where a person nevertheless cannot be identified, giving the required notice if possible.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, worden uitsluitend gebruikt voor de toegang tot elektronische dienstverlening door bestuursorganen en aangewezen organisaties.",
+   "evidence_span_b": "Wanneer de verwerkingsverantwoordelijke in de in lid 1 van dit artikel bedoelde gevallen kan aantonen dat hij de betrokkene niet kan identificeren, stelt hij de betrokkene daarvan indien mogelijk in kennis.",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-035",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Public authorities or designated organisations performing electronic services and national competent authorities",
+   "strongest_case_for_tension": "Both provisions concern public authorities, and an authority covered by both might have to accept only recognised business or organisational means while also complying with confidentiality obligations under Article 78. If accepting an electronic means or authorisation statement required disclosure of confidential information, the acceptance duty could appear to pull against confidentiality.",
+   "strongest_case_for_compatibility": "Article 15 regulates which identification means and authorisation statements must be accepted for access to electronic services; Article 70 regulates confidentiality by national competent authorities under Article 78. The provisions impose different duties that can ordinarily be performed together, and nothing in the texts shown says that accepting a recognised means requires disclosure of confidential information or otherwise violates Article 78.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "accepteren bestuursorganen en aangewezen organisaties bij de toegang tot hun elektronische dienstverlening alle en uitsluitend erkende bedrijfs- en organisatiemiddelen",
+   "evidence_span_b": "Bij de uitvoering van hun taken voldoen de nationale bevoegde autoriteiten aan de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-036",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Entities that may provide public electronic communications networks or services",
+   "strongest_case_for_tension": "Provision A excludes its article from applying to an essential or important entity when article 21 does not apply to that entity. Provision B nevertheless authorizes the Minister to impose a security-audit and reporting obligation on providers of public electronic communications networks or services, which could include such an entity.",
+   "strongest_case_for_compatibility": "Provision A is only a scope exclusion for article 24 and does not prohibit security audits or Ministerial obligations under another statute. Provision B applies to a defined class of communications providers and can therefore operate independently, including for an entity outside article 24.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Dit artikel is niet van toepassing op een essentiële entiteit of belangrijke entiteit indien artikel 21 niet van toepassing is op die entiteit.",
+   "evidence_span_b": "Onze Minister kan een aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten de verplichting opleggen om binnen een bepaalde termijn een beveiligingscontrole te laten uitvoeren",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-037",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "AI Act compliance support and practice-code development",
+   "strongest_case_for_tension": "Both provisions concern the AI Office, but Article 27 directs it to develop a questionnaire template to help deployers comply with fundamental-rights-assessment obligations, while Article 56 authorises it to invite providers and authorities to draft practice codes. One might argue that resources or institutional attention devoted to one task could detract from the other, but the texts impose no mutually exclusive action.",
+   "strongest_case_for_compatibility": "The AI Office can develop the Article 27 questionnaire template and simultaneously invite the actors listed in Article 56 to participate in practice-code drafting. The provisions address different functions and do not prohibit or condition either activity on abandoning the other.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Het AI-bureau ontwikkelt een sjabloon voor een vragenlijst, onder meer via een geautomatiseerd instrument, om gebruiksverantwoordelijken te helpen hun verplichtingen uit hoofde van dit artikel op vereenvoudigde wijze na te komen.",
+   "evidence_span_b": "Het AI-bureau kan alle aanbieders van AI-modellen voor algemene doeleinden en relevante nationale bevoegde autoriteiten uitnodigen om deel te nemen aan het opstellen van praktijkcodes.",
+   "confidence": 0.99
+  },
+  "luna_recheck": null,
+  "sample_id": "S-038",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Information exchange by competent authorities concerning incidents and cyber threats",
+   "strongest_case_for_tension": "Both provisions require competent authorities to exchange information about incidents, but Article 58 requires exchange with the Dutch Data Protection Authority and expressly includes all necessary data, including personal data, while Article 59 requires exchange among a broader or partly different set of authorities about relevant incidents and cyber threats. A possible tension is that the same incident may require sharing personal data under Article 58 while Article 59's information exchange could be read as limited to relevant incident and threat information, although Article 59 does not expressly prohibit personal data.",
+   "strongest_case_for_compatibility": "The provisions regulate different cooperation channels and do not impose incompatible content, recipients, or deadlines. Article 58 expressly authorizes the necessary exchange of personal data for personal-data-breach incidents, while Article 59 separately requires exchange of information about relevant incidents and cyber threats; an authority can perform both duties, including by sharing appropriate information through each channel.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "De bevoegde autoriteiten werken samen met de Autoriteit persoonsgegevens bij de behandeling van incidenten die leiden tot inbreuken in verband met persoonsgegevens en wisselen in het kader van die samenwerking alle daarvoor noodzakelijke gegevens uit, waaronder persoonsgegevens.",
+   "evidence_span_b": "De bevoegde autoriteiten, Onze Minister van Economische Zaken uit hoofde van de Verordening (EU) 910/2014, de bevoegde autoriteiten, bedoeld in de Verordening (EU) 2022/2554, en Onze Minister van Economische Zaken uit hoofde van de Richtlijn (EU) 2018/1972 wisselen informatie uit over relevante incidenten en cyberdreigingen.",
+   "confidence": 0.93
+  },
+  "luna_recheck": null,
+  "sample_id": "S-039",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": null,
+   "strongest_case_for_tension": "Provision A requires financial entities to assess risks and conduct due diligence before contracting for ICT services. Provision B prohibits conformity-assessment bodies and their personnel from involvement in designing, developing, marketing, or using high-risk AI systems and bars activities that could impair their independence, including advisory services; a conformity-assessment body might conceivably be considered an ICT-service provider, creating a possible issue if the financial entity seeks its services.",
+   "strongest_case_for_compatibility": "The provisions regulate different actors and conduct: A governs financial entities entering ICT-service contracts, while B governs conformity-assessment bodies and their independence in high-risk-AI conformity assessments. A does not require a financial entity to contract with a prohibited or conflicted provider, and B does not prohibit the due-diligence and risk-assessment duties imposed on financial entities.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "verrichten zij due-diligenceonderzoeken over toekomstige derde aanbieders van ICT-diensten en waarborgen zij gedurende de gehele selectie- en beoordelingsprocedure dat de derde aanbieder van ICT-diensten geschikt is",
+   "evidence_span_b": "Een conformiteitsbeoordelingsinstantie, haar hoogste leidinggevenden en het personeel dat de conformiteitsbeoordelingstaken verricht, zijn niet rechtstreeks of als vertegenwoordiger van de betrokken partijen betrokken bij het ontwerpen, ontwikkelen, verhandelen of gebruiken van de AI-systemen met een hoog risico.",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-040",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Use of contact details for unsolicited direct-marketing communications after an individual's objection",
+   "strongest_case_for_tension": "Provision A requires the sender, when using covered means with consent, to give the natural person an opportunity to object with each message; this could be read as permitting continued messaging so long as that opportunity is provided. Provision B instead requires that, once the data subject objects to direct-marketing processing, the personal data no longer be processed for those purposes.",
+   "strongest_case_for_compatibility": "The opportunity to object under A is a safeguard before or alongside continued messaging, while B governs the consequence of an objection: processing for direct marketing must stop. A can therefore be satisfied by providing the opt-out opportunity in each message and then ceasing use when the recipient exercises it; the provisions do not require continued processing after objection.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "geeft de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens.",
+   "evidence_span_b": "Wanneer de betrokkene bezwaar maakt tegen verwerking ten behoeve van direct marketing, worden de persoonsgegevens niet meer voor deze doeleinden verwerkt.",
+   "confidence": 0.96
+  },
+  "luna_recheck": "evidence_span_a is not a verbatim substring of norm A's provision text",
+  "terra": {
+   "shared_subject": "Het recht van natuurlijke personen om zich te verzetten tegen direct-marketing/ongedwongen commerciële, ideële of charitatieve communicatie en het gebruik van hun contactgegevens/persoonsgegevens daarvoor.",
+   "strongest_case_for_tension": "Artikel 11.7, lid 2, verlangt bij elke boodschap slechts dat de verzender een duidelijke, gratis en gemakkelijke gelegenheid biedt om verzet aan te tekenen; op zichzelf zegt die bepaling niet expliciet dat alle verwerking na verzet moet stoppen. Artikel 21 AVG legt juist een absoluut gevolg op voor persoonsgegevens die voor direct marketing worden verwerkt.",
+   "strongest_case_for_compatibility": "De bepalingen regelen opeenvolgende onderdelen van hetzelfde proces: A verplicht een werkelijke, gemakkelijk toegankelijke bezwaarmogelijkheid in iedere boodschap, terwijl B bepaalt wat er moet gebeuren zodra de betrokkene daarvan gebruikmaakt, namelijk beëindiging van de verwerking voor direct marketing. A verleent geen toestemming om na een bezwaar door te gaan en is dus niet strijdig met B.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Bij het gebruik van andere dan de in het eerste lid bedoelde middelen voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen, geeft de verzender de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens.",
+   "evidence_span_b": "Wanneer de betrokkene bezwaar maakt tegen verwerking ten behoeve van direct marketing, worden de persoonsgegevens niet meer voor deze doeleinden verwerkt.",
+   "confidence": 0.98
+  },
+  "terra_recheck": null,
+  "sample_id": "S-041",
+  "final_verdict": "COMPATIBLE",
+  "escalated": true,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "The provision of documentation by notified bodies to a notifying authority, where that documentation contains personal data transferred to a third country or international organisation.",
+   "strongest_case_for_tension": "Article 34 requires notified bodies to provide all relevant documentation, including the provider’s documentation, to the notifying authority on request. Article 44 prohibits transferring personal data to a third country or international organisation unless the GDPR Chapter V conditions have been satisfied, so disclosure could be blocked if the authority is located in such a jurisdiction and the documentation contains personal data lacking a Chapter V transfer basis.",
+   "strongest_case_for_compatibility": "Article 34 requires disclosure to the notifying authority, but it does not require disclosure to a third country or international organisation, nor does it say that GDPR transfer conditions may be disregarded. The notified body can therefore provide the documentation while complying with Article 44, for example by ensuring the Chapter V conditions are met or by providing documentation without the relevant personal data.",
+   "verdict": "MISSING_CONTEXT",
+   "concrete_scenario": "A notified body established in the EU receives a request under Article 34 from a notifying authority located in a third country, and the provider’s documentation contains personal data that the body would have to transmit to that authority. Article 34 requires the documentation to be supplied, while Article 44 permits that transfer only if the Chapter V conditions are satisfied; the provisions shown do not establish whether such conditions exist.",
+   "missing_reference": "The applicable GDPR Chapter V transfer mechanism or other condition authorising the specific transfer to the third-country authority, such as an adequacy decision, appropriate safeguards, or a relevant derogation.",
+   "decisive_exception": "The transfer may proceed if an applicable GDPR Chapter V condition or derogation authorises it; Article 44 itself refers to those conditions but does not identify one for this request.",
+   "evidence_span_a": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan",
+   "evidence_span_b": "Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek",
+   "confidence": 0.9
+  },
+  "luna_recheck": null,
+  "terra": {
+   "shared_subject": "Verstrekking van documentatie die mogelijk persoonsgegevens bevat door een aangemelde instantie aan een aanmeldende autoriteit.",
+   "strongest_case_for_tension": "Artikel 34 verplicht aangemelde instanties alle relevante documentatie, inclusief documentatie van de aanbieder, aan de aanmeldende autoriteit beschikbaar te stellen. Indien zulke documentatie persoonsgegevens bevat en de verstrekking een doorgifte naar een derde land of internationale organisatie zou vormen, staat artikel 44 die doorgifte slechts toe nadat aan de voorwaarden van hoofdstuk V AVG is voldaan.",
+   "strongest_case_for_compatibility": "Artikel 44 bevat geen absoluut verbod op doorgifte, maar stelt voorwaarden voor doorgiften naar derde landen of internationale organisaties. Artikel 34 verlangt slechts verstrekking aan de nationale aanmeldende autoriteit en zegt niet dat die verstrekking zonder naleving van de AVG moet gebeuren; een aangemelde instantie kan dus artikel 34 uitvoeren en, waar toepasselijk, tegelijk aan artikel 44 voldoen.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan;",
+   "evidence_span_b": "Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek,",
+   "confidence": 0.94
+  },
+  "terra_recheck": null,
+  "sample_id": "S-042",
+  "final_verdict": "COMPATIBLE",
+  "escalated": true,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Supervision of the Data Act provisions by designated Dutch supervisory authorities",
+   "strongest_case_for_tension": "Provision A assigns supervision of specified Data Act provisions to members, staff, and designated persons of the Dutch Data Protection Authority. Provision B requires members of every supervisory authority to remain free from external influence and neither seek nor accept instructions, so an apparent concern is that A’s designation could be understood as subjecting those persons to external direction. However, A only allocates competence and does not require or authorise instructions or influence.",
+   "strongest_case_for_compatibility": "The provisions impose different, readily compatible rules: A identifies which persons are competent to supervise specified provisions, while B governs how supervisory-authority members must perform their tasks and exercise powers. The designated persons can exercise the assigned competence independently and without accepting instructions, satisfying both provisions.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen.",
+   "evidence_span_b": "Bij de uitvoering van hun taken en de uitoefening van hun bevoegdheden overeenkomstig deze verordening blijven de leden van elke toezichthoudende autoriteit vrij van al dan niet rechtstreekse externe invloed en vragen noch aanvaarden zij instructies van wie dan ook.",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-043",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Processing of personal data by persons acting under the authority of a controller or processor, including special-category data in high-risk AI systems.",
+   "strongest_case_for_tension": "Provision A requires the controller or processor to ensure that persons under its authority process personal data only on the controller’s instructions, unless Union or Member State law requires otherwise. Provision B expressly permits providers of high-risk AI systems to process special categories of personal data for bias detection and correction, which could appear to authorize processing beyond an individual’s instructions.",
+   "strongest_case_for_compatibility": "Provision B’s permission is directed to the provider and is expressly subject to the GDPR and other applicable data-protection law, while Provision A regulates how persons acting under the provider’s authority may process data. The provider can comply with both by instructing authorized personnel to carry out the narrowly necessary processing under the conditions in B; B does not require personnel to act without instructions.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "deze slechts in opdracht van de verwerkingsverantwoordelijke verwerkt, tenzij hij daartoe Unierechtelijk of lidstaatrechtelijk is gehouden.",
+   "evidence_span_b": "mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen.",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-044",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "EU-level guidance and technical standards concerning ICT and digital-sector regulation",
+   "strongest_case_for_tension": "Both provisions impose time-bound obligations on EU-level bodies to develop regulatory or interpretive material, and both involve Commission participation. One might therefore argue that their overlapping institutional processes could create competing mandates or timelines. However, the texts assign different tasks to different bodies and do not prescribe incompatible outputs or deadlines.",
+   "strongest_case_for_compatibility": "Article 4 requires the Commission to issue and periodically evaluate guidance on the application of specified NIS2 provisions, taking account of the Cooperation Group and ENISA. Article 28 requires the ESAs, through the Joint Committee, to develop draft technical regulatory standards on financial entities’ ICT-provider contracts and submit them to the Commission by 17 January 2024; these distinct tasks can plainly be performed together.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Uiterlijk op 17 juli 2023 bepaalt de Commissie richtsnoeren ter verduidelijking van de toepassing van de leden 1 en 2.",
+   "evidence_span_b": "De ETA’s ontwikkelen via het Gemengd Comité ontwerpen van technische reguleringsnormen tot nadere bepaling van de gedetailleerde inhoud van het in lid 2 bedoelde beleid met betrekking tot de contractuele overeenkomsten inzake het gebruik van door derde aanbieders verleende ICT-diensten die kritieke of belangrijke functies ondersteunen.",
+   "confidence": 0.98
+  },
+  "luna_recheck": null,
+  "sample_id": "S-045",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Potentially an entity that is both an entity subject to the national-register information duties and an erkende dienst, where both exemption regimes apply.",
+   "strongest_case_for_tension": "Both provisions empower the Minister to grant an exemption from obligations imposed by the respective legislation. If the same actor and obligation fall within both regimes, the two exemption decisions could have different conditions or scopes, creating uncertainty about which duties remain applicable. However, neither text says that one exemption overrides, prevents, or conflicts with the other.",
+   "strongest_case_for_compatibility": "The provisions concern different statutory duties, different categories of regulated actors, and different exemption grounds. Article 45 concerns exemption from article 44 information obligations for entities operating exclusively in specified public-interest fields or serving a government body, while article 13 concerns exemption from rules applicable to an erkende dienst where those rules obstruct technological development; both exemptions can coexist without making compliance with either provision impossible.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Onze Minister die het aangaat kan bij regeling of besluit, in overeenstemming met Onze Minister, een essentiële entiteit, een belangrijke entiteit of entiteit die domeinnaamregistratiediensten verleent ontheffen van de verplichtingen, bedoeld in artikel 44",
+   "evidence_span_b": "Onze Minister kan een erkende dienst ontheffing verlenen van bij of krachtens artikel 13 gestelde regels",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-046",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Cross-border incident information and administrative sanctions/corrective measures",
+   "strongest_case_for_tension": "A cross-border significant-incident notification must include information received under Articles 26–29, while the authority must consider the entity’s cooperation when setting a sanction or corrective measure. An entity might therefore worry that providing the required information could expose it to enforcement or affect the measure, creating a possible incentive to withhold or limit information, although neither text expressly makes disclosure optional or prohibits it.",
+   "strongest_case_for_compatibility": "The provisions impose duties on different actors and operate at different stages: Article 39 requires the central contact point to notify other contact points and ENISA while protecting security, commercial interests, and confidentiality; Article 51 directs competent authorities how to determine sanctions or corrective measures. The required notification can be made confidentially, and Article 51 does not forbid or limit such notification, so both duties can be fulfilled together.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Die kennisgeving omvat, in geval van een significant incident, de informatie die overeenkomstig de artikelen 26 tot en met 29 is ontvangen. Daarbij beschermt het centrale contactpunt de beveiligingsbelangen en commerciële belangen van de entiteit en de vertrouwelijkheid van de verstrekte informatie.",
+   "evidence_span_b": "De bevoegde autoriteiten houden bij het bepalen van het type en de omvang van een op grond van artikel 50 te nemen administratieve strafmaatregel of corrigerende maatregel rekening met de vraag, in hoeverre de inbreuk opzettelijk is, dan wel het resultaat is van nalatigheid, en met andere relevante omstandigheden, waaronder, in voorkomend geval:",
+   "confidence": 0.97
+  },
+  "luna_recheck": null,
+  "sample_id": "S-047",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Regulatory authorities’ powers and duties concerning certification and processing compliance",
+   "strongest_case_for_tension": "Both provisions concern authorities and certification-related corrective action. One could argue that Article 58 permits a supervisory authority to order withdrawal of a certification, while Article 36 imposes a specific procedure and reporting duties when an accreditation designation is restricted, suspended, or withdrawn; an authority might therefore face uncertainty about whether the GDPR power alone suffices or whether the AI Act procedure must also be followed.",
+   "strongest_case_for_compatibility": "Article 58 grants GDPR supervisory authorities corrective powers over controllers and processors, including withdrawal of certifications under Articles 42 and 43. Article 36 instead imposes duties on a notifying authority concerning certificates issued by a notified conformity-assessment body after a change in that body’s designation; the provisions address different authorities, triggers, and certification regimes, and can be complied with cumulatively where their scopes overlap.",
+   "verdict": "UNRELATED",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "h) een certificering intrekken of het certificeringsorgaan gelasten een uit hoofde van de artikelen 42 en 43 afgegeven certificering in te trekken",
+   "evidence_span_b": "In geval van beperking, schorsing of intrekking van een aanwijzing:",
+   "confidence": 0.96
+  },
+  "luna_recheck": null,
+  "sample_id": "S-048",
+  "final_verdict": "UNRELATED",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ },
+ {
+  "luna": {
+   "shared_subject": "Processing criminal-conviction or offence-related personal data in a high-risk AI system to detect or correct bias",
+   "strongest_case_for_tension": "Provision B expressly permits providers of high-risk AI systems to process special categories of personal data when strictly necessary for bias detection or correction, while Provision A restricts processing of personal data concerning criminal convictions and offences to processing under public-authority supervision or processing authorised by Union or Member State law with appropriate safeguards. Thus, a provider might view B as a sufficient permission, whereas A appears to require an additional legal basis or public-authority supervision.",
+   "strongest_case_for_compatibility": "Provision B expressly requires compliance with Regulation (EU) 2016/679 and Directive (EU) 2016/680, and also requires appropriate safeguards. Provision A can therefore be satisfied if the provider's processing is conducted under public-authority supervision or under an applicable Union or Member State provision meeting its safeguards requirement; B does not state that its permission overrides those conditions.",
+   "verdict": "MISSING_CONTEXT",
+   "concrete_scenario": "A provider of a high-risk AI system wants to process a dataset containing criminal-conviction information to detect bias, and the processing satisfies B's necessity, security, access-control, deletion and documentation conditions. Whether the provider may lawfully do so cannot be decided from the texts shown because it depends on whether the processing is under public-authority supervision or is otherwise authorised by applicable Union or Member State law with appropriate safeguards.",
+   "missing_reference": "The applicable Union or Member State provision authorising the processing under Provision A, or the specific public-authority-supervision arrangement; the shown texts do not establish whether Provision B itself constitutes that authorisation.",
+   "decisive_exception": null,
+   "evidence_span_a": "mogen op grond van artikel 6, lid 1, alleen worden verwerkt onder toezicht van de overheid of indien de verwerking is toegestaan bij Unierechtelijke of lidstaatrechtelijke bepalingen die passende waarborgen voor de rechten en vrijheden van de betrokkenen bieden.",
+   "evidence_span_b": "mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:",
+   "confidence": 0.93
+  },
+  "luna_recheck": null,
+  "terra": {
+   "shared_subject": "Verwerking van gevoelige persoonsgegevens door aanbieders van AI-systemen met een hoog risico, met name voor het opsporen en corrigeren van vertekeningen.",
+   "strongest_case_for_tension": "Op het eerste gezicht creëert B een uitzonderlijke toestemming voor aanbieders van hoogrisico-AI om „bijzondere categorieën persoonsgegevens” te verwerken voor biasdetectie, terwijl A verwerking van gegevens over strafrechtelijke veroordelingen en strafbare feiten slechts onder overheidstoezicht of met een afzonderlijke wettelijke toestemming toestaat. Een aanbieder zou dus kunnen menen dat de AI-verordening verwerking van strafrechtelijke gegevens voor biascorrectie toestaat waar de AVG die beperkt.",
+   "strongest_case_for_compatibility": "B’s eigen definitie van „bijzondere categorieën persoonsgegevens” verwijst voor de AVG naar artikel 9, lid 1, niet naar AVG artikel 10; gegevens betreffende strafrechtelijke veroordelingen en strafbare feiten vallen juist onder het afzonderlijke artikel 10 van de AVG. Bovendien bepaalt B uitdrukkelijk dat zijn voorwaarden gelden „naast” de AVG, zodat B geen afwijking van A’s voorwaarden schept voor strafrechtelijke gegevens.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "Persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen mogen op grond van artikel 6, lid 1, alleen worden verwerkt onder toezicht van de overheid of indien de verwerking is toegestaan bij Unierechtelijke of lidstaatrechtelijke bepalingen die passende waarborgen voor de rechten en vrijheden van de betrokkenen bieden.",
+   "evidence_span_b": "Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:",
+   "confidence": 0.95
+  },
+  "terra_recheck": null,
+  "sample_id": "S-049",
+  "final_verdict": "COMPATIBLE",
+  "escalated": true,
+  "strict_verdict": null
+ },
+ {
+  "luna": {
+   "shared_subject": "Processing and handling of health data in financial entities",
+   "strongest_case_for_tension": "Provision A restricts health-data processing to persons bound by confidentiality and permits disclosure only where legally required or necessary to the controller’s task to persons otherwise authorised to process the data. Provision B requires financial entities to establish a timely process for verifying and remediating critical ICT-audit findings; that process might involve sharing audit findings containing health data with personnel or auditors not covered by A’s confidentiality conditions.",
+   "strongest_case_for_compatibility": "Provision B concerns ICT-risk audit follow-up, not a general authorisation to disclose health data. A financial entity can comply with B while limiting audit information, anonymising it, or sharing it only with persons bound by confidentiality and authorised under A. Nothing in B requires disclosure of health data or otherwise forbids A’s safeguards.",
+   "verdict": "COMPATIBLE",
+   "concrete_scenario": null,
+   "missing_reference": null,
+   "decisive_exception": null,
+   "evidence_span_a": "de gegevens alleen verwerkt door personen die uit hoofde van ambt, beroep of wettelijk voorschrift dan wel krachtens een overeenkomst tot geheimhouding zijn verplicht",
+   "evidence_span_b": "stellen financiële entiteiten een formeel follow-upproces vast, met regels voor de tijdige verificatie en remediëring van kritieke ICT-auditbevindingen",
+   "confidence": 0.94
+  },
+  "luna_recheck": null,
+  "sample_id": "S-050",
+  "final_verdict": "COMPATIBLE",
+  "escalated": false,
+  "strict_verdict": "NOT_A_CONFLICT"
+ }
+]

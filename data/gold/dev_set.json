@@ -1,0 +1,392 @@
+{
+ "_meta": {
+  "purpose": "Development set: items the pipeline HAS been tuned on. Never use as evidence of generalisation.",
+  "derived_from": "data/real_conflicts (left untouched). Fixes: duplicate id INC-0009 -> INC-0009a/b; malformed key 'human,_check' -> 'human_check'; corrected label/label_subtype/expected_detector added; the file's own conflict_type kept as original_label.",
+  "source_study": "Graux, Garstka, Murali, Cave, Botterman, 'Interplay between the AI Act and the EU digital legislative framework', European Parliament (ITRE), PE 778.575, October 2025",
+  "label_classes": {
+   "hard_contradiction": "same act permitted/required by one provision and forbidden by the other (incl. permission vs. prohibition)",
+   "legal_tension": "jointly satisfiable but an open legal question; label_subtype names which kind",
+   "overlap": "the same burden imposed twice (C2's job)",
+   "conceptual_mismatch": "the same concept defined or allocated differently (definitional detector)"
+  },
+  "key_finding": "The source file called 6 items 'contradiction'. Under the corrected labels they are {'hard_contradiction': 1, 'legal_tension': 4, 'conceptual_mismatch': 1}: only one is a hard contradiction, and it is a permission-vs-prohibition case the strict duty-conflict test is structurally unable to see.",
+  "additional_authoritative_confirmations": [
+   {
+    "pair": "GDPR 33 vs NIS2 23 vs DORA 19 (breach/incident notification deadlines)",
+    "source": "EDPB-EDPS Joint Opinion 2/2026, para 79",
+    "quote": "shorter deadlines apply under other reporting obligations, namely: NIS2 Directive (24 or 72 hours depending on the obligation), DORA (24 or 72 hours depending on the obligation), eIDAS Regulation (24 hours) and CER Directive (24 hours)",
+    "note": "the same anchor cluster the pipeline was built around -- dev-side, not independent"
+   },
+   {
+    "pair": "ePrivacy Directive art. 4 (Telecommunicatiewet 11.3/11.3a) vs GDPR 32-34 / NIS2 21-23",
+    "source": "EDPB-EDPS Joint Opinion 2/2026, para 118",
+    "quote": "The EDPB and the EDPS welcome such deletion to avoid overlap with other legal instruments.",
+    "note": "the same overlap the pipeline already reports as its Telecommunicatiewet/GDPR duplication findings -- dev-side"
+   }
+  ],
+  "coverage_limits": [
+   "Corpus contains articles only -- no recitals in any source.",
+   "DORA is almost uncovered by the sources found (2 mentions in the study)."
+  ],
+  "label_counts": {
+   "hard_contradiction": 1,
+   "overlap": 4,
+   "legal_tension": 4,
+   "conceptual_mismatch": 1
+  }
+ },
+ "items": [
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter II - Principles",
+    "section": "",
+    "article": "6",
+    "paragraph": "1",
+    "clause": "(f)"
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "9, 14, 27",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "Article 6(1)(f) GDPR allows processing based on a controller's 'legitimate interests', subject to a balancing test against the data subject's rights. According to the source (citing Hacker, 2024), AI Act obligations such as risk management (Art. 9), human oversight (Art. 14) and fundamental rights impact assessments (Art. 27) indirectly recalibrate this balancing test by embedding AI-specific requirements (explainability, robustness, monitoring) into the proportionality analysis. Critically, the article states that 'even if the balancing would favour the data controller under GDPR, the AI Act may still restrict the processing' - meaning a processing activity that would be lawful under a pure GDPR Art. 6(1)(f) analysis can nonetheless be prohibited or restricted under the AI Act, producing a substantive contradiction in outcome between the two regimes rather than a mere procedural overlap.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 0.5,
+   "id": "INC-0001",
+   "human_check": false,
+   "original_label": "contradiction",
+   "label": "hard_contradiction",
+   "label_subtype": "permission_prohibition_conflict",
+   "label_scope": "pairwise",
+   "expected_detector": "C1 legal-basis path (detect_c1_legal_basis.py)",
+   "label_rationale": "GDPR 6(1)(f) is a conditional permission (a legal basis). The source's core claim: 'even if the balancing would favour the data controller under GDPR, the AI Act may still restrict the processing' -- processing lawful under a pure 6(1)(f) analysis prohibited or restricted by the AI Act. A permission and a prohibition of the same act are contradictory in the deontic sense even though an actor can always comply by refraining, which is why the strict duty-conflict test cannot see it. The cited AI Act articles (9, 14, 27) support the weaker half of the claim (the balancing is 'recalibrated'); the source names no specific prohibiting article. Whether 6(1)(f)'s own balancing clause already absorbs the AI Act restriction is the question for the expert.",
+   "source_type": "Inconsistency",
+   "source_ref": "Annex Table 3 row 1, p. 93",
+   "shaped_fixes": []
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter IV - Controller and processor",
+    "section": "Section 3 - Data protection impact assessment and prior consultation",
+    "article": "35",
+    "paragraph": "1",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "27",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "overlap",
+   "reasoning": "Article 35 GDPR requires a Data Protection Impact Assessment (DPIA) whenever processing is 'likely to result in a high risk to the rights and freedoms of natural persons'. Article 27 AI Act separately requires deployers of high-risk AI systems to perform a Fundamental Rights Impact Assessment (FRIA). The source states this creates a 'duplication of compliance burdens', as organisations may need to carry out parallel DPIAs and FRIAs covering 'clearly related and partially overlapping issues, but subject to different authorities and procedural requirements'.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0002",
+   "human_check": true,
+   "original_label": "overlap",
+   "label": "overlap",
+   "label_subtype": "duplicate_impact_assessment",
+   "label_scope": "pairwise",
+   "expected_detector": "C2",
+   "label_rationale": "Source: 'duplication of compliance burdens' (DPIA and FRIA).",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 3 row 2, p. 93",
+   "shaped_fixes": [
+    "C2 impact-assessment keyword family"
+   ]
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter IV - Controller and processor",
+    "section": "Section 3 - Data protection impact assessment and prior consultation",
+    "article": "35",
+    "paragraph": "1",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "6, 27",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "The two instruments 'do not define high risk in the same way'. Under GDPR Art. 35, risk is evaluated contextually - based on the likelihood and severity of impact on data subjects in a specific processing operation. Under the AI Act's high-risk classification system, 'high risk' is a formal, ex-ante regulatory designation tied to product categories and use cases, irrespective of the granular risk profile of a given deployment. The source notes (citing CEPS, 2022 and Hacker, 2024) that this incongruence means the same system may simultaneously be 'high risk' under one regime but not the other, or vice versa - a direct definitional and classificatory contradiction that remains unaddressed in the adopted AI Act.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 0.5,
+   "id": "INC-0003",
+   "human_check": false,
+   "original_label": "contradiction",
+   "label": "legal_tension",
+   "label_subtype": "classification_mismatch",
+   "label_scope": "pairwise",
+   "expected_detector": "C1 graded tension pass",
+   "label_rationale": "Source: the two instruments 'do not define high risk in the same way' -- 'not strictly a legal inconsistency but the product of two different regulatory logics'.",
+   "source_type": "not strictly an inconsistency",
+   "source_ref": "body text p. 35: 'it is not strictly a legal inconsistency but the product of two different regulatory logics'",
+   "shaped_fixes": [
+    "C1 risk-classification keyword signal"
+   ]
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter I - General provisions / Chapter IV - Controller and processor",
+    "section": "",
+    "article": "4",
+    "paragraph": "",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "3",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "The GDPR allocates responsibility through a controller/processor model (defined in Art. 4), whereas the AI Act relies on distinct lifecycle roles - provider, importer, distributor and deployer (defined in Art. 3). The source explains this 'can result in different actors being held liable for different aspects of the same AI deployment': for example, if a provider's update alters system performance, the provider may be responsible under the AI Act, while the deployer may still be required to revisit its DPIA under the GDPR. This is a structural/conceptual contradiction in accountability frameworks rather than a simple procedural overlap.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 0.1,
+   "id": "INC-0004",
+   "human_check": false,
+   "original_label": "contradiction",
+   "label": "conceptual_mismatch",
+   "label_subtype": "role_allocation",
+   "label_scope": "pairwise",
+   "expected_detector": "C1 definitional detector",
+   "label_rationale": "Controller/processor (GDPR art. 4) vs. provider/deployer (AI Act art. 3): 'functionally distinct' role models, a definitional matter.",
+   "source_type": "not strictly an inconsistency",
+   "source_ref": "body text p. 35 (same passage as INC-0003); p. 38 'functionally distinct'",
+   "shaped_fixes": [
+    "definitional_mismatch detector"
+   ]
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter IV - Controller and processor",
+    "section": "Section 2 - Security of personal data / Section 1 - General obligations",
+    "article": "32, 30",
+    "paragraph": "",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "12, 11 (with Annex IV), 26(6), 15(5)",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "overlap",
+   "reasoning": "GDPR Art. 32 requires appropriate technical and organisational security measures, and Art. 30 requires controllers/processors to maintain records of processing activities. The AI Act mirrors these obligations through a product-safety lens: Art. 12 requires automatic logging by providers of high-risk systems, Art. 11 (with Annex IV) mandates comprehensive technical documentation, and Art. 26(6) requires deployers to retain records of use. The source states these provisions 'converge in their aim of ensuring accountability and auditability, but they also risk duplication, as organisations must maintain parallel documentation and record-keeping structures to satisfy both regimes'.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0005",
+   "human_check": true,
+   "original_label": "overlap",
+   "label": "overlap",
+   "label_subtype": "documentation_and_logging",
+   "label_scope": "pairwise",
+   "expected_detector": "C2",
+   "label_rationale": "Source: the provisions 'converge in their aim' -- parallel security, records and logging duties.",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 3 row 4, p. 93",
+   "shaped_fixes": [
+    "C2 documentation keyword family"
+   ]
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter IV - Controller and processor",
+    "section": "Section 2 - Security of personal data",
+    "article": "32",
+    "paragraph": "",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "15",
+    "paragraph": "5",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "AI Act Art. 15(5) obliges providers to ensure robustness, accuracy and cybersecurity throughout the lifecycle of high-risk systems, interacting with GDPR Art. 32's requirement of 'appropriate' security. The source notes both provisions are open-textured, but 'the AI Act standard is technologically specific and lifecycle-focused, while the GDPR standard remains risk-based and contextual. This difference can create uncertainty as to which benchmark must be met to avoid liability under both frameworks' - i.e., the two standards can point to different compliance benchmarks for the same security obligation.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0006",
+   "human_check": true,
+   "original_label": "contradiction",
+   "label": "legal_tension",
+   "label_subtype": "standard_benchmark_tension",
+   "label_scope": "pairwise",
+   "expected_detector": "C1 graded tension pass",
+   "label_rationale": "Source table types it Overlap; its text names the tension: 'uncertainty as to which benchmark must be met to avoid liability under both frameworks'.",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 3 row 4, p. 93; body p. 36 ('interpretative challenges', 'uncertainty as to which benchmarks')",
+   "shaped_fixes": []
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter III - Rights of the data subject",
+    "section": "",
+    "article": "13, 14, 22, 15",
+    "paragraph": "1 (for Art. 15)",
+    "clause": "(h) (for Art. 15(1))"
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "26(11), 14",
+    "paragraph": "11 (for Art. 26)",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "GDPR Articles 13 and 14 require controllers to inform data subjects about the collection and use of their personal data, Article 15(1)(h) entitles data subjects to 'meaningful information' about automated decision-making, and Article 22 provides safeguards (including meaningful human review) where decisions are based solely on automated processing. The AI Act frames comparable obligations differently: Article 26(11) requires deployers of high-risk systems to notify affected persons when such systems are used, Article 86 grants affected individuals a right to request and receive an explanation of the role of a high-risk AI system in decisions producing legal or similarly significant effects, and Article 14 requires high-risk systems to be designed with mechanisms enabling effective human monitoring and intervention. The source summarises the structural mismatch directly: 'while the GDPR articulates transparency and oversight as individual rights, the AI Act frames them as organisational responsibilities embedded in product design', supplemented only by a narrower right of explanation (Art. 86) in defined high-impact scenarios. This entry combines 7 distinct articles across both instruments (GDPR: 13, 14, 15, 22; AI Act: 14, 26, 86), exceeding the 6-article cap noted in the original analysis; it is included here at the user's explicit request despite that overage.",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0007",
+   "human_check": true,
+   "original_label": "contradiction",
+   "label": "legal_tension",
+   "label_subtype": "rights_vs_system_duties_tension",
+   "label_scope": "regime",
+   "expected_detector": "C1 graded tension pass (regime-level; not expected pairwise)",
+   "label_rationale": "Source table types it Overlap; its text: 'while the GDPR articulates transparency and oversight as individual rights, the AI Act frames them as organisational responsibilities embedded in product design'. A claim about two regimes as wholes, spanning 7 articles; individual article pairs are expected to come out compatible.",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 3 row 3, p. 93",
+   "shaped_fixes": [
+    "automated-decision/oversight signal",
+    "data-subject-right addressee rule"
+   ],
+   "additional_references_from_text": [
+    "AI Act art. 86 (right to explanation) -- cited in the study's text and in this item's reasoning but omitted from reference_b"
+   ]
+  },
+  {
+   "document_a": "GDPR",
+   "reference_a": {
+    "chapter": "Chapter II - Principles",
+    "section": "",
+    "article": "9",
+    "paragraph": "1, 2",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "10",
+    "paragraph": "5",
+    "clause": ""
+   },
+   "conflict_type": "contradiction",
+   "reasoning": "AI Act requires use of sensitive data for bias monitoring; GDPR allows only under narrow derogations. ",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0008",
+   "human_check": true,
+   "original_label": "contradiction",
+   "label": "legal_tension",
+   "label_subtype": "sensitive_data_tension",
+   "label_scope": "pairwise",
+   "expected_detector": "C1 graded tension pass",
+   "label_rationale": "Source types it Inconsistency, but the conflict runs GDPR-prohibits / AI-Act-permits, and GDPR's own exception list admits a Union-law basis (9(2)(g)); the EDPB-EDPS read AI Act 10(5) as exactly such a case (JO 1/2026 para 16). A permission leaning on an exception the text does not establish -- a tension, not a hard contradiction.",
+   "source_type": "Inconsistency",
+   "source_ref": "Annex Table 3 row 5, p. 94",
+   "shaped_fixes": [
+    "paragraph-context fix (GDPR art. 9(2))",
+    "graded second pass"
+   ],
+   "counter_reading": "EDPB-EDPS Joint Opinion 1/2026, para 16: per Recital 70 AI Act, art. 10(5) 'regulate[s] a specific case of processing of special categories of personal data as a matter of substantial public interest within the meaning of Article 9(2)(g) GDPR', so all GDPR conditions fully apply. The regulators treat it as reconcilable by design; the study calls it an 'uneasy tension'. Label 'contested', not 'contradiction'."
+  },
+  {
+   "document_a": "NIS2",
+   "reference_a": {
+    "chapter": "",
+    "section": "",
+    "article": "21",
+    "paragraph": "",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "9",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "overlap",
+   "reasoning": "Both the NIS2 Directive and the AI Act require the implementation of risk management systems, which would apply cumulatively when essential and important entities (under NIS2) provide or deploy high-risk AI systems (under the AI Act).  ",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0009a",
+   "human_check": true,
+   "original_label": "overlap",
+   "label": "overlap",
+   "label_subtype": "risk_management",
+   "label_scope": "pairwise",
+   "expected_detector": "C2",
+   "label_rationale": "Source: risk-management systems 'which would apply cumulatively'.",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 10 row 1, p. 101",
+   "shaped_fixes": [
+    "NIS2 effective-addressee rule"
+   ]
+  },
+  {
+   "document_a": "NIS2",
+   "reference_a": {
+    "chapter": "",
+    "section": "",
+    "article": "23",
+    "paragraph": "",
+    "clause": ""
+   },
+   "document_b": "AI Act",
+   "reference_b": {
+    "chapter": "",
+    "section": "",
+    "article": "73",
+    "paragraph": "",
+    "clause": ""
+   },
+   "conflict_type": "overlap",
+   "reasoning": "Incident reporting obligations to potentially distinct authorities (depending on national implementations) have been defined under NIS2 and the AI Act. This leads to potentially cumulative reporting duties, with the NIS2 Directive being significantly more stringent. The side effect could be that the CSIRTs under NIS2 receive information more quickly, and that the market surveillance authorities under the AI Act receive more detailed information (since they could receive reports later, more information might be available).",
+   "source": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/778575/ECTI_STU%282025%29778575_EN.pdf",
+   "confidence": 1.0,
+   "id": "INC-0009b",
+   "human_check": true,
+   "original_label": "overlap",
+   "label": "overlap",
+   "label_subtype": "incident_reporting",
+   "label_scope": "pairwise",
+   "expected_detector": "C2",
+   "label_rationale": "Source: 'potentially cumulative reporting duties'.",
+   "source_type": "Overlap",
+   "source_ref": "Annex Table 10 row 2, p. 101",
+   "shaped_fixes": [
+    "NIS2 effective-addressee rule"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,854 @@
+271 usable defined terms across all instruments
+850 cross-instrument candidate definition-pair(s)
+  [1/850] 32022L2555 'onlinemarktplaats' <-> 32022R2554 'transactieregister' -- UNRELATED_CONCEPTS
+  [2/850] 32022L2555 'technische specificatie' <-> 32022R2554 'transactieregister' -- UNRELATED_CONCEPTS
+  [3/850] BWBR0048156 'attribuut' <-> 32016R0679 'persoonsgegevens' -- CONSISTENT
+  [4/850] BWBR0048156 'online identiteit' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [5/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van ict-diensten binnen een groep' -- DEFINITIONAL_MISMATCH [Medium]
+  [6/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'leidinggevend orgaan' -- UNRELATED_CONCEPTS
+  [7/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'centrale effectenbewaarinstelling' -- UNRELATED_CONCEPTS
+  [8/850] 32022L2555 'ict-dienst' <-> 32022R2554 'ict-diensten' -- INSUFFICIENT_EVIDENCE [Low]
+  [9/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [10/850] 32016R0679 'verwerking' <-> 32024R1689 'zwevendekommabewerking of “floating-point operation (flop)' -- UNRELATED_CONCEPTS
+  [11/850] BWBR0052872 'datacentrumdienst' <-> 32022R2554 'ict-diensten' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [12/850] 32016R0679 'beperken van de verwerking' <-> 32024R1689 'bijzondere categorieën persoonsgegevens' -- UNRELATED_CONCEPTS
+  [13/850] 32016R0679 'vertegenwoordiger' <-> 32022R2554 'herverzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [14/850] 32022L2555 'ict-proces' <-> 32022R2554 'cyberdreiging' -- UNRELATED_CONCEPTS
+  [15/850] 32022R2554 'kritieke derde aanbieder van ict-diensten' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [16/850] 32022L2555 'incident' <-> 32022R2554 'ict-gerelateerd incident' -- DEFINITIONAL_MISMATCH [Medium]
+  [17/850] BWBR0052872 'csirt-netwerk' <-> 32022L2555 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [18/850] 32016R0679 'gegevens over gezondheid' <-> 32024R1689 'persoonsgegevens' -- CONSISTENT
+  [19/850] BWBR0052872 'openbaar elektronisch communicatienetwerk' <-> 32022L2555 'netwerk- en informatiesysteem' -- CONSISTENT
+  [20/850] BWBR0052872 'onlinemarktplaats' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [21/850] BWBR0052872 'internetknooppunt' <-> 32022L2555 'netwerk voor de levering van inhoud' -- UNRELATED_CONCEPTS
+  [22/850] 32022L2555 'overheidsinstantie' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [23/850] 32022L2555 'vertrouwensdienst' <-> 32022R2554 'verzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [24/850] 32022L2555 'ict-proces' <-> 32024R1689 'profilering' -- UNRELATED_CONCEPTS
+  [25/850] BWBR0052872 'cyberbeveiliging' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [26/850] BWBR0052872 'onze minister' <-> 32024R1689 'rechtshandhavingsinstantie' -- UNRELATED_CONCEPTS
+  [27/850] BWBR0052872 'kwetsbaarheid' <-> 32022L2555 'kwetsbaarheid' -- CONSISTENT
+  [28/850] 32022L2555 'ict-proces' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [29/850] BWBR0052872 'cyberbeveiliging' <-> 32022L2555 'significante cyberdreiging' -- UNRELATED_CONCEPTS
+  [30/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022R2554 'netwerk- en informatiesysteem' -- CONSISTENT
+  [31/850] BWBR0052872 'norm' <-> 32022L2555 'technische specificatie' -- INSUFFICIENT_EVIDENCE [Low]
+  [32/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'ai-bureau' -- UNRELATED_CONCEPTS
+  [33/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'dochteronderneming' -- UNRELATED_CONCEPTS
+  [34/850] 32022R2554 'ict-gerelateerd incident' <-> 32024R1689 'substantiële wijziging' -- UNRELATED_CONCEPTS
+  [35/850] BWBR0052872 'bevoegde autoriteit' <-> BWBR0051796 'autoriteit consument en markt' -- INSUFFICIENT_EVIDENCE [Low]
+  [36/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'betalingsinstelling' -- UNRELATED_CONCEPTS
+  [37/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'verzekeringsonderneming' -- INSUFFICIENT_EVIDENCE [Low]
+  [38/850] BWBR0052872 'entiteit' <-> BWBR0048156 'attribuut' -- UNRELATED_CONCEPTS
+  [39/850] BWBR0052872 'digitale dienst' <-> 32022L2555 'cloudcomputingdienst' -- CONSISTENT
+  [40/850] BWBR0052872 'ict-dienst' <-> 32022L2555 'ict-dienst' -- INSUFFICIENT_EVIDENCE [Low]
+  [41/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'nevenverzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [42/850] BWBR0052872 'internetknooppunt' <-> 32022L2555 'internetknooppunt' -- CONSISTENT
+  [43/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'derde aanbieder van ict-diensten' -- DEFINITIONAL_MISMATCH [Medium]
+  [44/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'securitisatieregister' -- UNRELATED_CONCEPTS
+  [45/850] 32022L2555 'ict-product' <-> 32024R1689 'veiligheidscomponent' -- UNRELATED_CONCEPTS
+  [46/850] 32022L2555 'onderzoeksorganisatie' <-> 32024R1689 'ai-testomgeving voor regelgeving' -- UNRELATED_CONCEPTS
+  [47/850] BWBR0052872 'deze wet wordt aangehaald als' <-> BWBR0048156 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [48/850] 32022L2555 'ict-product' <-> 32024R1689 'ce-markering' -- UNRELATED_CONCEPTS
+  [49/850] BWBR0052872 'incident' <-> 32022R2554 'ict-concentratierisico' -- UNRELATED_CONCEPTS
+  [50/850] BWBR0052872 'platform voor sociale netwerkdiensten' <-> 32022L2555 'platform voor socialenetwerkdiensten' -- CONSISTENT
+  [51/850] BWBR0052872 'beveiligingsscan' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [52/850] BWBR0052872 'csirt' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [53/850] 32022L2555 'technische specificatie' <-> 32022R2554 'centrale tegenpartij' -- UNRELATED_CONCEPTS
+  [54/850] 32022R2554 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [55/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'derde aanbieder van ict-diensten' -- CONSISTENT
+  [56/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'digitale operationele weerbaarheid' -- CONSISTENT
+  [57/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32024R1689 'systeem voor biometrische identificatie op afstand' -- UNRELATED_CONCEPTS
+  [58/850] 32022R2554 'ict-actief' <-> 32024R1689 'capaciteiten met een grote impact' -- UNRELATED_CONCEPTS
+  [59/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'digitale operationele weerbaarheid' -- DEFINITIONAL_MISMATCH [Medium]
+  [60/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'biometrische verificatie' -- CONSISTENT
+  [61/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'aanbieder van cryptoactivadiensten' -- UNRELATED_CONCEPTS
+  [62/850] 32016R0679 'concern' <-> 32022R2554 'micro-onderneming' -- UNRELATED_CONCEPTS
+  [63/850] 32022L2555 'ict-proces' <-> 32022R2554 'netwerk- en informatiesysteem' -- INSUFFICIENT_EVIDENCE [Low]
+  [64/850] 32016R0679 'onderneming' <-> 32022L2555 'onderzoeksorganisatie' -- UNRELATED_CONCEPTS
+  [65/850] 32016R0679 'bestand' <-> 32024R1689 'openbare ruimte' -- UNRELATED_CONCEPTS
+  [66/850] 32016R0679 'verwerkingsverantwoordelijke' <-> 32024R1689 'gebruiksverantwoordelijke' -- DEFINITIONAL_MISMATCH [Medium]
+  [67/850] BWBR0048156 'ontsluitende dienst' <-> 32022L2555 'platform voor socialenetwerkdiensten' -- UNRELATED_CONCEPTS
+  [68/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [69/850] BWBR0048156 'privaat identificatiemiddel' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [70/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'operator' -- UNRELATED_CONCEPTS
+  [71/850] 32016R0679 'bestand' <-> 32024R1689 'plan voor testen onder reële omstandigheden' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [72/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32024R1689 'aanbieder verder in de ai-waardeketen' -- UNRELATED_CONCEPTS
+  [73/850] 32022L2555 'ict-product' <-> 32022R2554 'emittent van asset-referenced tokens' -- UNRELATED_CONCEPTS
+  [74/850] 32016R0679 'bestand' <-> 32024R1689 'ai-model voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [75/850] 32022R2554 'ict-risico' <-> 32024R1689 'risico' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [76/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'kritieke derde aanbieder van ict-diensten' -- CONSISTENT
+  [77/850] 32022L2555 'ict-product' <-> 32024R1689 'in de handel brengen' -- UNRELATED_CONCEPTS
+  [78/850] 32022L2555 'vertegenwoordiger' <-> 32024R1689 'importeur' -- UNRELATED_CONCEPTS
+  [79/850] BWBR0052872 'bevoegde autoriteit' <-> 32022R2554 'lead overseer' -- INSUFFICIENT_EVIDENCE [Low]
+  [80/850] BWBR0052872 'deze wet wordt aangehaald als' <-> BWBR0051796 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [81/850] 32022L2555 'risico' <-> 32022R2554 'ict-gerelateerd incident' -- CONSISTENT
+  [82/850] BWBR0040940 'deze wet wordt aangehaald als' <-> BWBR0051796 'autoriteit persoonsgegevens' -- UNRELATED_CONCEPTS
+  [83/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'persoonsgegevens' -- CONSISTENT
+  [84/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [85/850] BWBR0052872 'norm' <-> 32022L2555 'norm' -- CONSISTENT
+  [86/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'deepfake' -- UNRELATED_CONCEPTS
+  [87/850] 32016R0679 'verwerking' <-> 32024R1689 'validatiedata' -- UNRELATED_CONCEPTS
+  [88/850] BWBR0048156 'bedrijfs- en organisatiemiddel' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [89/850] BWBR0052872 'onlinezoekmachine' <-> 32022L2555 'cloudcomputingdienst' -- UNRELATED_CONCEPTS
+  [90/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'ai-testomgeving voor regelgeving' -- UNRELATED_CONCEPTS
+  [91/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [92/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'ict-risico' -- DEFINITIONAL_MISMATCH [Medium]
+  [93/850] 32016R0679 'genetische gegevens' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [94/850] BWBR0052872 'significant incident' <-> 32022L2555 'incidentenbehandeling' -- UNRELATED_CONCEPTS
+  [95/850] BWBR0048156 'middelenuitgever' <-> 32016R0679 'verwerker' -- UNRELATED_CONCEPTS
+  [96/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'ict-risico' -- INSUFFICIENT_EVIDENCE [Low]
+  [97/850] 32022L2555 'technische specificatie' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [98/850] 32022L2555 'risico' <-> 32024R1689 'zwevendekommabewerking of “floating-point operation (flop)' -- UNRELATED_CONCEPTS
+  [99/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'ernstig betalingsgerelateerd operationeel of beveiligingsincident' -- UNRELATED_CONCEPTS
+  [100/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'systeem voor biometrische identificatie op afstand' -- CONSISTENT
+  [101/850] BWBR0052872 'ict-product' <-> 32022R2554 'ict-actief' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [102/850] 32022L2555 'overheidsinstantie' <-> 32022R2554 'kredietinstelling' -- UNRELATED_CONCEPTS
+  [103/850] 32016R0679 'concern' <-> 32022R2554 'middelgrote onderneming' -- UNRELATED_CONCEPTS
+  [104/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32022L2555 'gekwalificeerde vertrouwensdienst' -- UNRELATED_CONCEPTS
+  [105/850] BWBR0040940 'onze minister' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [106/850] BWBR0052872 'essentiële entiteit' <-> BWBR0048156 'aangewezen organisatie' -- INSUFFICIENT_EVIDENCE [Low]
+  [107/850] BWBR0048156 'ontsluitende dienst' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [108/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [109/850] 32022L2555 'overheidsinstantie' <-> 32022R2554 'kleine instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [110/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'beoogd doel' -- UNRELATED_CONCEPTS
+  [111/850] 32022L2555 'onlinezoekmachine' <-> 32024R1689 'ai-model voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [112/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'verzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [113/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'crowdfundingdienstverlener' -- UNRELATED_CONCEPTS
+  [114/850] BWBR0052872 'incident' <-> 32022R2554 'ict-gerelateerd incident' -- CONSISTENT
+  [115/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'in een derde land gevestigde ict-subcontractant' -- UNRELATED_CONCEPTS
+  [116/850] 32022L2555 'vertrouwensdienst' <-> 32022R2554 'centrale effectenbewaarinstelling' -- UNRELATED_CONCEPTS
+  [117/850] 32022L2555 'openbaar elektronischecommunicatienetwerk' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [118/850] BWBR0052872 'root-naamserver' <-> 32022L2555 'domeinnaamsysteem (dns)' -- UNRELATED_CONCEPTS
+  [119/850] BWBR0052872 'platform voor sociale netwerkdiensten' <-> 32022L2555 'netwerk voor de levering van inhoud' -- UNRELATED_CONCEPTS
+  [120/850] BWBR0052872 'aanbieder van beheerde diensten' <-> BWBR0048156 'erkende dienst' -- UNRELATED_CONCEPTS
+  [121/850] 32016R0679 'internationale organisatie' <-> 32022L2555 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [122/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022R2554 'kredietinstelling' -- UNRELATED_CONCEPTS
+  [123/850] 32022L2555 'ict-proces' <-> 32024R1689 'ai-testomgeving voor regelgeving' -- UNRELATED_CONCEPTS
+  [124/850] BWBR0052872 'gekwalificeerde vertrouwensdienst' <-> 32022L2555 'vertrouwensdienst' -- CONSISTENT
+  [125/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [126/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [127/850] BWBR0048156 'ontsluitende dienst' <-> 32024R1689 'testomgevingsplan' -- UNRELATED_CONCEPTS
+  [128/850] BWBR0048156 'eidas-verordening' <-> 32022L2555 'vertrouwensdienst' -- UNRELATED_CONCEPTS
+  [129/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022L2555 'bijna-incident' -- UNRELATED_CONCEPTS
+  [130/850] 32022L2555 'risico' <-> 32022R2554 'kritieke of belangrijke functie' -- UNRELATED_CONCEPTS
+  [131/850] 32022R2554 'ict-actief' <-> 32024R1689 'testdata' -- UNRELATED_CONCEPTS
+  [132/850] 32016R0679 'verwerking' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [133/850] 32016R0679 'genetische gegevens' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [134/850] BWBR0052872 'vertegenwoordiger' <-> 32016R0679 'vertegenwoordiger' -- INSUFFICIENT_EVIDENCE [Low]
+  [135/850] BWBR0052872 'cyberdreiging' <-> 32022R2554 'cyberaanval' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [136/850] 32022R2554 'ernstig ict-gerelateerd incident' <-> 32024R1689 'ernstig incident' -- DEFINITIONAL_MISMATCH [Medium]
+  [137/850] BWBR0052872 'digitale dienst' <-> 32016R0679 'dienst van de informatiemaatschappij' -- CONSISTENT
+  [138/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'ontsluitende dienst' -- UNRELATED_CONCEPTS
+  [139/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> 32024R1689 'bijzondere categorieën persoonsgegevens' -- CONSISTENT
+  [140/850] BWBR0052872 'onlinemarktplaats' <-> 32022L2555 'onlinezoekmachine' -- UNRELATED_CONCEPTS
+  [141/850] BWBR0052872 'elektronische communicatiedienst' <-> BWBR0048156 'elektronische dienstverlening' -- UNRELATED_CONCEPTS
+  [142/850] 32022L2555 'digitale dienst' <-> 32022R2554 'betalingsinstelling' -- UNRELATED_CONCEPTS
+  [143/850] 32022R2554 'ict-actief' <-> 32024R1689 'ai-model voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [144/850] BWBR0052872 'domeinnaamsysteem (dns)' <-> 32022L2555 'vertegenwoordiger' -- UNRELATED_CONCEPTS
+  [145/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [146/850] BWBR0052872 'ict-product' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [147/850] 32016R0679 'bestand' <-> 32024R1689 'validatiedataset' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [148/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [149/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'beheerder van alternatieve beleggingsinstellingen' -- UNRELATED_CONCEPTS
+  [150/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'legacy-ict-systeem' -- UNRELATED_CONCEPTS
+  [151/850] BWBR0052872 'overheidsinstantie' <-> 32022L2555 'overheidsinstantie' -- DEFINITIONAL_MISMATCH [Medium]
+  [152/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> 32022L2555 'aan de commissie' -- UNRELATED_CONCEPTS
+  [153/850] BWBR0048156 'aangewezen organisatie' <-> 32022R2554 'beheermaatschappij' -- UNRELATED_CONCEPTS
+  [154/850] BWBR0048156 'eidas-verordening' <-> BWBR0051796 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS
+  [155/850] BWBR0052872 'platform voor sociale netwerkdiensten' <-> 32022L2555 'internetknooppunt' -- UNRELATED_CONCEPTS
+  [156/850] 32022L2555 'incidentenbehandeling' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [157/850] 32022L2555 'vertegenwoordiger' <-> 32024R1689 'gemachtigde' -- INSUFFICIENT_EVIDENCE [Low]
+  [158/850] 32022L2555 'technische specificatie' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [159/850] BWBR0048156 'middelenuitgever' <-> 32024R1689 'distributeur' -- UNRELATED_CONCEPTS
+  [160/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [161/850] BWBR0052872 'significante cyberdreiging' <-> 32024R1689 'systeemrisico' -- UNRELATED_CONCEPTS
+  [162/850] 32016R0679 'derde' <-> 32024R1689 'gebruiksverantwoordelijke' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [163/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'gebruiksverantwoordelijke' -- UNRELATED_CONCEPTS
+  [164/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022L2555 'netwerk voor de levering van inhoud' -- UNRELATED_CONCEPTS
+  [165/850] 32022R2554 'in een derde land gevestigde ict-subcontractant' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [166/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'bijzondere categorieën persoonsgegevens' -- CONSISTENT
+  [167/850] BWBR0052872 'belangrijke entiteit' <-> 32022L2555 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [168/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'openbaar elektronischecommunicatienetwerk' -- UNRELATED_CONCEPTS
+  [169/850] BWBR0048156 '[red' <-> 32016R0679 'derde' -- INSUFFICIENT_EVIDENCE [Low]
+  [170/850] BWBR0048156 'elektronische dienstverlening' <-> 32016R0679 'derde' -- UNRELATED_CONCEPTS
+  [171/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'geïnformeerde toestemming' -- UNRELATED_CONCEPTS
+  [172/850] BWBR0052872 'entiteit die domeinnaamregistratiediensten verleent' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- CONSISTENT
+  [173/850] BWBR0052872 'bevoegde autoriteit' <-> BWBR0048156 'aangewezen organisatie' -- UNRELATED_CONCEPTS
+  [174/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'centrale tegenpartij' -- UNRELATED_CONCEPTS
+  [175/850] 32016R0679 'verwerking' <-> 32024R1689 'trainingsdata' -- UNRELATED_CONCEPTS
+  [176/850] 32016R0679 'vertegenwoordiger' <-> 32022L2555 'vertegenwoordiger' -- INSUFFICIENT_EVIDENCE [Low]
+  [177/850] BWBR0048156 'authenticatie' <-> 32024R1689 'biometrische verificatie' -- CONSISTENT
+  [178/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'erkende dienst' -- UNRELATED_CONCEPTS
+  [179/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'betrokken toezichthoudende autoriteit' -- INSUFFICIENT_EVIDENCE [Low]
+  [180/850] 32016R0679 'verwerking' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [181/850] 32016R0679 'genetische gegevens' <-> 32024R1689 'persoonsgegevens' -- CONSISTENT
+  [182/850] 32022R2554 'ict-actief' <-> 32024R1689 'testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [183/850] BWBR0052872 'onlinemarktplaats' <-> 32022L2555 'platform voor socialenetwerkdiensten' -- UNRELATED_CONCEPTS
+  [184/850] 32016R0679 'concern' <-> 32022R2554 'beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [185/850] 32016R0679 'concern' <-> 32022R2554 'beheermaatschappij' -- UNRELATED_CONCEPTS
+  [186/850] 32022L2555 'nationale cyberbeveiligingsstrategie' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [187/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'ernstig ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [188/850] 32022L2555 'onderzoeksorganisatie' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [189/850] BWBR0052872 'openbaar elektronisch communicatienetwerk' <-> BWBR0048156 'elektronische dienstverlening' -- UNRELATED_CONCEPTS
+  [190/850] 32016R0679 'concern' <-> 32022R2554 'kleine onderneming' -- UNRELATED_CONCEPTS
+  [191/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32022L2555 'verlener van vertrouwensdiensten' -- CONSISTENT
+  [192/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32016R0679 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [193/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [194/850] 32022R2554 'nevenverzekeringstussenpersoon' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [195/850] BWBR0052872 'essentiële entiteit' <-> BWBR0048156 'erkende dienst' -- UNRELATED_CONCEPTS
+  [196/850] BWBR0052872 'cloudcomputingdienst' <-> 32022R2554 'ict-diensten' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [197/850] BWBR0048156 'identificatiemiddel' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [198/850] 32016R0679 'pseudonimisering' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [199/850] BWBR0052872 'entiteit' <-> 32022L2555 'overheidsinstantie' -- CONSISTENT
+  [200/850] BWBR0052872 'csirt' <-> 32022L2555 'grootschalig cyberbeveiligingsincident' -- UNRELATED_CONCEPTS
+  [201/850] BWBR0040940 '[red' <-> BWBR0051796 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS
+  [202/850] BWBR0052872 'onderzoeksorganisatie' <-> BWBR0048156 'aangewezen organisatie' -- INSUFFICIENT_EVIDENCE [Low]
+  [203/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022L2555 'internetknooppunt' -- CONSISTENT
+  [204/850] BWBR0052872 'centraal contactpunt' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [205/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'ict-concentratierisico' -- UNRELATED_CONCEPTS
+  [206/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'beheerder van alternatieve beleggingsinstellingen' -- UNRELATED_CONCEPTS
+  [207/850] 32022L2555 'internetknooppunt' <-> 32024R1689 'ai-systeem' -- UNRELATED_CONCEPTS
+  [208/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'kwetsbaarheid' -- CONSISTENT
+  [209/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32024R1689 'nationale bevoegde autoriteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [210/850] 32022R2554 'ict-actief' <-> 32024R1689 'in gebruik stellen' -- UNRELATED_CONCEPTS
+  [211/850] BWBR0052872 'internetknooppunt' <-> 32024R1689 'ai-systeem' -- UNRELATED_CONCEPTS
+  [212/850] BWBR0052872 'risico' <-> 32022R2554 'ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [213/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'ernstig betalingsgerelateerd operationeel of beveiligingsincident' -- UNRELATED_CONCEPTS
+  [214/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'verwerkingsverantwoordelijke' -- UNRELATED_CONCEPTS
+  [215/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'beheermaatschappij' -- UNRELATED_CONCEPTS
+  [216/850] 32016R0679 'verwerking' <-> 32024R1689 'inputdata' -- UNRELATED_CONCEPTS
+  [217/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'authenticatiedienst' -- UNRELATED_CONCEPTS
+  [218/850] BWBR0052872 'cyberdreiging' <-> 32022R2554 'significante cyberdreiging' -- CONSISTENT
+  [219/850] BWBR0052872 'cer-richtlijn' <-> BWBR0040940 'verordening' -- UNRELATED_CONCEPTS
+  [220/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'ict-diensten' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [221/850] BWBR0052872 'onlinemarktplaats' <-> 32022L2555 'onlinemarktplaats' -- INSUFFICIENT_EVIDENCE [Low]
+  [222/850] 32016R0679 'concern' <-> 32022R2554 'moederonderneming' -- INSUFFICIENT_EVIDENCE [Low]
+  [223/850] BWBR0052872 'elektronisch communicatienetwerk' <-> 32022L2555 'netwerk- en informatiesysteem' -- CONSISTENT
+  [224/850] 32022L2555 'ict-product' <-> 32022R2554 'cyberdreiging' -- UNRELATED_CONCEPTS
+  [225/850] BWBR0052872 'bijna-incident' <-> 32022L2555 'bijna-incident' -- CONSISTENT
+  [226/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> BWBR0051796 'autoriteit persoonsgegevens' -- UNRELATED_CONCEPTS
+  [227/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'cyberaanval' -- UNRELATED_CONCEPTS
+  [228/850] 32016R0679 'pseudonimisering' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [229/850] BWBR0052872 'risico' <-> 32024R1689 'zwevendekommabewerking of “floating-point operation (flop)' -- UNRELATED_CONCEPTS
+  [230/850] BWBR0048156 'machtigingsdienst' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [231/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [232/850] BWBR0040940 'verordening' <-> 32024R1689 'bijzondere categorieën persoonsgegevens' -- UNRELATED_CONCEPTS
+  [233/850] BWBR0048156 'identificatiemiddel' <-> 32024R1689 'systeem voor het herkennen van emoties' -- UNRELATED_CONCEPTS
+  [234/850] 32022R2554 'ratingbureau' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [235/850] BWBR0048156 'eidas-verordening' <-> BWBR0051796 'dataverordening' -- UNRELATED_CONCEPTS
+  [236/850] BWBR0040940 '[red' <-> BWBR0048156 '[red' -- UNRELATED_CONCEPTS
+  [237/850] 32016R0679 'toezichthoudende autoriteit' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [238/850] 32022L2555 'ict-product' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [239/850] 32022L2555 'incident' <-> 32024R1689 'substantiële wijziging' -- UNRELATED_CONCEPTS
+  [240/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [241/850] 32022L2555 'cloudcomputingdienst' <-> 32022R2554 'ict-diensten' -- CONSISTENT
+  [242/850] BWBR0052872 'significante cyberdreiging' <-> 32024R1689 'capaciteiten met een grote impact' -- UNRELATED_CONCEPTS
+  [243/850] 32022R2554 'ict-actief' <-> 32024R1689 'gebruiksinstructies' -- UNRELATED_CONCEPTS
+  [244/850] BWBR0040940 'deze wet wordt aangehaald als' <-> BWBR0048156 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS
+  [245/850] BWBR0052872 'digitale dienst' <-> BWBR0048156 'ontsluitende dienst' -- UNRELATED_CONCEPTS
+  [246/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'moederonderneming' -- UNRELATED_CONCEPTS
+  [247/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [248/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'toestemming” van de betrokkene' -- UNRELATED_CONCEPTS
+  [249/850] BWBR0048156 'authenticatie' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [250/850] BWBR0052872 'risico' <-> 32022R2554 'kritieke of belangrijke functie' -- UNRELATED_CONCEPTS
+  [251/850] BWBR0052872 'domeinnaamsysteem (dns)' <-> 32022L2555 'domeinnaamsysteem (dns)' -- CONSISTENT
+  [252/850] 32022L2555 'ict-product' <-> 32022R2554 'ict-actief' -- UNRELATED_CONCEPTS
+  [253/850] BWBR0052872 'incident' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [254/850] 32016R0679 'concern' <-> 32022R2554 'kleine instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [255/850] 32022L2555 'risico' <-> 32024R1689 'systeemrisico' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [256/850] BWBR0052872 'entiteit' <-> 32016R0679 'internationale organisatie' -- UNRELATED_CONCEPTS
+  [257/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'nevenverzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [258/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022L2555 'digitale dienst' -- CONSISTENT
+  [259/850] 32022R2554 'nevenverzekeringstussenpersoon' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [260/850] 32016R0679 'pseudonimisering' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [261/850] BWBR0052872 'ict-product' <-> 32024R1689 'inputdata' -- UNRELATED_CONCEPTS
+  [262/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van ict-diensten binnen een groep' -- DEFINITIONAL_MISMATCH [Medium]
+  [263/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'ict-risico van derde aanbieders' -- UNRELATED_CONCEPTS
+  [264/850] 32016R0679 'toezichthoudende autoriteit' <-> 32024R1689 'markttoezichtautoriteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [265/850] 32022R2554 'informatieactief' <-> 32024R1689 'trainingsdata' -- UNRELATED_CONCEPTS
+  [266/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32022R2554 'significante cyberdreiging' -- UNRELATED_CONCEPTS
+  [267/850] 32022R2554 'informatieactief' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [268/850] 32022R2554 'ict-actief' <-> 32024R1689 'ai-systeem' -- UNRELATED_CONCEPTS
+  [269/850] BWBR0048156 'identificatiemiddel' <-> 32016R0679 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [270/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'systeem voor biometrische identificatie op afstand' -- UNRELATED_CONCEPTS
+  [271/850] BWBR0048156 'betrouwbaarheidsniveau' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [272/850] BWBR0052872 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022L2555 'gekwalificeerde vertrouwensdienst' -- UNRELATED_CONCEPTS
+  [273/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [274/850] BWBR0052872 'dns-dienstverlener' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- UNRELATED_CONCEPTS
+  [275/850] BWBR0052872 'onderzoeksorganisatie' <-> 32022L2555 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [276/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'ernstig ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [277/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32016R0679 'ontvanger' -- UNRELATED_CONCEPTS
+  [278/850] BWBR0052872 'significant incident' <-> 32022R2554 'betalingsgerelateerd operationeel of beveiligingsincident' -- INSUFFICIENT_EVIDENCE [Low]
+  [279/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'aanbieder van ict-diensten binnen een groep' -- INSUFFICIENT_EVIDENCE [Low]
+  [280/850] 32016R0679 'profilering' <-> 32024R1689 'testdata' -- UNRELATED_CONCEPTS
+  [281/850] 32022L2555 'ict-product' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [282/850] BWBR0052872 'bijna-incident' <-> 32016R0679 'inbreuk in verband met persoonsgegevens' -- DEFINITIONAL_MISMATCH [Medium]
+  [283/850] BWBR0052872 'entiteit' <-> 32016R0679 'derde' -- UNRELATED_CONCEPTS
+  [284/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022L2555 'aan de commissie' -- UNRELATED_CONCEPTS
+  [285/850] BWBR0048156 'authenticatie' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [286/850] BWBR0052872 'incident' <-> 32022L2555 'incident' -- CONSISTENT
+  [287/850] 32016R0679 'profilering' <-> 32024R1689 'ai-model voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [288/850] BWBR0052872 'register voor topleveldomeinnamen' <-> 32022L2555 'vertegenwoordiger' -- UNRELATED_CONCEPTS
+  [289/850] BWBR0052872 'centraal contactpunt' <-> 32022R2554 'centrale tegenpartij' -- UNRELATED_CONCEPTS
+  [290/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> 32016R0679 'gegevens over gezondheid' -- CONSISTENT
+  [291/850] 32022R2554 'ict-risico' <-> 32024R1689 'testdata' -- UNRELATED_CONCEPTS
+  [292/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'legacy-ict-systeem' -- UNRELATED_CONCEPTS
+  [293/850] BWBR0052872 'openbaar elektronisch communicatienetwerk' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [294/850] BWBR0052872 'overheidsinstantie' <-> 32022R2554 'overheidsinstantie' -- DEFINITIONAL_MISMATCH [Medium]
+  [295/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32022R2554 'ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [296/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'digitale operationele weerbaarheid' -- UNRELATED_CONCEPTS
+  [297/850] 32022R2554 'informatieactief' <-> 32024R1689 'inputdata' -- UNRELATED_CONCEPTS
+  [298/850] 32022L2555 'norm' <-> 32024R1689 'geharmoniseerde norm' -- CONSISTENT
+  [299/850] BWBR0052872 'cyberbeveiliging' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [300/850] 32022L2555 'aan de commissie en de samenwerkingsgroep' <-> 32022R2554 'kleine en niet-verweven beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [301/850] BWBR0052872 'incident' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [302/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'groep' -- UNRELATED_CONCEPTS
+  [303/850] 32022R2554 'ict-actief' <-> 32024R1689 'ce-markering' -- UNRELATED_CONCEPTS
+  [304/850] BWBR0048156 'online identiteit' <-> 32016R0679 'dienst van de informatiemaatschappij' -- UNRELATED_CONCEPTS
+  [305/850] BWBR0048156 'privaat identificatiemiddel' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [306/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'emittent van asset-referenced tokens' -- UNRELATED_CONCEPTS
+  [307/850] 32022L2555 'technische specificatie' <-> 32024R1689 'gemeenschappelijke specificatie' -- CONSISTENT
+  [308/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'cyberaanval' -- CONSISTENT
+  [309/850] BWBR0052872 'overheidsinstantie' <-> BWBR0048156 'onze minister' -- UNRELATED_CONCEPTS
+  [310/850] BWBR0048156 'deze wet wordt aangehaald als' <-> 32022L2555 'digitale dienst' -- UNRELATED_CONCEPTS
+  [311/850] BWBR0048156 'publiek identificatiemiddel' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [312/850] 32016R0679 'profilering' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [313/850] 32022R2554 'beheerder van kritieke benchmarks' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [314/850] BWBR0052872 'vertrouwensdienst' <-> 32022L2555 'vertrouwensdienst' -- INSUFFICIENT_EVIDENCE [Low]
+  [315/850] BWBR0052872 'register voor topleveldomeinnamen' <-> 32022L2555 'dns-dienstverlener' -- UNRELATED_CONCEPTS
+  [316/850] 32016R0679 'verwerker' <-> 32024R1689 'gebruiksverantwoordelijke' -- UNRELATED_CONCEPTS
+  [317/850] BWBR0052872 'ict-dienst' <-> 32022L2555 'datacentrumdienst' -- UNRELATED_CONCEPTS
+  [318/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'conformiteitsbeoordeling' -- UNRELATED_CONCEPTS
+  [319/850] 32016R0679 'onderneming' <-> 32022R2554 'verzekeringsonderneming' -- CONSISTENT
+  [320/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022L2555 'ict-dienst' -- INSUFFICIENT_EVIDENCE [Low]
+  [321/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'verzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [322/850] 32022R2554 'ict-risico' <-> 32024R1689 'terugroepen van een ai-systeem' -- UNRELATED_CONCEPTS
+  [323/850] 32016R0679 'profilering' <-> 32024R1689 'testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [324/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'crowdfundingdienstverlener' -- UNRELATED_CONCEPTS
+  [325/850] BWBR0052872 'elektronische communicatiedienst' <-> 32022L2555 'openbaar elektronischecommunicatienetwerk' -- UNRELATED_CONCEPTS
+  [326/850] 32022L2555 'significante cyberdreiging' <-> 32024R1689 'capaciteiten met een grote impact' -- UNRELATED_CONCEPTS
+  [327/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'testomgevingsplan' -- UNRELATED_CONCEPTS
+  [328/850] BWBR0052872 'cer-richtlijn' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [329/850] 32016R0679 'toezichthoudende autoriteit' <-> 32022R2554 'lead overseer' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [330/850] 32022R2554 'ict-risico' <-> 32024R1689 'testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [331/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'derde aanbieder van ict-diensten' -- CONSISTENT
+  [332/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'kwetsbaarheid' -- CONSISTENT
+  [333/850] BWBR0040940 'verordening' <-> 32016R0679 'verwerking' -- UNRELATED_CONCEPTS
+  [334/850] BWBR0052872 'incident' <-> 32024R1689 'redelijkerwijs te voorzien misbruik' -- UNRELATED_CONCEPTS
+  [335/850] 32016R0679 'toestemming” van de betrokkene' <-> 32024R1689 'ai-geletterdheid' -- UNRELATED_CONCEPTS
+  [336/850] BWBR0052872 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022L2555 'verlener van vertrouwensdiensten' -- CONSISTENT
+  [337/850] BWBR0052872 'beveiligingsscan' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [338/850] BWBR0052872 'dns-dienstverlener' <-> 32022L2555 'register voor topleveldomeinnamen' -- UNRELATED_CONCEPTS
+  [339/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022L2555 'netwerk voor de levering van inhoud' -- UNRELATED_CONCEPTS
+  [340/850] 32022R2554 'ict-gerelateerd incident' <-> 32024R1689 'ernstig incident' -- UNRELATED_CONCEPTS
+  [341/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32024R1689 'ai-systeem' -- UNRELATED_CONCEPTS
+  [342/850] 32022R2554 'beheerder van kritieke benchmarks' <-> 32024R1689 'markttoezichtautoriteit' -- UNRELATED_CONCEPTS
+  [343/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32024R1689 'aanbieder verder in de ai-waardeketen' -- UNRELATED_CONCEPTS
+  [344/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32016R0679 'verwerker' -- UNRELATED_CONCEPTS
+  [345/850] BWBR0052872 'significant incident' <-> 32022R2554 'ict-gerelateerd incident' -- INSUFFICIENT_EVIDENCE [Low]
+  [346/850] BWBR0052872 'entiteit' <-> 32016R0679 'ontvanger' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [347/850] 32022L2555 'incident' <-> 32022R2554 'kwetsbaarheid' -- UNRELATED_CONCEPTS
+  [348/850] BWBR0052872 'digitale dienst' <-> 32022R2554 'ict-diensten' -- DEFINITIONAL_MISMATCH [Medium]
+  [349/850] 32022R2554 'lead overseer' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [350/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'beheerder van alternatieve beleggingsinstellingen' -- UNRELATED_CONCEPTS
+  [351/850] BWBR0052872 'belangrijke entiteit' <-> BWBR0048156 'aangewezen organisatie' -- INSUFFICIENT_EVIDENCE [Low]
+  [352/850] 32016R0679 'verwerker' <-> 32024R1689 'operator' -- UNRELATED_CONCEPTS
+  [353/850] 32022R2554 'transactieregister' <-> 32024R1689 'gemeenschappelijke specificatie' -- UNRELATED_CONCEPTS
+  [354/850] BWBR0052872 'significante cyberdreiging' <-> 32024R1689 'risico' -- UNRELATED_CONCEPTS
+  [355/850] 32022L2555 'overheidsinstantie' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [356/850] 32016R0679 'onderneming' <-> 32022R2554 'micro-onderneming' -- CONSISTENT
+  [357/850] BWBR0052872 'elektronisch communicatienetwerk' <-> 32022R2554 'instelling voor elektronisch geld' -- UNRELATED_CONCEPTS
+  [358/850] BWBR0052872 'belangrijke entiteit' <-> BWBR0048156 '[red' -- UNRELATED_CONCEPTS
+  [359/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'aanbieder van cryptoactivadiensten' -- UNRELATED_CONCEPTS
+  [360/850] 32016R0679 'toezichthoudende autoriteit' <-> 32022R2554 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [361/850] BWBR0052872 'csirt-netwerk' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [362/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'aanbieder verder in de ai-waardeketen' -- UNRELATED_CONCEPTS
+  [363/850] BWBR0052872 'openbaar elektronisch communicatienetwerk' <-> 32022L2555 'openbaar elektronischecommunicatienetwerk' -- CONSISTENT
+  [364/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'operator' -- UNRELATED_CONCEPTS
+  [365/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'kritieke derde aanbieder van ict-diensten' -- UNRELATED_CONCEPTS
+  [366/850] BWBR0052872 'entiteit' <-> 32022R2554 'micro-onderneming' -- UNRELATED_CONCEPTS
+  [367/850] BWBR0052872 'cyberdreiging' <-> 32022L2555 'significante cyberdreiging' -- CONSISTENT
+  [368/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'kritieke derde aanbieder van ict-diensten' -- UNRELATED_CONCEPTS
+  [369/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'kleine en niet-verweven beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [370/850] 32022R2554 'leidinggevend orgaan' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [371/850] 32022L2555 'entiteit' <-> 32024R1689 'openbare ruimte' -- UNRELATED_CONCEPTS
+  [372/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van datarapporteringsdiensten' -- UNRELATED_CONCEPTS
+  [373/850] BWBR0052872 'vertegenwoordiger' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- UNRELATED_CONCEPTS
+  [374/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van cryptoactivadiensten' -- UNRELATED_CONCEPTS
+  [375/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'middelgrote onderneming' -- UNRELATED_CONCEPTS
+  [376/850] 32022R2554 'securitisatieregister' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [377/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [378/850] BWBR0052872 'hoofdvestiging' <-> 32022L2555 'entiteit' -- UNRELATED_CONCEPTS
+  [379/850] BWBR0048156 'publiek identificatiemiddel' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [380/850] 32016R0679 'profilering' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [381/850] BWBR0048156 'privaat identificatiemiddel' <-> 32016R0679 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [382/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [383/850] BWBR0052872 'register voor topleveldomeinnamen' <-> 32022L2555 'domeinnaamsysteem (dns)' -- UNRELATED_CONCEPTS
+  [384/850] 32016R0679 'onderneming' <-> 32022R2554 'kleine en niet-verweven beleggingsonderneming' -- CONSISTENT
+  [385/850] 32022R2554 'transactieregister' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [386/850] 32022R2554 'ict-risico' <-> 32024R1689 'gebruiksinstructies' -- UNRELATED_CONCEPTS
+  [387/850] BWBR0052872 'ict-dienst' <-> 32022R2554 'ict-actief' -- UNRELATED_CONCEPTS
+  [388/850] 32022L2555 'vertrouwensdienst' <-> 32022R2554 'instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [389/850] BWBR0052872 'onderzoeksorganisatie' <-> 32024R1689 'ai-testomgeving voor regelgeving' -- UNRELATED_CONCEPTS
+  [390/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022L2555 'aanbieder van beheerde beveiligingsdiensten' -- CONSISTENT
+  [391/850] BWBR0052872 'bevoegde autoriteit' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [392/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32022R2554 'leidinggevend orgaan' -- UNRELATED_CONCEPTS
+  [393/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [394/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> BWBR0048156 'betrouwbaarheidsniveau' -- UNRELATED_CONCEPTS
+  [395/850] BWBR0052872 'ict-product' <-> 32024R1689 'validatiedataset' -- UNRELATED_CONCEPTS
+  [396/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'beoogd doel' -- UNRELATED_CONCEPTS
+  [397/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'netwerk- en informatiesysteem' -- CONSISTENT
+  [398/850] 32022L2555 'onlinemarktplaats' <-> 32022R2554 'instelling voor elektronisch geld' -- UNRELATED_CONCEPTS
+  [399/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32022R2554 'ernstig betalingsgerelateerd operationeel of beveiligingsincident' -- UNRELATED_CONCEPTS
+  [400/850] BWBR0052872 'entiteit' <-> 32022R2554 'middelgrote onderneming' -- UNRELATED_CONCEPTS
+  [401/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32024R1689 'gebruiksinstructies' -- UNRELATED_CONCEPTS
+  [402/850] 32022L2555 'onlinemarktplaats' <-> 32022R2554 'crowdfundingdienstverlener' -- UNRELATED_CONCEPTS
+  [403/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'ict-risico van derde aanbieders' -- UNRELATED_CONCEPTS
+  [404/850] 32022L2555 'cyberdreiging' <-> 32022R2554 'significante cyberdreiging' -- CONSISTENT
+  [405/850] 32016R0679 'derde' <-> 32024R1689 'deepfake' -- UNRELATED_CONCEPTS
+  [406/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'in een derde land gevestigde ict-subcontractant' -- UNRELATED_CONCEPTS
+  [407/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- UNRELATED_CONCEPTS
+  [408/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'centrale tegenpartij' -- UNRELATED_CONCEPTS
+  [409/850] BWBR0052872 'cer-richtlijn' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [410/850] 32022L2555 'ict-dienst' <-> 32022R2554 'derde aanbieder van ict-diensten' -- UNRELATED_CONCEPTS
+  [411/850] BWBR0052872 'samenwerkingsgroep' <-> 32022R2554 'groep' -- INSUFFICIENT_EVIDENCE [Low]
+  [412/850] BWBR0052872 'entiteit' <-> BWBR0048156 'bedrijfs- en organisatiemiddel' -- UNRELATED_CONCEPTS
+  [413/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [414/850] 32016R0679 'relevant en gemotiveerd bezwaar' <-> 32024R1689 'wijdverbreide inbreuk' -- UNRELATED_CONCEPTS
+  [415/850] 32016R0679 'vertegenwoordiger' <-> 32022R2554 'verzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [416/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32024R1689 'wijdverbreide inbreuk' -- UNRELATED_CONCEPTS
+  [417/850] 32022L2555 'incident' <-> 32022R2554 'informatieactief' -- UNRELATED_CONCEPTS
+  [418/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'distributeur' -- UNRELATED_CONCEPTS
+  [419/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'terugroepen van een ai-systeem' -- UNRELATED_CONCEPTS
+  [420/850] 32016R0679 'verwerker' <-> 32024R1689 'distributeur' -- UNRELATED_CONCEPTS
+  [421/850] 32022R2554 'netwerk- en informatiesysteem' <-> 32024R1689 'ce-markering' -- UNRELATED_CONCEPTS
+  [422/850] 32022R2554 'ict-risico' <-> 32024R1689 'conformiteitsbeoordeling' -- UNRELATED_CONCEPTS
+  [423/850] BWBR0048156 'publiek identificatiemiddel' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [424/850] BWBR0052872 'onlinemarktplaats' <-> 32024R1689 'op de markt aanbieden' -- UNRELATED_CONCEPTS
+  [425/850] 32022R2554 'inlichtingen over dreigingen' <-> 32024R1689 'ai-geletterdheid' -- UNRELATED_CONCEPTS
+  [426/850] 32022L2555 'ict-product' <-> 32024R1689 'gemeenschappelijke specificatie' -- UNRELATED_CONCEPTS
+  [427/850] BWBR0052872 'essentiële entiteit' <-> 32022L2555 'aan de commissie' -- UNRELATED_CONCEPTS
+  [428/850] BWBR0052872 'enisa' <-> 32022L2555 'ict-dienst' -- UNRELATED_CONCEPTS
+  [429/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'distributeur' -- UNRELATED_CONCEPTS
+  [430/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'kritieke of belangrijke functie' -- UNRELATED_CONCEPTS
+  [431/850] BWBR0052872 'onlinezoekmachine' <-> 32022L2555 'onlinezoekmachine' -- INSUFFICIENT_EVIDENCE [Low]
+  [432/850] BWBR0052872 'significant incident' <-> 32022L2555 'grootschalig cyberbeveiligingsincident' -- INSUFFICIENT_EVIDENCE [Low]
+  [433/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- CONSISTENT
+  [434/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [435/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'beheermaatschappij' -- UNRELATED_CONCEPTS
+  [436/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- INSUFFICIENT_EVIDENCE [Low]
+  [437/850] 32016R0679 'verwerking' <-> 32024R1689 'deepfake' -- UNRELATED_CONCEPTS
+  [438/850] 32022R2554 'beheerder van kritieke benchmarks' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [439/850] BWBR0052872 'csirt-netwerk' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [440/850] BWBR0052872 'vertegenwoordiger' <-> 32022L2555 'register voor topleveldomeinnamen' -- UNRELATED_CONCEPTS
+  [441/850] BWBR0048156 'machtigingsdienst' <-> 32022L2555 'vertegenwoordiger' -- DEFINITIONAL_MISMATCH [Medium]
+  [442/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [443/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'systeem voor het herkennen van emoties' -- CONSISTENT
+  [444/850] 32022R2554 'digitale operationele weerbaarheid' <-> 32024R1689 'prestaties van een ai-systeem' -- UNRELATED_CONCEPTS
+  [445/850] BWBR0048156 'identificatiemiddel' <-> 32022R2554 'instelling voor elektronisch geld' -- UNRELATED_CONCEPTS
+  [446/850] BWBR0040940 'onze minister' <-> 32024R1689 'rechtshandhavingsinstantie' -- UNRELATED_CONCEPTS
+  [447/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'in gebruik stellen' -- UNRELATED_CONCEPTS
+  [448/850] BWBR0052872 'cyberdreiging' <-> 32024R1689 'redelijkerwijs te voorzien misbruik' -- UNRELATED_CONCEPTS
+  [449/850] 32016R0679 'bestand' <-> 32024R1689 'ai-systeem voor algemene doeleinden' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [450/850] BWBR0052872 'deze wet wordt aangehaald als' <-> BWBR0040940 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [451/850] 32016R0679 'onderneming' <-> 32022R2554 'beleggingsonderneming' -- CONSISTENT
+  [452/850] 32022R2554 'netwerk- en informatiesysteem' <-> 32024R1689 'in de handel brengen' -- UNRELATED_CONCEPTS
+  [453/850] 32022L2555 'cyberbeveiliging' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- INSUFFICIENT_EVIDENCE [Low]
+  [454/850] 32022L2555 'ict-product' <-> 32024R1689 'beoogd doel' -- UNRELATED_CONCEPTS
+  [455/850] 32022L2555 'internetknooppunt' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [456/850] BWBR0052872 'incident' <-> 32022R2554 'kwetsbaarheid' -- UNRELATED_CONCEPTS
+  [457/850] 32022L2555 'onderzoeksorganisatie' <-> 32024R1689 'plan voor testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [458/850] 32022L2555 'vertrouwensdienst' <-> 32022R2554 'herverzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [459/850] BWBR0052872 'cyberbeveiliging' <-> 32022L2555 'nationale cyberbeveiligingsstrategie' -- UNRELATED_CONCEPTS
+  [460/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022L2555 'openbaar elektronischecommunicatienetwerk' -- UNRELATED_CONCEPTS
+  [461/850] 32024R1689 'rechtshandhavingsinstantie' <-> BWBR0049497 'last onder dwangsom – artikelen' -- UNRELATED_CONCEPTS
+  [462/850] 32022L2555 'entiteit' <-> 32024R1689 'importeur' -- CONSISTENT
+  [463/850] BWBR0048156 'authenticatiedienst' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [464/850] BWBR0040940 'deze wet wordt aangehaald als' <-> 32016R0679 'bindende bedrijfsvoorschriften' -- UNRELATED_CONCEPTS
+  [465/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'moederonderneming' -- UNRELATED_CONCEPTS
+  [466/850] BWBR0052872 'datacentrumdienst' <-> 32022L2555 'datacentrumdienst' -- CONSISTENT
+  [467/850] 32022L2555 'cyberdreiging' <-> 32022R2554 'cyberdreiging' -- CONSISTENT
+  [468/850] BWBR0052872 'onderzoeksorganisatie' <-> 32024R1689 'testomgevingsplan' -- UNRELATED_CONCEPTS
+  [469/850] 32016R0679 'relevant en gemotiveerd bezwaar' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [470/850] 32016R0679 'beperken van de verwerking' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [471/850] BWBR0052872 'digitale dienst' <-> 32022L2555 'digitale dienst' -- CONSISTENT
+  [472/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'biometrische gegevens' -- INSUFFICIENT_EVIDENCE [Low]
+  [473/850] 32022R2554 'ernstig betalingsgerelateerd operationeel of beveiligingsincident' <-> 32024R1689 'ernstig incident' -- UNRELATED_CONCEPTS
+  [474/850] BWBR0052872 'ict-dienst' <-> 32016R0679 'dienst van de informatiemaatschappij' -- DEFINITIONAL_MISMATCH [Medium]
+  [475/850] 32016R0679 'toezichthoudende autoriteit' <-> 32022L2555 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [476/850] 32022L2555 'incident' <-> 32022R2554 'ict-risico' -- UNRELATED_CONCEPTS
+  [477/850] 32016R0679 'bestand' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [478/850] BWBR0052872 'elektronisch communicatienetwerk' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [479/850] 32016R0679 'verwerking' <-> 32022L2555 'ict-proces' -- UNRELATED_CONCEPTS
+  [480/850] 32022L2555 'overheidsinstantie' <-> 32022R2554 'overheidsinstantie' -- DEFINITIONAL_MISMATCH [Medium]
+  [481/850] BWBR0048156 'aangewezen organisatie' <-> 32022R2554 'kleine instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [482/850] 32022L2555 'norm' <-> 32022R2554 'transactieregister' -- UNRELATED_CONCEPTS
+  [483/850] BWBR0052872 'root-naamserver' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- UNRELATED_CONCEPTS
+  [484/850] BWBR0052872 'essentiële entiteit' <-> 32022L2555 'aan de commissie en de samenwerkingsgroep' -- UNRELATED_CONCEPTS
+  [485/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022R2554 'betalingsinstelling' -- UNRELATED_CONCEPTS
+  [486/850] BWBR0052872 'gekwalificeerde vertrouwensdienst' <-> 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' -- UNRELATED_CONCEPTS
+  [487/850] 32022L2555 'netwerk- en informatiesysteem' <-> 32022R2554 'netwerk- en informatiesysteem' -- CONSISTENT
+  [488/850] BWBR0048156 'authenticatiedienst' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [489/850] BWBR0052872 'csirt' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [490/850] BWBR0052872 'entiteit die domeinnaamregistratiediensten verleent' <-> 32022L2555 'register voor topleveldomeinnamen' -- UNRELATED_CONCEPTS
+  [491/850] 32016R0679 'derde' <-> 32024R1689 'openbare ruimte' -- UNRELATED_CONCEPTS
+  [492/850] BWBR0052872 'entiteit die domeinnaamregistratiediensten verleent' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [493/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'elektronische dienstverlening' -- UNRELATED_CONCEPTS
+  [494/850] BWBR0048156 'aangewezen organisatie' <-> BWBR0051796 'autoriteit consument en markt' -- UNRELATED_CONCEPTS
+  [495/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'kredietinstelling' -- UNRELATED_CONCEPTS
+  [496/850] 32022R2554 'ict-actief' <-> 32024R1689 'ai-systeem voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [497/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'trainingsdata' -- UNRELATED_CONCEPTS
+  [498/850] BWBR0052872 'vertegenwoordiger' <-> 32022L2555 'dns-dienstverlener' -- UNRELATED_CONCEPTS
+  [499/850] 32016R0679 'beperken van de verwerking' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [500/850] 32016R0679 'bestand' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [501/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32022L2555 'vertrouwensdienst' -- UNRELATED_CONCEPTS
+  [502/850] BWBR0052872 'norm' <-> 32024R1689 'gemeenschappelijke specificatie' -- UNRELATED_CONCEPTS
+  [503/850] 32016R0679 'beperken van de verwerking' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [504/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'betalingsinstelling' -- UNRELATED_CONCEPTS
+  [505/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32024R1689 'op de markt aanbieden' -- UNRELATED_CONCEPTS
+  [506/850] 32022L2555 'overheidsinstantie' <-> 32022R2554 'micro-onderneming' -- UNRELATED_CONCEPTS
+  [507/850] BWBR0052872 'deze wet wordt aangehaald als' <-> BWBR0040940 '[red' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [508/850] BWBR0052872 'incident' <-> 32022R2554 'informatieactief' -- UNRELATED_CONCEPTS
+  [509/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [510/850] BWBR0052872 'onze minister' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [511/850] 32022L2555 'incident' <-> 32024R1689 'ernstig incident' -- CONSISTENT
+  [512/850] BWBR0048156 'eidas-verordening' <-> 32022L2555 'ict-dienst' -- UNRELATED_CONCEPTS
+  [513/850] 32016R0679 'inbreuk in verband met persoonsgegevens' <-> 32022R2554 'ict-gerelateerd incident' -- CONSISTENT
+  [514/850] BWBR0040940 'deze wet wordt aangehaald als' <-> BWBR0051796 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS
+  [515/850] 32022R2554 'herverzekeringstussenpersoon' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [516/850] 32022L2555 'entiteit' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [517/850] BWBR0052872 'ict-dienst' <-> 32024R1689 'inputdata' -- UNRELATED_CONCEPTS
+  [518/850] 32022L2555 'cyberbeveiliging' <-> 32024R1689 'profilering' -- UNRELATED_CONCEPTS
+  [519/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'nationale bevoegde autoriteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [520/850] BWBR0052872 'entiteit die domeinnaamregistratiediensten verleent' <-> 32022L2555 'vertegenwoordiger' -- UNRELATED_CONCEPTS
+  [521/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'authenticatie' -- UNRELATED_CONCEPTS
+  [522/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'groep' -- UNRELATED_CONCEPTS
+  [523/850] BWBR0052872 'datacentrumdienst' <-> 32022L2555 'cloudcomputingdienst' -- UNRELATED_CONCEPTS
+  [524/850] BWBR0052872 'entiteit' <-> 32024R1689 'wijdverbreide inbreuk' -- UNRELATED_CONCEPTS
+  [525/850] BWBR0048156 'middelenuitgever' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [526/850] BWBR0052872 'datacentrumdienst' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [527/850] BWBR0048156 'attribuut' <-> 32022L2555 'entiteit' -- UNRELATED_CONCEPTS
+  [528/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32024R1689 'geïnformeerde toestemming' -- UNRELATED_CONCEPTS
+  [529/850] 32016R0679 'concern' <-> 32022R2554 'herverzekeringsonderneming' -- UNRELATED_CONCEPTS
+  [530/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'significante cyberdreiging' -- DEFINITIONAL_MISMATCH [Medium]
+  [531/850] 32016R0679 'onderneming' <-> 32022L2555 'entiteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [532/850] 32022L2555 'overheidsinstantie' <-> 32022R2554 'kleine en niet-verweven beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [533/850] BWBR0052872 'enisa' <-> BWBR0048156 'eidas-verordening' -- UNRELATED_CONCEPTS
+  [534/850] BWBR0052872 'internetknooppunt' <-> 32022L2555 'netwerk- en informatiesysteem' -- CONSISTENT
+  [535/850] BWBR0048156 'ontsluitende dienst' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [536/850] 32022L2555 'ict-dienst' <-> 32024R1689 'ai-bureau' -- UNRELATED_CONCEPTS
+  [537/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'herverzekeringstussenpersoon' -- UNRELATED_CONCEPTS
+  [538/850] 32022L2555 'bijna-incident' <-> 32022R2554 'ict-gerelateerd incident' -- DEFINITIONAL_MISMATCH [Medium]
+  [539/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'ai-geletterdheid' -- UNRELATED_CONCEPTS
+  [540/850] BWBR0052872 'entiteit' <-> 32022L2555 'entiteit' -- DEFINITIONAL_MISMATCH [Medium]
+  [541/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32022R2554 'aanbieder van ict-diensten binnen een groep' -- INSUFFICIENT_EVIDENCE [Low]
+  [542/850] BWBR0052872 'bijna-incident' <-> 32022R2554 'ict-gerelateerd incident' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [543/850] BWBR0048156 'aangewezen organisatie' <-> 32022R2554 'instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [544/850] BWBR0052872 'root-naamserver' <-> 32022L2555 'register voor topleveldomeinnamen' -- UNRELATED_CONCEPTS
+  [545/850] BWBR0052872 'centraal contactpunt' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [546/850] BWBR0048156 'middelenuitgever' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [547/850] 32022L2555 'ict-proces' <-> 32024R1689 'testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [548/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [549/850] BWBR0052872 'gekwalificeerde vertrouwensdienst' <-> 32022L2555 'gekwalificeerde vertrouwensdienst' -- CONSISTENT
+  [550/850] 32022L2555 'risico' <-> 32022R2554 'ict-risico' -- DEFINITIONAL_MISMATCH [Medium]
+  [551/850] BWBR0052872 'csirt' <-> 32022R2554 'ict-risico' -- UNRELATED_CONCEPTS
+  [552/850] BWBR0052872 'onze minister' <-> BWBR0048156 'onze minister' -- INSUFFICIENT_EVIDENCE [Low]
+  [553/850] BWBR0052872 'entiteit die domeinnaamregistratiediensten verleent' <-> 32022L2555 'dns-dienstverlener' -- UNRELATED_CONCEPTS
+  [554/850] 32022L2555 'datacentrumdienst' <-> 32022R2554 'ict-diensten' -- UNRELATED_CONCEPTS
+  [555/850] 32022R2554 'aanbieder van cryptoactivadiensten' <-> 32024R1689 'op de markt aanbieden' -- UNRELATED_CONCEPTS
+  [556/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'herverzekeringsonderneming' -- UNRELATED_CONCEPTS
+  [557/850] 32022L2555 'openbaar elektronischecommunicatienetwerk' <-> 32024R1689 'openbare ruimte' -- UNRELATED_CONCEPTS
+  [558/850] BWBR0048156 'deze wet wordt aangehaald als' <-> BWBR0051796 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS
+  [559/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'eidas-verordening' -- UNRELATED_CONCEPTS
+  [560/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'bindende bedrijfsvoorschriften' -- UNRELATED_CONCEPTS
+  [561/850] 32016R0679 'internationale organisatie' <-> 32024R1689 'rechtshandhavingsinstantie' -- UNRELATED_CONCEPTS
+  [562/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [563/850] 32022L2555 'digitale dienst' <-> 32022R2554 'crowdfundingdienstverlener' -- UNRELATED_CONCEPTS
+  [564/850] BWBR0052872 'cloudcomputingdienst' <-> 32022L2555 'netwerk voor de levering van inhoud' -- UNRELATED_CONCEPTS
+  [565/850] 32022L2555 'ict-product' <-> 32022R2554 'groep' -- UNRELATED_CONCEPTS
+  [566/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32024R1689 'ai-systeem voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [567/850] BWBR0052872 'norm' <-> 32024R1689 'geharmoniseerde norm' -- CONSISTENT
+  [568/850] 32022L2555 'onlinezoekmachine' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [569/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'validatiedata' -- UNRELATED_CONCEPTS
+  [570/850] 32016R0679 'verwerkingsverantwoordelijke' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [571/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'conformiteitsbeoordeling' -- UNRELATED_CONCEPTS
+  [572/850] 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022R2554 'aanbieder van datarapporteringsdiensten' -- UNRELATED_CONCEPTS
+  [573/850] BWBR0048156 '[red' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [574/850] 32022R2554 'netwerk- en informatiesysteem' <-> 32024R1689 'kritieke infrastructuur' -- UNRELATED_CONCEPTS
+  [575/850] 32022L2555 'incidentenbehandeling' <-> 32022R2554 'ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [576/850] BWBR0052872 'incident' <-> 32022R2554 'ict-risico' -- UNRELATED_CONCEPTS
+  [577/850] BWBR0048156 'online identiteit' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [578/850] 32022L2555 'gekwalificeerde vertrouwensdienst' <-> 32022R2554 'securitisatieregister' -- UNRELATED_CONCEPTS
+  [579/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'cyberaanval' -- UNRELATED_CONCEPTS
+  [580/850] BWBR0048156 'authenticatiedienst' <-> 32024R1689 'gemachtigde' -- UNRELATED_CONCEPTS
+  [581/850] BWBR0052872 'samenwerkingsgroep' <-> 32022L2555 'aan de commissie en de samenwerkingsgroep' -- UNRELATED_CONCEPTS
+  [582/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'systeem voor het herkennen van emoties' -- UNRELATED_CONCEPTS
+  [583/850] BWBR0052872 'digitale dienst' <-> BWBR0048156 'elektronische dienstverlening' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [584/850] BWBR0040940 'deze wet wordt aangehaald als' <-> BWBR0051796 'dataverordening' -- UNRELATED_CONCEPTS
+  [585/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- CONSISTENT
+  [586/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- CONSISTENT
+  [587/850] BWBR0052872 'overheidsinstantie' <-> 32024R1689 'rechtshandhavingsinstantie' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [588/850] 32016R0679 'betrokken toezichthoudende autoriteit' <-> 32024R1689 'markttoezichtautoriteit' -- UNRELATED_CONCEPTS
+  [589/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'testomgevingsplan' -- UNRELATED_CONCEPTS
+  [590/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'centrale effectenbewaarinstelling' -- UNRELATED_CONCEPTS
+  [591/850] 32022L2555 'digitale dienst' <-> 32022R2554 'ict-diensten' -- INSUFFICIENT_EVIDENCE [Low]
+  [592/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'machtigingsdienst' -- UNRELATED_CONCEPTS
+  [593/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'derde aanbieder van ict-diensten' -- INSUFFICIENT_EVIDENCE [Low]
+  [594/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [595/850] 32016R0679 'concern' <-> 32022R2554 'dochteronderneming' -- DEFINITIONAL_MISMATCH [Medium]
+  [596/850] 32022R2554 'securitisatieregister' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [597/850] BWBR0052872 'elektronische communicatiedienst' <-> BWBR0048156 'ontsluitende dienst' -- UNRELATED_CONCEPTS
+  [598/850] 32016R0679 'concern' <-> 32022R2554 'verzekeringsonderneming' -- UNRELATED_CONCEPTS
+  [599/850] BWBR0052872 'cer-richtlijn' <-> BWBR0051796 'dataverordening' -- UNRELATED_CONCEPTS
+  [600/850] 32016R0679 'profilering' <-> 32024R1689 'profilering' -- CONSISTENT
+  [601/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'veiligheidscomponent' -- UNRELATED_CONCEPTS
+  [602/850] BWBR0052872 'incident' <-> 32022L2555 'bijna-incident' -- CONSISTENT
+  [603/850] BWBR0052872 'significante cyberdreiging' <-> 32022R2554 'cyberdreiging' -- CONSISTENT
+  [604/850] 32022L2555 'nationale cyberbeveiligingsstrategie' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [605/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'veiligheidscomponent' -- UNRELATED_CONCEPTS
+  [606/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' -- CONSISTENT
+  [607/850] BWBR0052872 'risico' <-> 32024R1689 'systeemrisico' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [608/850] BWBR0052872 'overheidsinstantie' <-> 32022L2555 'onderzoeksorganisatie' -- UNRELATED_CONCEPTS
+  [609/850] BWBR0048156 'bedrijfs- en organisatiemiddel' <-> 32022L2555 'entiteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [610/850] 32022R2554 'netwerk- en informatiesysteem' <-> 32024R1689 'ai-systeem voor algemene doeleinden' -- UNRELATED_CONCEPTS
+  [611/850] 32022L2555 'gekwalificeerde vertrouwensdienst' <-> 32022R2554 'ratingbureau' -- UNRELATED_CONCEPTS
+  [612/850] 32016R0679 'toezichthoudende autoriteit' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [613/850] BWBR0052872 'root-naamserver' <-> 32022L2555 'dns-dienstverlener' -- CONSISTENT
+  [614/850] BWBR0052872 'onze minister' <-> BWBR0040940 'onze minister' -- DEFINITIONAL_MISMATCH [Medium]
+  [615/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van datarapporteringsdiensten' -- UNRELATED_CONCEPTS
+  [616/850] 32016R0679 'persoonsgegevens' <-> 32024R1689 'biometrische gegevens' -- CONSISTENT
+  [617/850] BWBR0052872 'gekwalificeerde vertrouwensdienst' <-> 32022L2555 'verlener van vertrouwensdiensten' -- UNRELATED_CONCEPTS
+  [618/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [619/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van cryptoactivadiensten' -- UNRELATED_CONCEPTS
+  [620/850] BWBR0052872 'cyberbeveiliging' <-> 32022R2554 'cyberaanval' -- UNRELATED_CONCEPTS
+  [621/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'ict-concentratierisico' -- UNRELATED_CONCEPTS
+  [622/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'platform voor socialenetwerkdiensten' -- UNRELATED_CONCEPTS
+  [623/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'dochteronderneming' -- UNRELATED_CONCEPTS
+  [624/850] BWBR0052872 'elektronisch communicatienetwerk' <-> BWBR0048156 'elektronische dienstverlening' -- UNRELATED_CONCEPTS
+  [625/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32022L2555 'incident' -- UNRELATED_CONCEPTS
+  [626/850] BWBR0052872 'incident' <-> 32024R1689 'ernstig incident' -- CONSISTENT
+  [627/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'aanbieder verder in de ai-waardeketen' -- UNRELATED_CONCEPTS
+  [628/850] 32022L2555 'technische specificatie' <-> 32024R1689 'geharmoniseerde norm' -- UNRELATED_CONCEPTS
+  [629/850] BWBR0052872 'dns-dienstverlener' <-> 32022L2555 'vertegenwoordiger' -- UNRELATED_CONCEPTS
+  [630/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'verzekeringsonderneming' -- UNRELATED_CONCEPTS
+  [631/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'ontvanger' -- UNRELATED_CONCEPTS
+  [632/850] 32016R0679 'genetische gegevens' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [633/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'significante cyberdreiging' -- DEFINITIONAL_MISMATCH [Medium]
+  [634/850] 32022R2554 'overheidsinstantie' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [635/850] BWBR0052872 'vertrouwensdienst' <-> BWBR0048156 'betrouwbaarheidsniveau' -- UNRELATED_CONCEPTS
+  [636/850] BWBR0052872 'cyberdreiging' <-> 32022R2554 'inlichtingen over dreigingen' -- UNRELATED_CONCEPTS
+  [637/850] BWBR0052872 'essentiële entiteit' <-> 32022R2554 'emittent van asset-referenced tokens' -- UNRELATED_CONCEPTS
+  [638/850] BWBR0051796 'deze wet wordt aangehaald als' <-> BWBR0049497 'last onder dwangsom – artikelen' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [639/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'kritieke derde aanbieder van ict-diensten' -- DEFINITIONAL_MISMATCH [Medium]
+  [640/850] BWBR0052872 'samenwerkingsgroep' <-> 32022R2554 'gemengd comité' -- UNRELATED_CONCEPTS
+  [641/850] BWBR0040940 'bijzondere categorieën van persoonsgegevens' <-> 32024R1689 'persoonsgegevens' -- CONSISTENT
+  [642/850] BWBR0052872 'onlinemarktplaats' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [643/850] BWBR0048156 'elektronische dienstverlening' <-> 32022R2554 'instelling voor elektronisch geld' -- UNRELATED_CONCEPTS
+  [644/850] BWBR0048156 'betrouwbaarheidsniveau' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [645/850] 32016R0679 'inbreuk in verband met persoonsgegevens' <-> 32024R1689 'wijdverbreide inbreuk' -- UNRELATED_CONCEPTS
+  [646/850] BWBR0052872 'cloudcomputingdienst' <-> 32022L2555 'datacentrumdienst' -- UNRELATED_CONCEPTS
+  [647/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32016R0679 'toestemming” van de betrokkene' -- UNRELATED_CONCEPTS
+  [648/850] 32016R0679 'onderneming' <-> 32022R2554 'middelgrote onderneming' -- CONSISTENT
+  [649/850] 32022L2555 'norm' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [650/850] 32022L2555 'elektronischecommunicatiedienst' <-> 32022R2554 'instelling voor elektronisch geld' -- UNRELATED_CONCEPTS
+  [651/850] 32016R0679 'ontvanger' <-> 32024R1689 'gebruiksverantwoordelijke' -- UNRELATED_CONCEPTS
+  [652/850] 32022R2554 'gemengd comité' <-> 32024R1689 'gemeenschappelijke specificatie' -- UNRELATED_CONCEPTS
+  [653/850] 32022L2555 'ict-proces' <-> 32024R1689 'conformiteitsbeoordeling' -- UNRELATED_CONCEPTS
+  [654/850] BWBR0040940 'verordening' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [655/850] 32022R2554 'ict-risico' <-> 32024R1689 'ai-geletterdheid' -- UNRELATED_CONCEPTS
+  [656/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'ict-risico van derde aanbieders' -- UNRELATED_CONCEPTS
+  [657/850] BWBR0052872 'belangrijke entiteit' <-> 32022L2555 'aan de commissie' -- UNRELATED_CONCEPTS
+  [658/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'in een derde land gevestigde ict-subcontractant' -- UNRELATED_CONCEPTS
+  [659/850] BWBR0052872 'enisa' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [660/850] 32016R0679 'toezichthoudende autoriteit' <-> 32024R1689 'rechtshandhavingsinstantie' -- UNRELATED_CONCEPTS
+  [661/850] BWBR0052872 'overheidsinstantie' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [662/850] 32022R2554 'derde aanbieder van ict-diensten' <-> 32024R1689 'operator' -- UNRELATED_CONCEPTS
+  [663/850] BWBR0052872 'beveiligingsscan' <-> 32022R2554 'ict-risico' -- UNRELATED_CONCEPTS
+  [664/850] BWBR0040940 'verordening' <-> 32016R0679 'bindende bedrijfsvoorschriften' -- UNRELATED_CONCEPTS
+  [665/850] 32022R2554 'ict-actief' <-> 32024R1689 'prestaties van een ai-systeem' -- UNRELATED_CONCEPTS
+  [666/850] BWBR0052872 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022L2555 'vertrouwensdienst' -- UNRELATED_CONCEPTS
+  [667/850] BWBR0048156 'attribuut' <-> 32016R0679 'onderneming' -- UNRELATED_CONCEPTS
+  [668/850] BWBR0048156 'erkende dienst' <-> 32022L2555 'aanbieder van beheerde diensten' -- UNRELATED_CONCEPTS
+  [669/850] BWBR0052872 'dns-dienstverlener' <-> 32022L2555 'dns-dienstverlener' -- CONSISTENT
+  [670/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32024R1689 'ai-bureau' -- UNRELATED_CONCEPTS
+  [671/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022L2555 'datacentrumdienst' -- UNRELATED_CONCEPTS
+  [672/850] BWBR0052872 'cloudcomputingdienst' <-> 32024R1689 'zwevendekommabewerking of “floating-point operation (flop)' -- UNRELATED_CONCEPTS
+  [673/850] BWBR0052872 'risico' <-> 32022R2554 'ict-risico' -- DEFINITIONAL_MISMATCH [Medium]
+  [674/850] 32022R2554 'ernstig ict-gerelateerd incident' <-> 32024R1689 'substantiële wijziging' -- UNRELATED_CONCEPTS
+  [675/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022L2555 'aanbieder van beheerde beveiligingsdiensten' -- CONSISTENT
+  [676/850] BWBR0052872 'significante cyberdreiging' <-> 32022L2555 'grootschalig cyberbeveiligingsincident' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [677/850] BWBR0048156 'onze minister' <-> 32022R2554 'overheidsinstantie' -- UNRELATED_CONCEPTS
+  [678/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32016R0679 'verwerkingsverantwoordelijke' -- UNRELATED_CONCEPTS
+  [679/850] BWBR0052872 'ict-product' <-> 32022L2555 'ict-product' -- INSUFFICIENT_EVIDENCE [Low]
+  [680/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32024R1689 'aanbieder' -- UNRELATED_CONCEPTS
+  [681/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32016R0679 'vertegenwoordiger' -- UNRELATED_CONCEPTS
+  [682/850] 32016R0679 'profilering' <-> 32024R1689 'validatiedata' -- UNRELATED_CONCEPTS
+  [683/850] BWBR0052872 'domeinnaamsysteem (dns)' <-> 32022L2555 'register voor topleveldomeinnamen' -- UNRELATED_CONCEPTS
+  [684/850] BWBR0052872 'incident' <-> 32016R0679 'inbreuk in verband met persoonsgegevens' -- CONSISTENT
+  [685/850] 32022R2554 'betalingsgerelateerd operationeel of beveiligingsincident' <-> 32024R1689 'ernstig incident' -- UNRELATED_CONCEPTS
+  [686/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'in een derde land gevestigde ict-subcontractant' -- UNRELATED_CONCEPTS
+  [687/850] 32016R0679 'concern' <-> 32022R2554 'kleine en niet-verweven beleggingsonderneming' -- UNRELATED_CONCEPTS
+  [688/850] BWBR0052872 'belangrijke entiteit' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [689/850] 32016R0679 'profilering' <-> 32024R1689 'systeem voor het herkennen van emoties' -- UNRELATED_CONCEPTS
+  [690/850] BWBR0052872 'entiteit' <-> 32016R0679 'onderneming' -- UNRELATED_CONCEPTS
+  [691/850] BWBR0052872 'bijna-incident' <-> 32022L2555 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [692/850] BWBR0052872 'hoofdvestiging' <-> 32022R2554 'instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [693/850] 32022L2555 'gekwalificeerde vertrouwensdienst' <-> 32022R2554 'kredietinstelling' -- UNRELATED_CONCEPTS
+  [694/850] BWBR0048156 'identificatiemiddel' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [695/850] BWBR0052872 'ict-dienst' <-> 32022R2554 'ict-diensten' -- DEFINITIONAL_MISMATCH [Medium]
+  [696/850] 32022R2554 'gemengd comité' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [697/850] BWBR0051796 'autoriteit consument en markt' <-> 32024R1689 'nationale bevoegde autoriteit' -- INSUFFICIENT_EVIDENCE [Low]
+  [698/850] 32016R0679 'inbreuk in verband met persoonsgegevens' <-> 32022L2555 'incident' -- UNRELATED_CONCEPTS
+  [699/850] BWBR0052872 'netwerk- en informatiesysteem' <-> 32022L2555 'netwerk- en informatiesysteem' -- CONSISTENT
+  [700/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'digitale operationele weerbaarheid' -- UNRELATED_CONCEPTS
+  [701/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'terugroepen van een ai-systeem' -- UNRELATED_CONCEPTS
+  [702/850] 32016R0679 'toestemming” van de betrokkene' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [703/850] 32022R2554 'informatieactief' <-> 32024R1689 'validatiedataset' -- UNRELATED_CONCEPTS
+  [704/850] BWBR0052872 'cyberbeveiliging' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- INSUFFICIENT_EVIDENCE [Low]
+  [705/850] BWBR0052872 'cyberdreiging' <-> 32022L2555 'cyberdreiging' -- INSUFFICIENT_EVIDENCE [Low]
+  [706/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'ict-risico van derde aanbieders' -- UNRELATED_CONCEPTS
+  [707/850] 32022R2554 'ict-actief' <-> 32024R1689 'beoogd doel' -- UNRELATED_CONCEPTS
+  [708/850] 32024R1689 'rechtshandhaving' <-> BWBR0049497 'last onder dwangsom – artikelen' -- UNRELATED_CONCEPTS
+  [709/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'netwerk voor de levering van inhoud' -- CONSISTENT
+  [710/850] 32022L2555 'risico' <-> 32024R1689 'risico' -- CONSISTENT
+  [711/850] 32022L2555 'significante cyberdreiging' <-> 32022R2554 'cyberdreiging' -- CONSISTENT
+  [712/850] BWBR0051796 'autoriteit persoonsgegevens' <-> 32016R0679 'verwerker' -- UNRELATED_CONCEPTS
+  [713/850] BWBR0052872 'cyberdreiging' <-> 32022R2554 'ict-risico' -- INSUFFICIENT_EVIDENCE [Low]
+  [714/850] BWBR0052872 'significante cyberdreiging' <-> 32022L2555 'significante cyberdreiging' -- CONSISTENT
+  [715/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'legacy-ict-systeem' -- UNRELATED_CONCEPTS
+  [716/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'kleine onderneming' -- UNRELATED_CONCEPTS
+  [717/850] 32022R2554 'overheidsinstantie' <-> 32024R1689 'rechtshandhavingsinstantie' -- CONSISTENT
+  [718/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32024R1689 'persoonsgegevens' -- CONSISTENT
+  [719/850] BWBR0052872 'significant incident' <-> 32022R2554 'ernstig betalingsgerelateerd operationeel of beveiligingsincident' -- UNRELATED_CONCEPTS
+  [720/850] 32016R0679 'inbreuk in verband met persoonsgegevens' <-> 32024R1689 'gevoelige operationele gegevens' -- UNRELATED_CONCEPTS
+  [721/850] 32016R0679 'profilering' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [722/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> BWBR0049497 'last onder dwangsom – artikelen' -- UNRELATED_CONCEPTS
+  [723/850] BWBR0052872 'onlinezoekmachine' <-> 32024R1689 'ai-systeem' -- UNRELATED_CONCEPTS
+  [724/850] BWBR0052872 'cloudcomputingdienst' <-> 32022L2555 'cloudcomputingdienst' -- CONSISTENT
+  [725/850] BWBR0052872 'hoofdvestiging' <-> 32022R2554 'dochteronderneming' -- UNRELATED_CONCEPTS
+  [726/850] BWBR0052872 'platform voor sociale netwerkdiensten' <-> BWBR0048156 'ontsluitende dienst' -- UNRELATED_CONCEPTS
+  [727/850] BWBR0052872 'bijna-incident' <-> 32022L2555 'incident' -- DEFINITIONAL_MISMATCH [Medium]
+  [728/850] BWBR0048156 'toegelaten identificatiemiddel' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [729/850] 32022L2555 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'prestaties van een ai-systeem' -- UNRELATED_CONCEPTS
+  [730/850] BWBR0052872 'beveiliging van netwerk- en informatiesystemen' <-> 32024R1689 'prestaties van een ai-systeem' -- UNRELATED_CONCEPTS
+  [731/850] 32016R0679 'pseudonimisering' <-> 32024R1689 'biometrische identificatie' -- UNRELATED_CONCEPTS
+  [732/850] BWBR0052872 'centraal contactpunt' <-> 32022R2554 'centrale effectenbewaarinstelling' -- UNRELATED_CONCEPTS
+  [733/850] BWBR0052872 'internetknooppunt' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [734/850] 32016R0679 'onderneming' <-> 32022R2554 'kleine onderneming' -- CONSISTENT
+  [735/850] 32016R0679 'dienst van de informatiemaatschappij' <-> 32022L2555 'onlinezoekmachine' -- CONSISTENT
+  [736/850] BWBR0052872 'aanbieder van beheerde beveiligingsdiensten' <-> 32022L2555 'aanbieder van beheerde diensten' -- CONSISTENT
+  [737/850] BWBR0048156 'publiek identificatiemiddel' <-> 32016R0679 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [738/850] 32022L2555 'ict-product' <-> 32024R1689 'testdata' -- UNRELATED_CONCEPTS
+  [739/850] BWBR0040940 'onze minister' <-> BWBR0048156 'onze minister' -- INSUFFICIENT_EVIDENCE [Low]
+  [740/850] 32022R2554 'gemengd comité' <-> 32024R1689 'geharmoniseerde norm' -- UNRELATED_CONCEPTS
+  [741/850] BWBR0048156 'identificatiemiddel' <-> 32024R1689 'systeem voor biometrische identificatie op afstand' -- UNRELATED_CONCEPTS
+  [742/850] 32022L2555 'overheidsinstantie' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [743/850] 32022R2554 'ratingbureau' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [744/850] BWBR0040940 'verordening' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [745/850] 32022R2554 'informatieactief' <-> 32024R1689 'gebruiksinstructies' -- UNRELATED_CONCEPTS
+  [746/850] BWBR0040940 '[red' <-> BWBR0048156 'deze wet wordt aangehaald als' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [747/850] BWBR0052872 'deze wet wordt aangehaald als' <-> 32022L2555 'nationale cyberbeveiligingsstrategie' -- UNRELATED_CONCEPTS
+  [748/850] BWBR0052872 'belangrijke entiteit' <-> 32022L2555 'aan de commissie en de samenwerkingsgroep' -- UNRELATED_CONCEPTS
+  [749/850] 32022L2555 'kwetsbaarheid' <-> 32022R2554 'cyberaanval' -- UNRELATED_CONCEPTS
+  [750/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'in gebruik stellen' -- UNRELATED_CONCEPTS
+  [751/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32022R2554 'ernstig ict-gerelateerd incident' -- UNRELATED_CONCEPTS
+  [752/850] 32016R0679 'toezichthoudende autoriteit' <-> 32024R1689 'aangemelde instantie' -- UNRELATED_CONCEPTS
+  [753/850] BWBR0052872 'kwetsbaarheid' <-> 32022R2554 'legacy-ict-systeem' -- UNRELATED_CONCEPTS
+  [754/850] BWBR0052872 'risico' <-> 32022L2555 'risico' -- CONSISTENT
+  [755/850] BWBR0052872 'entiteit' <-> 32022R2554 'kleine onderneming' -- CONSISTENT
+  [756/850] 32022R2554 'ict-risico' <-> 32024R1689 'systeemrisico' -- UNRELATED_CONCEPTS
+  [757/850] BWBR0048156 'online identiteit' <-> BWBR0051796 'autoriteit persoonsgegevens' -- UNRELATED_CONCEPTS
+  [758/850] BWBR0052872 'netwerk voor de levering van inhoud' <-> 32022L2555 'internetknooppunt' -- UNRELATED_CONCEPTS
+  [759/850] 32022L2555 'technische specificatie' <-> 32022R2554 'beheerder van kritieke benchmarks' -- UNRELATED_CONCEPTS
+  [760/850] 32022R2554 'derde aanbieder van ict-diensten' <-> 32024R1689 'distributeur' -- UNRELATED_CONCEPTS
+  [761/850] BWBR0052872 'overheidsinstantie' <-> 32024R1689 'conformiteitsbeoordelingsinstantie' -- UNRELATED_CONCEPTS
+  [762/850] BWBR0052872 'beveiligingsscan' <-> 32022R2554 'beveiliging van netwerk- en informatiesystemen' -- UNRELATED_CONCEPTS
+  [763/850] 32022R2554 'ict-actief' <-> 32024R1689 'terugroepen van een ai-systeem' -- UNRELATED_CONCEPTS
+  [764/850] BWBR0052872 'dns-dienstverlener' <-> 32022L2555 'domeinnaamsysteem (dns)' -- UNRELATED_CONCEPTS
+  [765/850] 32022L2555 'incidentenbehandeling' <-> 32024R1689 'rechtshandhaving' -- UNRELATED_CONCEPTS
+  [766/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022L2555 'aanbieder van beheerde diensten' -- CONSISTENT
+  [767/850] BWBR0052872 'onderzoeksorganisatie' <-> 32022L2555 'onderzoeksorganisatie' -- CONSISTENT
+  [768/850] 32016R0679 'inbreuk in verband met persoonsgegevens' <-> 32024R1689 'redelijkerwijs te voorzien misbruik' -- UNRELATED_CONCEPTS
+  [769/850] BWBR0052872 'aanbieder van beheerde diensten' <-> 32022R2554 'ict-actief' -- UNRELATED_CONCEPTS
+  [770/850] BWBR0052872 'vertegenwoordiger' <-> 32022L2555 'vertegenwoordiger' -- CONSISTENT
+  [771/850] 32016R0679 'profilering' <-> 32024R1689 'trainingsdata' -- UNRELATED_CONCEPTS
+  [772/850] BWBR0052872 'domeinnaamsysteem (dns)' <-> 32022L2555 'dns-dienstverlener' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [773/850] 32016R0679 'onderneming' <-> 32022R2554 'moederonderneming' -- CONSISTENT
+  [774/850] BWBR0052872 'belangrijke entiteit' <-> 32024R1689 'validatiedataset' -- UNRELATED_CONCEPTS
+  [775/850] BWBR0052872 'beveiligingsscan' <-> 32024R1689 'plan voor testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [776/850] BWBR0052872 'vertrouwensdienst' <-> 32022L2555 'gekwalificeerde vertrouwensdienst' -- CONSISTENT
+  [777/850] BWBR0048156 'bedrijfs- en organisatiemiddel' <-> 32016R0679 'onderneming' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [778/850] BWBR0052872 'register voor topleveldomeinnamen' <-> 32022L2555 'entiteit die domeinnaamregistratiediensten aanbiedt' -- DEFINITIONAL_MISMATCH [Medium]
+  [779/850] 32016R0679 'verwerker' <-> 32024R1689 'importeur' -- UNRELATED_CONCEPTS
+  [780/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32016R0679 'relevant en gemotiveerd bezwaar' -- UNRELATED_CONCEPTS
+  [781/850] 32022L2555 'overheidsinstantie' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [782/850] BWBR0052872 'onlinemarktplaats' <-> 32024R1689 'in de handel brengen' -- UNRELATED_CONCEPTS
+  [783/850] BWBR0052872 'enisa' <-> 32022L2555 'cyberbeveiliging' -- UNRELATED_CONCEPTS
+  [784/850] BWBR0051796 'autoriteit consument en markt' <-> 32024R1689 'markttoezichtautoriteit' -- INSUFFICIENT_EVIDENCE [Low]
+  [785/850] 32022R2554 'kritieke of belangrijke functie' <-> 32024R1689 'ernstig incident' -- UNRELATED_CONCEPTS
+  [786/850] 32022L2555 'ict-product' <-> 32024R1689 'geharmoniseerde norm' -- UNRELATED_CONCEPTS
+  [787/850] 32022L2555 'gekwalificeerde vertrouwensdienst' <-> 32022R2554 'leidinggevend orgaan' -- UNRELATED_CONCEPTS
+  [788/850] BWBR0052872 'ict-product' <-> 32024R1689 'veiligheidscomponent' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [789/850] BWBR0052872 'csirt-netwerk' <-> 32022R2554 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [790/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'importeur' -- UNRELATED_CONCEPTS
+  [791/850] 32016R0679 'relevant en gemotiveerd bezwaar' <-> 32022R2554 'ict-risico' -- UNRELATED_CONCEPTS
+  [792/850] BWBR0052872 'onderzoeksorganisatie' <-> 32016R0679 'onderneming' -- UNRELATED_CONCEPTS
+  [793/850] 32022R2554 'informatieactief' <-> 32024R1689 'validatiedata' -- UNRELATED_CONCEPTS
+  [794/850] BWBR0048156 'aangewezen organisatie' <-> 32024R1689 'ai-bureau' -- UNRELATED_CONCEPTS
+  [795/850] 32016R0679 'toestemming” van de betrokkene' <-> 32024R1689 'geïnformeerde toestemming' -- UNRELATED_CONCEPTS
+  [796/850] 32016R0679 'bestand' <-> 32022R2554 'informatieactief' -- UNRELATED_CONCEPTS
+  [797/850] BWBR0052872 'hoofdvestiging' <-> BWBR0048156 'aangewezen organisatie' -- UNRELATED_CONCEPTS
+  [798/850] 32022R2554 'emittent van asset-referenced tokens' <-> 32024R1689 'nationale bevoegde autoriteit' -- UNRELATED_CONCEPTS
+  [799/850] BWBR0052872 'gekwalificeerde verlener van vertrouwensdiensten' <-> 32022L2555 'gekwalificeerde verlener van vertrouwensdiensten' -- CONSISTENT
+  [800/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'beheerder van alternatieve beleggingsinstellingen' -- UNRELATED_CONCEPTS
+  [801/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'kleine instelling voor bedrijfspensioenvoorziening' -- UNRELATED_CONCEPTS
+  [802/850] BWBR0048156 'elektronische dienstverlening' <-> 32022L2555 'elektronischecommunicatiedienst' -- UNRELATED_CONCEPTS
+  [803/850] 32022L2555 'onlinemarktplaats' <-> 32024R1689 'ce-markering' -- UNRELATED_CONCEPTS
+  [804/850] BWBR0040940 'persoonsgegevens van strafrechtelijke aard' <-> 32024R1689 'bijzondere categorieën persoonsgegevens' -- UNRELATED_CONCEPTS
+  [805/850] BWBR0052872 'significante cyberdreiging' <-> 32022L2555 'cyberdreiging' -- CONSISTENT
+  [806/850] BWBR0048156 'aangewezen organisatie' <-> 32016R0679 'internationale organisatie' -- UNRELATED_CONCEPTS
+  [807/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> 32016R0679 'derde' -- UNRELATED_CONCEPTS
+  [808/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32024R1689 'capaciteiten met een grote impact' -- UNRELATED_CONCEPTS
+  [809/850] 32016R0679 'biometrische gegevens' <-> 32024R1689 'deepfake' -- UNRELATED_CONCEPTS
+  [810/850] 32022L2555 'incident' <-> 32022R2554 'betalingsgerelateerd operationeel of beveiligingsincident' -- INSUFFICIENT_EVIDENCE [Low]
+  [811/850] 32016R0679 'vertegenwoordiger' <-> 32024R1689 'gemachtigde' -- DEFINITIONAL_MISMATCH [Medium]
+  [812/850] 32022L2555 'incident' <-> 32022R2554 'ict-concentratierisico' -- UNRELATED_CONCEPTS
+  [813/850] 32022L2555 'verlener van vertrouwensdiensten' <-> 32022R2554 'aanbieder van datarapporteringsdiensten' -- UNRELATED_CONCEPTS
+  [814/850] 32016R0679 'gegevens over gezondheid' <-> 32024R1689 'niet-persoonsgebonden gegevens' -- UNRELATED_CONCEPTS
+  [815/850] 32022L2555 'ict-product' <-> 32024R1689 'in gebruik stellen' -- UNRELATED_CONCEPTS
+  [816/850] 32022R2554 'ict-risico' <-> 32024R1689 'redelijkerwijs te voorzien misbruik' -- UNRELATED_CONCEPTS
+  [817/850] 32022L2555 'cyberbeveiliging' <-> 32022R2554 'cyberdreiging' -- UNRELATED_CONCEPTS
+  [818/850] 32022R2554 'ict-risico' <-> 32024R1689 'substantiële wijziging' -- UNRELATED_CONCEPTS
+  [819/850] BWBR0052872 'onderzoeksorganisatie' <-> 32024R1689 'plan voor testen onder reële omstandigheden' -- UNRELATED_CONCEPTS
+  [820/850] BWBR0052872 'cyberbeveiliging' <-> 32022L2555 'cyberbeveiliging' -- INSUFFICIENT_EVIDENCE [Low]
+  [821/850] BWBR0052872 'samenwerkingsgroep' <-> BWBR0048156 'aangewezen organisatie' -- UNRELATED_CONCEPTS
+  [822/850] 32022L2555 'overheidsinstantie' <-> 32024R1689 'rechtshandhavingsinstantie' -- CONSISTENT
+  [823/850] 32022L2555 'ict-product' <-> 32024R1689 'profilering' -- UNRELATED_CONCEPTS
+  [824/850] BWBR0052872 'deze wet wordt aangehaald als' <-> 32022L2555 'cyberbeveiliging' -- UNRELATED_CONCEPTS
+  [825/850] 32016R0679 'bindende bedrijfsvoorschriften' <-> 32024R1689 'nationale bevoegde autoriteit' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [826/850] 32022L2555 'aanbieder van beheerde diensten' <-> 32024R1689 'op de markt aanbieden' -- UNRELATED_CONCEPTS
+  [827/850] 32022L2555 'grootschalig cyberbeveiligingsincident' <-> 32022R2554 'betalingsgerelateerd operationeel of beveiligingsincident' -- CONSISTENT
+  [828/850] BWBR0052872 'bevoegde autoriteit' <-> 32024R1689 'nationale bevoegde autoriteit' -- INSUFFICIENT_EVIDENCE [Low]
+  [829/850] BWBR0040940 'verordening' <-> BWBR0051796 'dataverordening' -- UNRELATED_CONCEPTS
+  [830/850] BWBR0048156 'identificatiemiddel' <-> 32016R0679 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [831/850] 32022L2555 'norm' <-> 32024R1689 'gemeenschappelijke specificatie' -- UNRELATED_CONCEPTS (needs_recheck) [Low]
+  [832/850] BWBR0052872 'bevoegde autoriteit' <-> BWBR0051796 'autoriteit persoonsgegevens' -- UNRELATED_CONCEPTS
+  [833/850] BWBR0052872 'onlinezoekmachine' <-> 32022L2555 'onderzoeksorganisatie' -- UNRELATED_CONCEPTS
+  [834/850] BWBR0048156 'elektronische dienstverlening' <-> 32022L2555 'digitale dienst' -- INSUFFICIENT_EVIDENCE [Low]
+  [835/850] 32022L2555 'aanbieder van beheerde beveiligingsdiensten' <-> 32022R2554 'aanbieder van rekeninginformatiediensten' -- UNRELATED_CONCEPTS
+  [836/850] 32022L2555 'onlinemarktplaats' <-> 32024R1689 'in de handel brengen' -- UNRELATED_CONCEPTS
+  [837/850] BWBR0052872 'belangrijke entiteit' <-> 32022R2554 'herverzekeringsonderneming' -- UNRELATED_CONCEPTS
+  [838/850] BWBR0052872 'verlener van vertrouwensdiensten' <-> BWBR0048156 'machtigingsdienst' -- UNRELATED_CONCEPTS
+  [839/850] BWBR0048156 'privaat identificatiemiddel' <-> 32024R1689 'biometrische verificatie' -- UNRELATED_CONCEPTS
+  [840/850] BWBR0052872 'ict-product' <-> 32022L2555 'netwerk- en informatiesysteem' -- UNRELATED_CONCEPTS
+  [841/850] BWBR0052872 'risico' <-> 32024R1689 'risico' -- CONSISTENT
+  [842/850] 32016R0679 'relevant en gemotiveerd bezwaar' <-> 32024R1689 'geïnformeerde toestemming' -- UNRELATED_CONCEPTS
+  [843/850] 32016R0679 'bestand' <-> 32024R1689 'persoonsgegevens' -- UNRELATED_CONCEPTS
+  [844/850] BWBR0052872 'elektronisch communicatienetwerk' <-> 32022L2555 'openbaar elektronischecommunicatienetwerk' -- CONSISTENT
+  [845/850] 32016R0679 'gegevens over gezondheid' <-> 32024R1689 'biometrische gegevens' -- UNRELATED_CONCEPTS
+  [846/850] 32022R2554 'lead overseer' <-> 32024R1689 'aanmeldende autoriteit' -- UNRELATED_CONCEPTS
+  [847/850] BWBR0052872 'register voor topleveldomeinnamen' <-> 32022L2555 'register voor topleveldomeinnamen' -- CONSISTENT
+  [848/850] 32016R0679 'onderneming' <-> 32022R2554 'herverzekeringsonderneming' -- CONSISTENT
+  [849/850] BWBR0052872 'elektronische communicatiedienst' <-> 32022L2555 'elektronischecommunicatiedienst' -- CONSISTENT
+  [850/850] 32022L2555 'vertrouwensdienst' <-> 32022R2554 'ratingbureau' -- UNRELATED_CONCEPTS
+
+109 new definitional_mismatch finding(s) added -> data\findings_c1.json

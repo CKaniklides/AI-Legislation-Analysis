@@ -1,0 +1,171 @@
+{
+ "_meta": {
+  "status": "CANDIDATES ONLY -- not yet a usable held-out set. Every label is a draft; label_status must be set to 'verified' by someone with legal training before any item counts.",
+  "yield": "4 candidates. Authoritative sources checked: the study's full annex (Tables 3-11), EDPB-EDPS Joint Opinions 1/2026 and 2/2026. Nearly everything in those documents either duplicates the dev set or comments on PROPOSED amendments rather than current text, so it was excluded.",
+  "not_available_yet": "EDPB-Commission joint guidelines on GDPR/AI Act interplay (announced, unpublished as of the latest reports found) -- the best future source.",
+  "rules": "Never tune on these. Evaluate once per release; an item that changes the pipeline becomes dev data."
+ },
+ "items": [
+  {
+   "id": "H-001",
+   "source": "Graux, Garstka, Murali, Cave, Botterman, 'Interplay between the AI Act and the EU digital legislative framework', European Parliament (ITRE), PE 778.575, October 2025 -- Annex Table 3 row 6, p. 94; body p. 37",
+   "same_source_as_dev": true,
+   "provisions": {
+    "32024R1689": [
+     "12",
+     "19",
+     "26"
+    ],
+    "32016R0679": [
+     "15",
+     "16",
+     "17",
+     "18",
+     "19",
+     "20",
+     "21",
+     "22"
+    ]
+   },
+   "source_type": "Gap",
+   "quote": "Controllers remain bound to honour requests they cannot technically fulfil, while providers are required to preserve evidence for conformity.",
+   "scope_note": "A 'gap' (no rule reconciles the two) is not a pairwise duty conflict; it could only surface as GOAL_TENSION. Whether gaps are in scope for C1 is a team decision. Note GDPR art. 17(3)(b) (retention for a legal obligation) may itself reconcile erasure and log retention -- for the labeller to judge.",
+   "label_status": "draft_unverified",
+   "verified_by": null,
+   "label": null,
+   "comment": null,
+   "label_options": [
+    "DIRECT_CONFLICT",
+    "PERMISSION_CONFLICT",
+    "DIVERGENT_STANDARD",
+    "GOAL_TENSION",
+    "COMPATIBLE",
+    "UNRELATED",
+    "CANNOT_TELL"
+   ]
+  },
+  {
+   "id": "H-002",
+   "source": "Graux, Garstka, Murali, Cave, Botterman, 'Interplay between the AI Act and the EU digital legislative framework', European Parliament (ITRE), PE 778.575, October 2025 -- Annex Table 3 row 7, p. 94; body pp. 37-38",
+   "same_source_as_dev": true,
+   "provisions": {
+    "32024R1689": [
+     "57",
+     "58",
+     "59"
+    ],
+    "32016R0679": [
+     "6",
+     "9"
+    ]
+   },
+   "source_type": "Gap",
+   "quote": "AI sandboxes permit testing but do not relax GDPR obligations, especially with sensitive data.",
+   "scope_note": "The study's reasoning relies on Recital 140 AI Act (substantial public interest under GDPR 9(2)(g)); recitals are NOT in the corpus, so the pipeline cannot see it.",
+   "label_status": "draft_unverified",
+   "verified_by": null,
+   "label": null,
+   "comment": null,
+   "label_options": [
+    "DIRECT_CONFLICT",
+    "PERMISSION_CONFLICT",
+    "DIVERGENT_STANDARD",
+    "GOAL_TENSION",
+    "COMPATIBLE",
+    "UNRELATED",
+    "CANNOT_TELL"
+   ]
+  },
+  {
+   "id": "H-003",
+   "source": "EDPB-EDPS Joint Opinion 1/2026 on the Digital Omnibus on AI (adopted 20 Jan 2026), footnotes 26-27 and para 27",
+   "same_source_as_dev": false,
+   "provisions": {
+    "32024R1689": [
+     "57"
+    ],
+    "32016R0679": [
+     "58",
+     "83"
+    ]
+   },
+   "source_type": "limit on another law's enforcement power",
+   "quote": "if a national DPA is actively involved in the supervision of the AI system in the sandbox and provided guidance for compliance with respect to the GDPR, no administrative fines can be imposed under the GDPR, pursuant to Article 57(12) AI Act.",
+   "scope_note": "Independent of the dev set (different document, authors, and a description of CURRENT text, not a proposal). A competence-level interaction: an AI Act provision constraining GDPR fining powers.",
+   "label_status": "draft_unverified",
+   "verified_by": null,
+   "label": null,
+   "comment": null,
+   "label_options": [
+    "DIRECT_CONFLICT",
+    "PERMISSION_CONFLICT",
+    "DIVERGENT_STANDARD",
+    "GOAL_TENSION",
+    "COMPATIBLE",
+    "UNRELATED",
+    "CANNOT_TELL"
+   ]
+  },
+  {
+   "id": "H-004",
+   "source": "Graux, Garstka, Murali, Cave, Botterman, 'Interplay between the AI Act and the EU digital legislative framework', European Parliament (ITRE), PE 778.575, October 2025 -- Annex Table 3 row 8, p. 94",
+   "same_source_as_dev": true,
+   "provisions": {
+    "32024R1689": [
+     "64",
+     "65",
+     "66",
+     "67",
+     "68",
+     "69",
+     "70",
+     "74"
+    ],
+    "32016R0679": [
+     "51",
+     "52",
+     "53",
+     "54",
+     "55",
+     "56",
+     "57",
+     "58",
+     "59",
+     "60",
+     "61",
+     "62",
+     "63",
+     "64",
+     "65",
+     "66",
+     "67",
+     "68",
+     "69",
+     "70",
+     "71",
+     "72",
+     "73",
+     "74",
+     "75",
+     "76"
+    ]
+   },
+   "source_type": "Inconsistency",
+   "quote": "GDPR centralises oversight (one-stop-shop, EDPB), AI Act decentralises it (Member State authorities, AI Office), creating a risk of parallel investigations and inconsistent remedies.",
+   "scope_note": "Chapter-level (governance) claim; measure at chapter level, not article-pair level.",
+   "label_status": "draft_unverified",
+   "verified_by": null,
+   "label": null,
+   "comment": null,
+   "label_options": [
+    "DIRECT_CONFLICT",
+    "PERMISSION_CONFLICT",
+    "DIVERGENT_STANDARD",
+    "GOAL_TENSION",
+    "COMPATIBLE",
+    "UNRELATED",
+    "CANNOT_TELL"
+   ]
+  }
+ ]
+}

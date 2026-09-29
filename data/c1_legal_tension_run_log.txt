@@ -1,0 +1,18 @@
+selected 543 pairs: {'S1_non_confident': 300, 'S3_exception_dependent': 243}; luna already cached for 38
+phase 1: luna screen over 543 pairs (38 already cached)
+  [luna 50/543]
+  [luna 100/543]
+  [luna 150/543]
+  [luna 200/543]
+  [luna 250/543]
+  [luna 300/543]
+  [luna 350/543]
+  [luna 400/543]
+  [luna 450/543]
+  [luna 500/543]
+phase 2: terra on 64 luna-flagged + 48 random audit of 479 luna-passed
+  [terra 50/112]
+  [terra 100/112]
+
+audit: terra flagged 0 of 48 pairs luna had PASSED (screen miss rate on this sample: 0/48)
+appended graded findings: {'legal_tension:PERMISSION_CONFLICT': 6, 'missing_context:MISSING_CONTEXT': 6}

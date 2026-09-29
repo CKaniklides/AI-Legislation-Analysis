@@ -1,0 +1,1275 @@
+{
+ "_meta": {
+  "purpose": "Blind expert labelling of pipeline candidate pairs -- estimates how often the graded pass's blind spot hides a real tension, and how often flagged tensions are right.",
+  "instructions": "For each pair choose ONE label from label_options. Judge from the two provision texts (and your legal knowledge) only; you have not been shown any model output. Use CANNOT_TELL freely. 'Tension' classes need a realistic scenario in comment.",
+  "label_options": [
+   "DIRECT_CONFLICT",
+   "PERMISSION_CONFLICT",
+   "DIVERGENT_STANDARD",
+   "GOAL_TENSION",
+   "COMPATIBLE",
+   "UNRELATED",
+   "CANNOT_TELL"
+  ],
+  "strata": {
+   "U_uniform_random": 30,
+   "X_unreviewed_prohibition_cross_instrument": 20
+  },
+  "weighting": "stratum inclusion probabilities are recorded per row; weight by 1/inclusion_probability for population estimates",
+  "hold_out_rule": "never tune on this file",
+  "predictions_sha256": "bd89d305e10df38c8afee2da5c26b0dd58970117d6a0a6469fa735120d79dc55",
+  "predictions_frozen_before_labels": true
+ },
+ "items": [
+  {
+   "sample_id": "S-001",
+   "pair_id": "b5d7ba6a34db",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "95",
+    "paragraph": "2",
+    "heading": "Artikel 95. (besluiten en meldingen op grond van de Wet beveiliging netwerk- en informatiesystemen)",
+    "deontic": "OBLIGATION",
+    "text": "Indien voor de inwerkingtreding van artikel 106 een melding als bedoeld in artikel 10 of 13 van de Wet beveiliging netwerk- en informatiesystemen is gedaan, en artikel 25 met ingang van de dag van de inwerkingtreding van laatstgenoemd artikel van toepassing is op de melder, wordt de op grond van de Wet beveiliging netwerk- en informatiesystemen gedane melding aangemerkt als een vroegtijdige waarschuwing van een significant incident als bedoeld in artikel 26. Indien de melding ziet op een inbreuk op de beveiliging van netwerk- en informatiesystemen die aanzienlijke gevolgen kan hebben voor de continuïteit van de door de melder verleende dienst als bedoeld in artikel 10, eerste lid, onderdeel b, van de Wet beveiliging netwerk- en informatiesystemen, zendt Onze Minister de melding door aan de bevoegde autoriteit."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "19",
+    "paragraph": "7",
+    "heading": "Artikel 19. Rapportage van ernstige ICT-gerelateerde incidenten en vrijwillige melding van significante cyberdreigingen",
+    "deontic": "OBLIGATION",
+    "text": "Na ontvangst van informatie overeenkomstig lid 6 beoordelen de EBA, de ESMA of de Eiopa en de ECB, in overleg met Enisa en in samenwerking met de relevante bevoegde autoriteit, of het ernstige ICT-gerelateerde incident relevant is voor andere bevoegde autoriteiten van andere lidstaten. Na die beoordeling stelt de EBA, de ESMA of de Eiopa de relevante bevoegde autoriteiten van andere lidstaten daarvan zo spoedig mogelijk in kennis. De ECB stelt de leden van het Europees Stelsel van centrale banken in kennis van kwesties die van belang zijn voor het betalingssysteem. Op basis van die kennisgeving nemen de bevoegde autoriteiten, in voorkomend geval, alle nodige maatregelen om de onmiddellijke stabiliteit van het financiële systeem te beschermen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-002",
+   "pair_id": "c8dc84119922",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "58",
+    "paragraph": "1",
+    "heading": "Artikel 58. Bevoegdheden",
+    "deontic": "COMPETENCE",
+    "text": "Elk toezichthoudende autoriteit heeft alle volgende onderzoeksbevoegdheden om:\n\na) de verwerkingsverantwoordelijke, de verwerker en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke of van verwerker te gelasten alle voor de uitvoering van haar taken vereiste informatie te verstrekken;\n\nb) onderzoeken te verrichten in de vorm van gegevensbeschermingscontroles;\n\nc) een toetsing te verrichten van de overeenkomstig artikel 42, lid 7, afgegeven certificeringen;\n\nd) de verwerkingsverantwoordelijke of de verwerker in kennis te stellen van een beweerde inbreuk op deze verordening;\n\ne) van de verwerkingsverantwoordelijke en de verwerker toegang te verkrijgen tot alle persoonsgegevens en alle informatie die noodzakelijk is voor de uitvoering van haar taken; en\n\nf) toegang te verkrijgen tot alle bedrijfsruimten van de verwerkingsverantwoordelijke en de verwerker, daaronder begrepen tot alle uitrustingen en middelen voor gegevensverwerking, in overeenstemming met het uniale of lidstatelijke procesrecht."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "30",
+    "paragraph": "2",
+    "heading": "Artikel 30. Vrijwillige melding van relevante informatie",
+    "deontic": "OBLIGATION",
+    "text": "De lidstaten verwerken de in lid 1 van dit artikel bedoelde meldingen volgens de in artikel 23 vastgestelde procedure. De lidstaten kunnen voorrang geven aan de verwerking van verplichte meldingen boven vrijwillige meldingen.\n\nIndien nodig verstrekken de CSIRT’s en, waar dit van toepassing is, de bevoegde autoriteiten, de centrale contactpunten de informatie over de meldingen die op grond van dit artikel zijn ontvangen, met inachtneming van de vertrouwelijkheid en passende bescherming van de door de meldende entiteit verstrekte informatie. Onverminderd de voorkoming van, het onderzoek naar en de opsporing en de vervolging van strafbare feiten, mag vrijwillige melding er niet toe leiden dat de meldende entiteit bijkomende verplichtingen worden opgelegd waaraan zij niet onderworpen zou zijn geweest indien zij de melding niet had ingediend."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-003",
+   "pair_id": "86acffa138ba",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "21",
+    "paragraph": "3",
+    "heading": "Artikel 21. (zorgplicht)",
+    "deontic": "OBLIGATION",
+    "text": "De maatregelen, bedoeld in het eerste lid, zijn gebaseerd op een benadering die alle gevaren omvat en tot doel heeft netwerk- en informatiesystemen en de fysieke omgeving van die systemen tegen incidenten te beschermen, en omvatten ten minste het volgende:\n\na.\nbeleid inzake risicoanalyse en beveiliging van informatiesystemen;\n\nb.\nincidentenbehandeling;\n\nc.\nbedrijfscontinuïteit, zoals back-upbeheer en herstelplannen, en crisisbeheer;\n\nd.\nde beveiliging van de toeleveringsketen, met inbegrip van beveiligingsgerelateerde aspecten met betrekking tot de relaties tussen de entiteit en haar rechtstreekse leveranciers of dienstverleners;\n\ne.\nbeveiliging bij het verwerven, ontwikkelen en onderhouden van netwerk- en informatiesystemen, met inbegrip van de respons op en bekendmaking van kwetsbaarheden;\n\nf.\nbeleid en procedures om de effectiviteit van maatregelen voor het beheersen van cyberbeveiligingsrisico’s te beoordelen;\n\ng.\nbasispraktijken op het gebied van cyberhygiëne en opleiding op het gebied van cyberbeveiliging;\n\nh.\nbeleid en procedures inzake het gebruik van cryptografie en, in voorkomend geval, encryptie;\n\ni.\nbeveiligingsaspecten ten aanzien van personeel, toegangsbeleid en beheer van assets; en\n\nj.\nwanneer gepast, het gebruik van multifactor-authenticatie- of continue-authenticatieoplossingen, beveiligde spraak-, video- en tekstcommunicatie en beveiligde noodcommunicatiesystemen binnen de entiteit."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0052872",
+    "article": "24",
+    "paragraph": "5",
+    "heading": "Artikel 24. (governance)",
+    "deontic": "OBLIGATION",
+    "text": "Met het oog op het aantonen van de kennis en vaardigheden bezit ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit een certificaat, waaruit de deelname blijkt aan een training die de onderwerpen, bedoeld in het tweede lid, behandelt."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-004",
+   "pair_id": "38ddfca3da36",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "33",
+    "paragraph": "1",
+    "heading": "Artikel 33. Melding van een inbreuk in verband met persoonsgegevens aan de toezichthoudende autoriteit",
+    "deontic": "OBLIGATION",
+    "text": "Indien een inbreuk in verband met persoonsgegevens heeft plaatsgevonden, meldt de verwerkingsverantwoordelijke deze zonder onredelijke vertraging en, indien mogelijk, uiterlijk 72 uur nadat hij er kennis van heeft genomen, aan de overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit, tenzij het niet waarschijnlijk is dat de inbreuk in verband met persoonsgegevens een risico inhoudt voor de rechten en vrijheden van natuurlijke personen. Indien de melding aan de toezichthoudende autoriteit niet binnen 72 uur plaatsvindt, gaat zij vergezeld van een motivering voor de vertraging."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "13",
+    "paragraph": "2",
+    "heading": "Artikel 13. Scholing en ontwikkeling",
+    "deontic": "OBLIGATION",
+    "text": "Financiële entiteiten verrichten ICT-gerelateerde post-incidentevaluaties na verstoringen van hun kernactiviteiten ten gevolge van een ernstig ICT-gerelateerd incident, analyseren daarbij de oorzaken van de verstoring en identificeren de verbeteringen die moeten worden aangebracht in de ICT-activiteiten of in het kader van het ICT-bedrijfscontinuïteitsbeleid als bedoeld in artikel 11.\n\nAndere financiële entiteiten dan micro-ondernemingen delen op verzoek de bevoegde autoriteiten de wijzigingen mee die na de in de eerste alinea bedoelde ICT-gerelateerde post-incidentevaluaties zijn doorgevoerd.\n\nIn de in de eerste alinea bedoelde ICT-gerelateerde post-incidentevaluaties wordt bepaald of de vastgestelde procedures zijn gevolgd en of de genomen maatregelen doeltreffend zijn geweest, onder meer met betrekking tot:\n\na) de snelheid waarmee is gereageerd op veiligheidswaarschuwingen en de effecten en de ernst van ICT-gerelateerde incidenten zijn vastgesteld;\n\nb) de kwaliteit en de snelheid bij het verrichten van een forensische analyse, indien deze passend wordt geacht;\n\nc) de doeltreffendheid van incidentescalatie binnen de financiële entiteit;\n\nd) de doeltreffendheid van interne en externe communicatie."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-005",
+   "pair_id": "dcfb855674e4",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "39",
+    "paragraph": "4",
+    "heading": "Artikel 39. (informatieverstrekking over gemelde significante incidenten, incidenten, bijna-incidenten en cyberdreigingen)",
+    "deontic": "OBLIGATION",
+    "text": "Als uit gegevens die het centrale contactpunt heeft ontvangen van een centraal contactpunt van een andere lidstaat van de Europese Unie blijkt dat een daar gemeld incident, bijna-incident of cyberdreiging gevolgen heeft voor de verlening van de diensten van een essentiële entiteit of belangrijke entiteit in Nederland, stelt het centrale contactpunt het betrokken CSIRT en de betrokken bevoegde autoriteit daarvan op de hoogte."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "23",
+    "paragraph": "8",
+    "heading": "Artikel 23. Rapportageverplichtingen",
+    "deontic": "OBLIGATION",
+    "text": "Op verzoek van het CSIRT of de bevoegde autoriteit stuurt het centrale contactpunt de op grond van lid 1 ontvangen meldingen door naar de centrale contactpunten van de andere betrokken lidstaten."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-006",
+   "pair_id": "711fbafa7ada",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "18",
+    "paragraph": "2",
+    "heading": "Artikel 18. Bijzondere bevoegdheden",
+    "deontic": "OBLIGATION",
+    "text": "Een bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening. Het bestuursorgaan of de aangewezen organisatie verstrekt daarbij alle benodigde informatie."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "30",
+    "paragraph": "5",
+    "heading": "Artikel 30. Register van de verwerkingsactiviteiten",
+    "deontic": "PROHIBITION",
+    "text": "De in de leden 1 en 2 bedoelde verplichtingen zijn niet van toepassing op ondernemingen of organisaties die minder dan 250 personen in dienst hebben, tenzij het waarschijnlijk is dat de verwerking die zij verrichten een risico inhoudt voor de rechten en vrijheden van de betrokkenen, de verwerking niet incidenteel is, of de verwerking bijzondere categorieën van gegevens, als bedoeld in artikel 9, lid 1, of persoonsgegevens in verband met strafrechtelijke veroordelingen en strafbare feiten als bedoeld in artikel 10 betreft."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-007",
+   "pair_id": "78152da84980",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "64",
+    "paragraph": "6",
+    "heading": "Artikel 64. Advies van het Comité",
+    "deontic": "PROHIBITION",
+    "text": "De bevoegde toezichthoudende autoriteit stelt haar in lid 1 bedoelde ontwerpbesluit niet vast binnen de in lid 3 bedoelde termijn."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "54",
+    "paragraph": "1",
+    "heading": "Artikel 54. Bekendmaking van administratieve strafmaatregelen",
+    "deontic": "OBLIGATION",
+    "text": "De bevoegde autoriteiten maken op hun officiële website onverwijld alle niet voor beroep vatbare besluiten tot het nemen van administratieve strafmaatregelen bekend, nadat de natuurlijke of rechtspersoon op wie een dergelijke maatregel van toepassing is, van deze maatregel in kennis is gesteld."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-008",
+   "pair_id": "172f0107b1e3",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "50",
+    "paragraph": "1",
+    "heading": "Artikel 50. (verzoeken om toegang tot gegevens over registratie van domeinnamen)",
+    "deontic": "OBLIGATION",
+    "text": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent, verleent op een rechtmatig en naar behoren gemotiveerd verzoek van een legitieme partij die daar om verzoekt, toegang tot specifieke gegevens over de registratie van domeinnamen."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "44",
+    "paragraph": null,
+    "heading": "Artikel 44. Algemeen beginsel inzake doorgiften",
+    "deontic": "PROHIBITION",
+    "text": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan; dit geldt ook voor verdere doorgiften van persoonsgegevens vanuit het derde land of een internationale organisatie aan een ander derde land of een andere internationale organisatie. Alle bepalingen van dit hoofdstuk worden toegepast opdat het door deze verordening voor natuurlijke personen gewaarborgde beschermingsniveau niet wordt ondermijnd."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-009",
+   "pair_id": "64c66cbe8432",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "58",
+    "paragraph": "3",
+    "heading": "Artikel 58. (samenwerking met toezichthoudende autoriteiten in het kader van inbreuken in verband met persoonsgegevens)",
+    "deontic": "PROHIBITION",
+    "text": "Indien de Autoriteit persoonsgegevens dan wel de bevoegde toezichthoudende autoriteiten, bedoeld in de artikelen 55 en 56 van de Algemene verordening gegevensbescherming een bestuurlijke boete opleggen op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming, legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging als die waarvoor de bestuurlijke boete op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming is opgelegd."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "34",
+    "paragraph": "4",
+    "heading": "Artikel 34. Mededeling van een inbreuk in verband met persoonsgegevens aan de betrokkene",
+    "deontic": "COMPETENCE",
+    "text": "Indien de verwerkingsverantwoordelijke de inbreuk in verband met persoonsgegevens nog niet aan de betrokkene heeft gemeld, kan de toezichthoudende autoriteit, na beraad over de kans dat de inbreuk in verband met persoonsgegevens een hoog risico met zich meebrengt, de verwerkingsverantwoordelijke daartoe verplichten of besluiten dat aan een van de in lid 3 bedoelde voorwaarden is voldaan."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-010",
+   "pair_id": "755ecaa9ba67",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "33",
+    "paragraph": "5",
+    "heading": "Artikel 33. Melding van een inbreuk in verband met persoonsgegevens aan de toezichthoudende autoriteit",
+    "deontic": "OBLIGATION",
+    "text": "De verwerkingsverantwoordelijke documenteert alle inbreuken in verband met persoonsgegevens, met inbegrip van de feiten omtrent de inbreuk in verband met persoonsgegevens, de gevolgen daarvan en de genomen corrigerende maatregelen. Die documentatie stelt de toezichthoudende autoriteit in staat de naleving van dit artikel te controleren."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "73",
+    "paragraph": "4",
+    "heading": "Artikel 73. Melding van ernstige incidenten",
+    "deontic": "OBLIGATION",
+    "text": "Niettegenstaande lid 2 wordt bij overlijden van een persoon de melding gedaan onmiddellijk nadat de aanbieder of de gebruiksverantwoordelijke een oorzakelijk verband heeft vastgesteld, of zodra hij of zij dit vermoedt, tussen het AI-systeem met een hoog risico en het ernstige incident, doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-011",
+   "pair_id": "092d1eb124c0",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32022L2555",
+    "article": "34",
+    "paragraph": "5",
+    "heading": "Artikel 34. Algemene voorwaarden voor het opleggen van administratieve geldboeten aan essentiële en belangrijke entiteiten",
+    "deontic": "OBLIGATION",
+    "text": "De lidstaten zorgen ervoor dat belangrijke entiteiten die inbreuk maken op artikel 21 of 23 overeenkomstig de leden 2 en 3 van dit artikel onderworpen worden aan administratieve geldboeten met een maximumbedrag van ten minste 7 000 000 EUR of ten minste 1,4 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de belangrijke entiteit behoort, afhankelijk van welk bedrag hoger is."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "10",
+    "paragraph": "3",
+    "heading": "Artikel 10. Detectie",
+    "deontic": "OBLIGATION",
+    "text": "Financiële entiteiten zetten voldoende middelen en capaciteiten in om toezicht te houden op activiteiten van gebruikers en het optreden van ICT-anomalieën en ICT-gerelateerde incidenten, met name cyberaanvallen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-012",
+   "pair_id": "d06cc988b2b2",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "15",
+    "paragraph": "6",
+    "heading": "Artikel 15. (aanwijzing en taken bevoegde autoriteit)",
+    "deontic": "COMPETENCE",
+    "text": "De bevoegde autoriteit heeft de volgende taken:\n\na.\nhet zorgen voor de bestuursrechtelijke handhaving van het bepaalde bij of krachtens deze wet ten aanzien van essentiële entiteiten, belangrijke entiteiten, entiteiten die domeinnaamregistratiediensten verlenen en leden van het bestuur van essentiële entiteiten en belangrijke entiteiten;\n\nb.\nhet zorgen voor de bestuursrechtelijke handhaving van het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie; en\n\nc.\nde overige in deze wet genoemde taken van de bevoegde autoriteit."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "50",
+    "paragraph": "2",
+    "heading": "Artikel 50. Administratieve strafmaatregelen en corrigerende maatregelen",
+    "deontic": "COMPETENCE",
+    "text": "De in lid 1 bedoelde bevoegdheden omvatten ten minste de bevoegdheid om:\n\na) toegang te verkrijgen tot documenten en gegevens, in enigerlei vorm, die de bevoegde autoriteit relevant acht voor het verrichten van haar taken, en een kopie hiervan te ontvangen of te maken;\n\nb) inspecties of onderzoeken ter plaatse uit te voeren, met inbegrip van, maar niet beperkt tot:\n\ni) het oproepen van vertegenwoordigers van de financiële entiteit en hen verzoeken om mondelinge of schriftelijke toelichting te geven bij feiten of documenten met betrekking tot het onderwerp en het doel van het onderzoek, en de antwoorden op te tekenen;\n\nii) het horen van alle andere natuurlijke personen of rechtspersonen die daarin toestemmen, teneinde informatie over het onderwerp van een onderzoek te verzamelen;\n\nc) corrigerende maatregelen te eisen voor inbreuken op de voorschriften van deze verordening."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-013",
+   "pair_id": "909480546032",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "58",
+    "paragraph": "1",
+    "heading": "Artikel 58. (samenwerking met toezichthoudende autoriteiten in het kader van inbreuken in verband met persoonsgegevens)",
+    "deontic": "OBLIGATION",
+    "text": "De bevoegde autoriteiten werken samen met de Autoriteit persoonsgegevens bij de behandeling van incidenten die leiden tot inbreuken in verband met persoonsgegevens en wisselen in het kader van die samenwerking alle daarvoor noodzakelijke gegevens uit, waaronder persoonsgegevens."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "11",
+    "paragraph": "3",
+    "heading": "Artikel 11. Eisen, technische capaciteiten en taken van de CSIRT’s",
+    "deontic": "OBLIGATION",
+    "text": "De CSIRT’s hebben de volgende taken:\n\na) het monitoren en analyseren van cyberdreigingen, kwetsbaarheden en incidenten op nationaal niveau, en, op verzoek, het verlenen van bijstand aan betrokken essentiële en belangrijke entiteiten met betrekking tot het realtime of bijna-realtime monitoren van hun netwerk en informatiesystemen;\n\nb) het verstrekken van vroegtijdige waarschuwingen, meldingen en aankondigingen en het verspreiden van informatie onder betrokken essentiële en belangrijke entiteiten en aan de bevoegde autoriteiten en andere relevante belanghebbenden over cyberdreigingen, kwetsbaarheden en incidenten, in bijna-realtime indien mogelijk;\n\nc) het reageren op incidenten en verlenen van bijstand aan de betrokken essentiële en belangrijke entiteiten, indien van toepassing;\n\nd) het verzamelen en analyseren van forensische gegevens en het zorgen voor dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging;\n\ne) op verzoek van een essentiële of belangrijke entiteit: het proactief scannen van de netwerk- en informatiesystemen van de betrokken entiteit om kwetsbaarheden met mogelijk significante gevolgen op te sporen;\n\nf) het deelnemen aan het CSIRT-netwerk en, in overeenstemming met hun capaciteiten en bevoegdheden, het verlenen van wederzijdse bijstand aan andere leden van het netwerk op hun verzoek;\n\ng) indien van toepassing, het optreden als coördinator ten behoeve van het in artikel 12, lid 1 bedoelde proces van gecoördineerde bekendmaking van kwetsbaarheden;\n\nh) het bijdragen aan de uitrol van veilige instrumenten voor het delen van informatie op grond van artikel 10, lid 3.\n\nDe CSIRT’s kunnen overgaan tot het proactief en niet-intrusief scannen van openbaar toegankelijke netwerk- en informatiesystemen van essentiële en belangrijke entiteiten. Een dergelijk scannen wordt uitgevoerd om kwetsbare of onveilig geconfigureerde netwerk- en informatiesystemen op te sporen en de betrokken entiteiten te informeren. Een dergelijk scannen mag geen negatieve gevolgen hebben voor de werking van de diensten van de entiteiten.\n\nBij de uitvoering van de in de eerste alinea bedoelde taken kunnen de CSIRT’s, op grond van een risicogebaseerde benadering, prioriteit geven aan bepaalde taken."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-014",
+   "pair_id": "c3814506e5a7",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0040940",
+    "article": "15",
+    "paragraph": "4",
+    "heading": "Artikel 15. Toezicht op de naleving",
+    "deontic": "PROHIBITION",
+    "text": "Geen beroep is mogelijk op een geheimhoudingsplicht, voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "39",
+    "paragraph": "1",
+    "heading": "Artikel 39. Taken van de functionaris voor gegevensbescherming",
+    "deontic": "OBLIGATION",
+    "text": "De functionaris voor gegevensbescherming vervult ten minste de volgende taken:\n\na) de verwerkingsverantwoordelijke of de verwerker en de werknemers die verwerken, informeren en adviseren over hun verplichtingen uit hoofde van deze verordening en andere Unierechtelijke of lidstaatrechtelijke gegevensbeschermingsbepalingen;\n\nb) toezien op naleving van deze verordening, van andere Unierechtelijke of lidstaatrechtelijke gegevensbeschermingsbepalingen en van het beleid van de verwerkingsverantwoordelijke of de verwerker met betrekking tot de bescherming van persoonsgegevens, met inbegrip van de toewijzing van verantwoordelijkheden, bewustmaking en opleiding van het bij de verwerking betrokken personeel en de betreffende audits;\n\nc) desgevraagd advies verstrekken met betrekking tot de gegevensbeschermingseffect-beoordeling en toezien op de uitvoering daarvan in overeenstemming met artikel 35;\n\nd) met de toezichthoudende autoriteit samenwerken;\n\ne) optreden als contactpunt voor de toezichthoudende autoriteit inzake met verwerking verband houdende aangelegenheden, met inbegrip van de in artikel 36 bedoelde voorafgaande raadpleging, en, waar passend, overleg plegen over enige andere aangelegenheid."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-015",
+   "pair_id": "7a63462a7a67",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "24",
+    "paragraph": "10",
+    "heading": "Artikel 24. (governance)",
+    "deontic": "OBLIGATION",
+    "text": "Indien de essentiële entiteit of belangrijke entiteit een vennootschap onder firma is, is het bepaalde bij of krachtens het eerste tot en met zesde lid van overeenkomstige toepassing op iedere vennoot van die vennootschap onder firma."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0009950",
+    "article": "11a.1",
+    "paragraph": "2",
+    "heading": "Artikel 11a.1",
+    "deontic": "OBLIGATION",
+    "text": "Aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten nemen bij of krachtens algemene maatregel van bestuur vastgestelde technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun netwerken of diensten te beheersen, teneinde de gevolgen van beveiligingsincidenten op de nationale veiligheid of openbare orde te beperken."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-016",
+   "pair_id": "34a5f13dd48f",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "18",
+    "paragraph": "2",
+    "heading": "Artikel 18. Bijzondere bevoegdheden",
+    "deontic": "OBLIGATION",
+    "text": "Een bestuursorgaan of een aangewezen organisatie stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening. Het bestuursorgaan of de aangewezen organisatie verstrekt daarbij alle benodigde informatie."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "16",
+    "paragraph": "1",
+    "heading": "Artikel 16. Vereenvoudigd kader voor ICT-risicobeheer",
+    "deontic": "OBLIGATION",
+    "text": "De artikelen 5 tot en met 15 van deze verordening zijn niet van toepassing op kleine en niet-verweven beleggingsondernemingen, betalingsinstellingen die krachtens Richtlijn (EU) 2015/2366 zijn vrijgesteld; instellingen die krachtens Richtlijn 2013/36/EU zijn vrijgesteld en waarvoor de lidstaten hebben besloten de in artikel 2, lid 4, van deze verordening bedoelde optie niet toe te passen; instellingen voor elektronisch geld die krachtens Richtlijn 2009/110/EG zijn vrijgesteld, en kleine instellingen voor bedrijfspensioenvoorziening.\n\nOnverminderd de eerste alinea moeten de in de eerste alinea vermelde entiteiten:\n\na) een degelijk en gedocumenteerd kader voor ICT-risicobeheer tot stand brengen en handhaven, waarin de mechanismen en maatregelen worden beschreven die gericht zijn op een snel, efficiënt en alomvattend beheer van het ICT-risico, met inbegrip van de bescherming van relevante fysieke componenten en infrastructuur;\n\nb) voortdurend toezicht houden op de beveiliging en werking van alle ICT-systemen;\n\nc) de gevolgen van ICT-risico’s tot een minimum beperken door solide, weerbare en geactualiseerde ICT-systemen, -protocollen en -instrumenten te gebruiken die geschikt zijn voor het ondersteunen van de prestaties van hun activiteiten en de verlening van diensten, en de beschikbaarheid, authenticiteit, integriteit en vertrouwelijkheid van gegevens in de netwerk- en informatiesystemen adequaat beschermen;\n\nd) ervoor zorgen dat bronnen van ICT-risico’s en anomalieën in de netwerk- en informatiesystemen zo spoedig mogelijk worden geïdentificeerd en gedetecteerd en ICT-gerelateerde incidenten snel kunnen worden afgehandeld;\n\ne) de belangrijkste afhankelijkheden ten aanzien van derde aanbieders van ICT-diensten in kaart brengen;\n\nf) de continuïteit van kritieke of belangrijke functies waarborgen door middel van bedrijfscontinuïteitsplannen en respons- en herstelmaatregelen, die ten minste back-up- en herstelmaatregelen omvatten;\n\ng) de in punt f) bedoelde plannen en maatregelen, alsmede de doeltreffendheid van de overeenkomstig de punten a) en c) uitgevoerde controles regelmatig testen;\n\nh) in voorkomend geval de relevante operationele conclusies die voortvloeien uit de in punt g) bedoelde tests en uit de analyse na een incident opnemen in het ICT-risicobeoordelingsproces, en overeenkomstig de behoeften en het ICT-risicoprofiel bewustmakingsprogramma’s op het gebied van ICT-beveiliging en opleiding inzake digitale operationele weerbaarheid voor personeel en leidinggevenden ontwikkelen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-017",
+   "pair_id": "084200f113c1",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "37",
+    "paragraph": "7",
+    "heading": "Artikel 37. Aanwijzing van de functionaris voor gegevensbescherming",
+    "deontic": "OBLIGATION",
+    "text": "De verwerkingsverantwoordelijke of de verwerker maakt de contactgegevens van de functionaris voor gegevensbescherming bekend en deelt die mee aan de toezichthoudende autoriteit."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "42",
+    "paragraph": "6",
+    "heading": "Artikel 42. Certificering",
+    "deontic": "OBLIGATION",
+    "text": "De verwerkingsverantwoordelijke of de verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt, verstrekt aan het in artikel 43 bedoelde certificeringsorgaan, of, waar van toepassing, aan de bevoegde toezichthoudende autoriteit de voor de uitvoering van de certificeringsprocedure noodzakelijke informatie en verleent het orgaan of de autoriteit toegang tot zijn verwerkingsactiviteiten."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-018",
+   "pair_id": "a477c44dbe49",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "27",
+    "paragraph": "2",
+    "heading": "Artikel 27. (melding, update en initiële beoordeling)",
+    "deontic": "OBLIGATION",
+    "text": "In afwijking van het eerste lid dient een essentiële entiteit of belangrijke entiteit die een vertrouwensdienst aanbiedt onverwijld of, indien dat niet mogelijk is, binnen 24 uur nadat zij kennis heeft gekregen van het significante incident een melding van het significante incident in bij haar CSIRT en haar bevoegde autoriteit als dat incident gevolgen heeft voor de verlening van haar vertrouwensdienst."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "23",
+    "paragraph": "4",
+    "heading": "Artikel 23. Rapportageverplichtingen",
+    "deontic": "OBLIGATION",
+    "text": "De lidstaten zorgen ervoor dat de betrokken entiteiten, voor de in lid 1 bedoelde melding, bij het CSIRT of, indien van toepassing, de bevoegde autoriteit:\n\na) onverwijld en in elk geval binnen 24 uur nadat zij kennis hebben gekregen van het significante incident, een vroegtijdige waarschuwing geven, waarin, indien van toepassing, wordt aangegeven of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt, dan wel grensoverschrijdende gevolgen zou kunnen hebben;\n\nb) onverwijld en in elk geval binnen 72 uur nadat zij kennis hebben gekregen van het significante incident, een incidentmelding indienen met, indien van toepassing, een update van de in punt a) bedoelde informatie, een initiële beoordeling van het significante incident, met inbegrip van de ernst en de gevolgen ervan en, indien beschikbaar, de indicatoren voor aantasting;\n\nc) op verzoek van het CSIRT of, indien van toepassing, de bevoegde autoriteit, een tussentijds verslag indienen over relevante updates van de situatie;\n\nd) uiterlijk één maand na de indiening van het in punt b) bedoelde incidentmelding, een eindverslag indienen waarin het volgende is opgenomen:\n\ni) een gedetailleerde beschrijving van het incident, met inbegrip van de ernst en de gevolgen ervan;\n\nii) het soort bedreiging of de grondoorzaak die waarschijnlijk tot het incident heeft geleid;\n\niii) toegepaste en lopende risicobeperkende maatregelen;\n\niv) in voorkomend geval, de grensoverschrijdende gevolgen van het incident;\n\ne) indien het incident nog aan de gang is op het moment dat het in punt d) bedoelde eindverslag wordt ingediend, zorgen de lidstaten ervoor dat de betrokken entiteiten op dat moment een voortgangsverslag indienen en binnen één maand nadat zij het incident hebben afgehandeld, een eindverslag indienen.\n\nIn afwijking van de eerste alinea, punt b), meldt een verlener van vertrouwensdiensten significante incidenten die gevolgen hebben voor de verlening van zijn vertrouwensdiensten onverwijld, en in elk geval binnen 24 uur nadat hij kennis heeft gekregen van het significante incident, bij het CSIRT of, indien van toepassing, de bevoegde autoriteit."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-019",
+   "pair_id": "2a8360cd8f12",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0040940",
+    "article": "15",
+    "paragraph": "4",
+    "heading": "Artikel 15. Toezicht op de naleving",
+    "deontic": "PROHIBITION",
+    "text": "Geen beroep is mogelijk op een geheimhoudingsplicht, voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0048156",
+    "article": "3",
+    "paragraph": "1",
+    "heading": "Artikel 3. Standaarden",
+    "deontic": "OBLIGATION",
+    "text": "De volgende organen passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe, voor zover die standaard ingevolge het derde lid op hen van toepassing is:\n\na.\nbestuursorganen;\n\nb.\norganen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht;\n\nc.\nrechtspersonen met een wettelijke taak als bedoeld in artikel 1.1 van de Comptabiliteitswet 2016."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-020",
+   "pair_id": "d626b7972fd2",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "44",
+    "paragraph": "1",
+    "heading": "Artikel 44. (informatieverstrekking ten behoeve van nationale register)",
+    "deontic": "OBLIGATION",
+    "text": "Een essentiële entiteit, belangrijke entiteit en een entiteit die domeinnaamregistratiediensten verleent verstrekt ten behoeve van de registratie in het nationale register, bedoeld in artikel 43, aan Onze Minister de volgende informatie middels het daarvoor opgezette mechanisme:\n\na.\nde naam van de entiteit;\n\nb.\nhet adres en de actuele contactgegevens van de entiteit, met inbegrip van e-mailadressen, IP-bereiken en telefoonnummers;\n\nc.\nindien van toepassing, de sectoren en subsectoren, bedoeld in bijlage 1 of 2 van deze wet, waartoe de entiteit behoort;\n\nd.\nindien van toepassing, een vermelding van de lidstaten van de Europese Unie waar de entiteit haar diensten als bedoeld in bijlage 1 of bijlage 2 van deze wet verleent;\n\ne.\nindien van toepassing, de deelname aan en terugtrekking uit een informatie-uitwisselingsregeling als bedoeld in artikel 62, tweede lid; en\n\nf.\nindien van toepassing, de andere bij of krachtens algemene maatregel van bestuur genoemde gegevens."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0009950",
+    "article": "11.10a",
+    "paragraph": null,
+    "heading": "Artikel 11.10a",
+    "deontic": "PROHIBITION",
+    "text": "Een faciliteit om het nummer van het netwerkaansluitpunt van waaruit een verbinding tot stand wordt gebracht, dan wel het nummer waarmee een individuele gebruiker van dat netwerkaansluitpunt kan worden geïdentificeerd aan het netwerkaansluitpunt waarmee die verbinding tot stand komt te verstrekken, wordt niet gebruikt om de opgeroepen gebruiker onjuiste informatie te verstrekken met betrekking tot dat netwerkaansluitpunt of die individuele gebruiker."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-021",
+   "pair_id": "6abdb6446618",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "44",
+    "paragraph": null,
+    "heading": "Artikel 44. Algemeen beginsel inzake doorgiften",
+    "deontic": "PROHIBITION",
+    "text": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan; dit geldt ook voor verdere doorgiften van persoonsgegevens vanuit het derde land of een internationale organisatie aan een ander derde land of een andere internationale organisatie. Alle bepalingen van dit hoofdstuk worden toegepast opdat het door deze verordening voor natuurlijke personen gewaarborgde beschermingsniveau niet wordt ondermijnd."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "53",
+    "paragraph": "1",
+    "heading": "Artikel 53. Verplichtingen voor aanbieders van AI-modellen voor algemene doeleinden",
+    "deontic": "OBLIGATION",
+    "text": "Aanbieders van AI-modellen voor algemene doeleinden moeten:\n\na) de technische documentatie van het model opstellen en up-to-date houden, inclusief het trainings- en testproces en de resultaten van de evaluatie ervan, die ten minste de in bijlage XI vermelde informatie moet bevatten, zodat deze op verzoek aan het AI-bureau en de nationale bevoegde autoriteiten kunnen worden verstrekt;\n\nb) informatie en documentatie opstellen, up-to-date houden en beschikbaar stellen voor aanbieders van AI-systemen die het AI-model voor algemene doeleinden in hun AI-systemen willen integreren. Onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen overeenkomstig het Unierecht en het nationale recht te eerbiedigen en te beschermen, moet de informatie en documentatie:\n\ni) aanbieders van AI-systemen inzicht geven in de capaciteiten en beperkingen van het AI-model voor algemene doeleinden en ze in staat te stellen aan hun verplichtingen uit hoofde van deze verordening te voldoen, en\n\nii) ten minste de in bijlage XII uiteengezette elementen bevatten;\n\nc) beleid opstellen ter naleving van het Unierecht inzake auteursrechten en naburige rechten en dan met name ter vaststelling en naleving, onder meer door middel van geavanceerde technologieën, van een op grond van artikel 4, lid 3, van Richtlijn (EU) 2019/790 tot uitdrukking gebracht voorbehoud van rechten.\n\nd) een voldoende gedetailleerde samenvatting opstellen en openbaar maken over de voor het trainen van het AI-model voor algemene doeleinden gebruikte content, volgens een door het AI-bureau verstrekt sjabloon."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-022",
+   "pair_id": "b64431991dfd",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "12",
+    "paragraph": "1",
+    "heading": "Artikel 12. Aanwijzing van attributen",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister kan een attribuut aanwijzen dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen als bedoeld in artikel 15, eerste lid, ten behoeve van bepaalde elektronische dienstverlening op het niveau substantieel of hoog en daartoe door de op grond van artikel 11 erkende diensten moeten worden gehanteerd."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0048156",
+    "article": "18",
+    "paragraph": "4",
+    "heading": "Artikel 18. Bijzondere bevoegdheden",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister kan de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel onderbreken of doen onderbreken bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-023",
+   "pair_id": "bbaf7fb0647b",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "33",
+    "paragraph": "1",
+    "heading": "Artikel 33. Melding van een inbreuk in verband met persoonsgegevens aan de toezichthoudende autoriteit",
+    "deontic": "OBLIGATION",
+    "text": "Indien een inbreuk in verband met persoonsgegevens heeft plaatsgevonden, meldt de verwerkingsverantwoordelijke deze zonder onredelijke vertraging en, indien mogelijk, uiterlijk 72 uur nadat hij er kennis van heeft genomen, aan de overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit, tenzij het niet waarschijnlijk is dat de inbreuk in verband met persoonsgegevens een risico inhoudt voor de rechten en vrijheden van natuurlijke personen. Indien de melding aan de toezichthoudende autoriteit niet binnen 72 uur plaatsvindt, gaat zij vergezeld van een motivering voor de vertraging."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "73",
+    "paragraph": "1",
+    "heading": "Artikel 73. Melding van ernstige incidenten",
+    "deontic": "OBLIGATION",
+    "text": "Aanbieders van in de Unie in de handel gebrachte AI-systemen met een hoog risico melden ernstige incidenten bij de markttoezichtautoriteiten van de lidstaten waarin dat incident heeft plaatsgevonden."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-024",
+   "pair_id": "d0c4569ae8fb",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32022L2555",
+    "article": "21",
+    "paragraph": "5",
+    "heading": "Artikel 21. Maatregelen voor het beheer van cyberbeveiligingsrisico’s",
+    "deontic": "OBLIGATION",
+    "text": "Uiterlijk op 17 oktober 2024 stelt de Commissie uitvoeringshandelingen vast met de technische en methodologische vereisten van de in lid 2 bedoelde maatregelen met betrekking tot DNS-dienstverleners, registers voor topleveldomeinnamen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, aanbieders van onlinemarktplaatsen, van onlinezoekmachines en van platforms voor socialenetwerkdiensten en aanbieders van vertrouwensdiensten.\n\nDe Commissie kan uitvoeringshandelingen vaststellen met de technische en methodologische vereisten en, zo nodig, de sectorale vereisten voor de in lid 2 bedoelde maatregelen met betrekking tot andere dan de in de eerste alinea van dit lid bedoelde essentiële en belangrijke entiteiten.\n\nBij de voorbereiding van de in de eerste en de tweede alinea van dit lid bedoelde uitvoeringshandelingen volgt de Commissie zoveel mogelijk de Europese en internationale normen en de relevante technische specificaties. De Commissie wisselt advies uit en werkt samen met de samenwerkingsgroep en Enisa rond de ontwerpuitvoeringshandelingen overeenkomstig artikel 14, lid 4, punt e).\n\nDie uitvoeringshandelingen worden vastgesteld overeenkomstig de in artikel 39, lid 2, bedoelde onderzoeksprocedure."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "27",
+    "paragraph": "1",
+    "heading": "Artikel 27. Register van entiteiten",
+    "deontic": "OBLIGATION",
+    "text": "Enisa creëert en onderhoudt een register van DNS-dienstverleners, registers voor topleveldomeinnamen, entiteiten die domeinnaamregistratiediensten verlenen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, alsmede aanbieders van onlinemarktplaatsen, van onlinezoekmachines en van platforms voor socialenetwerkdiensten, op basis van de informatie die is ontvangen van de centrale contactpunten in overeenstemming met lid 4. Op verzoek geeft Enisa bevoegde autoriteiten toegang tot dat register, waarbij zij er zo nodig voor zorgt dat de vertrouwelijkheid van de informatie wordt beschermd."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-025",
+   "pair_id": "6500f646733d",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "58",
+    "paragraph": "3",
+    "heading": "Artikel 58. (samenwerking met toezichthoudende autoriteiten in het kader van inbreuken in verband met persoonsgegevens)",
+    "deontic": "PROHIBITION",
+    "text": "Indien de Autoriteit persoonsgegevens dan wel de bevoegde toezichthoudende autoriteiten, bedoeld in de artikelen 55 en 56 van de Algemene verordening gegevensbescherming een bestuurlijke boete opleggen op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming, legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging als die waarvoor de bestuurlijke boete op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming is opgelegd."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "11",
+    "paragraph": "3",
+    "heading": "Artikel 11. Eisen, technische capaciteiten en taken van de CSIRT’s",
+    "deontic": "OBLIGATION",
+    "text": "De CSIRT’s hebben de volgende taken:\n\na) het monitoren en analyseren van cyberdreigingen, kwetsbaarheden en incidenten op nationaal niveau, en, op verzoek, het verlenen van bijstand aan betrokken essentiële en belangrijke entiteiten met betrekking tot het realtime of bijna-realtime monitoren van hun netwerk en informatiesystemen;\n\nb) het verstrekken van vroegtijdige waarschuwingen, meldingen en aankondigingen en het verspreiden van informatie onder betrokken essentiële en belangrijke entiteiten en aan de bevoegde autoriteiten en andere relevante belanghebbenden over cyberdreigingen, kwetsbaarheden en incidenten, in bijna-realtime indien mogelijk;\n\nc) het reageren op incidenten en verlenen van bijstand aan de betrokken essentiële en belangrijke entiteiten, indien van toepassing;\n\nd) het verzamelen en analyseren van forensische gegevens en het zorgen voor dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging;\n\ne) op verzoek van een essentiële of belangrijke entiteit: het proactief scannen van de netwerk- en informatiesystemen van de betrokken entiteit om kwetsbaarheden met mogelijk significante gevolgen op te sporen;\n\nf) het deelnemen aan het CSIRT-netwerk en, in overeenstemming met hun capaciteiten en bevoegdheden, het verlenen van wederzijdse bijstand aan andere leden van het netwerk op hun verzoek;\n\ng) indien van toepassing, het optreden als coördinator ten behoeve van het in artikel 12, lid 1 bedoelde proces van gecoördineerde bekendmaking van kwetsbaarheden;\n\nh) het bijdragen aan de uitrol van veilige instrumenten voor het delen van informatie op grond van artikel 10, lid 3.\n\nDe CSIRT’s kunnen overgaan tot het proactief en niet-intrusief scannen van openbaar toegankelijke netwerk- en informatiesystemen van essentiële en belangrijke entiteiten. Een dergelijk scannen wordt uitgevoerd om kwetsbare of onveilig geconfigureerde netwerk- en informatiesystemen op te sporen en de betrokken entiteiten te informeren. Een dergelijk scannen mag geen negatieve gevolgen hebben voor de werking van de diensten van de entiteiten.\n\nBij de uitvoering van de in de eerste alinea bedoelde taken kunnen de CSIRT’s, op grond van een risicogebaseerde benadering, prioriteit geven aan bepaalde taken."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-026",
+   "pair_id": "19a6f84e0c04",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0040940",
+    "article": "21a",
+    "paragraph": "4",
+    "heading": "Artikel 21a",
+    "deontic": "COMPETENCE",
+    "text": "De Autoriteit persoonsgegevens kan in geval van een overtreding van de krachtens artikel 3.17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen aan de overtreder een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, indien dit meer is, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar. Artikel 83, tweede en derde lid, van de verordening is van overeenkomstige toepassing."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0040940",
+    "article": "21a",
+    "paragraph": "1",
+    "heading": "Artikel 21a",
+    "deontic": "COMPETENCE",
+    "text": "De taak van de Autoriteit persoonsgegevens, bedoeld in artikel 6, derde lid, omvat mede het toezicht op de naleving van de krachtens artikel 3:17, zevende lid, van de Wet op het financieel toezicht gestelde verplichtingen met betrekking tot de toegang van betaaldienstverleners tot de persoonsgegevens van betaaldienstgebruikers."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-027",
+   "pair_id": "eef5e6ce5e60",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32022L2555",
+    "article": "14",
+    "paragraph": "4",
+    "heading": "Artikel 14. Samenwerkingsgroep",
+    "deontic": "COMPETENCE",
+    "text": "De samenwerkingsgroep heeft de volgende taken:\n\na) het verstrekken van richtsnoeren aan de bevoegde autoriteiten met betrekking tot de omzetting en uitvoering van deze richtlijn;\n\nb) het verstrekken van richtsnoeren aan de bevoegde autoriteiten met betrekking tot de ontwikkeling en uitvoering van het beleid inzake gecoördineerde bekendmaking van kwetsbaarheden, als bedoeld in artikel 7, lid 2, punt c);\n\nc) het uitwisselen van beste praktijken en informatie met betrekking tot de uitvoering van deze richtlijn, onder meer inzake cyberdreigingen, incidenten, kwetsbaarheden, bijna-incidenten, bewustmakingsinitiatieven, opleidingen, oefeningen en vaardigheden, capaciteitsopbouw, normen en technische specificaties, alsook inzake het als dusdanig aanmerken van essentiële en belangrijke entiteiten op grond van artikel 2, lid 2, punten b) tot en met e);\n\nd) het uitwisselen van advies en samenwerken met de Commissie rondom opkomende beleidsinitiatieven op het gebied van cyberbeveiliging en rondom de algehele samenhang van sectorspecifieke cyberbeveiligingseisen;\n\ne) het uitwisselen van advies en samenwerken met de Commissie rondom ontwerpen van uitvoeringshandelingen of gedelegeerde handelingen die op grond van deze richtlijn worden vastgesteld;\n\nf) het uitwisselen van beste praktijken en informatie met de betrokken instellingen, organen en instanties van de Unie;\n\ng) het van gedachten wisselen over de uitvoering van sectorspecifieke rechtshandelingen van de Unie die bepalingen inzake cyberbeveiliging bevatten;\n\nh) indien van toepassing, het bespreken van de verslagen van de in artikel 19, lid 9, bedoelde collegiale toetsing en het opstellen van conclusies en aanbevelingen;\n\ni) het uitvoeren van gecoördineerde veiligheidsrisicobeoordelingen van kritieke toeleveringsketens overeenkomstig artikel 22, lid 1;\n\nj) het bespreken van gevallen van wederzijdse bijstand, met inbegrip van ervaringen en resultaten van grensoverschrijdende gezamenlijke toezichtsacties als bedoeld in artikel 37;\n\nk) op verzoek van een of meer betrokken lidstaten, het bespreken van specifieke verzoeken om wederzijdse bijstand als bedoeld in artikel 37;\n\nl) het verstrekken van strategische richtsnoeren over specifieke opkomende kwesties aan het CSIRT-netwerk en EU-CyCLONe;\n\nm) het van gedachten wisselen over het beleid inzake de follow-up die wordt gegeven aan grootschalige cyberbeveiligingsincidenten en crises, op basis van de uit het CSIRT-netwerk en EU-CyCLONe getrokken lessen;\n\nn) het bijdragen tot de cyberbeveiligingscapaciteiten in de hele Unie door de uitwisseling van nationale ambtenaren te vergemakkelijken via een programma voor capaciteitsopbouw waarbij personeel van de bevoegde autoriteiten of van de CSIRT’s betrokken is;\n\no) het organiseren van regelmatige en gezamenlijke bijeenkomsten met relevante particuliere belanghebbenden uit de hele Unie om de activiteiten van de samenwerkingsgroep te bespreken en input te verzamelen over nieuwe beleidsuitdagingen;\n\np) het bespreken van de werkzaamheden in verband met cyberbeveiligingsoefeningen, met inbegrip van het werk van Enisa;\n\nq) het vaststellen van de methodologie en organisatorische aspecten van de in artikel 19, lid 1, bedoelde collegiale toetsingen, alsook het vastleggen van de zelfevaluatiemethode voor lidstaten overeenkomstig artikel 19, lid 5, met bijstand van de Commissie en Enisa, en, in samenwerking met de Commissie en Enisa, het ontwikkelen van gedragscodes ter onderbouwing van de werkmethoden van aangewezen cyberbeveiligingsdeskundigen overeenkomstig artikel 19, lid 6;\n\nr) het opstellen van verslagen over de ervaringen die zijn opgedaan op strategisch niveau en bij collegiale toetsingen, met het oog op de in artikel 40 bedoelde evaluatie;\n\ns) het regelmatig beoordelen van de stand van zaken met betrekking tot cyberdreigingen of -incidenten, zoals gijzelsoftware.\n\nDe samenwerkingsgroep dient de in de eerste alinea, punt r), bedoelde verslagen in bij de Commissie, het Europees Parlement en de Raad."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "14",
+    "paragraph": "4",
+    "heading": "Artikel 14. Samenwerkingsgroep",
+    "deontic": "OBLIGATION",
+    "text": "De samenwerkingsgroep heeft de volgende taken:\n\na) het verstrekken van richtsnoeren aan de bevoegde autoriteiten met betrekking tot de omzetting en uitvoering van deze richtlijn;\n\nb) het verstrekken van richtsnoeren aan de bevoegde autoriteiten met betrekking tot de ontwikkeling en uitvoering van het beleid inzake gecoördineerde bekendmaking van kwetsbaarheden, als bedoeld in artikel 7, lid 2, punt c);\n\nc) het uitwisselen van beste praktijken en informatie met betrekking tot de uitvoering van deze richtlijn, onder meer inzake cyberdreigingen, incidenten, kwetsbaarheden, bijna-incidenten, bewustmakingsinitiatieven, opleidingen, oefeningen en vaardigheden, capaciteitsopbouw, normen en technische specificaties, alsook inzake het als dusdanig aanmerken van essentiële en belangrijke entiteiten op grond van artikel 2, lid 2, punten b) tot en met e);\n\nd) het uitwisselen van advies en samenwerken met de Commissie rondom opkomende beleidsinitiatieven op het gebied van cyberbeveiliging en rondom de algehele samenhang van sectorspecifieke cyberbeveiligingseisen;\n\ne) het uitwisselen van advies en samenwerken met de Commissie rondom ontwerpen van uitvoeringshandelingen of gedelegeerde handelingen die op grond van deze richtlijn worden vastgesteld;\n\nf) het uitwisselen van beste praktijken en informatie met de betrokken instellingen, organen en instanties van de Unie;\n\ng) het van gedachten wisselen over de uitvoering van sectorspecifieke rechtshandelingen van de Unie die bepalingen inzake cyberbeveiliging bevatten;\n\nh) indien van toepassing, het bespreken van de verslagen van de in artikel 19, lid 9, bedoelde collegiale toetsing en het opstellen van conclusies en aanbevelingen;\n\ni) het uitvoeren van gecoördineerde veiligheidsrisicobeoordelingen van kritieke toeleveringsketens overeenkomstig artikel 22, lid 1;\n\nj) het bespreken van gevallen van wederzijdse bijstand, met inbegrip van ervaringen en resultaten van grensoverschrijdende gezamenlijke toezichtsacties als bedoeld in artikel 37;\n\nk) op verzoek van een of meer betrokken lidstaten, het bespreken van specifieke verzoeken om wederzijdse bijstand als bedoeld in artikel 37;\n\nl) het verstrekken van strategische richtsnoeren over specifieke opkomende kwesties aan het CSIRT-netwerk en EU-CyCLONe;\n\nm) het van gedachten wisselen over het beleid inzake de follow-up die wordt gegeven aan grootschalige cyberbeveiligingsincidenten en crises, op basis van de uit het CSIRT-netwerk en EU-CyCLONe getrokken lessen;\n\nn) het bijdragen tot de cyberbeveiligingscapaciteiten in de hele Unie door de uitwisseling van nationale ambtenaren te vergemakkelijken via een programma voor capaciteitsopbouw waarbij personeel van de bevoegde autoriteiten of van de CSIRT’s betrokken is;\n\no) het organiseren van regelmatige en gezamenlijke bijeenkomsten met relevante particuliere belanghebbenden uit de hele Unie om de activiteiten van de samenwerkingsgroep te bespreken en input te verzamelen over nieuwe beleidsuitdagingen;\n\np) het bespreken van de werkzaamheden in verband met cyberbeveiligingsoefeningen, met inbegrip van het werk van Enisa;\n\nq) het vaststellen van de methodologie en organisatorische aspecten van de in artikel 19, lid 1, bedoelde collegiale toetsingen, alsook het vastleggen van de zelfevaluatiemethode voor lidstaten overeenkomstig artikel 19, lid 5, met bijstand van de Commissie en Enisa, en, in samenwerking met de Commissie en Enisa, het ontwikkelen van gedragscodes ter onderbouwing van de werkmethoden van aangewezen cyberbeveiligingsdeskundigen overeenkomstig artikel 19, lid 6;\n\nr) het opstellen van verslagen over de ervaringen die zijn opgedaan op strategisch niveau en bij collegiale toetsingen, met het oog op de in artikel 40 bedoelde evaluatie;\n\ns) het regelmatig beoordelen van de stand van zaken met betrekking tot cyberdreigingen of -incidenten, zoals gijzelsoftware.\n\nDe samenwerkingsgroep dient de in de eerste alinea, punt r), bedoelde verslagen in bij de Commissie, het Europees Parlement en de Raad."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-028",
+   "pair_id": "595b88b785cd",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0009950",
+    "article": "11a.1",
+    "paragraph": "6",
+    "heading": "Artikel 11a.1",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister kan een aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten de verplichting opleggen om binnen een bepaalde termijn een beveiligingscontrole te laten uitvoeren door een gekwalificeerde onafhankelijke deskundige en om de resultaten van dat onderzoek binnen een bij het besluit gestelde redelijke termijn aan Onze Minister te verstrekken. De aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten draagt de kosten van deze controle."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "9",
+    "paragraph": "3",
+    "heading": "Artikel 9. Bescherming en voorkoming",
+    "deontic": "OBLIGATION",
+    "text": "Om de in lid 2 bedoelde doelstellingen te verwezenlijken, maken financiële entiteiten gebruik van ICT-technologieën en -processen die geschikt zijn overeenkomstig artikel 4. Die ICT-oplossingen en -processen:\n\na) waarborgen de beveiliging van de middelen voor overdracht van gegevens;\n\nb) beperken het risico op aantasting of verlies van gegevens, ongeoorloofde toegang en technische gebreken die de bedrijfsactiviteit kunnen belemmeren;\n\nc) voorkomen een gebrek aan beschikbaarheid, de aantasting van de authenticiteit en integriteit, de inbreuken op de vertrouwelijkheid en het verlies van gegevens;\n\nd) zorgen ervoor dat gegevens worden beschermd tegen risico’s bij het gegevensbeheer, met inbegrip van slecht bestuur, risico’s bij de verwerking en menselijke fouten."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-029",
+   "pair_id": "0926c2ce86a4",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32022L2555",
+    "article": "21",
+    "paragraph": "5",
+    "heading": "Artikel 21. Maatregelen voor het beheer van cyberbeveiligingsrisico’s",
+    "deontic": "OBLIGATION",
+    "text": "Uiterlijk op 17 oktober 2024 stelt de Commissie uitvoeringshandelingen vast met de technische en methodologische vereisten van de in lid 2 bedoelde maatregelen met betrekking tot DNS-dienstverleners, registers voor topleveldomeinnamen, aanbieders van cloudcomputingdiensten, aanbieders van datacentra, aanbieders van netwerken voor de levering van inhoud, aanbieders van beheerde diensten, aanbieders van beheerde beveiligingsdiensten, aanbieders van onlinemarktplaatsen, van onlinezoekmachines en van platforms voor socialenetwerkdiensten en aanbieders van vertrouwensdiensten.\n\nDe Commissie kan uitvoeringshandelingen vaststellen met de technische en methodologische vereisten en, zo nodig, de sectorale vereisten voor de in lid 2 bedoelde maatregelen met betrekking tot andere dan de in de eerste alinea van dit lid bedoelde essentiële en belangrijke entiteiten.\n\nBij de voorbereiding van de in de eerste en de tweede alinea van dit lid bedoelde uitvoeringshandelingen volgt de Commissie zoveel mogelijk de Europese en internationale normen en de relevante technische specificaties. De Commissie wisselt advies uit en werkt samen met de samenwerkingsgroep en Enisa rond de ontwerpuitvoeringshandelingen overeenkomstig artikel 14, lid 4, punt e).\n\nDie uitvoeringshandelingen worden vastgesteld overeenkomstig de in artikel 39, lid 2, bedoelde onderzoeksprocedure."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "41",
+    "paragraph": "1",
+    "heading": "Artikel 41. Gemeenschappelijke specificaties",
+    "deontic": "COMPETENCE",
+    "text": "De Commissie kan uitvoeringshandelingen vaststellen tot vaststelling van gemeenschappelijke specificaties voor de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, indien aan de volgende voorwaarden is voldaan:\n\na) de Commissie heeft op grond van artikel 10, lid 1, van Verordening (EU) nr. 1025/2012 een of meer Europese normalisatieorganisaties verzocht een geharmoniseerde norm op te stellen voor de in afdeling 2 van dit hoofdstuk beschreven eisen, of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, en:\n\ni) het verzoek is door geen enkele van de Europese normalisatieorganisaties aanvaard, of\n\nii) de geharmoniseerde normen waarop dat verzoek betrekking heeft, worden niet binnen de overeenkomstig artikel 10, lid 1, van Verordening (EU) nr. 1025/2012 vastgestelde termijn geleverd, of\n\niii) in de relevante geharmoniseerde normen wordt onvoldoende rekening gehouden met problemen op het gebied van de grondrechten, of\n\niv) de geharmoniseerde normen voldoen niet aan het verzoek, en\n\nb) er is geen referentie van geharmoniseerde normen overeenkomstig Verordening (EU) nr. 1025/2012 bekendgemaakt in het Publicatieblad van de Europese Unie voor de eisen van afdeling 2 van dit hoofdstuk of, in voorkomend geval, voor de verplichtingen van hoofdstuk V, afdelingen 2 en 3, en een dergelijke referentie zal naar verwachting niet binnen een redelijke termijn worden bekendgemaakt.\n\nBij het opstellen van de gemeenschappelijke specificaties raadpleegt de Commissie het in artikel 67 bedoelde adviesforum.\n\nDe in de eerste alinea van dit lid bedoelde uitvoeringshandelingen worden vastgesteld volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-030",
+   "pair_id": "455740878868",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "52",
+    "paragraph": "6",
+    "heading": "Artikel 52. Onafhankelijkheid",
+    "deontic": "OBLIGATION",
+    "text": "Elke lidstaat zorgt ervoor dat op elke toezichthoudende autoriteit financieel toezicht wordt uitgeoefend zonder dat daarbij de onafhankelijkheid van de toezichthoudende autoriteit in het gedrang komt en dat het een afzonderlijke, publieke jaarbegroting heeft, die een onderdeel kan zijn van de algehele staats- of nationale begroting."
+   },
+   "provision_b": {
+    "instrument_id": "32022L2555",
+    "article": "8",
+    "paragraph": "5",
+    "heading": "Artikel 8. Bevoegde autoriteiten en centrale contactpunten",
+    "deontic": "OBLIGATION",
+    "text": "De lidstaten zorgen ervoor dat hun bevoegde autoriteiten en centrale contactpunten over voldoende middelen beschikken om de hun toegewezen taken doeltreffend en efficiënt uit te voeren en aldus de doelstellingen van deze richtlijn te verwezenlijken."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-031",
+   "pair_id": "4fa4335a1e98",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "13",
+    "paragraph": "3",
+    "heading": "Artikel 13. Rechten en plichten voor erkende diensten",
+    "deontic": "OBLIGATION",
+    "text": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is. Voor hun diensten brengen zij geen kosten bij de erkende ontsluitende dienst in rekening."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "10",
+    "paragraph": "5",
+    "heading": "Artikel 10. Data en datagovernance",
+    "deontic": "PROHIBITION",
+    "text": "Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:\n\na) de opsporing en correctie van vooringenomenheid kunnen niet doeltreffend worden vervuld door het verwerken van andere data, waaronder synthetische of geanonimiseerde data;\n\nb) de bijzondere categorieën persoonsgegevens zijn onderworpen aan technische beperkingen voor het hergebruik van persoonsgegevens, en geavanceerde beveiligings- en privacybeschermingsmaatregelen, waaronder pseudonimisering;\n\nc) de bijzondere categorieën persoonsgegevens zijn onderworpen aan maatregelen om ervoor te zorgen dat de verwerkte persoonsgegevens worden beveiligd, beschermd met passende waarborgen, waaronder strikte controles en documentatie van de toegang ertoe, om misbruik te voorkomen en ervoor te zorgen dat alleen personen die gemachtigd zijn toegang tot die persoonsgegevens hebben met passende vertrouwelijkheidsverplichtingen;\n\nd) de bijzondere categorieën persoonsgegevens worden niet verzonden, doorgegeven of anderszins geraadpleegd door andere partijen;\n\ne) de bijzondere categorieën persoonsgegevens worden verwijderd zodra de vertekening is gecorrigeerd of de periode van bewaring van de persoonsgegevens ten einde is gekomen, indien dit eerder is;\n\nf) het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten bevat de redenen waarom de verwerking van bijzondere categorieën persoonsgegevens strikt noodzakelijk was om vertekeningen op te sporen en waarom die doelstelling niet kon worden bereikt door de verwerking van andere data."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-032",
+   "pair_id": "efc53efba8fc",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "34",
+    "paragraph": "3",
+    "heading": "Artikel 34. Mededeling van een inbreuk in verband met persoonsgegevens aan de betrokkene",
+    "deontic": "PROHIBITION",
+    "text": "De in lid 1 bedoelde mededeling aan de betrokkene is niet vereist wanneer een van de volgende voorwaarden is vervuld:\n\na) de verwerkingsverantwoordelijke heeft passende technische en organisatorische beschermingsmaatregelen genomen en deze maatregelen zijn toegepast op de persoonsgegevens waarop de inbreuk in verband met persoonsgegevens betrekking heeft, met name die welke de persoonsgegevens onbegrijpelijk maken voor onbevoegden, zoals versleuteling;\n\nb) de verwerkingsverantwoordelijke heeft achteraf maatregelen genomen om ervoor te zorgen dat het in lid 1 bedoelde hoge risico voor de rechten en vrijheden van betrokkenen zich waarschijnlijk niet meer zal voordoen;\n\nc) de mededeling zou onevenredige inspanningen vergen. In dat geval komt er in de plaats daarvan een openbare mededeling of een soortgelijke maatregel waarbij betrokkenen even doeltreffend worden geïnformeerd."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "73",
+    "paragraph": "4",
+    "heading": "Artikel 73. Melding van ernstige incidenten",
+    "deontic": "OBLIGATION",
+    "text": "Niettegenstaande lid 2 wordt bij overlijden van een persoon de melding gedaan onmiddellijk nadat de aanbieder of de gebruiksverantwoordelijke een oorzakelijk verband heeft vastgesteld, of zodra hij of zij dit vermoedt, tussen het AI-systeem met een hoog risico en het ernstige incident, doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-033",
+   "pair_id": "57fc38551104",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "58",
+    "paragraph": "3",
+    "heading": "Artikel 58. (samenwerking met toezichthoudende autoriteiten in het kader van inbreuken in verband met persoonsgegevens)",
+    "deontic": "PROHIBITION",
+    "text": "Indien de Autoriteit persoonsgegevens dan wel de bevoegde toezichthoudende autoriteiten, bedoeld in de artikelen 55 en 56 van de Algemene verordening gegevensbescherming een bestuurlijke boete opleggen op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming, legt de bevoegde autoriteit geen bestuurlijke boete op op grond van de artikelen 80 en 87 voor een inbreuk als bedoeld in het tweede lid die voortvloeit uit dezelfde gedraging als die waarvoor de bestuurlijke boete op grond van artikel 58, tweede lid, onderdeel i, van de Algemene verordening gegevensbescherming is opgelegd."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "37",
+    "paragraph": "2",
+    "heading": "Artikel 37. Betwisting van de bekwaamheid van aangemelde instanties",
+    "deontic": "OBLIGATION",
+    "text": "De aanmeldende autoriteit verstrekt de Commissie op verzoek alle relevante informatie over de aanmelding of het op peil houden van de bekwaamheid van de betrokken aangemelde instantie."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-034",
+   "pair_id": "e9a828f43001",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0009950",
+    "article": "11.3a",
+    "paragraph": "5",
+    "heading": "Artikel 11.3a",
+    "deontic": "PROHIBITION",
+    "text": "De kennisgeving, bedoeld in het tweede lid, is niet vereist indien de aanbieder naar het oordeel van de Autoriteit persoonsgegevens gepaste technische beschermingsmaatregelen heeft genomen waardoor de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "82",
+    "paragraph": "2",
+    "heading": "Artikel 82. Recht op schadevergoeding en aansprakelijkheid",
+    "deontic": "OBLIGATION",
+    "text": "Elke verwerkingsverantwoordelijke die bij verwerking is betrokken, is aansprakelijk voor de schade die wordt veroorzaakt door verwerking die inbreuk maakt op deze verordening. Een verwerker is slechts aansprakelijk voor de schade die door verwerking is veroorzaakt wanneer bij de verwerking niet is voldaan aan de specifiek tot verwerkers gerichte verplichtingen van deze verordening of buiten dan wel in strijd met de rechtmatige instructies van de verwerkingsverantwoordelijke is gehandeld."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-035",
+   "pair_id": "4a21495ba917",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "8",
+    "paragraph": "1",
+    "heading": "Artikel 8. Gebruik in publieke domein",
+    "deontic": "PROHIBITION",
+    "text": "Een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, worden uitsluitend gebruikt voor de toegang tot elektronische dienstverlening door bestuursorganen en aangewezen organisaties."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "11",
+    "paragraph": "2",
+    "heading": "Artikel 11. Verwerking waarvoor identificatie niet is vereist",
+    "deontic": "OBLIGATION",
+    "text": "Wanneer de verwerkingsverantwoordelijke in de in lid 1 van dit artikel bedoelde gevallen kan aantonen dat hij de betrokkene niet kan identificeren, stelt hij de betrokkene daarvan indien mogelijk in kennis. In dergelijke gevallen zijn de artikelen 15 tot en met 20 niet van toepassing, behalve wanneer de betrokkene, met het oog op de uitoefening van zijn rechten uit hoofde van die artikelen, aanvullende gegevens verstrekt die het mogelijk maken hem te identificeren."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-036",
+   "pair_id": "5dfb5e134d7e",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0048156",
+    "article": "15",
+    "paragraph": "2",
+    "heading": "Artikel 15. Acceptatie bedrijfs- en organisatiemiddelen",
+    "deontic": "OBLIGATION",
+    "text": "Onverminderd het bepaalde in artikel 7, accepteren bestuursorganen en aangewezen organisaties bij de toegang tot hun elektronische dienstverlening alle en uitsluitend erkende bedrijfs- en organisatiemiddelen en door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening aan die onderneming of rechtspersoon. Bestuursorganen en aangewezen organisaties accepteren in elk geval een van de op grond van artikel 11, derde lid, erkende ontsluitende diensten."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "70",
+    "paragraph": "5",
+    "heading": "Artikel 70. Aanwijzing van nationale bevoegde autoriteiten en centrale contactpunten",
+    "deontic": "OBLIGATION",
+    "text": "Bij de uitvoering van hun taken voldoen de nationale bevoegde autoriteiten aan de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-037",
+   "pair_id": "e1b0e1aa3950",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "24",
+    "paragraph": "13",
+    "heading": "Artikel 24. (governance)",
+    "deontic": "PROHIBITION",
+    "text": "Dit artikel is niet van toepassing op een essentiële entiteit of belangrijke entiteit indien artikel 21 niet van toepassing is op die entiteit."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0009950",
+    "article": "11a.1",
+    "paragraph": "6",
+    "heading": "Artikel 11a.1",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister kan een aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten de verplichting opleggen om binnen een bepaalde termijn een beveiligingscontrole te laten uitvoeren door een gekwalificeerde onafhankelijke deskundige en om de resultaten van dat onderzoek binnen een bij het besluit gestelde redelijke termijn aan Onze Minister te verstrekken. De aanbieder van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten draagt de kosten van deze controle."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-038",
+   "pair_id": "ff2a4e311537",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32024R1689",
+    "article": "27",
+    "paragraph": "5",
+    "heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+    "deontic": "OBLIGATION",
+    "text": "Het AI-bureau ontwikkelt een sjabloon voor een vragenlijst, onder meer via een geautomatiseerd instrument, om gebruiksverantwoordelijken te helpen hun verplichtingen uit hoofde van dit artikel op vereenvoudigde wijze na te komen."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "56",
+    "paragraph": "3",
+    "heading": "Artikel 56. Praktijkcodes",
+    "deontic": "COMPETENCE",
+    "text": "Het AI-bureau kan alle aanbieders van AI-modellen voor algemene doeleinden en relevante nationale bevoegde autoriteiten uitnodigen om deel te nemen aan het opstellen van praktijkcodes. Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen, kunnen het proces ondersteunen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-039",
+   "pair_id": "4b3cac3896fd",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "58",
+    "paragraph": "1",
+    "heading": "Artikel 58. (samenwerking met toezichthoudende autoriteiten in het kader van inbreuken in verband met persoonsgegevens)",
+    "deontic": "OBLIGATION",
+    "text": "De bevoegde autoriteiten werken samen met de Autoriteit persoonsgegevens bij de behandeling van incidenten die leiden tot inbreuken in verband met persoonsgegevens en wisselen in het kader van die samenwerking alle daarvoor noodzakelijke gegevens uit, waaronder persoonsgegevens."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0052872",
+    "article": "59",
+    "paragraph": null,
+    "heading": "Artikel 59. (informatie-uitwisseling met andere bevoegde autoriteiten)",
+    "deontic": "OBLIGATION",
+    "text": "De bevoegde autoriteiten, Onze Minister van Economische Zaken uit hoofde van de Verordening (EU) 910/2014, de bevoegde autoriteiten, bedoeld in de Verordening (EU) 2022/2554, en Onze Minister van Economische Zaken uit hoofde van de Richtlijn (EU) 2018/1972 wisselen informatie uit over relevante incidenten en cyberdreigingen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-040",
+   "pair_id": "0b8d28f3696f",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32022R2554",
+    "article": "28",
+    "paragraph": "4",
+    "heading": "Artikel 28. Algemene beginselen",
+    "deontic": "OBLIGATION",
+    "text": "Vóór het sluiten van een contractuele overeenkomst inzake het gebruik van ICT-diensten:\n\na) beoordelen financiële entiteiten of de contractuele overeenkomst betrekking heeft op het gebruik van ICT-diensten die een kritieke of belangrijke functie ondersteunen;\n\nb) beoordelen zij of aan de toezichtvoorwaarden voor het sluiten van het contract is voldaan;\n\nc) identificeren en beoordelen zij alle relevante risico’s met betrekking tot de contractuele overeenkomst, met inbegrip van de mogelijkheid dat deze contractuele overeenkomst kan leiden tot een versterking van het ICT-concentratierisico als bedoeld in artikel 29;\n\nd) verrichten zij due-diligenceonderzoeken over toekomstige derde aanbieders van ICT-diensten en waarborgen zij gedurende de gehele selectie- en beoordelingsprocedure dat de derde aanbieder van ICT-diensten geschikt is;\n\ne) identificeren en beoordelen zij belangenconflicten die kunnen voortkomen uit de contractuele overeenkomst."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "31",
+    "paragraph": "5",
+    "heading": "Artikel 31. Voorschriften in verband met aangemelde instanties",
+    "deontic": "PROHIBITION",
+    "text": "Een conformiteitsbeoordelingsinstantie, haar hoogste leidinggevenden en het personeel dat de conformiteitsbeoordelingstaken verricht, zijn niet rechtstreeks of als vertegenwoordiger van de betrokken partijen betrokken bij het ontwerpen, ontwikkelen, verhandelen of gebruiken van de AI-systemen met een hoog risico. Zij oefent geen activiteiten uit die de onafhankelijkheid van haar oordeel of haar integriteit met betrekking tot de conformiteitsbeoordelingsactiviteiten waarvoor zij is aangemeld in het gedrang kunnen brengen. Dit geldt met name voor adviesdiensten."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-041",
+   "pair_id": "2a57636ee9a2",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0009950",
+    "article": "11.7",
+    "paragraph": "2",
+    "heading": "Artikel 11.7",
+    "deontic": "OBLIGATION",
+    "text": "Het eerste lid is van overeenkomstige toepassing op het gebruik van andere dan de in het eerste lid bedoelde middelen voor het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden aan natuurlijke personen. Bij het gebruik van andere dan de in het eerste lid bedoelde middelen voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen, geeft de verzender de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "21",
+    "paragraph": "3",
+    "heading": "Artikel 21. Recht van bezwaar",
+    "deontic": "PROHIBITION",
+    "text": "Wanneer de betrokkene bezwaar maakt tegen verwerking ten behoeve van direct marketing, worden de persoonsgegevens niet meer voor deze doeleinden verwerkt."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-042",
+   "pair_id": "5db8859872cb",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "44",
+    "paragraph": null,
+    "heading": "Artikel 44. Algemeen beginsel inzake doorgiften",
+    "deontic": "PROHIBITION",
+    "text": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan; dit geldt ook voor verdere doorgiften van persoonsgegevens vanuit het derde land of een internationale organisatie aan een ander derde land of een andere internationale organisatie. Alle bepalingen van dit hoofdstuk worden toegepast opdat het door deze verordening voor natuurlijke personen gewaarborgde beschermingsniveau niet wordt ondermijnd."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "34",
+    "paragraph": "3",
+    "heading": "Artikel 34. Operationele verplichtingen van aangemelde instanties",
+    "deontic": "OBLIGATION",
+    "text": "Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek, teneinde haar in staat te stellen haar beoordelings-, aanwijzings-, kennisgevings- en monitoringsactiviteiten te verrichten, en de in deze afdeling beschreven beoordeling te vergemakkelijken."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-043",
+   "pair_id": "8d5edb60d847",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "BWBR0051796",
+    "article": "5",
+    "paragraph": "2",
+    "heading": "Artikel 5. Aanwijzing toezichthouders",
+    "deontic": "COMPETENCE",
+    "text": "Met het toezicht op de naleving van de artikelen 4, twaalfde lid, 5, zevende en achtste lid, 6, tweede lid, onderdeel b, en hoofdstuk V, met uitzondering van artikel 20, van de dataverordening zijn belast de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen."
+   },
+   "provision_b": {
+    "instrument_id": "32016R0679",
+    "article": "52",
+    "paragraph": "2",
+    "heading": "Artikel 52. Onafhankelijkheid",
+    "deontic": "PROHIBITION",
+    "text": "Bij de uitvoering van hun taken en de uitoefening van hun bevoegdheden overeenkomstig deze verordening blijven de leden van elke toezichthoudende autoriteit vrij van al dan niet rechtstreekse externe invloed en vragen noch aanvaarden zij instructies van wie dan ook."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-044",
+   "pair_id": "fd99631b5325",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "32",
+    "paragraph": "4",
+    "heading": "Artikel 32. Beveiliging van de verwerking",
+    "deontic": "OBLIGATION",
+    "text": "De verwerkingsverantwoordelijke en de verwerker treffen maatregelen om ervoor te zorgen dat iedere natuurlijke persoon die handelt onder het gezag van de verwerkingsverantwoordelijke of van de verwerker en toegang heeft tot persoonsgegevens, deze slechts in opdracht van de verwerkingsverantwoordelijke verwerkt, tenzij hij daartoe Unierechtelijk of lidstaatrechtelijk is gehouden."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "10",
+    "paragraph": "5",
+    "heading": "Artikel 10. Data en datagovernance",
+    "deontic": "PROHIBITION",
+    "text": "Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:\n\na) de opsporing en correctie van vooringenomenheid kunnen niet doeltreffend worden vervuld door het verwerken van andere data, waaronder synthetische of geanonimiseerde data;\n\nb) de bijzondere categorieën persoonsgegevens zijn onderworpen aan technische beperkingen voor het hergebruik van persoonsgegevens, en geavanceerde beveiligings- en privacybeschermingsmaatregelen, waaronder pseudonimisering;\n\nc) de bijzondere categorieën persoonsgegevens zijn onderworpen aan maatregelen om ervoor te zorgen dat de verwerkte persoonsgegevens worden beveiligd, beschermd met passende waarborgen, waaronder strikte controles en documentatie van de toegang ertoe, om misbruik te voorkomen en ervoor te zorgen dat alleen personen die gemachtigd zijn toegang tot die persoonsgegevens hebben met passende vertrouwelijkheidsverplichtingen;\n\nd) de bijzondere categorieën persoonsgegevens worden niet verzonden, doorgegeven of anderszins geraadpleegd door andere partijen;\n\ne) de bijzondere categorieën persoonsgegevens worden verwijderd zodra de vertekening is gecorrigeerd of de periode van bewaring van de persoonsgegevens ten einde is gekomen, indien dit eerder is;\n\nf) het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten bevat de redenen waarom de verwerking van bijzondere categorieën persoonsgegevens strikt noodzakelijk was om vertekeningen op te sporen en waarom die doelstelling niet kon worden bereikt door de verwerking van andere data."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-045",
+   "pair_id": "b5c8aac674b0",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32022L2555",
+    "article": "4",
+    "paragraph": "3",
+    "heading": "Artikel 4. Sectorspecifieke rechtshandelingen van de Unie",
+    "deontic": "OBLIGATION",
+    "text": "Uiterlijk op 17 juli 2023 bepaalt de Commissie richtsnoeren ter verduidelijking van de toepassing van de leden 1 en 2. Die richtsnoeren worden regelmatig geëvalueerd door de Commissie. Bij de opstelling van die richtsnoeren houdt de Commissie rekening met alle opmerkingen van de samenwerkingsgroep en Enisa."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "28",
+    "paragraph": "10",
+    "heading": "Artikel 28. Algemene beginselen",
+    "deontic": "OBLIGATION",
+    "text": "De ETA’s ontwikkelen via het Gemengd Comité ontwerpen van technische reguleringsnormen tot nadere bepaling van de gedetailleerde inhoud van het in lid 2 bedoelde beleid met betrekking tot de contractuele overeenkomsten inzake het gebruik van door derde aanbieders verleende ICT-diensten die kritieke of belangrijke functies ondersteunen.\n\nBij het ontwikkelen van die ontwerpen van technische reguleringsnormen houden de ETA’s rekening met de omvang en het algehele risicoprofiel van de financiële entiteit en met de aard, schaal en complexiteit van de diensten, activiteiten en verrichtingen ervan. De ETA’s leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 januari 2024 voor aan de Commissie.\n\nAan de Commissie wordt de bevoegdheid gedelegeerd om deze verordening aan te vullen door de in de eerste alinea bedoelde technische reguleringsnormen vast te stellen overeenkomstig de artikelen 10 tot en met 14 van de Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-046",
+   "pair_id": "b11199d25974",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "45",
+    "paragraph": "1",
+    "heading": "Artikel 45. (ontheffing verplichting informatieverstrekking nationale register)",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister die het aangaat kan bij regeling of besluit, in overeenstemming met Onze Minister, een essentiële entiteit, een belangrijke entiteit of entiteit die domeinnaamregistratiediensten verleent ontheffen van de verplichtingen, bedoeld in artikel 44, indien de desbetreffende entiteit uitsluitend activiteiten verricht op het gebied van nationale veiligheid, openbare veiligheid, defensie of rechtshandhaving of uitsluitend diensten verleent aan een overheidsinstantie als bedoeld in artikel 5, eerste lid."
+   },
+   "provision_b": {
+    "instrument_id": "BWBR0048156",
+    "article": "13",
+    "paragraph": "6",
+    "heading": "Artikel 13. Rechten en plichten voor erkende diensten",
+    "deontic": "COMPETENCE",
+    "text": "Onze Minister kan een erkende dienst ontheffing verlenen van bij of krachtens artikel 13 gestelde regels, indien deze regels in de weg staan aan technologische ontwikkelingen aangaande een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening. Bij ministeriële regeling kunnen nadere regels worden gesteld over een verzoek om of verlening van een ontheffing."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-047",
+   "pair_id": "f201e8b9b8bb",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0052872",
+    "article": "39",
+    "paragraph": "2",
+    "heading": "Artikel 39. (informatieverstrekking over gemelde significante incidenten, incidenten, bijna-incidenten en cyberdreigingen)",
+    "deontic": "OBLIGATION",
+    "text": "Als dat passend is en in elk geval als het aan het CSIRT gemelde incident, bijna-incident of cyberdreiging, bedoeld in het eerste lid, betrekking heeft op twee of meer lidstaten van de Europese Unie, stelt het centrale contactpunt de centrale contactpunten van de andere getroffen lidstaten en Enisa onverwijld daarvan in kennis. Die kennisgeving omvat, in geval van een significant incident, de informatie die overeenkomstig de artikelen 26 tot en met 29 is ontvangen. Daarbij beschermt het centrale contactpunt de beveiligingsbelangen en commerciële belangen van de entiteit en de vertrouwelijkheid van de verstrekte informatie."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "51",
+    "paragraph": "2",
+    "heading": "Artikel 51. Uitoefening van de bevoegdheid tot het nemen van administratieve strafmaatregelen en corrigerende maatregelen",
+    "deontic": "OBLIGATION",
+    "text": "De bevoegde autoriteiten houden bij het bepalen van het type en de omvang van een op grond van artikel 50 te nemen administratieve strafmaatregel of corrigerende maatregel rekening met de vraag, in hoeverre de inbreuk opzettelijk is, dan wel het resultaat is van nalatigheid, en met andere relevante omstandigheden, waaronder, in voorkomend geval:\n\na) het relatieve belang, de ernst en de duur van de inbreuk;\n\nb) de mate van verantwoordelijkheid van de natuurlijke of rechtspersoon die de inbreuk heeft gepleegd;\n\nc) de financiële draagkracht van de verantwoordelijke natuurlijke of rechtspersoon;\n\nd) de omvang van winsten die de verantwoordelijke natuurlijke of rechtspersoon heeft gemaakt of de verliezen die deze heeft vermeden, voor zover deze winsten of verliezen kunnen worden bepaald;\n\ne) de verliezen voor derde partijen ten gevolge van de inbreuk, voor zover deze kunnen worden bepaald;\n\nf) de mate van medewerking van de verantwoordelijke natuurlijke of rechtspersoon met de bevoegde autoriteit, onverminderd de noodzaak om de terugbetaling van de door deze natuurlijke of rechtspersoon behaalde winsten of vermeden verliezen zeker te stellen;\n\ng) eventuele eerdere inbreuken van de verantwoordelijke natuurlijke of rechtspersoon."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-048",
+   "pair_id": "d8ca7b804833",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "58",
+    "paragraph": "2",
+    "heading": "Artikel 58. Bevoegdheden",
+    "deontic": "COMPETENCE",
+    "text": "Elk toezichthoudende autoriteit heeft alle volgende bevoegdheden tot het nemen van corrigerende maatregelen:\n\na) de verwerkingsverantwoordelijke of de verwerker waarschuwen dat met de voorgenomen verwerkingen waarschijnlijk inbreuk op bepalingen van deze verordening wordt gemaakt;\n\nb) de verwerkingsverantwoordelijke of de verwerker berispen wanneer met verwerkingen inbreuk op bepalingen van deze verordening is gemaakt;\n\nc) de verwerkingsverantwoordelijke of de verwerker gelasten de verzoeken van de betrokkene tot uitoefening van zijn rechten uit hoofde van deze verordening in te willigen;\n\nd) de verwerkingsverantwoordelijke of de verwerker gelasten, waar passend, op een nader bepaalde manier en binnen een nader bepaalde termijn, verwerkingen in overeenstemming te brengen met de bepalingen van deze verordening;\n\ne) de verwerkingsverantwoordelijke gelasten een inbreuk in verband met persoonsgegevens aan de betrokkene mee te delen;\n\nf) een tijdelijke of definitieve verwerkingsbeperking, waaronder een verwerkingsverbod, opleggen;\n\ng) het rectificeren of wissen van persoonsgegevens of het beperken van verwerking uit hoofde van de artikelen 16, 17 en 18 gelasten, alsmede de kennisgeving van dergelijke handelingen aan ontvangers aan wie de persoonsgegevens zijn verstrekt, overeenkomstig artikel 17, lid 2, en artikel 19;\n\nh) een certificering intrekken of het certificeringsorgaan gelasten een uit hoofde van de artikelen 42 en 43 afgegeven certificering in te trekken, of het certificeringsorgaan te gelasten geen certificering af te geven indien niet langer aan de certificeringsvereisten wordt voldaan;\n\ni) naargelang de omstandigheden van elke zaak, naast of in plaats van de in dit lid bedoelde maatregelen, een administratieve geldboete opleggen op grond van artikel 83; en\n\nj) de opschorting van gegevensstromen naar een ontvanger in een derde land of naar een internationale organisatie gelasten."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "36",
+    "paragraph": "7",
+    "heading": "Artikel 36. Wijzigingen in de aanmelding",
+    "deontic": "OBLIGATION",
+    "text": "In geval van beperking, schorsing of intrekking van een aanwijzing:\n\na) beoordeelt de aanmeldende autoriteit het gevolg voor de door de aangemelde instantie afgegeven certificaten;\n\nb) dient de aanmeldende autoriteit binnen drie maanden na mededeling van de wijzigingen in de aanwijzing een verslag over haar bevindingen in bij de Commissie en de overige lidstaten;\n\nc) schrijft de aanmeldende autoriteit voor dat de aangemelde instantie binnen een redelijke, door de autoriteit bepaalde termijn, onterecht afgegeven certificaten schorst of intrekt, zulks om de voortdurende conformiteit van de in de handel gebrachte AI-systemen met een hoog risico te waarborgen;\n\nd) stelt de aanmeldende autoriteit de Commissie en de lidstaten in kennis van certificaten die moeten worden geschorst of ingetrokken;\n\ne) verstrekt de aanmeldende autoriteit de nationale bevoegde autoriteiten van de lidstaat waar de aanbieder zijn geregistreerde vestigingsplaats heeft, alle relevante informatie over de certificaten waarvan zij de schorsing of intrekking heeft gelast; die autoriteit neemt de gepaste maatregelen die nodig zijn om een mogelijk risico voor de gezondheid, veiligheid of grondrechten af te wenden."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-049",
+   "pair_id": "4cd4dc9274d9",
+   "stratum": "X_unreviewed_prohibition_cross_instrument",
+   "inclusion_probability": 0.031153,
+   "provision_a": {
+    "instrument_id": "32016R0679",
+    "article": "10",
+    "paragraph": null,
+    "heading": "Artikel 10. Verwerking van persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten",
+    "deontic": "PROHIBITION",
+    "text": "Persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen mogen op grond van artikel 6, lid 1, alleen worden verwerkt onder toezicht van de overheid of indien de verwerking is toegestaan bij Unierechtelijke of lidstaatrechtelijke bepalingen die passende waarborgen voor de rechten en vrijheden van de betrokkenen bieden. Omvattende registers van strafrechtelijke veroordelingen mogen alleen worden bijgehouden onder toezicht van de overheid."
+   },
+   "provision_b": {
+    "instrument_id": "32024R1689",
+    "article": "10",
+    "paragraph": "5",
+    "heading": "Artikel 10. Data en datagovernance",
+    "deontic": "OBLIGATION",
+    "text": "Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:\n\na) de opsporing en correctie van vooringenomenheid kunnen niet doeltreffend worden vervuld door het verwerken van andere data, waaronder synthetische of geanonimiseerde data;\n\nb) de bijzondere categorieën persoonsgegevens zijn onderworpen aan technische beperkingen voor het hergebruik van persoonsgegevens, en geavanceerde beveiligings- en privacybeschermingsmaatregelen, waaronder pseudonimisering;\n\nc) de bijzondere categorieën persoonsgegevens zijn onderworpen aan maatregelen om ervoor te zorgen dat de verwerkte persoonsgegevens worden beveiligd, beschermd met passende waarborgen, waaronder strikte controles en documentatie van de toegang ertoe, om misbruik te voorkomen en ervoor te zorgen dat alleen personen die gemachtigd zijn toegang tot die persoonsgegevens hebben met passende vertrouwelijkheidsverplichtingen;\n\nd) de bijzondere categorieën persoonsgegevens worden niet verzonden, doorgegeven of anderszins geraadpleegd door andere partijen;\n\ne) de bijzondere categorieën persoonsgegevens worden verwijderd zodra de vertekening is gecorrigeerd of de periode van bewaring van de persoonsgegevens ten einde is gekomen, indien dit eerder is;\n\nf) het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten bevat de redenen waarom de verwerking van bijzondere categorieën persoonsgegevens strikt noodzakelijk was om vertekeningen op te sporen en waarom die doelstelling niet kon worden bereikt door de verwerking van andere data."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  },
+  {
+   "sample_id": "S-050",
+   "pair_id": "fa9ca3cdd777",
+   "stratum": "U_uniform_random",
+   "inclusion_probability": 0.001893,
+   "provision_a": {
+    "instrument_id": "BWBR0040940",
+    "article": "30",
+    "paragraph": "4",
+    "heading": "Artikel 30. Uitzonderingen inzake gegevens over gezondheid",
+    "deontic": "OBLIGATION",
+    "text": "Indien toepassing wordt gegeven aan het eerste, tweede of derde lid, worden de gegevens alleen verwerkt door personen die uit hoofde van ambt, beroep of wettelijk voorschrift dan wel krachtens een overeenkomst tot geheimhouding zijn verplicht. Indien de verwerkingsverantwoordelijke persoonlijk gegevens verwerkt en op hem niet reeds uit hoofde van ambt, beroep of wettelijk voorschrift een geheimhoudingsplicht rust, is hij verplicht tot geheimhouding van de gegevens, behoudens voor zover de wet hem tot mededeling verplicht of uit zijn taak de noodzaak voortvloeit dat de gegevens worden meegedeeld aan anderen die krachtens het eerste, tweede of derde lid bevoegd zijn tot verwerking daarvan."
+   },
+   "provision_b": {
+    "instrument_id": "32022R2554",
+    "article": "6",
+    "paragraph": "7",
+    "heading": "Artikel 6. Kader voor ICT-risicobeheer",
+    "deontic": "OBLIGATION",
+    "text": "Op basis van de conclusies van de interne audit stellen financiële entiteiten een formeel follow-upproces vast, met regels voor de tijdige verificatie en remediëring van kritieke ICT-auditbevindingen."
+   },
+   "label": null,
+   "comment": null,
+   "labeler": null
+  }
+ ]
+}

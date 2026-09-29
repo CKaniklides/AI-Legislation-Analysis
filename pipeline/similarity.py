@@ -110,11 +110,33 @@ def semantic_candidate_pairs(client, texts: list[str], k: int = 8,
     n = len(texts)
     pairs = set()
 
+    def _dedup_top_k(idxs, budget):
+        """Top-`budget` neighbours by similarity, but several DIFFERENT norms sharing the
+        exact same paragraph text (e.g. 8 norms extracted from one AI Act lid with 8
+        sub-points a-h) get the identical embedding vector and so tie exactly on every
+        similarity score -- confirmed directly (2026-09-28, diagnosing-bugs audit,
+        surfaced when recovering the AI Act's own art. 5(1) prohibited-practices norms):
+        8 such duplicates occupied 6 of one node's top-10 neighbour slots, crowding out a
+        real, previously-found candidate (GDPR art. 9 <-> AI Act art. 10(5)) at true rank
+        14 down past the top-8 budget entirely. A same-text CLUSTER now costs one slot,
+        not one slot per member -- every member of an admitted cluster is still returned
+        (each is its own norm and deserves its own candidate pair), just without letting
+        duplicate text drown out genuinely different neighbours."""
+        order = idxs[np.argsort(sim[i][idxs])[::-1]]
+        selected, seen_texts = [], set()
+        for j in order:
+            t = texts[j]
+            if t not in seen_texts:
+                if len(seen_texts) >= budget:
+                    break
+                seen_texts.add(t)
+            selected.append(j)
+        return selected
+
     if groups is None:
         k = min(k, n - 1) if n > 1 else 0
         for i in range(n):
-            top_k_idx = np.argsort(sim[i])[::-1][:k]
-            for j in top_k_idx:
+            for j in _dedup_top_k(np.arange(n)[np.arange(n) != i], k):
                 if sim[i][j] <= 0:
                     continue
                 pairs.add((min(i, int(j)), max(i, int(j))))
@@ -129,9 +151,7 @@ def semantic_candidate_pairs(client, texts: list[str], k: int = 8,
             idxs = np.where(mask)[0]
             if len(idxs) == 0 or budget <= 0:
                 continue
-            local_sim = sim[i][idxs]
-            top = idxs[np.argsort(local_sim)[::-1][:min(budget, len(idxs))]]
-            for j in top:
+            for j in _dedup_top_k(idxs, budget):
                 if sim[i][j] <= 0:
                     continue
                 pairs.add((min(i, int(j)), max(i, int(j))))

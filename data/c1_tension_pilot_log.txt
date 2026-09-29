@@ -1,0 +1,23 @@
+population: 168 soft-IE, 93 undecided-IE, 8604 cross-instrument confident negatives
+  A_anchor: 7 pairs  {'INC-0008': 1, 'INC-0007': 4, 'INC-0006': 1, 'INC-0003': 1}
+  B_IE_soft: 15 pairs
+  C_IE_undecided: 15 pairs
+  D_neg_control: 40 pairs
+total 77 pairs x 2 configs = 154 calls
+  [20/154]
+  [40/154]
+  [60/154]
+  [80/154]
+  [100/154]
+  [120/154]
+  [140/154]
+
+=== verdict distribution by stratum and config ===
+A_anchor         gpt-5.6-luna   n=  7 tension=  0  {'COMPATIBLE': 5, 'MISSING_CONTEXT': 2}
+A_anchor         gpt-5.6-terra  n=  7 tension=  1  {'COMPATIBLE': 6, 'PERMISSION_CONFLICT': 1}
+B_IE_soft        gpt-5.6-luna   n= 15 tension=  0  {'UNRELATED': 7, 'COMPATIBLE': 6, 'MISSING_CONTEXT': 2}
+B_IE_soft        gpt-5.6-terra  n= 15 tension=  0  {'UNRELATED': 9, 'COMPATIBLE': 4, 'MISSING_CONTEXT': 2}
+C_IE_undecided   gpt-5.6-luna   n= 15 tension=  0  {'UNRELATED': 12, 'COMPATIBLE': 2, 'MISSING_CONTEXT': 1}
+C_IE_undecided   gpt-5.6-terra  n= 15 tension=  0  {'UNRELATED': 12, 'COMPATIBLE': 3}
+D_neg_control    gpt-5.6-luna   n= 40 tension=  1  {'COMPATIBLE': 21, 'UNRELATED': 14, 'MISSING_CONTEXT': 3, 'GOAL_TENSION': 1, 'RECHECK': 1}
+D_neg_control    gpt-5.6-terra  n= 40 tension=  0  {'COMPATIBLE': 26, 'UNRELATED': 14}
