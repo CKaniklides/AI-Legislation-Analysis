@@ -47,11 +47,16 @@ h1{font-size:20px} .help{background:#f3f4f6;padding:10px 14px;border-radius:6px;
 .card.done{border-color:#3a8f4b}
 .prov{background:#fafafa;border-left:4px solid #999;padding:8px 10px;margin:8px 0;white-space:pre-wrap}
 .prov b{display:block;margin-bottom:4px} label{display:block;margin:2px 0;cursor:pointer}
+.ref{border-left:3px solid #c0c0c0;background:#f0f0f0;margin:8px 0 0;padding:6px 10px;font-size:14px}
+.ref b{font-weight:600;color:#555;margin-bottom:3px}
+.warn{border-left:3px solid #b45309;background:#fef3c7;color:#713f12;margin:8px 0 0;padding:6px 10px;font-size:14px;white-space:normal}
 textarea{width:100%;box-sizing:border-box;margin-top:6px;min-height:44px}
 #bar{position:sticky;top:0;background:#fff;padding:8px 0;border-bottom:1px solid #ddd;z-index:2}
 button{font-size:15px;padding:6px 14px;margin-left:8px} input[type=text]{font-size:15px;padding:4px}
 @media (prefers-color-scheme:dark){body{background:#181818;color:#e6e6e6}.help{background:#252525}.prov{background:#202020}
-.card{border-color:#444}#bar{background:#181818;border-color:#444}}
+.card{border-color:#444}#bar{background:#181818;border-color:#444}
+.ref{background:#262626;border-color:#555}.ref b{color:#aaa}
+.warn{background:#3a2e12;color:#fde68a;border-color:#b45309}}
 </style></head><body>
 <h1>Which relation holds between these two provisions?</h1>
 <p>For each pair choose <b>one</b> label, judging only from the two texts and your own knowledge. You have not been shown any computer output. Add a short reason when you choose a tension label (what realistic situation would cause the problem).</p>
@@ -68,7 +73,12 @@ DATA.help.forEach(([k,v])=>{const dt=document.createElement("dt");dt.textContent
 const who=document.getElementById("who");who.value=store.get("who")||"";who.oninput=()=>store.set("who",who.value);
 function prov(tag,p){const d=document.createElement("div");d.className="prov";const b=document.createElement("b");
  b.textContent=tag+": "+p.name+", art. "+p.article+(p.paragraph?"("+p.paragraph+")":"")+(p.heading?" \\u2014 "+p.heading:"");
- d.append(b,document.createTextNode(p.text));return d}
+ d.append(b,document.createTextNode(p.text));
+ if(p.currency){const w=document.createElement("div");w.className="warn";w.textContent=p.currency;d.append(w)}
+ (p.referenced||[]).forEach(r=>{const x=document.createElement("div");x.className="ref";const rb=document.createElement("b");
+  rb.textContent="refers to lid "+r.number+(r.ambiguous?" (several paragraphs carry this number \\u2014 all shown)":"");
+  x.append(rb,document.createTextNode(r.text));d.append(x)});
+ return d}
 function refresh(){const n=Object.values(state).filter(s=>s.label).length;
  document.getElementById("prog").textContent="  "+n+" / "+DATA.items.length+" labelled";
  document.querySelectorAll(".card").forEach(c=>c.classList.toggle("done",!!(state[c.dataset.id]||{}).label))}
@@ -86,14 +96,70 @@ refresh();
 </script></body></html>"""
 
 
-def _prov(p):
-    return {"name": INSTRUMENT_NAMES.get(p["instrument_id"], p["instrument_id"]), "article": p["article"],
-            "paragraph": p.get("paragraph"), "heading": p.get("heading"), "text": p["text"]}
+def _prov(p, para_index=None):
+    out = {"name": INSTRUMENT_NAMES.get(p["instrument_id"], p["instrument_id"]), "article": p["article"],
+           "paragraph": p.get("paragraph"), "heading": p.get("heading"), "text": p["text"],
+           "referenced": _referenced_paragraphs(p, para_index),
+           "currency": _currency(p)}
+    return out
+
+
+def _currency(p):
+    """Warn the reviewer when the text shown is no longer in force. The MvO reviewer had
+    to supply this themselves ("This paragraph has been deleted in latest amendments"),
+    having spent time on two pairs resting on repealed AI Act art. 10(5). The corpus
+    deliberately holds pre-amendment text (ADR-0004); saying so on the page is the
+    difference between a known limitation and a wasted review."""
+    import detect_c1_contradiction as c1
+    reg = c1._load_amendment_registry()
+    hit = (reg.get((p["instrument_id"], str(p["article"]), str(p.get("paragraph"))))
+           or reg.get((p["instrument_id"], str(p["article"]), None)))
+    if not hit:
+        return None
+    return (f"This text is the pre-amendment version. This provision was {hit['change']} "
+            f"with effect from {hit.get('in_force_from')} ({hit.get('amending_act')}). "
+            f"Consolidated text: {hit.get('consolidated_source')}. "
+            f"Please label the texts as shown, and note if that changes your answer.")
+
+
+def _referenced_paragraphs(p, para_index):
+    """Text of any paragraph THIS paragraph points at inside its own article.
+
+    Added 2026-10-02 after the MvO legal review. The reviewer was shown
+    Telecommunicatiewet art. 11.7(2) -- whose entire text is "Het eerste lid is van
+    overeenkomstige toepassing op..." -- and asked "Which paragraph of Art 11.7 are you
+    referring to? Basically, this is an opt-in system, not an opt-out system." They were
+    right, and they could not have known: the rule (a prohibition unless prior consent)
+    lives in paragraph 1, which the sheet never showed. The adjudicating LLM HAS had
+    this context all along via _build_paragraph_text_index/_paragraph_context_line --
+    only the human sheet lacked it, so reviewer and model were judging different
+    information. Three of the 15 reviewed pairs drew a "which paragraph / which article"
+    query for this reason (S-041, S-005, S-018)."""
+    if para_index is None:
+        return []
+    import detect_c1_contradiction as c1
+    nums = c1._own_article_paragraph_references(p["text"])
+    own = str(p.get("paragraph"))
+    out = []
+    for num in sorted(nums, key=lambda n: str(n)):
+        if str(num) == own:
+            continue
+        texts = para_index.get((p["instrument_id"], str(p["article"]), str(num)), [])
+        for t in texts:
+            if t != p["text"]:
+                out.append({"number": str(num), "text": t, "ambiguous": len(texts) > 1})
+    return out
 
 
 def export():
     items = json.loads(SAMPLE.read_text(encoding="utf-8"))["items"]
-    data = {"help": LABEL_HELP, "items": [{"sample_id": i["sample_id"], "a": _prov(i["provision_a"]), "b": _prov(i["provision_b"])} for i in items]}
+    import detect_c1_contradiction as c1
+    para_index = c1._build_paragraph_text_index(c1.load_all_norm_records())
+    data = {"help": LABEL_HELP, "items": [{"sample_id": i["sample_id"],
+                                           "a": _prov(i["provision_a"], para_index),
+                                           "b": _prov(i["provision_b"], para_index)} for i in items]}
+    n_ref = sum(len(it[s]["referenced"]) for it in data["items"] for s in ("a", "b"))
+    print(f"  inlined {n_ref} referenced paragraph(s) so the reviewer sees what the model sees")
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     (GOLD / "label_sheet.html").write_text(PAGE.replace("__DATA__", blob), encoding="utf-8")
     print(f"wrote {GOLD / 'label_sheet.html'} ({len(items)} pairs, no model output included)")

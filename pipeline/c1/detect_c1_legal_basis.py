@@ -260,7 +260,7 @@ def run(client, records, cands, concurrency):
         v, issue = adjudicate(client, a, b, ctx)
         with lock:
             cache[_key(pid)] = {"verdict": v.model_dump(), "needs_recheck_reason": issue, "stratum": stratum}
-            CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+            c1.atomic_write_json(CACHE_PATH, cache)
 
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
         for f in as_completed([ex.submit(one, p) for p in todo]):

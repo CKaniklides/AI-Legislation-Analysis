@@ -1,0 +1,8 @@
+  --stratum S7_dual_reporting: 788 of 1899 selected pairs
+  --limit 40: 40 pair(s) (2 pinned via --include, 38 hash-sampled)
+selected 40 pairs: {'S7_dual_reporting': 40}; luna already cached for 0
+phase 1: luna screen over 40 pairs (0 already cached)
+phase 2: terra on 15 luna-flagged + 2 random audit of 25 luna-passed
+
+audit: terra flagged 0 of 2 pairs luna had PASSED (screen miss rate on this sample: 0/2)
+appended graded findings: {'missing_context:missing_context': 8, 'sensitive_data_tension:sensitive_data_tension': 8, 'legal_tension:permission_conflict': 1, 'classification_mismatch:classification_mismatch': 1, 'legal_tension:direct_conflict': 1, 'dual_reporting_tension:dual_reporting_tension': 8}

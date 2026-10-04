@@ -21,6 +21,7 @@ the (much more expensive) duty_conflict adjudication calls.
 """
 import hashlib
 import json
+import os
 import sys
 from pathlib import Path
 _HERE = Path(__file__).resolve().parent
@@ -46,7 +47,9 @@ def _load_cache() -> dict:
 
 
 def _save_cache(cache: dict) -> None:
-    CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
+    tmp = CACHE_PATH.with_name(CACHE_PATH.name + '.tmp')
+    tmp.write_text(json.dumps(cache), encoding='utf-8')
+    os.replace(tmp, CACHE_PATH)  # atomic -- a killed process must not truncate the cache
 
 
 def compute_embeddings(client, texts: list[str]) -> dict[str, list[float]]:

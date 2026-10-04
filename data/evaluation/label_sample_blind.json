@@ -18,7 +18,24 @@
   "weighting": "stratum inclusion probabilities are recorded per row; weight by 1/inclusion_probability for population estimates",
   "hold_out_rule": "never tune on this file",
   "predictions_sha256": "bd89d305e10df38c8afee2da5c26b0dd58970117d6a0a6469fa735120d79dc55",
-  "predictions_frozen_before_labels": true
+  "predictions_frozen_before_labels": true,
+  "expert_labels": {
+   "source_document": "docs/Pairs requiring legal assessment_MvO.md",
+   "labeler": "MvO",
+   "labeled_on": "2026-09-29",
+   "vocabulary": "MvO_review_2026-09-29",
+   "vocabulary_values": [
+    "COMPATIBLE",
+    "LEGAL_TENSION",
+    "DUPLICATION",
+    "CONTRADICTION",
+    "INSUFFICIENT_CONTEXT"
+   ],
+   "n_labeled": 15,
+   "n_unlabeled": 35,
+   "status": "CLOSED -- no further labels expected from this source and no replacement reviewer is currently available. The 35 unlabeled items remain blind but have no labeller.",
+   "not_mapped_note": "Labels are recorded in the reviewer's own vocabulary and are NOT mapped onto label_sheet.py's 7-class scheme; LEGAL_TENSION has no equivalent there. Any scoring harness must handle this explicitly rather than assuming the label_sheet vocabulary."
+  }
  },
  "items": [
   {
@@ -44,7 +61,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-002",
@@ -67,9 +85,13 @@
     "deontic": "OBLIGATION",
     "text": "De lidstaten verwerken de in lid 1 van dit artikel bedoelde meldingen volgens de in artikel 23 vastgestelde procedure. De lidstaten kunnen voorrang geven aan de verwerking van verplichte meldingen boven vrijwillige meldingen.\n\nIndien nodig verstrekken de CSIRT’s en, waar dit van toepassing is, de bevoegde autoriteiten, de centrale contactpunten de informatie over de meldingen die op grond van dit artikel zijn ontvangen, met inachtneming van de vertrouwelijkheid en passende bescherming van de door de meldende entiteit verstrekte informatie. Onverminderd de voorkoming van, het onderzoek naar en de opsporing en de vervolging van strafbare feiten, mag vrijwillige melding er niet toe leiden dat de meldende entiteit bijkomende verplichtingen worden opgelegd waaraan zij niet onderworpen zou zijn geweest indien zij de melding niet had ingediend."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Last sentence of NIS2 article 30: 'Without prejudice to the prevention, investigation, detection and prosecution of criminal offences, voluntary reporting shall not result in the imposition of any additional obligations upon the notifying entity to which it would not have been subject had it not submitted the notification.' The mention of (only!) criminal offences would imply that action by GDPR DPA on the basis of such reporting is not allowed. Only the public prosecutor can act.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-003",
@@ -94,7 +116,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-004",
@@ -119,7 +142,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-005",
@@ -142,9 +166,13 @@
     "deontic": "OBLIGATION",
     "text": "Op verzoek van het CSIRT of de bevoegde autoriteit stuurt het centrale contactpunt de op grond van lid 1 ontvangen meldingen door naar de centrale contactpunten van de andere betrokken lidstaten."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Artikel 39, paragraph 3 of the Cyberbeveiligingswet is the Dutch transposition of art 23, paragraph 8 of the NIS2 Directive (the cited part above). The cited part of art 39 however is paragraph 4 of that article. It is the transposition of art 13, paras 1 and 2 of NIS2. This is my first shot, maybe deeper research (or a NIS2 specialist) will show it is a little different. But basically, since de Cyberbeveiligingswet is the transposition of NIS2, you will find all essential rules in both. So, both the incoming and outgoing information flows are regulated in NIS2, and transposed into national law. If there would be a conflict here, it would be an internal conflict in NIS2. Which it is not, imo. On your last question: I would answer negatively; it is all a coordinated effort on one specific incident.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-006",
@@ -169,7 +197,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-007",
@@ -192,9 +221,13 @@
     "deontic": "OBLIGATION",
     "text": "De bevoegde autoriteiten maken op hun officiële website onverwijld alle niet voor beroep vatbare besluiten tot het nemen van administratieve strafmaatregelen bekend, nadat de natuurlijke of rechtspersoon op wie een dergelijke maatregel van toepassing is, van deze maatregel in kennis is gesteld."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "First question, I would say no. By the way, see paragraph 3 of article 54 DORA.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-008",
@@ -217,9 +250,13 @@
     "deontic": "PROHIBITION",
     "text": "Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de in dit hoofdstuk neergelegde voorwaarden hebben voldaan; dit geldt ook voor verdere doorgiften van persoonsgegevens vanuit het derde land of een internationale organisatie aan een ander derde land of een andere internationale organisatie. Alle bepalingen van dit hoofdstuk worden toegepast opdat het door deze verordening voor natuurlijke personen gewaarborgde beschermingsniveau niet wordt ondermijnd."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "A third country in the GDPR is any country outside the EEA (=EU + Iceland, Norway & Liechtenstein)",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-009",
@@ -244,7 +281,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-010",
@@ -267,9 +305,13 @@
     "deontic": "OBLIGATION",
     "text": "Niettegenstaande lid 2 wordt bij overlijden van een persoon de melding gedaan onmiddellijk nadat de aanbieder of de gebruiksverantwoordelijke een oorzakelijk verband heeft vastgesteld, of zodra hij of zij dit vermoedt, tussen het AI-systeem met een hoog risico en het ernstige incident, doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "LEGAL_TENSION",
+   "comment": "Indeed, art 33, par 5, GDPR is a general internal obligation, while the rest of the article is about notification. Documentation is an ongoing proces, and in case of a serious incident, also the notification will be documented. Causal assessment and details of the case might lead to legal discussion, but imho this is rather hypothetical.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-011",
@@ -294,7 +336,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-012",
@@ -319,7 +362,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-013",
@@ -342,9 +386,13 @@
     "deontic": "OBLIGATION",
     "text": "De CSIRT’s hebben de volgende taken:\n\na) het monitoren en analyseren van cyberdreigingen, kwetsbaarheden en incidenten op nationaal niveau, en, op verzoek, het verlenen van bijstand aan betrokken essentiële en belangrijke entiteiten met betrekking tot het realtime of bijna-realtime monitoren van hun netwerk en informatiesystemen;\n\nb) het verstrekken van vroegtijdige waarschuwingen, meldingen en aankondigingen en het verspreiden van informatie onder betrokken essentiële en belangrijke entiteiten en aan de bevoegde autoriteiten en andere relevante belanghebbenden over cyberdreigingen, kwetsbaarheden en incidenten, in bijna-realtime indien mogelijk;\n\nc) het reageren op incidenten en verlenen van bijstand aan de betrokken essentiële en belangrijke entiteiten, indien van toepassing;\n\nd) het verzamelen en analyseren van forensische gegevens en het zorgen voor dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging;\n\ne) op verzoek van een essentiële of belangrijke entiteit: het proactief scannen van de netwerk- en informatiesystemen van de betrokken entiteit om kwetsbaarheden met mogelijk significante gevolgen op te sporen;\n\nf) het deelnemen aan het CSIRT-netwerk en, in overeenstemming met hun capaciteiten en bevoegdheden, het verlenen van wederzijdse bijstand aan andere leden van het netwerk op hun verzoek;\n\ng) indien van toepassing, het optreden als coördinator ten behoeve van het in artikel 12, lid 1 bedoelde proces van gecoördineerde bekendmaking van kwetsbaarheden;\n\nh) het bijdragen aan de uitrol van veilige instrumenten voor het delen van informatie op grond van artikel 10, lid 3.\n\nDe CSIRT’s kunnen overgaan tot het proactief en niet-intrusief scannen van openbaar toegankelijke netwerk- en informatiesystemen van essentiële en belangrijke entiteiten. Een dergelijk scannen wordt uitgevoerd om kwetsbare of onveilig geconfigureerde netwerk- en informatiesystemen op te sporen en de betrokken entiteiten te informeren. Een dergelijk scannen mag geen negatieve gevolgen hebben voor de werking van de diensten van de entiteiten.\n\nBij de uitvoering van de in de eerste alinea bedoelde taken kunnen de CSIRT’s, op grond van een risicogebaseerde benadering, prioriteit geven aan bepaalde taken."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "See chapter 13 of Cyberbeveiligingswet, cooperation. Bevoegde autoriteit and CSIRT have to cooperate with each other. Contact with DPA is task of bevoegde autoriteiten.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-014",
@@ -369,7 +417,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-015",
@@ -394,7 +443,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-016",
@@ -419,7 +469,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-017",
@@ -444,7 +495,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-018",
@@ -467,9 +519,13 @@
     "deontic": "OBLIGATION",
     "text": "De lidstaten zorgen ervoor dat de betrokken entiteiten, voor de in lid 1 bedoelde melding, bij het CSIRT of, indien van toepassing, de bevoegde autoriteit:\n\na) onverwijld en in elk geval binnen 24 uur nadat zij kennis hebben gekregen van het significante incident, een vroegtijdige waarschuwing geven, waarin, indien van toepassing, wordt aangegeven of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt, dan wel grensoverschrijdende gevolgen zou kunnen hebben;\n\nb) onverwijld en in elk geval binnen 72 uur nadat zij kennis hebben gekregen van het significante incident, een incidentmelding indienen met, indien van toepassing, een update van de in punt a) bedoelde informatie, een initiële beoordeling van het significante incident, met inbegrip van de ernst en de gevolgen ervan en, indien beschikbaar, de indicatoren voor aantasting;\n\nc) op verzoek van het CSIRT of, indien van toepassing, de bevoegde autoriteit, een tussentijds verslag indienen over relevante updates van de situatie;\n\nd) uiterlijk één maand na de indiening van het in punt b) bedoelde incidentmelding, een eindverslag indienen waarin het volgende is opgenomen:\n\ni) een gedetailleerde beschrijving van het incident, met inbegrip van de ernst en de gevolgen ervan;\n\nii) het soort bedreiging of de grondoorzaak die waarschijnlijk tot het incident heeft geleid;\n\niii) toegepaste en lopende risicobeperkende maatregelen;\n\niv) in voorkomend geval, de grensoverschrijdende gevolgen van het incident;\n\ne) indien het incident nog aan de gang is op het moment dat het in punt d) bedoelde eindverslag wordt ingediend, zorgen de lidstaten ervoor dat de betrokken entiteiten op dat moment een voortgangsverslag indienen en binnen één maand nadat zij het incident hebben afgehandeld, een eindverslag indienen.\n\nIn afwijking van de eerste alinea, punt b), meldt een verlener van vertrouwensdiensten significante incidenten die gevolgen hebben voor de verlening van zijn vertrouwensdiensten onverwijld, en in elk geval binnen 24 uur nadat hij kennis heeft gekregen van het significante incident, bij het CSIRT of, indien van toepassing, de bevoegde autoriteit."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "In the Cyberbeveiligingswet it is not only art 27, but also articles 28 and 29.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-019",
@@ -494,7 +550,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-020",
@@ -519,7 +576,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-021",
@@ -544,7 +602,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-022",
@@ -569,7 +628,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-023",
@@ -592,9 +652,13 @@
     "deontic": "OBLIGATION",
     "text": "Aanbieders van in de Unie in de handel gebrachte AI-systemen met een hoog risico melden ernstige incidenten bij de markttoezichtautoriteiten van de lidstaten waarin dat incident heeft plaatsgevonden."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "LEGAL_TENSION",
+   "comment": "This is complicated indeed, but in NL market surveillance authorities are coordinated by AP (Autoriteit Persoonsgegevens), the DPA under the GDPR. The 'clock' requires specific attention, and it can be imagined that this will lead to discussions (hence, legal tension without concluding yet to a contradiction).",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-024",
@@ -619,7 +683,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-025",
@@ -644,7 +709,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-026",
@@ -669,7 +735,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-027",
@@ -694,7 +761,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-028",
@@ -719,7 +787,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-029",
@@ -744,7 +813,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-030",
@@ -769,7 +839,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-031",
@@ -794,7 +865,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-032",
@@ -817,9 +889,13 @@
     "deontic": "OBLIGATION",
     "text": "Niettegenstaande lid 2 wordt bij overlijden van een persoon de melding gedaan onmiddellijk nadat de aanbieder of de gebruiksverantwoordelijke een oorzakelijk verband heeft vastgesteld, of zodra hij of zij dit vermoedt, tussen het AI-systeem met een hoog risico en het ernstige incident, doch uiterlijk tien dagen na de datum waarop de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke zich bewust wordt van het ernstige incident."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "On your question: that would mean the market surveillance authority will disclose the personal data involved? I don't think that would be a lawful processing of personal data under the GDPR :-)",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-033",
@@ -844,7 +920,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-034",
@@ -869,7 +946,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-035",
@@ -892,9 +970,13 @@
     "deontic": "OBLIGATION",
     "text": "Wanneer de verwerkingsverantwoordelijke in de in lid 1 van dit artikel bedoelde gevallen kan aantonen dat hij de betrokkene niet kan identificeren, stelt hij de betrokkene daarvan indien mogelijk in kennis. In dergelijke gevallen zijn de artikelen 15 tot en met 20 niet van toepassing, behalve wanneer de betrokkene, met het oog op de uitoefening van zijn rechten uit hoofde van die artikelen, aanvullende gegevens verstrekt die het mogelijk maken hem te identificeren."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Art 8 Wdo restricts the use of the eID. Hence, a private controller, not allowed to use the eID under art 8 Wdo, cannot invoke that fact as an excuse for not being able to identify data subjects.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-036",
@@ -919,7 +1001,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-037",
@@ -944,7 +1027,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-038",
@@ -969,7 +1053,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-039",
@@ -992,9 +1077,13 @@
     "deontic": "OBLIGATION",
     "text": "De bevoegde autoriteiten, Onze Minister van Economische Zaken uit hoofde van de Verordening (EU) 910/2014, de bevoegde autoriteiten, bedoeld in de Verordening (EU) 2022/2554, en Onze Minister van Economische Zaken uit hoofde van de Richtlijn (EU) 2018/1972 wisselen informatie uit over relevante incidenten en cyberdreigingen."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "It is about an obligation cooperation, not about competence. If such a situation occurs, the absence of rules about a 'lead cooperator' might be the best solution. We want less rules, not more ;-)",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-040",
@@ -1019,7 +1108,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-041",
@@ -1042,9 +1132,13 @@
     "deontic": "PROHIBITION",
     "text": "Wanneer de betrokkene bezwaar maakt tegen verwerking ten behoeve van direct marketing, worden de persoonsgegevens niet meer voor deze doeleinden verwerkt."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Which paragraph of Art 11.7 are you referring to? Basically, this is an opt-in system, not an opt-out system.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-042",
@@ -1067,9 +1161,13 @@
     "deontic": "OBLIGATION",
     "text": "Aangemelde instanties stellen alle relevante documentatie, waaronder de documentatie van de aanbieder, ter beschikking van de in artikel 28 bedoelde aanmeldende autoriteit, en verstrekken die aan haar op verzoek, teneinde haar in staat te stellen haar beoordelings-, aanwijzings-, kennisgevings- en monitoringsactiviteiten te verrichten, en de in deze afdeling beschreven beoordeling te vergemakkelijken."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Art 28 AI Act is clear: notifying body is in Member States only.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-043",
@@ -1094,7 +1192,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-044",
@@ -1117,9 +1216,13 @@
     "deontic": "PROHIBITION",
     "text": "Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:\n\na) de opsporing en correctie van vooringenomenheid kunnen niet doeltreffend worden vervuld door het verwerken van andere data, waaronder synthetische of geanonimiseerde data;\n\nb) de bijzondere categorieën persoonsgegevens zijn onderworpen aan technische beperkingen voor het hergebruik van persoonsgegevens, en geavanceerde beveiligings- en privacybeschermingsmaatregelen, waaronder pseudonimisering;\n\nc) de bijzondere categorieën persoonsgegevens zijn onderworpen aan maatregelen om ervoor te zorgen dat de verwerkte persoonsgegevens worden beveiligd, beschermd met passende waarborgen, waaronder strikte controles en documentatie van de toegang ertoe, om misbruik te voorkomen en ervoor te zorgen dat alleen personen die gemachtigd zijn toegang tot die persoonsgegevens hebben met passende vertrouwelijkheidsverplichtingen;\n\nd) de bijzondere categorieën persoonsgegevens worden niet verzonden, doorgegeven of anderszins geraadpleegd door andere partijen;\n\ne) de bijzondere categorieën persoonsgegevens worden verwijderd zodra de vertekening is gecorrigeerd of de periode van bewaring van de persoonsgegevens ten einde is gekomen, indien dit eerder is;\n\nf) het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten bevat de redenen waarom de verwerking van bijzondere categorieën persoonsgegevens strikt noodzakelijk was om vertekeningen op te sporen en waarom die doelstelling niet kon worden bereikt door de verwerking van andere data."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Art 32 GDPR is about responsibility of controller and processor for any subcontracters of employees. Pipeline reasoning is correct.",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-045",
@@ -1144,7 +1247,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-046",
@@ -1169,7 +1273,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-047",
@@ -1194,7 +1299,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-048",
@@ -1219,7 +1325,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   },
   {
    "sample_id": "S-049",
@@ -1242,9 +1349,13 @@
     "deontic": "OBLIGATION",
     "text": "Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegevens verwerken, mits passende waarborgen worden geboden voor de grondrechten en fundamentele vrijheden van natuurlijke personen. Naast de bepalingen van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 moeten voor een dergelijke verwerking alle volgende voorwaarden van toepassing zijn vervuld:\n\na) de opsporing en correctie van vooringenomenheid kunnen niet doeltreffend worden vervuld door het verwerken van andere data, waaronder synthetische of geanonimiseerde data;\n\nb) de bijzondere categorieën persoonsgegevens zijn onderworpen aan technische beperkingen voor het hergebruik van persoonsgegevens, en geavanceerde beveiligings- en privacybeschermingsmaatregelen, waaronder pseudonimisering;\n\nc) de bijzondere categorieën persoonsgegevens zijn onderworpen aan maatregelen om ervoor te zorgen dat de verwerkte persoonsgegevens worden beveiligd, beschermd met passende waarborgen, waaronder strikte controles en documentatie van de toegang ertoe, om misbruik te voorkomen en ervoor te zorgen dat alleen personen die gemachtigd zijn toegang tot die persoonsgegevens hebben met passende vertrouwelijkheidsverplichtingen;\n\nd) de bijzondere categorieën persoonsgegevens worden niet verzonden, doorgegeven of anderszins geraadpleegd door andere partijen;\n\ne) de bijzondere categorieën persoonsgegevens worden verwijderd zodra de vertekening is gecorrigeerd of de periode van bewaring van de persoonsgegevens ten einde is gekomen, indien dit eerder is;\n\nf) het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten bevat de redenen waarom de verwerking van bijzondere categorieën persoonsgegevens strikt noodzakelijk was om vertekeningen op te sporen en waarom die doelstelling niet kon worden bereikt door de verwerking van andere data."
    },
-   "label": null,
-   "comment": null,
-   "labeler": null
+   "label": "COMPATIBLE",
+   "comment": "Looks like you are referring to article 10, paragraph 5 AI Act. This paragraph has been deleted in latest amendments. See latest consolidated version: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R1689-20260727",
+   "labeler": "MvO",
+   "label_vocabulary": "MvO_review_2026-09-29",
+   "labeled_on": "2026-09-29",
+   "blind": false,
+   "blind_broken_reason": "S7_dual_reporting was designed from the two LEGAL_TENSION labels in this batch (2026-10-02). Per the project rule against tuning on blind items, these 15 are dev data from that date, not a clean held-out set."
   },
   {
    "sample_id": "S-050",
@@ -1269,7 +1380,8 @@
    },
    "label": null,
    "comment": null,
-   "labeler": null
+   "labeler": null,
+   "blind": true
   }
  ]
 }

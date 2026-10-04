@@ -41,6 +41,7 @@ Usage:
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 import threading
@@ -526,6 +527,168 @@ def _standard_benchmark_hit(a: NormRecord, b: NormRecord) -> bool:
     ta, tb = a.text.lower(), b.text.lower()
     return (any(kw in ta for kw in _BENCHMARK_TERMS)
             and any(kw in tb for kw in _BENCHMARK_TERMS))
+
+
+# Dual-reporting signal (S7 stratum, 2026-10-02) -- added after the MvO legal review
+# returned the first external labels on the blind sample. Two of the 15 reviewed pairs
+# (S-023 GDPR 33(1) x AI Act 73(1); S-010 GDPR 33(5) x AI Act 73(4)) were labelled
+# LEGAL_TENSION by the reviewer and COMPATIBLE by this pipeline -- the only false
+# negatives in the sample. Both are the same shape: ONE incident obliges ONE actor to
+# file under TWO regimes, to different authorities and/or on different clocks. The
+# strict pass is right that joint compliance is possible, so it returns NOT_A_CONFLICT
+# and no existing stratum reaches these: S3 needs PROHIBITION asymmetry, S4 is
+# risk-classification, S5 is technical benchmarks, S6 is automated-decision rights.
+#
+# This is not a new legal concept -- it is the definition of LEGAL_TENSION this project
+# already gave the reviewer in docs/review_15_pairs.md ("different deadlines, different
+# recipients"), which until now had no detector behind it.
+#
+# Both sides must be OBLIGATION. That requirement is what carries the control: S-032
+# (GDPR 34(3) x AI Act 73) is the SAME instrument pair and the same AI Act article but
+# the reviewer labelled it COMPATIBLE, because GDPR 34(3) is an exemption from telling
+# the data subject -- a PROHIBITION, with no competing authority and no second clock.
+# Verified before trusting this: fires on S-023 and S-010, silent on S-032 including
+# S-032's one OBLIGATION-typed variant ("openbare mededeling"), which fails the
+# report-action test on its own.
+_REPORT_ACTION_TERMS = {
+    "meld", "melding", "kennisgeving", "kennis geven", "in kennis",
+    "documenteer", "documenteert", "documentatie", "rapporteer", "rapporteert",
+    "verslag", "informeert",
+}
+
+
+def _reporting_duty(rec: NormRecord) -> bool:
+    """A duty to produce a compliance artefact ABOUT an incident: the trigger belongs to
+    the incident family AND the action is a report/notify/document verb. Both halves are
+    required -- the incident family alone also matches duties merely *mentioning* an
+    incident (e.g. security measures to prevent one), which are not reporting duties."""
+    trig = (rec.norm.get("trigger_event") or "").lower()
+    act = (rec.norm.get("action") or "").lower()
+    return (any(kw in f"{trig} {act}" for kw in NOTIFICATION_TRIGGER_KEYWORDS)
+            and any(kw in act for kw in _REPORT_ACTION_TERMS))
+
+
+def reporting_divergence(a: NormRecord, b: NormRecord) -> dict:
+    """How the two reporting duties diverge -- the evidence that makes the pair worth a
+    reviewer's time. Recorded on the finding, and also used as a narrowing gate: two
+    duties that name the same authority on the same clock are cumulative paperwork, not
+    a tension. Checked on the two labelled positives: S-023 diverges on recipient (DPA
+    vs market-surveillance authority), S-010 on clock (AI Act's 10-day deadline vs
+    GDPR's open-ended documentation duty)."""
+    ra = {x.lower().strip() for x in (a.norm.get("recipient_body") or [])}
+    rb = {x.lower().strip() for x in (b.norm.get("recipient_body") or [])}
+    da = (a.norm.get("deadline") or {}).get("raw")
+    db = (b.norm.get("deadline") or {}).get("raw")
+    return {
+        "different_recipient": bool(ra and rb and not (ra & rb)),
+        "recipients": [sorted(ra), sorted(rb)],
+        "different_deadline": bool(da and db and da != db),
+        "deadlines": [da, db],
+        "one_sided_deadline": bool(da) != bool(db),
+    }
+
+
+def atomic_write_json(path: Path, obj, indent: Optional[int] = 1) -> None:
+    """Write JSON so a killed process cannot destroy the existing file.
+
+    Added 2026-10-05 after losing one outright. Every cache in this pipeline was saved with
+    `path.write_text(json.dumps(...))`, which truncates the target BEFORE the new bytes are
+    flushed. The S7 run was killed mid-write at ~250 of 413 calls and left
+    c1_tension_pilot_cache.json as 5.4 MB of null bytes -- not truncated JSON that could be
+    repaired, but zeroes: the size had been allocated and nothing written back. Roughly 250
+    paid API calls were unrecoverable, and the only reason the findings file survived is
+    that the run never reached the step that writes it.
+
+    Writing to a sibling temp file and then os.replace() makes the swap atomic on both
+    Windows and POSIX: either the old file or the complete new one is present, never a
+    half-written file. The temp file sits in the same directory on purpose -- os.replace is
+    only atomic within a filesystem.
+    """
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=indent), encoding="utf-8")
+    os.replace(tmp, path)
+
+
+# Post-snapshot amendment registry (2026-10-02). ADR-0004 scoped the Digital Omnibus
+# out of the corpus and that decision is unchanged here -- but it was written about the
+# amendment's ADDITIONS and is silent on its DELETIONS, so repealed text has been sitting
+# in the corpus indistinguishable from text still in force. The MvO legal review found
+# this directly: two of 15 reviewed pairs turn on AI Act art. 10(5), and the reviewer
+# replied that the paragraph "has been deleted in latest amendments."
+#
+# This FLAGS only -- it never edits corpus text and never changes a verdict, which is
+# exactly the "stop at flagging, do not fetch/merge" step ADR-0004's own closing
+# paragraph prescribes. The registry is data, not code (data/amendment_registry.json),
+# so a lawyer can add a verified entry without touching Python.
+_AMENDMENT_REGISTRY: Optional[dict] = None
+
+
+def _load_amendment_registry() -> dict:
+    """(instrument_id, article, paragraph) -> amendment entry. Paragraph may be None,
+    meaning the whole article is affected."""
+    global _AMENDMENT_REGISTRY
+    if _AMENDMENT_REGISTRY is None:
+        path = DATA / "amendment_registry.json"
+        entries = json.loads(path.read_text(encoding="utf-8"))["amendments"] if path.exists() else []
+        _AMENDMENT_REGISTRY = {
+            (e["instrument_id"], str(e["article"]),
+             str(e["paragraph"]) if e.get("paragraph") is not None else None): e
+            for e in entries
+        }
+    return _AMENDMENT_REGISTRY
+
+
+def currency_warning(*records: NormRecord) -> Optional[list]:
+    """Non-None when any norm in this finding rests on text a later amendment changed or
+    repealed. Returned for display next to the finding, never applied to the verdict:
+    whether a repealed permission invalidates a finding is a legal judgement, so this
+    surfaces the fact and leaves the call to the reviewer."""
+    reg = _load_amendment_registry()
+    out = []
+    for r in records:
+        hit = (reg.get((r.instrument_id, str(r.article), str(r.norm.get("number"))))
+               or reg.get((r.instrument_id, str(r.article), None)))
+        if hit:
+            out.append({
+                "instrument_id": r.instrument_id, "article": r.article,
+                "paragraph": r.norm.get("number"), "change": hit["change"],
+                "in_force_from": hit.get("in_force_from"),
+                "consolidated_source": hit.get("consolidated_source"),
+                "corpus_holds": hit.get("corpus_holds"),
+                "note": hit.get("note"),
+            })
+    return out or None
+
+
+def _dual_reporting_hit(a: NormRecord, b: NormRecord) -> bool:
+    if a.norm.get("deontic") != "OBLIGATION" or b.norm.get("deontic") != "OBLIGATION":
+        return False
+    if a.instrument_id == b.instrument_id:
+        return False
+    # Someone must actually CARRY the double burden (2026-10-04, from the first S7 pilot).
+    # Without this, 323 of 814 S7-shaped pairs were authority-to-authority duties -- a CSIRT
+    # answering a reporting entity paired against national authorities notifying the
+    # Commission, and similar. Both are OBLIGATIONs, both are reporting, their recipients
+    # differ, so every other gate passed -- but nobody files twice there; they are two
+    # regulators doing two unrelated things. S7's premise is ONE organisation filing under
+    # two regimes, and nothing was enforcing the premise. Three of the pilot's eight
+    # findings were exactly this error.
+    # The SAME party must carry both duties, and it must be a regulated entity. "At least
+    # one side is a regulated entity" was tried first and is too weak (2026-10-04): Cbw
+    # 39(2) x NIS2 23(9) passed it, and both provisions are addressed to "het centrale
+    # contactpunt" -- an authority -- but the extraction typed one COMPETENT_AUTHORITY and
+    # the other REGULATED_ENTITY, so the weaker gate let an authority-to-authority pair
+    # through on a mis-typing. Requiring overlap makes the gate robust to that: an
+    # inconsistent typing now fails to overlap instead of satisfying a one-sided test.
+    # _effective_addressee_types also resolves the directive phrasing "Member States shall
+    # ensure that entities submit...", so real NIS2 entity duties are kept.
+    shared = _effective_addressee_types(a) & _effective_addressee_types(b)
+    if not shared & _REG:
+        return False
+    if not (_reporting_duty(a) and _reporting_duty(b)):
+        return False
+    d = reporting_divergence(a, b)
+    return d["different_recipient"] or d["different_deadline"] or d["one_sided_deadline"]
 
 
 def _concept_pair_hit(a: NormRecord, b: NormRecord) -> bool:
@@ -1854,6 +2017,11 @@ def build_finding(a: NormRecord, b: NormRecord, candidate: dict, subtype: str,
         status = "needs_recheck"
     elif challenge is not None and not challenge.survives:
         status = "challenge_failed"
+    elif llm is not None and getattr(llm, "verdict", None) == "INSUFFICIENT_EVIDENCE":
+        # Not a claim that these two conflict -- the model declined to decide. Belongs in
+        # `unverifiable`, not in the candidate queue a reviewer works top-down. See the
+        # same change in detect_c1_definitional_mismatch.build_finding (2026-10-04).
+        status = "unverifiable"
     return {
         # Stable, content-derived id (2026-09-24 fix, item 12): a sequential counter
         # tied to len(findings) -- or worse, completion order under ThreadPoolExecutor,
@@ -1896,6 +2064,9 @@ def build_finding(a: NormRecord, b: NormRecord, candidate: dict, subtype: str,
         ],
         "scope": "internal_coherence" if a.instrument_id == b.instrument_id else "cross_law",
         "actor_relation": candidate.get("actor_relation", "same_actor"),
+        # Non-None when this finding rests on text a later amendment changed or repealed
+        # (see _load_amendment_registry). Display-only: it never altered the verdict.
+        "currency_warning": currency_warning(a, b),
         "criteria_fired": [c for c, hit in [("graph_adjacency", candidate["graph_hit"]),
                                              ("trigger_keyword_match", candidate["trigger_hit"]),
                                              ("semantic_similarity", candidate.get("semantic_hit")),
@@ -1984,6 +2155,13 @@ def main():
                           "extracted/recovered today (extracted_on == today) -- a small, "
                           "high-value subset to test whether today's fixes surface "
                           "anything real before spending on the full remaining batch")
+    ap.add_argument("--s7-only", action="store_true",
+                     help="adjudicate only candidates with the S7 dual-reporting shape "
+                          "(see _dual_reporting_hit). The graded pass can only reach pairs "
+                          "the strict pass already decided, so S7-shaped pairs that were "
+                          "never adjudicated are invisible to it -- including S-010, one "
+                          "of the two tensions S7 was built from. This covers exactly that "
+                          "backlog instead of the full remaining candidate set")
     args = ap.parse_args()
 
     from openai import OpenAI
@@ -2048,6 +2226,12 @@ def main():
         print(f"  --priority-only: {len(needs_llm)} of {full_count} AI-judged pairs selected "
               f"(concept-pair signal hit)", flush=True)
 
+    if args.s7_only:
+        full_count = len(needs_llm)
+        needs_llm = [p for p in needs_llm if _dual_reporting_hit(p["a"], p["b"])]
+        print(f"  --s7-only: {len(needs_llm)} of {full_count} AI-judged pairs selected "
+              f"(dual-reporting shape; unblocks the graded pass's S7 stratum)", flush=True)
+
     findings = []
     suppressed = []
     # Dry-run writes to its own file (2026-09-24 fix, item 12): the old code wrote
@@ -2056,9 +2240,33 @@ def main():
     # results with a partial (no-AI) preview, with nothing to tell them apart.
     out_path = DATA / "results" / "c1" / ("findings_c1_dryrun_preview.json" if args.dry_run else "findings_c1.json")
 
+    # A PARTIAL run must merge, not replace (2026-10-04). Every flag below adjudicates a
+    # SUBSET of candidates, but _save() wrote the findings file fresh from only that
+    # subset -- so a --s7-only run replaced 132 findings with its own 18, discarding every
+    # definitional_mismatch, legal_tension and legal-basis finding other detectors had
+    # appended. Recovered from cache via rebuild_c1_all.py, but the file should not have
+    # needed recovering. (rebuild_c1_all.py's own docstring records the same class of
+    # mistake from 2026-09-28; this is that lesson applied one level further up.)
+    #
+    # The prior file is snapshotted ONCE here rather than re-read inside _save(), which is
+    # called repeatedly as results stream in. Findings this run produces are keyed out of
+    # the snapshot by finding_id, so re-saving is idempotent and a re-adjudicated pair is
+    # updated rather than duplicated.
+    _partial = bool(args.s7_only or args.priority_only or args.sample_half)
+    _prior_findings, _prior_suppressed = [], []
+    if _partial and not args.dry_run and out_path.exists():
+        _prior = json.loads(out_path.read_text(encoding="utf-8"))
+        _prior_findings = _prior.get("findings", [])
+        _prior_suppressed = _prior.get("suppressed", [])
+        print(f"  partial run: preserving {len(_prior_findings)} existing finding(s) not in this subset",
+              flush=True)
+
     def _save():
-        out_path.write_text(json.dumps({"findings": findings, "suppressed": suppressed},
-                                        ensure_ascii=False, indent=1), encoding="utf-8")
+        mine = {f["finding_id"] for f in findings} | {f["finding_id"] for f in suppressed}
+        out_path.write_text(json.dumps(
+            {"findings": [f for f in _prior_findings if f["finding_id"] not in mine] + findings,
+             "suppressed": [f for f in _prior_suppressed if f["finding_id"] not in mine] + suppressed},
+            ensure_ascii=False, indent=1), encoding="utf-8")
 
     def finalize(p: dict, llm_verdict: Optional[DutyConflictVerdict] = None,
                  needs_recheck_reason: Optional[str] = None,
@@ -2111,7 +2319,7 @@ def main():
     cache_lock = threading.Lock()
 
     def _save_cache():
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+        atomic_write_json(cache_path, cache)
 
     def _cache_key(p: dict) -> str:
         return f"{args.model}::{_pair_id(p['a'], p['b'])}"

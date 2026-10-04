@@ -79,7 +79,7 @@ _EXC_RE = re.compile(r"uitzondering|behoudens|tenzij|onverminderd|afwijking|exce
 # "legal_tension" and the pre-v2 upper-case verdict strings are kept in this set so a rebuild
 # correctly clears findings from a run under the OLD 4-class scheme too, not just the current one.
 NAMED_SUBTYPES = {"standard_benchmark_tension", "rights_vs_system_duties_tension",
-                  "sensitive_data_tension", "classification_mismatch"}
+                  "sensitive_data_tension", "classification_mismatch", "dual_reporting_tension"}
 SUBTYPES = {"legal_tension", "missing_context"} | NAMED_SUBTYPES
 
 
@@ -174,6 +174,16 @@ def select_pairs(pair_map, cache_c1):
         # AI Act 14): _automated_decision_oversight_hit fires for those pairs.
         elif v["verdict"] == "NOT_A_CONFLICT" and c1._automated_decision_oversight_hit(a, b):
             chosen[pid] = "S6_rights_vs_system_duties"
+        # S7 (2026-10-02): dual_reporting_tension -- one incident, one actor, two
+        # reporting regimes with different authorities or different clocks. Added from
+        # the MvO legal review's only two false negatives (S-023, S-010), both of which
+        # every existing stratum structurally misses: they are OBLIGATION x OBLIGATION
+        # (no PROHIBITION asymmetry for S3), not about risk tiers (S4), not technical
+        # benchmarks (S5), not automated-decision rights (S6). Placed last so it never
+        # reclassifies a pair an already-validated stratum claims. See
+        # _dual_reporting_hit for the S-032 control.
+        elif v["verdict"] == "NOT_A_CONFLICT" and c1._dual_reporting_hit(a, b):
+            chosen[pid] = "S7_dual_reporting"
     return chosen
 
 
@@ -194,7 +204,7 @@ def run_cascade(client, records, pair_map, chosen, concurrency, audit):
         entry = {"verdict": v.model_dump(), "needs_recheck_reason": issue}
         with lock:
             cache[key] = entry
-            CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+            c1.atomic_write_json(CACHE_PATH, cache)
         return pid, entry
 
     def run(cfg, pids, label):
@@ -261,7 +271,11 @@ def build_finding(a, b, final):
         "finding_id": f"F-C1-TEN-{c1._pair_id(a, b)}",
         "category": "contradiction",
         "subtype": subtype,
-        "status": "candidate",
+        # missing_context names a provision NOT shown that would decide the pair -- useful
+        # to a reviewer, but not a claim that the two provisions conflict. `unverifiable`
+        # keeps it visible without letting it compete with real tension findings in the
+        # candidate queue (2026-10-04, same rationale as the definitional detector).
+        "status": "unverifiable" if v["verdict"] == "missing_context" else "candidate",
         "confidence_tier": tier,
         "confidence_label": c1.CONFIDENCE_LABELS[tier],
         "confidence_reasons": reasons,
@@ -275,6 +289,11 @@ def build_finding(a, b, final):
              "paragraph_index": m.norm.get("paragraph_index")} for m in (a, b)],
         "criteria_fired": ["graded_tension_second_pass"],
         "deterministic_result": None,
+        # For S7 the divergence IS the finding's substance -- which authority, which clock.
+        # A reviewer cannot assess a dual-reporting tension without seeing both sides.
+        "reporting_divergence": (c1.reporting_divergence(a, b)
+                                 if c1._dual_reporting_hit(a, b) else None),
+        "currency_warning": c1.currency_warning(a, b),
         "llm_adjudication": {**v, "decided_by": f"{final['source']}"},
         "report_eligible": False,
     }
@@ -302,6 +321,19 @@ def main():
     ap.add_argument("--append-findings-only", action="store_true")
     ap.add_argument("--no-audit", action="store_true")
     ap.add_argument("--concurrency", type=int, default=8)
+    # Bounded-pilot flags (2026-10-04). A new stratum has passed structural tests but has
+    # never produced a verdict, and the full cascade is ~1,500 calls across all strata --
+    # far too much to spend finding out whether one new stratum emits sense or noise.
+    ap.add_argument("--stratum", default=None,
+                     help="restrict the cascade to ONE stratum, e.g. S7_dual_reporting")
+    ap.add_argument("--limit", type=int, default=None,
+                     help="cap the number of pairs. Sampled by a stable hash of each pair's "
+                          "own id, not list order, so the same --limit always picks the same "
+                          "pairs and a later larger run reuses every cached verdict")
+    ap.add_argument("--include", default="",
+                     help="comma-separated pair_ids always kept under --limit -- for pinning "
+                          "ground-truth pairs into a pilot so its output can be scored, not "
+                          "merely eyeballed")
     args = ap.parse_args()
 
     from dotenv import load_dotenv
@@ -315,6 +347,22 @@ def main():
         return
     cache_c1 = json.loads((DATA / "cache" / "c1_adjudication_cache.json").read_text(encoding="utf-8"))
     chosen = select_pairs(pair_map, cache_c1)
+
+    if args.stratum:
+        full = len(chosen)
+        chosen = {p: s for p, s in chosen.items() if s == args.stratum}
+        print(f"  --stratum {args.stratum}: {len(chosen)} of {full} selected pairs", flush=True)
+    if args.limit and len(chosen) > args.limit:
+        forced = [p for p in (x.strip() for x in args.include.split(",")) if p and p in chosen]
+        rest = sorted((p for p in chosen if p not in forced), key=lambda p: int(p, 16))
+        keep = set(forced) | set(rest[:max(0, args.limit - len(forced))])
+        missing = [p for p in (x.strip() for x in args.include.split(",")) if p and p not in chosen]
+        if missing:
+            print(f"  WARNING: --include pair(s) not in this stratum, cannot pin: {missing}", flush=True)
+        print(f"  --limit {args.limit}: {len(keep)} pair(s) "
+              f"({len(forced)} pinned via --include, {len(keep) - len(forced)} hash-sampled)", flush=True)
+        chosen = {p: s for p, s in chosen.items() if p in keep}
+
     cache = load_cache()
     done = sum(1 for p in chosen if _key(LUNA, p) in cache)
     print(f"selected {len(chosen)} pairs: {dict(Counter(chosen.values()))}; luna already cached for {done}", flush=True)

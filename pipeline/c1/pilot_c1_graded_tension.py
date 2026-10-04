@@ -75,7 +75,8 @@ DATA = ROOT / "data"
 VERSION = "v3_tightened_tensions"
 SEED = 20260928
 TENSION_VERDICTS = ("direct_conflict", "standard_benchmark_tension", "rights_vs_system_duties_tension",
-                    "sensitive_data_tension", "classification_mismatch", "permission_conflict", "goal_tension")
+                    "sensitive_data_tension", "classification_mismatch", "permission_conflict",
+                    "dual_reporting_tension", "goal_tension")
 CONFIGS = [("gpt-5.6-luna", "none"), ("gpt-5.6-terra", "medium")]
 
 
@@ -85,7 +86,8 @@ class TensionVerdict(BaseModel):
     strongest_case_for_compatibility: str
     verdict: Literal["direct_conflict", "standard_benchmark_tension", "rights_vs_system_duties_tension",
                      "sensitive_data_tension", "classification_mismatch", "permission_conflict",
-                     "goal_tension", "compatible", "unrelated", "missing_context"]
+                     "dual_reporting_tension", "goal_tension", "compatible", "unrelated",
+                     "missing_context"]
     concrete_scenario: Optional[str]     # required for any tension verdict
     missing_reference: Optional[str]     # required for missing_context
     decisive_exception: Optional[str]    # required for sensitive_data_tension / permission_conflict
@@ -186,6 +188,17 @@ def build_prompt(a, b, def_ctx, ref_ctx, retry_note=None):
         "established by the text shown -- but the subject matter is NOT sensitive personal "
         "data (use sensitive_data_tension for that case specifically). Name the exception "
         "in decisive_exception.\n"
+        "- dual_reporting_tension: ONE triggering event (the same incident, breach or "
+        "failure) obliges the SAME actor to report or document under BOTH instruments, to "
+        "DIFFERENT recipients and/or on DIFFERENT clocks, so complying with the stricter "
+        "one does NOT discharge the other -- both filings must actually be made. This is a "
+        "real unresolved burden (which authority leads, when each clock starts, what "
+        "happens if the two authorities reach different conclusions about one event), even "
+        "though each duty is individually satisfiable. Decisive test: if the two duties run "
+        "to the SAME recipient and the stricter deadline also satisfies the looser, that is "
+        "compatible, NOT this class. Use this class only where the duties are genuinely "
+        "CUMULATIVE because the recipients or the regimes differ. Quote both recipients (or "
+        "both deadlines) in the concrete_scenario.\n"
         "- goal_tension: each can be obeyed, but obeying one works against the evident "
         "purpose of the other.\n"
         "- compatible: both can be satisfied, and the texts do not leave a real open "
@@ -222,14 +235,44 @@ def build_prompt(a, b, def_ctx, ref_ctx, retry_note=None):
         "be used depends on B's court-authorisation exception, which A does not establish.\n"
         "  goal_tension: A: keep user complaints indefinitely for audit. B (purpose: minimise "
         "stored personal data): keep personal data no longer than necessary.\n"
-        "  compatible: A: report within 72h. B: report within 24h. The stricter satisfies both."
+        "  dual_reporting_tension: A: on a personal-data breach, notify the data-protection "
+        "authority within 72h. B: on a serious incident, report to the market-surveillance "
+        "authority without delay. One failure can be both at once, and filing with one "
+        "authority does not discharge the duty to the other -- two filings, two clocks, no "
+        "rule on which leads.\n"
+        "  compatible: A: report within 72h. B: report within 24h -- SAME report, SAME "
+        "recipient. The stricter satisfies both. (Contrast dual_reporting_tension above, "
+        "where the recipients differ and both filings are genuinely required.)"
         + note + "\n\n"
         f"PROVISION A -- {a.instrument_id} art. {a.article} ({a.heading}) [{a.norm['deontic']}]\n"
         f"{a.text}\n{pin_line(a)}\n"
         f"PROVISION B -- {b.instrument_id} art. {b.article} ({b.heading}) [{b.norm['deontic']}]\n"
         f"{b.text}\n{pin_line(b)}"
-        + def_ctx + ref_ctx
+        + def_ctx + ref_ctx + reporting_line(a, b)
     )
+
+
+def reporting_line(a, b) -> str:
+    """Shows the extracted recipients/deadlines when a pair has the dual-reporting shape.
+
+    Added 2026-10-04 after the S7 pilot failed: both pairs the MvO reviewer had labelled
+    LEGAL_TENSION came back 'compatible' at 0.97. The stratum was routing the right pairs
+    to a prompt that had no verdict for them AND no sight of the evidence -- the pipeline
+    computes recipient/deadline divergence deterministically (c1.reporting_divergence) but
+    was only attaching it to the FINISHED finding, long after the model had already judged.
+    Shown only for dual-reporting pairs, so every other prompt is unchanged."""
+    if not c1._dual_reporting_hit(a, b):
+        return ""
+    d = c1.reporting_divergence(a, b)
+    ra, rb = d["recipients"]
+    da, db = d["deadlines"]
+    return ("\n\nEXTRACTED REPORTING FIELDS (deterministic, from this corpus's own "
+            "extraction -- use as a cross-check on the texts above, not as a substitute):\n"
+            f"  A recipient(s): {ra or 'none extracted'}   A deadline: {da or 'none extracted'}\n"
+            f"  B recipient(s): {rb or 'none extracted'}   B deadline: {db or 'none extracted'}\n"
+            "  Consider specifically whether these are two SEPARATE filings that must BOTH "
+            "be made (dual_reporting_tension), or one duty the stricter of which discharges "
+            "the other (compatible).")
 
 
 _SHARED = None
@@ -388,7 +431,7 @@ def main():
         entry = {"verdict": v.model_dump(), "needs_recheck_reason": issue}
         with lock:
             cache[key] = entry
-            cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+            c1.atomic_write_json(cache_path, cache)
         return job, entry
 
     results = []

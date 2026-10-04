@@ -88,7 +88,7 @@ def main():
                 cache[key] = {"verdict": result.verdict.model_dump(),
                               "needs_recheck_reason": result.needs_recheck_reason,
                               "challenge": result.challenge.model_dump() if result.challenge else None}
-                cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+                c1.atomic_write_json(cache_path, cache)
                 n += 1
                 if n % 50 == 0 or n == len(target):
                     print(f"  [{n}/{len(target)}]", flush=True)

@@ -31,6 +31,9 @@ STEPS = [
     ["detect_c1_definitional_mismatch.py"],
     ["detect_c1_legal_tension.py", "--append-findings-only"],
     ["detect_c1_legal_basis.py", "--append-findings-only"],
+    # Must run LAST: it ranks and re-sorts whatever the four detectors produced, so any
+    # step appending after it would land unranked at the end of the file.
+    ["rank_findings.py"],
 ]
 
 for step in STEPS:
@@ -38,7 +41,7 @@ for step in STEPS:
     subprocess.run([sys.executable, str(HERE / step[0]), *step[1:]], cwd=HERE, check=True)
 
 import json
-data = json.loads((HERE.parent / "data" / "results" / "c1" / "findings_c1.json").read_text(encoding="utf-8"))
+data = json.loads((HERE.parent.parent / "data" / "results" / "c1" / "findings_c1.json").read_text(encoding="utf-8"))
 print(f"\nfindings_c1.json: {len(data['findings'])} findings; "
       f"{len(data.get('resolved_by_graded_pass', []))} strict findings resolved by the graded pass")
 print(dict(Counter(f["subtype"] for f in data["findings"])))

@@ -33,6 +33,7 @@
    ],
    "scope": "internal_coherence",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -51,7 +52,7 @@
     "result": "unresolved"
    },
    "unresolved_exception": null,
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -90,6 +91,7 @@
    ],
    "scope": "internal_coherence",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -108,7 +110,7 @@
     "result": "noted_not_suppressed"
    },
    "unresolved_exception": null,
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -145,6 +147,7 @@
    ],
    "scope": "cross_law",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "trigger_keyword_match",
     "semantic_similarity"
@@ -168,7 +171,7 @@
     "source_article": "BWBR0052872 art. 31",
     "condition_text": "1\nIndien sectorspecifieke rechtshandelingen van de Europese Unie voorschrijven dat een essentiële entiteit of belangrijke entiteit significante incidenten moet melden en indien deze eisen ten minste gelijkwaardig zijn aan die uit deze wet, zijn de verplichtingen uit de artikelen 25 tot en met 30 niet van toepassing op die specifieke entiteit.\n\n2\nDe eisen, bedoeld in het eerste lid, worden geacht gelijkwaardig te zijn wanneer de sectorspecifieke rechtshandeling voorziet in onmiddellijke toegang, in voorkomend geval automatisch en rechtstreeks, tot de meldingen van incidenten door het CSIRT, de bevoegde autoriteit of het centrale contactpunt, en wanneer de eisen voor het melden van significante incidenten ten minste een vergelijkbare uitwerking hebben als de eisen, bedoeld in de artikelen 25 tot en met 30, 36 en 39, eerste en tweede lid."
    },
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -204,6 +207,7 @@
    ],
    "scope": "cross_law",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -223,7 +227,7 @@
     "result": "unresolved"
    },
    "unresolved_exception": null,
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -259,6 +263,7 @@
    ],
    "scope": "cross_law",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -278,7 +283,7 @@
     "result": "unresolved"
    },
    "unresolved_exception": null,
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -316,6 +321,7 @@
    ],
    "scope": "cross_law",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -339,7 +345,7 @@
     "source_article": "BWBR0040940 art. 35",
     "condition_text": "1\nIndien de beslissing op een verzoek als bedoeld in artikel 34 is genomen door een ander dan een bestuursorgaan, kan de belanghebbende zich tot de rechtbank wenden met het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen.\n\n2\nHet verzoekschrift wordt ingediend binnen zes weken na ontvangst van het antwoord van de verwerkingsverantwoordelijke. Indien de verwerkingsverantwoordelijke niet binnen de in artikel 12, derde lid, van de verordening genoemde termijnen heeft geantwoord, is de indiening van het verzoekschrift niet aan een termijn gebonden.\n\n3\nDe rechtbank wijst het verzoek toe, voor zover zij dit gegrond oordeelt. Alvorens de rechtbank beslist, stelt zij zo nodig de belanghebbenden in de gelegenheid hun zienswijze naar voren te brengen.\n\n4\nDe indiening van het verzoekschrift behoeft niet door een advocaat te geschieden.\n\n5\nDe derde afdeling van de vijfde titel van het Tweede Boek van het Wetboek van Burgerlijke Rechtsvordering is van overeenkomstige toepassing.\n\n6\nDe rechtbank kan partijen en anderen verzoeken binnen een door haar te bepalen termijn schriftelijke inlichtingen te geven en onder hen berustende stukken in te zenden. De verwerkingsverantwoordelijke en belanghebbende zijn verplicht aan dit verzoek te voldoen. De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
    },
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   },
@@ -375,6 +381,7 @@
    ],
    "scope": "cross_law",
    "actor_relation": "same_actor",
+   "currency_warning": null,
    "criteria_fired": [
     "semantic_similarity"
    ],
@@ -394,7 +401,7 @@
     "result": "unresolved"
    },
    "unresolved_exception": null,
-   "extracted_on": "2026-10-01",
+   "extracted_on": "2026-10-02",
    "human_verified": false,
    "report_eligible": false
   }

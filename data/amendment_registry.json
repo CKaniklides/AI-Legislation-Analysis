@@ -1,0 +1,23 @@
+{
+ "_meta": {
+  "purpose": "Provisions in this corpus that a LATER amendment has changed or repealed, where the corpus deliberately holds the pre-amendment text. Findings touching these carry a currency warning so nobody acts on text that is no longer in force.",
+  "why_this_file_exists": "ADR-0004 scoped the Digital Omnibus OUT of the corpus, and that decision stands. But it was written about the amendment's ADDITIONS (6 new articles) and is silent on its DELETIONS, so repealed text sat in the corpus indistinguishable from live text. The MvO legal review (2026-09-29) found this the expensive way: two of the 15 reviewed pairs (S-049, S-044) turn on AI Act art. 10(5), and the reviewer replied 'This paragraph has been deleted in latest amendments.' The pipeline had reasoned about a permission that no longer exists.",
+  "scope_rule": "This file FLAGS only. It never changes the corpus text, never changes a verdict, and is not a route to merging amendment content -- ADR-0004 forbids that and still governs. Adding an entry here is the 'stop at flagging' step that ADR-0004's own closing paragraph prescribes.",
+  "how_to_add": "One entry per affected provision, with a verifiable source. Verified externally means a named human or an official consolidated text, not a model's opinion.",
+  "created": "2026-10-02"
+ },
+ "amendments": [
+  {
+   "instrument_id": "32024R1689",
+   "article": "10",
+   "paragraph": "5",
+   "change": "repealed",
+   "in_force_from": "2026-07-27",
+   "amending_act": "Digital Omnibus (AI Act amendment track)",
+   "corpus_holds": "pre-amendment original text (2024-10-17 snapshot), per ADR-0004",
+   "consolidated_source": "CELEX:02024R1689-20260727",
+   "verified_by": "MvO legal review, 2026-09-29 (blind-label return, pairs S-049 and S-044)",
+   "note": "The bias-detection permission allowing providers to process special-category data to detect and correct bias in high-risk AI systems. Any finding resting on this permission is reasoning about repealed law."
+  }
+ ]
+}

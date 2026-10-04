@@ -1064,7 +1064,7 @@ def main():
             with cache_lock:
                 cache[_cache_key(a, b)] = {"verdict": result.verdict.model_dump(),
                                             "needs_recheck_reason": result.needs_recheck_reason}
-                cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+                c1.atomic_write_json(cache_path, cache)
             _handle(a, b, signals, result, tag=f"[{done}/{len(to_call_p)}] ")
 
     grouped = group_by_article(findings)

@@ -83,7 +83,7 @@ def main():
         return f"{model}::{c1._pair_id(p['a'], p['b'])}"
 
     def _save_cache():
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+        c1.atomic_write_json(cache_path, cache)
 
     cached_p = [p for p in needs_llm if cache_key(p) in cache]
     uncached_p = [p for p in needs_llm if cache_key(p) not in cache]

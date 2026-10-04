@@ -236,7 +236,20 @@ def build_finding(ea: dict, eb: dict, verdict: DefinitionalMismatchVerdict, tier
                    tier_reasons: list[str], needs_recheck_reason: Optional[str] = None) -> dict:
     ids = sorted([f"{ea['instrument_id']}:{ea['term']}", f"{eb['instrument_id']}:{eb['term']}"])
     pair_id = hashlib.sha256("::".join(ids).encode("utf-8")).hexdigest()[:12]
-    status = "needs_recheck" if needs_recheck_reason else "candidate"
+    # INSUFFICIENT_EVIDENCE is the model declining to decide, not a claim that these two
+    # definitions clash -- it belongs in the architecture's `unverifiable` status, not
+    # alongside real findings as a `candidate` (2026-10-04). Checked before changing:
+    # 45 of this detector's 94 findings carried INSUFFICIENT_EVIDENCE while statused
+    # `candidate`, so a reviewer working the candidate list top-down would have spent
+    # roughly half their time on items the system never actually claimed anything about.
+    # This changes PRESENTATION ONLY: the finding is still emitted, still carries its full
+    # adjudication, and is still reviewable -- it simply stops competing with real claims.
+    if needs_recheck_reason:
+        status = "needs_recheck"
+    elif verdict.verdict == "INSUFFICIENT_EVIDENCE":
+        status = "unverifiable"
+    else:
+        status = "candidate"
     incompatibility_established = None
     if not needs_recheck_reason:
         if verdict.verdict == "DEFINITIONAL_MISMATCH":
@@ -322,7 +335,7 @@ def main():
         else:
             verdict, needs_recheck_reason = adjudicate_definitional_pair(client, args.model, ea, eb)
             cache[key] = {"verdict": verdict.model_dump(), "needs_recheck_reason": needs_recheck_reason}
-            cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+            c1.atomic_write_json(cache_path, cache)
             tag = f"[{i}/{len(pairs)}] "
         label = f"{ea['instrument_id']} {ea['term']!r} <-> {eb['instrument_id']} {eb['term']!r}"
         # A negative verdict (unrelated/consistent) is not a finding. needs_recheck normally keeps

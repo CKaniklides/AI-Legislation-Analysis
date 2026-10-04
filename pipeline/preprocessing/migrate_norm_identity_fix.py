@@ -130,7 +130,7 @@ def main():
     cache_path = DATA / "cache" / "c1_adjudication_cache.json"
 
     def _save_cache():
-        cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+        c1.atomic_write_json(cache_path, cache)
 
     _save_cache()  # migrated-safe entries persisted immediately, before spending anything
 
