@@ -1,0 +1,788 @@
+[
+ {
+  "norm_id": "32024R1689:27:4:5:None",
+  "norm": {
+   "number": "5",
+   "deontic": "OBLIGATION",
+   "addressee": "Het AI-bureau",
+   "addressee_type": "EU_INSTITUTION",
+   "trigger_event": null,
+   "action": "ontwikkelt een sjabloon voor een vragenlijst, onder meer via een geautomatiseerd instrument, om gebruiksverantwoordelijken te helpen hun verplichtingen uit hoofde van dit artikel op vereenvoudigde wijze na te komen",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 4
+  },
+  "text": {
+   "paragraph": "Het AI-bureau ontwikkelt een sjabloon voor een vragenlijst, onder meer via een geautomatiseerd instrument, om gebruiksverantwoordelijken te helpen hun verplichtingen uit hoofde van dit artikel op vereenvoudigde wijze na te komen.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art27@original",
+   "chapter": "HOOFDSTUK III. AI-SYSTEMEN MET EEN HOOG RISICO",
+   "chapter_number": "III",
+   "section": "AFDELING 3. Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen",
+   "article": "27",
+   "article_heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+   "paragraph_number": "5"
+  }
+ },
+ {
+  "norm_id": "32024R1689:27:None:2:None",
+  "norm": {
+   "number": "2",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "de gebruiksverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Indien de gebruiksverantwoordelijke tijdens het gebruik van het AI-systeem met een hoog risico ziet dat een van de in lid 1 vermelde elementen is gewijzigd of niet langer actueel is",
+   "action": "neemt de gebruiksverantwoordelijke de nodige maatregelen om de informatie te actualiseren",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "op het eerste gebruik van een AI-systeem met een hoog risico",
+    "in soortgelijke gevallen"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'De verplichting als neergelegd in lid 1'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De verplichting als neergelegd in lid 1 is van toepassing op het eerste gebruik van een AI-systeem met een hoog risico. De gebruiksverantwoordelijke kan in soortgelijke gevallen gebruik maken van eerder uitgevoerde effectbeoordelingen op het gebied van de grondrechten of bestaande effectbeoordelingen die door de aanbieder zijn uitgevoerd. Indien de gebruiksverantwoordelijke tijdens het gebruik van het AI-systeem met een hoog risico ziet dat een van de in lid 1 vermelde elementen is gewijzigd of niet langer actueel is, neemt de gebruiksverantwoordelijke de nodige maatregelen om de informatie te actualiseren.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art27@original",
+   "chapter": "HOOFDSTUK III. AI-SYSTEMEN MET EEN HOOG RISICO",
+   "chapter_number": "III",
+   "section": "AFDELING 3. Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen",
+   "article": "27",
+   "article_heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+   "paragraph_number": "2"
+  }
+ },
+ {
+  "norm_id": "32024R1689:27:None:3:None",
+  "norm": {
+   "number": "3",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "de gebruiksverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Zodra de in lid 1 van dit artikel bedoelde beoordeling is uitgevoerd",
+   "action": "stelt de gebruiksverantwoordelijke de markttoezichtautoriteit in kennis van de resultaten ervan, en dient hij als onderdeel van de kennisgeving het in lid 5 van dit artikel bedoelde ingevulde sjabloon in",
+   "recipient_body": [
+    "de markttoezichtautoriteit"
+   ],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "In het in artikel 46, lid 1, bedoelde geval kunnen gebruiksverantwoordelijken van de verplichting tot kennisgeving worden vrijgesteld."
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'In het in artikel 46, lid 1, bedoelde geval'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Zodra de in lid 1 van dit artikel bedoelde beoordeling is uitgevoerd, stelt de gebruiksverantwoordelijke de markttoezichtautoriteit in kennis van de resultaten ervan, en dient hij als onderdeel van de kennisgeving het in lid 5 van dit artikel bedoelde ingevulde sjabloon in. In het in artikel 46, lid 1, bedoelde geval kunnen gebruiksverantwoordelijken van de verplichting tot kennisgeving worden vrijgesteld.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art27@original",
+   "chapter": "HOOFDSTUK III. AI-SYSTEMEN MET EEN HOOG RISICO",
+   "chapter_number": "III",
+   "section": "AFDELING 3. Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen",
+   "article": "27",
+   "article_heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+   "paragraph_number": "3"
+  }
+ },
+ {
+  "norm_id": "32024R1689:27:0:1:0",
+  "norm": {
+   "number": "1",
+   "paragraph_index": 0,
+   "norm_index": 0,
+   "deontic": "OBLIGATION",
+   "addressee": "gebruiksverantwoordelijken die publiekrechtelijke organen zijn of particuliere entiteiten zijn die openbare diensten verlenen, en gebruiksverantwoordelijken van AI-systemen met een hoog risico als bedoeld in bijlage III, punt 5, b) en c)",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Voordat een AI-systeem met een hoog risico als bedoeld in artikel 6, lid 2, in gebruik wordt gesteld",
+   "action": "voeren gebruiksverantwoordelijken die publiekrechtelijke organen zijn of particuliere entiteiten zijn die openbare diensten verlenen, en gebruiksverantwoordelijken van AI-systemen met een hoog risico als bedoeld in bijlage III, punt 5, b) en c), een beoordeling uit van de gevolgen voor de grondrechten die het gebruik van een dergelijk systeem kan opleveren",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "met uitzondering van AI-systemen met een hoog risico die bedoeld zijn om te worden gebruikt op het in punt 2 van bijlage III vermelde gebied"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Voordat een AI-systeem met een hoog risico als bedoeld in artikel 6, lid 2, in gebruik wordt gesteld, met uitzondering van AI-systemen met een hoog risico die bedoeld zijn om te worden gebruikt op het in punt 2 van bijlage III vermelde gebied, voeren gebruiksverantwoordelijken die publiekrechtelijke organen zijn of particuliere entiteiten zijn die openbare diensten verlenen, en gebruiksverantwoordelijken van AI-systemen met een hoog risico als bedoeld in bijlage III, punt 5, b) en c), een beoordeling uit van de gevolgen voor de grondrechten die het gebruik van een dergelijk systeem kan opleveren. Daartoe voeren gebruiksverantwoordelijken een beoordeling uit die bestaat uit:\n\na) een beschrijving van de processen van de gebruiksverantwoordelijke waarbij het AI-systeem met een hoog risico zal worden gebruikt in overeenstemming met het beoogde doel ervan;\n\nb) een beschrijving van de periode waarbinnen en de frequentie waarmee elk AI-systeem met een hoog risico zal worden gebruikt;\n\nc) categorieën van natuurlijke personen en groepen die naar verwachting gevolgen zullen ondervinden van het gebruik van het systeem in een specifieke context;\n\nd) de specifieke risico’s op schade die waarschijnlijk gevolgen zullen hebben voor de op grond van punt c) van dit lid geïdentificeerde categorieën natuurlijke personen of groepen personen, rekening houdend met de door de aanbieder op grond van artikel 13 verstrekte informatie;\n\ne) een beschrijving van de uitvoering van maatregelen voor menselijk toezicht, overeenkomstig de gebruiksaanwijzing;\n\nf) de maatregelen die moeten worden genomen wanneer die risico’s zich voordoen, met inbegrip van de regelingen voor interne governance en klachtenregelingen.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art27@original",
+   "chapter": "HOOFDSTUK III. AI-SYSTEMEN MET EEN HOOG RISICO",
+   "chapter_number": "III",
+   "section": "AFDELING 3. Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen",
+   "article": "27",
+   "article_heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+   "paragraph_number": "1"
+  }
+ },
+ {
+  "norm_id": "32024R1689:27:0:1:1",
+  "norm": {
+   "number": "1",
+   "paragraph_index": 0,
+   "norm_index": 1,
+   "deontic": "OBLIGATION",
+   "addressee": "gebruiksverantwoordelijken",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Daartoe",
+   "action": "voeren gebruiksverantwoordelijken een beoordeling uit",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "die bestaat uit:",
+    "een beschrijving van de processen van de gebruiksverantwoordelijke waarbij het AI-systeem met een hoog risico zal worden gebruikt in overeenstemming met het beoogde doel ervan",
+    "een beschrijving van de periode waarbinnen en de frequentie waarmee elk AI-systeem met een hoog risico zal worden gebruikt",
+    "categorieën van natuurlijke personen en groepen die naar verwachting gevolgen zullen ondervinden van het gebruik van het systeem in een specifieke context",
+    "de specifieke risico’s op schade die waarschijnlijk gevolgen zullen hebben voor de op grond van punt c) van dit lid geïdentificeerde categorieën natuurlijke personen of groepen personen, rekening houdend met de door de aanbieder op grond van artikel 13 verstrekte informatie",
+    "een beschrijving van de uitvoering van maatregelen voor menselijk toezicht, overeenkomstig de gebruiksaanwijzing",
+    "de maatregelen die moeten worden genomen wanneer die risico’s zich voordoen, met inbegrip van de regelingen voor interne governance en klachtenregelingen"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.94,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'overeenkomstig de gebruiksaanwijzing'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Voordat een AI-systeem met een hoog risico als bedoeld in artikel 6, lid 2, in gebruik wordt gesteld, met uitzondering van AI-systemen met een hoog risico die bedoeld zijn om te worden gebruikt op het in punt 2 van bijlage III vermelde gebied, voeren gebruiksverantwoordelijken die publiekrechtelijke organen zijn of particuliere entiteiten zijn die openbare diensten verlenen, en gebruiksverantwoordelijken van AI-systemen met een hoog risico als bedoeld in bijlage III, punt 5, b) en c), een beoordeling uit van de gevolgen voor de grondrechten die het gebruik van een dergelijk systeem kan opleveren. Daartoe voeren gebruiksverantwoordelijken een beoordeling uit die bestaat uit:\n\na) een beschrijving van de processen van de gebruiksverantwoordelijke waarbij het AI-systeem met een hoog risico zal worden gebruikt in overeenstemming met het beoogde doel ervan;\n\nb) een beschrijving van de periode waarbinnen en de frequentie waarmee elk AI-systeem met een hoog risico zal worden gebruikt;\n\nc) categorieën van natuurlijke personen en groepen die naar verwachting gevolgen zullen ondervinden van het gebruik van het systeem in een specifieke context;\n\nd) de specifieke risico’s op schade die waarschijnlijk gevolgen zullen hebben voor de op grond van punt c) van dit lid geïdentificeerde categorieën natuurlijke personen of groepen personen, rekening houdend met de door de aanbieder op grond van artikel 13 verstrekte informatie;\n\ne) een beschrijving van de uitvoering van maatregelen voor menselijk toezicht, overeenkomstig de gebruiksaanwijzing;\n\nf) de maatregelen die moeten worden genomen wanneer die risico’s zich voordoen, met inbegrip van de regelingen voor interne governance en klachtenregelingen.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art27@original",
+   "chapter": "HOOFDSTUK III. AI-SYSTEMEN MET EEN HOOG RISICO",
+   "chapter_number": "III",
+   "section": "AFDELING 3. Verplichtingen van aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico en andere partijen",
+   "article": "27",
+   "article_heading": "Artikel 27. Beoordeling van de gevolgen voor de grondrechten van AI-systemen met een hoog risico",
+   "paragraph_number": "1"
+  }
+ },
+ {
+  "norm_id": "32024R1689:52:None:4:None",
+  "norm": {
+   "number": "4",
+   "paragraph_index": null,
+   "deontic": "COMPETENCE",
+   "addressee": "De Commissie",
+   "addressee_type": "EU_INSTITUTION",
+   "trigger_event": "ambtshalve of na een gekwalificeerde waarschuwing van het wetenschappelijk panel op grond van artikel 90, lid 1, punt a)",
+   "action": "een AI-model voor algemene doeleinden aanwijzen als een AI-model dat systeemrisico’s vertoont",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "op basis van de in bijlage XIII vastgestelde criteria"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'COMPETENCE', 'deference': 'overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om bijlage XIII te wijzigen door de in die bijlage beschreven criteria te specificeren en te actualiseren'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De Commissie kan ambtshalve of na een gekwalificeerde waarschuwing van het wetenschappelijk panel op grond van artikel 90, lid 1, punt a), op basis van de in bijlage XIII vastgestelde criteria een AI-model voor algemene doeleinden aanwijzen als een AI-model dat systeemrisico’s vertoont.\n\nDe Commissie is bevoegd overeenkomstig artikel 97 gedelegeerde handelingen vast te stellen om bijlage XIII te wijzigen door de in die bijlage beschreven criteria te specificeren en te actualiseren.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art52@original",
+   "chapter": "HOOFDSTUK V. AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
+   "chapter_number": "V",
+   "section": "AFDELING 1. Classificatieregels",
+   "article": "52",
+   "article_heading": "Artikel 52. Procedure",
+   "paragraph_number": "4"
+  }
+ },
+ {
+  "norm_id": "32024R1689:52:None:6:None",
+  "norm": {
+   "number": "6",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "De Commissie",
+   "addressee_type": "EU_INSTITUTION",
+   "trigger_event": null,
+   "action": "zorgt ervoor dat er een lijst met AI-modellen voor algemene doeleinden met een systeemrisico wordt gepubliceerd en houdt die lijst actueel",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De Commissie zorgt ervoor dat er een lijst met AI-modellen voor algemene doeleinden met een systeemrisico wordt gepubliceerd en houdt die lijst actueel, onverminderd de noodzaak om intellectuele-eigendomsrechten en vertrouwelijke bedrijfsinformatie of bedrijfsgeheimen te eerbiedigen en te beschermen overeenkomstig het Unierecht en het nationale recht.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art52@original",
+   "chapter": "HOOFDSTUK V. AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
+   "chapter_number": "V",
+   "section": "AFDELING 1. Classificatieregels",
+   "article": "52",
+   "article_heading": "Artikel 52. Procedure",
+   "paragraph_number": "6"
+  }
+ },
+ {
+  "norm_id": "32024R1689:52:None:5:None",
+  "norm": {
+   "number": "5",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "Een dergelijk verzoek",
+   "addressee_type": "OTHER",
+   "trigger_event": "een met redenen omkleed verzoek indient",
+   "action": "moet objectieve, gedetailleerde en nieuwe redenen bevatten",
+   "recipient_body": [],
+   "deadline": {
+    "value": null,
+    "unit": null,
+    "from": "aanwijzingsbesluit",
+    "raw": "ten vroegste zes maanden na het aanwijzingsbesluit"
+   },
+   "thresholds": [
+    "zes maanden",
+    "zes maanden"
+   ],
+   "conditions": [
+    "wiens model op grond van lid 4 is aangewezen als AI-model voor algemene doeleinden met een systeemrisico",
+    "die na het aanwijzingsbesluit aan het licht zijn gekomen",
+    "Indien de Commissie na haar herbeoordeling besluit de aanwijzing als AI-model voor algemene doeleinden met een systeemrisico te handhaven"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deadline_raw', 'deference']; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': 'neemt de Commissie dit in overweging en kan zij besluiten om opnieuw te beoordelen of het AI-model voor algemene doeleinden op basis van de criteria van bijlage XIII nog steeds wordt beschouwd als een AI-model dat systeemrisico’s vertoont'} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Als een aanbieder wiens model op grond van lid 4 is aangewezen als AI-model voor algemene doeleinden met een systeemrisico een met redenen omkleed verzoek indient, neemt de Commissie dit in overweging en kan zij besluiten om opnieuw te beoordelen of het AI-model voor algemene doeleinden op basis van de criteria van bijlage XIII nog steeds wordt beschouwd als een AI-model dat systeemrisico’s vertoont. Een dergelijk verzoek moet objectieve, gedetailleerde en nieuwe redenen bevatten die na het aanwijzingsbesluit aan het licht zijn gekomen. Aanbieders kunnen ten vroegste zes maanden na het aanwijzingsbesluit om een herbeoordeling verzoeken. Indien de Commissie na haar herbeoordeling besluit de aanwijzing als AI-model voor algemene doeleinden met een systeemrisico te handhaven, kunnen aanbieders pas na zes maanden na dat besluit opnieuw om een herbeoordeling verzoeken.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art52@original",
+   "chapter": "HOOFDSTUK V. AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
+   "chapter_number": "V",
+   "section": "AFDELING 1. Classificatieregels",
+   "article": "52",
+   "article_heading": "Artikel 52. Procedure",
+   "paragraph_number": "5"
+  }
+ },
+ {
+  "norm_id": "32024R1689:52:None:1:None",
+  "norm": {
+   "number": "1",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "de betrokken aanbieder",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "een AI-model voor algemene doeleinden voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarde",
+   "action": "stelt de betrokken aanbieder de Commissie daarvan onverwijld in kennis, doch in ieder geval binnen twee weken nadat aan die eis is voldaan of nadat bekend is geworden dat aan die eis zal worden voldaan",
+   "recipient_body": [
+    "de Commissie"
+   ],
+   "deadline": {
+    "value": null,
+    "unit": null,
+    "from": "aan die eis is voldaan of nadat bekend is geworden dat aan die eis zal worden voldaan",
+    "raw": "binnen twee weken nadat aan die eis is voldaan of nadat bekend is geworden dat aan die eis zal worden voldaan"
+   },
+   "thresholds": [],
+   "conditions": [
+    "Die kennisgeving bevat de informatie die nodig is om aan te tonen dat aan de desbetreffende eis is voldaan."
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "conservative-default (single-pass: the other pass failed validation entirely)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; the other failed validation even after its own retry, or returned nothing usable. This rests on a single unconfirmed reading, not two independently agreeing ones -- revisit if it ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Indien een AI-model voor algemene doeleinden voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarde, stelt de betrokken aanbieder de Commissie daarvan onverwijld in kennis, doch in ieder geval binnen twee weken nadat aan die eis is voldaan of nadat bekend is geworden dat aan die eis zal worden voldaan. Die kennisgeving bevat de informatie die nodig is om aan te tonen dat aan de desbetreffende eis is voldaan. Als de Commissie kennis krijgt van een AI-model voor algemene doeleinden dat systeemrisico’s vertoont waarvan zij niet in kennis is gesteld, kan zij besluiten dit model aan te wijzen als een model met een systeemrisico.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32024R1689",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32024R1689:art52@original",
+   "chapter": "HOOFDSTUK V. AI-MODELLEN VOOR ALGEMENE DOELEINDEN",
+   "chapter_number": "V",
+   "section": "AFDELING 1. Classificatieregels",
+   "article": "52",
+   "article_heading": "Artikel 52. Procedure",
+   "paragraph_number": "1"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:1:2:None",
+  "norm": {
+   "number": "2",
+   "deontic": "OBLIGATION",
+   "addressee": "de verwerkingsverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "bij het uitvoeren van een gegevensbeschermingseffectbeoordeling",
+   "action": "wint de verwerkingsverantwoordelijke bij het uitvoeren van een gegevensbeschermingseffectbeoordeling diens advies in",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "Wanneer een functionaris voor gegevensbescherming is aangewezen"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 1
+  },
+  "text": {
+   "paragraph": "Wanneer een functionaris voor gegevensbescherming is aangewezen, wint de verwerkingsverantwoordelijke bij het uitvoeren van een gegevensbeschermingseffectbeoordeling diens advies in.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "2"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:0:1:None",
+  "norm": {
+   "number": "1",
+   "deontic": "OBLIGATION",
+   "addressee": "de verwerkingsverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "Wanneer een soort verwerking, in het bijzonder een verwerking waarbij nieuwe technologieën worden gebruikt, gelet op de aard, de omvang, de context en de doeleinden daarvan waarschijnlijk een hoog risico inhoudt voor de rechten en vrijheden van natuurlijke personen",
+   "action": "voert de verwerkingsverantwoordelijke vóór de verwerking een beoordeling uit van het effect van de beoogde verwerkingsactiviteiten op de bescherming van persoonsgegevens",
+   "recipient_body": [],
+   "deadline": {
+    "value": null,
+    "unit": null,
+    "from": null,
+    "raw": "vóór de verwerking"
+   },
+   "thresholds": [],
+   "conditions": [
+    "gelet op de aard, de omvang, de context en de doeleinden daarvan"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 0
+  },
+  "text": {
+   "paragraph": "Wanneer een soort verwerking, in het bijzonder een verwerking waarbij nieuwe technologieën worden gebruikt, gelet op de aard, de omvang, de context en de doeleinden daarvan waarschijnlijk een hoog risico inhoudt voor de rechten en vrijheden van natuurlijke personen voert de verwerkingsverantwoordelijke vóór de verwerking een beoordeling uit van het effect van de beoogde verwerkingsactiviteiten op de bescherming van persoonsgegevens. Eén beoordeling kan een reeks vergelijkbare verwerkingen bestrijken die vergelijkbare hoge risico's inhouden.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "1"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:5:6:None",
+  "norm": {
+   "number": "6",
+   "deontic": "OBLIGATION",
+   "addressee": "de bevoegde toezichthoudende autoriteit",
+   "addressee_type": "COMPETENT_AUTHORITY",
+   "trigger_event": "Wanneer de in de leden 4 en 5 bedoelde lijsten betrekking hebben op verwerkingen met betrekking tot het aanbieden van goederen of diensten aan betrokkenen of op het observeren van hun gedrag in verschillende lidstaten, of op verwerkingen die het vrije verkeer van persoonsgegevens in de Unie wezenlijk kunnen beïnvloeden",
+   "action": "past de bevoegde toezichthoudende autoriteit voorafgaand aan de vaststelling van die lijsten het in artikel 63 bedoelde coherentiemechanisme toe",
+   "recipient_body": [],
+   "deadline": {
+    "value": null,
+    "unit": null,
+    "from": null,
+    "raw": "voorafgaand aan de vaststelling van die lijsten"
+   },
+   "thresholds": [],
+   "conditions": [
+    "de in de leden 4 en 5 bedoelde lijsten betrekking hebben op verwerkingen met betrekking tot het aanbieden van goederen of diensten aan betrokkenen of op het observeren van hun gedrag in verschillende lidstaten",
+    "de in de leden 4 en 5 bedoelde lijsten betrekking hebben op verwerkingen die het vrije verkeer van persoonsgegevens in de Unie wezenlijk kunnen beïnvloeden"
+   ],
+   "deference": "het in artikel 63 bedoelde coherentiemechanisme",
+   "extraction_confidence": 0.98,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 5
+  },
+  "text": {
+   "paragraph": "Wanneer de in de leden 4 en 5 bedoelde lijsten betrekking hebben op verwerkingen met betrekking tot het aanbieden van goederen of diensten aan betrokkenen of op het observeren van hun gedrag in verschillende lidstaten, of op verwerkingen die het vrije verkeer van persoonsgegevens in de Unie wezenlijk kunnen beïnvloeden, past de bevoegde toezichthoudende autoriteit voorafgaand aan de vaststelling van die lijsten het in artikel 63 bedoelde coherentiemechanisme toe.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "6"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:8:9:None",
+  "norm": {
+   "number": "9",
+   "deontic": "OBLIGATION",
+   "addressee": "De verwerkingsverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "in voorkomend geval",
+   "action": "vraagt in voorkomend geval de betrokkenen of hun vertegenwoordigers naar hun mening over de voorgenomen verwerking, met inachtneming van de bescherming van commerciële of algemene belangen of de beveiliging van verwerkingen",
+   "recipient_body": [
+    "de betrokkenen of hun vertegenwoordigers"
+   ],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "in voorkomend geval",
+    "met inachtneming van de bescherming van commerciële of algemene belangen of de beveiliging van verwerkingen"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 8
+  },
+  "text": {
+   "paragraph": "De verwerkingsverantwoordelijke vraagt in voorkomend geval de betrokkenen of hun vertegenwoordigers naar hun mening over de voorgenomen verwerking, met inachtneming van de bescherming van commerciële of algemene belangen of de beveiliging van verwerkingen.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "9"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:7:8:None",
+  "norm": {
+   "number": "8",
+   "deontic": "OBLIGATION",
+   "addressee": "de naleving van de in artikel 40 bedoelde goedgekeurde gedragscodes",
+   "addressee_type": "OTHER",
+   "trigger_event": "Bij het beoordelen van het effect van de door een verwerkingsverantwoordelijke of verwerker verrichte verwerkingen, en met name ter wille van een gegevensbeschermingseffectbeoordeling",
+   "action": "wordt de naleving van de in artikel 40 bedoelde goedgekeurde gedragscodes naar behoren in aanmerking genomen",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [],
+   "deference": null,
+   "extraction_confidence": 0.97,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 7
+  },
+  "text": {
+   "paragraph": "Bij het beoordelen van het effect van de door een verwerkingsverantwoordelijke of verwerker verrichte verwerkingen, en met name ter wille van een gegevensbeschermingseffectbeoordeling, wordt de naleving van de in artikel 40 bedoelde goedgekeurde gedragscodes naar behoren in aanmerking genomen.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "8"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:10:11:None",
+  "norm": {
+   "number": "11",
+   "deontic": "OBLIGATION",
+   "addressee": "de verwerkingsverantwoordelijke",
+   "addressee_type": "REGULATED_ENTITY",
+   "trigger_event": "wanneer sprake is van een verandering van het risico dat de verwerkingen inhouden",
+   "action": "verricht de verwerkingsverantwoordelijke een toetsing om te beoordelen of de verwerking overeenkomstig de gegevensbeschermingseffectbeoordeling wordt uitgevoerd",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "Indien nodig"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "gpt-5.6-luna",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "paragraph_index": 10
+  },
+  "text": {
+   "paragraph": "Indien nodig verricht de verwerkingsverantwoordelijke een toetsing om te beoordelen of de verwerking overeenkomstig de gegevensbeschermingseffectbeoordeling wordt uitgevoerd, zulks ten minste wanneer sprake is van een verandering van het risico dat de verwerkingen inhouden.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "11"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:None:5:None",
+  "norm": {
+   "number": "5",
+   "paragraph_index": null,
+   "deontic": "COMPETENCE",
+   "addressee": "De toezichthoudende autoriteit",
+   "addressee_type": "COMPETENT_AUTHORITY",
+   "trigger_event": null,
+   "action": "kan ook een lijst opstellen en openbaar maken van het soort verwerking waarvoor geen gegevensbeschermingseffectbeoordeling is vereist",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "waarvoor geen gegevensbeschermingseffectbeoordeling is vereist"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; pass1={'deontic': 'COMPETENCE', 'deference': None}, pass2={'deontic': 'PERMISSION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De toezichthoudende autoriteit kan ook een lijst opstellen en openbaar maken van het soort verwerking waarvoor geen gegevensbeschermingseffectbeoordeling is vereist. De toezichthoudende autoriteit deelt deze lijst mee aan het Comité.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "5"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:None:4:None",
+  "norm": {
+   "number": "4",
+   "paragraph_index": null,
+   "deontic": "OBLIGATION",
+   "addressee": "De toezichthoudende autoriteit",
+   "addressee_type": "COMPETENT_AUTHORITY",
+   "trigger_event": null,
+   "action": "stelt een lijst op van het soort verwerkingen waarvoor een gegevensbeschermingseffectbeoordeling overeenkomstig lid 1 verplicht is, en maakt deze openbaar",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "waarvoor een gegevensbeschermingseffectbeoordeling overeenkomstig lid 1 verplicht is"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.99,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deference']; pass1={'deontic': 'OBLIGATION', 'deference': 'overeenkomstig lid 1'}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De toezichthoudende autoriteit stelt een lijst op van het soort verwerkingen waarvoor een gegevensbeschermingseffectbeoordeling overeenkomstig lid 1 verplicht is, en maakt deze openbaar. De toezichthoudende autoriteit deelt die lijsten mee aan het in artikel 68 bedoelde Comité.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "4"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:None:10:None",
+  "norm": {
+   "number": "10",
+   "paragraph_index": null,
+   "deontic": "PROHIBITION",
+   "addressee": "de leden 1 tot en met 7",
+   "addressee_type": "OTHER",
+   "trigger_event": "Wanneer verwerking uit hoofde van artikel 6, lid 1, onder c) of e), haar rechtsgrond heeft in het Unierecht of in het recht van de lidstaat dat op de verwerkingsverantwoordelijke van toepassing is, de specifieke verwerking of geheel van verwerkingen in kwestie daarbij wordt geregeld, en er reeds als onderdeel van een algemene effectbeoordeling in het kader van de vaststelling van deze rechtsgrond een gegevensbeschermingseffectbeoordeling is uitgevoerd",
+   "action": "zijn de leden 1 tot en met 7 niet van toepassing",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "tenzij de lidstaten het noodzakelijk achten om voorafgaand aan de verwerkingen een dergelijke beoordeling uit te voeren"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.98,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'deference']; pass1={'deontic': 'PROHIBITION', 'deference': 'tenzij de lidstaten het noodzakelijk achten om voorafgaand aan de verwerkingen een dergelijke beoordeling uit te voeren'}, pass2={'deontic': 'PROCEDURAL', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "Wanneer verwerking uit hoofde van artikel 6, lid 1, onder c) of e), haar rechtsgrond heeft in het Unierecht of in het recht van de lidstaat dat op de verwerkingsverantwoordelijke van toepassing is, de specifieke verwerking of geheel van verwerkingen in kwestie daarbij wordt geregeld, en er reeds als onderdeel van een algemene effectbeoordeling in het kader van de vaststelling van deze rechtsgrond een gegevensbeschermingseffectbeoordeling is uitgevoerd, zijn de leden 1 tot en met 7 niet van toepassing, tenzij de lidstaten het noodzakelijk achten om voorafgaand aan de verwerkingen een dergelijke beoordeling uit te voeren.",
+   "resolution": "paragraph_number"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "10"
+  }
+ },
+ {
+  "norm_id": "32016R0679:35:6:7:0",
+  "norm": {
+   "number": "7",
+   "paragraph_index": 6,
+   "norm_index": 0,
+   "deontic": "OBLIGATION",
+   "addressee": "De beoordeling",
+   "addressee_type": "OTHER",
+   "trigger_event": null,
+   "action": "bevat ten minste",
+   "recipient_body": [],
+   "deadline": null,
+   "thresholds": [],
+   "conditions": [
+    "in voorkomend geval",
+    "met inachtneming van de rechten en gerechtvaardigde belangen van de betrokkenen en andere personen in kwestie"
+   ],
+   "deference": null,
+   "extraction_confidence": 0.93,
+   "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+   "extracted_on": "2026-09-23",
+   "human_verified": false,
+   "extraction_uncertain": true,
+   "uncertainty_note": "two independent extraction passes disagreed on []; pass1={'deontic': 'OBLIGATION', 'deference': None}, pass2={'deontic': 'OBLIGATION', 'deference': None} -- resolved to the non-suppressing default rather than a human pre-clearing it; revisit if this norm ends up inside an actual candidate finding."
+  },
+  "text": {
+   "paragraph": "De beoordeling bevat ten minste:\n\na) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;\n\nb) een beoordeling van de noodzaak en de evenredigheid van de verwerkingen met betrekking tot de doeleinden;\n\nc) een beoordeling van de in lid 1 bedoelde risico's voor de rechten en vrijheden van betrokkenen; en\n\nd) de beoogde maatregelen om de risico's aan te pakken, waaronder waarborgen, veiligheidsmaatregelen en mechanismen om de bescherming van persoonsgegevens te garanderen en om aan te tonen dat aan deze verordening is voldaan, met inachtneming van de rechten en gerechtvaardigde belangen van de betrokkenen en andere personen in kwestie.",
+   "resolution": "paragraph_index"
+  },
+  "hierarchy": {
+   "instrument_id": "32016R0679",
+   "jurisdiction": "EU",
+   "graph_uid": "eu:32016R0679:art35@original",
+   "chapter": "HOOFDSTUK IV. Verwerkingsverantwoordelijke en verwerker",
+   "chapter_number": "IV",
+   "section": "Afdeling 3. Gegevensbeschermingseffectbeoordeling en voorafgaande raadpleging",
+   "article": "35",
+   "article_heading": "Artikel 35. Gegevensbeschermingseffectbeoordeling",
+   "paragraph_number": "7"
+  }
+ }
+]

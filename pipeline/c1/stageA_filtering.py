@@ -91,7 +91,7 @@ log = logging.getLogger(__name__)
 # --- Tunable --------------------------------------------------------------------------
 # Pairs scoring below this AND without a graph link are discarded. multilingual-e5 scores
 # cluster high (unrelated legal text often scores ~0.7), so calibrate on known related pairs.
-SIMILARITY_FLOOR = 0.8
+SIMILARITY_FLOOR = 0.83
 MODEL_NAME = "intfloat/multilingual-e5-large"
 MODEL_PREFIX = "query: "   # e5 models expect this prefix; use "" for other models
 # ---------------------------------------------------------------------------------------
