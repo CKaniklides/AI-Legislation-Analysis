@@ -1,0 +1,15 @@
+333 findings; 10 already done; 323 to do (about 955k characters of input, model gpt-5.6-luna)
+  [25/323]
+  [50/323]
+  [75/323]
+  [100/323]
+  [125/323]
+  [150/323]
+  [175/323]
+  [200/323]
+  [225/323]
+  [250/323]
+  [275/323]
+  [300/323]
+done: 323 saved, 0 failed -> data\cache\ui_explanations_cache.json
+next: python ui/build_review_data.py
