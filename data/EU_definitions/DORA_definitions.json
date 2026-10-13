@@ -1,0 +1,609 @@
+{
+  "document": "32022R2554",
+  "terms": [
+    "de verordening betreffende markten in cryptoactiva",
+    "digitale operationele weerbaarheid",
+    "netwerk- en informatiesysteem",
+    "legacy-ICT-systeem",
+    "beveiliging van netwerk- en informatiesystemen",
+    "ICT-risico",
+    "informatieactief",
+    "ICT-actief",
+    "ICT-gerelateerd incident",
+    "betalingsgerelateerd operationeel of beveiligingsincident",
+    "ernstig ICT-gerelateerd incident",
+    "ernstig betalingsgerelateerd operationeel of beveiligingsincident",
+    "cyberdreiging",
+    "significante cyberdreiging",
+    "cyberaanval",
+    "inlichtingen over dreigingen",
+    "kwetsbaarheid",
+    "dreigingsgestuurde penetratietest (threat led penetration testing — TLPT)",
+    "ICT-risico van derde aanbieders",
+    "derde aanbieder van ICT-diensten",
+    "aanbieder van ICT-diensten binnen een groep",
+    "ICT-diensten",
+    "kritieke of belangrijke functie",
+    "kritieke derde aanbieder van ICT-diensten",
+    "dochteronderneming",
+    "groep",
+    "moederonderneming",
+    "in een derde land gevestigde ICT-subcontractant",
+    "ICT-concentratierisico",
+    "leidinggevend orgaan",
+    "kredietinstelling",
+    "bij Richtlijn 2013/36/EU vrijgestelde instelling",
+    "beleggingsonderneming",
+    "kleine en niet-verweven beleggingsonderneming",
+    "betalingsinstelling",
+    "bij Richtlijn (EU) 2015/2366 vrijgestelde betalingsinstelling",
+    "aanbieder van rekeninginformatiediensten",
+    "instelling voor elektronisch geld",
+    "bij Richtlijn 2009/110/EG vrijgestelde instelling voor elektronisch geld",
+    "centrale tegenpartij",
+    "transactieregister",
+    "centrale effectenbewaarinstelling",
+    "beheerder van alternatieve beleggingsinstellingen",
+    "beheermaatschappij",
+    "aanbieder van datarapporteringsdiensten",
+    "verzekeringsonderneming",
+    "herverzekeringsonderneming",
+    "verzekeringstussenpersoon",
+    "nevenverzekeringstussenpersoon",
+    "herverzekeringstussenpersoon",
+    "instelling voor bedrijfspensioenvoorziening",
+    "kleine instelling voor bedrijfspensioenvoorziening",
+    "ratingbureau",
+    "aanbieder van cryptoactivadiensten",
+    "emittent van asset-referenced tokens",
+    "beheerder van kritieke benchmarks",
+    "crowdfundingdienstverlener",
+    "securitisatieregister",
+    "micro-onderneming",
+    "lead overseer",
+    "Gemengd Comité",
+    "kleine onderneming",
+    "middelgrote onderneming",
+    "overheidsinstantie",
+    "single points of failure",
+    "Hof van Justitie"
+  ],
+  "definitions": [
+    {
+      "term": "de verordening betreffende markten in cryptoactiva",
+      "definition": "1095/2010 en Richtlijnen 2013/36/EU en (EU) 2019/1937",
+      "paragraph": "1",
+      "article": "2",
+      "document": "32022R2554",
+      "pattern": "tussen_haakjes"
+    },
+    {
+      "term": "digitale operationele weerbaarheid",
+      "definition": "het vermogen van een financiële entiteit om haar operationele integriteit en betrouwbaarheid op te bouwen, te waarborgen en te evalueren, door direct of indirect via gebruik van diensten die door derde aanbieders van ICT-diensten worden verleend te voorzien in het volledige scala van ICT-gerelateerde capaciteiten die nodig zijn voor de beveiliging van de netwerk- en informatiesystemen waarvan een financiële entiteit gebruikmaakt, en die de permanente verlening van financiële diensten en de kwaliteit ervan, onder meer gedurende storingen, ondersteunen",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerk- en informatiesysteem",
+      "definition": "een netwerk- en informatiesysteem in de zin van artikel 6, punt 1, van Richtlijn (EU) 2022/2555",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "legacy-ICT-systeem",
+      "definition": "een ICT-systeem dat het einde van zijn levenscyclus (einde van de levensduur) heeft bereikt, dat om technologische of commerciële redenen niet geschikt is voor upgrades of reparaties, of dat niet langer wordt ondersteund door de leverancier of een derde aanbieder van ICT-diensten, maar dat nog steeds in gebruik is en de functies van de financiële entiteit ondersteunt",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiliging van netwerk- en informatiesystemen",
+      "definition": "beveiliging van netwerk- en informatiesystemen in de zin van artikel 6, punt 2, van Richtlijn (EU) 2022/2555",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-risico",
+      "definition": "elke redelijkerwijs aan te wijzen omstandigheid met betrekking tot het gebruik van netwerk- en informatiesystemen die, indien zij zich voordoet, de beveiliging van het netwerk- en informatiesysteem, van technologieafhankelijke instrumenten of processen, van verrichtingen en processen, of van de levering van de diensten in gevaar kan brengen, door schadelijke effecten met zich mee te brengen in de digitale of fysieke omgeving",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "informatieactief",
+      "definition": "een reeks, al dan niet tastbare, gegevens die beschermenswaardig zijn",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-actief",
+      "definition": "een software- of hardwareactief in de netwerk- en informatiesystemen die door de financiële entiteit worden gebruikt",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-gerelateerd incident",
+      "definition": "één gebeurtenis of een reeks gekoppelde gebeurtenissen die niet door de financiële entiteit zijn gepland en die de beveiliging van de netwerk- en informatiesystemen in gevaar brengen en een nadelig effect hebben op de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van gegevens of op de door de financiële entiteit verleende diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "betalingsgerelateerd operationeel of beveiligingsincident",
+      "definition": "één gebeurtenis of een reeks gekoppelde gebeurtenissen die niet door de in artikel 2, lid 1, punten a) tot en met d), bedoelde financiële entiteiten gepland zijn, die al dan niet ICT-gerelateerd zijn, en die een nadelig effect hebben op de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van betalingsgerelateerde gegevens, of op de door de financiële entiteit verleende betalingsgerelateerde diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ernstig ICT-gerelateerd incident",
+      "definition": "een ICT-gerelateerd incident met grote nadelige gevolgen voor de netwerk- en informatiesystemen die kritieke of belangrijke functies van de financiële entiteit ondersteunen",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ernstig betalingsgerelateerd operationeel of beveiligingsincident",
+      "definition": "een betalingsgerelateerd operationeel of beveiligingsincident dat een groot negatief effect heeft op de verleende betalingsgerelateerde diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberdreiging",
+      "definition": "cyberdreiging in de zin van artikel 2, punt 8), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "significante cyberdreiging",
+      "definition": "een cyberdreiging waarvan de technische kenmerken erop wijzen dat zij kan leiden tot een ernstig ICT-gerelateerd incident of een ernstig betalingsgerelateerd operationeel of beveiligingsincident",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberaanval",
+      "definition": "een kwaadwillig ICT-gerelateerd incident dat het gevolg is van een door een dreigingsactor gepleegde poging om een actief te vernietigen, bloot te stellen, te veranderen, buiten werking te stellen, te stelen of er ongeoorloofde toegang toe te verkrijgen of er ongeoorloofd gebruik van te maken",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "inlichtingen over dreigingen",
+      "definition": "informatie die is geaggregeerd, getransformeerd, geanalyseerd, geïnterpreteerd of verrijkt om de noodzakelijke achtergrond voor besluitvorming te bieden en om relevant en toereikend inzicht te verschaffen om de gevolgen van een ICT-gerelateerd incident of van een cyberdreiging te beperken, met inbegrip van de technische details van een cyberaanval, de voor de aanval verantwoordelijke personen en hun werkwijze en motieven",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kwetsbaarheid",
+      "definition": "een zwakte, gevoeligheid of tekortkoming in een actief, systeem, proces of controle die kan worden misbruikt",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "dreigingsgestuurde penetratietest (threat led penetration testing — TLPT)",
+      "definition": "een kader waarin de tactiek, technieken en procedures van levensechte, als een reële cyberdreiging ervaren dreigingsactoren worden nagebootst en waarin een gecontroleerde, op maat gesneden, door inlichtingen gestuurde (red team) test van de kritieke reëel bestaande productiesystemen van de financiële entiteit wordt voorgebracht",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-risico van derde aanbieders",
+      "definition": "een ICT-risico dat voor een financiële entiteit kan ontstaan met betrekking tot het gebruik van ICT-diensten die door derde aanbieders van ICT-diensten of door onderaannemers daarvan, onder meer via onderaanbestedingsovereenkomsten, worden verleend",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "derde aanbieder van ICT-diensten",
+      "definition": "een onderneming die ICT-diensten verleent",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van ICT-diensten binnen een groep",
+      "definition": "een onderneming die deel uitmaakt van een financiële groep en hoofdzakelijk ICT-diensten verleent aan financiële entiteiten binnen dezelfde groep of aan financiële entiteiten die tot hetzelfde institutionele protectiestelsel behoren, met inbegrip van hun moedermaatschappijen, dochterondernemingen, bijkantoren of andere entiteiten die gezamenlijk eigendom zijn of onder gezamenlijke zeggenschap staan",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-diensten",
+      "definition": "digitale en gegevensdiensten die doorlopend via ICT-systemen aan een of meer interne of externe gebruikers worden verleend, waaronder hardware als dienst en hardwarediensten, met inbegrip van het verlenen van technische ondersteuning via software- of firmware-updates door de hardwareaanbieder, met uitzondering van traditionele analoge telefoondiensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kritieke of belangrijke functie",
+      "definition": "een functie waarvan de verstoring wezenlijk afbreuk zou doen aan de financiële prestaties van een financiële entiteit of aan de soliditeit of de continuïteit van haar diensten en activiteiten, of waarvan de beëindiging of gebrekkige of mislukte uitvoering wezenlijk afbreuk zou doen aan de permanente naleving door een financiële entiteit van de voorwaarden en verplichtingen uit hoofde van haar vergunning of haar andere verplichtingen uit hoofde van het toepasselijke recht inzake financiële diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kritieke derde aanbieder van ICT-diensten",
+      "definition": "een derde aanbieder van ICT-diensten die overeenkomstig artikel 31 is aangewezen als cruciaal; 24) “in een derde land gevestigde derde aanbieder van ICT-diensten”: een derde aanbieder van ICT-diensten die een in een derde land gevestigde rechtspersoon is en die een contractuele overeenkomst met een financiële entiteit heeft gesloten voor de levering van ICT-diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "dochteronderneming",
+      "definition": "een dochteronderneming in de zin van artikel 2, punt 10), en artikel 22 van Richtlijn 2013/34/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "groep",
+      "definition": "een groep in de zin van artikel 2, punt 11), van Richtlijn 2013/34/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "moederonderneming",
+      "definition": "een moederonderneming in de zin van artikel 2, punt 9), en artikel 22 van Richtlijn 2013/34/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "in een derde land gevestigde ICT-subcontractant",
+      "definition": "een ICT-subcontractant die een in een derde land gevestigde rechtspersoon is en die een contractuele overeenkomst heeft gesloten met een derde aanbieder van ICT-diensten of met een in een derde land gevestigde derde aanbieder van ICT-diensten",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-concentratierisico",
+      "definition": "een blootstelling aan individuele of aan meerdere onderling verbonden kritieke derde aanbieders van ICT-diensten, waardoor een bepaalde mate van afhankelijkheid ten aanzien van deze aanbieders ontstaat, zodat de onbeschikbaarheid, het falen of een ander soort tekortkoming van deze aanbieder het vermogen van een financiële entiteit om kritieke of belangrijke functies te vervullen in gevaar kan brengen, ertoe kan leiden dat zij andere soorten nadelige effecten, waaronder grote verliezen, ondervindt, of de financiële stabiliteit van de Unie in haar geheel in gevaar kan brengen",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "leidinggevend orgaan",
+      "definition": "een leidinggevend orgaan in de zin van artikel 4, lid 1, punt 36), van Richtlijn 2014/65/EU, artikel 3, lid 1, punt 7), van Richtlijn 2013/36/EU, artikel 2, lid 1, punt s), van Richtlijn 2009/65/EG van het Europees Parlement en de Raad (31), artikel 2, lid 1, punt 45), van Verordening (EU) nr. 909/2014, artikel 3, lid 1, punt 20), van Verordening (EU) 2016/1011, en in de relevante bepaling van de verordening betreffende markten in cryptoactiva, of de gelijkwaardige personen die de entiteit daadwerkelijk besturen of sleutelfuncties vervullen overeenkomstig het toepasselijke Unie- of nationale recht",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kredietinstelling",
+      "definition": "een kredietinstelling in de zin van artikel 4, lid 1, punt 1, van Verordening (EU) nr. 575/2013 van het Europees Parlement en de Raad (32)",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bij Richtlijn 2013/36/EU vrijgestelde instelling",
+      "definition": "een entiteit zoals vermeld in artikel 2, lid 5, punten 4) tot en met 23), van Richtlijn 2013/36/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beleggingsonderneming",
+      "definition": "een beleggingsonderneming in de zin van artikel 4, lid 1, punt 1, van Richtlijn 2014/65/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kleine en niet-verweven beleggingsonderneming",
+      "definition": "een beleggingsonderneming die voldoet aan de voorwaarden in artikel 12, lid 1, van Verordening (EU) 2019/2033 van het Europees Parlement en de Raad (33)",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "betalingsinstelling",
+      "definition": "een betalingsinstelling in de zin van artikel 4, punt 4), van Richtlijn (EU) 2015/2366",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bij Richtlijn (EU) 2015/2366 vrijgestelde betalingsinstelling",
+      "definition": "een betalingsinstelling die is vrijgesteld op grond van artikel 32, lid 1, van Richtlijn (EU) 2015/2366",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van rekeninginformatiediensten",
+      "definition": "een aanbieder van rekeninginformatiediensten als bedoeld in artikel 33, lid 1, van Richtlijn (EU) 2015/2366",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "instelling voor elektronisch geld",
+      "definition": "een instelling voor elektronisch geld in de zin van artikel 2, punt 1), van Richtlijn 2009/110/EG van het Europees Parlement en de Raad",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bij Richtlijn 2009/110/EG vrijgestelde instelling voor elektronisch geld",
+      "definition": "een instelling voor elektronisch geld waaraan een ontheffing is verleend als bedoeld in artikel 9, lid 1, van Richtlijn 2009/110/EG",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "centrale tegenpartij",
+      "definition": "een centrale tegenpartij in de zin van artikel 2, punt 1), van Verordening (EU) nr. 648/2012",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "transactieregister",
+      "definition": "een transactieregister in de zin van artikel 2, punt 2), van Verordening (EU) nr. 648/2012",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "centrale effectenbewaarinstelling",
+      "definition": "een centrale effectenbewaarinstelling in de zin van artikel 2, lid 1, punt 1), van Verordening (EU) nr. 909/2014; 43) “handelsplatform” een handelsplatform in de zin van artikel 4, lid 1, punt 24, van Richtlijn 2014/65/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beheerder van alternatieve beleggingsinstellingen",
+      "definition": "een beheerder van alternatieve beleggingsinstellingen in de zin van artikel 4, lid 1, punt b), van Richtlijn 2011/61/EU",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beheermaatschappij",
+      "definition": "een beheermaatschappij in de zin van artikel 2, lid 1, punt b), van Richtlijn 2009/65/EG",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van datarapporteringsdiensten",
+      "definition": "een aanbieder van datarapporteringsdiensten in de zin van Verordening (EU) nr. 600/2014, als bedoeld in artikel 2, lid 1, punten 34 tot en met 36, van die verordening",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verzekeringsonderneming",
+      "definition": "een verzekeringsonderneming in de zin van artikel 13, punt 1, van Richtlijn 2009/138/EG",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "herverzekeringsonderneming",
+      "definition": "een herverzekeringsonderneming in de zin van artikel 13, punt 4, van Richtlijn 2009/138/EG",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verzekeringstussenpersoon",
+      "definition": "een verzekeringstussenpersoon in de zin van artikel 2, lid 1, punt 3, van Richtlijn (EU) 2016/97 van het Europees Parlement en de Raad (34)",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nevenverzekeringstussenpersoon",
+      "definition": "een nevenverzekeringstussenpersoon in de zin van artikel 2, lid 1, punt 4, van Richtlijn (EU) 2016/97",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "herverzekeringstussenpersoon",
+      "definition": "een herverzekeringstussenpersoon in de zin van artikel 2, lid 1, punt 5, van Richtlijn (EU) 2016/97",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "instelling voor bedrijfspensioenvoorziening",
+      "definition": "een instelling voor bedrijfspensioenvoorziening in de zin van artikel 6, punt 1), van Richtlijn (EU) 2016/2341",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kleine instelling voor bedrijfspensioenvoorziening",
+      "definition": "een instelling voor bedrijfspensioenvoorziening die pensioenregelingen uitvoert die samen minder dan 100 leden hebben",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ratingbureau",
+      "definition": "een ratingbureau in de zin van artikel 3, lid 1, punt b), van Verordening (EG) nr. 1060/2009",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van cryptoactivadiensten",
+      "definition": "een aanbieder van cryptoactivadiensten in de zin van de relevante bepaling van de verordening betreffende markten in cryptoactiva",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "emittent van asset-referenced tokens",
+      "definition": "een emittent van asset-referenced tokens in de zin van de relevante bepaling van de verordening betreffende markten in cryptoactiva",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beheerder van kritieke benchmarks",
+      "definition": "een beheerder van kritieke benchmarks in de zin van artikel 3, lid 1, punt 25), van Verordening (EU) 2016/1011",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "crowdfundingdienstverlener",
+      "definition": "een crowdfundingdienstverlener in de zin van artikel 2, lid 1, punt e), van Verordening (EU) 2020/1503 van het Europees Parlement en de Raad (35)",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "securitisatieregister",
+      "definition": "een securitisatieregister in de zin van artikel 2, punt 23), van Verordening (EU) 2017/2402 van het Europees Parlement en de Raad (36)",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "micro-onderneming",
+      "definition": "een financiële entiteit die geen handelsplatform, centrale tegenpartij, transactieregister of centrale effectenbewaarinstelling is, en waar minder dan 10 personen werkzaam zijn en waarvan de jaaromzet en/of het jaarlijkse balanstotaal niet hoger liggen dan 2 miljoen EUR",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "lead overseer",
+      "definition": "de overeenkomstig artikel 31, lid 1, punt b), van deze verordening aangewezen Europese toezichthoudende autoriteit",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Gemengd Comité",
+      "definition": "het in artikel 54 van de Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010 bedoelde comité",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kleine onderneming",
+      "definition": "een financiële entiteit met 10 of meer werknemers, maar minder dan 50 werknemers, en een jaaromzet en/of een jaarlijks balanstotaal van meer dan 2 miljoen EUR, maar van ten hoogste 10 miljoen EUR",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "middelgrote onderneming",
+      "definition": "een financiële entiteit die geen kleine onderneming is, minder dan 250 personen in dienst heeft en een jaaromzet van ten hoogste 50 miljoen EUR en/of een jaarlijkse balans van ten hoogste 43 miljoen EUR heeft",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overheidsinstantie",
+      "definition": "een regerings- of andere overheidsinstantie, met inbegrip van nationale centrale banken.",
+      "paragraph": null,
+      "article": "3",
+      "document": "32022R2554",
+      "pattern": "lijst"
+    },
+    {
+      "term": "single points of failure",
+      "definition": "Financiële entiteiten beschikken over mechanismen om overeenkomstig artikel 17 afwijkende activiteiten zo spoedig mogelijk te detecteren, met inbegrip van kwesties op het gebied van ICT-netwerkprestaties en ICT-gerelateerde incidenten, en om potentiële zwakke fysieke punten",
+      "paragraph": "1",
+      "article": "10",
+      "document": "32022R2554",
+      "pattern": "tussen_haakjes"
+    },
+    {
+      "term": "single points of failure",
+      "definition": "het gebruik van voorwaarden, met inbegrip van de technische uitvoering ervan, voor het verlenen van ICT-diensten aan financiële entiteiten door derde aanbieders van ICT-diensten, die de lead overseer relevant acht om het ontstaan van zwakke punten",
+      "paragraph": "1",
+      "article": "35",
+      "document": "32022R2554",
+      "pattern": "tussen_haakjes"
+    },
+    {
+      "term": "Hof van Justitie",
+      "definition": "hij vermeldt dat tegen het besluit bezwaar kan worden aangetekend bij de bezwaarcommissie van de ETA’s en dat bij het Hof van Justitie van de Europese Unie",
+      "paragraph": "3",
+      "article": "37",
+      "document": "32022R2554",
+      "pattern": "tussen_haakjes"
+    }
+  ]
+}

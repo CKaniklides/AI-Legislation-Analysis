@@ -1,0 +1,80 @@
+{
+  "scaffold_predicates": [
+    "RexistAtTime",
+    "and",
+    "or",
+    "not",
+    "imply",
+    "DataSubject",
+    "PersonalData",
+    "Controller",
+    "Processor",
+    "nominates",
+    "PersonalDataProcessing"
+  ],
+  "connectives": [
+    "and",
+    "or",
+    "not",
+    "imply"
+  ],
+  "deontic_predicates": [
+    "Obliged",
+    "Permitted"
+  ],
+  "temporal_predicates": [
+    "Before",
+    "After"
+  ],
+  "undue_delay_predicates": [
+    "nonDelayed"
+  ],
+  "comparison_predicates": [
+    "lessThan",
+    "lessThanOrEqual",
+    "greaterThan",
+    "greaterThanOrEqual",
+    "equal",
+    "notEqual"
+  ],
+  "qualitative_threshold_predicates": [
+    "largeScale",
+    "occasional",
+    "riskForRightsFreedomsOf",
+    "concernsLimitedNumberOfDS",
+    "HasNumberOfEmployees"
+  ],
+  "actor_classes": [
+    "Controller",
+    "Processor",
+    "DataSubject",
+    "DPO",
+    "Representative",
+    "JointDataController",
+    "SupervisoryAuthority",
+    "LeadSupervisoryAuthority",
+    "Board",
+    "Commission",
+    "MemberState",
+    "BodyACM",
+    "BodyCC",
+    "CertificationBody",
+    "MonitoringBody",
+    "ThirdParty",
+    "Recipient",
+    "InternationalOrganization",
+    "Person",
+    "Legal_Person",
+    "Child",
+    "HolderOfParentalResponsibility",
+    "Court",
+    "OfficialAuthority"
+  ],
+  "time_units": {
+    "h": "hour",
+    "d": "day",
+    "w": "week",
+    "M": "month",
+    "y": "year"
+  }
+}

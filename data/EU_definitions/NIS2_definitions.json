@@ -1,0 +1,385 @@
+{
+  "document": "32022L2555",
+  "terms": [
+    "netwerk- en informatiesysteem",
+    "beveiliging van netwerk- en informatiesystemen",
+    "cyberbeveiliging",
+    "nationale cyberbeveiligingsstrategie",
+    "bijna-incident",
+    "incident",
+    "grootschalig cyberbeveiligingsincident",
+    "incidentenbehandeling",
+    "risico",
+    "cyberdreiging",
+    "significante cyberdreiging",
+    "ICT-product",
+    "ICT-dienst",
+    "ICT-proces",
+    "kwetsbaarheid",
+    "norm",
+    "technische specificatie",
+    "internetknooppunt",
+    "domeinnaamsysteem (DNS)",
+    "DNS-dienstverlener",
+    "register voor topleveldomeinnamen",
+    "entiteit die domeinnaamregistratiediensten aanbiedt",
+    "digitale dienst",
+    "vertrouwensdienst",
+    "verlener van vertrouwensdiensten",
+    "gekwalificeerde vertrouwensdienst",
+    "gekwalificeerde verlener van vertrouwensdiensten",
+    "onlinemarktplaats",
+    "onlinezoekmachine",
+    "cloudcomputingdienst",
+    "datacentrumdienst",
+    "netwerk voor de levering van inhoud",
+    "platform voor socialenetwerkdiensten",
+    "vertegenwoordiger",
+    "overheidsinstantie",
+    "openbaar elektronischecommunicatienetwerk",
+    "elektronischecommunicatiedienst",
+    "entiteit",
+    "aanbieder van beheerde diensten",
+    "aanbieder van beheerde beveiligingsdiensten",
+    "onderzoeksorganisatie",
+    "traffic light protocol"
+  ],
+  "definitions": [
+    {
+      "term": "netwerk- en informatiesysteem",
+      "definition": "a) een elektronischecommunicatienetwerk in de zin van artikel 2, punt 1), van Richtlijn (EU) 2018/1972; b) elk apparaat of elke groep van onderling verbonden of verwante apparaten, waarvan er een of meer, op grond van een programma, een automatische verwerking van digitale gegevens uitvoeren, of c) digitale gegevens die worden opgeslagen, verwerkt, opgehaald of verzonden met behulp van de in punten a) en b) bedoelde elementen met het oog op de werking, het gebruik, de bescherming en het onderhoud ervan",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiliging van netwerk- en informatiesystemen",
+      "definition": "het vermogen van netwerk- en informatiesystemen om op een bepaald niveau van betrouwbaarheid weerstand te bieden aan elke gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die door of via deze netwerk- en informatiesystemen worden aangeboden, in gevaar kan brengen",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberbeveiliging",
+      "definition": "cyberbeveiliging zoals gedefinieerd in artikel 2, punt 1), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nationale cyberbeveiligingsstrategie",
+      "definition": "een samenhangend kader van een lidstaat met strategische doelstellingen en prioriteiten op het vlak van cyberbeveiliging en de governance om die doelstellingen en prioriteiten in die lidstaat te verwezenlijken",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bijna-incident",
+      "definition": "een gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die worden aangeboden door of toegankelijk zijn via netwerk- en informatiesystemen, in gevaar had kunnen brengen, maar die met succes is voorkomen of zich niet heeft voorgedaan",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "incident",
+      "definition": "een gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die worden aangeboden door of toegankelijk zijn via netwerk- en informatiesystemen, in gevaar brengt",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "grootschalig cyberbeveiligingsincident",
+      "definition": "een incident dat leidt tot een verstoringsniveau dat te groot is om door een getroffen lidstaat alleen te worden verholpen of dat significante gevolgen heeft voor ten minste twee lidstaten",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "incidentenbehandeling",
+      "definition": "alle acties en procedures die gericht zijn op het voorkomen, opsporen, analyseren en indammen van of het reageren op en het herstellen van een incident",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "risico",
+      "definition": "de mogelijkheid van verlies of verstoring als gevolg van een incident, wat wordt uitgedrukt als een combinatie van de omvang van een dergelijk verlies of verstoring en de waarschijnlijkheid dat het incident zich voordoet",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberdreiging",
+      "definition": "een cyberdreiging zoals gedefinieerd in artikel 2, punt 8), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "significante cyberdreiging",
+      "definition": "een cyberdreiging waarvan op basis van de technische kenmerken kan worden aangenomen dat zij ernstige gevolgen kan hebben voor de netwerk- en informatiesystemen van een entiteit of de gebruikers van de diensten van de entiteit door het veroorzaken van aanzienlijke materiële of immateriële schade",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-product",
+      "definition": "een ICT-product zoals gedefinieerd in artikel 2, punt 12), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-dienst",
+      "definition": "een ICT-dienst zoals gedefinieerd in artikel 2, punt 13), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-proces",
+      "definition": "een ICT-proces zoals gedefinieerd in artikel 2, punt 14), van Verordening (EU) 2019/881",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kwetsbaarheid",
+      "definition": "een zwakheid, vatbaarheid of gebrek van ICT-producten of ICT-diensten die door een cyberdreiging kan worden uitgebuit",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "norm",
+      "definition": "een norm zoals gedefinieerd in artikel 2, punt 1), van Verordening (EU) nr. 1025/2012 van het Europees Parlement en de Raad (29)",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "technische specificatie",
+      "definition": "een technische specificatie in de zin van artikel 2, punt 4), van Verordening (EU) nr. 1025/2012",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "internetknooppunt",
+      "definition": "een netwerkfaciliteit die de interconnectie van meer dan twee onafhankelijke netwerken (autonome systemen) mogelijk maakt, voornamelijk ter vergemakkelijking van de uitwisseling van internetverkeer, die alleen interconnectie voor autonome systemen biedt en die niet vereist dat het internetverkeer dat tussen een paar deelnemende autonome systemen verloopt, via een derde autonoom systeem verloopt, noch dat verkeer wijzigt of anderszins verstoort",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "domeinnaamsysteem (DNS)",
+      "definition": "een hiërarchisch gedistribueerd naamgevingssysteem dat het mogelijk maakt internetdiensten en -bronnen te identificeren, waardoor eindgebruikersapparaten in staat worden gesteld routing- en connectiviteitsdiensten op het internet te gebruiken om die diensten en bronnen te bereiken",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "DNS-dienstverlener",
+      "definition": "een entiteit die de volgende diensten verleent: a) openbare recursieve domeinnaamomzettingsdiensten voor interneteindgebruikers, of b) gezaghebbende domeinnaamomzettingsdiensten voor gebruik door derden, met uitzondering van root-naamservers",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "register voor topleveldomeinnamen",
+      "definition": "een entiteit waaraan een specifieke topleveldomeinnaam is gedelegeerd en die verantwoordelijk is voor het beheer van de topleveldomeinnaam, met inbegrip van de registratie van domeinnamen onder de topleveldomeinnaam en de technische exploitatie van de topleveldomeinnaam, met inbegrip van de exploitatie van de naamservers, het onderhoud van de databases en de verdeling van de zonebestanden van de topleveldomeinnaam over de naamservers, ongeacht of die activiteiten door de entiteit zelf worden uitgevoerd of worden uitbesteed, maar met uitzondering van situaties waarin topleveldomeinnamen uitsluitend voor eigen gebruik worden aangewend door een register",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "entiteit die domeinnaamregistratiediensten aanbiedt",
+      "definition": "een registrator of een agent die namens registrators optreedt, zoals een aanbieder van privacy- of proxy-registratiediensten of wederverkoper",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "digitale dienst",
+      "definition": "een dienst zoals gedefinieerd in artikel 1, lid 1, punt b), van Richtlijn (EU) 2015/1535 van het Europees Parlement en de Raad (30)",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertrouwensdienst",
+      "definition": "een vertrouwensdienst zoals gedefinieerd in artikel 3, punt 16), van Verordening (EU) nr. 910/2014",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verlener van vertrouwensdiensten",
+      "definition": "een verlener van vertrouwensdiensten zoals gedefinieerd in artikel 3, punt 19), van Verordening (EU) nr. 910/2014",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde vertrouwensdienst",
+      "definition": "een gekwalificeerde vertrouwensdienst zoals gedefinieerd in van artikel 3, punt 17), van Verordening (EU) nr. 910/2014",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde verlener van vertrouwensdiensten",
+      "definition": "een gekwalificeerde verlener van vertrouwensdiensten zoals gedefinieerd in artikel 3, punt 20), van Verordening (EU) nr. 910/2014",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onlinemarktplaats",
+      "definition": "een onlinemarktplaats zoals gedefinieerd in artikel 2, punt n), van Richtlijn 2005/29/EG van het Europees Parlement en de Raad (31)",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onlinezoekmachine",
+      "definition": "een onlinezoekmachine zoals gedefinieerd in artikel 2, punt 5), van Verordening (EU) 2019/1150 van het Europees Parlement en de Raad (32)",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cloudcomputingdienst",
+      "definition": "een digitale dienst die administratie op aanvraag en brede toegang op afstand tot een schaalbare en elastische pool van deelbare computerbronnen mogelijk maakt, ook wanneer die bronnen over verschillende locaties verspreid zijn",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "datacentrumdienst",
+      "definition": "een dienst die structuren of groepen van structuren omvat die bestemd zijn voor de gecentraliseerde accommodatie, de interconnectie en de exploitatie van IT en netwerkapparatuur die diensten op het gebied van gegevensopslag, -verwerking en -transport aanbiedt, samen met alle faciliteiten en infrastructuren voor energiedistributie en omgevingscontrole",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerk voor de levering van inhoud",
+      "definition": "een netwerk van geografisch verspreide servers met het oog op een hoge beschikbaarheid, toegankelijkheid of snelle levering van digitale inhoud en diensten aan internetgebruikers ten behoeve van aanbieders van inhoud en diensten",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "platform voor socialenetwerkdiensten",
+      "definition": "een platform dat eindgebruikers in staat stelt zich met elkaar te verbinden, te delen, te ontdekken en met elkaar te communiceren via meerdere apparaten, met name via chats, posts, video’s en aanbevelingen",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertegenwoordiger",
+      "definition": "een in de Unie gevestigde natuurlijke of rechtspersoon die uitdrukkelijk is aangewezen om op te treden namens een DNS-dienstverlener, een register voor topleveldomeinnamen, een entiteit die domeinnaamregistratiediensten verleent, een aanbieder van cloudcomputingdiensten, een aanbieder van datacentrumdiensten, een aanbieder van een netwerk voor de levering van inhoud, een aanbieder van beheerde diensten, een aanbieder van beheerde beveiligingsdiensten, of een aanbieder van een onlinemarktplaats, van een onlinezoekmachine of van een platform voor socialenetwerkdiensten die niet in de Unie is gevestigd, en die door een bevoegde autoriteit of een CSIRT kan worden aangesproken in plaats van de entiteit zelf met betrekking tot de verplichtingen van die entiteit uit hoofde van deze richtlijn",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overheidsinstantie",
+      "definition": "een entiteit die overeenkomstig het nationale recht als zodanig in een lidstaat is erkend, met uitzondering van de rechterlijke macht, parlementen en centrale banken, en die aan de volgende criteria voldoet: a) zij is opgericht om te voorzien in behoeften van algemeen belang en heeft geen industrieel of commercieel karakter; b) zij heeft rechtspersoonlijkheid of mag volgens de wet namens een andere entiteit met rechtspersoonlijkheid optreden; c) zij wordt grotendeels gefinancierd door de staat, regionale autoriteiten of andere publiekrechtelijke organen, is onderworpen aan beheerstoezicht door die autoriteiten of organen, of heeft een bestuurs-, leidinggevend of toezichthoudend orgaan waarvan de leden voor meer dan de helft door de staat, regionale autoriteiten of andere publiekrechtelijke organen worden benoemd; d) zij heeft de bevoegdheid om ten aanzien van natuurlijke of rechtspersonen administratieve of regelgevende besluiten te nemen die van invloed zijn op hun rechten op het grensoverschrijdende verkeer van personen, goederen, diensten of kapitaal",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbaar elektronischecommunicatienetwerk",
+      "definition": "een openbaar elektronischecommunicatienetwerk zoals gedefinieerd in artikel 2, punt 8), van Richtlijn (EU) 2018/1972",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronischecommunicatiedienst",
+      "definition": "een elektronischecommunicatiedienst zoals gedefinieerd in van artikel 2, punt 4), van Richtlijn (EU) 2018/1972",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "entiteit",
+      "definition": "een natuurlijke of rechtspersoon die als zodanig is opgericht en erkend volgens het nationale recht van zijn vestigingsplaats, en die in eigen naam rechten kan uitoefenen en aan verplichtingen kan worden onderworpen",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van beheerde diensten",
+      "definition": "een entiteit die diensten verleent die verband houden met de installatie, het beheer, de exploitatie of het onderhoud van ICT-producten, -netwerken, -infrastructuur, -toepassingen of andere netwerk- en informatiesystemen, via bijstand of actieve administratie bij de consument ter plaatse of op afstand",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van beheerde beveiligingsdiensten",
+      "definition": "een aanbieder van beheerde diensten die bijstand biedt of verleent voor activiteiten die verband houden met risicobeheer op het gebied van cyberbeveiliging",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onderzoeksorganisatie",
+      "definition": "een entiteit die als hoofddoel heeft het verrichten van toegepast onderzoek of experimentele ontwikkeling met het oog op de exploitatie van de resultaten van dat onderzoek voor commerciële doeleinden, met uitsluiting van onderwijsinstellingen.",
+      "paragraph": null,
+      "article": "6",
+      "document": "32022L2555",
+      "pattern": "lijst"
+    },
+    {
+      "term": "traffic light protocol",
+      "definition": "In het kader van dergelijke samenwerkingsrelaties vergemakkelijken de lidstaten doeltreffende, efficiënte en veilige informatie-uitwisseling met die nationale computer security incident response teams van derde landen, met gebruikmaking van relevante informatie-uitwisselingsprotocollen, waaronder het verkeerslichtprotocol",
+      "paragraph": "7",
+      "article": "10",
+      "document": "32022L2555",
+      "pattern": "tussen_haakjes"
+    }
+  ]
+}

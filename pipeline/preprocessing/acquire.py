@@ -1,15 +1,49 @@
 """
-Stage 1 — Acquire (L0 -> L1), Dutch side.
+# Stage 1 — Acquire (L0 → L1), Dutch side
 
-One-time acquisition, not a recurring job (per project decision: the corpus is
-backed up manually, no weekly re-fetch is scheduled right now). Run this once
-per instrument; re-run any time to pick up a new toestand — it's idempotent,
-skipping any toestand whose SHA-256 already matches what's on disk.
+Downloads the raw source XML for a single Dutch instrument from the
+Basis Wetten Bestand (BWB) on overheid.nl and stores it as layer L1 of the
+corpus. EU instruments are acquired separately.
 
-Usage:
-    python acquire.py BWBR0040940
-    python acquire.py BWBR0040940 --all-toestanden
+This is a manual, one-time acquisition per instrument, not a scheduled job.
+The corpus is backed up by hand. Re-run whenever a new toestand appears.
+
+## What it does
+
+1. **Discover**: queries the overheid.nl SRU service (`x-connection=BWB`)
+   for all toestanden (consolidated versions) of the given BWB-id. For each
+   one it collects the title, the validity start date, and the URLs of the
+   toestand XML and WTI XML. Results are de-duplicated by effective date and
+   sorted oldest → newest.
+2. **Download**: fetches the latest toestand by default, or all of them with
+   `--all-toestanden`. Each file is compared by SHA-256 with what is already
+   on disk and only written if it changed. Files are always re-downloaded;
+   only the write is skipped.
+3. **Log**: appends one JSON line per toestand to `fetch_log.jsonl`
+   (timestamp, URLs, HTTP status, hash, size, written/unchanged/failed).
+
+## Output layout
+
+    raw/nl/<BWB-id>/
+        fetch_log.jsonl
+        <effective-date>/
+            toestand.xml    # consolidated legal text
+            wti.xml         # amendment history / metadata
+
+## Usage
+
+    python acquire.py BWBR0040940                    # latest toestand only
+    python acquire.py BWBR0040940 --all-toestanden   # full version history
+
+## Known limitations
+
+- The SRU query returns at most 200 records and is not paginated.
+  Instruments with more toestanden are silently truncated.
+- Records without a start date collapse into one entry and are saved
+  under a folder named `None`.
+- Failed downloads are logged and reported on stderr but do not stop the run.
 """
+
 import argparse
 import hashlib
 import json
