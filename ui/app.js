@@ -2,6 +2,7 @@
    #/                              overview
    #/c/<category>?type=&status=&q=&sort=   list of questions
    #/c/<category>/<id>             one question
+   #/s/...                         laws in plain language (simplify.js plugs in through ReviewApp)
    Two languages (nl, en). Legal text is always the original Dutch; everything else follows
    the language switch. Switching re-renders in place and keeps the reviewer's state: the
    open pair, the decision scope, anything typed, filters, scroll position.
@@ -12,18 +13,51 @@
   var STR = {
     en: {
       brand1: 'Legislation', brand2: 'Review', title: 'Legislation Review', skip: 'Skip to content', language: 'Language',
-      overview: 'Overview', soon: 'Soon', of: 'of', questionsReviewed: 'questions reviewed', reviewingAs: 'Reviewing as',
+      overview: 'Overview', soon: 'Soon', of: 'of', questionsReviewed: 'questions reviewed', hpLabel: 'Your review so far', hpQuestions: 'questions', hpLines: 'lines', hpPlain: 'Simplification', reviewingAs: 'Reviewing as', mCard: 'How results are produced', mCardLink: 'Read the methodology', mTitle: 'How results are produced',
+      mLead: 'Every finding in this workspace is a lead for a lawyer to judge, not a legal conclusion. This page explains how the system arrives at a finding, what each label means, which AI models are used, and what the system does not do yet.',
+      mStepsH: 'From law text to a finding',
+      mS1: 'Read the laws', mS1t: 'Ten Dutch and EU laws are collected from wetten.overheid.nl and EUR-Lex and split into articles and paragraphs.',
+      mS2: 'Record every rule', mS2t: 'An AI model writes down each rule in the same fixed form: who must do what, when, by which deadline, and for whom.',
+      mS3: 'Choose pairs worth comparing', mS3t: 'Rules are only paired when there is a reason: they cite each other, use the same terms, mean something similar, or point in opposite directions.',
+      mS4: 'Judge each pair', mS4t: 'Countable differences, like deadlines, are calculated. Other pairs are judged by an AI model, and a stronger model re-checks what it flags.',
+      mS5: 'Filter and sort', mS5t: 'Pairs that are not a problem, or where one rule explicitly gives way to the other, are removed. The rest are sorted by certainty and grouped per pair of articles.',
+      mTypesH: 'What each label means', mTypesP: 'Every finding carries one label. The number is how many questions currently have that label.',
+      mSupportH: 'How sure the system is', mSupportP: 'The bars next to a finding show how well it is supported. Questions are listed with the best-supported first.',
+      mP1: 'The difference was calculated directly from the text, for example two different deadlines. No AI judgement is involved.',
+      mP2: 'Two separate AI checks, run with different models, reached the same conclusion.',
+      mP3: 'One AI check flagged it. Read these with more care.',
+      mP4: 'The AI checks disagreed with each other. Treat as uncertain.',
+      mP5: 'The finding rests on text that has since been amended. Check the current text first.',
+      mModelsH: 'AI models used', mModelsP: 'All models are from OpenAI. The AI only reads and judges; it never changes the legal text.',
+      mModel: 'Model', mRole: 'What it does',
+      mLuna: 'Records the rules in each law, makes the first check of every pair, and writes the explanations in Dutch and English.',
+      mTerra: 'Re-checks the pairs the first check flags, and checks questions about legal basis. Slower and more careful.',
+      mEmbed: 'Finds rules with a similar meaning, even when they use different words. It does not judge anything.',
+      mLimitsH: 'What the system does not do yet',
+      mL1: 'About 12,400 of roughly 31,150 candidate pairs have been judged so far. The rest are still waiting.',
+      mL2: 'The Telecommunicatiewet is only partly processed: rules were recorded for 25 of its 380 articles.',
+      mL3: 'No finding has been confirmed by a Ministry lawyer yet. That is what your accept and decline decisions are for.',
+      mL4: 'The AI can misread a rule. Every finding shows the original legal text so you can check it yourself.',
+      mVersionsH: 'Which versions of the laws', mVersionsP: 'The laws and the exact version of each are listed on the overview, under “The laws that were compared”.',
+      mBack: '← Back to the overview', signedInAs: 'Signed in as', aLogout: 'Sign out', aLogin: 'Sign in', aSignup: 'Create account', aCreate: 'Create account',
+      aLoginTitle: 'Sign in to Legislation Review', aSignupTitle: 'Create your account', aLoginSub: 'Use the email address and password you registered with.', aSignupSub: 'Your name is shown next to every decision you make.',
+      aPitch: 'Compare Dutch and EU digital law, review the possible conflicts and duplications, and record your decisions.', aFoot: 'TU Delft · Joint Interdisciplinary Project 2026',
+      aName: 'Full name', aEmail: 'Email address', aPassword: 'Password', aPasswordHint: 'At least 8 characters.', aShow: 'Show', aHide: 'Hide', aWorking: 'One moment…',
+      aNoAccount: 'No account yet?', aHaveAccount: 'Already have an account?', aModes: 'Sign in or create an account', aDemo: 'Test mode: any email address and password will work.',
+      aErrName: 'Enter your name.', aErrEmail: 'Enter a valid email address.', aErrPassword: 'Enter your password.', aErrShort: 'Choose a password of at least 8 characters.',
+      aErrExists: 'An account with this email address already exists. Sign in instead.', aErrLogin: 'The email address or password is not correct.',
+      aErrLocked: 'Too many attempts. Wait a minute and try again.', aErrServer: 'Something went wrong. Check that the review server is running.',
       yourName: 'Your name…', shortcuts: 'Keyboard shortcuts', openNav: 'Open navigation', categories: 'Categories',
-      eyebrow: 'Dutch and EU digital law', heroTitle: 'The system found the leads. You decide which ones matter.',
-      heroText: 'This workspace has read ten laws on data, cybersecurity and AI, and marked places where two provisions may clash or repeat each other. Each one is a lead for a lawyer to judge, not a legal conclusion.',
+      eyebrow: 'Dutch and EU digital law', heroTitle: 'Simplifying legislation with AI',
+      heroText: 'Ten Dutch and EU digital laws, compared by AI. Each finding is an insight ready for a lawyer’s review.',
       start: 'Start reviewing', cont: 'Continue reviewing', how: 'How it works', toReview: 'To review', accepted: 'Accepted', declined: 'Declined',
-      statLaws: 'laws read', statQuestions: 'questions to judge', statPairs: 'provision pairs behind them', statDone: 'reviewed so far',
+      statLaws: 'laws compared', lawsTitle: 'The laws that were compared', lawsEu: 'EU law', lawsNl: 'Dutch law', lawsCount: 'laws', lawsOriginal: 'Version: original text, published {a}', lawsConsolidated: 'Version: consolidated text of {a}', statQuestions: 'questions to judge', statPairs: 'provision pairs behind them', statDone: 'reviewed so far',
       stepOf: 'Step {a} of 4',
-      s1: 'Choose a category', s1t: 'Each category holds one kind of finding, split into smaller groups. The bars on the category cards show how many questions each group has. Click a bar to jump straight to it.',
-      s2: 'Open a question', s2t: 'Every question has the same four parts: both provisions in full with the key passage highlighted, a side-by-side comparison, an example situation, and the reasoning for and against.',
-      s3: 'Accept or decline', s3t: 'Accept if it is a real issue worth raising. Decline if it is not, or if the system misread the law. The decision panel stays in view while you read, and A and D work as shortcuts.',
-      s4: 'Say why when you decline', s4t: 'A reason and a short justification are required for every decline. Those written reasons are what the system learns from. You can edit or remove any decision later.',
-      against: 'against', reasonRequired: 'Reason required', notAvailable: 'Not yet available', open: 'Open {a}', goodToKnow: 'Good to know',
+      s1: 'Choose a category', s1t: 'Findings are grouped by kind, such as double reporting or different definitions.',
+      s2: 'Open a question', s2t: 'You see both provisions in full, a side-by-side comparison, an example, and the reasoning for and against.',
+      s3: 'Accept or decline', s3t: 'Accept if it is a real issue. Decline if it is not, or if the system misread the law.',
+      s4: 'Say why when you decline', s4t: 'A short reason is required for every decline. You can change or remove a decision later.',
+      against: 'against', reasonRequired: 'Reason required', notAvailable: 'Not yet available', open: 'Open {a}', goodToKnow: 'Frequently Asked Questions',
       f1q: 'How are the questions ordered?', f1a: 'By how well supported they are. Four bars means the difference was calculated directly from the text with no AI judgement. Three bars means two independent AI checks agreed. Two bars means one AI check looked at it.',
       f2q: 'Why does one question cover several provision pairs?', f2a: 'Two long articles can raise the same question paragraph by paragraph. Instead of showing it thirteen times, the workspace groups it into one question. You decide once, and can decide a single pair separately when it differs.',
       f3q: 'What language is everything in?', f3a: 'Legal text is always shown in the original Dutch. The interface and all explanations follow the language switch at the top right.',
@@ -52,18 +86,51 @@
     },
     nl: {
       brand1: 'Wetgevings­review', brand2: '', title: 'Wetgevingsreview', skip: 'Naar de inhoud', language: 'Taal',
-      overview: 'Overzicht', soon: 'Binnenkort', of: 'van', questionsReviewed: 'vragen beoordeeld', reviewingAs: 'Beoordelaar',
+      overview: 'Overzicht', soon: 'Binnenkort', of: 'van', questionsReviewed: 'vragen beoordeeld', hpLabel: 'Uw beoordeling tot nu toe', hpQuestions: 'vragen', hpLines: 'regels', hpPlain: 'Vereenvoudiging', reviewingAs: 'Beoordelaar', mCard: 'Hoe de resultaten tot stand komen', mCardLink: 'Lees de werkwijze', mTitle: 'Hoe de resultaten tot stand komen',
+      mLead: 'Elke bevinding in deze werkomgeving is een aanknopingspunt voor een jurist, geen juridische conclusie. Deze pagina legt uit hoe het systeem tot een bevinding komt, wat elk label betekent, welke AI-modellen worden gebruikt en wat het systeem nog niet doet.',
+      mStepsH: 'Van wettekst naar bevinding',
+      mS1: 'De wetten inlezen', mS1t: 'Tien Nederlandse en Europese wetten worden opgehaald van wetten.overheid.nl en EUR-Lex en opgedeeld in artikelen en leden.',
+      mS2: 'Elke regel vastleggen', mS2t: 'Een AI-model legt elke regel vast in dezelfde vaste vorm: wie moet wat doen, wanneer, binnen welke termijn en voor wie.',
+      mS3: 'Paren kiezen die het vergelijken waard zijn', mS3t: 'Regels worden alleen gekoppeld als daar een reden voor is: ze verwijzen naar elkaar, gebruiken dezelfde begrippen, betekenen iets vergelijkbaars of wijzen een andere kant op.',
+      mS4: 'Elk paar beoordelen', mS4t: 'Telbare verschillen, zoals termijnen, worden berekend. Andere paren beoordeelt een AI-model, en een sterker model controleert wat het markeert opnieuw.',
+      mS5: 'Filteren en sorteren', mS5t: 'Paren die geen probleem zijn, of waarbij de ene regel uitdrukkelijk voorrang geeft aan de andere, worden verwijderd. De rest wordt gesorteerd op zekerheid en per paar artikelen gegroepeerd.',
+      mTypesH: 'Wat elk label betekent', mTypesP: 'Elke bevinding heeft één label. Het getal is het aantal vragen dat nu dat label heeft.',
+      mSupportH: 'Hoe zeker het systeem is', mSupportP: 'De balkjes bij een bevinding laten zien hoe goed die onderbouwd is. Vragen staan op volgorde, best onderbouwd eerst.',
+      mP1: 'Het verschil is rechtstreeks uit de tekst berekend, bijvoorbeeld twee verschillende termijnen. Er komt geen AI-oordeel aan te pas.',
+      mP2: 'Twee afzonderlijke AI-controles, met verschillende modellen, kwamen tot dezelfde conclusie.',
+      mP3: 'Eén AI-controle heeft het gemarkeerd. Lees deze met extra zorg.',
+      mP4: 'De AI-controles waren het onderling oneens. Behandel als onzeker.',
+      mP5: 'De bevinding berust op tekst die inmiddels is gewijzigd. Controleer eerst de geldende tekst.',
+      mModelsH: 'Gebruikte AI-modellen', mModelsP: 'Alle modellen zijn van OpenAI. De AI leest en beoordeelt alleen; ze wijzigt nooit de wettekst.',
+      mModel: 'Model', mRole: 'Wat het doet',
+      mLuna: 'Legt de regels in elke wet vast, doet de eerste controle van elk paar en schrijft de toelichtingen in het Nederlands en Engels.',
+      mTerra: 'Controleert de paren die de eerste controle markeert opnieuw, en beoordeelt vragen over de rechtsgrond. Trager en zorgvuldiger.',
+      mEmbed: 'Vindt regels met een vergelijkbare betekenis, ook als ze andere woorden gebruiken. Het beoordeelt zelf niets.',
+      mLimitsH: 'Wat het systeem nog niet doet',
+      mL1: 'Ongeveer 12.400 van de circa 31.150 kandidaat-paren zijn tot nu toe beoordeeld. De rest wacht nog.',
+      mL2: 'De Telecommunicatiewet is maar deels verwerkt: van 25 van de 380 artikelen zijn de regels vastgelegd.',
+      mL3: 'Nog geen enkele bevinding is bevestigd door een jurist van het ministerie. Daarvoor zijn uw beslissingen bedoeld.',
+      mL4: 'De AI kan een regel verkeerd lezen. Bij elke bevinding staat de oorspronkelijke wettekst, zodat u het zelf kunt controleren.',
+      mVersionsH: 'Welke versies van de wetten', mVersionsP: 'De wetten en de precieze versie van elk staan op het overzicht, onder ‘De wetten die zijn vergeleken’.',
+      mBack: '← Terug naar het overzicht', signedInAs: 'Ingelogd als', aLogout: 'Uitloggen', aLogin: 'Inloggen', aSignup: 'Account aanmaken', aCreate: 'Account aanmaken',
+      aLoginTitle: 'Inloggen bij Wetgevingsreview', aSignupTitle: 'Maak uw account aan', aLoginSub: 'Gebruik het e-mailadres en wachtwoord waarmee u zich heeft geregistreerd.', aSignupSub: 'Uw naam staat bij elke beslissing die u neemt.',
+      aPitch: 'Vergelijk Nederlands en Europees digitaal recht, beoordeel mogelijke tegenstrijdigheden en dubbelingen, en leg uw beslissingen vast.', aFoot: 'TU Delft · Joint Interdisciplinary Project 2026',
+      aName: 'Volledige naam', aEmail: 'E-mailadres', aPassword: 'Wachtwoord', aPasswordHint: 'Minstens 8 tekens.', aShow: 'Toon', aHide: 'Verberg', aWorking: 'Een moment…',
+      aNoAccount: 'Nog geen account?', aHaveAccount: 'Heeft u al een account?', aModes: 'Inloggen of een account aanmaken', aDemo: 'Testmodus: elk e-mailadres en wachtwoord werkt.',
+      aErrName: 'Vul uw naam in.', aErrEmail: 'Vul een geldig e-mailadres in.', aErrPassword: 'Vul uw wachtwoord in.', aErrShort: 'Kies een wachtwoord van minstens 8 tekens.',
+      aErrExists: 'Er bestaat al een account met dit e-mailadres. Log in plaats daarvan in.', aErrLogin: 'Het e-mailadres of wachtwoord klopt niet.',
+      aErrLocked: 'Te veel pogingen. Wacht een minuut en probeer het opnieuw.', aErrServer: 'Er ging iets mis. Controleer of de reviewserver draait.',
       yourName: 'Uw naam…', shortcuts: 'Sneltoetsen', openNav: 'Navigatie openen', categories: 'Categorieën',
-      eyebrow: 'Nederlands en Europees digitaal recht', heroTitle: 'Het systeem vond de aanknopingspunten. U bepaalt welke ertoe doen.',
-      heroText: 'Deze werkomgeving heeft tien wetten over data, cyberbeveiliging en AI gelezen en plaatsen gemarkeerd waar twee bepalingen kunnen botsen of elkaar herhalen. Elk punt is een aanknopingspunt voor een jurist, geen juridische conclusie.',
+      eyebrow: 'Nederlands en Europees digitaal recht', heroTitle: 'Wetgeving vereenvoudigen met AI',
+      heroText: 'Tien Nederlandse en Europese digitale wetten, vergeleken met AI. Elke bevinding is een inzicht, klaar voor beoordeling door een jurist.',
       start: 'Begin met beoordelen', cont: 'Ga verder met beoordelen', how: 'Zo werkt het', toReview: 'Te beoordelen', accepted: 'Geaccepteerd', declined: 'Afgewezen',
-      statLaws: 'wetten gelezen', statQuestions: 'vragen om te beoordelen', statPairs: 'paren van bepalingen daarachter', statDone: 'tot nu toe beoordeeld',
+      statLaws: 'wetten vergeleken', lawsTitle: 'De wetten die zijn vergeleken', lawsEu: 'Europees recht', lawsNl: 'Nederlands recht', lawsCount: 'wetten', lawsOriginal: 'Versie: oorspronkelijke tekst, gepubliceerd {a}', lawsConsolidated: 'Versie: geconsolideerde tekst van {a}', statQuestions: 'vragen om te beoordelen', statPairs: 'paren van bepalingen daarachter', statDone: 'tot nu toe beoordeeld',
       stepOf: 'Stap {a} van 4',
-      s1: 'Kies een categorie', s1t: 'Elke categorie bevat één soort bevinding, verdeeld in kleinere groepen. De balken op de categoriekaarten laten zien hoeveel vragen elke groep heeft. Klik op een balk om er direct naartoe te gaan.',
-      s2: 'Open een vraag', s2t: 'Elke vraag heeft dezelfde vier onderdelen: beide bepalingen volledig met de kernpassage gemarkeerd, een vergelijking naast elkaar, een voorbeeldsituatie, en de redenering voor en tegen.',
-      s3: 'Accepteer of wijs af', s3t: 'Accepteer als het een echt punt is dat aandacht verdient. Wijs af als dat niet zo is, of als het systeem de wet verkeerd heeft gelezen. Het beslispaneel blijft in beeld terwijl u leest, en A en D werken als sneltoets.',
-      s4: 'Leg uit waarom u afwijst', s4t: 'Bij elke afwijzing zijn een reden en een korte motivering verplicht. Van die geschreven redenen leert het systeem. U kunt elke beslissing later bewerken of verwijderen.',
-      against: 'tegenover', reasonRequired: 'Reden verplicht', notAvailable: 'Nog niet beschikbaar', open: 'Open {a}', goodToKnow: 'Goed om te weten',
+      s1: 'Kies een categorie', s1t: 'Bevindingen zijn gegroepeerd per soort, zoals dubbele melding of verschillende definities.',
+      s2: 'Open een vraag', s2t: 'U ziet beide bepalingen volledig, een vergelijking naast elkaar, een voorbeeld en de redenering voor en tegen.',
+      s3: 'Accepteer of wijs af', s3t: 'Accepteer als het een echt punt is. Wijs af als dat niet zo is, of als het systeem de wet verkeerd heeft gelezen.',
+      s4: 'Leg uit waarom u afwijst', s4t: 'Bij elke afwijzing is een korte reden verplicht. U kunt een beslissing later wijzigen of verwijderen.',
+      against: 'tegenover', reasonRequired: 'Reden verplicht', notAvailable: 'Nog niet beschikbaar', open: 'Open {a}', goodToKnow: 'Veelgestelde vragen',
       f1q: 'Hoe zijn de vragen geordend?', f1a: 'Op hoe goed ze onderbouwd zijn. Vier balkjes betekent dat het verschil direct uit de tekst is berekend, zonder AI-oordeel. Drie balkjes betekent dat twee onafhankelijke AI-controles het eens waren. Twee balkjes betekent dat één AI-controle ernaar heeft gekeken.',
       f2q: 'Waarom omvat één vraag meerdere paren van bepalingen?', f2a: 'Twee lange artikelen kunnen lid voor lid dezelfde vraag oproepen. In plaats van die dertien keer te tonen, groepeert de werkomgeving ze tot één vraag. U beslist één keer en kunt een afzonderlijk paar apart beoordelen als dat afwijkt.',
       f3q: 'In welke taal is alles?', f3a: 'Wettekst wordt altijd in het oorspronkelijke Nederlands getoond. De interface en alle toelichtingen volgen de taalkeuze rechtsboven.',
@@ -141,8 +208,8 @@
     if (Array.isArray(child)) child.forEach(function (c) { append(el, c); });
     else el.appendChild(typeof child === 'string' ? document.createTextNode(child) : child);
   }
-  function reviewer() { try { return localStorage.getItem('reviewer') || ''; } catch (e) { return ''; } }
-  function setReviewer(v) { try { localStorage.setItem('reviewer', v); } catch (e) { /* private mode */ } }
+  var ME = null;    // the signed-in reviewer: { name, email }, from the server
+  function reviewer() { return ME ? ME.name : ''; }
   function category(id) { return DATA.categories.filter(function (c) { return c.id === id; })[0]; }
   function live() { return DATA.categories.filter(function (c) { return c.live; }); }
   function count(cat, kind) { return cat.questions.filter(function (q) { var d = DECISIONS[q.id]; return kind ? d && d.decision === kind : d; }).length; }
@@ -151,7 +218,7 @@
     try { return new Intl.DateTimeFormat(LANG === 'nl' ? 'nl-NL' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(iso)); } catch (e) { return iso; }
   }
   function hasUnsaved() {
-    return Object.keys(drafts).some(function (k) {
+    return (App.plain && App.plain.hasUnsaved()) || Object.keys(drafts).some(function (k) {
       var txt = (drafts[k].text || '').trim(), saved = DECISIONS[k];
       return txt && !(saved && (saved.justification || '') === txt);
     });
@@ -194,7 +261,10 @@
   }
   function postDecision(body) {
     return fetch('/api/decisions', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
-      .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(t('errSave')); return j; }); },
+      .then(function (r) {
+        if (r.status === 401) { window.onbeforeunload = null; location.reload(); }
+        return r.json().then(function (j) { if (!r.ok) throw new Error(t('errSave')); return j; });
+      },
         function () { throw new Error(t('errSave')); });
   }
   function nextOpen() {
@@ -205,6 +275,16 @@
     }
     return '#/c/' + cats[0].id;
   }
+
+  // Screens that live in their own file (simplify.js) reach the shared pieces through this object.
+  var App = window.ReviewApp = {
+    h: h, s: s, append: append, t: t, L: L, toast: toast, reviewer: reviewer, ringBox: ringBox, STR: STR, MIN_JUSTIFICATION: MIN_JUSTIFICATION,
+    lang: function () { return LANG; },
+    renderSide: function (cat, sub) { renderSide(cat, sub); },
+    rerender: function () { var y = window.scrollY; render(true); window.scrollTo(0, y); },
+    setPage: function (p) { page = p; },
+    plain: null
+  };
 
   // ---------- chrome: language switch, sidebar, shortcuts dialog ----------
   function renderChrome() {
@@ -250,6 +330,7 @@
     nav.textContent = '';
     append(nav, h('a', { class: 'nav-link', href: '#/', 'aria-current': activeCat ? null : 'page' }, t('overview')));
     DATA.categories.forEach(function (c) {
+      if (c.id === 'simplification' && App.plain && App.plain.ready()) { append(nav, App.plain.navLinks(activeCat === c.id, activeSub)); return; }
       if (!c.live) { append(nav, h('div', { class: 'nav-off' }, L(c.title), h('small', { text: t('soon') }))); return; }
       append(nav, h('a', { class: 'nav-link', href: '#/c/' + c.id, 'aria-current': c.id === activeCat && !activeSub ? 'page' : null },
         L(c.title), h('span', { class: 'n', text: count(c) + '/' + c.questions.length })));
@@ -258,15 +339,19 @@
           L(sc.title), h('span', { class: 'n', text: String(sc.count) }));
       })));
     });
-    var total = 0, done = 0;
-    live().forEach(function (c) { total += c.questions.length; done += count(c); });
-    var nameInput = h('input', { type: 'text', id: 'reviewer', name: 'reviewer', autocomplete: 'name', spellcheck: 'false', value: reviewer(),
-      placeholder: t('yourName'), oninput: function () { setReviewer(nameInput.value.trim()); } });
+    var total = 0, done = 0, acc = 0, dec = 0;
+    live().forEach(function (c) { total += c.questions.length; done += count(c); acc += count(c, 'accept'); dec += count(c, 'decline'); });
     sidefoot.textContent = '';
     append(sidefoot, [
-      h('div', { class: 'side-card' }, ringBox(total ? done / total : 0, 56, '', false, true),
-        h('div', null, h('b', { class: 't', text: done + ' ' + t('of') + ' ' + total }), h('span', { text: t('questionsReviewed') }))),
-      h('label', null, t('reviewingAs'), nameInput),
+      // The same per-feature progress as the overview header, compact.
+      h('div', { class: 'side-card' }, h('p', { class: 'sc-title', text: t('hpLabel') }),
+        h('ul', { class: 'sc-rows' }, progressRows().map(function (r) {
+          return h('li', null, h('a', { href: r.href },
+            h('span', { class: 'sc-name', text: r.name }), h('span', { class: 'sc-count', text: r.done + '/' + r.total }),
+            progressBar(r)));
+        }))),
+      h('div', { class: 'whoami' }, h('span', { text: t('signedInAs') }), h('b', { text: reviewer() }),
+        h('button', { class: 'linkbtn', type: 'button', onclick: signOut }, t('aLogout'))),
       h('button', { class: 'linkbtn', type: 'button', onclick: function () { keysDialog.showModal(); } }, t('shortcuts'))
     ]);
   }
@@ -276,6 +361,21 @@
     side.classList.toggle('open', open); scrim.hidden = !open; menuBtn.setAttribute('aria-expanded', String(open));
   });
   scrim.addEventListener('click', closeMenu);
+
+  function progressBar(r) {
+    return h('span', { class: 'hp-bar', role: 'img', 'aria-label': Math.round(100 * (r.total ? r.done / r.total : 0)) + '%' },
+      h('i', { class: 'a', style: 'width:' + (r.total ? 100 * r.acc / r.total : 0) + '%' }),
+      h('i', { class: 'd', style: 'width:' + (r.total ? 100 * r.dec / r.total : 0) + '%' }));
+  }
+  // Review progress per feature, for the overview header and the sidebar.
+  function progressRows() {
+    var rows = live().map(function (c) {
+      return { name: L(c.title), href: '#/c/' + c.id, done: count(c), acc: count(c, 'accept'), dec: count(c, 'decline'), total: c.questions.length, unit: t('hpQuestions') };
+    });
+    var plain = window.ReviewApp && window.ReviewApp.plain;
+    if (plain && plain.ready()) { var p = plain.progress(); p.name = t('hpPlain'); p.href = '#/s'; p.unit = t('hpLines'); rows.push(p); }
+    return rows;
+  }
 
   // ---------- overview ----------
   function overviewScreen(still) {
@@ -290,48 +390,59 @@
 
     var hero = h('section', { class: 'hero' },
       h('div', null,
-        h('div', { class: 'eyebrow', text: t('eyebrow') }), h('h1', { text: t('heroTitle') }), h('p', { text: t('heroText') }),
-        h('div', { class: 'actions' },
-          h('a', { class: 'btn light', href: nextOpen() }, done ? t('cont') : t('start')),
-          h('a', { class: 'btn ghost', href: '#how', onclick: function (ev) { ev.preventDefault(); document.getElementById('how').scrollIntoView(); } }, t('how')))),
+        h('h1', { text: t('heroTitle') }), h('p', { text: t('heroText') })),
+      // One row per feature, each with its own unit: a glance at where the review stands. The detail
+      // lives on each feature's own page, which every row links to.
       h('div', { class: 'hero-panel' },
-        ringBox(total ? done / total : 0, 150, Math.round(100 * (total ? done / total : 0)) + '%', false, still),
-        h('div', { class: 'trio' },
-          h('div', null, h('b', { text: String(total - done) }), h('span', { text: t('toReview') })),
-          h('div', null, h('b', { text: String(acc) }), h('span', { text: t('accepted') })),
-          h('div', null, h('b', { text: String(dec) }), h('span', { text: t('declined') })))));
+        h('p', { class: 'hp-label', text: t('hpLabel') }),
+        h('ul', { class: 'hp-rows' }, progressRows().map(function (r) {
+          return h('li', null, h('a', { href: r.href },
+            h('span', { class: 'hp-name', text: r.name }),
+            h('span', { class: 'hp-count' }, h('b', { text: String(r.done) }), ' / ' + r.total + ' ' + r.unit),
+            progressBar(r),
+            h('span', { class: 'hp-sub' }, h('span', { class: 'a', text: r.acc + ' ' + t('nAccepted') }), ', ',
+              h('span', { class: 'd', text: r.dec + ' ' + t('nDeclined') }), ', ' + (r.total - r.done) + ' ' + t('nToReview'))));
+        }))));
 
-    var stats = h('div', { class: 'stats' }, [[10, 'statLaws'], [total, 'statQuestions'], [np, 'statPairs'], [done, 'statDone']].map(function (d) {
-      var b = h('b'); countUp(b, d[0], still);
-      return h('div', { class: 'card stat' }, b, h('span', { text: t(d[1]) }));
+    // Plain figures and a plain numbered list: this is a working tool for lawyers, not a product page.
+    // Which laws the findings are drawn from, and which version of each. EU laws are the original text
+    // as published in the Official Journal; Dutch laws are the consolidated version of the date shown.
+    var included = [
+      ['eu', 'GDPR', 'AVG', 'original', '2016-05-04'],
+      ['eu', 'AI Act', 'AI-verordening', 'original', '2024-07-12'],
+      ['eu', 'NIS2 Directive', 'NIS2-richtlijn', 'original', '2022-12-27'],
+      ['eu', 'DORA', 'DORA', 'original', '2022-12-27'],
+      ['nl', 'Uitvoeringswet AVG (UAVG)', 'Uitvoeringswet AVG (UAVG)', 'consolidated', '2026-09-01'],
+      ['nl', 'Cyberbeveiligingswet', 'Cyberbeveiligingswet', 'consolidated', '2026-08-15'],
+      ['nl', 'Telecommunicatiewet', 'Telecommunicatiewet', 'consolidated', '2026-08-15'],
+      ['nl', 'Wet digitale overheid', 'Wet digitale overheid', 'consolidated', '2025-11-11'],
+      ['nl', 'Uitvoeringswet dataverordening', 'Uitvoeringswet dataverordening', 'consolidated', '2025-11-21'],
+      ['nl', 'Besluit EU-verordeningen Wft, bijlage 35', 'Besluit EU-verordeningen Wft, bijlage 35', 'consolidated', '2026-08-15']
+    ];
+    function day(iso) {
+      try { return new Intl.DateTimeFormat(LANG === 'nl' ? 'nl-NL' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso + 'T12:00:00')); } catch (e) { return iso; }
+    }
+    function lawColumn(kind, title) {
+      var mine = included.filter(function (x) { return x[0] === kind; });
+      return h('div', { class: 'lawcol ' + kind }, h('h3', { text: title }), h('ul', null, mine.map(function (x) {
+        return h('li', null, h('b', { text: LANG === 'nl' ? x[2] : x[1] }),
+          h('span', { text: t(x[3] === 'original' ? 'lawsOriginal' : 'lawsConsolidated', day(x[4])) }));
+      })));
+    }
+    var stats = h('section', { class: 'section' }, h('h2', { text: t('lawsTitle') }),
+      h('div', { class: 'lawset' }, lawColumn('eu', t('lawsEu')), lawColumn('nl', t('lawsNl'))));
+    // A way into the methodology, styled like the hero above it.
+    var methodCard = h('a', { class: 'methodcard', href: '#/methodology' },
+      h('span', { class: 'micon', 'aria-hidden': 'true' }, s('svg', { viewBox: '0 0 24 24', width: 26, height: 26 },
+        s('path', { d: 'M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6l7-3z', fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linejoin': 'round' }),
+        s('path', { d: 'M8.6 12.2l2.3 2.3 4.6-4.8', fill: 'none', stroke: 'currentColor', 'stroke-width': 1.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }))),
+      h('span', { class: 'mtext' }, h('b', { text: t('mCard') }), h('span', { class: 'mlink' }, t('mCardLink'), h('span', { 'aria-hidden': 'true', text: ' →' }))));
+    var steps = h('ol', { class: 'howlist' + (still ? ' still' : '') }, [1, 2, 3, 4].map(function (i) {
+      return h('li', null, h('span', { class: 'n', 'aria-hidden': 'true', text: String(i) }), h('h3', { text: t('s' + i) }), h('p', { text: t('s' + i + 't') }));
     }));
 
-    var demos = [
-      function () { var sc = live()[0].subcategories; return sc.slice(0, 2).map(function (x) { return h('span', { class: 'pill tag', text: L(x.title) }); }); },
-      function () { return [h('span', { class: 'law', text: LANG === 'nl' ? 'AVG' : 'GDPR' }), h('span', { class: 'muted', text: t('against') }), h('span', { class: 'law nl', text: 'Cyberbeveiligingswet' })]; },
-      function () { return [h('span', { class: 'pill accept', text: t('accepted') }), h('span', { class: 'pill decline', text: t('declined') })]; },
-      function () { return [h('span', { class: 'pill', text: t('reasonRequired') })]; }
-    ];
-    var panel = h('div', { class: 'steppanel', role: 'tabpanel', id: 'steppanel', tabindex: '0' });
-    var tabs = h('div', { class: 'steptabs', role: 'tablist', 'aria-label': t('how') });
-    function showStep(i, focus) {
-      ui.step = i;
-      Array.prototype.forEach.call(tabs.children, function (b, j) { b.setAttribute('aria-selected', String(i === j)); b.tabIndex = i === j ? 0 : -1; });
-      panel.textContent = '';
-      append(panel, [h('div', { class: 'eyebrow', style: 'color:var(--blue-600)', text: t('stepOf', i + 1) }),
-        h('h3', { style: 'font-size:1.3rem', text: t('s' + (i + 1)) }), h('p', { text: t('s' + (i + 1) + 't') }), h('div', { class: 'demo' }, demos[i]())]);
-      if (focus) tabs.children[i].focus();
-    }
-    [0, 1, 2, 3].forEach(function (i) {
-      tabs.appendChild(h('button', { type: 'button', role: 'tab', 'aria-controls': 'steppanel', onclick: function () { showStep(i); },
-        onkeydown: function (ev) {
-          if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') { ev.preventDefault(); showStep((i + 1) % 4, true); }
-          if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') { ev.preventDefault(); showStep((i + 3) % 4, true); }
-        } }, h('span', { text: String(i + 1) }), t('s' + (i + 1))));
-    });
-    showStep(ui.step);
-
     var cats = h('div', { class: 'cats' }, DATA.categories.map(function (c) {
+      if (c.id === 'simplification' && App.plain && App.plain.ready()) return App.plain.overviewCard(still);
       if (!c.live) return h('div', { class: 'card cat off' },
         h('div', null, h('h3', { text: L(c.title) }), h('p', { class: 'muted', style: 'margin:6px 0 0', text: L(c.summary) })),
         h('div', null, h('span', { class: 'pill', text: t('notAvailable') })));
@@ -347,15 +458,50 @@
         h('a', { class: 'btn primary', href: '#/c/' + c.id }, t('open', L(c.title).toLowerCase())));
     }));
 
-    return [hero, stats,
-      h('section', { class: 'section', id: 'how' }, h('h2', { text: t('how') }), h('div', { class: 'card stepper' }, tabs, panel)),
+    return [hero,
+      h('section', { class: 'section', id: 'how' }, h('h2', { text: t('how') }), steps, methodCard),
       h('section', { class: 'section' }, h('h2', { text: t('categories') }), cats),
+      stats,
       h('section', { class: 'section' }, h('h2', { text: t('goodToKnow') }),
         h('div', { class: 'card' }, [1, 2, 3, 4].map(function (i) {
           var d = h('details', { class: 'faq', open: !!ui.faq[i], ontoggle: function () { ui.faq[i] = d.open; } },
             h('summary', { text: t('f' + i + 'q') }), h('p', { text: t('f' + i + 'a') }));
           return d;
         })))];
+  }
+
+  // ---------- methodology ----------
+  // How a finding comes about, in plain words. The labels and their counts come from the data, so they
+  // stay in step with the findings; the figures under "not yet" are as of the last full run.
+  function methodologyScreen() {
+    document.title = t('mTitle') + ' – ' + t('title');
+    page = { kind: 'methodology' };
+    renderSide('methodology');
+    var steps = h('ol', { class: 'howlist five' }, [1, 2, 3, 4, 5].map(function (i) {
+      return h('li', null, h('span', { class: 'n', 'aria-hidden': 'true', text: String(i) }), h('h3', { text: t('mS' + i) }), h('p', { text: t('mS' + i + 't') }));
+    }));
+    var types = h('div', { class: 'mtypes' }, live().map(function (c) {
+      return h('div', { class: 'card mtype' }, h('h3', { text: L(c.title) }), h('dl', null, c.subcategories.map(function (sc) {
+        return h('div', null, h('dt', null, L(sc.title), h('span', { class: 'n', text: String(sc.count) })), h('dd', { text: L(sc.description) }));
+      })));
+    }));
+    var support = h('ul', { class: 'card msupport' }, [1, 2, 3, 4, 5].map(function (p) {
+      return h('li', null, meter(p), h('span', { text: t('mP' + p) }));
+    }));
+    var models = h('div', { class: 'card tablewrap' }, h('table', { class: 'cmp' },
+      h('thead', null, h('tr', null, h('th', { scope: 'col', text: t('mModel') }), h('th', { scope: 'col', text: t('mRole') }))),
+      h('tbody', null, [['GPT-5.6 Luna', 'mLuna'], ['GPT-5.6 Terra', 'mTerra'], ['text-embedding-3-small', 'mEmbed']].map(function (m) {
+        return h('tr', null, h('th', { scope: 'row', text: m[0] }), h('td', { text: t(m[1]) }));
+      }))));
+    return [
+      h('nav', { class: 'crumbs', 'aria-label': t('breadcrumb') }, h('a', { href: '#/' }, t('overview')), ' / ' + t('mTitle')),
+      h('div', { class: 'pagehead' }, h('h1', { text: t('mTitle') }), h('p', { style: 'max-width:72ch', text: t('mLead') })),
+      h('section', { class: 'section' }, h('h2', { text: t('mStepsH') }), steps),
+      h('section', { class: 'section' }, h('h2', { text: t('mTypesH') }), h('p', { class: 'mlead', text: t('mTypesP') }), types),
+      h('section', { class: 'section' }, h('h2', { text: t('mSupportH') }), h('p', { class: 'mlead', text: t('mSupportP') }), support),
+      h('section', { class: 'section' }, h('h2', { text: t('mModelsH') }), h('p', { class: 'mlead', text: t('mModelsP') }), models),
+      h('nav', { class: 'pager' }, h('a', { class: 'btn', href: '#/' }, t('mBack')), h('span'))
+    ];
   }
 
   // ---------- list ----------
@@ -702,6 +848,8 @@
         view = q ? questionScreen(cat, q) : listScreen(cat);
       }
     }
+    if (parts[0] === 's' && App.plain && App.plain.ready()) view = App.plain.screen(parts.slice(1));
+    if (!view && parts[0] === 'methodology') view = methodologyScreen();
     if (!view) view = overviewScreen(still);
     main.textContent = '';
     main.classList.remove('enter');
@@ -712,7 +860,7 @@
     if (hasUnsaved() && location.hash !== currentHash) {
       if (!window.confirm(t('discard'))) { history.replaceState(null, '', currentHash); return; }
     }
-    if (location.hash.split('?')[0] !== currentHash.split('?')[0]) drafts = {};
+    if (location.hash.split('?')[0] !== currentHash.split('?')[0]) { drafts = {}; if (App.plain) App.plain.discard(); }
     currentHash = location.hash;
     closeMenu();
     render(false);
@@ -720,21 +868,131 @@
     main.focus({ preventScroll: true });
   }
 
+  function optional(url) { return fetch(url).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); }
   renderChromeSafe();
   function renderChromeSafe() { try { renderChrome(); } catch (e) { /* data not needed for chrome */ } }
 
-  Promise.all([
-    fetch('data/review_data.json').then(function (r) { if (!r.ok) throw new Error(); return r.json(); }),
-    fetch('/api/decisions').then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
-  ]).then(function (res) {
-    DATA = res[0]; DECISIONS = res[1];
-    window.addEventListener('hashchange', route);
-    route();
-  }).catch(function () {
+  // ---------- sign in / create account ----------
+  // Shown instead of the workspace until the server knows who is reviewing. On success the page
+  // reloads, so the workspace always starts from a clean, signed-in state.
+  var authMode = 'login', authVals = {}, DEMO = false;
+  function showAuth() {
+    document.querySelector('.shell').hidden = true;
+    document.getElementById('auth').hidden = false;
+    renderAuth();
+  }
+  function renderAuth() {
+    var box = document.getElementById('auth'), signup = authMode === 'signup';
+    document.documentElement.lang = LANG;
+    document.title = t(signup ? 'aSignup' : 'aLogin') + ' – ' + t('title');
+    Array.prototype.forEach.call(box.querySelectorAll('input'), function (i) { if (i.type !== 'password') authVals[i.name] = i.value; });
+    box.textContent = '';
+    var err = h('div', { class: 'err', id: 'auth-err', role: 'alert' });
+    function field(id, type, label, auto, hint) {
+      var input = h('input', { id: 'auth-' + id, name: id, type: type, autocomplete: auto, spellcheck: 'false', value: authVals[id] || '',
+        'aria-describedby': 'auth-err' + (hint ? ' auth-' + id + '-hint' : ''), oninput: function () { input.removeAttribute('aria-invalid'); err.textContent = ''; } });
+      var wrap = h('div', { class: 'afield' }, h('label', { for: 'auth-' + id, text: label }), input);
+      if (type === 'password') {
+        var toggle = h('button', { class: 'reveal', type: 'button', 'aria-controls': 'auth-' + id, 'aria-pressed': 'false', onclick: function () {
+          var show = input.type === 'password';
+          input.type = show ? 'text' : 'password'; toggle.textContent = show ? t('aHide') : t('aShow'); toggle.setAttribute('aria-pressed', String(show));
+        } }, t('aShow'));
+        wrap.appendChild(toggle);
+      }
+      if (hint) wrap.appendChild(h('small', { class: 'hint', id: 'auth-' + id + '-hint', text: hint }));
+      return wrap;
+    }
+    function val(id) { var el = document.getElementById('auth-' + id); return el ? el.value : ''; }
+    function fail(key, id) {
+      err.textContent = t(key);
+      var el = id && document.getElementById('auth-' + id);
+      if (el) { el.setAttribute('aria-invalid', 'true'); el.focus(); }
+    }
+    function setMode(m) { authMode = m; renderAuth(); var first = box.querySelector('input'); if (first) first.focus(); }
+    var submit = h('button', { class: 'btn primary', type: 'submit' }, t(signup ? 'aCreate' : 'aLogin'));
+    var form = h('form', { novalidate: true, onsubmit: function (ev) {
+      ev.preventDefault();
+      var body = { email: val('email').trim(), password: val('password') };
+      if (signup) body.name = val('name').trim();
+      if (DEMO) body = { email: body.email, password: body.password, name: body.name };
+      else if (signup && !body.name) return fail('aErrName', 'name');
+      if (!DEMO && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(body.email)) return fail('aErrEmail', 'email');
+      if (!DEMO && !body.password) return fail('aErrPassword', 'password');
+      if (!DEMO && signup && body.password.length < 8) return fail('aErrShort', 'password');
+      submit.disabled = true; submit.textContent = t('aWorking');
+      fetch(signup ? '/api/signup' : '/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.code || 'server'); }); })
+        .then(function () { location.reload(); })
+        .catch(function (e) {
+          submit.disabled = false; submit.textContent = t(signup ? 'aCreate' : 'aLogin');
+          var map = { exists: ['aErrExists', 'email'], bad_login: ['aErrLogin', 'password'], locked: ['aErrLocked', null], weak: ['aErrShort', 'password'], invalid: ['aErrEmail', 'email'], invalid_name: ['aErrName', 'name'] };
+          var m = map[e.message] || ['aErrServer', null];
+          fail(m[0], m[1]);
+        });
+    } },
+      signup ? field('name', 'text', t('aName'), 'name') : null,
+      field('email', 'email', t('aEmail'), 'email'),
+      field('password', 'password', t('aPassword'), signup ? 'new-password' : 'current-password', signup ? t('aPasswordHint') : null),
+      err, submit);
+    var lang = h('div', { class: 'langsw', role: 'group', 'aria-label': t('language') }, [['nl', 'Nederlands', 'NL'], ['en', 'English', 'EN']].map(function (x) {
+      return h('button', { type: 'button', lang: x[0], 'aria-pressed': String(LANG === x[0]), title: x[1], 'aria-label': x[1], onclick: function () {
+        LANG = x[0]; try { localStorage.setItem('lang', LANG); } catch (e) { /* ignore */ } renderAuth();
+      } }, x[2]);
+    }));
+    var mark = s('svg', { viewBox: '0 0 32 32', width: 34, height: 34, 'aria-hidden': 'true' },
+      s('rect', { width: 32, height: 32, rx: 8, fill: '#2F8FE0' }), s('path', { d: 'M9 9h14M9 16h14M9 23h8', stroke: '#fff', 'stroke-width': 2.6, 'stroke-linecap': 'round' }),
+      s('circle', { cx: 23, cy: 23, r: 3, fill: '#fff' }));
+    append(box, [
+      h('aside', { class: 'auth-brand' },
+        h('div', { class: 'brand', translate: 'no' }, mark, h('span', { text: t('title') })),
+        h('div', null, h('h1', { text: t('heroTitle') }), h('p', { text: t('aPitch') })),
+        h('small', { text: t('aFoot') })),
+      h('section', { class: 'auth-main' }, lang,
+        h('div', { class: 'card auth-card' },
+          h('h2', { text: t(signup ? 'aSignupTitle' : 'aLoginTitle') }),
+          h('p', { class: 'sub', text: t(signup ? 'aSignupSub' : 'aLoginSub') }),
+          DEMO ? h('p', { class: 'ademo', role: 'note', text: t('aDemo') }) : null,
+          h('div', { class: 'segctl', role: 'group', 'aria-label': t('aModes') },
+            h('button', { type: 'button', 'aria-pressed': String(!signup), onclick: function () { if (signup) setMode('login'); } }, t('aLogin')),
+            h('button', { type: 'button', 'aria-pressed': String(signup), onclick: function () { if (!signup) setMode('signup'); } }, t('aSignup'))),
+          form,
+          h('p', { class: 'aswitch' }, t(signup ? 'aHaveAccount' : 'aNoAccount') + ' ',
+            h('button', { type: 'button', class: 'linkish', onclick: function () { setMode(signup ? 'login' : 'signup'); } }, t(signup ? 'aLogin' : 'aSignup')))))
+    ]);
+  }
+  function signOut() {
+    if (hasUnsaved() && !window.confirm(t('discard'))) return;
+    fetch('/api/logout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' })
+      .then(function () { window.onbeforeunload = null; location.hash = ''; location.reload(); });
+  }
+  function loadFailed() {
     main.textContent = '';
     append(main, h('div', { class: 'card', style: 'padding:32px;max-width:640px' },
       h('h1', { style: 'font-size:1.6rem', text: t('loadErr') }),
       h('p', { style: 'margin-top:12px', text: t('loadErr2') }),
       h('p', { class: 'muted', text: 'python ui/build_review_data.py  /  python ui/server.py' })));
-  });
+  }
+
+  // Nothing loads until someone is signed in: the server refuses the data otherwise.
+  fetch('/api/me').then(function (r) {
+    if (r.status === 401) { return r.json().then(function (j) { DEMO = !!j.demo; }, function () {}).then(showAuth); }
+    if (!r.ok) throw new Error();
+    return r.json().then(function (me) { ME = me; startApp(); });
+  }).catch(loadFailed);
+
+  function startApp() {
+    Promise.all([
+      fetch('data/review_data.json').then(function (r) { if (!r.ok) throw new Error(); return r.json(); }),
+      fetch('/api/decisions').then(function (r) { if (!r.ok) throw new Error(); return r.json(); }),
+      // The plain-language laws are optional: without them that category simply stays "soon".
+      optional('data/simplified.json'), optional('/api/sheet_reviews'), optional('/api/sheet_settings')
+    ]).then(function (res) {
+      DATA = res[0]; DECISIONS = res[1];
+      // Outdated provisions is not part of this version of the tool, so it is not shown at all.
+      DATA.categories = DATA.categories.filter(function (c) { return c.id !== 'outdatedness'; });
+      if (App.plain && res[2]) App.plain.init(res[2], res[3], res[4]);
+      window.addEventListener('hashchange', route);
+      route();
+    }).catch(loadFailed);
+  }
 })();

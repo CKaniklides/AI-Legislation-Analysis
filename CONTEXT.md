@@ -1,6 +1,6 @@
 # AI Legislation Analysis
 
-A detection system over Dutch and EU digital law (GDPR, NIS2, DORA, AI Act and their Dutch transpositions) that flags candidate contradictions, duplications, outdated provisions and overly complex drafting for expert review. It never issues a legal conclusion and never rewrites legal text. See `context.md` (the project decisions log) for the full history and `architecture_and_implementation_strategy.md` for the technical design.
+A detection system over Dutch and EU digital law (GDPR, NIS2, DORA, AI Act and their Dutch transpositions) that flags candidate contradictions, duplications and outdated provisions for expert review, and writes each instrument out in plain language for expert approval. It never issues a legal conclusion and never changes or replaces legal text: a plain-language explanation sits next to the provision it explains. See `context.md` (the project decisions log) for the full history and `architecture_and_implementation_strategy.md` for the technical design.
 
 ## Language
 
@@ -27,3 +27,15 @@ _Avoid_: precedence, override (deference is the specific, extracted field name u
 **Finding**:
 A structured, machine-emitted candidate record (category, subtype, provisions, evidence, criteria fired, data currency) for one of the four detection categories. A Finding is never itself a conclusion — it becomes `report_eligible` only after human expert review.
 _Avoid_: result, flag, output, conclusion.
+
+**Plain-language law**:
+The system's explanation of one instrument in everyday words, written by a model from the legal text and checked against it. It has three levels: a one-page sheet for the whole instrument (1-3% of its length), a summary per chapter, and a card per article. It sits next to the legal text and never replaces it, and it never says how the law applies to one person's case.
+_Avoid_: simplified law, rewritten law, translation (the legal text itself is never simplified, rewritten or translated).
+
+**Line**:
+One statement of a plain-language law that can stand on its own, with the article(s) it rests on. The line is the unit of review: a lawyer approves it, declines it with a reason, or rewords it.
+_Avoid_: sentence, bullet, finding (a line is not a Finding: it explains the law, it does not flag a problem in it).
+
+**Public document**:
+The version of a plain-language law that leaves the Ministry: declined lines are left out, reworded lines use the reviewer's wording, and review notes are removed. It is a draft until every line in it is approved.
+_Avoid_: export, summary, report.

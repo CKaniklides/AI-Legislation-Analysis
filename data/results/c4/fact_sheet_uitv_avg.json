@@ -1,0 +1,2549 @@
+{
+ "instrument_id": "BWBR0040940",
+ "source_file": "BWBR0040940_2026-09-01_provisions.json",
+ "n_articles": 63,
+ "n_words": 9050,
+ "length_targets_words": {
+  "law_sheet": [
+   90,
+   272
+  ],
+  "whole_tree": [
+   452,
+   905
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Hoofdstuk 1. Algemene bepalingen",
+   "articles": [
+    "1",
+    "2",
+    "2a",
+    "3",
+    "4",
+    "5"
+   ],
+   "n_words": 977,
+   "target_words": [
+    49,
+    98
+   ]
+  },
+  {
+   "title": "Hoofdstuk 2. De Autoriteit persoonsgegevens",
+   "articles": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "21a",
+    "21b"
+   ],
+   "n_words": 2463,
+   "target_words": [
+    123,
+    246
+   ]
+  },
+  {
+   "title": "Hoofdstuk 3. Bepalingen ter uitvoering van de verordening",
+   "articles": [
+    "22",
+    "23",
+    "23a",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "30a",
+    "30b",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39"
+   ],
+   "n_words": 3333,
+   "target_words": [
+    167,
+    333
+   ]
+  },
+  {
+   "title": "Hoofdstuk 4. Uitzonderingen, beperkingen en bijzondere grondslagen",
+   "articles": [
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "47a"
+   ],
+   "n_words": 1320,
+   "target_words": [
+    66,
+    132
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5. Overgangs- en slotbepalingen",
+   "articles": [
+    "48",
+    "48a",
+    "48b",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54"
+   ],
+   "n_words": 957,
+   "target_words": [
+    48,
+    96
+   ]
+  }
+ ],
+ "defined_terms": [
+  {
+   "term": "verordening",
+   "defined_in": "1",
+   "uses": 72,
+   "used_in_articles": 43
+  },
+  {
+   "term": "Onze Minister",
+   "defined_in": "1",
+   "uses": 18,
+   "used_in_articles": 8
+  },
+  {
+   "term": "persoonsgegevens van strafrechtelijke aard",
+   "defined_in": "1",
+   "uses": 10,
+   "used_in_articles": 5
+  },
+  {
+   "term": "bijzondere categorieën van persoonsgegevens",
+   "defined_in": "1",
+   "uses": 8,
+   "used_in_articles": 6
+  },
+  {
+   "term": "Het eerste en het tweede lid zijn niet van toepassing op",
+   "defined_in": "3",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "Deze wet wordt aangehaald als",
+   "defined_in": "54",
+   "uses": 0,
+   "used_in_articles": 0
+  }
+ ],
+ "duties": [
+  {
+   "article": "2",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "de verwerking van persoonsgegevens",
+   "who_type": "REGULATED_ENTITY",
+   "when": "de verwerking van persoonsgegevens",
+   "must": "is deze wet niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover daarop de Wet basisregistratie personen of de Kieswet van toepassing is"
+   ]
+  },
+  {
+   "article": "2",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": "deze wet",
+   "who_type": "OTHER",
+   "when": "de verwerking van persoonsgegevens, bedoeld in artikel 2, tweede lid, van de verordening",
+   "must": "niet van toepassing op de verwerking van persoonsgegevens, bedoeld in artikel 2, tweede lid, van de verordening",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Behoudens het bepaalde in artikel 3"
+   ]
+  },
+  {
+   "article": "2a",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "bij de toepassing van de verordening",
+   "must": "neemt bij de toepassing van de verordening de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124) in aanmerking",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124)"
+   ]
+  },
+  {
+   "article": "3",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+   "who_type": "OTHER",
+   "when": "Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+   "must": "wordt zo spoedig mogelijk mededeling gedaan aan de Autoriteit persoonsgegevens",
+   "to_whom": [
+    "Autoriteit persoonsgegevens"
+   ],
+   "deadline": "zo spoedig mogelijk",
+   "conditions": [
+    "als bedoeld in het derde lid, onderdeel a"
+   ]
+  },
+  {
+   "article": "3",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": "Het eerste en het tweede lid",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "zijn niet van toepassing op",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover Onze Minister van Defensie daartoe bij besluit of bij ministeriële regeling beslist met het oog op de inzet of het ter beschikking stellen van de krijgsmacht ter uitvoering van de in artikel 97 van de Grondwet omschreven taken",
+    "voor zover daarop de Wet op de inlichtingen- en veiligheidsdiensten 2017 van toepassing is"
+   ]
+  },
+  {
+   "article": "3",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Deze wet en de daarop berustende bepalingen",
+   "who_type": "OTHER",
+   "when": "de verwerking van persoonsgegevens",
+   "must": "zijn mede van toepassing op de verwerking van persoonsgegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "in het kader van activiteiten die buiten de werkingssfeer van het Unierecht vallen",
+    "door de krijgsmacht bij de uitvoering van activiteiten die binnen de werkingssfeer van titel V, hoofdstuk 2, van het Verdrag betreffende de Europese Unie vallen"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "zijn wettelijk vertegenwoordiger",
+   "who_type": "OTHER",
+   "when": "Indien de betrokkene onder curatele is gesteld, dan wel ten behoeve van de betrokkene een bewind of mentorschap is ingesteld",
+   "must": "die van zijn wettelijk vertegenwoordiger is vereist",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover het een aangelegenheid betreft waarvoor de betrokkene onbekwaam dan wel onbevoegd is"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "diens wettelijke vertegenwoordiger",
+   "who_type": "OTHER",
+   "when": "indien de betrokkene de leeftijd van twaalf jaren nog niet heeft bereikt",
+   "must": "worden deze rechten uitgeoefend door diens wettelijke vertegenwoordiger",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Ten aanzien van de rechten van de betrokkene, bedoeld in hoofdstuk III van de verordening"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "6",
+   "kind": "PROHIBITION",
+   "who": "Dit artikel",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "op hulp- en adviesdiensten die rechtstreeks en kosteloos aan een minderjarige of een onder curatele gestelde of een persoon ten behoeve van wie een bewind of mentorschap is ingesteld worden aangeboden"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "7",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": null,
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover een bijzondere regeling geldt op grond van Afdeling 5, titel 7, van Boek 7 van het Burgerlijk Wetboek"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "zijn wettelijk vertegenwoordiger",
+   "who_type": "OTHER",
+   "when": "de betrokkene heeft de leeftijd van zestien jaren nog niet bereikt",
+   "must": "de toestemming van zijn wettelijk vertegenwoordiger vereist",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "artikel 8 van de verordening niet van toepassing is",
+    "sprake is van toestemming als bedoeld in artikel 4, onderdeel elf, van de verordening"
+   ]
+  },
+  {
+   "article": "6",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "toe te zien op de verwerking van persoonsgegevens overeenkomstig het bij en krachtens de verordening of de wet bepaalde",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "7",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "Bij ministeriële regeling",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden voorwaarden gesteld en vereiste kwalificaties benoemd",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken",
+    "om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens"
+   ]
+  },
+  {
+   "article": "7",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Op eigen verzoek",
+   "must": "ontslagen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "7",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden bij koninklijk besluit, op voordracht van Onze Minister, benoemd",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "7",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "De voorzitter",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "voldoet aan de bij of krachtens artikel 5 van de Wet rechtspositie rechterlijke ambtenaren gestelde vereisten voor benoembaarheid tot rechter in een rechtbank",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "stelt de begroting vast",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "in overeenstemming met het budget, bedoeld in het tweede lid"
+   ]
+  },
+  {
+   "article": "11",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "jaarlijks",
+   "must": "kent Onze Minister jaarlijks aan de Autoriteit persoonsgegevens een budget toe ten laste van de rijksbegroting",
+   "to_whom": [
+    "de Autoriteit persoonsgegevens"
+   ],
+   "deadline": "jaarlijks",
+   "conditions": [
+    "In de departementale begroting, bedoeld in artikel 2.1, zesde lid, van de Comptabiliteitswet 2016"
+   ]
+  },
+  {
+   "article": "11",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "De leden",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "stellen een verdeling van taken vast en betrekken hierbij zoveel mogelijk de buitengewone leden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "jaarlijks voorafgaand aan het desbetreffende begrotingsjaar",
+   "must": "stelt jaarlijks voorafgaand aan het desbetreffende begrotingsjaar een ontwerpbegroting op",
+   "to_whom": [],
+   "deadline": "jaarlijks voorafgaand aan het desbetreffende begrotingsjaar",
+   "conditions": []
+  },
+  {
+   "article": "12",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "Artikel 20 van de Kaderwet zelfstandige bestuursorganen",
+   "who_type": "OTHER",
+   "when": "de Autoriteit persoonsgegevens de informatie van derden heeft verkregen onder de voorwaarde dat het geheime karakter daarvan wordt gehandhaafd",
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "onder de voorwaarde dat het geheime karakter daarvan wordt gehandhaafd"
+   ]
+  },
+  {
+   "article": "13",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "14",
+   "paragraph": "7",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit Persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Voordat de Autoriteit Persoonsgegevens beleidsregels vaststelt ter bevordering van een consequente toepassing van de verordening of over de uitoefening van haar handhavingsbevoegdheden",
+   "must": "raadpleegt zij, voor zover passend, belanghebbende partijen",
+   "to_whom": [
+    "belanghebbende partijen"
+   ],
+   "deadline": null,
+   "conditions": [
+    "voor zover passend"
+   ]
+  },
+  {
+   "article": "15",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": "een geheimhoudingsplicht",
+   "who_type": "OTHER",
+   "when": "inlichtingen of medewerking wordt verlangd",
+   "must": "Geen beroep is mogelijk op een geheimhoudingsplicht",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover inlichtingen of medewerking wordt verlangd in verband met de eigen betrokkenheid bij de verwerking van persoonsgegevens"
+   ]
+  },
+  {
+   "article": "15",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De in het eerste lid bedoelde personen",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "behoeven voor de uitoefening van de in het tweede lid omschreven bevoegdheid de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens",
+   "to_whom": [
+    "Autoriteit persoonsgegevens"
+   ],
+   "deadline": null,
+   "conditions": [
+    "voor de uitoefening van de in het tweede lid omschreven bevoegdheid"
+   ]
+  },
+  {
+   "article": "19",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "desgevraagd",
+   "must": "aan elkaar de gegevens betreffende de verwerking van persoonsgegevens te verstrekken die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting",
+   "to_whom": [
+    "De Autoriteit persoonsgegevens",
+    "de toezichthouders, bedoeld in het eerste lid"
+   ],
+   "deadline": null,
+   "conditions": [
+    "die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting"
+   ]
+  },
+  {
+   "article": "20",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Het verzoekschrift",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "wordt ondertekend en bevat ten minste:",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "20",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Bij het verzoekschrift",
+   "who_type": "OTHER",
+   "when": "Bij het verzoekschrift",
+   "must": "wordt een afschrift overgelegd van het verzoek van de belanghebbende om handhaving van bij of krachtens wet bepaalde regels inzake de bescherming van persoonsgegevens, waarop het in het tweede lid bedoelde verzoekschrift van de Autoriteit persoonsgegevens betrekking heeft en worden andere op de zaak betrekking hebbende stukken meegezonden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "20",
+   "paragraph": "8",
+   "kind": "PROHIBITION",
+   "who": "de Afdeling bestuursrechtspraak van de Raad van State",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "het aanhouden van het verzoek door de Afdeling bestuursrechtspraak van de Raad van State",
+   "must": "staat geen voorziening open",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "20",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "de Afdeling bestuursrechtspraak van de Raad van State",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Indien de Afdeling bestuursrechtspraak van de Raad van State, al dan niet na prejudiciële verwijzing op grond van artikel 267 van het Verdrag inzake de werking van de Europese Unie aan het Hof van Justitie van de Europese Unie, tot het oordeel komt dat het aan haar voorgelegde besluit van de Europese Commissie geldig is",
+   "must": "verklaart zij dat voor recht",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "het aan haar voorgelegde besluit van de Europese Commissie geldig is",
+    "het aan haar voorgelegde besluit ongeldig is"
+   ]
+  },
+  {
+   "article": "21a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": "Met betrekking tot het toezicht, bedoeld in het eerste lid",
+   "must": "vindt de samenwerking en uitwisseling van informatie met De Nederlandsche Bank N.V. en andere relevante toezichthouders plaats overeenkomstig artikel 26 van de richtlijn betaaldiensten, bedoeld in artikel 1:1 van de Wet op het financieel toezicht",
+   "to_whom": [
+    "De Nederlandsche Bank N.V.",
+    "andere relevante toezichthouders"
+   ],
+   "deadline": null,
+   "conditions": [
+    "overeenkomstig artikel 26 van de richtlijn betaaldiensten, bedoeld in artikel 1:1 van de Wet op het financieel toezicht"
+   ]
+  },
+  {
+   "article": "21b",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "de overtreder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt",
+   "must": "De openbaarmaking van de beschikking geschiedt niet eerder",
+   "to_whom": [],
+   "deadline": "nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt",
+   "conditions": [
+    "tenzij de overtreder de beschikking of de inhoud ervan, zelf heeft openbaar gemaakt, heeft doen openbaar maken of heeft aangegeven geen bedenkingen te hebben tegen eerdere openbaarmaking"
+   ]
+  },
+  {
+   "article": "21b",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de openbaarmaking van de beschikking",
+   "who_type": "OTHER",
+   "when": "Indien wordt verzocht om een voorlopige voorziening als bedoeld in artikel 8:81 van de Algemene wet bestuursrecht",
+   "must": "wordt de openbaarmaking van de beschikking opgeschort",
+   "to_whom": [],
+   "deadline": "totdat de voorzieningenrechter uitspraak heeft gedaan of het verzoek is ingetrokken",
+   "conditions": [
+    "Indien wordt verzocht om een voorlopige voorziening als bedoeld in artikel 8:81 van de Algemene wet bestuursrecht"
+   ]
+  },
+  {
+   "article": "21b",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit Persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie",
+   "must": "maakt een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie openbaar",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "behoudens voor zover artikel 5.1, eerste, tweede en vijfde lid van de Wet open overheid, aan openbaarmaking in de weg staan"
+   ]
+  },
+  {
+   "article": "22",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "verboden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "22",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": "indien:",
+   "must": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "de betrokkene uitdrukkelijke toestemming heeft gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden",
+    "de verwerking noodzakelijk is ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon, indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven",
+    "de verwerking wordt verricht door een stichting, een vereniging of een andere instantie zonder winstoogmerk die op politiek, levensbeschouwelijk, godsdienstig of vakbondsgebied werkzaam is, in het kader van haar gerechtvaardigde activiteiten en met passende waarborgen, mits de verwerking uitsluitend betrekking heeft op de leden of de voormalige leden van de instantie of op personen die in verband met haar doeleinden regelmatig contact met haar onderhouden, en de persoonsgegevens niet zonder de toestemming van de betrokkenen buiten die instantie worden verstrekt",
+    "de verwerking betrekking heeft op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt",
+    "de verwerking noodzakelijk is voor de instelling, uitoefening of verdediging van een rechtsvordering, of wanneer gerechten handelen in het kader van hun rechtsprekende taken"
+   ]
+  },
+  {
+   "article": "23a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "when": "voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid",
+   "must": "wordt voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid, pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening toegepast en vervolgens onafgebroken gecontinueerd",
+   "to_whom": [],
+   "deadline": "voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid",
+   "conditions": [
+    "Op persoonsgegevens waarop de geheimhoudingsplicht, bedoeld in artikel 457, eerste lid, van boek 7 van het Burgerlijk Wetboek rust dan wel heeft gerust"
+   ]
+  },
+  {
+   "article": "25",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "de verwerking",
+   "who_type": "OTHER",
+   "when": "indien de verwerking geschiedt",
+   "must": "het verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt, niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "met het oog op de identificatie van de betrokkene, en slechts voor zover de verwerking voor dat doel onvermijdelijk is",
+    "met het doel personen van een bepaalde etnische of culturele minderheidsgroep een bevoorrechte positie toe te kennen teneinde feitelijke nadelen, verband houdende met de grond ras of etnische afkomst, op te heffen of te verminderen, en slechts voor zover: de verwerking voor dat doel noodzakelijk is; de gegevens betrekking hebben op het geboorteland van de betrokkene, diens ouders of diens grootouders, dan wel op andere, bij wet vastgestelde criteria op grond waarvan op objectieve wijze vastgesteld kan worden of iemand tot een bepaalde etnische of culturele minderheidsgroep behoort; en de betrokkene tegen de verwerking geen schriftelijk bezwaar heeft gemaakt"
+   ]
+  },
+  {
+   "article": "27",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "geen persoonsgegevens",
+   "who_type": "REGULATED_ENTITY",
+   "when": "In de gevallen, bedoeld in het eerste lid",
+   "must": "worden geen persoonsgegevens aan derden verstrekt",
+   "to_whom": [
+    "derden"
+   ],
+   "deadline": null,
+   "conditions": [
+    "zonder toestemming van de betrokkene"
+   ]
+  },
+  {
+   "article": "30",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "de verwerkingsverantwoordelijke",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Indien de verwerkingsverantwoordelijke persoonlijk gegevens verwerkt en op hem niet reeds uit hoofde van ambt, beroep of wettelijk voorschrift een geheimhoudingsplicht rust",
+   "must": "is hij verplicht tot geheimhouding van de gegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "behoudens voor zover de wet hem tot mededeling verplicht of uit zijn taak de noodzaak voortvloeit dat de gegevens worden meegedeeld aan anderen die krachtens het eerste, tweede of derde lid bevoegd zijn tot verwerking daarvan"
+   ]
+  },
+  {
+   "article": "30a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de betrokkene",
+   "who_type": "DATA_SUBJECT",
+   "when": "In een geval als bedoeld in het eerste lid, onder a",
+   "must": "wordt de betrokkene geïnformeerd over de overdracht en gewezen op de van toepassing zijnde rechten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Indien het informeren onmogelijk is of onevenredig veel inspanning vergt of de persoonsgegevens vertrouwelijk moeten blijven uit hoofde van een beroepsgeheim"
+   ]
+  },
+  {
+   "article": "30a",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": "Het overdragen van dossiers, bedoeld in het eerste lid",
+   "must": "geschiedt kosteloos",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "30a",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de betrokkene",
+   "who_type": "DATA_SUBJECT",
+   "when": "Als in een geval als bedoeld in het eerste lid, onder b, de betrokkene op grond van artikel 14, vijfde lid, onder b of d, van de verordening niet wordt geïnformeerd",
+   "must": "tijdig in algemene bewoordingen brede kenbaarheid gegeven aan de gegevensverwerking",
+   "to_whom": [],
+   "deadline": "tijdig",
+   "conditions": [
+    "in een geval als bedoeld in het eerste lid, onder b",
+    "de betrokkene op grond van artikel 14, vijfde lid, onder b of d, van de verordening niet wordt geïnformeerd"
+   ]
+  },
+  {
+   "article": "34",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "bestuursorgaan",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Een schriftelijke beslissing op een verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening",
+   "must": "wordt genomen binnen de in artikel 12, derde lid, van de verordening genoemde termijnen",
+   "to_whom": [],
+   "deadline": "binnen de in artikel 12, derde lid, van de verordening genoemde termijnen",
+   "conditions": [
+    "voor zover deze is genomen door een bestuursorgaan"
+   ]
+  },
+  {
+   "article": "35",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "De verwerkingsverantwoordelijke en belanghebbende",
+   "who_type": "REGULATED_ENTITY",
+   "when": "De rechtbank kan partijen en anderen verzoeken",
+   "must": "aan dit verzoek te voldoen",
+   "to_whom": [
+    "De rechtbank"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "35",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De rechtbank",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Alvorens de rechtbank beslist",
+   "must": "stelt zij zo nodig de belanghebbenden in de gelegenheid hun zienswijze naar voren te brengen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "zo nodig"
+   ]
+  },
+  {
+   "article": "35",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Het verzoekschrift",
+   "who_type": "OTHER",
+   "when": "ontvangst van het antwoord van de verwerkingsverantwoordelijke",
+   "must": "wordt ingediend",
+   "to_whom": [],
+   "deadline": "binnen zes weken na ontvangst van het antwoord van de verwerkingsverantwoordelijke",
+   "conditions": [
+    "Indien de verwerkingsverantwoordelijke niet binnen de in artikel 12, derde lid, van de verordening genoemde termijnen heeft geantwoord"
+   ]
+  },
+  {
+   "article": "37",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "degene die door deze verwerking wordt getroffen",
+   "who_type": "DATA_SUBJECT",
+   "when": "voor zover degene die door deze verwerking wordt getroffen, daartegen bezwaar heeft",
+   "must": "kan niet ten grondslag worden gelegd aan een vordering als bedoeld in artikel 305a, van Boek 3 van het Burgerlijk Wetboek of een beroep ingesteld in een bestuursrechtelijke procedure door een belanghebbende in de zin van artikel 1:2, derde lid, van de Algemene wet bestuursrecht",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover degene die door deze verwerking wordt getroffen, daartegen bezwaar heeft"
+   ]
+  },
+  {
+   "article": "39",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "De functionaris voor gegevensbescherming",
+   "who_type": "OTHER",
+   "when": "op grond van een klacht of een verzoek van betrokkene",
+   "must": "is verplicht tot geheimhouding van hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "tenzij de betrokkene in bekendmaking toestemt"
+   ]
+  },
+  {
+   "article": "40",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de verwerkingsverantwoordelijke",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij de geautomatiseerde individuele besluitvorming, bedoeld in het eerste lid",
+   "must": "treft de verwerkingsverantwoordelijke passende maatregelen die strekken tot bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "40",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de verwerkingsverantwoordelijke",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Indien de verwerkingsverantwoordelijke geen bestuursorgaan is",
+   "must": "zijn passende maatregelen als bedoeld in het tweede lid, in ieder geval getroffen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Indien de verwerkingsverantwoordelijke geen bestuursorgaan is"
+   ]
+  },
+  {
+   "article": "41",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de verwerkingsverantwoordelijke",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij de toepassing van het eerste lid",
+   "must": "houdt de verwerkingsverantwoordelijke rekening met in ieder geval, voor zover van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover van toepassing",
+    "tenzij dit afbreuk kan doen aan het doel van de beperking"
+   ]
+  },
+  {
+   "article": "42",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "financiële ondernemingen als bedoeld in de Wet op het financieel toezicht",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "43",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "Deze wet, met uitzondering van de artikelen 1, 2, 3, 4 en 5, eerste en tweede lid",
+   "who_type": "OTHER",
+   "when": "de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van uitsluitend academische, artistieke of literaire uitdrukkingsvormen",
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor uitsluitend journalistieke doeleinden en ten behoeve van uitsluitend academische, artistieke of literaire uitdrukkingsvormen"
+   ]
+  },
+  {
+   "article": "43",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": "De artikelen 9 en 10 van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "when": "de verwerking van de in die artikelen bedoelde gegevens noodzakelijk is voor het journalistieke doel of de academische, artistieke of literaire uitdrukkingsvorm",
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover de verwerking van de in die artikelen bedoelde gegevens noodzakelijk is voor het journalistieke doel of de academische, artistieke of literaire uitdrukkingsvorm"
+   ]
+  },
+  {
+   "article": "43",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "De navolgende hoofdstukken en artikelen van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "when": "de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van academische, artistieke of literaire uitdrukkingsvormen",
+   "must": "zijn niet van toepassing op de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van academische, artistieke of literaire uitdrukkingsvormen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor uitsluitend journalistieke doeleinden",
+    "ten behoeve van academische, artistieke of literaire uitdrukkingsvormen"
+   ]
+  },
+  {
+   "article": "45",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "de verordening",
+   "who_type": "OTHER",
+   "when": "bij de verwerking van persoonsgegevens die deel uitmaken van",
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "archiefbescheiden die voor blijvende bewaring berusten bij archiefbewaarplaatsen als bedoeld in artikel 1, onderdeel f, van de Archiefwet 1995",
+    "andere archiefcollecties van blijvende waarde voor het algemeen belang die voor blijvende bewaring berusten bij andere voor het publiek toegankelijke instellingen die geen winstoogmerk hebben en waarvan de activiteiten in hoofdzaak uit publieke middelen worden bekostigd, of waarvan de leden van het bestuursorgaan, het leidinggevend orgaan of het toezichthoudend orgaan voor meer dan de helft door de staat, zijn territoriale lichamen of andere publiekrechtelijke instellingen zijn aangewezen"
+   ]
+  },
+  {
+   "article": "46",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "Een nummer dat ter identificatie van een persoon bij wet is voorgeschreven",
+   "who_type": "OTHER",
+   "when": "bij de verwerking van persoonsgegevens",
+   "must": "wordt bij de verwerking van persoonsgegevens slechts gebruikt ter uitvoering van de desbetreffende wet dan wel voor doeleinden bij de wet bepaald",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "47",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": null,
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "op bij de wet ingestelde openbare registers"
+   ]
+  },
+  {
+   "article": "47",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "De artikelen 15, 16, 18 en 19 van de verordening",
+   "who_type": "OTHER",
+   "when": "indien bij of krachtens die wet een bijzondere procedure voor de verbetering, aanvulling, verwijdering of afscherming van gegevens is geregeld",
+   "must": "zijn niet van toepassing op bij de wet ingestelde openbare registers",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "bij de wet ingestelde openbare registers"
+   ]
+  },
+  {
+   "article": "47a",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "De instellingsregeling of het instellingsbesluit",
+   "who_type": "OTHER",
+   "when": "waarin een commissie als bedoeld in het eerste lid wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens",
+   "must": "wordt onverwijld meegedeeld aan beide kamers der Staten-Generaal",
+   "to_whom": [
+    "beide kamers der Staten-Generaal"
+   ],
+   "deadline": "onverwijld",
+   "conditions": [
+    "waarin een commissie als bedoeld in het eerste lid wordt ingesteld",
+    "waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens"
+   ]
+  },
+  {
+   "article": "47a",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": "een commissie of adviescollege als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "het verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "de verwerking noodzakelijk is in het kader van een taak van zwaarwegend algemeen belang, die in de instellingsregeling is opgenomen",
+    "het vragen van uitdrukkelijke toestemming onmogelijk blijkt of een onevenredige inspanning vergt",
+    "er in de instellingsregeling of instellingsbesluit voldoende passende en specifieke waarborgen zijn opgenomen ter bescherming van de grondrechten en fundamentele belangen van de betrokkene"
+   ]
+  },
+  {
+   "article": "47a",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "de commissie of het adviescollege",
+   "who_type": "OTHER",
+   "when": "Indien een commissie of adviescollege als bedoeld in het eerste lid, bijzondere categorieën van persoonsgegevens of persoonsgegevens van strafrechtelijke aard verwerkt",
+   "must": "stelt de commissie of het adviescollege voorafgaand aan haar opheffing een verslag op over de wijze waarop deze persoonsgegevens zijn verwerkt",
+   "to_whom": [],
+   "deadline": "voorafgaand aan haar opheffing",
+   "conditions": [
+    "bijzondere categorieën van persoonsgegevens of persoonsgegevens van strafrechtelijke aard verwerkt"
+   ]
+  },
+  {
+   "article": "48a",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "op het tijdstip van inwerkingtreding van dit artikel",
+   "must": "te bepalen waarde",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "De in het vierde lid bedoelde vermogensbestanddelen"
+   ]
+  },
+  {
+   "article": "48a",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+   "who_type": "OTHER",
+   "when": "het tijdstip van inwerkingtreding van dit artikel",
+   "must": "zijn de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst, van rechtswege ontslagen en aangesteld als ambtenaar in dienst van de Autoriteit persoonsgegevens",
+   "to_whom": [
+    "de Autoriteit persoonsgegevens"
+   ],
+   "deadline": null,
+   "conditions": [
+    "van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst"
+   ]
+  },
+  {
+   "article": "48a",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister van Financiën",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Ingeval krachtens het vierde en het vijfde lid registergoederen overgaan",
+   "must": "doet Onze Minister van Financiën de overgang van die registergoederen onverwijld inschrijven in de openbare registers",
+   "to_whom": [
+    "de openbare registers, bedoeld in afdeling 2 van titel 1 van Boek 3 van het Burgerlijk Wetboek"
+   ],
+   "deadline": "onverwijld",
+   "conditions": [
+    "krachtens het vierde en het vijfde lid"
+   ]
+  },
+  {
+   "article": "48a",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "voor het tijdstip van inwerkingtreding van dit artikel aan de Nationale ombudsman is verzocht een onderzoek te doen dan wel de Nationale ombudsman een onderzoek heeft ingesteld naar een gedraging die kan worden toegerekend aan de Autoriteit persoonsgegevens",
+   "must": "treedt de Autoriteit persoonsgegevens op dat tijdstip als bestuursorgaan in de zin van de Wet Nationale ombudsman in de plaats van Onze Minister",
+   "to_whom": [
+    "Nationale ombudsman"
+   ],
+   "deadline": "op dat tijdstip",
+   "conditions": [
+    "waarin voor het tijdstip van inwerkingtreding van dit artikel aan de Nationale ombudsman is verzocht een onderzoek te doen dan wel de Nationale ombudsman een onderzoek heeft ingesteld naar een gedraging die kan worden toegerekend aan de Autoriteit persoonsgegevens"
+   ]
+  },
+  {
+   "article": "50",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "de inwerkingtreding van deze wet",
+   "must": "zendt binnen drie jaar na de inwerkingtreding van deze wet, en vervolgens telkens na vier jaar, aan de Staten-Generaal een verslag over de effecten van deze wet in de praktijk en over de uitvoering van de wet in de praktijk",
+   "to_whom": [
+    "de Staten-Generaal"
+   ],
+   "deadline": "binnen drie jaar na de inwerkingtreding van deze wet, en vervolgens telkens na vier jaar",
+   "conditions": []
+  },
+  {
+   "article": "51",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": null,
+   "must": "wordt ingetrokken",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  }
+ ],
+ "stakeholder_matrix": [
+  {
+   "who": "De Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 6,
+   "articles": [
+    "2a",
+    "6",
+    "11",
+    "13",
+    "21b"
+   ],
+   "example": "neemt bij de toepassing van de verordening de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124) in aanmerking"
+  },
+  {
+   "who": "de verwerkingsverantwoordelijke",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 4,
+   "articles": [
+    "30",
+    "40",
+    "41"
+   ],
+   "example": "is hij verplicht tot geheimhouding van de gegevens"
+  },
+  {
+   "who": "zijn wettelijk vertegenwoordiger",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "5"
+   ],
+   "example": "die van zijn wettelijk vertegenwoordiger is vereist"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "7",
+    "48a"
+   ],
+   "example": "ontslagen"
+  },
+  {
+   "who": "Het verzoekschrift",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "20",
+    "35"
+   ],
+   "example": "wordt ondertekend en bevat ten minste:"
+  },
+  {
+   "who": "de Afdeling bestuursrechtspraak van de Raad van State",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "20"
+   ],
+   "example": "staat geen voorziening open"
+  },
+  {
+   "who": "de betrokkene",
+   "who_type": "DATA_SUBJECT",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "30a"
+   ],
+   "example": "wordt de betrokkene geïnformeerd over de overdracht en gewezen op de van toepassing zijnde rechten"
+  },
+  {
+   "who": "de verwerking van persoonsgegevens",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "2"
+   ],
+   "example": "is deze wet niet van toepassing"
+  },
+  {
+   "who": "deze wet",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "2"
+   ],
+   "example": "niet van toepassing op de verwerking van persoonsgegevens, bedoeld in artikel 2, tweede lid, van de verordening"
+  },
+  {
+   "who": "Van een besluit of ministeriële regeling als bedoeld in het derde lid, onderdeel a",
+   "who_type": "OTHER",
+   "to_whom": "Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "3"
+   ],
+   "example": "wordt zo spoedig mogelijk mededeling gedaan aan de Autoriteit persoonsgegevens"
+  },
+  {
+   "who": "Het eerste en het tweede lid",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "3"
+   ],
+   "example": "zijn niet van toepassing op"
+  },
+  {
+   "who": "Deze wet en de daarop berustende bepalingen",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "3"
+   ],
+   "example": "zijn mede van toepassing op de verwerking van persoonsgegevens"
+  },
+  {
+   "who": "diens wettelijke vertegenwoordiger",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "5"
+   ],
+   "example": "worden deze rechten uitgeoefend door diens wettelijke vertegenwoordiger"
+  },
+  {
+   "who": "Dit artikel",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "5"
+   ],
+   "example": "is niet van toepassing"
+  },
+  {
+   "who": "Bij ministeriële regeling",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "worden voorwaarden gesteld en vereiste kwalificaties benoemd"
+  },
+  {
+   "who": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "worden bij koninklijk besluit, op voordracht van Onze Minister, benoemd"
+  },
+  {
+   "who": "De voorzitter",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "voldoet aan de bij of krachtens artikel 5 van de Wet rechtspositie rechterlijke ambtenaren gestelde vereisten voor benoembaarheid tot rechter in een rechtbank"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "11"
+   ],
+   "example": "kent Onze Minister jaarlijks aan de Autoriteit persoonsgegevens een budget toe ten laste van de rijksbegroting"
+  },
+  {
+   "who": "De leden",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11"
+   ],
+   "example": "stellen een verdeling van taken vast en betrekken hierbij zoveel mogelijk de buitengewone leden"
+  },
+  {
+   "who": "Artikel 20 van de Kaderwet zelfstandige bestuursorganen",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "12"
+   ],
+   "example": "is niet van toepassing"
+  },
+  {
+   "who": "de Autoriteit Persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "belanghebbende partijen",
+   "n_duties": 1,
+   "articles": [
+    "14"
+   ],
+   "example": "raadpleegt zij, voor zover passend, belanghebbende partijen"
+  },
+  {
+   "who": "een geheimhoudingsplicht",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "15"
+   ],
+   "example": "Geen beroep is mogelijk op een geheimhoudingsplicht"
+  },
+  {
+   "who": "De in het eerste lid bedoelde personen",
+   "who_type": "OTHER",
+   "to_whom": "Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "15"
+   ],
+   "example": "behoeven voor de uitoefening van de in het tweede lid omschreven bevoegdheid de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens"
+  },
+  {
+   "who": "De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "De Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "aan elkaar de gegevens betreffende de verwerking van persoonsgegevens te verstrekken die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting"
+  },
+  {
+   "who": "De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de toezichthouders, bedoeld in het eerste lid",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "aan elkaar de gegevens betreffende de verwerking van persoonsgegevens te verstrekken die noodzakelijk zijn voor de uitvoering van hun taak of om te kunnen voldoen aan een op hen rustende wettelijke verplichting"
+  },
+  {
+   "who": "Bij het verzoekschrift",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "20"
+   ],
+   "example": "wordt een afschrift overgelegd van het verzoek van de belanghebbende om handhaving van bij of krachtens wet bepaalde regels inzake de bescherming van persoonsgegevens, waarop het in het tweede lid bedoelde verzoekschrift van de Autoriteit persoonsgegevens betrekking heeft en worden andere op de zaak betrekking hebbende stukken meegezonden"
+  },
+  {
+   "who": "de overtreder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "21b"
+   ],
+   "example": "De openbaarmaking van de beschikking geschiedt niet eerder"
+  },
+  {
+   "who": "de openbaarmaking van de beschikking",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "21b"
+   ],
+   "example": "wordt de openbaarmaking van de beschikking opgeschort"
+  },
+  {
+   "who": "verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "22"
+   ],
+   "example": "verboden"
+  },
+  {
+   "who": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "23a"
+   ],
+   "example": "wordt voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid, pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening toegepast en vervolgens onafgebroken gecontinueerd"
+  },
+  {
+   "who": "de verwerking",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "25"
+   ],
+   "example": "het verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt, niet van toepassing"
+  },
+  {
+   "who": "geen persoonsgegevens",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "derden",
+   "n_duties": 1,
+   "articles": [
+    "27"
+   ],
+   "example": "worden geen persoonsgegevens aan derden verstrekt"
+  },
+  {
+   "who": "bestuursorgaan",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "34"
+   ],
+   "example": "wordt genomen binnen de in artikel 12, derde lid, van de verordening genoemde termijnen"
+  },
+  {
+   "who": "De verwerkingsverantwoordelijke en belanghebbende",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "De rechtbank",
+   "n_duties": 1,
+   "articles": [
+    "35"
+   ],
+   "example": "aan dit verzoek te voldoen"
+  },
+  {
+   "who": "De rechtbank",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "35"
+   ],
+   "example": "stelt zij zo nodig de belanghebbenden in de gelegenheid hun zienswijze naar voren te brengen"
+  },
+  {
+   "who": "degene die door deze verwerking wordt getroffen",
+   "who_type": "DATA_SUBJECT",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "37"
+   ],
+   "example": "kan niet ten grondslag worden gelegd aan een vordering als bedoeld in artikel 305a, van Boek 3 van het Burgerlijk Wetboek of een beroep ingesteld in een bestuursrechtelijke procedure door een belanghebbende in de zin van artikel 1:2, derde lid, van de Algemene wet bestuursrecht"
+  },
+  {
+   "who": "De functionaris voor gegevensbescherming",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "39"
+   ],
+   "example": "is verplicht tot geheimhouding van hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden"
+  },
+  {
+   "who": "financiële ondernemingen als bedoeld in de Wet op het financieel toezicht",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "42"
+   ],
+   "example": "is niet van toepassing"
+  },
+  {
+   "who": "Deze wet, met uitzondering van de artikelen 1, 2, 3, 4 en 5, eerste en tweede lid",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "43"
+   ],
+   "example": "is niet van toepassing"
+  },
+  {
+   "who": "De artikelen 9 en 10 van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "43"
+   ],
+   "example": "zijn niet van toepassing"
+  },
+  {
+   "who": "De navolgende hoofdstukken en artikelen van de verordening",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "43"
+   ],
+   "example": "zijn niet van toepassing op de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van academische, artistieke of literaire uitdrukkingsvormen"
+  },
+  {
+   "who": "de verordening",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "45"
+   ],
+   "example": "zijn niet van toepassing"
+  },
+  {
+   "who": "Een nummer dat ter identificatie van een persoon bij wet is voorgeschreven",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "46"
+   ],
+   "example": "wordt bij de verwerking van persoonsgegevens slechts gebruikt ter uitvoering van de desbetreffende wet dan wel voor doeleinden bij de wet bepaald"
+  },
+  {
+   "who": "De artikelen 15, 16, 18 en 19 van de verordening",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "47"
+   ],
+   "example": "zijn niet van toepassing op bij de wet ingestelde openbare registers"
+  },
+  {
+   "who": "De instellingsregeling of het instellingsbesluit",
+   "who_type": "OTHER",
+   "to_whom": "beide kamers der Staten-Generaal",
+   "n_duties": 1,
+   "articles": [
+    "47a"
+   ],
+   "example": "wordt onverwijld meegedeeld aan beide kamers der Staten-Generaal"
+  },
+  {
+   "who": "een commissie of adviescollege als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "47a"
+   ],
+   "example": "het verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken"
+  },
+  {
+   "who": "de commissie of het adviescollege",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "47a"
+   ],
+   "example": "stelt de commissie of het adviescollege voorafgaand aan haar opheffing een verslag op over de wijze waarop deze persoonsgegevens zijn verwerkt"
+  },
+  {
+   "who": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+   "who_type": "OTHER",
+   "to_whom": "de Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "48a"
+   ],
+   "example": "zijn de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst, van rechtswege ontslagen en aangesteld als ambtenaar in dienst van de Autoriteit persoonsgegevens"
+  },
+  {
+   "who": "Onze Minister van Financiën",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de openbare registers, bedoeld in afdeling 2 van titel 1 van Boek 3 van het Burgerlijk Wetboek",
+   "n_duties": 1,
+   "articles": [
+    "48a"
+   ],
+   "example": "doet Onze Minister van Financiën de overgang van die registergoederen onverwijld inschrijven in de openbare registers"
+  },
+  {
+   "who": "de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "Nationale ombudsman",
+   "n_duties": 1,
+   "articles": [
+    "48a"
+   ],
+   "example": "treedt de Autoriteit persoonsgegevens op dat tijdstip als bestuursorgaan in de zin van de Wet Nationale ombudsman in de plaats van Onze Minister"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Staten-Generaal",
+   "n_duties": 1,
+   "articles": [
+    "50"
+   ],
+   "example": "zendt binnen drie jaar na de inwerkingtreding van deze wet, en vervolgens telkens na vier jaar, aan de Staten-Generaal een verslag over de effecten van deze wet in de praktijk en over de uitvoering van de wet in de praktijk"
+  }
+ ],
+ "exceptions": [
+  {
+   "article": "2",
+   "paragraph": "3",
+   "rule": "niet van toepassing op de verwerking van persoonsgegevens, bedoeld in artikel 2, tweede lid, van de verordening",
+   "exception": [
+    "Behoudens het bepaalde in artikel 3"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "5",
+   "paragraph": "5",
+   "rule": "zonder bijstand van zijn wettelijk vertegenwoordiger in rechte optreden",
+   "exception": [],
+   "yields_to": "Onverminderd artikel 8:21, tweede lid van de Algemene wet bestuursrecht"
+  },
+  {
+   "article": "6",
+   "paragraph": "2",
+   "rule": "is de toezichthoudende autoriteit",
+   "exception": [],
+   "yields_to": "bedoeld in artikel 51, eerste lid, van de verordening"
+  },
+  {
+   "article": "8",
+   "paragraph": null,
+   "rule": "zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens",
+   "exception": [],
+   "yields_to": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing"
+  },
+  {
+   "article": "14",
+   "paragraph": "1",
+   "rule": "de taken uit te voeren en de bevoegdheden uit te oefenen",
+   "exception": [],
+   "yields_to": "bij of krachtens de verordening"
+  },
+  {
+   "article": "15",
+   "paragraph": "5",
+   "rule": "zijn van overeenkomstige toepassing",
+   "exception": [],
+   "yields_to": "Dit artikel en titel 5.2 van de Algemene wet bestuursrecht"
+  },
+  {
+   "article": "15",
+   "paragraph": "3",
+   "rule": "behoeven voor de uitoefening van de in het tweede lid omschreven bevoegdheid de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens",
+   "exception": [],
+   "yields_to": "onverminderd het bepaalde in artikel 2 van de Algemene wet op het binnentreden"
+  },
+  {
+   "article": "17",
+   "paragraph": "2",
+   "rule": null,
+   "exception": [],
+   "yields_to": "Artikel 83, eerste tot en met derde lid, van de verordening zijn van overeenkomstige toepassing."
+  },
+  {
+   "article": "20",
+   "paragraph": "4",
+   "rule": "de termijn voor het geven van een beschikking op het verzoek om handhaving opgeschort gerekend vanaf de dag na die waarop de Autoriteit persoonsgegevens de verzoeker meedeelt dat toepassing is gegeven aan het eerste lid, tot de dag waarop de Afdeling bestuursrechtspraak van de Raad van State een uitspraak als bedoeld in het zesde lid heeft gedaan",
+   "exception": [],
+   "yields_to": "Onverminderd artikel 4:15 van de Algemene wet bestuursrecht"
+  },
+  {
+   "article": "21a",
+   "paragraph": "4",
+   "rule": "aan de overtreder een bestuurlijke boete opleggen van ten hoogste 20.000.000 euro of, indien dit meer is, ten hoogste 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar",
+   "exception": [],
+   "yields_to": "Artikel 83, tweede en derde lid, van de verordening is van overeenkomstige toepassing."
+  },
+  {
+   "article": "21b",
+   "paragraph": "2",
+   "rule": "De openbaarmaking van de beschikking geschiedt niet eerder",
+   "exception": [
+    "tenzij de overtreder de beschikking of de inhoud ervan, zelf heeft openbaar gemaakt, heeft doen openbaar maken of heeft aangegeven geen bedenkingen te hebben tegen eerdere openbaarmaking"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "21b",
+   "paragraph": "1",
+   "rule": "maakt een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie openbaar",
+   "exception": [
+    "behoudens voor zover artikel 5.1, eerste, tweede en vijfde lid van de Wet open overheid, aan openbaarmaking in de weg staan"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "22",
+   "paragraph": "1",
+   "rule": "verboden",
+   "exception": [],
+   "yields_to": "Overeenkomstig artikel 9, eerste lid, van de verordening"
+  },
+  {
+   "article": "23",
+   "paragraph": null,
+   "rule": "de verwerking noodzakelijk is ter voldoening aan een volkenrechtelijke verplichting",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "23a",
+   "paragraph": "1",
+   "rule": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "26",
+   "paragraph": null,
+   "rule": "is het verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken, niet van toepassing",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "27",
+   "paragraph": "1",
+   "rule": "het verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken, niet van toepassing",
+   "exception": [
+    "tenzij deze daartegen schriftelijk bezwaar heeft gemaakt"
+   ],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "28",
+   "paragraph": "1",
+   "rule": "genetische gegevens te verwerken",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "28",
+   "paragraph": "2",
+   "rule": "uitsluitend niet van toepassing",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, vierde lid, van de verordening"
+  },
+  {
+   "article": "29",
+   "paragraph": null,
+   "rule": "niet van toepassing",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g, van de verordening"
+  },
+  {
+   "article": "30",
+   "paragraph": "1",
+   "rule": "een goede uitvoering van wettelijke voorschriften, pensioenregelingen of collectieve arbeidsovereenkomsten die voorzien in aanspraken die afhankelijk zijn van de gezondheidstoestand van de betrokkene",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel b, van de verordening"
+  },
+  {
+   "article": "30",
+   "paragraph": "3",
+   "rule": "het verbod om gegevens over gezondheid te verwerken niet van toepassing",
+   "exception": [],
+   "yields_to": "Gelet op artikel 9, tweede lid, onderdeel g en h, van de verordening"
+  },
+  {
+   "article": "30",
+   "paragraph": "4",
+   "rule": "is hij verplicht tot geheimhouding van de gegevens",
+   "exception": [
+    "behoudens voor zover de wet hem tot mededeling verplicht of uit zijn taak de noodzaak voortvloeit dat de gegevens worden meegedeeld aan anderen die krachtens het eerste, tweede of derde lid bevoegd zijn tot verwerking daarvan"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "30b",
+   "paragraph": "2",
+   "rule": null,
+   "exception": [],
+   "yields_to": "De artikelen 30, vierde lid, en 30a, derde tot en met zesde lid, zijn van overeenkomstige toepassing."
+  },
+  {
+   "article": "31",
+   "paragraph": null,
+   "rule": "alleen worden verwerkt",
+   "exception": [],
+   "yields_to": "Onverminderd artikel 10 van de verordening"
+  },
+  {
+   "article": "32",
+   "paragraph": null,
+   "rule": "mogen persoonsgegevens van strafrechtelijke aard worden verwerkt",
+   "exception": [],
+   "yields_to": "Gelet op artikel 10 van de verordening"
+  },
+  {
+   "article": "33",
+   "paragraph": "1",
+   "rule": "mogen persoonsgegevens van strafrechtelijke aard worden verwerkt",
+   "exception": [],
+   "yields_to": "Gelet op artikel 10 van de verordening"
+  },
+  {
+   "article": "35",
+   "paragraph": "6",
+   "rule": "aan dit verzoek te voldoen",
+   "exception": [],
+   "yields_to": "De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing."
+  },
+  {
+   "article": "36",
+   "paragraph": "1",
+   "rule": "kan het beroep in afwijking van artikel 6:7 van de Algemene wet bestuursrecht nog worden ingesteld dan wel de procedure ingevolge artikel 35 nog aanhangig worden gemaakt",
+   "exception": [
+    "in afwijking van artikel 6:7 van de Algemene wet bestuursrecht"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "39",
+   "paragraph": null,
+   "rule": "is verplicht tot geheimhouding van hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden",
+   "exception": [
+    "tenzij de betrokkene in bekendmaking toestemt"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "41",
+   "paragraph": "2",
+   "rule": "houdt de verwerkingsverantwoordelijke rekening met in ieder geval, voor zover van toepassing",
+   "exception": [
+    "tenzij dit afbreuk kan doen aan het doel van de beperking"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "45",
+   "paragraph": "2",
+   "rule": "het recht om inzage te verkrijgen in de archiefbescheiden",
+   "exception": [
+    "tenzij verzoeken om inzage zodanig ongericht zijn dat deze in redelijkheid niet kunnen worden ingewilligd"
+   ],
+   "yields_to": null
+  }
+ ],
+ "articles_by_importance": [
+  {
+   "article": "9",
+   "heading": "Artikel 9. Rechtspositie voorzitter, andere leden en buitengewone leden",
+   "cited_by_articles": 14,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 21,
+   "points": 14,
+   "key_article": true
+  },
+  {
+   "article": "10",
+   "heading": "Artikel 10. Secretariaat",
+   "cited_by_articles": 8,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 6,
+   "points": 13,
+   "key_article": true
+  },
+  {
+   "article": "16",
+   "heading": "Artikel 16. Last onder bestuursdwang",
+   "cited_by_articles": 7,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 38,
+   "points": 12,
+   "key_article": true
+  },
+  {
+   "article": "40",
+   "heading": "Artikel 40. Uitzonderingen op verbod geautomatiseerde individuele besluitvorming",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 2,
+   "fine_backed": true,
+   "n_words": 130,
+   "points": 11,
+   "key_article": true
+  },
+  {
+   "article": "4",
+   "heading": "Artikel 4. Territoriale reikwijdte",
+   "cited_by_articles": 5,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 106,
+   "points": 10,
+   "key_article": true
+  },
+  {
+   "article": "8",
+   "heading": "Artikel 8. Disciplinaire maatregelen voorzitter en andere leden",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 190,
+   "points": 9,
+   "key_article": true
+  },
+  {
+   "article": "6",
+   "heading": "Artikel 6. Oprichting en aanwijzing als toezichthoudende autoriteit",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 84,
+   "points": 8,
+   "key_article": true
+  },
+  {
+   "article": "5",
+   "heading": "Artikel 5. Toestemming van wettelijk vertegenwoordiger",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 418,
+   "points": 7,
+   "key_article": true
+  },
+  {
+   "article": "15",
+   "heading": "Artikel 15. Toezicht op de naleving",
+   "cited_by_articles": 6,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 182,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "18",
+   "heading": "Artikel 18. Bestuurlijke boete aan overheden",
+   "cited_by_articles": 6,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 66,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "22",
+   "heading": "Artikel 22. Verwerkingsverbod bijzondere categorieën persoonsgegevens en algemene uitzonderingen uit verordening",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 269,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "30",
+   "heading": "Artikel 30. Uitzonderingen inzake gegevens over gezondheid",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 553,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "31",
+   "heading": "Artikel 31. Uitzonderingen op de verplichting tot verwerking onder overheidstoezicht",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 25,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "2",
+   "heading": "Artikel 2. Materiële reikwijdte",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 99,
+   "points": 5,
+   "key_article": false
+  },
+  {
+   "article": "43",
+   "heading": "Artikel 43. Uitzonderingen inzake journalistieke doeleinden of academische, artistieke of literaire uitdrukkingsvormen",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 2,
+   "fine_backed": false,
+   "n_words": 146,
+   "points": 5,
+   "key_article": false
+  },
+  {
+   "article": "19",
+   "heading": "Artikel 19. Samenwerking met andere toezichthouders",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 96,
+   "points": 4,
+   "key_article": false
+  },
+  {
+   "article": "21",
+   "heading": "Artikel 21. Aanwijzing accrediterende instantie",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 29,
+   "points": 4,
+   "key_article": false
+  },
+  {
+   "article": "1",
+   "heading": "Artikel 1. Definities",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 106,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "12",
+   "heading": "Artikel 12. Beperking inlichtingenplicht jegens minister",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "17",
+   "heading": "Artikel 17. Boete bij onrechtmatige verwerking persoonsgegevens strafrechtelijke aard",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 80,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "20",
+   "heading": "Artikel 20. In rechte optreden tegen inbreuken op verordening inzake doorgifte naar derde land",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 504,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "24",
+   "heading": "Artikel 24. Uitzonderingen voor wetenschappelijk of historisch onderzoek of statistische doeleinden",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 94,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "32",
+   "heading": "Artikel 32. Algemene uitzonderingsgronden inzake gegevens van strafrechtelijke aard",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 169,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "34",
+   "heading": "Artikel 34. Toepasselijkheid Algemene wet bestuursrecht bij beslissing van bestuursorganen",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 54,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "35",
+   "heading": "Artikel 35. Toepasselijkheid burgerlijk recht bij beslissing van niet-bestuursorganen",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 225,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "46",
+   "heading": "Artikel 46. Verwerking nationaal identificatienummer",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 34,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "3",
+   "heading": "Artikel 3. Schakelbepaling verwerkingen buiten werkingssfeer verordening",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 199,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "7",
+   "heading": "Artikel 7. Samenstelling",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 298,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "14",
+   "heading": "Artikel 14. Taken en bevoegdheden",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 290,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "21b",
+   "heading": "Artikel 21b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 160,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "23a",
+   "heading": "Artikel 23a. Uitzondering voor verplichte accountantsopdrachten",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 98,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "27",
+   "heading": "Artikel 27. Uitzonderingen inzake verwerking persoonsgegevens waaruit religieuze of levensbeschouwelijke overtuigingen blijken voor geestelijke verzorging",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 90,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "33",
+   "heading": "Artikel 33. Overige uitzonderingsgronden inzake gegevens van strafrechtelijke aard",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 415,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "41",
+   "heading": "Artikel 41. Uitzonderingen op rechten betrokkene en plichten verwerkingsverantwoordelijke",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 341,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "42",
+   "heading": "Artikel 42. Uitzondering op meldplicht datalekken aan de betrokkene",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 21,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "47a",
+   "heading": "Artikel 47a. Tijdelijke commissies en adviescolleges",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 374,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "11",
+   "heading": "Artikel 11. Begroting, verantwoording en vertegenwoordigingsbevoegdheid",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 103,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "13",
+   "heading": "Artikel 13. Uitzonderingen bevoegdheden inzake beleidsregels, vernietiging en taakverwaarlozing",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 45,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "23",
+   "heading": "Artikel 23. Nationaalrechtelijke algemene uitzonderingen",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 128,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "25",
+   "heading": "Artikel 25. Uitzonderingen inzake verwerking persoonsgegevens waaruit ras of etnische afkomst blijkt",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 156,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "28",
+   "heading": "Artikel 28. Uitzonderingen inzake genetische gegevens",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 153,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "29",
+   "heading": "Artikel 29. Uitzonderingen inzake biometrische gegevens",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 67,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "37",
+   "heading": "Artikel 37. Vertegenwoordiging van betrokkenen",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 59,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "38",
+   "heading": "Artikel 38. Opschortende werking bezwaar en beroep",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 38,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "45",
+   "heading": "Artikel 45. Uitzonderingen inzake archivering in het algemeen belang",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 165,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "51",
+   "heading": "Artikel 51. Intrekking Wet bescherming persoonsgegevens",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 6,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "53",
+   "heading": "Artikel 53. Inwerkingtreding",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 28,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "2a",
+   "heading": "Artikel 2a. Inachtneming behoeften kleine, middelgrote en micro-ondernemingen",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 49,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "21a",
+   "heading": "Artikel 21a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 240,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "26",
+   "heading": "Artikel 26. Uitzonderingen inzake verwerking persoonsgegevens waaruit politieke opvattingen blijken voor vervulling openbare functies",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 57,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "30a",
+   "heading": "Artikel 30a. Uitzonderingen inzake gegevens over de gezondheid – overdracht van dossiers door hulpverleners",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 327,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "30b",
+   "heading": "Artikel 30b. Uitzonderingen inzake gegevens over de gezondheid – overdracht van dossiers door anderen dan hulpverleners",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 126,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "36",
+   "heading": "Artikel 36. Geschilbeslechting door Autoriteit persoonsgegevens of via gedragscode",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 188,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "39",
+   "heading": "Artikel 39. Geheimhoudingsplicht",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 42,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "44",
+   "heading": "Artikel 44. Uitzonderingen inzake wetenschappelijk onderzoek en statistiek",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 50,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "47",
+   "heading": "Artikel 47. Uitzonderingen op rechten betrokkene bij openbare registers",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 59,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "48",
+   "heading": "Artikel 48. Overgangsrecht",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 452,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "48a",
+   "heading": "Artikel 48a. Overgangsrecht II",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 319,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "48b",
+   "heading": "Artikel 48b. Overgangsrecht III",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 41,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "49",
+   "heading": "Artikel 49. Samenloop",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 4,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "50",
+   "heading": "Artikel 50. Evaluatie",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 42,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "52",
+   "heading": "Artikel 52. Citeertitel verordening",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 56,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "54",
+   "heading": "Artikel 54. Citeertitel wet",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 9,
+   "points": 0,
+   "key_article": false
+  }
+ ],
+ "not_in_corpus": [
+  "recitals (the law's stated purpose)",
+  "constitution and EU Charter",
+  "case law"
+ ]
+}

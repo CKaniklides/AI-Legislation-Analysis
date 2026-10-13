@@ -1,0 +1,6028 @@
+{
+ "instrument_id": "BWBR0009950",
+ "source_file": "BWBR0009950_2026-08-15_provisions.json",
+ "n_articles": 380,
+ "n_words": 65941,
+ "length_targets_words": {
+  "law_sheet": [
+   659,
+   1978
+  ],
+  "whole_tree": [
+   3297,
+   6594
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Hoofdstuk 1. Algemene bepalingen",
+   "articles": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+   ],
+   "n_words": 3632,
+   "target_words": [
+    182,
+    363
+   ]
+  },
+  {
+   "title": "Hoofdstuk 2. Mededeling en registratie",
+   "articles": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.5a",
+    "2.5b",
+    "2.5c",
+    "2.5d",
+    "2.5e"
+   ],
+   "n_words": 1249,
+   "target_words": [
+    62,
+    125
+   ]
+  },
+  {
+   "title": "Hoofdstuk 3. Frequenties",
+   "articles": [
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "3.5",
+    "3.5a",
+    "3.5b",
+    "3.6",
+    "3.7",
+    "3.8",
+    "3.8a",
+    "3.9",
+    "3.10",
+    "3.11",
+    "3.12",
+    "3.13",
+    "3.14",
+    "3.15",
+    "3.16",
+    "3.17",
+    "3.18",
+    "3.19",
+    "3.19a",
+    "3.20",
+    "3.20a",
+    "3.21",
+    "3.22",
+    "3.23",
+    "3.24"
+   ],
+   "n_words": 6543,
+   "target_words": [
+    327,
+    654
+   ]
+  },
+  {
+   "title": "Hoofdstuk 4. Nummerbeleid en nummerbeheer",
+   "articles": [
+    "4.1",
+    "4.1a",
+    "4.2",
+    "4.2a",
+    "4.2b",
+    "4.3",
+    "4.4",
+    "4.5",
+    "4.6",
+    "4.7",
+    "4.8",
+    "4.9",
+    "4.10",
+    "4.11",
+    "4.12"
+   ],
+   "n_words": 3151,
+   "target_words": [
+    158,
+    315
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5. Aanleg, instandhouding en opruiming van kabels",
+   "articles": [
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "5.5",
+    "5.6",
+    "5.7",
+    "5.8",
+    "5.9",
+    "5.10",
+    "5.11",
+    "5.12",
+    "5.13",
+    "5.14",
+    "5.15",
+    "5.16",
+    "5.17"
+   ],
+   "n_words": 3134,
+   "target_words": [
+    157,
+    313
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5a. Medegebruik voorzieningen en coördinatie van civiele werken",
+   "articles": [
+    "5a.1",
+    "5a.2",
+    "5a.3",
+    "5a.4",
+    "5a.5",
+    "5a.6",
+    "5a.7",
+    "5a.8",
+    "5a.9",
+    "5a.10",
+    "5a.11",
+    "5a.12",
+    "5a.13",
+    "5a.14",
+    "5a.15"
+   ],
+   "n_words": 1841,
+   "target_words": [
+    92,
+    184
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5b. Colocatie en gedeeld gebruik",
+   "articles": [
+    "5b.1",
+    "5b.2",
+    "5b.3"
+   ],
+   "n_words": 161,
+   "target_words": [
+    8,
+    16
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5c. Medegebruik van voorzieningen ten behoeve van draadloze toegangspunten met klein bereik",
+   "articles": [
+    "5c.1",
+    "5c.2",
+    "5c.3",
+    "5c.4",
+    "5c.5"
+   ],
+   "n_words": 406,
+   "target_words": [
+    20,
+    41
+   ]
+  },
+  {
+   "title": "Hoofdstuk 6. Interoperabiliteit, interconnectie en toegang",
+   "articles": [
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.3a",
+    "6.4",
+    "6.5",
+    "6.6"
+   ],
+   "n_words": 1953,
+   "target_words": [
+    98,
+    195
+   ]
+  },
+  {
+   "title": "Hoofdstuk 6a. Verplichtingen voor ondernemingen die beschikken over een aanmerkelijke marktmacht",
+   "articles": [
+    "6a.1",
+    "6a.2",
+    "6a.2a",
+    "6a.3",
+    "6a.4",
+    "6a.4a",
+    "6a.4b",
+    "6a.4c",
+    "6a.4d",
+    "6a.4e",
+    "6a.4f",
+    "6a.5",
+    "6a.6",
+    "6a.6a",
+    "6a.7",
+    "6a.8",
+    "6a.9",
+    "6a.10",
+    "6a.11",
+    "6a.12",
+    "6a.13",
+    "6a.14",
+    "6a.15",
+    "6a.16",
+    "6a.17",
+    "6a.18",
+    "6a.19",
+    "6a.20",
+    "6a.21",
+    "6a.21a",
+    "6a.22"
+   ],
+   "n_words": 7030,
+   "target_words": [
+    352,
+    703
+   ]
+  },
+  {
+   "title": "Hoofdstuk 6b. Consultatie",
+   "articles": [
+    "6b.1",
+    "6b.2",
+    "6b.3",
+    "6b.4",
+    "6b.5",
+    "6b.6"
+   ],
+   "n_words": 1357,
+   "target_words": [
+    68,
+    136
+   ]
+  },
+  {
+   "title": "Hoofdstuk 7. Eindgebruikersbelangen",
+   "articles": [
+    "7.1",
+    "7.1aa",
+    "7.1a",
+    "7.2",
+    "7.2a",
+    "7.2ab",
+    "7.2ac",
+    "7.2ad",
+    "7.2ae",
+    "7.2b",
+    "7.2c",
+    "7.3",
+    "7.3aa",
+    "7.3ab",
+    "7.3ac",
+    "7.3a",
+    "7.3b",
+    "7.3c",
+    "7.3d",
+    "7.4",
+    "7.4a",
+    "7.5",
+    "7.6",
+    "7.6a",
+    "7.7",
+    "7.7a",
+    "7.8",
+    "7.9"
+   ],
+   "n_words": 5275,
+   "target_words": [
+    264,
+    528
+   ]
+  },
+  {
+   "title": "Hoofdstuk 7a. Toegankelijkheidsvoorschriften / consumentenbelangen",
+   "articles": [
+    "7a.1",
+    "7a.2",
+    "7a.3",
+    "7a.4",
+    "7a.5"
+   ],
+   "n_words": 407,
+   "target_words": [
+    20,
+    41
+   ]
+  },
+  {
+   "title": "Hoofdstuk 8. Regels met betrekking tot het verspreiden van programma's, systemen voor voorwaardelijke toegang, applicatieprogramma-interfaces en elektronische programmagidsen",
+   "articles": [
+    "8.1",
+    "8.2",
+    "8.3",
+    "8.4a",
+    "8.5",
+    "8.6",
+    "8.7"
+   ],
+   "n_words": 509,
+   "target_words": [
+    25,
+    51
+   ]
+  },
+  {
+   "title": "Hoofdstuk 9. Universele dienstverlening",
+   "articles": [
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4",
+    "9.5",
+    "9.6",
+    "9.7"
+   ],
+   "n_words": 1428,
+   "target_words": [
+    71,
+    143
+   ]
+  },
+  {
+   "title": "Hoofdstuk 10. Uitrusting en radioapparaten",
+   "articles": [
+    "10.1",
+    "10.2",
+    "10.3",
+    "10.4",
+    "10.5",
+    "10.6",
+    "10.7",
+    "10.8",
+    "10.9",
+    "10.10",
+    "10.11",
+    "10.11a",
+    "10.11b",
+    "10.11c",
+    "10.11d",
+    "10.12",
+    "10.13",
+    "10.14",
+    "10.15",
+    "10.16",
+    "10.17"
+   ],
+   "n_words": 2275,
+   "target_words": [
+    114,
+    228
+   ]
+  },
+  {
+   "title": "Hoofdstuk 11. Bescherming van persoonsgegevens en de persoonlijke levenssfeer",
+   "articles": [
+    "11.1",
+    "11.2",
+    "11.2a",
+    "11.3",
+    "11.3a",
+    "11.4",
+    "11.5",
+    "11.5a",
+    "11.5b",
+    "11.5c",
+    "11.6",
+    "11.7",
+    "11.7a",
+    "11.8",
+    "11.8a",
+    "11.9",
+    "11.10",
+    "11.10a",
+    "11.11",
+    "11.12",
+    "11.13"
+   ],
+   "n_words": 5532,
+   "target_words": [
+    277,
+    553
+   ]
+  },
+  {
+   "title": "Hoofdstuk 11a. Beveiligingsmaatregelen",
+   "articles": [
+    "11a.1",
+    "11a.2",
+    "11a.2a",
+    "11a.3"
+   ],
+   "n_words": 655,
+   "target_words": [
+    33,
+    66
+   ]
+  },
+  {
+   "title": "Hoofdstuk 12. Geschillen",
+   "articles": [
+    "12.1",
+    "12.2",
+    "12.3",
+    "12.4",
+    "12.5",
+    "12.6",
+    "12.7",
+    "12.8",
+    "12.9",
+    "12.10",
+    "12.10a",
+    "12.11"
+   ],
+   "n_words": 1733,
+   "target_words": [
+    87,
+    173
+   ]
+  },
+  {
+   "title": "Hoofdstuk 13. Bevoegd aftappen en toepassing van andere bevoegdheden op grond van het Wetboek van Strafvordering en de Wet op de inlichtingen- en veiligheidsdiensten 2017 in verband met telecommunicatie",
+   "articles": [
+    "13.1",
+    "13.2",
+    "13.2a",
+    "13.2b",
+    "13.3",
+    "13.4",
+    "13.5",
+    "13.6",
+    "13.7",
+    "13.8",
+    "13.9",
+    "13.10"
+   ],
+   "n_words": 1618,
+   "target_words": [
+    81,
+    162
+   ]
+  },
+  {
+   "title": "Hoofdstuk 14. Buitengewone omstandigheden",
+   "articles": [
+    "14.1",
+    "14.2",
+    "14.3",
+    "14.4",
+    "14.5",
+    "14.6"
+   ],
+   "n_words": 868,
+   "target_words": [
+    43,
+    87
+   ]
+  },
+  {
+   "title": "Hoofdstuk 14a. Ongewenste zeggenschap in telecommunicatiepartijen",
+   "articles": [
+    "14a.1",
+    "14a.2",
+    "14a.3",
+    "14a.4",
+    "14a.5",
+    "14a.6",
+    "14a.7",
+    "14a.8",
+    "14a.9",
+    "14a.10",
+    "14a.11",
+    "14a.12",
+    "14a.13",
+    "14a.14",
+    "14a.15",
+    "14a.16"
+   ],
+   "n_words": 4288,
+   "target_words": [
+    214,
+    429
+   ]
+  },
+  {
+   "title": "Hoofdstuk 15. Handhaving",
+   "articles": [
+    "15.1",
+    "15.2",
+    "15.2a",
+    "15.3",
+    "15.3a",
+    "15.3b",
+    "15.3c",
+    "15.3d",
+    "15.4",
+    "15.5",
+    "15.6",
+    "15.7",
+    "15.7a",
+    "15.7b",
+    "15.7c",
+    "15.8",
+    "15.9",
+    "15.10",
+    "15.11",
+    "15.12",
+    "15.13",
+    "15.14",
+    "15.15",
+    "15.16",
+    "15.17"
+   ],
+   "n_words": 3064,
+   "target_words": [
+    153,
+    306
+   ]
+  },
+  {
+   "title": "Hoofdstuk 16. Vergoedingen",
+   "articles": [
+    "16.1"
+   ],
+   "n_words": 233,
+   "target_words": [
+    12,
+    23
+   ]
+  },
+  {
+   "title": "Hoofdstuk 17. Beroep",
+   "articles": [
+    "17.1"
+   ],
+   "n_words": 2,
+   "target_words": [
+    0,
+    0
+   ]
+  },
+  {
+   "title": "Hoofdstuk 18. Verdere bepalingen",
+   "articles": [
+    "18.1",
+    "18.2",
+    "18.2a",
+    "18.3",
+    "18.3a",
+    "18.4",
+    "18.5",
+    "18.6",
+    "18.7",
+    "18.7a",
+    "18.8",
+    "18.9",
+    "18.10",
+    "18.11",
+    "18.12",
+    "18.13",
+    "18.14",
+    "18.15",
+    "18.15a",
+    "18.15b",
+    "18.15c",
+    "18.15d",
+    "18.15e",
+    "18.16",
+    "18.16a",
+    "18.17",
+    "18.17a",
+    "18.18",
+    "18.19",
+    "18.20",
+    "18.21",
+    "18.21a",
+    "18.22"
+   ],
+   "n_words": 3962,
+   "target_words": [
+    198,
+    396
+   ]
+  },
+  {
+   "title": "Hoofdstuk 19. Overgangsrecht in verband met de implementatie van het Europese geharmoniseerde regelgevende kader voor de elektronische communicatiesector 2002",
+   "articles": [
+    "19.1",
+    "19.2",
+    "19.3",
+    "19.4",
+    "19.5",
+    "19.6",
+    "19.7",
+    "19.8",
+    "19.9",
+    "19.10",
+    "19.11"
+   ],
+   "n_words": 537,
+   "target_words": [
+    27,
+    54
+   ]
+  },
+  {
+   "title": "Hoofdstuk 20. Algemene overgangs- en slotbepalingen",
+   "articles": [
+    "20.1",
+    "20.2",
+    "20.2a",
+    "20.3",
+    "20.4",
+    "20.4a",
+    "20.4b",
+    "20.5",
+    "20.6",
+    "20.7*",
+    "20.7",
+    "20.8",
+    "20.9",
+    "20.10",
+    "20.11",
+    "20.12",
+    "20.13",
+    "20.14",
+    "20.15",
+    "20.15a",
+    "20.16",
+    "20.16a",
+    "20.16b",
+    "20.16c",
+    "20.17",
+    "20.18",
+    "20.19",
+    "20.20"
+   ],
+   "n_words": 3098,
+   "target_words": [
+    155,
+    310
+   ]
+  }
+ ],
+ "defined_terms": [
+  {
+   "term": "gebruiker",
+   "defined_in": "11.1",
+   "uses": 78,
+   "used_in_articles": 35
+  },
+  {
+   "term": "communicatie",
+   "defined_in": "11.1",
+   "uses": 45,
+   "used_in_articles": 19
+  },
+  {
+   "term": "verkeersgegevens",
+   "defined_in": "11.1",
+   "uses": 19,
+   "used_in_articles": 5
+  },
+  {
+   "term": "locatiegegevens",
+   "defined_in": "11.1",
+   "uses": 12,
+   "used_in_articles": 6
+  },
+  {
+   "term": "oproep",
+   "defined_in": "11.1",
+   "uses": 12,
+   "used_in_articles": 6
+  },
+  {
+   "term": "dienst met toegevoegde waarde",
+   "defined_in": "11.1",
+   "uses": 6,
+   "used_in_articles": 1
+  },
+  {
+   "term": "In dit hoofdstuk en de daarop berustende bepalingen wordt verstaan onder",
+   "defined_in": "11.1",
+   "uses": 4,
+   "used_in_articles": 4
+  },
+  {
+   "term": "verwerking van verkeersgegevens",
+   "defined_in": "11.1",
+   "uses": 4,
+   "used_in_articles": 2
+  },
+  {
+   "term": "inbreuk in verband met persoonsgegevens",
+   "defined_in": "11.1",
+   "uses": 3,
+   "used_in_articles": 1
+  },
+  {
+   "term": "toestemming van een gebruiker of abonnee",
+   "defined_in": "11.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "elektronisch bericht",
+   "defined_in": "11.1",
+   "uses": 0,
+   "used_in_articles": 0
+  }
+ ],
+ "duties": [
+  {
+   "article": "11.2",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "zorg voor de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers van zijn netwerk, onderscheidenlijk zijn dienst",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.2a",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het tweede lid, onderdeel a",
+   "must": "verstrekt de aanbieder aan de abonnee de volgende informatie",
+   "to_whom": [
+    "de abonnee"
+   ],
+   "deadline": null,
+   "conditions": [
+    "als bedoeld in het tweede lid, onderdeel a"
+   ]
+  },
+  {
+   "article": "11.2a",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "onthouden zich van het aftappen, afluisteren of anderszins onderscheppen of controleren van de communicatie via een openbaar elektronisch communicatienetwerk of openbare elektronische communicatiedienst en de daarmee verband houdende gegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "tenzij en voor zover: a. de betrokken abonnee voor deze handelingen zijn uitdrukkelijke toestemming heeft gegeven; b. deze handelingen noodzakelijk zijn om de integriteit en de veiligheid van de netwerken en diensten van de betrokken aanbieder te waarborgen; c. deze handelingen noodzakelijk zijn voor het overbrengen van informatie via de netwerken en diensten van de betrokken aanbieder, of d. deze handelingen noodzakelijk zijn ter uitvoering van een wettelijk voorschrift of rechterlijk bevel"
+   ]
+  },
+  {
+   "article": "11.2a",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "dragen de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst zorg voor het vertrouwelijke karakter van de communicatie en de daarmee verband houdende gegevens via hun netwerken onderscheidenlijk hun diensten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.3",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De maatregelen als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "waarborgen dat slechts daartoe gemachtigd personeel voor wettelijk toegestane doeleinden toegang heeft tot de persoonsgegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor wettelijk toegestane doeleinden"
+   ]
+  },
+  {
+   "article": "11.3",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De in artikel 11.2 bedoelde aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "treffen in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers passende technische en organisatorische maatregelen ten behoeve van de veiligheid en beveiliging van de door hen aangeboden netwerken en diensten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "rekening houdend met de stand van de techniek en de kosten van de tenuitvoerlegging"
+   ]
+  },
+  {
+   "article": "11.3",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De in artikel 11.2 bedoelde aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "dragen er zorg voor dat de abonnees worden geïnformeerd over",
+   "to_whom": [
+    "de abonnees"
+   ],
+   "deadline": null,
+   "conditions": [
+    "voor zover het andere maatregelen betreft dan die welke de aanbieder op grond van het eerste lid gehouden is te treffen"
+   ]
+  },
+  {
+   "article": "11.3a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder, bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "when": "een inbreuk in verband met persoonsgegevens",
+   "must": "stelt degene wiens persoonsgegevens het betreft onverwijld in kennis van een inbreuk in verband met persoonsgegevens",
+   "to_whom": [
+    "degene wiens persoonsgegevens het betreft"
+   ],
+   "deadline": "onverwijld",
+   "conditions": [
+    "indien de inbreuk waarschijnlijk ongunstige gevolgen zal hebben voor diens persoonlijke levenssfeer"
+   ]
+  },
+  {
+   "article": "11.3a",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De kennisgeving aan de Autoriteit persoonsgegevens en de persoon wiens persoonsgegevens het betreft",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "omvat in ieder geval de aard van de inbreuk in verband met persoonsgegevens, de instanties waar meer informatie over de inbreuk kan worden verkregen en de aanbevolen maatregelen om de negatieve gevolgen van de inbreuk te beperken",
+   "to_whom": [
+    "Autoriteit persoonsgegevens",
+    "de persoon wiens persoonsgegevens het betreft"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.3a",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "houdt een overzicht bij van alle inbreuken in verband met persoonsgegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.3a",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "een inbreuk op de beveiliging, bedoeld in artikel 11.3, die nadelige gevolgen heeft voor de bescherming van persoonsgegevens die zijn verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie",
+   "must": "stelt de Autoriteit persoonsgegevens onverwijld in kennis van een inbreuk op de beveiliging, bedoeld in artikel 11.3, die nadelige gevolgen heeft voor de bescherming van persoonsgegevens die zijn verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie",
+   "to_whom": [
+    "Autoriteit persoonsgegevens"
+   ],
+   "deadline": "onverwijld",
+   "conditions": []
+  },
+  {
+   "article": "11.3a",
+   "paragraph": "5",
+   "kind": "PROHIBITION",
+   "who": "de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "indien de aanbieder naar het oordeel van de Autoriteit persoonsgegevens gepaste technische beschermingsmaatregelen heeft genomen waardoor de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens",
+   "must": "De kennisgeving, bedoeld in het tweede lid, is niet vereist",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "naar het oordeel van de Autoriteit persoonsgegevens",
+    "gepaste technische beschermingsmaatregelen",
+    "de persoonsgegevens die het betreft, versleuteld of anderszins onbegrijpelijk zijn voor een ieder die geen recht heeft op toegang tot die gegevens"
+   ]
+  },
+  {
+   "article": "11.4",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "op diens verzoek",
+   "must": "geleverde elektronische communicatiediensten door middel van geheel of gedeeltelijk niet-gespecificeerde nota's in rekening te brengen",
+   "to_whom": [
+    "de abonnee"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.5",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "de verwerking van verkeersgegevens ten behoeve van de doeleinden, bedoeld in het derde lid",
+   "must": "stelt de abonnee of gebruiker in kennis van de soorten verkeersgegevens die worden verwerkt voor de in het tweede en derde lid bedoelde doeleinden alsmede omtrent de duur van de verwerking",
+   "to_whom": [
+    "de abonnee of gebruiker"
+   ],
+   "deadline": "voorafgaand aan het verkrijgen van de in dat lid bedoelde toestemming van de abonnee of gebruiker",
+   "conditions": [
+    "Voor zover het de verwerking van verkeersgegevens ten behoeve van de doeleinden, bedoeld in het derde lid betreft"
+   ]
+  },
+  {
+   "article": "11.5",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "zodra deze verkeersgegevens niet langer nodig zijn ten behoeve van de overbrenging van communicatie",
+   "must": "verwijderen dan wel anonimiseren de door hen verwerkte en opgeslagen verkeersgegevens met betrekking tot abonnees of gebruikers",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.5",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "personen die werkzaam zijn onder het gezag van de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "De verwerking van verkeersgegevens in overeenstemming met het eerste tot en met vierde lid",
+   "must": "moet beperkt blijven tot hetgeen noodzakelijk is om die activiteiten te kunnen uitvoeren",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "alleen geschieden door personen die werkzaam zijn onder het gezag van de aanbieder voor facturering, verkeersbeheer, behandeling van verzoeken om inlichtingen van klanten, opsporing van fraude alsmede marktonderzoek of verkoopactiviteiten met betrekking tot elektronische communicatiediensten of de levering van diensten met toegevoegde waarde"
+   ]
+  },
+  {
+   "article": "11.5a",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een dienst met toegevoegde waarde",
+   "who_type": "REGULATED_ENTITY",
+   "when": "voor elke overbrenging van communicatie of elke verbinding met het openbare elektronische communicatienetwerk dat gebruikt wordt voor de levering van de desbetreffende dienst",
+   "must": "biedt aan de abonnee of gebruiker wiens gegevens worden verwerkt de mogelijkheid om kosteloos en op eenvoudige wijze de verwerking van diens gegevens tijdelijk te beletten",
+   "to_whom": [
+    "de abonnee of gebruiker wiens gegevens worden verwerkt"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.5a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de aanbieder van de toegevoegde waardedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het eerste lid, onderdeel b",
+   "must": "verstrekt de aanbieder van de toegevoegde waardedienst aan de abonnee of gebruiker de volgende informatie",
+   "to_whom": [
+    "de abonnee",
+    "gebruiker"
+   ],
+   "deadline": "Voorafgaand aan het verkrijgen van toestemming als bedoeld in het eerste lid, onderdeel b",
+   "conditions": []
+  },
+  {
+   "article": "11.5a",
+   "paragraph": "6",
+   "kind": "PROHIBITION",
+   "who": "personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "De verwerking van de gegevens mag slechts plaatsvinden door personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "die noodzakelijk zijn om de dienst met toegevoegde waarde te kunnen aanbieden"
+   ]
+  },
+  {
+   "article": "11.5b",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "De in het eerste lid bedoelde persoonsgegevens",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "worden niet voor andere doeleinden verzameld of verwerkt",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "tenzij de betrokkene daarvoor zijn uitdrukkelijke toestemming heeft gegeven"
+   ]
+  },
+  {
+   "article": "11.5b",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Verleners van vertrouwensdiensten",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "verwerken alleen persoonsgegevens die van de betrokkene zelf of met diens uitdrukkelijke toestemming zijn verkregen, en voor zover de verwerking van deze persoonsgegevens voor het verlenen van de vertrouwensdienst is vereist",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "alleen persoonsgegevens die van de betrokkene zelf of met diens uitdrukkelijke toestemming zijn verkregen",
+    "voor zover de verwerking van deze persoonsgegevens voor het verlenen van de vertrouwensdienst is vereist"
+   ]
+  },
+  {
+   "article": "11.6",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand",
+   "who_type": "REGULATED_ENTITY",
+   "when": "indien de abonnee daarvoor toestemming heeft verleend",
+   "must": "worden uitsluitend persoonsgegevens van een abonnee opgenomen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien de abonnee daarvoor toestemming heeft verleend",
+    "blijft deze beperkt tot de door hem daarbij aangegeven persoonsgegevens"
+   ]
+  },
+  {
+   "article": "11.6",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Eenieder die een algemeen beschikbare abonneelijst uitgeeft of een algemeen beschikbare abonnee-informatiedienst verzorgt",
+   "who_type": "REGULATED_ENTITY",
+   "when": "voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand",
+   "must": "stelt de abonnee voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand kosteloos op de hoogte van",
+   "to_whom": [
+    "de abonnee"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.6",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de abonnee",
+   "who_type": "DATA_SUBJECT",
+   "when": "de verwerking van persoonsgegevens in een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand betrekking heeft op andere doeleinden dan het bieden van de mogelijkheid tot het zoeken van nummers aan de hand van gegevens betreffende de naam in combinatie met gegevens betreffende het adres en huisnummer, postcode en woonplaats van de abonnee",
+   "must": "afzonderlijke toestemming van de abonnee vereist",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Voor zover de verwerking van persoonsgegevens in een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand betrekking heeft op andere doeleinden dan het bieden van de mogelijkheid tot het zoeken van nummers aan de hand van gegevens betreffende de naam in combinatie met gegevens betreffende het adres en huisnummer, postcode en woonplaats van de abonnee"
+   ]
+  },
+  {
+   "article": "11.7",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "de verzender",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Het gebruik van automatische oproep- en communicatiesystemen zonder menselijke tussenkomst, faxen en elektronische berichten voor het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden",
+   "must": "is verboden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "tenzij de verzender kan aantonen dat de desbetreffende eindgebruiker daarvoor voorafgaand toestemming heeft verleend"
+   ]
+  },
+  {
+   "article": "11.7",
+   "paragraph": "7",
+   "kind": "OBLIGATION",
+   "who": "degene namens wie de communicatie wordt overgebracht",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij dat gebruik",
+   "must": "te allen tijde de volgende gegevens te worden vermeld",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Op het gebruik van elektronische berichten voor de in het eerste lid bedoelde doeleinden"
+   ]
+  },
+  {
+   "article": "11.7",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de verzender",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij het gebruik van andere dan de in het eerste lid bedoelde middelen voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen",
+   "must": "geeft de verzender de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens",
+   "to_whom": [
+    "de desbetreffende natuurlijke persoon"
+   ],
+   "deadline": null,
+   "conditions": [
+    "voor het met toestemming overbrengen van deze ongevraagde communicatie aan natuurlijke personen",
+    "bij iedere boodschap"
+   ]
+  },
+  {
+   "article": "11.7",
+   "paragraph": "8",
+   "kind": "PROHIBITION",
+   "who": "de verzender",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij het overbrengen van ongevraagde communicatie voor commerciële, ideële of charitatieve doeleinden met gebruik van een openbare telefoondienst",
+   "must": "maakt de verzender geen gebruik van de mogelijkheden tot blokkering, bedoeld in artikel 11.9, eerste lid, onderdeel a",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor commerciële, ideële of charitatieve doeleinden",
+    "met gebruik van een openbare telefoondienst"
+   ]
+  },
+  {
+   "article": "11.7",
+   "paragraph": "11",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": "nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+   "must": "De voordracht voor een krachtens het tiende lid vast te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+   "to_whom": [],
+   "deadline": "vier weken nadat het ontwerp aan beide Kamers der Staten-Generaal is overgelegd",
+   "conditions": []
+  },
+  {
+   "article": "11.7a",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "de betrokken gebruiker",
+   "who_type": "DATA_SUBJECT",
+   "when": "het via een elektronisch communicatienetwerk opslaan van of toegang verkrijgen tot informatie in de randapparatuur van een gebruiker",
+   "must": "is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "alleen toegestaan op voorwaarde dat de betrokken gebruiker:"
+   ]
+  },
+  {
+   "article": "11.7a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De in het eerste lid, onder a en b, genoemde vereisten",
+   "who_type": "REGULATED_ENTITY",
+   "when": "in het geval op een andere wijze dan door middel van een elektronisch communicatienetwerk wordt bewerkstelligd dat via een elektronisch communicatienetwerk informatie wordt opgeslagen of toegang wordt verleend tot op het randapparaat opgeslagen informatie",
+   "must": "zijn ook van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "op een andere wijze dan door middel van een elektronisch communicatienetwerk"
+   ]
+  },
+  {
+   "article": "11.7a",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": "Het bepaalde in het eerste lid",
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien het de opslag of toegang betreft: met als uitsluitend doel de communicatie over een elektronisch communicatienetwerk uit te voeren",
+    "indien het de opslag of toegang betreft: die strikt noodzakelijk is om de door de abonnee of gebruiker gevraagde dienst van de informatiemaatschappij te leveren",
+    "mits dit geen of geringe gevolgen heeft voor de persoonlijke levenssfeer van de betrokken abonnee of gebruiker"
+   ]
+  },
+  {
+   "article": "11.7a",
+   "paragraph": "5",
+   "kind": "PROHIBITION",
+   "who": "een krachtens publiekrecht ingestelde rechtspersoon",
+   "who_type": "REGULATED_ENTITY",
+   "when": "De toegang van de gebruiker tot een dienst van de informatiemaatschappij die wordt geleverd door of namens een krachtens publiekrecht ingestelde rechtspersoon",
+   "must": "wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.8a",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Indien de Autoriteit Consument en Markt met bevoegde nationale instanties in andere lidstaten maatregelen overeen komt aangaande grensoverschrijdende samenwerking bij de handhaving van hoofdstuk 11 waarbij grensoverschrijdende gegevensstromen betrokken zijn",
+   "must": "verstrekt de Autoriteit Consument en Markt de Europese Commissie ruime tijd voordat die maatregelen worden vastgelegd een samenvatting van de redenen voor optreden, de geplande afspraken en de voorgestelde aanpak",
+   "to_whom": [
+    "de Europese Commissie"
+   ],
+   "deadline": "ruime tijd voordat die maatregelen worden vastgelegd",
+   "conditions": [
+    "waarbij grensoverschrijdende gegevensstromen betrokken zijn"
+   ]
+  },
+  {
+   "article": "11.8a",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Bij het vastleggen van de maatregelen",
+   "must": "houdt de Autoriteit Consument en Markt zoveel mogelijk rekening met de door de Europese Commissie gemaakte opmerkingen en aanbevelingen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.9",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst die door middel van dat netwerk of als onderdeel van die dienst nummeridentificatie aanbiedt",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "biedt",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien nummeridentificatie als bedoeld in artikel 1.1, wordt aangeboden"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": "de beheerder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Verstrekking van nummers en gegevens door de beheerder",
+   "must": "vindt slechts plaats met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "degene die op grond van artikel 141 of 142 van het Wetboek van Strafvordering is belast met de opsporing van strafbare feiten",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "het oog op de bestrijding van het misbruik van een alarmnummer voor publieke diensten",
+   "must": "Verstrekking van nummers en gegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "vindt slechts plaats aan degene die op grond van artikel 141 of 142 van het Wetboek van Strafvordering is belast met de opsporing van strafbare feiten"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "11",
+   "kind": "OBLIGATION",
+   "who": "algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden regels gesteld met betrekking tot de nauwkeurigheid en betrouwbaarheid van de te verstrekken gegevens",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "bedoeld in het eerste en tweede lid"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "9",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "De bekendmaking van het besluit tot aanwijzing van de beheerders, bedoeld in het eerste lid, en de publieke diensten, bedoeld in het vierde lid",
+   "must": "geschiedt door plaatsing in de Staatscourant",
+   "to_whom": [
+    "de Staatscourant"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.10",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "de beheerders",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "vastgelegd",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.10",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "indien er communicatie over een dergelijk alarmnummer wordt afgewikkeld",
+   "must": "gelijktijdig de daarop betrekking hebbende locatiegegevens te verstrekken",
+   "to_whom": [
+    "de aangewezen beheerders van een alarmnummer voor publieke diensten, bedoeld in het eerste lid"
+   ],
+   "deadline": "gelijktijdig",
+   "conditions": [
+    "die locatiegegevens kan verwerken omtrent abonnees of gebruikers",
+    "ook indien de abonnee of gebruiker, voor zover het betreft de locatiegegevens als bedoeld in artikel 11.5a, op de voet van het vijfde lid van dat artikel, gebruik heeft gemaakt van de mogelijkheid om tijdelijk de verwerking van de hem betreffende locatiegegevens te beletten"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "noodhulpdiensten",
+   "who_type": "OTHER",
+   "when": "Verstrekking van nummers en gegevens met het oog op de hulpverlening in noodsituaties",
+   "must": "vindt slechts plaats",
+   "to_whom": [
+    "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen noodhulpdiensten"
+   ],
+   "deadline": null,
+   "conditions": [
+    "slechts"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "7",
+   "kind": "OBLIGATION",
+   "who": "de beheerder",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "worden bewaard",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien de nummers en gegevens betrekking hebben op gevallen waarin kennelijk sprake is van een verzoek om hulpverlening in een noodsituatie",
+    "indien de nummers en gegevens betrekking hebben op gevallen waarin kennelijk sprake is van misbruik van een alarmnummer voor publieke diensten",
+    "in alle overige gevallen"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": "De op grond van het eerste lid aangewezen beheerder",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "vergoedt de kosten die zijn gemoeid met het verstrekken van de gegevens, bedoeld in het eerste lid, onderdeel a, en, voor zover deze niet overeenkomen met het fysieke adres van het netwerkaansluitpunt, van de gegevens, bedoeld in het eerste lid, onderdeel b",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover deze niet overeenkomen met het fysieke adres van het netwerkaansluitpunt"
+   ]
+  },
+  {
+   "article": "11.10",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk dat wordt gebruikt om uitgaande gesprekken naar een nummer in het nummerplan aan te bieden, en de aanbieder van een openbare betaaltelefoon of spraakcommunicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "indien er elektronische communicatie met een alarmnummer wordt afgewikkeld",
+   "must": "het nummer van het oproepende netwerkaansluitpunt te verstrekken",
+   "to_whom": [
+    "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen beheerders van een alarmnummer voor publieke diensten"
+   ],
+   "deadline": "gelijktijdig",
+   "conditions": [
+    "ook indien bij dat netwerkaansluitpunt gebruik wordt gemaakt van een in artikel 11.9, tweede lid, onder a, bedoelde blokkeringsmogelijkheid"
+   ]
+  },
+  {
+   "article": "11.10a",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "Een faciliteit om het nummer van het netwerkaansluitpunt van waaruit een verbinding tot stand wordt gebracht, dan wel het nummer waarmee een individuele gebruiker van dat netwerkaansluitpunt kan worden geïdentificeerd aan het netwerkaansluitpunt waarmee die verbinding tot stand komt te verstrekken",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "wordt niet gebruikt om de opgeroepen gebruiker onjuiste informatie te verstrekken met betrekking tot dat netwerkaansluitpunt of die individuele gebruiker",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.11",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "het verzoek",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "voldoet aan de volgende vereisten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "als bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "11.11",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De verzoeker",
+   "who_type": "OTHER",
+   "when": "hinderlijke of kwaadwillige oproepen, die plaats hebben gevonden na indiening van het verzoek, bedoeld in het eerste lid",
+   "must": "informeert de aanbieder onverwijld omtrent hinderlijke of kwaadwillige oproepen",
+   "to_whom": [
+    "de aanbieder"
+   ],
+   "deadline": "onverwijld",
+   "conditions": [
+    "na indiening van het verzoek, bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "11.11",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "De aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "naar aanleiding van het verzoek",
+   "must": "stelt naar aanleiding van het verzoek een onderzoek in, teneinde vast te stellen of tot verstrekking van de gegevens, bedoeld in het eerste lid, dient te worden overgegaan",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11.11",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Van de gegevensverstrekking aan een verzoeker",
+   "must": "mededeling gedaan aan de abonnee",
+   "to_whom": [
+    "de abonnee"
+   ],
+   "deadline": null,
+   "conditions": [
+    "wiens gegevens het betreft"
+   ]
+  },
+  {
+   "article": "11.11",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "de desbetreffende aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Indien bij het onderzoek blijkt dat het oproepende nummer toebehoort aan een abonnee van een andere aanbieder",
+   "must": "verleent de desbetreffende aanbieder op een daartoe strekkend verzoek van de met het onderzoek belaste aanbieder medewerking aan het onderzoek en verstrekt, indien het onderzoek daartoe aanleiding geeft, de beschikbare op het oproepende nummer betrekking hebbende naam-, adres-, postcode- en woonplaatsgegevens aan de aanbieder die met het onderzoek belast is",
+   "to_whom": [
+    "de aanbieder die met het onderzoek belast is"
+   ],
+   "deadline": null,
+   "conditions": [
+    "indien het onderzoek daartoe aanleiding geeft"
+   ]
+  },
+  {
+   "article": "11.13",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "de aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "when": "De verkeers- en locatiegegevens die de aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten bewaren op grond van artikel 13.2a, tweede lid",
+   "must": "niet voor andere doelen verwerkt",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "tenzij het gegevens betreft waarvan de verwerking op grond van de artikelen 11.5 en 11.5a is toegestaan en de verwerking plaatsvindt met inachtneming van die artikelen"
+   ]
+  },
+  {
+   "article": "11a.1",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Aanbieders van openbare elektronische communicatiediensten",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "nemen passende en evenredige technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun diensten te beheersen, waaronder in voorkomend geval versleuteling, teneinde de gevolgen van beveiligingsincidenten op gebruikers en op andere netwerken en diensten zo laag mogelijk te houden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "in voorkomend geval",
+    "gezien de stand van de techniek"
+   ]
+  },
+  {
+   "article": "11a.1",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "aanbieders van spraakcommunicatiediensten of internettoegangsdiensten die deze diensten over de openbare elektronische communicatienetwerken aanbieden en aanbieders van openbare elektronische communicatienetwerken waarover spraakcommunicatiediensten of internettoegangsdiensten worden aangeboden",
+   "who_type": "REGULATED_ENTITY",
+   "when": "in geval van door calamiteiten veroorzaakte netwerkuitval of in geval van overmacht",
+   "must": "alle noodzakelijke maatregelen om de beschikbaarheid van deze diensten zo volledig mogelijk te waarborgen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Onverminderd het eerste lid"
+   ]
+  },
+  {
+   "article": "11a.1",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "nemen bij of krachtens algemene maatregel van bestuur vastgestelde technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun netwerken of diensten te beheersen, teneinde de gevolgen van beveiligingsincidenten op de nationale veiligheid of openbare orde te beperken",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11a.3",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Een aanbieder van een bij of krachtens algemene maatregel van bestuur aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, alsmede een aanbieder van een openbaar elektronisch communicatienetwerk dat bestaat uit radioapparaten die geschikt zijn voor het verspreiden van programma’s en dat door een aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, wordt ondersteund",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "draagt, ieder voor zich, zorg voor de opstelling en de uitvoering van een continuïteitsplan dat een beschrijving bevat van de technische en organisatorische maatregelen die de aanbieder neemt om de risico’s voor de veiligheid in en op het opstelpunt te beheersen voor zover van belang voor de continuïteit van de verspreiding van programma's door middel van openbare elektronische communicatienetwerken die worden ondersteund door dat opstelpunt",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover van belang voor de continuïteit van de verspreiding van programma's door middel van openbare elektronische communicatienetwerken die worden ondersteund door dat opstelpunt"
+   ]
+  },
+  {
+   "article": "11a.3",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "een aanbieder als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Indien het continuïteitsplan naar het oordeel van Onze Minister onvoldoende bijdraagt aan de in het eerste lid bedoelde continuïteit",
+   "must": "een technische of organisatorische maatregel te treffen",
+   "to_whom": [],
+   "deadline": "binnen een bepaalde termijn",
+   "conditions": [
+    "Indien het continuïteitsplan naar het oordeel van Onze Minister onvoldoende bijdraagt aan de in het eerste lid bedoelde continuïteit"
+   ]
+  },
+  {
+   "article": "11a.3",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "de in het eerste lid bedoelde aanbieder of aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Voor een aangewezen antenne-opstelpunt",
+   "must": "dragen de in het eerste lid bedoelde aanbieder of aanbieders zorg voor de opstelling en de uitvoering van een gezamenlijk continuïteitsplan dat voorziet in onderlinge afstemming van de maatregelen, bedoeld in het eerste lid",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Voor een aangewezen antenne-opstelpunt"
+   ]
+  }
+ ],
+ "stakeholder_matrix": [
+  {
+   "who": "de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 4,
+   "articles": [
+    "11.2",
+    "11.2a",
+    "11.5"
+   ],
+   "example": "zorg voor de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers van zijn netwerk, onderscheidenlijk zijn dienst"
+  },
+  {
+   "who": "de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee",
+   "n_duties": 2,
+   "articles": [
+    "11.2a",
+    "11.11"
+   ],
+   "example": "verstrekt de aanbieder aan de abonnee de volgende informatie"
+  },
+  {
+   "who": "de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "11.3a",
+    "11.11"
+   ],
+   "example": "De kennisgeving, bedoeld in het tweede lid, is niet vereist"
+  },
+  {
+   "who": "de verzender",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "11.7"
+   ],
+   "example": "is verboden"
+  },
+  {
+   "who": "de beheerder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "11.10"
+   ],
+   "example": "vindt slechts plaats met het oog op de hulpverlening in noodsituaties of de bestrijding van het misbruik van een alarmnummer voor publieke diensten"
+  },
+  {
+   "who": "De maatregelen als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.3"
+   ],
+   "example": "waarborgen dat slechts daartoe gemachtigd personeel voor wettelijk toegestane doeleinden toegang heeft tot de persoonsgegevens"
+  },
+  {
+   "who": "De in artikel 11.2 bedoelde aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.3"
+   ],
+   "example": "treffen in het belang van de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers passende technische en organisatorische maatregelen ten behoeve van de veiligheid en beveiliging van de door hen aangeboden netwerken en diensten"
+  },
+  {
+   "who": "De in artikel 11.2 bedoelde aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnees",
+   "n_duties": 1,
+   "articles": [
+    "11.3"
+   ],
+   "example": "dragen er zorg voor dat de abonnees worden geïnformeerd over"
+  },
+  {
+   "who": "De aanbieder, bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "degene wiens persoonsgegevens het betreft",
+   "n_duties": 1,
+   "articles": [
+    "11.3a"
+   ],
+   "example": "stelt degene wiens persoonsgegevens het betreft onverwijld in kennis van een inbreuk in verband met persoonsgegevens"
+  },
+  {
+   "who": "De kennisgeving aan de Autoriteit persoonsgegevens en de persoon wiens persoonsgegevens het betreft",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "11.3a"
+   ],
+   "example": "omvat in ieder geval de aard van de inbreuk in verband met persoonsgegevens, de instanties waar meer informatie over de inbreuk kan worden verkregen en de aanbevolen maatregelen om de negatieve gevolgen van de inbreuk te beperken"
+  },
+  {
+   "who": "De kennisgeving aan de Autoriteit persoonsgegevens en de persoon wiens persoonsgegevens het betreft",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de persoon wiens persoonsgegevens het betreft",
+   "n_duties": 1,
+   "articles": [
+    "11.3a"
+   ],
+   "example": "omvat in ieder geval de aard van de inbreuk in verband met persoonsgegevens, de instanties waar meer informatie over de inbreuk kan worden verkregen en de aanbevolen maatregelen om de negatieve gevolgen van de inbreuk te beperken"
+  },
+  {
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.3a"
+   ],
+   "example": "houdt een overzicht bij van alle inbreuken in verband met persoonsgegevens"
+  },
+  {
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "11.3a"
+   ],
+   "example": "stelt de Autoriteit persoonsgegevens onverwijld in kennis van een inbreuk op de beveiliging, bedoeld in artikel 11.3, die nadelige gevolgen heeft voor de bescherming van persoonsgegevens die zijn verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie"
+  },
+  {
+   "who": "De aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee",
+   "n_duties": 1,
+   "articles": [
+    "11.4"
+   ],
+   "example": "geleverde elektronische communicatiediensten door middel van geheel of gedeeltelijk niet-gespecificeerde nota's in rekening te brengen"
+  },
+  {
+   "who": "De aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee of gebruiker",
+   "n_duties": 1,
+   "articles": [
+    "11.5"
+   ],
+   "example": "stelt de abonnee of gebruiker in kennis van de soorten verkeersgegevens die worden verwerkt voor de in het tweede en derde lid bedoelde doeleinden alsmede omtrent de duur van de verwerking"
+  },
+  {
+   "who": "personen die werkzaam zijn onder het gezag van de aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.5"
+   ],
+   "example": "moet beperkt blijven tot hetgeen noodzakelijk is om die activiteiten te kunnen uitvoeren"
+  },
+  {
+   "who": "De aanbieder van een dienst met toegevoegde waarde",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee of gebruiker wiens gegevens worden verwerkt",
+   "n_duties": 1,
+   "articles": [
+    "11.5a"
+   ],
+   "example": "biedt aan de abonnee of gebruiker wiens gegevens worden verwerkt de mogelijkheid om kosteloos en op eenvoudige wijze de verwerking van diens gegevens tijdelijk te beletten"
+  },
+  {
+   "who": "de aanbieder van de toegevoegde waardedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee",
+   "n_duties": 1,
+   "articles": [
+    "11.5a"
+   ],
+   "example": "verstrekt de aanbieder van de toegevoegde waardedienst aan de abonnee of gebruiker de volgende informatie"
+  },
+  {
+   "who": "de aanbieder van de toegevoegde waardedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "gebruiker",
+   "n_duties": 1,
+   "articles": [
+    "11.5a"
+   ],
+   "example": "verstrekt de aanbieder van de toegevoegde waardedienst aan de abonnee of gebruiker de volgende informatie"
+  },
+  {
+   "who": "personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.5a"
+   ],
+   "example": "De verwerking van de gegevens mag slechts plaatsvinden door personen die werkzaam zijn onder het gezag van de aanbieder of de derde, bedoeld in het tweede lid, onder d"
+  },
+  {
+   "who": "De in het eerste lid bedoelde persoonsgegevens",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.5b"
+   ],
+   "example": "worden niet voor andere doeleinden verzameld of verwerkt"
+  },
+  {
+   "who": "Verleners van vertrouwensdiensten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.5b"
+   ],
+   "example": "verwerken alleen persoonsgegevens die van de betrokkene zelf of met diens uitdrukkelijke toestemming zijn verkregen, en voor zover de verwerking van deze persoonsgegevens voor het verlenen van de vertrouwensdienst is vereist"
+  },
+  {
+   "who": "een algemeen beschikbare abonneelijst en in het voor een abonnee-informatiedienst gebruikte abonneebestand",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.6"
+   ],
+   "example": "worden uitsluitend persoonsgegevens van een abonnee opgenomen"
+  },
+  {
+   "who": "Eenieder die een algemeen beschikbare abonneelijst uitgeeft of een algemeen beschikbare abonnee-informatiedienst verzorgt",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de abonnee",
+   "n_duties": 1,
+   "articles": [
+    "11.6"
+   ],
+   "example": "stelt de abonnee voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand kosteloos op de hoogte van"
+  },
+  {
+   "who": "de abonnee",
+   "who_type": "DATA_SUBJECT",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.6"
+   ],
+   "example": "afzonderlijke toestemming van de abonnee vereist"
+  },
+  {
+   "who": "degene namens wie de communicatie wordt overgebracht",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.7"
+   ],
+   "example": "te allen tijde de volgende gegevens te worden vermeld"
+  },
+  {
+   "who": "de verzender",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de desbetreffende natuurlijke persoon",
+   "n_duties": 1,
+   "articles": [
+    "11.7"
+   ],
+   "example": "geeft de verzender de desbetreffende natuurlijke persoon bij iedere boodschap duidelijk en expliciet de gelegenheid om kosteloos en op gemakkelijke wijze verzet aan te tekenen tegen het gebruik van zijn contactgegevens"
+  },
+  {
+   "who": "de betrokken gebruiker",
+   "who_type": "DATA_SUBJECT",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.7a"
+   ],
+   "example": "is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en"
+  },
+  {
+   "who": "De in het eerste lid, onder a en b, genoemde vereisten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.7a"
+   ],
+   "example": "zijn ook van toepassing"
+  },
+  {
+   "who": "een krachtens publiekrecht ingestelde rechtspersoon",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.7a"
+   ],
+   "example": "wordt niet afhankelijk gemaakt van het verlenen van toestemming als bedoeld in het eerste lid"
+  },
+  {
+   "who": "de Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Europese Commissie",
+   "n_duties": 1,
+   "articles": [
+    "11.8a"
+   ],
+   "example": "verstrekt de Autoriteit Consument en Markt de Europese Commissie ruime tijd voordat die maatregelen worden vastgelegd een samenvatting van de redenen voor optreden, de geplande afspraken en de voorgestelde aanpak"
+  },
+  {
+   "who": "de Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.8a"
+   ],
+   "example": "houdt de Autoriteit Consument en Markt zoveel mogelijk rekening met de door de Europese Commissie gemaakte opmerkingen en aanbevelingen"
+  },
+  {
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst die door middel van dat netwerk of als onderdeel van die dienst nummeridentificatie aanbiedt",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.9"
+   ],
+   "example": "biedt"
+  },
+  {
+   "who": "degene die op grond van artikel 141 of 142 van het Wetboek van Strafvordering is belast met de opsporing van strafbare feiten",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "Verstrekking van nummers en gegevens"
+  },
+  {
+   "who": "algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "worden regels gesteld met betrekking tot de nauwkeurigheid en betrouwbaarheid van de te verstrekken gegevens"
+  },
+  {
+   "who": "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Staatscourant",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "geschiedt door plaatsing in de Staatscourant"
+  },
+  {
+   "who": "de beheerders",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "vastgelegd"
+  },
+  {
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de aangewezen beheerders van een alarmnummer voor publieke diensten, bedoeld in het eerste lid",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "gelijktijdig de daarop betrekking hebbende locatiegegevens te verstrekken"
+  },
+  {
+   "who": "noodhulpdiensten",
+   "who_type": "OTHER",
+   "to_whom": "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen noodhulpdiensten",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "vindt slechts plaats"
+  },
+  {
+   "who": "De op grond van het eerste lid aangewezen beheerder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "vergoedt de kosten die zijn gemoeid met het verstrekken van de gegevens, bedoeld in het eerste lid, onderdeel a, en, voor zover deze niet overeenkomen met het fysieke adres van het netwerkaansluitpunt, van de gegevens, bedoeld in het eerste lid, onderdeel b"
+  },
+  {
+   "who": "De aanbieder van een openbaar elektronisch communicatienetwerk dat wordt gebruikt om uitgaande gesprekken naar een nummer in het nummerplan aan te bieden, en de aanbieder van een openbare betaaltelefoon of spraakcommunicatiedienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de door Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties, in overeenstemming met Onze Minister, aangewezen beheerders van een alarmnummer voor publieke diensten",
+   "n_duties": 1,
+   "articles": [
+    "11.10"
+   ],
+   "example": "het nummer van het oproepende netwerkaansluitpunt te verstrekken"
+  },
+  {
+   "who": "Een faciliteit om het nummer van het netwerkaansluitpunt van waaruit een verbinding tot stand wordt gebracht, dan wel het nummer waarmee een individuele gebruiker van dat netwerkaansluitpunt kan worden geïdentificeerd aan het netwerkaansluitpunt waarmee die verbinding tot stand komt te verstrekken",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.10a"
+   ],
+   "example": "wordt niet gebruikt om de opgeroepen gebruiker onjuiste informatie te verstrekken met betrekking tot dat netwerkaansluitpunt of die individuele gebruiker"
+  },
+  {
+   "who": "het verzoek",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.11"
+   ],
+   "example": "voldoet aan de volgende vereisten"
+  },
+  {
+   "who": "De verzoeker",
+   "who_type": "OTHER",
+   "to_whom": "de aanbieder",
+   "n_duties": 1,
+   "articles": [
+    "11.11"
+   ],
+   "example": "informeert de aanbieder onverwijld omtrent hinderlijke of kwaadwillige oproepen"
+  },
+  {
+   "who": "de desbetreffende aanbieder",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "de aanbieder die met het onderzoek belast is",
+   "n_duties": 1,
+   "articles": [
+    "11.11"
+   ],
+   "example": "verleent de desbetreffende aanbieder op een daartoe strekkend verzoek van de met het onderzoek belaste aanbieder medewerking aan het onderzoek en verstrekt, indien het onderzoek daartoe aanleiding geeft, de beschikbare op het oproepende nummer betrekking hebbende naam-, adres-, postcode- en woonplaatsgegevens aan de aanbieder die met het onderzoek belast is"
+  },
+  {
+   "who": "de aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11.13"
+   ],
+   "example": "niet voor andere doelen verwerkt"
+  },
+  {
+   "who": "Aanbieders van openbare elektronische communicatiediensten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.1"
+   ],
+   "example": "nemen passende en evenredige technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun diensten te beheersen, waaronder in voorkomend geval versleuteling, teneinde de gevolgen van beveiligingsincidenten op gebruikers en op andere netwerken en diensten zo laag mogelijk te houden"
+  },
+  {
+   "who": "aanbieders van spraakcommunicatiediensten of internettoegangsdiensten die deze diensten over de openbare elektronische communicatienetwerken aanbieden en aanbieders van openbare elektronische communicatienetwerken waarover spraakcommunicatiediensten of internettoegangsdiensten worden aangeboden",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.1"
+   ],
+   "example": "alle noodzakelijke maatregelen om de beschikbaarheid van deze diensten zo volledig mogelijk te waarborgen"
+  },
+  {
+   "who": "Aanbieders van openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.1"
+   ],
+   "example": "nemen bij of krachtens algemene maatregel van bestuur vastgestelde technische, operationele en organisatorische maatregelen om de risico’s voor de beveiliging van hun netwerken of diensten te beheersen, teneinde de gevolgen van beveiligingsincidenten op de nationale veiligheid of openbare orde te beperken"
+  },
+  {
+   "who": "Een aanbieder van een bij of krachtens algemene maatregel van bestuur aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, alsmede een aanbieder van een openbaar elektronisch communicatienetwerk dat bestaat uit radioapparaten die geschikt zijn voor het verspreiden van programma’s en dat door een aangewezen antenne-opstelpunt als bedoeld in artikel 5a.3, derde lid, wordt ondersteund",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.3"
+   ],
+   "example": "draagt, ieder voor zich, zorg voor de opstelling en de uitvoering van een continuïteitsplan dat een beschrijving bevat van de technische en organisatorische maatregelen die de aanbieder neemt om de risico’s voor de veiligheid in en op het opstelpunt te beheersen voor zover van belang voor de continuïteit van de verspreiding van programma's door middel van openbare elektronische communicatienetwerken die worden ondersteund door dat opstelpunt"
+  },
+  {
+   "who": "een aanbieder als bedoeld in het eerste lid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.3"
+   ],
+   "example": "een technische of organisatorische maatregel te treffen"
+  },
+  {
+   "who": "de in het eerste lid bedoelde aanbieder of aanbieders",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11a.3"
+   ],
+   "example": "dragen de in het eerste lid bedoelde aanbieder of aanbieders zorg voor de opstelling en de uitvoering van een gezamenlijk continuïteitsplan dat voorziet in onderlinge afstemming van de maatregelen, bedoeld in het eerste lid"
+  }
+ ],
+ "exceptions": [
+  {
+   "article": "11.2",
+   "paragraph": null,
+   "rule": "zorg voor de bescherming van persoonsgegevens en de bescherming van de persoonlijke levenssfeer van abonnees en gebruikers van zijn netwerk, onderscheidenlijk zijn dienst",
+   "exception": [],
+   "yields_to": "Onverminderd de Algemene verordening gegevensbescherming en het overigens bij of krachtens deze wet bepaalde"
+  },
+  {
+   "article": "11.2a",
+   "paragraph": "2",
+   "rule": "onthouden zich van het aftappen, afluisteren of anderszins onderscheppen of controleren van de communicatie via een openbaar elektronisch communicatienetwerk of openbare elektronische communicatiedienst en de daarmee verband houdende gegevens",
+   "exception": [
+    "tenzij en voor zover: a. de betrokken abonnee voor deze handelingen zijn uitdrukkelijke toestemming heeft gegeven; b. deze handelingen noodzakelijk zijn om de integriteit en de veiligheid van de netwerken en diensten van de betrokken aanbieder te waarborgen; c. deze handelingen noodzakelijk zijn voor het overbrengen van informatie via de netwerken en diensten van de betrokken aanbieder, of d. deze handelingen noodzakelijk zijn ter uitvoering van een wettelijk voorschrift of rechterlijk bevel"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "11.2a",
+   "paragraph": "1",
+   "rule": "dragen de aanbieder van een openbaar elektronisch communicatienetwerk en de aanbieder van een openbare elektronische communicatiedienst zorg voor het vertrouwelijke karakter van de communicatie en de daarmee verband houdende gegevens via hun netwerken onderscheidenlijk hun diensten",
+   "exception": [],
+   "yields_to": "Onverminderd het Wetboek van Strafrecht en het overigens bij of krachtens deze wet bepaalde"
+  },
+  {
+   "article": "11.5b",
+   "paragraph": "2",
+   "rule": "worden niet voor andere doeleinden verzameld of verwerkt",
+   "exception": [
+    "tenzij de betrokkene daarvoor zijn uitdrukkelijke toestemming heeft gegeven"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "11.5b",
+   "paragraph": "3",
+   "rule": "is de uitdrukkelijke toestemming van de betrokkene niet vereist",
+   "exception": [],
+   "yields_to": "In afwijking van het tweede lid"
+  },
+  {
+   "article": "11.7",
+   "paragraph": "1",
+   "rule": "is verboden",
+   "exception": [
+    "tenzij de verzender kan aantonen dat de desbetreffende eindgebruiker daarvoor voorafgaand toestemming heeft verleend"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "11.7",
+   "paragraph": "3",
+   "rule": "geen voorafgaande toestemming vereist",
+   "exception": [],
+   "yields_to": "In afwijking van het eerste en tweede lid"
+  },
+  {
+   "article": "11.7",
+   "paragraph": "6",
+   "rule": "gebruik maken van contactgegevens als bedoeld in het vierde lid",
+   "exception": [],
+   "yields_to": "In afwijking van het tweede lid"
+  },
+  {
+   "article": "11.7",
+   "paragraph": "5",
+   "rule": "deze contactgegevens gebruiken voor het overbrengen van ongevraagde communicatie voor eigen ideële of charitatieve doeleinden",
+   "exception": [],
+   "yields_to": "In afwijking van het eerste en tweede lid"
+  },
+  {
+   "article": "11.7",
+   "paragraph": "4",
+   "rule": "die elektronische contactgegevens gebruiken voor het overbrengen van ongevraagde communicatie voor commerciële doeleinden ten behoeve van eigen gelijksoortige producten of diensten",
+   "exception": [
+    "In afwijking van het eerste lid"
+   ],
+   "yields_to": "In afwijking van het eerste lid"
+  },
+  {
+   "article": "11.7a",
+   "paragraph": "1",
+   "rule": "is voorzien van duidelijke en volledige informatie overeenkomstig de Algemene verordening gegevensbescherming, in ieder geval over de doeleinden waarvoor deze informatie wordt gebruikt, en",
+   "exception": [],
+   "yields_to": "Onverminderd de Algemene verordening gegevensbescherming"
+  },
+  {
+   "article": "11.13",
+   "paragraph": "2",
+   "rule": "niet voor andere doelen verwerkt",
+   "exception": [
+    "tenzij het gegevens betreft waarvan de verwerking op grond van de artikelen 11.5 en 11.5a is toegestaan en de verwerking plaatsvindt met inachtneming van die artikelen"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "11.13",
+   "paragraph": "3",
+   "rule": "verkeersgegevens verwerken",
+   "exception": [
+    "in afwijking van artikel 11.5, eerste lid"
+   ],
+   "yields_to": null
+  }
+ ],
+ "articles_by_importance": [
+  {
+   "article": "11.10",
+   "heading": "Artikel 11.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 6,
+   "fine_backed": false,
+   "n_words": 711,
+   "points": 12,
+   "key_article": true
+  },
+  {
+   "article": "11.3a",
+   "heading": "Artikel 11.3a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 5,
+   "fine_backed": false,
+   "n_words": 351,
+   "points": 10,
+   "key_article": true
+  },
+  {
+   "article": "11.7",
+   "heading": "Artikel 11.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 4,
+   "fine_backed": false,
+   "n_words": 887,
+   "points": 8,
+   "key_article": true
+  },
+  {
+   "article": "11.2a",
+   "heading": "Artikel 11.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 247,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11.3",
+   "heading": "Artikel 11.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 271,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11.5",
+   "heading": "Artikel 11.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 393,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11.11",
+   "heading": "Artikel 11.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 312,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11a.1",
+   "heading": "Artikel 11a.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 346,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11a.3",
+   "heading": "Artikel 11a.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 3,
+   "fine_backed": false,
+   "n_words": 305,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "11.5a",
+   "heading": "Artikel 11.5a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 2,
+   "fine_backed": false,
+   "n_words": 337,
+   "points": 4,
+   "key_article": true
+  },
+  {
+   "article": "11.6",
+   "heading": "Artikel 11.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 2,
+   "fine_backed": false,
+   "n_words": 271,
+   "points": 4,
+   "key_article": true
+  },
+  {
+   "article": "11.7a",
+   "heading": "Artikel 11.7a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 2,
+   "fine_backed": false,
+   "n_words": 334,
+   "points": 4,
+   "key_article": true
+  },
+  {
+   "article": "11.2",
+   "heading": "Artikel 11.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 53,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "11.4",
+   "heading": "Artikel 11.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 170,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "11.5b",
+   "heading": "Artikel 11.5b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 108,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "11.9",
+   "heading": "Artikel 11.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 258,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "11.10a",
+   "heading": "Artikel 11.10a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 61,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "11.13",
+   "heading": "Artikel 11.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 189,
+   "points": 2,
+   "key_article": true
+  },
+  {
+   "article": "1.1",
+   "heading": "Artikel 1.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 3289,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "1.2",
+   "heading": "Artikel 1.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 35,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "1.3",
+   "heading": "Artikel 1.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 145,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "1.4",
+   "heading": "Artikel 1.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 163,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.1",
+   "heading": "Artikel 2.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 268,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.2",
+   "heading": "Artikel 2.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 75,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.3",
+   "heading": "Artikel 2.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 175,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.4",
+   "heading": "Artikel 2.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 133,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5",
+   "heading": "Artikel 2.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 19,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5a",
+   "heading": "Artikel 2.5a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 27,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5b",
+   "heading": "Artikel 2.5b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 135,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5c",
+   "heading": "Artikel 2.5c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 261,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5d",
+   "heading": "Artikel 2.5d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 132,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "2.5e",
+   "heading": "Artikel 2.5e",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 24,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.1",
+   "heading": "Artikel 3.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 648,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.2",
+   "heading": "Artikel 3.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 69,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.3",
+   "heading": "Artikel 3.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 216,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.4",
+   "heading": "Artikel 3.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 209,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.5",
+   "heading": "Artikel 3.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 69,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.5a",
+   "heading": "Artikel 3.5a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 76,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.5b",
+   "heading": "Artikel 3.5b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 149,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.6",
+   "heading": "Artikel 3.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 174,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.7",
+   "heading": "Artikel 3.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 283,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.8",
+   "heading": "Artikel 3.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 76,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.8a",
+   "heading": "Artikel 3.8a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 316,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.9",
+   "heading": "Artikel 3.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 81,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.10",
+   "heading": "Artikel 3.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 524,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.11",
+   "heading": "Artikel 3.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 121,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.12",
+   "heading": "Artikel 3.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 108,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.13",
+   "heading": "Artikel 3.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 56,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.14",
+   "heading": "Artikel 3.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 314,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.15",
+   "heading": "Artikel 3.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 116,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.16",
+   "heading": "Artikel 3.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 270,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.17",
+   "heading": "Artikel 3.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 309,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.18",
+   "heading": "Artikel 3.18",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 278,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.19",
+   "heading": "Artikel 3.19",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 264,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.19a",
+   "heading": "Artikel 3.19a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 513,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.20",
+   "heading": "Artikel 3.20",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 313,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.20a",
+   "heading": "Artikel 3.20a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 376,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.21",
+   "heading": "Artikel 3.21",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 72,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.22",
+   "heading": "Artikel 3.22",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 377,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.23",
+   "heading": "Artikel 3.23",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 139,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3.24",
+   "heading": "Artikel 3.24",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 27,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.1",
+   "heading": "Artikel 4.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 272,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.1a",
+   "heading": "Artikel 4.1a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 43,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.2",
+   "heading": "Artikel 4.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 678,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.2a",
+   "heading": "Artikel 4.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 75,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.2b",
+   "heading": "Artikel 4.2b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 53,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.3",
+   "heading": "Artikel 4.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 304,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.4",
+   "heading": "Artikel 4.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 108,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.5",
+   "heading": "Artikel 4.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 29,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.6",
+   "heading": "Artikel 4.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 35,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.7",
+   "heading": "Artikel 4.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 294,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.8",
+   "heading": "Artikel 4.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 145,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.9",
+   "heading": "Artikel 4.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 104,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.10",
+   "heading": "Artikel 4.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 600,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.11",
+   "heading": "Artikel 4.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 367,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4.12",
+   "heading": "Artikel 4.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 44,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "5.1",
+   "heading": "Artikel 5.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 39,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.2",
+   "heading": "Artikel 5.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 592,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.3",
+   "heading": "Artikel 5.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 179,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.4",
+   "heading": "Artikel 5.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 410,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.5",
+   "heading": "Artikel 5.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 134,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.6",
+   "heading": "Artikel 5.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 236,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.7",
+   "heading": "Artikel 5.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 152,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.8",
+   "heading": "Artikel 5.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 468,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.9",
+   "heading": "Artikel 5.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 284,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.10",
+   "heading": "Artikel 5.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 34,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.11",
+   "heading": "Artikel 5.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 140,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.12",
+   "heading": "Artikel 5.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.13",
+   "heading": "Artikel 5.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 156,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.14",
+   "heading": "Artikel 5.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 160,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.15",
+   "heading": "Artikel 5.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 63,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.16",
+   "heading": "Artikel 5.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 29,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5.17",
+   "heading": "Artikel 5.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 56,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.1",
+   "heading": "Artikel 5a.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 99,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.2",
+   "heading": "Artikel 5a.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 56,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.3",
+   "heading": "Artikel 5a.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 135,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.4",
+   "heading": "Artikel 5a.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 184,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.5",
+   "heading": "Artikel 5a.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 242,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.6",
+   "heading": "Artikel 5a.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 150,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.7",
+   "heading": "Artikel 5a.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 125,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.8",
+   "heading": "Artikel 5a.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 36,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.9",
+   "heading": "Artikel 5a.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 114,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.10",
+   "heading": "Artikel 5a.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 175,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.11",
+   "heading": "Artikel 5a.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 109,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.12",
+   "heading": "Artikel 5a.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 52,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.13",
+   "heading": "Artikel 5a.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 94,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.14",
+   "heading": "Artikel 5a.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 198,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5a.15",
+   "heading": "Artikel 5a.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 72,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5b.1",
+   "heading": "Artikel 5b.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 104,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5b.2",
+   "heading": "Artikel 5b.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 26,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5b.3",
+   "heading": "Artikel 5b.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5c.1",
+   "heading": "Artikel 5c.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 48,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5c.2",
+   "heading": "Artikel 5c.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 106,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5c.3",
+   "heading": "Artikel 5c.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 138,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5c.4",
+   "heading": "Artikel 5c.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 70,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5c.5",
+   "heading": "Artikel 5c.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 44,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.1",
+   "heading": "Artikel 6.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 223,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.2",
+   "heading": "Artikel 6.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 304,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.3",
+   "heading": "Artikel 6.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 627,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.3a",
+   "heading": "Artikel 6.3a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 410,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.4",
+   "heading": "Artikel 6.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 199,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.5",
+   "heading": "Artikel 6.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 188,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6.6",
+   "heading": "Artikel 6.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.1",
+   "heading": "Artikel 6a.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 600,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.2",
+   "heading": "Artikel 6a.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 315,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.2a",
+   "heading": "Artikel 6a.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 150,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.3",
+   "heading": "Artikel 6a.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 320,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4",
+   "heading": "Artikel 6a.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 176,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4a",
+   "heading": "Artikel 6a.4a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 687,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4b",
+   "heading": "Artikel 6a.4b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 461,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4c",
+   "heading": "Artikel 6a.4c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 236,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4d",
+   "heading": "Artikel 6a.4d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 194,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4e",
+   "heading": "Artikel 6a.4e",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 508,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.4f",
+   "heading": "Artikel 6a.4f",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 146,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.5",
+   "heading": "Artikel 6a.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.6",
+   "heading": "Artikel 6a.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 456,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.6a",
+   "heading": "Artikel 6a.6a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 141,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.7",
+   "heading": "Artikel 6a.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 463,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.8",
+   "heading": "Artikel 6a.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 64,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.9",
+   "heading": "Artikel 6a.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 203,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.10",
+   "heading": "Artikel 6a.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 112,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.11",
+   "heading": "Artikel 6a.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 320,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.12",
+   "heading": "Artikel 6a.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 94,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.13",
+   "heading": "Artikel 6a.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 255,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.14",
+   "heading": "Artikel 6a.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 432,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.15",
+   "heading": "Artikel 6a.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 61,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.16",
+   "heading": "Artikel 6a.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.17",
+   "heading": "Artikel 6a.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.18",
+   "heading": "Artikel 6a.18",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.19",
+   "heading": "Artikel 6a.19",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.20",
+   "heading": "Artikel 6a.20",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 212,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.21",
+   "heading": "Artikel 6a.21",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 334,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.21a",
+   "heading": "Artikel 6a.21a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6a.22",
+   "heading": "Artikel 6a.22",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 49,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.1",
+   "heading": "Artikel 6b.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 139,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.2",
+   "heading": "Artikel 6b.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 778,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.3",
+   "heading": "Artikel 6b.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 117,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.4",
+   "heading": "Artikel 6b.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 51,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.5",
+   "heading": "Artikel 6b.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 135,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6b.6",
+   "heading": "Artikel 6b.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 137,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.1",
+   "heading": "Artikel 7.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 629,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.1aa",
+   "heading": "Artikel 7.1aa",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 54,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.1a",
+   "heading": "Artikel 7.1a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 174,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2",
+   "heading": "Artikel 7.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 218,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2a",
+   "heading": "Artikel 7.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 303,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2ab",
+   "heading": "Artikel 7.2ab",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 191,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2ac",
+   "heading": "Artikel 7.2ac",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 93,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2ad",
+   "heading": "Artikel 7.2ad",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 137,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2ae",
+   "heading": "Artikel 7.2ae",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 140,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2b",
+   "heading": "Artikel 7.2b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 142,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.2c",
+   "heading": "Artikel 7.2c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 364,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3",
+   "heading": "Artikel 7.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 555,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3aa",
+   "heading": "Artikel 7.3aa",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 192,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3ab",
+   "heading": "Artikel 7.3ab",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 100,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3ac",
+   "heading": "Artikel 7.3ac",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 48,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3a",
+   "heading": "Artikel 7.3a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 159,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3b",
+   "heading": "Artikel 7.3b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 156,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3c",
+   "heading": "Artikel 7.3c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 137,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.3d",
+   "heading": "Artikel 7.3d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 101,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.4",
+   "heading": "Artikel 7.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 287,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.4a",
+   "heading": "Artikel 7.4a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 166,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.5",
+   "heading": "Artikel 7.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 49,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.6",
+   "heading": "Artikel 7.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.6a",
+   "heading": "Artikel 7.6a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 403,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.7",
+   "heading": "Artikel 7.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 181,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.7a",
+   "heading": "Artikel 7.7a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 85,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.8",
+   "heading": "Artikel 7.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 163,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7.9",
+   "heading": "Artikel 7.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 46,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7a.1",
+   "heading": "Artikel 7a.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 112,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7a.2",
+   "heading": "Artikel 7a.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 190,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7a.3",
+   "heading": "Artikel 7a.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 43,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7a.4",
+   "heading": "Artikel 7a.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 35,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7a.5",
+   "heading": "Artikel 7a.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 27,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.1",
+   "heading": "Artikel 8.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.2",
+   "heading": "Artikel 8.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.3",
+   "heading": "Artikel 8.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 67,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.4a",
+   "heading": "Artikel 8.4a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 103,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.5",
+   "heading": "Artikel 8.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 188,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.6",
+   "heading": "Artikel 8.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8.7",
+   "heading": "Artikel 8.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 145,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.1",
+   "heading": "Artikel 9.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 149,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.2",
+   "heading": "Artikel 9.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 172,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.3",
+   "heading": "Artikel 9.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 545,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.4",
+   "heading": "Artikel 9.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 318,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.5",
+   "heading": "Artikel 9.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 96,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.6",
+   "heading": "Artikel 9.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 100,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9.7",
+   "heading": "Artikel 9.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 48,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.1",
+   "heading": "Artikel 10.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 106,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.2",
+   "heading": "Artikel 10.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 127,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.3",
+   "heading": "Artikel 10.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 59,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.4",
+   "heading": "Artikel 10.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 174,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.5",
+   "heading": "Artikel 10.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 17,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.6",
+   "heading": "Artikel 10.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 17,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.7",
+   "heading": "Artikel 10.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 59,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.8",
+   "heading": "Artikel 10.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 198,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.9",
+   "heading": "Artikel 10.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 155,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.10",
+   "heading": "Artikel 10.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 51,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.11",
+   "heading": "Artikel 10.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 104,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.11a",
+   "heading": "Artikel 10.11a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 57,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.11b",
+   "heading": "Artikel 10.11b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 36,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.11c",
+   "heading": "Artikel 10.11c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 117,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.11d",
+   "heading": "Artikel 10.11d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 72,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.12",
+   "heading": "Artikel 10.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 42,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.13",
+   "heading": "Artikel 10.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 94,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.14",
+   "heading": "Artikel 10.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 71,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.15",
+   "heading": "Artikel 10.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 264,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.16",
+   "heading": "Artikel 10.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 168,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10.17",
+   "heading": "Artikel 10.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 287,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11.1",
+   "heading": "Artikel 11.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 368,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11.5c",
+   "heading": "Artikel 11.5c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 15,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11.8",
+   "heading": "Artikel 11.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11.8a",
+   "heading": "Artikel 11.8a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 87,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11.12",
+   "heading": "Artikel 11.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 107,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11a.2",
+   "heading": "Artikel 11a.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11a.2a",
+   "heading": "Artikel 11a.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.1",
+   "heading": "Artikel 12.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 76,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.2",
+   "heading": "Artikel 12.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 536,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.3",
+   "heading": "Artikel 12.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 38,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.4",
+   "heading": "Artikel 12.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 100,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.5",
+   "heading": "Artikel 12.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 256,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.6",
+   "heading": "Artikel 12.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.7",
+   "heading": "Artikel 12.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 14,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.8",
+   "heading": "Artikel 12.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 177,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.9",
+   "heading": "Artikel 12.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 196,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.10",
+   "heading": "Artikel 12.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 111,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.10a",
+   "heading": "Artikel 12.10a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 117,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12.11",
+   "heading": "Artikel 12.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 81,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.1",
+   "heading": "Artikel 13.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 45,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.2",
+   "heading": "Artikel 13.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 155,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.2a",
+   "heading": "Artikel 13.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 221,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.2b",
+   "heading": "Artikel 13.2b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 34,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.3",
+   "heading": "Artikel 13.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 40,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.4",
+   "heading": "Artikel 13.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 400,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.5",
+   "heading": "Artikel 13.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 310,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.6",
+   "heading": "Artikel 13.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 143,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.7",
+   "heading": "Artikel 13.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 127,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.8",
+   "heading": "Artikel 13.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 51,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.9",
+   "heading": "Artikel 13.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 75,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13.10",
+   "heading": "Artikel 13.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 17,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.1",
+   "heading": "Artikel 14.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 122,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.2",
+   "heading": "Artikel 14.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 202,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.3",
+   "heading": "Artikel 14.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 52,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.4",
+   "heading": "Artikel 14.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 186,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.5",
+   "heading": "Artikel 14.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 93,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14.6",
+   "heading": "Artikel 14.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 213,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.1",
+   "heading": "Artikel 14a.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 787,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.2",
+   "heading": "Artikel 14a.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 447,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.3",
+   "heading": "Artikel 14a.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 139,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.4",
+   "heading": "Artikel 14a.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 726,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.5",
+   "heading": "Artikel 14a.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 329,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.6",
+   "heading": "Artikel 14a.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 123,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.7",
+   "heading": "Artikel 14a.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 173,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.8",
+   "heading": "Artikel 14a.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 198,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.9",
+   "heading": "Artikel 14a.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 347,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.10",
+   "heading": "Artikel 14a.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 166,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.11",
+   "heading": "Artikel 14a.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 210,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.12",
+   "heading": "Artikel 14a.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 390,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.13",
+   "heading": "Artikel 14a.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 108,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.14",
+   "heading": "Artikel 14a.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 27,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.15",
+   "heading": "Artikel 14a.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 82,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "14a.16",
+   "heading": "Artikel 14a.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 36,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.1",
+   "heading": "Artikel 15.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 537,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.2",
+   "heading": "Artikel 15.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 283,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.2a",
+   "heading": "Artikel 15.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 322,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.3",
+   "heading": "Artikel 15.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 43,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.3a",
+   "heading": "Artikel 15.3a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 79,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.3b",
+   "heading": "Artikel 15.3b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 114,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.3c",
+   "heading": "Artikel 15.3c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 183,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.3d",
+   "heading": "Artikel 15.3d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 173,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.4",
+   "heading": "Artikel 15.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 325,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.5",
+   "heading": "Artikel 15.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.6",
+   "heading": "Artikel 15.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.7",
+   "heading": "Artikel 15.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 74,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.7a",
+   "heading": "Artikel 15.7a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 229,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.7b",
+   "heading": "Artikel 15.7b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 200,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.7c",
+   "heading": "Artikel 15.7c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 368,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.8",
+   "heading": "Artikel 15.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.9",
+   "heading": "Artikel 15.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.10",
+   "heading": "Artikel 15.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.11",
+   "heading": "Artikel 15.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.12",
+   "heading": "Artikel 15.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 37,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.13",
+   "heading": "Artikel 15.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.14",
+   "heading": "Artikel 15.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 19,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.15",
+   "heading": "Artikel 15.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.16",
+   "heading": "Artikel 15.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "15.17",
+   "heading": "Artikel 15.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 60,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "16.1",
+   "heading": "Artikel 16.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 233,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "17.1",
+   "heading": "Artikel 17.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.1",
+   "heading": "Artikel 18.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.2",
+   "heading": "Artikel 18.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 57,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.2a",
+   "heading": "Artikel 18.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 95,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.3",
+   "heading": "Artikel 18.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 305,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.3a",
+   "heading": "Artikel 18.3a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 44,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.4",
+   "heading": "Artikel 18.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 105,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.5",
+   "heading": "Artikel 18.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 86,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.6",
+   "heading": "Artikel 18.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 103,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.7",
+   "heading": "Artikel 18.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 220,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.7a",
+   "heading": "Artikel 18.7a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 344,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.8",
+   "heading": "Artikel 18.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 73,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.9",
+   "heading": "Artikel 18.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 186,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.10",
+   "heading": "Artikel 18.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 38,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.11",
+   "heading": "Artikel 18.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 61,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.12",
+   "heading": "Artikel 18.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 53,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.13",
+   "heading": "Artikel 18.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 86,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.14",
+   "heading": "Artikel 18.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 124,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15",
+   "heading": "Artikel 18.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 102,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15a",
+   "heading": "Artikel 18.15a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 137,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15b",
+   "heading": "Artikel 18.15b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 406,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15c",
+   "heading": "Artikel 18.15c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 161,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15d",
+   "heading": "Artikel 18.15d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 61,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.15e",
+   "heading": "Artikel 18.15e",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 50,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.16",
+   "heading": "Artikel 18.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.16a",
+   "heading": "Artikel 18.16a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.17",
+   "heading": "Artikel 18.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 103,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.17a",
+   "heading": "Artikel 18.17a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 293,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.18",
+   "heading": "Artikel 18.18",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 75,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.19",
+   "heading": "Artikel 18.19",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.20",
+   "heading": "Artikel 18.20",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 264,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.21",
+   "heading": "Artikel 18.21",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 184,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.21a",
+   "heading": "Artikel 18.21a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 42,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "18.22",
+   "heading": "Artikel 18.22",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 96,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.1",
+   "heading": "Artikel 19.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.2",
+   "heading": "Artikel 19.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 219,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.3",
+   "heading": "Artikel 19.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 63,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.4",
+   "heading": "Artikel 19.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.5",
+   "heading": "Artikel 19.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.6",
+   "heading": "Artikel 19.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.7",
+   "heading": "Artikel 19.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 46,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.8",
+   "heading": "Artikel 19.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 44,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.9",
+   "heading": "Artikel 19.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 153,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.10",
+   "heading": "Artikel 19.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "19.11",
+   "heading": "Artikel 19.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.1",
+   "heading": "Artikel 20.1",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 133,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.2",
+   "heading": "Artikel 20.2",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 151,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.2a",
+   "heading": "Artikel 20.2a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 809,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.3",
+   "heading": "Artikel 20.3",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 186,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.4",
+   "heading": "Artikel 20.4",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 73,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.4a",
+   "heading": "Artikel 20.4a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 79,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.4b",
+   "heading": "Artikel 20.4b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 109,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.5",
+   "heading": "Artikel 20.5",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 257,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.6",
+   "heading": "Artikel 20.6",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 109,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.7*",
+   "heading": "Artikel 20.7*",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 234,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.7",
+   "heading": "Artikel 20.7",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 54,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.8",
+   "heading": "Artikel 20.8",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.9",
+   "heading": "Artikel 20.9",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.10",
+   "heading": "Artikel 20.10",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.11",
+   "heading": "Artikel 20.11",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 171,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.12",
+   "heading": "Artikel 20.12",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.13",
+   "heading": "Artikel 20.13",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.14",
+   "heading": "Artikel 20.14",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.15",
+   "heading": "Artikel 20.15",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 137,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.15a",
+   "heading": "Artikel 20.15a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 238,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.16",
+   "heading": "Artikel 20.16",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.16a",
+   "heading": "Artikel 20.16a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 167,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.16b",
+   "heading": "Artikel 20.16b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 40,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.16c",
+   "heading": "Artikel 20.16c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 37,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.17",
+   "heading": "Artikel 20.17",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 29,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.18",
+   "heading": "Artikel 20.18",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 37,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.19",
+   "heading": "Artikel 20.19",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 28,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "20.20",
+   "heading": "Artikel 20.20",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 6,
+   "points": 0,
+   "key_article": false
+  }
+ ],
+ "not_in_corpus": [
+  "recitals (the law's stated purpose)",
+  "constitution and EU Charter",
+  "case law"
+ ]
+}

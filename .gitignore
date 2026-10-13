@@ -4,3 +4,11 @@ __pycache__/
 *.pyc
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
+# Accounts and sign-in sessions of the review tool (password hashes, session tokens)
+data/review/users.json
+data/review/sessions.json
+# Licensed Rijksoverheid font files
+ui/fonts/*.woff
+ui/fonts/*.woff2
+ui/fonts/*.ttf
+ui/fonts/*.otf
