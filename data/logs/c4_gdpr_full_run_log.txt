@@ -1,0 +1,86 @@
+gdpr: 24 units, 48 calls at most, about 1068k characters to write from (model gpt-5.6-terra, effort medium)
+  cached  32016R0679::law::write
+  cached  32016R0679::chapter1::write
+  cached  32016R0679::chapter1::check
+  cached  32016R0679::chapter2::write
+  cached  32016R0679::chapter3::write
+  cached  32016R0679::chapter2::shorten
+  cached  32016R0679::chapter3::check
+  cached  32016R0679::chapter2::check
+  cached  32016R0679::chapter6::write
+  chapter1   157 words nl (target 87-174), 7/7 lines supported
+  chapter3   435 words nl (target 201-402), 7/10 lines supported
+  chapter2   216 words nl (target 110-220), 3/8 lines supported
+  called  32016R0679::chapter8::write
+  called  32016R0679::chapter6::check
+  chapter6   257 words nl (target 133-266), 6/9 lines supported
+  called  32016R0679::chapter7::write
+  called  32016R0679::chapter4::write
+  called  32016R0679::law::check
+  law        874 words nl (target 290-870), 29/35 lines supported
+  called  32016R0679::chapter5::write
+  called  32016R0679::chapter8::shorten
+  called  32016R0679::chapter7::check
+  chapter7   352 words nl (target 246-491), 8/11 lines supported
+  called  32016R0679::chapter10::write
+  called  32016R0679::chapter10::check
+  chapter10  79 words nl (target 40-80), 6/6 lines supported
+  called  32016R0679::chapter8::check
+  chapter8   187 words nl (target 96-191), 6/7 lines supported
+  called  32016R0679::chapter5::check
+  chapter5   262 words nl (target 142-284), 6/9 lines supported
+  called  32016R0679::articles1::write
+  called  32016R0679::chapter11::write
+  called  32016R0679::chapter4::check
+  chapter4   647 words nl (target 348-695), 13/17 lines supported
+  called  32016R0679::articles2::write
+  called  32016R0679::chapter11::check
+  chapter11  83 words nl (target 40-80), 1/4 lines supported
+  called  32016R0679::chapter9::write
+  called  32016R0679::articles1::shorten
+  called  32016R0679::chapter9::check
+  chapter9   99 words nl (target 50-101), 4/6 lines supported
+  called  32016R0679::articles1::check
+  articles1  375 words nl (target 235-392), 13/16 lines supported
+  called  32016R0679::articles2::shorten
+  called  32016R0679::articles5::write
+  called  32016R0679::articles3::write
+  called  32016R0679::articles6::write
+  called  32016R0679::articles2::check
+  articles2  679 words nl (target 414-690), 19/25 lines supported
+  called  32016R0679::articles5::shorten
+  called  32016R0679::articles4::write
+  called  32016R0679::articles3::shorten
+  called  32016R0679::articles7::write
+  called  32016R0679::articles6::shorten
+  called  32016R0679::articles8::write
+  called  32016R0679::articles5::check
+  articles5  682 words nl (target 438-731), 19/25 lines supported
+  called  32016R0679::articles3::check
+  articles3  1313 words nl (target 766-1276), 47/52 lines supported
+  called  32016R0679::articles8::shorten
+  called  32016R0679::articles6::check
+  articles6  874 words nl (target 523-870), 35/39 lines supported
+  called  32016R0679::articles7::shorten
+  called  32016R0679::articles9::write
+  called  32016R0679::articles4::shorten
+  called  32016R0679::articles11::write
+  called  32016R0679::articles10::write
+  called  32016R0679::articles10::check
+  cached  32016R0679::map::write
+  articles10 138 words nl (target 87-144), 5/5 lines supported
+  called  32016R0679::articles8::check
+  articles8  670 words nl (target 410-682), 27/32 lines supported
+  called  32016R0679::articles7::check
+  articles7  1412 words nl (target 840-1400), 56/59 lines supported
+  called  32016R0679::articles9::shorten
+  called  32016R0679::map::check
+  map        701 words nl (target 0-1000000), 21/24 lines supported
+  called  32016R0679::articles11::shorten
+  called  32016R0679::articles11::check
+  articles11 247 words nl (target 153-253), 10/10 lines supported
+  called  32016R0679::articles4::check
+  articles4  2064 words nl (target 1279-2133), 81/85 lines supported
+  called  32016R0679::articles9::check
+  articles9  499 words nl (target 306-510), 16/19 lines supported
+-> C:\JIP\AI-Legislation-Analysis\data\results\c4\simplified_gdpr.json

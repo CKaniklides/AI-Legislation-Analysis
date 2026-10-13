@@ -1,0 +1,1918 @@
+{
+ "instrument_id": "BWBR0048156",
+ "source_file": "BWBR0048156_2025-11-11_provisions.json",
+ "n_articles": 36,
+ "n_words": 7061,
+ "length_targets_words": {
+  "law_sheet": [
+   71,
+   212
+  ],
+  "whole_tree": [
+   353,
+   706
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Hoofdstuk 1. Algemeen",
+   "articles": [
+    "1",
+    "2"
+   ],
+   "n_words": 789,
+   "target_words": [
+    39,
+    79
+   ]
+  },
+  {
+   "title": "Hoofdstuk 2. Algemene regels",
+   "articles": [
+    "3"
+   ],
+   "n_words": 306,
+   "target_words": [
+    15,
+    31
+   ]
+  },
+  {
+   "title": "Hoofdstuk 3. De generieke digitale infrastructuur",
+   "articles": [
+    "4",
+    "5"
+   ],
+   "n_words": 643,
+   "target_words": [
+    32,
+    64
+   ]
+  },
+  {
+   "title": "Hoofdstuk 4. Toegang tot elektronische dienstverlening",
+   "articles": [
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "n_words": 2998,
+   "target_words": [
+    150,
+    300
+   ]
+  },
+  {
+   "title": "Hoofdstuk 5. Bescherming van persoonsgegevens",
+   "articles": [
+    "16"
+   ],
+   "n_words": 104,
+   "target_words": [
+    5,
+    10
+   ]
+  },
+  {
+   "title": "Hoofdstuk 6. Naleving",
+   "articles": [
+    "17",
+    "18",
+    "19"
+   ],
+   "n_words": 632,
+   "target_words": [
+    32,
+    63
+   ]
+  },
+  {
+   "title": "Hoofdstuk 7. Financiële bepalingen",
+   "articles": [
+    "20",
+    "21",
+    "22"
+   ],
+   "n_words": 203,
+   "target_words": [
+    10,
+    20
+   ]
+  },
+  {
+   "title": "Hoofdstuk 7A. Bonaire, Sint Eustatius en Saba",
+   "articles": [
+    "22a",
+    "22b",
+    "22c",
+    "22d",
+    "22e"
+   ],
+   "n_words": 405,
+   "target_words": [
+    20,
+    41
+   ]
+  },
+  {
+   "title": "Hoofdstuk 8. Overgangs- en slotbepalingen",
+   "articles": [
+    "23",
+    "23a",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30"
+   ],
+   "n_words": 981,
+   "target_words": [
+    49,
+    98
+   ]
+  }
+ ],
+ "defined_terms": [
+  {
+   "term": "Onze Minister",
+   "defined_in": "1",
+   "uses": 71,
+   "used_in_articles": 25
+  },
+  {
+   "term": "elektronische dienstverlening",
+   "defined_in": "1",
+   "uses": 42,
+   "used_in_articles": 15
+  },
+  {
+   "term": "aangewezen organisatie",
+   "defined_in": "1",
+   "uses": 41,
+   "used_in_articles": 16
+  },
+  {
+   "term": "identificatiemiddel",
+   "defined_in": "1",
+   "uses": 33,
+   "used_in_articles": 9
+  },
+  {
+   "term": "betrouwbaarheidsniveau",
+   "defined_in": "1",
+   "uses": 23,
+   "used_in_articles": 8
+  },
+  {
+   "term": "bedrijfs- en organisatiemiddel",
+   "defined_in": "1",
+   "uses": 16,
+   "used_in_articles": 8
+  },
+  {
+   "term": "authenticatie",
+   "defined_in": "1",
+   "uses": 13,
+   "used_in_articles": 6
+  },
+  {
+   "term": "erkende dienst",
+   "defined_in": "1",
+   "uses": 11,
+   "used_in_articles": 4
+  },
+  {
+   "term": "eIDAS-verordening",
+   "defined_in": "1",
+   "uses": 10,
+   "used_in_articles": 4
+  },
+  {
+   "term": "toegelaten identificatiemiddel",
+   "defined_in": "1",
+   "uses": 9,
+   "used_in_articles": 5
+  },
+  {
+   "term": "middelenuitgever",
+   "defined_in": "1",
+   "uses": 8,
+   "used_in_articles": 6
+  },
+  {
+   "term": "publiek identificatiemiddel",
+   "defined_in": "1",
+   "uses": 8,
+   "used_in_articles": 4
+  },
+  {
+   "term": "ontsluitende dienst",
+   "defined_in": "1",
+   "uses": 7,
+   "used_in_articles": 5
+  },
+  {
+   "term": "attribuut",
+   "defined_in": "1",
+   "uses": 5,
+   "used_in_articles": 1
+  },
+  {
+   "term": "machtigingsdienst",
+   "defined_in": "1",
+   "uses": 5,
+   "used_in_articles": 4
+  },
+  {
+   "term": "authenticatiedienst",
+   "defined_in": "1",
+   "uses": 4,
+   "used_in_articles": 4
+  },
+  {
+   "term": "privaat identificatiemiddel",
+   "defined_in": "1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "online identiteit",
+   "defined_in": "1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "Onze Minister draagt zorg voor een voorziening",
+   "defined_in": "5",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "Bij het besluit tot toestemming voor overdracht kan Onze Minister",
+   "defined_in": "14",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "Deze wet wordt aangehaald als",
+   "defined_in": "30",
+   "uses": 0,
+   "used_in_articles": 0
+  }
+ ],
+ "duties": [
+  {
+   "article": "2",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": "Van een besluit tot aanwijzing of intrekking",
+   "must": "wordt mededeling gedaan door plaatsing in de Staatscourant",
+   "to_whom": [
+    "de Staatscourant"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "3",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De volgende organen",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover die standaard ingevolge het derde lid op hen van toepassing is"
+   ]
+  },
+  {
+   "article": "4",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "overleggen aan Onze Minister een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels",
+   "to_whom": [
+    "Onze Minister"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "4",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "voldoen aan bij of krachtens algemene maatregel van bestuur te stellen regels met betrekking tot de werking, betrouwbaarheid en beveiliging van de toegang tot elektronische diensten op verschillende betrouwbaarheidsniveaus",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "4",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "aantonen dat zij aan de regels, bedoeld in het eerste lid, voldoen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "5",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "draagt zorg voor een voorziening",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "die het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor bestuursorganen en aangewezen organisaties toegankelijke wijze te ontsluiten",
+    "die het mogelijk maakt identificatiemiddelen voor natuurlijke personen, ondernemingen en rechtspersonen, die behoren tot een door Nederland ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel, op een voor openbare instanties als bedoeld in artikel 3 van de eIDAS-verordening, in andere lidstaten toegankelijke wijze te ontsluiten"
+   ]
+  },
+  {
+   "article": "5",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "draagt zorg voor de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "5",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "De Dienst Wegverkeer",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "draagt namens Onze Minister zorg voor het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "6",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is",
+   "must": "bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten authenticatie op een bepaald betrouwbaarheidsniveau vereist is en doen daarvan op bij die regeling gestelde wijze mededeling",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "volgens bij ministeriële regeling te stellen regels",
+    "op bij die regeling gestelde wijze"
+   ]
+  },
+  {
+   "article": "6",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "elektronische dienstverlening waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+   "must": "uitsluitend toegang tot de dienstverlening indien gebruik wordt gemaakt van identificatiemiddelen die ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau hebben",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+   ]
+  },
+  {
+   "article": "6",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "bepalen volgens bij ministeriële regeling te stellen regels voor welke door hen te verlenen elektronische diensten machtiging op een bepaald betrouwbaarheidsniveau vereist is",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "volgens bij ministeriële regeling te stellen regels"
+   ]
+  },
+  {
+   "article": "7",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Aangewezen organisaties en rechterlijke instanties",
+   "who_type": "REGULATED_ENTITY",
+   "when": "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+   "must": "accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien dit is bepaald bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat"
+   ]
+  },
+  {
+   "article": "7",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "when": "bij hun elektronische dienstverlening aan natuurlijke personen in de uitoefening van beroep of bedrijf waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+   "must": "accepteren bij hun elektronische dienstverlening aan natuurlijke personen in de uitoefening van beroep of bedrijf waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is, ook een toegelaten identificatiemiddel",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien en voor zover dit bij regeling van Onze Minister in overeenstemming met Onze Ministers die het aangaat is bepaald"
+   ]
+  },
+  {
+   "article": "7",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+   "must": "uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nalle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel.",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "bij hun elektronische dienstverlening aan natuurlijke personen"
+   ]
+  },
+  {
+   "article": "7",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "bestuursorganen, aangewezen organisaties en rechterlijke instanties",
+   "who_type": "OTHER",
+   "when": "bij hun dienstverlening aan een natuurlijk persoon",
+   "must": "accepteren bestuursorganen, aangewezen organisaties en rechterlijke instanties bij hun dienstverlening aan een natuurlijk persoon alle erkende bedrijfs- en organisatiemiddelen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien en voor zover dat middel wordt gebruikt in de toegang van een door die natuurlijke persoon gemachtigde houder die met dat middel handelt namens een onderneming of rechtspersoon"
+   ]
+  },
+  {
+   "article": "8",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": "bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "worden uitsluitend gebruikt voor de toegang tot elektronische dienstverlening",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "uitsluitend voor de toegang tot elektronische dienstverlening"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "als bedoeld in het tweede of derde lid"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "een verklaring",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij de aanvraag voor een erkenning",
+   "must": "wordt een verklaring gevoegd van een geaccrediteerde certificerende instelling",
+   "to_whom": [
+    "een geaccrediteerde certificerende instelling"
+   ],
+   "deadline": null,
+   "conditions": [
+    "waaraan het vermoeden kan worden ontleend dat is voldaan aan de eisen die gelden voor de betreffende houder van de erkenning of dat middel"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid",
+   "must": "laat een privaat identificatiemiddel toe door verlening van een erkenning",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid",
+   "must": "laat een private ontsluitende dienst toe door verlening van een erkenning",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties",
+    "de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "9",
+   "kind": "OBLIGATION",
+   "who": "algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden nadere regels gesteld over de procedure van erkenning, wijziging, schorsing of intrekking en de in dat verband over te leggen gegevens en informatie",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "Bij of krachtens algemene maatregel van bestuur"
+   ]
+  },
+  {
+   "article": "9",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien niet wordt voldaan aan de eisen bedoeld in het tweede of derde lid",
+   "must": "weigert een erkenning",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien zwaarwegende redenen zich tegen erkenning verzetten",
+    "in geval ernstig gevaar bestaat voor de cyberveiligheid of staatsveiligheid",
+    "in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt"
+   ]
+  },
+  {
+   "article": "10",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De gebruiker van een toegelaten identificatiemiddel",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "neemt alle nodige maatregelen om misbruik, diefstal, verlies of verspreiding van zijn identificatiemiddel te voorkomen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien zwaarwegende redenen zich tegen erkenning verzetten",
+   "must": "weigert een aanvraag tot erkenning",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "in geval ernstig gevaar bestaat dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt"
+   ]
+  },
+  {
+   "article": "11",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien de dienst voldoet aan de daartoe voor dat betrouwbaarheidsniveau bij of krachtens algemene maatregel van bestuur gestelde regels",
+   "must": "erkent een authenticatiedienst op het betrouwbaarheidsniveau van het bedrijfs- en organisatiemiddel waarvoor hij erkend wenst te worden",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien de dienst voldoet aan de daartoe voor dat betrouwbaarheidsniveau bij of krachtens algemene maatregel van bestuur gestelde regels"
+   ]
+  },
+  {
+   "article": "11",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien de dienst voldoet aan de met betrekking tot die dienst bij of krachtens algemene maatregel van bestuur gestelde regels",
+   "must": "erkent een ontsluitende dienst of een machtigingsdienst",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "de dienst voldoet aan de met betrekking tot die dienst bij of krachtens algemene maatregel van bestuur gestelde regels"
+   ]
+  },
+  {
+   "article": "11",
+   "paragraph": "5",
+   "kind": "OBLIGATION",
+   "who": "een certificaat van conformiteit",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Bij de aanvraag om erkenning",
+   "must": "wordt in elk geval een certificaat van conformiteit verstrekt",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "11",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels",
+   "must": "erkent een middelenuitgever met betrekking tot een door die dienst uit te geven bedrijfs- en organisatiemiddel en het bijbehorende betrouwbaarheidsniveau",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels"
+   ]
+  },
+  {
+   "article": "12",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "erkende diensten",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Indien een attribuut wordt aangewezen",
+   "must": "moet worden betrokken",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening"
+   ]
+  },
+  {
+   "article": "12",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Indien een attribuut is opgenomen in een register, dat berust op een wettelijk voorschrift",
+   "must": "neemt Onze Minister het besluit tot aanwijzing van dat attribuut in overeenstemming met Onze Minister die het mede aangaat",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "dat berust op een wettelijk voorschrift"
+   ]
+  },
+  {
+   "article": "12",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "Van een besluit tot aanwijzing",
+   "must": "doet Onze Minister mededeling in de Staatscourant",
+   "to_whom": [
+    "de Staatscourant"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "13",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Een erkende ontsluitende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "ontsluit alle erkende bedrijfs- en organisatiemiddelen, alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening en alle op grond van artikel 12 aangewezen attributen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "13",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is",
+   "to_whom": [
+    "erkende ontsluitende dienst"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "13",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Een krachtens artikel 11 erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "voldoet aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "14",
+   "paragraph": "7",
+   "kind": "OBLIGATION",
+   "who": "De erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "waarvan de erkenning wordt ingetrokken of overgedragen",
+   "must": "draagt er zorg voor dat alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend, worden overgedragen aan Onze Minister",
+   "to_whom": [
+    "Onze Minister"
+   ],
+   "deadline": null,
+   "conditions": [
+    "die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend"
+   ]
+  },
+  {
+   "article": "14",
+   "paragraph": "8",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "een besluit als bedoeld in dit artikel",
+   "must": "doet Onze Minister mededeling in de Staatscourant",
+   "to_whom": [
+    "de Staatscourant"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "14",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "De erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "when": "zijn verzoek",
+   "must": "voegt bij zijn verzoek een beëindigingsplan",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "14",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "indien daarmee naar zijn oordeel de daadwerkelijke mededinging wordt of dreigt te worden verstoord of indien de continuïteit van een betrouwbare toegang tot elektronische dienstverlening met erkende bedrijfs- en organisatiemiddelen als gevolg van die overdracht in het geding dreigt te komen",
+   "must": "verleent geen toestemming voor overdracht",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover die rechtspersoon voldoet aan de bij of krachtens artikel 13 gestelde eisen",
+    "indien daarmee naar zijn oordeel de daadwerkelijke mededinging wordt of dreigt te worden verstoord",
+    "indien de continuïteit van een betrouwbare toegang tot elektronische dienstverlening met erkende bedrijfs- en organisatiemiddelen als gevolg van die overdracht in het geding dreigt te komen"
+   ]
+  },
+  {
+   "article": "15",
+   "paragraph": "7",
+   "kind": "PROHIBITION",
+   "who": "Een besluit als bedoeld in het vijfde lid",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "een bedrijfs- of organisatiemiddel dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid",
+   "must": "wordt niet genomen",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid"
+   ]
+  },
+  {
+   "article": "15",
+   "paragraph": "3",
+   "kind": "PROHIBITION",
+   "who": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "het aanmaken van en de toegang tot een beveiligde elektronische postbus die deel uitmaakt van de elektronische omgeving van het centraal loket, bedoeld in artikel 1 van de Dienstenwet, voor een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is",
+    "elektronische dienstverlening die plaatsvindt via het centraal loket, bedoeld in artikel 1 van de Dienstenwet, aan een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is"
+   ]
+  },
+  {
+   "article": "15",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "bij de toegang tot hun elektronische dienstverlening",
+   "must": "accepteren in elk geval een van de op grond van artikel 11, derde lid, erkende ontsluitende diensten",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "alle en uitsluitend erkende bedrijfs- en organisatiemiddelen en door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon op te treden bij de toegang tot elektronische dienstverlening aan die onderneming of rechtspersoon",
+    "een van de op grond van artikel 11, derde lid, erkende ontsluitende diensten"
+   ]
+  },
+  {
+   "article": "16",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister, alsmede bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "verwerken persoonsgegevens, waaronder het burgerservicenummer",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "voor zover dit noodzakelijk is voor de goede uitvoering van hun taken en verplichtingen ingevolge deze wet"
+   ]
+  },
+  {
+   "article": "16",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden regels gesteld over de persoonsgegevens die worden verwerkt, aan wie deze gegevens worden verstrekt en hoe lang deze worden bewaard",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "17",
+   "paragraph": "6",
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": "Van een besluit als bedoeld in het eerste, tweede, vierde en vijfde lid",
+   "must": "wordt mededeling gedaan door plaatsing in de Staatscourant",
+   "to_whom": [
+    "de Staatscourant"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "18",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "De desbetreffende toezichthouder",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde",
+   "must": "stelt Onze Minister onverwijld in kennis van niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde",
+   "to_whom": [
+    "Onze Minister"
+   ],
+   "deadline": "onverwijld",
+   "conditions": []
+  },
+  {
+   "article": "18",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Een bestuursorgaan of een aangewezen organisatie",
+   "who_type": "REGULATED_ENTITY",
+   "when": "een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
+   "must": "stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
+   "to_whom": [
+    "Onze Minister"
+   ],
+   "deadline": "onverwijld",
+   "conditions": []
+  },
+  {
+   "article": "19",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten",
+   "who_type": "REGULATED_ENTITY",
+   "when": "desgevraagd en uit eigen beweging",
+   "must": "verstrekken aan Onze Minister desgevraagd en uit eigen beweging de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen",
+   "to_whom": [
+    "Onze Minister"
+   ],
+   "deadline": null,
+   "conditions": [
+    "op grond van artikel 9, tweede of derde lid,",
+    "op grond van artikel 11"
+   ]
+  },
+  {
+   "article": "19",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "over de inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening",
+   "must": "verstrekt gegevens en inlichtingen",
+   "to_whom": [
+    "bestuursorganen en aangewezen organisaties",
+    "de ingevolge artikel 9, tweede of derde lid, toegelaten houder van een erkenning",
+    "een ingevolge artikel 11 erkende middelenuitgever of dienst"
+   ],
+   "deadline": null,
+   "conditions": [
+    "voor zover dit noodzakelijk is voor een goede uitoefening van hun taken of te verlenen diensten in het kader van deze wet"
+   ]
+  },
+  {
+   "article": "20",
+   "paragraph": "1",
+   "kind": "OBLIGATION",
+   "who": "het Rijk",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "ten laste gebracht van de verkrijger van dit middel",
+   "to_whom": [
+    "de verkrijger van dit middel"
+   ],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "21",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "De kosten die het Rijk maakt samenhangend met de uitvoering van de artikelen 5 en 9",
+   "must": "worden door Onze Minister ten laste gebracht van de bestuursorganen, aangewezen organisaties en andere organen die het betreft",
+   "to_whom": [
+    "de bestuursorganen, aangewezen organisaties en andere organen die het betreft"
+   ],
+   "deadline": null,
+   "conditions": [
+    "samenhangend met de uitvoering van de artikelen 5 en 9"
+   ]
+  },
+  {
+   "article": "22",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "Bij of krachtens algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "worden regels gesteld over de hoogte en het opleggen van de heffing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "waarbij onderscheid kan worden gemaakt tussen verschillende categorieën handelingen als bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "22c",
+   "paragraph": null,
+   "kind": "PROHIBITION",
+   "who": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c, en artikel 15, achtste lid",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "in een openbaar lichaam"
+   ]
+  },
+  {
+   "article": "23",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "de inwerkingtreding van deze wet",
+   "must": "zendt binnen drie jaar na de inwerkingtreding van deze wet aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk",
+   "to_whom": [
+    "de Staten-Generaal"
+   ],
+   "deadline": "binnen drie jaar na de inwerkingtreding van deze wet",
+   "conditions": []
+  },
+  {
+   "article": "24",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": "partijen die binnen het private stelsel, bedoeld in het eerste en tweede lid, uitsluitend activiteiten op het niveau 1 uitvoeren",
+   "who_type": "REGULATED_ENTITY",
+   "when": null,
+   "must": "Dit artikel is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "binnen het private stelsel, bedoeld in het eerste en tweede lid",
+    "uitsluitend activiteiten op het niveau 1 uitvoeren"
+   ]
+  },
+  {
+   "article": "25",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur",
+   "who_type": "REGULATED_ENTITY",
+   "when": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur wordt aan beide Kamers der Staten-Generaal overgelegd",
+   "must": "wordt aan beide Kamers der Staten-Generaal overgelegd",
+   "to_whom": [
+    "beide Kamers der Staten-Generaal"
+   ],
+   "deadline": "nadat vier weken na de overlegging zijn verstreken",
+   "conditions": [
+    "tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld",
+    "Indien het voorstel van wet wordt ingetrokken",
+    "indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen"
+   ]
+  },
+  {
+   "article": "25",
+   "paragraph": "1",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": "het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "must": "Een voordracht voor een krachtens de artikelen 4, 5, vijfde en zesde lid, 9, 11, 13 en 22 te stellen algemene maatregel van bestuur wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "to_whom": [],
+   "deadline": "vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "conditions": []
+  },
+  {
+   "article": "25",
+   "paragraph": "2",
+   "kind": "PROHIBITION",
+   "who": "De voordracht",
+   "who_type": "OTHER",
+   "when": "nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "must": "wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "to_whom": [],
+   "deadline": "vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "conditions": [
+    "tenzij binnen deze termijn door of namens een van de Kamers of door ten minste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven het onderwerp van de algemene maatregel van bestuur bij wet te regelen"
+   ]
+  },
+  {
+   "article": "26",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": null,
+   "who_type": null,
+   "when": "Een experiment als bedoeld in het eerste lid",
+   "must": "duurt ten hoogste vier jaar",
+   "to_whom": [],
+   "deadline": "ten hoogste vier jaar",
+   "conditions": [
+    "als bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "26",
+   "paragraph": "4",
+   "kind": "OBLIGATION",
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
+   "must": "zendt negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van het experiment, alsmede een standpunt inzake de voortzetting anders dan als experiment",
+   "to_whom": [
+    "de Staten-Generaal"
+   ],
+   "deadline": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
+   "conditions": [
+    "als bedoeld in het eerste lid"
+   ]
+  },
+  {
+   "article": "29",
+   "paragraph": "3",
+   "kind": "OBLIGATION",
+   "who": "een bestuursorgaan of aangewezen organisatie",
+   "who_type": "REGULATED_ENTITY",
+   "when": "nadat dat bestuursorgaan of die aangewezen organisatie kan worden aangesloten op de in artikel 5, eerste lid, onderdelen a tot en met e, en tweede lid bedoelde infrastructuur en voorzieningen overeenkomstig het bij regeling van Onze Minister, gehoord Onze Ministers die het mede aangaat, op te stellen aansluitschema",
+   "must": "zijn voor een bestuursorgaan of aangewezen organisatie niet eerder van toepassing",
+   "to_whom": [],
+   "deadline": "niet eerder van toepassing dan nadat dat bestuursorgaan of die aangewezen organisatie kan worden aangesloten",
+   "conditions": [
+    "voor een bestuursorgaan of aangewezen organisatie",
+    "overeenkomstig het bij regeling van Onze Minister, gehoord Onze Ministers die het mede aangaat, op te stellen aansluitschema"
+   ]
+  }
+ ],
+ "stakeholder_matrix": [
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 11,
+   "articles": [
+    "5",
+    "9",
+    "11",
+    "12",
+    "14"
+   ],
+   "example": "draagt zorg voor een voorziening"
+  },
+  {
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 8,
+   "articles": [
+    "4",
+    "6",
+    "7",
+    "8",
+    "15"
+   ],
+   "example": "voldoen aan bij of krachtens algemene maatregel van bestuur te stellen regels met betrekking tot de werking, betrouwbaarheid en beveiliging van de toegang tot elektronische diensten op verschillende betrouwbaarheidsniveaus"
+  },
+  {
+   "who": "algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "9",
+    "16"
+   ],
+   "example": "worden nadere regels gesteld over de procedure van erkenning, wijziging, schorsing of intrekking en de in dat verband over te leggen gegevens en informatie"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Staatscourant",
+   "n_duties": 2,
+   "articles": [
+    "12",
+    "14"
+   ],
+   "example": "doet Onze Minister mededeling in de Staatscourant"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Staten-Generaal",
+   "n_duties": 2,
+   "articles": [
+    "23",
+    "26"
+   ],
+   "example": "zendt binnen drie jaar na de inwerkingtreding van deze wet aan de Staten-Generaal een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk"
+  },
+  {
+   "who": "De volgende organen",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "3"
+   ],
+   "example": "passen de ingevolge het tweede lid aangewezen standaarden voor elektronisch verkeer toe"
+  },
+  {
+   "who": "Bestuursorganen en aangewezen organisaties",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Onze Minister",
+   "n_duties": 1,
+   "articles": [
+    "4"
+   ],
+   "example": "overleggen aan Onze Minister een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels"
+  },
+  {
+   "who": "De Dienst Wegverkeer",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "5"
+   ],
+   "example": "draagt namens Onze Minister zorg voor het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs"
+  },
+  {
+   "who": "Aangewezen organisaties en rechterlijke instanties",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend"
+  },
+  {
+   "who": "Bestuursorganen",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "uitsluitend:\n\na.\nalle toegelaten identificatiemiddelen,\n\nb.\nelektronische verklaringen als bedoeld in artikel 5, eerste lid, onderdeel b, en\n\nc.\nalle identificatiemiddelen die behoren tot een door een lidstaat van de Europese Unie ingevolge de eIDAS-verordening bij de Europese Commissie aangemeld en goedgekeurd stelsel."
+  },
+  {
+   "who": "bestuursorganen, aangewezen organisaties en rechterlijke instanties",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "7"
+   ],
+   "example": "accepteren bestuursorganen, aangewezen organisaties en rechterlijke instanties bij hun dienstverlening aan een natuurlijk persoon alle erkende bedrijfs- en organisatiemiddelen"
+  },
+  {
+   "who": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "9"
+   ],
+   "example": "voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen"
+  },
+  {
+   "who": "een verklaring",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "een geaccrediteerde certificerende instelling",
+   "n_duties": 1,
+   "articles": [
+    "9"
+   ],
+   "example": "wordt een verklaring gevoegd van een geaccrediteerde certificerende instelling"
+  },
+  {
+   "who": "De gebruiker van een toegelaten identificatiemiddel",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "10"
+   ],
+   "example": "neemt alle nodige maatregelen om misbruik, diefstal, verlies of verspreiding van zijn identificatiemiddel te voorkomen"
+  },
+  {
+   "who": "een certificaat van conformiteit",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "11"
+   ],
+   "example": "wordt in elk geval een certificaat van conformiteit verstrekt"
+  },
+  {
+   "who": "erkende diensten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "12"
+   ],
+   "example": "moet worden betrokken"
+  },
+  {
+   "who": "Een erkende ontsluitende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "13"
+   ],
+   "example": "ontsluit alle erkende bedrijfs- en organisatiemiddelen, alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening en alle op grond van artikel 12 aangewezen attributen"
+  },
+  {
+   "who": "Een erkende middelenuitgever, erkende authenticatiedienst en erkende machtigingsdienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "erkende ontsluitende dienst",
+   "n_duties": 1,
+   "articles": [
+    "13"
+   ],
+   "example": "verlenen aan een erkende ontsluitende dienst alle benodigde medewerking die voor een goede ontsluiting van een erkend bedrijfs- en organisatiemiddel en een betrouwbare toegang tot de gewenste elektronische dienstverlening noodzakelijk is"
+  },
+  {
+   "who": "Een krachtens artikel 11 erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "13"
+   ],
+   "example": "voldoet aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen"
+  },
+  {
+   "who": "De erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Onze Minister",
+   "n_duties": 1,
+   "articles": [
+    "14"
+   ],
+   "example": "draagt er zorg voor dat alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend, worden overgedragen aan Onze Minister"
+  },
+  {
+   "who": "De erkende dienst",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "14"
+   ],
+   "example": "voegt bij zijn verzoek een beëindigingsplan"
+  },
+  {
+   "who": "Een besluit als bedoeld in het vijfde lid",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "15"
+   ],
+   "example": "wordt niet genomen"
+  },
+  {
+   "who": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "15"
+   ],
+   "example": "uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren"
+  },
+  {
+   "who": "Onze Minister, alsmede bestuursorganen en aangewezen organisaties",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "16"
+   ],
+   "example": "verwerken persoonsgegevens, waaronder het burgerservicenummer"
+  },
+  {
+   "who": "De desbetreffende toezichthouder",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "Onze Minister",
+   "n_duties": 1,
+   "articles": [
+    "18"
+   ],
+   "example": "stelt Onze Minister onverwijld in kennis van niet-naleving door een bestuursorgaan of aangewezen organisatie van het bij of krachtens de artikelen 4, 7, 8 en 15 bepaalde"
+  },
+  {
+   "who": "Een bestuursorgaan of een aangewezen organisatie",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Onze Minister",
+   "n_duties": 1,
+   "articles": [
+    "18"
+   ],
+   "example": "stelt Onze Minister onverwijld in kennis van een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening"
+  },
+  {
+   "who": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "Onze Minister",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "verstrekken aan Onze Minister desgevraagd en uit eigen beweging de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "bestuursorganen en aangewezen organisaties",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "verstrekt gegevens en inlichtingen"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de ingevolge artikel 9, tweede of derde lid, toegelaten houder van een erkenning",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "verstrekt gegevens en inlichtingen"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "een ingevolge artikel 11 erkende middelenuitgever of dienst",
+   "n_duties": 1,
+   "articles": [
+    "19"
+   ],
+   "example": "verstrekt gegevens en inlichtingen"
+  },
+  {
+   "who": "het Rijk",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de verkrijger van dit middel",
+   "n_duties": 1,
+   "articles": [
+    "20"
+   ],
+   "example": "ten laste gebracht van de verkrijger van dit middel"
+  },
+  {
+   "who": "Onze Minister",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de bestuursorganen, aangewezen organisaties en andere organen die het betreft",
+   "n_duties": 1,
+   "articles": [
+    "21"
+   ],
+   "example": "worden door Onze Minister ten laste gebracht van de bestuursorganen, aangewezen organisaties en andere organen die het betreft"
+  },
+  {
+   "who": "Bij of krachtens algemene maatregel van bestuur",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "22"
+   ],
+   "example": "worden regels gesteld over de hoogte en het opleggen van de heffing"
+  },
+  {
+   "who": "Artikel 7, eerste lid, onderdeel c, en tweede lid, onderdeel c, en artikel 15, achtste lid",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "22c"
+   ],
+   "example": "zijn niet van toepassing"
+  },
+  {
+   "who": "partijen die binnen het private stelsel, bedoeld in het eerste en tweede lid, uitsluitend activiteiten op het niveau 1 uitvoeren",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "24"
+   ],
+   "example": "Dit artikel is niet van toepassing"
+  },
+  {
+   "who": "Een krachtens artikel 5, zesde lid, vastgestelde algemene maatregel van bestuur",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "beide Kamers der Staten-Generaal",
+   "n_duties": 1,
+   "articles": [
+    "25"
+   ],
+   "example": "wordt aan beide Kamers der Staten-Generaal overgelegd"
+  },
+  {
+   "who": "De voordracht",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "25"
+   ],
+   "example": "wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd"
+  },
+  {
+   "who": "een bestuursorgaan of aangewezen organisatie",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "29"
+   ],
+   "example": "zijn voor een bestuursorgaan of aangewezen organisatie niet eerder van toepassing"
+  }
+ ],
+ "exceptions": [
+  {
+   "article": "2",
+   "paragraph": "3",
+   "rule": "worden rechterlijke instanties gelijkgesteld met bestuursorganen en aangewezen organisaties",
+   "exception": [
+    "tenzij bij of krachtens deze wet anders is bepaald"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "7",
+   "paragraph": "2",
+   "rule": "accepteren bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is uitsluitend",
+   "exception": [],
+   "yields_to": "onverminderd het bepaalde in artikel 6 van de eIDAS-verordening"
+  },
+  {
+   "article": "25",
+   "paragraph": "3",
+   "rule": "wordt aan beide Kamers der Staten-Generaal overgelegd",
+   "exception": [
+    "tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld"
+   ],
+   "yields_to": null
+  },
+  {
+   "article": "25",
+   "paragraph": "2",
+   "rule": "wordt niet eerder gedaan dan vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+   "exception": [
+    "tenzij binnen deze termijn door of namens een van de Kamers of door ten minste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven het onderwerp van de algemene maatregel van bestuur bij wet te regelen"
+   ],
+   "yields_to": null
+  }
+ ],
+ "articles_by_importance": [
+  {
+   "article": "7",
+   "heading": "Artikel 7. Acceptatie",
+   "cited_by_articles": 6,
+   "n_duties_on_regulated": 2,
+   "fine_backed": true,
+   "n_words": 329,
+   "points": 15,
+   "key_article": true
+  },
+  {
+   "article": "9",
+   "heading": "Artikel 9. Toelaten van identificatiemiddelen en diensten",
+   "cited_by_articles": 6,
+   "n_duties_on_regulated": 2,
+   "fine_backed": true,
+   "n_words": 549,
+   "points": 15,
+   "key_article": true
+  },
+  {
+   "article": "4",
+   "heading": "Artikel 4. Informatieveiligheid",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 3,
+   "fine_backed": true,
+   "n_words": 92,
+   "points": 14,
+   "key_article": true
+  },
+  {
+   "article": "13",
+   "heading": "Artikel 13. Rechten en plichten voor erkende diensten",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 3,
+   "fine_backed": true,
+   "n_words": 301,
+   "points": 14,
+   "key_article": true
+  },
+  {
+   "article": "3",
+   "heading": "Artikel 3. Standaarden",
+   "cited_by_articles": 8,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 306,
+   "points": 13,
+   "key_article": true
+  },
+  {
+   "article": "8",
+   "heading": "Artikel 8. Gebruik in publieke domein",
+   "cited_by_articles": 5,
+   "n_duties_on_regulated": 1,
+   "fine_backed": true,
+   "n_words": 151,
+   "points": 12,
+   "key_article": true
+  },
+  {
+   "article": "11",
+   "heading": "Artikel 11. Erkenning bedrijfs- en organisatiemiddel en bijbehorende diensten",
+   "cited_by_articles": 9,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 372,
+   "points": 11,
+   "key_article": true
+  },
+  {
+   "article": "5",
+   "heading": "Artikel 5. Verantwoordelijkheid voor het beheer",
+   "cited_by_articles": 9,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 551,
+   "points": 9,
+   "key_article": true
+  },
+  {
+   "article": "6",
+   "heading": "Artikel 6. Betrouwbaarheidsniveaus",
+   "cited_by_articles": 4,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 178,
+   "points": 9,
+   "key_article": false
+  },
+  {
+   "article": "15",
+   "heading": "Artikel 15. Acceptatie bedrijfs- en organisatiemiddelen",
+   "cited_by_articles": 6,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 511,
+   "points": 8,
+   "key_article": false
+  },
+  {
+   "article": "23",
+   "heading": "Artikel 23. Evaluatie",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 52,
+   "points": 6,
+   "key_article": false
+  },
+  {
+   "article": "14",
+   "heading": "Artikel 14. Intrekking en overdracht van erkenning",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 2,
+   "fine_backed": false,
+   "n_words": 415,
+   "points": 4,
+   "key_article": false
+  },
+  {
+   "article": "1",
+   "heading": "Artikel 1. Definities",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 448,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "12",
+   "heading": "Artikel 12. Aanwijzing van attributen",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 146,
+   "points": 3,
+   "key_article": false
+  },
+  {
+   "article": "2",
+   "heading": "Artikel 2. Reikwijdte",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 341,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "10",
+   "heading": "Artikel 10. Regels ten aanzien van gebruik",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 46,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "16",
+   "heading": "Artikel 16. Bescherming persoonsgegevens",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 104,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "18",
+   "heading": "Artikel 18. Bijzondere bevoegdheden",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 211,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "19",
+   "heading": "Artikel 19. Informatieverstrekking",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 136,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "24",
+   "heading": "Artikel 24. Overgangsrecht bedrijfs- en organisatiemiddel",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 341,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "25",
+   "heading": "Artikel 25. Parlementaire betrokkenheid bij gedelegeerde regelgeving",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 249,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "29",
+   "heading": "Artikel 29. Inwerkingtreding",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 157,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "20",
+   "heading": "Artikel 20. Leges voor verstrekking publiek identificatiemiddel",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 71,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "21",
+   "heading": "Artikel 21. Doorberekening kosten",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 41,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "17",
+   "heading": "Artikel 17. Toezicht en handhaving",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 285,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22",
+   "heading": "Artikel 22. Doorberekening aanvraag erkenning en toezicht op naleving erkenningseisen",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 91,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22a",
+   "heading": "Artikel 22a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 47,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22b",
+   "heading": "Artikel 22b",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 254,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22c",
+   "heading": "Artikel 22c",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 24,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22d",
+   "heading": "Artikel 22d",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 46,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "22e",
+   "heading": "Artikel 22e",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 34,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "23a",
+   "heading": "Artikel 23a",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 2,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "26",
+   "heading": "Artikel 26. Innovatie",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 127,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "27",
+   "heading": "Artikel 27. Wijziging Wegenverkeerswet 1994",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 5,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "28",
+   "heading": "Artikel 28. Omhangen",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 40,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "30",
+   "heading": "Artikel 30. Citeertitel",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 8,
+   "points": 0,
+   "key_article": false
+  }
+ ],
+ "not_in_corpus": [
+  "recitals (the law's stated purpose)",
+  "constitution and EU Charter",
+  "case law"
+ ]
+}

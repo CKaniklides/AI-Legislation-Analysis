@@ -1,0 +1,182 @@
+{
+ "instrument_id": "BWBR0049497",
+ "source_file": "BWBR0049497_2026-08-15_provisions.json",
+ "n_articles": 13,
+ "n_words": 482,
+ "length_targets_words": {
+  "law_sheet": [
+   5,
+   14
+  ],
+  "whole_tree": [
+   24,
+   48
+  ]
+ },
+ "chapters": [
+  {
+   "title": "(geen hoofdstuk)",
+   "articles": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   "n_words": 482,
+   "target_words": [
+    24,
+    48
+   ]
+  }
+ ],
+ "defined_terms": [],
+ "duties": [],
+ "stakeholder_matrix": [],
+ "exceptions": [],
+ "articles_by_importance": [
+  {
+   "article": "1",
+   "heading": "Artikel 1. Begripsbepaling",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 12,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "2",
+   "heading": "Artikel 2. Aanwijzing bevoegde autoriteiten",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 105,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "3",
+   "heading": "Artikel 3. Handhaving",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 194,
+   "points": 0,
+   "key_article": true
+  },
+  {
+   "article": "4",
+   "heading": "Artikel 4. Buitengerechtelijke geschillenbeslechting",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 20,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5",
+   "heading": "Artikel 5. Overige bepalingen",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "6",
+   "heading": "Artikel 6. Wijziging Besluit Gedragstoezicht financiële ondernemingen Wft",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 8,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "7",
+   "heading": "Artikel 7. Wijziging Besluit prudentiële regels Wft",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 7,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8",
+   "heading": "Artikel 8. Wijziging Besluit marktmisbruik Wft",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 6,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9",
+   "heading": "Artikel 9. Wijziging Wijzigingsbesluit financiële markten 2023",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 7,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "10",
+   "heading": "Artikel 10. Intrekken besluiten",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 31,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11",
+   "heading": "Artikel 11. Overgangsrecht",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 40,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12",
+   "heading": "Artikel 12. Inwerkingtreding",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 13,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13",
+   "heading": "Artikel 13. Citeertitel",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 8,
+   "points": 0,
+   "key_article": false
+  }
+ ],
+ "not_in_corpus": [
+  "recitals (the law's stated purpose)",
+  "constitution and EU Charter",
+  "case law"
+ ]
+}

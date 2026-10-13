@@ -1,0 +1,381 @@
+{
+ "instrument_id": "BWBR0051796",
+ "source_file": "BWBR0051796_2025-11-21_provisions.json",
+ "n_articles": 14,
+ "n_words": 1377,
+ "length_targets_words": {
+  "law_sheet": [
+   14,
+   41
+  ],
+  "whole_tree": [
+   69,
+   138
+  ]
+ },
+ "chapters": [
+  {
+   "title": "(geen hoofdstuk)",
+   "articles": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "n_words": 1377,
+   "target_words": [
+    69,
+    138
+   ]
+  }
+ ],
+ "defined_terms": [
+  {
+   "term": "dataverordening",
+   "defined_in": "1",
+   "uses": 25,
+   "used_in_articles": 8
+  },
+  {
+   "term": "Autoriteit Consument en Markt",
+   "defined_in": "1",
+   "uses": 13,
+   "used_in_articles": 7
+  },
+  {
+   "term": "Autoriteit persoonsgegevens",
+   "defined_in": "1",
+   "uses": 12,
+   "used_in_articles": 4
+  },
+  {
+   "term": "Deze wet wordt aangehaald als",
+   "defined_in": "14",
+   "uses": 0,
+   "used_in_articles": 0
+  }
+ ],
+ "duties": [
+  {
+   "article": "2",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "De Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": null,
+   "must": "geeft uitvoering aan artikel 10, zesde lid, van de dataverordening",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "5",
+   "paragraph": "5",
+   "kind": "PROHIBITION",
+   "who": "Het eerste en tweede lid",
+   "who_type": "OTHER",
+   "when": "gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening",
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  },
+  {
+   "article": "5",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": null,
+   "who_type": null,
+   "when": null,
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "op inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet"
+   ]
+  },
+  {
+   "article": "6",
+   "paragraph": "2",
+   "kind": "OBLIGATION",
+   "who": "de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "when": "uit eigen beweging en desgevraagd",
+   "must": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+   "to_whom": [
+    "de Autoriteit Consument en Markt",
+    "de Autoriteit persoonsgegevens"
+   ],
+   "deadline": null,
+   "conditions": [
+    "die noodzakelijk zijn voor de uitvoering van deze wet"
+   ]
+  },
+  {
+   "article": "8",
+   "paragraph": "5",
+   "kind": "PROHIBITION",
+   "who": "Het eerste en tweede lid",
+   "who_type": "OTHER",
+   "when": null,
+   "must": "zijn niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": [
+    "ten aanzien van gedragingen van de Europese Commissie, de Europese Centrale Bank of organen van de Unie als bedoeld in artikel 2, onderdeel 27, van de dataverordening"
+   ]
+  },
+  {
+   "article": "8",
+   "paragraph": "4",
+   "kind": "PROHIBITION",
+   "who": "Het eerste lid",
+   "who_type": "OTHER",
+   "when": "inbreuken of inbreuken binnen de Unie als bedoeld in artikel 1 van de Wet handhaving consumentenbescherming ten aanzien van de bepalingen van de dataverordening genoemd in onderdeel a van de bijlage bij die wet",
+   "must": "is niet van toepassing",
+   "to_whom": [],
+   "deadline": null,
+   "conditions": []
+  }
+ ],
+ "stakeholder_matrix": [
+  {
+   "who": "Het eerste en tweede lid",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 2,
+   "articles": [
+    "5",
+    "8"
+   ],
+   "example": "zijn niet van toepassing"
+  },
+  {
+   "who": "De Autoriteit Consument en Markt",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "2"
+   ],
+   "example": "geeft uitvoering aan artikel 10, zesde lid, van de dataverordening"
+  },
+  {
+   "who": "de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Autoriteit Consument en Markt",
+   "n_duties": 1,
+   "articles": [
+    "6"
+   ],
+   "example": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet"
+  },
+  {
+   "who": "de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens",
+   "who_type": "COMPETENT_AUTHORITY",
+   "to_whom": "de Autoriteit persoonsgegevens",
+   "n_duties": 1,
+   "articles": [
+    "6"
+   ],
+   "example": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet"
+  },
+  {
+   "who": "Het eerste lid",
+   "who_type": "OTHER",
+   "to_whom": "(niemand genoemd)",
+   "n_duties": 1,
+   "articles": [
+    "8"
+   ],
+   "example": "is niet van toepassing"
+  }
+ ],
+ "exceptions": [
+  {
+   "article": "3",
+   "paragraph": "1",
+   "rule": "is de bevoegde autoriteit",
+   "exception": [],
+   "yields_to": "bedoeld in artikel 37, eerste lid, van de dataverordening"
+  },
+  {
+   "article": "3",
+   "paragraph": "3",
+   "rule": "is de bevoegde autoriteit",
+   "exception": [],
+   "yields_to": "bedoeld in artikel 37, eerste lid, van de dataverordening"
+  },
+  {
+   "article": "4",
+   "paragraph": null,
+   "rule": "is de datacoördinator",
+   "exception": [],
+   "yields_to": "bedoeld in artikel 37, tweede lid, van de dataverordening"
+  },
+  {
+   "article": "6",
+   "paragraph": "2",
+   "rule": "aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+   "exception": [],
+   "yields_to": "Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt"
+  }
+ ],
+ "articles_by_importance": [
+  {
+   "article": "4",
+   "heading": "Artikel 4. Aanwijzing datacoördinator",
+   "cited_by_articles": 3,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 17,
+   "points": 8,
+   "key_article": true
+  },
+  {
+   "article": "2",
+   "heading": "Artikel 2. Geschillenbeslechtingsorgaan",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 96,
+   "points": 7,
+   "key_article": true
+  },
+  {
+   "article": "3",
+   "heading": "Artikel 3. Aanwijzing bevoegde autoriteiten",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": true,
+   "n_words": 237,
+   "points": 6,
+   "key_article": true
+  },
+  {
+   "article": "6",
+   "heading": "Artikel 6. Samenwerking ACM en AP",
+   "cited_by_articles": 2,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 99,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "7",
+   "heading": "Artikel 7. Samenwerking ACM en andere bevoegde autoriteiten",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 97,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "10",
+   "heading": "Artikel 10. Wijziging Databankenwet",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 4,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "14",
+   "heading": "Artikel 14. Citeertitel",
+   "cited_by_articles": 1,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 7,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "1",
+   "heading": "Artikel 1. Begripsbepaling",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 89,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "5",
+   "heading": "Artikel 5. Aanwijzing toezichthouders",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 261,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "8",
+   "heading": "Artikel 8. Sanctionering",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 405,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "9",
+   "heading": "Artikel 9. Wijziging Algemene wet bestuursrecht",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 6,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "11",
+   "heading": "Artikel 11. Wijziging Wet handhaving consumentenbescherming",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 6,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "12",
+   "heading": "Artikel 12. Wijziging Wet hergebruik overheidsinformatie",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 7,
+   "points": 0,
+   "key_article": false
+  },
+  {
+   "article": "13",
+   "heading": "Artikel 13. Inwerkingtreding",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 46,
+   "points": 0,
+   "key_article": false
+  }
+ ],
+ "not_in_corpus": [
+  "recitals (the law's stated purpose)",
+  "constitution and EU Charter",
+  "case law"
+ ]
+}
