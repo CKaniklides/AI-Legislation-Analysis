@@ -1,0 +1,111 @@
+{
+ "tool": "action_verb_relations.py",
+ "lexicon_version": "ac49c809ffc1",
+ "created_at_utc": "2026-10-13T11:45:22+00:00",
+ "mode": "pairs_file",
+ "input": {
+  "path": "data\\conflicts_data\\merged_norms.json",
+  "sha256": "72564dfd07b64ae9d456b6e7d6e07ba7fe204a3be0fc50b72452ffa3e2a02b6a",
+  "n_records": 775,
+  "fields_used": {
+   "norm_id": "norm_id",
+   "action": "norm.action",
+   "deontic": "norm.deontic",
+   "addressee": "norm.addressee_type",
+   "instrument": "hierarchy.instrument_id",
+   "article": "hierarchy.article",
+   "text": "text"
+  },
+  "norm_status": {
+   "ok": 419,
+   "no_verb": 356
+  },
+  "duplicate_norm_ids": 0,
+  "synthetic_norm_ids": 0
+ },
+ "pairs_input": {
+  "path": "data\\conflicts_data\\stageA_pairs.json",
+  "sha256": "dac24c15baf2a5d802d731081d8fe2a7af6889cbe100ac9573b2a13f9d222142",
+  "duplicate_pairs_dropped": 0,
+  "self_pairs_dropped": 0
+ },
+ "parameters": {
+  "min_overlap": 0.15,
+  "generic_min_overlap": 0.3,
+  "neutral_overlap": 0.3,
+  "min_score_to_flag": {
+   "duplicate": 0.45,
+   "contradiction": 0.4
+  },
+  "addressee_gate": true,
+  "emit_zero": false,
+  "weights": {
+   "same_verb": 1.0,
+   "equivalent_via_negation": 0.85,
+   "related_verbs": 0.5,
+   "same_verb_opposite_polarity": 1.0,
+   "antonym_verbs": 0.9,
+   "overlap_floor": 0.35,
+   "overlap_weight": 0.65,
+   "exception_contradiction": 0.8,
+   "both_powers_contradiction": 0.6,
+   "power_vs_duty_contradiction": 0.7,
+   "power_vs_duty_duplicate": 0.6
+  }
+ },
+ "score_formula": "score = base[kind] x factor x (overlap_floor + overlap_weight x overlap_effective), rounded to 3 decimals; every term is stored in the row's evidence block",
+ "limits": [
+  "addressee gate compares extracted addressee_type literally: directive phrasing ('Member States shall ensure that entities ...') is NOT resolved here; pass --no-addressee-gate to compare across addressee types",
+  "negation scope is the whole sentence segment",
+  "object overlap is a 6-character-prefix Jaccard"
+ ],
+ "counts": {
+  "rows_written": 111447,
+  "by_status": {
+   "different_addressee": 23635,
+   "scored": 4058,
+   "b_no_verb": 30825,
+   "no_shared_verb_axis": 9482,
+   "a_no_verb": 43447
+  },
+  "flagged": {
+   "duplicate": 146,
+   "contradiction": 28
+  },
+  "not_emitted_by_reason": {}
+ },
+ "files": {
+  "pair_scores.jsonl": {
+   "sha256": "2ac97a0f371e3b51013c14daada40cf1e7ce56fcf1a59b23cf074436b1fcb7b3",
+   "rows": 111447
+  },
+  "pair_scores.csv": {
+   "sha256": "e785bac541e86b4d27353a1cda4c2c7e1d7166348424e9a28e2b44a3ce369192",
+   "rows": 111447
+  },
+  "norm_verb_profiles.jsonl": {
+   "sha256": "5ec3cab023fdf9c4a0ad9429442473ccd3c92fe9a2f56e511f8602673791c878",
+   "rows": 775
+  }
+ },
+ "row_schema": {
+  "pair_scores.jsonl": [
+   "pair_id",
+   "idx_a",
+   "idx_b",
+   "norm_id_a",
+   "norm_id_b",
+   "status",
+   "duplicate_score",
+   "contradiction_score",
+   "relation",
+   "flagged",
+   "object_overlap",
+   "shared_axes",
+   "duplicate_evidence",
+   "contradiction_evidence",
+   "notes"
+  ],
+  "norm_verb_profiles.jsonl": "one row per input record, joined to pair rows on norm_id / idx"
+ }
+}
