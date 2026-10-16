@@ -55,12 +55,21 @@ Output format (compact on purpose: the pair list is millions of entries long)
                 "norms_without_article_key": 0, "norms_without_text": 0,
                 "norms_without_graph_uid": 0, "norms_not_in_graph": 0},
       "norm_ids": ["32024R1689:2:5:6:None", ...],   # position k = norm number k
-      "pairs": [[0, 17], [0, 18], ...]               # indices into norm_ids, always i < j
+      "pair_format": ["pair_id", "i", "j"],
+      "pairs": [[15, 0, 17], [16, 0, 18], ...]       # i, j index norm_ids, always i < j
     }
 
 "rescued_by_graph_link" counts pairs that scored below the floor but were kept because
 their articles are linked. Pairs are listed by i, then j, in input order, and streamed to
 disk.
+
+Pair ids
+--------
+``pair_id`` is the pair's position among ALL n*(n-1)/2 pairs of the input norms (ordered
+by i, then j), not its position in the kept list. So the same two norms keep the same id
+when SIMILARITY_FLOOR, the graph or the rules change; ids only change when the norm list
+itself (its contents or order) changes. Gaps in the ids are the discarded pairs. See
+pair_id() for the formula.
 
 Usage
 -----
@@ -370,6 +379,13 @@ def linked_norms(records: list[dict], graph: Optional[nx.Graph]) -> tuple[list[n
 Scan = Iterator[tuple[int, np.ndarray, dict]]
 
 
+def pair_id(i, j, n: int):
+    """Position of pair (i, j), i < j, among all n*(n-1)/2 pairs ordered by i, then j:
+    (0,1) -> 0, (0,2) -> 1, ..., (0,n-1) -> n-2, (1,2) -> n-1, ... Works on ints and on
+    numpy arrays of j."""
+    return i * n - i * (i + 1) // 2 + (j - i - 1)
+
+
 def scan_pairs(group_ids: list[int], vectors: np.ndarray, has_text: np.ndarray,
                links: list[np.ndarray], floor: float) -> Scan:
     """For each norm i, yield (i, kept partners j > i, counts of what was dropped)."""
@@ -413,6 +429,7 @@ def write_pairs(path: Path, header: dict, make_scan: Callable[[], Scan]) -> int:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp")
     written = 0
+    n = header["n_norms"]
     try:
         with open(tmp, "w", encoding="utf-8") as fh:
             head = json.dumps(header, ensure_ascii=False)
@@ -421,7 +438,8 @@ def write_pairs(path: Path, header: dict, make_scan: Callable[[], Scan]) -> int:
             for i, partners, _counts in make_scan():
                 if not len(partners):
                     continue
-                chunk = ",".join(f"[{i},{j}]" for j in partners.tolist())
+                ids = pair_id(i, partners, n).tolist()
+                chunk = ",".join(f"[{p},{i},{j}]" for p, j in zip(ids, partners.tolist()))
                 fh.write(chunk if first else "," + chunk)
                 first = False
                 written += len(partners)
@@ -535,7 +553,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     header = {"stage": "A", "rule": RULE, "input": str(in_path),
               "graph": str(graph_path) if graph_path else None, "model": args.model,
               "similarity_floor": args.sim_floor, "n_norms": n, "stats": stats,
-              "norm_ids": norm_ids}
+              "norm_ids": norm_ids, "pair_format": ["pair_id", "i", "j"]}
     write_pairs(out_path, header, make_scan)
 
     print(f"Read {n} norms from {in_path}")

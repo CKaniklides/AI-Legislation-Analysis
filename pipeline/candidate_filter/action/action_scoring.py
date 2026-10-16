@@ -38,7 +38,7 @@ import itertools
 import json
 import sys
 from collections import Counter
-from dataclasses import asdict, dataclass, field
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -247,7 +247,15 @@ def build_profiles_from_verbs(verbs_path: Path) -> dict[str, ActionProfile]:
     return profiles
 
 
-def load_pairs(path: Path) -> tuple[list[str], list[tuple[int, int]], dict]:
+def stage_a_pair_id(i: int, j: int, n: int) -> int:
+    """Same formula as stageA_filtering.pair_id: the position of (i, j), i < j, among
+    all n*(n-1)/2 pairs of the Stage A norm list."""
+    return i * n - i * (i + 1) // 2 + (j - i - 1)
+
+
+def load_pairs(path: Path) -> tuple[list[str], list[tuple[int, int, int]], dict]:
+    """Read stageA_pairs.json. Pairs are [pair_id, i, j]; older files with plain [i, j]
+    pairs get the id Stage A would have given them."""
     with path.open(encoding="utf-8") as file:
         data = json.load(file)
 
@@ -259,17 +267,47 @@ def load_pairs(path: Path) -> tuple[list[str], list[tuple[int, int]], dict]:
     if not isinstance(norm_ids, list) or not isinstance(raw_pairs, list):
         raise ValueError("Pairs JSON must contain 'norm_ids' and 'pairs' lists.")
 
+    n = len(norm_ids)
     pairs = []
+    seen: set[int] = set()
     for pair in raw_pairs:
-        if not isinstance(pair, (list, tuple)) or len(pair) != 2:
+        if not isinstance(pair, (list, tuple)) or len(pair) not in (2, 3):
             raise ValueError(f"Invalid pair entry: {pair!r}")
-        i, j = int(pair[0]), int(pair[1])
-        if not (0 <= i < len(norm_ids) and 0 <= j < len(norm_ids)):
+        if len(pair) == 3:
+            pid, i, j = int(pair[0]), int(pair[1]), int(pair[2])
+        else:
+            i, j = int(pair[0]), int(pair[1])
+            pid = stage_a_pair_id(i, j, n) if i < j else None
+        if not (0 <= i < n and 0 <= j < n):
             raise ValueError(f"Pair index out of range: {(i, j)}")
-        pairs.append((i, j))
+        if pid is None or pid in seen:
+            raise ValueError(f"Missing or duplicate pair id in entry: {pair!r}")
+        seen.add(pid)
+        pairs.append((pid, i, j))
 
-    metadata = {k: v for k, v in data.items() if k not in {"norm_ids", "pairs"}}
+    metadata = {
+        k: v for k, v in data.items() if k not in {"norm_ids", "pairs", "pair_format"}
+    }
     return [str(v) for v in norm_ids], pairs, metadata
+
+
+# ---------------------------------------------------------------------
+# Output
+# ---------------------------------------------------------------------
+
+def _write_output(output: dict, file) -> None:
+    """Write the output as indented JSON, but with one line per score row.
+    Plain indent=2 would spread each row over several lines."""
+    rows = output.pop("scores")
+    head = json.dumps(output, ensure_ascii=False, indent=2)
+    output["scores"] = rows
+
+    file.write(head[:-2])                        # drop the closing "\n}"
+    file.write(',\n  "scores": [')
+    for n, row in enumerate(rows):
+        file.write("," if n else "")
+        file.write("\n    " + json.dumps(row, ensure_ascii=False))
+    file.write("\n  ]\n}\n" if rows else "]\n}\n")
 
 
 # ---------------------------------------------------------------------
@@ -296,7 +334,9 @@ def run(
 
     if all_pairs:
         norm_ids = list(profiles)
-        pairs = list(itertools.combinations(range(len(norm_ids)), 2))
+        pairs = [
+            (None, i, j) for i, j in itertools.combinations(range(len(norm_ids)), 2)
+        ]
         stage_a_meta: dict = {"all_pairs": True}
     else:
         if pairs_path is None:
@@ -306,9 +346,13 @@ def run(
     missing_profile = ActionProfile("empty", None)
     missing_ids: set[str] = set()
     relation_counts: Counter[str] = Counter()
-    scores: list[dict] = []
+    # One row per pair: [pair_id, action_score], with pair_id taken from
+    # stageA_pairs.json. --all-pairs has no Stage A ids, so it writes
+    # [norm_id_a, norm_id_b, action_score] instead.
+    scores: list[list] = []
+    pair_id_source = "norm_ids" if all_pairs else "stageA_pair_id"
 
-    for i, j in pairs:
+    for pair_id, i, j in pairs:
         id_a, id_b = norm_ids[i], norm_ids[j]
         pa, pb = profiles.get(id_a), profiles.get(id_b)
         if pa is None:
@@ -324,12 +368,10 @@ def run(
         if min_score is not None and result.action_score < min_score:
             continue
 
-        scores.append({
-            "i": i, "j": j,
-            "norm_id_a": id_a, "norm_id_b": id_b,
-            "lemma_a": pa.lemma, "lemma_b": pb.lemma,
-            **asdict(result),
-        })
+        if all_pairs:
+            scores.append([id_a, id_b, result.action_score])
+        else:
+            scores.append([pair_id, result.action_score])
 
     norm_status = Counter(p.status for p in profiles.values())
     stats = {
@@ -357,12 +399,17 @@ def run(
             "min_score": min_score,
         },
         "stats": stats,
+        "score_format": (
+            ["norm_id_a", "norm_id_b", "action_score"] if all_pairs
+            else ["pair_id", "action_score"]
+        ),
+        "pair_id_source": pair_id_source,
         "scores": scores,
     }
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as file:
-        json.dump(output, file, ensure_ascii=False, indent=2)
+        _write_output(output, file)
 
     print(f"Scored {len(pairs)} pairs -> {out_path} ({len(scores)} written)")
     print("Norm status:", stats["norm_status"])
@@ -404,7 +451,7 @@ def main() -> None:
         description="Polarity-blind action candidate scoring for norm pairs."
     )
     parser.add_argument("--pairs", type=Path, default=Path("data/conflict/stageA_pairs.json"))
-    parser.add_argument("--norms", type=Path, default=Path("data/conflict/original_norms.json"))
+    parser.add_argument("--norms", type=Path, default=Path("data/new_norms/original_norms.json"))
     parser.add_argument(
         "--verbs", type=Path, default=None,
         help="Use action_verbs.py JSON output instead of re-extracting verbs.",
@@ -416,7 +463,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--min-score", type=float, default=None,
-        help="Only write pairs with action_score >= this value.",
+        help="Only write pairs with action_score >= this value (default: all).",
     )
     parser.add_argument(
         "--span-fallback", action="store_true",
