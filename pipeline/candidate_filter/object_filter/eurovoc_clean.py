@@ -236,7 +236,7 @@ def _get_path(obj, path: list[str]):
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--dir", type=Path, default=Path("data/conflict/eurovoc"))
+    p.add_argument("--dir", type=Path, default=Path("data/conflict/object"))
     p.add_argument("--records", type=Path, required=True)
     p.add_argument("--object-field", default="norm.object")
     p.add_argument("--id-field", default="norm_id")
@@ -261,9 +261,6 @@ def main() -> None:
     units = clean_objects(objects, nlp, args.max_parts)
 
     args.dir.mkdir(parents=True, exist_ok=True)
-    with open(args.dir / "object_units.jsonl", "w", encoding="utf-8") as f:
-        for o in objects:
-            f.write(json.dumps({"object": o, "units": units[o]}, ensure_ascii=False) + "\n")
     with open(args.dir / "norm_object_units.jsonl", "w", encoding="utf-8") as f:
         for n in norms:
             f.write(json.dumps({**n, "units": units.get(n["object"], [])},
