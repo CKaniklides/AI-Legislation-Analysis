@@ -230,7 +230,7 @@ class ObjectScorer:
 
 def main():
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("--data", default="data/conflict/eurovoc")
+    p.add_argument("--data", default="data/conflict/object")
     p.add_argument("--norms", default="norm_keys.jsonl")
     p.add_argument("--out", default="object_pair_scores.jsonl")
     p.add_argument("--spec-out", default="key_specificity.csv")

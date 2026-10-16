@@ -58,8 +58,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from object_filter.eurovoc_embeds import as_matrix, embed_texts, load_config
-from object_filter.eurovoc_prepare import load_nlp, normalize_texts
+from eurovoc_embeds import as_matrix, embed_texts, load_config
+from eurovoc_prepare import load_nlp, normalize_texts
 
 log = logging.getLogger("eurovoc.map")
 
@@ -280,7 +280,7 @@ def map_objects(objects: list[str], space: LabelSpace, ref: Reference, args) -> 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--dir", type=Path, default=Path("data/conflict/eurovoc"))
+    p.add_argument("--dir", type=Path, default=Path("data/conflict/object/eurovoc"))
     p.add_argument("--units", type=Path, default=None,
                    help="Step 6 norm_object_units.jsonl (recommended)")
     p.add_argument("--records", type=Path, default=None,
@@ -325,11 +325,6 @@ def main() -> None:
     with open(args.dir / "norm_object_mapping.jsonl", "w", encoding="utf-8") as f:
         for nr in norm_results:
             f.write(json.dumps(nr, ensure_ascii=False) + "\n")
-    rows = [{"object": r["object"], "head": r["head"], "level": r["level"],
-             "matched_label": r["matched_label"], "rank": i + 1, **c}
-            for r in results.values() for i, c in enumerate(r["candidates"] or [{}])]
-    pd.DataFrame(rows).to_csv(args.dir / "object_mapping.csv", index=False,
-                              encoding="utf-8-sig")
     cfg = {k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()}
     cfg["fallback_cosine"] = ref.cosine_at(args.fallback_percentile)
     with open(args.dir / "mapping_config.json", "w", encoding="utf-8") as f:

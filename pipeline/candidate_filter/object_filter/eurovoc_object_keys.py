@@ -47,7 +47,7 @@ from pathlib import Path
 
 from nltk.stem.snowball import DutchStemmer
 
-from object_filter.eurovoc_clean import NON_CONTENT
+from eurovoc_clean import NON_CONTENT
 
 log = logging.getLogger("object.keys")
 STEMMER = DutchStemmer()
@@ -156,7 +156,7 @@ def load_concepts(path: Path) -> dict[str, tuple[str, str]]:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--dir", type=Path, default=Path("data/conflict/eurovoc"))
+    p.add_argument("--dir", type=Path, default=Path("data/conflict/object"))
     p.add_argument("--spacy-model", default="nl_core_news_sm")
     p.add_argument("--min-tail-len", type=int, default=4,
                    help="minimum length of a compound tail key (boete -> 'boet' has 4)")
@@ -177,7 +177,7 @@ def main() -> None:
         if k["head"]:
             k["tail"] = compound_tail(k["head"], heads, args.min_tail_len)
 
-    for unit, (concept, label) in load_concepts(args.dir / "object_mapping.jsonl").items():
+    for unit, (concept, label) in load_concepts(args.dir / "eurovoc/object_mapping.jsonl").items():
         if unit in keys:
             keys[unit]["concept"], keys[unit]["concept_label"] = concept, label
 
