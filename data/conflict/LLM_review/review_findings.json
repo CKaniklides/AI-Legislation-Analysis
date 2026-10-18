@@ -3,8 +3,8 @@
   "model": "gpt-5.6-luna",
   "reasoning_effort": "medium",
   "prompt_version": "e24ada557de5",
-  "created": "2026-10-18",
-  "n_pairs": 20
+  "created": "2026-10-19",
+  "n_pairs": 30
  },
  "findings": [
   {
@@ -45,13 +45,13 @@
     "object_direction": "same"
    },
    "llm_adjudication": {
-    "addressee_a": "De verwerkingsverantwoordelijke",
-    "addressee_b": "De verwerkingsverantwoordelijke",
+    "addressee_a": "De verwerkingsverantwoordelijke.",
+    "addressee_b": "De verwerkingsverantwoordelijke.",
     "same_addressee": "yes",
     "shared_situation": null,
     "situations_overlap": "no",
-    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, de categorieën persoonsgegevens en informatie over ontvangers en doorgiften.",
-    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, gerechtvaardigde belangen indien relevant, en informatie over ontvangers en doorgiften.",
+    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken.",
+    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken.",
     "joint_compliance": "not_applicable",
     "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
@@ -60,7 +60,7 @@
     "resolution_basis": null,
     "evidence_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
     "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
-    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke tot het verstrekken van vergelijkbare informatie aan de betrokkene. Zij gelden echter voor elkaar uitsluitende situaties: artikel 14 voor persoonsgegevens die niet van de betrokkene zijn verkregen en artikel 13 voor persoonsgegevens die bij de betrokkene worden verzameld. De normen zijn daarom complementair en niet tegenstrijdig.",
+    "reasoning_summary": "Beide normen verplichten dezelfde soort verwerkingsverantwoordelijke tot informatieverstrekking aan de betrokkene, maar zij gelden voor elkaar uitsluitende situaties: norm A ziet op persoonsgegevens die niet van de betrokkene zijn verkregen, terwijl norm B ziet op verzameling bij de betrokkene. De normen zijn daarom complementair en niet overlappend.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -68,163 +68,26 @@
    "n_attempts": 1,
    "tokens": {
     "input": 3670,
-    "output": 657
+    "output": 577
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-828a6aef356457e4",
-   "pair_id": "828a6aef356457e4",
-   "relation": "UNRELATED",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:36:5:10",
-     "instrument_id": "32016R0679",
-     "card_hash": "2194183602ed5d11",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32016R0679:45:6:7",
-     "instrument_id": "32016R0679",
-     "card_hash": "a27d9693aa9b4471",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 1.0,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_lemma",
-    "generic": false,
-    "object_score": 0.8451,
-    "object_norm": 1.0,
-    "object_key": "overleg",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "De verwerkingsverantwoordelijken",
-    "addressee_b": "De Commissie",
-    "same_addressee": "no",
-    "shared_situation": null,
-    "situations_overlap": "no",
-    "requirement_a": "De verwerkingsverantwoordelijken kunnen lidstaatrechtelijk worden verplicht overleg met de toezichthoudende autoriteit te plegen en om haar voorafgaande toestemming te verzoeken wanneer zij met het oog op de vervulling van een taak van algemeen belang verwerken.",
-    "requirement_b": "De Commissie pleegt overleg met het derde land of de internationale organisatie om de situatie naar aanleiding waarvan het besluit overeenkomstig lid 5 is vastgesteld, te verhelpen.",
-    "joint_compliance": "not_applicable",
-    "relation": "UNRELATED",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": null,
-    "evidence_b": null,
-    "reasoning_summary": "De normen binden verschillende actoren en zien op verschillende situaties. Norm A betreft verwerking door verwerkingsverantwoordelijken in het kader van een taak van algemeen belang; norm B betreft overleg door de Commissie met een derde land of een internationale organisatie naar aanleiding van een adequaatheidsbesluit.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2857,
-    "output": 341
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-a4c78b632dbbc81a",
-   "pair_id": "a4c78b632dbbc81a",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:92:3:5",
-     "instrument_id": "32016R0679",
-     "card_hash": "cb9625e9fc0e41cf",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32024R1689:97:3:5",
-     "instrument_id": "32024R1689",
-     "card_hash": "d92a4841f99f6611",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "cross_law",
-   "scores": {
-    "combined": 1.0,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_lemma",
-    "generic": false,
-    "object_score": 0.8451,
-    "object_norm": 1.0,
-    "object_key": "geldig",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Het Europees Parlement of de Raad",
-    "addressee_b": "Het Europees Parlement of de Raad",
-    "same_addressee": "yes",
-    "shared_situation": "Het Europees Parlement of de Raad overweegt de in elk van de twee verordeningen bedoelde bevoegdheidsdelegatie in te trekken; het gaat daarbij om verschillende delegaties uit verschillende verordeningen.",
-    "situations_overlap": "partial",
-    "requirement_a": "Het Europees Parlement of de Raad kan de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Een intrekkingsbesluit beëindigt de daarin genoemde delegatie, wordt van kracht volgens de voorgeschreven bekendmaking en laat de geldigheid van reeds van kracht zijnde gedelegeerde handelingen onverlet.",
-    "requirement_b": "Het Europees Parlement of de Raad kan de in de genoemde bepalingen bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Een intrekkingsbesluit beëindigt de daarin genoemde delegatie, wordt van kracht volgens de voorgeschreven bekendmaking en laat de geldigheid van reeds van kracht zijnde gedelegeerde handelingen onverlet.",
-    "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "Het Europees Parlement of de Raad kan de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie te allen tijde intrekken.",
-    "evidence_b": "Het Europees Parlement of de Raad kan de in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6, bedoelde bevoegdheidsdelegatie te allen tijde intrekken.",
-    "reasoning_summary": "Beide normen richten zich tot hetzelfde institutionele orgaan en regelen dezelfde procedure voor intrekking van een bevoegdheidsdelegatie. Zij zien echter op verschillende delegaties in verschillende verordeningen, zodat geen sprake is van duplicatie; de normen zijn verenigbaar en kunnen naast elkaar worden toegepast.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2638,
-    "output": 947
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
   {
    "finding_id": "F-b1a963e555de8dc9",
    "pair_id": "b1a963e555de8dc9",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
+   "relation": "DUPLICATION",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "single LLM pass, all code checks passed",
+    "Tier 1 (High) requires a second independent run, not implemented yet"
+   ],
    "selection": "top",
    "calibration_band": null,
    "provisions": [
@@ -258,182 +121,39 @@
     "addressee_a": "De gemachtigde van een aanbieder van een AI-model voor algemene doeleinden.",
     "addressee_b": "De gemachtigde van een aanbieder van een AI-systeem met een hoog risico.",
     "same_addressee": "yes",
-    "shared_situation": "Een gemachtigde die namens dezelfde aanbieder of namens verbonden aanbieders zowel een AI-model voor algemene doeleinden als een AI-systeem met een hoog risico vertegenwoordigt, terwijl de aanbieder in strijd handelt met de op hem toepasselijke verplichtingen.",
+    "shared_situation": "Een gemachtigde heeft een mandaat voor een aanbieder die in strijd handelt met verplichtingen uit hoofde van de verordening; de toepasselijke norm hangt af van de vraag of het mandaat betrekking heeft op een AI-model voor algemene doeleinden of op een AI-systeem met een hoog risico.",
     "situations_overlap": "partial",
-    "requirement_a": "De gemachtigde moet het mandaat beëindigen wanneer hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. Hij moet het AI-bureau onmiddellijk in kennis stellen van de beëindiging en de redenen daarvoor.",
-    "requirement_b": "De gemachtigde moet het mandaat beëindigen wanneer hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. Hij moet de relevante markttoezichtautoriteit en, in voorkomend geval, de relevante aangemelde instantie onmiddellijk met opgave van redenen daarvan in kennis stellen.",
+    "requirement_a": "De gemachtigde moet het mandaat beëindigen wanneer hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van de verordening handelt. Hij moet het AI-bureau onmiddellijk in kennis stellen van de beëindiging en de redenen daarvoor.",
+    "requirement_b": "De gemachtigde moet het mandaat beëindigen wanneer hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van de verordening handelt. Hij moet de relevante markttoezichtautoriteit onmiddellijk, met opgave van redenen, in kennis stellen en, in voorkomend geval, ook de relevante aangemelde instantie.",
     "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
+    "relation": "DUPLICATION",
+    "duplication_scope": "partial_overlap",
+    "intentional": true,
     "resolution": "not_applicable",
     "resolution_basis": null,
     "evidence_a": "De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. In dat geval stelt hij tevens het AI-bureau onmiddellijk in kennis van de beëindiging van het mandaat en de redenen daarvoor.",
     "evidence_b": "De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. Hij stelt daar dan, met opgave van redenen, de relevante markttoezichtautoriteit onmiddellijk van in kennis, alsmede, in voorkomend geval, de relevante aangemelde instantie.",
-    "reasoning_summary": "De normen richten zich op dezelfde soort functionaris en bevatten een vergelijkbare verplichting tot beëindiging van het mandaat, maar gelden voor verschillende categorieën: respectievelijk AI-modellen voor algemene doeleinden en AI-systemen met een hoog risico. Bij gedeeltelijke feitelijke overlap kunnen beide verplichtingen naast elkaar worden nagekomen; de kennisgevingen zijn gericht aan verschillende instanties en vullen elkaar aan.",
+    "reasoning_summary": "Beide normen richten zich tot de gemachtigde en bevatten dezelfde voorwaarde en verplichting tot beëindiging van het mandaat. De normen gelden echter voor verschillende categorieën: respectievelijk AI-modellen voor algemene doeleinden en AI-systemen met een hoog risico. De meldingsverplichtingen verschillen naar ontvanger. Voor zover één gemachtigde onder beide regelingen valt, kunnen beide verplichtingen gezamenlijk worden nageleefd; de overeenkomst betreft daarom slechts gedeeltelijk dezelfde verplichting.",
     "outcome_changing_fact": null,
-    "certainty": "medium"
+    "certainty": "high"
    },
    "needs_recheck_reason": null,
    "n_attempts": 1,
    "tokens": {
     "input": 2894,
-    "output": 1728
+    "output": 1097
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-2f6b52af795d4c62",
-   "pair_id": "2f6b52af795d4c62",
-   "relation": "UNRELATED",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:92:2:2",
-     "instrument_id": "32016R0679",
-     "card_hash": "619667c666db88ef",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32024R1689:97:3:2",
-     "instrument_id": "32024R1689",
-     "card_hash": "93bf6f631dcee1cb",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "cross_law",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "bevoegdheidsdelegatie",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "De Commissie is de ontvanger van de bevoegdheidsdelegatie; de bepaling noemt geen actor die als normadressaat de delegatie moet toekennen.",
-    "addressee_b": "Het Europees Parlement of de Raad.",
-    "same_addressee": "no",
-    "shared_situation": null,
-    "situations_overlap": "no",
-    "requirement_a": "De bevoegdheidsdelegatie bedoeld in artikel 12, lid 8, en artikel 43, lid 8, wordt voor onbepaalde tijd aan de Commissie toegekend met ingang van 24 mei 2016.",
-    "requirement_b": "Het Europees Parlement of de Raad kan te allen tijde de specifiek opgesomde bevoegdheidsdelegaties intrekken; het besluit tot intrekking beëindigt de daarin genoemde bevoegdheid, met behoud van de geldigheid van reeds van kracht zijnde gedelegeerde handelingen.",
-    "joint_compliance": "not_applicable",
-    "relation": "UNRELATED",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "De in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie wordt aan de Commissie toegekend voor onbepaalde tijd met ingang van 24 mei 2016.",
-    "evidence_b": "Het Europees Parlement of de Raad kan de in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6, bedoelde bevoegdheidsdelegatie te allen tijde intrekken.",
-    "reasoning_summary": "Beide bepalingen betreffen bevoegdheidsdelegatie, maar zij zien op verschillende delegaties in verschillende verordeningen. Norm A betreft de delegatie bedoeld in artikel 12, lid 8, en artikel 43, lid 8, van de ene verordening; norm B betreft andere, specifiek opgesomde delegaties en verleent het Europees Parlement of de Raad een intrekkingsbevoegdheid.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2667,
-    "output": 768
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-567a3ebc4e3d0c04",
-   "pair_id": "567a3ebc4e3d0c04",
-   "relation": "DUPLICATION",
-   "status": "candidate",
-   "confidence_tier": 2,
-   "confidence_label": "Medium",
-   "confidence_reasons": [
-    "single LLM pass, all code checks passed",
-    "Tier 1 (High) requires a second independent run, not implemented yet"
-   ],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:57:1:11",
-     "instrument_id": "32016R0679",
-     "card_hash": "833049d4823fc5e6",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32016R0679:60:9:19",
-     "instrument_id": "32016R0679",
-     "card_hash": "89fbb7be74861627",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "klag",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Elke toezichthoudende autoriteit op haar grondgebied, voor zover zij een klacht behandelt.",
-    "addressee_b": "De leidende toezichthoudende autoriteit en de toezichthoudende autoriteit van de klager, ieder voor het in artikel 60, lid 9, bedoelde deel van de klacht.",
-    "same_addressee": "partial",
-    "shared_situation": "Een klacht waarvan delen worden afgewezen of verworpen en waarvoor voor andere delen wordt opgetreden in het kader van de samenwerking tussen toezichthoudende autoriteiten.",
-    "situations_overlap": "partial",
-    "requirement_a": "De toezichthoudende autoriteit behandelt de klacht, onderzoekt de inhoud daarvan voor zover passend en stelt de klager binnen een redelijke termijn in kennis van de vooruitgang en het resultaat van het onderzoek.",
-    "requirement_b": "De leidende toezichthoudende autoriteit stelt het besluit vast voor het deel betreffende maatregelen inzake de verwerkingsverantwoordelijke, deelt dit mee aan de hoofdvestiging of de enige vestiging en stelt de klager daarvan in kennis. De toezichthoudende autoriteit van de klager stelt het besluit vast voor het afgewezen of verworpen deel en deelt dit aan de klager mee.",
-    "joint_compliance": "possible",
-    "relation": "DUPLICATION",
-    "duplication_scope": "partial_overlap",
-    "intentional": null,
-    "resolution": "lex_specialis",
-    "resolution_basis": "Artikel 60, lid 9, bevat voor een specifieke categorie van gesplitste klachten een nadere regeling van de besluitvorming en de kennisgeving; die regeling vult de algemene taak uit artikel 57, lid 1, onder f), nader in.",
-    "evidence_a": "zij behandelt klachten van betrokkenen, of van organen, organisaties of verenigingen overeenkomstig artikel 80, onderzoekt de inhoud van de klacht in de mate waarin dat gepast is en stelt de klager binnen een redelijke termijn in kennis van de vooruitgang en het resultaat van het onderzoek",
-    "evidence_b": "De leidende toezichthoudende autoriteit stelt het besluit vast voor het deel betreffende de maatregelen inzake de verwerkingsverantwoordelijke, en deelt het mee aan de hoofdvestiging of de enige vestiging van de verwerkingsverantwoordelijke of de verwerker op het grondgebied van haar lidstaat, en stelt de klager daarvan in kennis.",
-    "reasoning_summary": "Beide bepalingen zien op de behandeling van klachten door toezichthoudende autoriteiten en omvatten een verplichting om de klager over het resultaat in kennis te stellen. Artikel 57, lid 1, onder f), is algemeen; artikel 60, lid 9, regelt voor een specifieke procedure welke autoriteit welk besluit vaststelt en aan wie dit wordt meegedeeld. De verplichtingen kunnen gezamenlijk worden nageleefd.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 4335,
-    "output": 1118
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
   {
    "finding_id": "F-6e0d2cc138dec400",
    "pair_id": "6e0d2cc138dec400",
-   "relation": "UNRELATED",
+   "relation": "RELATED_NO_ISSUE",
    "status": "no_issue",
    "confidence_tier": null,
    "confidence_label": null,
@@ -456,7 +176,7 @@
    ],
    "scope": "cross_law",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -471,19 +191,19 @@
     "addressee_a": "Het Europees Parlement of de Raad",
     "addressee_b": "Het Europees Parlement of de Raad",
     "same_addressee": "yes",
-    "shared_situation": null,
-    "situations_overlap": "no",
-    "requirement_a": "Het Europees Parlement of de Raad kan te allen tijde de bevoegdheidsdelegatie intrekken die wordt bedoeld in artikel 12, lid 8, en artikel 43, lid 8.",
-    "requirement_b": "Het Europees Parlement of de Raad kan te allen tijde de bevoegdheidsdelegatie intrekken die wordt bedoeld in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6.",
-    "joint_compliance": "not_applicable",
-    "relation": "UNRELATED",
+    "shared_situation": "Het Europees Parlement of de Raad kan overwegen om een bevoegdheidsdelegatie in te trekken, maar norm A ziet op delegaties uit Verordening (EU) 2016/679 en norm B op delegaties uit Verordening (EU) 2024/1689.",
+    "situations_overlap": "partial",
+    "requirement_a": "Het Europees Parlement of de Raad kan te allen tijde de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie intrekken.",
+    "requirement_b": "Het Europees Parlement of de Raad kan te allen tijde de in de genoemde bepalingen van Verordening (EU) 2024/1689 bedoelde bevoegdheidsdelegatie intrekken.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
     "intentional": null,
     "resolution": "not_applicable",
     "resolution_basis": null,
-    "evidence_a": null,
-    "evidence_b": null,
-    "reasoning_summary": "Hoewel beide normen dezelfde bevoegdheid aan het Europees Parlement of de Raad toekennen en dezelfde procedurele gevolgen van intrekking beschrijven, zien zij op bevoegdheidsdelegaties uit verschillende verordeningen en op verschillende bepalingen. De gedelegeerde bevoegdheden overlappen niet.",
+    "evidence_a": "Het Europees Parlement of de Raad kan de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie te allen tijde intrekken.",
+    "evidence_b": "Het Europees Parlement of de Raad kan de in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6, bedoelde bevoegdheidsdelegatie te allen tijde intrekken.",
+    "reasoning_summary": "Beide normen verlenen dezelfde instellingen een vergelijkbare bevoegdheid om een bevoegdheidsdelegatie in te trekken, maar zij zien op delegaties uit verschillende verordeningen en op verschillende daarin genoemde bepalingen. De normen zijn daarom inhoudelijk verwant en kunnen gelijktijdig worden nageleefd, zonder duplicatie of conflict.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -491,152 +211,12 @@
    "n_attempts": 1,
    "tokens": {
     "input": 2706,
-    "output": 488
+    "output": 754
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-70790e2fc4d52f5e",
-   "pair_id": "70790e2fc4d52f5e",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:57:1:11",
-     "instrument_id": "32016R0679",
-     "card_hash": "833049d4823fc5e6",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32016R0679:60:7:14",
-     "instrument_id": "32016R0679",
-     "card_hash": "dd84e7931398490c",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "klag",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Elke toezichthoudende autoriteit op haar grondgebied, met betrekking tot klachten die zij behandelt.",
-    "addressee_b": "De toezichthoudende autoriteit waarbij de klacht is ingediend.",
-    "same_addressee": "partial",
-    "shared_situation": "Een klacht van een betrokkene waarop de procedure van artikel 60 van toepassing is en waarover een besluit wordt vastgesteld.",
-    "situations_overlap": "partial",
-    "requirement_a": "De toezichthoudende autoriteit moet klachten behandelen, de inhoud daarvan in passende mate onderzoeken en de klager binnen een redelijke termijn informeren over de voortgang en het resultaat van het onderzoek.",
-    "requirement_b": "De toezichthoudende autoriteit waarbij de klacht is ingediend moet de klager in kennis stellen van het besluit.",
-    "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "none",
-    "resolution_basis": null,
-    "evidence_a": "zij behandelt klachten van betrokkenen, of van organen, organisaties of verenigingen overeenkomstig artikel 80, onderzoekt de inhoud van de klacht in de mate waarin dat gepast is en stelt de klager binnen een redelijke termijn in kennis van de vooruitgang en het resultaat van het onderzoek",
-    "evidence_b": "De toezichthoudende autoriteit waarbij de klacht is ingediend, stelt de klager in kennis van het besluit.",
-    "reasoning_summary": "De normen kunnen gezamenlijk worden nageleefd en regelen opeenvolgende, elkaar aanvullende verplichtingen. Norm A ziet algemeen op de behandeling en opvolging van klachten, terwijl norm B in de specifieke procedure van artikel 60 voorschrijft dat de ingediende klacht over het besluit wordt geïnformeerd. De kennisgeving van het besluit kan het informeren over het onderzoeksresultaat omvatten, maar vervangt niet de bredere verplichting uit norm A om ook over de voortgang te informeren.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 4129,
-    "output": 930
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-72c4b048ca5c1614",
-   "pair_id": "72c4b048ca5c1614",
-   "relation": "UNRELATED",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32024R1689:53:1:4",
-     "instrument_id": "32024R1689",
-     "card_hash": "9154da8ba9d57ff3",
-     "shown_as": "A"
-    },
-    {
-     "norm_id": "32024R1689:59:1:12",
-     "instrument_id": "32024R1689",
-     "card_hash": "7fa3acf923e81396",
-     "shown_as": "B"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "samenvat",
-    "object_relation": "head",
-    "object_direction": "b_narrower"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Aanbieders van AI-modellen voor algemene doeleinden.",
-    "addressee_b": "Degene die in een AI-testomgeving voor regelgeving persoonsgegevens verwerkt voor het ontwikkelen, trainen en testen van bepaalde AI-systemen; voor de publicatieverplichting noemt de tekst de uitvoerder niet uitdrukkelijk en verwijst zij naar de website van de bevoegde autoriteiten.",
-    "same_addressee": "no",
-    "shared_situation": null,
-    "situations_overlap": "no",
-    "requirement_a": "De aanbieder moet onder meer technische documentatie en informatie voor aanbieders van AI-systemen opstellen en bijhouden, beleid inzake auteursrechten naleven en een voldoende gedetailleerde samenvatting van de voor het trainen gebruikte content opstellen en openbaar maken volgens een door het AI-bureau verstrekt sjabloon.",
-    "requirement_b": "Persoonsgegevens die rechtmatig voor andere doeleinden zijn verzameld, mogen in een AI-testomgeving voor regelgeving uitsluitend worden verwerkt voor het ontwikkelen, trainen en testen van bepaalde AI-systemen indien aan alle opgesomde voorwaarden is voldaan. Daarnaast moet een korte samenvatting van het AI-project, de doelstellingen en de verwachte resultaten op de website van de bevoegde autoriteiten worden gepubliceerd, met de genoemde uitzondering voor gevoelige operationele gegevens.",
-    "joint_compliance": "not_applicable",
-    "relation": "UNRELATED",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "een voldoende gedetailleerde samenvatting opstellen en openbaar maken over de voor het trainen van het AI-model voor algemene doeleinden gebruikte content",
-    "evidence_b": "een korte samenvatting van het in de testomgeving ontwikkelde AI-project en de doelstellingen en verwachte resultaten ervan worden op de website van de bevoegde autoriteiten gepubliceerd",
-    "reasoning_summary": "Norm A ziet op algemene verplichtingen van aanbieders van AI-modellen voor algemene doeleinden, waaronder openbaarmaking van een samenvatting van trainingscontent. Norm B ziet op de voorwaarden voor verwerking van persoonsgegevens in een AI-testomgeving en op publicatie van een samenvatting van een specifiek AI-project. De verschillende objecten, situaties en niet-overlappende publicatieverplichtingen maken de normen niet tot duplicatie, conflict of spanning.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 4403,
-    "output": 1142
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
@@ -666,7 +246,7 @@
    ],
    "scope": "internal_coherence",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -678,13 +258,13 @@
     "object_direction": "same"
    },
    "llm_adjudication": {
-    "addressee_a": "De verwerkingsverantwoordelijke",
-    "addressee_b": "De verwerkingsverantwoordelijke",
+    "addressee_a": "De verwerkingsverantwoordelijke.",
+    "addressee_b": "De verwerkingsverantwoordelijke.",
     "same_addressee": "yes",
     "shared_situation": null,
     "situations_overlap": "no",
-    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in norm A genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, de categorieën persoonsgegevens en, in voorkomend geval, informatie over ontvangers en doorgiften.",
-    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging alle in norm B genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, gerechtvaardigde belangen indien van toepassing, en informatie over ontvangers en doorgiften.",
+    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, de categorieën persoonsgegevens en — in voorkomend geval — informatie over ontvangers en doorgiften.",
+    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging alle in artikel 13, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, gerechtvaardigde belangen indien van toepassing, en — in voorkomend geval — informatie over ontvangers en doorgiften.",
     "joint_compliance": "not_applicable",
     "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
@@ -693,7 +273,7 @@
     "resolution_basis": null,
     "evidence_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
     "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
-    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke tot informatieverstrekking aan de betrokkene, maar zij gelden voor elkaar uitsluitende situaties: norm A wanneer de persoonsgegevens niet van de betrokkene zijn verkregen en norm B wanneer zij bij de betrokkene worden verzameld. De normen zijn daarom complementair en veroorzaken geen overlap of conflict.",
+    "reasoning_summary": "Beide normen leggen de verwerkingsverantwoordelijke een informatieplicht jegens de betrokkene op, maar voor elkaar uitsluitende situaties: norm A geldt wanneer de persoonsgegevens niet van de betrokkene zijn verkregen en norm B wanneer zij bij de betrokkene worden verzameld. Zij zijn daarom complementair en vormen geen duplicatie of conflict.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -701,96 +281,23 @@
    "n_attempts": 1,
    "tokens": {
     "input": 3647,
-    "output": 785
+    "output": 630
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-809044ead5556821",
-   "pair_id": "809044ead5556821",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:68:5:4",
-     "instrument_id": "32016R0679",
-     "card_hash": "7587e7de76362327",
-     "shown_as": "B"
-    },
-    {
-     "norm_id": "32016R0679:74:1:1",
-     "instrument_id": "32016R0679",
-     "card_hash": "e8b80914692bec19",
-     "shown_as": "A"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "bijeenkomst",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "De voorzitter van het Comité.",
-    "addressee_b": "De Commissie voor het recht om deel te nemen en voor het aanwijzen van een vertegenwoordiger; de voorzitter van het Comité voor de kennisgeving aan de Commissie.",
-    "same_addressee": "partial",
-    "shared_situation": "De organisatie en activiteiten van het Comité, waaronder de bijeenkomsten van het Comité en de informatie daarover aan de Commissie.",
-    "situations_overlap": "partial",
-    "requirement_a": "De voorzitter moet de bijeenkomsten van het Comité bijeenroepen en de agenda opstellen, besluiten ter kennis brengen en ervoor zorgen dat de taken van het Comité tijdig worden uitgevoerd.",
-    "requirement_b": "De Commissie mag deelnemen aan de activiteiten en, zonder stemrecht, aan de bijeenkomsten van het Comité, moet een vertegenwoordiger aanwijzen, en moet door de voorzitter in kennis worden gesteld van de activiteiten van het Comité.",
-    "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "a) bijeenroepen van de bijeenkomsten van het Comité en het opstellen van zijn agenda;",
-    "evidence_b": "De Commissie heeft het recht deel te nemen aan de activiteiten en, zonder stemrecht, aan de bijeenkomsten van het Comité.",
-    "reasoning_summary": "De normen zien beide op het Comité en zijn bijeenkomsten, maar leggen verschillende verplichtingen en rechten op. Norm A regelt de taken van de voorzitter; norm B verleent de Commissie deelnemingsrechten en verplicht de voorzitter daarnaast tot informatieverstrekking. Zij kunnen gezamenlijk worden nageleefd en vullen elkaar aan.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2696,
-    "output": 598
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
   {
    "finding_id": "F-827d39f4acecea99",
    "pair_id": "827d39f4acecea99",
-   "relation": "DUPLICATION",
-   "status": "candidate",
-   "confidence_tier": 2,
-   "confidence_label": "Medium",
-   "confidence_reasons": [
-    "single LLM pass, all code checks passed",
-    "Tier 1 (High) requires a second independent run, not implemented yet"
-   ],
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
    "selection": "top",
    "calibration_band": null,
    "provisions": [
@@ -809,7 +316,7 @@
    ],
    "scope": "internal_coherence",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -824,19 +331,19 @@
     "addressee_a": "het AI-bureau",
     "addressee_b": "het AI-bureau",
     "same_addressee": "yes",
-    "shared_situation": "Het AI-bureau staat op het punt zowel om toegang tot het betrokken AI-model voor algemene doeleinden als om een maatregel te verzoeken en kan daaraan voorafgaand met de aanbieder een gestructureerde dialoog aangaan.",
-    "situations_overlap": "yes",
-    "requirement_a": "Het AI-bureau mag, alvorens om een maatregel te verzoeken, een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
-    "requirement_b": "Het AI-bureau mag, alvorens om toegang tot het betrokken AI-model voor algemene doeleinden te verzoeken, een gestructureerde dialoog met de aanbieder aangaan om meer informatie over de interne tests, waarborgen, procedures en maatregelen te verzamelen.",
+    "shared_situation": "Een situatie waarin het AI-bureau overweegt om zowel om toegang tot het betrokken AI-model voor algemene doeleinden als om een maatregel te verzoeken en voorafgaand daaraan een gestructureerde dialoog met de aanbieder wil aangaan.",
+    "situations_overlap": "partial",
+    "requirement_a": "Het AI-bureau mag, voordat het om een maatregel verzoekt, een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
+    "requirement_b": "Het AI-bureau mag, voordat het om toegang tot het betrokken AI-model voor algemene doeleinden verzoekt, een gestructureerde dialoog met de aanbieder aangaan om informatie te verzamelen over interne tests, waarborgen en procedures en maatregelen ter beperking van systeemrisico’s.",
     "joint_compliance": "possible",
-    "relation": "DUPLICATION",
-    "duplication_scope": "partial_overlap",
-    "intentional": true,
-    "resolution": "none",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
     "resolution_basis": null,
     "evidence_a": "Alvorens om een maatregel te verzoeken kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
-    "evidence_b": "Alvorens om toegang tot het betrokken AI-model voor algemene doeleinden te verzoeken, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan",
-    "reasoning_summary": "Beide normen verlenen aan hetzelfde AI-bureau de bevoegdheid om met dezelfde aanbieder een gestructureerde dialoog aan te gaan. De voorwaarden verschillen: norm A ziet op een voorafgaand verzoek om een maatregel en norm B op een voorafgaand verzoek om toegang, waarbij norm B bovendien een specifiek informatiedoel noemt. In de overlappende situatie kan één dialoog beide bevoegdheden betreffen; de normen zijn daarom gedeeltelijk duplicatief en niet tegenstrijdig.",
+    "evidence_b": "Alvorens om toegang tot het betrokken AI-model voor algemene doeleinden te verzoeken, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan om meer informatie te verzamelen over de interne tests van het model, de interne waarborgen ter voorkoming van systeemrisico’s en andere interne procedures en maatregelen die de aanbieder heeft genomen om dergelijke risico’s te beperken.",
+    "reasoning_summary": "Beide normen verlenen het AI-bureau een bevoegdheid om een gestructureerde dialoog met dezelfde aanbieder aan te gaan, maar koppelen die bevoegdheid aan verschillende voorafgaande verzoeken. Norm B specificeert bovendien het informatiedoel van de dialoog. De normen zijn daarom gedeeltelijk overlappend en complementair, zonder dat naleving van de ene norm de andere onmogelijk maakt.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -844,12 +351,12 @@
    "n_attempts": 1,
    "tokens": {
     "input": 3005,
-    "output": 937
+    "output": 975
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
@@ -879,7 +386,7 @@
    ],
    "scope": "cross_law",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -894,10 +401,10 @@
     "addressee_a": "de Commissie",
     "addressee_b": "de Commissie",
     "same_addressee": "yes",
-    "shared_situation": "Indien ontwikkelingen aanleiding geven om respectievelijk deze verordening en de andere verordening te wijzigen, met name wanneer sprake is van ontwikkelingen in de informatiemaatschappij.",
+    "shared_situation": "Wanneer dit nodig is, moet de Commissie overwegen passende voorstellen in te dienen tot wijziging van respectievelijk deze verordening, rekening houdend met relevante technologische ontwikkelingen en de stand van zaken in de informatiemaatschappij.",
     "situations_overlap": "partial",
-    "requirement_a": "De Commissie dient, indien nodig, passende voorstellen in om Verordening (EU) 2024/1689 te wijzigen, met name rekening houdend met ontwikkelingen in de technologie, het effect van AI-systemen op gezondheid en veiligheid en op de grondrechten, en de voortgang in de informatiemaatschappij.",
-    "requirement_b": "De Commissie dient, indien nodig, passende voorstellen in om Verordening (EU) 2016/679 te wijzigen, met name in het licht van de ontwikkelingen in de informatietechnologie en de stand van zaken in de informatiemaatschappij.",
+    "requirement_a": "Indien nodig dient de Commissie passende voorstellen in om Verordening (EU) 2024/1689 te wijzigen, met name rekening houdend met ontwikkelingen in de technologie, het effect van AI-systemen op gezondheid en veiligheid en op de grondrechten, en de voortgang in de informatiemaatschappij.",
+    "requirement_b": "Indien nodig dient de Commissie passende voorstellen in om Verordening (EU) 2016/679 te wijzigen, met name in het licht van de ontwikkelingen in de informatietechnologie en de stand van zaken in de informatiemaatschappij.",
     "joint_compliance": "possible",
     "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
@@ -906,7 +413,7 @@
     "resolution_basis": null,
     "evidence_a": "Indien nodig dient de Commissie passende voorstellen in teneinde deze verordening te wijzigen, met name rekening houdend met ontwikkelingen in de technologie, het effect van AI-systemen op gezondheid en veiligheid, en op de grondrechten, en de voortgang in de informatiemaatschappij.",
     "evidence_b": "Indien nodig dient de Commissie passende voorstellen in teneinde deze verordening te wijzigen, met name in het licht van de ontwikkelingen in de informatietechnologie en de stand van zaken in de informatiemaatschappij.",
-    "reasoning_summary": "Beide normen binden de Commissie tot het indienen van passende wijzigingsvoorstellen indien nodig. Zij hebben een vergelijkbare structuur en overlappende aandacht voor ontwikkelingen in de informatiemaatschappij, maar zien op de wijziging van verschillende verordeningen en noemen deels verschillende ontwikkelingen. De normen zijn daarom complementair en kunnen gezamenlijk worden nageleefd.",
+    "reasoning_summary": "Beide normen binden de Commissie tot het indienen van passende wijzigingsvoorstellen wanneer dat nodig is. Zij zien echter op verschillende verordeningen en noemen deels verschillende beoordelingsfactoren; zij zijn daarom verwant en complementair, maar niet duplicatief of tegenstrijdig.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -914,225 +421,12 @@
    "n_attempts": 1,
    "tokens": {
     "input": 2479,
-    "output": 784
+    "output": 786
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-9f379676c49987e7",
-   "pair_id": "9f379676c49987e7",
-   "relation": "DUPLICATION",
-   "status": "candidate",
-   "confidence_tier": 2,
-   "confidence_label": "Medium",
-   "confidence_reasons": [
-    "single LLM pass, all code checks passed",
-    "Tier 1 (High) requires a second independent run, not implemented yet"
-   ],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32016R0679:47:1:1",
-     "instrument_id": "32016R0679",
-     "card_hash": "a0e1f1750c8943c4",
-     "shown_as": "B"
-    },
-    {
-     "norm_id": "32016R0679:57:1:29",
-     "instrument_id": "32016R0679",
-     "card_hash": "e9a227b3ee5e4c54",
-     "shown_as": "A"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "bedrijfsvoorschrift",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Elke toezichthoudende autoriteit op haar grondgebied.",
-    "addressee_b": "De bevoegde toezichthoudende autoriteit.",
-    "same_addressee": "partial",
-    "shared_situation": "De goedkeuring van bindende bedrijfsvoorschriften overeenkomstig artikel 47 door de bevoegde toezichthoudende autoriteit.",
-    "situations_overlap": "yes",
-    "requirement_a": "De toezichthoudende autoriteit moet bindende bedrijfsvoorschriften overeenkomstig artikel 47 goedkeuren.",
-    "requirement_b": "De bevoegde toezichthoudende autoriteit moet bindende bedrijfsvoorschriften in overeenstemming met het coherentiemechanisme goedkeuren, mits aan de genoemde voorwaarden wordt voldaan.",
-    "joint_compliance": "possible",
-    "relation": "DUPLICATION",
-    "duplication_scope": "b_narrower",
-    "intentional": true,
-    "resolution": "explicit_reference",
-    "resolution_basis": "Norm A verwijst uitdrukkelijk naar artikel 47; norm B werkt de goedkeuring overeenkomstig dat artikel nader uit en stelt daarvoor voorwaarden.",
-    "evidence_a": "zij keurt overeenkomstig artikel 47 bindende bedrijfsvoorschriften goed",
-    "evidence_b": "De bevoegde toezichthoudende autoriteit keurt in overeenstemming met het in artikel 63 bedoelde coherentiemechanism bindende bedrijfsvoorschriften goed, op voorwaarde dat deze:",
-    "reasoning_summary": "Beide normen zien op de goedkeuring van bindende bedrijfsvoorschriften door een toezichthoudende autoriteit. Norm B ziet specifieker op de bevoegde autoriteit en voegt het coherentiemechanisme en inhoudelijke voorwaarden toe; naleving van norm B voldoet daarmee ook aan de algemenere taak in norm A.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 4000,
-    "output": 853
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-ae25df72cf7e5f31",
-   "pair_id": "ae25df72cf7e5f31",
-   "relation": "UNRELATED",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32024R1689:65:6:4",
-     "instrument_id": "32024R1689",
-     "card_hash": "dd5a0be8c7720651",
-     "shown_as": "B"
-    },
-    {
-     "norm_id": "32024R1689:67:9:11",
-     "instrument_id": "32024R1689",
-     "card_hash": "d8d5bb0dd9320c03",
-     "shown_as": "A"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "subgroep",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Het adviesforum",
-    "addressee_b": "De AI-board",
-    "same_addressee": "no",
-    "shared_situation": null,
-    "situations_overlap": "no",
-    "requirement_a": "Het adviesforum mag, indien dat passend is, permanente of tijdelijke subgroepen oprichten om specifieke vraagstukken met betrekking tot de doelstellingen van deze verordening te onderzoeken.",
-    "requirement_b": "De AI-board moet twee permanente subgroepen oprichten voor samenwerking en uitwisseling over respectievelijk markttoezicht en aangemelde instanties. Daarnaast mag de AI-board, indien dat passend is, andere permanente of tijdelijke subgroepen oprichten om specifieke kwesties te onderzoeken.",
-    "joint_compliance": "not_applicable",
-    "relation": "UNRELATED",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "Het adviesforum kan in voorkomend geval permanente of tijdelijke subgroepen oprichten om specifieke vraagstukken met betrekking tot de doelstellingen van deze verordening te onderzoeken.",
-    "evidence_b": "De AI-board richt twee permanente subgroepen op om een platform te bieden voor samenwerking en uitwisseling tussen markttoezichtautoriteiten en aanmeldende autoriteiten over kwesties betreffende respectievelijk markttoezicht en aangemelde instanties.",
-    "reasoning_summary": "De normen richten zich tot verschillende organen: het adviesforum respectievelijk de AI-board. Hoewel beide bepalingen betrekking hebben op het oprichten van subgroepen, gelden zij voor verschillende actoren en leggen zij verschillende bevoegdheden of verplichtingen vast. Daarom is er geen gedeelde situatie waarin één actor aan beide normen moet voldoen.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2632,
-    "output": 566
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-bd50236e8b4792a5",
-   "pair_id": "bd50236e8b4792a5",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32024R1689:65:6:6",
-     "instrument_id": "32024R1689",
-     "card_hash": "5d295c618a64334f",
-     "shown_as": "B"
-    },
-    {
-     "norm_id": "32024R1689:67:9:11",
-     "instrument_id": "32024R1689",
-     "card_hash": "d8d5bb0dd9320c03",
-     "shown_as": "A"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "subgroep",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Het adviesforum",
-    "addressee_b": "De AI-board",
-    "same_addressee": "no",
-    "shared_situation": "Het oprichten van permanente of tijdelijke subgroepen om specifieke vraagstukken of kwesties met betrekking tot de doelstellingen van deze verordening te onderzoeken.",
-    "situations_overlap": "partial",
-    "requirement_a": "Het adviesforum mag, in voorkomend geval, permanente of tijdelijke subgroepen oprichten om specifieke vraagstukken met betrekking tot de doelstellingen van deze verordening te onderzoeken.",
-    "requirement_b": "De AI-board moet twee permanente subgroepen oprichten en mag, in voorkomend geval, andere permanente of tijdelijke subgroepen oprichten om specifieke kwesties te onderzoeken.",
-    "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "Het adviesforum kan in voorkomend geval permanente of tijdelijke subgroepen oprichten om specifieke vraagstukken met betrekking tot de doelstellingen van deze verordening te onderzoeken.",
-    "evidence_b": "De AI-board kan in voorkomend geval andere permanente of tijdelijke subgroepen oprichten om specifieke kwesties te onderzoeken.",
-    "reasoning_summary": "De normen betreffen vergelijkbare bevoegdheden tot het oprichten van subgroepen, maar binden verschillende organen. Zij zijn complementair en kunnen naast elkaar worden toegepast; norm B regelt bovendien afzonderlijk de vaste subgroepen van de AI-board.",
-    "outcome_changing_fact": null,
-    "certainty": "high"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2642,
-    "output": 811
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
@@ -1162,7 +456,7 @@
    ],
    "scope": "internal_coherence",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -1177,10 +471,10 @@
     "addressee_a": "het AI-bureau",
     "addressee_b": "het AI-bureau",
     "same_addressee": "yes",
-    "shared_situation": "Een situatie waarin het AI-bureau met dezelfde aanbieder van het AI-model voor algemene doeleinden een gestructureerde dialoog wil aangaan vóór zowel een verzoek om informatie als een verzoek om toegang tot het betrokken AI-model.",
+    "shared_situation": "Een situatie waarin het AI-bureau vóór zowel een verzoek om informatie als een verzoek om toegang tot het betrokken AI-model voor algemene doeleinden een gestructureerde dialoog met de aanbieder aangaat.",
     "situations_overlap": "partial",
-    "requirement_a": "Het AI-bureau mag, voordat het een verzoek om informatie verzendt, een gestructureerde dialoog aangaan met de aanbieder van het AI-model voor algemene doeleinden.",
-    "requirement_b": "Het AI-bureau mag, voordat het om toegang tot het betrokken AI-model voor algemene doeleinden verzoekt, een gestructureerde dialoog aangaan met de aanbieder om informatie te verzamelen over onder meer interne tests, waarborgen en procedures ter beperking van systeemrisico’s.",
+    "requirement_a": "Het AI-bureau mag, voordat het een verzoek om informatie verzendt, een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
+    "requirement_b": "Het AI-bureau mag, voordat het om toegang tot het betrokken AI-model voor algemene doeleinden verzoekt, een gestructureerde dialoog met de aanbieder aangaan om informatie te verzamelen over de interne tests, waarborgen, procedures en maatregelen ter beperking van systeemrisico’s.",
     "joint_compliance": "possible",
     "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
@@ -1189,7 +483,7 @@
     "resolution_basis": null,
     "evidence_a": "Alvorens het verzoek om informatie te verzenden, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
     "evidence_b": "Alvorens om toegang tot het betrokken AI-model voor algemene doeleinden te verzoeken, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan om meer informatie te verzamelen over de interne tests van het model, de interne waarborgen ter voorkoming van systeemrisico’s en andere interne procedures en maatregelen die de aanbieder heeft genomen om dergelijke risico’s te beperken.",
-    "reasoning_summary": "Beide normen geven het AI-bureau een bevoegdheid om een gestructureerde dialoog met dezelfde aanbieder aan te gaan, maar koppelen die bevoegdheid aan verschillende vervolgstappen: een verzoek om informatie respectievelijk een verzoek om toegang. De normen zijn daarom verwant en kunnen naast elkaar worden nageleefd, zonder dat zij dezelfde situatie volledig regelen of elkaar dupliceren.",
+    "reasoning_summary": "Beide normen geven hetzelfde AI-bureau een bevoegdheid om een gestructureerde dialoog met dezelfde aanbieder aan te gaan, maar zij koppelen die bevoegdheid aan verschillende voorafgaande verzoeken en omschrijven in norm B een specifiek informatiedoel. De bevoegdheden kunnen naast elkaar worden uitgeoefend en vullen elkaar aan; er is geen verplichting of verbod dat tot tegenstrijdigheid leidt.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -1197,89 +491,19 @@
    "n_attempts": 1,
    "tokens": {
     "input": 3008,
-    "output": 909
+    "output": 1180
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
-   "human_verified": false,
-   "report_eligible": false
-  },
-  {
-   "finding_id": "F-d7d2cf3b59d2591f",
-   "pair_id": "d7d2cf3b59d2591f",
-   "relation": "RELATED_NO_ISSUE",
-   "status": "no_issue",
-   "confidence_tier": null,
-   "confidence_label": null,
-   "confidence_reasons": [],
-   "selection": "top",
-   "calibration_band": null,
-   "provisions": [
-    {
-     "norm_id": "32024R1689:57:6:8",
-     "instrument_id": "32024R1689",
-     "card_hash": "8560e49388762706",
-     "shown_as": "B"
-    },
-    {
-     "norm_id": "32024R1689:70:8:13",
-     "instrument_id": "32024R1689",
-     "card_hash": "8d13f7332b0921fb",
-     "shown_as": "A"
-    }
-   ],
-   "scope": "internal_coherence",
-   "scores": {
-    "combined": 0.9712,
-    "action_score": 1.0,
-    "action_eff": 1.0,
-    "action_relation": "same_axis",
-    "generic": false,
-    "object_score": 0.8046,
-    "object_norm": 0.9521,
-    "object_key": "begeleid",
-    "object_relation": "head",
-    "object_direction": "same"
-   },
-   "llm_adjudication": {
-    "addressee_a": "Nationale bevoegde autoriteiten",
-    "addressee_b": "De bevoegde autoriteiten die binnen een AI-testomgeving voor regelgeving handelen",
-    "same_addressee": "partial",
-    "shared_situation": "Een nationale bevoegde autoriteit verstrekt begeleiding in verband met de uitvoering van deze verordening binnen een AI-testomgeving voor regelgeving.",
-    "situations_overlap": "partial",
-    "requirement_a": "De nationale bevoegde autoriteiten mogen begeleiding bij en advies over de uitvoering van deze verordening verstrekken, met name aan kmo’s en start-ups. Indien zij begeleiding en advies willen geven over een AI-systeem op gebieden die onder ander Unierecht vallen, moeten zij in voorkomend geval de nationale bevoegde autoriteiten onder dat Unierecht raadplegen.",
-    "requirement_b": "De bevoegde autoriteiten verstrekken, in voorkomend geval, binnen de AI-testomgeving voor regelgeving begeleiding, toezicht en ondersteuning met het oog op onder meer het in kaart brengen van risico’s en het testen van de doeltreffendheid van verplichtingen, eisen en beperkende maatregelen.",
-    "joint_compliance": "possible",
-    "relation": "RELATED_NO_ISSUE",
-    "duplication_scope": null,
-    "intentional": null,
-    "resolution": "not_applicable",
-    "resolution_basis": null,
-    "evidence_a": "Nationale bevoegde autoriteiten kunnen begeleiding bij en advies over de uitvoering van deze verordening verstrekken",
-    "evidence_b": "De bevoegde autoriteiten verstrekken in voorkomend geval begeleiding, toezicht en ondersteuning binnen de AI-testomgeving voor regelgeving",
-    "reasoning_summary": "De normen kunnen in dezelfde situatie naast elkaar gelden, maar regelen niet precies hetzelfde. Norm A verleent een algemene bevoegdheid om begeleiding en advies te verstrekken, terwijl norm B in voorkomend geval binnen een AI-testomgeving begeleiding, toezicht en ondersteuning voorschrijft. De verplichting van norm B is daarmee contextgebonden en aanvullend op de algemene bevoegdheid van norm A; er is geen tegenstrijdigheid of relevante dubbele verplichting.",
-    "outcome_changing_fact": null,
-    "certainty": "medium"
-   },
-   "needs_recheck_reason": null,
-   "n_attempts": 1,
-   "tokens": {
-    "input": 2863,
-    "output": 918
-   },
-   "error": null,
-   "model": "gpt-5.6-luna",
-   "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
   {
    "finding_id": "F-e5d2f9908a5ab7a1",
    "pair_id": "e5d2f9908a5ab7a1",
-   "relation": "RELATED_NO_ISSUE",
+   "relation": "UNRELATED",
    "status": "no_issue",
    "confidence_tier": null,
    "confidence_label": null,
@@ -1302,7 +526,7 @@
    ],
    "scope": "internal_coherence",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -1319,30 +543,30 @@
     "same_addressee": "yes",
     "shared_situation": null,
     "situations_overlap": "no",
-    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en de rechtsgrond, en eventuele informatie over doorgiften.",
-    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en de rechtsgrond, en eventuele informatie over doorgiften.",
+    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken.",
+    "requirement_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken.",
     "joint_compliance": "not_applicable",
-    "relation": "RELATED_NO_ISSUE",
+    "relation": "UNRELATED",
     "duplication_scope": null,
     "intentional": null,
     "resolution": "not_applicable",
     "resolution_basis": null,
-    "evidence_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
-    "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
-    "reasoning_summary": "Beide normen richten zich tot dezelfde verwerkingsverantwoordelijke en regelen vergelijkbare informatieverplichtingen, maar voor elkaar uitsluitende situaties: norm A geldt wanneer de persoonsgegevens niet van de betrokkene zijn verkregen, terwijl norm B geldt wanneer zij bij de betrokkene worden verzameld. Daarom zijn de normen complementair en is er geen overlap of conflict.",
+    "evidence_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen",
+    "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke en betreffen grotendeels dezelfde soort informatie, maar zij gelden voor elkaar uitsluitende situaties: artikel 14 ziet op persoonsgegevens die niet van de betrokkene zijn verkregen, terwijl artikel 13 ziet op persoonsgegevens die bij de betrokkene worden verzameld. Daardoor is er geen concrete situatie waarin beide verplichtingen tegelijk gelden.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
    "needs_recheck_reason": null,
-   "n_attempts": 1,
+   "n_attempts": 2,
    "tokens": {
-    "input": 3842,
-    "output": 576
+    "input": 7782,
+    "output": 1430
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   },
@@ -1372,7 +596,7 @@
    ],
    "scope": "internal_coherence",
    "scores": {
-    "combined": 0.9712,
+    "combined": 0.9736,
     "action_score": 1.0,
     "action_eff": 1.0,
     "action_relation": "same_axis",
@@ -1384,13 +608,13 @@
     "object_direction": "same"
    },
    "llm_adjudication": {
-    "addressee_a": "het AI-bureau",
-    "addressee_b": "het AI-bureau",
+    "addressee_a": "Het AI-bureau (begrepen als verwijzing naar de Commissie).",
+    "addressee_b": "Het AI-bureau (begrepen als verwijzing naar de Commissie).",
     "same_addressee": "yes",
-    "shared_situation": "Wanneer het AI-bureau vóór zowel een verzoek om een maatregel als het verzenden van een verzoek om informatie een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden overweegt aan te gaan.",
+    "shared_situation": "Het AI-bureau staat op het punt zowel om een maatregel te verzoeken als een verzoek om informatie te verzenden, en overweegt voorafgaand daaraan een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aan te gaan.",
     "situations_overlap": "partial",
-    "requirement_a": "Het AI-bureau mag, alvorens om een maatregel te verzoeken, een gestructureerde dialoog met de aanbieder aangaan.",
-    "requirement_b": "Het AI-bureau mag, alvorens het verzoek om informatie te verzenden, een gestructureerde dialoog met de aanbieder aangaan.",
+    "requirement_a": "Het AI-bureau mag, voordat het om een maatregel verzoekt, een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
+    "requirement_b": "Het AI-bureau mag, voordat het verzoek om informatie wordt verzonden, een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
     "joint_compliance": "possible",
     "relation": "RELATED_NO_ISSUE",
     "duplication_scope": null,
@@ -1399,7 +623,7 @@
     "resolution_basis": null,
     "evidence_a": "Alvorens om een maatregel te verzoeken kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
     "evidence_b": "Alvorens het verzoek om informatie te verzenden, kan het AI-bureau een gestructureerde dialoog met de aanbieder van het AI-model voor algemene doeleinden aangaan.",
-    "reasoning_summary": "Beide normen geven hetzelfde AI-bureau een bevoegdheid om met dezelfde aanbieder een gestructureerde dialoog aan te gaan, maar koppelen die bevoegdheid aan verschillende voorafgaande procedures. De normen zijn daarom complementair en kunnen gezamenlijk worden nageleefd; de ene norm beperkt of vervangt de andere niet.",
+    "reasoning_summary": "Beide normen geven hetzelfde AI-bureau een bevoegdheid om een gestructureerde dialoog met dezelfde aanbieder aan te gaan. De voorwaarden verschillen: norm A ziet op de periode vóór een verzoek om een maatregel en norm B op de periode vóór verzending van een verzoek om informatie. De bevoegdheden zijn verenigbaar en vullen elkaar aan; geen van beide verplicht tot het aangaan van de dialoog.",
     "outcome_changing_fact": null,
     "certainty": "high"
    },
@@ -1407,12 +631,1488 @@
    "n_attempts": 1,
    "tokens": {
     "input": 2781,
-    "output": 708
+    "output": 752
    },
    "error": null,
    "model": "gpt-5.6-luna",
    "prompt_version": "e24ada557de5",
-   "extracted_on": "2026-10-18",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-0743fcaf5eee3623",
+   "pair_id": "0743fcaf5eee3623",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:85:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "670a85b8ac92a19e",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:88:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "826fb7862ff6254c",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Elke lidstaat",
+    "addressee_b": "Elke lidstaat",
+    "same_addressee": "yes",
+    "shared_situation": "Een lidstaat moet de Commissie informeren over overeenkomstig de relevante leden vastgestelde wetgevingsbepalingen en latere wijzigingen daarvan.",
+    "situations_overlap": "partial",
+    "requirement_a": "De lidstaat moet de overeenkomstig artikel 88, lid 1, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en latere wijzigingen daarvan onverwijld meedelen.",
+    "requirement_b": "De lidstaat moet de overeenkomstig artikel 85, lid 2, vastgestelde wetgevingsbepalingen aan de Commissie meedelen en latere wijzigingen daarvan onverwijld meedelen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "evidence_b": "Elke lidstaat deelt de Commissie de overeenkomstig lid 2 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "Beide normen richten zich tot elke lidstaat en verplichten tot mededeling aan de Commissie, maar zien op verschillende wetgevingsbepalingen: die op grond van artikel 88, lid 1, respectievelijk artikel 85, lid 2. De verplichtingen zijn daarom complementair en kunnen naast elkaar worden nagekomen.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2427,
+    "output": 644
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-08e8f57b8dd93312",
+   "pair_id": "08e8f57b8dd93312",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:6",
+     "instrument_id": "32016R0679",
+     "card_hash": "10d86075b5f7b71d",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:14:1:6",
+     "instrument_id": "32016R0679",
+     "card_hash": "764a838939a3df94",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "ontvanger",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "de verwerkingsverantwoordelijke",
+    "addressee_b": "de verwerkingsverantwoordelijke",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond en, in voorkomend geval, informatie over ontvangers en doorgiften.",
+    "requirement_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken, waaronder de identiteit en contactgegevens, de verwerkingsdoeleinden en rechtsgrond, de betrokken categorieën van persoonsgegevens en, in voorkomend geval, informatie over ontvangers en doorgiften.",
+    "joint_compliance": "not_applicable",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
+    "evidence_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke tot informatieverstrekking aan de betrokkene, maar zij zien op elkaar uitsluitende situaties: norm A geldt wanneer de persoonsgegevens bij de betrokkene worden verzameld en norm B wanneer zij niet van de betrokkene zijn verkregen. De normen zijn daarom complementair en veroorzaken geen conflict of dubbele verplichting in dezelfde situatie.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3648,
+    "output": 780
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-18cdedbdcd017dd2",
+   "pair_id": "18cdedbdcd017dd2",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:83:9:10",
+     "instrument_id": "32016R0679",
+     "card_hash": "2cb6d231a0515d5b",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:84:2:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "eab87f08632394b5",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De lidstaten waarin het rechtsstelsel niet voorziet in administratieve geldboeten, voor zover zij wetgevingsbepalingen op grond van dit lid vaststellen.",
+    "addressee_b": "Elke lidstaat.",
+    "same_addressee": "yes",
+    "shared_situation": "Een lidstaat zonder administratieve geldboeten die zowel wetgevingsbepalingen op grond van artikel 83, lid 9, als wetgevingsbepalingen overeenkomstig artikel 84, lid 1, vaststelt en deze aan de Commissie moet meedelen.",
+    "situations_overlap": "partial",
+    "requirement_a": "De betrokken lidstaat moet de op grond van artikel 83, lid 9, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en latere wijzigingen daarvan en daarop van invloed zijnde wijzigingswetgeving onverwijld meedelen.",
+    "requirement_b": "Elke lidstaat moet de overeenkomstig artikel 84, lid 1, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en alle latere wijzigingen daarvan onverwijld meedelen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Die lidstaten delen de Commissie uiterlijk op 25 mei 2018 de wetgevingsbepalingen mee die zij op grond van dit lid vaststellen, alsmede onverwijld alle latere wijzigingen daarvan en alle daarop van invloed zijnde wijzigingswetgeving.",
+    "evidence_b": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "Beide normen verplichten lidstaten tot mededeling aan de Commissie met dezelfde uiterste datum en een vergelijkbare verplichting voor latere wijzigingen. Zij zien echter op verschillende wetgevingsbepalingen: norm A op bepalingen die op grond van artikel 83, lid 9, zijn vastgesteld en norm B op bepalingen overeenkomstig artikel 84, lid 1. De verplichtingen kunnen daarom naast elkaar worden nagekomen en vormen geen duplicatie.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2617,
+    "output": 959
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-19d90faddb730122",
+   "pair_id": "19d90faddb730122",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:83:9:10",
+     "instrument_id": "32016R0679",
+     "card_hash": "2cb6d231a0515d5b",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:85:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "670a85b8ac92a19e",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De lidstaten waarvan het rechtsstelsel niet voorziet in administratieve geldboeten.",
+    "addressee_b": "Elke lidstaat.",
+    "same_addressee": "yes",
+    "shared_situation": "Een lidstaat waarvan het rechtsstelsel niet voorziet in administratieve geldboeten en die tevens wetgevingsbepalingen overeenkomstig artikel 85, lid 2, heeft vastgesteld.",
+    "situations_overlap": "partial",
+    "requirement_a": "De lidstaat moet de Commissie uiterlijk op 25 mei 2018 de op grond van artikel 83, lid 9, vastgestelde wetgevingsbepalingen meedelen, alsmede onverwijld latere wijzigingen daarvan en alle daarop van invloed zijnde wijzigingswetgeving.",
+    "requirement_b": "De lidstaat moet de Commissie de overeenkomstig artikel 85, lid 2, vastgestelde wetgevingsbepalingen meedelen, alsook onverwijld alle latere wijzigingen daarvan.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Die lidstaten delen de Commissie uiterlijk op 25 mei 2018 de wetgevingsbepalingen mee die zij op grond van dit lid vaststellen, alsmede onverwijld alle latere wijzigingen daarvan en alle daarop van invloed zijnde wijzigingswetgeving.",
+    "evidence_b": "Elke lidstaat deelt de Commissie de overeenkomstig lid 2 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "Beide normen verplichten lidstaten tot mededeling aan de Commissie, maar zien op verschillende categorieën wetgevingsbepalingen: die op grond van artikel 83, lid 9, respectievelijk die overeenkomstig artikel 85, lid 2, zijn vastgesteld. De verplichtingen zijn daarom cumulatief en verenigbaar; er is geen tegenstrijdigheid of wezenlijke dubbele rapportage van dezelfde bepalingen.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2614,
+    "output": 807
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-34827e1487d6d76e",
+   "pair_id": "34827e1487d6d76e",
+   "relation": "UNRELATED",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:83:9:10",
+     "instrument_id": "32016R0679",
+     "card_hash": "2cb6d231a0515d5b",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:88:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "826fb7862ff6254c",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Lidstaten waarvan het rechtsstelsel niet voorziet in administratieve geldboeten en die op grond van lid 9 wetgevingsbepalingen vaststellen.",
+    "addressee_b": "Elke lidstaat.",
+    "same_addressee": "partial",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "De betrokken lidstaten moeten de Commissie uiterlijk op 25 mei 2018 de op grond van lid 9 vastgestelde wetgevingsbepalingen meedelen, evenals onverwijld latere wijzigingen daarvan en daarop van invloed zijnde wijzigingswetgeving.",
+    "requirement_b": "Elke lidstaat moet de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen meedelen, evenals onverwijld alle latere wijzigingen daarvan.",
+    "joint_compliance": "not_applicable",
+    "relation": "UNRELATED",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Die lidstaten delen de Commissie uiterlijk op 25 mei 2018 de wetgevingsbepalingen mee die zij op grond van dit lid vaststellen, alsmede onverwijld alle latere wijzigingen daarvan en alle daarop van invloed zijnde wijzigingswetgeving.",
+    "evidence_b": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "Beide normen leggen een vergelijkbare mededelingsplicht aan lidstaten op met dezelfde uiterste datum en dezelfde ontvanger, maar zij zien op verschillende wetgevingsbepalingen en verschillende situaties. Norm A betreft bepalingen over de toepassing en oplegging van administratieve geldboeten; norm B betreft bepalingen over verwerking in het kader van de arbeidsverhouding. Er is daarom geen concrete overlappende situatie of duplicatie.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2632,
+    "output": 912
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-9bafb98f5822e480",
+   "pair_id": "9bafb98f5822e480",
+   "relation": "UNRELATED",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32024R1689:22:1:1",
+     "instrument_id": "32024R1689",
+     "card_hash": "c224ce8bd1af72d9",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32024R1689:54:1:1",
+     "instrument_id": "32024R1689",
+     "card_hash": "bd1989a270092ef1",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "gemachtigd",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Aanbieders die in derde landen zijn gevestigd en een AI-systeem met een hoog risico in de Unie in de handel brengen.",
+    "addressee_b": "Aanbieders die in derde landen zijn gevestigd en een AI-model voor algemene doeleinden in de Unie in de handel brengen.",
+    "same_addressee": "partial",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "Zij moeten vóór het in de handel brengen van hun AI-systeem met een hoog risico in de Unie, middels een schriftelijke machtiging, een gemachtigde aanwijzen die in de Unie is gevestigd.",
+    "requirement_b": "Zij moeten vóór het in de handel brengen van hun AI-model voor algemene doeleinden in de Unie, middels een schriftelijke machtiging, een gemachtigde aanwijzen die in de Unie is gevestigd.",
+    "joint_compliance": "not_applicable",
+    "relation": "UNRELATED",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Aanbieders die in derde landen zijn gevestigd, wijzen voordat zij hun AI-systemen met een hoog risico in de Unie in de handel brengen, middels een schriftelijke machtiging een gemachtigde aan die is gevestigd in de Unie.",
+    "evidence_b": "Aanbieders die in derde landen zijn gevestigd, wijzen voordat zij een AI-model voor algemene doeleinden in de Unie in de handel brengen, middels een schriftelijke machtiging een gemachtigde aan die is gevestigd in de Unie.",
+    "reasoning_summary": "De normen hebben een vergelijkbare structuur en binden mogelijk dezelfde aanbieder, maar zien op verschillende gereguleerde objecten: een AI-systeem met een hoog risico respectievelijk een AI-model voor algemene doeleinden. De teksten bieden daarom geen concrete overlappende situatie of dubbele verplichting.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2932,
+    "output": 651
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-a0bb548cec9d7dfd",
+   "pair_id": "a0bb548cec9d7dfd",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:84:2:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "eab87f08632394b5",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:85:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "670a85b8ac92a19e",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Elke lidstaat",
+    "addressee_b": "Elke lidstaat",
+    "same_addressee": "yes",
+    "shared_situation": "Een lidstaat heeft zowel wetgevingsbepalingen inzake de in artikel 84, lid 1, bedoelde sancties als wetgevingsbepalingen overeenkomstig artikel 85, lid 2, vastgesteld en moet deze aan de Commissie meedelen.",
+    "situations_overlap": "no",
+    "requirement_a": "Elke lidstaat moet de overeenkomstig artikel 85, lid 2, vastgestelde wetgevingsbepalingen aan de Commissie meedelen en onverwijld alle latere wijzigingen daarvan meedelen.",
+    "requirement_b": "Elke lidstaat moet de overeenkomstig artikel 84, lid 1, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en onverwijld alle latere wijzigingen daarvan meedelen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Elke lidstaat deelt de Commissie de overeenkomstig lid 2 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "evidence_b": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "Beide normen richten zich tot dezelfde addressee en leggen een vergelijkbare mededelingsplicht aan de Commissie op. De verplichtingen zien echter op verschillende wetgevingsbepalingen: die overeenkomstig artikel 85, lid 2, respectievelijk die overeenkomstig artikel 84, lid 1. Zij zijn daarom afzonderlijk en naast elkaar uitvoerbaar, zonder conflict of dubbele naleving van dezelfde verplichting.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2412,
+    "output": 779
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-ca1fce4002ffbac9",
+   "pair_id": "ca1fce4002ffbac9",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:78:2:2",
+     "instrument_id": "32016R0679",
+     "card_hash": "1583c7fbb78ff6da",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:79:1:1",
+     "instrument_id": "32016R0679",
+     "card_hash": "e90108669f9f84dd",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "voorzien",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Elke betrokkene die meent dat zijn rechten uit hoofde van de verordening zijn geschonden door niet-conforme verwerking van zijn persoonsgegevens.",
+    "addressee_b": "Iedere betrokkene die een klacht uit hoofde van artikel 77 heeft ingediend en van wie de bevoegde toezichthoudende autoriteit de klacht niet behandelt of niet tijdig informeert over de voortgang of het resultaat.",
+    "same_addressee": "yes",
+    "shared_situation": "Een betrokkene wiens persoonsgegevens niet overeenkomstig de verordening zijn verwerkt, heeft daarover een klacht ingediend en krijgt geen behandeling of tijdige informatie van de bevoegde toezichthoudende autoriteit.",
+    "situations_overlap": "partial",
+    "requirement_a": "De betrokkene heeft het recht een doeltreffende voorziening in rechte in te stellen tegen de verwerkingsverantwoordelijke of verwerker wanneer hij van mening is dat zijn rechten zijn geschonden door niet-conforme verwerking.",
+    "requirement_b": "De betrokkene heeft het recht een doeltreffende voorziening in rechte in te stellen wanneer de bevoegde toezichthoudende autoriteit zijn klacht niet behandelt of hem niet binnen drie maanden informeert over de voortgang of het resultaat ervan.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "heeft elke betrokkene het recht een doeltreffende voorziening in rechte in te stellen indien hij van mening is dat zijn rechten uit hoofde van deze verordening geschonden zijn ten gevolge van een verwerking van zijn persoonsgegevens die niet aan deze verordening voldoet.",
+    "evidence_b": "heeft iedere betrokkene het recht om een doeltreffende voorziening in rechte in te stellen indien de overeenkomstig de artikelen 55 en 56 bevoegde toezichthoudende autoriteit een klacht niet behandelt of de betrokkene niet binnen drie maanden in kennis stelt van de voortgang of het resultaat van de uit hoofde van artikel 77 ingediende klacht.",
+    "reasoning_summary": "Beide normen verlenen de betrokkene een recht op een doeltreffende voorziening in rechte, maar zij zien op verschillende wederpartijen en voorwaarden. Norm A betreft een voorziening tegen een verwerkingsverantwoordelijke of verwerker wegens niet-conforme verwerking; norm B betreft een voorziening tegen het uitblijven van behandeling of tijdige informatie door de toezichthoudende autoriteit. De rechten kunnen naast elkaar worden uitgeoefend en zijn complementair.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2934,
+    "output": 823
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-e160dbb50f9d2e1a",
+   "pair_id": "e160dbb50f9d2e1a",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:84:2:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "eab87f08632394b5",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:88:3:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "826fb7862ff6254c",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9531,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "wetgevingsbepal",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Elke lidstaat",
+    "addressee_b": "Elke lidstaat",
+    "same_addressee": "yes",
+    "shared_situation": "Een lidstaat die zowel wetgevingsbepalingen overeenkomstig artikel 84, lid 1, als wetgevingsbepalingen overeenkomstig artikel 88, lid 1, heeft vastgesteld en deze aan de Commissie moet meedelen.",
+    "situations_overlap": "partial",
+    "requirement_a": "De lidstaat moet de overeenkomstig artikel 84, lid 1, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en latere wijzigingen daarvan onverwijld meedelen.",
+    "requirement_b": "De lidstaat moet de overeenkomstig artikel 88, lid 1, vastgestelde wetgevingsbepalingen uiterlijk op 25 mei 2018 aan de Commissie meedelen en latere wijzigingen daarvan onverwijld meedelen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "evidence_b": "Elke lidstaat deelt de Commissie uiterlijk op 25 mei 2018 de overeenkomstig lid 1 vastgestelde wetgevingsbepalingen mee, alsook onverwijld alle latere wijzigingen daarvan.",
+    "reasoning_summary": "De normen hebben dezelfde adressaat, handeling en termijnen, maar zien door hun plaats in verschillende artikelen op verschillende categorieën wetgevingsbepalingen: die overeenkomstig artikel 84, lid 1, respectievelijk artikel 88, lid 1. Zij zijn daarom complementair en kunnen gelijktijdig worden nageleefd zonder dat de ene norm de andere beperkt of vervangt.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2430,
+    "output": 906
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-4fe70020a46b2440",
+   "pair_id": "4fe70020a46b2440",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:41:5:15",
+     "instrument_id": "32016R0679",
+     "card_hash": "3956660c82a1e7f0",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:58:2:15",
+     "instrument_id": "32016R0679",
+     "card_hash": "7631a12d2fc0b4b1",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.945,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7606,
+    "object_norm": 0.9,
+    "object_key": "http://eurovoc.europa.eu/3367",
+    "object_relation": "eurovoc",
+    "object_direction": ""
+   },
+   "llm_adjudication": {
+    "addressee_a": "De bevoegde toezichthoudende autoriteit",
+    "addressee_b": "Elk toezichthoudende autoriteit",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "De bevoegde toezichthoudende autoriteit moet de accreditatie van een in artikel 41, lid 1, bedoeld orgaan intrekken wanneer de accreditatievoorwaarden niet of niet meer worden vervuld, of wanneer de door het orgaan genomen maatregelen inbreuk maken op de verordening.",
+    "requirement_b": "De toezichthoudende autoriteit heeft de bevoegdheid om corrigerende maatregelen te nemen, waaronder het intrekken van een certificering of het gelasten dat een certificeringsorgaan een certificering intrekt wanneer niet langer aan de certificeringsvereisten wordt voldaan. Daarnaast omvatten de bevoegdheden de andere in de onderdelen a tot en met j genoemde maatregelen.",
+    "joint_compliance": "not_applicable",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": null,
+    "evidence_b": null,
+    "reasoning_summary": "Beide normen betreffen bevoegdheden of taken van een toezichthoudende autoriteit, maar zij zien op verschillende instrumenten en situaties. Norm A verplicht tot intrekking van de accreditatie van een orgaan dat toezicht houdt op goedgekeurde gedragscodes; norm B betreft corrigerende bevoegdheden, waaronder de intrekking van certificeringen. De normen zijn daarom inhoudelijk verwant, maar niet overlappend of tegenstrijdig.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3469,
+    "output": 812
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-7c0710806fc1d9b2",
+   "pair_id": "7c0710806fc1d9b2",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32024R1689:26:11:19",
+     "instrument_id": "32024R1689",
+     "card_hash": "0d0732bec04b6bbd",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32024R1689:50:3:4",
+     "instrument_id": "32024R1689",
+     "card_hash": "945a2f138fb96e95",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.945,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7606,
+    "object_norm": 0.9,
+    "object_key": "http://eurovoc.europa.eu/2338",
+    "object_relation": "eurovoc",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Gebruiksverantwoordelijken van in bijlage III bedoelde AI-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen.",
+    "addressee_b": "Gebruiksverantwoordelijken van een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering.",
+    "same_addressee": "partial",
+    "shared_situation": "Een gebruiksverantwoordelijke gebruikt een AI-systeem dat zowel een in bijlage III bedoeld AI-systeem met een hoog risico is dat beslissingen over natuurlijke personen neemt of daarbij helpt, als een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering.",
+    "situations_overlap": "partial",
+    "requirement_a": "De gebruiksverantwoordelijke moet de natuurlijke personen informeren dat het AI-systeem met een hoog risico op hen wordt toegepast. Voor AI-systemen met een hoog risico die voor rechtshandhavingsdoeleinden worden gebruikt, is daarnaast artikel 13 van Richtlijn (EU) 2016/680 van toepassing.",
+    "requirement_b": "De gebruiksverantwoordelijke moet de daaraan blootgestelde natuurlijke personen informeren over de werking van het systeem en de persoonsgegevens overeenkomstig de genoemde gegevensbeschermingsinstrumenten verwerken, indien van toepassing. Deze verplichting geldt niet voor bepaalde bij wet toegestane systemen voor biometrische categorisering en emotieherkenning die voor strafrechtelijke doeleinden worden gebruikt, mits passende waarborgen en het Unierecht in acht worden genomen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "informeren gebruiksverantwoordelijken van in bijlage III bedoelde AI-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen, de natuurlijke personen dat het AI-systeem met een hoog risico op hen wordt toegepast.",
+    "evidence_b": "Gebruiksverantwoordelijken van een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering informeren de daaraan blootgestelde natuurlijke personen over de werking van het systeem",
+    "reasoning_summary": "De normen kunnen in dezelfde situatie op dezelfde gebruiksverantwoordelijke van toepassing zijn, maar leggen verschillende informatieverplichtingen op: norm A betreft het feit dat het AI-systeem op de persoon wordt toegepast, terwijl norm B de werking van het systeem betreft. De verplichtingen zijn daarom complementair en kunnen gezamenlijk worden nageleefd. De uitzondering in norm B beperkt de toepassing van die norm zelf en maakt de normen niet tegenstrijdig.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3018,
+    "output": 1069
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-a41d2ca9ebc96433",
+   "pair_id": "a41d2ca9ebc96433",
+   "relation": "DUPLICATION",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "single LLM pass, all code checks passed",
+    "Tier 1 (High) requires a second independent run, not implemented yet"
+   ],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:42:8:8",
+     "instrument_id": "32016R0679",
+     "card_hash": "b98c2617e9bdfa07",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:43:6:9",
+     "instrument_id": "32016R0679",
+     "card_hash": "832eb5eb8667a255",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.945,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7606,
+    "object_norm": 0.9,
+    "object_key": "http://eurovoc.europa.eu/8414",
+    "object_relation": "eurovoc",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "Het Comité voor het verzamelen en openbaar maken van de certificeringsmechanismen en gegevensbeschermingszegels; daarnaast de toezichthoudende autoriteiten voor het openbaar maken en meedelen van de voorschriften en criteria.",
+    "addressee_b": "Het Comité.",
+    "same_addressee": "partial",
+    "shared_situation": "Het Comité verzamelt certificeringsmechanismen en gegevensbeschermingszegels in een register en maakt deze via geëigende kanalen openbaar.",
+    "situations_overlap": "yes",
+    "requirement_a": "Het Comité moet alle certificeringsmechanismen en gegevensbeschermingszegels in een register verzamelen en deze via geëigende kanalen openbaar maken. De toezichthoudende autoriteiten moeten daarnaast de bedoelde voorschriften en criteria openbaar maken en aan het Comité meedelen.",
+    "requirement_b": "Het Comité moet alle certificeringsmechanismen en gegevensbeschermingszegels en -merktekens in een register verzamelen en deze via de daartoe geëigende kanalen openbaar maken.",
+    "joint_compliance": "possible",
+    "relation": "DUPLICATION",
+    "duplication_scope": "a_narrower",
+    "intentional": null,
+    "resolution": "none",
+    "resolution_basis": null,
+    "evidence_a": "Het Comité verzamelt alle certificeringsmechanismen en gegevensbeschermingszegels in een register en maakt deze via geëigende kanalen openbaar.",
+    "evidence_b": "Het Comité verzamelt alle certificeringsmechanismen en gegevensbeschermingszegels en -merktekens in een register en maakt deze via de daartoe geëigende kanalen openbaar.",
+    "reasoning_summary": "Voor het Comité leggen beide bepalingen dezelfde verplichting op ten aanzien van certificeringsmechanismen en gegevensbeschermingszegels. Norm B heeft een ruimer object, omdat zij ook gegevensbeschermingsmerktekens omvat; de aanvullende verplichtingen voor de toezichthoudende autoriteiten in norm A veranderen deze overlap niet.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2472,
+    "output": 925
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-6320d87526a1c84f",
+   "pair_id": "6320d87526a1c84f",
+   "relation": "UNRELATED",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32024R1689:101:2:4",
+     "instrument_id": "32024R1689",
+     "card_hash": "8b35ca846c927176",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32024R1689:112:1:2",
+     "instrument_id": "32024R1689",
+     "card_hash": "04397083778e9b6f",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9364,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7474,
+    "object_norm": 0.8844,
+    "object_key": "bevind",
+    "object_relation": "head",
+    "object_direction": "b_narrower"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De Commissie",
+    "addressee_b": "De Commissie",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "De Commissie moet vanaf de inwerkingtreding van de verordening tot het einde van de in artikel 97 vermelde periode eenmaal per jaar beoordelen of de lijst van bijlage III en de lijst van verboden AI-praktijken moeten worden gewijzigd, en de bevindingen meedelen aan het Europees Parlement en de Raad.",
+    "requirement_b": "Alvorens een besluit op grond van lid 1 vast te stellen, moet de Commissie haar voorlopige bevindingen meedelen aan de aanbieder van het AI-model voor algemene doeleinden en hem in de gelegenheid stellen te worden gehoord.",
+    "joint_compliance": "not_applicable",
+    "relation": "UNRELATED",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "De Commissie beoordeelt vanaf de inwerkingtreding van deze verordening en tot het einde van de in artikel 97 vermelde periode van de bevoegdheidsdelegatie eenmaal per jaar of de lijst van bijlage III en de lijst van de verboden AI-praktijken in artikel 5 moeten worden gewijzigd.",
+    "evidence_b": "Alvorens het besluit op grond van lid 1 vast te stellen, deelt de Commissie haar voorlopige bevindingen mee aan de aanbieder van het AI-model voor algemene doeleinden, en stelt zij hem in de gelegenheid te worden gehoord.",
+    "reasoning_summary": "Beide normen binden de Commissie, maar zij gelden in wezen verschillende situaties. Norm A betreft een periodieke evaluatie van bepaalde lijsten en communicatie aan het Europees Parlement en de Raad; norm B betreft de procedure voorafgaand aan een specifiek sanctiebesluit en communicatie aan een aanbieder, met hoorrecht. Er is daarom geen concrete overlappende situatie of inhoudelijke duplicatie.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2681,
+    "output": 654
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-25f501dcad3fb77a",
+   "pair_id": "25f501dcad3fb77a",
+   "relation": "DUPLICATION",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "single LLM pass, all code checks passed",
+    "Tier 1 (High) requires a second independent run, not implemented yet"
+   ],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32024R1689:5:6:14",
+     "instrument_id": "32024R1689",
+     "card_hash": "ac5313f30b85efed",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32024R1689:62:3:4",
+     "instrument_id": "32024R1689",
+     "card_hash": "b2905b883b23416e",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9231,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7731,
+    "object_norm": 0.9148,
+    "object_key": "sjablon",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De nationale markttoezichtautoriteiten en nationale gegevensbeschermingsautoriteiten van de lidstaten, voor de verplichting om jaarverslagen in te dienen; daarnaast de Commissie, voor de verplichting om een sjabloon te verstrekken.",
+    "addressee_b": "Het AI-bureau, dat volgens de gegeven definitie als de Commissie wordt begrepen.",
+    "same_addressee": "partial",
+    "shared_situation": "Het verstrekken van een sjabloon voor de rapportage over het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving, voor zover dit gebied door de AI-board in haar verzoek is gespecificeerd.",
+    "situations_overlap": "partial",
+    "requirement_a": "De nationale markttoezichtautoriteiten en nationale gegevensbeschermingsautoriteiten dienen jaarverslagen over het betreffende gebruik bij de Commissie in. De Commissie dient daarvoor aan de lidstaten en deze autoriteiten een sjabloon te verstrekken.",
+    "requirement_b": "Het AI-bureau dient gestandaardiseerde sjablonen te verstrekken voor de gebieden die onder deze verordening vallen, zoals gespecificeerd door de AI-board in zijn verzoek.",
+    "joint_compliance": "possible",
+    "relation": "DUPLICATION",
+    "duplication_scope": "partial_overlap",
+    "intentional": null,
+    "resolution": "none",
+    "resolution_basis": null,
+    "evidence_a": "Daartoe verstrekt de Commissie de lidstaten en de nationale markttoezicht- en gegevensbeschermingsautoriteiten een sjabloon",
+    "evidence_b": "a) het verstrekken van gestandaardiseerde sjablonen voor de gebieden die onder deze verordening vallen, zoals gespecificeerd door de AI-board in zijn verzoek",
+    "reasoning_summary": "Beide bepalingen verplichten dezelfde institutionele actor, de Commissie respectievelijk het daarmee gelijkgestelde AI-bureau, tot het verstrekken van sjablonen. Norm B is algemener, terwijl norm A specifiek ziet op rapportage over real-time biometrische identificatie voor rechtshandhaving. De verplichtingen kunnen gezamenlijk worden nageleefd; norm B overlapt slechts indien dit specifieke gebied door de AI-board is gespecificeerd en het sjabloon onder de gestandaardiseerde sjablonen valt.",
+    "outcome_changing_fact": null,
+    "certainty": "medium"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3203,
+    "output": 1007
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-0399c393a7bcbec8",
+   "pair_id": "0399c393a7bcbec8",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "c59bccc58e5cd6fc",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:14:1:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "f6c07652fd239847",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "contactgegev",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De verwerkingsverantwoordelijke",
+    "addressee_b": "De verwerkingsverantwoordelijke",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging de in artikel 13, lid 1, genoemde informatie verstrekken, waaronder in voorkomend geval de contactgegevens van de functionaris voor gegevensbescherming.",
+    "requirement_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken, waaronder in voorkomend geval de contactgegevens van de functionaris voor gegevensbescherming.",
+    "joint_compliance": "not_applicable",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
+    "evidence_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke en regelen informatieverstrekking aan de betrokkene. Zij gelden echter voor elkaar uitsluitende situaties: norm A bij verkrijging van de persoonsgegevens bij de betrokkene en norm B wanneer de persoonsgegevens niet van de betrokkene zijn verkregen. De normen zijn daarom complementair en niet tegenstrijdig of overlappend.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3642,
+    "output": 607
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-1e14c8c7aa69ee03",
+   "pair_id": "1e14c8c7aa69ee03",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "c59bccc58e5cd6fc",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:14:1:2",
+     "instrument_id": "32016R0679",
+     "card_hash": "a2e8b1bee16b37ec",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "contactgegev",
+    "object_relation": "head",
+    "object_direction": "a_narrower"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De verwerkingsverantwoordelijke.",
+    "addressee_b": "De verwerkingsverantwoordelijke.",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken.",
+    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens de in artikel 13, lid 1, genoemde informatie verstrekken.",
+    "joint_compliance": "not_applicable",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
+    "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke tot informatieverstrekking aan de betrokkene, maar zij gelden voor elkaar uitsluitende situaties: artikel 14 ziet op persoonsgegevens die niet van de betrokkene zijn verkregen, terwijl artikel 13 ziet op verzameling bij de betrokkene. Het zijn complementaire informatieplichten en geen duplicatie of uitzondering.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3661,
+    "output": 606
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-2c645472f6b618b4",
+   "pair_id": "2c645472f6b618b4",
+   "relation": "UNRELATED",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:41:5:15",
+     "instrument_id": "32016R0679",
+     "card_hash": "3956660c82a1e7f0",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:43:7:11",
+     "instrument_id": "32016R0679",
+     "card_hash": "53663cd8f6d93887",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "accreditatie",
+    "object_relation": "head",
+    "object_direction": "b_narrower"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De bevoegde toezichthoudende autoriteit",
+    "addressee_b": "De bevoegde toezichthoudende autoriteit of de nationale accreditatie-instantie",
+    "same_addressee": "partial",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "De bevoegde toezichthoudende autoriteit moet de accreditatie van een orgaan voor toezicht op goedgekeurde gedragscodes intrekken wanneer de accreditatievoorwaarden niet of niet meer worden vervuld, of wanneer de door dat orgaan genomen maatregelen inbreuk maken op de verordening.",
+    "requirement_b": "De bevoegde toezichthoudende autoriteit of de nationale accreditatie-instantie moet, onverminderd hoofdstuk VIII, de overeenkomstig artikel 43, lid 1, afgegeven accreditatie van een certificeringsorgaan intrekken wanneer de accreditatievoorwaarden niet of niet meer worden vervuld, of wanneer de door het certificeringsorgaan genomen maatregelen inbreuk maken op de verordening.",
+    "joint_compliance": "not_applicable",
+    "relation": "UNRELATED",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "De bevoegde toezichthoudende autoriteit trekt de accreditatie van een in lid 1 bedoeld orgaan in",
+    "evidence_b": "de bevoegde toezichthoudende autoriteit of de nationale accreditatie-instantie, onverminderd hoofdstuk VIII, de overeenkomstig lid 1 van dit artikel aan een certificeringsorgaan afgegeven accreditatie in",
+    "reasoning_summary": "Hoewel beide normen voorzien in intrekking van een accreditatie bij vergelijkbare tekortkomingen, ziet norm A op een orgaan voor toezicht op goedgekeurde gedragscodes en norm B op een certificeringsorgaan. De onderscheiden objecten en situaties maken de normen niet overlappend.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2590,
+    "output": 645
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-2e8d6877a1131c3c",
+   "pair_id": "2e8d6877a1131c3c",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "c59bccc58e5cd6fc",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:36:3:6",
+     "instrument_id": "32016R0679",
+     "card_hash": "6e052dfdffbf8ea0",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "contactgegev",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De verwerkingsverantwoordelijke.",
+    "addressee_b": "De verwerkingsverantwoordelijke.",
+    "same_addressee": "yes",
+    "shared_situation": "Een voorgenomen verwerking waarbij persoonsgegevens rechtstreeks bij de betrokkene worden verzameld en de verwerkingsverantwoordelijke de toezichthoudende autoriteit uit hoofde van artikel 36, lid 1, raadpleegt.",
+    "situations_overlap": "partial",
+    "requirement_a": "De verwerkingsverantwoordelijke moet de betrokkene bij de verkrijging van de persoonsgegevens alle in artikel 13, lid 1, genoemde informatie verstrekken, waaronder — in voorkomend geval — de contactgegevens van de functionaris voor gegevensbescherming.",
+    "requirement_b": "Wanneer de verwerkingsverantwoordelijke de toezichthoudende autoriteit raadpleegt, moet hij haar de in artikel 36, lid 3, genoemde informatie verstrekken, waaronder — indien van toepassing — de contactgegevens van de functionaris voor gegevensbescherming.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
+    "evidence_b": "Wanneer de verwerkingsverantwoordelijke de toezichthoudende autoriteit uit hoofde van lid 1 raadpleegt, verstrekt hij haar informatie over:",
+    "reasoning_summary": "De normen binden dezelfde verwerkingsverantwoordelijke, maar gelden voor verschillende handelingen en hebben verschillende ontvangers: de betrokkene respectievelijk de toezichthoudende autoriteit. Zij kunnen bij dezelfde voorgenomen verwerking naast elkaar gelden en zijn complementair; naleving van de ene norm vervangt de andere niet.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3685,
+    "output": 867
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-58868d787a9dbac0",
+   "pair_id": "58868d787a9dbac0",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:2",
+     "instrument_id": "32016R0679",
+     "card_hash": "7084f27c586ee962",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:14:1:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "f6c07652fd239847",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "contactgegev",
+    "object_relation": "head",
+    "object_direction": "b_narrower"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De verwerkingsverantwoordelijke",
+    "addressee_b": "De verwerkingsverantwoordelijke",
+    "same_addressee": "yes",
+    "shared_situation": null,
+    "situations_overlap": "no",
+    "requirement_a": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging de in artikel 13, lid 1, genoemde informatie verstrekken.",
+    "requirement_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, moet de verwerkingsverantwoordelijke de betrokkene de in artikel 14, lid 1, genoemde informatie verstrekken.",
+    "joint_compliance": "not_applicable",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie:",
+    "evidence_b": "Wanneer persoonsgegevens niet van de betrokkene zijn verkregen, verstrekt de verwerkingsverantwoordelijke de betrokkene de volgende informatie:",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke en betreffen het verstrekken van informatie aan de betrokkene. Norm A geldt wanneer de persoonsgegevens bij de betrokkene zelf worden verzameld, terwijl norm B geldt wanneer de persoonsgegevens niet van de betrokkene zijn verkregen. De toepassingsvoorwaarden sluiten elkaar uit; de normen zijn daarom complementair en veroorzaken geen overlap of conflict.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3661,
+    "output": 619
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-765d2af9e3d99f8c",
+   "pair_id": "765d2af9e3d99f8c",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:50:whole:3",
+     "instrument_id": "32016R0679",
+     "card_hash": "0f8e60cf77498c05",
+     "shown_as": "A"
+    },
+    {
+     "norm_id": "32016R0679:61:1:1",
+     "instrument_id": "32016R0679",
+     "card_hash": "091b120c17eea896",
+     "shown_as": "B"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "bijstand",
+    "object_relation": "head",
+    "object_direction": "same"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De Commissie en de toezichthoudende autoriteiten",
+    "addressee_b": "De toezichthoudende autoriteiten",
+    "same_addressee": "partial",
+    "shared_situation": null,
+    "situations_overlap": "partial",
+    "requirement_a": "Ten aanzien van derde landen en internationale organisaties moeten de Commissie en de toezichthoudende autoriteiten de nodige maatregelen nemen voor onder meer de ontwikkeling van procedures voor internationale samenwerking, het bieden van internationale wederzijdse bijstand onder passende waarborgen, het betrekken van belanghebbenden en het bevorderen van de uitwisseling van wetgeving en praktijken.",
+    "requirement_b": "De toezichthoudende autoriteiten moeten elkaar relevante informatie en wederzijdse bijstand verstrekken en doeltreffend met elkaar samenwerken voor een consequente tenuitvoerlegging en toepassing van deze verordening, waaronder bij informatieverzoeken en toezichtsmaatregelen.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Ten aanzien van derde landen en internationale organisaties nemen de Commissie en de toezichthoudende autoriteiten de nodige maatregelen om: a) procedures voor internationale samenwerking te ontwikkelen, zodat de effectieve handhaving van de wetgeving inzake de bescherming van persoonsgegevens wordt vergemakkelijkt;",
+    "evidence_b": "De toezichthoudende autoriteiten verstrekken elkaar relevante informatie en wederzijdse bijstand om deze verordening op een consequente manier ten uitvoer te leggen en toe te passen, en nemen maatregelen om doeltreffend met elkaar samen te werken.",
+    "reasoning_summary": "De normen hebben gedeeltelijk dezelfde institutionele adressaat en betreffen beide samenwerking en wederzijdse bijstand. Norm A ziet echter op internationale samenwerking met derde landen en internationale organisaties, terwijl norm B ziet op samenwerking tussen toezichthoudende autoriteiten voor de uitvoering van deze verordening. De verplichtingen zijn complementair en kunnen gelijktijdig worden nageleefd.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 2948,
+    "output": 835
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-93ba57f16a954e91",
+   "pair_id": "93ba57f16a954e91",
+   "relation": "RELATED_NO_ISSUE",
+   "status": "no_issue",
+   "confidence_tier": null,
+   "confidence_label": null,
+   "confidence_reasons": [],
+   "selection": "top",
+   "calibration_band": null,
+   "provisions": [
+    {
+     "norm_id": "32016R0679:13:1:2",
+     "instrument_id": "32016R0679",
+     "card_hash": "7084f27c586ee962",
+     "shown_as": "B"
+    },
+    {
+     "norm_id": "32016R0679:36:3:6",
+     "instrument_id": "32016R0679",
+     "card_hash": "6e052dfdffbf8ea0",
+     "shown_as": "A"
+    }
+   ],
+   "scope": "internal_coherence",
+   "scores": {
+    "combined": 0.9223,
+    "action_score": 1.0,
+    "action_eff": 1.0,
+    "action_relation": "same_axis",
+    "generic": false,
+    "object_score": 0.7257,
+    "object_norm": 0.8587,
+    "object_key": "contactgegev",
+    "object_relation": "head",
+    "object_direction": "b_narrower"
+   },
+   "llm_adjudication": {
+    "addressee_a": "De verwerkingsverantwoordelijke",
+    "addressee_b": "De verwerkingsverantwoordelijke",
+    "same_addressee": "yes",
+    "shared_situation": "Een voorgenomen verwerking waarvoor de verwerkingsverantwoordelijke de toezichthoudende autoriteit uit hoofde van artikel 36, lid 1, raadpleegt en waarbij persoonsgegevens bij de betrokkene worden verzameld.",
+    "situations_overlap": "partial",
+    "requirement_a": "Wanneer de verwerkingsverantwoordelijke de toezichthoudende autoriteit raadpleegt, moet hij haar de in artikel 36, lid 3, genoemde informatie verstrekken, waaronder indien van toepassing de contactgegevens van de functionaris voor gegevensbescherming.",
+    "requirement_b": "Wanneer persoonsgegevens bij de betrokkene worden verzameld, moet de verwerkingsverantwoordelijke de betrokkene bij de verkrijging daarvan alle in artikel 13, lid 1, genoemde informatie verstrekken, waaronder indien van toepassing de contactgegevens van de functionaris voor gegevensbescherming.",
+    "joint_compliance": "possible",
+    "relation": "RELATED_NO_ISSUE",
+    "duplication_scope": null,
+    "intentional": null,
+    "resolution": "not_applicable",
+    "resolution_basis": null,
+    "evidence_a": "Wanneer de verwerkingsverantwoordelijke de toezichthoudende autoriteit uit hoofde van lid 1 raadpleegt, verstrekt hij haar informatie over: a) indien van toepassing, de respectieve verantwoordelijkheden van de verwerkingsverantwoordelijke, bij de verwerking betrokken gezamenlijke verwerkingsverantwoordelijken en verwerkers, in het bijzonder voor verwerking binnen een concern; b) de doeleinden en de middelen van de voorgenomen verwerking; c) de maatregelen en waarborgen die worden geboden ter bescherming van de rechten en vrijheden van betrokkenen uit hoofde van deze verordening; d) indien van toepassing, de contactgegevens van de functionaris voor gegevensbescherming; e) de gegevensbeschermingseffectbeoordeling waarin bij artikel 35 is voorzien; en f) alle andere informatie waar de toezichthoudende autoriteit om verzoekt.",
+    "evidence_b": "Wanneer persoonsgegevens betreffende een betrokkene bij die persoon worden verzameld, verstrekt de verwerkingsverantwoordelijke de betrokkene bij de verkrijging van de persoonsgegevens al de volgende informatie: a) de identiteit en de contactgegevens van de verwerkingsverantwoordelijke en, in voorkomend geval, van de vertegenwoordiger van de verwerkingsverantwoordelijke; b) in voorkomend geval, de contactgegevens van de functionaris voor gegevensbescherming; c) de verwerkingsdoeleinden waarvoor de persoonsgegevens zijn bestemd, alsook de rechtsgrond voor de verwerking; d) de gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde, indien de verwerking op artikel 6, lid 1, punt f), is gebaseerd; d) in voorkomend geval, de ontvangers of categorieën van ontvangers van de persoonsgegevens; e) in voorkomend geval, dat de verwerkingsverantwoordelijke het voornemen heeft de persoonsgegevens door te geven aan een derde land of een internationale organisatie; of er al dan niet een adequaatheidsbesluit van de Commissie bestaat; of, in het geval van in artikel 46, artikel 47 of artikel 49, lid 1, tweede alinea, bedoelde doorgiften, welke de passende of geschikte waarborgen zijn, hoe er een kopie van kan worden verkregen of waar ze kunnen worden geraadpleegd.",
+    "reasoning_summary": "Beide normen binden dezelfde verwerkingsverantwoordelijke, maar gelden bij verschillende triggers en richten zich tot verschillende ontvangers. Artikel 36, lid 3, betreft informatieverstrekking aan de toezichthoudende autoriteit bij voorafgaande raadpleging; artikel 13, lid 1, betreft informatieverstrekking aan de betrokkene bij het verzamelen van persoonsgegevens. De verplichtingen kunnen naast elkaar worden nagekomen en zijn complementair.",
+    "outcome_changing_fact": null,
+    "certainty": "high"
+   },
+   "needs_recheck_reason": null,
+   "n_attempts": 1,
+   "tokens": {
+    "input": 3700,
+    "output": 1120
+   },
+   "error": null,
+   "model": "gpt-5.6-luna",
+   "prompt_version": "e24ada557de5",
+   "extracted_on": "2026-10-19",
    "human_verified": false,
    "report_eligible": false
   }

@@ -108,7 +108,7 @@ CALIBRATION_SEED = "calibration-v1"
 
 DEFAULT_SCORES = Path("data/conflict/combined_pair_scores.jsonl")
 DEFAULT_CARDS = Path("data/new_norms/LLM_norm_cards.jsonl")
-DEFAULT_OUT = Path("data/conflict/review_queue.jsonl")
+DEFAULT_OUT = Path("data/conflict/LLM_review/review_queue.jsonl")
 
 
 # ---------------------------------------------------------------------------

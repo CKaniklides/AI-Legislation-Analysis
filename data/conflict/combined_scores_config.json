@@ -1,7 +1,9 @@
 {
-  "scheme": "combined = w_action * action_eff + w_object * min(1, object_score / O_MAX)",
-  "w_action": 0.4,
-  "w_object": 0.6,
+  "scheme": "combined = w_action * action_eff + w_object * min(1, object_score / O_MAX) + w_actor * actor_score",
+  "w_action": 0.35,
+  "w_object": 0.55,
+  "w_actor": 0.1,
+  "weight_rules_broken": [],
   "generic_factor": 0.7,
   "N": 1203,
   "O_MAX": 0.8451,
@@ -11,10 +13,19 @@
   "inputs": {
     "objects": "data\\conflict\\object\\object_pair_scores.jsonl",
     "actions": "data\\new_norms\\original_norms.json",
+    "actors": "data\\conflict\\actor\\actor_pair_scores.jsonl",
     "stage_a": "data/conflict/stageA_pairs.json"
+  },
+  "actor_level_scores": {
+    "same": 1.0,
+    "nested": 0.7,
+    "weak": 0.2,
+    "different": -0.25
   },
   "counts": {
     "object_pairs": 22221,
-    "scored": 22221
+    "scored": 22221,
+    "actor_rows": 342691,
+    "scored_with_nonzero_actor": 9343
   }
 }

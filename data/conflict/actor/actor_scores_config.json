@@ -1,0 +1,26 @@
+{
+  "data": "data/conflict/actor",
+  "norms": "norm_actor_map.jsonl",
+  "relations": "actor_relations.jsonl",
+  "inventory": "actor_inventory.jsonl",
+  "curated": null,
+  "stage_a": "data/conflict/stageA_pairs.json",
+  "out": "actor_pair_scores.jsonl",
+  "write": "nonzero",
+  "details": false,
+  "s_same": 1.0,
+  "s_nested": 0.7,
+  "s_weak": 0.2,
+  "s_different": -0.25,
+  "threshold": 0.5,
+  "scores": {
+    "same": 1.0,
+    "nested": 0.7,
+    "weak": 0.2,
+    "different": -0.25
+  },
+  "stage_a_pairs": 976662,
+  "norms_with_actor": 1030,
+  "stage_a_norms_not_in_actor_map": 0,
+  "relations_loaded": 49
+}

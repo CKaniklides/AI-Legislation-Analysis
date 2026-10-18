@@ -18,23 +18,22 @@
     "calibration_seed": "calibration-v1"
   },
   "stats": {
-    "skipped_per_norm_cap": 536,
-    "tie_group_cut": 4,
-    "beyond_budget": 808,
-    "below_min_score": 18673,
+    "skipped_per_norm_cap": 365,
+    "beyond_budget": 518,
+    "below_min_score": 19336,
     "rows_read": 22221,
     "top_tier": 2000,
-    "tie_extension": 200,
+    "tie_extension": 2,
     "calibration": 60,
-    "cutoff_score": 0.5662,
+    "cutoff_score": 0.5265,
     "budget_filled": true,
-    "norms_in_top_tier": 811,
-    "norms_at_cap": 65,
+    "norms_in_top_tier": 806,
+    "norms_at_cap": 48,
     "not_selected_per_band": {
-      ">= 0.5 (not selected)": 1348,
-      "0.4 - 0.5": 1438,
-      "0.25 - 0.4": 3601,
-      "< 0.25": 13634
+      ">= 0.5 (not selected)": 883,
+      "0.4 - 0.5": 1543,
+      "0.25 - 0.4": 3787,
+      "< 0.25": 14006
     },
     "calibration_per_band": {
       ">= 0.5 (not selected)": 15,
@@ -42,7 +41,7 @@
       "0.25 - 0.4": 15,
       "< 0.25": 15
     },
-    "queue_size": 2260,
+    "queue_size": 2062,
     "norm_ids_without_card": 0
   }
 }
