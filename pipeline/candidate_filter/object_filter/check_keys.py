@@ -57,7 +57,7 @@ def sheet(wb, title, headers, rows, judge_col=None, widths=None):
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--dir", type=Path, default=Path("data/conflict/eurovoc"))
+    p.add_argument("--dir", type=Path, default=Path("data/conflict/object"))
     p.add_argument("--n-heads", type=int, default=50)
     p.add_argument("--top-words", type=int, default=100)
     p.add_argument("--min-norms", type=int, default=3,

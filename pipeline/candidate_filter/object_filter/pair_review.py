@@ -300,7 +300,7 @@ def write_workbook(path, args, norms, texts, info, rows):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("--data", default="data/conflict/eurovoc")
+    p.add_argument("--data", default="data/conflict/object")
     p.add_argument("--pairs", default="object_pair_scores.jsonl")
     p.add_argument("--norms", default="norm_keys.jsonl")
     p.add_argument("--out", default="pair_review.xlsx")

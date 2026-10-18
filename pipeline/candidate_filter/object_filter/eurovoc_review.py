@@ -127,7 +127,7 @@ def set_widths(ws, widths: dict[str, float]) -> None:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--dir", type=Path, default=Path("data/conflict/eurovoc"))
+    p.add_argument("--dir", type=Path, default=Path("data/conflict/object/eurovoc"))
     p.add_argument("--records", type=Path, required=True)
     p.add_argument("--object-field", default="norm.object")
     p.add_argument("--id-field", default="norm_id")

@@ -1,0 +1,573 @@
+"""
+Validate the EuroVoc embedding fallback threshold, per model and per legislation.
+
+The fallback in eurovoc_maps.py accepts a unit's nearest label when the unit's
+best cosine lies at or above a percentile of the top-1 reference distribution
+(currently the 73rd). This script measures how precise the fallback is in each
+percentile band, so the threshold can be set from judged matches instead of
+from the coarse three-band split of the earlier reviews.
+
+Two commands:
+
+  sample    For every model directory, find each fallback unit's top-1 label
+            (exactly as eurovoc_maps.py would pick it), place it in a
+            percentile band, and draw a stratified random sample per
+            model x band (and per legislation with --by-source). Writes a blind
+            review workbook: no cosines, percentiles, bands or model names.
+
+  evaluate  Join the judgements with the sample and report, per model (and
+            legislation), the precision per band and, for every candidate
+            threshold, the estimated precision of all accepted matches and the
+            share of fallback units that would get a concept. Suggests the
+            lowest threshold that meets --target.
+
+Judgements are stored per (unit, concept), not per model: a match is right or
+wrong whichever model proposed it. Models that propose the same concept for a
+unit share one judgement, and earlier review workbooks can be passed to
+`sample --reuse` so judged pairs are not asked again.
+
+Which units are judged
+  Only units that reach the embedding fallback: those whose level in
+  object_mapping.jsonl is not one of --lexical-levels (default phrase,head).
+  These levels do not depend on the embedding model, so one mapping file serves
+  all models. Without --mapping, all units are sampled.
+
+Inputs
+  --models    one or more embedding directories, each prepared by
+              eurovoc_embeds.py --dir <dir> --units <units> (needs
+              embedding_config.json, emb_labels.npz, emb_objects.npz,
+              label_index.csv)
+  --units     norm_object_units.jsonl (eurovoc_clean.py)
+  --mapping   object_mapping.jsonl (eurovoc_maps.py), optional
+
+Outputs (in --out)
+  threshold_review.xlsx   the workbook to judge (sheets Instructions, Review)
+  sample.csv              hidden key: model, source, band, percentile, cosine
+                          per sampled (unit, concept)
+  populations.csv         number of fallback units per model x source x band
+  sample_config.json      settings of the sample run
+  threshold_report.xlsx   written by evaluate
+  threshold_report.csv    idem, as CSV
+
+Usage (PowerShell, from the project root)
+  python pipeline/candidate_filter/object_filter/eurovoc_threshold_review.py sample `
+      --models data/conflict/object/eurovoc data/conflict/object/eurovoc_e5large `
+      --units data/conflict/object/norm_object_units.jsonl `
+      --mapping data/conflict/object/eurovoc/object_mapping.jsonl `
+      --out data/conflict/object/threshold_review --by-source
+
+  # judge threshold_review.xlsx, then:
+  python pipeline/candidate_filter/object_filter/eurovoc_threshold_review.py evaluate `
+      --out data/conflict/object/threshold_review --target 0.8 --measure lenient
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import logging
+import math
+import random
+from collections import defaultdict
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+log = logging.getLogger("eurovoc.threshold_review")
+
+JUDGEMENTS = ["correct", "partial", "wrong"]
+DEFAULT_BANDS = "0,10,20,30,40,50,60,70,80,90,100"
+# Readable names for norm_id prefixes; unknown prefixes are shown as they are.
+DEFAULT_SOURCES = {"32024R1689": "AI Act", "32016R0679": "GDPR"}
+
+REVIEW_SHEET = "Review"
+REVIEW_COLUMNS = ["review_id", "unit", "example_object", "legislation",
+                  "concept", "matched_label", "judgement", "comment", "concept_id"]
+
+
+# --------------------------------------------------------------------------
+# Loading
+# --------------------------------------------------------------------------
+
+def load_npz(path: Path) -> dict[str, np.ndarray]:
+    with np.load(path, allow_pickle=False) as z:
+        return {str(t): v for t, v in zip(z["texts"], z["vectors"])}
+
+
+class ModelSpace:
+    """Label and unit vectors of one embedding directory."""
+
+    def __init__(self, d: Path, units: list[str]):
+        self.dir = d
+        with open(d / "embedding_config.json", encoding="utf-8") as f:
+            cfg = json.load(f)
+        self.model = cfg["model"]
+
+        index = pd.read_csv(d / "label_index.csv", dtype=str)
+        # same structures and order as eurovoc_maps.LabelSpace
+        self.label_concepts = index.groupby("label")["concept"].apply(
+            lambda s: sorted(set(s))).to_dict()
+        self.texts = sorted(self.label_concepts)
+        pref = index[index["label_type"] == "pref"].drop_duplicates("concept")
+        self.concept_label = dict(zip(pref["concept"], pref["label"]))
+
+        label_vecs = load_npz(d / "emb_labels.npz")
+        unit_vecs = load_npz(d / "emb_objects.npz")
+        missing_l = [t for t in self.texts if t not in label_vecs]
+        missing_u = [u for u in units if u not in unit_vecs]
+        if missing_l or missing_u:
+            raise SystemExit(
+                f"{d}: {len(missing_l)} label(s) and {len(missing_u)} unit(s) have no "
+                f"vector. Run eurovoc_embeds.py --dir {d} --units <the same units file> "
+                f"first (e.g. missing unit: {missing_u[:1] or missing_l[:1]}).")
+        self.L = np.stack([label_vecs[t] for t in self.texts]).astype(np.float32)
+        self.O = np.stack([unit_vecs[u] for u in units]).astype(np.float32)
+
+    def top1(self, chunk: int = 512) -> tuple[np.ndarray, np.ndarray]:
+        """Best cosine and best label index per unit."""
+        best_cos, best_idx = [], []
+        for i in range(0, len(self.O), chunk):
+            sims = self.O[i:i + chunk] @ self.L.T
+            idx = sims.argmax(axis=1)
+            best_idx.append(idx)
+            best_cos.append(sims[np.arange(len(idx)), idx])
+        return np.concatenate(best_cos), np.concatenate(best_idx)
+
+
+def load_units(path: Path) -> tuple[list[str], dict[str, list[str]], dict[str, str]]:
+    """Unique units, the norm_ids of each unit, and one example raw object."""
+    norms_of: dict[str, list[str]] = defaultdict(list)
+    example: dict[str, str] = {}
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            for u in rec.get("units") or []:
+                if u:
+                    norms_of[u].append(str(rec.get("norm_id")))
+                    example.setdefault(u, rec.get("object") or "")
+    return sorted(norms_of), norms_of, example
+
+
+def load_levels(path: Path) -> dict[str, str | None]:
+    with open(path, encoding="utf-8") as f:
+        return {r["object"]: r.get("level") for r in map(json.loads, filter(str.strip, f))}
+
+
+def source_of(norm_id: str, names: dict[str, str]) -> str:
+    prefix = norm_id.split(":")[0]
+    return names.get(prefix, prefix)
+
+
+# --------------------------------------------------------------------------
+# Bands and statistics
+# --------------------------------------------------------------------------
+
+def parse_bands(text: str) -> list[float]:
+    edges = sorted({float(x) for x in text.split(",")})
+    if len(edges) < 2 or edges[0] < 0 or edges[-1] > 100:
+        raise SystemExit("--bands needs at least two edges between 0 and 100.")
+    return edges
+
+
+def band_label(lo: float, hi: float) -> str:
+    return f"{lo:g}-{hi:g}"
+
+
+def assign_band(pct: float, edges: list[float]) -> str | None:
+    for lo, hi in zip(edges, edges[1:]):
+        if lo <= pct < hi or (hi == edges[-1] and pct == hi):
+            return band_label(lo, hi)
+    return None
+
+
+def percentiles(cos: np.ndarray, reference: np.ndarray) -> np.ndarray:
+    """Share (in %) of the reference top-1 cosines at or below each cosine."""
+    ref = np.sort(reference)
+    return 100.0 * np.searchsorted(ref, cos, side="right") / len(ref)
+
+
+def wilson(k: float, n: int, z: float = 1.96) -> tuple[float, float]:
+    if n == 0:
+        return (float("nan"), float("nan"))
+    p = k / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / (1 + z * z / n)
+    return (max(0.0, centre - half), min(1.0, centre + half))
+
+
+# --------------------------------------------------------------------------
+# sample
+# --------------------------------------------------------------------------
+
+def read_judgements(paths: list[Path]) -> dict[tuple[str, str], str]:
+    """(unit, concept_id) -> judgement, from one or more judged workbooks.
+    Later files win when the same pair was judged twice."""
+    out: dict[tuple[str, str], str] = {}
+    for p in paths:
+        df = pd.read_excel(p, sheet_name=REVIEW_SHEET, dtype=str)
+        missing = {"unit", "concept_id", "judgement"} - set(df.columns)
+        if missing:
+            raise SystemExit(f"{p}: sheet {REVIEW_SHEET} lacks column(s) {sorted(missing)}.")
+        for unit, concept, j in zip(df["unit"], df["concept_id"], df["judgement"]):
+            j = (j or "").strip().lower() if isinstance(j, str) else ""
+            if j in JUDGEMENTS:
+                out[(unit, concept)] = j
+    return out
+
+
+def cmd_sample(args) -> None:
+    units, norms_of, example = load_units(args.units)
+    if not units:
+        raise SystemExit(f"No units in {args.units}.")
+    names = dict(DEFAULT_SOURCES)
+    if args.source_map:
+        names.update(json.loads(Path(args.source_map).read_text(encoding="utf-8")))
+    sources_of = {u: sorted({source_of(n, names) for n in norms_of[u]}) for u in units}
+
+    lexical = {s.strip() for s in args.lexical_levels.split(",") if s.strip()}
+    if args.mapping:
+        levels = load_levels(args.mapping)
+        eligible = [i for i, u in enumerate(units) if levels.get(u) not in lexical]
+        log.info("Units: %d, reaching the fallback (level not in %s): %d",
+                 len(units), sorted(lexical), len(eligible))
+    else:
+        eligible = list(range(len(units)))
+        log.warning("No --mapping: sampling all %d units, including those matched "
+                    "lexically, which never use the fallback.", len(units))
+
+    edges = parse_bands(args.bands)
+    rng = random.Random(args.seed)
+    rows, population = [], []
+    seen_models = set()
+
+    for d in args.models:
+        space = ModelSpace(d, units)
+        model = space.model if space.model not in seen_models else f"{space.model} ({d.name})"
+        seen_models.add(model)
+        cos, idx = space.top1()
+        # Reference = top-1 cosines of ALL units, as in eurovoc_embeds.py.
+        pct = percentiles(cos, cos)
+
+        strata: dict[tuple[str, str], list[int]] = defaultdict(list)
+        for i in eligible:
+            band = assign_band(pct[i], edges)
+            if band is None:
+                continue
+            for src in (sources_of[units[i]] if args.by_source else ["all"]):
+                strata[(src, band)].append(i)
+
+        for (src, band), members in sorted(strata.items()):
+            population.append({"model": model, "source": src, "band": band,
+                               "n_units": len(members)})
+            for i in rng.sample(members, min(args.per_band, len(members))):
+                label = space.texts[idx[i]]
+                concept = space.label_concepts[label][0]   # as eurovoc_maps.py
+                rows.append({
+                    "model": model, "model_dir": str(d), "source": src, "band": band,
+                    "unit": units[i], "concept_id": concept,
+                    "concept": space.concept_label.get(concept, label),
+                    "matched_label": label,
+                    "cosine": round(float(cos[i]), 4),
+                    "percentile": round(float(pct[i]), 2),
+                })
+        log.info("%s: %d fallback units in %d strata", model,
+                 sum(len(m) for m in strata.values()), len(strata))
+
+    sample = pd.DataFrame(rows)
+    args.out.mkdir(parents=True, exist_ok=True)
+    sample.to_csv(args.out / "sample.csv", index=False, encoding="utf-8-sig")
+    pd.DataFrame(population).to_csv(args.out / "populations.csv", index=False,
+                                    encoding="utf-8-sig")
+
+    # One review row per (unit, concept) not judged before.
+    known = read_judgements(args.reuse) if args.reuse else {}
+    pairs = sample.drop_duplicates(["unit", "concept_id"])
+    todo = pairs[[(u, c) not in known for u, c in zip(pairs["unit"], pairs["concept_id"])]]
+    todo = todo.sample(frac=1, random_state=args.seed).reset_index(drop=True)
+
+    review = pd.DataFrame({
+        "review_id": [f"T{n + 1:04d}" for n in range(len(todo))],
+        "unit": todo["unit"],
+        "example_object": [example.get(u, "") for u in todo["unit"]],
+        "legislation": [", ".join(sources_of[u]) for u in todo["unit"]],
+        "concept": todo["concept"],
+        "matched_label": [m if m != c else "" for m, c in zip(todo["matched_label"],
+                                                              todo["concept"])],
+        "judgement": "", "comment": "",
+        "concept_id": todo["concept_id"],
+    })[REVIEW_COLUMNS]
+    write_review_workbook(review, args.out / "threshold_review.xlsx")
+
+    cfg = {k: ([str(x) for x in v] if isinstance(v, list) else
+               str(v) if isinstance(v, Path) else v)
+           for k, v in vars(args).items() if k != "func"}
+    cfg["models_resolved"] = sorted(seen_models)
+    with open(args.out / "sample_config.json", "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=2, ensure_ascii=False)
+
+    log.info("Sampled %d (model, unit) rows; %d distinct (unit, concept) pairs, "
+             "%d already judged, %d to review in %s", len(sample), len(pairs),
+             len(pairs) - len(todo), len(todo), args.out / "threshold_review.xlsx")
+
+
+def write_review_workbook(review: pd.DataFrame, path: Path) -> None:
+    from openpyxl import Workbook
+    from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.worksheet.datavalidation import DataValidation
+
+    font = Font(name="Arial", size=10)
+    bold = Font(name="Arial", size=10, bold=True)
+    grey = Font(name="Arial", size=9, color="808080")
+    header_fill = PatternFill("solid", fgColor="D9D9D9")
+    input_fill = PatternFill("solid", fgColor="FFF2CC")
+    wrap = Alignment(wrap_text=True, vertical="top")
+
+    wb = Workbook()
+    ins = wb.active
+    ins.title = "Instructions"
+    lines = [
+        ("Review of EuroVoc embedding matches", bold),
+        ("", font),
+        ("Each row on the Review sheet pairs an object unit with the EuroVoc concept "
+         "the embedding fallback would give it. Judge whether the concept describes "
+         "what the unit is about.", font),
+        ("", font),
+        ("Fill in only the yellow columns: judgement (choose from the list) and, "
+         "optionally, comment. Do not edit or sort away other columns; concept_id "
+         "links your judgement back to the sample.", font),
+        ("", font),
+        ("correct: the concept means the same thing as the unit.", font),
+        ("partial: the concept is broader, narrower or closely related, but not the "
+         "same thing.", font),
+        ("wrong: the concept is about something else.", font),
+        ("", font),
+        ("The rows are shuffled and carry no scores, so the judgement is blind. "
+         "example_object shows one raw object the unit came from, for context. "
+         "matched_label is filled only when the match was on an alternative label.", font),
+        ("", font),
+        ("Example of a filled row:", bold),
+    ]
+    for r, (text, f) in enumerate(lines, start=1):
+        c = ins.cell(row=r, column=1, value=text)
+        c.font, c.alignment = f, Alignment(wrap_text=True, vertical="top")
+    ex_row = len(lines) + 1
+    example = ["T0000", "gegevensbeschermingseffectbeoordeling",
+               "een gegevensbeschermingseffectbeoordeling", "GDPR",
+               "effectbeoordeling", "", "partial",
+               "broader: any impact assessment", "http://eurovoc.europa.eu/0000"]
+    for col, (h, v) in enumerate(zip(REVIEW_COLUMNS, example), start=1):
+        hc = ins.cell(row=ex_row, column=col, value=h)
+        hc.font, hc.fill = bold, header_fill
+        vc = ins.cell(row=ex_row + 1, column=col, value=v)
+        vc.font = font
+        if h in ("judgement", "comment"):
+            vc.fill = input_fill
+    ins.column_dimensions["A"].width = 90
+    for col in "BCDEFGHI":
+        ins.column_dimensions[col].width = 22
+
+    ws = wb.create_sheet(REVIEW_SHEET)
+    widths = {"review_id": 9, "unit": 34, "example_object": 48, "legislation": 14,
+              "concept": 30, "matched_label": 24, "judgement": 12, "comment": 30,
+              "concept_id": 14}
+    for col, name in enumerate(REVIEW_COLUMNS, start=1):
+        c = ws.cell(row=1, column=col, value=name)
+        c.font, c.fill = bold, (input_fill if name in ("judgement", "comment") else header_fill)
+        ws.column_dimensions[c.column_letter].width = widths[name]
+    for r, rec in enumerate(review.itertuples(index=False), start=2):
+        for col, name in enumerate(REVIEW_COLUMNS, start=1):
+            v = getattr(rec, name)
+            c = ws.cell(row=r, column=col, value=None if v == "" else v)
+            c.alignment = wrap
+            c.font = grey if name == "concept_id" else font
+            if name in ("judgement", "comment"):
+                c.fill = input_fill
+    last = max(len(review) + 1, 2)
+    jcol = ws.cell(row=1, column=REVIEW_COLUMNS.index("judgement") + 1).column_letter
+    dv = DataValidation(type="list", formula1='"' + ",".join(JUDGEMENTS) + '"',
+                        allow_blank=True, showErrorMessage=True,
+                        errorTitle="Invalid judgement",
+                        error="Choose correct, partial or wrong.")
+    dv.add(f"{jcol}2:{jcol}{last}")
+    ws.add_data_validation(dv)
+    ws.freeze_panes = "C2"
+    ws.auto_filter.ref = f"A1:{ws.cell(row=1, column=len(REVIEW_COLUMNS)).column_letter}{last}"
+    wb.active = 1
+    wb.save(path)
+
+
+# --------------------------------------------------------------------------
+# evaluate
+# --------------------------------------------------------------------------
+
+def cmd_evaluate(args) -> None:
+    sample = pd.read_csv(args.out / "sample.csv", dtype={"unit": str, "concept_id": str})
+    pop = pd.read_csv(args.out / "populations.csv")
+    reviews = args.reviews or [args.out / "threshold_review.xlsx"]
+    judged = read_judgements(reviews)
+    sample["judgement"] = [judged.get((u, c)) for u, c in
+                           zip(sample["unit"], sample["concept_id"])]
+    n_open = int(sample["judgement"].isna().sum())
+    if n_open:
+        log.warning("%d of %d sampled rows have no judgement yet; they are left out.",
+                    n_open, len(sample))
+    j = sample.dropna(subset=["judgement"]).copy()
+    j["strict"] = (j["judgement"] == "correct").astype(float)
+    j["lenient"] = j["judgement"].isin(["correct", "partial"]).astype(float)
+
+    lo_of = lambda b: float(str(b).split("-")[0])
+    rows = []
+    for (model, src), p in pop.groupby(["model", "source"]):
+        p = p.assign(lo=p["band"].map(lo_of)).sort_values("lo")
+        total = p["n_units"].sum()
+        per_band = {}
+        for band, n_units, lo in zip(p["band"], p["n_units"], p["lo"]):
+            s = j[(j["model"] == model) & (j["source"] == src) & (j["band"] == band)]
+            k_s, k_l, n = s["strict"].sum(), s["lenient"].sum(), len(s)
+            per_band[band] = (n_units, n, k_s / n if n else float("nan"),
+                              k_l / n if n else float("nan"))
+            ci = wilson(k_l if args.measure == "lenient" else k_s, n)
+            rows.append({"model": model, "source": src, "band": band,
+                         "fallback_units": int(n_units), "judged": n,
+                         "strict": per_band[band][2], "lenient": per_band[band][3],
+                         f"{args.measure}_ci_low": ci[0], f"{args.measure}_ci_high": ci[1],
+                         "_lo": lo})
+        # Cumulative: threshold at a band's lower edge accepts that band and all above.
+        bands = list(p["band"])
+        for t, band in enumerate(bands):
+            above = bands[t:]
+            w = [per_band[b][0] for b in above if per_band[b][1] > 0]
+            prec = {m: (sum(per_band[b][0] * per_band[b][i] for b in above if per_band[b][1] > 0)
+                        / sum(w) if sum(w) else float("nan"))
+                    for m, i in (("strict", 2), ("lenient", 3))}
+            row = next(r for r in rows if r["model"] == model and r["source"] == src
+                       and r["band"] == band)
+            row["threshold_at_lower_edge_strict"] = prec["strict"]
+            row["threshold_at_lower_edge_lenient"] = prec["lenient"]
+            row["share_of_fallback_accepted"] = (sum(per_band[b][0] for b in above) / total
+                                                 if total else float("nan"))
+            row["unjudged_bands_above"] = sum(1 for b in above if per_band[b][1] == 0)
+
+    report = pd.DataFrame(rows).sort_values(["model", "source", "_lo"]).drop(columns="_lo")
+    report.to_csv(args.out / "threshold_report.csv", index=False, encoding="utf-8-sig")
+
+    col = f"threshold_at_lower_edge_{args.measure}"
+    suggestions = []
+    for (model, src), r in report.groupby(["model", "source"], sort=False):
+        ok = r[(r[col] >= args.target) & (r["unjudged_bands_above"] == 0)]
+        if ok.empty:
+            suggestions.append({"model": model, "source": src, "suggested_percentile": None,
+                                "precision": None, "share_of_fallback_accepted": None})
+        else:
+            best = ok.iloc[0]
+            suggestions.append({"model": model, "source": src,
+                                "suggested_percentile": lo_of(best["band"]),
+                                "precision": best[col],
+                                "share_of_fallback_accepted": best["share_of_fallback_accepted"]})
+    sugg = pd.DataFrame(suggestions)
+    write_report(report, sugg, args, args.out / "threshold_report.xlsx")
+
+    pd.set_option("display.width", 160)
+    pd.set_option("display.max_columns", 20)
+    show = ["model", "source", "band", "fallback_units", "judged", "strict", "lenient",
+            col, "share_of_fallback_accepted"]
+    print(report[show].to_string(index=False, float_format=lambda x: f"{x:.2f}"))
+    print(f"\nLowest threshold with {args.measure} precision >= {args.target:.0%} "
+          f"over all accepted matches:")
+    print(sugg.to_string(index=False, float_format=lambda x: f"{x:.2f}"))
+
+
+def write_report(report: pd.DataFrame, sugg: pd.DataFrame, args, path: Path) -> None:
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill
+    from openpyxl.utils.dataframe import dataframe_to_rows
+
+    font, bold = Font(name="Arial", size=10), Font(name="Arial", size=10, bold=True)
+    fill = PatternFill("solid", fgColor="D9D9D9")
+    pct_cols = {"strict", "lenient", "threshold_at_lower_edge_strict",
+                "threshold_at_lower_edge_lenient", "share_of_fallback_accepted",
+                "precision", f"{args.measure}_ci_low", f"{args.measure}_ci_high"}
+    wb = Workbook()
+    for n, (title, df) in enumerate((("Suggestion", sugg), ("Per band", report))):
+        ws = wb.active if n == 0 else wb.create_sheet()
+        ws.title = title
+        for r, values in enumerate(dataframe_to_rows(df, index=False, header=True), start=1):
+            for c, v in enumerate(values, start=1):
+                if isinstance(v, float) and math.isnan(v):
+                    v = None
+                cell = ws.cell(row=r, column=c, value=v)
+                cell.font = bold if r == 1 else font
+                if r == 1:
+                    cell.fill = fill
+                elif df.columns[c - 1] in pct_cols and isinstance(v, (int, float)):
+                    cell.number_format = "0%"
+        for c, name in enumerate(df.columns, start=1):
+            ws.column_dimensions[ws.cell(row=1, column=c).column_letter].width = \
+                max(10, min(34, len(name) + 2))
+        ws.freeze_panes = "A2"
+    note = wb.create_sheet("Notes")
+    notes = [
+        f"Target: {args.measure} precision >= {args.target:.0%}.",
+        "Bands are percentiles of the top-1 cosine over all units of the model, as in "
+        "eurovoc_embeds.py. A threshold at a band's lower edge accepts that band and "
+        "every band above it.",
+        "threshold_at_lower_edge_*: precision of all accepted matches, each band weighted "
+        "by its number of fallback units (populations.csv).",
+        "share_of_fallback_accepted: share of the units that reach the fallback which "
+        "would receive a concept at that threshold.",
+        "A suggestion requires every band above it to have at least one judgement.",
+        "Confidence intervals are 95% Wilson intervals per band; with about ten judged "
+        "pairs per band they span roughly +-25 points.",
+    ]
+    for r, t in enumerate(notes, start=1):
+        note.cell(row=r, column=1, value=t).font = font
+    note.column_dimensions["A"].width = 110
+    wb.save(path)
+
+
+# --------------------------------------------------------------------------
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__,
+                                formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = p.add_subparsers(dest="command", required=True)
+
+    s = sub.add_parser("sample", help="draw a stratified sample and write the review workbook")
+    s.add_argument("--models", type=Path, nargs="+", required=True,
+                   help="embedding directories, one per model")
+    s.add_argument("--units", type=Path, required=True, help="norm_object_units.jsonl")
+    s.add_argument("--mapping", type=Path, default=None,
+                   help="object_mapping.jsonl, to keep only units that reach the fallback")
+    s.add_argument("--lexical-levels", default="phrase,head",
+                   help="mapping levels that come before the fallback")
+    s.add_argument("--bands", default=DEFAULT_BANDS, help="percentile band edges")
+    s.add_argument("--per-band", type=int, default=10, help="units sampled per stratum")
+    s.add_argument("--by-source", action="store_true",
+                   help="stratify per legislation as well (norm_id prefix)")
+    s.add_argument("--source-map", default=None,
+                   help='JSON file {"norm_id prefix": "name"} for readable legislation names')
+    s.add_argument("--reuse", type=Path, nargs="*", default=[],
+                   help="earlier judged threshold_review.xlsx files; their pairs are not asked again")
+    s.add_argument("--seed", type=int, default=42)
+    s.add_argument("--out", type=Path, required=True)
+    s.set_defaults(func=cmd_sample)
+
+    e = sub.add_parser("evaluate", help="precision per band and suggested threshold")
+    e.add_argument("--out", type=Path, required=True, help="folder of the sample run")
+    e.add_argument("--reviews", type=Path, nargs="*", default=None,
+                   help="judged workbooks (default: threshold_review.xlsx in --out); "
+                        "include earlier ones passed to --reuse")
+    e.add_argument("--target", type=float, default=0.8)
+    e.add_argument("--measure", choices=["strict", "lenient"], default="lenient")
+    e.set_defaults(func=cmd_evaluate)
+
+    args = p.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()

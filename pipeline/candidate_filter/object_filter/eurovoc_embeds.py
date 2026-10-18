@@ -1,15 +1,15 @@
 """
-EuroVoc preparation, Step 4: embed labels and units, and compute the top-1
+EuroVoc preparation, Step 3: embed labels and units, and compute the top-1
 reference distribution.
 
 1. Embeds every Dutch EuroVoc label (preferred and alternative) with a
    sentence-transformers model (default: intfloat/multilingual-e5-base with
    the symmetric-task prefix "query: ").
-2. Embeds the cleaned object units from Step 6 (norm_object_units.jsonl) with
+2. Embeds the cleaned object units from Step 2 (norm_object_units.jsonl) with
    the SAME model and prefix.
 3. Computes each unit's highest cosine to any label (top-1). The Step 7
    fallback threshold is a percentile of this distribution: percentile p means
-   (100 - p)% of units pass. Rerun this step after every rerun of Step 6, since
+   (100 - p)% of units pass. Rerun this step after every rerun of Step 2, since
    the distribution shifts with the cleaning.
 
 The model and prefix are written to embedding_config.json. Any later code that

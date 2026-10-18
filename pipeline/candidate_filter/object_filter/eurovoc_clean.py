@@ -1,5 +1,5 @@
 """
-EuroVoc Step 6: clean norm objects so they map better to EuroVoc labels.
+EuroVoc Step 2: clean norm objects so they map better to EuroVoc labels.
 
 Each raw object becomes zero or more short noun phrases ("units"):
   - enumeration markers, quotes and trailing punctuation are removed
@@ -19,7 +19,6 @@ of a cleaned phrase is the content noun rather than 'gebruik' or 'informatie
 in lid 6'. The process is deterministic. Word lists are constants below.
 
 Output (in --dir)
-  object_units.jsonl       per unique raw object: its units
   norm_object_units.jsonl  per norm: norm_id, object, units
                            (input to eurovoc_embed.py --units and eurovoc_map.py --units)
 

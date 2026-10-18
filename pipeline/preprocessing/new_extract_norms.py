@@ -69,8 +69,8 @@ from typing import Callable, Literal, Optional
 from dotenv import load_dotenv
 from parse_deadline import _parse_deadline
 
-import truststore
-truststore.inject_into_ssl()
+# import truststore
+# truststore.inject_into_ssl()
 
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
