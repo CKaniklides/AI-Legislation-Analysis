@@ -1,0 +1,409 @@
+actor_raw,norms,instruments,cleaned,canonical,match_types,definition_status,head_looks_agentive
+De Commissie,83,32024R1689:67;32016R0679:16,commissie,commissie,head,not defined,True
+de Commissie,63,32024R1689:55;32016R0679:8,commissie,commissie,head,not defined,True
+de verwerkingsverantwoordelijke,53,32016R0679:53,verwerkingsverantwoordelijke,verwerkingsverantwoordelijke,exact,defined (own instrument),True
+Het Comité,38,32016R0679:38,comité,comité,head,not defined,True
+De lidstaten,29,32024R1689:18;32016R0679:11,lidstaat,lidstaat,head,not defined,True
+Elke lidstaat,27,32024R1689:4;32016R0679:23,lidstaat,lidstaat,head,not defined,True
+Aangemelde instanties,24,32024R1689:24,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+Het AI-bureau,24,32024R1689:24,ai-bureau,ai-bureau,exact,defined (own instrument),True
+Elke toezichthoudende autoriteit,20,32016R0679:20,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+de aanmeldende autoriteit,19,32024R1689:19,aanmeldende autoriteit,aanmeldende autoriteit,exact,defined (own instrument),True
+Elk toezichthoudende autoriteit,18,32016R0679:18,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+Aanbieders van AI-systemen met een hoog risico,17,32024R1689:17,aanbieders van ai-systemen met een hoog risico,aanbieders,head,not defined,False
+De verwerkingsverantwoordelijke,15,32016R0679:15,verwerkingsverantwoordelijke,verwerkingsverantwoordelijke,exact,defined (own instrument),True
+aanbieders,14,32024R1689:14,aanbieders,aanbieders,head,not defined,False
+De betrokkene,13,32016R0679:13,betrokkene,betrokkene,exact,defined (own instrument),True
+De nationale bevoegde autoriteiten,12,32024R1689:12,nationale bevoegde autoriteit,nationale bevoegde autoriteit,exact,defined (own instrument),True
+De leidende toezichthoudende autoriteit,11,32016R0679:11,leidende toezichthoudende autoriteit,leidende toezichthoudende autoriteit,exact,curated (not in definitions),True
+de betrokkene,10,32016R0679:10,betrokkene,betrokkene,exact,defined (own instrument),True
+de toezichthoudende autoriteit,10,32016R0679:10,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+het Comité,10,32016R0679:10,comité,comité,head,not defined,True
+Aanmeldende autoriteiten,9,32024R1689:9,aanmeldende autoriteit,aanmeldende autoriteit,exact,defined (own instrument),True
+De toezichthoudende autoriteit,9,32016R0679:9,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+Het secretariaat,9,32016R0679:9,secretariaat,secretariaat,head,not defined,True
+de gebruiksverantwoordelijke,8,32024R1689:8,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+het AI-bureau,8,32024R1689:8,ai-bureau,ai-bureau,exact,defined (own instrument),True
+De functionaris voor gegevensbescherming,8,32016R0679:8,functionaris voor gegevensbescherming,functionaris voor gegevensbescherming,exact,curated (not in definitions),True
+De aanbieder,7,32024R1689:7,aanbieder,aanbieder,exact,defined (own instrument),True
+Aanbieders van AI-modellen voor algemene doeleinden,7,32024R1689:7,aanbieders van ai-modellen voor algemene doeleinden,aanbieders,head,not defined,False
+Het adviesforum,7,32024R1689:7,adviesforum,adviesforum,head,not defined,True
+de lidstaten,7,32024R1689:4;32016R0679:3,lidstaat,lidstaat,head,not defined,True
+De verwerkingsverantwoordelijke en de verwerker,7,32016R0679:7,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+De verwerkingsverantwoordelijke of de verwerker,7,32016R0679:7,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+de functionaris voor gegevensbescherming,7,32016R0679:7,functionaris voor gegevensbescherming,functionaris voor gegevensbescherming,exact,curated (not in definitions),True
+de aanbieder,6,32024R1689:6,aanbieder,aanbieder,exact,defined (own instrument),True
+Gebruiksverantwoordelijken,6,32024R1689:6,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+Elke aangemelde instantie,6,32024R1689:6,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+de Commissie en de toezichthoudende autoriteiten,6,32016R0679:6,commissie + toezichthoudende autoriteit,commissie + toezichthoudende autoriteit,head + exact,not defined + defined (own instrument),True
+de betrokken aanbieder,5,32024R1689:5,betrokken aanbieder,aanbieder,suffix,defined (own instrument),True
+De Europese Toezichthouder voor gegevensbescherming,5,32024R1689:5,europese toezichthouder voor gegevensbescherming,europese toezichthouder voor gegevensbescherming,exact,curated (not in definitions),True
+De voorzitter van het Comité,5,32016R0679:5,voorzitter van het comité,voorzitter,head,not defined,True
+AI-systemen met een hoog risico,4,32024R1689:4,ai-systeem met een hoog risico,ai-systeem,prefix,defined (own instrument),False
+de bijzondere categorieën persoonsgegevens,4,32024R1689:4,bijzondere categorieën persoonsgegevens,bijzondere categorieën persoonsgegevens,exact,defined (own instrument),False
+Aanbieders,4,32024R1689:4,aanbieders,aanbieders,head,not defined,False
+Importeurs,4,32024R1689:4,importeur,importeur,exact,defined (own instrument),True
+Een distributeur,4,32024R1689:4,distributeur,distributeur,exact,defined (own instrument),True
+de markttoezichtautoriteit,4,32024R1689:4,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+De markttoezichtautoriteit,4,32024R1689:4,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+Het AI-bureau en de AI-board,4,32024R1689:4,ai-bureau + ai-board,ai-bureau + ai-board,exact + head,defined (own instrument) + not defined,True
+Een markttoezichtautoriteit,4,32024R1689:4,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+elke lidstaat,4,32024R1689:2;32016R0679:2,lidstaat,lidstaat,head,not defined,True
+Een toezichthoudende autoriteit,4,32016R0679:4,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+De bevoegde toezichthoudende autoriteit,4,32016R0679:4,bevoegde toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+De toezichthoudende autoriteiten,4,32016R0679:4,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+de leidende toezichthoudende autoriteit,4,32016R0679:4,leidende toezichthoudende autoriteit,leidende toezichthoudende autoriteit,exact,curated (not in definitions),True
+De voorzitter,4,32016R0679:4,voorzitter,voorzitter,head,not defined,True
+de distributeur,3,32024R1689:3,distributeur,distributeur,exact,defined (own instrument),True
+Die oorspronkelijke aanbieder,3,32024R1689:3,oorspronkelijke aanbieder,aanbieder,suffix,defined (own instrument),True
+de aangemelde instantie,3,32024R1689:3,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+De aangemelde instantie,3,32024R1689:3,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+een aangemelde instantie,3,32024R1689:3,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+de aanmeldende lidstaat,3,32024R1689:3,aanmeldende lidstaat,lidstaat,head,not defined,True
+"gebruiksverantwoordelijken die overheidsinstanties, instellingen, organen of instanties van de Unie, of personen die namens hen optreden",3,32024R1689:3,"gebruiksverantwoordelijke die overheidsinstanties, instellingen, organen of instanties van de unie, of personen die namens hen optreden",gebruiksverantwoordelijke,prefix,defined (own instrument),True
+Aanbieders of potentiële aanbieders,3,32024R1689:3,aanbieders + potentiële aanbieders,aanbieders + aanbieders,head + head,not defined + not defined,False
+de Europese Toezichthouder voor gegevensbescherming,3,32024R1689:2;32016R0679:1,europese toezichthouder voor gegevensbescherming,europese toezichthouder voor gegevensbescherming,exact,curated (not in definitions),True
+markttoezichtautoriteiten,3,32024R1689:3,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+een markttoezichtautoriteit,3,32024R1689:3,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+De andere markttoezichtautoriteiten dan de markttoezicht-autoriteit van de lidstaat die de procedure heeft geïnitieerd,3,32024R1689:3,andere markttoezichtautoriteit dan de markttoezicht-autoriteit van de lidstaat die de procedure heeft geïnitieerd,markttoezicht-autoriteit,head,not defined,True
+Het Hof van Justitie van de Europese Unie,3,32024R1689:3,hof van justitie van de europese unie,hof van justitie,prefix,defined (other instrument: DORA),True
+Het verslag,3,32024R1689:1;32016R0679:2,verslag,verslag,head,not defined,False
+de verwerkingsverantwoordelijke of de verwerker,3,32016R0679:3,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+Verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen,3,32016R0679:3,vereniging die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen + andere orgaan die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen,vereniging + orgaan,head + head,not defined + not defined,True
+de toezichthoudende autoriteit waarbij de klacht is ingediend,3,32016R0679:3,toezichthoudende autoriteit waarbij de klacht is ingediend,ingediend,head,not defined,False
+Aanbieders en gebruiksverantwoordelijken van AI-systemen,2,32024R1689:2,aanbieders van ai-systemen + gebruiksverantwoordelijke van ai-systemen,aanbieders + gebruiksverantwoordelijke,head + prefix,not defined + defined (own instrument),False
+Die melding,2,32024R1689:2,melding,melding,head,not defined,False
+De betrokken lidstaten,2,32024R1689:2,betrokken lidstaat,lidstaat,head,not defined,True
+de aanbieders van dergelijke systemen,2,32024R1689:2,aanbieders van dergelijke systemen,aanbieders,head,not defined,False
+Dit systeem,2,32024R1689:2,systeem,systeem,head,not defined,False
+"aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het desbetreffende Unierecht inzake financiële diensten",2,32024R1689:2,"aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het desbetreffende unierecht inzake financiële diensten",aanbieders,head,not defined,False
+Aanbieders die in derde landen zijn gevestigd,2,32024R1689:2,aanbieders die in derde landen zijn gevestigd,aanbieders,head,not defined,False
+De gemachtigde,2,32024R1689:2,gemachtigde,gemachtigde,exact,defined (own instrument),True
+Distributeurs,2,32024R1689:2,distributeur,distributeur,exact,defined (own instrument),True
+"een distributeur, importeur, gebruiksverantwoordelijke of derde",2,32024R1689:2,distributeur + importeur + gebruiksverantwoordelijke + derde,distributeur + importeur + gebruiksverantwoordelijke + derde,exact + exact + exact + exact,defined (own instrument) + defined (own instrument) + defined (own instrument) + defined (other instrument: 32016R0679),True
+Gebruiksverantwoordelijken van AI-systemen met een hoog risico,2,32024R1689:2,gebruiksverantwoordelijke van ai-systemen met een hoog risico,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+gebruiksverantwoordelijke,2,32024R1689:2,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+deze gebruiksverantwoordelijke,2,32024R1689:2,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+De aanmeldende autoriteit,2,32024R1689:2,aanmeldende autoriteit,aanmeldende autoriteit,exact,defined (own instrument),True
+Die laatste aangemelde instantie,2,32024R1689:2,laatste aangemelde instantie,aangemelde instantie,suffix,defined (own instrument),True
+rechtshandhavingsinstanties of civielebeschermingsautoriteiten,2,32024R1689:2,rechtshandhavingsinstantie + civielebeschermingsautoriteit,rechtshandhavingsinstantie + civielebeschermingsautoriteit,exact + head,defined (own instrument) + not defined,True
+De betrokken operatoren,2,32024R1689:2,betrokken operator,operator,suffix,defined (own instrument),True
+De EU-conformiteitsverklaring,2,32024R1689:2,eu-conformiteitsverklaring,eu-conformiteitsverklaring,head,not defined,False
+Gebruiksverantwoordelijken van een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering,2,32024R1689:2,gebruiksverantwoordelijke van een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+"Gebruiksverantwoordelijken van een AI-systeem dat beeld-, audio- of videocontent genereert of bewerkt die een deepfake vormt",2,32024R1689:2,"gebruiksverantwoordelijke van een ai-systeem dat beeld-, audio- of videocontent genereert of bewerkt die een deepfake vormt",gebruiksverantwoordelijke,prefix,defined (own instrument),True
+de informatie en documentatie,2,32024R1689:2,informatie + documentatie,informatie + documentatie,head + head,not defined + not defined,False
+aanbieders van AI-modellen,2,32024R1689:2,aanbieders van ai-modellen,aanbieders,head,not defined,False
+De bevoegde autoriteiten,2,32024R1689:2,bevoegde autoriteit,autoriteit,head,not defined,True
+de Commissie en de AI-board,2,32024R1689:2,commissie + ai-board,commissie + ai-board,head + head,not defined + not defined,True
+Die uitvoeringshandelingen,2,32024R1689:2,uitvoeringshandeling,uitvoeringshandeling,head,not defined,False
+De AI-board,2,32024R1689:2,ai-board,ai-board,head,not defined,True
+De ambtstermijn van de covoorzitters,2,32024R1689:2,ambtstermijn van de covoorzitters,ambtstermijn,head,not defined,False
+De deskundigen in het wetenschappelijk panel,2,32024R1689:2,deskundige in het wetenschappelijk panel,deskundige,head,not defined,True
+de nationale bevoegde autoriteiten,2,32024R1689:2,nationale bevoegde autoriteit,nationale bevoegde autoriteit,exact,defined (own instrument),True
+Markttoezichtautoriteiten,2,32024R1689:2,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+de in lid 1 bedoelde overheidsinstanties of -organen,2,32024R1689:2,in lid 1 bedoelde overheidsinstantie + -orgaan,overheidsinstantie + -orgaan,suffix + head,"defined (other instrument: DORA,NIS2) + not defined",True
+alle lidstaten,2,32024R1689:2,lidstaat,lidstaat,head,not defined,True
+de relevante markttoezichtautoriteit,2,32024R1689:2,relevante markttoezichtautoriteit,markttoezichtautoriteit,suffix,defined (own instrument),True
+Klachten,2,32024R1689:2,klacht,klacht,head,not defined,False
+Gekwalificeerde waarschuwingen,2,32024R1689:2,gekwalificeerde waarschuwing,waarschuwing,head,not defined,False
+Het Europees Parlement of de Raad,2,32024R1689:1;32016R0679:1,europees parlement + raad,parlement + raad,head + head,not defined + not defined,True
+Het besluit tot intrekking,2,32024R1689:1;32016R0679:1,besluit tot intrekking,besluit,head,not defined,False
+Het Unierecht of het lidstatelijke recht,2,32016R0679:2,unierecht + lidstatelijke recht,unierecht + recht,head + head,not defined + not defined,False
+de verwerking,2,32016R0679:2,verwerking,verwerking,exact,defined (own instrument),False
+Deze maatregelen,2,32016R0679:2,maatregeel,maatregeel,head,not defined,False
+De verwerker,2,32016R0679:2,verwerker,verwerker,exact,defined (own instrument),True
+de andere verwerker,2,32016R0679:2,andere verwerker,verwerker,suffix,defined (own instrument),True
+de bevoegde toezichthoudende autoriteit,2,32016R0679:2,bevoegde toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+de verwerkingsverantwoordelijken,2,32016R0679:2,verwerkingsverantwoordelijke,verwerkingsverantwoordelijke,exact,defined (own instrument),True
+de verwerkingsverantwoordelijke of de verwerker of verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen,2,32016R0679:2,verwerkingsverantwoordelijke die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen + verwerker die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen + vereniging die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen + andere orgaan die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen,verwerkingsverantwoordelijke + verwerker + vereniging + orgaan,prefix + prefix + head + head,defined (own instrument) + defined (own instrument) + not defined + not defined,True
+"De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie",2,32016R0679:2,lidstaat + toezichthoudende autoriteit + comité + commissie,lidstaat + toezichthoudende autoriteit + comité + commissie,head + exact + head + head,not defined + defined (own instrument) + not defined + not defined,True
+De verwerkingsverantwoordelijke of de verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt,2,32016R0679:2,verwerkingsverantwoordelijke die zijn verwerking aan het certificeringsmechanisme onderwerpt + verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt,verwerkingsverantwoordelijke + verwerker,prefix + prefix,defined (own instrument) + defined (own instrument),True
+de in artikel 43 bedoelde certificerende organen of door de bevoegde toezichthoudende autoriteit,2,32016R0679:2,in artikel 43 bedoelde certificerende orgaan door de bevoegde toezichthoudende autoriteit,orgaan,head,not defined,True
+De in lid 1 bedoelde certificeringsorganen,2,32016R0679:2,in lid 1 bedoelde certificeringsorgaan,certificeringsorgaan,head,not defined,True
+de toezichthoudende autoriteiten,2,32016R0679:2,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+die lidstaat,2,32016R0679:2,lidstaat,lidstaat,head,not defined,True
+De leden van toezichthoudende autoriteiten,2,32016R0679:2,lid van toezichthoudende autoriteiten,lid,head,not defined,True
+elke toezichthoudende autoriteit,2,32016R0679:2,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+de toezichthoudende autoriteit van de klager,2,32016R0679:2,toezichthoudende autoriteit van de klager,toezichthoudende autoriteit,prefix,defined (own instrument),True
+een betrokken toezichthoudende autoriteit,2,32016R0679:2,betrokken toezichthoudende autoriteit,betrokken toezichthoudende autoriteit,exact,defined (own instrument),True
+De toezichthoudende autoriteit tot wie het verzoek is gericht,2,32016R0679:2,toezichthoudende autoriteit tot wie het verzoek is gericht,toezichthoudende autoriteit,prefix,defined (own instrument),True
+"De toezichthoudende autoriteit die bevoegd is overeenkomstig artikel 56, lid 1 of lid 4",2,32016R0679:2,"toezichthoudende autoriteit die bevoegd is overeenkomstig artikel 56, lid 1 of lid 4",toezichthoudende autoriteit,prefix,defined (own instrument),True
+De in lid 1 bedoelde toezichthoudende autoriteit,2,32016R0679:2,in lid 1 bedoelde toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+"De leidende toezichthoudende autoriteit of, in voorkomend geval, de toezichthoudende autoriteit waarbij de klacht is ingediend",2,32016R0679:2,leidende toezichthoudende autoriteit + toezichthoudende autoriteit waarbij de klacht is ingediend,leidende toezichthoudende autoriteit + ingediend,exact + head,curated (not in definitions) + not defined,False
+Het definitieve besluit,2,32016R0679:2,definitieve besluit,besluit,head,not defined,False
+De ambtstermijn van de voorzitter en de vicevoorzitters,2,32016R0679:2,ambtstermijn van de voorzitter en de vicevoorzitters,ambtstermijn,head,not defined,False
+iedere betrokkene,2,32016R0679:2,betrokkene,betrokkene,exact,defined (own instrument),True
+Die lidstaten,2,32016R0679:2,lidstaat,lidstaat,head,not defined,True
+"het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), genoemde doelstellingen",1,32024R1689:1,"gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), genoemde doelstellingen",gebruik,head,not defined,False
+Een lidstaat,1,32024R1689:1,lidstaat,lidstaat,head,not defined,True
+Nationale markttoezichtautoriteiten en nationale gegevensbeschermingsautoriteiten van lidstaten die op grond van lid 4 in kennis zijn gesteld van het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving,1,32024R1689:1,nationale markttoezichtautoriteit van lidstaten die op grond van lid 4 in kennis zijn gesteld van het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving + nationale gegevensbeschermingsautoriteit van lidstaten die op grond van lid 4 in kennis zijn gesteld van het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving,markttoezichtautoriteit + gegevensbeschermingsautoriteit,suffix + head,defined (own instrument) + not defined,True
+Een aanbieder,1,32024R1689:1,aanbieder,aanbieder,exact,defined (own instrument),True
+Die aanbieder,1,32024R1689:1,aanbieder,aanbieder,exact,defined (own instrument),True
+"De in lid 2, punt d), bedoelde risicobeheersmaatregelen",1,32024R1689:1,in lid 2 + punt d + bedoelde risicobeheersmaatregeel,2 + d + risicobeheersmaatregeel,head + head + head,not defined + not defined + not defined,False
+De tests,1,32024R1689:1,tests,tests,head,not defined,False
+De datasets,1,32024R1689:1,datasets,datasets,head,not defined,False
+"Datasets voor training, validatie en tests",1,32024R1689:1,"datasets voor training, validatie en tests",datasets,head,not defined,False
+Deze kenmerken van de datasets,1,32024R1689:1,kenmerk van de datasets,kenmerk,head,not defined,False
+het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten,1,32024R1689:1,register op grond van verordeningen 2016/679 en 2018/1725 en richtlijn 2016/680 van verwerkingsactiviteiten,register,head,not defined,False
+"Kmo’s, met inbegrip van start-ups",1,32024R1689:1,kmo met inbegrip van start-ups,kmo,head,not defined,True
+"Kmo’s, met inbegrip van start-ups, die ervoor kiezen de in bijlage IV vereiste informatie op vereenvoudigde wijze te verstrekken",1,32024R1689:1,"kmo met inbegrip van start-ups, die ervoor kiezen de in bijlage iv vereiste informatie op vereenvoudigde wijze te verstrekken",kmo,head,not defined,True
+loggingfuncties,1,32024R1689:1,loggingfunctie,loggingfunctie,head,not defined,False
+"AI-systemen met een hoog risico die gebruikt worden voor rechtshandhaving, migratie, grenstoezicht of asiel",1,32024R1689:1,"ai-systeem met een hoog risico die gebruikt worden voor rechtshandhaving, migratie, grenstoezicht of asiel",ai-systeem,prefix,defined (own instrument),False
+De technische oplossingen die gericht zijn op het waarborgen van de cyberbeveiliging van AI-systemen met een hoog risico,1,32024R1689:1,technische oplossing die gericht zijn op het waarborgen van de cyberbeveiliging van ai-systemen met een hoog risico,oplossing,head,not defined,False
+De technische oplossingen voor het aanpakken van AI-specifieke kwetsbaarheden,1,32024R1689:1,technische oplossing voor het aanpakken van ai-specifieke kwetsbaarheden,oplossing,head,not defined,False
+"Aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht voor financiële diensten",1,32024R1689:1,"aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het unierecht voor financiële diensten",aanbieders,head,not defined,False
+deze logs,1,32024R1689:1,logs,logs,exact,defined (own instrument),False
+"Aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht inzake financiële diensten",1,32024R1689:1,"aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het unierecht inzake financiële diensten",aanbieders,head,not defined,False
+aanbieders van AI-systemen met een hoog risico,1,32024R1689:1,aanbieders van ai-systemen met een hoog risico,aanbieders,head,not defined,False
+De door de bevoegde autoriteit krachtens dit artikel verkregen informatie en documentatie,1,32024R1689:1,door de bevoegde autoriteit krachtens dit artikel verkregen informatie en documentatie,autoriteit,head,not defined,True
+de importeur,1,32024R1689:1,importeur,importeur,exact,defined (own instrument),True
+distributeurs,1,32024R1689:1,distributeur,distributeur,exact,defined (own instrument),True
+een distributeur,1,32024R1689:1,distributeur,distributeur,exact,defined (own instrument),True
+distributeurs van een AI-systeem met een hoog risico,1,32024R1689:1,distributeur van een ai-systeem met een hoog risico,distributeur,prefix,defined (own instrument),True
+de aanbieder die het AI-systeem voor het eerst in de handel heeft gebracht of in gebruik heeft gesteld,1,32024R1689:1,aanbieder die het ai-systeem voor het eerst in de handel heeft gebracht of in gebruik heeft gesteld,aanbieder,prefix,defined (own instrument),True
+de oorspronkelijke aanbieder,1,32024R1689:1,oorspronkelijke aanbieder,aanbieder,suffix,defined (own instrument),True
+de productfabrikant,1,32024R1689:1,productfabrikant,productfabrikant,head,not defined,True
+"De aanbieder van een AI-systeem met een hoog risico en de derde partij die instrumenten, diensten, onderdelen of processen voor AI-systemen levert die worden gebruikt of geïntegreerd in een AI-systeem met een hoog risico",1,32024R1689:1,"aanbieder van een ai-systeem met een hoog risico en de derde partij die instrumenten, diensten, onderdelen of processen voor ai-systemen levert die worden gebruikt of geïntegreerd in een ai-systeem met een hoog risico",aanbieder,prefix,defined (own instrument),True
+"derden die andere instrumenten, diensten, processen of onderdelen dan AI-modellen voor algemene doeleinden onder een vrije en opensource licentie toegankelijk maken voor het publiek",1,32024R1689:1,"derde die andere instrumenten, diensten, processen of onderdelen dan ai-modellen voor algemene doeleinden onder een vrije en opensource licentie toegankelijk maken voor het publiek",derde,prefix,defined (other instrument: 32016R0679),True
+De vrijwillige modelvoorwaarden,1,32024R1689:1,vrijwillige modelvoorwaard,modelvoorwaard,head,not defined,False
+"Gebruiksverantwoordelijken die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het Unierecht inzake financiële diensten",1,32024R1689:1,"gebruiksverantwoordelijke die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het unierecht inzake financiële diensten",gebruiksverantwoordelijke,prefix,defined (own instrument),True
+gebruiksverantwoordelijken die werkgever zijn,1,32024R1689:1,gebruiksverantwoordelijke die werkgever zijn,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+"Gebruiksverantwoordelijken van AI-systemen met een hoog risico die de hoedanigheid van overheidsinstanties of instellingen, organen of instanties van de Unie hebben",1,32024R1689:1,"gebruiksverantwoordelijke van ai-systemen met een hoog risico die de hoedanigheid van overheidsinstanties of instellingen, organen of instanties van de unie hebben",gebruiksverantwoordelijke,prefix,defined (own instrument),True
+gebruiksverantwoordelijken van AI-systemen met een hoog risico,1,32024R1689:1,gebruiksverantwoordelijke van ai-systemen met een hoog risico,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+gebruiksverantwoordelijken van in bijlage III bedoelde AI-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen,1,32024R1689:1,gebruiksverantwoordelijke van in bijlage iii bedoelde ai-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+De gebruiksverantwoordelijke,1,32024R1689:1,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+De verplichting als neergelegd in lid 1,1,32024R1689:1,verplichting als neergelegd in lid 1,verplichting,head,not defined,False
+gebruiksverantwoordelijken,1,32024R1689:1,gebruiksverantwoordelijke,gebruiksverantwoordelijke,exact,defined (own instrument),True
+een aanmeldende autoriteit,1,32024R1689:1,aanmeldende autoriteit,aanmeldende autoriteit,exact,defined (own instrument),True
+Deze procedures,1,32024R1689:1,procedures,procedures,head,not defined,False
+Bekwame personeelsleden,1,32024R1689:1,bekwame personeelslid,personeelslid,head,not defined,True
+Conformiteitsbeoordelingsinstanties,1,32024R1689:1,conformiteitsbeoordelingsinstantie,conformiteitsbeoordelingsinstantie,exact,defined (own instrument),True
+Het verzoek om aanmelding,1,32024R1689:1,verzoek om aanmelding,verzoek,head,not defined,False
+Geldige documenten met betrekking tot bestaande aanwijzingen van de verzoekende aangemelde instantie uit hoofde van andere harmonisatiewetgeving van de Unie,1,32024R1689:1,geldige document met betrekking tot bestaande aanwijzingen van de verzoekende aangemelde instantie uit hoofde van andere harmonisatiewetgeving van de unie,document,head,not defined,True
+De betrokken conformiteitsbeoordelingsinstantie,1,32024R1689:1,betrokken conformiteitsbeoordelingsinstantie,conformiteitsbeoordelingsinstantie,suffix,defined (own instrument),True
+"De organisatiestructuur, de toewijzing van verantwoordelijkheden, de rapportagelijnen en het functioneren van aangemelde instanties",1,32024R1689:1,"organisatiestructuur van verantwoordelijkheden, de rapportagelijnen en het functioneren van aangemelde instanties + toewijzing van verantwoordelijkheden, de rapportagelijnen en het functioneren van aangemelde instanties",organisatiestructuur + toewijzing,head + head,not defined + not defined,False
+Het personeel van aangemelde instanties,1,32024R1689:1,personeel van aangemelde instanties,personeel,head,not defined,True
+"hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties",1,32024R1689:1,personeel van externe instanties + comité van externe instanties + dochteronderneming van externe instanties + onderaannemer van externe instanties + geassocieerde instantie van externe instanties + personeel van externe instanties,personeel + comité + dochteronderneming + onderaannemer + instantie + personeel,head + head + prefix + head + head + head,not defined + not defined + defined (other instrument: DORA) + not defined + not defined + not defined,True
+een onderaannemer of dochteronderneming,1,32024R1689:1,onderaannemer + dochteronderneming,onderaannemer + dochteronderneming,head + exact,not defined + defined (other instrument: DORA),True
+De certificaten van de aangemelde instantie,1,32024R1689:1,certificaat van de aangemelde instantie,certificaat,head,not defined,False
+die aangemelde instantie,1,32024R1689:1,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+die autoriteit,1,32024R1689:1,autoriteit,autoriteit,head,not defined,True
+de aanbieder van het systeem waarop het certificaat betrekking heeft,1,32024R1689:1,aanbieder van het systeem waarop het certificaat betrekking heeft,aanbieder,prefix,defined (own instrument),True
+Elke aanmeldende autoriteit,1,32024R1689:1,aanmeldende autoriteit,aanmeldende autoriteit,exact,defined (own instrument),True
+Conformiteitsbeoordelingsinstanties die zijn opgericht naar het recht van een derde land waarmee de Unie een overeenkomst heeft gesloten,1,32024R1689:1,conformiteitsbeoordelingsinstantie die zijn opgericht naar het recht van een derde land waarmee de unie een overeenkomst heeft gesloten,conformiteitsbeoordelingsinstantie,prefix,defined (own instrument),True
+aanbieders van AI-systemen met een hoog risico of AI-modellen voor algemene doeleinden,1,32024R1689:1,aanbieders van ai-systemen met een hoog risico of ai-modellen voor algemene doeleinden,aanbieders,head,not defined,False
+deze lidstaat,1,32024R1689:1,lidstaat,lidstaat,head,not defined,True
+de betrokkenheid van een aangemelde instantie,1,32024R1689:1,betrokkenheid van een aangemelde instantie,betrokkenheid,head,not defined,False
+aangemelde instanties die volgens die rechtshandelingen zijn aangemeld,1,32024R1689:1,aangemelde instantie die volgens die rechtshandelingen zijn aangemeld,aangemelde instantie,prefix,defined (own instrument),True
+de fabrikant,1,32024R1689:1,fabrikant,fabrikant,head,not defined,True
+"veranderingen van het AI-systeem met een hoog risico en de prestaties ervan die op het moment van de eerste conformiteitsbeoordeling vooraf door de aanbieder zijn bepaald en deel uitmaken van de informatie in de in punt 2, f), van bijlage IV bedoelde technische documentatie",1,32024R1689:1,"verandering van het ai-systeem met een hoog risico en de prestaties ervan die op het moment van de eerste conformiteitsbeoordeling vooraf door de aanbieder zijn bepaald en deel uitmaken van de informatie in de in punt 2, f), van bijlage iv bedoelde technische documentatie",verandering,head,not defined,False
+aangemelde instanties,1,32024R1689:1,aangemelde instantie,aangemelde instantie,exact,defined (own instrument),True
+gevoelige operationele gegevens met betrekking tot de activiteiten van rechtshandhavingsinstanties,1,32024R1689:1,gevoelige operationele gegevens met betrekking tot de activiteiten van rechtshandhavingsinstanties,gevoelige operationele gegevens,prefix,defined (own instrument),False
+die toelating,1,32024R1689:1,toelating,toelating,head,not defined,False
+de markttoezichtautoriteit van de betrokken lidstaat,1,32024R1689:1,markttoezichtautoriteit van de betrokken lidstaat,markttoezichtautoriteit,prefix,defined (own instrument),True
+De verklaring,1,32024R1689:1,verklaring,verklaring,head,not defined,False
+de aanbieder of in voorkomend geval de gemachtigde,1,32024R1689:1,aanbieder + gemachtigde,aanbieder + gemachtigde,exact + exact,defined (own instrument) + defined (own instrument),True
+die aanbieder of in voorkomend geval de gemachtigde,1,32024R1689:1,aanbieder + gemachtigde,aanbieder + gemachtigde,exact + exact,defined (own instrument) + defined (own instrument),True
+"Aanbieders van AI-systemen, met inbegrip van AI-systemen voor algemene doeleinden",1,32024R1689:1,"aanbieders van ai-systemen, met inbegrip van ai-systemen voor algemene doeleinden",aanbieders,head,not defined,False
+de AI-systemen,1,32024R1689:1,ai-systeem,ai-systeem,exact,defined (own instrument),False
+voor biometrische categorisering en emotieherkenning gebruikte AI-systemen,1,32024R1689:1,voor biometrische categorisering + emotieherkenning gebruikte ai-systeem,categorisering + ai-systeem,head + suffix,not defined + defined (own instrument),False
+het gebruik,1,32024R1689:1,gebruik,gebruik,head,not defined,False
+Gebruiksverantwoordelijken van een AI-systeem dat tekst genereert of bewerkt die wordt gepubliceerd om het publiek te informeren over aangelegenheden van algemeen belang,1,32024R1689:1,gebruiksverantwoordelijke van een ai-systeem dat tekst genereert of bewerkt die wordt gepubliceerd om het publiek te informeren over aangelegenheden van algemeen belang,gebruiksverantwoordelijke,prefix,defined (own instrument),True
+"De aanbieder van een AI-model voor algemene doeleinden dat voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarden",1,32024R1689:1,"aanbieder van een ai-model voor algemene doeleinden dat voldoet aan de in artikel 51, lid 1, punt a), bedoelde voorwaarden",aanbieder,prefix,defined (own instrument),True
+Deze uitzondering,1,32024R1689:1,uitzondering,uitzondering,head,not defined,False
+Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico,1,32024R1689:1,aanbieders van ai-modellen voor algemene doeleinden met een systeemrisico,aanbieders,head,not defined,False
+Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico die zich niet aan een goedgekeurde praktijkcode houden of niet voldoen aan een Europese geharmoniseerde norm,1,32024R1689:1,aanbieders van ai-modellen voor algemene doeleinden met een systeemrisico die zich niet aan een goedgekeurde praktijkcode houden of niet voldoen aan een europese geharmoniseerde norm,aanbieders,head,not defined,False
+"Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen",1,32024R1689:1,maatschappelijke organisatie zoals aanbieders verder in de ai-waardeketen en onafhankelijke deskundigen + bedrijfsleev zoals aanbieders verder in de ai-waardeketen en onafhankelijke deskundigen + academische wereld zoals aanbieders verder in de ai-waardeketen en onafhankelijke deskundigen + andere relevante belanghebbend zoals aanbieders verder in de ai-waardeketen en onafhankelijke deskundigen,organisatie + bedrijfsleev + wereld + belanghebbend,head + head + head + head,not defined + not defined + not defined + not defined,False
+de deelnemers aan de praktijkcodes,1,32024R1689:1,deelnemer aan de praktijkcodes,deelnemer,head,not defined,True
+De kernprestatie-indicatoren en rapportageverplichtingen,1,32024R1689:1,kernprestatie-indicatoor + rapportageverplichting,kernprestatie-indicatoor + rapportageverplichting,head + head,not defined + not defined,False
+Die uitvoeringshandeling,1,32024R1689:1,uitvoeringshandeling,uitvoeringshandeling,head,not defined,False
+deze naleving,1,32024R1689:1,naleving,naleving,head,not defined,False
+aanbieders van AI-modellen voor algemene doeleinden die geen systeemrisico’s inhouden,1,32024R1689:1,aanbieders van ai-modellen voor algemene doeleinden die geen systeemrisico’s inhouden,aanbieders,head,not defined,False
+De praktijkcodes,1,32024R1689:1,praktijkcodes,praktijkcodes,head,not defined,False
+Die testomgeving,1,32024R1689:1,testomgeving,testomgeving,head,not defined,False
+deelnemende lidstaten,1,32024R1689:1,deelnemende lidstaat,lidstaat,head,not defined,True
+de bevoegde autoriteit,1,32024R1689:1,bevoegde autoriteit,autoriteit,head,not defined,True
+markttoezichtautoriteiten en aangemelde instanties,1,32024R1689:1,markttoezichtautoriteit + aangemelde instantie,markttoezichtautoriteit + aangemelde instantie,exact + exact,defined (own instrument) + defined (own instrument),True
+De bevoegde autoriteit,1,32024R1689:1,bevoegde autoriteit,autoriteit,head,not defined,True
+het eindverslag,1,32024R1689:1,eindverslag,eindverslag,head,not defined,False
+de toezichthoudende of corrigerende bevoegdheden van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen,1,32024R1689:1,toezichthoudende van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen + corrigerende bevoegdheed van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen,toezichthoudende + bevoegdheed,head + head,not defined + not defined,False
+Aanbieders en potentiële aanbieders die deelnemen aan de AI-testomgeving voor regelgeving,1,32024R1689:1,aanbieders die deelnemen aan de ai-testomgeving voor regelgeving + potentiële aanbieders die deelnemen aan de ai-testomgeving voor regelgeving,aanbieders + aanbieders,head + head,not defined + not defined,False
+de autoriteiten,1,32024R1689:1,autoriteit,autoriteit,head,not defined,True
+andere bevoegde autoriteiten die verantwoordelijk zijn voor ander Unierecht en nationaal recht,1,32024R1689:1,andere bevoegde autoriteit die verantwoordelijk zijn voor ander unierecht en nationaal recht,autoriteit,head,not defined,True
+de uitvoeringshandelingen,1,32024R1689:1,uitvoeringshandeling,uitvoeringshandeling,head,not defined,False
+nationale bevoegde autoriteiten,1,32024R1689:1,nationale bevoegde autoriteit,nationale bevoegde autoriteit,exact,defined (own instrument),True
+De aanbieder of potentiële aanbieder,1,32024R1689:1,aanbieder + potentiële aanbieder,aanbieder + aanbieder,exact + suffix,defined (own instrument) + defined (own instrument),True
+die operatoren,1,32024R1689:1,operator,operator,exact,defined (own instrument),True
+zijn lidstaat,1,32024R1689:1,lidstaat,lidstaat,head,not defined,True
+De aangewezen vertegenwoordigers van de lidstaten,1,32024R1689:1,aangewezen vertegenwoordiger van de lidstaten,vertegenwoordiger,suffix,"defined (other instrument: 32016R0679,NIS2)",True
+De permanente subgroep voor markttoezicht,1,32024R1689:1,permanente subgroep voor markttoezicht,subgroep,head,not defined,True
+vertegenwoordigers van het in artikel 67 bedoelde adviesforum,1,32024R1689:1,vertegenwoordiger van het in artikel 67 bedoelde adviesforum,vertegenwoordiger,prefix,"defined (other instrument: 32016R0679,NIS2)",True
+Elke deskundige,1,32024R1689:1,deskundige,deskundige,head,not defined,True
+Nationale bevoegde autoriteiten,1,32024R1689:1,nationale bevoegde autoriteit,nationale bevoegde autoriteit,exact,defined (own instrument),True
+"de aanbieder of, in voorkomend geval, de gemachtigde",1,32024R1689:1,aanbieder + gemachtigde,aanbieder + gemachtigde,exact + exact,defined (own instrument) + defined (own instrument),True
+De EU-databank,1,32024R1689:1,eu-databank,eu-databank,head,not defined,False
+Het plan voor monitoring na het in de handel brengen,1,32024R1689:1,plan voor monitoring na het in de handel brengen,plan,head,not defined,False
+Het systeem voor monitoring na het in de handel brengen,1,32024R1689:1,systeem voor monitoring na het in de handel brengen,systeem,head,not defined,False
+Aanbieders van in de Unie in de handel gebrachte AI-systemen met een hoog risico,1,32024R1689:1,aanbieders van in de unie in de handel gebrachte ai-systemen met een hoog risico,aanbieders,head,not defined,False
+"de aanbieder of, in voorkomend geval, de gebruiksverantwoordelijke",1,32024R1689:1,aanbieder + gebruiksverantwoordelijke,aanbieder + gebruiksverantwoordelijke,exact + exact,defined (own instrument) + defined (own instrument),True
+de betrokken markttoezichtautoriteit,1,32024R1689:1,betrokken markttoezichtautoriteit,markttoezichtautoriteit,suffix,defined (own instrument),True
+Die richtsnoeren,1,32024R1689:1,richtsnoer,richtsnoer,head,not defined,True
+aanbieders die onderworpen zijn aan rechtsinstrumenten van de Unie met meldingsverplichtingen die gelijkwaardig zijn aan die van deze verordening,1,32024R1689:1,aanbieders die onderworpen zijn aan rechtsinstrumenten van de unie met meldingsverplichtingen die gelijkwaardig zijn aan die van deze verordening,aanbieders,head,not defined,False
+AI-systemen met een hoog risico die veiligheidscomponenten van apparaten zijn of zelf apparaten zijn die onder de Verordeningen (EU) 2017/745 en (EU) 2017/746 vallen,1,32024R1689:1,ai-systeem met een hoog risico die veiligheidscomponenten van apparaten zijn of zelf apparaten zijn die onder de verordeningen 2017/745 en 2017/746 vallen,ai-systeem,prefix,defined (own instrument),False
+AI-systemen die verband houden met producten waarop in de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie van toepassing is,1,32024R1689:1,ai-systeem die verband houden met producten waarop in de in afdeling a van bijlage i vermelde harmonisatiewetgeving van de unie van toepassing is,ai-systeem,prefix,defined (own instrument),False
+de relevante nationale autoriteit die verantwoordelijk is voor het financiële toezicht op die instellingen krachtens die wetgeving,1,32024R1689:1,relevante nationale autoriteit die verantwoordelijk is voor het financiële toezicht op die instellingen krachtens die wetgeving,autoriteit,head,not defined,True
+de lidstaat,1,32024R1689:1,lidstaat,lidstaat,head,not defined,True
+Nationale markttoezichtautoriteiten die toezicht houden op gereglementeerde kredietinstellingen die onder Richtlijn 2013/36/EU vallen en die deelnemen aan het bij Verordening (EU) nr. 1024/2013 ingestelde gemeenschappelijk toezichtsmechanisme,1,32024R1689:1,nationale markttoezichtautoriteit die toezicht houden op gereglementeerde kredietinstellingen die onder richtlijn 2013/36/eu vallen en die deelnemen aan het bij verordening nr. 1024/2013 ingestelde gemeenschappelijk toezichtsmechanisme,markttoezichtautoriteit,suffix,defined (own instrument),True
+Markttoezichtautoriteiten en de Commissie,1,32024R1689:1,markttoezichtautoriteit + commissie,markttoezichtautoriteit + commissie,exact + head,defined (own instrument) + not defined,True
+De door de markttoezichtautoriteiten verkregen informatie of documentatie,1,32024R1689:1,door de markttoezichtautoriteit verkregen informatie + documentatie,informatie + documentatie,head + head,not defined + not defined,False
+de markttoezichtautoriteiten,1,32024R1689:1,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+Deze autoriteiten,1,32024R1689:1,autoriteit,autoriteit,head,not defined,True
+"Nationale overheidsinstanties of -organen die de nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage III vermelde AI-systemen met een hoog risico controleren of handhaven",1,32024R1689:1,"nationale overheidsinstantie die de nakoming van verplichtingen krachtens unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage iii vermelde ai-systemen met een hoog risico controleren of handhaven + -orgaan die de nakoming van verplichtingen krachtens unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage iii vermelde ai-systemen met een hoog risico controleren of handhaven",overheidsinstantie + -orgaan,suffix + head,"defined (other instrument: DORA,NIS2) + not defined",True
+De overheidsinstantie of het overheidsorgaan in kwestie,1,32024R1689:1,overheidsinstantie in kwestie + overheidsorgaan in kwestie,overheidsinstantie + overheidsorgaan,prefix + head,"defined (other instrument: DORA,NIS2) + not defined",True
+de in lid 1 van dit artikel bedoelde overheidsinstanties of -organen,1,32024R1689:1,in lid 1 van dit artikel bedoelde overheidsinstanties of -organen,1,head,not defined,False
+"De Commissie, de markttoezichtautoriteiten en de aangemelde instanties, en alle andere natuurlijke of rechtspersonen die bij de toepassing van deze verordening betrokken zijn",1,32024R1689:1,commissie die bij de toepassing van deze verordening betrokken zijn + markttoezichtautoriteit die bij de toepassing van deze verordening betrokken zijn + aangemelde instantie die bij de toepassing van deze verordening betrokken zijn + andere natuurlijke die bij de toepassing van deze verordening betrokken zijn + rechtspersoon die bij de toepassing van deze verordening betrokken zijn,commissie + markttoezichtautoriteit + aangemelde instantie + natuurlijke + rechtspersoon,head + prefix + prefix + head + head,not defined + defined (own instrument) + defined (own instrument) + not defined + not defined,True
+De autoriteiten die op grond van lid 1 bij de toepassing van deze verordening betrokken zijn,1,32024R1689:1,autoriteit die op grond van lid 1 bij de toepassing van deze verordening betrokken zijn,autoriteit,head,not defined,True
+De Commissie en de lidstaten,1,32024R1689:1,commissie + lidstaat,commissie + lidstaat,head + head,not defined + not defined,True
+De operators,1,32024R1689:1,operator,operator,exact,defined (own instrument),True
+Die autoriteit,1,32024R1689:1,autoriteit,autoriteit,head,not defined,True
+De markttoezichtautoriteiten,1,32024R1689:1,markttoezichtautoriteit,markttoezichtautoriteit,exact,defined (own instrument),True
+de aanbieder van het betrokken AI-systeem,1,32024R1689:1,aanbieder van het betrokken ai-systeem,aanbieder,prefix,defined (own instrument),True
+de betrokken lidstaat,1,32024R1689:1,betrokken lidstaat,lidstaat,head,not defined,True
+de betrokken operator,1,32024R1689:1,betrokken operator,operator,suffix,defined (own instrument),True
+De aanbieder of andere relevante operator,1,32024R1689:1,aanbieder + andere relevante operator,aanbieder + operator,exact + suffix,defined (own instrument) + defined (own instrument),True
+de markttoezichtautoriteit van een lidstaat,1,32024R1689:1,markttoezichtautoriteit van een lidstaat,markttoezichtautoriteit,prefix,defined (own instrument),True
+de ondersteunende AI-teststructuren van de Unie,1,32024R1689:1,ondersteunende ai-teststructuur van de unie,ai-teststructuur,head,not defined,False
+elke natuurlijke of rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening,1,32024R1689:1,natuurlijke die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening + rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening,natuurlijke + rechtspersoon,head + head,not defined + not defined,True
+Elke getroffen persoon,1,32024R1689:1,getroffen persoon,persoon,head,not defined,True
+het gebruik van AI-systemen,1,32024R1689:1,gebruik van ai-systemen,gebruik,head,not defined,False
+Aanbieders verder in de AI-waardeketen,1,32024R1689:1,aanbieders verder in de ai-waardeketen,verder,head,not defined,True
+Het wetenschappelijk panel,1,32024R1689:1,wetenschappelijk panel,panel,head,not defined,True
+De aanbieders van het betrokken AI-model voor algemene doeleinden of hun vertegenwoordiger,1,32024R1689:1,aanbieders van het betrokken ai-model voor algemene doeleinden of hun vertegenwoordiger,aanbieders,head,not defined,False
+De cliënten,1,32024R1689:1,cliënt,cliënt,head,not defined,False
+Voor deze taak aangewezen onafhankelijke deskundigen,1,32024R1689:1,voor deze taak aangewezen onafhankelijke deskundige,deskundige,head,not defined,True
+Het verzoek om informatie,1,32024R1689:1,verzoek om informatie,verzoek,head,not defined,False
+De aanbieders van AI-modellen voor algemene doeleinden of hun vertegenwoordiger,1,32024R1689:1,aanbieders van ai-modellen voor algemene doeleinden of hun vertegenwoordiger,aanbieders,head,not defined,False
+de personen die krachtens de wet of hun statuten gemachtigd zijn om hen te vertegenwoordigen,1,32024R1689:1,persoon die krachtens de wet of hun statuten gemachtigd zijn om hen te vertegenwoordigen,persoon,head,not defined,True
+"individuele aanbieders of gebruiksverantwoordelijken van AI-systemen of door organisaties die hen vertegenwoordigen, of allebei",1,32024R1689:1,"individuele aanbieders van ai-systemen of door organisaties die hen vertegenwoordigen, of allebei + gebruiksverantwoordelijke van ai-systemen of door organisaties die hen vertegenwoordigen, of allebei",aanbieders + gebruiksverantwoordelijke,head + prefix,not defined + defined (own instrument),False
+Gedragscodes,1,32024R1689:1,gedragscodes,gedragscodes,head,not defined,False
+Het AI-bureau en de lidstaten,1,32024R1689:1,ai-bureau + lidstaat,ai-bureau + lidstaat,exact + head,defined (own instrument) + not defined,True
+de sancties,1,32024R1689:1,sanctie,sanctie,head,not defined,False
+De Europese Toezichthouder voor gegevens-bescherming,1,32024R1689:1,europese toezichthouder voor gegevens-bescherming,toezichthouder,head,not defined,True
+Eventuele indieners van klachten,1,32024R1689:1,eventuele indiener van klachten,indiener,head,not defined,True
+de aanbieders en gebruiksverantwoordelijken van AI-systemen met een hoog risico die bedoeld zijn om door overheidsinstanties te worden gebruikt,1,32024R1689:1,aanbieders van ai-systemen met een hoog risico die bedoeld zijn om door overheidsinstanties te worden gebruikt + gebruiksverantwoordelijke van ai-systemen met een hoog risico die bedoeld zijn om door overheidsinstanties te worden gebruikt,aanbieders + gebruiksverantwoordelijke,head + prefix,not defined + defined (own instrument),False
+dat verslag,1,32024R1689:1,verslag,verslag,head,not defined,False
+De verslagen,1,32024R1689:1,verslaag,verslaag,head,not defined,False
+"de AI-board, de lidstaten en nationale bevoegde autoriteiten",1,32024R1689:1,ai-board + lidstaat + nationale bevoegde autoriteit,ai-board + lidstaat + nationale bevoegde autoriteit,head + head + exact,not defined + not defined + defined (own instrument),True
+"De rechtsgrond voor de in lid 1, punten c) en e), bedoelde verwerking",1,32016R0679:1,"rechtsgrond voor de in lid 1, punten c) en e), bedoelde verwerking",rechtsgrond,head,not defined,False
+Het doel van de verwerking,1,32016R0679:1,doel van de verwerking,doel,head,not defined,False
+Die rechtsgrond,1,32016R0679:1,rechtsgrond,rechtsgrond,head,not defined,False
+de persoon die de ouderlijke verantwoordelijkheid voor het kind draagt,1,32016R0679:1,persoon die de ouderlijke verantwoordelijkheid voor het kind draagt,persoon,head,not defined,True
+het kind,1,32016R0679:1,kind,kind,head,not defined,False
+de artikelen 15 tot en met 20,1,32016R0679:1,artikelen 15 tot en met 20,15,head,not defined,False
+de iconen,1,32016R0679:1,icoon,icoon,head,not defined,False
+de persoonsgegevens,1,32016R0679:1,persoonsgegevens,persoonsgegevens,exact,defined (own instrument),False
+de informatie,1,32016R0679:1,informatie,informatie,head,not defined,False
+de verwerkingsverantwoordelijke aan wie de persoonsgegevens waren verstrekt,1,32016R0679:1,verwerkingsverantwoordelijke aan wie de persoonsgegevens waren verstrekt,verwerkingsverantwoordelijke,prefix,defined (own instrument),True
+De in lid 1 bedoelde wettelijke maatregelen,1,32016R0679:1,in lid 1 bedoelde wettelijke maatregeel,maatregeel,head,not defined,False
+de gezamenlijke verwerkingsverantwoordelijken,1,32016R0679:1,gezamenlijke verwerkingsverantwoordelijke,verwerkingsverantwoordelijke,suffix,defined (own instrument),True
+De wezenlijke inhoud van de regeling,1,32016R0679:1,wezenlijke inhoud van de regeling,inhoud,head,not defined,False
+incidentele verwerking,1,32016R0679:1,incidentele verwerking,verwerking,suffix,defined (own instrument),False
+De vertegenwoordiger,1,32016R0679:1,vertegenwoordiger,vertegenwoordiger,exact,defined (own instrument),True
+de verwerker,1,32016R0679:1,verwerker,verwerker,exact,defined (own instrument),True
+de eerste verwerker,1,32016R0679:1,eerste verwerker,verwerker,suffix,defined (own instrument),True
+de in de leden 3 en 4 van dit artikel bedoelde overeenkomst of andere rechtshandeling,1,32016R0679:1,in de lid 3 van dit artikel bedoelde overeenkomst of andere rechtshandeling + 4 van dit artikel bedoelde overeenkomst of andere rechtshandeling,3 + 4,head + head,not defined + not defined,False
+De verwerker en eenieder die onder het gezag van de verwerkingsverantwoordelijke of van de verwerker handelt en toegang heeft tot persoonsgegevens,1,32016R0679:1,verwerker die onder het gezag van de verwerkingsverantwoordelijke of van de verwerker handelt en toegang heeft tot persoonsgegevens + eenieder die onder het gezag van de verwerkingsverantwoordelijke of van de verwerker handelt en toegang heeft tot persoonsgegevens,verwerker + eenieder,prefix + head,defined (own instrument) + not defined,True
+"Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke",1,32016R0679:1,verwerkingsverantwoordelijke van de verwerkingsverantwoordelijke + vertegenwoordiger van de verwerkingsverantwoordelijke,verwerkingsverantwoordelijke + vertegenwoordiger,prefix + prefix,defined (own instrument) + defined (own instrument),True
+Dat register,1,32016R0679:1,register,register,head,not defined,False
+"De verwerker, en, in voorkomend geval, de vertegenwoordiger van de verwerker",1,32016R0679:1,verwerker van de verwerker + vertegenwoordiger van de verwerker,verwerker + vertegenwoordiger,prefix + prefix,defined (own instrument) + defined (own instrument),True
+Dit register,1,32016R0679:1,register,register,head,not defined,False
+"de verwerkingsverantwoordelijke of de verwerker en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke of de verwerker",1,32016R0679:1,verwerkingsverantwoordelijke van de verwerkingsverantwoordelijke of de verwerker + verwerker van de verwerkingsverantwoordelijke of de verwerker + vertegenwoordiger van de verwerkingsverantwoordelijke of de verwerker,verwerkingsverantwoordelijke + verwerker + vertegenwoordiger,prefix + prefix + prefix,defined (own instrument) + defined (own instrument) + defined (own instrument),True
+ondernemingen of organisaties,1,32016R0679:1,onderneming + organisatie,onderneming + organisatie,exact + head,defined (own instrument) + not defined,True
+"De verwerkingsverantwoordelijke en de verwerker en, in voorkomend geval, hun vertegenwoordigers",1,32016R0679:1,verwerkingsverantwoordelijke + verwerker + vertegenwoordiger,verwerkingsverantwoordelijke + verwerker + vertegenwoordiger,exact + exact + exact,defined (own instrument) + defined (own instrument) + defined (own instrument),True
+de verwerkingsverantwoordelijke en de verwerker,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+iedere natuurlijke persoon die handelt onder het gezag van de verwerkingsverantwoordelijke of van de verwerker en toegang heeft tot persoonsgegevens,1,32016R0679:1,natuurlijke persoon die handelt onder het gezag van de verwerkingsverantwoordelijke of van de verwerker en toegang heeft tot persoonsgegevens,persoon,head,not defined,True
+de melding aan de toezichthoudende autoriteit,1,32016R0679:1,melding aan de toezichthoudende autoriteit,melding,head,not defined,False
+Die documentatie,1,32016R0679:1,documentatie,documentatie,head,not defined,False
+de specifieke verwerking of geheel van verwerkingen in kwestie,1,32016R0679:1,specifieke verwerking van verwerkingen in kwestie + geheel van verwerkingen in kwestie,verwerking + geheel,suffix + head,defined (own instrument) + not defined,False
+Een concern,1,32016R0679:1,concern,concern,exact,defined (own instrument),False
+Betrokkenen,1,32016R0679:1,betrokkene,betrokkene,exact,defined (own instrument),True
+verwerkingsverantwoordelijken of verwerkers die overeenkomstig artikel 3 niet onder deze verordening vallen,1,32016R0679:1,verwerkingsverantwoordelijke die overeenkomstig artikel 3 niet onder deze verordening vallen + verwerker die overeenkomstig artikel 3 niet onder deze verordening vallen,verwerkingsverantwoordelijke + verwerker,prefix + prefix,defined (own instrument) + defined (own instrument),True
+Die verwerkingsverantwoordelijken of verwerkers,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+Een in lid 2 van dit artikel bedoelde gedragscode,1,32016R0679:1,in lid 2 van dit artikel bedoelde gedragscode,2,head,not defined,False
+De in lid 2 van dit artikel bedoelde verenigingen en andere organen,1,32016R0679:1,in lid 2 van dit artikel bedoelde verenigingen en andere organen,2,head,not defined,False
+de overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit,1,32016R0679:1,overeenkomstig artikel 55 bevoegde toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+een orgaan,1,32016R0679:1,orgaan,orgaan,head,not defined,True
+Een orgaan als bedoeld in lid 1,1,32016R0679:1,orgaan als bedoeld in lid 1,orgaan,head,not defined,True
+een in lid 1 van dit artikel bedoeld orgaan,1,32016R0679:1,in lid 1 van dit artikel bedoeld orgaan,1,head,not defined,False
+Het orgaan,1,32016R0679:1,orgaan,orgaan,head,not defined,True
+certificeringsorganen die over de passende deskundigheid met betrekking tot gegevensbescherming beschikt,1,32016R0679:1,certificeringsorgaan die over de passende deskundigheid met betrekking tot gegevensbescherming beschikt,certificeringsorgaan,head,not defined,True
+De accreditatie,1,32016R0679:1,accreditatie,accreditatie,head,not defined,False
+de bevoegde toezichthoudende autoriteit of de nationale accreditatie-instantie,1,32016R0679:1,bevoegde toezichthoudende autoriteit + nationale accreditatie-instantie,toezichthoudende autoriteit + accreditatie-instantie,suffix + head,defined (own instrument) + not defined,True
+Een dergelijke doorgifte,1,32016R0679:1,doorgifte,doorgifte,head,not defined,False
+een verwerkingsverantwoordelijke of een verwerker,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+"Toestemmingen die een lidstaat of een toezichthoudende autoriteit op grond van artikel 26, lid 2, van Richtlijn 95/46/EG heeft verleend",1,32016R0679:1,"toestemming die een lidstaat of een toezichthoudende autoriteit op grond van artikel 26, lid 2, van richtlijn 95/46/eg heeft verleend",toestemming,head,not defined,False
+"De besluiten die de Commissie op grond van artikel 26, lid 4, van Richtlijn 95/46/EG heeft vastgesteld",1,32016R0679:1,"besluit die de commissie op grond van artikel 26, lid 4, van richtlijn 95/46/eg heeft vastgesteld",besluit,head,not defined,False
+"Een doorgifte overeenkomstig lid 1, eerste alinea, onder g)",1,32016R0679:1,"doorgifte overeenkomstig lid 1, eerste alinea, onder g",doorgifte,head,not defined,False
+de doorgifte,1,32016R0679:1,doorgifte,doorgifte,head,not defined,False
+activiteiten die door overheidsinstanties worden verricht bij de uitoefening van hun openbare bevoegdheden,1,32016R0679:1,activiteit die door overheidsinstanties worden verricht bij de uitoefening van hun openbare bevoegdheden,activiteit,head,not defined,True
+de leden van elke toezichthoudende autoriteit,1,32016R0679:1,lid van elke toezichthoudende autoriteit,lid,head,not defined,True
+elk lid van hun toezichthoudende autoriteiten,1,32016R0679:1,lid van hun toezichthoudende autoriteiten,lid,head,not defined,True
+Elk lid,1,32016R0679:1,lid,lid,head,not defined,True
+het lid of de leden en de personeelsleden van elke toezichthoudende autoriteit,1,32016R0679:1,lid van elke toezichthoudende autoriteit + lid van elke toezichthoudende autoriteit + personeelslid van elke toezichthoudende autoriteit,lid + lid + personeelslid,head + head + head,not defined + not defined + not defined,True
+de toezichthoudende autoriteit van de lidstaat in kwestie,1,32016R0679:1,toezichthoudende autoriteit van de lidstaat in kwestie,toezichthoudende autoriteit,prefix,defined (own instrument),True
+Toezichthoudende autoriteiten,1,32016R0679:1,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+de toezichthoudende autoriteit van de hoofdvestiging of de enige vestiging van de verwerkingsverantwoordelijke of verwerker,1,32016R0679:1,toezichthoudende autoriteit van de hoofdvestiging of de enige vestiging van de verwerkingsverantwoordelijke of verwerker,toezichthoudende autoriteit,prefix,defined (own instrument),True
+de toezichthoudende autoriteit die de leidende toezichthoudende autoriteit in kennis heeft gesteld,1,32016R0679:1,toezichthoudende autoriteit die de leidende toezichthoudende autoriteit in kennis heeft gesteld,toezichthoudende autoriteit,prefix,defined (own instrument),True
+De leidende toezichthoudende autoriteit en de betrokken toezichthoudende autoriteiten,1,32016R0679:1,leidende toezichthoudende autoriteit + betrokken toezichthoudende autoriteit,leidende toezichthoudende autoriteit + betrokken toezichthoudende autoriteit,exact + exact,curated (not in definitions) + defined (own instrument),True
+Dat herziene ontwerpbesluit,1,32016R0679:1,herziene ontwerpbesluit,ontwerpbesluit,head,not defined,False
+De toezichthoudende autoriteit waarbij de klacht is ingediend,1,32016R0679:1,toezichthoudende autoriteit waarbij de klacht is ingediend,ingediend,head,not defined,False
+De leidende toezichthoudende autoriteit en de andere betrokken toezichthoudende autoriteiten,1,32016R0679:1,leidende toezichthoudende autoriteit + andere betrokken toezichthoudende autoriteit,leidende toezichthoudende autoriteit + betrokken toezichthoudende autoriteit,exact + suffix,curated (not in definitions) + defined (own instrument),True
+Verzoeken om bijstand,1,32016R0679:1,verzoek om bijstand,verzoek,head,not defined,False
+De toezichthoudende autoriteit waaraan een verzoek om bijstand is gericht,1,32016R0679:1,toezichthoudende autoriteit waaraan een verzoek om bijstand is gericht,verzoek,head,not defined,False
+Toezichthoudende autoriteiten tot wie het verzoek is gericht,1,32016R0679:1,toezichthoudende autoriteit tot wie het verzoek is gericht,toezichthoudende autoriteit,prefix,defined (own instrument),True
+toezichthoudende autoriteiten tot wie een verzoek is gericht,1,32016R0679:1,toezichthoudende autoriteit tot wie een verzoek is gericht,toezichthoudende autoriteit,prefix,defined (own instrument),True
+de verzoekende toezichthoudende autoriteit,1,32016R0679:1,verzoekende toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+één toezichthoudende autoriteit,1,32016R0679:1,één toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+Deze onderzoeksbevoegdheden,1,32016R0679:1,onderzoeksbevoegdheed,onderzoeksbevoegdheed,head,not defined,False
+De leden of de personeelsleden van de ondersteunende toezichthoudende autoriteit,1,32016R0679:1,lid van de ondersteunende toezichthoudende autoriteit + personeelslid van de ondersteunende toezichthoudende autoriteit,lid + personeelslid,head + head,not defined + not defined,True
+de lidstaat van de ontvangende toezichthoudende autoriteit,1,32016R0679:1,lidstaat van de ontvangende toezichthoudende autoriteit,lidstaat,head,not defined,True
+De lidstaat op het grondgebied waarvan de schade is veroorzaakt,1,32016R0679:1,lidstaat op het grondgebied waarvan de schade is veroorzaakt,lidstaat,head,not defined,True
+De lidstaat van de ondersteunende toezichthoudende autoriteit waarvan de personeelsleden op het grondgebied van een andere lidstaat aan iemand schade hebben berokkend,1,32016R0679:1,lidstaat van de ondersteunende toezichthoudende autoriteit waarvan de personeelsleden op het grondgebied van een andere lidstaat aan iemand schade hebben berokkend,lidstaat,head,not defined,True
+de andere toezichthoudende autoriteiten,1,32016R0679:1,andere toezichthoudende autoriteit,toezichthoudende autoriteit,suffix,defined (own instrument),True
+"Een toezichthoudende autoriteit, de voorzitter van het Comité of de Commissie",1,32016R0679:1,toezichthoudende autoriteit van het comité of de commissie + voorzitter van het comité of de commissie,toezichthoudende autoriteit + voorzitter,prefix + head,defined (own instrument) + not defined,True
+een lid,1,32016R0679:1,lid,lid,head,not defined,True
+De toezichthoudende autoriteiten en de Commissie,1,32016R0679:1,toezichthoudende autoriteit + commissie,toezichthoudende autoriteit + commissie,exact + head,defined (own instrument) + not defined,True
+Het secretariaat van het Comité,1,32016R0679:1,secretariaat van het comité,secretariaat,head,not defined,True
+de betrokken toezichthoudende autoriteit,1,32016R0679:1,betrokken toezichthoudende autoriteit,betrokken toezichthoudende autoriteit,exact,defined (own instrument),True
+de voorzitter,1,32016R0679:1,voorzitter,voorzitter,head,not defined,True
+De betrokken toezichthoudende autoriteiten,1,32016R0679:1,betrokken toezichthoudende autoriteit,betrokken toezichthoudende autoriteit,exact,defined (own instrument),True
+Het besluit,1,32016R0679:1,besluit,besluit,head,not defined,False
+Het in lid 1 van dit artikel bedoelde besluit,1,32016R0679:1,in lid 1 van dit artikel bedoelde besluit,1,head,not defined,False
+Het definitieve besluit van de betrokken toezichthoudende autoriteiten,1,32016R0679:1,definitieve besluit van de betrokken toezichthoudende autoriteiten,besluit,head,not defined,False
+een toezichthoudende autoriteit,1,32016R0679:1,toezichthoudende autoriteit,toezichthoudende autoriteit,exact,defined (own instrument),True
+zijn voorzitter,1,32016R0679:1,voorzitter,voorzitter,head,not defined,True
+De personeelsleden van de Europese Toezichthouder voor gegevensbescherming die betrokken zijn bij de uitvoering van de krachtens deze verordening aan het Comité opgedragen taken,1,32016R0679:1,personeelslid van de europese toezichthouder voor gegevensbescherming die betrokken zijn bij de uitvoering van de krachtens deze verordening aan het comité opgedragen taken,personeelslid,head,not defined,True
+het comité,1,32016R0679:1,comité,comité,head,not defined,True
+iedere natuurlijke persoon of rechtspersoon,1,32016R0679:1,natuurlijke persoon + rechtspersoon,persoon + rechtspersoon,head + head,not defined + not defined,True
+elke betrokkene,1,32016R0679:1,betrokkene,betrokkene,exact,defined (own instrument),True
+een bevoegd gerecht van een lidstaat,1,32016R0679:1,bevoegd gerecht van een lidstaat,gerecht,head,not defined,True
+ieder ander bevoegd gerecht dan dat welk als eerste is aangezocht,1,32016R0679:1,ander bevoegd gerecht dan dat welk als eerste is aangezocht,dan,head,not defined,False
+elk gerecht dat niet als eerste is aangezocht,1,32016R0679:1,gerecht dat niet als eerste is aangezocht,gerecht,head,not defined,True
+Eenieder die materiële of immateriële schade heeft geleden ten gevolge van een inbreuk op deze verordening,1,32016R0679:1,eenieder die materiële of immateriële schade heeft geleden ten gevolge van een inbreuk op deze verordening,eenieder,head,not defined,True
+Elke verwerkingsverantwoordelijke die bij verwerking is betrokken,1,32016R0679:1,verwerkingsverantwoordelijke die bij verwerking is betrokken,verwerkingsverantwoordelijke,prefix,defined (own instrument),True
+Een verwerker,1,32016R0679:1,verwerker,verwerker,exact,defined (own instrument),True
+Een verwerkingsverantwoordelijke of verwerker,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+elke verwerkingsverantwoordelijke of verwerker,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+deze verwerkingsverantwoordelijke of verwerker,1,32016R0679:1,verwerkingsverantwoordelijke + verwerker,verwerkingsverantwoordelijke + verwerker,exact + exact,defined (own instrument) + defined (own instrument),True
+Inbreuken op onderstaande bepalingen,1,32016R0679:1,inbreuk op onderstaande bepalingen,inbreuk,head,not defined,False
+De uitoefening door de toezichthoudende autoriteit van haar bevoegdheden uit hoofde van dit artikel,1,32016R0679:1,uitoefening door de toezichthoudende autoriteit van haar bevoegdheden uit hoofde van dit artikel,uitoefening,head,not defined,False
+dit artikel,1,32016R0679:1,artikel,artikel,head,not defined,False
+De boeten,1,32016R0679:1,boet,boet,head,not defined,False
+bevoegde nationale gerechten,1,32016R0679:1,bevoegde nationale gerecht,gerecht,head,not defined,True
+de instantie of het orgaan in kwestie,1,32016R0679:1,instantie in kwestie + orgaan in kwestie,instantie + orgaan,head + head,not defined + not defined,True
+Die regels,1,32016R0679:1,regels,regels,head,not defined,False
+Die waarborgen,1,32016R0679:1,waarborg,waarborg,head,not defined,False
+"De verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden",1,32016R0679:1,"verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden",verwerking,prefix,defined (own instrument),False
+kerken en religieuze verenigingen of gemeenschappen,1,32016R0679:1,kerk + religieuze vereniging + gemeenschapp,kerk + vereniging + gemeenschapp,head + head + head,not defined + not defined + not defined,False
+"een overeenkomstig artikel 12, lid 8, en artikel 43, lid 8, vastgestelde gedelegeerde handeling",1,32016R0679:1,overeenkomstig artikel 12 + lid 8 + artikel 43 + lid 8 + vastgestelde gedelegeerde handeling,12 + 8 + 43 + 8 + handeling,head + head + head + head + head,not defined + not defined + not defined + not defined + not defined,False
+Die termijn,1,32016R0679:1,termijn,termijn,head,not defined,False

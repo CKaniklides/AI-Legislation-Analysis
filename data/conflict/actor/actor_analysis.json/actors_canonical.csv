@@ -1,0 +1,164 @@
+rank,role,norms,pct_explicit,defined_in,norm_instruments,match_types,head_looks_agentive,n_variants,variants
+1,commissie,160,13.81,-,32024R1689:127;32016R0679:33,head:160,True,9,"De Commissie | de Commissie | de Commissie en de toezichthoudende autoriteiten | de Commissie en de AI-board | De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie | Markttoezichtautoriteiten en de Commissie | De Commissie, de markttoezichtautoriteiten en de aangemelde instanties, en alle andere natuurlijke of rechtspersonen die bij de toepassing van deze verordening betrokken zijn | De Commissie en de lidstaten | De toezichthoudende autoriteiten en de Commissie"
+2,toezichthoudende autoriteit,105,9.06,32016R0679,32016R0679:105,"exact:80,suffix:13,prefix:12",True,30,"Elke toezichthoudende autoriteit | Elk toezichthoudende autoriteit | de toezichthoudende autoriteit | De toezichthoudende autoriteit | de Commissie en de toezichthoudende autoriteiten | Een toezichthoudende autoriteit | De bevoegde toezichthoudende autoriteit | De toezichthoudende autoriteiten | de bevoegde toezichthoudende autoriteit | De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie"
+3,verwerkingsverantwoordelijke,104,8.97,32016R0679,32016R0679:104,"exact:94,prefix:9,suffix:1",True,21,de verwerkingsverantwoordelijke | De verwerkingsverantwoordelijke | De verwerkingsverantwoordelijke en de verwerker | De verwerkingsverantwoordelijke of de verwerker | de verwerkingsverantwoordelijke of de verwerker | de verwerkingsverantwoordelijken | de verwerkingsverantwoordelijke of de verwerker of verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | De verwerkingsverantwoordelijke of de verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt | de verwerkingsverantwoordelijke aan wie de persoonsgegevens waren verstrekt | de gezamenlijke verwerkingsverantwoordelijken
+4,lidstaat,92,7.94,-,32024R1689:44;32016R0679:48,head:92,True,22,"De lidstaten | Elke lidstaat | de lidstaten | elke lidstaat | de aanmeldende lidstaat | De betrokken lidstaten | alle lidstaten | De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie | die lidstaat | Die lidstaten"
+5,aanbieders,70,6.04,-,32024R1689:74,head:74,False,25,"Aanbieders van AI-systemen met een hoog risico | aanbieders | Aanbieders van AI-modellen voor algemene doeleinden | Aanbieders of potentiële aanbieders | Aanbieders | Aanbieders en gebruiksverantwoordelijken van AI-systemen | de aanbieders van dergelijke systemen | aanbieders die in de hoedanigheid van financiële instellingen onderworpen zijn aan eisen met betrekking tot hun interne governance, regelingen of processen uit hoofde van het desbetreffende Unierecht inzake financiële diensten | Aanbieders die in derde landen zijn gevestigd | aanbieders van AI-modellen"
+6,comité,52,4.49,-,32024R1689:1;32016R0679:51,head:52,True,5,"Het Comité | het Comité | De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie | hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties | het comité"
+7,aangemelde instantie,46,3.97,32024R1689,32024R1689:46,"exact:42,suffix:2,prefix:2",True,11,Aangemelde instanties | Elke aangemelde instantie | de aangemelde instantie | De aangemelde instantie | een aangemelde instantie | Die laatste aangemelde instantie | die aangemelde instantie | aangemelde instanties die volgens die rechtshandelingen zijn aangemeld | aangemelde instanties | markttoezichtautoriteiten en aangemelde instanties
+8,gebruiksverantwoordelijke,42,3.62,32024R1689,32024R1689:42,"exact:23,prefix:19",True,21,"de gebruiksverantwoordelijke | Gebruiksverantwoordelijken | gebruiksverantwoordelijken die overheidsinstanties, instellingen, organen of instanties van de Unie, of personen die namens hen optreden | Aanbieders en gebruiksverantwoordelijken van AI-systemen | een distributeur, importeur, gebruiksverantwoordelijke of derde | Gebruiksverantwoordelijken van AI-systemen met een hoog risico | gebruiksverantwoordelijke | deze gebruiksverantwoordelijke | Gebruiksverantwoordelijken van een systeem voor het herkennen van emoties of een systeem voor biometrische categorisering | Gebruiksverantwoordelijken van een AI-systeem dat beeld-, audio- of videocontent genereert of bewerkt die een deepfake vormt"
+9,verwerker,39,3.36,32016R0679,32016R0679:39,"exact:28,prefix:8,suffix:3",True,21,De verwerkingsverantwoordelijke en de verwerker | De verwerkingsverantwoordelijke of de verwerker | de verwerkingsverantwoordelijke of de verwerker | De verwerker | de andere verwerker | de verwerkingsverantwoordelijke of de verwerker of verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | De verwerkingsverantwoordelijke of de verwerker die zijn verwerking aan het certificeringsmechanisme onderwerpt | de verwerker | de eerste verwerker | De verwerker en eenieder die onder het gezag van de verwerkingsverantwoordelijke of van de verwerker handelt en toegang heeft tot persoonsgegevens
+10,ai-bureau,37,3.19,32024R1689,32024R1689:37,exact:37,True,4,Het AI-bureau | het AI-bureau | Het AI-bureau en de AI-board | Het AI-bureau en de lidstaten
+11,aanbieder,35,3.02,32024R1689,32024R1689:36,"exact:21,suffix:10,prefix:5",True,18,"De aanbieder | de aanbieder | de betrokken aanbieder | Die oorspronkelijke aanbieder | De aanbieder of potentiële aanbieder | Een aanbieder | Die aanbieder | de aanbieder die het AI-systeem voor het eerst in de handel heeft gebracht of in gebruik heeft gesteld | de oorspronkelijke aanbieder | De aanbieder van een AI-systeem met een hoog risico en de derde partij die instrumenten, diensten, onderdelen of processen voor AI-systemen levert die worden gebruikt of geïntegreerd in een AI-systeem met een hoog risico"
+12,markttoezichtautoriteit,32,2.76,32024R1689,32024R1689:32,"exact:24,suffix:5,prefix:3",True,17,de markttoezichtautoriteit | De markttoezichtautoriteit | Een markttoezichtautoriteit | markttoezichtautoriteiten | een markttoezichtautoriteit | Markttoezichtautoriteiten | de relevante markttoezichtautoriteit | Nationale markttoezichtautoriteiten en nationale gegevensbeschermingsautoriteiten van lidstaten die op grond van lid 4 in kennis zijn gesteld van het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving | de markttoezichtautoriteit van de betrokken lidstaat | markttoezichtautoriteiten en aangemelde instanties
+13,aanmeldende autoriteit,32,2.76,32024R1689,32024R1689:32,exact:32,True,5,de aanmeldende autoriteit | Aanmeldende autoriteiten | De aanmeldende autoriteit | een aanmeldende autoriteit | Elke aanmeldende autoriteit
+14,betrokkene,27,2.33,32016R0679,32016R0679:27,exact:27,True,5,De betrokkene | de betrokkene | iedere betrokkene | Betrokkenen | elke betrokkene
+15,leidende toezichthoudende autoriteit,19,1.64,curated,32016R0679:19,exact:19,True,5,"De leidende toezichthoudende autoriteit | de leidende toezichthoudende autoriteit | De leidende toezichthoudende autoriteit of, in voorkomend geval, de toezichthoudende autoriteit waarbij de klacht is ingediend | De leidende toezichthoudende autoriteit en de betrokken toezichthoudende autoriteiten | De leidende toezichthoudende autoriteit en de andere betrokken toezichthoudende autoriteiten"
+16,nationale bevoegde autoriteit,17,1.47,32024R1689,32024R1689:17,exact:17,True,5,"De nationale bevoegde autoriteiten | de nationale bevoegde autoriteiten | nationale bevoegde autoriteiten | Nationale bevoegde autoriteiten | de AI-board, de lidstaten en nationale bevoegde autoriteiten"
+17,functionaris voor gegevensbescherming,15,1.29,curated,32016R0679:15,exact:15,True,2,De functionaris voor gegevensbescherming | de functionaris voor gegevensbescherming
+18,distributeur,14,1.21,32024R1689,32024R1689:14,"exact:13,prefix:1",True,7,"Een distributeur | de distributeur | Distributeurs | een distributeur, importeur, gebruiksverantwoordelijke of derde | distributeurs | een distributeur | distributeurs van een AI-systeem met een hoog risico"
+19,autoriteit,12,1.04,-,32024R1689:12,head:12,True,11,De bevoegde autoriteiten | De door de bevoegde autoriteit krachtens dit artikel verkregen informatie en documentatie | die autoriteit | de bevoegde autoriteit | De bevoegde autoriteit | de autoriteiten | andere bevoegde autoriteiten die verantwoordelijk zijn voor ander Unierecht en nationaal recht | de relevante nationale autoriteit die verantwoordelijk is voor het financiële toezicht op die instellingen krachtens die wetgeving | Deze autoriteiten | De autoriteiten die op grond van lid 1 bij de toepassing van deze verordening betrokken zijn
+20,voorzitter,12,1.04,-,32016R0679:12,head:12,True,5,"De voorzitter van het Comité | De voorzitter | Een toezichthoudende autoriteit, de voorzitter van het Comité of de Commissie | de voorzitter | zijn voorzitter"
+21,orgaan,11,0.95,-,32016R0679:11,head:11,True,7,Verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | de verwerkingsverantwoordelijke of de verwerker of verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | de in artikel 43 bedoelde certificerende organen of door de bevoegde toezichthoudende autoriteit | een orgaan | Een orgaan als bedoeld in lid 1 | Het orgaan | de instantie of het orgaan in kwestie
+22,secretariaat,10,0.86,-,32016R0679:10,head:10,True,2,Het secretariaat | Het secretariaat van het Comité
+23,ai-systeem,9,0.78,32024R1689,32024R1689:9,"prefix:7,exact:1,suffix:1",False,6,"AI-systemen met een hoog risico | AI-systemen met een hoog risico die gebruikt worden voor rechtshandhaving, migratie, grenstoezicht of asiel | de AI-systemen | voor biometrische categorisering en emotieherkenning gebruikte AI-systemen | AI-systemen met een hoog risico die veiligheidscomponenten van apparaten zijn of zelf apparaten zijn die onder de Verordeningen (EU) 2017/745 en (EU) 2017/746 vallen | AI-systemen die verband houden met producten waarop in de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie van toepassing is"
+24,ai-board,9,0.78,-,32024R1689:9,head:9,True,4,"Het AI-bureau en de AI-board | de Commissie en de AI-board | De AI-board | de AI-board, de lidstaten en nationale bevoegde autoriteiten"
+25,europese toezichthouder voor gegevensbescherming,8,0.69,curated,32024R1689:7;32016R0679:1,exact:8,True,2,De Europese Toezichthouder voor gegevensbescherming | de Europese Toezichthouder voor gegevensbescherming
+26,lid,8,0.69,-,32016R0679:9,head:9,True,7,De leden van toezichthoudende autoriteiten | het lid of de leden en de personeelsleden van elke toezichthoudende autoriteit | de leden van elke toezichthoudende autoriteit | elk lid van hun toezichthoudende autoriteiten | Elk lid | De leden of de personeelsleden van de ondersteunende toezichthoudende autoriteit | een lid
+27,importeur,7,0.6,32024R1689,32024R1689:7,exact:7,True,3,"Importeurs | een distributeur, importeur, gebruiksverantwoordelijke of derde | de importeur"
+28,vertegenwoordiger,7,0.6,"32016R0679,NIS2",32024R1689:2;32016R0679:5,"prefix:4,exact:2,suffix:1",True,7,"De aangewezen vertegenwoordigers van de lidstaten | vertegenwoordigers van het in artikel 67 bedoelde adviesforum | De vertegenwoordiger | Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke | De verwerker, en, in voorkomend geval, de vertegenwoordiger van de verwerker | de verwerkingsverantwoordelijke of de verwerker en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke of de verwerker | De verwerkingsverantwoordelijke en de verwerker en, in voorkomend geval, hun vertegenwoordigers"
+29,adviesforum,7,0.6,-,32024R1689:7,head:7,True,1,Het adviesforum
+30,besluit,7,0.6,-,32024R1689:1;32016R0679:6,head:7,False,5,"Het besluit tot intrekking | Het definitieve besluit | De besluiten die de Commissie op grond van artikel 26, lid 4, van Richtlijn 95/46/EG heeft vastgesteld | Het besluit | Het definitieve besluit van de betrokken toezichthoudende autoriteiten"
+31,operator,6,0.52,32024R1689,32024R1689:6,"suffix:4,exact:2",True,5,De betrokken operatoren | die operatoren | De operators | de betrokken operator | De aanbieder of andere relevante operator
+32,vereniging,6,0.52,-,32016R0679:6,head:6,True,3,Verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | de verwerkingsverantwoordelijke of de verwerker of verenigingen en andere organen die categorieën van verwerkingsverantwoordelijken of verwerkers vertegenwoordigen | kerken en religieuze verenigingen of gemeenschappen
+33,betrokken toezichthoudende autoriteit,6,0.52,32016R0679,32016R0679:6,"exact:5,suffix:1",True,5,een betrokken toezichthoudende autoriteit | De leidende toezichthoudende autoriteit en de betrokken toezichthoudende autoriteiten | De leidende toezichthoudende autoriteit en de andere betrokken toezichthoudende autoriteiten | de betrokken toezichthoudende autoriteit | De betrokken toezichthoudende autoriteiten
+34,ingediend,6,0.52,-,32016R0679:6,head:6,False,3,"de toezichthoudende autoriteit waarbij de klacht is ingediend | De leidende toezichthoudende autoriteit of, in voorkomend geval, de toezichthoudende autoriteit waarbij de klacht is ingediend | De toezichthoudende autoriteit waarbij de klacht is ingediend"
+35,gemachtigde,5,0.43,32024R1689,32024R1689:5,exact:5,True,4,"De gemachtigde | de aanbieder of in voorkomend geval de gemachtigde | die aanbieder of in voorkomend geval de gemachtigde | de aanbieder of, in voorkomend geval, de gemachtigde"
+36,persoon,5,0.43,-,32024R1689:2;32016R0679:3,head:5,True,5,Elke getroffen persoon | de personen die krachtens de wet of hun statuten gemachtigd zijn om hen te vertegenwoordigen | de persoon die de ouderlijke verantwoordelijkheid voor het kind draagt | iedere natuurlijke persoon die handelt onder het gezag van de verwerkingsverantwoordelijke of van de verwerker en toegang heeft tot persoonsgegevens | iedere natuurlijke persoon of rechtspersoon
+37,verwerking,5,0.43,32016R0679,32016R0679:5,"exact:2,suffix:2,prefix:1",False,4,"de verwerking | incidentele verwerking | de specifieke verwerking of geheel van verwerkingen in kwestie | De verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden"
+38,bijzondere categorieën persoonsgegevens,4,0.35,32024R1689,32024R1689:4,exact:4,False,1,de bijzondere categorieën persoonsgegevens
+39,personeelslid,4,0.35,-,32024R1689:1;32016R0679:3,head:4,True,4,Bekwame personeelsleden | het lid of de leden en de personeelsleden van elke toezichthoudende autoriteit | De leden of de personeelsleden van de ondersteunende toezichthoudende autoriteit | De personeelsleden van de Europese Toezichthouder voor gegevensbescherming die betrokken zijn bij de uitvoering van de krachtens deze verordening aan het Comité opgedragen taken
+40,verzoek,4,0.35,-,32024R1689:2;32016R0679:2,head:4,False,4,Het verzoek om aanmelding | Het verzoek om informatie | Verzoeken om bijstand | De toezichthoudende autoriteit waaraan een verzoek om bijstand is gericht
+41,informatie,4,0.35,-,32024R1689:3;32016R0679:1,head:4,False,3,de informatie en documentatie | De door de markttoezichtautoriteiten verkregen informatie of documentatie | de informatie
+42,documentatie,4,0.35,-,32024R1689:3;32016R0679:1,head:4,False,3,de informatie en documentatie | De door de markttoezichtautoriteiten verkregen informatie of documentatie | Die documentatie
+43,uitvoeringshandeling,4,0.35,-,32024R1689:4,head:4,False,3,Die uitvoeringshandelingen | Die uitvoeringshandeling | de uitvoeringshandelingen
+44,ambtstermijn,4,0.35,-,32024R1689:2;32016R0679:2,head:4,False,2,De ambtstermijn van de covoorzitters | De ambtstermijn van de voorzitter en de vicevoorzitters
+45,deskundige,4,0.35,-,32024R1689:4,head:4,True,3,De deskundigen in het wetenschappelijk panel | Elke deskundige | Voor deze taak aangewezen onafhankelijke deskundigen
+46,overheidsinstantie,4,0.35,"DORA,NIS2",32024R1689:4,"suffix:3,prefix:1",True,3,"de in lid 1 bedoelde overheidsinstanties of -organen | Nationale overheidsinstanties of -organen die de nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage III vermelde AI-systemen met een hoog risico controleren of handhaven | De overheidsinstantie of het overheidsorgaan in kwestie"
+47,verslag,4,0.35,-,32024R1689:2;32016R0679:2,head:4,False,2,Het verslag | dat verslag
+48,gebruik,3,0.26,-,32024R1689:3,head:3,False,3,"het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), genoemde doelstellingen | het gebruik | het gebruik van AI-systemen"
+49,melding,3,0.26,-,32024R1689:2;32016R0679:1,head:3,False,2,Die melding | de melding aan de toezichthoudende autoriteit
+50,2,3,0.26,-,32024R1689:1;32016R0679:2,head:3,False,3,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen | Een in lid 2 van dit artikel bedoelde gedragscode | De in lid 2 van dit artikel bedoelde verenigingen en andere organen"
+51,register,3,0.26,-,32024R1689:1;32016R0679:2,head:3,False,3,het register op grond van Verordeningen (EU) 2016/679 en (EU) 2018/1725 en Richtlijn (EU) 2016/680 van verwerkingsactiviteiten | Dat register | Dit register
+52,systeem,3,0.26,-,32024R1689:3,head:3,False,2,Dit systeem | Het systeem voor monitoring na het in de handel brengen
+53,derde,3,0.26,32016R0679,32024R1689:3,"exact:2,prefix:1",True,2,"een distributeur, importeur, gebruiksverantwoordelijke of derde | derden die andere instrumenten, diensten, processen of onderdelen dan AI-modellen voor algemene doeleinden onder een vrije en opensource licentie toegankelijk maken voor het publiek"
+54,conformiteitsbeoordelingsinstantie,3,0.26,32024R1689,32024R1689:3,"exact:1,suffix:1,prefix:1",True,3,Conformiteitsbeoordelingsinstanties | De betrokken conformiteitsbeoordelingsinstantie | Conformiteitsbeoordelingsinstanties die zijn opgericht naar het recht van een derde land waarmee de Unie een overeenkomst heeft gesloten
+55,-orgaan,3,0.26,-,32024R1689:3,head:3,True,2,"de in lid 1 bedoelde overheidsinstanties of -organen | Nationale overheidsinstanties of -organen die de nakoming van verplichtingen krachtens Unierecht ter bescherming van grondrechten, waaronder het recht op non-discriminatie, met betrekking tot het gebruik van de in bijlage III vermelde AI-systemen met een hoog risico controleren of handhaven"
+56,1,3,0.26,-,32024R1689:1;32016R0679:2,head:3,False,3,de in lid 1 van dit artikel bedoelde overheidsinstanties of -organen | een in lid 1 van dit artikel bedoeld orgaan | Het in lid 1 van dit artikel bedoelde besluit
+57,rechtspersoon,3,0.26,-,32024R1689:2;32016R0679:1,head:3,True,3,"De Commissie, de markttoezichtautoriteiten en de aangemelde instanties, en alle andere natuurlijke of rechtspersonen die bij de toepassing van deze verordening betrokken zijn | elke natuurlijke of rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening | iedere natuurlijke persoon of rechtspersoon"
+58,markttoezicht-autoriteit,3,0.26,-,32024R1689:3,head:3,True,1,De andere markttoezichtautoriteiten dan de markttoezicht-autoriteit van de lidstaat die de procedure heeft geïnitieerd
+59,hof van justitie,3,0.26,DORA,32024R1689:3,prefix:3,True,1,Het Hof van Justitie van de Europese Unie
+60,maatregeel,3,0.26,-,32016R0679:3,head:3,False,2,Deze maatregelen | De in lid 1 bedoelde wettelijke maatregelen
+61,certificeringsorgaan,3,0.26,-,32016R0679:3,head:3,True,2,De in lid 1 bedoelde certificeringsorganen | certificeringsorganen die over de passende deskundigheid met betrekking tot gegevensbescherming beschikt
+62,doorgifte,3,0.26,-,32016R0679:3,head:3,False,3,"Een dergelijke doorgifte | Een doorgifte overeenkomstig lid 1, eerste alinea, onder g) | de doorgifte"
+63,gerecht,3,0.26,-,32016R0679:3,head:3,True,3,een bevoegd gerecht van een lidstaat | elk gerecht dat niet als eerste is aangezocht | bevoegde nationale gerechten
+64,datasets,2,0.17,-,32024R1689:2,head:2,False,2,"De datasets | Datasets voor training, validatie en tests"
+65,kmo,2,0.17,-,32024R1689:2,head:2,True,2,"Kmo’s, met inbegrip van start-ups | Kmo’s, met inbegrip van start-ups, die ervoor kiezen de in bijlage IV vereiste informatie op vereenvoudigde wijze te verstrekken"
+66,oplossing,2,0.17,-,32024R1689:2,head:2,False,2,De technische oplossingen die gericht zijn op het waarborgen van de cyberbeveiliging van AI-systemen met een hoog risico | De technische oplossingen voor het aanpakken van AI-specifieke kwetsbaarheden
+67,personeel,2,0.17,-,32024R1689:3,head:3,True,2,"hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties | Het personeel van aangemelde instanties"
+68,instantie,2,0.17,-,32024R1689:1;32016R0679:1,head:2,True,2,"hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties | de instantie of het orgaan in kwestie"
+69,dochteronderneming,2,0.17,DORA,32024R1689:2,"prefix:1,exact:1",True,2,"hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties | een onderaannemer of dochteronderneming"
+70,onderaannemer,2,0.17,-,32024R1689:2,head:2,True,2,"hun personeel, comités, dochterondernemingen, onderaannemers, geassocieerde instanties of personeel van externe instanties | een onderaannemer of dochteronderneming"
+71,civielebeschermingsautoriteit,2,0.17,-,32024R1689:2,head:2,True,1,rechtshandhavingsinstanties of civielebeschermingsautoriteiten
+72,rechtshandhavingsinstantie,2,0.17,32024R1689,32024R1689:2,exact:2,True,1,rechtshandhavingsinstanties of civielebeschermingsautoriteiten
+73,eu-conformiteitsverklaring,2,0.17,-,32024R1689:2,head:2,False,1,De EU-conformiteitsverklaring
+74,organisatie,2,0.17,-,32024R1689:1;32016R0679:1,head:2,True,2,"Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen | ondernemingen of organisaties"
+75,natuurlijke,2,0.17,-,32024R1689:2,head:2,True,2,"De Commissie, de markttoezichtautoriteiten en de aangemelde instanties, en alle andere natuurlijke of rechtspersonen die bij de toepassing van deze verordening betrokken zijn | elke natuurlijke of rechtspersoon die redenen heeft om van mening te zijn dat er inbreuk is gepleegd op de bepalingen van deze verordening"
+76,klacht,2,0.17,-,32024R1689:2,head:2,False,1,Klachten
+77,waarschuwing,2,0.17,-,32024R1689:2,head:2,False,1,Gekwalificeerde waarschuwingen
+78,parlement,2,0.17,-,32024R1689:1;32016R0679:1,head:2,True,1,Het Europees Parlement of de Raad
+79,raad,2,0.17,-,32024R1689:1;32016R0679:1,head:2,True,1,Het Europees Parlement of de Raad
+80,rechtsgrond,2,0.17,-,32016R0679:2,head:2,False,2,"De rechtsgrond voor de in lid 1, punten c) en e), bedoelde verwerking | Die rechtsgrond"
+81,unierecht,2,0.17,-,32016R0679:2,head:2,False,1,Het Unierecht of het lidstatelijke recht
+82,recht,2,0.17,-,32016R0679:2,head:2,False,1,Het Unierecht of het lidstatelijke recht
+83,eenieder,2,0.17,-,32016R0679:2,head:2,True,2,De verwerker en eenieder die onder het gezag van de verwerkingsverantwoordelijke of van de verwerker handelt en toegang heeft tot persoonsgegevens | Eenieder die materiële of immateriële schade heeft geleden ten gevolge van een inbreuk op deze verordening
+84,gegevensbeschermingsautoriteit,1,0.09,-,32024R1689:1,head:1,True,1,Nationale markttoezichtautoriteiten en nationale gegevensbeschermingsautoriteiten van lidstaten die op grond van lid 4 in kennis zijn gesteld van het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving
+85,d,1,0.09,-,32024R1689:1,head:1,False,1,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen"
+86,risicobeheersmaatregeel,1,0.09,-,32024R1689:1,head:1,False,1,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen"
+87,tests,1,0.09,-,32024R1689:1,head:1,False,1,De tests
+88,kenmerk,1,0.09,-,32024R1689:1,head:1,False,1,Deze kenmerken van de datasets
+89,loggingfunctie,1,0.09,-,32024R1689:1,head:1,False,1,loggingfuncties
+90,logs,1,0.09,32024R1689,32024R1689:1,exact:1,False,1,deze logs
+91,productfabrikant,1,0.09,-,32024R1689:1,head:1,True,1,de productfabrikant
+92,modelvoorwaard,1,0.09,-,32024R1689:1,head:1,False,1,De vrijwillige modelvoorwaarden
+93,verplichting,1,0.09,-,32024R1689:1,head:1,False,1,De verplichting als neergelegd in lid 1
+94,procedures,1,0.09,-,32024R1689:1,head:1,False,1,Deze procedures
+95,document,1,0.09,-,32024R1689:1,head:1,True,1,Geldige documenten met betrekking tot bestaande aanwijzingen van de verzoekende aangemelde instantie uit hoofde van andere harmonisatiewetgeving van de Unie
+96,organisatiestructuur,1,0.09,-,32024R1689:1,head:1,False,1,"De organisatiestructuur, de toewijzing van verantwoordelijkheden, de rapportagelijnen en het functioneren van aangemelde instanties"
+97,toewijzing,1,0.09,-,32024R1689:1,head:1,False,1,"De organisatiestructuur, de toewijzing van verantwoordelijkheden, de rapportagelijnen en het functioneren van aangemelde instanties"
+98,certificaat,1,0.09,-,32024R1689:1,head:1,False,1,De certificaten van de aangemelde instantie
+99,betrokkenheid,1,0.09,-,32024R1689:1,head:1,False,1,de betrokkenheid van een aangemelde instantie
+100,fabrikant,1,0.09,-,32024R1689:1,head:1,True,1,de fabrikant
+101,verandering,1,0.09,-,32024R1689:1,head:1,False,1,"veranderingen van het AI-systeem met een hoog risico en de prestaties ervan die op het moment van de eerste conformiteitsbeoordeling vooraf door de aanbieder zijn bepaald en deel uitmaken van de informatie in de in punt 2, f), van bijlage IV bedoelde technische documentatie"
+102,gevoelige operationele gegevens,1,0.09,32024R1689,32024R1689:1,prefix:1,False,1,gevoelige operationele gegevens met betrekking tot de activiteiten van rechtshandhavingsinstanties
+103,toelating,1,0.09,-,32024R1689:1,head:1,False,1,die toelating
+104,verklaring,1,0.09,-,32024R1689:1,head:1,False,1,De verklaring
+105,categorisering,1,0.09,-,32024R1689:1,head:1,False,1,voor biometrische categorisering en emotieherkenning gebruikte AI-systemen
+106,uitzondering,1,0.09,-,32024R1689:1,head:1,False,1,Deze uitzondering
+107,belanghebbend,1,0.09,-,32024R1689:1,head:1,False,1,"Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen"
+108,bedrijfsleev,1,0.09,-,32024R1689:1,head:1,False,1,"Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen"
+109,wereld,1,0.09,-,32024R1689:1,head:1,False,1,"Maatschappelijke organisaties, het bedrijfsleven, de academische wereld en andere relevante belanghebbenden, zoals aanbieders verder in de AI-waardeketen en onafhankelijke deskundigen"
+110,deelnemer,1,0.09,-,32024R1689:1,head:1,True,1,de deelnemers aan de praktijkcodes
+111,kernprestatie-indicatoor,1,0.09,-,32024R1689:1,head:1,True,1,De kernprestatie-indicatoren en rapportageverplichtingen
+112,rapportageverplichting,1,0.09,-,32024R1689:1,head:1,False,1,De kernprestatie-indicatoren en rapportageverplichtingen
+113,naleving,1,0.09,-,32024R1689:1,head:1,False,1,deze naleving
+114,praktijkcodes,1,0.09,-,32024R1689:1,head:1,False,1,De praktijkcodes
+115,testomgeving,1,0.09,-,32024R1689:1,head:1,False,1,Die testomgeving
+116,eindverslag,1,0.09,-,32024R1689:1,head:1,False,1,het eindverslag
+117,bevoegdheed,1,0.09,-,32024R1689:1,head:1,False,1,de toezichthoudende of corrigerende bevoegdheden van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen
+118,toezichthoudende,1,0.09,-,32024R1689:1,head:1,False,1,de toezichthoudende of corrigerende bevoegdheden van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen
+119,subgroep,1,0.09,-,32024R1689:1,head:1,True,1,De permanente subgroep voor markttoezicht
+120,eu-databank,1,0.09,-,32024R1689:1,head:1,False,1,De EU-databank
+121,plan,1,0.09,-,32024R1689:1,head:1,False,1,Het plan voor monitoring na het in de handel brengen
+122,richtsnoer,1,0.09,-,32024R1689:1,head:1,True,1,Die richtsnoeren
+123,overheidsorgaan,1,0.09,-,32024R1689:1,head:1,True,1,De overheidsinstantie of het overheidsorgaan in kwestie
+124,ai-teststructuur,1,0.09,-,32024R1689:1,head:1,False,1,de ondersteunende AI-teststructuren van de Unie
+125,verder,1,0.09,-,32024R1689:1,head:1,True,1,Aanbieders verder in de AI-waardeketen
+126,panel,1,0.09,-,32024R1689:1,head:1,True,1,Het wetenschappelijk panel
+127,cliënt,1,0.09,-,32024R1689:1,head:1,False,1,De cliënten
+128,gedragscodes,1,0.09,-,32024R1689:1,head:1,False,1,Gedragscodes
+129,sanctie,1,0.09,-,32024R1689:1,head:1,False,1,de sancties
+130,toezichthouder,1,0.09,-,32024R1689:1,head:1,True,1,De Europese Toezichthouder voor gegevens-bescherming
+131,indiener,1,0.09,-,32024R1689:1,head:1,True,1,Eventuele indieners van klachten
+132,verslaag,1,0.09,-,32024R1689:1,head:1,False,1,De verslagen
+133,doel,1,0.09,-,32016R0679:1,head:1,False,1,Het doel van de verwerking
+134,kind,1,0.09,-,32016R0679:1,head:1,False,1,het kind
+135,15,1,0.09,-,32016R0679:1,head:1,False,1,de artikelen 15 tot en met 20
+136,icoon,1,0.09,-,32016R0679:1,head:1,False,1,de iconen
+137,persoonsgegevens,1,0.09,"32016R0679,32024R1689",32016R0679:1,exact:1,False,1,de persoonsgegevens
+138,inhoud,1,0.09,-,32016R0679:1,head:1,False,1,De wezenlijke inhoud van de regeling
+139,4,1,0.09,-,32016R0679:1,head:1,False,1,de in de leden 3 en 4 van dit artikel bedoelde overeenkomst of andere rechtshandeling
+140,3,1,0.09,-,32016R0679:1,head:1,False,1,de in de leden 3 en 4 van dit artikel bedoelde overeenkomst of andere rechtshandeling
+141,onderneming,1,0.09,32016R0679,32016R0679:1,exact:1,True,1,ondernemingen of organisaties
+142,geheel,1,0.09,-,32016R0679:1,head:1,False,1,de specifieke verwerking of geheel van verwerkingen in kwestie
+143,concern,1,0.09,32016R0679,32016R0679:1,exact:1,False,1,Een concern
+144,accreditatie,1,0.09,-,32016R0679:1,head:1,False,1,De accreditatie
+145,accreditatie-instantie,1,0.09,-,32016R0679:1,head:1,True,1,de bevoegde toezichthoudende autoriteit of de nationale accreditatie-instantie
+146,toestemming,1,0.09,-,32016R0679:1,head:1,False,1,"Toestemmingen die een lidstaat of een toezichthoudende autoriteit op grond van artikel 26, lid 2, van Richtlijn 95/46/EG heeft verleend"
+147,activiteit,1,0.09,-,32016R0679:1,head:1,True,1,activiteiten die door overheidsinstanties worden verricht bij de uitoefening van hun openbare bevoegdheden
+148,ontwerpbesluit,1,0.09,-,32016R0679:1,head:1,False,1,Dat herziene ontwerpbesluit
+149,onderzoeksbevoegdheed,1,0.09,-,32016R0679:1,head:1,False,1,Deze onderzoeksbevoegdheden
+150,dan,1,0.09,-,32016R0679:1,head:1,False,1,ieder ander bevoegd gerecht dan dat welk als eerste is aangezocht
+151,inbreuk,1,0.09,-,32016R0679:1,head:1,False,1,Inbreuken op onderstaande bepalingen
+152,uitoefening,1,0.09,-,32016R0679:1,head:1,False,1,De uitoefening door de toezichthoudende autoriteit van haar bevoegdheden uit hoofde van dit artikel
+153,artikel,1,0.09,-,32016R0679:1,head:1,False,1,dit artikel
+154,boet,1,0.09,-,32016R0679:1,head:1,False,1,De boeten
+155,regels,1,0.09,-,32016R0679:1,head:1,False,1,Die regels
+156,waarborg,1,0.09,-,32016R0679:1,head:1,False,1,Die waarborgen
+157,kerk,1,0.09,-,32016R0679:1,head:1,False,1,kerken en religieuze verenigingen of gemeenschappen
+158,gemeenschapp,1,0.09,-,32016R0679:1,head:1,False,1,kerken en religieuze verenigingen of gemeenschappen
+159,12,1,0.09,-,32016R0679:1,head:1,False,1,"een overeenkomstig artikel 12, lid 8, en artikel 43, lid 8, vastgestelde gedelegeerde handeling"
+160,43,1,0.09,-,32016R0679:1,head:1,False,1,"een overeenkomstig artikel 12, lid 8, en artikel 43, lid 8, vastgestelde gedelegeerde handeling"
+161,handeling,1,0.09,-,32016R0679:1,head:1,False,1,"een overeenkomstig artikel 12, lid 8, en artikel 43, lid 8, vastgestelde gedelegeerde handeling"
+162,8,1,0.09,-,32016R0679:2,head:2,False,1,"een overeenkomstig artikel 12, lid 8, en artikel 43, lid 8, vastgestelde gedelegeerde handeling"
+163,termijn,1,0.09,-,32016R0679:1,head:1,False,1,Die termijn

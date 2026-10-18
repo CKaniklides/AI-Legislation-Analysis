@@ -1,5 +1,5 @@
 """
-Object filter, Step 1: give every object unit a set of keys.
+Object filter, Step 5: give every object unit a set of keys.
 
 The object filter compares two norms by the keys their objects share. This
 script computes the keys of every cleaned object unit (from eurovoc_clean.py):

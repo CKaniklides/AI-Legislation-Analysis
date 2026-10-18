@@ -1,5 +1,5 @@
 """
-EuroVoc Step 7: map each norm's object to EuroVoc concepts.
+EuroVoc Step 4: map each norm's object to EuroVoc concepts.
 
 Four-level cascade; the first level that yields a concept wins:
   1. phrase    the normalized object equals a normalized label

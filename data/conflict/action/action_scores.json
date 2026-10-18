@@ -52,7 +52,8 @@
       "same_axis": 36029,
       "same_lemma": 34
     },
-    "norm_ids_missing": []
+    "norm_ids_missing": [],
+    "norm_ids_not_in_stage_a": []
   },
   "score_format": [
     "pair_id",

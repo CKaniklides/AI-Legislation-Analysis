@@ -1,0 +1,20 @@
+{
+  "scheme": "combined = w_action * action_eff + w_object * min(1, object_score / O_MAX)",
+  "w_action": 0.4,
+  "w_object": 0.6,
+  "generic_factor": 0.7,
+  "N": 1203,
+  "O_MAX": 0.8451,
+  "reference_threshold": 0.5,
+  "pair_id": "sha256('norm_a::norm_b')[:16], norm_a < norm_b",
+  "sort": "combined desc, then pair_id",
+  "inputs": {
+    "objects": "data\\conflict\\object\\object_pair_scores.jsonl",
+    "actions": "data\\new_norms\\original_norms.json",
+    "stage_a": "data/conflict/stageA_pairs.json"
+  },
+  "counts": {
+    "object_pairs": 22221,
+    "scored": 22221
+  }
+}

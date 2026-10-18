@@ -28,8 +28,12 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
+try:
+    from verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
 
+except ImportError:
+    from action.verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
+    
 
 FLAGS = re.IGNORECASE
 

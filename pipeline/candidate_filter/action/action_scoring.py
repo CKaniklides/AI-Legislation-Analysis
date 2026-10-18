@@ -17,24 +17,24 @@ flag when its best match is only on generic axes (ensure, assess, perform, ...),
 so the downstream ranking can discount it together with object/actor overlap.
 
 Inputs:
-  - stageA_pairs.json  ({"norm_ids": [...], "pairs": [[i, j], ...]}),
-    or --all-pairs to score every pair of norms in the input
+  - data/conflict/stageA_pairs.json  ({"norm_ids": [...], "pairs": [[pair_id, i, j], ...]}).
+    Only the pairs Stage A kept are scored; there is no way to score other pairs.
   - AI_ACT_norms.json (re-extracts verbs) OR action_verbs.py JSON output (--verbs)
 
 Usage:
   python action_scoring.py --demo
-  python action_scoring.py --pairs stageA_pairs.json --norms AI_ACT_norms.json \\
-      --out stageB_action_scores.json
-  python action_scoring.py --pairs stageA_pairs.json --verbs action_verbs.json \\
-      --out stageB_action_scores.json
-  python action_scoring.py --all-pairs --norms AI_ACT_norms.json --min-score 0.5 \\
-      --out stageB_candidates.json
+  python action_scoring.py                                   # Stage A pairs, default paths
+  python action_scoring.py --verbs action_verbs.json
+  python action_scoring.py --pairs other/stageA_pairs.json --min-score 0.5
+
+Norm IDs: the IDs in the norms/verbs file must be the ones Stage A was run on.
+Duplicate IDs in stageA_pairs.json stop the run (a pair could not be resolved to
+one norm); IDs on either side that the other side lacks are counted in the stats.
 """
 
 from __future__ import annotations
 
 import argparse
-import itertools
 import json
 import sys
 from collections import Counter
@@ -42,15 +42,26 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from action_verbs import (
-    extract_action_verbs,
-    inner_norm,
-    load_norm_records,
-    norm_action_context,
-)
-from verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
+try:
+    from action_verbs import (
+        extract_action_verbs,
+        inner_norm,
+        load_norm_records,
+        norm_action_context,
+    )
 
+    from verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
 
+except ModuleNotFoundError:
+    from action.action_verbs import (
+            extract_action_verbs,
+            inner_norm,
+            load_norm_records,
+            norm_action_context,
+        )
+    
+    from action.verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
+    
 # ---------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------
@@ -266,6 +277,13 @@ def load_pairs(path: Path) -> tuple[list[str], list[tuple[int, int, int]], dict]
     raw_pairs = data.get("pairs")
     if not isinstance(norm_ids, list) or not isinstance(raw_pairs, list):
         raise ValueError("Pairs JSON must contain 'norm_ids' and 'pairs' lists.")
+    as_str = [str(v) for v in norm_ids]
+    dupes = sorted(v for v, c in Counter(as_str).items() if c > 1)
+    if dupes:
+        raise ValueError(
+            f"{path}: {len(dupes)} duplicate norm_ids (e.g. {dupes[:3]}); pairs cannot be "
+            "resolved to one norm each. Fix the IDs upstream (merge_norms.py)."
+        )
 
     n = len(norm_ids)
     pairs = []
@@ -319,7 +337,6 @@ def run(
     norms_path: Path | None,
     verbs_path: Path | None,
     out_path: Path,
-    all_pairs: bool = False,
     min_score: float | None = None,
     span_fallback: bool = False,
 ) -> None:
@@ -332,25 +349,20 @@ def run(
     else:
         raise ValueError("Provide either --norms or --verbs.")
 
-    if all_pairs:
-        norm_ids = list(profiles)
-        pairs = [
-            (None, i, j) for i, j in itertools.combinations(range(len(norm_ids)), 2)
-        ]
-        stage_a_meta: dict = {"all_pairs": True}
-    else:
-        if pairs_path is None:
-            raise ValueError("Provide --pairs or --all-pairs.")
-        norm_ids, pairs, stage_a_meta = load_pairs(pairs_path)
+    if pairs_path is None:
+        raise ValueError("Provide --pairs (stageA_pairs.json).")
+    norm_ids, pairs, stage_a_meta = load_pairs(pairs_path)
+    # Profiles for norms Stage A never saw point to an ID mismatch between the
+    # norms file and the one Stage A was run on.
+    not_in_stage_a = sorted(set(profiles) - set(norm_ids))
 
     missing_profile = ActionProfile("empty", None)
     missing_ids: set[str] = set()
     relation_counts: Counter[str] = Counter()
     # One row per pair: [pair_id, action_score], with pair_id taken from
-    # stageA_pairs.json. --all-pairs has no Stage A ids, so it writes
-    # [norm_id_a, norm_id_b, action_score] instead.
+    # stageA_pairs.json (the integer position, not combine_scores' hash).
     scores: list[list] = []
-    pair_id_source = "norm_ids" if all_pairs else "stageA_pair_id"
+    pair_id_source = "stageA_pair_id"
 
     for pair_id, i, j in pairs:
         id_a, id_b = norm_ids[i], norm_ids[j]
@@ -368,10 +380,7 @@ def run(
         if min_score is not None and result.action_score < min_score:
             continue
 
-        if all_pairs:
-            scores.append([id_a, id_b, result.action_score])
-        else:
-            scores.append([pair_id, result.action_score])
+        scores.append([pair_id, result.action_score])
 
     norm_status = Counter(p.status for p in profiles.values())
     stats = {
@@ -381,6 +390,7 @@ def run(
         "norm_status": dict(norm_status.most_common()),
         "pair_relation": dict(relation_counts.most_common()),
         "norm_ids_missing": sorted(missing_ids),
+        "norm_ids_not_in_stage_a": not_in_stage_a,
     }
 
     output = {
@@ -399,10 +409,7 @@ def run(
             "min_score": min_score,
         },
         "stats": stats,
-        "score_format": (
-            ["norm_id_a", "norm_id_b", "action_score"] if all_pairs
-            else ["pair_id", "action_score"]
-        ),
+        "score_format": ["pair_id", "action_score"],
         "pair_id_source": pair_id_source,
         "scores": scores,
     }
@@ -416,7 +423,14 @@ def run(
     print("Pair relation:", stats["pair_relation"])
     if missing_ids:
         print(
-            f"Warning: {len(missing_ids)} norm IDs were not found (scored 0).",
+            f"Warning: {len(missing_ids)} Stage A norm IDs have no action profile "
+            f"(scored 0), e.g. {sorted(missing_ids)[:3]}.",
+            file=sys.stderr,
+        )
+    if not_in_stage_a:
+        print(
+            f"Warning: {len(not_in_stage_a)} norm IDs in {source} are not in Stage A, "
+            f"e.g. {not_in_stage_a[:3]}; check that both use the same norms file.",
             file=sys.stderr,
         )
 
@@ -458,10 +472,6 @@ def main() -> None:
     )
     parser.add_argument("--out", type=Path, default=Path("data/conflict/action/action_scores.json"))
     parser.add_argument(
-        "--all-pairs", action="store_true",
-        help="Score every pair of norms in the input (no Stage A pairs file).",
-    )
-    parser.add_argument(
         "--min-score", type=float, default=None,
         help="Only write pairs with action_score >= this value (default: all).",
     )
@@ -476,15 +486,17 @@ def main() -> None:
         demo()
         return
 
-    run(
-        pairs_path=args.pairs,
-        norms_path=None if args.verbs else args.norms,
-        verbs_path=args.verbs,
-        out_path=args.out,
-        all_pairs=args.all_pairs,
-        min_score=args.min_score,
-        span_fallback=args.span_fallback,
-    )
+    try:
+        run(
+            pairs_path=args.pairs,
+            norms_path=None if args.verbs else args.norms,
+            verbs_path=args.verbs,
+            out_path=args.out,
+            min_score=args.min_score,
+            span_fallback=args.span_fallback,
+        )
+    except (OSError, ValueError) as e:
+        sys.exit(f"Error: {e}")
 
 
 if __name__ == "__main__":

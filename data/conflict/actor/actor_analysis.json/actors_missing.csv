@@ -1,0 +1,496 @@
+norm_id,instrument,article,kind,actor_raw,deontic,passive_marker,text
+32024R1689:5:2:2,32024R1689,5,missing,,OBLIGATION,True,"Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), bedoelde doelstellingen wordt ingezet voor de in dat punt bedoelde doeleinden, uitsluitend om de identiteit van de specifi"
+32024R1689:5:2:3,32024R1689,5,missing,,OBLIGATION,True,"Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), bedoelde doelstellingen wordt ingezet voor de in dat punt bedoelde doeleinden, uitsluitend om de identiteit van de specifi"
+32024R1689:5:2:4,32024R1689,5,missing,,PERMISSION,True,"Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), bedoelde doelstellingen wordt ingezet voor de in dat punt bedoelde doeleinden, uitsluitend om de identiteit van de specifi"
+32024R1689:5:2:5,32024R1689,5,missing,,COMPETENCE,True,"Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving voor de in lid 1, eerste alinea, punt h), bedoelde doelstellingen wordt ingezet voor de in dat punt bedoelde doeleinden, uitsluitend om de identiteit van de specifi"
+32024R1689:5:4:8,32024R1689,5,missing,,OBLIGATION,True,Onverminderd lid 3 wordt elk gebruik van een systeem voor biometrische identificatie op afstand in real time in openbare ruimten met het oog op de rechtshandhaving gemeld bij de bevoegde markttoezichtautoriteit en de nationale gegevensbeschermingsautoriteit in overeenstemming met de in lid 5 bedoeld
+32024R1689:6:1:1,32024R1689,6,missing,,OBLIGATION,True,"Ongeacht of een AI-systeem los van in de punten a) en b) bedoelde producten in de handel wordt gebracht of in gebruik wordt gesteld, wordt een AI-systeem als AI-systeem met een hoog risico beschouwd wanneer aan beide van de volgende voorwaarden is voldaan:
+
+a) het AI-systeem is bedoeld om te worden "
+32024R1689:8:1:2,32024R1689,8,missing,,OBLIGATION,True,"AI-systemen met een hoog risico moeten voldoen aan de eisen van deze afdeling, rekening houdend met hun beoogde doel en de algemeen erkende stand van de techniek op het gebied van AI en AI-gerelateerde technologieën. Bij het waarborgen van de naleving van deze eisen wordt rekening gehouden met het i"
+32024R1689:9:1:1,32024R1689,9,missing,,OBLIGATION,True,"Met betrekking tot AI-systemen met een hoog risico wordt een systeem voor risicobeheer vastgesteld, uitgevoerd, gedocumenteerd en in stand gehouden."
+32024R1689:9:1:2,32024R1689,9,missing,,OBLIGATION,True,"Met betrekking tot AI-systemen met een hoog risico wordt een systeem voor risicobeheer vastgesteld, uitgevoerd, gedocumenteerd en in stand gehouden."
+32024R1689:9:1:3,32024R1689,9,missing,,OBLIGATION,True,"Met betrekking tot AI-systemen met een hoog risico wordt een systeem voor risicobeheer vastgesteld, uitgevoerd, gedocumenteerd en in stand gehouden."
+32024R1689:9:1:4,32024R1689,9,missing,,OBLIGATION,True,"Met betrekking tot AI-systemen met een hoog risico wordt een systeem voor risicobeheer vastgesteld, uitgevoerd, gedocumenteerd en in stand gehouden."
+32024R1689:9:4:5,32024R1689,9,missing,,OBLIGATION,True,"Ten aanzien van de in lid 2, punt d), bedoelde risicobeheersmaatregelen wordt naar behoren rekening gehouden met de effecten en mogelijke wisselwerking die voortvloeien uit de gecombineerde toepassing van de in deze afdeling uiteengezette eisen, teneinde de risico’s doeltreffender tot een minimum te"
+32024R1689:9:5:7,32024R1689,9,missing,,OBLIGATION,True,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.
+
+Bij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgen"
+32024R1689:9:5:8,32024R1689,9,missing,,OBLIGATION,True,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.
+
+Bij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgen"
+32024R1689:9:5:9,32024R1689,9,missing,,OBLIGATION,True,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.
+
+Bij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgen"
+32024R1689:9:5:10,32024R1689,9,missing,,OBLIGATION,True,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.
+
+Bij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgen"
+32024R1689:9:5:11,32024R1689,9,missing,,OBLIGATION,True,"De in lid 2, punt d), bedoelde risicobeheersmaatregelen zijn zodanig dat het desbetreffende restrisico in verband met elk gevaar en het totale restrisico van de AI-systemen met een hoog risico aanvaardbaar wordt geacht.
+
+Bij het vaststellen van de passendste risicobeheersmaatregelen wordt het volgen"
+32024R1689:9:6:12,32024R1689,9,missing,,OBLIGATION,True,AI-systemen met een hoog risico worden getest met het oog op het vaststellen van de passendste en gerichte risicobeheersmaatregelen. De tests zorgen ervoor dat AI-systemen met een hoog risico consistent presteren ten aanzien van het beoogde doel ervan en in overeenstemming zijn met de eisen van deze
+32024R1689:9:7:14,32024R1689,9,missing,,PERMISSION,False,De testprocedures kunnen onder meer bestaan in testen onder reële omstandigheden overeenkomstig artikel 60.
+32024R1689:9:8:15,32024R1689,9,missing,,OBLIGATION,True,"Het testen van AI-systemen met een hoog risico vindt, zoals passend, in de loop van het ontwikkelingsproces plaats en in ieder geval voordat het systeem in de handel wordt gebracht of in gebruik wordt gesteld. Er wordt getest aan de hand van vooraf vastgestelde beoordelingsmaatstaven en probabilisti"
+32024R1689:9:8:16,32024R1689,9,missing,,OBLIGATION,True,"Het testen van AI-systemen met een hoog risico vindt, zoals passend, in de loop van het ontwikkelingsproces plaats en in ieder geval voordat het systeem in de handel wordt gebracht of in gebruik wordt gesteld. Er wordt getest aan de hand van vooraf vastgestelde beoordelingsmaatstaven en probabilisti"
+32024R1689:10:1:1,32024R1689,10,missing,,OBLIGATION,True,"AI-systemen met een hoog risico die technieken gebruiken die het trainen van AI-modellen met data omvatten, worden ontwikkeld op basis van datasets voor training, validatie en tests die voldoen aan de in de leden 2 tot en met 5 bedoelde kwaliteitscriteria telkens wanneer dergelijke datasets worden g"
+32024R1689:10:4:5,32024R1689,10,missing,,OBLIGATION,True,"Ten aanzien van datasets wordt, voor zover vereist gezien het beoogde doel hiervan, rekening gehouden met de eigenschappen of elementen die specifiek zijn voor een bepaalde geografische, contextuele, functionele of gedragsomgeving waarin het AI-systeem met een hoog risico moet worden gebruikt."
+32024R1689:10:5:12,32024R1689,10,missing,,PROHIBITION,True,"Voor zover dit strikt noodzakelijk is om de opsporing en correctie van vertekeningen te waarborgen in verband met de AI-systemen met een hoog risico overeenkomstig lid 2, punten f) en g), van dit artikel, mogen de aanbieders van dergelijke systemen uitzonderlijk bijzondere categorieën persoonsgegeve"
+32024R1689:11:1:5,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:1:6,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:1:7,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:1:8,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:1:9,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:1:10,32024R1689,11,missing,,OBLIGATION,True,"De technische documentatie van een AI-systeem met een hoog risico wordt opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld, en wordt geactualiseerd.
+
+De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond dat het AI-systeem met een hoog r"
+32024R1689:11:2:11,32024R1689,11,missing,,OBLIGATION,True,"Wanneer een AI-systeem met een hoog risico dat verband houdt met een product dat valt onder de in bijlage I, afdeling A, opgenomen harmonisatiewetgeving van de Unie in de handel wordt gebracht of in gebruik wordt gesteld, wordt een enkel technisch document opgesteld dat alle informatie bevat zoals u"
+32024R1689:12:3:2,32024R1689,12,missing,,OBLIGATION,False,"Voor AI-systemen met een hoog risico als bedoeld in punt 1, a), van bijlage III voorzien de loggingcapaciteiten ten minste in:
+
+a) de registratie van de duur van elk gebruik van het systeem (begindatum en -tijd en einddatum en -tijd van elk gebruik);
+
+b) de referentiedatabank aan de hand waarvan de "
+32024R1689:13:2:1,32024R1689,13,missing,,OBLIGATION,False,"AI-systemen met een hoog risico gaan vergezeld van gebruiksinstructies in een passend digitaal of ander formaat dat beknopte, volledige, juiste en duidelijke informatie bevat die relevant, toegankelijk en begrijpelijk is voor gebruiksverantwoordelijken."
+32024R1689:15:3:3,32024R1689,15,missing,,OBLIGATION,True,De niveaus van nauwkeurigheid en de relevante maatstaven voor de nauwkeurigheid van AI-systemen met een hoog risico worden vermeld in de bijbehorende gebruiksaanwijzingen.
+32024R1689:22:4:4,32024R1689,22,pronoun,Hij,OBLIGATION,False,"De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. Hij stelt daar dan, met opgave van redenen, de relevante markttoezichtautoriteit onmiddellijk van in kennis, alsmed"
+32024R1689:23:2:1,32024R1689,23,pronoun,hij,PROHIBITION,False,"Ingeval een importeur afdoende redenen heeft om aan te nemen dat een AI-systeem met een hoog risico niet in overeenstemming is met deze verordening, vervalst is of vergezeld gaat van vervalste documenten, brengt hij het systeem niet in de handel voordat het in overeenstemming is gebracht. Wanneer he"
+32024R1689:25:1:2,32024R1689,25,pronoun,hij,OBLIGATION,True,"In de volgende omstandigheden wordt een distributeur, importeur, gebruiksverantwoordelijke of derde voor de toepassing van deze verordening beschouwd als een aanbieder van een AI-systeem met een hoog risico en is hij onderworpen aan de verplichtingen van de aanbieder uit hoofde van artikel 16:
+
+a) h"
+32024R1689:25:1:3,32024R1689,25,pronoun,hij,OBLIGATION,True,"In de volgende omstandigheden wordt een distributeur, importeur, gebruiksverantwoordelijke of derde voor de toepassing van deze verordening beschouwd als een aanbieder van een AI-systeem met een hoog risico en is hij onderworpen aan de verplichtingen van de aanbieder uit hoofde van artikel 16:
+
+a) h"
+32024R1689:25:1:4,32024R1689,25,pronoun,hij,OBLIGATION,True,"In de volgende omstandigheden wordt een distributeur, importeur, gebruiksverantwoordelijke of derde voor de toepassing van deze verordening beschouwd als een aanbieder van een AI-systeem met een hoog risico en is hij onderworpen aan de verplichtingen van de aanbieder uit hoofde van artikel 16:
+
+a) h"
+32024R1689:26:7:14,32024R1689,26,missing,,OBLIGATION,True,"Voordat een AI-systeem met een hoog risico op de werkplek in gebruik wordt gesteld of wordt gebruikt, delen gebruiksverantwoordelijken die werkgever zijn werknemersvertegenwoordigers en de betrokken werknemers mee dat zij zullen worden onderworpen aan het gebruik van het AI-systeem met een hoog risi"
+32024R1689:26:11:20,32024R1689,26,missing,,OBLIGATION,True,"Onverminderd artikel 50 van deze verordening informeren gebruiksverantwoordelijken van in bijlage III bedoelde AI-systemen met een hoog risico die beslissingen met betrekking tot natuurlijke personen nemen of helpen nemen, de natuurlijke personen dat het AI-systeem met een hoog risico op hen wordt t"
+32024R1689:27:3:6,32024R1689,27,pronoun,hij,OBLIGATION,True,"Zodra de in lid 1 van dit artikel bedoelde beoordeling is uitgevoerd, stelt de gebruiksverantwoordelijke de markttoezichtautoriteit in kennis van de resultaten ervan, en dient hij als onderdeel van de kennisgeving het in lid 5 van dit artikel bedoelde ingevulde sjabloon in. In het in artikel 46, lid"
+32024R1689:29:4:5,32024R1689,29,missing,,PERMISSION,True,"Voor aangemelde instanties die uit hoofde van andere harmonisatiewetgeving van de Unie zijn aangewezen, kunnen waar passend alle documenten en certificaten met betrekking tot die aanwijzingen worden gebruikt om hun aanwijzingsprocedure krachtens deze verordening te ondersteunen. Om de voor aangemeld"
+32024R1689:31:12:15,32024R1689,31,pronoun,Zij,OBLIGATION,True,Aangemelde instanties nemen deel aan coördinatieactiviteiten als bedoeld in artikel 38. Zij nemen ook rechtstreeks deel aan of worden vertegenwoordigd in Europese normalisatie-instellingen of zorgen ervoor op de hoogte te zijn van actuele relevante normen.
+32024R1689:31:12:16,32024R1689,31,pronoun,Zij,OBLIGATION,True,Aangemelde instanties nemen deel aan coördinatieactiviteiten als bedoeld in artikel 38. Zij nemen ook rechtstreeks deel aan of worden vertegenwoordigd in Europese normalisatie-instellingen of zorgen ervoor op de hoogte te zijn van actuele relevante normen.
+32024R1689:33:1:1,32024R1689,33,pronoun,zij,OBLIGATION,False,"Wanneer de aangemelde instantie specifieke taken in verband met de conformiteits-beoordeling door een onderaannemer of door een dochteronderneming laat uitvoeren, waarborgt zij dat de onderaannemer of dochteronderneming aan de eisen van artikel 31 voldoet, en brengt zij de aanmeldende autoriteit hie"
+32024R1689:33:1:2,32024R1689,33,pronoun,zij,OBLIGATION,False,"Wanneer de aangemelde instantie specifieke taken in verband met de conformiteits-beoordeling door een onderaannemer of door een dochteronderneming laat uitvoeren, waarborgt zij dat de onderaannemer of dochteronderneming aan de eisen van artikel 31 voldoet, en brengt zij de aanmeldende autoriteit hie"
+32024R1689:36:3:3,32024R1689,36,pronoun,zij,OBLIGATION,False,"Indien een aangemelde instantie besluit haar conformiteitsbeoordelingsactiviteiten stop te zetten, brengt zij de aanmeldende autoriteit en de betrokken aanbieders zo snel mogelijk, en in het geval van een geplande stopzetting minstens één jaar voor de stopzetting van haar activiteiten, daarvan op de"
+32024R1689:36:4:9,32024R1689,36,pronoun,zij,OBLIGATION,True,"Wanneer een aanmeldende autoriteit voldoende reden heeft om van mening te zijn dat een aangemelde instantie niet meer aan de eisen van artikel 31 voldoet of haar verplichtingen niet nakomt, moet de aanmeldende autoriteit de kwestie onverwijld zo zorgvuldig mogelijk onderzoeken. In die context stelt "
+32024R1689:36:4:13,32024R1689,36,pronoun,zij,OBLIGATION,True,"Wanneer een aanmeldende autoriteit voldoende reden heeft om van mening te zijn dat een aangemelde instantie niet meer aan de eisen van artikel 31 voldoet of haar verplichtingen niet nakomt, moet de aanmeldende autoriteit de kwestie onverwijld zo zorgvuldig mogelijk onderzoeken. In die context stelt "
+32024R1689:36:4:14,32024R1689,36,pronoun,Zij,OBLIGATION,True,"Wanneer een aanmeldende autoriteit voldoende reden heeft om van mening te zijn dat een aangemelde instantie niet meer aan de eisen van artikel 31 voldoet of haar verplichtingen niet nakomt, moet de aanmeldende autoriteit de kwestie onverwijld zo zorgvuldig mogelijk onderzoeken. In die context stelt "
+32024R1689:44:2:2,32024R1689,44,missing,,OBLIGATION,True,"Certificaten zijn geldig gedurende de daarin aangegeven periode, die niet meer dan vijf jaar mag bedragen voor AI-systemen die onder bijlage I vallen, en niet meer dan vier jaar voor AI-systemen die onder bijlage III vallen. Op verzoek van de aanbieder kan de geldigheidsduur van een certificaat op g"
+32024R1689:44:2:4,32024R1689,44,missing,,OBLIGATION,True,"Certificaten zijn geldig gedurende de daarin aangegeven periode, die niet meer dan vijf jaar mag bedragen voor AI-systemen die onder bijlage I vallen, en niet meer dan vier jaar voor AI-systemen die onder bijlage III vallen. Op verzoek van de aanbieder kan de geldigheidsduur van een certificaat op g"
+32024R1689:44:3:8,32024R1689,44,missing,,OBLIGATION,True,"Indien een aangemelde instantie vaststelt dat een AI-systeem niet meer aan de in afdeling 2 beschreven voorschriften voldoet, gaat zij, rekening houdend met het evenredigheidsbeginsel, over tot schorsing of intrekking van het afgegeven certificaat of legt zij beperkingen op, tenzij de aanbieder van "
+32024R1689:46:2:3,32024R1689,46,missing,,OBLIGATION,True,"In een naar behoren gerechtvaardigde situatie van urgentie om uitzonderlijke redenen van openbare veiligheid of in geval van een specifieke, substantiële en imminente dreiging voor het leven of de fysieke veiligheid van natuurlijke personen, kunnen rechtshandhavingsinstanties of civielebeschermingsa"
+32024R1689:46:2:4,32024R1689,46,missing,,OBLIGATION,True,"In een naar behoren gerechtvaardigde situatie van urgentie om uitzonderlijke redenen van openbare veiligheid of in geval van een specifieke, substantiële en imminente dreiging voor het leven of de fysieke veiligheid van natuurlijke personen, kunnen rechtshandhavingsinstanties of civielebeschermingsa"
+32024R1689:47:1:3,32024R1689,47,missing,,OBLIGATION,True,"De aanbieder stelt voor elk AI-systeem met een hoog risico een schriftelijke machineleesbare, fysieke of elektronisch ondertekende EU-conformiteitsverklaring op en houdt deze verklaring tot tien jaar na het in de handel brengen of het in gebruik stellen van het AI-systeem met een hoog risico ter bes"
+32024R1689:47:1:4,32024R1689,47,missing,,OBLIGATION,True,"De aanbieder stelt voor elk AI-systeem met een hoog risico een schriftelijke machineleesbare, fysieke of elektronisch ondertekende EU-conformiteitsverklaring op en houdt deze verklaring tot tien jaar na het in de handel brengen of het in gebruik stellen van het AI-systeem met een hoog risico ter bes"
+32024R1689:47:2:6,32024R1689,47,missing,,OBLIGATION,True,In de EU-conformiteitsverklaring wordt vermeld dat het betreffende AI-systeem met een hoog risico aan de in afdeling 2 beschreven voorschriften voldoet. De EU-conformiteitsverklaring bevat de informatie die is vervat in bijlage V en wordt vertaald in een taal die de nationale bevoegde autoriteiten v
+32024R1689:47:3:8,32024R1689,47,missing,,OBLIGATION,True,"Wanneer AI-systemen met een hoog risico onder andere harmonisatiewetgeving van de Unie vallen, waarvoor ook een EU-conformiteitsverklaring is vereist, wordt één EU-conformiteitsverklaring ten aanzien van alle op het AI-systeem met een hoog risico toepasselijke Uniewetgeving opgesteld. De verklaring "
+32024R1689:48:2:1,32024R1689,48,missing,,OBLIGATION,True,Voor digitaal aangeboden AI-systemen met een hoog risico wordt alleen een digitale CE-markering gebruikt als deze gemakkelijk toegankelijk is via de interface waarmee toegang wordt verkregen tot dat systeem of via een gemakkelijk toegankelijke machineleesbare code of andere elektronische middelen.
+32024R1689:48:3:2,32024R1689,48,missing,,OBLIGATION,True,"De CE-markering wordt zichtbaar, leesbaar en onuitwisbaar op AI-systemen met een hoog risico aangebracht. Wanneer dit gezien de aard van het AI-systeem met een hoog risico niet mogelijk of niet gerechtvaardigd is, wordt de markering naargelang het geval op de verpakking of in de begeleidende documen"
+32024R1689:48:3:3,32024R1689,48,missing,,OBLIGATION,True,"De CE-markering wordt zichtbaar, leesbaar en onuitwisbaar op AI-systemen met een hoog risico aangebracht. Wanneer dit gezien de aard van het AI-systeem met een hoog risico niet mogelijk of niet gerechtvaardigd is, wordt de markering naargelang het geval op de verpakking of in de begeleidende documen"
+32024R1689:48:5:4,32024R1689,48,missing,,OBLIGATION,False,"Indien AI-systemen met een hoog risico onder andere Uniewetgeving vallen die ook betrekking heeft op het aanbrengen van de CE-markering, vermeldt de CE-markering dat de AI-systemen met een hoog risico tevens aan de voorschriften van die andere wetgeving voldoen."
+32024R1689:49:4:6,32024R1689,49,missing,,OBLIGATION,False,"Voor AI-systemen met een hoog risico als bedoeld in de punten 1, 6 en 7 van bijlage III, op het gebied van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer, vindt de in de leden 1, 2 en 3 van dit artikel bedoelde registratie plaats in een beveiligd niet-openbaar gedeelte van de in artikel 7"
+32024R1689:49:4:7,32024R1689,49,missing,,OBLIGATION,False,"Voor AI-systemen met een hoog risico als bedoeld in de punten 1, 6 en 7 van bijlage III, op het gebied van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer, vindt de in de leden 1, 2 en 3 van dit artikel bedoelde registratie plaats in een beveiligd niet-openbaar gedeelte van de in artikel 7"
+32024R1689:49:4:8,32024R1689,49,missing,,PROHIBITION,False,"Voor AI-systemen met een hoog risico als bedoeld in de punten 1, 6 en 7 van bijlage III, op het gebied van rechtshandhaving, migratie, asiel en grenstoezichtsbeheer, vindt de in de leden 1, 2 en 3 van dit artikel bedoelde registratie plaats in een beveiligd niet-openbaar gedeelte van de in artikel 7"
+32024R1689:49:5:9,32024R1689,49,missing,,OBLIGATION,True,AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III worden op nationaal niveau geregistreerd.
+32024R1689:50:5:11,32024R1689,50,missing,,OBLIGATION,True,De in de leden 1 tot en met 4 bedoelde informatie wordt uiterlijk op het moment van de eerste interactie of blootstelling op duidelijke en te onderscheiden wijze aan de betrokken natuurlijke personen verstrekt. De informatie moet aan de toepasselijke toegankelijkheidseisen voldoen.
+32024R1689:50:5:12,32024R1689,50,missing,,OBLIGATION,True,De in de leden 1 tot en met 4 bedoelde informatie wordt uiterlijk op het moment van de eerste interactie of blootstelling op duidelijke en te onderscheiden wijze aan de betrokken natuurlijke personen verstrekt. De informatie moet aan de toepasselijke toegankelijkheidseisen voldoen.
+32024R1689:53:7:13,32024R1689,53,missing,,OBLIGATION,True,"Uit hoofde van dit artikel verkregen informatie of documentatie, met inbegrip van bedrijfsgeheimen, worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
+32024R1689:54:5:3,32024R1689,54,pronoun,hij,OBLIGATION,False,De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. In dat geval stelt hij tevens het AI-bureau onmiddellijk in kennis van de beëindiging van het mandaat en de redenen
+32024R1689:54:5:4,32024R1689,54,pronoun,hij,OBLIGATION,False,De gemachtigde beëindigt het mandaat indien hij van mening is of redenen heeft om aan te nemen dat de aanbieder in strijd met zijn verplichtingen op grond van deze verordening handelt. In dat geval stelt hij tevens het AI-bureau onmiddellijk in kennis van de beëindiging van het mandaat en de redenen
+32024R1689:55:3:5,32024R1689,55,missing,,OBLIGATION,True,"Uit hoofde van dit artikel verkregen informatie of documentatie, met inbegrip van bedrijfsgeheimen, worden verwerkt overeenkomstig de in artikel 78 vastgelegde vertrouwelijkheidsverplichtingen."
+32024R1689:57:2:5,32024R1689,57,missing,,PERMISSION,True,Er kunnen ook aanvullende AI-testomgevingen voor regelgeving worden ontwikkeld op regionaal of lokaal niveau of samen met de bevoegde autoriteiten van andere lidstaten.
+32024R1689:57:11:18,32024R1689,57,missing,,OBLIGATION,True,"De AI-testomgevingen voor regelgeving laten de toezichthoudende of corrigerende bevoegdheden van de bevoegde autoriteiten die toezicht houden binnen de testomgevingen onverlet, ook op regionaal of lokaal niveau. Significante risico’s voor de gezondheid en veiligheid en de grondrechten die tijdens he"
+32024R1689:58:3:4,32024R1689,58,missing,,OBLIGATION,True,"Potentiële aanbieders in de AI-testomgevingen voor regelgeving, met name kmo’s en start-ups, worden, indien van toepassing, gewezen op diensten die aan het inzetten voorafgaan, zoals begeleiding bij de uitvoering van deze verordening, op andere diensten die waarde toevoegen, zoals hulp bij normalisa"
+32024R1689:58:4:6,32024R1689,58,pronoun,zij,OBLIGATION,False,"Indien nationale bevoegde autoriteiten overwegen toestemming te geven voor het testen onder reële omstandigheden, onder toezicht in het kader van een op grond van dit artikel op te richten AI-testomgeving voor regelgeving, komen zij specifiek met de deelnemers de voorwaarden voor die tests overeen, "
+32024R1689:59:1:1,32024R1689,59,missing,,PERMISSION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:2,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:3,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:4,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:5,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:7,32024R1689,59,missing,,PROHIBITION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:8,32024R1689,59,missing,,PROHIBITION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:9,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:10,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:11,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:1:12,32024R1689,59,missing,,OBLIGATION,True,"In de aI-testomgeving voor regelgeving mogen rechtmatig voor andere doeleinden verzamelde persoonsgegevens uitsluitend worden verwerkt ten behoeve van het ontwikkelen, trainen en testen van bepaalde AI-systemen in de testomgeving indien aan alle volgende voorwaarden is voldaan:
+
+a) Er worden AI-syst"
+32024R1689:59:2:13,32024R1689,59,missing,,OBLIGATION,False,"Met het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van bedreigingen voor de openbare veiligheid, onder de controle en de verantwoordelijkheid van rechtshandhaving"
+32024R1689:59:2:14,32024R1689,59,missing,,OBLIGATION,False,"Met het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van bedreigingen voor de openbare veiligheid, onder de controle en de verantwoordelijkheid van rechtshandhaving"
+32024R1689:61:1:1,32024R1689,61,missing,,OBLIGATION,True,"Met het oog op het testen onder reële omstandigheden overeenkomstig artikel 60 moet van de proefpersonen vrijwillig gegeven geïnformeerde toestemming worden verkregen voorafgaand aan hun deelname aan het testen en nadat zij naar behoren zijn geïnformeerd en beknopte, duidelijke, relevante en begrijp"
+32024R1689:61:2:2,32024R1689,61,missing,,OBLIGATION,True,De geïnformeerde toestemming wordt gedateerd en gedocumenteerd en er wordt een kopie verstrekt aan de proefpersonen of hun wettelijke vertegenwoordiger.
+32024R1689:61:2:3,32024R1689,61,missing,,OBLIGATION,True,De geïnformeerde toestemming wordt gedateerd en gedocumenteerd en er wordt een kopie verstrekt aan de proefpersonen of hun wettelijke vertegenwoordiger.
+32024R1689:61:2:4,32024R1689,61,missing,,OBLIGATION,True,De geïnformeerde toestemming wordt gedateerd en gedocumenteerd en er wordt een kopie verstrekt aan de proefpersonen of hun wettelijke vertegenwoordiger.
+32024R1689:62:2:1,32024R1689,62,missing,,OBLIGATION,True,"De specifieke belangen en behoeften van aanbieders die kmo’s zijn, met inbegrip van start-ups, worden in aanmerking genomen bij het bepalen van de vergoedingen voor conformiteitsbeoordelingen krachtens artikel 43, waarbij die vergoedingen naar evenredigheid van hun omvang, de omvang van de markt en "
+32024R1689:62:2:2,32024R1689,62,missing,,OBLIGATION,True,"De specifieke belangen en behoeften van aanbieders die kmo’s zijn, met inbegrip van start-ups, worden in aanmerking genomen bij het bepalen van de vergoedingen voor conformiteitsbeoordelingen krachtens artikel 43, waarbij die vergoedingen naar evenredigheid van hun omvang, de omvang van de markt en "
+32024R1689:65:5:3,32024R1689,65,missing,,OBLIGATION,True,"De aangewezen vertegenwoordigers van de lidstaten stellen het reglement van orde van de AI-board met een tweederdemeerderheid vast. In het reglement van orde worden met name procedures vastgelegd voor de selectieprocedure, de duur van het mandaat van en de specificaties van de taken van de voorzitte"
+32024R1689:67:4:2,32024R1689,67,missing,,OBLIGATION,True,De ambtstermijn van de leden van het adviesforum bedraagt twee jaar en kan met ten hoogste vier jaar worden verlengd.
+32024R1689:67:4:3,32024R1689,67,missing,,PERMISSION,True,De ambtstermijn van de leden van het adviesforum bedraagt twee jaar en kan met ten hoogste vier jaar worden verlengd.
+32024R1689:67:10:13,32024R1689,67,missing,,OBLIGATION,True,Het adviesforum stelt een jaarverslag over zijn activiteiten op. Dat verslag wordt openbaar gemaakt.
+32024R1689:68:4:3,32024R1689,68,pronoun,Zij,PROHIBITION,True,De deskundigen in het wetenschappelijk panel voeren hun taken onpartijdig en objectief uit en waarborgen de vertrouwelijkheid van de informatie en gegevens die zij bij de uitvoering van hun taken en activiteiten verkrijgen. Zij vragen noch aanvaarden instructies van wie dan ook bij de uitoefening va
+32024R1689:69:2:3,32024R1689,69,missing,,DELEGATION,True,"De lidstaten kan worden voorgeschreven dat zij een vergoeding betalen voor het advies en de ondersteuning van de deskundigen. De structuur en de hoogte van de vergoedingen en de schaal en structuur van de invorderbare kosten worden in de in artikel 68, lid 1 bedoelde uitvoeringshandeling vermeld, re"
+32024R1689:71:6:6,32024R1689,71,pronoun,Zij,OBLIGATION,False,"De Commissie is voor de EU-databank de verantwoordelijke voor de verwerking. Zij stelt adequate technische en administratieve ondersteuning ter beschikking van aanbieders, potentiële aanbieders en gebruiksverantwoordelijken. De EU-databank voldoet aan de toepasselijke toegankelijkheidseisen."
+32024R1689:72:3:5,32024R1689,72,missing,,DELEGATION,True,Het systeem voor monitoring na het in de handel brengen is gebaseerd op een plan voor monitoring na het in de handel brengen. Het plan voor monitoring na het in de handel brengen maakt deel uit van de in bijlage IV bedoelde technische documentatie. De Commissie stelt uiterlijk op 2 februari 2026 een
+32024R1689:73:2:3,32024R1689,73,missing,,OBLIGATION,True,"De in lid 1 bedoelde melding wordt gedaan onmiddellijk nadat de aanbieder een oorzakelijk verband tussen het AI-systeem en het ernstige incident of de redelijke waarschijnlijkheid van een dergelijk verband heeft vastgesteld en in ieder geval uiterlijk 15 dagen nadat de aanbieder of, in voorkomend ge"
+32024R1689:73:11:13,32024R1689,73,missing,,OBLIGATION,True,"Voor AI-systemen met een hoog risico die veiligheidscomponenten van apparaten zijn of zelf apparaten zijn die onder de Verordeningen (EU) 2017/745 en (EU) 2017/746 vallen, wordt de melding van ernstige incidenten beperkt tot de in artikel 3, punt 49), c), van de onderhavige verordening bedoelde inci"
+32024R1689:74:4:3,32024R1689,74,missing,,OBLIGATION,False,"De in de artikelen 79 tot en met 83 van deze verordening bedoelde procedures zijn niet van toepassing op AI-systemen die verband houden met producten waarop in de in afdeling A van bijlage I vermelde harmonisatiewetgeving van de Unie van toepassing is, indien de betrokken rechtshandelingen reeds voo"
+32024R1689:75:3:5,32024R1689,75,missing,,OBLIGATION,True,"Indien een markttoezichtautoriteit haar onderzoek naar het AI-systeem met een hoog risico niet kan afronden omdat zij geen toegang heeft tot bepaalde informatie met betrekking tot het AI-model voor algemene doeleinden, hoewel zij al het nodige heeft gedaan om die informatie te verkrijgen, kan zij ee"
+32024R1689:76:4:7,32024R1689,76,missing,,OBLIGATION,True,"Indien een markttoezichtautoriteit een besluit als bedoeld in lid 3 van dit artikel heeft genomen of een bezwaar in de zin van artikel 60, lid 4, punt b), heeft ingediend, worden in het besluit of het bezwaar vermeld wat de redenen daarvoor zijn en onder welke voorwaarden de aanbieder of potentiële "
+32024R1689:78:2:3,32024R1689,78,pronoun,Zij,OBLIGATION,False,"De autoriteiten die op grond van lid 1 bij de toepassing van deze verordening betrokken zijn, verzoeken alleen om gegevens die strikt noodzakelijk zijn ter beoordeling van het risico van AI-systemen en ter uitoefening van hun bevoegdheden in overeenstemming met deze verordening en met Verordening (E"
+32024R1689:78:2:4,32024R1689,78,pronoun,Zij,OBLIGATION,False,"De autoriteiten die op grond van lid 1 bij de toepassing van deze verordening betrokken zijn, verzoeken alleen om gegevens die strikt noodzakelijk zijn ter beoordeling van het risico van AI-systemen en ter uitoefening van hun bevoegdheden in overeenstemming met deze verordening en met Verordening (E"
+32024R1689:82:5:8,32024R1689,82,pronoun,Zij,OBLIGATION,False,De Commissie deelt haar besluit onmiddellijk aan de betrokken lidstaat en de betrokken operators mee. Zij licht ook de andere lidstaten in.
+32024R1689:91:5:5,32024R1689,91,missing,,PERMISSION,True,"De aanbieders van het betrokken AI-model voor algemene doeleinden of hun vertegenwoordiger verstrekken de gevraagde informatie. In het geval van rechtspersonen, bedrijven of firma’s, of indien de aanbieder geen rechtspersoonlijkheid heeft, verstrekken de personen die krachtens de wet of hun statuten"
+32024R1689:97:3:4,32024R1689,97,pronoun,Het,OBLIGATION,True,"Het Europees Parlement of de Raad kan de in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6, bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Het besluit tot in"
+32024R1689:97:3:5,32024R1689,97,pronoun,Het,OBLIGATION,True,"Het Europees Parlement of de Raad kan de in artikel 6, leden 6 en 7, artikel 7, leden 1 en 3, artikel 11, lid 3, artikel 43, leden 5 en 6, artikel 47, lid 5, artikel 51, lid 3, artikel 52, lid 4, en artikel 53, leden 5 en 6, bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Het besluit tot in"
+32024R1689:99:1:4,32024R1689,99,missing,,OBLIGATION,True,"Overeenkomstig de voorwaarden van deze verordening stellen de lidstaten de voorschriften vast voor sancties en andere handhavingsmaatregelen, die ook waarschuwingen en niet-monetaire maatregelen kunnen omvatten, die van toepassing zijn op inbreuken op deze verordening door operatoren, en nemen zij a"
+32024R1689:99:3:7,32024R1689,99,missing,,OBLIGATION,False,"Voor de niet-naleving van het verbod op de in artikel 5 bedoelde AI-praktijken gelden administratieve geldboeten tot 35 000 000 EUR of, indien de overtreder een onderneming is, tot 7 % van haar totale wereldwijde jaarlijkse omzet voor het voorafgaande boekjaar, indien dat hoger is."
+32024R1689:99:4:8,32024R1689,99,missing,,OBLIGATION,False,"Voor de niet-naleving van een van de volgende bepalingen in verband met operatoren of aangemelde instanties, uitgezonderd die welke zijn neergelegd in artikel 5, gelden administratieve geldboeten tot 15 000 000 EUR of, indien de overtreder een onderneming is, tot 3 % van haar totale wereldwijde jaar"
+32024R1689:99:5:9,32024R1689,99,missing,,OBLIGATION,False,"Voor de verstrekking van onjuiste, onvolledige of misleidende informatie aan aangemelde instanties of nationale bevoegde autoriteiten naar aanleiding van een verzoek, gelden administratieve geldboeten tot 7 500 000 EUR of, indien de overtreder een onderneming is, tot 1 % van haar totale wereldwijde "
+32024R1689:99:6:10,32024R1689,99,missing,,OBLIGATION,False,"In het geval van kmo’s, met inbegrip van start-ups, komt elke in dit artikel bedoelde boete neer op de percentages of, indien dat lager is, het bedrag als bedoeld in de leden 3, 4 en 5."
+32024R1689:99:7:11,32024R1689,99,missing,,OBLIGATION,True,Bij het besluiten om al dan niet een administratieve geldboete op te leggen en bij het bepalen van het bedrag van de administratieve geldboete in elk individueel geval worden alle relevante omstandigheden van de specifieke situatie in aanmerking genomen en wordt naargelang van het geval rekening geh
+32024R1689:99:7:12,32024R1689,99,missing,,OBLIGATION,True,Bij het besluiten om al dan niet een administratieve geldboete op te leggen en bij het bepalen van het bedrag van de administratieve geldboete in elk individueel geval worden alle relevante omstandigheden van de specifieke situatie in aanmerking genomen en wordt naargelang van het geval rekening geh
+32024R1689:100:2:2,32024R1689,100,missing,,OBLIGATION,False,Voor de niet-naleving van het verbod op de in artikel 5 bedoelde AI-praktijken gelden administratieve geldboeten tot 1 500 000 EUR.
+32024R1689:100:3:3,32024R1689,100,missing,,OBLIGATION,False,"Voor de non-conformiteit van het AI-systeem met eisen of verplichtingen krachtens deze verordening, uitgezonderd die bepaald in artikel 5, gelden administratieve geldboeten tot 750 000 EUR."
+32024R1689:100:5:7,32024R1689,100,pronoun,Zij,RIGHT,True,"Het recht van verdediging van de partijen wordt in de loop van de procedure ten volle geëerbiedigd. Zij hebben recht op toegang tot het dossier van de Europese Toezichthouder voor gegevensbescherming, onder voorbehoud van het gerechtvaardigde belang van andere natuurlijke personen of ondernemingen b"
+32024R1689:100:5:8,32024R1689,100,missing,,OBLIGATION,True,"Het recht van verdediging van de partijen wordt in de loop van de procedure ten volle geëerbiedigd. Zij hebben recht op toegang tot het dossier van de Europese Toezichthouder voor gegevensbescherming, onder voorbehoud van het gerechtvaardigde belang van andere natuurlijke personen of ondernemingen b"
+32024R1689:101:3:6,32024R1689,101,missing,,OBLIGATION,False,"De overeenkomstig dit artikel opgelegde geldboeten zijn doeltreffend, evenredig en afschrikkend."
+32024R1689:101:4:7,32024R1689,101,missing,,OBLIGATION,True,"Informatie over geldboeten die uit hoofde van dit artikel zijn opgelegd, wordt in voorkomend geval ook aan de AI-board meegedeeld."
+32024R1689:112:6:14,32024R1689,112,missing,,OBLIGATION,True,"Uiterlijk op 2 augustus 2028 en vervolgens om de vier jaar dient de Commissie een verslag in met een evaluatie van de vooruitgang bij de ontwikkeling van normalisatieproducten met betrekking tot de energie-efficiënte ontwikkeling van AI-modellen voor algemene doeleinden, en beoordeelt zij of verdere"
+32024R1689:112:12:20,32024R1689,112,missing,,OBLIGATION,True,"Elke wijziging van deze verordening op grond van lid 10, of relevante gedelegeerde handelingen of uitvoeringshandelingen, die betrekking heeft op sectorale harmonisatie-wetgeving van de Unie zoals vermeld in bijlage I, afdeling B, wordt rekening gehouden met de regelgevingsspecificaties van elke sec"
+32016R0679:7:3:3,32016R0679,7,missing,,OBLIGATION,True,"De betrokkene heeft het recht zijn toestemming te allen tijde in te trekken. Het intrekken van de toestemming laat de rechtmatigheid van de verwerking op basis van de toestemming vóór de intrekking daarvan, onverlet. Alvorens de betrokkene zijn toestemming geeft, wordt hij daarvan in kennis gesteld."
+32016R0679:7:3:4,32016R0679,7,missing,,OBLIGATION,True,"De betrokkene heeft het recht zijn toestemming te allen tijde in te trekken. Het intrekken van de toestemming laat de rechtmatigheid van de verwerking op basis van de toestemming vóór de intrekking daarvan, onverlet. Alvorens de betrokkene zijn toestemming geeft, wordt hij daarvan in kennis gesteld."
+32016R0679:9:1:1,32016R0679,9,missing,,PROHIBITION,False,"Verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, "
+32016R0679:9:3:3,32016R0679,9,missing,,PERMISSION,True,"De in lid 1 bedoelde persoonsgegevens mogen worden verwerkt voor de in lid 2, punt h), genoemde doeleinden wanneer die gegevens worden verwerkt door of onder de verantwoordelijkheid van een beroepsbeoefenaar die krachtens Unierecht of lidstatelijk recht of krachtens door nationale bevoegde instantie"
+32016R0679:10:whole:1,32016R0679,10,missing,,PROHIBITION,True,"Persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen mogen op grond van artikel 6, lid 1, alleen worden verwerkt onder toezicht van de overheid of indien de verwerking is toegestaan bij Unierechtelijke of lidstaatrechteli"
+32016R0679:10:whole:2,32016R0679,10,missing,,PROHIBITION,True,"Persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen mogen op grond van artikel 6, lid 1, alleen worden verwerkt onder toezicht van de overheid of indien de verwerking is toegestaan bij Unierechtelijke of lidstaatrechteli"
+32016R0679:11:1:1,32016R0679,11,pronoun,hij,EXEMPTION,False,"Indien de doeleinden waarvoor een verwerkingsverantwoordelijke persoonsgegevens verwerkt, niet of niet meer vereisen dat hij een betrokkene identificeert, is hij niet verplicht om, uitsluitend om aan deze verordening te voldoen, aanvullende gegevens ter identificatie van de betrokkene bij te houden,"
+32016R0679:12:5:12,32016R0679,12,missing,,OBLIGATION,False,"Het verstrekken van de in de artikelen 13 en 14 bedoelde informatie, en het verstrekken van de communicatie en het treffen van de maatregelen bedoeld in de artikelen 15 tot en met 22 en artikel 34 geschieden kosteloos. Wanneer verzoeken van een betrokkene kennelijk ongegrond of buitensporig zijn, me"
+32016R0679:12:7:15,32016R0679,12,missing,,PERMISSION,True,"De krachtens de artikelen 13 en 14 aan betrokkenen te verstrekken informatie mag worden verstrekt met gebruikmaking van gestandaardiseerde iconen, om de betrokkene een nuttig overzicht, in een goed zichtbare, begrijpelijke en duidelijk leesbare vorm, van de voorgenomen verwerking te bieden. Wanneer "
+32016R0679:14:5:12,32016R0679,14,missing,,EXEMPTION,False,"De leden 1 tot en met 4 zijn niet van toepassing wanneer en voor zover:
+
+a) de betrokkene reeds over de informatie beschikt;
+
+b) het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen "
+32016R0679:14:5:14,32016R0679,14,missing,,EXEMPTION,False,"De leden 1 tot en met 4 zijn niet van toepassing wanneer en voor zover:
+
+a) de betrokkene reeds over de informatie beschikt;
+
+b) het verstrekken van die informatie onmogelijk blijkt of onevenredig veel inspanning zou vergen, in het bijzonder bij verwerking met het oog op archivering in het algemeen "
+32016R0679:17:3:3,32016R0679,17,missing,,EXEMPTION,False,"De leden 1 en 2 zijn niet van toepassing voor zover verwerking nodig is:
+
+a) voor het uitoefenen van het recht op vrijheid van meningsuiting en informatie;
+
+b) voor het nakomen van een in een het Unierecht of het lidstatelijke recht neergelegde wettelijke verwerkingsverplichting die op de verwerking"
+32016R0679:18:2:2,32016R0679,18,missing,,PROHIBITION,True,"Wanneer de verwerking op grond van lid 1 is beperkt, worden persoonsgegevens, met uitzondering van de opslag ervan, slechts verwerkt met toestemming van de betrokkene of voor de instelling, uitoefening of onderbouwing van een rechtsvordering of ter bescherming van de rechten van een andere natuurlij"
+32016R0679:21:3:4,32016R0679,21,missing,,PROHIBITION,True,"Wanneer de betrokkene bezwaar maakt tegen verwerking ten behoeve van direct marketing, worden de persoonsgegevens niet meer voor deze doeleinden verwerkt."
+32016R0679:22:4:2,32016R0679,22,missing,,PROHIBITION,True,"De in lid 2 bedoelde besluiten worden niet gebaseerd op de in artikel 9, lid 1, bedoelde bijzondere categorieën van persoonsgegevens, tenzij artikel 9, lid 2, punt a) of g), van toepassing is en er passende maatregelen ter bescherming van de gerechtvaardigde belangen van de betrokkene zijn getroffen"
+32016R0679:23:1:1,32016R0679,23,missing,,COMPETENCE,True,"De reikwijdte van de verplichtingen en rechten als bedoeld in de artikelen 12 tot en met 22 en artikel 34, alsmede in artikel 5 kan, voor zover de bepalingen van die artikelen overeenstemmen met de rechten en verplichtingen als bedoeld in de artikelen 12 tot en met 20, worden beperkt door middel van"
+32016R0679:24:1:3,32016R0679,24,missing,,OBLIGATION,True,"Rekening houdend met de aard, de omvang, de context en het doel van de verwerking, alsook met de qua waarschijnlijkheid en ernst uiteenlopende risico's voor de rechten en vrijheden van natuurlijke personen, treft de verwerkingsverantwoordelijke passende technische en organisatorische maatregelen om "
+32016R0679:24:1:4,32016R0679,24,missing,,OBLIGATION,True,"Rekening houdend met de aard, de omvang, de context en het doel van de verwerking, alsook met de qua waarschijnlijkheid en ernst uiteenlopende risico's voor de rechten en vrijheden van natuurlijke personen, treft de verwerkingsverantwoordelijke passende technische en organisatorische maatregelen om "
+32016R0679:25:2:4,32016R0679,25,missing,,PROHIBITION,True,De verwerkingsverantwoordelijke treft passende technische en organisatorische maatregelen om ervoor te zorgen dat in beginsel alleen persoonsgegevens worden verwerkt die noodzakelijk zijn voor elk specifiek doel van de verwerking. Die verplichting geldt voor de hoeveelheid verzamelde persoonsgegeven
+32016R0679:25:2:5,32016R0679,25,missing,,PROHIBITION,True,De verwerkingsverantwoordelijke treft passende technische en organisatorische maatregelen om ervoor te zorgen dat in beginsel alleen persoonsgegevens worden verwerkt die noodzakelijk zijn voor elk specifiek doel van de verwerking. Die verplichting geldt voor de hoeveelheid verzamelde persoonsgegeven
+32016R0679:25:2:6,32016R0679,25,missing,,PROHIBITION,True,De verwerkingsverantwoordelijke treft passende technische en organisatorische maatregelen om ervoor te zorgen dat in beginsel alleen persoonsgegevens worden verwerkt die noodzakelijk zijn voor elk specifiek doel van de verwerking. Die verplichting geldt voor de hoeveelheid verzamelde persoonsgegeven
+32016R0679:28:9:11,32016R0679,28,missing,,OBLIGATION,True,"De in de leden 3 en 4 bedoelde overeenkomst of andere rechtshandeling wordt in schriftelijke vorm, waaronder elektronische vorm, opgesteld."
+32016R0679:30:3:5,32016R0679,30,missing,,OBLIGATION,False,"Het in de leden 1 en 2 bedoelde register is in schriftelijke vorm, waaronder in elektronische vorm, opgesteld."
+32016R0679:33:4:4,32016R0679,33,missing,,PERMISSION,True,"Indien en voor zover het niet mogelijk is om alle informatie gelijktijdig te verstrekken, kan de informatie zonder onredelijke vertraging in stappen worden verstrekt."
+32016R0679:34:2:2,32016R0679,34,missing,,OBLIGATION,False,"De in lid 1 van dit artikel bedoelde mededeling aan de betrokkene bevat een omschrijving, in duidelijke en eenvoudige taal, van de aard van de inbreuk in verband met persoonsgegevens en ten minste de in artikel 33, lid 3, onder b), c) en d), bedoelde gegevens en maatregelen."
+32016R0679:35:7:10,32016R0679,35,missing,,OBLIGATION,True,"De beoordeling bevat ten minste:
+
+a) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;
+
+b) een beoordeling van de noodzaak en de evenredigheid"
+32016R0679:35:7:11,32016R0679,35,missing,,OBLIGATION,True,"De beoordeling bevat ten minste:
+
+a) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;
+
+b) een beoordeling van de noodzaak en de evenredigheid"
+32016R0679:35:7:12,32016R0679,35,missing,,OBLIGATION,True,"De beoordeling bevat ten minste:
+
+a) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;
+
+b) een beoordeling van de noodzaak en de evenredigheid"
+32016R0679:35:7:13,32016R0679,35,missing,,OBLIGATION,True,"De beoordeling bevat ten minste:
+
+a) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;
+
+b) een beoordeling van de noodzaak en de evenredigheid"
+32016R0679:35:7:14,32016R0679,35,missing,,OBLIGATION,True,"De beoordeling bevat ten minste:
+
+a) een systematische beschrijving van de beoogde verwerkingen en de verwerkingsdoeleinden, waaronder, in voorkomend geval, de gerechtvaardigde belangen die door de verwerkingsverantwoordelijke worden behartigd;
+
+b) een beoordeling van de noodzaak en de evenredigheid"
+32016R0679:35:8:15,32016R0679,35,missing,,OBLIGATION,True,"Bij het beoordelen van het effect van de door een verwerkingsverantwoordelijke of verwerker verrichte verwerkingen, en met name ter wille van een gegevensbeschermingseffectbeoordeling, wordt de naleving van de in artikel 40 bedoelde goedgekeurde gedragscodes naar behoren in aanmerking genomen."
+32016R0679:37:3:3,32016R0679,37,missing,,PERMISSION,True,"Wanneer de verwerkingsverantwoordelijke of de verwerker een overheidsinstantie of overheidsorgaan is, kan één functionaris voor gegevensbescherming worden aangewezen voor verschillende dergelijke instanties of organen, met inachtneming van hun organisatiestructuur en omvang."
+32016R0679:37:5:7,32016R0679,37,missing,,OBLIGATION,True,"De functionaris voor gegevensbescherming wordt aangewezen op grond van zijn professionele kwaliteiten en, in het bijzonder, zijn deskundigheid op het gebied van de wetgeving en de praktijk inzake gegevensbescherming en zijn vermogen de in artikel 39 bedoelde taken te vervullen."
+32016R0679:40:5:10,32016R0679,40,pronoun,zij,COMPETENCE,False,"De in lid 2 van dit artikel bedoelde verenigingen en andere organen die voornemens zijn een gedragscode op te stellen of een bestaande gedragscode te wijzigen of uit te breiden, leggen de ontwerpgedragscode, de wijziging of uitbreiding voor aan de overeenkomstig artikel 51 bevoegde toezichthoudende "
+32016R0679:41:2:3,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:4,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:5,32016R0679,41,pronoun,het,COMPETENCE,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:6,32016R0679,41,pronoun,het,COMPETENCE,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:7,32016R0679,41,pronoun,het,COMPETENCE,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:8,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:9,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:10,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:41:2:11,32016R0679,41,pronoun,het,OBLIGATION,True,"Een orgaan als bedoeld in lid 1 kan daartoe worden geaccrediteerd om toezicht te houden op de naleving van een gedragscode indien het:
+
+a) ten genoegen van de bevoegde toezichthoudende autoriteit zijn onafhankelijkheid en deskundigheid met betrekking tot het onderwerp van de gedragscode heeft aanget"
+32016R0679:42:1:2,32016R0679,42,missing,,OBLIGATION,True,"De lidstaten, de toezichthoudende autoriteiten, het Comité en de Commissie bevorderen, met name op Unieniveau, de invoering van certificeringsmechanismen voor gegevensbescherming en gegevensbeschermingszegels en -merktekens waarmee kan worden aangetoond dat verwerkingsverantwoordelijken en verwerker"
+32016R0679:42:7:6,32016R0679,42,missing,,PERMISSION,True,"Het certificaat wordt afgegeven aan een verwerkingsverantwoordelijke of een verwerker voor een maximumperiode van drie jaar en kan worden verlengd onder dezelfde voorwaarden, mits bij voortduring aan de relevante eisen kan worden voldaan. Indien van toepassing wordt het certificaat ingetrokken door "
+32016R0679:43:4:5,32016R0679,43,missing,,PERMISSION,True,"De in lid 1 bedoelde certificeringsorganen zijn verantwoordelijk voor de juiste beoordeling, die tot certificering of de intrekking van die certificering leidt, onverminderd de verantwoordelijkheid van de verwerkingsverantwoordelijke of de verwerker voor de naleving van deze verordening. De accredit"
+32016R0679:43:9:14,32016R0679,43,missing,,OBLIGATION,True,De Commissie kan uitvoeringshandelingen vaststellen die voorzien in technische normen voor certificeringsmechanismen en gegevensbeschermingszegels en -merktekens en mechanismen ter bevordering en erkenning van die certificeringsmechanismen en gegevensbeschermingszegels en -merktekens. Die uitvoering
+32016R0679:44:whole:1,32016R0679,44,missing,,PROHIBITION,True,"Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de i"
+32016R0679:44:whole:2,32016R0679,44,missing,,OBLIGATION,True,"Persoonsgegevens die worden verwerkt of die zijn bestemd om na doorgifte aan een derde land of een internationale organisatie te worden verwerkt, mogen slechts worden doorgegeven indien, onverminderd de overige bepalingen van deze verordening, de verwerkingsverantwoordelijke en de verwerker aan de i"
+32016R0679:45:1:1,32016R0679,45,missing,,PERMISSION,False,"Een doorgifte van persoonsgegevens aan een derde land of een internationale organisatie kan plaatsvinden wanneer de Commissie heeft besloten dat het derde land, een gebied of één of meerdere nader bepaalde sectoren in dat derde land, of de internationale organisatie in kwestie een passend beschermin"
+32016R0679:46:2:2,32016R0679,46,missing,,PERMISSION,True,"De in lid 1 bedoelde passende waarborgen kunnen worden geboden door de volgende instrumenten, zonder dat daarvoor specifieke toestemming van een toezichthoudende autoriteit is vereist:
+
+a) een juridisch bindend en afdwingbaar instrument tussen overheidsinstanties of -organen;
+
+b) bindende bedrijfsvo"
+32016R0679:46:3:3,32016R0679,46,missing,,PERMISSION,True,"Onder voorbehoud van de toestemming van de bevoegde toezichthoudende autoriteit kunnen de in lid 1 bedoelde passende waarborgen ook worden geboden door, met name:
+
+a) contractbepalingen tussen de verwerkingsverantwoordelijke of de verwerker en de verwerkingsverantwoordelijke, de verwerker of de ontv"
+32016R0679:46:3:4,32016R0679,46,missing,,OBLIGATION,True,"Onder voorbehoud van de toestemming van de bevoegde toezichthoudende autoriteit kunnen de in lid 1 bedoelde passende waarborgen ook worden geboden door, met name:
+
+a) contractbepalingen tussen de verwerkingsverantwoordelijke of de verwerker en de verwerkingsverantwoordelijke, de verwerker of de ontv"
+32016R0679:47:2:2,32016R0679,47,missing,,OBLIGATION,True,"In de in lid 1 bedoelde bindende bedrijfsvoorschriften worden minstens de volgende elementen vastgelegd:
+
+a) de structuur en de contactgegevens van het concern of de groepering van ondernemingen die gezamenlijk een economische activiteit uitoefenen en van elk van haar leden;
+
+b) de gegevensdoorgifte"
+32016R0679:47:3:4,32016R0679,47,missing,,OBLIGATION,True,"De Commissie kan het model en de procedures voor de uitwisseling van informatie over bindende bedrijfsvoorschriften in de zin van dit artikel tussen verwerkingsverantwoordelijken, verwerkers en toezichthoudende autoriteiten nader bepalen. Deze uitvoeringshandelingen worden vastgesteld volgens de in "
+32016R0679:48:whole:1,32016R0679,48,missing,,PROHIBITION,True,"Elke rechterlijke uitspraak en elk besluit van een administratieve autoriteit van een derde land op grond waarvan een verwerkingsverantwoordelijke of een verwerker persoonsgegevens moet doorgeven of verstrekken, mag alleen op enigerlei wijze worden erkend of afdwingbaar zijn indien zij gebaseerd zij"
+32016R0679:49:1:3,32016R0679,49,missing,,PERMISSION,True,"Bij ontstentenis van een adequaatheidsbesluit overeenkomstig artikel 45, lid 3, of van passende waarborgen overeenkomstig artikel 46, met inbegrip van bindende bedrijfsvoorschriften, kan een doorgifte of een reeks van doorgiften van persoonsgegevens aan een derde land of een internationale organisat"
+32016R0679:49:5:7,32016R0679,49,missing,,PERMISSION,True,Bij ontstentenis van een adequaatheidsbesluit kunnen in Unierechtelijke of lidstaatrechtelijke bepalingen of bepalingen om gewichtige redenen van openbaar belang uitdrukkelijk grenzen worden gesteld aan de doorgifte van specifieke categorieën van persoonsgegevens aan een derde land of een internatio
+32016R0679:52:2:2,32016R0679,52,pronoun,zij,PROHIBITION,False,Bij de uitvoering van hun taken en de uitoefening van hun bevoegdheden overeenkomstig deze verordening blijven de leden van elke toezichthoudende autoriteit vrij van al dan niet rechtstreekse externe invloed en vragen noch aanvaarden zij instructies van wie dan ook.
+32016R0679:53:3:4,32016R0679,53,missing,,OBLIGATION,False,"De taken van een lid eindigen bij het verstrijken van de ambtstermijn, bij ontslag of bij verplichte pensionering overeenkomstig de wetgeving van de lidstaat in kwestie."
+32016R0679:53:4:5,32016R0679,53,missing,,PROHIBITION,True,Een lid wordt slechts ontslagen indien het op ernstige wijze is tekortgeschoten of niet langer aan de vereisten voor de uitvoering van de taken voldoet.
+32016R0679:55:2:4,32016R0679,55,missing,,EXEMPTION,False,"In het geval van verwerking door overheidsinstanties of door particuliere organen die handelen op grond van artikel 6, lid 1, onder c) of e), is de toezichthoudende autoriteit van de lidstaat in kwestie competent. In dergelijke gevallen is artikel 56 niet van toepassing."
+32016R0679:57:1:2,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:3,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:4,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:5,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:6,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:7,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:8,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:9,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:10,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:11,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:12,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:13,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:14,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:15,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:16,32016R0679,57,pronoun,zij,COMPETENCE,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:17,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:18,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:19,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:20,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:21,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:22,32016R0679,57,pronoun,zij,COMPETENCE,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:23,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:24,32016R0679,57,pronoun,zij,COMPETENCE,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:25,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:26,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:27,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:28,32016R0679,57,pronoun,zij,COMPETENCE,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:29,32016R0679,57,pronoun,zij,COMPETENCE,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:30,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:31,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:57:1:32,32016R0679,57,pronoun,zij,OBLIGATION,True,"Onverminderd andere uit hoofde van deze verordening vastgestelde taken, verricht elke toezichthoudende autoriteit op haar grondgebied de volgende taken:
+
+a) zij monitort en handhaaft de toepassing van deze verordening;
+
+b) zij bevordert bij het brede publiek de bekendheid met en het inzicht in de ri"
+32016R0679:59:whole:3,32016R0679,59,missing,,OBLIGATION,True,"Elke toezichthoudende autoriteit stelt jaarlijks een verslag over haar activiteiten op, met daarin mogelijk een lijst van de soorten gemelde inbreuken en de soorten maatregelen die overeenkomstig artikel 58, lid 2, worden genomen. Die verslagen worden toegezonden aan het nationale parlement, de rege"
+32016R0679:60:3:6,32016R0679,60,pronoun,Zij,OBLIGATION,False,De leidende toezichthoudende autoriteit deelt onverwijld alle relevante informatie over de aangelegenheid mee aan de andere betrokken toezichthoudende autoriteiten. Zij legt de andere betrokken toezichthoudende autoriteiten onverwijld te hunner beoordeling een ontwerpbesluit voor en houdt naar behor
+32016R0679:60:3:7,32016R0679,60,pronoun,Zij,OBLIGATION,False,De leidende toezichthoudende autoriteit deelt onverwijld alle relevante informatie over de aangelegenheid mee aan de andere betrokken toezichthoudende autoriteiten. Zij legt de andere betrokken toezichthoudende autoriteiten onverwijld te hunner beoordeling een ontwerpbesluit voor en houdt naar behor
+32016R0679:61:2:4,32016R0679,61,missing,,PERMISSION,False,Elke toezichthoudende autoriteit neemt alle passende maatregelen die nodig zijn om een verzoek van een andere toezichthoudende autoriteit onverwijld en uiterlijk binnen één maand na ontvangst daarvan te beantwoorden. Hierbij kan het in het bijzonder gaan om toezending van relevante informatie over d
+32016R0679:61:3:6,32016R0679,61,missing,,PROHIBITION,True,"Verzoeken om bijstand bevatten alle nodige informatie, waaronder het doel van en de redenen voor het verzoek. De uitgewisselde informatie wordt alleen gebruikt voor het doel waarvoor om die informatie is verzocht."
+32016R0679:64:3:4,32016R0679,64,missing,,PERMISSION,True,"Het Comité brengt in de in de leden 1 en 2 bedoelde gevallen een advies uit over de aan het Comité voorgelegde aangelegenheid, mits het daarover niet eerder advies heeft uitgebracht. Dat advies wordt binnen acht weken vastgesteld met gewone meerderheid van de leden van het Comité. Die termijn kan me"
+32016R0679:65:5:10,32016R0679,65,pronoun,Hij,OBLIGATION,True,De voorzitter van het Comité brengt het in lid 1 bedoelde besluit onverwijld ter kennis van de betrokken toezichthoudende autoriteiten. Hij brengt de Commissie daarvan op de hoogte. Het besluit wordt onverwijld bekendgemaakt op de website van het Comité nadat de toezichthoudende autoriteit het in li
+32016R0679:67:whole:1,32016R0679,67,missing,,OBLIGATION,True,"De Commissie kan uitvoeringshandelingen van algemene aard vaststellen om d)de regelingen voor de elektronische uitwisseling van informatie tussen toezichthoudende autoriteiten onderling en tussen toezichthoudende autoriteiten en het Comité, met name het in artikel 64 bedoelde standaardformulier, vas"
+32016R0679:68:4:2,32016R0679,68,missing,,OBLIGATION,True,"Wanneer in een lidstaat meer dan één toezichthoudende autoriteit belast is met het toezicht op de toepassing van de bepalingen krachtens deze verordening, wordt overeenkomstig het recht van die lidstaat een gezamenlijke vertegenwoordiger aangewezen."
+32016R0679:78:3:3,32016R0679,78,missing,,OBLIGATION,True,Een procedure tegen een toezichthoudende autoriteit wordt ingesteld bij de gerechten van de lidstaat waar de toezichthoudende autoriteit is gevestigd.
+32016R0679:79:2:2,32016R0679,79,missing,,OBLIGATION,True,Een procedure tegen een verwerkingsverantwoordelijke of een verwerker wordt ingesteld bij de gerechten van de lidstaat waar de verwerkingsverantwoordelijke of de verwerker een vestiging heeft. Een dergelijke procedure kan ook worden ingesteld bij de gerechten van de lidstaat waar de betrokkene gewoo
+32016R0679:79:2:3,32016R0679,79,missing,,PERMISSION,True,Een procedure tegen een verwerkingsverantwoordelijke of een verwerker wordt ingesteld bij de gerechten van de lidstaat waar de verwerkingsverantwoordelijke of de verwerker een vestiging heeft. Een dergelijke procedure kan ook worden ingesteld bij de gerechten van de lidstaat waar de betrokkene gewoo
+32016R0679:82:6:7,32016R0679,82,missing,,OBLIGATION,True,"Gerechtelijke procedures voor het uitoefenen van het recht op schadevergoeding worden gevoerd voor de in artikel 79, lid 2, bedoelde lidstaatrechtelijk bevoegde gerechten."
+32016R0679:83:2:2,32016R0679,83,missing,,OBLIGATION,True,"Administratieve geldboeten worden, naargelang de omstandigheden van het concrete geval, opgelegd naast of in plaats van de in artikel 58, lid 2, onder a) tot en met h) en onder j), bedoelde maatregelen. Bij het besluit over de vraag of een administratieve geldboete wordt opgelegd en over de hoogte d"
+32016R0679:83:2:3,32016R0679,83,missing,,OBLIGATION,True,"Administratieve geldboeten worden, naargelang de omstandigheden van het concrete geval, opgelegd naast of in plaats van de in artikel 58, lid 2, onder a) tot en met h) en onder j), bedoelde maatregelen. Bij het besluit over de vraag of een administratieve geldboete wordt opgelegd en over de hoogte d"
+32016R0679:83:3:4,32016R0679,83,missing,,OBLIGATION,False,"Indien een verwerkingsverantwoordelijke of een verwerker opzettelijk of uit nalatigheid met betrekking tot dezelfde of daarmee verband houdende verwerkingsactiviteiten een inbreuk pleegt op meerdere bepalingen van deze verordening, is de totale geldboete niet hoger dan die voor de zwaarste inbreuk."
+32016R0679:83:5:6,32016R0679,83,missing,,OBLIGATION,False,"Inbreuken op onderstaande bepalingen zijn overeenkomstig lid 2 onderworpen aan administratieve geldboeten tot 20 000 000 EUR of, voor een onderneming, tot 4 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar, indien dit cijfer hoger is:
+
+a) de basisbeginselen inzake verwerking, met inb"
+32016R0679:83:6:7,32016R0679,83,missing,,OBLIGATION,False,"Niet-naleving van een bevel van de toezichthoudende autoriteit als bedoeld in artikel 58, lid 2, is overeenkomstig lid 2 van dit artikel onderworpen aan administratieve geldboeten tot 20 000 000 EUR of, voor een onderneming, tot 4 % van de totale wereldwijde jaaromzet in het voorgaande boekjaar, ind"
+32016R0679:83:9:16,32016R0679,83,missing,,OBLIGATION,True,"Wanneer het rechtsstelsel van de lidstaat niet voorziet in administratieve geldboeten, kan dit artikel aldus worden toegepast dat geldboeten worden geïnitieerd door de bevoegde toezichthoudende autoriteit en opgelegd door bevoegde nationale gerechten, waarbij wordt gewaarborgd dat deze rechtsmiddele"
+32016R0679:87:whole:2,32016R0679,87,missing,,OBLIGATION,True,De lidstaten kunnen de specifieke voorwaarden voor de verwerking van een nationaal identificatienummer of enige andere identificator van algemene aard nader vaststellen. In dat geval wordt het nationale identificatienummer of enige andere identificator van algemene aard alleen gebruikt met passende 
+32016R0679:89:1:4,32016R0679,89,pronoun,zij,OBLIGATION,True,"De verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden is onderworpen aan passende waarborgen in overeenstemming met deze verordening voor de rechten en vrijheden van de betrokkene. Die waarborgen zorgen ervoor dat er tech"
+32016R0679:89:2:5,32016R0679,89,missing,,DELEGATION,True,"Wanneer persoonsgegevens met het oog op wetenschappelijk of historisch onderzoek of statistische doeleinden worden verwerkt, kan in het Unierecht of het lidstatelijke recht worden voorzien in afwijkingen van de in de artikelen 15, 16, 18 en 21 genoemde rechten, behoudens de in lid 1 van dit artikel "
+32016R0679:89:3:6,32016R0679,89,missing,,DELEGATION,True,"Wanneer persoonsgegevens met het oog op archivering in het algemeen belang worden verwerkt, kan in het Unierecht of het lidstatelijke recht worden voorzien in afwijkingen van de in de artikelen 15, 16, 18, 19, 20 en 21 genoemde rechten, behoudens de in lid 1 van dit artikel bedoelde voorwaarden en w"
+32016R0679:92:2:2,32016R0679,92,missing,,DELEGATION,True,"De in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie wordt aan de Commissie toegekend voor onbepaalde tijd met ingang van 24 mei 2016."
+32016R0679:92:3:5,32016R0679,92,pronoun,Het,OBLIGATION,True,"Het Europees Parlement of de Raad kan de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Het besluit tot intrekking beëindigt de delegatie van de in dat besluit genoemde bevoegdheid. Het wordt van kracht op de dag na die van de bekendmaking ervan "
+32016R0679:92:3:6,32016R0679,92,pronoun,Het,OBLIGATION,True,"Het Europees Parlement of de Raad kan de in artikel 12, lid 8, en artikel 43, lid 8, bedoelde bevoegdheidsdelegatie te allen tijde intrekken. Het besluit tot intrekking beëindigt de delegatie van de in dat besluit genoemde bevoegdheid. Het wordt van kracht op de dag na die van de bekendmaking ervan "
+32016R0679:97:1:2,32016R0679,97,missing,,OBLIGATION,True,"Uiterlijk op 25 mei 2020 en om de vier jaar daarna, dient de Commissie een verslag in bij het Europees Parlement en de Raad over de evaluatie en de toetsing van deze verordening. De verslagen worden openbaar gemaakt."

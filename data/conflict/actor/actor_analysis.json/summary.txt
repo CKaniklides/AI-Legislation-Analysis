@@ -1,0 +1,139 @@
+==============================================================================
+ACTOR ANALYSIS
+==============================================================================
+Norms total:                      1410
+  explicit actor:                 1159 (82.2%)
+  no actor (null):                177 (12.6%)
+  pronoun only (zij/hij/het/...): 74 (5.2%)
+
+  32016R0679: 638 norms | explicit 518 | null 71 | pronoun 49
+  32024R1689: 772 norms | explicit 641 | null 106 | pronoun 25
+
+Distinct raw actor strings:       408
+Distinct canonical roles:         163
+Norms with coordinated actors:    106 (e.g. 'X en Y', 'X of Y')
+Canonical roles that are defined terms: 34 covering 643 norm-role occurrences
+Roles whose head does NOT look agentive (likely object/subject confusion): 92 roles, 229 norms
+
+------------------------------------------------------------------------------
+CONCENTRATION (share of norms with an explicit actor)
+------------------------------------------------------------------------------
+ top-k |  raw strings |  canonical roles (all roles of norm in top-k)
+     5 |        23.0% |                                         40.9%
+    10 |        32.8% |                                         58.2%
+    20 |        44.0% |                                         75.6%
+    30 |        50.8% |                                         81.8%
+    50 |        59.4% |                                         88.4%
+Canonical roles needed for 90% coverage: 57
+
+------------------------------------------------------------------------------
+TOP 40 CANONICAL ROLES
+------------------------------------------------------------------------------
+  # norms  role                                       defined in             match            agent? variants
+  1   160  commissie                                  -                      head:160         yes    9
+  2   105  toezichthoudende autoriteit                32016R0679             exact:80,suffix: yes    30
+  3   104  verwerkingsverantwoordelijke               32016R0679             exact:94,prefix: yes    21
+  4    92  lidstaat                                   -                      head:92          yes    22
+  5    70  aanbieders                                 -                      head:74          NO     25
+  6    52  comité                                     -                      head:52          yes    5
+  7    46  aangemelde instantie                       32024R1689             exact:42,suffix: yes    11
+  8    42  gebruiksverantwoordelijke                  32024R1689             exact:23,prefix: yes    21
+  9    39  verwerker                                  32016R0679             exact:28,prefix: yes    21
+ 10    37  ai-bureau                                  32024R1689             exact:37         yes    4
+ 11    35  aanbieder                                  32024R1689             exact:21,suffix: yes    18
+ 12    32  markttoezichtautoriteit                    32024R1689             exact:24,suffix: yes    17
+ 13    32  aanmeldende autoriteit                     32024R1689             exact:32         yes    5
+ 14    27  betrokkene                                 32016R0679             exact:27         yes    5
+ 15    19  leidende toezichthoudende autoriteit       curated                exact:19         yes    5
+ 16    17  nationale bevoegde autoriteit              32024R1689             exact:17         yes    5
+ 17    15  functionaris voor gegevensbescherming      curated                exact:15         yes    2
+ 18    14  distributeur                               32024R1689             exact:13,prefix: yes    7
+ 19    12  autoriteit                                 -                      head:12          yes    11
+ 20    12  voorzitter                                 -                      head:12          yes    5
+ 21    11  orgaan                                     -                      head:11          yes    7
+ 22    10  secretariaat                               -                      head:10          yes    2
+ 23     9  ai-systeem                                 32024R1689             prefix:7,exact:1 NO     6
+ 24     9  ai-board                                   -                      head:9           yes    4
+ 25     8  europese toezichthouder voor gegevensbesch curated                exact:8          yes    2
+ 26     8  lid                                        -                      head:9           yes    7
+ 27     7  importeur                                  32024R1689             exact:7          yes    3
+ 28     7  vertegenwoordiger                          32016R0679,NIS2        prefix:4,exact:2 yes    7
+ 29     7  adviesforum                                -                      head:7           yes    1
+ 30     7  besluit                                    -                      head:7           NO     5
+ 31     6  operator                                   32024R1689             suffix:4,exact:2 yes    5
+ 32     6  vereniging                                 -                      head:6           yes    3
+ 33     6  betrokken toezichthoudende autoriteit      32016R0679             exact:5,suffix:1 yes    5
+ 34     6  ingediend                                  -                      head:6           NO     3
+ 35     5  gemachtigde                                32024R1689             exact:5          yes    4
+ 36     5  persoon                                    -                      head:5           yes    5
+ 37     5  verwerking                                 32016R0679             exact:2,suffix:2 NO     4
+ 38     4  bijzondere categorieën persoonsgegevens    32024R1689             exact:4          NO     1
+ 39     4  personeelslid                              -                      head:4           yes    4
+ 40     4  verzoek                                    -                      head:4           NO     4
+
+------------------------------------------------------------------------------
+TOP 40 RAW ACTOR STRINGS
+------------------------------------------------------------------------------
+norms  raw actor                                     -> canonical [definition status]
+   83  De Commissie                                  -> commissie [not defined]
+   63  de Commissie                                  -> commissie [not defined]
+   53  de verwerkingsverantwoordelijke               -> verwerkingsverantwoordelijke [(own instrument)]
+   38  Het Comité                                    -> comité [not defined]
+   29  De lidstaten                                  -> lidstaat [not defined]
+   27  Elke lidstaat                                 -> lidstaat [not defined]
+   24  Aangemelde instanties                         -> aangemelde instantie [(own instrument)]
+   24  Het AI-bureau                                 -> ai-bureau [(own instrument)]
+   20  Elke toezichthoudende autoriteit              -> toezichthoudende autoriteit [(own instrument)]
+   19  de aanmeldende autoriteit                     -> aanmeldende autoriteit [(own instrument)]
+   18  Elk toezichthoudende autoriteit               -> toezichthoudende autoriteit [(own instrument)]
+   17  Aanbieders van AI-systemen met een hoog risic -> aanbieders [not defined]
+   15  De verwerkingsverantwoordelijke               -> verwerkingsverantwoordelijke [(own instrument)]
+   14  aanbieders                                    -> aanbieders [not defined]
+   13  De betrokkene                                 -> betrokkene [(own instrument)]
+   12  De nationale bevoegde autoriteiten            -> nationale bevoegde autoriteit [(own instrument)]
+   11  De leidende toezichthoudende autoriteit       -> leidende toezichthoudende autoriteit [curated (not in definitions)]
+   10  de betrokkene                                 -> betrokkene [(own instrument)]
+   10  de toezichthoudende autoriteit                -> toezichthoudende autoriteit [(own instrument)]
+   10  het Comité                                    -> comité [not defined]
+    9  Aanmeldende autoriteiten                      -> aanmeldende autoriteit [(own instrument)]
+    9  De toezichthoudende autoriteit                -> toezichthoudende autoriteit [(own instrument)]
+    9  Het secretariaat                              -> secretariaat [not defined]
+    8  de gebruiksverantwoordelijke                  -> gebruiksverantwoordelijke [(own instrument)]
+    8  het AI-bureau                                 -> ai-bureau [(own instrument)]
+    8  De functionaris voor gegevensbescherming      -> functionaris voor gegevensbescherming [curated (not in definitions)]
+    7  De aanbieder                                  -> aanbieder [(own instrument)]
+    7  Aanbieders van AI-modellen voor algemene doel -> aanbieders [not defined]
+    7  Het adviesforum                               -> adviesforum [not defined]
+    7  de lidstaten                                  -> lidstaat [not defined]
+    7  De verwerkingsverantwoordelijke en de verwerk -> verwerkingsverantwoordelijke + verwerker [(own instrument); (own instrument)]
+    7  De verwerkingsverantwoordelijke of de verwerk -> verwerkingsverantwoordelijke + verwerker [(own instrument); (own instrument)]
+    7  de functionaris voor gegevensbescherming      -> functionaris voor gegevensbescherming [curated (not in definitions)]
+    6  de aanbieder                                  -> aanbieder [(own instrument)]
+    6  Gebruiksverantwoordelijken                    -> gebruiksverantwoordelijke [(own instrument)]
+    6  Elke aangemelde instantie                     -> aangemelde instantie [(own instrument)]
+    6  de Commissie en de toezichthoudende autoritei -> commissie + toezichthoudende autoriteit [not defined; (own instrument)]
+    5  de betrokken aanbieder                        -> aanbieder [(own instrument)]
+    5  De Europese Toezichthouder voor gegevensbesch -> europese toezichthouder voor gegevensbescherming [curated (not in definitions)]
+    5  De voorzitter van het Comité                  -> voorzitter [not defined]
+
+------------------------------------------------------------------------------
+DEFINED TERMS USED AS ACTOR, PER INSTRUMENT
+------------------------------------------------------------------------------
+32016R0679: 11/34 defined terms occur as actor role: toezichthoudende autoriteit, verwerkingsverantwoordelijke, verwerker, betrokkene, vertegenwoordiger, betrokken toezichthoudende autoriteit, verwerking, derde, persoonsgegevens, onderneming, concern
+32024R1689: 18/68 defined terms occur as actor role: aangemelde instantie, gebruiksverantwoordelijke, ai-bureau, aanbieder, aanmeldende autoriteit, markttoezichtautoriteit, nationale bevoegde autoriteit, distributeur, ai-systeem, importeur, operator, gemachtigde, bijzondere categorieën persoonsgegevens, conformiteitsbeoordelingsinstantie, rechtshandhavingsinstantie, gevoelige operationele gegevens, persoonsgegevens, logs
+DORA: 3/66 defined terms occur as actor role: overheidsinstantie, hof van justitie, dochteronderneming
+NIS2: 2/42 defined terms occur as actor role: vertegenwoordiger, overheidsinstantie
+curated: 3/3 defined terms occur as actor role: leidende toezichthoudende autoriteit, functionaris voor gegevensbescherming, europese toezichthouder voor gegevensbescherming
+
+------------------------------------------------------------------------------
+NORMS WITHOUT EXPLICIT ACTOR
+------------------------------------------------------------------------------
+null actor: 177, of which with passive marker (wordt/worden): 146
+  by deontic: OBLIGATION:128, PERMISSION:21, PROHIBITION:17, DELEGATION:5, EXEMPTION:4, COMPETENCE:2
+pronoun actor: 74  (zij:51, het:13, hij:10)
+  examples (null):
+   - [32024R1689:5:2:2] Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het o...
+   - [32024R1689:5:2:3] Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het o...
+   - [32024R1689:5:2:4] Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het o...
+   - [32024R1689:5:2:5] Het gebruik van systemen voor biometrische identificatie op afstand in real time in openbare ruimten met het o...
+   - [32024R1689:5:4:8] Onverminderd lid 3 wordt elk gebruik van een systeem voor biometrische identificatie op afstand in real time i...

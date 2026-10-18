@@ -1,0 +1,48 @@
+{
+  "inputs": {
+    "scores": "data\\conflict\\combined_pair_scores.jsonl",
+    "cards": "data\\new_norms\\LLM_norm_cards.jsonl"
+  },
+  "variables": {
+    "budget": 2000,
+    "min_score": 0.5,
+    "per_norm_cap": 20,
+    "max_tie_overshoot": 0.1,
+    "calibration_size": 0.03,
+    "calibration_n": 60,
+    "calibration_edges": [
+      0.5,
+      0.4,
+      0.25
+    ],
+    "calibration_seed": "calibration-v1"
+  },
+  "stats": {
+    "skipped_per_norm_cap": 536,
+    "tie_group_cut": 4,
+    "beyond_budget": 808,
+    "below_min_score": 18673,
+    "rows_read": 22221,
+    "top_tier": 2000,
+    "tie_extension": 200,
+    "calibration": 60,
+    "cutoff_score": 0.5662,
+    "budget_filled": true,
+    "norms_in_top_tier": 811,
+    "norms_at_cap": 65,
+    "not_selected_per_band": {
+      ">= 0.5 (not selected)": 1348,
+      "0.4 - 0.5": 1438,
+      "0.25 - 0.4": 3601,
+      "< 0.25": 13634
+    },
+    "calibration_per_band": {
+      ">= 0.5 (not selected)": 15,
+      "0.4 - 0.5": 15,
+      "0.25 - 0.4": 15,
+      "< 0.25": 15
+    },
+    "queue_size": 2260,
+    "norm_ids_without_card": 0
+  }
+}
