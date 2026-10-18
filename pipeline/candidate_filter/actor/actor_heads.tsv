@@ -1,0 +1,112 @@
+# Actor head table: which head words name an actor, and their broad class.
+#
+# Each line: <word ending> TAB <class>. A head word belongs to a class when its
+# plain form (lowercase, no accents, no hyphens) ends with the ending; the
+# longest matching ending wins. So one line covers compounds too:
+# 'autoriteit' covers markttoezichtautoriteit and gegevensbeschermingsautoriteit.
+# Regular plurals (-s, -en, -n) are found without a line of their own;
+# plurals with a changed vowel ('lidstaten', 'organen') need one.
+# Class '-' marks words that end like an actor but are not one.
+#
+# Classes
+#   authority    public authority or supervisor
+#   institution  EU or national institution, court
+#   state        state, government, minister
+#   body         committee, office, agency or other body
+#   office       a post or the members/staff of a body
+#   party        a party the rules apply to: provider, controller, undertaking
+#   person       a natural or legal person, the persons affected
+
+# authority
+autoriteit	authority
+toezichthouder	authority
+inspectie	authority
+overheidsinstantie	authority
+
+# institution
+commissie	institution
+parlement	institution
+raad	institution
+hof	institution
+gerecht	institution
+rechter	institution
+rechtbank	institution
+
+# state
+lidstaat	state
+lidstaten	state
+staten	state
+overheid	state
+regering	state
+minister	state
+gemeente	state
+provincie	state
+burgemeester	state
+
+# body
+instantie	body
+orgaan	body
+organen	body
+comite	body
+bureau	body
+board	body
+forum	body
+panel	body
+agentschap	body
+instelling	body
+subgroep	body
+college	body
+
+# office
+voorzitter	office
+secretariaat	office
+functionaris	office
+lid	office
+leden	office
+personeel	office
+deskundige	office
+
+# party
+aanbieder	party
+verantwoordelijke	party
+verwerker	party
+distributeur	party
+importeur	party
+fabrikant	party
+operator	party
+gemachtigde	party
+vertegenwoordiger	party
+onderneming	party
+onderaannemer	party
+organisatie	party
+vereniging	party
+concern	party
+kerk	party
+derde	party
+partij	party
+kmo	party
+exploitant	party
+beheerder	party
+houder	party
+gebruiker	party
+werkgever	party
+aanvrager	party
+ontvanger	party
+deelnemer	party
+
+# person
+persoon	person
+personen	person
+betrokkene	person
+eenieder	person
+iedereen	person
+burger	person
+consument	person
+werknemer	person
+belanghebbende	person
+indiener	person
+
+# not actors, although they end like one
+voorraad	-
+beraad	-
+verantwoordelijkheid	-
