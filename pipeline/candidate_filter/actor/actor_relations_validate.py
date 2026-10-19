@@ -1,21 +1,31 @@
 """
 Actor filter, Step 3 validation: review the relations between actor IDs.
 
-  sample  draws pairs of actor IDs with the relation the system gives them and
-          writes a review workbook (Instructions, Review, Scores, Labels).
-  score   reads the filled workbook: agreement per relation, sign errors,
-          missed relations, score error and a confusion matrix.
+  sample  draws pairs of actor IDs with the score level the system gives them
+          and writes a review workbook (Instructions, Review, Scores, Labels).
+  score   reads the filled workbook: agreement per level, sign errors, missed
+          relations, score error and a confusion matrix.
+
+Score levels (as in actor_scores.py)
+  same         1.0   the same actor (same ID, or the same actor in two documents)
+  nested       0.7   one actor is a kind of, or belongs to, the other
+                     (subtype, two-step subtype, part of); with a direction:
+                     'nested: A in B' or 'nested: B in A'
+  weak         0.2   two kinds of the same actor (sibling), or tied roles
+  different   -0.25  clearly different actors
+  unknown      0     system only: the IDs never share a document
 
 What is reviewed
   One case is one pair of actor IDs, with the relation the system gives it:
-    found     a relation in actor_relations.jsonl (subtype, part_of, sibling, ...)
+    found     a relation in actor_relations.jsonl (nested or weak; the detailed
+              relation - subtype, part_of, sibling - is shown for information)
     different no relation, and both IDs valid in a common document (-0.25)
     unknown   no relation, and the IDs never share a document (0)
-  The reviewer chooses the correct relation from the same list of labels.
+  The reviewer chooses the correct level from the same list.
 
 How cases are drawn (default 40)
   found      16  all found relations are few, so they are spread over the
-                 labels (round robin) and checked almost completely
+                 detailed relations (round robin) and checked almost completely
   different  14  drawn with probability proportional to the number of norm
   unknown    10  pairs the ID pair affects, so frequent pairs (Commissie ~
                  lidstaat) are more likely; the plain share of errors in these
@@ -24,10 +34,11 @@ How cases are drawn (default 40)
   strata answer "which relations are missing?" (misses), weighted by impact.
 
 Scores
-  agreement        reviewer label = system label (direction included)
+  agreement        reviewer level = system level, direction included
+  level agreement  the same, ignoring the direction of nested pairs
   sign agreement   reviewer and system score have the same sign (+, 0, -)
-  missed relation  system 'different'/'unknown', reviewer gives a positive label
-  score error      mean |system score - score of the reviewer's label|
+  missed relation  system 'different'/'unknown', reviewer gives a positive level
+  score error      mean |system score - score of the reviewer's level|
   each with a 95% Wilson interval in 'score'.
 
 Inputs (in --dir)
@@ -57,29 +68,32 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 from actor_lexicon import in_scope
 
-# Relation labels as the reviewer sees them, with their scores.
+# Score levels as the reviewer sees them, with their scores (actor_scores.py).
 # 'A' and 'B' are the two actors of the row.
 LABELS = [
-    ("same / equivalent", 1.0, "the same actor, or the same actor under two documents"),
-    ("instance: A is B", 0.9, "A is the named body that fills role B (or the reverse)"),
-    ("subtype: A is a kind of B", 0.8, "every A is a B"),
-    ("subtype: B is a kind of A", 0.8, "every B is an A"),
-    ("subtype, two steps: A ... B", 0.6, "A is a kind of a kind of B"),
-    ("subtype, two steps: B ... A", 0.6, "B is a kind of a kind of A"),
-    ("part of: A in B", 0.5, "A belongs to B (chair of a board, office of the Commission)"),
-    ("part of: B in A", 0.5, "B belongs to A"),
-    ("can be the same entity", 0.4, "different roles often held by one organisation"),
-    ("linked roles", 0.2, "different actors whose roles are tied (controller and processor)"),
-    ("sibling", 0.15, "two kinds of the same actor (provider and importer)"),
+    ("same", 1.0, "the same actor, also when it is the same actor in two documents"),
+    ("nested: A in B", 0.7, "A is a kind of B, a kind of a kind of B, or belongs to B "
+                            "(the chair of a board, an office of the Commission)"),
+    ("nested: B in A", 0.7, "B is a kind of A, or belongs to A"),
+    ("weak", 0.2, "two kinds of the same actor (provider and importer), or roles that are "
+                  "tied or often held by one organisation (controller and processor)"),
     ("different", -0.25, "clearly different actors"),
     ("unknown", 0.0, "used by the system only: the IDs never share a document"),
 ]
 REVIEW_LABELS = [l for l, _, _ in LABELS if l != "unknown"] + ["unsure"]
 SCORE = {l: s for l, s, _ in LABELS}
-SYSTEM_LABEL = {"subtype": "subtype: A is a kind of B", "subtype2": "subtype, two steps: A ... B",
-                "part_of": "part of: A in B", "sibling": "sibling", "same": "same / equivalent",
-                "equivalent": "same / equivalent", "instance": "instance: A is B",
-                "can_be_same": "can be the same entity", "linked": "linked roles"}
+# detailed relation (actor_relations.jsonl, oriented 'a <relation> b') -> level
+SYSTEM_LABEL = {"same": "same", "equivalent": "same",
+                "subtype": "nested: A in B", "subtype2": "nested: A in B",
+                "part_of": "nested: A in B", "instance": "nested: A in B",
+                "sibling": "weak", "can_be_same": "weak", "linked": "weak"}
+
+
+def level(label: str) -> str:
+    """Level without the direction ('nested: A in B' -> 'nested')."""
+    return (label or "").split(":")[0].strip()
+
+
 QUOTA_40 = {"found": 16, "different": 14, "unknown": 10}
 STRATA = list(QUOTA_40)
 
@@ -93,10 +107,12 @@ COLS = [  # header, width; review columns are filled by the reviewer
     ("case", 6), ("stratum", 10), ("documents", 14),
     ("actor A", 26), ("A: definition or source", 50), ("A: as written in norms", 30),
     ("actor B", 26), ("B: definition or source", 50), ("B: as written in norms", 30),
-    ("system: relation", 26), ("system: score", 9), ("system: evidence", 36),
+    ("system: relation", 18), ("system: detail", 12), ("system: score", 9),
+    ("system: evidence", 36),
     ("norm pairs affected", 10),
     ("REVIEW: correct relation", 28), ("REVIEW: notes", 30),
-    ("reviewer score", 9), ("agrees", 8), ("same sign", 8), ("score error", 8),
+    ("reviewer score", 9), ("agrees", 8), ("same level", 8), ("same sign", 8),
+    ("score error", 8),
 ]
 C = {h: i + 1 for i, (h, _) in enumerate(COLS)}
 FIRST = 2
@@ -152,14 +168,16 @@ def population(entries, relations, norms):
         r = rel.get((a, b)) or rel.get((b, a))
         if r:
             a, b = r["a"], r["b"]          # orient as the relation: A rel B
-            stratum, label, ev = "found", SYSTEM_LABEL.get(r["relation"], r["relation"]), \
+            stratum, label, ev = "found", SYSTEM_LABEL.get(r["relation"], "weak"), \
                 f"{r['source']}: {r['evidence']}"
+            detail = r["relation"]
             docs = r["documents"]
         else:
             docs = common_docs(a, b)
             stratum = "different" if docs else "unknown"
-            label, ev = stratum, ""
-        out.append({"a": a, "b": b, "stratum": stratum, "label": label, "evidence": ev,
+            label, ev, detail = stratum, "", ""
+        out.append({"a": a, "b": b, "stratum": stratum, "label": label, "detail": detail,
+                    "evidence": ev,
                     "documents": docs or sorted(docs_of[a] | docs_of[b]),
                     "weight": uses[a] * uses[b]})
     return out, by_id, written
@@ -167,11 +185,11 @@ def population(entries, relations, norms):
 
 def draw(pop, quota, rng):
     picked = []
-    # found: round robin over labels, pairs used in norms first
+    # found: round robin over the detailed relations, pairs used in norms first
     found = defaultdict(list)
     for p in pop:
         if p["stratum"] == "found":
-            found[p["label"]].append(p)
+            found[p["detail"]].append(p)
     for lst in found.values():
         rng.shuffle(lst)
         lst.sort(key=lambda p: p["weight"] == 0)
@@ -217,17 +235,18 @@ def write(cases, by_id, written, shares, out: Path):
     text = [
         ("Actor relation review", True),
         ("", False),
-        ("Each row of the Review sheet is a pair of actors (A and B) and the relation the system "
-         "gives them. Choose the correct relation in the yellow column, using the definitions "
-         "and how the actors are written in the norms. Judge the legal relation between the "
-         "two actors, not whether two particular norms conflict.", False),
-        ("The Labels sheet lists every relation with its score. Mind the direction: "
-         "'subtype: A is a kind of B' is not the same as 'B is a kind of A'.", False),
+        ("Each row of the Review sheet is a pair of actors (A and B) and the score level the "
+         "system gives them. Choose the correct level in the yellow column, using the "
+         "definitions and how the actors are written in the norms. Judge the legal relation "
+         "between the two actors, not whether two particular norms conflict.", False),
+        ("Levels: same (1.0), nested (0.7), weak (0.2), different (-0.25); the Labels sheet "
+         "explains each. Mind the direction of nested: 'nested: A in B' means A is a kind of B "
+         "or belongs to B. 'system: detail' shows the relation behind the system's level.", False),
         ("Strata: 'found' rows check relations the system found; 'different' and 'unknown' "
          "rows check pairs where it found none, to see which relations are missing.", False),
         ("", False),
         ("Fill in (yellow cells only)", True),
-        ("REVIEW: correct relation - one label from the list, or 'unsure'.", False),
+        ("REVIEW: correct relation - one level from the list, or 'unsure'.", False),
         ("REVIEW: notes - for example the article that shows the relation.", False),
         ("The grey columns after the notes are filled in by formulas.", False),
         ("", False),
@@ -238,18 +257,18 @@ def write(cases, by_id, written, shares, out: Path):
         c.font = Font(name=FONT, bold=b, size=12 if i == 1 else 10)
         c.alignment = Alignment(wrap_text=True, vertical="top")
     r = len(text) + 1
-    header(ws, r, [h for h, _ in COLS[:15]])
+    header(ws, r, [h for h, _ in COLS[:16]])
     ex = ["0", "found", "32016R0679", "32016R0679:betrokken_toezichthoudende_autoriteit", "...",
           "betrokken toezichthoudende autoriteit", "32016R0679:toezichthoudende_autoriteit", "...",
-          "toezichthoudende autoriteit", "subtype: A is a kind of B", "0.8", "label: ...", "120",
-          "subtype: A is a kind of B", ""]
+          "toezichthoudende autoriteit", "nested: A in B", "subtype", "0.7", "label: ...", "120",
+          "nested: A in B", ""]
     for j, v in enumerate(ex, start=1):
         c = ws.cell(row=r + 1, column=j, value=v)
         c.font, c.border = Font(name=FONT, italic=True, color="808080"), BORDER
     ws.column_dimensions["A"].width = 110
 
     lab = wb.create_sheet("Labels")
-    header(lab, 1, ["relation", "score", "meaning"])
+    header(lab, 1, ["level", "score", "meaning"])
     for i, (l, s, m) in enumerate(LABELS + [("unsure", None, "the reviewer cannot decide")],
                                   start=2):
         for j, v in enumerate((l, s, m), start=1):
@@ -273,7 +292,8 @@ def write(cases, by_id, written, shares, out: Path):
                 "actor A": c["a"], "A: definition or source": describe(ea),
                 "A: as written in norms": wa, "actor B": c["b"],
                 "B: definition or source": describe(eb), "B: as written in norms": wb_,
-                "system: relation": c["label"], "system: score": SCORE.get(c["label"], 0.0),
+                "system: relation": c["label"], "system: detail": c.get("detail", ""),
+                "system: score": SCORE.get(c["label"], 0.0),
                 "system: evidence": c["evidence"][:200], "norm pairs affected": c["weight"]}
         for h, v in vals.items():
             rv.cell(row=r, column=C[h], value=v)
@@ -283,6 +303,9 @@ def write(cases, by_id, written, shares, out: Path):
                 value=f'=IF(OR({n}{r}="",{n}{r}="unsure"),"",INDEX({SCR},MATCH({n}{r},{LBL},0)))')
         rv.cell(row=r, column=C["agrees"],
                 value=f'=IF({rs}{r}="","",IF({n}{r}={sl}{r},1,0))')
+        rv.cell(row=r, column=C["same level"],
+                value=f'=IF({rs}{r}="","",IF(LEFT({n}{r},FIND(":",{n}{r}&":")-1)='
+                      f'LEFT({sl}{r},FIND(":",{sl}{r}&":")-1),1,0))')
         rv.cell(row=r, column=C["same sign"],
                 value=f'=IF({rs}{r}="","",IF(SIGN({rs}{r})=SIGN({s}{r}),1,0))')
         rv.cell(row=r, column=C["score error"],
@@ -307,8 +330,10 @@ def write(cases, by_id, written, shares, out: Path):
     rng = lambda h: f"Review!${col(h)}${FIRST}:${col(h)}${last}"
     ST, RS = rng("stratum"), rng("reviewer score")
     AG, SG, SE, SS = rng("agrees"), rng("same sign"), rng("score error"), rng("system: score")
+    SL = rng("same level")
     header(sc, 3, ["stratum", "cases", "reviewed", "agreement", "same sign",
-                   "positive per reviewer", "mean score error", "share of all ID pairs"])
+                   "positive per reviewer", "mean score error", "share of all ID pairs",
+                   "same level (no direction)"])
     for i, s in enumerate(STRATA):
         r = 4 + i
         sc.cell(row=r, column=1, value=s)
@@ -319,19 +344,24 @@ def write(cases, by_id, written, shares, out: Path):
         sc.cell(row=r, column=6, value=f'=IF(C{r}=0,"",COUNTIFS({ST},A{r},{RS},">0")/C{r})')
         sc.cell(row=r, column=7, value=f'=IF(C{r}=0,"",SUMIFS({SE},{ST},A{r})/C{r})')
         sc.cell(row=r, column=8, value=round(shares.get(s, 0), 4)).font = Font(name=FONT, color="0000FF")
+        c9 = sc.cell(row=r, column=9, value=f'=IF(C{r}=0,"",SUMIFS({SL},{ST},A{r})/C{r})')
+        c9.font, c9.number_format = Font(name=FONT), "0.0%"
     sc.cell(row=7, column=1, value="all")
     sc["B7"], sc["C7"] = "=SUM(B4:B6)", "=SUM(C4:C6)"
     sc["D7"] = f'=IF(C7=0,"",SUM({AG})/C7)'
     sc["E7"] = f'=IF(C7=0,"",SUM({SG})/C7)'
     sc["F7"] = f'=IF(C7=0,"",COUNTIF({RS},">0")/C7)'
     sc["G7"] = f'=IF(C7=0,"",SUM({SE})/C7)'
+    sc["I7"] = f'=IF(C7=0,"",SUM({SL})/C7)'
+    sc["I7"].number_format = "0.0%"
     sc["A9"] = "Reading the strata"
     notes = [
-        "found: agreement = precision of the relations the system found.",
+        "found: agreement = precision of the levels the system gives its relations "
+        "(direction included); 'same level' ignores the direction of nested pairs.",
         "different, unknown: 'positive per reviewer' = share of affected norm pairs whose "
         "relation the system misses (pairs were drawn in proportion to norm pairs affected).",
         "same sign: system and reviewer agree on +, 0 or -; a pair the system calls 'unknown' (0) "
-        "never has the same sign as a reviewed label, so read 'unknown' by the column F.",
+        "never has the same sign as a reviewed level, so read 'unknown' by the column F.",
         "share of all ID pairs (blue): share of all ID pairs in each stratum when the sample was "
         "drawn, computed by actor_relations_validate.py.",
     ]
@@ -350,7 +380,7 @@ def write(cases, by_id, written, shares, out: Path):
     sc.cell(row=4, column=8).number_format = sc.cell(row=5, column=8).number_format = \
         sc.cell(row=6, column=8).number_format = "0.0%"
     sc.column_dimensions["A"].width = 30
-    for letter in "BCDEFGH":
+    for letter in "BCDEFGHI":
         sc.column_dimensions[letter].width = 14
 
     wb._sheets = [wb[n] for n in ("Instructions", "Review", "Scores", "Labels")]
@@ -404,6 +434,7 @@ def cmd_score(args):
             continue
         rev = (r[ix["REVIEW: correct relation"]] or "").strip()
         rows.append({"stratum": r[ix["stratum"]], "system": r[ix["system: relation"]],
+                     "detail": r[ix["system: detail"]] if "system: detail" in ix else "",
                      "a": r[ix["actor A"]], "b": r[ix["actor B"]], "review": rev,
                      "s_sys": SCORE.get(r[ix["system: relation"]], 0.0),
                      "s_rev": SCORE.get(rev) if rev in SCORE else None})
@@ -426,6 +457,8 @@ def cmd_score(args):
             continue
         print(f"{s} ({len(sub)} reviewed)")
         d = {"agreement": line("agreement", sum(x["review"] == x["system"] for x in sub), len(sub)),
+             "same_level": line("same level (no direction)",
+                                sum(level(x["review"]) == level(x["system"]) for x in sub), len(sub)),
              "same_sign": line("same sign", sum(sign(x["s_rev"]) == sign(x["s_sys"]) for x in sub),
                                len(sub)),
              "positive": line("positive per reviewer", sum(x["s_rev"] > 0 for x in sub), len(sub)),
@@ -455,6 +488,16 @@ def cmd_score(args):
     print("\nSystem -> reviewer:")
     for (a, b), v in conf.most_common():
         print(f"  {v:>3}  {a}  ->  {b}")
+    found = [x for x in done if x["stratum"] == "found" and x["detail"]]
+    if found:
+        by_detail = defaultdict(lambda: [0, 0])
+        for x in found:
+            by_detail[x["detail"]][0] += x["review"] == x["system"]
+            by_detail[x["detail"]][1] += 1
+        rep["found_by_detail"] = {k: {"agree": a, "n": n} for k, (a, n) in by_detail.items()}
+        print("\nFound relations by detail (agreement):")
+        for k, (a, n) in sorted(by_detail.items()):
+            print(f"  {k:<10} {a}/{n}")
     out = Path(str(args.file) + ".scores.json")
     out.write_text(json.dumps(rep, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n-> {out}")

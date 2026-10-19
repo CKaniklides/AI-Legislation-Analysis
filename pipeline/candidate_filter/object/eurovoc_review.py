@@ -10,6 +10,12 @@ example norm, and a text excerpt around the object for context.
 A stratified sample is marked (in_sample = yes) so you can judge a manageable
 subset first: --per-stratum objects from each of
   phrase, head, compound, embedding (three percentile bands), unmapped.
+Within each stratum the picks are spread over the Step 6 norm types (the
+--type-field of the norms behind a text, e.g. unchanged / cleaned / split),
+taking turns so that rare types are not missed. Norms that kept no unit at all
+(e.g. no_object, placeholder, crossref_only) never reach the mapping; they get
+their own strata 'no unit: <type>' with --per-empty-type norms each, to check
+that the object was rightly dropped.
 The Summary sheet computes precision per stratum with formulas, updating as
 you fill in the 'judgement' column.
 
@@ -22,6 +28,8 @@ Sheets
 Usage
   python eurovoc_review.py --records <norm records>
   python eurovoc_review.py --records <norm records> --per-stratum 15 --seed 1
+  python eurovoc_review.py --records <norm records> --per-stratum 15 --per-empty-type 5
+  python eurovoc_review.py --records <norm records> --all-rows   (all texts, sample marked)
 Output: <dir>/mapping_review.xlsx
 """
 
@@ -136,6 +144,15 @@ def main() -> None:
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--excerpt-chars", type=int, default=150)
     p.add_argument("--out", type=Path, default=None)
+    p.add_argument("--type-field", default="level",
+                   help="field with the Step 6 norm type in norm_object_mapping.jsonl or --units")
+    p.add_argument("--units", type=Path, default=None,
+                   help="Step 6 norm_object_units.jsonl, read for the norm type if the "
+                        "mapping file does not have it")
+    p.add_argument("--per-empty-type", type=int, default=5,
+                   help="sampled norms per type for norms without any unit (0 = skip)")
+    p.add_argument("--all-rows", action="store_true",
+                   help="write every mapped text to Validate, not only the sample")
     args = p.parse_args()
     out = args.out or args.dir / "mapping_review.xlsx"
 
@@ -160,15 +177,52 @@ def main() -> None:
         for t in dict.fromkeys(texts):
             norms_per_text[t].append((str(n["norm_id"]), n["object"]))
 
+    # Step 6 norm type per norm
+    type_by_norm = {str(n["norm_id"]): n.get(args.type_field) for n in norms}
+    if not any(type_by_norm.values()) and args.units:
+        for u in load_jsonl(args.units):
+            type_by_norm[str(u["norm_id"])] = u.get(args.type_field)
+    if not any(type_by_norm.values()):
+        raise SystemExit(
+            f"No '{args.type_field}' field found in norm_object_mapping.jsonl"
+            f"{' or ' + str(args.units) if args.units else ''}. Pass --units <Step 6 "
+            f"norm_object_units.jsonl> or --type-field <name>. "
+            f"Fields in the mapping file: {sorted(norms[0]) if norms else []}")
+    for n in norms:
+        k = str(n["norm_id"])
+        type_by_norm[k] = type_by_norm[k] or ("no_object" if not n["object"] else "unknown")
+    type_freq = Counter(type_by_norm.values())
+
     rows = []
     for r in objects:
         uses = norms_per_text.get(r["object"], [])
         ex_id, raw = uses[0] if uses else ("", "")
+        types = sorted({type_by_norm[nid] for nid, _ in uses}) or ["unknown"]
         rows.append({**r, "stratum": stratum_of(r, bands), "n_norms": len(uses),
+                     "types": types,
+                     # the rarest type decides how the text is spread in the sample
+                     "ptype": min(types, key=lambda t: (type_freq[t], t)),
                      "raw_object": raw if raw != r["object"] else "",
                      "example_norm": ex_id,
                      "context": excerpt(paragraph_by_id.get(ex_id), raw or r["object"],
                                         args.excerpt_chars)})
+    # Norms that kept no unit: one row per norm, raw object shown as object
+    empty_types = []
+    if args.per_empty_type > 0:
+        for n in norms:
+            has_unit = bool(n["units"]) if "units" in n else bool(n["object"])
+            if has_unit:
+                continue
+            t = type_by_norm[str(n["norm_id"])]
+            nid = str(n["norm_id"])
+            rows.append({"object": n["object"] or "", "raw_object": "", "head": None,
+                         "level": None, "matched_label": None, "candidates": [],
+                         "stratum": f"no unit: {t}", "n_norms": 1, "types": [t], "ptype": t,
+                         "example_norm": nid,
+                         "context": excerpt(paragraph_by_id.get(nid), n["object"] or "",
+                                            args.excerpt_chars)})
+        empty_types = sorted({r["types"][0] for r in rows if r["stratum"].startswith("no unit")})
+    strata_order += [f"no unit: {t}" for t in empty_types]
 
     # Stratified sample
     rng = random.Random(args.seed)
@@ -177,13 +231,30 @@ def main() -> None:
         by_stratum[r["stratum"]].append(i)
     sample = set()
     for s, idx in by_stratum.items():
-        sample.update(rng.sample(idx, min(args.per_stratum, len(idx))))
+        want = args.per_empty_type if s.startswith("no unit") else args.per_stratum
+        groups = defaultdict(list)
+        for i in idx:
+            groups[rows[i]["ptype"]].append(i)
+        queues = []
+        for t in sorted(groups):
+            g = groups[t]
+            rng.shuffle(g)
+            queues.append(g)
+        picked = []
+        while len(picked) < want and any(queues):   # take turns over the types
+            for q in queues:
+                if q and len(picked) < want:
+                    picked.append(q.pop())
+        sample.update(picked)
     order = {s: i for i, s in enumerate(strata_order)}
     rows_sorted = sorted(
         enumerate(rows),
         key=lambda x: (x[0] not in sample, order.get(x[1]["stratum"], 99),
                        -((x[1]["candidates"] or [{}])[0].get("percentile") or 0),
                        x[1]["object"].lower()))
+    counts = Counter(r["stratum"] for r in rows)
+    if not args.all_rows:
+        rows_sorted = [x for x in rows_sorted if x[0] in sample]
 
     wb = Workbook()
 
@@ -210,6 +281,9 @@ def main() -> None:
         ("stratum     – cascade level; embedding matches are split into three percentile bands.", False),
         ("object      – the text that was mapped (a cleaned unit from Step 6).", False),
         ("raw_object  – the original object it came from, if different (judge the unit in that light).", False),
+        ("norm_type   – Step 6 type of the norms that contain this text (unchanged, cleaned, split, …).", False),
+        ("no unit: …  – strata of norms that kept no unit; object shows the raw object (empty for no_object).", False),
+        ("              Judge: correct = rightly no unit; wrong = a real object was lost.", False),
         ("level       – phrase / head / compound / embedding, or empty if unmapped.", False),
         ("cand_n, conf_n – candidate concept label and its confidence.", False),
         ("pct_1       – percentile of candidate 1 in the Step 4 top-1 distribution (embedding only).", False),
@@ -237,7 +311,7 @@ def main() -> None:
 
     # ---------------- Validate ----------------
     ws = wb.create_sheet("Validate")
-    headers = ["in_sample", "stratum", "object", "raw_object", "head", "level", "matched_label",
+    headers = ["in_sample", "stratum", "object", "raw_object", "norm_type", "head", "level", "matched_label",
                "cand_1", "conf_1", "pct_1", "cand_2", "conf_2", "cand_3", "conf_3",
                "n_norms", "example_norm", "context",
                "judgement", "better_concept", "notes"]
@@ -247,7 +321,8 @@ def main() -> None:
         cands = (r["candidates"] or []) + [{}] * 3
         ws.append([
             None,  # in_sample, filled in below
-            r["stratum"], r["object"], r["raw_object"], r["head"], r["level"], r["matched_label"],
+            r["stratum"], r["object"], r["raw_object"], ", ".join(r["types"]),
+            r["head"], r["level"], r["matched_label"],
             cands[0].get("label"), cands[0].get("confidence"), cands[0].get("percentile"),
             cands[1].get("label"), cands[1].get("confidence"),
             cands[2].get("label"), cands[2].get("confidence"),
@@ -277,7 +352,7 @@ def main() -> None:
     dv.add(f"{jcol}2:{jcol}{last}")
     ws.freeze_panes = "D2"
     ws.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{last}"
-    widths = {"in_sample": 11, "stratum": 18, "object": 40, "raw_object": 40, "head": 16,
+    widths = {"in_sample": 11, "stratum": 18, "object": 40, "raw_object": 40, "norm_type": 16, "head": 16,
               "level": 11, "matched_label": 16, "cand_1": 26, "conf_1": 8, "pct_1": 7,
               "cand_2": 22, "conf_2": 8, "cand_3": 22, "conf_3": 8, "n_norms": 9,
               "example_norm": 18, "context": 60, "judgement": 12, "better_concept": 22,
@@ -295,7 +370,7 @@ def main() -> None:
     style_header(ws, 1, len(sum_headers))
     for i, s in enumerate(strata_order, start=2):
         ws.cell(row=i, column=1, value=s)
-        ws.cell(row=i, column=2, value=f'=COUNTIFS({scol},A{i})')
+        ws.cell(row=i, column=2, value=counts.get(s, 0))  # population, not rows in Validate
         ws.cell(row=i, column=3, value=f'=COUNTIFS({scol},A{i},{srng},"yes")')
         ws.cell(row=i, column=4, value=f'=COUNTIFS({scol},A{i},{jrng},"<>")')
         for j, code in enumerate(JUDGEMENTS, start=5):
@@ -318,40 +393,57 @@ def main() -> None:
     note_row = tot + 2
     notes = [
         "Precision excludes 'unclear'. Strict = correct only; lenient = correct + partial.",
-        "For 'unmapped', precision means: share of objects rightly left unmapped.",
+        "For 'unmapped', precision means: share of objects rightly left unmapped. "
+        "For 'no unit' strata: share of norms that rightly have no unit.",
         f"Embedding bands split the range above the fallback percentile ({threshold:g}) into three equal parts.",
-        "Precision on a sample of ~10 per stratum is a rough indication (±15 points or so); judge more rows where decisions depend on it.",
+        f"'objects' is the full count per stratum; Validate holds {'all of them' if args.all_rows else 'only the sample'}.",
+        f"With {args.per_stratum} judged per stratum, precision per stratum is a rough indication "
+        f"(about ±{round(98 / args.per_stratum ** 0.5)} points at worst, 95%); the total is much tighter.",
     ]
     for k, t in enumerate(notes):
         ws.cell(row=note_row + k, column=1, value=t).font = Font(name=FONT, italic=True)
+    cov_row = note_row + len(notes) + 1
+    ws.cell(row=cov_row, column=1, value="norm_type")
+    ws.cell(row=cov_row, column=2, value="norms")
+    ws.cell(row=cov_row, column=3, value="rows in sample")
+    style_header(ws, cov_row, 3)
+    for k, t in enumerate(sorted(type_freq, key=lambda t: -type_freq[t]), start=1):
+        ws.cell(row=cov_row + k, column=1, value=t).font = Font(name=FONT)
+        ws.cell(row=cov_row + k, column=2, value=type_freq[t]).font = Font(name=FONT)
+        ws.cell(row=cov_row + k, column=3,
+                value=sum(1 for i in sample if t in rows[i]["types"])).font = Font(name=FONT)
     set_widths(ws, {"A": 22, "B": 9, "C": 10, "D": 8, "E": 8, "F": 8, "G": 8, "H": 8,
                     "I": 17, "J": 18})
 
     # ---------------- Norms ----------------
     ws = wb.create_sheet("Norms")
-    nh = ["norm_id", "object", "units", "level", "cand_1", "conf_1", "cand_2", "cand_3"]
+    nh = ["norm_id", "object", "units", "level", "cand_1", "conf_1", "cand_2", "cand_3", "norm_type"]
     ws.append(nh)
     style_header(ws, 1, len(nh))
     for n in norms:
         c = (n["candidates"] or []) + [{}] * 3
         units = " | ".join(u["text"] for u in n.get("units") or [])
         ws.append([n["norm_id"], n["object"], units, n["level"], c[0].get("label"),
-                   c[0].get("confidence"), c[1].get("label"), c[2].get("label")])
+                   c[0].get("confidence"), c[1].get("label"), c[2].get("label"),
+                   type_by_norm[str(n["norm_id"])]])
     for row in ws.iter_rows(min_row=2):
         for cell in row:
             cell.font = Font(name=FONT)
             cell.alignment = Alignment(vertical="top", wrap_text=(cell.column in (2, 3)))
     ws.freeze_panes = "B2"
-    ws.auto_filter.ref = f"A1:H{len(norms) + 1}"
-    set_widths(ws, {"A": 22, "B": 50, "C": 35, "D": 11, "E": 26, "F": 8, "G": 22, "H": 22})
+    ws.auto_filter.ref = f"A1:I{len(norms) + 1}"
+    set_widths(ws, {"A": 22, "B": 50, "C": 35, "D": 11, "E": 26, "F": 8, "G": 22, "H": 22,
+                    "I": 16})
 
     wb.active = wb.sheetnames.index("Validate")
     wb.save(out)
-    counts = Counter(r["stratum"] for r in rows)
     print(f"Wrote {out}")
-    print(f"Mapped texts: {len(rows)}, in sample: {len(sample)}")
+    print(f"Mapped texts: {len(objects)}, norms without a unit: {len(rows) - len(objects)}, in sample: {len(sample)}, rows in Validate: {len(rows_sorted)}")
     for s in strata_order:
         print(f"  {s:<22} {counts.get(s, 0):>5}")
+    print("Norm types (norms / sampled rows containing the type):")
+    for t in sorted(type_freq, key=lambda t: -type_freq[t]):
+        print(f"  {t:<22} {type_freq[t]:>5} {sum(1 for i in sample if t in rows[i]['types']):>5}")
 
 
 if __name__ == "__main__":
