@@ -38,54 +38,56 @@ Design constraints, all from the architecture doc, none optional:
     amendments to other laws and 13-14 are final provisions, neither in scope for norm
     extraction).
 
+Outputs (2026-09-29: one set of files per document; the source files are never modified):
+    data/stage_4/stage4_{name}_norms.json               the source provisions + their norms[]
+    data/stage_4/stage4_{name}_norms_review_queue.json  units still unresolved for that document
+    data/stage_4/stage4_{name}_norms_unresolved.json    units --resolve-queue had to drop
+`{name}` is SourceSpec.name (GDPR, NIS2, DORA, AI_act, Cbw, ...). If the norms file
+already exists a run resumes from it; otherwise it starts from the source file. To
+re-extract a document from scratch use --rewrite (below): it wipes that document's
+stage4_{name}_* files and starts over from the source file with every norm stripped.
+
 Usage:
     python extract_norms.py --dry-run          # verify scope/counts, no API key needed
     python extract_norms.py --only "Cbw"       # run one source
     python extract_norms.py --limit 5          # smoke-test on the first 5 units total
     python extract_norms.py                    # run the full anchor set
+    python extract_norms.py --rewrite --only "GDPR"   # wipe GDPR's stage-4 files, re-extract
+    python extract_norms.py --rewrite --dry-run       # show what a rewrite would wipe, change nothing
 """
 import argparse
 import json
+import os
 import re
 import sys
 import threading
+import unicodedata
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
-_HERE = Path(__file__).resolve().parent
-_PIPELINE = _HERE.parent
-for _d in (_PIPELINE, _PIPELINE / "c1", _PIPELINE / "preprocessing", _PIPELINE / "c2"):
-    if str(_d) not in sys.path:
-        sys.path.insert(0, str(_d))
 from typing import Callable, Literal, Optional
 
 from dotenv import load_dotenv
+from parse_deadline import _parse_deadline
 
-# Windows consoles routinely default to a legacy codepage (e.g. cp1253) that can't
-# encode the Dutch legal text this script prints (curly quotes, non-breaking spaces,
-# accented characters) -- confirmed directly: a real run crashed mid-way through
-# resolve_queue_conservatively() on an ordinary print() over real deadline text,
-# losing no data (writes had already happened) but stopping before completion for a
-# reason that had nothing to do with the extraction logic itself.
+# import truststore
+# truststore.inject_into_ssl()
+
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from pydantic import BaseModel
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 load_dotenv(ROOT / ".env")  # picks up OPENAI_API_KEY from a .env file in the project root
-
+NEW_NORM_DIR = ROOT / "data" / "new_norms"  # every file this script creates lives here
 DEFAULT_MODEL = "gpt-5.6-luna"  # single config value -- see module docstring
 
 
-# ---------------------------------------------------------------------------
-# The norms[] entry schema (architecture doc Part 3.1), split into what the
-# model produces (ExtractedNorm) and the deterministic post-processing that
-# turns it into the documented entry shape (see _finalize_norm below).
-# ---------------------------------------------------------------------------
-
+# "NO NORM" removed: a non-normative unit is represented ONLY as {"norms": []}.
+# One representation means the two passes cannot "disagree" about the same thing.
 Deontic = Literal[
-    "OBLIGATION", "PROHIBITION", "PERMISSION", "DEFINITION",
-    "COMPETENCE", "DEFERENCE", "PROCEDURAL", "NONE",
+    "OBLIGATION", "PROHIBITION", "PERMISSION", "EXEMPTION", "DELEGATION",
+    "COMPETENCE", "RIGHT",
 ]
 
 # Deliberately a small, fixed vocabulary, not free text: C1's candidate-generation
@@ -99,207 +101,390 @@ AddresseeType = Literal[
 
 
 class ExtractedNorm(BaseModel):
-    """What the model returns for ONE independent norm. Verbatim-checked fields
-    (addressee, action, trigger_event, deadline_raw) are validated against the source
-    text by _verbatim_ok() below, never trusted outright.
+    """What the model returns for ONE independent norm. Verbatim fields (see
+    VERBATIM_SCALAR / VERBATIM_LIST) are validated against the source text by
+    _verbatim_violations(), never trusted outright.
 
     A single unit (paragraph, or whole article where there are no paragraphs) can
-    contain zero, one, or several of these (2026-09-24, item 3) -- see
-    ExtractedNormsResponse. Splitting a paragraph into independent norms is itself a
-    judgement call the model makes, same discipline as every other field here: not
-    verified line-by-line against a human annotation (that would need Stage 9's
-    labelled sample), but grounded the same way everything else in Stage 6 is --
-    verbatim spans, two independently-framed passes, disagreement queued rather than
-    silently guessed at."""
+    contain zero, one, or several of these -- see ExtractedNormsResponse."""
     deontic: Deontic
-    addressee: Optional[str]
-    addressee_type: Optional[AddresseeType]
+    actor: Optional[str]
+    # addressee_type: Optional[AddresseeType]
     trigger_event: Optional[str]
-    action: Optional[str]
-    recipient_body: list[str]
+    action_span: list[str]
+    action_lemma: Optional[str]          # normalised, NOT verbatim
+    object: Optional[str]
+    recipient: list[str]
     deadline_raw: Optional[str]  # e.g. "binnen 24 uur" -- parsed deterministically, not by the model
     thresholds: list[str]
     conditions: list[str]
-    deference: Optional[str]
-    extraction_confidence: float
 
 
 class ExtractedNormsResponse(BaseModel):
-    """The model's actual per-call response (2026-09-24, item 3): a paragraph
-    routinely bundles more than one independent duty in one sentence ("shall X, and
-    shall not disclose Y to any third party") -- the earlier one-ExtractedNorm-per-call
-    schema had no way to represent a second bundled duty at all; it was silently
-    dropped, not flagged, not queued, just never asked for. An empty list is a valid,
-    useful answer (a paragraph that states no independent rule at all -- pure
-    definitions, cross-references, procedural text)."""
+    """The model's per-call response. An empty list is the ONLY way to say that a
+    unit states no norm (definitions, scope, cross-references, procedural text)."""
     norms: list[ExtractedNorm]
 
 
-VERBATIM_FIELDS = ("addressee", "action", "trigger_event", "deadline_raw")
+# Must match ExtractedNorm exactly; checked at import by _check_field_lists().
+VERBATIM_SCALAR = ["actor", "object", "trigger_event", "deadline_raw"]
+VERBATIM_LIST = ["action_span", "recipient", "thresholds", "conditions"]
+VERBATIM_FIELDS = VERBATIM_SCALAR + VERBATIM_LIST
+
+
+# Typographic characters that occur in official texts (EUR-Lex / wetten.overheid.nl)
+# but that the model reproduces as plain ASCII: curly quotes and apostrophes
+# ("kmo’s", "“logs”"), dash variants and non-breaking hyphens. Mapped to one form on
+# BOTH sides of every comparison, so a correct span never fails on typography alone.
+_CHAR_MAP = str.maketrans({
+    "\u2018": "'", "\u2019": "'", "\u201a": "'", "\u201b": "'", "\u2032": "'", "`": "'",
+    "\u201c": '"', "\u201d": '"', "\u201e": '"', "\u201f": '"', "\u2033": '"',
+    "\u00ab": '"', "\u00bb": '"',
+    "\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "-", "\u2014": "-",
+    "\u2212": "-", "\u00ad": "",  # soft hyphen: invisible, dropped
+})
 
 
 def _normalize(s: str) -> str:
+    """Comparison form of a text span. NFKC first: it folds compatibility characters
+    such as the ligature 'ĳ' ("aansprakelĳkheidsverzekering", AI Act art. 31(9)) into
+    'ij' and non-breaking spaces into spaces; then typographic quotes and dashes are
+    mapped to ASCII, whitespace collapsed, and case folded."""
+    s = unicodedata.normalize("NFKC", s).translate(_CHAR_MAP)
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
-def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
+def _verbatim_violations(norm: ExtractedNorm, source_text: str) -> list[str]:
+    """Every verbatim span that is NOT a substring of the source; [] means all OK."""
     haystack = _normalize(source_text)
+    bad = []
     for field_name in VERBATIM_FIELDS:
-        span = getattr(norm, field_name)
-        if span is None:
-            continue
-        if _normalize(span) not in haystack:
-            return False
-    return True
+        value = getattr(norm, field_name)
+        spans = value if isinstance(value, list) else ([value] if value else [])
+        for span in spans:
+            if _normalize(span) not in haystack:
+                bad.append(f"{field_name}: {span!r}")
+    return bad
+
+
+def _verbatim_ok(norm: ExtractedNorm, source_text: str) -> bool:
+    return not _verbatim_violations(norm, source_text)
+
+
+def _check_field_lists() -> None:
+    fields = set(ExtractedNorm.model_fields)
+    unknown = set(VERBATIM_FIELDS) - fields
+    if unknown:
+        raise RuntimeError(f"VERBATIM_FIELDS names fields not in ExtractedNorm: {unknown}")
 
 
 # ---------------------------------------------------------------------------
-# Deterministic deadline parser. First-pass lexicon, same spirit as features.py's
-# RARITY_CUTOFF -- covers the phrasing actually seen in the anchor set (Cbw ch. 8,
-# GDPR 33/34, NIS2 23, DORA 17-23) and should be extended, not trusted as exhaustive,
-# once the review queue surfaces phrasing it doesn't recognise.
+# Prompting. Two independent framings of the same schema.
+# Field names in the prompt text must match ExtractedNorm exactly:
+#   deontic, actor, trigger_event, action_span, action_lemma, object, recipient,
+#   deadline_raw, thresholds, conditions.
 # ---------------------------------------------------------------------------
 
-# Numeric patterns are checked BEFORE the vague qualifiers below. Real drafting
-# routinely states both in one phrase -- "onverwijld of, indien dat niet mogelijk is,
-# binnen 24 uur ..." (Cbw art. 26), "zonder onredelijke vertraging en, indien mogelijk,
-# uiterlijk 72 uur ..." (GDPR art. 33) -- and the specific figure is the operative,
-# comparable deadline; "onverwijld"/"zonder onredelijke vertraging" is a qualifier on
-# it, not a competing deadline. Checking "onverwijld" first (the original ordering)
-# silently discarded the 24-hour figure whenever it appeared earlier in the string --
-# caught only by checking this parser's output against the project's own flagship
-# Cbw-vs-GDPR example, where it made the comparison impossible.
-_DEADLINE_PATTERNS: list[tuple[re.Pattern, Callable[[re.Match], dict]]] = [
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+uur\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "hour"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+(werk)?dag(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "day"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+we(e)?k(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "week"}),
-    (re.compile(r"\b(binnen|uiterlijk)\s+(\d+)\s+maand(en)?\b", re.I), lambda m: {"value": int(m.group(2)), "unit": "month"}),
-    # "onverwijld"/"onmiddellijk" are QUALITATIVE urgency standards ("as soon as
-    # reasonably possible"), not a literal commitment to act at time zero (2026-09-24
-    # fix) -- the old value=0 treated a judgment-call duty as if it were exactly as
-    # precise and comparable as a real numeric deadline like "binnen 24 uur". Given the
-    # same non-numeric treatment as "zo spoedig mogelijk" below (value=None, excluded
-    # from _deadline_hours() arithmetic in detect_c1_contradiction.py, same as "asap"
-    # already was) rather than a hardcoded fake zero.
-    (re.compile(r"\bonverwijld\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bonmiddellijk\b", re.I), lambda m: {"value": None, "unit": "qualitative_urgent"}),
-    (re.compile(r"\bzo\s+spoedig\s+mogelijk\b", re.I), lambda m: {"value": None, "unit": "asap"}),
+_ROLE = """You are an expert in Dutch and EU legislation. You extract norms from the \
+Dutch-language text of legal provisions. You process one unit (a paragraph, or an \
+article without numbered paragraphs) at a time.
+"""
+
+_DEONTIC_TYPES = """
+DEONTIC TYPES
+Assign exactly one type per norm.
+
+- OBLIGATION: the actor must perform the action. Markers: "moet", "is verplicht", \
+"is gehouden", "draagt zorg voor", "zorgt ervoor dat". IMPORTANT: in legislation the \
+plain present tense usually states an obligation, not a fact: "Onze Minister stelt de \
+subsidie vast", "De lidstaten zorgen ervoor dat ..." are OBLIGATIONS.
+- PROHIBITION: the actor must not perform the action. Markers: "het is verboden", \
+"mag niet", "niemand mag", "is niet toegestaan", or plain present tense with negation \
+("verstrekt geen ...").
+- PERMISSION: the actor may perform the action; an explicit grant of freedom. Markers: \
+"mag", "is toegestaan", and "kan" when the action is a factual act that does not change \
+anyone's legal position.
+- EXEMPTION: lifts an obligation or prohibition for a specific case or party. Markers: \
+"in afwijking van", "is niet van toepassing op", "geldt niet voor", "vrijstelling", \
+"ontheffing". The actor is the party that is exempted; the object is the lifted duty. \
+If the text only limits the scope of the whole act ("Deze wet is niet van toepassing \
+op ..."), it is NOT a norm.
+- COMPETENCE: the actor is competent to change legal positions: decide, grant, refuse, \
+revoke, impose, appoint, establish. Markers: "is bevoegd", and "kan" + a legal-act verb \
+(besluiten, verlenen, weigeren, intrekken, opleggen, aanwijzen, vaststellen).
+- DELEGATION: a mandate or competence to lay down further rules. Markers: "Bij of \
+krachtens algemene maatregel van bestuur worden/kunnen regels worden gesteld", "Bij \
+ministeriële regeling ...", "De Commissie is bevoegd gedelegeerde handelingen vast te \
+stellen", "De Commissie stelt uitvoeringshandelingen vast".
+- RIGHT: an entitlement that another party must honour. Markers: "heeft recht op", \
+"heeft het recht", "heeft aanspraak op". The actor is the RIGHT-HOLDER; the party that \
+must honour the right goes in `recipient` if stated.
+
+THE WORD "kan": decide between COMPETENCE (legal-act verb, usually a public authority), \
+PERMISSION (factual act), or no norm at all (the sentence only describes a possibility).
+
+NOT NORMS: definitions ("wordt verstaan onder", "geldt als", "wordt aangemerkt als"), \
+scope and subject-matter provisions ("Deze wet is van toepassing op", "Deze verordening \
+stelt regels vast"), entry into force, citation titles, and amendment instructions. \
+Return NO entry for these. If the whole unit states no norm, return {"norms": []}.
+"""
+
+_FIELDS = """
+FIELDS
+All fields describe ONLY the current norm, never a sibling norm in the same unit.
+
+- deontic: one of the DEONTIC TYPES above. Decide it first.
+- actor: the party that bears the obligation, prohibition, permission, exemption, \
+competence or right, including its determiner ("de aanbieder"). In a passive sentence \
+take it from the door-phrase ("wordt verleend door Onze Minister" -> "Onze Minister"). \
+If no party is stated, return null; do not infer one. Keep pronouns verbatim ("hij").
+- action_span: the verb and its verb cluster as a LIST of verbatim fragments in text \
+order, including modal verbs, negation and separable particles. Examples: "trekt de \
+vergunning in" -> ["trekt", "in"]; "kan de vergunning intrekken" -> ["kan", "intrekken"]; \
+"verstrekt geen gegevens" -> ["verstrekt geen"]. Exclude objects, adverbs and adjuncts.
+- action_lemma: the normalised infinitive of the main action, with separable particle \
+rejoined, WITHOUT modal verbs, negation or object: "intrekken", "melden", "verstrekken". \
+Keep fixed expressions whole: "zorg dragen voor", "in behandeling nemen". Not verbatim. \
+Null if the text names no action (e.g. an exemption that only names the lifted duty).
+- object: the thing that undergoes the action, including determiner ("de vergunning").
+- recipient: a LIST of the parties to or for whom the action is done, with preposition \
+(["aan de toezichthouder"], ["aan de vreemdeling"]). Recipients can be any party, not \
+only public bodies. For RIGHT: the party that must honour the right. [] if none stated.
+- trigger_event: the event that activates the norm ("na ontvangst van de aanvraag", \
+"zodra de aanbieder kennis neemt van het incident").
+- deadline_raw: the time limit for this norm. A sentence often gives both a vague \
+qualifier ("onverwijld", "zonder onredelijke vertraging") and a specific figure ("binnen \
+24 uur", "uiterlijk 72 uur") for the same duty: then extract the phrase containing the \
+number. Extract the vague qualifier only when no figure is stated for this norm.
+- thresholds: numeric limits that restrict the norm ("meer dan 50 werknemers"). A \
+threshold may also appear inside a condition; then list it in both fields.
+- conditions: phrases that limit when the norm applies, typically introduced by \
+"indien", "tenzij", "voor zover", "mits", "zonder", "behoudens". An exception introduced \
+by "tenzij" or "behoudens" stays a condition of the SAME norm. Cross-references such as \
+"in afwijking van het eerste lid" or "onverminderd artikel 5" are NOT conditions: leave \
+them out of every field.
+
+ADJUNCTS: words you leave out of the roles because they are adjuncts are NOT discarded: \
+if they limit the norm, they go to trigger_event, deadline_raw, thresholds or conditions.
+
+VERBATIM RULE: every value of actor, action_span, object, recipient, trigger_event, \
+deadline_raw, thresholds and conditions must be an exact, word-for-word substring of the \
+unit text. Do not paraphrase, summarise or complete it. If a field does not apply, \
+return null (or [] for list fields); never invent a value.
+"""
+
+_MULTI_NORM = """
+MULTIPLE NORMS
+A unit may state ZERO, ONE or SEVERAL independent norms; return one entry each.
+
+SPLIT into separate norms when:
+- the deontic type differs ("meldt het incident ... en verstrekt geen persoonsgegevens \
+aan derden" = an OBLIGATION and a PROHIBITION), even within one sentence and with the \
+same actor;
+- the actions differ ("bewaart de gegevens en meldt het incident" = two norms);
+- points (a), (b), (c) each impose their own obligation.
+
+DO NOT SPLIT when:
+- one duty has several conditions, qualifying clauses or a deadline;
+- a list spells out the content of ONE deliverable ("de melding bevat a, b en c" = one \
+norm; a, b and c belong to that norm);
+- an exception is introduced by "tenzij" or "behoudens" (a condition of the same norm).
+
+CONTEXT: if surrounding paragraphs are supplied, use them ONLY to understand references \
+("deze verplichting", "het eerste lid", "hij"). Never extract norms from the context, and \
+never copy context text into fields.
+"""
+
+# Examples are stored as data and rendered into the prompt, so they can be validated
+# against the schema and the verbatim rule (see _check_examples). Synthetic paragraphs.
+_EXAMPLE_DATA: list[tuple[str, dict]] = [
+    (
+        "De aanbieder meldt een significant incident onverwijld en in ieder geval binnen "
+        "24 uur aan het CSIRT, en verstrekt geen persoonsgegevens aan derden zonder "
+        "toestemming van de betrokkene.",
+        {"norms": [
+            {"deontic": "OBLIGATION", "actor": "De aanbieder", "trigger_event": None,
+             "action_span": ["meldt"], "action_lemma": "melden",
+             "object": "een significant incident", "recipient": ["aan het CSIRT"],
+             "deadline_raw": "in ieder geval binnen 24 uur", "thresholds": [],
+             "conditions": []},
+            {"deontic": "PROHIBITION", "actor": "De aanbieder", "trigger_event": None,
+             "action_span": ["verstrekt geen"], "action_lemma": "verstrekken",
+             "object": "persoonsgegevens", "recipient": ["aan derden"],
+             "deadline_raw": None, "thresholds": [],
+             "conditions": ["zonder toestemming van de betrokkene"]},
+        ]},
+    ),
+    (
+        "Onze Minister kan de vergunning intrekken indien de vergunninghouder de aan de "
+        "vergunning verbonden voorschriften niet naleeft.",
+        {"norms": [
+            {"deontic": "COMPETENCE", "actor": "Onze Minister", "trigger_event": None,
+             "action_span": ["kan", "intrekken"], "action_lemma": "intrekken",
+             "object": "de vergunning", "recipient": [], "deadline_raw": None,
+             "thresholds": [],
+             "conditions": ["indien de vergunninghouder de aan de vergunning verbonden "
+                            "voorschriften niet naleeft"]},
+        ]},
+    ),
+    (
+        "In afwijking van het eerste lid is de meldingsplicht niet van toepassing op "
+        "ondernemingen met minder dan 10 werknemers.",
+        {"norms": [
+            {"deontic": "EXEMPTION", "actor": "ondernemingen", "trigger_event": None,
+             "action_span": ["is", "niet van toepassing"], "action_lemma": None,
+             "object": "de meldingsplicht", "recipient": [], "deadline_raw": None,
+             "thresholds": ["minder dan 10 werknemers"], "conditions": []},
+        ]},
+    ),
+    (
+        "De gebruiker heeft het recht de over hem verwerkte gegevens bij de aanbieder in "
+        "te zien.",
+        {"norms": [
+            {"deontic": "RIGHT", "actor": "De gebruiker", "trigger_event": None,
+             "action_span": ["heeft het recht", "in te zien"], "action_lemma": "inzien",
+             "object": "de over hem verwerkte gegevens",
+             "recipient": ["bij de aanbieder"], "deadline_raw": None,
+             "thresholds": [], "conditions": []},
+        ]},
+    ),
+    (
+        "Bij algemene maatregel van bestuur kunnen regels worden gesteld over de inhoud "
+        "van de melding.",
+        {"norms": [
+            {"deontic": "DELEGATION", "actor": None, "trigger_event": None,
+             "action_span": ["kunnen", "worden gesteld"], "action_lemma": "regels stellen",
+             "object": "regels", "recipient": [], "deadline_raw": None,
+             "thresholds": [], "conditions": []},
+        ]},
+    ),
+    (
+        "In deze wet wordt verstaan onder aanbieder: een natuurlijke persoon of "
+        "rechtspersoon die een digitale dienst verleent.",
+        {"norms": []},
+    ),
 ]
 
-# What the deadline is measured from, e.g. "nadat hij er kennis van heeft genomen" ->
-# "kennis van heeft genomen". Best-effort text capture, not a normalized taxonomy of
-# trigger types -- flagged as a heuristic like everything else in this section.
-_FROM_RE = re.compile(r"\bna(dat)?\s+(?:hij|zij|het|de\s+\w+)?\s*(.+?)(?:[,.;]|$)", re.I)
+
+def _render_examples() -> str:
+    parts = ["\nEXAMPLES (synthetic units)\n"]
+    for paragraph, output in _EXAMPLE_DATA:
+        parts.append(f'Unit: "{paragraph}"\nOutput:\n'
+                     f"{json.dumps(output, ensure_ascii=False)}\n")
+    return "\n".join(parts)
 
 
-def _parse_deadline(raw: Optional[str]) -> Optional[dict]:
-    if not raw:
+def _check_examples() -> None:
+    """Fail loudly if a schema change breaks an example or its verbatim spans."""
+    for paragraph, output in _EXAMPLE_DATA:
+        parsed = ExtractedNormsResponse.model_validate(output)
+        for norm in parsed.norms:
+            bad = _verbatim_violations(norm, paragraph)
+            if bad:
+                raise RuntimeError(f"Example violates verbatim rule: {bad}\n{paragraph}")
+
+
+_check_field_lists()
+_check_examples()
+
+_EXAMPLES = _render_examples()
+
+_OUTPUT = """
+OUTPUT
+Return only the JSON object required by the response schema, with a "norms" list. \
+Fill `deontic` before the other fields. No text outside the JSON.
+"""
+
+_RULES = _DEONTIC_TYPES + _FIELDS + _MULTI_NORM + _EXAMPLES + _OUTPUT
+
+# Two framings for A/B comparison. Same rules; only the task framing differs.
+FRAMING_DIRECT = _ROLE + """
+TASK
+Extract every independent norm stated in the unit below.
+""" + _RULES
+
+FRAMING_CHECKLIST = _ROLE + """
+TASK
+Read carefully rather than pattern-matching, and work in this order:
+1. Decide whether the unit states any norm at all, or is a definition, scope, \
+subject-matter or other non-normative provision. If the latter, return {"norms": []}.
+2. Identify each party that receives an obligation, prohibition, permission, exemption, \
+competence, delegation or right, and the marker that expresses it.
+3. Apply the MULTIPLE NORMS rules to decide how many entries to return.
+4. Fill all fields for each norm, using only this unit.
+""" + _RULES
+
+# ---------------------------------------------------------------------------
+# Drop-in replacement for everything from `_build_input` to the end of the script.
+# Depends on the header (imports, ROOT, STAGE4_DIR, DEFAULT_MODEL, _parse_deadline)
+# and on the schema/prompt section (ExtractedNorm, ExtractedNormsResponse, _normalize,
+# _verbatim_violations, FRAMING_DIRECT, FRAMING_CHECKLIST).
+# ---------------------------------------------------------------------------
+
+# Bump whenever ExtractedNorm or the prompt changes in a way that makes earlier
+# extractions incomparable. Norms, empty-unit markers and queue items from another
+# version count as "not done" and are re-extracted; old norms are archived under
+# _stale_norms, never deleted.
+SCHEMA_VERSION = 2
+EMPTY_PARAS_KEY = f"_empty_paragraph_indices_v{SCHEMA_VERSION}"
+EMPTY_WHOLE_KEY = f"_empty_whole_provision_v{SCHEMA_VERSION}"
+STALE_NORMS_KEY = "_stale_norms"
+
+
+CONTEXT_MAX_CHARS = 6000  # budget for sibling paragraphs per call
+
+
+def _article_context(provision: dict, paragraph_index: Optional[int]) -> Optional[str]:
+    """The OTHER paragraphs of the same article, so the model can resolve references
+    such as "de in lid 1 bedoelde melding" (AI Act art. 73(2)) or "lid 1, punt h)"
+    (art. 5(2)-(4)). None for whole-provision units and single-paragraph articles.
+
+    Document order, because references point mostly backwards ("het eerste lid").
+    Over budget, a paragraph is truncated rather than dropped, so the model still sees
+    that it exists and how it starts. The verbatim check runs against the unit text
+    only, so any span the model copies from this context fails validation."""
+    paragraphs = provision.get("paragraphs") or []
+    if paragraph_index is None or len(paragraphs) < 2:
         return None
-    parsed = {"value": None, "unit": None, "from": None, "raw": raw}
-    for pattern, extractor in _DEADLINE_PATTERNS:
-        m = pattern.search(raw)
-        if m:
-            parsed.update(extractor(m))
-            break
-    else:
-        print(f"    [deadline parser] unrecognised phrasing, value/unit left null: {raw!r}")
-    from_m = _FROM_RE.search(raw)
-    if from_m:
-        parsed["from"] = from_m.group(2).strip()
-    return parsed
+    parts, remaining = [], CONTEXT_MAX_CHARS
+    for idx, para in enumerate(paragraphs):
+        if idx == paragraph_index:
+            continue
+        label = f"[lid {para.get('number') or idx + 1}]"
+        text = para["text"]
+        if len(text) > remaining:
+            text = (text[:max(remaining, 200)].rstrip() + " [...]")
+        parts.append(f"{label} {text}")
+        remaining = max(remaining - len(text), 0)
+    return "\n\n".join(parts)
+
+
+def _build_input(article_heading: str, unit_text: str, context: Optional[str] = None,
+                 feedback: Optional[str] = None) -> str:
+    """User-side input only; the framing goes in `instructions` (see _run_pass), which
+    keeps the long static prompt as a cacheable prefix shared by every call. The unit
+    text comes after the context and is labelled as the only extraction source."""
+    parts = [f"Article/provision heading: {article_heading}"]
+    if context:
+        parts.append(
+            "Context -- the other paragraphs of the same article. Use it ONLY to "
+            "understand references such as \"het eerste lid\" or \"de in lid 1 bedoelde "
+            "melding\". Do not extract norms from it and do not copy text from it into "
+            "any field.\n" + context
+        )
+    parts.append(f"Unit text -- extract norms from this text only:\n{unit_text}")
+    if feedback:
+        parts.append(feedback)
+    return "\n\n".join(parts)
 
 
 # ---------------------------------------------------------------------------
-# Prompting. Two independent framings of the same schema -- the two-pass check's
-# whole point is that agreement between differently-worded instructions is stronger
-# evidence than one pass at high confidence.
+# Source scope -- widened to the full corpus (2026-09-23 decision). The
+# Telecommunicatiewet is scoped to Hoofdstuk 11 only; see the 2026-09-23 note in the
+# architecture doc. `name` is used in output file names: keep it filesystem-safe and
+# stable -- renaming one orphans that document's existing stage-4 files.
 # ---------------------------------------------------------------------------
 
-_SCHEMA_FIELDS_NOTE = (
-    "Every span you return for addressee, action, trigger_event and deadline_raw must "
-    "be a verbatim, word-for-word substring of the paragraph text -- copy it exactly, "
-    "do not paraphrase or summarise it. If a field genuinely does not apply to this "
-    "norm, return null (or an empty list for the list fields), never invent a value. "
-    "For deadline_raw specifically: a sentence often states both a vague qualifier "
-    "('onverwijld', 'zonder onredelijke vertraging') AND a specific figure ('binnen 24 "
-    "uur', 'uiterlijk 72 uur') as a fallback or outer bound on the same duty -- when both "
-    "appear, extract the phrase containing the specific number, not the vague qualifier "
-    "alone, since the number is what a later comparison against another law's deadline "
-    "actually needs. Extract the vague qualifier only when no specific figure is present "
-    "anywhere in the paragraph."
-)
-
-# 2026-09-24, item 3: a paragraph may state more than one INDEPENDENT norm in a single
-# sentence -- the classic shape is "shall X, and shall not disclose Y to any third
-# party", one obligation and one prohibition in one breath. Made explicit and given a
-# worked boundary case (both directions: don't split, don't merge) because "independent
-# norm" is a genuine judgement call, not something the model will get right from the
-# field list alone.
-_MULTI_NORM_NOTE = (
-    "\n\nA paragraph may state ZERO, ONE, or SEVERAL independent norms -- return one "
-    "entry in `norms` for each. Two norms are INDEPENDENT when they have a different "
-    "deontic (e.g. one OBLIGATION and one PROHIBITION) or clearly different actions, "
-    "even if they share the same sentence and the same addressee. Example: 'de "
-    "aanbieder meldt het incident binnen 24 uur, en verstrekt geen persoonsgegevens aan "
-    "derden zonder toestemming' is TWO norms (an OBLIGATION to report, a PROHIBITION on "
-    "disclosure) -- do not merge them into one. Conversely, do NOT split a single duty "
-    "into multiple entries just because it has several qualifying clauses, conditions, "
-    "or a list of required contents (e.g. a report that 'must contain a, b, and c' is "
-    "still ONE norm; a, b, c belong in that one norm's own fields, not three norms). If "
-    "the paragraph states no independent rule at all (pure definitions, a cross-"
-    "reference, procedural text with no actor/action of its own), return an empty list."
-)
-
-_FRAMING_DIRECT = (
-    "You are extracting the compliance obligation(s) from one paragraph of Dutch or EU "
-    "digital-law legislation. Read the paragraph and, for each independent norm it "
-    "states, extract: who it addresses (addressee, addressee_type), what triggers the "
-    "obligation (trigger_event), what must be done (action), who receives it "
-    "(recipient_body), any deadline as it literally appears in the text (deadline_raw), "
-    "any numeric thresholds (thresholds), any conditions that limit when the rule "
-    "applies (conditions), and whether the text explicitly defers to another provision "
-    "(deference, e.g. from 'onverminderd', 'in afwijking van', 'is niet van toepassing "
-    "indien'). "
-    + _SCHEMA_FIELDS_NOTE + _MULTI_NORM_NOTE
-)
-
-_FRAMING_STEPBACK = (
-    "You are verifying a legal-compliance extraction, so read carefully rather than "
-    "pattern-matching. First work out, for this one paragraph only, exactly what "
-    "rule(s) it imposes and on whom -- do not assume anything the text does not "
-    "explicitly state, and do not pull in obligations from other paragraphs you may "
-    "recognise from context. Then, for each independent norm, populate: deontic, "
-    "addressee, addressee_type, trigger_event, action, recipient_body, deadline_raw, "
-    "thresholds, conditions, deference. "
-    + _SCHEMA_FIELDS_NOTE + _MULTI_NORM_NOTE
-)
-
-
-def _build_input(framing: str, article_heading: str, unit_text: str) -> str:
-    return (
-        f"{framing}\n\n"
-        f"Article/provision heading: {article_heading}\n\n"
-        f"Paragraph text:\n{unit_text}"
-    )
-
-
-# ---------------------------------------------------------------------------
-# Source scope -- widened to the full corpus (2026-09-23 decision), superseding the
-# incident-reporting-only anchor set now that C1 has been validated against it. One
-# deliberate exclusion kept: the Telecommunicatiewet is scoped to Hoofdstuk 11
-# ("Bescherming van persoonsgegevens en de persoonlijke levenssfeer") only, not its
-# other 359 articles (spectrum policy, cable rights-of-way, telecom market-dominance
-# rules, wiretapping procedure) -- none of that is "digital law" in this project's
-# sense, and extracting it would waste most of the run's budget on content that cannot
-# possibly relate to GDPR/NIS2/DORA/AI Act, while adding noise to candidate generation.
-#
-# Uitvoeringswet dataverordening now reads from the STANDARD pipeline file
-# (data/BWBR0051796_2025-11-21_provisions.json) instead of the hand-built
-# Datasets/ file used for the anchor set -- fixing, not working around, the citation-
-# graph uid mismatch documented in detect_c1_contradiction.py's module docstring: the
-# standard file already carries the same `uid` values the graph indexes, so no
-# reconstruction is needed once this is the source of truth going forward.
-# ---------------------------------------------------------------------------
 
 
 @dataclass
@@ -374,48 +559,186 @@ SOURCES = [
 ]
 
 
+
+# ---------------------------------------------------------------------------
+# Where things live (2026-09-29). Every file this script creates is per document and
+# sits in data/stage_4/. The source files under data/ and Datasets/ are read-only as
+# far as this script is concerned.
+# ---------------------------------------------------------------------------
+
+
+def norms_path(spec: SourceSpec) -> Path:
+    return NEW_NORM_DIR / f"new_{spec.label}_norms.json"
+
+
+def queue_path_for(spec: SourceSpec) -> Path:
+    return NEW_NORM_DIR / f"new_{spec.label}_norms_review_queue.json"
+
+
+def unresolved_path_for(spec: SourceSpec) -> Path:
+    return NEW_NORM_DIR / f"new_{spec.label}_norms_unresolved.json"
+
+
+def _atomic_write_json(path: Path, data) -> None:
+    """Write to a temp file, then swap it in. These files are rewritten after every
+    single unit AND are what a later run resumes from, so a crash in the middle of a
+    plain write_text() would truncate the very file that holds all progress so far."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def _load_root(spec: SourceSpec):
+    """The stage-4 norms file if this document has been run before (resume), else the
+    source file. Norms from an older schema version (including any written into the
+    source file itself by early runs) are archived by _iter_units and re-extracted."""
+    out = norms_path(spec)
+    src = out if out.exists() else ROOT / spec.path
+    return json.loads(src.read_text(encoding="utf-8"))
+
+
+def _read_queue_file(path: Path) -> list:
+    """Queue items of the CURRENT schema version only. Older items cannot be parsed
+    into ExtractedNorm; their units are not marked done, so a normal run re-extracts
+    them under the current schema."""
+    if not path.exists():
+        return []
+    items = json.loads(path.read_text(encoding="utf-8"))
+    current = [i for i in items if i.get("schema_version") == SCHEMA_VERSION]
+    if len(current) != len(items):
+        print(f"  [info] ignoring {len(items) - len(current)} queue item(s) from an older "
+              f"schema in {path.name}; those units will be re-extracted")
+    return current
+
+
+def _load_queue(spec: SourceSpec) -> list:
+    return _read_queue_file(queue_path_for(spec))
+
+
+def _queue_key(item: dict) -> tuple:
+    # paragraph_index, not paragraph_number: some articles have two paragraphs with the
+    # same displayed number (see _iter_units), and keying on the number would make one
+    # paragraph's queue item overwrite the other's.
+    return (str(item["instrument_id"]), str(item["article"]), item.get("paragraph_index"))
+
+
+def _save_queue_item(item: dict, queue_path: Path) -> None:
+    """Persisted immediately, one item at a time -- see main()'s docstring note on
+    crash-safety. Replaces any existing queue record for the same unit."""
+    key = _queue_key(item)
+    existing = [r for r in _read_queue_file(queue_path) if _queue_key(r) != key]
+    existing.append(item)
+    _atomic_write_json(queue_path, existing)
+
+
 @dataclass
 class Unit:
     provision: dict          # live reference into the loaded JSON -- mutated in place
     paragraph_number: Optional[str]   # DISPLAYED number -- for humans, not for identity
-    paragraph_index: Optional[int]    # position in provision["paragraphs"] -- for identity
+    paragraph_index: Optional[int]    # position in provision["paragraphs"]; None = whole provision
     text: str
     article_heading: str
+    context: Optional[str] = None     # sibling paragraphs; see _article_context
+
+
+def _archive_stale_entries(p: dict) -> None:
+    """Moves norms of another schema version to _stale_norms (kept for reference,
+    never read by this pipeline) and retires the pre-v2 empty-unit marker."""
+    norms = p.get("norms") or []
+    stale = [n for n in norms if n.get("schema_version") != SCHEMA_VERSION]
+    if stale:
+        p.setdefault(STALE_NORMS_KEY, []).extend(stale)
+    p["norms"] = [n for n in norms if n.get("schema_version") == SCHEMA_VERSION]
+    if "_empty_paragraph_indices" in p:
+        p.setdefault("_stale_empty_paragraph_indices", []).extend(p.pop("_empty_paragraph_indices"))
+
+
+def _mark_empty(provision: dict, paragraph_index: Optional[int]) -> None:
+    """Records a CONFIRMED zero-norm result (both passes agree). Needed because an empty
+    norms[] alone cannot distinguish "done, nothing found" from "never attempted".
+    Whole-provision units (paragraph_index None) get their own flag; previously their
+    empty results were never recorded, so they were re-extracted on every run."""
+    if paragraph_index is None:
+        provision[EMPTY_WHOLE_KEY] = True
+    else:
+        marked = provision.setdefault(EMPTY_PARAS_KEY, [])
+        if paragraph_index not in marked:
+            marked.append(paragraph_index)
+
+
+# ---------------------------------------------------------------------------
+# Deterministic skip of provisions that never state a norm: definitions, subject
+# matter, scope, citation titles, entry into force, amendments and repeals of OTHER
+# acts. Decided from the heading (and, for definition articles, the opening words),
+# never by the model: these provisions cost two calls each, the definition articles
+# are the longest units in the corpus (AI Act art. 3: ~2,700 words), and asking the
+# model about them only creates chances for spurious norms and pass disagreements.
+#
+# Heading patterns are matched on the heading WITHOUT its "Artikel N." prefix.
+#   * anywhere in the title: definities, begripsbepalingen, toepassingsgebied,
+#     citeertitel ("Materieel toepassingsgebied", GDPR art. 2, still matches);
+#   * only at the start: onderwerp, inwerkingtreding, "wijziging(en) van",
+#     "intrekking van". Anchored on purpose: AI Act art. 7 "Wijzigingen in bijlage III"
+#     (a delegation) and art. 36 "Wijzigingen in de aanmelding" (obligations) must NOT
+#     be skipped, and they don't match "wijziging(en) van".
+# Skips are recorded on the provision as `_skip_reason`, printed in every run, and
+# can be overridden per provision via FORCE_INCLUDE_UIDS.
+# ---------------------------------------------------------------------------
+
+_HEADING_PREFIX = re.compile(r"^\s*artikel\s+[\w.:/-]+\s*[.:]?\s*", re.IGNORECASE)
+_NON_NORMATIVE_ANYWHERE = re.compile(
+    r"\b(definities|begripsbepalingen|toepassingsgebied|citeertitel)\b", re.IGNORECASE)
+_NON_NORMATIVE_START = re.compile(
+    r"^(onderwerp|inwerkingtreding|wijziging(en)?\s+van|intrekking\s+van)\b", re.IGNORECASE)
+_DEFINITION_OPENING = re.compile(
+    r"^\s*(voor de toepassing van |in )deze (wet|verordening|richtlijn|regeling|"
+    r"algemene maatregel van bestuur)\b.{0,80}?\bwordt\b.{0,40}?\bverstaan onder\b",
+    re.IGNORECASE | re.DOTALL)
+
+# uids of provisions to extract even though a pattern above matches them.
+FORCE_INCLUDE_UIDS: set[str] = set()
+
+
+def _skip_reason(p: dict) -> Optional[str]:
+    if p.get("uid") in FORCE_INCLUDE_UIDS:
+        return None
+    title = _HEADING_PREFIX.sub("", p.get("heading") or "", count=1)
+    if _NON_NORMATIVE_ANYWHERE.search(title) or _NON_NORMATIVE_START.search(title):
+        return f"non_normative_heading: {title.strip()!r}"
+    # Definition articles without a telling heading (common in Dutch laws). Only for
+    # provisions without numbered paragraphs: an article whose lid 1 defines terms can
+    # still impose norms in its other leden.
+    if not p.get("paragraphs") and _DEFINITION_OPENING.search(p.get("text") or ""):
+        return "definition_article: opens with 'wordt verstaan onder'"
+    return None
 
 
 def _iter_units(provisions: list[dict]) -> list[Unit]:
-    """Skips a paragraph that already has a finalized norms[] entry, so re-running this
-    script (e.g. after a --limit smoke test, or after fixing something and resuming) does
-    not duplicate norms already written -- the script has no other record of what it has
-    already processed, so this check is the only thing that makes re-running safe.
-
-    Tracks "already done" by paragraph_index, not the displayed number (2026-09-24 fix):
-    checked directly against real data -- three articles in this corpus have two
-    paragraphs sharing the same displayed number (a genuine numbering artifact in the
-    source HTML/XML, not a parser bug; see migrate_paragraph_index.py's module
-    docstring). Tracking by number alone would make _iter_units() believe the SECOND
-    paragraph was already done as soon as the first one got a norm, silently skipping it
-    forever. Falls back to number-based tracking only for a norm written before this
-    field existed (paragraph_index absent -- pre-migration data)."""
+    """Units not yet done under the current schema version. "Done" is tracked by
+    paragraph_index, not the displayed number: three articles in this corpus have two
+    paragraphs sharing a displayed number (a source numbering artifact; see
+    migrate_paragraph_index.py), and number-based tracking would skip the second one
+    forever. Re-running is safe: done units are never offered again. Provisions that
+    _skip_reason() classifies as non-normative yield no units."""
     units = []
     for p in provisions:
+        _archive_stale_entries(p)
+        reason = _skip_reason(p)
+        if reason:
+            p["_skip_reason"] = reason
+            continue
+        p.pop("_skip_reason", None)
         heading = p.get("heading") or f"Article {p.get('article') or p.get('number')}"
-        p.setdefault("norms", [])
-        # _empty_paragraph_indices (2026-09-24, item 3): a paragraph can now resolve to
-        # ZERO norms (both passes agreeing there's no independent rule here) -- that's a
-        # genuinely resolved, useful result, not "not yet processed", so it needs its
-        # own persisted marker; norms[] alone can no longer tell "done with nothing to
-        # show" apart from "never attempted", now that an empty result is possible.
-        done_indices = ({n["paragraph_index"] for n in p["norms"] if n.get("paragraph_index") is not None}
-                        | set(p.get("_empty_paragraph_indices") or []))
-        done_numbers_legacy = {n["number"] for n in p["norms"] if n.get("paragraph_index") is None}
+        done = ({n.get("paragraph_index") for n in p["norms"]}
+                | set(p.get(EMPTY_PARAS_KEY) or []))
         paragraphs = p.get("paragraphs") or []
         if paragraphs:
             for idx, para in enumerate(paragraphs):
-                if idx in done_indices or para["number"] in done_numbers_legacy:
-                    continue
-                units.append(Unit(p, para["number"], idx, para["text"], heading))
-        elif None not in done_indices and None not in done_numbers_legacy:
+                if idx not in done:
+                    units.append(Unit(p, para["number"], idx, para["text"], heading,
+                                      _article_context(p, idx)))
+        elif None not in done and not p.get(EMPTY_WHOLE_KEY):
             units.append(Unit(p, None, None, p["text"], heading))
     return units
 
@@ -425,12 +748,14 @@ def _iter_units(provisions: list[dict]) -> list[Unit]:
 # ---------------------------------------------------------------------------
 
 
+def _model_label(model: str, reasoning_effort: str) -> str:
+    return model if reasoning_effort == "none" else f"{model} (reasoning:{reasoning_effort})"
+
+
 def _call_with_network_retries(client, **kwargs):
-    """A long run of ~200+ sequential API calls will occasionally hit a transient
-    connection blip (seen in practice: one getaddrinfo failure ~120 calls into a run)
-    that has nothing to do with the extraction itself. Retry a few times with backoff
-    before giving up -- this is separate from _run_pass's verbatim-validation retry,
-    which retries because the *content* was wrong, not because the network was."""
+    """Retries transient connection errors with backoff (seen in practice: one
+    getaddrinfo failure ~120 calls into a run). Separate from _run_pass's content
+    retry, which retries because the *output* was wrong, not the network."""
     import time
 
     from openai import APIConnectionError
@@ -447,77 +772,88 @@ def _call_with_network_retries(client, **kwargs):
                 raise
 
 
-def _run_pass(client, model: str, framing: str, heading: str, text: str,
+def _run_pass(client, model: str, framing: str, unit: Unit,
               reasoning_effort: str = "none") -> Optional[list[ExtractedNorm]]:
-    prompt = _build_input(framing, heading, text)
-    kwargs = dict(
-        model=model,
-        input=prompt,
-        text_format=ExtractedNormsResponse,
-        # Default "none": Stage 6 extraction is closer to structured reading than to
-        # reasoning (architecture doc, Stage 6) -- it doesn't need the reasoning dial
-        # turned up for the ordinary case. Raised deliberately (e.g. "medium") when
-        # retrying items that disagreed even after a stronger model -- at that point
-        # the open question is specifically whether more reasoning depth, not a
-        # different model, resolves the ambiguity.
-        reasoning={"effort": reasoning_effort},
-    )
-    if reasoning_effort == "none":
-        # temperature=0 is what makes the two-pass check meaningful (deterministic
-        # output per framing) -- but confirmed against the live API that this model
-        # family rejects `temperature` outright once reasoning is actually engaged
-        # (BadRequestError: "temperature is not supported with this model" at
-        # reasoning_effort="medium"), so it's only safe to pass at effort "none".
-        kwargs["temperature"] = 0
-    for attempt in range(2):  # one retry if ANY returned norm fails verbatim validation
+    """One extraction pass. Returns the norms only if EVERY verbatim span of every norm
+    is a substring of the unit text; otherwise retries once WITH the violations fed
+    back (an identical retry at temperature 0 would mostly reproduce the same output),
+    then gives up (None). Also returns None if the API gives no parsed output twice."""
+    feedback = None
+    for attempt in range(2):
+        kwargs = dict(
+            model=model,
+            instructions=framing,
+            input=_build_input(unit.article_heading, unit.text, unit.context, feedback),
+            text_format=ExtractedNormsResponse,
+            # Default "none": extraction is structured reading, not open-ended
+            # reasoning. Raised deliberately when retrying items that still disagreed
+            # under a stronger model, to test reasoning depth as a separate lever.
+            reasoning={"effort": reasoning_effort},
+        )
+        if reasoning_effort == "none":
+            # This model family rejects `temperature` once reasoning is engaged
+            # (BadRequestError at effort "medium"), so only pass it at "none".
+            kwargs["temperature"] = 0
         resp = _call_with_network_retries(client, **kwargs)
-        norms = resp.output_parsed.norms
-        if all(_verbatim_ok(n, text) for n in norms):
-            return norms
-        print(f"    [pass validation] attempt {attempt + 1} failed verbatim check, "
-              f"{'retrying' if attempt == 0 else 'giving up on this pass'}")
+        parsed = resp.output_parsed
+        if parsed is None:
+            print(f"    [pass] attempt {attempt + 1}: no parsed output (refusal or parse failure)")
+            feedback = None
+            continue
+        violations = [v for n in parsed.norms for v in _verbatim_violations(n, unit.text)]
+        if not violations:
+            return parsed.norms
+        print(f"    [pass validation] attempt {attempt + 1} failed verbatim check "
+              f"({len(violations)} span(s)), {'retrying with feedback' if attempt == 0 else 'giving up on this pass'}")
+        feedback = (
+            "Your previous answer contained values that are not exact substrings of the "
+            "unit text: " + "; ".join(violations) + ". Return the complete answer again. "
+            "Copy every verbatim value character for character from the unit text, or "
+            "use null / [] if the text contains no such span."
+        )
     return None
 
 
-def _text_fields_agree(a: Optional[str], b: Optional[str], min_overlap: float = 0.5) -> bool:
-    """Free-text fields (addressee, action, trigger_event) compared by normalized word
-    overlap, not exact string equality (2026-09-24 fix, item 10): two independently-
-    framed prompts routinely paraphrase the same verbatim span differently even when
-    they agree on substance, and requiring byte-identical text would manufacture
-    disagreements out of harmless rewording. Still meaningfully stricter than "both
-    non-null": a genuinely different span scores low overlap and is correctly flagged."""
-    na, nb = _normalize(a or ""), _normalize(b or "")
-    if not na and not nb:
-        return True
-    if not na or not nb:
-        return False
-    wa, wb = set(na.split()), set(nb.split())
+# --- Agreement between the two passes ----------------------------------------------
+# All compared spans are verbatim (enforced by _run_pass), so the two passes cannot
+# paraphrase; what they differ on is span BOUNDARIES ("de aanbieder" vs "aanbieder",
+# "indien X" vs "X"). Word-set containment tolerates boundary differences while still
+# flagging genuinely different spans.
+
+def _word_set(s: Optional[str]) -> set:
+    return set(_normalize(s or "").split())
+
+
+def _overlap(wa: set, wb: set) -> float:
+    if not wa and not wb:
+        return 1.0
     if not wa or not wb:
-        return na == nb
-    return len(wa & wb) / min(len(wa), len(wb)) >= min_overlap
+        return 0.0
+    return len(wa & wb) / min(len(wa), len(wb))
+
+
+def _text_fields_agree(a: Optional[str], b: Optional[str], min_overlap: float = 0.5) -> bool:
+    return _overlap(_word_set(a), _word_set(b)) >= min_overlap
 
 
 def _list_fields_agree(a: Optional[list], b: Optional[list], min_overlap: float = 0.5) -> bool:
-    """recipient_body/thresholds/conditions compared as sets of normalized strings,
-    with the same overlap tolerance as _text_fields_agree and for the same reason."""
-    sa, sb = {_normalize(x) for x in (a or [])}, {_normalize(x) for x in (b or [])}
-    if not sa and not sb:
-        return True
-    if not sa or not sb:
-        return False
-    return len(sa & sb) / min(len(sa), len(sb)) >= min_overlap
+    """Compared as the union of words across all items, so the same span split into
+    items differently, or with different boundaries, still agrees."""
+    wa = set().union(*(_word_set(x) for x in (a or [])))
+    wb = set().union(*(_word_set(x) for x in (b or [])))
+    return _overlap(wa, wb) >= min_overlap
+
+
+def _lemma_agree(a: Optional[str], b: Optional[str]) -> bool:
+    """action_lemma is normalised by the model, not verbatim: exact match after
+    whitespace/case normalisation. "melden" vs "verstrekken" must disagree."""
+    return _normalize(a or "") == _normalize(b or "")
 
 
 def _deadlines_agree(a: Optional[str], b: Optional[str]) -> bool:
-    """Two real bugs fixed here (2026-09-24), both confirmed against the actual
-    function's behavior, not hypothetical: (1) when NEITHER pass's phrasing matched a
-    known pattern, both come back {"value": None, "unit": None, ...} and the old check
-    (`pa["value"] == pb["value"]`) read None == None as agreement -- meaning two
-    COMPLETELY DIFFERENT unparseable deadline phrases were silently treated as the same
-    deadline. Now requires the raw text itself to match when neither side parsed.
-    (2) the starting event ("from" -- e.g. "vanaf kennisname" vs. "vanaf de melding
-    door een derde") was extracted but never compared, so two deadlines with the same
-    number/unit but a different trigger point for the clock also silently agreed."""
+    """Compares PARSED deadlines. When neither side parsed to a value, requires the raw
+    text to match (two different unparseable phrases are not the same deadline), and
+    the clock's starting event ("from") must match too (2026-09-24 fixes)."""
     pa, pb = _parse_deadline(a), _parse_deadline(b)
     if pa is None or pb is None:
         return pa == pb
@@ -527,57 +863,49 @@ def _deadlines_agree(a: Optional[str], b: Optional[str]) -> bool:
             and _normalize(pa["from"] or "") == _normalize(pb["from"] or ""))
 
 
-def _finalize_norm(norm: ExtractedNorm, paragraph_number: Optional[str], paragraph_index: Optional[int],
-                    norm_index: int, model: str, reasoning_effort: str = "none") -> dict:
-    model_label = model if reasoning_effort == "none" else f"{model} (reasoning:{reasoning_effort})"
-    return {
-        "number": paragraph_number,
-        "paragraph_index": paragraph_index,
-        # norm_index (2026-09-24, item 3): position among the norms finalized for THIS
-        # paragraph -- needed once a paragraph can yield more than one, so each stays
-        # independently addressable (paragraph_index alone is no longer unique once a
-        # paragraph produces 2+ norms).
-        "norm_index": norm_index,
-        "deontic": norm.deontic,
-        "addressee": norm.addressee,
-        "addressee_type": norm.addressee_type,
-        "trigger_event": norm.trigger_event,
-        "action": norm.action,
-        "recipient_body": norm.recipient_body,
-        "deadline": _parse_deadline(norm.deadline_raw),
-        "thresholds": norm.thresholds,
-        "conditions": norm.conditions,
-        "deference": norm.deference,
-        "extraction_confidence": norm.extraction_confidence,
-        "extraction_model": model_label,
-        "extracted_on": date.today().isoformat(),
-        "human_verified": False,
-    }
+# Every field downstream detection reads. action_span is deliberately NOT compared:
+# for split verbs the two passes can segment it differently while agreeing on the
+# action, which action_lemma captures.
+_FIELD_CHECKS: dict[str, Callable] = {
+    "deontic": lambda a, b: a == b,
+    "actor": _text_fields_agree,
+    "action_lemma": _lemma_agree,
+    "object": _text_fields_agree,
+    "trigger_event": _text_fields_agree,
+    "deadline_raw": _deadlines_agree,
+    "recipient": _list_fields_agree,
+    "thresholds": _list_fields_agree,
+    "conditions": _list_fields_agree,
+}
+
+
+def _norm_diffs(n1: ExtractedNorm, n2: ExtractedNorm) -> list[str]:
+    """Names of the fields on which two aligned norms disagree; [] = full agreement."""
+    return [f for f, agree in _FIELD_CHECKS.items() if not agree(getattr(n1, f), getattr(n2, f))]
+
+
+def _norms_agree(n1: ExtractedNorm, n2: ExtractedNorm) -> bool:
+    return not _norm_diffs(n1, n2)
 
 
 def _norm_overlap_score(a: ExtractedNorm, b: ExtractedNorm) -> float:
-    """Combined similarity used only to ALIGN two passes' norm lists to each other when
-    a paragraph yields more than one (2026-09-24, item 3) -- not itself a pass/fail
-    agreement check (that's _norms_agree, run per aligned pair afterwards)."""
+    """Similarity used only to ALIGN the two passes' norm lists; agreement itself is
+    judged afterwards per aligned pair by _norm_diffs."""
     score = 1.0 if a.deontic == b.deontic else 0.0
-    for fa, fb in ((a.action, b.action), (a.trigger_event, b.trigger_event), (a.addressee, b.addressee)):
-        na, nb = _normalize(fa or ""), _normalize(fb or "")
-        if not na or not nb:
-            continue
-        wa, wb = set(na.split()), set(nb.split())
+    if a.action_lemma and _lemma_agree(a.action_lemma, b.action_lemma):
+        score += 1.0
+    for f in ("object", "actor", "trigger_event"):
+        wa, wb = _word_set(getattr(a, f)), _word_set(getattr(b, f))
         if wa and wb:
-            score += len(wa & wb) / min(len(wa), len(wb))
+            score += _overlap(wa, wb)
     return score
 
 
 def _align_norms(list1: list[ExtractedNorm], list2: list[ExtractedNorm]
                   ) -> list[tuple[Optional[ExtractedNorm], Optional[ExtractedNorm]]]:
-    """Greedy best-match pairing between two passes' norm lists, by descending overlap
-    score -- appropriate for the small lists (almost always 0-3) one paragraph produces;
-    a paragraph with a genuinely large, ambiguous number of candidate norms is exactly
-    the kind of case worth a human's eyes anyway. Unmatched entries on either side pair
-    with None -- signals a count/alignment mismatch to the caller, handled as a
-    disagreement rather than guessed at."""
+    """Greedy best-match pairing by descending overlap score -- fine for the small lists
+    (almost always 0-3) one unit produces. Unmatched entries pair with None, which the
+    caller treats as a disagreement rather than guessing."""
     scored = [(_norm_overlap_score(n1, n2), i1, i2)
               for i1, n1 in enumerate(list1) for i2, n2 in enumerate(list2)]
     scored.sort(key=lambda t: -t[0])
@@ -594,40 +922,46 @@ def _align_norms(list1: list[ExtractedNorm], list2: list[ExtractedNorm]
     return pairs
 
 
-def _norms_agree(n1: ExtractedNorm, n2: ExtractedNorm) -> bool:
-    """Field-specific agreement for one aligned pair (2026-09-24 fix, item 10): the old
-    check only compared deontic/deadline/deference, then saved pass1's addressee/
-    action/recipient_body/thresholds/conditions wholesale -- meaning two passes could
-    wildly disagree on WHO the norm addresses or WHAT it requires and still get
-    finalized as "agreed", as long as those three specific fields happened to match.
-    Every field detection actually reads is now checked; free-text fields use word
-    overlap rather than exact-string equality (see _text_fields_agree's own note),
-    since two differently-framed prompts routinely paraphrase the same verbatim span."""
-    return (
-        n1.deontic == n2.deontic
-        and n1.addressee_type == n2.addressee_type
-        and _deadlines_agree(n1.deadline_raw, n2.deadline_raw)
-        and _normalize(n1.deference or "") == _normalize(n2.deference or "")
-        and _text_fields_agree(n1.addressee, n2.addressee)
-        and _text_fields_agree(n1.action, n2.action)
-        and _text_fields_agree(n1.trigger_event, n2.trigger_event)
-        and _list_fields_agree(n1.recipient_body, n2.recipient_body)
-        and _list_fields_agree(n1.thresholds, n2.thresholds)
-        and _list_fields_agree(n1.conditions, n2.conditions)
-    )
+def _finalize_norm(norm: ExtractedNorm, paragraph_number: Optional[str],
+                    paragraph_index: Optional[int], norm_index: int,
+                    extraction_model: str, **extra) -> dict:
+    """The single place that turns an ExtractedNorm into a stored norms[] entry, used
+    by normal extraction AND by the conservative resolver, so the stored shape cannot
+    drift between the two paths. `extra` adds uncertainty metadata."""
+    entry = {
+        "schema_version": SCHEMA_VERSION,
+        "number": paragraph_number,
+        "paragraph_index": paragraph_index,
+        # Position among the norms of THIS unit; with several norms per unit,
+        # paragraph_index alone no longer identifies a norm.
+        "norm_index": norm_index,
+        "deontic": norm.deontic,
+        "actor": norm.actor,
+        "trigger_event": norm.trigger_event,
+        "action_span": norm.action_span,
+        "action_lemma": norm.action_lemma,
+        "object": norm.object,
+        "recipient": norm.recipient,
+        "deadline_raw": norm.deadline_raw,
+        "deadline": _parse_deadline(norm.deadline_raw),
+        "thresholds": norm.thresholds,
+        "conditions": norm.conditions,
+        "extraction_model": extraction_model,
+        "human_verified": False,
+    }
+    entry.update(extra)
+    return entry
 
 
 def extract_unit(client, model: str, unit: Unit,
                   reasoning_effort: str = "none") -> tuple[Optional[list[dict]], Optional[dict]]:
-    """Returns (finalized_norms_or_None, review_queue_item_or_None) -- exactly one of
-    the two is non-None. `finalized_norms` can be an EMPTY list (2026-09-24, item 3):
-    both passes confirming "no independent norm here" is itself a resolved, useful
-    result, not a failure -- distinct from None, which means still unresolved.
-    Returning the queue item instead of mutating a shared list lets the caller persist
-    it immediately, so a crash on unit N+1 doesn't lose unit N's result."""
-    pass1 = _run_pass(client, model, _FRAMING_DIRECT, unit.article_heading, unit.text, reasoning_effort)
-    pass2 = _run_pass(client, model, _FRAMING_STEPBACK, unit.article_heading, unit.text, reasoning_effort)
+    """Returns (finalized_norms_or_None, review_queue_item_or_None) -- exactly one is
+    non-None. finalized_norms can be an EMPTY list: both passes confirming "no norm
+    here" is a resolved result, distinct from None (unresolved)."""
+    pass1 = _run_pass(client, model, FRAMING_DIRECT, unit, reasoning_effort)
+    pass2 = _run_pass(client, model, FRAMING_CHECKLIST, unit, reasoning_effort)
     base = {
+        "schema_version": SCHEMA_VERSION,
         "instrument_id": unit.provision.get("instrument_id") or unit.provision.get("provision_id"),
         "article": unit.provision.get("article") or unit.provision.get("number"),
         "paragraph_number": unit.paragraph_number,
@@ -635,168 +969,170 @@ def extract_unit(client, model: str, unit: Unit,
         "unit_text": unit.text,
     }
 
+    def dump(norms):
+        return [n.model_dump() for n in norms] if norms is not None else None
+
     if pass1 is None or pass2 is None:
-        return None, {**base, "reason": "validation_failed",
-                      "pass1": [n.model_dump() for n in pass1] if pass1 is not None else None,
-                      "pass2": [n.model_dump() for n in pass2] if pass2 is not None else None}
+        return None, {**base, "reason": "validation_failed", "pass1": dump(pass1), "pass2": dump(pass2)}
 
     if len(pass1) != len(pass2):
-        # The two passes disagree on HOW MANY independent norms this paragraph
-        # contains -- not something to guess at (which count is "right"?), so this is
-        # queued distinctly from a same-count field disagreement, and NOT auto-resolved
-        # by resolve_queue_conservatively() (see that function's own note).
+        # Disagreement on HOW MANY norms exist: no safe default, never auto-resolved.
         return None, {**base, "reason": "two_pass_disagreement", "disagreement_kind": "norm_count_mismatch",
-                      "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
+                      "pass1": dump(pass1), "pass2": dump(pass2)}
 
     aligned = _align_norms(pass1, pass2)
     if any(n1 is None or n2 is None for n1, n2 in aligned):
-        return None, {**base, "reason": "two_pass_disagreement",
-                      "disagreement_kind": "norm_alignment_ambiguous",
-                      "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
+        return None, {**base, "reason": "two_pass_disagreement", "disagreement_kind": "norm_alignment_ambiguous",
+                      "pass1": dump(pass1), "pass2": dump(pass2)}
 
-    if not all(_norms_agree(n1, n2) for n1, n2 in aligned):
-        return None, {**base, "reason": "two_pass_disagreement",
-                      "pass1": [n.model_dump() for n in pass1], "pass2": [n.model_dump() for n in pass2]}
+    diff_fields = sorted({f for n1, n2 in aligned for f in _norm_diffs(n1, n2)})
+    if diff_fields:
+        return None, {**base, "reason": "two_pass_disagreement", "disagreement_kind": "field_mismatch",
+                      "diff_fields": diff_fields, "pass1": dump(pass1), "pass2": dump(pass2)}
 
-    finalized = [_finalize_norm(n1, unit.paragraph_number, unit.paragraph_index, idx, model, reasoning_effort)
-                 for idx, (n1, n2) in enumerate(aligned)]
+    label = _model_label(model, reasoning_effort)
+    finalized = [_finalize_norm(n1, unit.paragraph_number, unit.paragraph_index, idx, label)
+                 for idx, (n1, _n2) in enumerate(aligned)]
     return finalized, None
 
 
+def _store_result(unit: Unit, norms: list[dict]) -> None:
+    """Writes a RESOLVED result (caller holds the lock)."""
+    if norms:
+        unit.provision.setdefault("norms", []).extend(norms)
+    else:
+        _mark_empty(unit.provision, unit.paragraph_index)
+
+
 # ---------------------------------------------------------------------------
-# Retrying the review queue on a different model -- e.g. escalating from
-# gpt-5.6-luna to gpt-5.6-terra per the 2026-09-20 decision, once Luna's own
-# queue rate gives a concrete signal that it's worth trying a stronger model
-# on specifically the items that disagreed, rather than re-running everything.
+# Retrying the review queue on a different model / reasoning effort -- e.g.
+# escalating from gpt-5.6-luna to gpt-5.6-terra (2026-09-20 decision) on only the
+# items that disagreed. Works per document: each queue lives next to its norms file.
 # ---------------------------------------------------------------------------
 
 
 def _provision_key(p: dict) -> tuple:
-    """The same identity extract_unit() used when it wrote a queue item's
-    instrument_id/article -- reconstructing it here is what lets a queue item be
-    relocated back to the exact provision (and source file) it came from."""
+    """The same identity extract_unit() writes into a queue item's instrument_id/article,
+    so a queue item can be relocated to the exact provision it came from."""
     return (
         str(p.get("instrument_id") or p.get("provision_id")),
         str(p.get("article") or p.get("number")),
     )
 
 
-def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency: int = 10) -> None:
-    """Parallelized 2026-09-23 for full-corpus scale (768-item queues are impractical
-    one at a time). A single lock guards both the per-source file writes and the queue
-    file's own state -- the critical section is just local dict/list bookkeeping plus a
-    JSON dump, not the network call, so serializing it costs nothing next to the API
-    latency this is actually trying to parallelize."""
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
-    queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
-    if not queue:
-        print("review queue is empty -- nothing to retry")
-        return
+def _retry_source_queue(client, model: str, reasoning_effort: str, concurrency: int,
+                         spec: SourceSpec, queue: list) -> tuple[int, int]:
+    """Retries one document's queue; returns (n_resolved, n_still_unresolved). One lock
+    guards the in-memory bookkeeping and file writes, not the network calls."""
+    root = _load_root(spec)
+    by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
+    out_path, q_path = norms_path(spec), queue_path_for(spec)
 
-    loaded = []  # (root, path, {provision_key: provision})
-    for spec in SOURCES:
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
-        by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
-        loaded.append((root, path, by_key))
-
-    retried_with_label = model if reasoning_effort == "none" else f"{model} (reasoning:{reasoning_effort})"
+    label = _model_label(model, reasoning_effort)
     lock = threading.Lock()
     remaining_queue: list = []
     n_resolved = 0
-    dirty_paths: set = set()
+    dirty = False
 
-    def relocate(item):
-        key = (str(item["instrument_id"]), str(item["article"]))
-        for candidate_root, candidate_path, by_key in loaded:
-            if key in by_key:
-                return by_key[key], candidate_path, candidate_root
-        return None, None, None
-
-    unresolved_lookup = []  # items that couldn't even be relocated -- no retry possible
     to_retry = []
     for item in queue:
-        provision, path, root = relocate(item)
+        key = (str(item["instrument_id"]), str(item["article"]))
+        provision = by_key.get(key)
         if provision is None:
-            unresolved_lookup.append(item)
+            remaining_queue.append(item)
+            print(f"  [warn] could not relocate provision for {key} -- keeping queue entry as-is")
         else:
-            to_retry.append((item, provision, path, root))
-    remaining_queue.extend(unresolved_lookup)
-    for item in unresolved_lookup:
-        print(f"  [warn] could not relocate provision for "
-              f"{(item['instrument_id'], item['article'])} -- keeping queue entry as-is")
+            to_retry.append((item, provision))
+
+    def flush():
+        if dirty:
+            _atomic_write_json(out_path, root)
+        _atomic_write_json(q_path, remaining_queue)
 
     def process(entry):
-        item, provision, path, root = entry
-        key = (str(item["instrument_id"]), str(item["article"]))
+        nonlocal n_resolved, dirty
+        item, provision = entry
         unit = Unit(provision, item["paragraph_number"], item.get("paragraph_index"), item["unit_text"],
-                    provision.get("heading") or f"Article {item['article']}")
+                    provision.get("heading") or f"Article {item['article']}",
+                    _article_context(provision, item.get("paragraph_index")))
         norms, new_item = extract_unit(client, model, unit, reasoning_effort)
         with lock:
-            nonlocal n_resolved
             if norms is not None:
-                if norms:
-                    provision.setdefault("norms", []).extend(norms)
-                elif unit.paragraph_index is not None:
-                    provision.setdefault("_empty_paragraph_indices", []).append(unit.paragraph_index)
+                _store_result(unit, norms)
                 n_resolved += 1
-                dirty_paths.add(path)
+                dirty = True
             else:
-                new_item["retried_with"] = retried_with_label
+                new_item["retried_with"] = label
                 remaining_queue.append(new_item)
-        return key, item["paragraph_number"], norms is not None
+        return _queue_key(item), item["paragraph_number"], norms is not None
 
     from concurrent.futures import ThreadPoolExecutor, as_completed
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
         futures = {ex.submit(process, entry): entry for entry in to_retry}
         for i, fut in enumerate(as_completed(futures), 1):
-            key, para, resolved = fut.result()
-            print(f"  [{i}/{len(to_retry)}] retried {key} para {para} with {model} "
-                  f"(reasoning: {reasoning_effort}) -- {'resolved' if resolved else 'still unresolved'}",
-                  flush=True)
+            try:
+                key, para, resolved = fut.result()
+            except Exception as e:
+                # The original item stays out of remaining_queue only if processing
+                # finished; on an exception, keep it so nothing is lost.
+                item, _ = futures[fut]
+                with lock:
+                    remaining_queue.append(item)
+                print(f"  [{i}/{len(to_retry)}] ERROR: {e} -- keeping queue entry", flush=True)
+                continue
+            print(f"  [{i}/{len(to_retry)}] retried {key} para {para} with {label} "
+                  f"-- {'resolved' if resolved else 'still unresolved'}", flush=True)
             if i % 25 == 0 or i == len(to_retry):
                 with lock:
-                    for root, path, _ in loaded:
-                        if path in dirty_paths:
-                            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
-                    queue_path.write_text(json.dumps(remaining_queue, ensure_ascii=False, indent=1),
-                                           encoding="utf-8")
+                    flush()
 
-    # Final flush, covers any tail not caught by the periodic checkpoint above.
-    for root, path, _ in loaded:
-        if path in dirty_paths:
-            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
-    queue_path.write_text(json.dumps(remaining_queue, ensure_ascii=False, indent=1), encoding="utf-8")
+    flush()  # covers the tail, and the case where nothing could be relocated
+    return n_resolved, len(remaining_queue)
 
-    print(f"\nretried {len(queue)} queued unit(s) with {model} (reasoning: {reasoning_effort}): "
-          f"{n_resolved} resolved, {len(remaining_queue)} still unresolved")
+
+def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency: int = 10,
+                 only: Optional[str] = None) -> None:
+    n_queued = n_resolved = n_remaining = 0
+    for spec in SOURCES:
+        if only and only.lower() not in spec.label.lower():
+            continue
+        queue = _load_queue(spec)
+        if not queue:
+            continue
+        print(f"\n=== {spec.label}: retrying {len(queue)} queued unit(s) "
+              f"({queue_path_for(spec).relative_to(ROOT)}) ===", flush=True)
+        resolved, remaining = _retry_source_queue(client, model, reasoning_effort, concurrency, spec, queue)
+        n_queued += len(queue)
+        n_resolved += resolved
+        n_remaining += remaining
+
+    if n_queued == 0:
+        print("review queue is empty -- nothing to retry")
+        return
+    print(f"\nretried {n_queued} queued unit(s) with {_model_label(model, reasoning_effort)}: "
+          f"{n_resolved} resolved, {n_remaining} still unresolved")
 
 
 # ---------------------------------------------------------------------------
-# Conservatively resolving whatever is left after model/reasoning escalation
-# stops being worth it (2026-09-21 decision). The two-pass check exists to
-# avoid GUESSING on a genuine judgement call -- but leaving an item stuck in
-# the review queue forever, before Stage 4/5's detection engine has even run,
-# asks a human to pre-clear an abstract sentence that may never end up
-# mattering to any actual finding. The system already requires expert
-# confirmation before ANY finding is reportable (Part 6, report_eligible),
-# so the honest fix is to push these through now with a documented,
-# non-hiding default, not to gate the whole pipeline on a lawyer's calendar.
+# Conservatively resolving whatever is left once model/reasoning escalation stops
+# being worth it (2026-09-21 decision). Every finding already requires expert
+# confirmation before it is reportable (Part 6, report_eligible), so instead of gating
+# the pipeline on a lawyer pre-clearing abstract sentences, remaining items are pushed
+# through with a documented default and flagged extraction_uncertain=True.
 #
-# The asymmetry that makes a *default* safe here: `deference` is the one
-# field that can make a real problem invisible (Part 5, C1's resolution
-# filter drops a pair entirely once one side defers) -- so an uncertain
-# deference call defaults to null, never guessed at, so nothing gets
-# silently suppressed. `deontic` decides whether a norm is even considered
-# for detection at all (only OBLIGATION/PROHIBITION/PERMISSION/COMPETENCE
-# are eligible) -- so an uncertain deontic call defaults toward whichever
-# reading keeps the norm eligible, for the same reason: excluding it by
-# mistake is the direction that hides something, including it by mistake
-# just means a human dismisses a harmless candidate later, same as any
-# other false positive the system already expects to produce.
+# The rule is NON-SUPPRESSION: an uncertain call must never make a potential finding
+# invisible; including something by mistake only costs a human dismissing a harmless
+# candidate later. Concretely:
+#   * deontic: default toward the reading that keeps the norm eligible for detection
+#     (ACTIONABLE_DEONTICS); the other reading is kept as deontic_alternative.
+#   * a single-pass EMPTY result is NOT accepted as "no norm here": that would hide
+#     any norm the failed pass might have found. Such units go to the unresolved file.
+#   * count/alignment mismatches have no safe default and also go there.
 # ---------------------------------------------------------------------------
 
-ACTIONABLE_DEONTICS = {"OBLIGATION", "PROHIBITION", "PERMISSION", "COMPETENCE"}
+# Deontics eligible for C1 detection. RIGHT and DELEGATION are currently excluded;
+# keep this set and C1's eligibility rule in sync.
+ACTIONABLE_DEONTICS = {"OBLIGATION", "PROHIBITION", "PERMISSION", "COMPETENCE", "EXEMPTION"}
 
 
 def _pick_deontic(d1: str, d2: str) -> str:
@@ -804,231 +1140,166 @@ def _pick_deontic(d1: str, d2: str) -> str:
         return d1
     if d2 in ACTIONABLE_DEONTICS and d1 not in ACTIONABLE_DEONTICS:
         return d2
-    return d1  # both actionable, both not, or identical -- no basis to prefer one
+    return d1  # no basis to prefer one; the other is stored as deontic_alternative
 
 
-def resolve_queue_conservatively() -> None:
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
-    queue = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
-    if not queue:
-        print("review queue is empty -- nothing to resolve")
-        return
+def _resolve_source_queue(spec: SourceSpec, queue: list) -> tuple[int, int]:
+    """Resolves one document's queue; returns (n_resolved, n_dropped). Dropped units are
+    logged to the unresolved file and are NOT marked done, so a later normal run will
+    offer them for extraction again."""
+    root = _load_root(spec)
+    by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
 
-    loaded = []
-    for spec in SOURCES:
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
-        by_key = {_provision_key(p): p for p in spec.get_provisions(root)}
-        loaded.append((root, path, by_key))
-
-    dropped = []  # validation_failed items -- no verbatim-grounded data to fall back on
-    dirty_paths = set()
+    dropped = []
+    dirty = False
     n_resolved = 0
 
     for item in queue:
         key = (str(item["instrument_id"]), str(item["article"]))
-        provision = path = root = None
-        for candidate_root, candidate_path, by_key in loaded:
-            if key in by_key:
-                provision, path, root = by_key[key], candidate_path, candidate_root
-                break
+        provision = by_key.get(key)
         if provision is None:
             print(f"  [warn] could not relocate provision for {key} -- dropping without a norm")
-            dropped.append(item)
+            dropped.append({**item, "drop_reason": "provision_not_relocated"})
             continue
 
-        # pass1/pass2 are LISTS of norm dicts now (2026-09-24, item 3) -- one unit can
-        # yield zero, one, or several independent norms. norm_count_mismatch/
-        # norm_alignment_ambiguous (extract_unit's own distinct disagreement_kinds) are
-        # NOT auto-resolved here: there's no safe "conservative default" for "the two
-        # passes disagree on HOW MANY norms exist" the way there is for a single
-        # mismatched field on an already-agreed-count pair -- guessing which count is
-        # right is exactly the kind of judgement call this function exists to avoid.
+        number, index = item["paragraph_number"], item.get("paragraph_index")
+
         if item.get("disagreement_kind") in ("norm_count_mismatch", "norm_alignment_ambiguous"):
-            dropped.append(item)
+            dropped.append({**item, "drop_reason": item["disagreement_kind"]})
             continue
 
         if item["reason"] == "validation_failed":
-            # Checked directly against the real queue (2026-09-24 fix): a meaningful
-            # share of these items DO have one pass that fully passed verbatim
-            # validation -- the OTHER pass is what's null (a model error, refusal, or a
-            # verbatim check that still failed after its own retry). The old code
-            # dropped these uniformly, discarding genuinely grounded extractions on the
-            # assumption that "validation_failed" meant neither pass was usable, which
-            # isn't what the data actually shows. Every norm in the single grounded
-            # pass's list becomes a provisional norm, same non-suppressing deference
-            # default as the two-pass case below, tagged uncertain for exactly the
-            # reason it's less confirmed (one reading, not two independently agreeing
-            # ones) -- only genuinely dropped when BOTH passes are null.
+            # One pass may still be fully verbatim-grounded; its norms become provisional.
             grounded = item.get("pass1") if item.get("pass1") is not None else item.get("pass2")
             if grounded is None:
-                dropped.append(item)
+                dropped.append({**item, "drop_reason": "no_grounded_pass"})
                 continue
-            if not grounded and item.get("paragraph_index") is not None:
-                provision.setdefault("_empty_paragraph_indices", []).append(item["paragraph_index"])
+            if not grounded:
+                # Non-suppression: one unconfirmed "no norm" must not close the unit.
+                dropped.append({**item, "drop_reason": "single_pass_empty_unconfirmed"})
+                continue
             for idx, g in enumerate(grounded):
-                norm = {
-                    "number": item["paragraph_number"],
-                    "paragraph_index": item.get("paragraph_index"),
-                    "norm_index": idx,
-                    "deontic": g["deontic"],
-                    "addressee": g["addressee"],
-                    "addressee_type": g["addressee_type"],
-                    "trigger_event": g["trigger_event"],
-                    "action": g["action"],
-                    "recipient_body": g["recipient_body"],
-                    "deadline": _parse_deadline(g["deadline_raw"]),
-                    "thresholds": g["thresholds"],
-                    "conditions": g["conditions"],
-                    "deference": None,  # non-suppressing default -- see module note above
-                    "extraction_confidence": g["extraction_confidence"],
-                    "extraction_model": "conservative-default (single-pass: the other pass "
-                                         "failed validation entirely)",
-                    "extracted_on": date.today().isoformat(),
-                    "human_verified": False,
-                    "extraction_uncertain": True,
-                    "uncertainty_note": (
+                provision.setdefault("norms", []).append(_finalize_norm(
+                    ExtractedNorm(**g), number, index, idx,
+                    "conservative-default (single pass; the other failed validation)",
+                    extraction_uncertain=True,
+                    uncertainty_note=(
                         "only one of two extraction passes produced a verbatim-grounded "
-                        "result; the other failed validation even after its own retry, or "
-                        "returned nothing usable. This rests on a single unconfirmed "
-                        "reading, not two independently agreeing ones -- revisit if it "
-                        "ends up inside an actual candidate finding."
+                        "result; this rests on a single unconfirmed reading -- revisit if "
+                        "it ends up inside an actual candidate finding."
                     ),
-                }
-                provision.setdefault("norms", []).append(norm)
+                ))
             n_resolved += 1
-            dirty_paths.add(path)
+            dirty = True
             continue
 
-        # Plain field-level disagreement, matched norm count (item 3): re-align the two
-        # passes' stored lists the same way extract_unit did in memory, then apply the
-        # SAME per-field conservative-default merge as before, per aligned pair.
+        # Field-level disagreement with matching norm count: re-align and resolve per pair.
         p1_norms = [ExtractedNorm(**d) for d in item["pass1"]]
         p2_norms = [ExtractedNorm(**d) for d in item["pass2"]]
         aligned = _align_norms(p1_norms, p2_norms)
         if any(n1 is None or n2 is None for n1, n2 in aligned):
-            # Defensive only -- extract_unit wouldn't have written this reason if
-            # alignment were ambiguous, but never guess if it somehow is.
-            dropped.append(item)
+            dropped.append({**item, "drop_reason": "norm_alignment_ambiguous"})  # defensive
             continue
-        if not aligned and item.get("paragraph_index") is not None:
-            provision.setdefault("_empty_paragraph_indices", []).append(item["paragraph_index"])
         for idx, (p1, p2) in enumerate(aligned):
-            diffs = [f for f in ("deontic", "deadline_raw", "deference")
-                     if getattr(p1, f) != getattr(p2, f)]
+            diffs = _norm_diffs(p1, p2)
             deontic = _pick_deontic(p1.deontic, p2.deontic)
-            base = p1 if deontic == p1.deontic else p2
-
-            norm = {
-                "number": item["paragraph_number"],
-                "paragraph_index": item.get("paragraph_index"),
-                "norm_index": idx,
-                "deontic": deontic,
-                "addressee": base.addressee,
-                "addressee_type": base.addressee_type,
-                "trigger_event": base.trigger_event,
-                "action": base.action,
-                "recipient_body": base.recipient_body,
-                "deadline": _parse_deadline(base.deadline_raw),
-                "thresholds": base.thresholds,
-                "conditions": base.conditions,
-                "deference": None,  # non-suppressing default -- see module note above
-                "extraction_confidence": min(p1.extraction_confidence, p2.extraction_confidence),
-                "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-                "extracted_on": date.today().isoformat(),
-                "human_verified": False,
-                "extraction_uncertain": True,
+            base, other = (p1, p2) if deontic == p1.deontic else (p2, p1)
+            extra = {
+                "extraction_uncertain": bool(diffs),
                 "uncertainty_note": (
-                    f"two independent extraction passes disagreed on {diffs}; "
-                    f"pass1={{'deontic': {p1.deontic!r}, 'deference': {p1.deference!r}}}, "
-                    f"pass2={{'deontic': {p2.deontic!r}, 'deference': {p2.deference!r}}} "
-                    "-- resolved to the non-suppressing default rather than a human pre-clearing "
-                    "it; revisit if this norm ends up inside an actual candidate finding."
+                    f"two independent extraction passes disagreed on {diffs}; the stored "
+                    "reading follows the non-suppressing default and the other reading is "
+                    "kept in alternative_reading -- revisit if this norm ends up inside an "
+                    "actual candidate finding." if diffs else None
                 ),
+                "alternative_reading": other.model_dump() if diffs else None,
             }
-            provision.setdefault("norms", []).append(norm)
+            if other.deontic != base.deontic:
+                extra["deontic_alternative"] = other.deontic
+            provision.setdefault("norms", []).append(_finalize_norm(
+                base, number, index, idx,
+                "conservative-default (two passes disagreed; see uncertainty_note)", **extra))
         n_resolved += 1
-        dirty_paths.add(path)
+        dirty = True
 
-    for root, path, _ in loaded:
-        if path in dirty_paths:
-            path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
-            print(f"  wrote back -> {path.relative_to(ROOT)}")
+    if dirty:
+        _atomic_write_json(norms_path(spec), root)
+        print(f"  wrote back -> {norms_path(spec).relative_to(ROOT)}")
 
-    dropped_path = ROOT / "data" / "stage6_unresolved_extractions.json"
-    existing_dropped = json.loads(dropped_path.read_text(encoding="utf-8")) if dropped_path.exists() else []
-    existing_dropped.extend(dropped)
-    dropped_path.write_text(json.dumps(existing_dropped, ensure_ascii=False, indent=1), encoding="utf-8")
+    if dropped:
+        dropped_path = unresolved_path_for(spec)
+        existing = json.loads(dropped_path.read_text(encoding="utf-8")) if dropped_path.exists() else []
+        existing.extend(dropped)
+        _atomic_write_json(dropped_path, existing)
+        print(f"  {len(dropped)} dropped -> {dropped_path.relative_to(ROOT)}")
 
-    queue_path.write_text(json.dumps([], ensure_ascii=False, indent=1), encoding="utf-8")
-
-    print(f"{n_resolved} norms[] entries finalized with the non-suppressing default "
-          f"(flagged extraction_uncertain=true), {len(dropped)} dropped -- no verbatim-"
-          f"grounded data to fall back on -- logged to data/stage6_unresolved_extractions.json")
+    _atomic_write_json(queue_path_for(spec), [])
+    return n_resolved, len(dropped)
 
 
-def _save_queue_item(item: dict) -> None:
-    """Persisted immediately, one item at a time -- see main()'s docstring note on
-    crash-safety. Replaces any existing queue record for the same unit rather than
-    piling up a duplicate next to it."""
-    queue_path = ROOT / "data" / "stage6_review_queue.json"
-    existing = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
-    key = (item["instrument_id"], item["article"], item["paragraph_number"])
-    existing = [r for r in existing if (r["instrument_id"], r["article"], r["paragraph_number"]) != key]
-    existing.append(item)
-    queue_path.write_text(json.dumps(existing, ensure_ascii=False, indent=1), encoding="utf-8")
+def resolve_queue_conservatively(only: Optional[str] = None) -> None:
+    n_queued = n_resolved = n_dropped = 0
+    for spec in SOURCES:
+        if only and only.lower() not in spec.label.lower():
+            continue
+        queue = _load_queue(spec)
+        if not queue:
+            continue
+        print(f"\n=== {spec.label}: resolving {len(queue)} queued unit(s) "
+              f"({queue_path_for(spec).relative_to(ROOT)}) ===", flush=True)
+        resolved, dropped = _resolve_source_queue(spec, queue)
+        n_queued += len(queue)
+        n_resolved += resolved
+        n_dropped += dropped
+
+    if n_queued == 0:
+        print("review queue is empty -- nothing to resolve")
+        return
+    print(f"\n{n_resolved} unit(s) finalized with the non-suppressing default (norms flagged "
+          f"extraction_uncertain where the passes differed), {n_dropped} dropped -> "
+          f"data/new_norms/new_*_norms_unresolved.json (re-offered by the next normal run)")
 
 
 def main():
-    """Writes the source file back to disk after every single unit, not once per source
-    at the end -- a ~200-call run over a real network will occasionally hit a transient
-    connection error partway through a source (seen in practice), and without per-unit
-    persistence everything done in that source since its last write would be silently
-    lost when the process dies. The extra disk I/O this costs is negligible next to an
-    API call's latency."""
+    """Writes the document's stage-4 norms file after every single unit: a long run
+    over a real network occasionally hits a transient error partway through, and
+    without per-unit persistence that progress would be lost."""
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--dry-run", action="store_true",
-                     help="print scope and unit counts, make no API calls")
-    ap.add_argument("--only", default=None, help="substring match against a source's label")
+                     help="print scope, unit counts and output paths, make no API calls")
+    ap.add_argument("--only", default=None,
+                     help="substring match against a source's label (also applies to "
+                          "--retry-queue and --resolve-queue)")
     ap.add_argument("--limit", type=int, default=None,
                      help="stop after this many units total, across all sources")
     ap.add_argument("--retry-queue", action="store_true",
-                     help="re-attempt data/stage6_review_queue.json's items with --model "
-                          "instead of running the anchor set from scratch")
+                     help="re-attempt each document's review queue with --model")
     ap.add_argument("--resolve-queue", action="store_true",
-                     help="finalize whatever remains in data/stage6_review_queue.json using "
-                          "the non-suppressing conservative default (see resolve_queue_conservatively "
-                          "docstring), instead of retrying with a model. No API calls made.")
+                     help="finalize what remains in each review queue with the "
+                          "non-suppressing conservative default. No API calls made.")
     ap.add_argument("--reasoning-effort", default="none",
                      choices=["none", "minimal", "low", "medium", "high", "xhigh", "max"],
-                     help="default none (Stage 6 extraction doesn't need it); raise this "
-                          "deliberately when retrying items that disagreed even under a "
-                          "stronger model, to test reasoning depth as a separate lever "
-                          "from model choice")
+                     help="default none; raise deliberately when retrying items that "
+                          "still disagreed under a stronger model")
     ap.add_argument("--concurrency", type=int, default=10,
-                     help="parallel units in flight per source -- each unit still makes its "
-                          "own 2 sequential passes internally, so actual concurrent API calls "
-                          "run up to ~2x this. Full-corpus scale (2026-09-23: ~2,000 new "
-                          "paragraphs) is impractical run strictly sequentially.")
+                     help="parallel units in flight per source (each makes 2 sequential "
+                          "passes, so up to ~2x this many concurrent API calls)")
     args = ap.parse_args()
+
+    if args.resolve_queue:  # no API calls, so no client (and no API key) needed
+        resolve_queue_conservatively(args.only)
+        return
 
     client = None
     if not args.dry_run:
         from openai import OpenAI
-        client = OpenAI()  # reads OPENAI_API_KEY from the environment
-
-    if args.resolve_queue:
-        resolve_queue_conservatively()
-        return
-
+        client = OpenAI()   # reads OPENAI_API_KEY from the environmenthqPqA1OzcTCs3wpkxQ' # Inser key here
     if args.retry_queue:
-        retry_queue(client, args.model, args.reasoning_effort, args.concurrency)
+        retry_queue(client, args.model, args.reasoning_effort, args.concurrency, args.only)
         return
 
-    n_processed = 0
-    n_finalized = 0
-    n_queued = 0
+    n_processed = n_finalized = n_queued = n_errors = 0
 
     from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -1036,50 +1307,50 @@ def main():
         if args.only and args.only.lower() not in spec.label.lower():
             continue
 
-        path = ROOT / spec.path
-        root = json.loads(path.read_text(encoding="utf-8"))
-        all_provisions = spec.get_provisions(root)
-        in_scope_provisions = [p for p in all_provisions if spec.in_scope(p)]
+        root = _load_root(spec)
+        out_path, q_path = norms_path(spec), queue_path_for(spec)
+        in_scope_provisions = [p for p in spec.get_provisions(root) if spec.in_scope(p)]
         units = _iter_units(in_scope_provisions)
+        n_stale = sum(len(p.get(STALE_NORMS_KEY) or []) for p in in_scope_provisions)
+
+        skipped = [p for p in in_scope_provisions if p.get("_skip_reason")]
 
         print(f"\n=== {spec.label} ({spec.path}) ===")
-        print(f"  {len(in_scope_provisions)} provision(s) in scope, {len(units)} extraction unit(s)", flush=True)
+        print(f"  {len(in_scope_provisions)} provision(s) in scope, {len(units)} extraction unit(s)"
+              + (f", {n_stale} archived norm(s) from older schema versions" if n_stale else ""))
+        if skipped:
+            print(f"  {len(skipped)} provision(s) skipped as non-normative "
+                  f"(override via FORCE_INCLUDE_UIDS):")
+            for p in skipped:
+                print(f"    - art. {p.get('article') or p.get('number')}: {p['_skip_reason']}")
+        print(f"  norms -> {out_path.relative_to(ROOT)}")
+        print(f"  queue -> {q_path.relative_to(ROOT)}", flush=True)
 
         if args.dry_run:
             continue
 
         remaining = args.limit - n_processed if args.limit is not None else None
         if remaining is not None and remaining <= 0:
-            break  # --limit budget exhausted -- stop entirely, no more sources either
+            break  # --limit budget exhausted -- stop entirely
+
+        # Ensure the stage-4 file exists for every source this run reaches (also
+        # persists the archiving of stale norms done by _iter_units).
+        _atomic_write_json(out_path, root)
+
         batch = units[:remaining] if remaining is not None else units
         if not batch:
-            # THIS source has nothing to do (2026-09-24 fix: a real, confirmed bug --
-            # this used to `break`, which abandoned every LATER source too, not just
-            # this one. Never surfaced before because a full-corpus run rarely had an
-            # early source hit zero while later sources still had units queued --
-            # exposed directly by a targeted re-extraction where Wdo legitimately had
-            # 0 targeted paragraphs while GDPR/NIS2/DORA/AI Act had over 200 waiting,
-            # and the run silently stopped after 8 units instead of processing 220.
-            continue
+            continue  # this source is done; later sources may still have work
 
         write_lock = threading.Lock()
 
-        def process_unit(unit: Unit):
+        def process_unit(unit: Unit) -> bool:
             norms, queue_item = extract_unit(client, args.model, unit, args.reasoning_effort)
             with write_lock:
                 if norms is not None:
-                    if norms:
-                        unit.provision.setdefault("norms", []).extend(norms)
-                    elif unit.paragraph_index is not None:
-                        # Confirmed by both passes: no independent norm in this
-                        # paragraph -- a real, resolved result (item 3), not "not yet
-                        # processed"; recorded so _iter_units doesn't re-offer it forever.
-                        unit.provision.setdefault("_empty_paragraph_indices", []).append(unit.paragraph_index)
+                    _store_result(unit, norms)
                 else:
-                    _save_queue_item(queue_item)
-                # Crash-safe, same reasoning as before: written after every unit, not just
-                # at the end -- the lock serializes the write, not the (parallel) API calls.
-                path.write_text(json.dumps(root, ensure_ascii=False, indent=1), encoding="utf-8")
+                    _save_queue_item(queue_item, q_path)
+                _atomic_write_json(out_path, root)
             return norms is not None
 
         with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
@@ -1087,18 +1358,20 @@ def main():
             for i, fut in enumerate(as_completed(future_to_unit), 1):
                 unit = future_to_unit[fut]
                 n_processed += 1
+                where = f"para {unit.paragraph_number}" if unit.paragraph_number else "(whole provision)"
                 try:
                     finalized = fut.result()
                 except Exception as e:
-                    print(f"  [{i}/{len(batch)}] {unit.article_heading} -- ERROR: {e}", flush=True)
-                    n_queued += 1
+                    # Not queued: the unit simply stays "not done" and is offered again
+                    # on the next run.
+                    n_errors += 1
+                    print(f"  [{i}/{len(batch)}] {unit.article_heading} {where} -- ERROR: {e}", flush=True)
                     continue
                 if finalized:
                     n_finalized += 1
                 else:
                     n_queued += 1
-                print(f"  [{i}/{len(batch)}] {unit.article_heading} "
-                      f"{'para ' + unit.paragraph_number if unit.paragraph_number else '(whole provision)'} "
+                print(f"  [{i}/{len(batch)}] {unit.article_heading} {where} "
                       f"-- {'finalized' if finalized else 'queued'}", flush=True)
 
         if args.limit is not None and n_processed >= args.limit:
@@ -1107,8 +1380,9 @@ def main():
     if args.dry_run:
         return
 
-    print(f"\n{n_processed} unit(s) processed, {n_finalized} norms[] entries finalized, "
-          f"{n_queued} sent to the review queue -> data/stage6_review_queue.json", flush=True)
+    print(f"\n{n_processed} unit(s) processed: {n_finalized} finalized, {n_queued} queued "
+          f"(data/new_norms/new_*_norms_review_queue.json), {n_errors} error(s) "
+          f"(not saved; re-offered on the next run)", flush=True)
 
 
 if __name__ == "__main__":
