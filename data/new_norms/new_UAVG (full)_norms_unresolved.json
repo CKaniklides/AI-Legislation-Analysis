@@ -1,0 +1,890 @@
+[
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "14",
+  "paragraph_number": "6",
+  "paragraph_index": 5,
+  "unit_text": "De bestuurlijke boete komt toe aan de Staat.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "RIGHT",
+    "actor": "De bestuurlijke boete",
+    "trigger_event": null,
+    "action_span": [
+     "komt toe"
+    ],
+    "action_lemma": "toekomen",
+    "object": "de Staat",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "17",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "De bestuurlijke boete komt toe aan de Staat.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": "De Staat",
+    "trigger_event": null,
+    "action_span": [
+     "komt toe"
+    ],
+    "action_lemma": "toekomen",
+    "object": "De bestuurlijke boete",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "7",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Bij de Autoriteit persoonsgegevens kunnen voorts buitengewone leden worden benoemd. Bij de benoeming van buitengewone leden wordt spreiding over de onderscheidene sectoren van de maatschappij nagestreefd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "20",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Het verzoekschrift wordt ondertekend en bevat ten minste:\n\na.\nde dagtekening;\n\nb.\nde gronden van het verzoek;\n\nc.\nde namen van de belanghebbende en de partij die voorwerp is van het onderzoek, bedoeld in het eerste lid.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt ondertekend"
+    ],
+    "action_lemma": "ondertekenen",
+    "object": "Het verzoekschrift",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bevat"
+    ],
+    "action_lemma": "bevatten",
+    "object": "de dagtekening",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bevat"
+    ],
+    "action_lemma": "bevatten",
+    "object": "de gronden van het verzoek",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bevat"
+    ],
+    "action_lemma": "bevatten",
+    "object": "de namen van de belanghebbende en de partij die voorwerp is van het onderzoek, bedoeld in het eerste lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [
+     "ten minste"
+    ],
+    "conditions": []
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt ondertekend"
+    ],
+    "action_lemma": "ondertekenen",
+    "object": "Het verzoekschrift",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bevat"
+    ],
+    "action_lemma": "bevatten",
+    "object": "Het verzoekschrift",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "21a",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Met betrekking tot het toezicht, bedoeld in het eerste lid, vindt de samenwerking en uitwisseling van informatie met De Nederlandsche Bank N.V. en andere relevante toezichthouders plaats overeenkomstig artikel 26 van de richtlijn betaaldiensten, bedoeld in artikel 1:1 van de Wet op het financieel toezicht.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "vindt",
+     "plaats"
+    ],
+    "action_lemma": "plaatsvinden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "7",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Bij ministeriële regeling worden voorwaarden gesteld en vereiste kwalificaties benoemd waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken, om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens, alsmede regels ten aanzien van de procedure die tot een benoeming als bedoeld in het derde lid leidt.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "21",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "Bij ministeriële regeling wordt of de Autoriteit persoonsgegevens of de Raad voor Accreditatie of worden zij beide aangewezen als accrediterende instantie als bedoeld in artikel 43 van de verordening.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "de Autoriteit persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "zij beide",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "de Autoriteit persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "de Raad voor Accreditatie",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "zij beide",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "8",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens, met dien verstande dat:\n\na.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de andere leden van de Autoriteit persoonsgegevens door de voorzitter van de Autoriteit persoonsgegevens wordt opgelegd;\n\nb.\nhet in artikel 46c, onderdeel b, genoemde verbod zich in een onderhoud of een gesprek in te laten met partijen of hun advocaten of gemachtigden of een bijzondere inlichting of schriftelijk stuk van hen aan te nemen, niet op de voorzitter en de andere leden van de Autoriteit persoonsgegevens van toepassing is;\n\nc.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de voorzitter van de Autoriteit persoonsgegevens door de president van het gerechtshof Den Haag wordt opgelegd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "22",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Overeenkomstig artikel 9, tweede lid, onderdelen a, c, d, e en f, van de verordening is het verbod om bijzondere categorieën van persoonsgegevens te verwerken niet van toepassing, indien:\n\na.\nde betrokkene uitdrukkelijke toestemming heeft gegeven voor de verwerking van die persoonsgegevens voor een of meer welbepaalde doeleinden;\n\nb.\nde verwerking noodzakelijk is ter bescherming van de vitale belangen van de betrokkene of van een andere natuurlijke persoon, indien de betrokkene fysiek of juridisch niet in staat is zijn toestemming te geven;\n\nc.\nde verwerking wordt verricht door een stichting, een vereniging of een andere instantie zonder winstoogmerk die op politiek, levensbeschouwelijk, godsdienstig of vakbondsgebied werkzaam is, in het kader van haar gerechtvaardigde activiteiten en met passende waarborgen, mits de verwerking uitsluitend betrekking heeft op de leden of de voormalige leden van de instantie of op personen die in verband met haar doeleinden regelmatig contact met haar onderhouden, en de persoonsgegevens niet zonder de toestemming van de betrokkenen buiten die instantie worden verstrekt;\n\nd.\nde verwerking betrekking heeft op persoonsgegevens die kennelijk door de betrokkene openbaar zijn gemaakt; of\n\ne.\nde verwerking noodzakelijk is voor de instelling, uitoefening of verdediging van een rechtsvordering, of wanneer gerechten handelen in het kader van hun rechtsprekende taken.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien:"
+    ]
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "35",
+  "paragraph_number": "6",
+  "paragraph_index": 5,
+  "unit_text": "De rechtbank kan partijen en anderen verzoeken binnen een door haar te bepalen termijn schriftelijke inlichtingen te geven en onder hen berustende stukken in te zenden. De verwerkingsverantwoordelijke en belanghebbende zijn verplicht aan dit verzoek te voldoen. De artikelen 8:45, tweede en derde lid, en 8:29 van de Algemene wet bestuursrecht zijn van overeenkomstige toepassing.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "COMPETENCE",
+    "actor": "De rechtbank",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "verzoeken"
+    ],
+    "action_lemma": "verzoeken",
+    "object": null,
+    "recipient": [
+     "partijen en anderen"
+    ],
+    "deadline_raw": "binnen een door haar te bepalen termijn",
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": "De verwerkingsverantwoordelijke en belanghebbende",
+    "trigger_event": null,
+    "action_span": [
+     "zijn verplicht",
+     "te voldoen"
+    ],
+    "action_lemma": "voldoen",
+    "object": "aan dit verzoek",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "COMPETENCE",
+    "actor": "De rechtbank",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "verzoeken"
+    ],
+    "action_lemma": "verzoeken",
+    "object": "schriftelijke inlichtingen",
+    "recipient": [
+     "partijen en anderen"
+    ],
+    "deadline_raw": "binnen een door haar te bepalen termijn",
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": "De verwerkingsverantwoordelijke en belanghebbende",
+    "trigger_event": null,
+    "action_span": [
+     "zijn verplicht",
+     "te voldoen"
+    ],
+    "action_lemma": "voldoen",
+    "object": "aan dit verzoek",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": "De verwerkingsverantwoordelijke en belanghebbende",
+    "trigger_event": null,
+    "action_span": [
+     "zijn verplicht",
+     "in te zenden"
+    ],
+    "action_lemma": "inzenden",
+    "object": "onder hen berustende stukken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "30",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Gelet op artikel 9, tweede lid, onderdeel b, van de verordening, is het verbod om gegevens over gezondheid te verwerken niet van toepassing, indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn, en voor zover de verwerking noodzakelijk is voor:\n\na.\neen goede uitvoering van wettelijke voorschriften, pensioenregelingen of collectieve arbeidsovereenkomsten die voorzien in aanspraken die afhankelijk zijn van de gezondheidstoestand van de betrokkene; of\n\nb.\nde re-integratie of begeleiding van werknemers of uitkeringsgerechtigden in verband met ziekte of arbeidsongeschiktheid.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "EXEMPTION",
+    "actor": "bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om gegevens over gezondheid te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+     "voor zover de verwerking noodzakelijk is voor"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": "bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om gegevens over gezondheid te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+     "voor zover de verwerking noodzakelijk is voor"
+    ]
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "EXEMPTION",
+    "actor": "bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het verbod om gegevens over gezondheid te verwerken",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "indien de verwerking geschiedt door bestuursorganen, pensioenfondsen, werkgevers of instellingen die te hunnen behoeve werkzaam zijn",
+     "voor zover de verwerking noodzakelijk is voor"
+    ]
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "42",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "Artikel 34 van de verordening is niet van toepassing op financiële ondernemingen als bedoeld in de Wet op het financieel toezicht.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "EXEMPTION",
+    "actor": "financiële ondernemingen als bedoeld in de Wet op het financieel toezicht",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "Artikel 34 van de verordening",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "41",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Bij de toepassing van het eerste lid houdt de verwerkingsverantwoordelijke rekening met in ieder geval, voor zover van toepassing:\n\na.\nde doeleinden van de verwerking of van de categorieën van verwerking;\n\nb.\nde categorieën van persoonsgegevens;\n\nc.\nhet toepassingsgebied van de ingevoerde beperkingen;\n\nd.\nde waarborgen ter voorkoming van misbruik of onrechtmatige toegang of doorgifte;\n\ne.\nde specificatie van de verwerkingsverantwoordelijke of de categorieën van verwerkingsverantwoordelijken;\n\nf.\nde opslagperiodes en de toepasselijke waarborgen, rekening houdend met de aard, de omvang en de doeleinden van de verwerking of van de categorieën van verwerking;\n\ng.\nde risico's voor de rechten en vrijheden van de betrokkenen; en\n\nh.\nhet recht van betrokkenen om van de beperking op de hoogte te worden gesteld, tenzij dit afbreuk kan doen aan het doel van de beperking.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": "de verwerkingsverantwoordelijke",
+    "trigger_event": null,
+    "action_span": [
+     "houdt",
+     "rekening"
+    ],
+    "action_lemma": "rekening houden met",
+    "object": "in ieder geval",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover van toepassing"
+    ]
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": "het recht van betrokkenen",
+    "trigger_event": null,
+    "action_span": [
+     "om",
+     "op de hoogte te worden gesteld"
+    ],
+    "action_lemma": null,
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij dit afbreuk kan doen aan het doel van de beperking"
+    ]
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": "de verwerkingsverantwoordelijke",
+    "trigger_event": null,
+    "action_span": [
+     "houdt",
+     "rekening"
+    ],
+    "action_lemma": "rekening houden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover van toepassing"
+    ]
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "48",
+  "paragraph_number": "6",
+  "paragraph_index": 5,
+  "unit_text": "Besluiten die voorafgaand aan de inwerkingtreding van deze wet zijn genomen door het College bescherming persoonsgegevens gelden van rechtswege als besluiten, genomen door de Autoriteit persoonsgegevens.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": "Besluiten die voorafgaand aan de inwerkingtreding van deze wet zijn genomen door het College bescherming persoonsgegevens",
+    "trigger_event": null,
+    "action_span": [
+     "gelden",
+     "als"
+    ],
+    "action_lemma": null,
+    "object": "besluiten, genomen door de Autoriteit persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "51",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "De Wet bescherming persoonsgegevens wordt ingetrokken.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "ingetrokken"
+    ],
+    "action_lemma": "intrekken",
+    "object": "De Wet bescherming persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   }
+  ],
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "48a",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "Op het tijdstip van inwerkingtreding van dit artikel zijn de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst, van rechtswege ontslagen en aangesteld als ambtenaar in dienst van de Autoriteit persoonsgegevens. De overgang van de in de vorige volzin bedoelde ambtenaren vindt plaats met een rechtspositie die als geheel ten minste gelijkwaardig is aan die welke voor elk van hen gold op de dag voor de datum van inwerkingtreding van dit artikel.",
+  "reason": "two_pass_disagreement",
+  "disagreement_kind": "norm_count_mismatch",
+  "pass1": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": "Op het tijdstip van inwerkingtreding van dit artikel",
+    "action_span": [
+     "zijn",
+     "ontslagen"
+    ],
+    "action_lemma": "ontslaan",
+    "object": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": "Op het tijdstip van inwerkingtreding van dit artikel",
+    "action_span": [
+     "aangesteld"
+    ],
+    "action_lemma": "aanstellen",
+    "object": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+    "recipient": [
+     "in dienst van de Autoriteit persoonsgegevens"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": "De overgang van de in de vorige volzin bedoelde ambtenaren",
+    "action_span": [
+     "vindt plaats"
+    ],
+    "action_lemma": "plaatsvinden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met een rechtspositie die als geheel ten minste gelijkwaardig is aan die welke voor elk van hen gold op de dag voor de datum van inwerkingtreding van dit artikel"
+    ]
+   }
+  ],
+  "pass2": [
+   {
+    "deontic": "OBLIGATION",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "vastgestelde"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "EXEMPTION",
+    "actor": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+    "trigger_event": "Op het tijdstip van inwerkingtreding van dit artikel",
+    "action_span": [
+     "zijn",
+     "ontslagen"
+    ],
+    "action_lemma": null,
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": "de ambtenaren van het secretariaat, bedoeld in artikel 10, eerste lid, van wie naam en functie zijn vermeld op een door Onze Minister in overleg met de Autoriteit persoonsgegevens vastgestelde lijst",
+    "trigger_event": "Op het tijdstip van inwerkingtreding van dit artikel",
+    "action_span": [
+     "aangesteld"
+    ],
+    "action_lemma": "aanstellen",
+    "object": null,
+    "recipient": [
+     "als ambtenaar in dienst van de Autoriteit persoonsgegevens"
+    ],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": []
+   },
+   {
+    "deontic": "OBLIGATION",
+    "actor": "De overgang van de in de vorige volzin bedoelde ambtenaren",
+    "trigger_event": null,
+    "action_span": [
+     "vindt plaats"
+    ],
+    "action_lemma": "plaatsvinden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "thresholds": [],
+    "conditions": [
+     "met een rechtspositie die als geheel ten minste gelijkwaardig is aan die welke voor elk van hen gold op de dag voor de datum van inwerkingtreding van dit artikel"
+    ]
+   }
+  ],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "norm_count_mismatch"
+ }
+]
