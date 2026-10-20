@@ -1,0 +1,396 @@
+{"norm_id": "BWBR0052872:3:whole:1", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:5:2:1", "object": "deze wet", "units": ["wet"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:9:1:1", "object": "een in bijlage 1 of bijlage 2 van deze wet genoemde entiteit", "units": ["entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:9:2:2", "object": "de aanwijzing", "units": ["aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:10:whole:1", "object": "een aanbieder die voor 16 januari 2023 op grond van de Wet beveiliging netwerk- en informatiesystemen is aangewezen als aanbieder van een essentiële dienst", "units": ["aanbieder"], "negated": false, "clauses": ["die voor 16 januari 2023 aangewezen als aanbieder van een essentiële dienst"]}
+{"norm_id": "BWBR0052872:11:1:1", "object": "een instelling voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek", "units": ["instelling voor hoger onderwijs"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:11:2:2", "object": "de aanwijzing, bedoeld in het eerste lid", "units": ["aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:13:1:1", "object": "een instelling voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek", "units": ["instelling voor hoger onderwijs"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:13:2:2", "object": "de aanwijzing, bedoeld in het eerste lid", "units": ["aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:14:whole:1", "object": "het centrale contactpunt", "units": ["centrale contactpunt"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:14:whole:2", "object": "de volgende taken", "units": ["taken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:14:whole:3", "object": "voor grensoverschrijdende samenwerking van de autoriteiten van Nederland met de relevante autoriteiten van andere lidstaten van de Europese Unie, de Europese Commissie en Enisa", "units": ["grensoverschrijdende samenwerking van de autoriteiten van Nederland met de relevante autoriteiten van andere lidstaten van de Europese Unie, de Europese Commissie en Enisa"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:14:whole:4", "object": "voor sectoroverschrijdende samenwerking tussen de bevoegde autoriteiten binnen Nederland", "units": ["sectoroverschrijdende samenwerking tussen de bevoegde autoriteiten binnen Nederland"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:14:whole:5", "object": "de overige in deze wet genoemde taken", "units": ["overige genoemde taken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:15:6:1", "object": "de bestuursrechtelijke handhaving van het bepaalde bij of krachtens deze wet", "units": ["bestuursrechtelijke handhaving van het bepaalde"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:15:6:2", "object": "de bestuursrechtelijke handhaving van het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen", "units": ["bestuursrechtelijke handhaving van het bepaalde in de uitvoeringshandelingen en de gedelegeerde handelingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:15:6:3", "object": "de overige in deze wet genoemde taken van de bevoegde autoriteit", "units": ["overige genoemde taken van de bevoegde autoriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:1:1", "object": "het CSIRT", "units": ["CSIRT"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:3:2", "object": "een openbaar toegankelijk netwerk- en informatiesysteem van een essentiële entiteit en belangrijke entiteit", "units": ["openbaar toegankelijk netwerk- en informatiesysteem van een essentiële entiteit en belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:3:3", "object": "tot negatieve gevolgen voor de dienstverlening van de betrokken entiteit", "units": ["negatieve gevolgen voor de dienstverlening van de betrokken entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:4:4", "object": "prioriteit", "units": ["prioriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:5:5", "object": "samenwerkingsrelaties", "units": ["samenwerkingsrelaties"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:6:6", "object": "de invoering en het gebruik van gemeenschappelijke of gestandaardiseerde praktijken, classificatieschema’s en taxonomieën", "units": ["invoering", "gebruik van gemeenschappelijke of gestandaardiseerde praktijken, classificatieschema’s en taxonomieën"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:16:7:7", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:17:1:1", "object": "een CSIRT", "units": ["CSIRT"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:19:1:1", "object": "een nationale cyberbeveiligingsstrategie als bedoeld in artikel 7, eerste lid, van de NIS2-richtlijn", "units": ["nationale cyberbeveiligingsstrategie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:19:2:2", "object": "beleid", "units": ["beleid"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:19:3:3", "object": "de nationale cyberbeveiligingsstrategie", "units": ["nationale cyberbeveiligingsstrategie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:19:3:4", "object": "de nationale cyberbeveiligingsstrategie", "units": ["nationale cyberbeveiligingsstrategie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:20:whole:1", "object": "een nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons", "units": ["nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:3:1", "object": "het volgende", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:4:2", "object": "de specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener", "units": ["specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:4:3", "object": "de algemene kwaliteit van de producten en de cyberbeveiligingspraktijken van haar leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures", "units": ["algemene kwaliteit van de producten", "cyberbeveiligingspraktijken van haar leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:4:4", "object": "de resultaten van de door de samenwerkingsgroep op grond van artikel 22, eerste lid, van de NIS2-richtlijn uitgevoerde gecoördineerde beveiligingsrisicobeoordelingen van kritieke toeleveringsketens", "units": ["resultaten van de door de samenwerkingsgroep uitgevoerde gecoördineerde beveiligingsrisicobeoordelingen van kritieke toeleveringsketens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:4:5", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:5:6", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21:5:7", "object": "eisen", "units": ["eisen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21a:1:1", "object": "producten of diensten van anderen dan de daarbij door Onze Minister die het aangaat genoemde partij", "units": ["producten dan de daarbij door Onze Minister", "diensten van anderen"], "negated": false, "clauses": ["die het aangaat genoemde partij"]}
+{"norm_id": "BWBR0052872:21a:2:2", "object": "of beheersmaatregelen mogelijk en realiseerbaar zijn die de nationale veiligheidsrisico’s die in het geding zijn voldoende beschermen", "units": ["of beheersmaatregelen mogelijk en realiseerbaar zijn die de nationale veiligheidsrisico’s die in het geding zijn voldoende beschermen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21a:3:3", "object": "een termijn", "units": ["termijn"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:21a:4:4", "object": "Het eerste lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:22:1:1", "object": "artikel 21", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:23:1:1", "object": "een essentiële entiteit respectievelijk een belangrijke entiteit", "units": ["essentiële entiteit respectievelijk een belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:23:2:2", "object": "Het eerste lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:1:1", "object": "De maatregelen, bedoeld in artikel 21", "units": ["maatregelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:2:2", "object": "kennis en vaardigheden", "units": ["kennis", "vaardigheden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:3:3", "object": "aan het bepaalde in het tweede lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:4:4", "object": "de kennis en vaardigheden, bedoeld in het tweede lid", "units": ["kennis", "vaardigheden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:5:5", "object": "een certificaat", "units": ["certificaat"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:6:6", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:8:7", "object": "het bepaalde bij of krachtens het eerste tot en met zesde lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:9:8", "object": "het bepaalde bij of krachtens het eerste tot en met zesde lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:10:9", "object": "het bepaalde bij of krachtens het eerste tot en met zesde lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:24:11:10", "object": "het bepaalde bij of krachtens het eerste tot en met zesde lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:25:1:1", "object": "ieder significant incident", "units": ["significant incident"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:25:3:2", "object": "de criteria", "units": ["criteria"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:25:4:3", "object": "aanvullende criteria", "units": ["aanvullende criteria"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:26:1:1", "object": "een vroegtijdige waarschuwing over het significante incident", "units": ["vroegtijdige waarschuwing over het significante incident"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:26:2:2", "object": "aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt", "units": ["of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:26:2:3", "object": "aan of het significante incident grensoverschrijdende gevolgen kan hebben", "units": ["of het significante incident grensoverschrijdende gevolgen kan hebben"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:26:2:4", "object": "de contactgegevens van de functionaris die verantwoordelijk is voor de melding", "units": ["contactgegevens van de functionaris"], "negated": false, "clauses": ["die verantwoordelijk is voor de melding"]}
+{"norm_id": "BWBR0052872:27:1:1", "object": "een melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:27:2:2", "object": "een melding van het significante incident", "units": ["melding van het significante incident"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:28:whole:1", "object": "een tussentijds verslag", "units": ["tussentijds verslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:29:1:1", "object": "een eindverslag", "units": ["eindverslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:29:2:2", "object": "een voortgangsverslag", "units": ["voortgangsverslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:29:2:3", "object": "een eindverslag", "units": ["eindverslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:30:1:1", "object": "significante incidenten", "units": ["significante incidenten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:30:2:2", "object": "welke maatregelen die ontvangers kunnen nemen in reactie op die dreiging", "units": ["maatregelen"], "negated": false, "clauses": ["die ontvangers kunnen nemen in reactie op die dreiging"]}
+{"norm_id": "BWBR0052872:30:2:3", "object": "de desbetreffende significante cyberdreiging", "units": ["significante cyberdreiging"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:31:1:1", "object": "de verplichtingen uit de artikelen 25 tot en met 30", "units": ["verplichtingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:32:1:1", "object": "een essentiële entiteit of belangrijke entiteit", "units": ["essentiële entiteit", "belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:32:2:2", "object": "Het eerste lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:33:1:1", "object": "een melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:33:2:2", "object": "de vrijwillige meldingen", "units": ["vrijwillige meldingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:33:2:3", "object": "voorrang", "units": ["voorrang"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:33:3:4", "object": "de vrijwillige melding", "units": ["vrijwillige melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:34:1:1", "object": "een melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:34:2:2", "object": "De melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:35:whole:1", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:36:2:1", "object": "aanvullende technische ondersteuning", "units": ["aanvullende technische ondersteuning"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:36:3:2", "object": "richtsnoeren", "units": ["richtsnoeren"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:37:whole:1", "object": "het publiek", "units": ["publiek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:37:whole:2", "object": "de entiteit", "units": ["entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:38:whole:1", "object": "de essentiële entiteit of belangrijke entiteit", "units": ["essentiële entiteit", "belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:1:1", "object": "het centrale contactpunt", "units": ["centrale contactpunt"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:1:2", "object": "dat de relevante informatie die hierover is gemeld tijdig aan het centrale contactpunt wordt verstrekt", "units": ["relevante informatie"], "negated": false, "clauses": ["die hierover is gemeld tijdig aan het centrale contactpunt wordt verstrekt"]}
+{"norm_id": "BWBR0052872:39:2:3", "object": "de informatie die overeenkomstig de artikelen 26 tot en met 29 is ontvangen", "units": ["informatie"], "negated": false, "clauses": ["die is ontvangen"]}
+{"norm_id": "BWBR0052872:39:2:4", "object": "de beveiligingsbelangen en commerciële belangen van de entiteit en de vertrouwelijkheid van de verstrekte informatie", "units": ["beveiligingsbelangen en commerciële belangen van de entiteit en de vertrouwelijkheid van de verstrekte informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:2:5", "object": "het aan het CSIRT gemelde incident, bijna-incident of cyberdreiging", "units": ["aan het CSIRT gemelde incident", "bijna-incident", "cyberdreiging"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:3:6", "object": "de op grond van de artikelen 25 en 33 ontvangen meldingen", "units": ["ontvangen meldingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:4:7", "object": "daarvan", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:39:5:8", "object": "een samenvattend verslag", "units": ["samenvattend verslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:40:1:1", "object": "informatie over een significant incident", "units": ["informatie over een significant incident"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:40:2:2", "object": "informatie over een incident, bijna-incident of cyberdreiging", "units": ["informatie over een incident, bijna-incident of cyberdreiging"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:41:whole:1", "object": "deze informatie", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:42:1:1", "object": "een vertegenwoordiger", "units": ["vertegenwoordiger"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:42:2:2", "object": "een vertegenwoordiger", "units": ["vertegenwoordiger"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:43:1:1", "object": "een nationaal register van essentiële entiteiten, belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen", "units": ["nationaal register van essentiële entiteiten, belangrijke entiteiten en entiteiten"], "negated": false, "clauses": ["die domeinnaamregistratiediensten verlenen"]}
+{"norm_id": "BWBR0052872:43:2:2", "object": "het nationale register", "units": ["nationale register"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:43:2:3", "object": "het", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:43:3:4", "object": "een in het eerste lid bedoelde registratie", "units": ["registratie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:43:3:5", "object": "een in het eerste lid bedoelde registratie", "units": ["registratie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:43:3:6", "object": "een in het eerste lid bedoelde registratie", "units": ["registratie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:44:1:1", "object": "de volgende informatie", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:44:2:2", "object": "elke wijziging van de informatie die zij op grond van het eerste lid hebben verstrekt", "units": ["wijziging van de informatie"], "negated": false, "clauses": ["die zij hebben verstrekt"]}
+{"norm_id": "BWBR0052872:44:3:3", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:45:1:1", "object": "een essentiële entiteit, een belangrijke entiteit of entiteit die domeinnaamregistratiediensten verleent", "units": ["essentiële entiteit", "belangrijke entiteit of entiteit"], "negated": false, "clauses": ["die domeinnaamregistratiediensten verleent"]}
+{"norm_id": "BWBR0052872:45:2:2", "object": "Het eerste lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:46:whole:1", "object": "toegang tot het nationale register, bedoeld in artikel 43", "units": ["toegang tot het nationale register"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:47:1:1", "object": "de informatie", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:47:2:2", "object": "de informatie, bedoeld in het derde lid van dit artikel", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:47:4:3", "object": "de informatie, bedoeld in het derde lid", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:47:5:4", "object": "wijzigingen van de gegevens, bedoeld in het derde lid", "units": ["wijzigingen van de gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:48:1:1", "object": "een entiteit als bedoeld in artikel 47, eerste en tweede lid", "units": ["entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:48:2:2", "object": "Het eerste lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:1:1", "object": "nauwkeurige en volledige domeinnaamregistratiegegevens", "units": ["nauwkeurige en volledige domeinnaamregistratiegegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:1:2", "object": "die gegevens", "units": ["gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:3:3", "object": "het beleid en de procedures", "units": ["beleid", "procedures"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:3:4", "object": "dat beleid en die procedures", "units": ["beleid", "procedures"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:4:5", "object": "de domeinnaamregistratiegegevens, die geen persoonsgegevens zijn", "units": ["domeinnaamregistratiegegevens"], "negated": false, "clauses": ["die geen persoonsgegevens zijn"]}
+{"norm_id": "BWBR0052872:49:5:6", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:49:6:7", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:50:1:1", "object": "toegang tot specifieke gegevens over de registratie van domeinnamen", "units": ["toegang tot specifieke gegevens over de registratie van domeinnamen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:50:2:2", "object": "een verzoek om toegang als bedoeld in het eerste lid", "units": ["verzoek om toegang"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:50:3:3", "object": "het beleid en de procedures met betrekking tot de bekendmaking van de gegevens, bedoeld in het eerste lid", "units": ["beleid", "procedures met betrekking tot de bekendmaking van de gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:50:3:4", "object": "dat beleid en die procedures", "units": ["beleid", "procedures"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:50:4:5", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:51:1:1", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:51:1:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:51:2:3", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:51:2:4", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:51:3:5", "object": "de informatie", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:52:whole:1", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:52:whole:2", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:53:whole:1", "object": "relevante informatie", "units": ["relevante informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:54:1:1", "object": "een samenwerkingsrelatie", "units": ["samenwerkingsrelatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:54:1:2", "object": "relevante informatie", "units": ["relevante informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:54:1:3", "object": "de uitwisseling van persoonsgegevens", "units": ["uitwisseling van persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:54:2:4", "object": "uit het verlenen van bijstand op het gebied van cyberbeveiliging", "units": ["bijstand op het gebied van cyberbeveiliging"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:54:2:5", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:55:whole:1", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:55:whole:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:56:1:1", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:56:1:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:56:2:3", "object": "de betrokken bevoegde autoriteit, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten", "units": ["bevoegde autoriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:56:4:4", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:57:1:1", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:57:1:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:57:2:3", "object": "het oversightforum dat is opgericht op grond van artikel 32, eerste lid, van de Verordening (EU) 2022/2554", "units": ["oversightforum"], "negated": false, "clauses": ["dat is opgericht"]}
+{"norm_id": "BWBR0052872:58:1:1", "object": "alle daarvoor noodzakelijke gegevens", "units": ["noodzakelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:58:1:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:58:2:3", "object": "daarvan", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:58:3:4", "object": "bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:58:4:5", "object": "de potentiële inbreuk in verband met persoonsgegevens, bedoeld in het tweede lid", "units": ["potentiële inbreuk in verband met persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:59:whole:1", "object": "informatie", "units": ["informatie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:2:1", "object": "toezichts- en handhavingsmaatregelen", "units": ["toezichts- en handhavingsmaatregelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:3:2", "object": "bijstand", "units": ["bijstand"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:3:3", "object": "het verzoek", "units": ["verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:4:4", "object": "de betrokken bevoegde autoriteit", "units": ["bevoegde autoriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:4:5", "object": "de Europese Commissie en Enisa", "units": ["Europese Commissie", "Enisa"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:5:6", "object": "de betrokken bevoegde autoriteit van een andere lidstaat van de Europese Unie", "units": ["bevoegde autoriteit van een andere lidstaat van de Europese Unie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:5:7", "object": "het centrale contactpunt", "units": ["centrale contactpunt"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:60:6:8", "object": "op het verstrekken van informatie en het nemen van toezichts- en handhavingsmaatregelen, met inbegrip van inspecties ter plaatse, toezicht elders en beveiligingsaudits", "units": ["informatie en het nemen van toezichts- en handhavingsmaatregelen, met inbegrip van inspecties ter plaatse, toezicht elders en beveiligingsaudits"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:61:1:1", "object": "om bijstand", "units": ["om bijstand"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:61:2:2", "object": "een bevoegde autoriteit van een andere lidstaat van de Europese Unie", "units": ["bevoegde autoriteit van een andere lidstaat van de Europese Unie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:62:1:1", "object": "relevante informatie over cyberbeveiliging", "units": ["relevante informatie over cyberbeveiliging"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:62:3:2", "object": "regels", "units": ["regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:64:1:1", "object": "De verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "units": ["verwerking van persoonsgegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "gegevens over gezondheid, of gegevens"], "negated": false, "clauses": ["waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken"]}
+{"norm_id": "BWBR0052872:64:2:2", "object": "De verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "units": ["verwerking van persoonsgegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "gegevens over gezondheid, of gegevens"], "negated": false, "clauses": ["waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken"]}
+{"norm_id": "BWBR0052872:66:1:1", "object": "vertrouwelijke gegevens", "units": ["vertrouwelijke gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:68:1:1", "object": "het toezicht op de naleving van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen", "units": ["toezicht op de naleving van het bepaalde en het bepaalde in de uitvoeringshandelingen en de gedelegeerde handelingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:68:2:2", "object": "het verlenen van bijstand als bedoeld in artikel 60", "units": ["bijstand"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:68:3:3", "object": "hun toezichthoudende bevoegdheden", "units": ["toezichthoudende bevoegdheden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:68:4:4", "object": "Van een besluit als bedoeld in het eerste lid", "units": ["besluit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:69:whole:1", "object": "de omstandigheden van elk afzonderlijk geval, alsmede: a. de ernst van de overtreding en het belang van de geschonden bepalingen, waarbij onder meer het volgende in ieder geval een ernstige overtreding vormt: 1°. herhaalde overtredingen; 2°. het niet melden of niet verhelpen van significante incidenten; 3°. het niet verhelpen van tekortkomingen naar aanleiding van bindende aanwijzingen van de bevoegde autoriteit; 4°. het belemmeren van audits of monitoringsactiviteiten waartoe de bevoegde autoriteit opdracht heeft gegeven naar aanleiding van de vaststelling van een overtreding; 5°. het verstrekken van valse of zeer onnauwkeurige informatie met betrekking tot de verplichtingen, bedoeld in de artikelen 21 en 25 tot en met 30; b. de duur van de overtreding; c. eventuele relevante eerdere overtredingen door de betrokken entiteit; d. elke veroorzaakte materiële of immateriële schade, met inbegrip van elke financiële of economische schade, effecten op andere diensten en het aantal getroffen gebruikers; e. opzet of nalatigheid van de overtreder; f. door de entiteit genomen maatregelen om de materiële of immateriële schade te voorkomen of te beperken; g. de naleving van goedgekeurde gedragscodes of goedgekeurde certificeringsmechanismen; en h. de mate waarin de overtreder meewerkt met de bevoegde autoriteiten", "units": ["omstandigheden van elk afzonderlijk geval", "ernst van de overtreding en het belang van de geschonden bepalingen", "herhaalde overtredingen", "niet melden of niet verhelpen van significante incidenten", "niet verhelpen van tekortkomingen naar aanleiding van bindende aanwijzingen van de bevoegde autoriteit", "audits of monitoringsactiviteiten", "valse of zeer onnauwkeurige informatie met betrekking tot de verplichtingen", "duur van de overtreding", "eventuele relevante eerdere overtredingen door de betrokken entiteit", "veroorzaakte materiële of immateriële schade, met inbegrip van elke financiële of economische schade, effecten op andere diensten en het aantal getroffen gebruikers", "opzet van de overtreder", "nalatigheid", "door de entiteit genomen maatregelen om de materiële of immateriële schade te voorkomen of te beperken", "goedgekeurde gedragscodes", "goedgekeurde certificeringsmechanismen", "mate"], "negated": false, "clauses": ["waarbij onder meer het volgende in ieder geval een ernstige overtreding vormt", "waartoe de bevoegde autoriteit opdracht heeft gegeven naar aanleiding van de vaststelling van een overtreding", "waarin de overtreder meewerkt met de bevoegde autoriteiten"]}
+{"norm_id": "BWBR0052872:70:1:1", "object": "een controlefunctionaris", "units": ["controlefunctionaris"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:70:3:2", "object": "de kosten van de controlefunctionaris", "units": ["kosten van de controlefunctionaris"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:70:4:3", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:71:1:1", "object": "een beveiligingsscan", "units": ["beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:71:1:2", "object": "een beveiligingsscan", "units": ["beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:71:2:3", "object": "de kosten van de beveiligingsscan", "units": ["kosten van de beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:1:1", "object": "een essentiële entiteit", "units": ["essentiële entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:1:2", "object": "of de entiteit voldoet aan het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen", "units": ["of de entiteit voldoet aan het bepaalde en het bepaalde in de uitvoeringshandelingen en de gedelegeerde handelingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:1:3", "object": "de resultaten van dat onderzoek", "units": ["resultaten van dat onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:1:4", "object": "de aanbevelingen naar aanleiding van het onderzoek", "units": ["aanbevelingen naar aanleiding van het onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:3:5", "object": "Het onderzoek", "units": ["onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:4:6", "object": "de kosten van het onderzoek", "units": ["kosten van het onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:72:5:7", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:73:whole:1", "object": "een essentiële entiteit", "units": ["essentiële entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:74:whole:1", "object": "een bindende aanwijzing", "units": ["bindende aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:75:whole:1", "object": "een last onder bestuursdwang", "units": ["last onder bestuursdwang"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:76:1:1", "object": "een einddatum", "units": ["einddatum"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:76:2:2", "object": "het besluit, bedoeld in het eerste lid", "units": ["besluit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:77:whole:1", "object": "die certificering of vergunning tijdelijk op te schorten", "units": ["certificering of vergunning tijdelijk op te schorten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:78:1:1", "object": "één of meer leden van het bestuur van de betrokken essentiële entiteit te schorsen", "units": ["één of meer leden van het bestuur van de betrokken essentiële entiteit te schorsen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:78:2:2", "object": "alle overige gevolgen van de door haar uitgesproken schorsing", "units": ["overige gevolgen van de door haar uitgesproken schorsing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:78:3:3", "object": "een afschrift van de onherroepelijke uitspraak waarin een schorsing is opgelegd", "units": ["afschrift van de onherroepelijke uitspraak"], "negated": false, "clauses": ["waarin een schorsing is opgelegd"]}
+{"norm_id": "BWBR0052872:78:3:4", "object": "de schorsing", "units": ["schorsing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:78:4:5", "object": "de opname van de schorsing uit het Handelsregister", "units": ["opname van de schorsing uit het Handelsregister"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:80:2:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:80:4:2", "object": "De werking van het besluit tot oplegging van de boete", "units": ["werking van het besluit tot oplegging van de boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:80:5:3", "object": "de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete", "units": ["tenuitvoerlegging van een dwangbevel"], "negated": false, "clauses": ["dat strekt tot invordering van de boete"]}
+{"norm_id": "BWBR0052872:80:6:4", "object": "Artikel 184 van het Wetboek van Strafrecht", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:82:1:1", "object": "een beveiligingsscan", "units": ["beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:82:1:2", "object": "een beveiligingsscan", "units": ["beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:82:2:3", "object": "de kosten van de beveiligingsscan", "units": ["kosten van de beveiligingsscan"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:1:1", "object": "een belangrijke entiteit", "units": ["belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:1:2", "object": "of de entiteit voldoet aan het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen", "units": ["of de entiteit voldoet aan het bepaalde en het bepaalde in de uitvoeringshandelingen en de gedelegeerde handelingen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:1:3", "object": "de resultaten van dat onderzoek", "units": ["resultaten van dat onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:1:4", "object": "de aanbevelingen naar aanleiding van het onderzoek", "units": ["aanbevelingen naar aanleiding van het onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:3:5", "object": "Het onderzoek", "units": ["onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:4:6", "object": "de kosten van het onderzoek", "units": ["kosten van het onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:83:5:7", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:84:whole:1", "object": "een belangrijke entiteit", "units": ["belangrijke entiteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:85:whole:1", "object": "een bindende aanwijzing", "units": ["bindende aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:86:whole:1", "object": "een last onder bestuursdwang", "units": ["last onder bestuursdwang"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:87:1:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:87:2:2", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:87:4:3", "object": "De werking van het besluit tot oplegging van de boete", "units": ["werking van het besluit tot oplegging van de boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:87:5:4", "object": "de tenuitvoerlegging van een dwangbevel", "units": ["tenuitvoerlegging van een dwangbevel"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:89:whole:1", "object": "een bindende aanwijzing", "units": ["bindende aanwijzing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:90:whole:1", "object": "een last onder dwangsom", "units": ["last onder dwangsom"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:91:1:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:91:2:2", "object": "De boete", "units": ["boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:91:3:3", "object": "De werking van het besluit tot oplegging van de boete", "units": ["werking van het besluit tot oplegging van de boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:91:4:4", "object": "de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete", "units": ["tenuitvoerlegging van een dwangbevel"], "negated": false, "clauses": ["dat strekt tot invordering van de boete"]}
+{"norm_id": "BWBR0052872:92:whole:1", "object": "een last onder dwangsom", "units": ["last onder dwangsom"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:93:1:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:93:2:2", "object": "De boete, bedoeld in het eerste lid", "units": ["boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:93:3:3", "object": "De werking van het besluit tot oplegging van de boete", "units": ["werking van het besluit tot oplegging van de boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:93:4:4", "object": "de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete", "units": ["tenuitvoerlegging van een dwangbevel"], "negated": false, "clauses": ["dat strekt tot invordering van de boete"]}
+{"norm_id": "BWBR0052872:93:5:5", "object": "Artikel 184 van het Wetboek van Strafrecht", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:94:1:1", "object": "een verslag waarin de resultaten van een invoeringstoets over de uitvoerbaarheid, de handhaafbaarheid, de regeldruk, de samenloop en de werkbaarheid van deze wet in de praktijk zijn opgenomen", "units": ["verslag"], "negated": false, "clauses": ["waarin de resultaten van een invoeringstoets over de uitvoerbaarheid, de handhaafbaarheid, de regeldruk, de samenloop en de werkbaarheid in de praktijk zijn opgenomen"]}
+{"norm_id": "BWBR0052872:94:2:2", "object": "een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk", "units": ["verslag over de doeltreffendheid", "effecten in de praktijk"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:95:1:1", "object": "het oude recht", "units": ["oude recht"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:95:2:2", "object": "de melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:95:2:3", "object": "de op grond van de Wet beveiliging netwerk- en informatiesystemen gedane melding", "units": ["melding"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:96:1:1", "object": "maatregelen", "units": ["maatregelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:96:1:2", "object": "informatie en advies over dreigingen en incidenten met betrekking tot hun netwerk- en informatiesystemen", "units": ["informatie over dreigingen en incidenten met betrekking tot hun netwerk- en informatiesystemen", "advies"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:96:2:3", "object": "analyses en technisch onderzoek", "units": ["analyses", "technisch onderzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0052872:98:whole:1", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:2:2:1", "object": "deze wet", "units": ["wet"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:2a:whole:1", "object": "de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124)", "units": ["specifieke behoeften van kleine, middelgrote en micro-ondernemingen bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124)"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:3:3:1", "object": "Het eerste en het tweede lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:3:4:2", "object": "beperkingen en voorschriften", "units": ["beperkingen", "voorschriften"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:3:5:3", "object": "mededeling", "units": ["mededeling"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:1:1", "object": "de toestemming", "units": ["toestemming"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:2:2", "object": "die van zijn wettelijk vertegenwoordiger", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:3:3", "object": "Toestemming", "units": ["Toestemming"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:4:4", "object": "deze rechten", "units": ["rechten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:4:5", "object": "deze rechten", "units": ["rechten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:5:6", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:5:7:7", "object": "Het eerste tot en met vierde lid", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:6:3:1", "object": "de verwerking van persoonsgegevens", "units": ["verwerking van persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:6:4:2", "object": "taken", "units": ["taken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:3:1", "object": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens", "units": ["voorzitter", "leden", "buitengewone leden van de Autoriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:4:2", "object": "aan de bij of krachtens artikel 5 van de Wet rechtspositie rechterlijke ambtenaren gestelde vereisten voor benoembaarheid tot rechter in een rechtbank", "units": ["vereisten voor benoembaarheid tot rechter in een rechtbank"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:6:3", "object": "De benoeming, bedoeld in het derde lid", "units": ["benoeming"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:7:4", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:8:5", "object": "de voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens", "units": ["voorzitter", "leden", "buitengewone leden van de Autoriteit"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:10:6", "object": "algemene aspecten van de bescherming van persoonsgegevens", "units": ["algemene aspecten van de bescherming van persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:10:7", "object": "De leden", "units": ["leden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:10:8", "object": "Herbenoeming", "units": ["Herbenoeming"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:7:10:9", "object": "de vergoeding van de kosten", "units": ["vergoeding van de kosten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:9:whole:1", "object": "De rechtspositie van de voorzitter, de andere leden en de buitengewone leden", "units": ["rechtspositie van de voorzitter, de andere leden en de buitengewone leden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:1:1", "object": "een ontwerpbegroting", "units": ["ontwerpbegroting"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:2:2", "object": "een budget", "units": ["budget"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:3:3", "object": "de begroting", "units": ["begroting"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:4:4", "object": "De Autoriteit persoonsgegevens", "units": ["Autoriteit persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:5:5", "object": "de buitengewone leden", "units": ["buitengewone leden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:11:5:6", "object": "een verdeling van taken", "units": ["verdeling van taken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:12:whole:1", "object": "Artikel 20 van de Kaderwet zelfstandige bestuursorganen", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:13:1:1", "object": "De artikelen 21 en 22 van de Kaderwet zelfstandige bestuursorganen", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:1:1", "object": "de taken", "units": ["taken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:1:2", "object": "de bevoegdheden", "units": ["bevoegdheden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:3:3", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:5:4", "object": "de termijn voor het geven van een beschikking", "units": ["termijn voor het geven van een beschikking"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:7:5", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:7:6", "object": "hetgeen in de consultatie naar voren is gebracht", "units": ["hetgeen in de consultatie naar voren is gebracht"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:14:8:7", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:15:1:1", "object": "het toezicht op de naleving van de verordening en op de verwerking van persoonsgegevens overeenkomstig het bij of krachtens de wet bepaalde", "units": ["toezicht op de naleving van de verordening en op de verwerking van persoonsgegevens overeenkomstig het"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:15:2:2", "object": "een woning", "units": ["woning"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:15:3:3", "object": "de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens", "units": ["uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:15:4:4", "object": "een geheimhoudingsplicht", "units": ["geheimhoudingsplicht"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:16:1:1", "object": "een last onder bestuursdwang", "units": ["last onder bestuursdwang"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:16:2:2", "object": "De te betalen geldsom van een verbeurde dwangsom", "units": ["geldsom van een verbeurde dwangsom"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:17:1:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:18:1:1", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:18:3:2", "object": "De bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:19:1:1", "object": "afspraken", "units": ["afspraken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:19:1:2", "object": "samenwerkingsprotocollen", "units": ["samenwerkingsprotocollen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:19:1:3", "object": "Een samenwerkingsprotocol", "units": ["samenwerkingsprotocol"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:19:2:4", "object": "de gegevens betreffende de verwerking van persoonsgegevens", "units": ["gegevens betreffende de verwerking van persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:19:2:5", "object": "de gegevens betreffende de verwerking van persoonsgegevens", "units": ["gegevens betreffende de verwerking van persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:1:1", "object": "een verzoek", "units": ["verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:3:2", "object": "een afschrift", "units": ["afschrift"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:3:3", "object": "andere op de zaak betrekking hebbende stukken", "units": ["op de zaak betrekking hebbende stukken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:4:4", "object": "de termijn voor het geven van een beschikking op het verzoek om handhaving", "units": ["termijn voor het geven van een beschikking op het verzoek om handhaving"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:6:5", "object": "dat voor recht", "units": ["voor recht"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:6:6", "object": "het verzoek", "units": ["verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:7:7", "object": "het verzoek", "units": ["verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:20:8:8", "object": "voorziening", "units": ["voorziening"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21a:3:1", "object": "een last", "units": ["last"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21a:4:2", "object": "een bestuurlijke boete", "units": ["bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21a:5:3", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21b:1:1", "object": "een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie", "units": ["door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21b:2:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:21b:3:3", "object": "de openbaarmaking van de beschikking", "units": ["openbaarmaking van de beschikking"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:22:1:1", "object": "verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "units": ["verwerking van persoonsgegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid", "verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon", "gegevens over gezondheid, of gegevens"], "negated": false, "clauses": ["waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken"]}
+{"norm_id": "BWBR0040940:23:whole:1", "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken", "units": ["verbod om bijzondere categorieën van persoonsgegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:23a:1:1", "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken", "units": ["verbod om bijzondere categorieën van persoonsgegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:23a:2:2", "object": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening", "units": ["pseudonimisering"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:23a:2:3", "object": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening", "units": ["pseudonimisering"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:24:whole:1", "object": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken", "units": ["verbod om bijzondere categorieën van persoonsgegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:25:whole:1", "object": "het verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt", "units": ["verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:26:whole:1", "object": "het verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken", "units": ["verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:27:1:1", "object": "het verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken", "units": ["verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:27:2:2", "object": "persoonsgegevens", "units": ["persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:28:1:1", "object": "het verbod om genetische gegevens te verwerken", "units": ["verbod om genetische gegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:28:2:2", "object": "het verbod om genetische gegevens te verwerken", "units": ["verbod om genetische gegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:28:3:3", "object": "Toestemming als bedoeld in het tweede lid, onderdeel b", "units": ["Toestemming"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:29:whole:1", "object": "het verbod om biometrische gegevens met het oog op de unieke identificatie van een persoon te verwerken", "units": ["verbod om biometrische gegevens met het oog op de unieke identificatie van een persoon te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:2:1", "object": "het verbod om gegevens over gezondheid te verwerken", "units": ["verbod om gegevens over gezondheid te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:3:2", "object": "het verbod om gegevens over gezondheid te verwerken", "units": ["verbod om gegevens over gezondheid te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:4:3", "object": "de gegevens", "units": ["gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:4:4", "object": "de gegevens", "units": ["gegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:5:5", "object": "Het verbod om andere bijzondere categorieën van persoonsgegevens te verwerken", "units": ["verbod om andere bijzondere categorieën van persoonsgegevens te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30:6:6", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:2:1", "object": "de betrokkene", "units": ["betrokkene"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:2:2", "object": "de van toepassing zijnde rechten", "units": ["rechten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:2:3", "object": "brede kenbaarheid", "units": ["brede kenbaarheid"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:3:4", "object": "brede kenbaarheid", "units": ["brede kenbaarheid"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:4:5", "object": "Het overdragen van dossiers", "units": ["dossiers"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:5:6", "object": "nadere regels", "units": ["nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30a:6:7", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:30b:1:1", "object": "het verbod om gegevens over gezondheid te verwerken", "units": ["verbod om gegevens over gezondheid te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:31:whole:1", "object": "persoonsgegevens van strafrechtelijke aard", "units": ["persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:32:whole:1", "object": "persoonsgegevens van strafrechtelijke aard", "units": ["persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:1:1", "object": "persoonsgegevens van strafrechtelijke aard", "units": ["persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:1:2", "object": "de verwerking", "units": ["verwerking"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:2:3", "object": "Persoonsgegevens van strafrechtelijke aard", "units": ["Persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:3:4", "object": "Persoonsgegevens van strafrechtelijke aard over personeel in dienst van de verwerkingsverantwoordelijke", "units": ["Persoonsgegevens van strafrechtelijke aard over personeel in dienst van de verwerkingsverantwoordelijke"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:4:5", "object": "Persoonsgegevens van strafrechtelijke aard", "units": ["Persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:5:6", "object": "Persoonsgegevens van strafrechtelijke aard", "units": ["Persoonsgegevens van strafrechtelijke aard"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:6:7", "object": "Een vergunning als bedoeld in het vierde lid, onderdeel c", "units": ["vergunning"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:33:6:8", "object": "voorschriften", "units": ["voorschriften"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:34:whole:1", "object": "Een schriftelijke beslissing op een verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening", "units": ["schriftelijke beslissing op een verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:1:1", "object": "het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen", "units": ["schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek van de verordening alsnog toe of af te wijzen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:2:2", "object": "Het verzoekschrift", "units": ["verzoekschrift"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:2:3", "object": "de indiening van het verzoekschrift", "units": ["verzoekschrift"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:3:4", "object": "de belanghebbenden", "units": ["belanghebbenden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:3:5", "object": "het verzoek", "units": ["verzoek"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:35:4:6", "object": "de indiening van het verzoekschrift", "units": ["verzoekschrift"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:36:1:1", "object": "het beroep", "units": ["beroep"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:36:1:2", "object": "de procedure ingevolge artikel 35", "units": ["procedure"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:36:1:3", "object": "een geschillenbeslechtingsregeling als bedoeld in artikel 40, tweede lid, onderdeel k, van de verordening", "units": ["geschillenbeslechtingsregeling"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:36:1:4", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:36:2:5", "object": "advies", "units": ["advies"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:37:whole:1", "object": "Een verwerking", "units": ["verwerking"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:38:whole:1", "object": "De werking van de beschikking tot oplegging van de bestuurlijke boete", "units": ["werking van de beschikking tot oplegging van de bestuurlijke boete"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:39:whole:1", "object": "hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden", "units": ["hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:40:1:1", "object": "Artikel 22, eerste lid, van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:40:2:2", "object": "passende maatregelen", "units": ["passende maatregelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:40:3:3", "object": "passende maatregelen als bedoeld in het tweede lid", "units": ["passende maatregelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:41:1:1", "object": "de verplichtingen en rechten, bedoeld in de artikelen 12 tot en met 21 en artikel 34 van de verordening", "units": ["verplichtingen", "rechten"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:43:2:1", "object": "de navolgende hoofdstukken en artikelen van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:43:3:2", "object": "De artikelen 9 en 10 van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:44:whole:1", "object": "de artikelen 15, 16 en 18 van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:45:2:1", "object": "inzage", "units": ["inzage"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:45:3:2", "object": "zijn eigen lezing", "units": ["eigen lezing"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:46:whole:1", "object": "Een nummer dat ter identificatie van een persoon bij wet is voorgeschreven", "units": ["nummer"], "negated": false, "clauses": ["dat ter identificatie van een persoon bij wet is voorgeschreven"]}
+{"norm_id": "BWBR0040940:47:1:1", "object": "De artikelen 15, 16, 18 en 19 van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47:2:2", "object": "Artikel 21 van de verordening", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47a:1:1", "object": "persoonsgegevens", "units": ["persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47a:2:2", "object": "nummers die dienen ter identificatie als bedoeld in artikel 46", "units": ["nummers"], "negated": false, "clauses": ["die dienen ter identificatie"]}
+{"norm_id": "BWBR0040940:47a:2:3", "object": "passende waarborgen voor de rechten en vrijheden van de betrokkene", "units": ["passende waarborgen voor de rechten en vrijheden van de betrokkene"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47a:3:4", "object": "het verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken", "units": ["verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47a:4:5", "object": "een verslag", "units": ["verslag"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:47a:6:6", "object": "De instellingsregeling of het instellingsbesluit waarin een commissie als bedoeld in het eerste lid wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens", "units": ["instellingsregeling of het instellingsbesluit waarin een commissie wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:1:1", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:2:2", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:4:3", "object": "artikel 53, derde lid, eerste, tweede en derde volzin, van de Wet bescherming persoonsgegevens", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:5:4", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:7:5", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:9:6", "object": "het College bescherming persoonsgegevens", "units": ["College bescherming persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:10:7", "object": "het recht", "units": ["recht"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48:12:8", "object": "regels of nadere regels", "units": ["regels", "nadere regels"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:4:1", "object": "welke vermogensbestanddelen van de Staat worden toebedeeld aan de Autoriteit persoonsgegevens", "units": ["vermogensbestanddelen van de Staat worden toebedeeld aan de Autoriteit persoonsgegevens"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:5:2", "object": "De in het vierde lid bedoelde vermogensbestanddelen", "units": ["vermogensbestanddelen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:6:3", "object": "de overgang van die registergoederen", "units": ["overgang van die registergoederen"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:6:4", "object": "Artikel 24, eerste lid, van Boek 3 van het Burgerlijk Wetboek", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:7:5", "object": "de Staat dan wel Onze Minister", "units": ["Staat dan wel Onze Minister"], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48a:8:6", "object": "", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:48b:whole:1", "object": "Het tweede lid van artikel 46", "units": [], "negated": false, "clauses": []}
+{"norm_id": "BWBR0040940:50:whole:1", "object": "een verslag over de effecten van deze wet in de praktijk en over de uitvoering van de wet in de praktijk", "units": ["verslag over de effecten in de praktijk", "over de uitvoering van de wet in de praktijk"], "negated": false, "clauses": []}

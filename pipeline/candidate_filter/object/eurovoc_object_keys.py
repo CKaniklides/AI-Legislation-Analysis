@@ -177,7 +177,7 @@ def main() -> None:
         if k["head"]:
             k["tail"] = compound_tail(k["head"], heads, args.min_tail_len)
 
-    for unit, (concept, label) in load_concepts(args.dir / "eurovoc/object_mapping.jsonl").items():
+    for unit, (concept, label) in load_concepts(args.dir / "object_mapping.jsonl").items():
         if unit in keys:
             keys[unit]["concept"], keys[unit]["concept_label"] = concept, label
 

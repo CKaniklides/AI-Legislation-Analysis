@@ -1,0 +1,2707 @@
+{
+  "input": "C:\\Users\\tiago\\OneDrive\\0 QIST\\Year 2\\JIP\\AI-Legislation-Analysis\\data\\new_norms\\original_norms_NL.json",
+  "n_norms": 396,
+  "fields": {
+    "actor": [
+      {
+        "value": "(null)",
+        "absolute": 90,
+        "relative": 0.227273
+      },
+      {
+        "value": "De bevoegde autoriteit",
+        "absolute": 32,
+        "relative": 0.080808
+      },
+      {
+        "value": "Onze Minister",
+        "absolute": 24,
+        "relative": 0.060606
+      },
+      {
+        "value": "de bevoegde autoriteit",
+        "absolute": 16,
+        "relative": 0.040404
+      },
+      {
+        "value": "De Autoriteit persoonsgegevens",
+        "absolute": 13,
+        "relative": 0.032828
+      },
+      {
+        "value": "Onze Minister die het aangaat",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "Het CSIRT",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "De registers voor topleveldomeinnamen en de entiteiten die domeinnaamregistratiediensten verlenen",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "de entiteit",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "de Autoriteit persoonsgegevens",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "De essentiële entiteit of belangrijke entiteit",
+        "absolute": 7,
+        "relative": 0.017677
+      },
+      {
+        "value": "het centrale contactpunt",
+        "absolute": 6,
+        "relative": 0.015152
+      },
+      {
+        "value": "de verwerkingsverantwoordelijke",
+        "absolute": 5,
+        "relative": 0.012626
+      },
+      {
+        "value": "Onze Minister van Onderwijs, Cultuur en Wetenschap",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "het CSIRT",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "een entiteit",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "De bevoegde autoriteiten, de CSIRT’s en het centrale contactpunt",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "De bevoegde autoriteiten",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "De belanghebbende",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "zij",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "De CSIRT’s",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "Een CSIRT",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een essentiële entiteit",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "De rechtbank",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een belangrijke entiteit",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "de Autoriteit Persoonsgegevens",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "Ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de essentiële entiteit of belangrijke entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Het CSIRT respectievelijk de bevoegde autoriteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "hij",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "deze entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De betrokken bevoegde autoriteit, bedoeld in artikel 15",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De bevoegde autoriteiten, bedoeld in artikel 15",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De essentiële entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de overtreding",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Verzet",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De organisaties, niet zijnde essentiële entiteiten of belangrijke entiteiten, die op de dag voorafgaand aan de inwerkingtreding van artikel 106 vitale aanbieder dan wel andere aanbieder die onderdeel is van de Rijksoverheid zijn als bedoeld in artikel 3, eerste lid, van de Wet beveiliging netwerk- en informatiesystemen, zoals die wet luidde op de dag voorafgaand aan de inwerkingtreding van artikel 106",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "zijn wettelijk vertegenwoordiger",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De leden",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De in het eerste lid bedoelde personen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De Autoriteit persoonsgegevens en de toezichthouders, bedoeld in het eerste lid",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Betrokkene",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "bij de wet ingestelde openbare registers",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de commissie of het adviescollege",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Degene",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "overheidsinstanties als bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Deze scan",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Onze Minister respectievelijk Onze Minister die het aangaat",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Hij",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De maatregelen, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit of een belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "essentiële entiteiten en belangrijke entiteiten die aanbieders van openbare elektronische communicatienetwerken of aanbieders van openbare elektronische communicatiediensten zijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "die entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het bestuur van de essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "dit lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "ieder lid van het bestuur van een essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de uitvoerende bestuurders van die essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "iedere maat van die maatschap",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "iedere vennoot van die vennootschap onder firma",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de beherende vennoten van die commanditaire vennootschap",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit of belangrijke entiteit die een vertrouwensdienst aanbiedt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "die specifieke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Eenieder",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het centrale contactpunt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een essentiële entiteit, belangrijke entiteit en een entiteit die domeinnaamregistratiediensten verleent",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De entiteiten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de volgende entiteiten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "entiteiten die domeinnaamregistratiediensten verlenen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De entiteiten, bedoeld in het eerste en tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Onze Minister van Economische Zaken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het register voor topleveldomeinnamen respectievelijk de entiteit die domeinnaamregistratiediensten verleent",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de bevoegde autoriteiten, de CSIRT’s en het centrale contactpunt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Deze samenwerking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De bevoegde autoriteiten, bedoeld in artikel 15, en de bevoegde autoriteiten, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De bevoegde autoriteiten, Onze Minister van Economische Zaken uit hoofde van de Verordening (EU) 910/2014, de bevoegde autoriteiten, bedoeld in de Verordening (EU) 2022/2554, en Onze Minister van Economische Zaken uit hoofde van de Richtlijn (EU) 2018/1972",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het verzoek om bijstand",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Essentiële entiteiten, belangrijke entiteiten, entiteiten die domeinnaamregistratiediensten verlenen en andere entiteiten die niet de hiervoor genoemde entiteiten betreffen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De bevoegde autoriteit, het centrale contactpunt, het CSIRT en Onze Minister",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de bij besluit van de bevoegde autoriteit aangewezen ambtenaren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De ambtenaren, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de toezichthouders",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De griffier van de rechtbank, of in geval van hoger beroep, van het gerechtshof",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de Kamer van Koophandel",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Onze Minister onderscheidenlijk de andere instantie, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het nationale register",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking van persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking van persoonsgegevens door de krijgsmacht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de wettelijk vertegenwoordiger",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "diens wettelijke vertegenwoordiger",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "diens wettelijk vertegenwoordiger",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de minderjarige betrokkene die de leeftijd van zestien jaren heeft bereikt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De voorzitter",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de voorzitter en de andere leden, dan wel door een van hen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de leden en buitengewone leden van de Autoriteit persoonsgegevens, de ambtenaren van het secretariaat van de Autoriteit persoonsgegevens, alsmede de bij besluit van de Autoriteit persoonsgegevens aangewezen personen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De Staat",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de Afdeling bestuursrechtspraak van de Raad van State",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De Afdeling bestuursrechtspraak van de Raad van State",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De bestuurlijke boete en de te betalen geldsom van een verbeurde dwangsom",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De Autoriteit Persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De openbaarmaking van de beschikking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "andere instellingen dan de instellingen, bedoeld in artikel 22, tweede lid, onderdeel c",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de betrokkene bij wie de desbetreffende gegevens zijn verkregen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "scholen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "hulpverleners, instellingen of voorzieningen voor gezondheidszorg of maatschappelijke dienstverlening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "personen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de overdracht van dossiers",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "degene die geen hulpverlener is",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "publiekrechtelijke samenwerkingsverbanden van verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verwerkingsverantwoordelijken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de belanghebbende",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de instanties die zijn belast met de behandeling van het geschil",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De functionaris voor gegevensbescherming",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De verwerkingsverantwoordelijke",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking van persoonsgegevens voor uitsluitend journalistieke doeleinden en ten behoeve van academische, artistieke of literaire uitdrukkingsvormen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking van de in die artikelen bedoelde gegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een commissie als bedoeld in artikel 1, onderdeel b, van de Wet vergoedingen adviescolleges en commissies, dan wel een adviescollege dat is ingesteld op grond van artikel 5 of 6 van de Kaderwet adviescolleges, die voor bepaalde tijd wordt ingesteld bij koninklijk of ministerieel besluit of ministeriele regeling",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een commissie of adviescollege als bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De ambtenaar",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Onze Minister van Financiën",
+        "absolute": 1,
+        "relative": 0.002525
+      }
+    ],
+    "action_lemma": [
+      {
+        "value": "(null)",
+        "absolute": 47,
+        "relative": 0.118687
+      },
+      {
+        "value": "regels stellen",
+        "absolute": 16,
+        "relative": 0.040404
+      },
+      {
+        "value": "opleggen",
+        "absolute": 16,
+        "relative": 0.040404
+      },
+      {
+        "value": "verstrekken",
+        "absolute": 13,
+        "relative": 0.032828
+      },
+      {
+        "value": "vaststellen",
+        "absolute": 12,
+        "relative": 0.030303
+      },
+      {
+        "value": "uitwisselen",
+        "absolute": 12,
+        "relative": 0.030303
+      },
+      {
+        "value": "verwerken",
+        "absolute": 11,
+        "relative": 0.027778
+      },
+      {
+        "value": "indienen",
+        "absolute": 10,
+        "relative": 0.025253
+      },
+      {
+        "value": "aanwijzen",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "samenwerken",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "geven",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "in kennis stellen",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "opschorten",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "uitvoeren",
+        "absolute": 7,
+        "relative": 0.017677
+      },
+      {
+        "value": "verplichten",
+        "absolute": 6,
+        "relative": 0.015152
+      },
+      {
+        "value": "verzoeken",
+        "absolute": 6,
+        "relative": 0.015152
+      },
+      {
+        "value": "geschieden",
+        "absolute": 6,
+        "relative": 0.015152
+      },
+      {
+        "value": "zorg dragen voor",
+        "absolute": 5,
+        "relative": 0.012626
+      },
+      {
+        "value": "verlenen",
+        "absolute": 5,
+        "relative": 0.012626
+      },
+      {
+        "value": "benoemen",
+        "absolute": 5,
+        "relative": 0.012626
+      },
+      {
+        "value": "intrekken",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "rekening houden met",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "ontheffen",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "informeren",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "openbaar maken",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "schorsen",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "in de plaats treden",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "doorsturen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "nemen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "raadplegen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "belasten",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "dragen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "zenden",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "treffen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "uitoefenen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "toekomen",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "zorgen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "tot stand brengen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "beoordelen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "omvatten",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "voldoen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "melden",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "aangeven",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "meedelen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "op de hoogte stellen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "overgaan",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "afwijzen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "toepassen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "mededeling doen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "laten uitvoeren",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "laten onderzoeken",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "bepalen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "regelen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "bedragen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "van toepassing blijven",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "plaatsvinden",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "opstellen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "geheimhouding",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "buiten toepassing laten",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "zijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "hebben",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "scannen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "leiden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "prioriteit geven",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bevorderen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bijwerken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "eisen stellen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "gebruikmaken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "goedkeuren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beschikken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "actueel houden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bezitten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "criteria vaststellen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voorrang geven",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "maken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "doen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beschermen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beheren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "evalueren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanpassen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "wijzigen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "weigeren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beëindigen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verzamelen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bijhouden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beantwoorden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bestaan",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "zien",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "rekening houden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanbieden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "opnemen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "doorzenden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanmerken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verrichten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "tot stand komen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "in aanmerking nemen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "vereist zijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "vereisen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "optreden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toezien",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "taken opdragen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "gelden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "herbenoemen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "ontslaan",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "adviseren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toekennen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "vertegenwoordigen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "betrekken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "ingaan op",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "betreden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "behoeven",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "afspraken maken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bekendmaken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "overleggen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "meezenden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verklaren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanhouden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "openstaan",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verbieden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "continueren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "wijzen op",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verbinden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "zich wenden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "in de gelegenheid stellen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toewijzen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "instellen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanhangig maken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "gebruik maken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "wenden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "inwinnen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "ten grondslag leggen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verkrijgen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toevoegen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "gebruiken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "inschrijven",
+        "absolute": 1,
+        "relative": 0.002525
+      }
+    ],
+    "object": [
+      {
+        "value": "(null)",
+        "absolute": 24,
+        "relative": 0.060606
+      },
+      {
+        "value": "een bestuurlijke boete",
+        "absolute": 9,
+        "relative": 0.022727
+      },
+      {
+        "value": "nadere regels",
+        "absolute": 8,
+        "relative": 0.020202
+      },
+      {
+        "value": "regels",
+        "absolute": 7,
+        "relative": 0.017677
+      },
+      {
+        "value": "alle daarvoor noodzakelijke gegevens",
+        "absolute": 7,
+        "relative": 0.017677
+      },
+      {
+        "value": "Het eerste lid",
+        "absolute": 5,
+        "relative": 0.012626
+      },
+      {
+        "value": "het bepaalde bij of krachtens het eerste tot en met zesde lid",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "het verzoek",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "een beveiligingsscan",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "De werking van het besluit tot oplegging van de boete",
+        "absolute": 4,
+        "relative": 0.010101
+      },
+      {
+        "value": "het centrale contactpunt",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een melding",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een in het eerste lid bedoelde registratie",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een bindende aanwijzing",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "een last onder bestuursdwang",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "de tenuitvoerlegging van een dwangbevel dat strekt tot invordering van de boete",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "het verbod om bijzondere categorieën van persoonsgegevens te verwerken",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "het verbod om gegevens over gezondheid te verwerken",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "persoonsgegevens van strafrechtelijke aard",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "Persoonsgegevens van strafrechtelijke aard",
+        "absolute": 3,
+        "relative": 0.007576
+      },
+      {
+        "value": "deze wet",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de aanwijzing, bedoeld in het eerste lid",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de nationale cyberbeveiligingsstrategie",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een eindverslag",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "daarvan",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een vertegenwoordiger",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de informatie",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "dat beleid en die procedures",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "relevante informatie",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "De verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de kosten van de beveiligingsscan",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een essentiële entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "of de entiteit voldoet aan het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de resultaten van dat onderzoek",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de aanbevelingen naar aanleiding van het onderzoek",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Het onderzoek",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de kosten van het onderzoek",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "Artikel 184 van het Wetboek van Strafrecht",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een belangrijke entiteit",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een last onder dwangsom",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "deze rechten",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de gegevens betreffende de verwerking van persoonsgegevens",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "pseudonimisering als bedoeld in artikel 4, onderdeel 5, van de verordening",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "persoonsgegevens",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "het verbod om genetische gegevens te verwerken",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de gegevens",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "brede kenbaarheid",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "de indiening van het verzoekschrift",
+        "absolute": 2,
+        "relative": 0.005051
+      },
+      {
+        "value": "een in bijlage 1 of bijlage 2 van deze wet genoemde entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de aanwijzing",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een aanbieder die voor 16 januari 2023 op grond van de Wet beveiliging netwerk- en informatiesystemen is aangewezen als aanbieder van een essentiële dienst",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een instelling voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een instelling voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de volgende taken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voor grensoverschrijdende samenwerking van de autoriteiten van Nederland met de relevante autoriteiten van andere lidstaten van de Europese Unie, de Europese Commissie en Enisa",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voor sectoroverschrijdende samenwerking tussen de bevoegde autoriteiten binnen Nederland",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de overige in deze wet genoemde taken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de bestuursrechtelijke handhaving van het bepaalde bij of krachtens deze wet",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de bestuursrechtelijke handhaving van het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de overige in deze wet genoemde taken van de bevoegde autoriteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het CSIRT",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een openbaar toegankelijk netwerk- en informatiesysteem van een essentiële entiteit en belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "tot negatieve gevolgen voor de dienstverlening van de betrokken entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "prioriteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "samenwerkingsrelaties",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de invoering en het gebruik van gemeenschappelijke of gestandaardiseerde praktijken, classificatieschema’s en taxonomieën",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een CSIRT",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een nationale cyberbeveiligingsstrategie als bedoeld in artikel 7, eerste lid, van de NIS2-richtlijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beleid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een nationaal plan voor grootschalige cyberbeveiligingsincidenten en crisisrespons",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het volgende",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de algemene kwaliteit van de producten en de cyberbeveiligingspraktijken van haar leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de resultaten van de door de samenwerkingsgroep op grond van artikel 22, eerste lid, van de NIS2-richtlijn uitgevoerde gecoördineerde beveiligingsrisicobeoordelingen van kritieke toeleveringsketens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "eisen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "producten of diensten van anderen dan de daarbij door Onze Minister die het aangaat genoemde partij",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "of beheersmaatregelen mogelijk en realiseerbaar zijn die de nationale veiligheidsrisico’s die in het geding zijn voldoende beschermen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een termijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "artikel 21",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit respectievelijk een belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De maatregelen, bedoeld in artikel 21",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "kennis en vaardigheden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aan het bepaalde in het tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de kennis en vaardigheden, bedoeld in het tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een certificaat",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "ieder significant incident",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de criteria",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanvullende criteria",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een vroegtijdige waarschuwing over het significante incident",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aan of het significante incident vermoedelijk door een onrechtmatige of kwaadwillige handeling is veroorzaakt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aan of het significante incident grensoverschrijdende gevolgen kan hebben",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de contactgegevens van de functionaris die verantwoordelijk is voor de melding",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een melding van het significante incident",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een tussentijds verslag",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een voortgangsverslag",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "significante incidenten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "welke maatregelen die ontvangers kunnen nemen in reactie op die dreiging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de desbetreffende significante cyberdreiging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verplichtingen uit de artikelen 25 tot en met 30",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de vrijwillige meldingen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voorrang",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de vrijwillige melding",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De melding",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aanvullende technische ondersteuning",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "richtsnoeren",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het publiek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de essentiële entiteit of belangrijke entiteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "dat de relevante informatie die hierover is gemeld tijdig aan het centrale contactpunt wordt verstrekt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de informatie die overeenkomstig de artikelen 26 tot en met 29 is ontvangen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de beveiligingsbelangen en commerciële belangen van de entiteit en de vertrouwelijkheid van de verstrekte informatie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het aan het CSIRT gemelde incident, bijna-incident of cyberdreiging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de op grond van de artikelen 25 en 33 ontvangen meldingen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een samenvattend verslag",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "informatie over een significant incident",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "informatie over een incident, bijna-incident of cyberdreiging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "deze informatie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een nationaal register van essentiële entiteiten, belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het nationale register",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de volgende informatie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "elke wijziging van de informatie die zij op grond van het eerste lid hebben verstrekt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een essentiële entiteit, een belangrijke entiteit of entiteit die domeinnaamregistratiediensten verleent",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toegang tot het nationale register, bedoeld in artikel 43",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de informatie, bedoeld in het derde lid van dit artikel",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de informatie, bedoeld in het derde lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "wijzigingen van de gegevens, bedoeld in het derde lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een entiteit als bedoeld in artikel 47, eerste en tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "nauwkeurige en volledige domeinnaamregistratiegegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "die gegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het beleid en de procedures",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de domeinnaamregistratiegegevens, die geen persoonsgegevens zijn",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toegang tot specifieke gegevens over de registratie van domeinnamen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verzoek om toegang als bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het beleid en de procedures met betrekking tot de bekendmaking van de gegevens, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een samenwerkingsrelatie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de uitwisseling van persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "uit het verlenen van bijstand op het gebied van cyberbeveiliging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de betrokken bevoegde autoriteit, bedoeld in artikel 8 van de Wet weerbaarheid kritieke entiteiten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het oversightforum dat is opgericht op grond van artikel 32, eerste lid, van de Verordening (EU) 2022/2554",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bestuurlijke boete",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de potentiële inbreuk in verband met persoonsgegevens, bedoeld in het tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "informatie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "toezichts- en handhavingsmaatregelen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "bijstand",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de betrokken bevoegde autoriteit",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de Europese Commissie en Enisa",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de betrokken bevoegde autoriteit van een andere lidstaat van de Europese Unie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "op het verstrekken van informatie en het nemen van toezichts- en handhavingsmaatregelen, met inbegrip van inspecties ter plaatse, toezicht elders en beveiligingsaudits",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "om bijstand",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een bevoegde autoriteit van een andere lidstaat van de Europese Unie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "relevante informatie over cyberbeveiliging",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "vertrouwelijke gegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het toezicht op de naleving van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verlenen van bijstand als bedoeld in artikel 60",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "hun toezichthoudende bevoegdheden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Van een besluit als bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de omstandigheden van elk afzonderlijk geval, alsmede: a. de ernst van de overtreding en het belang van de geschonden bepalingen, waarbij onder meer het volgende in ieder geval een ernstige overtreding vormt: 1°. herhaalde overtredingen; 2°. het niet melden of niet verhelpen van significante incidenten; 3°. het niet verhelpen van tekortkomingen naar aanleiding van bindende aanwijzingen van de bevoegde autoriteit; 4°. het belemmeren van audits of monitoringsactiviteiten waartoe de bevoegde autoriteit opdracht heeft gegeven naar aanleiding van de vaststelling van een overtreding; 5°. het verstrekken van valse of zeer onnauwkeurige informatie met betrekking tot de verplichtingen, bedoeld in de artikelen 21 en 25 tot en met 30; b. de duur van de overtreding; c. eventuele relevante eerdere overtredingen door de betrokken entiteit; d. elke veroorzaakte materiële of immateriële schade, met inbegrip van elke financiële of economische schade, effecten op andere diensten en het aantal getroffen gebruikers; e. opzet of nalatigheid van de overtreder; f. door de entiteit genomen maatregelen om de materiële of immateriële schade te voorkomen of te beperken; g. de naleving van goedgekeurde gedragscodes of goedgekeurde certificeringsmechanismen; en h. de mate waarin de overtreder meewerkt met de bevoegde autoriteiten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een controlefunctionaris",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de kosten van de controlefunctionaris",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een einddatum",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het besluit, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "die certificering of vergunning tijdelijk op te schorten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "één of meer leden van het bestuur van de betrokken essentiële entiteit te schorsen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "alle overige gevolgen van de door haar uitgesproken schorsing",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een afschrift van de onherroepelijke uitspraak waarin een schorsing is opgelegd",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de schorsing",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de opname van de schorsing uit het Handelsregister",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de tenuitvoerlegging van een dwangbevel",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De boete",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De boete, bedoeld in het eerste lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verslag waarin de resultaten van een invoeringstoets over de uitvoerbaarheid, de handhaafbaarheid, de regeldruk, de samenloop en de werkbaarheid van deze wet in de praktijk zijn opgenomen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het oude recht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de melding",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de op grond van de Wet beveiliging netwerk- en informatiesystemen gedane melding",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "maatregelen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "informatie en advies over dreigingen en incidenten met betrekking tot hun netwerk- en informatiesystemen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "analyses en technisch onderzoek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de specifieke behoeften van kleine, middelgrote en micro-ondernemingen als bedoeld in artikel 2 van de bijlage bij Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003 L124)",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het eerste en het tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "beperkingen en voorschriften",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "mededeling",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de toestemming",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "die van zijn wettelijk vertegenwoordiger",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Toestemming",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het eerste tot en met vierde lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking van persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "taken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "aan de bij of krachtens artikel 5 van de Wet rechtspositie rechterlijke ambtenaren gestelde vereisten voor benoembaarheid tot rechter in een rechtbank",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De benoeming, bedoeld in het derde lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de voorzitter, de andere leden en de buitengewone leden van de Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "algemene aspecten van de bescherming van persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De leden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Herbenoeming",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de vergoeding van de kosten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De rechtspositie van de voorzitter, de andere leden en de buitengewone leden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een ontwerpbegroting",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een budget",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de begroting",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de buitengewone leden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verdeling van taken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Artikel 20 van de Kaderwet zelfstandige bestuursorganen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De artikelen 21 en 22 van de Kaderwet zelfstandige bestuursorganen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de taken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de bevoegdheden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de termijn voor het geven van een beschikking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "hetgeen in de consultatie naar voren is gebracht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het toezicht op de naleving van de verordening en op de verwerking van persoonsgegevens overeenkomstig het bij of krachtens de wet bepaalde",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een woning",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de uitdrukkelijke en bijzondere volmacht van de Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een geheimhoudingsplicht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De te betalen geldsom van een verbeurde dwangsom",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De bestuurlijke boete",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "afspraken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "samenwerkingsprotocollen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een samenwerkingsprotocol",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verzoek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een afschrift",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "andere op de zaak betrekking hebbende stukken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de termijn voor het geven van een beschikking op het verzoek om handhaving",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "dat voor recht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voorziening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een last",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een door haar genomen beschikking tot het opleggen van een bestuurlijke sanctie",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de openbaarmaking van de beschikking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verbod om persoonsgegevens te verwerken waaruit ras of etnische afkomst blijkt",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verbod om persoonsgegevens te verwerken waaruit politieke opvattingen blijken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verbod om persoonsgegevens te verwerken waaruit religieuze of levensbeschouwelijke overtuigingen blijken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Toestemming als bedoeld in het tweede lid, onderdeel b",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verbod om biometrische gegevens met het oog op de unieke identificatie van een persoon te verwerken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het verbod om andere bijzondere categorieën van persoonsgegevens te verwerken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de betrokkene",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de van toepassing zijnde rechten",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het overdragen van dossiers",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verwerking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Persoonsgegevens van strafrechtelijke aard over personeel in dienst van de verwerkingsverantwoordelijke",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een vergunning als bedoeld in het vierde lid, onderdeel c",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "voorschriften",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een schriftelijke beslissing op een verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het schriftelijk verzoek de verwerkingsverantwoordelijke te bevelen het verzoek als bedoeld in de artikelen 15 tot en met 22 van de verordening alsnog toe of af te wijzen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het verzoekschrift",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de belanghebbenden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het beroep",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de procedure ingevolge artikel 35",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een geschillenbeslechtingsregeling als bedoeld in artikel 40, tweede lid, onderdeel k, van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "advies",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een verwerking",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De werking van de beschikking tot oplegging van de bestuurlijke boete",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "hetgeen hem op grond van een klacht of een verzoek van betrokkene is bekend geworden",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Artikel 22, eerste lid, van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "passende maatregelen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "passende maatregelen als bedoeld in het tweede lid",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de verplichtingen en rechten, bedoeld in de artikelen 12 tot en met 21 en artikel 34 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de navolgende hoofdstukken en artikelen van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De artikelen 9 en 10 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de artikelen 15, 16 en 18 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "inzage",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "zijn eigen lezing",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Een nummer dat ter identificatie van een persoon bij wet is voorgeschreven",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De artikelen 15, 16, 18 en 19 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Artikel 21 van de verordening",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "nummers die dienen ter identificatie als bedoeld in artikel 46",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "passende waarborgen voor de rechten en vrijheden van de betrokkene",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het verbod om bijzondere categorieën van persoonsgegevens en persoonsgegevens van strafrechtelijke aard te verwerken",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verslag",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De instellingsregeling of het instellingsbesluit waarin een commissie als bedoeld in het eerste lid wordt ingesteld en waarin een regeling wordt getroffen met betrekking tot de verwerking van bijzondere categorieën van persoonsgegevens of strafrechtelijke persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "artikel 53, derde lid, eerste, tweede en derde volzin, van de Wet bescherming persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het College bescherming persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "het recht",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "regels of nadere regels",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "welke vermogensbestanddelen van de Staat worden toebedeeld aan de Autoriteit persoonsgegevens",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "De in het vierde lid bedoelde vermogensbestanddelen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de overgang van die registergoederen",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Artikel 24, eerste lid, van Boek 3 van het Burgerlijk Wetboek",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "de Staat dan wel Onze Minister",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "Het tweede lid van artikel 46",
+        "absolute": 1,
+        "relative": 0.002525
+      },
+      {
+        "value": "een verslag over de effecten van deze wet in de praktijk en over de uitvoering van de wet in de praktijk",
+        "absolute": 1,
+        "relative": 0.002525
+      }
+    ]
+  }
+}

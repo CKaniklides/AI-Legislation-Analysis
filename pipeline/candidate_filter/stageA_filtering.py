@@ -106,10 +106,10 @@ MODEL_PREFIX = "query: "   # e5 models expect this prefix; use "" for other mode
 # ---------------------------------------------------------------------------------------
 
 DEFAULT_ROOT = Path(__file__).resolve().parent.parent.parent
-DEFAULT_INPUT = Path("data/new_norms/original_norms.json")
+DEFAULT_INPUT = Path("data/new_norms/original_norms_NL.json")
 DEFAULT_GRAPH = Path("data/graph.gexf")   # graph.py output; set to the real path
-DEFAULT_EMB_CACHE = Path("data/conflict/stageA/norm_embeddings.npz")
-DEFAULT_OUTPUT = Path("data/conflict/stageA_pairs.json")
+DEFAULT_EMB_CACHE = Path("data/conflict_NL/stageA/norm_embeddings.npz")
+DEFAULT_OUTPUT = Path("data/conflict_NL/stageA_pairs.json")
 
 RULE = ("discard pair if (same hierarchy.instrument_id and same hierarchy.article) "
         "or (similarity < similarity_floor and no direct graph link between the articles)")

@@ -93,11 +93,11 @@ class Source:
 
 
 SOURCES = [
-    Source("data/laws/nis2_nl/BWBR0052872_2026-08-15_provisions.json"),
-    Source("data/laws/uitv_avg/BWBR0040940_2026-09-01_provisions.json"),
-    Source("data/laws/wdo/BWBR0048156_2025-11-11_provisions.json"),
-    Source("data/laws/telecom/BWBR0009950_2026-08-15_provisions.json"),
-    Source("data/laws/uitv_dataverordening/BWBR0051796_2025-11-21_provisions.json", "BWBR0051796"),
+    Source("data/new_norms/new_Cbw_norms_merged.json"),
+    Source("data/new_norms/new_UAVG_norms_merged.json"),
+    Source("data/new_norms/new_Wdo_norms_merged.json"),
+    Source("data/new_norms/new_Telecommunicatiewet_norms_merged.json"),
+    Source("data/new_norms/new_Uitvoeringswet_norms_merged.json"),
     Source("data/laws/gdpr/32016R0679_original_provisions.json"),
     Source("data/laws/nis2/32022L2555_original_provisions.json"),
     Source("data/laws/dora/32022R2554_original_provisions.json"),
