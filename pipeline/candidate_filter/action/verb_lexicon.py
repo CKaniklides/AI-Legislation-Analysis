@@ -12,6 +12,12 @@ Version 2 (recall-oriented):
   * joined lemma spellings ("aanstellen", "meedelen", "beschikbaarstellen", "openbaarmaken")
   * missing participles ("goedgekeurd", "ingeperkt", "uitgebreid")
   * a few false positives removed ("stak", bare noun "opzet")
+Version 3 (Dutch national legislation):
+  * "regels stellen" (adopt), "regelen" (adopt), "in de plaats treden" (amend),
+    "(mee)zenden" and "beantwoorden" (provide), "doorsturen" (transfer), "bepalen" (decide),
+    "tot stand brengen" (produce), "herbenoemen" (appoint), "inschrijven" (record),
+    "verbieden" (deny), "beheren" (operate), "adviseren" (support)
+  * new stative lemmas: "geschieden", "van toepassing blijven", "tot stand komen", "openstaan"
 Polarity is kept in LITERALS for reference, but the candidate scorer ignores it.
 """
 
@@ -58,7 +64,6 @@ FAMILIES: dict[str, list[str]] = {
         r"\bkennis(?:geving|geven|gegeven|geeft)\b",
         r"\bin\s+kennis\s+(?:te\s+)?(?:stel(?:len|t)|gesteld)\b",
         r"\bmede(?:delen|deelt|gedeeld|deling(?:en)?)\b",
-        # v2
         r"\bmee(?:delen|deelt)\b", r"\bmeegedeeld\b",
         r"\bop\s+de\s+hoogte\s+(?:te\s+)?(?:brengen|brengt|gebracht|stellen|stelt|gesteld|houden|houdt|gehouden)\b",
         _v("inlicht"), _v("aanmeld"), r"\baangemeld\b",
@@ -73,10 +78,10 @@ FAMILIES: dict[str, list[str]] = {
         _v("aanlever"), r"\baangeleverd\b",
         r"\b(?:ter\s+beschikking|beschikbaar)\s*(?:te\s+)?(?:stel(?:len|t)|gesteld)\b",
         r"\bvoorleg(?:gen|t)\b", r"\bvoorgelegd\b",
-        # v2
         r"\bgeven\b", r"\bgeeft\b", r"\bgegeven\b", _v("bezorg"),
         _v("aflever"), r"\bafgeleverd\b", r"\bbieden\b", r"\bbiedt\b", r"\bgeboden\b",
         r"\boverleggen\b(?!\s+met\b)", r"\boverlegt\b(?!\s+met\b)", r"\boverlegd\b",
+        r"\b(?:mee)?(?:zenden|zendt|gezonden)\b", r"\bmeegezonden\b", r"\bbeantwoord(?:en|t)?\b",
     ],
     "publish": [
         r"\bopenbaar\s*(?:te\s+)?(?:maken|maakt|gemaakt)\b",
@@ -87,8 +92,8 @@ FAMILIES: dict[str, list[str]] = {
         _n("overdrag"), r"\bovergedragen\b", r"\bdoorgeven\b", r"\bdoorgegeven\b",
         r"\bdoorgifte\b", _n("verzend"), r"\bverzonden\b",
         r"\bdoorzend(?:en|t)\b", r"\bdoorgezonden\b",
-        # v2
         r"\bdel(?:en|t)\b", r"\bgedeeld\b", _n("uitwissel"),
+        r"\bdoor(?:sturen|stuurt)\b", r"\bdoorgestuurd\b",
     ],
     "access": [
         _v("raadpleeg", "raadpleg"), r"\binzien\b", r"\bingezien\b", r"\binzage\b", r"\binziet\b",
@@ -112,7 +117,6 @@ FAMILIES: dict[str, list[str]] = {
     "retain": [
         _n("bewaar", "bewar"), r"\bopslaan\b", r"\bopgeslagen\b", r"\bopslag\b",
         _n("archiveer", "archiver"), _n("behoud"), _v("conserveer", "conserver"),
-        # v2
         r"\bter\s+beschikking\s+(?:te\s+)?(?:houden|houdt|gehouden)\b",
         r"\bin\s+stand\s+(?:te\s+)?(?:houden|houdt|gehouden)\b",
         r"\bhouden\b", r"\bhoudt\b",
@@ -124,7 +128,6 @@ FAMILIES: dict[str, list[str]] = {
     "use": [
         _v("gebruik"), _n("verwerk"), _v("benut"), _v("inzett", "inzet"), r"\bingezet\b",
         _v("exploiteer", "exploiter"),
-        # v2
         r"\bgebruik\s*(?:te\s+)?(?:maken|maakt|gemaakt)\b",
     ],
     # --- permission lifecycle -----------------------------------------------------------
@@ -136,7 +139,6 @@ FAMILIES: dict[str, list[str]] = {
         r"\b(?:vergunning|toestemming|toegang|machtiging|goedkeuring|licentie)\s+(?:te\s+)?"
         r"(?:verlen(?:en|ing)|verleent|verleend)\b",
         r"\btoestemming\s+(?:te\s+)?(?:geven|geeft|gegeven)\b",
-        # v2
         r"\bverlen(?:en|ing)\b", r"\bverleent\b", r"\bverleend\b", _v("aanvaard"),
     ],
     "deny": [
@@ -144,13 +146,12 @@ FAMILIES: dict[str, list[str]] = {
         r"\bingetrokken\b", _v("herroep"), _v("annuleer", "annuler"), _v("ontneem", "ontnem"),
         r"\bontnomen\b", _v("ontzegg", "ontzeg"), _v("blokkeer", "blokker"), _v("verhinder"),
         _v("uitsluit"), r"\buitgesloten\b",
-        # v2
         _v("verwerp"), r"\bverworpen\b",
+        r"\bverbied(?:en|t)\b", r"\bverboden\b",
     ],
     "require": [
         r"\bvereis(?:en|t)\b", r"\bvoorschrijv(?:en|t)\b", r"\bvoorgeschreven\b",
         r"\bopleg(?:gen|t)\b", r"\bopgelegd\b", r"\bverplicht(?:en|t)\b",
-        # v2
         _v("afdwing"), r"\bafgedwongen\b", r"\bopdrag(?:en)\b", r"\bopdraagt\b", r"\bopgedragen\b",
         r"\beisen\s+(?:te\s+)?(?:stellen|stelt|gesteld)\b",
     ],
@@ -164,17 +165,16 @@ FAMILIES: dict[str, list[str]] = {
         _v("activeer", "activer"), _v("start"),
         r"\bin\s+werking\s+(?:te\s+)?(?:stel(?:len|t)|gesteld|zetten|zet|gezet)\b",
         r"\bin\s+bedrijf\s+(?:te\s+)?(?:hou(?:den|dt)|gehouden|stel(?:len|t)|gesteld)\b",
-        # v2
         r"\bbeginn?en\b", r"\bbegint\b", r"\bbegonnen\b", _v("functioneer", "functioner"),
+        r"\bbeheren\b", r"\bbeheert\b", r"\bbeheerd\b",
     ],
     "halt": [
         _n("opschort"), r"\bopgeschort\b", r"\bstopzet(?:ten|t|ting)\b", r"\bstopgezet\b",
         r"\bbe[eë]indig(?:en|t|d|de|ing)?\b", r"\bstil(?:legg?en|legt|legging|gelegd)\b",
         _v("stopp", "stop"),
-        r"\bsta(?:ken|akt|aking)\b", r"\bgestaakt\b",            # v2: no longer matches "stak"
+        r"\bsta(?:ken|akt|aking)\b", r"\bgestaakt\b",
         r"\bonderbrek(?:en|t|ing)\b", r"\bonderbroken\b",
         _v("deactiveer", "deactiver"), r"\buitschakel(?:en|t|ing)\b", r"\buitgeschakeld\b",
-        # v2
         _n("schors"), r"\been\s+einde\s+(?:te\s+)?(?:maken|maakt|gemaakt)\b",
     ],
     "market": [
@@ -193,10 +193,10 @@ FAMILIES: dict[str, list[str]] = {
     # --- institutions -------------------------------------------------------------------
     "appoint": [
         _n("aanwijz", "aanwijs"), r"\baangewezen\b", _n("benoem"),
-        _v("aanstell", "aanstel"), r"\baanstelling\b", r"\baangesteld\b",   # v2: "aanstellen"
+        _v("aanstell", "aanstel"), r"\baanstelling\b", r"\baangesteld\b",
         r"\binstellen\b", r"\bingesteld\b", r"\boprichten\b", r"\bopgericht\b", r"\boprichting\b",
-        # v2
         r"\bbelast(?:en)?\s+met\b", r"\bbelasten\b",
+        r"\bherbenoem(?:en|t|d)\b",
     ],
     "dismiss": [
         r"\bontsla(?:an|at)\b", r"\bontslagen\b", r"\bafzet(?:ten|t|ting)\b", r"\bafgezet\b",
@@ -219,13 +219,11 @@ FAMILIES: dict[str, list[str]] = {
     "ensure": [
         _v("waarborg"), _v("garandeer", "garander"), r"\bzorg(?:en|t|dragen|draagt)\b",
         r"\bzorg\s+(?:te\s+)?dragen\b", r"\bzorgdrag\w*", r"\bziet\s+erop\s+toe\b", r"\btoezien\b",
-        # v2
         r"\bzorg\s+(?:er\s*)?voor\b", _v("bescherm"), _v("vermijd"),
     ],
     "measure": [
         r"\btreff(?:en|t)\b", r"\bgetroffen\b", _n("implementeer", "implementer"),
         r"\bimplementatie\b", r"\binvoeren\b", r"\bingevoerd\b", r"\btoepassen\b", r"\btoegepast\b",
-        # v2: "(maatregelen) nemen"; longer phrases with "nemen" win on overlap
         r"\bnemen\b", r"\bneemt\b", r"\bgenomen\b",
     ],
     "assess": [
@@ -239,15 +237,16 @@ FAMILIES: dict[str, list[str]] = {
         _v("documenteer", "documenter"), _n("registreer", "registrer"), r"\bregistratie\b",
         r"\bvastleg(?:gen|t|ging)\b", r"\bvastgelegd\b", r"\bbijhoud(?:en|t)\b", r"\bbijgehouden\b",
         _v("noteer", "noter"), r"\bdocumentatie\b",
+        r"\binschrijv(?:en|ing)\b", r"\bingeschreven\b",
     ],
     # --- legislative acts -----------------------------------------------------------------
     "adopt": [
         r"\bvast(?:stellen|stelt)\b(?!\s+(?:dat|of|welke)\b)", r"\bvastgesteld\b(?!\s+(?:dat|of)\b)",
         r"\bvaststelling\b", r"\bvast\s+te\s+stellen\b(?!\s+(?:dat|of|welke)\b)",
         r"\buitvaardig(?:en|t|ing)\b", r"\buitgevaardigd\b",
-        # v2
         r"\bbindend\s+(?:te\s+)?(?:maken|maakt|gemaakt)\b",
         r"\balgemene\s+geldigheid\s+(?:te\s+)?(?:verlenen|verleent|verleend)\b",
+        r"\bregels\s+(?:te\s+)?(?:stellen|stelt|gesteld)\b", r"\bregel(?:en|t)\b", r"\bgeregeld\b",
     ],
     "amend": [
         _n("wijzig"), r"\baanvul(?:len|t|ling|lingen)\b", r"\baangevuld\b",
@@ -255,8 +254,8 @@ FAMILIES: dict[str, list[str]] = {
         r"\baanpass(?:en|ing|ingen)\b", r"\baanpast\b", r"\baangepast\b",
         _v("actualiseer", "actualiser"), r"\bbijwerk(?:en|t)\b", r"\bbijgewerkt\b",
         r"\bherzi(?:en|et|ening)\b", _v("schrapp", "schrap"),
-        # v2
         r"\b(?:actueel|up-to-date|bij)\s+(?:te\s+)?(?:houden|houdt|gehouden)\b",
+        r"\bin\s+de\s+plaats\s+(?:te\s+)?(?:treden|treedt|getreden)\b",
     ],
     # --- compliance and consideration (generic) ------------------------------------------
     "comply": [
@@ -264,15 +263,13 @@ FAMILIES: dict[str, list[str]] = {
         r"\bnalev(?:en|ing)\b", r"\bnaleeft\b", r"\bnageleefd\b",
         r"\bnakom(?:en|t|ing)\b", r"\bnagekomen\b",
         r"\bin\s+overeenstemming\s+(?:te\s+)?(?:brengen|brengt|gebracht|zijn|is)\b",
-        # v2
         _v("eerbiedig"), _v("respecteer", "respecter"), _v("volg"),
         r"\bzich\s+(?:te\s+)?(?:houden|houdt)\s+aan\b",
     ],
     "consider": [
-        r"\brekening\s+(?:te\s+)?(?:houden|houdt|gehouden)\b",          # v2: "met" no longer required
+        r"\brekening\s+(?:te\s+)?(?:houden|houdt|gehouden)\b",
         r"\bin\s+(?:aanmerking|acht|overweging)\s+(?:te\s+)?(?:nemen|neemt|genomen)\b",
         _v("overweeg", "overweg"), r"\boverwogen\b",
-        # v2
         r"\baandacht\s+(?:te\s+)?(?:besteden|besteedt|besteed|schenken|schenkt|geschonken)\b",
     ],
     # --- producing and shaping ----------------------------------------------------------------
@@ -280,14 +277,13 @@ FAMILIES: dict[str, list[str]] = {
         r"\bopstel(?:len|t)\b", r"\bopgesteld\b", _v("ontwikkel"),
         r"\bontwerp(?:en|t)\b", r"\bontworpen\b", r"\buitwerk(?:en|t)\b", r"\buitgewerkt\b",
         r"\bopmak(?:en)\b", r"\bopmaakt\b", r"\bopgemaakt\b",
-        r"\bopzetten\b", r"\bopgezet\b",                         # v2: bare noun "opzet" removed
-        # v2
+        r"\bopzetten\b", r"\bopgezet\b",
         _v("vertaal", "vertal"), r"\bvoorstell?en\b", r"\bvoorgesteld\b", _v("vervaardig"),
         r"\bcre[eë](?:ren|ert)\b", r"\bgecre[eë]erd\b",
+        r"\btot\s+stand\s+(?:te\s+)?(?:brengen|brengt|gebracht)\b",
     ],
     "subject": [
         r"\bonderwerp(?:en|t)\b(?=(?:\s+\S+){0,8}?\s+aan\b)", r"\bonderworpen\b",
-        # v2: bare lemma ("onderwerpen" as the whole action) and "ondergaan"
         r"^\s*onderwerpen\s*$", r"\bonderga(?:an|at)\b", r"\bondergaan\b",
     ],
     "condition": [
@@ -301,11 +297,10 @@ FAMILIES: dict[str, list[str]] = {
         r"\bopgenomen\b(?=\s*(?:$|[,.;:]|in\b|worden\b|wordt\b))",
         r"\binbouw(?:en|t)\b", r"\bingebouwd\b",
         _v("integreer", "integrer"), r"\bge[iï]ntegreerd\b",
-        # v2
         r"\bvoorzien\b", r"\bvoorziet\b", _v("bijvoeg"), r"\bbijgevoegd\b",
         _v("aanbreng"), r"\baangebracht\b",
     ],
-    # --- v2 families (no antonym) -------------------------------------------------------------
+    # --- families without antonym -------------------------------------------------------------
     "cooperate": [
         _v("samenwerk"), r"\bsamengewerkt\b", r"\bsamenwerking\b",
         r"\bin\s+overleg\s+(?:te\s+)?(?:treden|treedt|getreden)\b",
@@ -324,6 +319,7 @@ FAMILIES: dict[str, list[str]] = {
         r"\bbeslissing(?:en)?\s+(?:te\s+)?(?:nemen|neemt|genomen)\b",
         r"\bbesluit(?:en)?\s+(?:te\s+)?(?:nemen|neemt|genomen)\b",
         r"\bkiez(?:en)\b", r"\bkiest\b", r"\bgekozen\b", _v("selecteer", "selecter"),
+        r"\bbepalen\b", r"\bbepaalt\b", r"\bbepaald\b(?!\s+(?:in|bij)\b)",
     ],
     "perform": [
         _v("uitvoer"), r"\buitgevoerd\b", _v("verricht"), _v("onderneem", "ondernem"),
@@ -340,6 +336,7 @@ FAMILIES: dict[str, list[str]] = {
         r"\bin\s+(?:staat|de\s+gelegenheid)\s+(?:te\s+)?(?:stellen|stelt|gesteld)\b",
         r"\b(?:bijstand|steun|ondersteuning)\s+(?:te\s+)?(?:verlenen|verleent|verleend|bieden|biedt|geboden)\b",
         r"\binzicht\s+(?:te\s+)?(?:geven|geeft|gegeven|bieden|biedt)\b",
+        r"\badvis(?:eren|eert|eerd)\b",
     ],
     "describe": [
         _v("vermeld"), _v("beschrijv", "beschrijf"), r"\bbeschreven\b",
@@ -390,7 +387,6 @@ RELATED_AXES = {
         ("access", "assess"), ("authorise", "require"), ("operate", "market"),
         ("adopt", "amend"), ("produce", "record"), ("contain", "record"),
         ("comply", "require"), ("condition", "require"), ("condition", "authorise"),
-        # v2
         ("describe", "contain"), ("describe", "record"), ("describe", "notify"),
         ("describe", "provide"), ("request", "provide"), ("request", "notify"),
         ("request", "access"), ("cooperate", "support"), ("cooperate", "request"),
@@ -408,4 +404,5 @@ STATIVE_LEMMAS = {
     "van toepassing zijn", "van kracht worden", "geldig zijn", "geldig blijven",
     "betrekking hebben", "deel uitmaken", "gebaseerd zijn", "plaatsvinden", "neerkomen",
     "zien", "maken", "zetten", "leiden", "richten", "dateren", "beschouwen", "genieten",
+    "geschieden", "van toepassing blijven", "tot stand komen", "openstaan",
 }

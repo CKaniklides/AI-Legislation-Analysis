@@ -50,7 +50,7 @@ try:
         norm_action_context,
     )
 
-    from verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
+    from pipeline.candidate_filter.action.verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
 
 except ModuleNotFoundError:
     from action.action_verbs import (
@@ -60,7 +60,7 @@ except ModuleNotFoundError:
             norm_action_context,
         )
     
-    from action.verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
+    from pipeline.candidate_filter.action.verb_lexicon import GENERIC_AXES, RELATED_AXES, STATIVE_LEMMAS
     
 # ---------------------------------------------------------------------
 # Configuration

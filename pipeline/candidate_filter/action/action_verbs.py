@@ -29,10 +29,10 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
+    from pipeline.candidate_filter.action.verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
 
 except ImportError:
-    from action.verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
+    from pipeline.candidate_filter.action.verb_lexicon import FAMILIES, GENERIC_AXES, LITERALS
     
 
 FLAGS = re.IGNORECASE
