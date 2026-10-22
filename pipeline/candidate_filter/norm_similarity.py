@@ -11,9 +11,17 @@ import numpy as np
 
 
 def norm_text(record: dict) -> str:
-    """Build the text to embed: action + trigger_event, skipping empty parts."""
+    """Build the text to embed: action + trigger_event, skipping empty parts.
+
+    The current extraction (schema 2) has no `action` field: the action is `action_lemma`
+    (the verb phrase) with its `object`. Reading only `action` left 1,201 of 1,410 norms
+    without text, so Stage A's similarity floor never applied (fixed 22 Oct 2026). Older
+    records that do have `action` are read exactly as before."""
     norm = record.get("norm") or {}
-    parts = [norm.get("action"), norm.get("trigger_event")]
+    action = norm.get("action")
+    if not (isinstance(action, str) and action.strip()):
+        action = " ".join(p for p in (norm.get("action_lemma"), norm.get("object")) if isinstance(p, str) and p.strip())
+    parts = [action, norm.get("trigger_event")]
     return " ; ".join(p.strip() for p in parts if isinstance(p, str) and p.strip())
 
 

@@ -5,7 +5,7 @@
  "n_words": 9050,
  "length_targets_words": {
   "law_sheet": [
-   90,
+   150,
    272
   ],
   "whole_tree": [
@@ -152,18 +152,6 @@
    "defined_in": "1",
    "uses": 8,
    "used_in_articles": 6
-  },
-  {
-   "term": "Het eerste en het tweede lid zijn niet van toepassing op",
-   "defined_in": "3",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Deze wet wordt aangehaald als",
-   "defined_in": "54",
-   "uses": 0,
-   "used_in_articles": 0
   }
  ],
  "duties": [

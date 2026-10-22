@@ -567,16 +567,22 @@ SOURCES = [
 # ---------------------------------------------------------------------------
 
 
+def _file_label(spec: SourceSpec) -> str:
+    # Labels are prose ("Hoofdstuk 11 only (privacy/ePrivacy provisions)"); a "/" in a file name
+    # would create a sub-folder, and \ : * ? " < > | are not allowed in Windows file names.
+    return re.sub(r'[\\/:*?"<>|]', "-", spec.label)
+
+
 def norms_path(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms.json"
 
 
 def queue_path_for(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms_review_queue.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms_review_queue.json"
 
 
 def unresolved_path_for(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms_unresolved.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms_unresolved.json"
 
 
 def _atomic_write_json(path: Path, data) -> None:
@@ -1127,7 +1133,9 @@ def retry_queue(client, model: str, reasoning_effort: str = "none", concurrency:
 #     (ACTIONABLE_DEONTICS); the other reading is kept as deontic_alternative.
 #   * a single-pass EMPTY result is NOT accepted as "no norm here": that would hide
 #     any norm the failed pass might have found. Such units go to the unresolved file.
-#   * count/alignment mismatches have no safe default and also go there.
+#   * count/alignment mismatches (since 22 Oct 2026): norms both passes found are resolved
+#     per pair as above; a norm only one pass found is kept and flagged as resting on a
+#     single reading. Dropping the unit used to hide norms both passes agreed on.
 # ---------------------------------------------------------------------------
 
 # Deontics eligible for C1 detection. RIGHT and DELEGATION are currently excluded;
@@ -1164,9 +1172,11 @@ def _resolve_source_queue(spec: SourceSpec, queue: list) -> tuple[int, int]:
 
         number, index = item["paragraph_number"], item.get("paragraph_index")
 
-        if item.get("disagreement_kind") in ("norm_count_mismatch", "norm_alignment_ambiguous"):
-            dropped.append({**item, "drop_reason": item["disagreement_kind"]})
-            continue
+        # Count/alignment mismatches used to be dropped whole, which threw away norms both passes
+        # agreed on (22 Oct 2026: NIS2 art. 23(1) and (4), DORA art. 19(3)-(4) were lost because one
+        # pass split off one extra norm). They now follow the same non-suppressing rule as the rest:
+        # norms both passes found are resolved per pair below; a norm only one pass found is kept,
+        # flagged as resting on a single reading. Both passes here are verbatim-validated.
 
         if item["reason"] == "validation_failed":
             # One pass may still be fully verbatim-grounded; its norms become provisional.
@@ -1197,10 +1207,19 @@ def _resolve_source_queue(spec: SourceSpec, queue: list) -> tuple[int, int]:
         p1_norms = [ExtractedNorm(**d) for d in item["pass1"]]
         p2_norms = [ExtractedNorm(**d) for d in item["pass2"]]
         aligned = _align_norms(p1_norms, p2_norms)
-        if any(n1 is None or n2 is None for n1, n2 in aligned):
-            dropped.append({**item, "drop_reason": "norm_alignment_ambiguous"})  # defensive
-            continue
         for idx, (p1, p2) in enumerate(aligned):
+            if p1 is None or p2 is None:
+                provision.setdefault("norms", []).append(_finalize_norm(
+                    p1 or p2, number, index, idx,
+                    "conservative-default (found by one of two passes; see uncertainty_note)",
+                    extraction_uncertain=True,
+                    uncertainty_note=(
+                        "only one of two extraction passes found this norm (the passes found a "
+                        "different number of norms in this unit); kept by the non-suppressing "
+                        "default -- revisit if it ends up inside an actual candidate finding."
+                    ),
+                ))
+                continue
             diffs = _norm_diffs(p1, p2)
             deontic = _pick_deontic(p1.deontic, p2.deontic)
             base, other = (p1, p2) if deontic == p1.deontic else (p2, p1)

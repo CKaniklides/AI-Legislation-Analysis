@@ -291,6 +291,12 @@
    "used_in_articles": 4
   },
   {
+   "term": "verordening betreffende markten in cryptoactiva",
+   "defined_in": "2",
+   "uses": 4,
+   "used_in_articles": 2
+  },
+  {
    "term": "beveiliging van netwerk- en informatiesystemen",
    "defined_in": "3",
    "uses": 4,
@@ -375,6 +381,18 @@
    "used_in_articles": 2
   },
   {
+   "term": "dreigingsgestuurde penetratietest",
+   "defined_in": "3",
+   "uses": 2,
+   "used_in_articles": 1
+  },
+  {
+   "term": "Hof van Justitie",
+   "defined_in": "37",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
    "term": "betalingsgerelateerd operationeel of beveiligingsincident",
    "defined_in": "3",
    "uses": 1,
@@ -399,16 +417,10 @@
    "used_in_articles": 1
   },
   {
-   "term": "a) vereisten die van toepassing zijn op financiële entiteiten met betrekking tot",
-   "defined_in": "1",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Deze verordening is niet van toepassing op",
-   "defined_in": "2",
-   "uses": 0,
-   "used_in_articles": 0
+   "term": "single points of failure",
+   "defined_in": "10",
+   "uses": 1,
+   "used_in_articles": 1
   },
   {
    "term": "netwerk- en informatiesysteem",
@@ -557,18 +569,6 @@
   {
    "term": "kleine onderneming",
    "defined_in": "3",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Het oversightforum is samengesteld uit",
-   "defined_in": "32",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Wanneer de lead overseer de in dit artikel bedoelde bevoegdheden uitoefent",
-   "defined_in": "35",
    "uses": 0,
    "used_in_articles": 0
   }

@@ -67,7 +67,7 @@
       filterType: 'Filter by type', filterStatus: 'Filter by review status', pair1: 'provision pair', pairN: 'provision pairs', amended: 'Text since amended',
       noMatch: 'No questions match', noMatchText: 'Try a different search word or clear the filters.', clear: 'Clear filters',
       provisions: 'Provisions', provision: 'Provision', sideBySide: 'Side by side', example: 'Example situation', reasoning: 'Reasoning',
-      whyIssue: 'Why this may be an issue', whyNot: 'Why it may not be', definitionOf: 'Definition of', showFull: 'Show full text', showLess: 'Show less',
+      whyIssue: 'Why this may be an issue', whyNot: 'Why it may not be', definitionOf: 'Definition of', showFull: 'Show full text', showLess: 'Show less', officialAt: 'Official text on {a}', newTab: 'opens in a new tab',
       highlighted: 'Highlighted', highlightedText: ' is the passage the system relied on.', textOf: 'Text of provision',
       checkText: 'Check the current text. ', checkTextBody: 'A later amendment changed or repealed a provision shown here.',
       notYet: 'Not available for this finding yet.', questionN: 'Question {a} of {b}', pairsInQuestion: 'Provision pairs in this question', sections: 'Sections',
@@ -140,7 +140,7 @@
       filterType: 'Filter op soort', filterStatus: 'Filter op beoordelingsstatus', pair1: 'paar bepalingen', pairN: 'paren bepalingen', amended: 'Tekst inmiddels gewijzigd',
       noMatch: 'Geen vragen gevonden', noMatchText: 'Probeer een ander zoekwoord of wis de filters.', clear: 'Filters wissen',
       provisions: 'Bepalingen', provision: 'Bepaling', sideBySide: 'Naast elkaar', example: 'Voorbeeldsituatie', reasoning: 'Redenering',
-      whyIssue: 'Waarom dit een probleem kan zijn', whyNot: 'Waarom mogelijk niet', definitionOf: 'Definitie van', showFull: 'Toon volledige tekst', showLess: 'Toon minder',
+      whyIssue: 'Waarom dit een probleem kan zijn', whyNot: 'Waarom mogelijk niet', definitionOf: 'Definitie van', showFull: 'Toon volledige tekst', showLess: 'Toon minder', officialAt: 'Officiële tekst op {a}', newTab: 'opent in een nieuw tabblad',
       highlighted: 'Gemarkeerd', highlightedText: ' is de passage waarop het systeem zich baseerde.', textOf: 'Tekst van bepaling',
       checkText: 'Controleer de geldende tekst. ', checkTextBody: 'Een latere wijziging heeft een hier getoonde bepaling gewijzigd of ingetrokken.',
       notYet: 'Nog niet beschikbaar voor deze bevinding.', questionN: 'Vraag {a} van {b}', pairsInQuestion: 'Paren van bepalingen in deze vraag', sections: 'Onderdelen',
@@ -256,6 +256,12 @@
     el.textContent = '0'; requestAnimationFrame(step);
   }
   function lawChip(p) { return h('span', { class: 'law' + (p.law_id.indexOf('BWBR') === 0 ? ' nl' : ''), text: L(p.law) }); }
+  // A link to the official text of an article (wetten.overheid.nl or EUR-Lex), in a new tab; none without an address.
+  function officialLink(url) {
+    if (!url) return null;
+    var site = url.indexOf('eur-lex.europa.eu') > -1 ? 'EUR-Lex' : 'wetten.overheid.nl';
+    return h('a', { class: 'srclink', href: url, target: '_blank', rel: 'noopener noreferrer', title: t('newTab') }, t('officialAt', site) + ' ↗');
+  }
   function statusPill(d) {
     return h('span', { class: 'pill ' + (d ? d.decision : 'open'), text: d ? (d.decision === 'accept' ? t('accepted') : t('declined')) : t('toReview') });
   }
@@ -278,7 +284,7 @@
 
   // Screens that live in their own file (simplify.js) reach the shared pieces through this object.
   var App = window.ReviewApp = {
-    h: h, s: s, append: append, t: t, L: L, toast: toast, reviewer: reviewer, ringBox: ringBox, STR: STR, MIN_JUSTIFICATION: MIN_JUSTIFICATION,
+    h: h, s: s, append: append, t: t, L: L, toast: toast, reviewer: reviewer, ringBox: ringBox, STR: STR, MIN_JUSTIFICATION: MIN_JUSTIFICATION, officialLink: officialLink,
     lang: function () { return LANG; },
     renderSide: function (cat, sub) { renderSide(cat, sub); },
     rerender: function () { var y = window.scrollY; render(true); window.scrollTo(0, y); },
@@ -350,8 +356,9 @@
             h('span', { class: 'sc-name', text: r.name }), h('span', { class: 'sc-count', text: r.done + '/' + r.total }),
             progressBar(r)));
         }))),
+      // A guest (test mode) is this browser; signing out would only start a new, empty guest.
       h('div', { class: 'whoami' }, h('span', { text: t('signedInAs') }), h('b', { text: reviewer() }),
-        h('button', { class: 'linkbtn', type: 'button', onclick: signOut }, t('aLogout'))),
+        ME && ME.guest ? null : h('button', { class: 'linkbtn', type: 'button', onclick: signOut }, t('aLogout'))),
       h('button', { class: 'linkbtn', type: 'button', onclick: function () { keysDialog.showModal(); } }, t('shortcuts'))
     ]);
   }
@@ -632,14 +639,19 @@
     if (marked) append(tx, [p.text.slice(0, i), h('mark', { text: p.text.slice(i, i + kp.length) }), p.text.slice(i + kp.length)]);
     else tx.textContent = p.text;
     var title = p.kind === 'definition' && p.term ? t('definitionOf') + ' ‘' + p.term + '’' : L(p.law) + ' ' + p.ref;
-    var toggle = p.text.length > 700 ? h('button', { class: 'btn', type: 'button', 'aria-expanded': String(!!ui.full[key]), onclick: function () {
+    var toggle = h('button', { class: 'btn', type: 'button', hidden: true, 'aria-expanded': String(!!ui.full[key]), onclick: function () {
       ui.full[key] = tx.classList.toggle('full'); toggle.textContent = ui.full[key] ? t('showLess') : t('showFull'); toggle.setAttribute('aria-expanded', String(ui.full[key]));
-    } }, ui.full[key] ? t('showLess') : t('showFull')) : null;
+    } }, ui.full[key] ? t('showLess') : t('showFull'));
+    // The box has a fixed maximum height (styles.css), so whether a text fits depends on the screen,
+    // the font and its line breaks, not on its length: the button shows exactly when it does not fit
+    // (or is open), and is checked again whenever the box changes size.
+    function fit() { toggle.hidden = !tx.classList.contains('full') && tx.scrollHeight <= tx.clientHeight + 1; }
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(tx); else setTimeout(fit, 0);
     return h('article', { class: 'card prov' },
       h('div', { class: 'who' }, h('b', { text: t('provision') + ' ' + sideName }), lawChip(p)),
       h('h3', { text: title }),
       h('div', { class: 'hd', lang: 'nl', text: p.kind === 'definition' ? L(p.law) + ' ' + p.ref : (p.heading || '') }),
-      tx, toggle,
+      tx, toggle, officialLink(p.url),
       marked ? h('div', { class: 'hint' }, h('mark', { text: t('highlighted') }), t('highlightedText')) : null);
   }
   function para(v) { var x = L(v); return x ? h('p', { text: x }) : h('p', { class: 'muted', text: t('notYet') }); }

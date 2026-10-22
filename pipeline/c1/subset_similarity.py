@@ -26,6 +26,10 @@ from itertools import combinations
 from pathlib import Path
 from typing import Optional
 
+_PIPELINE = Path(__file__).resolve().parent.parent
+_d = _PIPELINE / "candidate_filter"
+if str(_d) not in sys.path:
+    sys.path.insert(0, str(_d))
 from norm_similarity import NormSimilarity, norm_text
 
 MAX_NORMS = 300            # 300 norms = 44,850 pairs; above this, use stageA_filtering.py

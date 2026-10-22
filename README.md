@@ -9,7 +9,7 @@ The system reads ten Dutch and EU digital laws (GDPR, AI Act, NIS2, DORA and the
 | Feature | What it produces | Status |
 |---|---|---|
 | Contradictions and tensions | Places where two provisions may pull in different directions, such as one incident that must be reported twice on different deadlines | Built: 88 review questions |
-| Duplicated obligations | Places where two laws ask for the same thing twice | Built: 64 review questions |
+| Duplications | Places where two laws ask for the same thing twice | Built: 64 review questions |
 | Simplification | Each law explained in plain language: a one-page sheet, a stakeholder map, a summary per chapter and a card per article, checked line by line against the law and reviewed by a lawyer before it is shared | Built for the GDPR; the other nine laws are next |
 | Outdated provisions | Provisions that are no longer used or have lost their legal basis | Designed, not built (hidden in the interface) |
 
@@ -21,11 +21,11 @@ python ui/server.py
 
 Then open http://localhost:8765. The server only uses the Python standard library.
 
-- **Sign-in is in test mode**: any email address and password work. Start the server with `REVIEW_DEMO_LOGIN=0` to require real accounts (passwords are stored only as salted hashes in `data/review/users.json`, which git ignores).
+- **Sign-in is in test mode**: nobody has to sign in. Each browser automatically becomes its own anonymous reviewer ("Reviewer 1", "Reviewer 2"…), remembered for a year, so reviews stay private per person. Start the server with `REVIEW_DEMO_LOGIN=0` to require real accounts (passwords are stored only as salted hashes in `data/review/users.json`, which git ignores).
 - **Fonts**: the interface uses the Rijksoverheid house-style fonts when the files are in `ui/fonts/` (see `ui/fonts/README.txt`). They are licensed and not in the repository; without them the browser falls back to a system font.
 - **Languages**: everything switches between Dutch and English at the top right. Legal text always stays in the original Dutch.
 
-Decisions are saved in `data/review/`: `decisions.json` for contradictions and duplications, `sheet_reviews.json` for plain-language lines, each with an append-only log.
+Decisions are saved in `data/review/`: `decisions.json` for contradictions and duplications, `sheet_reviews.json` for plain-language lines, each with an append-only log. Reviews are private: the files are keyed by account email, and each reviewer only sees their own decisions.
 
 ## Rebuilding the data
 

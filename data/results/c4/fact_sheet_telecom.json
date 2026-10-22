@@ -677,10 +677,100 @@
  ],
  "defined_terms": [
   {
+   "term": "consument",
+   "defined_in": "1.1",
+   "uses": 399,
+   "used_in_articles": 110
+  },
+  {
+   "term": "Autoriteit Consument en Markt",
+   "defined_in": "1.1",
+   "uses": 359,
+   "used_in_articles": 98
+  },
+  {
+   "term": "Onze Minister",
+   "defined_in": "1.1",
+   "uses": 324,
+   "used_in_articles": 110
+  },
+  {
+   "term": "nummer",
+   "defined_in": "1.1",
+   "uses": 156,
+   "used_in_articles": 32
+  },
+  {
+   "term": "elektronische communicatiedienst",
+   "defined_in": "1.1",
+   "uses": 148,
+   "used_in_articles": 75
+  },
+  {
+   "term": "gegevens",
+   "defined_in": "13.2a",
+   "uses": 135,
+   "used_in_articles": 50
+  },
+  {
+   "term": "onderneming",
+   "defined_in": "1.1",
+   "uses": 132,
+   "used_in_articles": 49
+  },
+  {
+   "term": "abonnee",
+   "defined_in": "1.1",
+   "uses": 97,
+   "used_in_articles": 21
+  },
+  {
+   "term": "openbare elektronische communicatiedienst",
+   "defined_in": "1.1",
+   "uses": 93,
+   "used_in_articles": 54
+  },
+  {
+   "term": "toegang",
+   "defined_in": "1.1",
+   "uses": 93,
+   "used_in_articles": 38
+  },
+  {
+   "term": "elektronisch communicatienetwerk",
+   "defined_in": "1.1",
+   "uses": 86,
+   "used_in_articles": 53
+  },
+  {
+   "term": "eindgebruiker",
+   "defined_in": "1.1",
+   "uses": 81,
+   "used_in_articles": 37
+  },
+  {
    "term": "gebruiker",
-   "defined_in": "11.1",
+   "defined_in": "1.1",
    "uses": 78,
    "used_in_articles": 35
+  },
+  {
+   "term": "openbaar elektronisch communicatienetwerk",
+   "defined_in": "1.1",
+   "uses": 71,
+   "used_in_articles": 48
+  },
+  {
+   "term": "radioapparaten",
+   "defined_in": "1.1",
+   "uses": 61,
+   "used_in_articles": 30
+  },
+  {
+   "term": "kabels",
+   "defined_in": "1.1",
+   "uses": 49,
+   "used_in_articles": 17
   },
   {
    "term": "communicatie",
@@ -689,10 +779,178 @@
    "used_in_articles": 19
   },
   {
+   "term": "richtlijn (EU) 2018/1972",
+   "defined_in": "1.1",
+   "uses": 44,
+   "used_in_articles": 31
+  },
+  {
+   "term": "vertrouwensdienst",
+   "defined_in": "1.1",
+   "uses": 43,
+   "used_in_articles": 17
+  },
+  {
+   "term": "zeggenschap",
+   "defined_in": "14a.1",
+   "uses": 43,
+   "used_in_articles": 14
+  },
+  {
+   "term": "eidas-verordening",
+   "defined_in": "1.1",
+   "uses": 35,
+   "used_in_articles": 23
+  },
+  {
+   "term": "betrokken partij",
+   "defined_in": "14a.1",
+   "uses": 34,
+   "used_in_articles": 18
+  },
+  {
+   "term": "openbare telecommunicatiedienst",
+   "defined_in": "1.1",
+   "uses": 29,
+   "used_in_articles": 13
+  },
+  {
+   "term": "bijbehorende faciliteiten",
+   "defined_in": "1.1",
+   "uses": 28,
+   "used_in_articles": 18
+  },
+  {
+   "term": "uitrusting",
+   "defined_in": "1.1",
+   "uses": 28,
+   "used_in_articles": 13
+  },
+  {
+   "term": "netwerkaansluitpunt",
+   "defined_in": "1.1",
+   "uses": 23,
+   "used_in_articles": 10
+  },
+  {
+   "term": "netwerkexploitant",
+   "defined_in": "5a.1",
+   "uses": 23,
+   "used_in_articles": 11
+  },
+  {
+   "term": "telecommunicatiepartij",
+   "defined_in": "14a.1",
+   "uses": 23,
+   "used_in_articles": 4
+  },
+  {
+   "term": "internettoegangsdienst",
+   "defined_in": "1.1",
+   "uses": 22,
+   "used_in_articles": 11
+  },
+  {
+   "term": "BEREC",
+   "defined_in": "1.1",
+   "uses": 21,
+   "used_in_articles": 12
+  },
+  {
+   "term": "interpersoonlijke communicatiedienst",
+   "defined_in": "1.1",
+   "uses": 21,
+   "used_in_articles": 13
+  },
+  {
+   "term": "programmadienst",
+   "defined_in": "1.1",
+   "uses": 21,
+   "used_in_articles": 11
+  },
+  {
+   "term": "apparaten",
+   "defined_in": "1.1",
+   "uses": 20,
+   "used_in_articles": 10
+  },
+  {
+   "term": "nummerhouder",
+   "defined_in": "1.1",
+   "uses": 19,
+   "used_in_articles": 10
+  },
+  {
+   "term": "verlener van vertrouwensdiensten",
+   "defined_in": "1.1",
+   "uses": 19,
+   "used_in_articles": 9
+  },
+  {
    "term": "verkeersgegevens",
    "defined_in": "11.1",
    "uses": 19,
    "used_in_articles": 5
+  },
+  {
+   "term": "programma",
+   "defined_in": "1.1",
+   "uses": 17,
+   "used_in_articles": 8
+  },
+  {
+   "term": "centraal instituut",
+   "defined_in": "14a.1",
+   "uses": 17,
+   "used_in_articles": 6
+  },
+  {
+   "term": "fysieke infrastructuur",
+   "defined_in": "1.1",
+   "uses": 16,
+   "used_in_articles": 13
+  },
+  {
+   "term": "overwegende zeggenschap",
+   "defined_in": "14a.1",
+   "uses": 15,
+   "used_in_articles": 6
+  },
+  {
+   "term": "nummergebruiker",
+   "defined_in": "1.1",
+   "uses": 14,
+   "used_in_articles": 8
+  },
+  {
+   "term": "transnationale markt",
+   "defined_in": "1.1",
+   "uses": 14,
+   "used_in_articles": 7
+  },
+  {
+   "term": "coördinatie",
+   "defined_in": "5a.1",
+   "uses": 14,
+   "used_in_articles": 9
+  },
+  {
+   "term": "gekwalificeerde verlener van vertrouwensdiensten",
+   "defined_in": "1.1",
+   "uses": 13,
+   "used_in_articles": 5
+  },
+  {
+   "term": "verordening (EU) 2019/1020",
+   "defined_in": "1.1",
+   "uses": 13,
+   "used_in_articles": 7
+  },
+  {
+   "term": "civiele werken",
+   "defined_in": "5a.1",
+   "uses": 12,
+   "used_in_articles": 6
   },
   {
    "term": "locatiegegevens",
@@ -707,16 +965,214 @@
    "used_in_articles": 6
   },
   {
+   "term": "eindapparatuur",
+   "defined_in": "1.1",
+   "uses": 11,
+   "used_in_articles": 5
+  },
+  {
+   "term": "nummeronafhankelijke interpersoonlijke communicatiedienst",
+   "defined_in": "1.1",
+   "uses": 11,
+   "used_in_articles": 9
+  },
+  {
+   "term": "vertrouwenslijst",
+   "defined_in": "1.1",
+   "uses": 11,
+   "used_in_articles": 3
+  },
+  {
+   "term": "beursgenoteerde betrokken partij",
+   "defined_in": "14a.1",
+   "uses": 11,
+   "used_in_articles": 6
+  },
+  {
+   "term": "gekwalificeerd certificaat",
+   "defined_in": "1.1",
+   "uses": 9,
+   "used_in_articles": 4
+  },
+  {
+   "term": "micro-onderneming",
+   "defined_in": "1.1",
+   "uses": 9,
+   "used_in_articles": 7
+  },
+  {
+   "term": "openbare gronden",
+   "defined_in": "1.1",
+   "uses": 9,
+   "used_in_articles": 5
+  },
+  {
+   "term": "spraakcommunicatiedienst",
+   "defined_in": "1.1",
+   "uses": 9,
+   "used_in_articles": 6
+  },
+  {
+   "term": "aandelenbelang",
+   "defined_in": "14a.1",
+   "uses": 9,
+   "used_in_articles": 4
+  },
+  {
+   "term": "depot",
+   "defined_in": "14a.1",
+   "uses": 9,
+   "used_in_articles": 4
+  },
+  {
+   "term": "fabrikant",
+   "defined_in": "1.1",
+   "uses": 8,
+   "used_in_articles": 7
+  },
+  {
+   "term": "netneutraliteitsverordening",
+   "defined_in": "1.1",
+   "uses": 8,
+   "used_in_articles": 6
+  },
+  {
+   "term": "elektronisch communicatienetwerk met hoge snelheid",
+   "defined_in": "1.1",
+   "uses": 7,
+   "used_in_articles": 5
+  },
+  {
+   "term": "gemachtigde",
+   "defined_in": "1.1",
+   "uses": 7,
+   "used_in_articles": 3
+  },
+  {
+   "term": "openbaar telecommunicatienetwerk",
+   "defined_in": "1.1",
+   "uses": 7,
+   "used_in_articles": 5
+  },
+  {
+   "term": "toegangspunt",
+   "defined_in": "1.1",
+   "uses": 7,
+   "used_in_articles": 5
+  },
+  {
+   "term": "toezichthoudend orgaan",
+   "defined_in": "1.1",
+   "uses": 7,
+   "used_in_articles": 4
+  },
+  {
+   "term": "publiek belang",
+   "defined_in": "14a.1",
+   "uses": 7,
+   "used_in_articles": 4
+  },
+  {
+   "term": "bundel",
+   "defined_in": "1.1",
+   "uses": 6,
+   "used_in_articles": 2
+  },
+  {
+   "term": "kleine onderneming",
+   "defined_in": "1.1",
+   "uses": 6,
+   "used_in_articles": 6
+  },
+  {
+   "term": "roamingverordening",
+   "defined_in": "1.1",
+   "uses": 6,
+   "used_in_articles": 6
+  },
+  {
    "term": "dienst met toegevoegde waarde",
    "defined_in": "11.1",
    "uses": 6,
    "used_in_articles": 1
   },
   {
-   "term": "In dit hoofdstuk en de daarop berustende bepalingen wordt verstaan onder",
-   "defined_in": "11.1",
+   "term": "aangesloten instelling",
+   "defined_in": "14a.1",
+   "uses": 6,
+   "used_in_articles": 6
+  },
+  {
+   "term": "beursgenoteerde telecommunicatiepartij",
+   "defined_in": "14a.1",
+   "uses": 6,
+   "used_in_articles": 2
+  },
+  {
+   "term": "instelling in het buitenland",
+   "defined_in": "14a.1",
+   "uses": 6,
+   "used_in_articles": 6
+  },
+  {
+   "term": "intermediair",
+   "defined_in": "14a.1",
+   "uses": 6,
+   "used_in_articles": 6
+  },
+  {
+   "term": "Internationaal Telecommunicatieverdrag",
+   "defined_in": "1.1",
+   "uses": 5,
+   "used_in_articles": 4
+  },
+  {
+   "term": "dienstverlener",
+   "defined_in": "7a.1",
+   "uses": 5,
+   "used_in_articles": 2
+  },
+  {
+   "term": "richtlijn (EU) 2019/882",
+   "defined_in": "7a.1",
+   "uses": 5,
+   "used_in_articles": 4
+  },
+  {
+   "term": "beveiligingsincident",
+   "defined_in": "1.1",
+   "uses": 4,
+   "used_in_articles": 1
+  },
+  {
+   "term": "importeur",
+   "defined_in": "1.1",
    "uses": 4,
    "used_in_articles": 4
+  },
+  {
+   "term": "interconnectie",
+   "defined_in": "1.1",
+   "uses": 4,
+   "used_in_articles": 3
+  },
+  {
+   "term": "marktdeelnemer",
+   "defined_in": "1.1",
+   "uses": 4,
+   "used_in_articles": 4
+  },
+  {
+   "term": "nummeridentificatie",
+   "defined_in": "1.1",
+   "uses": 4,
+   "used_in_articles": 1
+  },
+  {
+   "term": "openbare betaaltelefoon",
+   "defined_in": "1.1",
+   "uses": 4,
+   "used_in_articles": 2
   },
   {
    "term": "verwerking van verkeersgegevens",
@@ -725,10 +1181,274 @@
    "used_in_articles": 2
   },
   {
+   "term": "bewaarder van een beleggingsinstelling",
+   "defined_in": "14a.1",
+   "uses": 4,
+   "used_in_articles": 3
+  },
+  {
+   "term": "bijkantoor",
+   "defined_in": "14a.1",
+   "uses": 4,
+   "used_in_articles": 3
+  },
+  {
+   "term": "applicatieprogramma-interface",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 2
+  },
+  {
+   "term": "fysieke binnenhuisinfrastructuur",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "gekwalificeerd middel voor het aanmaken van elektronische handtekeningen",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "gekwalificeerde vertrouwensdienst",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "ingebruikneming",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "nationale regelgevende instantie van een andere lidstaat",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 2
+  },
+  {
+   "term": "netwerk met zeer hoge capaciteit",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 2
+  },
+  {
+   "term": "nummergebaseerde interpersoonlijke communicatiedienst",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "online interface",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 1
+  },
+  {
+   "term": "organisatie zonder winstoogmerk",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
+   "term": "overstappen",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 1
+  },
+  {
+   "term": "schadelijke interferentie",
+   "defined_in": "1.1",
+   "uses": 3,
+   "used_in_articles": 2
+  },
+  {
    "term": "inbreuk in verband met persoonsgegevens",
    "defined_in": "11.1",
    "uses": 3,
    "used_in_articles": 1
+  },
+  {
+   "term": "aanbieder van diensten van de informatiemaatschappij",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "bijbehorende diensten",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "distributeur",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "fulfilmentdienstverlener",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "in de handel brengen",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "noodhulpdienst",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "notificatierichtlijn",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 1
+  },
+  {
+   "term": "op de markt aanbieden",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "richtlijn nr. 2014/61/EU",
+   "defined_in": "1.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "ongewenst persoon",
+   "defined_in": "14a.1",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "personen met wie in onderling overleg wordt gehandeld",
+   "defined_in": "14a.1",
+   "uses": 2,
+   "used_in_articles": 1
+  },
+  {
+   "term": "stemmen",
+   "defined_in": "14a.1",
+   "uses": 2,
+   "used_in_articles": 1
+  },
+  {
+   "term": "conformiteitsrichtlijn",
+   "defined_in": "1.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "ITU",
+   "defined_in": "1.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "onderneming die beschikt over een aanmerkelijke marktmacht",
+   "defined_in": "1.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "terugroepen",
+   "defined_in": "1.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "aandeel",
+   "defined_in": "14a.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "girodepot",
+   "defined_in": "14a.1",
+   "uses": 1,
+   "used_in_articles": 1
+  },
+  {
+   "term": "aanbieden van een elektronisch communicatienetwerk",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "Berec-Bureau",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "beveiliging van netwerk of dienst",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "conformiteitsbeoordelingsinstantie",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "draadloos toegangspunt met klein bereik",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "radiocommunicatie",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "radiodeterminatie",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "radiogolven",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "systeem voor voorwaardelijke toegang",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "uit de handel nemen",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "vaste installatie",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "voor hoge snelheid bestemde fysieke binnenhuisinfrastructuur",
+   "defined_in": "1.1",
+   "uses": 0,
+   "used_in_articles": 0
   },
   {
    "term": "toestemming van een gebruiker of abonnee",
@@ -739,6 +1459,54 @@
   {
    "term": "elektronisch bericht",
    "defined_in": "11.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "oproeppoging zonder resultaat",
+   "defined_in": "13.2a",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "gereglementeerde markt",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "internetknooppunt",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "multilaterale handelsfaciliteit",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "bij een beursgenoteerde partij",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "bij een niet-beursgenoteerde partij",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "bij een vereniging of coöperatie",
+   "defined_in": "14a.1",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "verzameldepot",
+   "defined_in": "14a.1",
    "uses": 0,
    "used_in_articles": 0
   }

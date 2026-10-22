@@ -5,8 +5,8 @@
  "n_words": 7061,
  "length_targets_words": {
   "law_sheet": [
-   71,
-   212
+   150,
+   250
   ],
   "whole_tree": [
    353,
@@ -247,24 +247,6 @@
   {
    "term": "online identiteit",
    "defined_in": "1",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Onze Minister draagt zorg voor een voorziening",
-   "defined_in": "5",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Bij het besluit tot toestemming voor overdracht kan Onze Minister",
-   "defined_in": "14",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Deze wet wordt aangehaald als",
-   "defined_in": "30",
    "uses": 0,
    "used_in_articles": 0
   }

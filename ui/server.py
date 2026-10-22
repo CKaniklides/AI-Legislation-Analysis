@@ -9,6 +9,9 @@ Serves the files in ui/ behind a sign-in (accounts in data/review/users.json, se
 Every change is also appended to data/review/decisions_log.jsonl, so an overwritten or
 withdrawn decision is never lost.
 
+Reviews are private: each file is keyed by account email, and a reviewer only ever receives
+their own decisions, line reviews and chapter settings. Everyone's are kept in the files.
+
 The plain-language laws are reviewed line by line: data/review/sheet_reviews.json holds one
 entry per line (approve, decline with a reason, and/or a reworded text), with the same kind
 of append-only log. data/review/sheet_settings.json holds how much of each chapter goes into
@@ -48,9 +51,12 @@ SESSIONS = REVIEW / "sessions.json"
 COOKIE = f"lr_session_{PORT}"          # per port, so two local copies of the tool keep separate sign-ins
 SESSION_SECONDS = 14 * 24 * 3600
 MIN_PASSWORD = 8
-# Test mode (on while the tool is being tested): any email and password signs in, and an account is
-# made on the spot. Start the server with REVIEW_DEMO_LOGIN=0 to require real accounts.
+# Test mode (on while the tool is being tested): nobody has to sign in. A first visit gets its own
+# anonymous reviewer ("Reviewer 3"), remembered by a cookie in that browser, so reviews still stay
+# private per person. The sign-in form, if used, accepts any email and password. Start the server
+# with REVIEW_DEMO_LOGIN=0 to require real accounts.
 DEMO_LOGIN = os.environ.get("REVIEW_DEMO_LOGIN", "1") != "0"
+GUEST_SECONDS = 365 * 24 * 3600         # a guest is one browser; a short session would lose their reviews
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 _AUTH_LOCK = threading.Lock()
 _FAILED = {}                            # email -> (wrong tries, since); five in a minute locks that email for the minute
@@ -76,6 +82,7 @@ def _now() -> int:
 
 DECLINE_REASONS = {"not_a_conflict", "wrong_provisions", "outdated_text", "needs_context", "other"}
 MIN_JUSTIFICATION = 10
+MAX_COMMENT = 2000                      # a free remark on a plain-language line, or a note on what a section misses
 
 
 def load_decisions(path: Path = DECISIONS) -> dict:
@@ -91,6 +98,22 @@ def save_decisions(d: dict, path: Path = DECISIONS) -> None:
     os.replace(tmp, path)
 
 
+def load_mine(path: Path, email: str) -> dict:
+    """Every reviewer's decisions are kept, but each reviewer only ever sees their own.
+    The files are keyed by account email; entries from before accounts existed sit under
+    keys without an "@" and are kept but shown to nobody."""
+    return load_decisions(path).get(email, {})
+
+
+def save_mine(path: Path, email: str, mine: dict) -> None:
+    everyone = load_decisions(path)
+    if mine:
+        everyone[email] = mine
+    else:
+        everyone.pop(email, None)
+    save_decisions(everyone, path)
+
+
 def validate_sheet(body: dict) -> "str | None":
     """A line of a simplified law: approve, decline (reason required) and/or reword per language."""
     if not isinstance(body.get("id"), str) or not body["id"]:
@@ -104,6 +127,9 @@ def validate_sheet(body: dict) -> "str | None":
     if edit is not None and not (isinstance(edit, dict) and edit and set(edit) <= {"nl", "en"}
                                  and all(isinstance(v, str) and v.strip() for v in edit.values())):
         return "A reworded line needs text in Dutch and/or English."
+    comment = body.get("comment")
+    if comment is not None and not (isinstance(comment, str) and len(comment) <= MAX_COMMENT):
+        return f"A comment is text of at most {MAX_COMMENT} characters."
     return None
 
 
@@ -143,11 +169,11 @@ class Handler(SimpleHTTPRequestHandler):
 
     def _do_get(self):
         if self.path.split("?")[0] == "/api/decisions":
-            return self._json(200, load_decisions())
+            return self._json(200, load_mine(DECISIONS, self._me["email"]))
         if self.path.split("?")[0] == "/api/sheet_reviews":
-            return self._json(200, load_decisions(SHEET_REVIEWS))
+            return self._json(200, load_mine(SHEET_REVIEWS, self._me["email"]))
         if self.path.split("?")[0] == "/api/sheet_settings":
-            return self._json(200, load_decisions(SHEET_SETTINGS))
+            return self._json(200, load_mine(SHEET_SETTINGS, self._me["email"]))
         return super().do_GET()
 
     def _post_sheet(self, body: dict):
@@ -158,16 +184,19 @@ class Handler(SimpleHTTPRequestHandler):
             if err:
                 return self._json(400, {"error": err})
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        email = self._me["email"]
         entries = {}
         with _SHEET_LOCK:
-            reviews = load_decisions(SHEET_REVIEWS)
+            reviews = load_mine(SHEET_REVIEWS, email)
             for it in items:
                 entry = None
-                if it.get("decision") or it.get("edit"):
+                comment = (it.get("comment") or "").strip() or None   # a free remark, with or without a decision
+                if it.get("decision") or it.get("edit") or comment:
                     entry = {
                         "decision": it.get("decision"),
                         "justification": (it.get("justification") or "").strip() or None if it.get("decision") == "decline" else None,
                         "edit": {k: v.strip() for k, v in it["edit"].items()} if it.get("edit") else None,
+                        "comment": comment,
                         "reviewer": (it.get("reviewer") or "").strip() or None,
                         "decided_at": now,
                     }
@@ -175,10 +204,10 @@ class Handler(SimpleHTTPRequestHandler):
                 else:
                     reviews.pop(it["id"], None)
                 entries[it["id"]] = entry
-            save_decisions(reviews, SHEET_REVIEWS)
+            save_mine(SHEET_REVIEWS, email, reviews)
             with SHEET_LOG.open("a", encoding="utf-8") as fh:
                 for key, entry in entries.items():
-                    fh.write(json.dumps({"id": key, "at": now, "entry": entry}, ensure_ascii=False) + "\n")
+                    fh.write(json.dumps({"id": key, "at": now, "email": email, "entry": entry}, ensure_ascii=False) + "\n")
         if "items" in body:
             return self._json(200, {"ok": True, "entries": entries})
         return self._json(200, {"ok": True, "entry": entries[body["id"]]})
@@ -187,12 +216,12 @@ class Handler(SimpleHTTPRequestHandler):
         if not isinstance(body.get("id"), str) or not body["id"] or body.get("value") not in PUBLIC_LEVELS | {None}:
             return self._json(400, {"error": "A setting needs an id and a value of full, gist or hide."})
         with _SHEET_LOCK:
-            settings = load_decisions(SHEET_SETTINGS)
+            settings = load_mine(SHEET_SETTINGS, self._me["email"])
             if body["value"] is None:
                 settings.pop(body["id"], None)
             else:
                 settings[body["id"]] = body["value"]
-            save_decisions(settings, SHEET_SETTINGS)
+            save_mine(SHEET_SETTINGS, self._me["email"], settings)
         return self._json(200, {"ok": True})
 
     def _do_post(self):
@@ -210,24 +239,26 @@ class Handler(SimpleHTTPRequestHandler):
         if err:
             return self._json(400, {"error": err})
 
-        decisions = load_decisions()
+        email = self._me["email"]
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        if body["decision"] is None:
-            decisions.pop(body["id"], None)
-            entry = None
-        else:
-            entry = {
-                "decision": body["decision"],
-                "reason": body.get("reason") if body["decision"] == "decline" else None,
-                "justification": (body.get("justification") or "").strip() or None,
-                "reviewer": (body.get("reviewer") or "").strip() or None,
-                "question_id": body.get("question_id"),
-                "decided_at": now,
-            }
-            decisions[body["id"]] = entry
-        save_decisions(decisions)
-        with LOG.open("a", encoding="utf-8") as fh:
-            fh.write(json.dumps({"id": body["id"], "at": now, "entry": entry}, ensure_ascii=False) + "\n")
+        with _SHEET_LOCK:
+            decisions = load_mine(DECISIONS, email)
+            if body["decision"] is None:
+                decisions.pop(body["id"], None)
+                entry = None
+            else:
+                entry = {
+                    "decision": body["decision"],
+                    "reason": body.get("reason") if body["decision"] == "decline" else None,
+                    "justification": (body.get("justification") or "").strip() or None,
+                    "reviewer": (body.get("reviewer") or "").strip() or None,
+                    "question_id": body.get("question_id"),
+                    "decided_at": now,
+                }
+                decisions[body["id"]] = entry
+            save_mine(DECISIONS, email, decisions)
+            with LOG.open("a", encoding="utf-8") as fh:
+                fh.write(json.dumps({"id": body["id"], "at": now, "email": email, "entry": entry}, ensure_ascii=False) + "\n")
         return self._json(200, {"ok": True, "entry": entry})
 
     # ---------- accounts ----------
@@ -246,15 +277,25 @@ class Handler(SimpleHTTPRequestHandler):
         if not s or s["expires"] < _now():
             return None
         u = _read(USERS).get(s["email"])
-        return {"name": u["name"], "email": s["email"]} if u else None
+        return {"name": u["name"], "email": s["email"], "guest": bool(u.get("guest"))} if u else None
 
-    def _start_session(self, email: str, payload: dict):
+    def _start_session(self, email: str, payload: dict, seconds: int = SESSION_SECONDS):
         token = secrets.token_urlsafe(32)
         with _AUTH_LOCK:
             sessions = {k: v for k, v in _read(SESSIONS).items() if v["expires"] > _now()}
-            sessions[hashlib.sha256(token.encode()).hexdigest()] = {"email": email, "expires": _now() + SESSION_SECONDS}
+            sessions[hashlib.sha256(token.encode()).hexdigest()] = {"email": email, "expires": _now() + seconds}
             _write(SESSIONS, sessions)
-        return self._json(200, payload, cookie=f"{COOKIE}={token}; Path=/; HttpOnly; SameSite=Strict; Max-Age={SESSION_SECONDS}")
+        return self._json(200, payload, cookie=f"{COOKIE}={token}; Path=/; HttpOnly; SameSite=Strict; Max-Age={seconds}")
+
+    def _start_guest(self):
+        """Test mode: an anonymous reviewer for this browser, so nobody has to type anything."""
+        with _AUTH_LOCK:
+            users = _read(USERS)
+            email = f"guest-{secrets.token_hex(6)}@guest"
+            name = f"Reviewer {sum(1 for u in users.values() if u.get('guest')) + 1}"
+            users[email] = {"name": name, "guest": True, "created": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+            _write(USERS, users)
+        return self._start_session(email, {"name": name, "email": email, "guest": True}, GUEST_SECONDS)
 
     def _auth_post(self, path: str, body: dict):
         if path == "/api/logout":
@@ -312,9 +353,12 @@ class Handler(SimpleHTTPRequestHandler):
         path = self.path.split("?")[0]
         if path == "/api/me":
             u = self._user()
-            return self._json(200, u) if u else self._json(401, {"code": "signed_out", "demo": DEMO_LOGIN})
+            if u:
+                return self._json(200, u)
+            return self._start_guest() if DEMO_LOGIN else self._json(401, {"code": "signed_out", "demo": False})
         # The page itself loads for everyone (it shows the sign-in screen); the data does not.
-        if (path.startswith("/api/") or path.startswith("/data/")) and not self._user():
+        self._me = self._user()
+        if (path.startswith("/api/") or path.startswith("/data/")) and not self._me:
             return self._json(401, {"code": "signed_out"})
         return self._do_get()
 
@@ -327,7 +371,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(400, {"error": "Request was not valid JSON."})
         if path in ("/api/signup", "/api/login", "/api/logout"):
             return self._auth_post(path, body if isinstance(body, dict) else {})
-        user = self._user()
+        user = self._me = self._user()
         if not user:
             return self._json(401, {"code": "signed_out"})
         # Decisions are recorded under the signed-in account, never under a name typed in the page.
@@ -340,7 +384,7 @@ class Handler(SimpleHTTPRequestHandler):
         return self._do_post()
 
     def log_message(self, fmt, *args):
-        if "/api/" in (args[0] if args else ""):
+        if "/api/" in (str(args[0]) if args else ""):  # args[0] is a status code when logging an error
             sys.stderr.write("%s\n" % (fmt % args))
 
 

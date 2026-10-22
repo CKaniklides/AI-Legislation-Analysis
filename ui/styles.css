@@ -272,6 +272,9 @@ mark { background: #FFE9A8; color: inherit; border-radius: 3px; padding: 0 2px; 
 .prov .tx { font: 400 1.04rem/1.65 var(--serif); white-space: pre-line; overflow-wrap: anywhere; border-left: 3px solid var(--blue-500); background: var(--blue-50); padding: 14px 16px; border-radius: 0 10px 10px 0; max-height: 260px; overflow: auto; }
 .prov .tx.full { max-height: none; }
 .prov .btn { justify-self: start; min-height: 36px; padding: 6px 12px; font-size: .86rem; }
+.srclink { justify-self: start; font-size: .86rem; font-weight: 600; }
+.pdrawer .srclink { display: inline-block; margin: 2px 0 10px; }
+.doc .r a, .doc .foot a { color: inherit; }
 .cmp { width: 100%; border-collapse: collapse; font-size: .94rem; }
 .cmp th, .cmp td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
 .cmp thead th { font: 700 .74rem var(--sans); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); background: var(--blue-50); }
@@ -385,6 +388,11 @@ dl.keys dt, dl.keys dd { margin: 0; }
 .pacts .a[aria-pressed=true] { background: var(--ok); border-color: var(--ok); color: #fff; }
 .pacts .d[aria-pressed=true] { background: var(--no); border-color: var(--no); color: #fff; }
 .pacts .e[aria-pressed=true] { background: var(--blue-600); border-color: var(--blue-600); color: #fff; }
+.pacts .c[aria-pressed=true] { background: var(--blue-100); border-color: var(--blue-200); color: var(--blue-700); }
+.pacts button svg { display: block; }
+.pcomment { margin-top: 8px; background: var(--blue-50); border: 1px solid var(--blue-100); color: var(--text); border-radius: 10px; padding: 8px 12px; font-size: .9rem; white-space: pre-line; }
+.pmissing { margin-top: 10px; padding-top: 6px; border-top: 1px dashed var(--line); }
+.pmissing .linkbtn { color: var(--blue-600); } .pmissing .linkbtn:hover { color: var(--blue-700); }
 .pform { margin-top: 10px; display: grid; gap: 8px; background: var(--blue-50); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
 .pform label { font-weight: 600; font-size: .92rem; }
 .pform textarea { min-height: 88px; }
@@ -412,6 +420,8 @@ dl.keys dt, dl.keys dd { margin: 0; }
 button.pnode { cursor: pointer; transition: border-color .15s, opacity .15s, background-color .15s; }
 button.pnode:hover { border-color: var(--blue-500); }
 .pnode small { display: block; font-weight: 400; color: var(--muted); font-size: .72rem; margin-top: 2px; }
+.pnode { overflow-wrap: anywhere; hyphens: auto; }   /* long Dutch legal terms, e.g. verwerkingsverantwoordelijke */
+.party h3 small { display: block; font: 400 .78em/1.35 var(--sans); color: var(--muted); margin-top: 2px; }
 .pnode[aria-pressed=true] { background: var(--navy); border-color: var(--navy); color: #fff; } .pnode[aria-pressed=true] small { color: #C6D8EF; }
 .pnode.dim { opacity: .4; }
 .pmaplegend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .84rem; color: var(--muted); padding-bottom: 8px; }
@@ -648,6 +658,7 @@ button.pnode:hover { border-color: var(--blue-500); }
   .barrow { grid-template-columns: minmax(0, 130px) minmax(0, 1fr) 30px; }
   .pgrid, .pcols, .pif, .doc .two { grid-template-columns: minmax(0, 1fr); }
   .pl { flex-wrap: wrap; } .pacts { margin-left: 22px; }
+  .pl > .pbody { flex-basis: calc(100% - 22px); }   /* the text takes the row, so the buttons really wrap below it (dot 10px + gap 12px) */
   .pch > .card { grid-template-columns: 48px minmax(0, 1fr); } .pch .st { grid-row: auto; grid-column: 2; }
   .pnode { width: 104px; font-size: .68rem; padding: 5px; } .pnode small { display: none; }
   .doc { padding: 24px 18px; } .doc .cols { columns: 1; }

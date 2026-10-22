@@ -187,8 +187,10 @@ lawmakers who want to see what the law comes down to. It follows a fixed nine-st
 
 WHAT TO PRODUCE (the whole sheet: between {lo} and {hi} words per language, so be selective)
 - in_short: 2 to 4 lines. The essence of the law. What a reader should remember.
-- core_concepts: the 3 to 5 legal terms that carry the most weight. `term` is the law's own
+- core_concepts: the 3 to 7 legal terms that carry the most weight. `term` is the law's own
   Dutch term. The FACTS list shows which defined terms the law uses most; use it as a guide.
+  A central concept the law names without a formal definition (for example in the heading of
+  the article that regulates it) can be a key term too.
 - foundations: the 2 to 4 articles of the EU Charter of Fundamental Rights, the EU Treaties
   or the Dutch Constitution this law most relates to. These texts are NOT given to you;
   answer from your own knowledge. Be conservative. `source` names the text and the article
@@ -360,6 +362,14 @@ def clean_if(text: str) -> str:
     return text[:1].lower() + text[1:]
 
 
+_THEN = re.compile(r"^(dan|then)\s+", re.I)
+
+
+def clean_then(text: str) -> str:
+    """The writer sometimes starts the consequence with "then" itself, which gave "then then"."""
+    return _THEN.sub("", text.strip())
+
+
 def flatten(kind: str, out: dict) -> list[dict]:
     """Every checkable line of a unit as {id, nl, en, articles}. Foundations are added in run_unit."""
     lines = []
@@ -390,8 +400,8 @@ def flatten(kind: str, out: dict) -> list[dict]:
     for i, c in enumerate(out["core_concepts"]):
         add(f"core_concepts{i}", f"{c['term']}: {c['plain']['nl']}", f"{c['term_en']}: {c['plain']['en']}", c["articles"])
     for i, t in enumerate(out["if_then"]):
-        add(f"if_then{i}", f"Als {clean_if(t['if_']['nl'])}, dan {t['then']['nl']}",
-            f"If {clean_if(t['if_']['en'])}, then {t['then']['en']}", t["articles"])
+        add(f"if_then{i}", f"Als {clean_if(t['if_']['nl'])}, dan {clean_then(t['then']['nl'])}",
+            f"If {clean_if(t['if_']['en'])}, then {clean_then(t['then']['en'])}", t["articles"])
     for i, s in enumerate(out["stakeholders"]):
         add(f"stakeholders{i}", f"{s['who']['nl']} -> {s['to_whom']['nl']}: {s['owes']['nl']}",
             f"{s['who']['en']} -> {s['to_whom']['en']}: {s['owes']['en']}", s["articles"])

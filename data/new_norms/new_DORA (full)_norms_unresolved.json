@@ -1,0 +1,14 @@
+[
+ {
+  "schema_version": 2,
+  "instrument_id": "32022R2554",
+  "article": "11",
+  "paragraph_number": "6",
+  "paragraph_index": 5,
+  "unit_text": "In het kader van hun alomvattend ICT-risicobeheer testen financiële entiteiten:\n\na) ten minste jaarlijks en in geval van substantiële wijzigingen in ICT-systemen die kritieke of belangrijke functies ondersteunen, de ICT-bedrijfscontinuïteitsplannen en de ICT-respons- en herstelplannen met betrekking tot ICT-systemen die kritieke of belangrijke functies ondersteunen;\n\nb) de overeenkomstig artikel 14 opgestelde crisiscommunicatieplannen.\n\nVoor de toepassing van de eerste alinea, punt a), nemen andere financiële entiteiten dan micro-ondernemingen in de testplannen scenario’s op van cyberaanvallen en omschakelingen tussen de primaire ICT-infrastructuur en de reservecapaciteit, backups en reservefaciliteiten die noodzakelijk zijn om te voldoen aan de in artikel 12 bedoelde verplichtingen.\n\nFinanciële entiteiten evalueren regelmatig hun ICT-bedrijfscontinuïteitsbeleid en hun ICT-respons- en herstelplannen, rekening houdend met de resultaten van de overeenkomstig de eerste alinea uitgevoerde tests en de aanbevelingen die voortvloeien uit audits of toezichtbeoordelingen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "drop_reason": "no_grounded_pass"
+ }
+]
