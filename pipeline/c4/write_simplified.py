@@ -362,6 +362,14 @@ def clean_if(text: str) -> str:
     return text[:1].lower() + text[1:]
 
 
+_THEN = re.compile(r"^(dan|then)\s+", re.I)
+
+
+def clean_then(text: str) -> str:
+    """The writer sometimes starts the consequence with "then" itself, which gave "then then"."""
+    return _THEN.sub("", text.strip())
+
+
 def flatten(kind: str, out: dict) -> list[dict]:
     """Every checkable line of a unit as {id, nl, en, articles}. Foundations are added in run_unit."""
     lines = []
@@ -392,8 +400,8 @@ def flatten(kind: str, out: dict) -> list[dict]:
     for i, c in enumerate(out["core_concepts"]):
         add(f"core_concepts{i}", f"{c['term']}: {c['plain']['nl']}", f"{c['term_en']}: {c['plain']['en']}", c["articles"])
     for i, t in enumerate(out["if_then"]):
-        add(f"if_then{i}", f"Als {clean_if(t['if_']['nl'])}, dan {t['then']['nl']}",
-            f"If {clean_if(t['if_']['en'])}, then {t['then']['en']}", t["articles"])
+        add(f"if_then{i}", f"Als {clean_if(t['if_']['nl'])}, dan {clean_then(t['then']['nl'])}",
+            f"If {clean_if(t['if_']['en'])}, then {clean_then(t['then']['en'])}", t["articles"])
     for i, s in enumerate(out["stakeholders"]):
         add(f"stakeholders{i}", f"{s['who']['nl']} -> {s['to_whom']['nl']}: {s['owes']['nl']}",
             f"{s['who']['en']} -> {s['to_whom']['en']}: {s['owes']['en']}", s["articles"])

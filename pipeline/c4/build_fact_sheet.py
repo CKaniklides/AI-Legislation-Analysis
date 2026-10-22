@@ -44,6 +44,11 @@ DATA = c1.ROOT / "data"
 OUT = DATA / "results" / "c4"
 
 LAW_TARGET = (0.01, 0.03)       # the mentor's own target for the essence
+# ...but never below what the sheet's own minimum line counts need (2 in short, 3 key terms,
+# 2 sources, 5 if/then, 4 stakeholders). Under it a small law (Bijlage 35, 1,109 words: 11-33
+# words) got a one-sentence sheet. Decided with the user on 22 Oct 2026; only laws under about
+# 8,000 words are affected.
+LAW_SHEET_FLOOR = (150, 250)
 TREE_TARGET = (0.05, 0.10)      # law sheet + all chapter summaries together
 KEY_ARTICLE_SHARE = 0.20        # the Pareto step, made literal
 
@@ -55,7 +60,35 @@ _FOREIGN = re.compile(r"\b(VWEU|VEU|Handvest|Richtlijn|Verordening \((?:EU|EG)\)
 _ARTREF = re.compile(r"\bartikel(?:en)?\s+(\d+[a-z]?(?:(?:,?\s*(?:lid|leden)\s*[\d, en]+)?\s*(?:,|en|of|tot en met|en met)\s*\d+[a-z]?)*)", re.I)
 
 
+BIJLAGE35 = "BWBR0049497"
+BIJLAGE35_DATASET = c1.ROOT / "Datasets" / "Dutch Laws" / "bijlage35_dataset.json"
+
+
+def bijlage35_rows_path() -> Path:
+    """
+    Bijlage 35 is explained from the annex itself (its five items on DORA), not from the corpus file.
+
+    The corpus file for BWBR0049497 holds the parent decree's 13 general articles (articles 6-9 only
+    amend other decrees), and its article 5 is not annex item 5. The annex items come from the
+    dataset C1/C2 read; each keeps the annex's own address. Written to data/results/c4, not to
+    data/laws, so no other loader picks these rows up.
+    """
+    out = OUT / "bijlage35_annex_provisions.json"
+    if out.exists() and out.stat().st_mtime >= BIJLAGE35_DATASET.stat().st_mtime:
+        return out
+    b = json.loads(BIJLAGE35_DATASET.read_text(encoding="utf-8"))["bijlage_35"]
+    chapter = f"Bijlage 35. {b['current_title']}"
+    rows = [{"instrument_id": BIJLAGE35, "article": str(p["number"]), "heading": f"Onderdeel {p['number']}. {p['heading']}",
+             "chapter": chapter, "text": p["text"], "url": b["permalink_current_version"], "norms": p.get("norms") or []}
+            for p in b["substantive_text"]["provisions"]]
+    OUT.mkdir(parents=True, exist_ok=True)
+    c1.atomic_write_json(out, rows)
+    return out
+
+
 def provisions_path(instrument_id: str) -> Path:
+    if instrument_id == BIJLAGE35:
+        return bijlage35_rows_path()
     folder = DATA / "laws" / _LAW_FOLDERS[instrument_id]
     files = [p for p in sorted(folder.glob(f"{instrument_id}_*provisions.json"))
              if "complete" not in p.name]          # ADR-0004: no Digital Omnibus content
@@ -217,7 +250,7 @@ def build(instrument_id: str) -> dict:
         "source_file": path.name,
         "n_articles": len(rows),
         "n_words": total,
-        "length_targets_words": {"law_sheet": [round(total * LAW_TARGET[0]), round(total * LAW_TARGET[1])],
+        "length_targets_words": {"law_sheet": [max(round(total * t), floor) for t, floor in zip(LAW_TARGET, LAW_SHEET_FLOOR)],
                                  "whole_tree": [round(total * TREE_TARGET[0]), round(total * TREE_TARGET[1])]},
         "chapters": chapters(rows),
         "defined_terms": defined_terms(rows),

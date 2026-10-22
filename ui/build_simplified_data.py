@@ -22,6 +22,7 @@ Nothing here calls a model. It adds three computed things to what the writer pro
     sentence. A reviewing lawyer can change this per chapter in the interface.
 """
 import json
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -70,6 +71,25 @@ def _after(text: str, sep: str) -> "str | None":
     return tail.strip() if found and tail.strip() else None
 
 
+# Where the condition ends when a repaired if/then line has no ", then" / ", dan": in English
+# at ", you must" (or another modal), in Dutch at the inverted main clause (", meld je").
+_CONSEQUENCE = {
+    "en": re.compile(r",\s+(?=(?:you|they|it|the \w+)\s+(?:must|may|can|cannot|have to|need to|should|shall|are|will|do not)\b)", re.I),
+    "nl": re.compile(r",\s+(?=\w+\s+(?:je|u|jij|zij|ze|het|hij)\b)", re.I),
+}
+
+
+def split_if_then(text: str, lang: str) -> "tuple[str, str] | None":
+    """("condition", "consequence") of one repaired if/then line, or None if it does not split."""
+    head, sep, tail = text.partition(", dan " if lang == "nl" else ", then ")
+    if not sep:
+        m = _CONSEQUENCE[lang].search(text)
+        if not m:
+            return None
+        head, tail = text[:m.start()], text[m.end():]
+    return (head, tail.strip()) if ws.clean_if(head) and ws.clean_then(tail) else None
+
+
 def apply_corrections(kind: str, content: dict, lines: list) -> None:
     """
     Where the check found a gap and proposed a repaired line, that repair becomes the line.
@@ -96,7 +116,8 @@ def apply_corrections(kind: str, content: dict, lines: list) -> None:
             if art in by_card:
                 by_card[art]["points"][int(i)].update(nl=sug["nl"], en=sug["en"]); done = True
         elif kind == "map" and lid.startswith("rel"):
-            what = {lang: _after(sug[lang], ": ") for lang in ("nl", "en")}
+            # the repair is usually "who -> whom: what", sometimes only the "what" itself
+            what = {lang: _after(sug[lang], ": ") or sug[lang].strip() for lang in ("nl", "en")}
             if all(what.values()):
                 content["relations"][int(lid[3:])]["what"] = what; done = True
         elif kind == "law":
@@ -106,11 +127,11 @@ def apply_corrections(kind: str, content: dict, lines: list) -> None:
             if lid == "purpose":
                 content["purpose"].update(nl=sug["nl"], en=sug["en"]); done = True
             elif lid.startswith("if_then"):
-                parts = {"nl": sug["nl"].partition(", dan "), "en": sug["en"].partition(", then ")}
-                if all(p[1] for p in parts.values()):
+                parts = {lang: split_if_then(sug[lang], lang) for lang in ("nl", "en")}
+                if all(parts.values()):
                     t = content["if_then"][int(lid[7:])]
                     t["if_"] = {lang: ws.clean_if(p[0]) for lang, p in parts.items()}
-                    t["then"] = {lang: p[2].strip() for lang, p in parts.items()}
+                    t["then"] = {lang: ws.clean_then(p[1]) for lang, p in parts.items()}
                     done = True
             elif lid.startswith("core_concepts"):
                 plain = {lang: _after(sug[lang], ": ") for lang in ("nl", "en")}
@@ -149,6 +170,7 @@ def law_data(iid: str) -> "dict | None":
         if u["kind"] == "law":                 # shown as two cells, so the condition must not carry its own "If"
             for t in content["if_then"]:
                 t["if_"] = {k: ws.clean_if(v) for k, v in t["if_"].items()}
+                t["then"] = {k: ws.clean_then(v) for k, v in t["then"].items()}
         if u["kind"] == "articles":
             for card in content["cards"]:
                 src = next((fs.words(r.get("text")) for r in rows if r["article"] == card["article"]), 0)
@@ -156,6 +178,11 @@ def law_data(iid: str) -> "dict | None":
                 card["target_words"] = ws.article_target(src)
         lines = [line_view(ln) for ln in u["lines"]]
         apply_corrections(u["kind"], content, lines)
+        for ln in lines:                       # the writer's own "then", sometimes copied into the repair
+            for text in (ln, ln.get("original") or {}) if ln["id"].startswith("if_then") else ():
+                if "nl" in text:
+                    text["nl"] = text["nl"].replace(", dan dan ", ", dan ")
+                    text["en"] = text["en"].replace(", then then ", ", then ")
         for card in content.get("cards", []) if u["kind"] == "articles" else []:
             card["n_words"] = {lang: sum(len(pt[lang].split()) for pt in card["points"]) for lang in ("nl", "en")}
         units[name] = {"kind": u["kind"], "content": content, "lines": lines,
@@ -175,10 +202,9 @@ def law_data(iid: str) -> "dict | None":
                                     "n_words": fs.words(r.get("text")), "key": r["article"] in key,
                                     "chapter": chapter_of.get(r["article"]),
                                     "url": b.official_url(iid, r["article"], r)} for r in rows}
-                    # The Charter and the Treaties: the official document (no article anchor checked there).
+                    # The Charter, the Treaties and the Grondwet: the official document (no article anchor checked there).
                     | {k: {"heading": v["heading"], "text": v["text"], "n_words": fs.words(v["text"]), "key": False,
-                           "chapter": None, "official_source": True,
-                           "url": f"https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:{v['celex']}"}
+                           "chapter": None, "official_source": True, "url": source_url(v["celex"])}
                        for k, v in res.get("sources", {}).items()},
     }
 

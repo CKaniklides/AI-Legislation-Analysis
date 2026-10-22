@@ -24,7 +24,7 @@
     p_h3: 'You review', p_h3t: 'approve, decline with a reason, or reword. You can change a decision at any time.',
     p_h4: 'Share', p_h4t: 'the public document holds only what was not declined, in your wording.',
     p_notWritten: 'Not written yet', p_openLaw: 'Open', p_loading: 'Loading…',
-    p_linesReviewed: 'lines reviewed', p_lines: 'lines', p_confirmed: 'confirmed by the automatic check', p_words: 'words', p_articles: 'articles', p_chaptersWritten: 'chapters written',
+    p_linesReviewed: 'lines reviewed', p_lines: 'lines', p_words: 'words', p_articles: 'articles', p_chaptersWritten: 'chapters written',
     p_sheet: 'One-page sheet', p_map: 'Stakeholder map', p_chaps: 'Chapters', p_doc: 'Public document', p_tag: 'Law in plain language',
     p_notice: 'An explanation next to the law, not the law itself. It does not say how the law applies to one person’s situation. Click an article number to read the original text.',
     p_ok: 'checked, and corrected where needed', p_corrected: 'corrected using the check: a detail the first wording left out was added', p_partly: 'true, but something that matters was left out', p_bad: 'not supported by the article', p_unchecked: 'AI’s own knowledge, not checked',
@@ -64,7 +64,7 @@
     p_h3: 'U beoordeelt', p_h3t: 'goedkeuren, afwijzen met een reden, of herschrijven. U kunt een beslissing altijd wijzigen.',
     p_h4: 'Delen', p_h4t: 'het publieksdocument bevat alleen wat niet is afgewezen, in uw formulering.',
     p_notWritten: 'Nog niet geschreven', p_openLaw: 'Openen', p_loading: 'Laden…',
-    p_linesReviewed: 'regels beoordeeld', p_lines: 'regels', p_confirmed: 'bevestigd door de automatische controle', p_words: 'woorden', p_articles: 'artikelen', p_chaptersWritten: 'hoofdstukken geschreven',
+    p_linesReviewed: 'regels beoordeeld', p_lines: 'regels', p_words: 'woorden', p_articles: 'artikelen', p_chaptersWritten: 'hoofdstukken geschreven',
     p_sheet: 'Overzicht op één pagina', p_map: 'Kaart van partijen', p_chaps: 'Hoofdstukken', p_doc: 'Publieksdocument', p_tag: 'Wet in gewone taal',
     p_notice: 'Een uitleg naast de wet, niet de wet zelf. De uitleg zegt niet hoe de wet in iemands situatie uitpakt. Klik op een artikelnummer om de oorspronkelijke tekst te lezen.',
     p_ok: 'gecontroleerd, en waar nodig verbeterd', p_corrected: 'verbeterd met de controle: een detail dat de eerste formulering wegliet is toegevoegd', p_partly: 'klopt, maar iets wat ertoe doet is weggelaten', p_bad: 'niet gedekt door het artikel', p_unchecked: 'eigen kennis van de AI, niet gecontroleerd',
@@ -268,8 +268,9 @@
     return [
       h('div', { class: 'pnotice', role: 'note', text: t('p_notice') }),
       h('div', { class: 'pbar' },
-        h('div', { class: 'plegend' }, [['supported', 'p_ok'], ['partly_supported', 'p_partly'], ['not_supported', 'p_bad'], ['not_checked', 'p_unchecked']]
-          .filter(function (x) { return x[0] === 'supported' || present[x[0]]; }).map(function (x) { return dot(x[0], x[1]); })),
+        // Green needs no explanation; the legend only names a colour that needs the reviewer's attention.
+        h('div', { class: 'plegend' }, [['partly_supported', 'p_partly'], ['not_supported', 'p_bad'], ['not_checked', 'p_unchecked']]
+          .filter(function (x) { return present[x[0]]; }).map(function (x) { return dot(x[0], x[1]); })),
         h('div', { class: 'pbulk', role: 'group', 'aria-label': t('p_bulk') },
           bulkBtn('btn', 'p_approveAll', keys.filter(function (k) { return rv(k).decision !== 'accept'; }), 'accept'),
           bulkBtn('btn', 'p_declineAll', keys.filter(function (k) { return rv(k).decision !== 'decline'; }), 'decline'),
@@ -325,7 +326,7 @@
           h('div', { class: 'cat-top' }, App.ringBox(d / tot, 72, Math.round(100 * d / tot) + '%', true, true),
             h('div', null, h('h3', { style: 'font-size:1.2rem', text: L(l.name) }),
               h('p', { text: nf(l.n_articles) + ' ' + t('p_articles') + ' · ' + nf(l.n_words) + ' ' + t('p_words') + ' · ' + l.n_chapters_written + '/' + l.n_chapters + ' ' + t('p_chaptersWritten') }))),
-          h('p', { class: 'muted', style: 'margin:0;font-size:.94rem', text: d + ' ' + t('of') + ' ' + tot + ' ' + t('p_linesReviewed') + ' · ' + l.n_confirmed + ' ' + t('p_confirmed') }),
+          h('p', { class: 'muted', style: 'margin:0;font-size:.94rem', text: d + ' ' + t('of') + ' ' + tot + ' ' + t('p_linesReviewed') }),
           h('a', { class: 'btn primary', href: '#/s/' + l.id }, t('p_openLaw')));
       }))
     ];
@@ -344,8 +345,7 @@
         h('div', { class: 'qmeta' },
           h('span', { text: nf(law.n_articles) + ' ' + t('p_articles') + ' · ' + nf(law.n_words) + ' ' + t('p_words') }),
           h('span', { text: d + ' ' + t('of') + ' ' + tot + ' ' + t('p_linesReviewed') }),
-          h('span', { class: 'posbar', 'aria-hidden': 'true' }, h('i', { style: 'width:' + (100 * d / tot) + '%' })),
-          h('span', { text: e.n_confirmed + ' ' + t('p_confirmed') }))),
+          h('span', { class: 'posbar', 'aria-hidden': 'true' }, h('i', { style: 'width:' + (100 * d / tot) + '%' })))),
       h('nav', { class: 'ptabs', 'aria-label': L(law.short) },
         tab(['sheet'], base, t('p_sheet')), law.units.map ? tab(['map'], base + '/map', t('p_map')) : null,
         tab(['chapters', 'ch'], base + '/chapters', t('p_chaps')), tab(['doc'], base + '/doc', t('p_doc')))

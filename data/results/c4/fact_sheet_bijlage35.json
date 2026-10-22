@@ -1,175 +1,123 @@
 {
  "instrument_id": "BWBR0049497",
- "source_file": "BWBR0049497_2026-08-15_provisions.json",
- "n_articles": 13,
- "n_words": 482,
+ "source_file": "bijlage35_annex_provisions.json",
+ "n_articles": 5,
+ "n_words": 1109,
  "length_targets_words": {
   "law_sheet": [
-   5,
-   14
+   150,
+   250
   ],
   "whole_tree": [
-   24,
-   48
+   55,
+   111
   ]
  },
  "chapters": [
   {
-   "title": "(geen hoofdstuk)",
+   "title": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
    "articles": [
     "1",
     "2",
     "3",
     "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13"
+    "5"
    ],
-   "n_words": 482,
+   "n_words": 1109,
    "target_words": [
-    24,
-    48
+    55,
+    111
    ]
   }
  ],
  "defined_terms": [],
- "duties": [],
- "stakeholder_matrix": [],
- "exceptions": [],
- "articles_by_importance": [
+ "duties": [
+  {
+   "article": "5",
+   "paragraph": null,
+   "kind": "OBLIGATION",
+   "who": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen",
+   "who_type": "REGULATED_ENTITY",
+   "when": "de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening",
+   "must": "doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt",
+   "to_whom": [
+    "het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt"
+   ],
+   "deadline": null,
+   "conditions": []
+  }
+ ],
+ "stakeholder_matrix": [
+  {
+   "who": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen",
+   "who_type": "REGULATED_ENTITY",
+   "to_whom": "het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt",
+   "n_duties": 1,
+   "articles": [
+    "5"
+   ],
+   "example": "doen de melding, bedoeld in artikel 19, eerste lid, eerste paragraaf, van de verordening, en de vrijwillige melding, bedoeld in artikel 19, tweede lid, eerste paragraaf, van de verordening, tevens bij het bij of krachtens artikel 16, eerste lid, van de Cyberbeveiligingswet aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt"
+  }
+ ],
+ "exceptions": [
   {
    "article": "1",
-   "heading": "Artikel 1. Begripsbepaling",
-   "cited_by_articles": 1,
-   "n_duties_on_regulated": 0,
-   "fine_backed": true,
-   "n_words": 12,
-   "points": 6,
-   "key_article": true
-  },
+   "paragraph": null,
+   "rule": null,
+   "exception": [
+    "tenzij de Europese Centrale Bank bevoegd is toezicht uit te oefenen op grond van de artikelen 4 en 6 van Verordening (EU) Nr. 1024/2013 (bankentoezicht)"
+   ],
+   "yields_to": null
+  }
+ ],
+ "articles_by_importance": [
   {
    "article": "2",
-   "heading": "Artikel 2. Aanwijzing bevoegde autoriteiten",
-   "cited_by_articles": 0,
+   "heading": "Onderdeel 2. Handhaving door middel van last onder dwangsom of bestuurlijke boete",
+   "cited_by_articles": 2,
    "n_duties_on_regulated": 0,
    "fine_backed": false,
-   "n_words": 105,
-   "points": 0,
+   "n_words": 814,
+   "points": 2,
    "key_article": true
-  },
-  {
-   "article": "3",
-   "heading": "Artikel 3. Handhaving",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 194,
-   "points": 0,
-   "key_article": true
-  },
-  {
-   "article": "4",
-   "heading": "Artikel 4. Buitengerechtelijke geschillenbeslechting",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 20,
-   "points": 0,
-   "key_article": false
   },
   {
    "article": "5",
-   "heading": "Artikel 5. Overige bepalingen",
+   "heading": "Onderdeel 5. Lidstaatoptie artikel 19, eerste lid, zesde paragraaf, en tweede lid, derde paragraaf (meldplicht ICT-incidenten)",
    "cited_by_articles": 0,
+   "n_duties_on_regulated": 1,
+   "fine_backed": false,
+   "n_words": 61,
+   "points": 2,
+   "key_article": false
+  },
+  {
+   "article": "3",
+   "heading": "Onderdeel 3. Openbaarmaking overtredingen",
+   "cited_by_articles": 1,
    "n_duties_on_regulated": 0,
    "fine_backed": false,
    "n_words": 31,
+   "points": 1,
+   "key_article": false
+  },
+  {
+   "article": "1",
+   "heading": "Onderdeel 1. Bevoegde autoriteit in de zin van de verordening",
+   "cited_by_articles": 0,
+   "n_duties_on_regulated": 0,
+   "fine_backed": false,
+   "n_words": 178,
    "points": 0,
    "key_article": false
   },
   {
-   "article": "6",
-   "heading": "Artikel 6. Wijziging Besluit Gedragstoezicht financiële ondernemingen Wft",
+   "article": "4",
+   "heading": "Onderdeel 4. Lidstaatoptie artikel 2, vijfde lid (uitzondering richtlijn kapitaalvereisten)",
    "cited_by_articles": 0,
    "n_duties_on_regulated": 0,
    "fine_backed": false,
-   "n_words": 8,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "7",
-   "heading": "Artikel 7. Wijziging Besluit prudentiële regels Wft",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 7,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "8",
-   "heading": "Artikel 8. Wijziging Besluit marktmisbruik Wft",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 6,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "9",
-   "heading": "Artikel 9. Wijziging Wijzigingsbesluit financiële markten 2023",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 7,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "10",
-   "heading": "Artikel 10. Intrekken besluiten",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 31,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "11",
-   "heading": "Artikel 11. Overgangsrecht",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 40,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "12",
-   "heading": "Artikel 12. Inwerkingtreding",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 13,
-   "points": 0,
-   "key_article": false
-  },
-  {
-   "article": "13",
-   "heading": "Artikel 13. Citeertitel",
-   "cited_by_articles": 0,
-   "n_duties_on_regulated": 0,
-   "fine_backed": false,
-   "n_words": 8,
+   "n_words": 25,
    "points": 0,
    "key_article": false
   }

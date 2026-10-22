@@ -1,0 +1,1883 @@
+{
+ "units": {
+  "chapter1": {
+   "kind": "chapter",
+   "name": "chapter1",
+   "content": {
+    "title": {
+     "nl": "Toezicht en handhaving van digitale weerbaarheid",
+     "en": "Supervision and enforcement of digital resilience"
+    },
+    "about": {
+     "nl": "Dit onderdeel bepaalt welke Nederlandse toezichthouder toezicht houdt op digitale weerbaarheid bij financiële organisaties en welke nationale regels gelden.",
+     "en": "This part sets which Dutch supervisor oversees digital resilience at financial organisations and which national rules apply.",
+     "articles": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ]
+    },
+    "lines": [
+     {
+      "nl": "De AFM houdt toezicht op onder meer beleggingsondernemingen, handelsplatformen, verzekeringsbemiddelaars en aanbieders van cryptoactivadiensten. De Nederlandsche Bank houdt toezicht op onder meer banken, betaaldienstverleners, verzekeraars en centrale tegenpartijen.",
+      "en": "The AFM supervises, among others, investment firms, trading venues, insurance intermediaries and crypto-asset service providers. De Nederlandsche Bank supervises, among others, banks, payment service providers, insurers and central counterparties.",
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "nl": "Bij schending van de genoemde DORA-regels kan de toezichthouder een last onder dwangsom of bestuurlijke boete opleggen. Voor verschillende schendingen gelden boetecategorieën 1, 2 of 3.",
+      "en": "For breaches of the listed DORA rules, the supervisor may impose an order backed by a penalty payment or an administrative fine. Different breaches have fine categories 1, 2 or 3.",
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "nl": "DORA geldt niet voor de instellingen genoemd in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van de richtlijn kapitaalvereisten.",
+      "en": "DORA does not apply to the institutions listed in Article 2(5), points 4 to 23, of the capital requirements directive.",
+      "articles": [
+       "4"
+      ]
+     },
+     {
+      "nl": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen moeten ICT-incidentmeldingen, ook vrijwillige, ook sturen aan het aangewezen CSIRT voor deze financiële sectoren.",
+      "en": "Banks, trading venues, central securities depositories and central counterparties must also send ICT incident reports, including voluntary reports, to the designated CSIRT for these financial sectors.",
+      "articles": [
+       "5"
+      ]
+     }
+    ]
+   },
+   "lines": [
+    {
+     "id": "about",
+     "nl": "Dit onderdeel bepaalt welke Nederlandse toezichthouder toezicht houdt op digitale weerbaarheid bij financiële organisaties en welke nationale regels gelden.",
+     "en": "This part sets which Dutch supervisor oversees digital resilience at financial organisations and which national rules apply.",
+     "articles": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "check": {
+      "id": "about",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "line0",
+     "nl": "De AFM houdt toezicht op onder meer beleggingsondernemingen, handelsplatformen, verzekeringsbemiddelaars en aanbieders van cryptoactivadiensten. De Nederlandsche Bank houdt toezicht op onder meer banken, betaaldienstverleners, verzekeraars en centrale tegenpartijen.",
+     "en": "The AFM supervises, among others, investment firms, trading venues, insurance intermediaries and crypto-asset service providers. De Nederlandsche Bank supervises, among others, banks, payment service providers, insurers and central counterparties.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "line0",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Bij banken is DNB niet bevoegd wanneer de Europese Centrale Bank op grond van de genoemde verordening toezicht uitoefent.",
+       "en": "For banks, DNB is not competent where the European Central Bank exercises supervision under the stated regulation."
+      },
+      "suggestion": {
+       "nl": "De AFM houdt toezicht op onder meer beleggingsondernemingen, handelsplatformen, verzekeringsbemiddelaars en aanbieders van cryptoactivadiensten. De Nederlandsche Bank houdt, behalve waar de Europese Centrale Bank bevoegd is, toezicht op onder meer banken, betaaldienstverleners, verzekeraars en centrale tegenpartijen.",
+       "en": "The AFM supervises, among others, investment firms, trading venues, insurance intermediaries and crypto-asset service providers. De Nederlandsche Bank, except where the European Central Bank is competent, supervises, among others, banks, payment service providers, insurers and central counterparties."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "line1",
+     "nl": "Bij schending van de genoemde DORA-regels kan de toezichthouder een last onder dwangsom of bestuurlijke boete opleggen. Voor verschillende schendingen gelden boetecategorieën 1, 2 of 3.",
+     "en": "For breaches of the listed DORA rules, the supervisor may impose an order backed by a penalty payment or an administrative fine. Different breaches have fine categories 1, 2 or 3.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "line1",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Voor enkele genoemde schendingen kan alleen een bestuurlijke boete worden opgelegd, geen last onder dwangsom.",
+       "en": "For some of the listed breaches, only an administrative fine may be imposed, not an order backed by a penalty payment."
+      },
+      "suggestion": {
+       "nl": "Bij schending van de genoemde DORA-regels kan de toezichthouder een bestuurlijke boete en, waar de wet dat toestaat, een last onder dwangsom opleggen. Voor verschillende schendingen gelden boetecategorieën 1, 2 of 3.",
+       "en": "For breaches of the listed DORA rules, the supervisor may impose an administrative fine and, where the law permits, an order backed by a penalty payment. Different breaches have fine categories 1, 2 or 3."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "line2",
+     "nl": "DORA geldt niet voor de instellingen genoemd in artikel 2, vijfde lid, onderdelen 4 tot en met 23, van de richtlijn kapitaalvereisten.",
+     "en": "DORA does not apply to the institutions listed in Article 2(5), points 4 to 23, of the capital requirements directive.",
+     "articles": [
+      "4"
+     ],
+     "check": {
+      "id": "line2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "line3",
+     "nl": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen moeten ICT-incidentmeldingen, ook vrijwillige, ook sturen aan het aangewezen CSIRT voor deze financiële sectoren.",
+     "en": "Banks, trading venues, central securities depositories and central counterparties must also send ICT incident reports, including voluntary reports, to the designated CSIRT for these financial sectors.",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "line3",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    }
+   ],
+   "n_words": {
+    "nl": 116,
+    "en": 123
+   },
+   "target_words": [
+    55,
+    111
+   ],
+   "within_target": false,
+   "n_supported": 3,
+   "n_lines": 5
+  },
+  "map": {
+   "kind": "map",
+   "name": "map",
+   "content": {
+    "parties": [
+     {
+      "id": "afm",
+      "name": {
+       "nl": "Autoriteit Financiële Markten (AFM)",
+       "en": "Netherlands Authority for the Financial Markets (AFM)"
+      },
+      "role": {
+       "nl": "De AFM is de bevoegde autoriteit voor onder meer handelsplatformen.",
+       "en": "The AFM is the competent authority for, among others, trading venues."
+      }
+     },
+     {
+      "id": "dnb",
+      "name": {
+       "nl": "De Nederlandsche Bank (DNB)",
+       "en": "De Nederlandsche Bank (DNB)"
+      },
+      "role": {
+       "nl": "DNB is de bevoegde autoriteit voor onder meer banken, centrale effectenbewaarinstellingen en centrale tegenpartijen.",
+       "en": "DNB is the competent authority for, among others, banks, central securities depositories and central counterparties."
+      }
+     },
+     {
+      "id": "banks",
+      "name": {
+       "nl": "Banken",
+       "en": "Banks"
+      },
+      "role": {
+       "nl": "Banken vallen in beginsel onder DNB en moeten bepaalde ICT-incidenten ook bij het aangewezen CSIRT melden.",
+       "en": "Banks are in principle under DNB and must also report certain ICT incidents to the designated CSIRT."
+      }
+     },
+     {
+      "id": "platforms",
+      "name": {
+       "nl": "Handelsplatformen",
+       "en": "Trading venues"
+      },
+      "role": {
+       "nl": "Handelsplatformen vallen onder de AFM en moeten bepaalde ICT-incidenten ook bij het aangewezen CSIRT melden.",
+       "en": "Trading venues are under the AFM and must also report certain ICT incidents to the designated CSIRT."
+      }
+     },
+     {
+      "id": "csds",
+      "name": {
+       "nl": "Centrale effectenbewaarinstellingen (CSD's)",
+       "en": "Central securities depositories (CSDs)"
+      },
+      "role": {
+       "nl": "Centrale effectenbewaarinstellingen vallen onder DNB en moeten bepaalde ICT-incidenten ook bij het aangewezen CSIRT melden.",
+       "en": "Central securities depositories are under DNB and must also report certain ICT incidents to the designated CSIRT."
+      }
+     },
+     {
+      "id": "ccps",
+      "name": {
+       "nl": "Centrale tegenpartijen (CCP's)",
+       "en": "Central counterparties (CCPs)"
+      },
+      "role": {
+       "nl": "Centrale tegenpartijen vallen onder DNB en moeten bepaalde ICT-incidenten ook bij het aangewezen CSIRT melden.",
+       "en": "Central counterparties are under DNB and must also report certain ICT incidents to the designated CSIRT."
+      }
+     },
+     {
+      "id": "csirt",
+      "name": {
+       "nl": "Aangewezen team voor hulp bij cyberincidenten (CSIRT)",
+       "en": "Designated cyber incident response team (CSIRT)"
+      },
+      "role": {
+       "nl": "Dit team ontvangt meldingen van banken en bepaalde financiële marktorganisaties.",
+       "en": "This team receives reports from banks and certain financial market organisations."
+      }
+     }
+    ],
+    "relations": [
+     {
+      "from_id": "afm",
+      "to_id": "platforms",
+      "kind": "may",
+      "what": {
+       "nl": "kan optreden als bevoegde autoriteit voor handelsplatformen",
+       "en": "may act as the competent authority for trading venues"
+      },
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "banks",
+      "kind": "may",
+      "what": {
+       "nl": "kan optreden als bevoegde autoriteit voor banken, behalve wanneer de Europese Centrale Bank bevoegd is",
+       "en": "may act as the competent authority for banks, except where the European Central Bank is competent"
+      },
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "csds",
+      "kind": "may",
+      "what": {
+       "nl": "kan optreden als bevoegde autoriteit voor centrale effectenbewaarinstellingen",
+       "en": "may act as the competent authority for central securities depositories"
+      },
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "ccps",
+      "kind": "may",
+      "what": {
+       "nl": "kan optreden als bevoegde autoriteit voor centrale tegenpartijen",
+       "en": "may act as the competent authority for central counterparties"
+      },
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "from_id": "banks",
+      "to_id": "csirt",
+      "kind": "must",
+      "what": {
+       "nl": "moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+       "en": "must also make the mandatory and voluntary ICT-incident report to the designated CSIRT"
+      },
+      "articles": [
+       "5"
+      ]
+     },
+     {
+      "from_id": "platforms",
+      "to_id": "csirt",
+      "kind": "must",
+      "what": {
+       "nl": "moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+       "en": "must also make the mandatory and voluntary ICT-incident report to the designated CSIRT"
+      },
+      "articles": [
+       "5"
+      ]
+     },
+     {
+      "from_id": "csds",
+      "to_id": "csirt",
+      "kind": "must",
+      "what": {
+       "nl": "moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+       "en": "must also make the mandatory and voluntary ICT-incident report to the designated CSIRT"
+      },
+      "articles": [
+       "5"
+      ]
+     },
+     {
+      "from_id": "ccps",
+      "to_id": "csirt",
+      "kind": "must",
+      "what": {
+       "nl": "moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+       "en": "must also make the mandatory and voluntary ICT-incident report to the designated CSIRT"
+      },
+      "articles": [
+       "5"
+      ]
+     },
+     {
+      "from_id": "afm",
+      "to_id": "platforms",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+       "en": "may impose a penalty payment order for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "banks",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+       "en": "may impose a penalty payment order for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "csds",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+       "en": "may impose a penalty payment order for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "ccps",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+       "en": "may impose a penalty payment order for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "afm",
+      "to_id": "platforms",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+       "en": "may impose an administrative fine for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "banks",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+       "en": "may impose an administrative fine for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "csds",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+       "en": "may impose an administrative fine for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "ccps",
+      "kind": "may",
+      "what": {
+       "nl": "kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+       "en": "may impose an administrative fine for a breach of provisions in the enforcement table"
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "from_id": "afm",
+      "to_id": "platforms",
+      "kind": "may",
+      "what": {
+       "nl": "kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+       "en": "may make a breach and the offender's name public through a public statement"
+      },
+      "articles": [
+       "3"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "banks",
+      "kind": "may",
+      "what": {
+       "nl": "kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+       "en": "may make a breach and the offender's name public through a public statement"
+      },
+      "articles": [
+       "3"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "csds",
+      "kind": "may",
+      "what": {
+       "nl": "kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+       "en": "may make a breach and the offender's name public through a public statement"
+      },
+      "articles": [
+       "3"
+      ]
+     },
+     {
+      "from_id": "dnb",
+      "to_id": "ccps",
+      "kind": "may",
+      "what": {
+       "nl": "kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+       "en": "may make a breach and the offender's name public through a public statement"
+      },
+      "articles": [
+       "3"
+      ]
+     }
+    ]
+   },
+   "lines": [
+    {
+     "id": "rel0",
+     "nl": "Autoriteit Financiële Markten (AFM) mag tegenover Handelsplatformen: kan optreden als bevoegde autoriteit voor handelsplatformen",
+     "en": "Netherlands Authority for the Financial Markets (AFM) may, towards Trading venues: may act as the competent authority for trading venues",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "rel0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel1",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Banken: kan optreden als bevoegde autoriteit voor banken, behalve wanneer de Europese Centrale Bank bevoegd is",
+     "en": "De Nederlandsche Bank (DNB) may, towards Banks: may act as the competent authority for banks, except where the European Central Bank is competent",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "rel1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel2",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale effectenbewaarinstellingen (CSD's): kan optreden als bevoegde autoriteit voor centrale effectenbewaarinstellingen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central securities depositories (CSDs): may act as the competent authority for central securities depositories",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "rel2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel3",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale tegenpartijen (CCP's): kan optreden als bevoegde autoriteit voor centrale tegenpartijen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central counterparties (CCPs): may act as the competent authority for central counterparties",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "rel3",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel4",
+     "nl": "Banken moet tegenover Aangewezen team voor hulp bij cyberincidenten (CSIRT): moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+     "en": "Banks must, towards Designated cyber incident response team (CSIRT): must also make the mandatory and voluntary ICT-incident report to the designated CSIRT",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "rel4",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel5",
+     "nl": "Handelsplatformen moet tegenover Aangewezen team voor hulp bij cyberincidenten (CSIRT): moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+     "en": "Trading venues must, towards Designated cyber incident response team (CSIRT): must also make the mandatory and voluntary ICT-incident report to the designated CSIRT",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "rel5",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel6",
+     "nl": "Centrale effectenbewaarinstellingen (CSD's) moet tegenover Aangewezen team voor hulp bij cyberincidenten (CSIRT): moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+     "en": "Central securities depositories (CSDs) must, towards Designated cyber incident response team (CSIRT): must also make the mandatory and voluntary ICT-incident report to the designated CSIRT",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "rel6",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel7",
+     "nl": "Centrale tegenpartijen (CCP's) moet tegenover Aangewezen team voor hulp bij cyberincidenten (CSIRT): moeten de verplichte en vrijwillige ICT-incidentmelding ook bij het aangewezen CSIRT doen",
+     "en": "Central counterparties (CCPs) must, towards Designated cyber incident response team (CSIRT): must also make the mandatory and voluntary ICT-incident report to the designated CSIRT",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "rel7",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel8",
+     "nl": "Autoriteit Financiële Markten (AFM) mag tegenover Handelsplatformen: kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+     "en": "Netherlands Authority for the Financial Markets (AFM) may, towards Trading venues: may impose a penalty payment order for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel8",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een last onder dwangsom mogelijk is, maar noemt de AFM of handelsplatformen niet.",
+       "en": "Article 2 lists the breaches for which a penalty payment order is available, but does not name the AFM or trading venues."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een last onder dwangsom worden opgelegd.",
+       "en": "In the enforcement table: a penalty payment order may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel9",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Banken: kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Banks: may impose a penalty payment order for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel9",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een last onder dwangsom mogelijk is, maar noemt DNB of banken niet.",
+       "en": "Article 2 lists the breaches for which a penalty payment order is available, but does not name DNB or banks."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een last onder dwangsom worden opgelegd.",
+       "en": "In the enforcement table: a penalty payment order may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel10",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale effectenbewaarinstellingen (CSD's): kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central securities depositories (CSDs): may impose a penalty payment order for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel10",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een last onder dwangsom mogelijk is, maar noemt DNB of CSD's niet.",
+       "en": "Article 2 lists the breaches for which a penalty payment order is available, but does not name DNB or CSDs."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een last onder dwangsom worden opgelegd.",
+       "en": "In the enforcement table: a penalty payment order may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel11",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale tegenpartijen (CCP's): kan voor een overtreding van de bepalingen in de handhavingstabel een last onder dwangsom opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central counterparties (CCPs): may impose a penalty payment order for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel11",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een last onder dwangsom mogelijk is, maar noemt DNB of CCP's niet.",
+       "en": "Article 2 lists the breaches for which a penalty payment order is available, but does not name DNB or CCPs."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een last onder dwangsom worden opgelegd.",
+       "en": "In the enforcement table: a penalty payment order may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel12",
+     "nl": "Autoriteit Financiële Markten (AFM) mag tegenover Handelsplatformen: kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+     "en": "Netherlands Authority for the Financial Markets (AFM) may, towards Trading venues: may impose an administrative fine for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel12",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een bestuurlijke boete mogelijk is, maar noemt de AFM of handelsplatformen niet.",
+       "en": "Article 2 lists the breaches for which an administrative fine is available, but does not name the AFM or trading venues."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een bestuurlijke boete worden opgelegd.",
+       "en": "In the enforcement table: an administrative fine may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel13",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Banken: kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Banks: may impose an administrative fine for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel13",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een bestuurlijke boete mogelijk is, maar noemt DNB of banken niet.",
+       "en": "Article 2 lists the breaches for which an administrative fine is available, but does not name DNB or banks."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een bestuurlijke boete worden opgelegd.",
+       "en": "In the enforcement table: an administrative fine may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel14",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale effectenbewaarinstellingen (CSD's): kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central securities depositories (CSDs): may impose an administrative fine for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel14",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een bestuurlijke boete mogelijk is, maar noemt DNB of CSD's niet.",
+       "en": "Article 2 lists the breaches for which an administrative fine is available, but does not name DNB or CSDs."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een bestuurlijke boete worden opgelegd.",
+       "en": "In the enforcement table: an administrative fine may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel15",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale tegenpartijen (CCP's): kan voor een overtreding van de bepalingen in de handhavingstabel een bestuurlijke boete opleggen",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central counterparties (CCPs): may impose an administrative fine for a breach of provisions in the enforcement table",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "rel15",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Artikel 2 noemt de overtredingen waarvoor een bestuurlijke boete mogelijk is, maar noemt DNB of CCP's niet.",
+       "en": "Article 2 lists the breaches for which an administrative fine is available, but does not name DNB or CCPs."
+      },
+      "suggestion": {
+       "nl": "In de handhavingstabel: voor de daarin genoemde overtredingen kan een bestuurlijke boete worden opgelegd.",
+       "en": "In the enforcement table: an administrative fine may be imposed for the breaches listed there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel16",
+     "nl": "Autoriteit Financiële Markten (AFM) mag tegenover Handelsplatformen: kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+     "en": "Netherlands Authority for the Financial Markets (AFM) may, towards Trading venues: may make a breach and the offender's name public through a public statement",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "rel16",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Artikel 3 geeft deze bevoegdheid alleen aan de bevoegde autoriteit; het artikel koppelt de AFM niet aan handelsplatformen.",
+       "en": "Article 3 gives this power only to the competent authority; it does not link the AFM to trading venues."
+      },
+      "suggestion": {
+       "nl": "Autoriteit Financiële Markten (AFM) mag tegenover Handelsplatformen: kan, als zij de bevoegde autoriteit is, een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+       "en": "Netherlands Authority for the Financial Markets (AFM) may, towards Trading venues: may, if it is the competent authority, make a breach and the offender's name public through a public statement."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel17",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Banken: kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+     "en": "De Nederlandsche Bank (DNB) may, towards Banks: may make a breach and the offender's name public through a public statement",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "rel17",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Artikel 3 geeft deze bevoegdheid alleen aan de bevoegde autoriteit; het artikel koppelt DNB niet aan banken.",
+       "en": "Article 3 gives this power only to the competent authority; it does not link DNB to banks."
+      },
+      "suggestion": {
+       "nl": "De Nederlandsche Bank (DNB) mag tegenover Banken: kan, als zij de bevoegde autoriteit is, een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+       "en": "De Nederlandsche Bank (DNB) may, towards Banks: may, if it is the competent authority, make a breach and the offender's name public through a public statement."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel18",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale effectenbewaarinstellingen (CSD's): kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central securities depositories (CSDs): may make a breach and the offender's name public through a public statement",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "rel18",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Artikel 3 geeft deze bevoegdheid alleen aan de bevoegde autoriteit; het artikel koppelt DNB niet aan CSD's.",
+       "en": "Article 3 gives this power only to the competent authority; it does not link DNB to CSDs."
+      },
+      "suggestion": {
+       "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale effectenbewaarinstellingen (CSD's): kan, als zij de bevoegde autoriteit is, een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+       "en": "De Nederlandsche Bank (DNB) may, towards Central securities depositories (CSDs): may, if it is the competent authority, make a breach and the offender's name public through a public statement."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "rel19",
+     "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale tegenpartijen (CCP's): kan een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring",
+     "en": "De Nederlandsche Bank (DNB) may, towards Central counterparties (CCPs): may make a breach and the offender's name public through a public statement",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "rel19",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Artikel 3 geeft deze bevoegdheid alleen aan de bevoegde autoriteit; het artikel koppelt DNB niet aan CCP's.",
+       "en": "Article 3 gives this power only to the competent authority; it does not link DNB to CCPs."
+      },
+      "suggestion": {
+       "nl": "De Nederlandsche Bank (DNB) mag tegenover Centrale tegenpartijen (CCP's): kan, als zij de bevoegde autoriteit is, een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+       "en": "De Nederlandsche Bank (DNB) may, towards Central counterparties (CCPs): may, if it is the competent authority, make a breach and the offender's name public through a public statement."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    }
+   ],
+   "n_words": {
+    "nl": 434,
+    "en": 454
+   },
+   "target_words": [
+    0,
+    1000000
+   ],
+   "within_target": true,
+   "n_supported": 8,
+   "n_lines": 20
+  },
+  "articles1": {
+   "kind": "articles",
+   "name": "articles1",
+   "content": {
+    "cards": [
+     {
+      "article": "1",
+      "title": {
+       "nl": "Welke toezichthouder bevoegd is",
+       "en": "Which supervisor is competent"
+      },
+      "points": [
+       {
+        "nl": "De Autoriteit Financiële Markten is de bevoegde toezichthouder voor cryptoactivadienstverleners, beleggingsondernemingen en beleggingsbeheerders, icbe-beheerders, handelsplatformen, benchmarkbeheerders, datarapportering, crowdfunding en verzekeringsadvies en -bemiddeling.",
+        "en": "The Netherlands Authority for the Financial Markets is the competent supervisor for crypto-asset service providers, investment firms and investment fund managers, UCITS managers, trading venues, benchmark administrators, data reporting, crowdfunding, and insurance advice and mediation."
+       },
+       {
+        "nl": "Daaronder vallen ook gevolmachtigde en ondergevolmachtigde agenten en herverzekeringsbemiddelaars.",
+        "en": "This also includes authorised agents, sub-agents, and reinsurance intermediaries."
+       },
+       {
+        "nl": "De Nederlandsche Bank is de bevoegde toezichthouder voor banken, betaaldienstverleners, centrale effectenbewaarinstellingen, centrale tegenpartijen, elektronischgeldinstellingen, premiepensioeninstellingen, uitgevers van activagerelateerde tokens en verzekeraars.",
+        "en": "De Nederlandsche Bank is the competent supervisor for banks, payment service providers, central securities depositories, central counterparties, electronic money institutions, premium pension institutions, issuers of asset-referenced tokens, and insurers."
+       },
+       {
+        "nl": "Voor banken is de Europese Centrale Bank bevoegd wanneer zij op grond van de bankentoezichtverordening toezicht mag uitoefenen.",
+        "en": "For banks, the European Central Bank is competent where it has supervisory powers under the banking supervision regulation."
+       }
+      ]
+     },
+     {
+      "article": "2",
+      "title": {
+       "nl": "Dwangsommen en bestuurlijke boetes",
+       "en": "Penalty payments and administrative fines"
+      },
+      "points": [
+       {
+        "nl": "Voor de hier genoemde voorschriften kan de bevoegde autoriteit een last onder dwangsom, een bevel met een te betalen bedrag, en/of een bestuurlijke boete opleggen.",
+        "en": "For the rules named here, the competent authority may impose an order subject to a penalty payment and/or an administrative fine."
+       },
+       {
+        "nl": "Voor de meeste genoemde voorschriften zijn beide maatregelen mogelijk en geldt boetecategorie 3.",
+        "en": "For most named rules, both measures are available and fine category 3 applies."
+       },
+       {
+        "nl": "Alleen een boete is mogelijk voor artikel 11, leden 2-10, artikel 13, leden 2-7, en artikel 18, lid 2. Categorie 2 geldt voor artikel 11, leden 2-8, en artikel 13, leden 2-7; categorie 1 voor artikel 11, leden 9-10, en artikel 18, lid 2.",
+        "en": "Only a fine is available for Article 11(2)-(10), Article 13(2)-(7), and Article 18(2). Category 2 applies to Article 11(2)-(8) and 13(2)-(7); category 1 to Article 11(9)-(10) and 18(2)."
+       },
+       {
+        "nl": "Voor artikel 15 over artikel 11, leden 3 en 6, en de artikelen 41 en 42 gelden beide maatregelen en categorie 2. Artikel 45 heeft beide maatregelen en categorie 1.",
+        "en": "For Article 15 concerning Article 11(3) and (6), and Articles 41 and 42, both measures and category 2 apply. Article 45 has both measures and category 1."
+       },
+       {
+        "nl": "Bij artikel 26, lid 7, is wel een dwangsom maar geen boete mogelijk. Bij artikel 17 omvat de boete alleen de leden 1 en 2.",
+        "en": "For Article 26(7), an order is available but not a fine. For Article 17, a fine covers only paragraphs 1 and 2."
+       },
+       {
+        "nl": "Alle overige opgesomde gevallen hebben boetecategorie 3.",
+        "en": "All other listed cases have fine category 3."
+       }
+      ]
+     },
+     {
+      "article": "3",
+      "title": {
+       "nl": "Overtredingen openbaar maken",
+       "en": "Making infringements public"
+      },
+      "points": [
+       {
+        "nl": "De bevoegde autoriteit mag een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+        "en": "The competent authority may publish an infringement and the infringer’s name in a public statement."
+       }
+      ]
+     },
+     {
+      "article": "4",
+      "title": {
+       "nl": "Instellingen die buiten DORA vallen",
+       "en": "Institutions outside DORA"
+      },
+      "points": [
+       {
+        "nl": "DORA geldt niet voor de instellingen die zijn genoemd in artikel 2, lid 5, onderdelen 4-23, van de richtlijn kapitaalvereisten.",
+        "en": "DORA does not apply to institutions listed in Article 2(5), points 4-23, of the capital requirements directive."
+       }
+      ]
+     },
+     {
+      "article": "5",
+      "title": {
+       "nl": "ICT-incidenten ook melden aan CSIRT",
+       "en": "Also reporting ICT incidents to CSIRT"
+      },
+      "points": [
+       {
+        "nl": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen moeten verplichte en vrijwillige ICT-incidentmeldingen op grond van artikel 19 ook doen aan het aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.",
+        "en": "Banks, trading venues, central securities depositories and central counterparties must also send mandatory and voluntary ICT incident reports under Article 19 to the designated CSIRT for the banking and financial market infrastructure sectors."
+       }
+      ]
+     }
+    ]
+   },
+   "lines": [
+    {
+     "id": "art1_0",
+     "nl": "De Autoriteit Financiële Markten is de bevoegde toezichthouder voor cryptoactivadienstverleners, beleggingsondernemingen en beleggingsbeheerders, icbe-beheerders, handelsplatformen, benchmarkbeheerders, datarapportering, crowdfunding en verzekeringsadvies en -bemiddeling.",
+     "en": "The Netherlands Authority for the Financial Markets is the competent supervisor for crypto-asset service providers, investment firms and investment fund managers, UCITS managers, trading venues, benchmark administrators, data reporting, crowdfunding, and insurance advice and mediation.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "art1_0",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Alleen beheerders van cruciale benchmarks vallen hieronder.",
+       "en": "Only administrators of critical benchmarks are included."
+      },
+      "suggestion": {
+       "nl": "De Autoriteit Financiële Markten is de bevoegde toezichthouder voor cryptoactivadienstverleners, beleggingsondernemingen en beleggingsbeheerders, icbe-beheerders, handelsplatformen, beheerders van cruciale benchmarks, datarapportering, crowdfunding en verzekeringsadvies en -bemiddeling.",
+       "en": "The Netherlands Authority for the Financial Markets is the competent supervisor for crypto-asset service providers, investment firms and investment fund managers, UCITS managers, trading venues, administrators of critical benchmarks, data reporting, crowdfunding, and insurance advice and mediation."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art1_1",
+     "nl": "Daaronder vallen ook gevolmachtigde en ondergevolmachtigde agenten en herverzekeringsbemiddelaars.",
+     "en": "This also includes authorised agents, sub-agents, and reinsurance intermediaries.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "art1_1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art1_2",
+     "nl": "De Nederlandsche Bank is de bevoegde toezichthouder voor banken, betaaldienstverleners, centrale effectenbewaarinstellingen, centrale tegenpartijen, elektronischgeldinstellingen, premiepensioeninstellingen, uitgevers van activagerelateerde tokens en verzekeraars.",
+     "en": "De Nederlandsche Bank is the competent supervisor for banks, payment service providers, central securities depositories, central counterparties, electronic money institutions, premium pension institutions, issuers of asset-referenced tokens, and insurers.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "art1_2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art1_3",
+     "nl": "Voor banken is de Europese Centrale Bank bevoegd wanneer zij op grond van de bankentoezichtverordening toezicht mag uitoefenen.",
+     "en": "For banks, the European Central Bank is competent where it has supervisory powers under the banking supervision regulation.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "art1_3",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_0",
+     "nl": "Voor de hier genoemde voorschriften kan de bevoegde autoriteit een last onder dwangsom, een bevel met een te betalen bedrag, en/of een bestuurlijke boete opleggen.",
+     "en": "For the rules named here, the competent authority may impose an order subject to a penalty payment and/or an administrative fine.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_1",
+     "nl": "Voor de meeste genoemde voorschriften zijn beide maatregelen mogelijk en geldt boetecategorie 3.",
+     "en": "For most named rules, both measures are available and fine category 3 applies.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_2",
+     "nl": "Alleen een boete is mogelijk voor artikel 11, leden 2-10, artikel 13, leden 2-7, en artikel 18, lid 2. Categorie 2 geldt voor artikel 11, leden 2-8, en artikel 13, leden 2-7; categorie 1 voor artikel 11, leden 9-10, en artikel 18, lid 2.",
+     "en": "Only a fine is available for Article 11(2)-(10), Article 13(2)-(7), and Article 18(2). Category 2 applies to Article 11(2)-(8) and 13(2)-(7); category 1 to Article 11(9)-(10) and 18(2).",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_3",
+     "nl": "Voor artikel 15 over artikel 11, leden 3 en 6, en de artikelen 41 en 42 gelden beide maatregelen en categorie 2. Artikel 45 heeft beide maatregelen en categorie 1.",
+     "en": "For Article 15 concerning Article 11(3) and (6), and Articles 41 and 42, both measures and category 2 apply. Article 45 has both measures and category 1.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_3",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Voor artikel 42 gelden deze maatregelen alleen voor het derde en zesde lid.",
+       "en": "For Article 42, these measures apply only to paragraphs 3 and 6."
+      },
+      "suggestion": {
+       "nl": "Voor artikel 15 over artikel 11, leden 3 en 6, artikel 41 en artikel 42, leden 3 en 6, gelden beide maatregelen en categorie 2. Artikel 45 heeft beide maatregelen en categorie 1.",
+       "en": "For Article 15 concerning Article 11(3) and (6), Article 41, and Article 42(3) and (6), both measures and category 2 apply. Article 45 has both measures and category 1."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_4",
+     "nl": "Bij artikel 26, lid 7, is wel een dwangsom maar geen boete mogelijk. Bij artikel 17 omvat de boete alleen de leden 1 en 2.",
+     "en": "For Article 26(7), an order is available but not a fine. For Article 17, a fine covers only paragraphs 1 and 2.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_4",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art2_5",
+     "nl": "Alle overige opgesomde gevallen hebben boetecategorie 3.",
+     "en": "All other listed cases have fine category 3.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "art2_5",
+      "verdict": "partly_supported",
+      "note": {
+       "nl": "Artikel 26, lid 7, heeft geen boete en dus geen boetecategorie.",
+       "en": "Article 26(7) has no fine and therefore no fine category."
+      },
+      "suggestion": {
+       "nl": "Alle overige opgesomde gevallen waarvoor een boete mogelijk is, hebben boetecategorie 3.",
+       "en": "All other listed cases for which a fine is available have fine category 3."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art3_0",
+     "nl": "De bevoegde autoriteit mag een overtreding en de naam van de overtreder openbaar maken met een openbare verklaring.",
+     "en": "The competent authority may publish an infringement and the infringer’s name in a public statement.",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "art3_0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "art4_0",
+     "nl": "DORA geldt niet voor de instellingen die zijn genoemd in artikel 2, lid 5, onderdelen 4-23, van de richtlijn kapitaalvereisten.",
+     "en": "DORA does not apply to institutions listed in Article 2(5), points 4-23, of the capital requirements directive.",
+     "articles": [
+      "4"
+     ],
+     "check": {
+      "id": "art4_0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": [
+       "5"
+      ]
+     }
+    },
+    {
+     "id": "art5_0",
+     "nl": "Banken, handelsplatformen, centrale effectenbewaarinstellingen en centrale tegenpartijen moeten verplichte en vrijwillige ICT-incidentmeldingen op grond van artikel 19 ook doen aan het aangewezen CSIRT voor de sectoren bankwezen en infrastructuur voor de financiële markt.",
+     "en": "Banks, trading venues, central securities depositories and central counterparties must also send mandatory and voluntary ICT incident reports under Article 19 to the designated CSIRT for the banking and financial market infrastructure sectors.",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "art5_0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    }
+   ],
+   "n_words": {
+    "nl": 286,
+    "en": 275
+   },
+   "target_words": [
+    182,
+    303
+   ],
+   "within_target": true,
+   "n_supported": 10,
+   "n_lines": 13
+  },
+  "law": {
+   "kind": "law",
+   "name": "law",
+   "content": {
+    "in_short": [
+     {
+      "nl": "AFM en De Nederlandsche Bank zijn, per type financiële organisatie, toezichthouder.",
+      "en": "The AFM and De Nederlandsche Bank are the supervisors, depending on the type of financial organisation.",
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "nl": "Bij de in artikel 2 genoemde overtredingen kan de toezichthouder een last onder dwangsom, bestuurlijke boete of beide opleggen.",
+      "en": "For the breaches listed in Article 2, the supervisor may impose an order subject to a penalty payment, an administrative fine, or both.",
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "nl": "De toezichthouder kan een overtreding en de overtreder openbaar maken.",
+      "en": "The supervisor may publish a breach and the offender.",
+      "articles": [
+       "3"
+      ]
+     },
+     {
+      "nl": "Banken en bepaalde marktinfrastructuren melden bedoelde ICT-incidenten ook bij het aangewezen CSIRT.",
+      "en": "Banks and certain market infrastructures must also report the specified ICT incidents to the designated CSIRT.",
+      "articles": [
+       "5"
+      ]
+     }
+    ],
+    "core_concepts": [],
+    "foundations": [],
+    "if_then": [
+     {
+      "if_": {
+       "nl": "Als een organisatie een in artikel 2 genoemd voorschrift overtreedt,",
+       "en": "If an organisation breaches a provision listed in Article 2,"
+      },
+      "then": {
+       "nl": "kan de bevoegde autoriteit de daarin genoemde last onder dwangsom en/of boete opleggen.",
+       "en": "the competent authority may impose the order subject to a penalty payment and/or fine stated there."
+      },
+      "articles": [
+       "2"
+      ]
+     },
+     {
+      "if_": {
+       "nl": "Als een bank, handelsplatform, centrale effectenbewaarinstelling of centrale tegenpartij de bedoelde verplichte of vrijwillige ICT-incidentmelding doet,",
+       "en": "If a bank, trading venue, central securities depository or central counterparty makes the specified mandatory or voluntary ICT-incident report,"
+      },
+      "then": {
+       "nl": "moet zij die ook bij het aangewezen CSIRT voor bankwezen en financiële-marktinfrastructuur doen.",
+       "en": "it must also make it to the designated CSIRT for banking and financial-market infrastructure."
+      },
+      "articles": [
+       "5"
+      ]
+     }
+    ],
+    "stakeholders": [
+     {
+      "who": {
+       "nl": "De AFM",
+       "en": "The AFM"
+      },
+      "owes": {
+       "nl": "toezicht",
+       "en": "supervision"
+      },
+      "to_whom": {
+       "nl": "de in artikel 1 aan haar toegewezen organisaties",
+       "en": "the organisations assigned to it in Article 1"
+      },
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "who": {
+       "nl": "De Nederlandsche Bank",
+       "en": "De Nederlandsche Bank"
+      },
+      "owes": {
+       "nl": "toezicht",
+       "en": "supervision"
+      },
+      "to_whom": {
+       "nl": "de in artikel 1 aan haar toegewezen organisaties",
+       "en": "the organisations assigned to it in Article 1"
+      },
+      "articles": [
+       "1"
+      ]
+     }
+    ],
+    "purpose": {
+     "nl": "De regels verdelen toezicht, maken handhaving mogelijk en voegen een ontvanger voor bepaalde ICT-incidentmeldingen toe.",
+     "en": "The rules allocate supervision, enable enforcement and add a recipient for certain ICT-incident reports.",
+     "articles": [
+      "1",
+      "2",
+      "5"
+     ]
+    },
+    "most_consequential": [],
+    "exceptions": [
+     {
+      "nl": "Voor banken is De Nederlandsche Bank geen bevoegde autoriteit als de Europese Centrale Bank volgens de genoemde regels toezicht mag houden.",
+      "en": "For banks, De Nederlandsche Bank is not the competent authority if the European Central Bank may exercise supervision under the stated rules.",
+      "articles": [
+       "1"
+      ]
+     },
+     {
+      "nl": "De verordening geldt niet voor de instellingen van artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU.",
+      "en": "The Regulation does not apply to the institutions in Article 2(5), points 4 to 23, of Directive 2013/36/EU.",
+      "articles": [
+       "4"
+      ]
+     },
+     {
+      "nl": "Openbaarmaking mag, maar is niet verplicht.",
+      "en": "Publication is permitted, but not required.",
+      "articles": [
+       "3"
+      ]
+     },
+     {
+      "nl": "Voor sommige overtredingen noemt het overzicht alleen een bestuurlijke boete, geen last onder dwangsom.",
+      "en": "For some breaches, the schedule states only an administrative fine, not an order subject to a penalty payment.",
+      "articles": [
+       "2"
+      ]
+     }
+    ]
+   },
+   "lines": [
+    {
+     "id": "in_short0",
+     "nl": "AFM en De Nederlandsche Bank zijn, per type financiële organisatie, toezichthouder.",
+     "en": "The AFM and De Nederlandsche Bank are the supervisors, depending on the type of financial organisation.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "in_short0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "in_short1",
+     "nl": "Bij de in artikel 2 genoemde overtredingen kan de toezichthouder een last onder dwangsom, bestuurlijke boete of beide opleggen.",
+     "en": "For the breaches listed in Article 2, the supervisor may impose an order subject to a penalty payment, an administrative fine, or both.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "in_short1",
+      "verdict": "not_supported",
+      "note": {
+       "nl": "Bij sommige genoemde overtredingen is alleen een bestuurlijke boete mogelijk.",
+       "en": "For some listed breaches, only an administrative fine is available."
+      },
+      "suggestion": {
+       "nl": "Bij de in artikel 2 genoemde overtredingen kan de toezichthouder de daarin genoemde last onder dwangsom en/of bestuurlijke boete opleggen.",
+       "en": "For the breaches listed in Article 2, the supervisor may impose the order subject to a penalty payment and/or administrative fine stated there."
+      }
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "in_short2",
+     "nl": "De toezichthouder kan een overtreding en de overtreder openbaar maken.",
+     "en": "The supervisor may publish a breach and the offender.",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "in_short2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "in_short3",
+     "nl": "Banken en bepaalde marktinfrastructuren melden bedoelde ICT-incidenten ook bij het aangewezen CSIRT.",
+     "en": "Banks and certain market infrastructures must also report the specified ICT incidents to the designated CSIRT.",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "in_short3",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "exceptions0",
+     "nl": "Voor banken is De Nederlandsche Bank geen bevoegde autoriteit als de Europese Centrale Bank volgens de genoemde regels toezicht mag houden.",
+     "en": "For banks, De Nederlandsche Bank is not the competent authority if the European Central Bank may exercise supervision under the stated rules.",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "exceptions0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "exceptions1",
+     "nl": "De verordening geldt niet voor de instellingen van artikel 2, vijfde lid, onderdelen 4 tot en met 23, van Richtlijn 2013/36/EU.",
+     "en": "The Regulation does not apply to the institutions in Article 2(5), points 4 to 23, of Directive 2013/36/EU.",
+     "articles": [
+      "4"
+     ],
+     "check": {
+      "id": "exceptions1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "exceptions2",
+     "nl": "Openbaarmaking mag, maar is niet verplicht.",
+     "en": "Publication is permitted, but not required.",
+     "articles": [
+      "3"
+     ],
+     "check": {
+      "id": "exceptions2",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "exceptions3",
+     "nl": "Voor sommige overtredingen noemt het overzicht alleen een bestuurlijke boete, geen last onder dwangsom.",
+     "en": "For some breaches, the schedule states only an administrative fine, not an order subject to a penalty payment.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "exceptions3",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "purpose",
+     "nl": "De regels verdelen toezicht, maken handhaving mogelijk en voegen een ontvanger voor bepaalde ICT-incidentmeldingen toe.",
+     "en": "The rules allocate supervision, enable enforcement and add a recipient for certain ICT-incident reports.",
+     "articles": [
+      "1",
+      "2",
+      "5"
+     ],
+     "check": {
+      "id": "purpose",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "if_then0",
+     "nl": "Als een organisatie een in artikel 2 genoemd voorschrift overtreedt, dan kan de bevoegde autoriteit de daarin genoemde last onder dwangsom en/of boete opleggen.",
+     "en": "If an organisation breaches a provision listed in Article 2, then the competent authority may impose the order subject to a penalty payment and/or fine stated there.",
+     "articles": [
+      "2"
+     ],
+     "check": {
+      "id": "if_then0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "if_then1",
+     "nl": "Als een bank, handelsplatform, centrale effectenbewaarinstelling of centrale tegenpartij de bedoelde verplichte of vrijwillige ICT-incidentmelding doet, dan moet zij die ook bij het aangewezen CSIRT voor bankwezen en financiële-marktinfrastructuur doen.",
+     "en": "If a bank, trading venue, central securities depository or central counterparty makes the specified mandatory or voluntary ICT-incident report, then it must also make it to the designated CSIRT for banking and financial-market infrastructure.",
+     "articles": [
+      "5"
+     ],
+     "check": {
+      "id": "if_then1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "stakeholders0",
+     "nl": "De AFM -> de in artikel 1 aan haar toegewezen organisaties: toezicht",
+     "en": "The AFM -> the organisations assigned to it in Article 1: supervision",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "stakeholders0",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    },
+    {
+     "id": "stakeholders1",
+     "nl": "De Nederlandsche Bank -> de in artikel 1 aan haar toegewezen organisaties: toezicht",
+     "en": "De Nederlandsche Bank -> the organisations assigned to it in Article 1: supervision",
+     "articles": [
+      "1"
+     ],
+     "check": {
+      "id": "stakeholders1",
+      "verdict": "supported",
+      "note": {
+       "nl": "ok",
+       "en": "ok"
+      },
+      "suggestion": null
+     },
+     "mechanical": {
+      "no_article_named": false,
+      "unknown_articles": [],
+      "figures_not_in_source": []
+     }
+    }
+   ],
+   "n_words": {
+    "nl": 208,
+    "en": 228
+   },
+   "target_words": [
+    150,
+    250
+   ],
+   "within_target": true,
+   "n_supported": 12,
+   "n_lines": 13
+  }
+ },
+ "instrument_id": "BWBR0049497",
+ "n_words_law": 1109,
+ "n_articles": 5,
+ "model": "gpt-5.6-terra",
+ "chapters": [
+  {
+   "number": 1,
+   "title": "Bijlage 35. Verordening (EU) 2022/2554 (DORA - digitale operationele weerbaarheid)",
+   "articles": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "n_words": 1109
+  }
+ ]
+}
