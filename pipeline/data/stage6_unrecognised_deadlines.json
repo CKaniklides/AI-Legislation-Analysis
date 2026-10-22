@@ -1,0 +1,431 @@
+[
+ {
+  "phrase": "24 uur",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "Alvorens te beslissen op een aanvraag tot erkenning",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "Bij de aanvraag om erkenning",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "Gedurende die 18 maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "alleen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "bij iedere boodschap",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen achttien maanden na de inwerkingtreding van deze wet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen de grenzen van dat verzoek",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen de in artikel 12, derde lid, van de verordening genoemde termijnen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen de termijn bepaald voor het instellen van beroep op grond van de Algemene wet bestuursrecht",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen de termijn bepaald voor het instellen van beroep op grond van de Algemene wet bestuursrecht, dan wel die, bedoeld in artikel 35, tweede lid",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen drie jaar na de inwerkingtreding van deze wet, en vervolgens telkens na vier jaar",
+  "kind": "partial",
+  "parsed_as": {
+   "value": 3,
+   "unit": "year"
+  },
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen een bepaalde termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen een bij het besluit gestelde redelijke termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen een daarbij gestelde redelijke termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen een redelijke termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen één maand na de inwerkingtreding van die leden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen één maand nadat het incident is afgehandeld",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "binnen één maand nadat zij zich als zodanig kwalificeert",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "elke drie jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "elke drie maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gedurende een door Onze Minister te bepalen periode",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gedurende een periode van 18 maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van dit artikel",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gedurende een periode van ten hoogste 18 maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "gelijktijdig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "in elk geval",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "jaarlijks",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "jaarlijks voorafgaand aan het desbetreffende begrotingsjaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "met bekwame spoed",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "na 18 maanden, gerekend van de dag na inwerkingtreding van deze wet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "na 18 maanden, gerekend van de dag na inwerkingtreding van deze wet, of zoveel eerder als Onze Minister dat middel op grond van artikel 15, vijfde lid, heeft aangewezen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "niet eerder dan nadat tien werkdagen zijn verstreken na de dag waarop de beschikking aan de overtreder bekend is gemaakt",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "op dat moment",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "op dat tijdstip",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "op elk moment",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "op het tijdstip van inwerkingtreding van deze wet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ruime tijd voordat die maatregelen worden vastgelegd",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "te allen tijde",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "telkens voor ten hoogste vier jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ten hoogste",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ten hoogste twee maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ten hoogste vier jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ten minste elke twee jaren",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "ten minste om de vijf jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "terstond",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "tijdig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "tot de dag waarop de Afdeling bestuursrechtspraak van de Raad van State een uitspraak als bedoeld in het zesde lid heeft gedaan",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "tot het einde van de wettelijke termijn waarbinnen de factuur in rechte kan worden betwist of de betaling in rechte kan worden afgedwongen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "tot het tijdstip waarop",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "totdat de bezwaar- of beroepstermijn is verstreken of, indien bezwaar is gemaakt of beroep is ingesteld, totdat op het bezwaar of het beroep is beslist",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "totdat de voorzieningenrechter uitspraak heeft gedaan of het verzoek is ingetrokken",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "totdat het besluit onherroepelijk is",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "twee maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "uiterlijk op 17 januari 2025",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "uiterlijk één maand na de inwerkingtreding van artikel 43",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "uiterlijk één maand na de melding, bedoeld in artikel 27, eerste lid",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "vaker",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor aanvang van de verwerking van persoonsgegevens voor de opdracht, bedoeld in het eerste lid",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor een bij dat besluit te bepalen periode",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor een periode van ten hoogste drie maanden na beëindiging van een onderzoek als bedoeld in artikel 11.11, vierde lid",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor een tijdvak van vijf jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor ten hoogste twee maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voor ten hoogste vier jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voorafgaand aan haar opheffing",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voorafgaand aan het verkrijgen van de in dat lid bedoelde toestemming van de abonnee of gebruiker",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "voorafgaand aan opneming van hem betreffende persoonsgegevens in de abonneelijst of in het voor de abonnee-informatiedienst gebruikte abonneebestand",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "zes maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ },
+ {
+  "phrase": "zo nodig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-20"
+ }
+]
