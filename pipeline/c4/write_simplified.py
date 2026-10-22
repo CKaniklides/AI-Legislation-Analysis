@@ -187,8 +187,10 @@ lawmakers who want to see what the law comes down to. It follows a fixed nine-st
 
 WHAT TO PRODUCE (the whole sheet: between {lo} and {hi} words per language, so be selective)
 - in_short: 2 to 4 lines. The essence of the law. What a reader should remember.
-- core_concepts: the 3 to 5 legal terms that carry the most weight. `term` is the law's own
+- core_concepts: the 3 to 7 legal terms that carry the most weight. `term` is the law's own
   Dutch term. The FACTS list shows which defined terms the law uses most; use it as a guide.
+  A central concept the law names without a formal definition (for example in the heading of
+  the article that regulates it) can be a key term too.
 - foundations: the 2 to 4 articles of the EU Charter of Fundamental Rights, the EU Treaties
   or the Dutch Constitution this law most relates to. These texts are NOT given to you;
   answer from your own knowledge. Be conservative. `source` names the text and the article

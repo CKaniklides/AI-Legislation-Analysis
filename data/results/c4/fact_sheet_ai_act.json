@@ -416,6 +416,12 @@
    "used_in_articles": 7
   },
   {
+   "term": "logs",
+   "defined_in": "12",
+   "uses": 13,
+   "used_in_articles": 6
+  },
+  {
    "term": "CE-markering",
    "defined_in": "3",
    "uses": 12,
@@ -584,16 +590,10 @@
    "used_in_articles": 1
   },
   {
-   "term": "Bij deze verordening worden vastgesteld",
-   "defined_in": "1",
-   "uses": 0,
-   "used_in_articles": 0
-  },
-  {
-   "term": "Deze verordening is van toepassing op",
-   "defined_in": "2",
-   "uses": 0,
-   "used_in_articles": 0
+   "term": "API’s",
+   "defined_in": "74",
+   "uses": 1,
+   "used_in_articles": 1
   },
   {
    "term": "terugroepen van een AI-systeem",
@@ -668,8 +668,8 @@
    "used_in_articles": 0
   },
   {
-   "term": "In geval van beperking, schorsing of intrekking van een aanwijzing",
-   "defined_in": "36",
+   "term": "feedback loops",
+   "defined_in": "15",
    "uses": 0,
    "used_in_articles": 0
   }

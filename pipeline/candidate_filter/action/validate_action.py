@@ -274,7 +274,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Quick validation of action scores.")
     sub = parser.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("sample", help="Write a labelling sheet.")
-    s.add_argument("--norms", type=Path, default=Path("data/conflict/original_norms.json"))
+    s.add_argument("--norms", type=Path, default=Path("data/new_norms/original_norms.json"))   # where the file lives since 18 Oct 2026
     s.add_argument("--out", type=Path, default=Path("data/conflict/action/action_validation.xlsx"))
     s.add_argument("--seed", type=int, default=13)
     r = sub.add_parser("review", help="Score a filled-in labelling sheet.")

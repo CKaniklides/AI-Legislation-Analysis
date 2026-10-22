@@ -80,8 +80,14 @@ def articles_of(celex: str, saved_html: "Path | None" = None) -> dict:
     else:
         # EUR-Lex does not answer Python's own HTTP client (the read times out), but it does answer curl.
         raw = subprocess.run(["curl", "-sL", "--max-time", "90", "-A", "Mozilla/5.0", url], capture_output=True, check=True).stdout.decode("utf-8", "replace")
+    articles = parse_articles(raw)
+    if not articles:
+        # EUR-Lex can answer an automated request with an empty page (HTTP 202, its bot check). Storing
+        # that would make every later run trust an empty text, so nothing is stored (seen 21 October 2026).
+        raise RuntimeError(f"no articles in the EUR-Lex page for {celex} (probably its bot check): open {url} "
+                           "in a browser, save the page, and pass it as saved_html")
     STORE.mkdir(parents=True, exist_ok=True)
-    data = {"celex": celex, "source": url, "articles": parse_articles(raw)}
+    data = {"celex": celex, "source": url, "articles": articles}
     c1.atomic_write_json(path, data)
     return data
 
@@ -100,7 +106,11 @@ def ground(iid: str) -> None:
             print(f"  foundations{i}: not a recognised source, stays unchecked ({f['source']['en']})")
             continue
         celex, label, title, num = found
-        art = articles_of(celex)["articles"].get(num)
+        try:
+            art = articles_of(celex)["articles"].get(num)
+        except RuntimeError as e:
+            print(f"  foundations{i}: stays unchecked, {e}")
+            continue
         if not art or not art["text"]:
             print(f"  foundations{i}: {label} article {num} not found in the official text, stays unchecked")
             continue

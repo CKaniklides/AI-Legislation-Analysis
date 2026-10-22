@@ -29,8 +29,20 @@ from xml.etree import ElementTree as ET
 
 from wordfreq import zipf_frequency
 
+_HERE = Path(__file__).resolve().parent
+_PIPELINE = _HERE.parent
+for _d in (_PIPELINE, _PIPELINE / "c1", _PIPELINE / "preprocessing", _PIPELINE / "c2"):
+    if str(_d) not in sys.path:
+        sys.path.insert(0, str(_d))
+from graph import _LAW_FOLDERS  # noqa: E402
+
 DATA = Path(__file__).resolve().parent.parent.parent / "data"
 RAW_NL = Path(__file__).resolve().parent.parent.parent / "raw" / "nl"
+
+
+def provisions_file(instrument_id: str, version: str) -> Path:
+    """The parsed provisions of one law (data/laws/<law>/ since the 1 October 2026 reorganisation)."""
+    return DATA / "laws" / _LAW_FOLDERS[instrument_id] / f"{instrument_id}_{version}_provisions.json"
 
 RARITY_CUTOFF = 3.0  # zipf score below this = candidate specialist term; calibrated
                       # loosely against the spot-checks above, not against Stage 9's
@@ -84,7 +96,7 @@ def dutch_defined_terms(bwb_id: str) -> set[str]:
 
 
 def eu_defined_terms(celex: str) -> set[str]:
-    path = DATA / f"{celex}_original_provisions.json"
+    path = provisions_file(celex, "original")
     provs = json.loads(path.read_text(encoding="utf-8"))
     art_nr = EU_DEFINITIONS_ARTICLE[celex]
     art = next((p for p in provs if p["article"] == art_nr), None)
@@ -140,12 +152,6 @@ def delegation_layers(graph, uid: str) -> dict:
 
 
 def compute_all():
-    import networkx as nx
-    _HERE = Path(__file__).resolve().parent
-_PIPELINE = _HERE.parent
-for _d in (_PIPELINE, _PIPELINE / "c1", _PIPELINE / "preprocessing", _PIPELINE / "c2"):
-    if str(_d) not in sys.path:
-        sys.path.insert(0, str(_d))
     from graph import build
     g = build()
 
@@ -159,7 +165,7 @@ for _d in (_PIPELINE, _PIPELINE / "c1", _PIPELINE / "preprocessing", _PIPELINE /
 
     results = []
     for bwb, date in DUTCH_DATE.items():
-        provs = json.loads((DATA / f"{bwb}_{date}_provisions.json").read_text(encoding="utf-8"))
+        provs = json.loads(provisions_file(bwb, date).read_text(encoding="utf-8"))
         own_terms = dutch_terms[bwb]
         parent_terms = eu_terms.get(IMPLEMENTS.get(bwb), set())
         for p in provs:
@@ -168,7 +174,7 @@ for _d in (_PIPELINE, _PIPELINE / "c1", _PIPELINE / "preprocessing", _PIPELINE /
             p["features"] = {**p.get("features", {}), **ling, **deleg}
             results.append(p)
     for celex in EU_DEFINITIONS_ARTICLE:
-        provs = json.loads((DATA / f"{celex}_original_provisions.json").read_text(encoding="utf-8"))
+        provs = json.loads(provisions_file(celex, "original").read_text(encoding="utf-8"))
         own_terms = eu_terms[celex]
         for p in provs:
             ling = specialist_undefined_score(p["text"], own_terms)

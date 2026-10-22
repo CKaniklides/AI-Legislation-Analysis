@@ -405,7 +405,7 @@ def defined_status(comp: Component, instr: str) -> str:
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("norms", nargs="?", default="data/original_norms.json")
+    ap.add_argument("norms", nargs="?", default="data/new_norms/original_norms.json")   # where the file lives since 18 Oct 2026
     ap.add_argument("--definitions", default="data/definitions/*_definitions.json")
     ap.add_argument("--out", default="out/actor_analysis")
     ap.add_argument("--top", type=int, default=40, help="rows to print per table")

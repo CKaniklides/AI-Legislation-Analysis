@@ -78,12 +78,12 @@ SUBCATEGORIES = {
             "Both provisions can be obeyed, but their interaction leaves an open legal question.")),
     ],
     "duplication": [
-        ("duplicate", bi("Dezelfde verplichting twee keer", "Same obligation twice"),
-         bi("Twee wetten leggen in wezen dezelfde verplichting op aan hetzelfde soort organisatie.",
-            "Two laws impose substantially the same obligation on the same kind of organisation.")),
-        ("related", bi("Nauw verwante verplichtingen", "Closely related obligations"),
-         bi("Twee wetten leggen vergelijkbare verplichtingen op die verschillen in ontvanger, termijn of inhoud.",
-            "Two laws impose similar obligations that differ in recipient, deadline or content.")),
+        ("duplicate", bi("Dezelfde eis twee keer", "Same requirement twice"),
+         bi("Twee wetten stellen in wezen dezelfde eis aan hetzelfde soort organisatie.",
+            "Two laws impose substantially the same requirement on the same kind of organisation.")),
+        ("related", bi("Nauw verwante eisen", "Closely related requirements"),
+         bi("Twee wetten stellen vergelijkbare eisen die verschillen in ontvanger, termijn of inhoud.",
+            "Two laws impose similar requirements that differ in recipient, deadline or content.")),
     ],
 }
 
@@ -133,6 +133,12 @@ ENUM = {
     "not_applicable": NOT_APPLICABLE, "none": bi("geen", "none"),
     "low": bi("laag", "low"), "medium": bi("middel", "medium"), "high": bi("hoog", "high"),
     "a_stricter": bi("A is strenger", "A is stricter"), "b_stricter": bi("B is strenger", "B is stricter"),
+    # The four duplication values that had no Dutch yet (the English stays as it was shown).
+    "same_recipient": bi("dezelfde ontvanger", "same recipient"),
+    "customer_or_data_subject_vs_authority": bi("klant of betrokkene tegenover autoriteit",
+                                                "customer or data subject vs authority"),
+    "unrelated": bi("geen verband", "unrelated"),
+    "only_one_specified": bi("slechts in één bepaling genoemd", "only one specified"),
 }
 
 
@@ -145,13 +151,17 @@ def _load_law_texts():
         path = ROOT / rel
         if not path.exists():
             continue
-        for p in get_provisions(json.loads(path.read_text(encoding="utf-8"))):
+        root = json.loads(path.read_text(encoding="utf-8"))
+        for p in get_provisions(root):
             if "instrument_id" in p:
                 inst = p["instrument_id"]
             elif "uitvoeringswet" in rel.lower():
                 inst = "BWBR0051796"
             elif "bijlage35" in rel.lower():
                 inst = "BWBR0049497"
+                # The items of Bijlage 35 are parts of one annex, not articles with an address of their
+                # own: they link to the annex, at the version analysed (the dataset's own permalink).
+                p = {**p, "url": root["bijlage_35"].get("permalink_current_version")}
             else:
                 continue
             by_article[(inst, str(p.get("article") or p.get("number")))] = p
@@ -172,6 +182,19 @@ def _norm_for(p: dict):
                 and r.norm.get("norm_index") == p.get("norm_index")):
             return r.norm
     return recs[0].norm if recs else None
+
+
+def official_url(inst: str, article: str, prov: dict) -> "str | None":
+    """Where a reader opens the official text of an article, at the version the system analysed:
+    wetten.overheid.nl through the article's JCI reference, or EUR-Lex at the article's anchor
+    (#art_33). A provision that carries its own address (the items of Bijlage 35) uses that."""
+    if prov.get("url"):
+        return prov["url"]
+    if prov.get("jci"):
+        return f"https://wetten.overheid.nl/{prov['jci']}"
+    if not inst.startswith("BWBR"):
+        return f"https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:{inst}#art_{article}"
+    return None
 
 
 def provision_view(p: dict, evidence):
@@ -209,6 +232,7 @@ def provision_view(p: dict, evidence):
         "law": LAWS.get(inst, bi(inst, inst)), "law_id": inst, "article": art, "ref": ref,
         "heading": heading, "kind": kind, "term": p.get("defined_term"),
         "text": (text or "").strip(), "key_passage": (evidence or "").strip() or None,
+        "url": official_url(inst, art, prov),
     }
 
 
@@ -295,6 +319,15 @@ def raw_explanation(f: dict, category: str) -> dict:
     return x
 
 
+# The fields raw_explanation() writes itself, from a fixed English sentence (keep in step with it).
+# They are filed as English without guessing: the guess counted the Dutch authority names these
+# sentences quote and filed three of them as Dutch, so the Dutch view showed English.
+_FIXED_ENGLISH = {
+    "competence_competition": {"summary", "case_for"},
+    "standard_collision": {"summary", "case_for", "case_against"},
+}
+
+
 def explanation_key(finding_id: str, raw: dict) -> str:
     h = hashlib.sha1(json.dumps(raw, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:12]
     return f"{finding_id}::{h}"
@@ -320,20 +353,21 @@ def instance_view(f: dict, category: str) -> dict:
     vb = provision_view(f["provisions"][1], llm.get("evidence_span_b"))
     raw = raw_explanation(f, category)
     e = _ENRICHED.get(explanation_key(f["finding_id"], raw))
+    fixed_english = set() if category == "duplication" else _FIXED_ENGLISH.get(f.get("subtype"), set())
 
-    def keep_original(translated, original):
+    def keep_original(translated, original, language=None):
         # The detector's own wording is kept verbatim in the language it was written in;
         # the model's text is used only for the OTHER language. A translation pass must
         # not be able to quietly reword the original.
         if not original:
             return translated
         out = dict(translated)
-        out[_language(original)] = original
+        out[language or _language(original)] = original
         return out
 
     def both(field):
         if e and e.get(field):
-            return keep_original(e[field], raw.get(field))
+            return keep_original(e[field], raw.get(field), "en" if field in fixed_english else None)
         return bi(raw[field], raw[field]) if raw.get(field) else None
 
     notes = []
@@ -408,7 +442,7 @@ def build() -> dict:
     cats = [
         cat("contradiction", bi("Tegenstrijdigheden en spanningen", "Contradictions and tensions"),
             bi("Plaatsen waar twee bepalingen een andere kant op wijzen.", "Places where two provisions pull in different directions.")),
-        cat("duplication", bi("Dubbele verplichtingen", "Duplicated obligations"),
+        cat("duplication", bi("Dubbelingen", "Duplications"),
             bi("Plaatsen waar twee wetten twee keer hetzelfde vragen.", "Places where two laws ask for the same thing twice.")),
         {"id": "outdatedness", "live": False, "subcategories": [], "questions": [],
          "title": bi("Verouderde bepalingen", "Outdated provisions"),

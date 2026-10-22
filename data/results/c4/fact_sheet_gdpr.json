@@ -250,6 +250,12 @@
    "used_in_articles": 59
   },
   {
+   "term": "betrokkene",
+   "defined_in": "4",
+   "uses": 209,
+   "used_in_articles": 56
+  },
+  {
    "term": "verwerker",
    "defined_in": "4",
    "uses": 145,
@@ -260,6 +266,12 @@
    "defined_in": "4",
    "uses": 65,
    "used_in_articles": 24
+  },
+  {
+   "term": "toestemming",
+   "defined_in": "4",
+   "uses": 46,
+   "used_in_articles": 22
   },
   {
    "term": "internationale organisatie",
@@ -328,6 +340,12 @@
    "used_in_articles": 3
   },
   {
+   "term": "minimale gegevensverwerking",
+   "defined_in": "5",
+   "uses": 3,
+   "used_in_articles": 3
+  },
+  {
    "term": "genetische gegevens",
    "defined_in": "4",
    "uses": 2,
@@ -358,16 +376,22 @@
    "used_in_articles": 2
   },
   {
+   "term": "doelbinding",
+   "defined_in": "5",
+   "uses": 2,
+   "used_in_articles": 2
+  },
+  {
+   "term": "juistheid",
+   "defined_in": "5",
+   "uses": 2,
+   "used_in_articles": 1
+  },
+  {
    "term": "bestand",
    "defined_in": "4",
    "uses": 1,
    "used_in_articles": 1
-  },
-  {
-   "term": "Deze verordening is niet van toepassing op de verwerking van persoonsgegevens",
-   "defined_in": "2",
-   "uses": 0,
-   "used_in_articles": 0
   },
   {
    "term": "beperken van de verwerking",
@@ -382,14 +406,26 @@
    "used_in_articles": 0
   },
   {
-   "term": "De voorzitter van het Comité stelt onverwijld langs elektronische weg",
-   "defined_in": "64",
+   "term": "rechtmatigheid, behoorlijkheid en transparantie",
+   "defined_in": "5",
    "uses": 0,
    "used_in_articles": 0
   },
   {
-   "term": "Het secretariaat is met name belast met",
-   "defined_in": "75",
+   "term": "opslagbeperking",
+   "defined_in": "5",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "integriteit en vertrouwelijkheid",
+   "defined_in": "5",
+   "uses": 0,
+   "used_in_articles": 0
+  },
+  {
+   "term": "verantwoordingsplicht",
+   "defined_in": "5",
    "uses": 0,
    "used_in_articles": 0
   }

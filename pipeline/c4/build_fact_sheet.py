@@ -76,19 +76,43 @@ def chapters(rows: list[dict]) -> list[dict]:
     return list(out.values())
 
 
+_EU_DEF = re.compile(r"[„\"“]([^”\"“„\n]{2,80})[”\"“]\s*:")                               # 1) „term”: ...
+_EU_DEF_QUALIFIED = re.compile(r"(?:^|\n)\s*\d+[a-z]?\)\s*[„\"“]([^”\"“„\n]{2,80})[”\"“][^:;\n„”\"“]{1,40}:")  # 11) „toestemming” van de betrokkene: ...
+_EU_DEF_INLINE = re.compile(r"\(\s*[„\"“](?:de |het |een )?([^”\"“„\n]{2,60})[”\"“]\s*\)")    # ... natuurlijke persoon („de betrokkene”)
+_NL_FORMULA = re.compile(r"wordt\s+verstaan\s+onder\s*:", re.I)
+_NL_DEF = re.compile(r"(?:^|\n)(?:[–-]\s*\n+\s*)?([a-zA-Zà-ÿ][^:;\n]{2,80}):\s")              # term: ...
+
+
 def defined_terms(rows: list[dict]) -> list[dict]:
-    """Terms the law defines itself, ranked by how often the rest of the law uses them."""
+    """Terms the law defines itself, ranked by how often the rest of the law uses them.
+
+    EU acts: the numbered definitions in an article that defines terms („term”: ..., also with a
+    qualifier before the colon: „toestemming” van de betrokkene: ...), and terms defined in
+    passing between brackets anywhere in the act („de betrokkene”). Dutch laws: the
+    "term: meaning" lines after the fixed formula "wordt verstaan onder:".
+    Changed 21 October 2026, after a reviewer found "data subject" missing from the GDPR sheet:
+    the bracketed and qualified EU definitions were not found (betrokkene, toestemming), and the
+    Dutch line pattern also ran on EU acts and on whole articles, so sentences that introduce a
+    list ("Deze wet wordt aangehaald als:") were taken for terms."""
     terms = {}
+
+    def add(term: str, article: str) -> None:
+        term = term.strip()
+        if term and term.lower() not in terms:
+            terms[term.lower()] = {"term": term, "defined_in": article}
+
     for r in rows:
-        if not any(n.get("deontic") == "DEFINITION" for n in r.get("norms") or []):
-            continue
         text = r.get("text") or ""
-        found = re.findall(r"[„\"“]([^”\"“„\n]{2,80})[”\"“]\s*:", text)                  # EU: „term”: ...
-        found += re.findall(r"(?:^|\n)(?:[–-]\s*\n+\s*)?([a-zA-Zà-ÿ][^:;\n]{2,80}):\s", text)  # NL: term: ...
-        for t in found:
-            t = t.strip()
-            if t and t.lower() not in terms and not t.lower().startswith(("in deze", "voor de toepassing")):
-                terms[t.lower()] = {"term": t, "defined_in": r["article"]}
+        if str(r.get("instrument_id") or "").startswith("BWBR"):
+            m = _NL_FORMULA.search(text)
+            for t in _NL_DEF.findall(text[m.end():]) if m else []:
+                add(t, r["article"])
+            continue
+        if any(n.get("deontic") == "DEFINITION" for n in r.get("norms") or []):
+            for t in _EU_DEF.findall(text) + _EU_DEF_QUALIFIED.findall(text):
+                add(t, r["article"])
+        for t in _EU_DEF_INLINE.findall(text):
+            add(t, r["article"])
     for key, t in terms.items():
         pat = re.compile(r"\b" + re.escape(key) + r"\w{0,2}\b", re.I)
         t["uses"] = sum(len(pat.findall(r.get("text") or "")) for r in rows if r["article"] != t["defined_in"])

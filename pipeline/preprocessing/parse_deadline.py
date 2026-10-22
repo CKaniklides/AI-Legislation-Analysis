@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent   # the project folder (was one level short: pipeline/)
 load_dotenv(ROOT / ".env")  # picks up OPENAI_API_KEY from a .env file in the project root
 
 

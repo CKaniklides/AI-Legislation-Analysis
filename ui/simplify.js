@@ -14,6 +14,7 @@
   var App = window.ReviewApp;
   if (!App) return;
   var h = App.h, s = App.s, append = App.append, t = App.t, L = App.L;
+  var MAX_NOTE = 2000;   // a comment or a section note; the server allows the same (MAX_COMMENT)
 
   var EN = {
     p_title: 'Laws in plain language', p_map_ok: 'approved', p_map_no: 'declined', p_map_mixed: 'partly reviewed', p_map_none: 'not reviewed yet', p_relCount: '{a} relations in this direction', p_bulk: 'All lines on this page', p_approveAll: 'Approve all ({a})', p_declineAll: 'Decline all ({a})', p_resetAll: 'Reset all ({a})', p_declineAllAsk: 'Decline all {a} lines on this page? No reason is needed. You can reset them afterwards.', p_resetAllAsk: 'Reset all {a} lines on this page to not reviewed? Decisions and rewordings on this page are removed.', p_declinedN: 'Declined {a} lines', p_resetN: 'Reset {a} lines', p_officialSource: 'Official text', p_nav: 'Simplification', p_cat: 'Each law brought down to what it asks, of whom, and why, in words anyone can read. You approve every line before it is shared.',
@@ -34,6 +35,9 @@
     p_exc: 'Main exceptions', p_excS: 'When the general rules do not apply', p_found: 'Where it comes from', p_foundS: 'Constitution, treaties and EU Charter',
     p_if: 'If', p_then: 'then', p_openMap: 'Open the full stakeholder map',
     p_approve: 'Approve', p_decline: 'Decline', p_reword: 'Reword', p_approved: 'approved', p_declined: 'declined', p_rewordedTag: 'reworded',
+    p_comment: 'Comment', p_commentLbl: 'Your comment on this line', p_commentTitle: 'Your comment: ', p_noteHint: 'For the review team. It never appears in the public document.',
+    p_saveNote: 'Save', p_removeNote: 'Remove', p_noteSaved: 'Saved', p_noteLong: 'Keep it under 2,000 characters.',
+    p_addMissing: 'Suggest something missing', p_editMissing: 'Change your suggestion', p_missingLbl: 'What is missing from this section? (for example a key term or an exception)', p_missingTitle: 'Missing, in your view: ',
     p_why: 'Why are you declining this line? (required)', p_whyHint: 'A declined line is left out of the public document.', p_whyErr: 'Explain why you are declining. One sentence is enough.',
     p_yourWording: 'Your wording', p_rewordHint: 'This replaces the AI’s wording in this language only. The AI’s wording stays stored.', p_saveWording: 'Save wording', p_restore: 'Back to the AI’s wording',
     p_check: 'The check: ', p_suggest: 'Suggested wording: ', p_useSuggest: 'Use this wording', p_usedSuggest: 'Wording replaced in both languages',
@@ -71,6 +75,9 @@
     p_exc: 'Belangrijkste uitzonderingen', p_excS: 'Wanneer de algemene regels niet gelden', p_found: 'Waar het vandaan komt', p_foundS: 'Grondwet, verdragen en EU-Handvest',
     p_if: 'Als', p_then: 'dan', p_openMap: 'Open de volledige kaart van partijen',
     p_approve: 'Goedkeuren', p_decline: 'Afwijzen', p_reword: 'Herschrijven', p_approved: 'goedgekeurd', p_declined: 'afgewezen', p_rewordedTag: 'herschreven',
+    p_comment: 'Opmerking', p_commentLbl: 'Uw opmerking bij deze regel', p_commentTitle: 'Uw opmerking: ', p_noteHint: 'Voor het reviewteam. Dit komt nooit in het publieksdocument.',
+    p_saveNote: 'Opslaan', p_removeNote: 'Verwijderen', p_noteSaved: 'Opgeslagen', p_noteLong: 'Houd het onder de 2.000 tekens.',
+    p_addMissing: 'Iets wat ontbreekt voorstellen', p_editMissing: 'Uw voorstel aanpassen', p_missingLbl: 'Wat ontbreekt er in dit onderdeel? (bijvoorbeeld een kernbegrip of een uitzondering)', p_missingTitle: 'Ontbreekt volgens u: ',
     p_why: 'Waarom wijst u deze regel af? (verplicht)', p_whyHint: 'Een afgewezen regel komt niet in het publieksdocument.', p_whyErr: 'Leg uit waarom u afwijst. Eén zin is genoeg.',
     p_yourWording: 'Uw formulering', p_rewordHint: 'Dit vervangt de formulering van de AI alleen in deze taal. De formulering van de AI blijft bewaard.', p_saveWording: 'Formulering opslaan', p_restore: 'Terug naar de formulering van de AI',
     p_check: 'De controle: ', p_suggest: 'Voorgestelde formulering: ', p_useSuggest: 'Gebruik deze formulering', p_usedSuggest: 'Formulering in beide talen vervangen',
@@ -113,6 +120,12 @@
   function link(href, text, current) { return h('a', { href: href, 'aria-current': current ? 'page' : null }, text); }
   function plainName(n) { return n.replace(/\s*\([^)]+\)\s*$/, ''); }
   function shortName(n) { var m = /\(([^)]+)\)\s*$/.exec(n); return m ? m[1] : n; }
+  // A party's name is "description (legal term)". The party list shows the legal term as the name, as
+  // the map and the relations do, with the description under it, so a reader sees they are one party.
+  function partyLabel(n) {
+    var desc = plainName(n);
+    return desc === n ? [cap(n)] : [cap(shortName(n)), h('small', { text: cap(desc) })];
+  }
   function cap(x) { return x.charAt(0).toUpperCase() + x.slice(1); }
   function lowerArticle(x) { return x.replace(/^(The|An|A|De|Het|Een) /, function (m) { return m.toLowerCase(); }); }
   function range(arts) { return arts.length > 1 ? 'art. ' + arts[0] + '–' + arts[arts.length - 1] : 'art. ' + arts[0]; }
@@ -126,7 +139,8 @@
         function () { throw new Error(t('errSave')); });
   }
   function save(key, patch, message) {
-    var cur = rv(key), next = { id: key, decision: cur.decision || null, justification: cur.justification || null, edit: cur.edit || null, reviewer: App.reviewer() };
+    var cur = rv(key), next = { id: key, decision: cur.decision || null, justification: cur.justification || null, edit: cur.edit || null,
+      comment: cur.comment || null, reviewer: App.reviewer() };   // every field is sent: the server keeps only what it receives
     Object.keys(patch).forEach(function (k) { next[k] = patch[k]; });
     return post('/api/sheet_reviews', next).then(function (res) {
       if (res.entry) REVIEWS[key] = res.entry; else delete REVIEWS[key];
@@ -136,6 +150,12 @@
     }).catch(function (e) { App.toast(e.message, 'decline'); });
   }
 
+  function commentIcon() {
+    return s('svg', { viewBox: '0 0 24 24', width: '18', height: '18', 'aria-hidden': 'true' },
+      s('path', { d: 'M5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 4v-4A1.5 1.5 0 0 1 4 14.5v-9A1.5 1.5 0 0 1 5.5 4z',
+        fill: 'none', stroke: 'currentColor', 'stroke-width': '1.8', 'stroke-linejoin': 'round' }));
+  }
+
   // ---------- one reviewable line ----------
   function refs(arts) {
     return arts.map(function (a) {
@@ -143,32 +163,40 @@
         onclick: function () { drawer = drawer === a ? null : a; App.rerender(); } }, /^\d/.test(a) ? 'art. ' + a : a);
     });
   }
+  // One form for the four things a reviewer writes: a reason to decline, a rewording, a comment on a
+  // line, and a note on what a section of the sheet misses. Comments and notes never reach the document.
   function formEl(key, r) {
-    var decline = form.mode === 'decline', lang = App.lang();
-    var ta = h('textarea', { id: 'pform', name: 'text', autocomplete: 'off', 'aria-describedby': 'pform-err', oninput: function () { form.text = ta.value; } });
+    var mode = form.mode, decline = mode === 'decline', note = mode === 'comment' || mode === 'missing', lang = App.lang();
+    var ta = h('textarea', { id: 'pform', name: 'text', autocomplete: 'off', maxlength: note ? String(MAX_NOTE) : null, 'aria-describedby': 'pform-err', oninput: function () { form.text = ta.value; } });
     ta.value = form.text;
-    var err = h('div', { class: 'err', id: 'pform-err', role: 'alert', text: form.err ? t('p_whyErr') : '' });
+    var err = h('div', { class: 'err', id: 'pform-err', role: 'alert', text: form.err ? t(form.err === 'long' ? 'p_noteLong' : 'p_whyErr') : '' });
     function cancel() { form = null; App.rerender(); }
+    var label = decline ? t('p_why') : mode === 'comment' ? t('p_commentLbl') : mode === 'missing' ? t('p_missingLbl') : t('p_yourWording') + ' (' + lang.toUpperCase() + ')';
     return h('form', { class: 'pform', novalidate: true, onsubmit: function (ev) {
       ev.preventDefault();
       var v = ta.value.trim();
       if (decline) {
         if (v.length < App.MIN_JUSTIFICATION) { form.err = true; err.textContent = t('p_whyErr'); ta.setAttribute('aria-invalid', 'true'); ta.focus(); return; }
         save(key, { decision: 'decline', justification: v }, t('savedDecline'));
+      } else if (note) {
+        if (v.length > MAX_NOTE) { form.err = 'long'; err.textContent = t('p_noteLong'); ta.setAttribute('aria-invalid', 'true'); ta.focus(); return; }
+        if (!v && !r.comment) { cancel(); return; }
+        save(key, { comment: v || null }, v ? t('p_noteSaved') : t('removed'));
       } else {
         if (!v) { cancel(); return; }
         var e = {}; if (r.edit) Object.keys(r.edit).forEach(function (k) { e[k] = r.edit[k]; });
         e[lang] = v; save(key, { edit: e });
       }
     } },
-      h('label', { for: 'pform', text: decline ? t('p_why') : t('p_yourWording') + ' (' + lang.toUpperCase() + ')' }), ta,
-      h('div', { class: 'hint', text: decline ? t('p_whyHint') : t('p_rewordHint') }), err,
+      h('label', { for: 'pform', text: label }), ta,
+      h('div', { class: 'hint', text: decline ? t('p_whyHint') : note ? t('p_noteHint') : t('p_rewordHint') }), err,
       h('div', { class: 'prow' },
-        h('button', { class: 'btn primary', type: 'submit' }, decline ? t('p_decline') : t('p_saveWording')),
-        !decline && r.edit && r.edit[lang] ? h('button', { class: 'btn', type: 'button', onclick: function () {
+        h('button', { class: 'btn primary', type: 'submit' }, decline ? t('p_decline') : note ? t('p_saveNote') : t('p_saveWording')),
+        !decline && !note && r.edit && r.edit[lang] ? h('button', { class: 'btn', type: 'button', onclick: function () {
           var e = {}; Object.keys(r.edit).forEach(function (k) { if (k !== lang) e[k] = r.edit[k]; });
           save(key, { edit: Object.keys(e).length ? e : null });
         } }, t('p_restore')) : null,
+        note && r.comment ? h('button', { class: 'btn', type: 'button', onclick: function () { save(key, { comment: null }, t('removed')); } }, t('p_removeNote')) : null,
         h('button', { class: 'btn quiet', type: 'button', onclick: cancel }, t('cancel'))));
   }
   function lineRow(law, unit, id, content, opts) {
@@ -190,6 +218,7 @@
         sug ? h('button', { class: 'btn', type: 'button', onclick: function () { save(key, { edit: { nl: sug.nl, en: sug.en } }, t('p_usedSuggest')); } }, t('p_useSuggest')) : null));
     }
     if (r.decision === 'decline' && r.justification) append(body, h('div', { class: 'pwhy' }, h('b', { text: t('reason') }), r.justification));
+    if (r.comment && !(form && form.key === key && form.mode === 'comment')) append(body, h('div', { class: 'pcomment' }, h('b', { text: t('p_commentTitle') }), r.comment));
     if (form && form.key === key) append(body, formEl(key, r));
     function act(cls, on, label, glyph, fn) {
       return h('button', { class: cls, type: 'button', 'aria-pressed': String(!!on), title: label, 'aria-label': label, onclick: fn }, glyph);
@@ -205,6 +234,9 @@
       act('e', own, t('p_reword'), '✎', function () {
         var start = own || ln[lang];
         form = { key: key, mode: 'edit', text: start, initial: start }; App.rerender();
+      }),
+      act('c', r.comment, t('p_comment'), commentIcon(), function () {
+        form = { key: key, mode: 'comment', text: r.comment || '', initial: r.comment || '' }; App.rerender();
       }));
     return h('div', { class: 'pl ' + (r.decision || '') },
       h('span', { class: 'pdot ' + verdict, role: 'img', title: t(title), 'aria-label': t(title) }), body, acts);
@@ -222,8 +254,9 @@
       return h('button', { class: cls, type: 'button', disabled: !targets.length, onclick: function () {
         if (decision !== 'accept' && !window.confirm(t(decision === 'decline' ? 'p_declineAllAsk' : 'p_resetAllAsk', targets.length))) return;
         post('/api/sheet_reviews', { items: targets.map(function (k) {
-          return decision === null ? { id: k, decision: null, edit: null }
-            : { id: k, decision: decision, bulk: decision === 'decline', justification: null, edit: rv(k).edit || null };
+          // A reviewer's comment stays: these buttons change decisions and rewordings only.
+          return decision === null ? { id: k, decision: null, edit: null, comment: rv(k).comment || null }
+            : { id: k, decision: decision, bulk: decision === 'decline', justification: null, edit: rv(k).edit || null, comment: rv(k).comment || null };
         }) }).then(function (res) {
           Object.keys(res.entries).forEach(function (k) { if (res.entries[k]) REVIEWS[k] = res.entries[k]; else delete REVIEWS[k]; });
           App.toast(t(decision === 'accept' ? 'p_approvedN' : decision === 'decline' ? 'p_declinedN' : 'p_resetN', targets.length), decision || '');
@@ -240,7 +273,7 @@
         h('div', { class: 'pbulk', role: 'group', 'aria-label': t('p_bulk') },
           bulkBtn('btn', 'p_approveAll', keys.filter(function (k) { return rv(k).decision !== 'accept'; }), 'accept'),
           bulkBtn('btn', 'p_declineAll', keys.filter(function (k) { return rv(k).decision !== 'decline'; }), 'decline'),
-          bulkBtn('btn quiet', 'p_resetAll', keys.filter(function (k) { return REVIEWS[k]; }), null)))
+          bulkBtn('btn quiet', 'p_resetAll', keys.filter(function (k) { return rv(k).decision || rv(k).edit; }), null)))
     ];
   }
   function card(cls, title, step, rows) {
@@ -324,22 +357,33 @@
     var c = law.units.law.content, lang = App.lang();
     function row(id, content) { return lineRow(law, 'law', id, content); }
     function simple(key, list) { return list.map(function (l, i) { return row(key + i, L(l)); }); }
+    // What the reviewer misses in a section (a key term, an exception...). Kept like a line's comment,
+    // under the section's own key, so it is never counted as a line and never reaches the document.
+    function missing(section) {
+      var key = K(law, 'law', 'missing_' + section), r = rv(key);
+      if (form && form.key === key) return h('div', { class: 'pmissing' }, formEl(key, r));
+      return h('div', { class: 'pmissing' },
+        r.comment ? h('div', { class: 'pcomment' }, h('b', { text: t('p_missingTitle') }), r.comment) : null,
+        h('button', { class: 'linkbtn', type: 'button', onclick: function () {
+          form = { key: key, mode: 'missing', text: r.comment || '', initial: r.comment || '' }; App.rerender();
+        } }, r.comment ? t('p_editMissing') : '+ ' + t('p_addMissing')));
+    }
     return [toolbar(law, ['law']),
       h('div', { class: 'pgrid' },
-        card('wide lead', 'p_inShort', null, simple('in_short', c.in_short)),
-        card('', 'p_terms', 'p_termsS', c.core_concepts.map(function (x, i) {
+        card('wide lead', 'p_inShort', null, [simple('in_short', c.in_short), missing('in_short')]),
+        card('', 'p_terms', 'p_termsS', [c.core_concepts.map(function (x, i) {
           return row('core_concepts' + i, [h('b', { text: lang === 'nl' ? x.term : x.term_en }), lang === 'en' ? h('i', { class: 'muted', lang: 'nl', text: ' (' + x.term + ')' }) : null, h('br'), L(x.plain)]);
-        })),
+        }), missing('core_concepts')]),
         card('', 'p_who', 'p_whoS', [c.stakeholders.map(function (x, i) {
           return row('stakeholders' + i, [h('b', { text: L(x.who) }), h('span', { class: 'ar', text: ' → ' }), h('b', { text: L(x.to_whom) }), h('br'), L(x.owes)]);
-        }), law.units.map ? h('p', { style: 'margin:10px 0 6px' }, link('#/s/' + law.id + '/map', t('p_openMap') + ' →')) : null]),
-        card('wide', 'p_ifThen', 'p_ifThenS', c.if_then.map(function (x, i) {
+        }), law.units.map ? h('p', { style: 'margin:10px 0 6px' }, link('#/s/' + law.id + '/map', t('p_openMap') + ' →')) : null, missing('stakeholders')]),
+        card('wide', 'p_ifThen', 'p_ifThenS', [c.if_then.map(function (x, i) {
           return row('if_then' + i, h('span', { class: 'pif' }, h('span', { class: 'if', text: t('p_if') + ' ' + L(x.if_) }), h('span', { text: t('p_then') + ' ' + L(x.then) })));
-        })),
-        card('', 'p_most', 'p_mostS', simple('most_consequential', c.most_consequential)),
-        card('', 'p_exc', 'p_excS', simple('exceptions', c.exceptions)),
-        card('', 'p_purpose', 'p_purposeS', row('purpose', L(c.purpose))),
-        card('', 'p_found', 'p_foundS', c.foundations.map(function (f, i) { return row('foundations' + i, [h('b', { text: L(f.source) }), h('br'), L(f.plain)]); })))];
+        }), missing('if_then')]),
+        card('', 'p_most', 'p_mostS', [simple('most_consequential', c.most_consequential), missing('most_consequential')]),
+        card('', 'p_exc', 'p_excS', [simple('exceptions', c.exceptions), missing('exceptions')]),
+        card('', 'p_purpose', 'p_purposeS', [row('purpose', L(c.purpose)), missing('purpose')]),
+        card('', 'p_found', 'p_foundS', [c.foundations.map(function (f, i) { return row('foundations' + i, [h('b', { text: L(f.source) }), h('br'), L(f.plain)]); }), missing('foundations')]))];
   }
 
   // ---------- stakeholder map ----------
@@ -385,10 +429,13 @@
       return !sel || id === sel || m.relations.some(function (r) { return (r.from_id === sel && r.to_id === id) || (r.to_id === sel && r.from_id === id); });
     }
     return h('div', { class: 'pmap' }, svg, weights, P.map(function (p) {
-      var label = plainName(L(p.name));
+      // The legal term only, as in the lists; the description shows on hover and in the party list.
+      // (A second line in the box made it taller than the arrows allow for and hid arrowheads.)
+      var label = cap(shortName(L(p.name))), desc = cap(plainName(L(p.name)));
+      var tip = desc !== label ? desc : null;
       var style = 'left:' + (pos[p.id][0] / 10) + '%;top:' + (pos[p.id][1] / 5.6) + '%';
-      if (!interactive) return h('div', { class: 'pnode', style: style }, label);
-      return h('button', { class: 'pnode' + (touches(p.id) ? '' : ' dim'), type: 'button', style: style, 'aria-pressed': String(p.id === sel),
+      if (!interactive) return h('div', { class: 'pnode', style: style, title: tip }, label);
+      return h('button', { class: 'pnode' + (touches(p.id) ? '' : ' dim'), type: 'button', style: style, title: tip, 'aria-pressed': String(p.id === sel),
         onclick: function () { party = party === p.id ? null : p.id; App.rerender(); } }, label);
     }));
   }
@@ -493,7 +540,18 @@
     var lang = App.lang(), included = [], base = '#/s/' + law.id;
     function keep(unit, id) { return rv(K(law, unit, id)).decision !== 'decline'; }
     function own(unit, id) { var e = rv(K(law, unit, id)).edit; return e && e[lang]; }
-    function r(arts) { return arts && arts.length ? h('span', { class: 'r', text: ' (' + arts.map(function (a) { return /^\d/.test(a) ? 'art. ' + a : a; }).join(', ') + ')' }) : null; }
+    // Article references, each a link to the official text, so they stay clickable in the PDF.
+    function r(arts) {
+      if (!arts || !arts.length) return null;
+      var out = [' ('];
+      arts.forEach(function (a, i) {
+        var label = /^\d/.test(a) ? 'art. ' + a : a, u = law.articles[a] && law.articles[a].url;
+        if (i) out.push(', ');
+        out.push(u ? h('a', { href: u, target: '_blank', rel: 'noopener noreferrer' }, label) : label);
+      });
+      out.push(')');
+      return h('span', { class: 'r' }, out);
+    }
     function item(tag, unit, id, content, arts) {
       if (!keep(unit, id)) return null;
       included.push(K(law, unit, id));
@@ -541,7 +599,7 @@
           return li('map', 'rel' + x[1], [h('span', { class: 'to', text: '→ ' + (to ? lowerArticle(shortName(L(to.name))) : x[0].to_id) + ': ' }), L(x[0].what)], x[0].articles);
         });
         var ul = list('', items);
-        return ul ? h('div', { class: 'party' }, h('h3', { text: cap(plainName(L(p.name))) }), h('p', { class: 'role', text: L(p.role) }), ul) : null;
+        return ul ? h('div', { class: 'party' }, h('h3', null, partyLabel(L(p.name))), h('p', { class: 'role', text: L(p.role) }), ul) : null;
       }).filter(Boolean) : [];
       var chapters = law.chapters.map(function (ch) {
         var u = law.units['chapter' + ch.number], lv = level(law, ch);
@@ -570,7 +628,7 @@
         chapters.length ? h('section', null, h('h2', { text: t('p_byChapter') }), h('div', { class: 'cols' }, chapters)) : null
       ]);
     }
-    append(doc, h('footer', { class: 'foot' }, h('p', null, t('p_official'), h('span', { class: 'url', text: law.source_url })), h('p', { text: t('p_made') })));
+    append(doc, h('footer', { class: 'foot' }, h('p', null, t('p_official'), h('a', { class: 'url', href: law.source_url, target: '_blank', rel: 'noopener noreferrer', text: law.source_url })), h('p', { text: t('p_made') })));
 
     var approved = included.filter(function (k) { return rv(k).decision === 'accept'; }).length;
     if (included.length && approved === included.length) { status.className = 'box ok'; status.textContent = t('p_allApproved'); }
@@ -593,6 +651,7 @@
     return h('aside', { class: 'pdrawer', 'aria-label': t('p_original') },
       h('button', { class: 'iconbtn x', type: 'button', 'aria-label': t('close'), onclick: function () { drawer = null; App.rerender(); } }, '×'),
       h('div', { class: 'lbl', text: t(a.official_source ? 'p_officialSource' : 'p_original') }), h('h2', { lang: 'nl', text: a.heading }),
+      App.officialLink(a.url),
       a.key ? h('p', null, h('span', { class: 'pill warn', title: t('p_keyTitle'), text: t('p_key') })) : null,
       h('div', { class: 'tx', lang: 'nl', tabindex: '0', text: a.text }));
   }

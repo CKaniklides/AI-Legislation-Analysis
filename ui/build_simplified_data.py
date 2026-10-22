@@ -173,9 +173,13 @@ def law_data(iid: str) -> "dict | None":
         "units": units,
         "articles": {r["article"]: {"heading": r.get("heading") or f"Artikel {r['article']}", "text": r.get("text") or "",
                                     "n_words": fs.words(r.get("text")), "key": r["article"] in key,
-                                    "chapter": chapter_of.get(r["article"])} for r in rows}
+                                    "chapter": chapter_of.get(r["article"]),
+                                    "url": b.official_url(iid, r["article"], r)} for r in rows}
+                    # The Charter and the Treaties: the official document (no article anchor checked there).
                     | {k: {"heading": v["heading"], "text": v["text"], "n_words": fs.words(v["text"]), "key": False,
-                           "chapter": None, "official_source": True} for k, v in res.get("sources", {}).items()},
+                           "chapter": None, "official_source": True,
+                           "url": f"https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=CELEX:{v['celex']}"}
+                       for k, v in res.get("sources", {}).items()},
     }
 
 

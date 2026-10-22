@@ -567,16 +567,22 @@ SOURCES = [
 # ---------------------------------------------------------------------------
 
 
+def _file_label(spec: SourceSpec) -> str:
+    # Labels are prose ("Hoofdstuk 11 only (privacy/ePrivacy provisions)"); a "/" in a file name
+    # would create a sub-folder, and \ : * ? " < > | are not allowed in Windows file names.
+    return re.sub(r'[\\/:*?"<>|]', "-", spec.label)
+
+
 def norms_path(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms.json"
 
 
 def queue_path_for(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms_review_queue.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms_review_queue.json"
 
 
 def unresolved_path_for(spec: SourceSpec) -> Path:
-    return NEW_NORM_DIR / f"new_{spec.label}_norms_unresolved.json"
+    return NEW_NORM_DIR / f"new_{_file_label(spec)}_norms_unresolved.json"
 
 
 def _atomic_write_json(path: Path, data) -> None:

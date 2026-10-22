@@ -16249,5 +16249,811 @@
     "suggestion": null
    }
   ]
+ },
+ "32016R0679::law::write::v1::626139ef85e2": {
+  "in_short": [
+   {
+    "nl": "Deze verordening beschermt mensen wanneer organisaties hun persoonsgegevens gebruiken. Zij geldt voor veel geautomatiseerde verwerkingen en bestanden, ook voor organisaties buiten de EU die goederen of diensten aanbieden aan mensen in de EU of hun gedrag daar volgen.",
+    "en": "This Regulation protects people when organisations use their personal data. It applies to many automated processing activities and filing systems, including organisations outside the EU that offer goods or services to people in the EU or monitor their behaviour there.",
+    "articles": [
+     "2",
+     "3"
+    ]
+   },
+   {
+    "nl": "Een organisatie die het doel en de middelen bepaalt, moet gegevens rechtmatig, eerlijk, duidelijk, doelgericht, zo beperkt mogelijk, juist, niet te lang en veilig verwerken. Zij moet dit ook kunnen aantonen.",
+    "en": "An organisation that decides the purpose and means must process data lawfully, fairly, clearly, for stated purposes, as little as possible, accurately, for no longer than needed, and securely. It must also be able to show this.",
+    "articles": [
+     "5",
+     "24",
+     "25",
+     "32"
+    ]
+   },
+   {
+    "nl": "Mensen hebben onder meer recht op informatie, inzage, correctie, wissing, beperking, overdraagbaarheid en bezwaar. Zij kunnen een klacht indienen bij een toezichthoudende autoriteit en naar de rechter gaan.",
+    "en": "People have rights including information, access, correction, erasure, restriction, portability and objection. They can complain to a supervisory authority and go to court.",
+    "articles": [
+     "12",
+     "15",
+     "16",
+     "17",
+     "18",
+     "20",
+     "21",
+     "77",
+     "79"
+    ]
+   }
+  ],
+  "core_concepts": [
+   {
+    "term": "persoonsgegevens",
+    "term_en": "personal data",
+    "plain": {
+     "nl": "Informatie over een persoon die direct of indirect herkenbaar is.",
+     "en": "Information about a person who can be identified directly or indirectly."
+    },
+    "articles": [
+     "4"
+    ]
+   },
+   {
+    "term": "verwerking",
+    "term_en": "processing",
+    "plain": {
+     "nl": "Elke handeling met persoonsgegevens, zoals verzamelen, bewaren, gebruiken, delen, wijzigen of wissen.",
+     "en": "Any action involving personal data, such as collecting, storing, using, sharing, changing or deleting it."
+    },
+    "articles": [
+     "4"
+    ]
+   },
+   {
+    "term": "betrokkene",
+    "term_en": "data subject",
+    "plain": {
+     "nl": "De persoon over wie de persoonsgegevens gaan.",
+     "en": "The person the personal data is about."
+    },
+    "articles": [
+     "4"
+    ]
+   },
+   {
+    "term": "verwerkingsverantwoordelijke",
+    "term_en": "controller",
+    "plain": {
+     "nl": "De persoon of organisatie die beslist waarom en hoe persoonsgegevens worden gebruikt.",
+     "en": "The person or organisation that decides why and how personal data are used."
+    },
+    "articles": [
+     "4"
+    ]
+   },
+   {
+    "term": "verwerker",
+    "term_en": "processor",
+    "plain": {
+     "nl": "Een persoon of organisatie die persoonsgegevens voor de verwerkingsverantwoordelijke verwerkt.",
+     "en": "A person or organisation that processes personal data for the controller."
+    },
+    "articles": [
+     "4"
+    ]
+   },
+   {
+    "term": "toestemming",
+    "term_en": "consent",
+    "plain": {
+     "nl": "Een vrije, specifieke, geïnformeerde en duidelijke instemming door een verklaring of actieve handeling.",
+     "en": "Freely given, specific, informed and clear agreement through a statement or active action."
+    },
+    "articles": [
+     "4",
+     "7"
+    ]
+   },
+   {
+    "term": "inbreuk in verband met persoonsgegevens",
+    "term_en": "personal data breach",
+    "plain": {
+     "nl": "Een beveiligingsfout die leidt tot verlies, wijziging, ongeoorloofde verstrekking of ongeoorloofde toegang tot persoonsgegevens.",
+     "en": "A security breach that leads to loss, alteration, unauthorised disclosure of, or unauthorised access to, personal data."
+    },
+    "articles": [
+     "4"
+    ]
+   }
+  ],
+  "foundations": [
+   {
+    "source": {
+     "nl": "Handvest van de grondrechten van de Europese Unie, artikel 7",
+     "en": "Charter of Fundamental Rights of the European Union, Article 7"
+    },
+    "plain": {
+     "nl": "Beschermt de eerbiediging van het privéleven en het familie- en gezinsleven.",
+     "en": "Protects respect for private and family life."
+    }
+   },
+   {
+    "source": {
+     "nl": "Handvest van de grondrechten van de Europese Unie, artikel 8",
+     "en": "Charter of Fundamental Rights of the European Union, Article 8"
+    },
+    "plain": {
+     "nl": "Geeft iedereen recht op bescherming van persoonsgegevens en op toezicht door een onafhankelijke autoriteit.",
+     "en": "Gives everyone a right to protection of personal data and to oversight by an independent authority."
+    }
+   },
+   {
+    "source": {
+     "nl": "Verdrag betreffende de werking van de Europese Unie, artikel 16",
+     "en": "Treaty on the Functioning of the European Union, Article 16"
+    },
+    "plain": {
+     "nl": "Geeft iedereen recht op bescherming van persoonsgegevens en biedt een grondslag voor EU-regels hierover.",
+     "en": "Gives everyone a right to protection of personal data and provides a basis for EU rules on this."
+    }
+   }
+  ],
+  "if_then": [
+   {
+    "if_": {
+     "nl": "Als u persoonsgegevens wilt verwerken,",
+     "en": "If you want to process personal data,"
+    },
+    "then": {
+     "nl": "moet u daarvoor ten minste één wettelijke grond hebben, zoals toestemming, een overeenkomst, een wettelijke plicht, vitale belangen, een publieke taak of een gerechtvaardigd belang dat niet zwaarder weegt dan de rechten van de persoon.",
+     "en": "you must have at least one legal basis, such as consent, a contract, a legal obligation, vital interests, a public task, or a legitimate interest that does not outweigh the person’s rights."
+    },
+    "articles": [
+     "6"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als u gegevens rechtstreeks van iemand verzamelt,",
+     "en": "If you collect data directly from someone,"
+    },
+    "then": {
+     "nl": "moet u bij het verzamelen duidelijke informatie geven, onder meer over wie u bent, waarom u de gegevens gebruikt, de rechtsgrond, bewaartermijn, rechten en eventuele ontvangers of doorgiften.",
+     "en": "you must provide clear information when collecting them, including who you are, why you use the data, the legal basis, retention period, rights, and any recipients or transfers."
+    },
+    "articles": [
+     "12",
+     "13"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als u persoonsgegevens niet bij de persoon zelf hebt gekregen,",
+     "en": "If you did not obtain personal data from the person themselves,"
+    },
+    "then": {
+     "nl": "moet u die persoon de vereiste informatie geven binnen een redelijke termijn en uiterlijk binnen één maand, of eerder bij eerste contact of eerste verstrekking.",
+     "en": "you must give that person the required information within a reasonable time and no later than one month, or earlier at first contact or first disclosure."
+    },
+    "articles": [
+     "14"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als iemand een verzoek doet om zijn gegevens of rechten,",
+     "en": "If someone makes a request about their data or rights,"
+    },
+    "then": {
+     "nl": "moet u de uitoefening van die rechten mogelijk maken en zonder onredelijke vertraging, in ieder geval binnen één maand, laten weten wat u met het verzoek hebt gedaan.",
+     "en": "you must make it possible to exercise those rights and, without undue delay and in any event within one month, say what you have done with the request."
+    },
+    "articles": [
+     "12",
+     "15",
+     "16",
+     "17",
+     "18",
+     "20",
+     "21"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als u een verwerker inschakelt,",
+     "en": "If you use a processor,"
+    },
+    "then": {
+     "nl": "mag u alleen een verwerker kiezen die voldoende garanties biedt. U moet de verwerking regelen in een schriftelijke overeenkomst of andere bindende rechtshandeling.",
+     "en": "you may use only a processor that provides sufficient guarantees. You must set out the processing in a written contract or another binding legal act."
+    },
+    "articles": [
+     "28"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als zich een inbreuk in verband met persoonsgegevens voordoet die waarschijnlijk een risico inhoudt voor mensen,",
+     "en": "If a personal data breach occurs that is likely to pose a risk to people,"
+    },
+    "then": {
+     "nl": "moet de verwerkingsverantwoordelijke dit zonder onredelijke vertraging en, indien mogelijk, uiterlijk 72 uur na ontdekking melden aan de bevoegde toezichthoudende autoriteit.",
+     "en": "the controller must report it to the competent supervisory authority without undue delay and, where feasible, no later than 72 hours after becoming aware of it."
+    },
+    "articles": [
+     "33"
+    ]
+   },
+   {
+    "if_": {
+     "nl": "Als een voorgenomen verwerking waarschijnlijk een hoog risico voor mensen inhoudt,",
+     "en": "If planned processing is likely to create a high risk for people,"
+    },
+    "then": {
+     "nl": "moet de verwerkingsverantwoordelijke vóór de verwerking een gegevensbeschermingseffectbeoordeling uitvoeren. Blijft er zonder risicobeperkende maatregelen een hoog risico, dan moet hij vooraf de toezichthoudende autoriteit raadplegen.",
+     "en": "the controller must carry out a data protection impact assessment before processing. If a high risk remains without risk-reducing measures, it must consult the supervisory authority first."
+    },
+    "articles": [
+     "35",
+     "36"
+    ]
+   }
+  ],
+  "stakeholders": [
+   {
+    "who": {
+     "nl": "De verwerkingsverantwoordelijke",
+     "en": "The controller"
+    },
+    "owes": {
+     "nl": "rechtmatige, behoorlijke, transparante, doelgerichte, beperkte, juiste, veilige en aantoonbare verwerking",
+     "en": "lawful, fair, transparent, purpose-limited, minimal, accurate, secure and demonstrable processing"
+    },
+    "to_whom": {
+     "nl": "de betrokkene",
+     "en": "the data subject"
+    },
+    "articles": [
+     "5",
+     "24",
+     "25",
+     "32"
+    ]
+   },
+   {
+    "who": {
+     "nl": "De verwerkingsverantwoordelijke",
+     "en": "The controller"
+    },
+    "owes": {
+     "nl": "duidelijke informatie en behandeling van verzoeken over rechten",
+     "en": "clear information and handling of requests about rights"
+    },
+    "to_whom": {
+     "nl": "de betrokkene",
+     "en": "the data subject"
+    },
+    "articles": [
+     "12",
+     "13",
+     "14",
+     "15",
+     "16",
+     "17",
+     "18",
+     "20",
+     "21"
+    ]
+   },
+   {
+    "who": {
+     "nl": "De verwerker",
+     "en": "The processor"
+    },
+    "owes": {
+     "nl": "verwerking alleen volgens schriftelijke instructies, vertrouwelijkheid, beveiliging, hulp en informatie",
+     "en": "processing only on written instructions, confidentiality, security, assistance and information"
+    },
+    "to_whom": {
+     "nl": "de verwerkingsverantwoordelijke",
+     "en": "the controller"
+    },
+    "articles": [
+     "28",
+     "29",
+     "32"
+    ]
+   },
+   {
+    "who": {
+     "nl": "De verwerkingsverantwoordelijke",
+     "en": "The controller"
+    },
+    "owes": {
+     "nl": "melding van een inbreuk die waarschijnlijk een risico inhoudt, en documentatie van alle inbreuken",
+     "en": "notification of a breach likely to create a risk, and documentation of all breaches"
+    },
+    "to_whom": {
+     "nl": "de bevoegde toezichthoudende autoriteit",
+     "en": "the competent supervisory authority"
+    },
+    "articles": [
+     "33"
+    ]
+   },
+   {
+    "who": {
+     "nl": "De verwerkingsverantwoordelijke",
+     "en": "The controller"
+    },
+    "owes": {
+     "nl": "onverwijlde, duidelijke mededeling van een inbreuk met waarschijnlijk een hoog risico",
+     "en": "prompt, clear communication of a breach likely to create a high risk"
+    },
+    "to_whom": {
+     "nl": "de betrokkene",
+     "en": "the data subject"
+    },
+    "articles": [
+     "34"
+    ]
+   },
+   {
+    "who": {
+     "nl": "De toezichthoudende autoriteit",
+     "en": "The supervisory authority"
+    },
+    "owes": {
+     "nl": "toezicht, handhaving en behandeling van klachten; zij moet de klager informeren over voortgang en resultaat",
+     "en": "oversight, enforcement and handling of complaints; it must inform the complainant about progress and the result"
+    },
+    "to_whom": {
+     "nl": "betrokkenen en klagers",
+     "en": "data subjects and complainants"
+    },
+    "articles": [
+     "57",
+     "58",
+     "77"
+    ]
+   }
+  ],
+  "purpose": {
+   "nl": "Bescherm persoonsgegevens en de grondrechten van mensen, terwijl persoonsgegevens vrij binnen de Unie kunnen bewegen.",
+   "en": "Protect personal data and people’s fundamental rights while allowing personal data to move freely within the Union.",
+   "articles": [
+    "1"
+   ]
+  },
+  "most_consequential": [
+   {
+    "nl": "U mag persoonsgegevens alleen verwerken met een wettelijke grond en volgens de kernbeginselen. Schending van deze beginselen, de toestemmingsregels of rechten van mensen kan leiden tot administratieve geldboeten tot 20 000 000 EUR of, voor een onderneming, tot 4% van de totale wereldwijde jaaromzet in het voorgaande boekjaar, indien dit cijfer hoger is.",
+    "en": "You may process personal data only with a legal basis and in line with the core principles. Breaches of these principles, consent rules or people’s rights can lead to administrative fines of up to EUR 20 000 000 or, for an undertaking, up to 4% of total worldwide annual turnover in the preceding financial year, if higher.",
+    "articles": [
+     "5",
+     "6",
+     "7",
+     "9",
+     "83"
+    ]
+   },
+   {
+    "nl": "De organisatie die beslist waarom en hoe gegevens worden gebruikt, blijft verantwoordelijk. Zij moet passende maatregelen nemen, deze toetsen en zo nodig bijwerken; gegevensbescherming moet ook in ontwerp en standaardinstellingen zitten.",
+    "en": "The organisation deciding why and how data are used remains responsible. It must take suitable measures, review and update them where needed; data protection must also be built into design and default settings.",
+    "articles": [
+     "24",
+     "25"
+    ]
+   },
+   {
+    "nl": "Houd een register van verwerkingsactiviteiten. De verwerkingsverantwoordelijke en de verwerker moeten dit desgevraagd aan de toezichthoudende autoriteit geven.",
+    "en": "Keep a record of processing activities. The controller and processor must provide it to the supervisory authority when asked.",
+    "articles": [
+     "30"
+    ]
+   },
+   {
+    "nl": "Bescherm gegevens passend bij het risico. Bij een inbreuk gelden meldplichten aan de toezichthouder en, bij waarschijnlijk hoog risico, aan de betrokken persoon.",
+    "en": "Protect data at a level appropriate to the risk. A breach brings notification duties to the supervisory authority and, where a high risk is likely, to the affected person.",
+    "articles": [
+     "32",
+     "33",
+     "34"
+    ]
+   }
+  ],
+  "exceptions": [
+   {
+    "nl": "De verordening geldt niet voor zuiver persoonlijke of huishoudelijke activiteiten, en ook niet voor de andere uitdrukkelijk genoemde verwerkingen buiten haar toepassingsgebied.",
+    "en": "The Regulation does not apply to purely personal or household activities, or to the other processing activities expressly placed outside its scope.",
+    "articles": [
+     "2"
+    ]
+   },
+   {
+    "nl": "Bijzondere persoonsgegevens, zoals gegevens over gezondheid, zijn in beginsel verboden. Verwerking mag alleen als een van de genoemde uitzonderingen geldt, bijvoorbeeld uitdrukkelijke toestemming of een wettelijke grond voor specifieke doelen.",
+    "en": "Special categories of personal data, such as health data, are prohibited in principle. Processing is allowed only where one of the listed exceptions applies, such as explicit consent or a legal basis for specified purposes.",
+    "articles": [
+     "9"
+    ]
+   },
+   {
+    "nl": "U hoeft informatie over gegevens die niet van de persoon komen niet altijd te geven, bijvoorbeeld als de persoon die informatie al heeft, informatie geven onmogelijk of onevenredig zwaar is, een wet dit voorschrijft, of geheimhouding geldt.",
+    "en": "You do not always have to provide information about data not obtained from the person, for example where the person already has it, providing it is impossible or disproportionately difficult, a law requires the data, or confidentiality applies.",
+    "articles": [
+     "14"
+    ]
+   },
+   {
+    "nl": "Het recht op wissing geldt niet wanneer verwerking nodig is voor onder meer vrijheid van meningsuiting en informatie, een wettelijke plicht, een publieke taak, volksgezondheid, bepaalde archivering of onderzoek, of een rechtsvordering.",
+    "en": "The right to erasure does not apply where processing is necessary for, among other things, freedom of expression and information, a legal obligation, a public task, public health, certain archiving or research, or legal claims.",
+    "articles": [
+     "17"
+    ]
+   },
+   {
+    "nl": "De plicht om een register bij te houden geldt niet voor ondernemingen of organisaties met minder dan 250 personen in dienst, behalve in de gevallen die artikel 30 noemt, zoals waarschijnlijk risico, niet-incidentele verwerking of bepaalde gevoelige of strafrechtelijke gegevens.",
+    "en": "The duty to keep records does not apply to enterprises or organisations with fewer than 250 persons, except in the cases listed in Article 30, such as likely risk, non-occasional processing, or certain sensitive or criminal-offence data.",
+    "articles": [
+     "30"
+    ]
+   }
+  ]
+ },
+ "32016R0679::law::check::v1::5b7ec4c2b364": {
+  "checks": [
+   {
+    "id": "in_short0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "in_short1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "in_short2",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "most_consequential0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "most_consequential1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "most_consequential2",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Kleine organisaties met minder dan 250 werknemers zijn vaak uitgezonderd van deze plicht.",
+     "en": "Small organisations with fewer than 250 employees are often exempt from this duty."
+    },
+    "suggestion": {
+     "nl": "Houd een register van verwerkingsactiviteiten, behalve wanneer artikel 30 een uitzondering maakt. De verwerkingsverantwoordelijke en de verwerker moeten dit desgevraagd aan de toezichthoudende autoriteit geven.",
+     "en": "Keep a record of processing activities, except where Article 30 provides an exemption. The controller and processor must provide it to the supervisory authority when asked."
+    }
+   },
+   {
+    "id": "most_consequential3",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Melding aan de toezichthouder is alleen vereist als de inbreuk waarschijnlijk een risico inhoudt.",
+     "en": "Notification to the supervisory authority is required only where the breach is likely to pose a risk."
+    },
+    "suggestion": {
+     "nl": "Bescherm gegevens passend bij het risico. Bij een inbreuk die waarschijnlijk een risico inhoudt, geldt een meldplicht aan de toezichthouder en, bij waarschijnlijk hoog risico, aan de betrokken persoon.",
+     "en": "Protect data at a level appropriate to the risk. A breach likely to pose a risk must be notified to the supervisory authority and, where a high risk is likely, to the affected person."
+    }
+   },
+   {
+    "id": "exceptions0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "exceptions1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "exceptions2",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "exceptions3",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "exceptions4",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "purpose",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts2",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts3",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts4",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts5",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "core_concepts6",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "if_then0",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Een overheidsinstantie kan zich bij de uitoefening van haar taken niet op gerechtvaardigd belang beroepen.",
+     "en": "A public authority cannot rely on legitimate interests when carrying out its tasks."
+    },
+    "suggestion": {
+     "nl": "Als u persoonsgegevens wilt verwerken, dan moet u daarvoor ten minste één wettelijke grond hebben, zoals toestemming, een overeenkomst, een wettelijke plicht, vitale belangen, een publieke taak of een gerechtvaardigd belang dat niet zwaarder weegt dan de rechten van de persoon, behalve voor overheidsinstanties bij hun taken.",
+     "en": "If you want to process personal data, then you must have at least one legal basis, such as consent, a contract, a legal obligation, vital interests, a public task, or a legitimate interest that does not outweigh the person’s rights, except for public authorities when carrying out their tasks."
+    }
+   },
+   {
+    "id": "if_then1",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Deze informatie hoeft niet opnieuw te worden gegeven als de persoon die al heeft.",
+     "en": "This information need not be given again where the person already has it."
+    },
+    "suggestion": {
+     "nl": "Als u gegevens rechtstreeks van iemand verzamelt, dan moet u bij het verzamelen duidelijke informatie geven, tenzij die persoon die informatie al heeft, onder meer over wie u bent, waarom u de gegevens gebruikt, de rechtsgrond, bewaartermijn, rechten en eventuele ontvangers of doorgiften.",
+     "en": "If you collect data directly from someone, then you must provide clear information when collecting them, unless that person already has it, including who you are, why you use the data, the legal basis, retention period, rights, and any recipients or transfers."
+    }
+   },
+   {
+    "id": "if_then2",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Artikel 14 bevat uitzonderingen waarin deze informatie niet hoeft te worden gegeven.",
+     "en": "Article 14 contains exceptions where this information does not have to be provided."
+    },
+    "suggestion": {
+     "nl": "Als u persoonsgegevens niet bij de persoon zelf hebt gekregen, dan moet u die persoon de vereiste informatie geven binnen een redelijke termijn en uiterlijk binnen één maand, of eerder bij eerste contact of eerste verstrekking, tenzij een wettelijke uitzondering geldt.",
+     "en": "If you did not obtain personal data from the person themselves, then you must give that person the required information within a reasonable time and no later than one month, or earlier at first contact or first disclosure, unless a legal exception applies."
+    }
+   },
+   {
+    "id": "if_then3",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "De termijn van één maand mag bij complexe of veel verzoeken met maximaal twee maanden worden verlengd.",
+     "en": "The one-month period may be extended by up to two months for complex or numerous requests."
+    },
+    "suggestion": {
+     "nl": "Als iemand een verzoek doet om zijn gegevens of rechten, dan moet u de uitoefening van die rechten mogelijk maken en zonder onredelijke vertraging, in ieder geval binnen één maand, laten weten wat u met het verzoek hebt gedaan, tenzij de termijn geldig wordt verlengd.",
+     "en": "If someone makes a request about their data or rights, then you must make it possible to exercise those rights and, without undue delay and in any event within one month, say what you have done with the request, unless the time limit is validly extended."
+    }
+   },
+   {
+    "id": "if_then4",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "if_then5",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "if_then6",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "stakeholders0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "stakeholders1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "stakeholders2",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Een verwerker mag van schriftelijke instructies afwijken als een wet hem tot verwerking verplicht.",
+     "en": "A processor may depart from written instructions where a law requires it to process the data."
+    },
+    "suggestion": {
+     "nl": "De verwerker -> de verwerkingsverantwoordelijke: verwerking alleen volgens schriftelijke instructies, behalve als de wet anders verplicht, plus vertrouwelijkheid, beveiliging, hulp en informatie",
+     "en": "The processor -> the controller: processing only on written instructions, unless the law requires otherwise, plus confidentiality, security, assistance and information"
+    }
+   },
+   {
+    "id": "stakeholders3",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "stakeholders4",
+    "verdict": "partly_supported",
+    "note": {
+     "nl": "Bij passende bescherming, latere risicobeperking of onevenredige inspanning hoeft de persoon niet altijd te worden geïnformeerd.",
+     "en": "The person does not always have to be informed where suitable protection exists, later measures remove the risk, or notification would be disproportionate."
+    },
+    "suggestion": {
+     "nl": "De verwerkingsverantwoordelijke -> de betrokkene: onverwijlde, duidelijke mededeling van een inbreuk met waarschijnlijk een hoog risico, tenzij een uitzondering geldt",
+     "en": "The controller -> the data subject: prompt, clear communication of a breach likely to create a high risk, unless an exception applies"
+    }
+   },
+   {
+    "id": "stakeholders5",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   }
+  ]
+ },
+ "32016R0679::law::ground::v1::99094d7eb50f": {
+  "checks": [
+   {
+    "id": "foundations0",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "foundations1",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   },
+   {
+    "id": "foundations2",
+    "verdict": "supported",
+    "note": {
+     "nl": "ok",
+     "en": "ok"
+    },
+    "suggestion": null
+   }
+  ]
  }
 }
