@@ -240,6 +240,266 @@
   },
   "norms": [
    {
+    "norm_id": "5(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "worden verwerkt"
+    ],
+    "action_lemma": "verwerken",
+    "object": "Persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 1
+   },
+   {
+    "norm_id": "5(1).2",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "worden verzameld"
+    ],
+    "action_lemma": "verzamelen",
+    "object": "Persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).3",
+    "paragraph_number": "1",
+    "deontic": "PROHIBITION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "mogen",
+     "niet",
+     "worden verwerkt"
+    ],
+    "action_lemma": "verwerken",
+    "object": "persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de verdere verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden wordt overeenkomstig artikel 89, lid 1, niet als onverenigbaar met de oorspronkelijke doeleinden beschouwd"
+    ],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).4",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "zijn"
+    ],
+    "action_lemma": "zijn",
+    "object": "Persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding. | 1 duplicate norm(s) in this unit with the same deontic, action_lemma and object were merged into this one; readings that differed are kept in alternative_reading with source \"merged_duplicate\".",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "moeten",
+       "zijn"
+      ],
+      "action_lemma": "zijn",
+      "object": "Persoonsgegevens",
+      "recipient": [],
+      "deadline_raw": "niet langer te identificeren dan voor de doeleinden waarvoor de persoonsgegevens worden verwerkt noodzakelijk is",
+      "thresholds": [],
+      "conditions": [],
+      "source": "merged_duplicate"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 1
+   },
+   {
+    "norm_id": "5(1).5",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "worden geactualiseerd"
+    ],
+    "action_lemma": "actualiseren",
+    "object": "Persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zo nodig"
+    ],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).6",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "worden genomen"
+    ],
+    "action_lemma": "nemen",
+    "object": "alle redelijke maatregelen",
+    "recipient": [],
+    "deadline_raw": "onverwijld",
+    "deadline": {
+     "value": null,
+     "unit": "qualitative_urgent",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).7",
+    "paragraph_number": "1",
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "mogen",
+     "worden opgeslagen"
+    ],
+    "action_lemma": "opslaan",
+    "object": "persoonsgegevens",
+    "recipient": [],
+    "deadline_raw": "voor langere perioden",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voor langere perioden"
+    },
+    "thresholds": [],
+    "conditions": [
+     "voor zover de persoonsgegevens louter met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden worden verwerkt overeenkomstig artikel 89, lid 1",
+     "mits de bij deze verordening vereiste passende technische en organisatorische maatregelen worden getroffen om de rechten en vrijheden van de betrokkene te beschermen"
+    ],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).8",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "gewaarborgd is"
+    ],
+    "action_lemma": "waarborgen",
+    "object": "een passende beveiliging ervan",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "5(1).9",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "moeten",
+     "beschermd zijn"
+    ],
+    "action_lemma": "beschermen",
+    "object": "zij",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "5(2).1",
     "paragraph_number": "2",
     "deontic": "OBLIGATION",
@@ -375,6 +635,164 @@
    "pseudonimisering": "het verwerken van persoonsgegevens op zodanige wijze dat de persoonsgegevens niet meer aan een specifieke betrokkene kunnen worden gekoppeld zonder dat er aanvullende gegevens worden gebruikt, mits deze aanvullende gegevens apart worden bewaard en technische en organisatorische maatregelen worden genomen om ervoor te zorgen dat de persoonsgegevens niet aan een geïdentificeerde of identificeerbare natuurlijke persoon worden gekoppeld"
   },
   "norms": [
+   {
+    "norm_id": "6(1).1",
+    "paragraph_number": "1",
+    "deontic": "EXEMPTION",
+    "actor": "de verwerking door overheidsinstanties",
+    "trigger_event": null,
+    "action_span": [
+     "geldt",
+     "niet"
+    ],
+    "action_lemma": null,
+    "object": "De eerste alinea, punt f)",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in het kader van de uitoefening van hun taken"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "6(1).2",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "De verwerking",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "rechtmatig"
+    ],
+    "action_lemma": "zijn",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "de betrokkene heeft toestemming gegeven voor de verwerking van zijn persoonsgegevens voor een of meer specifieke doeleinden",
+     "de verwerking is noodzakelijk voor de uitvoering van een overeenkomst waarbij de betrokkene partij is, of om op verzoek van de betrokkene vóór de sluiting van een overeenkomst maatregelen te nemen",
+     "de verwerking is noodzakelijk om te voldoen aan een wettelijke verplichting die op de verwerkingsverantwoordelijke rust",
+     "de verwerking is noodzakelijk om de vitale belangen van de betrokkene of van een andere natuurlijke persoon te beschermen",
+     "de verwerking is noodzakelijk voor de vervulling van een taak van algemeen belang of van een taak in het kader van de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is opgedragen",
+     "de verwerking is noodzakelijk voor de behartiging van de gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde, behalve wanneer de belangen of de grondrechten en de fundamentele vrijheden van de betrokkene die tot bescherming van persoonsgegevens nopen, zwaarder wegen dan die belangen, met name wanneer de betrokkene een kind is"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "is",
+       "rechtmatig"
+      ],
+      "action_lemma": "zijn",
+      "object": null,
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "a) de betrokkene heeft toestemming gegeven voor de verwerking van zijn persoonsgegevens voor een of meer specifieke doeleinden",
+       "b) de verwerking is noodzakelijk voor de uitvoering van een overeenkomst waarbij de betrokkene partij is, of om op verzoek van de betrokkene vóór de sluiting van een overeenkomst maatregelen te nemen",
+       "c) de verwerking is noodzakelijk om te voldoen aan een wettelijke verplichting die op de verwerkingsverantwoordelijke rust",
+       "d) de verwerking is noodzakelijk om de vitale belangen van de betrokkene of van een andere natuurlijke persoon te beschermen",
+       "e) de verwerking is noodzakelijk voor de vervulling van een taak van algemeen belang of van een taak in het kader van de uitoefening van het openbaar gezag dat aan de verwerkingsverantwoordelijke is opgedragen",
+       "f) de verwerking is noodzakelijk voor de behartiging van de gerechtvaardigde belangen van de verwerkingsverantwoordelijke of van een derde, behalve wanneer de belangen of de grondrechten en de fundamentele vrijheden van de betrokkene die tot bescherming van persoonsgegevens nopen, zwaarder wegen dan die belangen, met name wanneer de betrokkene een kind is"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "6(2).1",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": "De lidstaten",
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "handhaven"
+    ],
+    "action_lemma": "handhaven",
+    "object": "specifiekere bepalingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "6(2).2",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": "De lidstaten",
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "invoeren"
+    ],
+    "action_lemma": "invoeren",
+    "object": "specifiekere bepalingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "6(2).3",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": "zij",
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "geven"
+    ],
+    "action_lemma": "geven",
+    "object": "een nadere omschrijving",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "6(3).1",
     "paragraph_number": "3",
@@ -605,6 +1023,60 @@
     "thresholds": [],
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "7(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "gepresenteerd"
+    ],
+    "action_lemma": "presenteren",
+    "object": "het verzoek om toestemming",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de betrokkene toestemming geeft in het kader van een schriftelijke verklaring die ook op andere aangelegenheden betrekking heeft"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "7(2).2",
+    "paragraph_number": "2",
+    "deontic": "EXEMPTION",
+    "actor": "dit gedeelte",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet bindend"
+    ],
+    "action_lemma": null,
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Wanneer een gedeelte van een dergelijke verklaring een inbreuk vormt op deze verordening"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
     "human_verified": false,
     "alternative_reading": [],
     "deontic_alternative": [],
@@ -1419,6 +1891,120 @@
    "toezichthoudende autoriteit": "Elke lidstaat bepaalt dat één of meer onafhankelijke overheidsinstanties verantwoordelijk zijn voor het toezicht op de toepassing van deze verordening, teneinde de grondrechten en fundamentele vrijheden van natuurlijke personen in verband met de verwerking van hun persoonsgegevens te beschermen en het vrije verkeer van persoonsgegevens binnen de Unie te vergemakkelijken"
   },
   "norms": [
+   {
+    "norm_id": "12(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "De verwerkingsverantwoordelijke",
+    "trigger_event": null,
+    "action_span": [
+     "neemt"
+    ],
+    "action_lemma": "nemen",
+    "object": "passende maatregelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "De verwerkingsverantwoordelijke",
+      "trigger_event": null,
+      "action_span": [
+       "neemt"
+      ],
+      "action_lemma": "nemen",
+      "object": "passende maatregelen",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "wanneer de informatie specifiek voor een kind bestemd is"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "12(1).2",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "verstrekt"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "De informatie",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "wordt",
+       "verstrekt"
+      ],
+      "action_lemma": "verstrekken",
+      "object": "De informatie",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "indien dit passend is"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "12(1).3",
+    "paragraph_number": "1",
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden meegedeeld"
+    ],
+    "action_lemma": "meedelen",
+    "object": "de informatie",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien de betrokkene daarom verzoekt",
+     "op voorwaarde dat de identiteit van de betrokkene met andere middelen bewezen is"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "12(2).1",
     "paragraph_number": "2",
@@ -2264,6 +2850,32 @@
      "in voorkomend geval"
     ],
     "extraction_model": "gpt-5.6-luna",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "13(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "de verwerkingsverantwoordelijke",
+    "trigger_event": "bij de verkrijging van de persoonsgegevens",
+    "action_span": [
+     "verstrekt"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "de volgende aanvullende informatie",
+    "recipient": [
+     "de betrokkene"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
     "human_verified": false,
     "alternative_reading": [],
     "deontic_alternative": [],
@@ -3568,6 +4180,32 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "17(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "hij",
+    "trigger_event": "Wanneer de verwerkingsverantwoordelijke de persoonsgegevens openbaar heeft gemaakt en overeenkomstig lid 1 verplicht is de persoonsgegevens te wissen",
+    "action_span": [
+     "neemt"
+    ],
+    "action_lemma": "nemen",
+    "object": "redelijke maatregelen, waaronder technische maatregelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "rekening houdend met de beschikbare technologie en de uitvoeringskosten"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "17(3).1",
     "paragraph_number": "3",
     "deontic": "EXEMPTION",
@@ -4289,6 +4927,87 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "21(4).1",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "weergegeven"
+    ],
+    "action_lemma": "weergeven",
+    "object": "Het in de leden 1 en 2 bedoelde recht",
+    "recipient": [],
+    "deadline_raw": "uiterlijk op het moment van het eerste contact met de betrokkene",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op het moment van het eerste contact met de betrokkene"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "21(4).2",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "onder de aandacht van de betrokkene gebracht"
+    ],
+    "action_lemma": "onder de aandacht brengen",
+    "object": "Het in de leden 1 en 2 bedoelde recht",
+    "recipient": [
+     "van de betrokkene"
+    ],
+    "deadline_raw": "uiterlijk op het moment van het eerste contact met de betrokkene",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "uiterlijk op het moment van het eerste contact met de betrokkene"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "wordt",
+       "gebracht"
+      ],
+      "action_lemma": "brengen",
+      "object": "Het in de leden 1 en 2 bedoelde recht",
+      "recipient": [
+       "van de betrokkene"
+      ],
+      "deadline_raw": "uiterlijk op het moment van het eerste contact met de betrokkene",
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "21(5).1",
     "paragraph_number": "5",
     "deontic": "PERMISSION",
@@ -4428,6 +5147,76 @@
     "deontic_alternative": [],
     "extraction_uncertain": false,
     "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "22(2).1",
+    "paragraph_number": "2",
+    "deontic": "EXEMPTION",
+    "actor": "het besluit",
+    "trigger_event": null,
+    "action_span": [
+     "geldt niet"
+    ],
+    "action_lemma": null,
+    "object": "Lid 1",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien het besluit:\n\na) noodzakelijk is voor de totstandkoming of de uitvoering van een overeenkomst tussen de betrokkene en een verwerkingsverantwoordelijke",
+     "b) is toegestaan bij een Unierechtelijke of lidstaatrechtelijke bepaling die op de verwerkingsverantwoordelijke van toepassing is en die ook voorziet in passende maatregelen ter bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene",
+     "c) berust op de uitdrukkelijke toestemming van de betrokkene"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "22(3).1",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": "de verwerkingsverantwoordelijke",
+    "trigger_event": "In de in lid 2, punten a) en c), bedoelde gevallen",
+    "action_span": [
+     "treft"
+    ],
+    "action_lemma": "treffen",
+    "object": "passende maatregelen ter bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene, waaronder ten minste het recht op menselijke tussenkomst van de verwerkingsverantwoordelijke, het recht om zijn standpunt kenbaar te maken en het recht om het besluit aan te vechten",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "de verwerkingsverantwoordelijke",
+      "trigger_event": null,
+      "action_span": [
+       "treft"
+      ],
+      "action_lemma": "treffen",
+      "object": "passende maatregelen ter bescherming van de rechten en vrijheden en gerechtvaardigde belangen van de betrokkene",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "In de in lid 2, punten a) en c), bedoelde gevallen"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
     "merged_duplicates": 0
    },
    {
@@ -5034,6 +5823,58 @@
    "de betrokkene": "alle informatie over een geïdentificeerde of identificeerbare natuurlijke persoon"
   },
   "norms": [
+   {
+    "norm_id": "26(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "Zij",
+    "trigger_event": null,
+    "action_span": [
+     "stellen",
+     "vast"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "hun respectieve verantwoordelijkheden voor de nakoming van de verplichtingen uit hoofde van deze verordening",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij en voor zover de respectieve verantwoordelijkheden van de verwerkingsverantwoordelijken zijn vastgesteld bij een Unierechtelijke of lidstaatrechtelijke bepaling die op de verwerkingsverantwoordelijken van toepassing is"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "26(1).2",
+    "paragraph_number": "1",
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "een contactpunt voor betrokkenen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "26(2).1",
     "paragraph_number": "2",
@@ -6520,6 +7361,33 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "33(3).1",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "omschreven",
+     "of",
+     "meegedeeld"
+    ],
+    "action_lemma": "omschrijven of meedelen",
+    "object": "het volgende",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "33(4).1",
     "paragraph_number": "4",
     "deontic": "PERMISSION",
@@ -6742,6 +7610,83 @@
     "deontic_alternative": [],
     "extraction_uncertain": false,
     "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "34(3).1",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "komt"
+    ],
+    "action_lemma": "komen",
+    "object": "een openbare mededeling of een soortgelijke maatregel",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "In dat geval"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "34(3).2",
+    "paragraph_number": "3",
+    "deontic": "EXEMPTION",
+    "actor": "de verwerkingsverantwoordelijke",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet vereist"
+    ],
+    "action_lemma": null,
+    "object": "De in lid 1 bedoelde mededeling aan de betrokkene",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer een van de volgende voorwaarden is vervuld",
+     "de verwerkingsverantwoordelijke heeft passende technische en organisatorische beschermingsmaatregelen genomen en deze maatregelen zijn toegepast op de persoonsgegevens waarop de inbreuk in verband met persoonsgegevens betrekking heeft, met name die welke de persoonsgegevens onbegrijpelijk maken voor onbevoegden, zoals versleuteling",
+     "de verwerkingsverantwoordelijke heeft achteraf maatregelen genomen om ervoor te zorgen dat het in lid 1 bedoelde hoge risico voor de rechten en vrijheden van betrokkenen zich waarschijnlijk niet meer zal voordoen",
+     "de mededeling zou onevenredige inspanningen vergen"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "EXEMPTION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "is",
+       "niet vereist"
+      ],
+      "action_lemma": null,
+      "object": "De in lid 1 bedoelde mededeling aan de betrokkene",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "de verwerkingsverantwoordelijke heeft passende technische en organisatorische beschermingsmaatregelen genomen en deze maatregelen zijn toegepast op de persoonsgegevens waarop de inbreuk in verband met persoonsgegevens betrekking heeft, met name die welke de persoonsgegevens onbegrijpelijk maken voor onbevoegden, zoals versleuteling",
+       "de verwerkingsverantwoordelijke heeft achteraf maatregelen genomen om ervoor te zorgen dat het in lid 1 bedoelde hoge risico voor de rechten en vrijheden van betrokkenen zich waarschijnlijk niet meer zal voordoen",
+       "de mededeling zou onevenredige inspanningen vergen"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
     "merged_duplicates": 0
    },
    {
@@ -7631,6 +8576,216 @@
     "deontic_alternative": [],
     "extraction_uncertain": false,
     "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "36(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "de toezichthoudende autoriteit",
+    "trigger_event": "Bij een dergelijke verlenging",
+    "action_span": [
+     "stelt",
+     "in kennis"
+    ],
+    "action_lemma": "in kennis stellen",
+    "object": "onder meer de redenen voor de vertraging",
+    "recipient": [
+     "de verwerkingsverantwoordelijke en, in voorkomend geval, de verwerker"
+    ],
+    "deadline_raw": "binnen een maand na ontvangst van het verzoek om raadpleging",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "ontvangst van het verzoek om raadpleging",
+     "raw": "binnen een maand na ontvangst van het verzoek om raadpleging"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "de toezichthoudende autoriteit",
+      "trigger_event": "Bij een dergelijke verlenging",
+      "action_span": [
+       "stelt",
+       "in kennis"
+      ],
+      "action_lemma": "in kennis stellen",
+      "object": "onder meer de redenen voor de vertraging",
+      "recipient": [
+       "de verwerkingsverantwoordelijke",
+       "de verwerker"
+      ],
+      "deadline_raw": "binnen een maand na ontvangst van het verzoek om raadpleging",
+      "thresholds": [],
+      "conditions": [
+       "in voorkomend geval"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "36(2).2",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "de toezichthoudende autoriteit",
+    "trigger_event": "Wanneer de toezichthoudende autoriteit van oordeel is dat de in lid 1 bedoelde voorgenomen verwerking inbreuk zou maken op deze verordening",
+    "action_span": [
+     "geeft"
+    ],
+    "action_lemma": "geven",
+    "object": "schriftelijk advies",
+    "recipient": [
+     "de verwerkingsverantwoordelijke en in voorkomend geval aan de verwerker"
+    ],
+    "deadline_raw": "binnen een maximumtermijn van acht weken na de ontvangst van het verzoek om raadpleging",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": "de ontvangst van het verzoek om raadpleging",
+     "raw": "binnen een maximumtermijn van acht weken na de ontvangst van het verzoek om raadpleging"
+    },
+    "thresholds": [],
+    "conditions": [
+     "met name wanneer de verwerkingsverantwoordelijke het risico onvoldoende heeft onderkend of beperkt"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "de toezichthoudende autoriteit",
+      "trigger_event": null,
+      "action_span": [
+       "geeft"
+      ],
+      "action_lemma": "geven",
+      "object": "schriftelijk advies",
+      "recipient": [
+       "aan de verwerkingsverantwoordelijke",
+       "in voorkomend geval aan de verwerker"
+      ],
+      "deadline_raw": "binnen een maximumtermijn van acht weken na de ontvangst van het verzoek om raadpleging",
+      "thresholds": [],
+      "conditions": [
+       "Wanneer de toezichthoudende autoriteit van oordeel is dat de in lid 1 bedoelde voorgenomen verwerking inbreuk zou maken op deze verordening, met name wanneer de verwerkingsverantwoordelijke het risico onvoldoende heeft onderkend of beperkt"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "36(2).3",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden verlengd"
+    ],
+    "action_lemma": "verlengen",
+    "object": "Die termijn",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "naargelang de complexiteit van de voorgenomen verwerking"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "36(2).4",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "worden opgeschort"
+    ],
+    "action_lemma": "opschorten",
+    "object": "Die termijnen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "totdat de toezichthoudende autoriteit informatie heeft verkregen waarom zij met het oog op de raadpleging heeft verzocht"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "36(2).5",
+    "paragraph_number": "2",
+    "deontic": "COMPETENCE",
+    "actor": "de toezichthoudende autoriteit",
+    "trigger_event": "Wanneer de toezichthoudende autoriteit van oordeel is dat de in lid 1 bedoelde voorgenomen verwerking inbreuk zou maken op deze verordening",
+    "action_span": [
+     "mag",
+     "uitoefenen"
+    ],
+    "action_lemma": "uitoefenen",
+    "object": "al haar in artikel 58 bedoelde bevoegdheden",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "met name wanneer de verwerkingsverantwoordelijke het risico onvoldoende heeft onderkend of beperkt"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'trigger_event']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "PERMISSION",
+      "actor": "zij",
+      "trigger_event": null,
+      "action_span": [
+       "mag",
+       "uitoefenen"
+      ],
+      "action_lemma": "uitoefenen",
+      "object": "al haar in artikel 58 bedoelde bevoegdheden",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "Wanneer de toezichthoudende autoriteit van oordeel is dat de in lid 1 bedoelde voorgenomen verwerking inbreuk zou maken op deze verordening, met name wanneer de verwerkingsverantwoordelijke het risico onvoldoende heeft onderkend of beperkt"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [
+     "PERMISSION"
+    ],
     "merged_duplicates": 0
    },
    {
@@ -9647,6 +10802,55 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "40(9).1",
+    "paragraph_number": "9",
+    "deontic": "COMPETENCE",
+    "actor": "De Commissie",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "vaststellen"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "dat de goedgekeurde gedragscode, wijziging of uitbreiding die haar op grond van lid 8 van dit artikel zijn voorgelegd, binnen de Unie algemeen geldig zijn",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "40(9).2",
+    "paragraph_number": "9",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden vastgesteld"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "Die uitvoeringshandelingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "40(10).1",
     "paragraph_number": "10",
     "deontic": "OBLIGATION",
@@ -10412,6 +11616,150 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "42(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "Die verwerkingsverantwoordelijken of verwerkers",
+    "trigger_event": null,
+    "action_span": [
+     "doen"
+    ],
+    "action_lemma": "doen",
+    "object": "bindende en afdwingbare toezeggingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "42(2).2",
+    "paragraph_number": "2",
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "worden ingevoerd"
+    ],
+    "action_lemma": "invoeren",
+    "object": "goedgekeurde certificeringsmechanismen voor gegevensbescherming, gegevensbeschermingszegels of -merktekens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "42(3).1",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "toegankelijk"
+    ],
+    "action_lemma": "toegankelijk zijn",
+    "object": "De certificering",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "via een transparant proces"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "42(3).2",
+    "paragraph_number": "3",
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "vrijwillig"
+    ],
+    "action_lemma": "vrijwillig zijn",
+    "object": "De certificering",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "PERMISSION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "is",
+       "vrijwillig"
+      ],
+      "action_lemma": null,
+      "object": "De certificering",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "42(5).1",
+    "paragraph_number": "5",
+    "deontic": "OBLIGATION",
+    "actor": "door de in artikel 43 bedoelde certificerende organen of door de bevoegde toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "wordt afgegeven"
+    ],
+    "action_lemma": "afgeven",
+    "object": "Een certificaat uit hoofde van dit artikel",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op grond van de criteria die zijn goedgekeurd door die bevoegde toezichthoudende autoriteit op grond van artikel 58, lid 3, of door het Comité overeenkomstig artikel 63"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "42(6).1",
     "paragraph_number": "6",
     "deontic": "OBLIGATION",
@@ -10764,6 +12112,103 @@
       "source": "other_pass"
      }
     ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "43(2).1",
+    "paragraph_number": "2",
+    "deontic": "PERMISSION",
+    "actor": "De in lid 1 bedoelde certificeringsorganen",
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "worden geaccrediteerd"
+    ],
+    "action_lemma": "accrediteren",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien zij: a) ten genoegen van de bevoegde toezichthoudende autoriteit, hun onafhankelijkheid en deskundigheid met betrekking tot het certificeringsonderwerp hebben aangetoond;",
+     "b) er zich toe verbonden hebben aan de in artikel 42, lid 5, bedoelde criteria te voldoen, welke zijn goedgekeurd door de op grond van artikel 55 of 56 bevoegde toezichthoudende autoriteit of, overeenkomstig artikel 63, door het Comité;",
+     "c) procedures hebben vastgesteld voor de uitgifte, periodieke toetsing en intrekking van certificeringsmechanismen voor gegevensbescherming, gegevensbeschermingszegels en -merktekens;",
+     "d) procedures en structuren hebben vastgesteld om klachten te behandelen over inbreuken op de certificering of de wijze waarop daaraan uitvoering is of wordt gegeven door de verwerkingsverantwoordelijke of de verwerker, en om die procedures en structuren voor betrokkenen en het publiek transparant te maken; en",
+     "e) ten genoegen van de bevoegde toezichthoudende autoriteit, aantoont dat hun taken en plichten niet tot een belangenconflict leiden."
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "43(3).1",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": "In het geval van een accreditatie in de zin van lid 1, punt b), van dit artikel",
+    "action_span": [
+     "zijn"
+    ],
+    "action_lemma": "zijn",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['object']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": "In het geval van een accreditatie in de zin van lid 1, punt b), van dit artikel",
+      "action_span": [
+       "zijn"
+      ],
+      "action_lemma": "zijn",
+      "object": "een aanvulling op de eisen van Verordening (EG) nr. 765/2008 en de technische regels die een beschrijving van de methoden en procedures van de certificeringsorganen geven",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "43(3).2",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "vindt plaats"
+    ],
+    "action_lemma": "plaatsvinden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op basis van criteria die zijn goedgekeurd door de op grond van artikel 55 of 56 bevoegde toezichthoudende autoriteit of, overeenkomstig artikel 63, door het Comité"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
     "deontic_alternative": [],
     "merged_duplicates": 0
    },
@@ -11426,6 +12871,162 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "45(3).1",
+    "paragraph_number": "3",
+    "deontic": "COMPETENCE",
+    "actor": "De Commissie",
+    "trigger_event": "na de beoordeling van de vraag of het beschermingsniveau adequaat is",
+    "action_span": [
+     "kan",
+     "besluiten"
+    ],
+    "action_lemma": "besluiten",
+    "object": "dat een derde land, een gebied of één of meerdere nader bepaalde sectoren in een derde land, of een internationale organisatie een passend beschermingsniveau in de zin van lid 2 van dit artikel waarborgt",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "45(3).2",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": "De uitvoeringshandeling",
+    "trigger_event": null,
+    "action_span": [
+     "voorziet"
+    ],
+    "action_lemma": "voorzien in",
+    "object": "een mechanisme voor periodieke toetsing",
+    "recipient": [],
+    "deadline_raw": "minstens om de vier jaar",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "minstens om de vier jaar"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "De uitvoeringshandeling",
+      "trigger_event": null,
+      "action_span": [
+       "voorziet"
+      ],
+      "action_lemma": "voorzien",
+      "object": "in een mechanisme voor periodieke toetsing",
+      "recipient": [],
+      "deadline_raw": "minstens om de vier jaar",
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "45(3).3",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "vermeld"
+    ],
+    "action_lemma": "vermelden",
+    "object": "het territoriale en het sectorale toepassingsgebied",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in voorkomend geval"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "worden",
+       "vermeld"
+      ],
+      "action_lemma": "vermelden",
+      "object": "het territoriale en het sectorale toepassingsgebied",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "45(3).4",
+    "paragraph_number": "3",
+    "deontic": "OBLIGATION",
+    "actor": "De uitvoeringshandeling",
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "vastgesteld"
+    ],
+    "action_lemma": "vaststellen",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "wordt",
+       "vastgesteld"
+      ],
+      "action_lemma": "vaststellen",
+      "object": null,
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "45(4).1",
     "paragraph_number": "4",
     "deontic": "OBLIGATION",
@@ -11614,6 +13215,31 @@
      "om de situatie naar aanleiding waarvan het besluit overeenkomstig lid 5 is vastgesteld, te verhelpen"
     ],
     "extraction_model": "gpt-5.6-luna",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "45(8).1",
+    "paragraph_number": "8",
+    "deontic": "OBLIGATION",
+    "actor": "De Commissie",
+    "trigger_event": null,
+    "action_span": [
+     "maakt",
+     "bekend"
+    ],
+    "action_lemma": "bekendmaken",
+    "object": "een lijst",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
     "human_verified": false,
     "alternative_reading": [],
     "deontic_alternative": [],
@@ -14304,6 +15930,82 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "56(4).1",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "De leidende toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "houdt",
+     "rekening",
+     "met"
+    ],
+    "action_lemma": "rekening houden met",
+    "object": "dat ontwerp",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer zij het in artikel 60, lid 3, bedoelde ontwerpbesluit opstelt"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "56(4).2",
+    "paragraph_number": "4",
+    "deontic": "COMPETENCE",
+    "actor": "De toezichthoudende autoriteit die de leidende toezichthoudende autoriteit in kennis heeft gesteld",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "indienen"
+    ],
+    "action_lemma": "indienen",
+    "object": "een ontwerpbesluit",
+    "recipient": [
+     "bij deze laatste"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "PERMISSION",
+      "actor": "De toezichthoudende autoriteit die de leidende toezichthoudende autoriteit in kennis heeft gesteld",
+      "trigger_event": null,
+      "action_span": [
+       "kan",
+       "indienen"
+      ],
+      "action_lemma": "indienen",
+      "object": "een ontwerpbesluit",
+      "recipient": [
+       "bij deze laatste"
+      ],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [
+     "PERMISSION"
+    ],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "56(5).1",
     "paragraph_number": "5",
     "deontic": "OBLIGATION",
@@ -15257,6 +16959,32 @@
     "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
     "alternative_reading": [],
     "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "57(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "Elke toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "faciliteert"
+    ],
+    "action_lemma": "faciliteren",
+    "object": "de indiening van klachten als bedoeld in lid 1, onder f)",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "zonder dat andere communicatiemiddelen worden uitgesloten"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
     "merged_duplicates": 0
    },
    {
@@ -16457,6 +18185,130 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "58(5).1",
+    "paragraph_number": "5",
+    "deontic": "COMPETENCE",
+    "actor": "zijn toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "bevoegd is",
+     "ter kennis te brengen"
+    ],
+    "action_lemma": "ter kennis brengen",
+    "object": "inbreuken op deze verordening",
+    "recipient": [
+     "van de gerechtelijke autoriteiten"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "58(5).2",
+    "paragraph_number": "5",
+    "deontic": "COMPETENCE",
+    "actor": "zijn toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "bevoegd is",
+     "in te stellen"
+    ],
+    "action_lemma": "instellen",
+    "object": "een rechtsvordering",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "58(5).3",
+    "paragraph_number": "5",
+    "deontic": "OBLIGATION",
+    "actor": "Elke lidstaat",
+    "trigger_event": null,
+    "action_span": [
+     "bepaalt"
+    ],
+    "action_lemma": "bepalen",
+    "object": "dat zijn toezichthoudende autoriteit bevoegd is inbreuken op deze verordening ter kennis te brengen van de gerechtelijke autoriteiten en, waar passend, daartegen een rechtsvordering in te stellen of anderszins in rechte op te treden",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "58(5).4",
+    "paragraph_number": "5",
+    "deontic": "COMPETENCE",
+    "actor": "zijn toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "bevoegd is",
+     "in rechte op te treden"
+    ],
+    "action_lemma": "in rechte optreden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "COMPETENCE",
+      "actor": "zijn toezichthoudende autoriteit",
+      "trigger_event": null,
+      "action_span": [
+       "bevoegd is",
+       "op te treden"
+      ],
+      "action_lemma": "optreden",
+      "object": null,
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "waar passend"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "58(6).1",
     "paragraph_number": "6",
     "deontic": "COMPETENCE",
@@ -17074,6 +18926,80 @@
     "extraction_uncertain": true,
     "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding.",
     "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "60(6).1",
+    "paragraph_number": "6",
+    "deontic": "OBLIGATION",
+    "actor": "de leidende toezichthoudende autoriteit en de betrokken toezichthoudende autoriteiten",
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "geacht",
+     "in te stemmen"
+    ],
+    "action_lemma": "instemmen",
+    "object": "dat ontwerpbesluit",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien geen enkele andere betrokken toezichthoudende autoriteit binnen de in de leden 4 en 5 bedoelde termijn bezwaar heeft gemaakt tegen het door de leidende toezichthoudende autoriteit voorgelegde ontwerpbesluit"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "60(6).2",
+    "paragraph_number": "6",
+    "deontic": "OBLIGATION",
+    "actor": "zij",
+    "trigger_event": null,
+    "action_span": [
+     "zijn",
+     "gebonden"
+    ],
+    "action_lemma": "gebonden zijn",
+    "object": "daaraan",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien geen enkele andere betrokken toezichthoudende autoriteit binnen de in de leden 4 en 5 bedoelde termijn bezwaar heeft gemaakt tegen het door de leidende toezichthoudende autoriteit voorgelegde ontwerpbesluit"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "de leidende toezichthoudende autoriteit en de betrokken toezichthoudende autoriteiten",
+      "trigger_event": null,
+      "action_span": [
+       "zijn",
+       "daaraan gebonden"
+      ],
+      "action_lemma": "gebonden zijn",
+      "object": "daaraan",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "Indien geen enkele andere betrokken toezichthoudende autoriteit binnen de in de leden 4 en 5 bedoelde termijn bezwaar heeft gemaakt tegen het door de leidende toezichthoudende autoriteit voorgelegde ontwerpbesluit"
+      ],
+      "source": "other_pass"
+     }
+    ],
     "deontic_alternative": [],
     "merged_duplicates": 0
    },
@@ -18378,6 +20304,55 @@
     ],
     "deontic_alternative": [],
     "merged_duplicates": 0
+   },
+   {
+    "norm_id": "61(9).1",
+    "paragraph_number": "9",
+    "deontic": "DELEGATION",
+    "actor": "De Commissie",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "vastleggen"
+    ],
+    "action_lemma": "vastleggen",
+    "object": "het model en de procedures voor de in dit artikel bedoelde wederzijdse bijstand",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "61(9).2",
+    "paragraph_number": "9",
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden vastgesteld"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "Die uitvoeringshandelingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
    }
   ]
  },
@@ -18464,6 +20439,33 @@
    "derde": "een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan, niet zijnde de betrokkene, noch de verwerkingsverantwoordelijke, noch de verwerker, noch de personen die onder rechtstreeks gezag van de verwerkingsverantwoordelijke of de verwerker gemachtigd zijn om de persoonsgegevens te verwerken"
   },
   "norms": [
+   {
+    "norm_id": "62(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "de toezichthoudende autoriteiten",
+    "trigger_event": null,
+    "action_span": [
+     "voeren",
+     "uit"
+    ],
+    "action_lemma": "uitvoeren",
+    "object": "gezamenlijke werkzaamheden",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "In voorkomend geval"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "62(2).1",
     "paragraph_number": "2",
@@ -19065,6 +21067,60 @@
    "betrokken toezichthoudende autoriteit": "een toezichthoudende autoriteit die betrokken is bij de verwerking van persoonsgegevens omdat: a) de verwerkingsverantwoordelijke of de verwerker op het grondgebied van de lidstaat van die toezichthoudende autoriteit is gevestigd; b) de betrokkenen die in de lidstaat van die toezichthoudende autoriteit verblijven, door de verwerking wezenlijke gevolgen ondervinden of waarschijnlijk zullen ondervinden; of c) bij die toezichthoudende autoriteit een klacht is ingediend"
   },
   "norms": [
+   {
+    "norm_id": "64(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "Het Comité",
+    "trigger_event": "wanneer een bevoegde toezichthoudende autoriteit voornemens is een van onderstaande maatregelen vast te stellen",
+    "action_span": [
+     "brengt",
+     "uit"
+    ],
+    "action_lemma": "uitbrengen",
+    "object": "een advies",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "64(1).2",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "de bevoegde toezichthoudende autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "deelt",
+     "mee"
+    ],
+    "action_lemma": "meedelen",
+    "object": "het ontwerpbesluit",
+    "recipient": [
+     "het Comité"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien het:\n\na) de vaststelling beoogt van een lijst van verwerkingen waarvoor de eis inzake een gegevensbeschermingseffectbeoordeling overeenkomstig artikel 35, lid 4, geldt;\n\nb) betrekking heeft op de vraag, overeenkomstig artikel 40, lid 7, of een gedragscode of de wijziging of uitbreiding van een gedragscode met deze verordening in overeenstemming is;\n\nc) beoogt de criteria voor accreditatie van een orgaan overeenkomstig artikel 41, lid 3, of een certificeringsorgaan overeenkomstig artikel 43, lid 3, goed te keuren;\n\nd) de vaststelling beoogt van de in artikel 46, lid 2, onder d), en in artikel 28, lid 8, bedoelde standaardbepalingen inzake gegevensbescherming;\n\ne) de toestemming beoogt voor de in artikel 46, lid 3, onder a), bedoelde contractbepalingen; of\n\nf) de goedkeuring beoogt van bindende bedrijfsvoorschriften in de zin van artikel 47."
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "64(2).1",
     "paragraph_number": "2",
@@ -19719,6 +21775,107 @@
    "de betrokkene": "alle informatie over een geïdentificeerde of identificeerbare natuurlijke persoon"
   },
   "norms": [
+   {
+    "norm_id": "65(1).1",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "het Comité",
+    "trigger_event": null,
+    "action_span": [
+     "stelt",
+     "vast"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "een bindend besluit",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer in een geval als bedoeld in artikel 60, lid 4, een betrokken toezichthoudende autoriteit een relevant en gemotiveerd bezwaar heeft ingediend tegen een ontwerpbesluit van de leidende toezichthoudende autoriteit of de leidende toezichthoudende autoriteit dit bezwaar heeft afgewezen als zijnde irrelevant of ongemotiveerd",
+     "wanneer er verschillend wordt geoordeeld over de vraag welke betrokken toezichthoudende autoriteit bevoegd is voor de hoofdvestiging",
+     "wanneer een bevoegde toezichthoudende autoriteit in de in artikel 64, lid 1, genoemde gevallen het Comité niet om advies vraagt, of het krachtens artikel 64 uitgebrachte advies van het Comité niet volgt"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "65(1).2",
+    "paragraph_number": "1",
+    "deontic": "PERMISSION",
+    "actor": "elke betrokken toezichthoudende autoriteit of de Commissie",
+    "trigger_event": "In dat geval",
+    "action_span": [
+     "kan",
+     "meedelen"
+    ],
+    "action_lemma": "meedelen",
+    "object": "de aangelegenheid",
+    "recipient": [
+     "aan het Comité"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "PERMISSION",
+      "actor": "elke betrokken toezichthoudende autoriteit of de Commissie",
+      "trigger_event": null,
+      "action_span": [
+       "kan",
+       "meedelen"
+      ],
+      "action_lemma": "meedelen",
+      "object": "de aangelegenheid",
+      "recipient": [
+       "aan het Comité"
+      ],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "In dat geval"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "65(1).3",
+    "paragraph_number": "1",
+    "deontic": "OBLIGATION",
+    "actor": "Het bindend besluit",
+    "trigger_event": null,
+    "action_span": [
+     "heeft betrekking"
+    ],
+    "action_lemma": "betrekking hebben op",
+    "object": "alle aangelegenheden die onderwerp van het relevante en gemotiveerde bezwaar zijn, en met name op de vraag of inbreuk op de onderhavige verordening wordt gemaakt",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
    {
     "norm_id": "65(2).1",
     "paragraph_number": "2",
@@ -21621,6 +23778,108 @@
     "extraction_uncertain": false,
     "uncertainty_note": null,
     "merged_duplicates": 0
+   },
+   {
+    "norm_id": "70(4).1",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "Het Comité",
+    "trigger_event": null,
+    "action_span": [
+     "raadpleegt"
+    ],
+    "action_lemma": "raadplegen",
+    "object": "de belanghebbende partijen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "70(4).2",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "Het Comité",
+    "trigger_event": null,
+    "action_span": [
+     "biedt"
+    ],
+    "action_lemma": "bieden",
+    "object": "de gelegenheid om binnen een redelijk tijdsbestek commentaar te leveren",
+    "recipient": [
+     "hun"
+    ],
+    "deadline_raw": "binnen een redelijk tijdsbestek",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "binnen een redelijk tijdsbestek"
+    },
+    "thresholds": [],
+    "conditions": [
+     "waar passend"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "Het Comité",
+      "trigger_event": null,
+      "action_span": [
+       "biedt"
+      ],
+      "action_lemma": "bieden",
+      "object": "de gelegenheid",
+      "recipient": [
+       "hun"
+      ],
+      "deadline_raw": "binnen een redelijk tijdsbestek",
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "70(4).3",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "Het Comité",
+    "trigger_event": null,
+    "action_span": [
+     "maakt",
+     "openbaar"
+    ],
+    "action_lemma": "openbaar maken",
+    "object": "de resultaten van de raadpleging",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
    }
   ]
  },
@@ -21723,6 +23982,30 @@
     "thresholds": [],
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "71(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "Het jaarverslag",
+    "trigger_event": null,
+    "action_span": [
+     "omvat"
+    ],
+    "action_lemma": "omvatten",
+    "object": "een evaluatie van de praktische toepassing van de richtsnoeren, aanbevelingen en beste praktijken bedoeld in artikel 70, lid 1, punt l), en van de bindende besluiten bedoeld in artikel 65",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
     "human_verified": false,
     "alternative_reading": [],
     "deontic_alternative": [],
@@ -22218,6 +24501,60 @@
     "merged_duplicates": 0
    },
    {
+    "norm_id": "75(4).1",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "het Comité en de Europese Toezichthouder voor gegevensbescherming",
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "opgesteld"
+    ],
+    "action_lemma": "opstellen",
+    "object": "een memorandum van overeenstemming",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Waar passend"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "75(4).2",
+    "paragraph_number": "4",
+    "deontic": "OBLIGATION",
+    "actor": "het Comité en de Europese Toezichthouder voor gegevensbescherming",
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "bekendgemaakt"
+    ],
+    "action_lemma": "bekendmaken",
+    "object": "een memorandum van overeenstemming",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Waar passend"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
     "norm_id": "75(5).1",
     "paragraph_number": "5",
     "deontic": "OBLIGATION",
@@ -22547,6 +24884,50 @@
     "deontic_alternative": [],
     "extraction_uncertain": false,
     "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "77(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "De toezichthoudende autoriteit waarbij de klacht is ingediend",
+    "trigger_event": null,
+    "action_span": [
+     "stelt",
+     "in kennis"
+    ],
+    "action_lemma": "in kennis stellen",
+    "object": "de klager",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "De toezichthoudende autoriteit waarbij de klacht is ingediend",
+      "trigger_event": null,
+      "action_span": [
+       "stelt",
+       "in kennis"
+      ],
+      "action_lemma": "in kennis stellen",
+      "object": "de voortgang en het resultaat van de klacht, alsmede van de mogelijke voorziening in rechte overeenkomstig artikel 78",
+      "recipient": [
+       "de klager"
+      ],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
     "merged_duplicates": 0
    }
   ]
@@ -25048,6 +27429,52 @@
     "extraction_uncertain": false,
     "uncertainty_note": null,
     "merged_duplicates": 0
+   },
+   {
+    "norm_id": "89(4).1",
+    "paragraph_number": "4",
+    "deontic": "PROHIBITION",
+    "actor": "de afwijkingen",
+    "trigger_event": "Wanneer verwerking als bedoeld in de leden 2 en 3 tegelijkertijd ook een ander doel dient",
+    "action_span": [
+     "zijn",
+     "van toepassing"
+    ],
+    "action_lemma": "van toepassing zijn",
+    "object": "verwerking voor de in die leden bedoelde doeleinden",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor', 'trigger_event', 'recipient', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "PROHIBITION",
+      "actor": null,
+      "trigger_event": null,
+      "action_span": [
+       "zijn",
+       "van toepassing"
+      ],
+      "action_lemma": "van toepassing zijn",
+      "object": "de afwijkingen",
+      "recipient": [
+       "op verwerking voor de in die leden bedoelde doeleinden"
+      ],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "Wanneer verwerking als bedoeld in de leden 2 en 3 tegelijkertijd ook een ander doel dient"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
    }
   ]
  },
@@ -25237,6 +27664,77 @@
     "deontic_alternative": [],
     "extraction_uncertain": false,
     "uncertainty_note": null,
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "91(2).1",
+    "paragraph_number": "2",
+    "deontic": "OBLIGATION",
+    "actor": "Kerken en religieuze verenigingen",
+    "trigger_event": null,
+    "action_span": [
+     "zijn onderworpen"
+    ],
+    "action_lemma": "onderwerpen",
+    "object": "aan toezicht",
+    "recipient": [
+     "door een onafhankelijke toezichthoudende autoriteit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "OBLIGATION",
+      "actor": "Kerken en religieuze verenigingen die overeenkomstig lid 1 van dit artikel uitgebreide regels hanteren",
+      "trigger_event": null,
+      "action_span": [
+       "zijn onderworpen"
+      ],
+      "action_lemma": "onderwerpen",
+      "object": "aan toezicht",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "op voorwaarde dat de autoriteit voldoet aan de voorwaarden die zijn vastgesteld in hoofdstuk VI van deze verordening"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [],
+    "merged_duplicates": 0
+   },
+   {
+    "norm_id": "91(2).2",
+    "paragraph_number": "2",
+    "deontic": "PERMISSION",
+    "actor": "die",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "zijn"
+    ],
+    "action_lemma": "zijn",
+    "object": "specifiek",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "op voorwaarde dat de autoriteit voldoet aan de voorwaarden die zijn vastgesteld in hoofdstuk VI van deze verordening"
+    ],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding.",
+    "alternative_reading": [],
+    "deontic_alternative": [],
     "merged_duplicates": 0
    }
   ]
@@ -25645,7 +28143,59 @@
   "relevant_definitions": {
    "verwerking": "een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens of een geheel van persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens"
   },
-  "norms": []
+  "norms": [
+   {
+    "norm_id": "95.1",
+    "paragraph_number": null,
+    "deontic": "PROHIBITION",
+    "actor": "Deze verordening",
+    "trigger_event": null,
+    "action_span": [
+     "legt",
+     "op"
+    ],
+    "action_lemma": "opleggen",
+    "object": "geen aanvullende verplichtingen",
+    "recipient": [
+     "natuurlijke personen of rechtspersonen"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "voor zover zij op grond van Richtlijn 2002/58/EG onderworpen zijn aan specifieke verplichtingen met dezelfde doelstelling"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": [
+     {
+      "deontic": "EXEMPTION",
+      "actor": "natuurlijke personen of rechtspersonen",
+      "trigger_event": null,
+      "action_span": [
+       "legt",
+       "geen",
+       "op"
+      ],
+      "action_lemma": "opleggen",
+      "object": "aanvullende verplichtingen",
+      "recipient": [],
+      "deadline_raw": null,
+      "thresholds": [],
+      "conditions": [
+       "voor zover zij op grond van Richtlijn 2002/58/EG onderworpen zijn aan specifieke verplichtingen met dezelfde doelstelling"
+      ],
+      "source": "other_pass"
+     }
+    ],
+    "deontic_alternative": [
+     "EXEMPTION"
+    ],
+    "merged_duplicates": 0
+   }
+  ]
  },
  {
   "uid": "eu:32016R0679:art96@stage2_GDPR",
@@ -25665,7 +28215,37 @@
    "derde": "een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan, niet zijnde de betrokkene, noch de verwerkingsverantwoordelijke, noch de verwerker, noch de personen die onder rechtstreeks gezag van de verwerkingsverantwoordelijke of de verwerker gemachtigd zijn om de persoonsgegevens te verwerken",
    "internationale organisatie": "een organisatie en de daaronder vallende internationaalpubliekrechtelijke organen of andere organen die zijn opgericht bij of op grond van een overeenkomst tussen twee of meer landen."
   },
-  "norms": []
+  "norms": [
+   {
+    "norm_id": "96.1",
+    "paragraph_number": null,
+    "deontic": "OBLIGATION",
+    "actor": "Internationale overeenkomsten betreffende de doorgifte van persoonsgegevens aan derde landen of internationale organisaties die door de lidstaten zijn gesloten vóór 24 mei 2016, en die in overeenstemming zijn met het vóór die datum toepasselijke Unierecht",
+    "trigger_event": null,
+    "action_span": [
+     "blijven van kracht"
+    ],
+    "action_lemma": "van kracht blijven",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": "totdat zij worden gewijzigd, vervangen of ingetrokken",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "totdat zij worden gewijzigd, vervangen of ingetrokken"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false,
+    "alternative_reading": [],
+    "deontic_alternative": [],
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "merged_duplicates": 0
+   }
+  ]
  },
  {
   "uid": "eu:32016R0679:art97@stage2_GDPR",

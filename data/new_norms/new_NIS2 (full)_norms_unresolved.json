@@ -1,0 +1,26 @@
+[
+ {
+  "schema_version": 2,
+  "instrument_id": "32022L2555",
+  "article": "3",
+  "paragraph_number": "3",
+  "paragraph_index": 2,
+  "unit_text": "Uiterlijk op 17 april 2025 stellen de lidstaten een lijst op van essentiële en belangrijke entiteiten en entiteiten die domeinnaamregistratiediensten verlenen. De lidstaten evalueren die lijst regelmatig, en daarna ten minste om de twee jaar, en werken deze zo nodig bij.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "32022L2555",
+  "article": "32",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Indien de op grond van lid 4, punten a) tot en met d) en punt f), genomen handhavingsmaatregelen ondoeltreffend zijn, zorgen de lidstaten ervoor dat hun bevoegde autoriteiten de bevoegdheid hebben om een termijn vast te stellen waarbinnen de essentiële entiteit wordt verzocht de noodzakelijke maatregelen te nemen om de tekortkomingen te verhelpen of aan de eisen van die autoriteiten te voldoen. Indien de gevraagde actie niet binnen de gestelde termijn wordt ondernomen, zorgen de lidstaten ervoor dat de bevoegde autoriteiten de bevoegdheid hebben om:\n\na) een certificering of vergunning tijdelijk op te schorten of een certificerings- of vergunningsinstantie of een rechterlijke instantie overeenkomstig het nationale recht te verzoeken deze tijdelijk op te schorten met betrekking tot alle of een deel van de relevante door de essentiële entiteit verleende diensten of verrichte activiteiten;\n\nb) verzoeken dat de bevoegde organen of rechterlijke instanties overeenkomstig het nationale recht een natuurlijke persoon met leidinggevende verantwoordelijkheden op het niveau van de algemeen directeur of de wettelijke vertegenwoordiger in de essentiële entiteit tijdelijk verbieden leidinggevende functies in die entiteit uit te oefenen.\n\nOp grond van dit lid opgelegde tijdelijke opschortingen of verboden worden slechts toegepast totdat de betrokken entiteit de noodzakelijke maatregelen neemt om de tekortkomingen te verhelpen of voldoet aan de vereisten van de bevoegde autoriteit waarvoor dergelijke handhavingsmaatregelen zijn opgelegd. Het opleggen van dergelijke tijdelijke opschortingen of verboden moet worden onderworpen aan passende procedurele waarborgen overeenkomstig de algemene beginselen van het Unierecht en het Handvest, waaronder het recht op een doeltreffende voorziening in rechte en op een onpartijdig gerecht, het vermoeden van onschuld en de rechten van de verdediging.\n\nDe in dit lid bedoelde handhavingsmaatregelen zijn niet van toepassing op onder deze richtlijn vallende overheidsinstanties.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "drop_reason": "no_grounded_pass"
+ }
+]

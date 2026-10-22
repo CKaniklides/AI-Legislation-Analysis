@@ -73,6 +73,13 @@ def _all_provisions(root):
     if isinstance(root, dict):
         if "norms" in root:
             return [root]
+        if "bijlage_35" in root:
+            # The Bijlage 35 dataset shape, also kept by extract_norms.py and merge_norms.py
+            # outputs (data/new_norms/...). Without this, --file read 0 norms from it (fixed
+            # 22 Oct 2026). Its provisions carry no instrument_id; copies get it, the file is
+            # not changed.
+            return [{**p, "instrument_id": p.get("instrument_id") or "BWBR0049497"}
+                    for p in _bijlage35_provisions(root)]
         return []
     if isinstance(root, list):
         return root

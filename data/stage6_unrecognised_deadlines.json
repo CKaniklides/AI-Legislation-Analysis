@@ -1,0 +1,686 @@
+[
+ {
+  "phrase": "Binnen 60 kalenderdagen na ontvangst van de aanbevelingen die de lead overseer overeenkomstig artikel 35, lid 1, punt d), heeft gedaan",
+  "kind": "partial",
+  "parsed_as": {
+   "value": 60,
+   "unit": "day"
+  },
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Tot 17 april 2025",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 1 februari 2024, en vervolgens om de twee jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 april 2025 en vervolgens om de twee jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 januari 2025",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 januari 2026",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 juli 2023",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 juli 2024 en vervolgens om de 18 maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 oktober 2024",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Uiterlijk op 17 oktober 2027 en vervolgens om de 36 maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Vanaf 17 januari 2028",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Voorafgaand aan de vaststelling van het oversightplan",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "Voorafgaand aan de vaststelling van het oversightplan door de lead overseer",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen de in lid 2 van dit artikel bedoelde termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen de overeenkomstig artikel 20, eerste alinea, punt a), ii), vast te stellen termijnen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen de termijn voor het uitbrengen van het advies",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een door haar te bepalen termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een maand na ontvangst van het verzoek om raadpleging",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een maximumtermijn van acht weken na de ontvangst van het verzoek om raadpleging",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een redelijk tijdsbestek",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een redelijke termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een termijn van drie maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen een termijn van twee maanden na de kennisgeving van de handeling aan het Europees Parlement en de Raad",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "binnen één maand nadat zij het incident hebben afgehandeld",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "dan noodzakelijk is ter uitvoering van haar taken op grond van deze wet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "een redelijke termijn",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende de hele ontwerp- en uitvoeringsfase van de test",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende de periode die nodig is voor de inwerkingtreding van dit artikel",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende de twee jaar die volgen op de afsluiting van de collegiale toetsing",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende een bepaalde periode",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende een beperkte periode",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende een periode van tien jaar nadat het AI-model voor algemene doeleinden in de handel is gebracht",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende een periode van vijf jaar vanaf de einddatum van de onderaanneming",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gedurende een termijn van ten hoogste zes maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "gelijktijdig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "geruime tijd vóór de start ervan",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "geruime tijd vóór de start van het onderzoek",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "in bijna-realtime",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "in bijna-realtime indien mogelijk",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "in een later stadium",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "in elk geval",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "indien nodig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "jaarlijks",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "jaarlijkse",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "met drie maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "met onmiddellijke ingang",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "met termijnen van dezelfde duur",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "met twee maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "minstens om de vier jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "na het verstrijken van een termijn van ten minste 30 kalenderdagen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "na overlegging van een schriftelijke machtiging",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "nadat vier weken na de overlegging zijn verstreken",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "negen maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "niet langer dan vijf jaar vanaf de bekendmaking ervan",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "niet langer te identificeren dan voor de doeleinden waarvoor de persoonsgegevens worden verwerkt noodzakelijk is",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "niet later dan één maand na de kennisgeving",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "om de drie maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "om de drie tests",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "om de vijf jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "om de zes maanden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "op dat moment",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "op de dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie of op een daarin genoemde latere datum",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "op de geplande datum",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "op gezette tijden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "pas na zes maanden na dat besluit",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "periodiek",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "periodiek en telkens wanneer zich een belangrijke wijziging als bedoeld in lid 3 voordoet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "permanent",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "regelmatig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "snel",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "te allen tijde",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "telkens wanneer een relevante actualisering van de status beschikbaar is",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten minste",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten minste eenmaal per jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten minste jaarlijks",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten minste om de drie jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten minste om de vijf jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "ten vroegste zes maanden na het aanwijzingsbesluit",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "tijdelijk",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "tijdens de periode dat zij worden gebruikt",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "tijdens de procedure",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "tijdig",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "totdat alle redenen voor niet-bekendmaking zijn vervallen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "totdat dergelijke risicobeperkende maatregelen zijn getroffen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "totdat er een geharmoniseerde norm is gepubliceerd",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "totdat zij worden gewijzigd, vervangen of ingetrokken",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "tweejaarlijks",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk negen maanden voor het einde van de termijn van vijf jaar",
+  "kind": "partial",
+  "parsed_as": {
+   "value": 9,
+   "unit": "month"
+  },
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk op 17 januari 2024",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk op 17 juli 2024",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk op 31 december 2030",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk op het moment van het eerste contact met de betrokkene",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "uiterlijk één maand na de indiening van het in punt b) bedoelde incidentmelding",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor een beperkte duur",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor een periode van maximaal 15 jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor een termijn van vijf jaar",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor een termijn van vijf jaar met ingang van 1 augustus 2024",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor een termijn van vijf jaar met ingang van 17 januari 2024",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voor langere perioden",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "vooraf",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "vooraleer hij de in lid 1 bedoelde bevoegdheden uitoefent",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voordat het AI-systeem met een hoog risico in de handel wordt gebracht of in gebruik wordt gesteld",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voordat met de collegiale toetsing wordt begonnen",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voordat nieuwe of bestaande toepassingen en infrastructuurcomponenten, en ICT-diensten ter ondersteuning van kritieke of belangrijke functies van de financiële entiteit worden ingezet of opnieuw worden ingezet",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "voortdurend",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zo snel mogelijk",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zodra de terugtrekking van kracht wordt",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zodra deze beëindiging van kracht wordt",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zolang en voor zover dit nodig is voor de inspectie",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zonder onnodige vertraging",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ },
+ {
+  "phrase": "zoveel mogelijk",
+  "kind": "unrecognised",
+  "parsed_as": null,
+  "first_seen": "2026-10-22"
+ }
+]

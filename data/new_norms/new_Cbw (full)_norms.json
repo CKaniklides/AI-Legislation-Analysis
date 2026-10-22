@@ -811,7 +811,47 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "EXEMPTION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "artikel 3, vierde lid, van de bijlage bij Aanbeveling 2003/361/EG",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "EXEMPTION",
+     "actor": "het bepaalde in het eerste lid, onderdelen d tot en met f",
+     "trigger_event": null,
+     "action_span": [
+      "is",
+      "niet van toepassing"
+     ],
+     "action_lemma": null,
+     "object": "artikel 3, vierde lid, van de bijlage bij Aanbeveling 2003/361/EG",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   }
+  ],
   "features": {
    "n_words": 225,
    "xref_intra_instrument": 0,
@@ -1661,6 +1701,45 @@
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister van Onderwijs, Cultuur en Wetenschap",
+    "trigger_event": null,
+    "action_span": [
+     "is"
+    ],
+    "action_lemma": null,
+    "object": "de bevoegde autoriteit",
+    "recipient": [
+     "voor de instellingen voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek, die op grond van artikel 11 zijn aangewezen als essentiële entiteit of op grond van artikel 13 zijn aangewezen als belangrijke entiteit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "COMPETENCE",
+     "actor": "Onze Minister van Onderwijs, Cultuur en Wetenschap",
+     "trigger_event": null,
+     "action_span": [
+      "is"
+     ],
+     "action_lemma": null,
+     "object": "de instellingen voor hoger onderwijs als bedoeld in artikel 1.1, onder g, van de Wet op het hoger onderwijs en wetenschappelijk onderzoek, die op grond van artikel 11 zijn aangewezen als essentiële entiteit of op grond van artikel 13 zijn aangewezen als belangrijke entiteit",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
    }
   ],
   "features": {
@@ -1951,6 +2030,463 @@
       "Met het oog op de samenwerking, bedoeld in het vijfde lid"
      ]
     }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": "op verzoek",
+    "action_span": [
+     "verlenen"
+    ],
+    "action_lemma": "verlenen",
+    "object": "bijstand",
+    "recipient": [
+     "aan de betrokken essentiële entiteit of belangrijke entiteit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": "op verzoek van een essentiële entiteit of belangrijke entiteit",
+    "action_span": [
+     "scannen"
+    ],
+    "action_lemma": "scannen",
+    "object": "het netwerk- en informatiesysteem van de betrokken entiteit",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 2,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": "op verzoek van een lid van dat netwerk",
+    "action_span": [
+     "verlenen"
+    ],
+    "action_lemma": "verlenen",
+    "object": "wederzijdse bijstand",
+    "recipient": [
+     "aan andere leden van het CSIRT-netwerk"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in overeenstemming met zijn capaciteiten en bevoegdheden"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 3,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verstrekken"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "vroegtijdige waarschuwingen, meldingen en aankondigingen",
+    "recipient": [
+     "aan de betrokken essentiële entiteit of belangrijke entiteit",
+     "de bevoegde autoriteiten",
+     "Onze Minister van Economische Zaken",
+     "andere relevante partijen"
+    ],
+    "deadline_raw": "in bijna-realtime",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "in bijna-realtime"
+    },
+    "thresholds": [],
+    "conditions": [
+     "indien mogelijk"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 4,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verspreiden"
+    ],
+    "action_lemma": "verspreiden",
+    "object": "informatie",
+    "recipient": [
+     "aan de betrokken essentiële entiteit of belangrijke entiteit",
+     "de bevoegde autoriteiten",
+     "Onze Minister van Economische Zaken",
+     "andere relevante partijen"
+    ],
+    "deadline_raw": "in bijna-realtime",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "in bijna-realtime"
+    },
+    "thresholds": [],
+    "conditions": [
+     "indien mogelijk"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 5,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "reageren"
+    ],
+    "action_lemma": "reageren",
+    "object": "incidenten",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 6,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verlenen"
+    ],
+    "action_lemma": "verlenen",
+    "object": "bijstand",
+    "recipient": [
+     "aan de betrokken essentiële entiteit of belangrijke entiteit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 7,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "analyseren"
+    ],
+    "action_lemma": "analyseren",
+    "object": "forensische gegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 8,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "deelnemen"
+    ],
+    "action_lemma": "deelnemen",
+    "object": "het CSIRT-netwerk",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Het CSIRT",
+     "trigger_event": null,
+     "action_span": [
+      "deelnemen"
+     ],
+     "action_lemma": "deelnemen",
+     "object": "het CSIRT-netwerk",
+     "recipient": [
+      "aan het CSIRT-netwerk"
+     ],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 9,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "deelnemen"
+    ],
+    "action_lemma": "deelnemen",
+    "object": "de op grond van artikel 19 van de NIS2-richtlijn georganiseerde collegiale toetsingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 10,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "optreden"
+    ],
+    "action_lemma": "optreden",
+    "object": "coördinator",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Het CSIRT",
+     "trigger_event": null,
+     "action_span": [
+      "optreden"
+     ],
+     "action_lemma": "optreden",
+     "object": "als coördinator",
+     "recipient": [
+      "ten behoeve van het proces van gecoördineerde bekendmaking van kwetsbaarheden, bedoeld in artikel 17"
+     ],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien van toepassing"
+     ]
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 11,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "bijdragen"
+    ],
+    "action_lemma": "bijdragen",
+    "object": "de uitrol van veilige instrumenten voor het delen van informatie",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 12,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "monitoren"
+    ],
+    "action_lemma": "monitoren",
+    "object": "cyberdreigingen, kwetsbaarheden en incidenten",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Het CSIRT",
+     "trigger_event": null,
+     "action_span": [
+      "monitoren",
+      "analyseren"
+     ],
+     "action_lemma": "analyseren",
+     "object": "cyberdreigingen, kwetsbaarheden en incidenten",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 13,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "zorgen voor"
+    ],
+    "action_lemma": "zorgen voor",
+    "object": "dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Het CSIRT",
+     "trigger_event": null,
+     "action_span": [
+      "zorgen",
+      "voor"
+     ],
+     "action_lemma": "zorg dragen voor",
+     "object": "dynamische risico- en incidentenanalyse en situationeel bewustzijn met betrekking tot cyberbeveiliging",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 14,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verzamelen"
+    ],
+    "action_lemma": "verzamelen",
+    "object": "forensische gegevens",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -2612,6 +3148,157 @@
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De essentiële entiteit of belangrijke entiteit",
+    "trigger_event": null,
+    "action_span": [
+     "neemt"
+    ],
+    "action_lemma": "nemen",
+    "object": "passende en evenredige technische, operationele en organisatorische maatregelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "zij",
+    "trigger_event": null,
+    "action_span": [
+     "neemt"
+    ],
+    "action_lemma": "nemen",
+    "object": "deze maatregelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "de entiteit",
+    "trigger_event": "Bij het nemen van de maatregelen",
+    "action_span": [
+     "houdt",
+     "rekening"
+    ],
+    "action_lemma": "rekening houden met",
+    "object": "de stand van de techniek, de uitvoeringskosten en, indien van toepassing, de desbetreffende Europese en internationale normen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien van toepassing"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "de entiteit",
+     "trigger_event": null,
+     "action_span": [
+      "houdt",
+      "rekening"
+     ],
+     "action_lemma": "rekening houden met",
+     "object": "de stand van de techniek, de uitvoeringskosten en, indien van toepassing, de desbetreffende Europese en internationale normen",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien van toepassing"
+     ]
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "de entiteit",
+    "trigger_event": null,
+    "action_span": [
+     "houdt",
+     "rekening"
+    ],
+    "action_lemma": "rekening houden met",
+    "object": "de mate waarin zij aan risico’s is blootgesteld, de omvang van de entiteit en de kans dat zich incidenten voordoen en de ernst ervan, met inbegrip van de maatschappelijke en economische gevolgen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Ten aanzien van de evenredigheid van de maatregelen, bedoeld in het eerste lid"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "de entiteit",
+     "trigger_event": null,
+     "action_span": [
+      "houdt",
+      "rekening"
+     ],
+     "action_lemma": "rekening houden met",
+     "object": "de mate waarin zij aan risico’s is blootgesteld, de omvang van de entiteit en de kans dat zich incidenten voordoen en de ernst ervan, met inbegrip van de maatschappelijke en economische gevolgen",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 2,
+    "deontic": "OBLIGATION",
+    "actor": "De maatregelen, bedoeld in het eerste lid",
+    "trigger_event": null,
+    "action_span": [
+     "zorgen",
+     "voor"
+    ],
+    "action_lemma": "zorgen voor",
+    "object": "een beveiligingsniveau van de netwerk- en informatiesystemen dat is afgestemd op de risico’s, bedoeld in het eerste lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
    }
   ],
   "features": {
@@ -3387,6 +4074,32 @@
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "7",
+    "paragraph_index": 6,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "de natuurlijke persoon of natuurlijke personen die namens die rechtspersoon zitting heeft of hebben in het bestuur van de essentiële entiteit of belangrijke entiteit",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "van overeenkomstige toepassing"
+    ],
+    "action_lemma": null,
+    "object": "het bepaalde bij of krachtens het tweede tot en met zesde lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "Indien een rechtspersoon het bestuur of een lid van het bestuur van een essentiële entiteit of belangrijke entiteit is"
+    ],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -4754,6 +5467,50 @@
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De coördinator",
+    "trigger_event": null,
+    "action_span": [
+     "geeft"
+    ],
+    "action_lemma": "opvolging geven",
+    "object": "opvolging",
+    "recipient": [
+     "aan de melding"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "De coördinator",
+    "trigger_event": null,
+    "action_span": [
+     "waarborgt"
+    ],
+    "action_lemma": "waarborgen",
+    "object": "de anonimiteit van de natuurlijke persoon of rechtspersoon die de kwetsbaarheid meldt",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -4933,6 +5690,57 @@
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verstrekt"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "een antwoord",
+    "recipient": [
+     "aan de meldende entiteit"
+    ],
+    "deadline_raw": "zo mogelijk binnen 24 uur na ontvangst van de vroegtijdige waarschuwing",
+    "deadline": {
+     "value": 24,
+     "unit": "hour",
+     "from": "ontvangst van de vroegtijdige waarschuwing",
+     "raw": "zo mogelijk binnen 24 uur na ontvangst van de vroegtijdige waarschuwing",
+     "operator": "binnen"
+    },
+    "thresholds": [],
+    "conditions": [
+     "op verzoek van de entiteit"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Het CSIRT",
+     "trigger_event": "na ontvangst van de vroegtijdige waarschuwing, bedoeld in artikel 26",
+     "action_span": [
+      "verstrekt"
+     ],
+     "action_lemma": "verstrekken",
+     "object": "een antwoord",
+     "recipient": [
+      "aan de meldende entiteit"
+     ],
+     "deadline_raw": "zo mogelijk binnen 24 uur",
+     "thresholds": [],
+     "conditions": [
+      "op verzoek van de entiteit"
+     ]
+    }
    }
   ],
   "features": {
@@ -6722,6 +7530,29 @@
     "extraction_uncertain": false,
     "uncertainty_note": null,
     "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De entiteiten, bedoeld in het eerste en tweede lid",
+    "trigger_event": null,
+    "action_span": [
+     "verstrekken"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "de volgende informatie",
+    "recipient": [
+     "aan het centrale contactpunt"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -9065,6 +9896,58 @@
     "human_verified": false,
     "extraction_uncertain": true,
     "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De bevoegde autoriteit",
+    "trigger_event": "op gemotiveerd verzoek van die autoriteit",
+    "action_span": [
+     "verleent"
+    ],
+    "action_lemma": "verlenen",
+    "object": "bijstand",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer een essentiële entiteit of belangrijke entiteit of een entiteit die domeinnaamregistratiediensten verleent, als bedoeld in deze wet of in het nationale recht van de betrokken lidstaat van de Europese Unie waarin de NIS2-richtlijn is geïmplementeerd",
+     "diensten verricht in meer dan één lidstaat",
+     "diensten verricht in één of meer lidstaten en zijn netwerk- en informatiesystemen zich in één of meer andere lidstaten bevinden"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "De bevoegde autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "werkt samen"
+    ],
+    "action_lemma": "samenwerken",
+    "object": null,
+    "recipient": [
+     "met de betrokken bevoegde autoriteit van een andere lidstaat van de Europese Unie"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "wanneer een essentiële entiteit of belangrijke entiteit of een entiteit die domeinnaamregistratiediensten verleent, als bedoeld in deze wet of in het nationale recht van de betrokken lidstaat van de Europese Unie waarin de NIS2-richtlijn is geïmplementeerd",
+     "diensten verricht in meer dan één lidstaat",
+     "diensten verricht in één of meer lidstaten en zijn netwerk- en informatiesystemen zich in één of meer andere lidstaten bevinden"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -9199,6 +10082,28 @@
     "human_verified": false,
     "extraction_uncertain": true,
     "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "PERMISSION",
+    "actor": "Het verzoek om bijstand",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "zien"
+    ],
+    "action_lemma": "zien op",
+    "object": "het verstrekken van informatie en het nemen van toezichts- en handhavingsmaatregelen, met inbegrip van inspecties ter plaatse, toezicht elders en beveiligingsaudits",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -9310,6 +10215,48 @@
     "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "PERMISSION",
+    "actor": "De informatie-uitwisseling, bedoeld in het eerste lid",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "plaatsvinden"
+    ],
+    "action_lemma": "plaatsvinden",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "PERMISSION",
+     "actor": "De informatie-uitwisseling",
+     "trigger_event": null,
+     "action_span": [
+      "kan",
+      "plaatsvinden"
+     ],
+     "action_lemma": "plaatsvinden",
+     "object": null,
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "op basis van informatie-uitwisselingsregelingen op het gebied van cyberbeveiliging",
+      "met betrekking tot de potentieel gevoelige aard van de uitgewisselde informatie"
+     ]
+    }
    }
   ],
   "features": {
@@ -9526,7 +10473,169 @@
   "dossier_number": "36764",
   "extref": [],
   "intref": [],
-  "norms": [],
+  "norms": [
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "gesteld"
+    ],
+    "action_lemma": "regels stellen",
+    "object": "regels",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "PROHIBITION",
+    "actor": "het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "worden niet langer bewaard"
+    ],
+    "action_lemma": "bewaren",
+    "object": "De persoonsgegevens, bedoeld in artikel 64, tweede lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "PROHIBITION",
+     "actor": "het CSIRT",
+     "trigger_event": null,
+     "action_span": [
+      "worden niet langer bewaard"
+     ],
+     "action_lemma": "bewaren",
+     "object": "De persoonsgegevens, bedoeld in artikel 64, tweede lid, die door het CSIRT worden verwerkt",
+     "recipient": [],
+     "deadline_raw": "dan noodzakelijk is ter uitvoering van haar taken op grond van deze wet",
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "het CSIRT",
+    "trigger_event": null,
+    "action_span": [
+     "verwijderd"
+    ],
+    "action_lemma": "verwijderen",
+    "object": "De persoonsgegevens, bedoeld in artikel 64, tweede lid",
+    "recipient": [],
+    "deadline_raw": "uiterlijk binnen 12 maanden na de eerste verwerking",
+    "deadline": {
+     "value": 12,
+     "unit": "month",
+     "from": "de eerste verwerking",
+     "raw": "uiterlijk binnen 12 maanden na de eerste verwerking",
+     "operator": "binnen"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "PROHIBITION",
+    "actor": "de bevoegde autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "worden niet langer",
+     "bewaard"
+    ],
+    "action_lemma": "bewaren",
+    "object": "De persoonsgegevens, bedoeld in artikel 64, eerste lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dan noodzakelijk is ter uitvoering van haar taken op grond van deze wet"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "PROHIBITION",
+     "actor": "de bevoegde autoriteit",
+     "trigger_event": null,
+     "action_span": [
+      "worden niet langer bewaard"
+     ],
+     "action_lemma": "bewaren",
+     "object": "De persoonsgegevens",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "de bevoegde autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "verwijderd"
+    ],
+    "action_lemma": "verwijderen",
+    "object": "De persoonsgegevens, bedoeld in artikel 64, eerste lid",
+    "recipient": [],
+    "deadline_raw": "uiterlijk binnen 60 maanden na de eerste verwerking",
+    "deadline": {
+     "value": 60,
+     "unit": "month",
+     "from": "de eerste verwerking",
+     "raw": "uiterlijk binnen 60 maanden na de eerste verwerking",
+     "operator": "binnen"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   }
+  ],
   "features": {
    "n_words": 113,
    "xref_intra_instrument": 0,
@@ -9631,7 +10740,10 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 1
-  }
+  },
+  "_empty_paragraph_indices_v2": [
+   1
+  ]
  },
  {
   "uid": "nl:BWBR0052872:art67@2026-08-15",
@@ -9676,7 +10788,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "_empty_whole_provision_v2": true
  },
  {
   "uid": "nl:BWBR0052872:art68@2026-08-15",
@@ -11318,6 +12431,121 @@
      "thresholds": [],
      "conditions": []
     }
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "De bevoegde autoriteit",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "opleggen"
+    ],
+    "action_lemma": "opleggen",
+    "object": "een bestuurlijke boete",
+    "recipient": [
+     "aan een essentiële entiteit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in geval van overtreding van het bepaalde bij of krachtens deze wet en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+     "tezamen met of na het geven van een waarschuwing aan de betrokken entiteit over de overtreding",
+     "tezamen met of na de toepassing van de artikelen 38, 70, 72, eerste lid, onderdeel c, 73, 74, 75, 76, 77 of 78"
+    ],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bedraagt"
+    ],
+    "action_lemma": "bedragen",
+    "object": "€ 10.000.000,– of 2% van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de essentiële entiteit behoort",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in geval van overtreding van het bepaalde bij of krachtens de artikelen 21, 21a en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie",
+     "indien het laatstbedoelde bedrag hoger is"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'thresholds']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "bedraagt"
+     ],
+     "action_lemma": "bedragen",
+     "object": null,
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [
+      "€ 10.000.000,– of 2% van de totale wereldwijde jaaromzet in het voorgaande boekjaar van de onderneming waartoe de essentiële entiteit behoort, indien het laatstbedoelde bedrag hoger is"
+     ],
+     "conditions": [
+      "in geval van overtreding van het bepaalde bij of krachtens de artikelen 21, 21a en 25 tot en met 30 en het bepaalde in de op grond van de artikelen 21, vijfde lid, en 23, elfde lid, van de NIS2-richtlijn vastgestelde uitvoeringshandelingen en de op grond van artikel 24, tweede lid, van de NIS2-richtlijn vastgestelde gedelegeerde handelingen, voor zover in die uitvoeringshandelingen of gedelegeerde handelingen is bepaald dat deze verbindend zijn en rechtstreeks toepasselijk zijn in elke lidstaat van de Europese Unie"
+     ]
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bedraagt"
+    ],
+    "action_lemma": "bedragen",
+    "object": "€ 1.000.000,–",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in geval van een andere overtreding"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'thresholds']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "bedraagt"
+     ],
+     "action_lemma": "bedragen",
+     "object": null,
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [
+      "€ 1.000.000,–"
+     ],
+     "conditions": [
+      "in geval van een andere overtreding"
+     ]
+    }
    }
   ],
   "features": {
@@ -12198,6 +13426,28 @@
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "6",
+    "paragraph_index": 5,
+    "norm_index": 0,
+    "deontic": "EXEMPTION",
+    "actor": "de overtreding, bedoeld in het tweede lid",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "Artikel 184 van het Wetboek van Strafrecht",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -12616,6 +13866,28 @@
       "Verzet"
      ]
     }
+   },
+   {
+    "schema_version": 2,
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 0,
+    "deontic": "EXEMPTION",
+    "actor": "de overtreding, bedoeld in het eerste lid, onderdeel b",
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "Artikel 184 van het Wetboek van Strafrecht",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "human_verified": false
    }
   ],
   "features": {
@@ -13867,7 +15139,8 @@
     "in afwijking van": 0
    },
    "max_condition_depth": 0
-  }
+  },
+  "_empty_whole_provision_v2": true
  },
  {
   "uid": "nl:BWBR0052872:art105@2026-08-15",
