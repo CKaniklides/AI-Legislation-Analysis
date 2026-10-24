@@ -1,0 +1,52 @@
+{
+  "document": "BWBR0040940",
+  "terms": [
+    "bijzondere categorieën van persoonsgegevens",
+    "Onze Minister",
+    "persoonsgegevens van strafrechtelijke aard",
+    "verordening",
+    "verwerking"
+  ],
+  "definitions": [
+    {
+      "term": "bijzondere categorieën van persoonsgegevens",
+      "definition": "de categorieën van persoonsgegevens, bedoeld in artikel 9, eerste lid, van de verordening",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0040940",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Onze Minister",
+      "definition": "Onze Minister voor Rechtsbescherming",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0040940",
+      "pattern": "lijst"
+    },
+    {
+      "term": "persoonsgegevens van strafrechtelijke aard",
+      "definition": "persoonsgegevens betreffende strafrechtelijke veroordelingen en strafbare feiten of daarmee verband houdende veiligheidsmaatregelen als bedoeld in artikel 10 van de verordening",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0040940",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verordening",
+      "definition": "verordening (EU) 2016/679 van het Europees Parlement en de Raad van 27 april 2016 betreffende de bescherming van natuurlijke personen in verband met verwerking van persoonsgegevens en betreffende het vrije verkeer van die gegevens en tot intrekking van Richtlijn 95/46/EG (algemene verordening gegevensbescherming) (PbEU 2016, L 119).",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0040940",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verwerking",
+      "definition": "a. dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek door de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten overdragen aan een hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening die zorg gaat dragen voor het bewaren en beheren van de dossiers; b. dossiers als bedoeld in artikel 454, eerste lid, van Boek 7 van het Burgerlijk Wetboek bewaren en beheren door een andere hulpverlener, instelling of voorziening voor gezondheidszorg of maatschappelijke dienstverlening, dan de hulpverlener met wie de overeenkomst inzake geneeskundige behandeling is gesloten.",
+      "paragraph": "1",
+      "article": "30a",
+      "document": "BWBR0040940",
+      "pattern": "onder_verstaan"
+    }
+  ]
+}

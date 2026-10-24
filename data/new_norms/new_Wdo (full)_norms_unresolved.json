@@ -9,6 +9,72 @@
   "reason": "validation_failed",
   "pass1": null,
   "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0048156",
+  "article": "9",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Onze Minister laat een privaat identificatiemiddel toe door verlening van een erkenning, indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben in ieder geval betrekking op uitgifte en beëindiging van de middelen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0048156",
+  "article": "13",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Indien dit naar zijn oordeel voor een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening noodzakelijk is, kan Onze Minister een erkende dienst bindende aanwijzingen geven. Bij of krachtens algemene maatregel van bestuur worden hieromtrent nadere regels gesteld.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0048156",
+  "article": "22",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Bij of krachtens algemene maatregel van bestuur worden regels gesteld over de hoogte en het opleggen van de heffing, waarbij onderscheid kan worden gemaakt tussen verschillende categorieën handelingen als bedoeld in het eerste lid.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0048156",
+  "article": "13",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Indien dit naar zijn oordeel voor een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening noodzakelijk is, kan Onze Minister een erkende dienst bindende aanwijzingen geven. Bij of krachtens algemene maatregel van bestuur worden hieromtrent nadere regels gesteld.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0048156",
+  "article": "9",
+  "paragraph_number": "2",
+  "paragraph_index": 1,
+  "unit_text": "Onze Minister laat een privaat identificatiemiddel toe door verlening van een erkenning, indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid. De eisen hebben in ieder geval betrekking op uitgifte en beëindiging van de middelen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
   "drop_reason": "no_grounded_pass"
  }
 ]

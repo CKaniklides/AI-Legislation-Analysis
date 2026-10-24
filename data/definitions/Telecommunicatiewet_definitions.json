@@ -1,0 +1,1387 @@
+{
+  "document": "BWBR0009950",
+  "terms": [
+    "aanbieden van een elektronisch communicatienetwerk",
+    "aanbieder van diensten van de informatiemaatschappij",
+    "abonnee",
+    "apparaten",
+    "applicatieprogramma-interface",
+    "Autoriteit Consument en Markt",
+    "BEREC",
+    "Berec-Bureau",
+    "beveiliging van netwerk of dienst",
+    "beveiligingsincident",
+    "bijbehorende diensten",
+    "bijbehorende faciliteiten",
+    "bundel",
+    "conformiteitsbeoordelingsinstantie",
+    "conformiteitsrichtlijn",
+    "consument",
+    "distributeur",
+    "draadloos toegangspunt met klein bereik",
+    "eidas-verordening",
+    "eindapparatuur",
+    "eindgebruiker",
+    "elektronische communicatiedienst",
+    "elektronisch communicatienetwerk",
+    "elektronisch communicatienetwerk met hoge snelheid",
+    "fabrikant",
+    "fulfilmentdienstverlener",
+    "fysieke binnenhuisinfrastructuur",
+    "fysieke infrastructuur",
+    "gebruiker",
+    "gekwalificeerd certificaat",
+    "gekwalificeerd middel voor het aanmaken van elektronische handtekeningen",
+    "gekwalificeerde verlener van vertrouwensdiensten",
+    "gekwalificeerde vertrouwensdienst",
+    "gemachtigde",
+    "in de handel brengen",
+    "importeur",
+    "ingebruikneming",
+    "interconnectie",
+    "Internationaal Telecommunicatieverdrag",
+    "internettoegangsdienst",
+    "interpersoonlijke communicatiedienst",
+    "ITU",
+    "kabels",
+    "kleine onderneming",
+    "marktdeelnemer",
+    "micro-onderneming",
+    "nationale regelgevende instantie van een andere lidstaat",
+    "netneutraliteitsverordening",
+    "netwerk met zeer hoge capaciteit",
+    "netwerkaansluitpunt",
+    "noodhulpdienst",
+    "notificatierichtlijn",
+    "nummer",
+    "nummergebaseerde interpersoonlijke communicatiedienst",
+    "nummergebruiker",
+    "nummerhouder",
+    "nummeridentificatie",
+    "nummeronafhankelijke interpersoonlijke communicatiedienst",
+    "onderneming",
+    "onderneming die beschikt over een aanmerkelijke marktmacht",
+    "online interface",
+    "op de markt aanbieden",
+    "openbaar telecommunicatienetwerk",
+    "openbaar elektronisch communicatienetwerk",
+    "openbare gronden",
+    "openbare elektronische communicatiedienst",
+    "openbare betaaltelefoon",
+    "openbare telecommunicatiedienst",
+    "Onze Minister",
+    "organisatie zonder winstoogmerk",
+    "overstappen",
+    "programma",
+    "programmadienst",
+    "radioapparaten",
+    "radiocommunicatie",
+    "radiodeterminatie",
+    "radiogolven",
+    "richtlijn (EU) 2018/1972",
+    "richtlijn nr. 2014/61/EU",
+    "roamingverordening",
+    "schadelijke interferentie",
+    "spraakcommunicatiedienst",
+    "systeem voor voorwaardelijke toegang",
+    "terugroepen",
+    "toegang",
+    "toegangspunt",
+    "toezichthoudend orgaan",
+    "transnationale markt",
+    "uit de handel nemen",
+    "uitrusting",
+    "vaste installatie",
+    "verlener van vertrouwensdiensten",
+    "verordening (EU) 2019/1020",
+    "vertrouwensdienst",
+    "vertrouwenslijst",
+    "voor hoge snelheid bestemde fysieke binnenhuisinfrastructuur",
+    "aanbieder van een openbaar elektronisch communicatienetwerk",
+    "marktconforme kosten",
+    "netwerkexploitant",
+    "coördinatie",
+    "civiele werken",
+    "grond",
+    "redelijke vergoeding voor medegebruik van antenne-opstelpunten voor omroep",
+    "publieke infrastructuur",
+    "openbare onderneming",
+    "overeenkomst op afstand",
+    "alarmnummer",
+    "dienstverlener",
+    "richtlijn (EU) 2019/882",
+    "schip of luchtvaartuig",
+    "verkeersgegevens",
+    "verwerking van verkeersgegevens",
+    "locatiegegevens",
+    "communicatie",
+    "oproep",
+    "toestemming van een gebruiker of abonnee",
+    "dienst met toegevoegde waarde",
+    "elektronisch bericht",
+    "inbreuk in verband met persoonsgegevens",
+    "geschil",
+    "gegevens",
+    "oproeppoging zonder resultaat",
+    "aandeel",
+    "aandelenbelang",
+    "aangesloten instelling",
+    "beursgenoteerde telecommunicatiepartij",
+    "beursgenoteerde betrokken partij",
+    "betrokken partij",
+    "bewaarder van een beleggingsinstelling",
+    "bijkantoor",
+    "centraal instituut",
+    "depot",
+    "gereglementeerde markt",
+    "girodepot",
+    "instelling in het buitenland",
+    "intermediair",
+    "internetknooppunt",
+    "multilaterale handelsfaciliteit",
+    "ongewenst persoon",
+    "overwegende zeggenschap",
+    "personen met wie in onderling overleg wordt gehandeld",
+    "publiek belang",
+    "stemmen",
+    "telecommunicatiepartij",
+    "verzameldepot",
+    "zeggenschap",
+    "relevante invloed in de telecommunicatiesector",
+    "uitgevende instelling"
+  ],
+  "definitions": [
+    {
+      "term": "aanbieden van een elektronisch communicatienetwerk",
+      "definition": "het bouwen, exploiteren, beheren of beschikbaar stellen van een elektronisch communicatienetwerk",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van diensten van de informatiemaatschappij",
+      "definition": "aanbieder van een dienst zoals gedefinieerd in artikel 1, eerste lid, onderdeel b, van Richtlijn (EU) 2015/1535 van het Europees Parlement en de Raad van 9 september 2015 betreffende een informatieprocedure op het gebied van technische voorschriften en regels betreffende de diensten van de informatiemaatschappij (PbEU 2015, L 241)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "abonnee",
+      "definition": "natuurlijke persoon of rechtspersoon die partij is bij een overeenkomst met een aanbieder van openbare elektronische communicatiediensten voor de levering van dergelijke diensten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "apparaten",
+      "definition": "elektrische en elektronische apparaten, niet zijnde radioapparaten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "applicatieprogramma-interface",
+      "definition": "een software interface tussen externe toepassingen, die beschikbaar is gesteld door omroepen, dienstenleveranciers, alsmede de hulpmiddelen in de eindapparatuur",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Autoriteit Consument en Markt",
+      "definition": "de Autoriteit Consument en Markt, genoemd in artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "BEREC",
+      "definition": "Orgaan van Europese regulerende instanties voor elektronische communicatie, opgericht bij Verordening (EG) nr. (EU) 2018/1971 van het Europees Parlement en de Raad van 11 december 2018 tot instelling van het Orgaan van Europese regulerende instanties voor elektronische communicatie (Berec) en het Bureau voor ondersteuning van Berec (Berec-Bureau), tot wijziging van Verordening (EU) 2015/2120 en tot intrekking van Verordening (EG) nr. 1211/2009",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Berec-Bureau",
+      "definition": "bureau, opgericht bij Verordening (EG) nr. (EU) 2018/1971 van het Europees Parlement en de Raad van 11 december 2018 tot instelling van het Orgaan van Europese regulerende instanties voor elektronische communicatie (Berec) en het Bureau voor ondersteuning van Berec (Berec-Bureau), tot wijziging van Verordening (EU) 2015/2120 en tot intrekking van Verordening (EG) nr. 1211/2009",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiliging van netwerk of dienst",
+      "definition": "vermogen van een elektronisch communicatienetwerk of elektronische communicatiedienst om met een bepaalde mate van betrouwbaarheid bestand te zijn tegen acties die de beschikbaarheid, authenticiteit, integriteit en vertrouwelijkheid van dat netwerk of die dienst, van opgeslagen, verzonden of verwerkte gegevens of van een daaraan gerelateerde dienst die via het elektronische communicatienetwerk of de elektronische communicatiedienst wordt aangeboden of toegankelijk is, in gevaar brengen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiligingsincident",
+      "definition": "gebeurtenis met een daadwerkelijk schadelijk effect op de beveiliging van een elektronisch communicatienetwerk of elektronische communicatiedienst",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bijbehorende diensten",
+      "definition": "de bij een elektronisch communicatienetwerk of een elektronische communicatiedienst behorende diensten die het aanbieden van diensten via dat netwerk of die dienst mogelijk maken of ondersteunen of het potentieel hiertoe bezitten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bijbehorende faciliteiten",
+      "definition": "de bij een elektronisch communicatienetwerk of een elektronische communicatiedienst behorende diensten, fysieke infrastructuren en andere faciliteiten of elementen die het aanbieden van diensten via dat netwerk of die dienst mogelijk maken of ondersteunen of het potentieel hiertoe bezitten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bundel",
+      "definition": "combinatie van ten minste een internettoegangsdienst of een een voor het publiek beschikbare nummergebaseerde interpersoonlijke communicatiedienst met één of meer andere diensten of eindapparatuur die door dezelfde aanbieder zijn verstrekt of verkocht onder dezelfde, een verwante of een daaraan verbonden overeenkomst",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "conformiteitsbeoordelingsinstantie",
+      "definition": "een conformiteitsbeoordelingsinstantie als bedoeld in artikel 3, onderdeel 18, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "conformiteitsrichtlijn",
+      "definition": "richtlijn van het Europees Parlement en de Raad van de Europese Unie, die geheel of gedeeltelijk berust op artikel 114 van het Verdrag betreffende de werking van de Europese Unie en regels stelt over het op de markt brengen of het gebruik van apparaten of radioapparaten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "consument",
+      "definition": "natuurlijke persoon die gebruik maakt van of verzoekt om een openbare elektronische communicatiedienst voor andere dan bedrijfs- of beroepsdoeleinden",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "distributeur",
+      "definition": "natuurlijke persoon of rechtspersoon in de toeleveringsketen, niet zijnde de fabrikant of de importeur, die apparaten of radioapparaten op de markt aanbiedt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "draadloos toegangspunt met klein bereik",
+      "definition": "draadloze netwerktoegangsapparatuur met laag vermogen van kleine omvang die binnen een klein bereik werkt, gebruik maakt van vergunningplichtig of vergunningvrij radiospectrum of van een combinatie van beide, deel kan uitmaken van een openbaar elektronisch communicatienetwerk, uitgerust is met een of meer antennes met lage visuele impact en aan de gebruikers toegang tot elektronische communicatienetwerken verleent, ongeacht of de onderliggende netwerktopologie mobiel of vast is",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "eidas-verordening",
+      "definition": "verordening (EU) nr. 910/2014 van het Europees Parlement en de Raad van 23 juli 2014 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt en tot intrekking van Richtlijn 1999/93/EG (PbEU 2014, L 257), en de op grond van die verordening door de Europese Commissie vastgestelde uitvoerings- en gedelegeerde handelingen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "eindapparatuur",
+      "definition": "eindapparatuur in de zin van artikel 1, punt 1, van Richtlijn 2008/63/EG van de Commissie van 20 juni 2008 betreffende de mededinging op de markten van telecommunicatie-eindapparatuur",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "eindgebruiker",
+      "definition": "natuurlijke persoon of rechtspersoon die van een openbare elektronische communicatiedienst gebruik maakt of wil gaan maken en die niet tevens openbare elektronische communicatienetwerken of openbare elektronische communicatiediensten aanbiedt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronische communicatiedienst",
+      "definition": "gewoonlijk tegen vergoeding via elektronisch communicatienetwerk aangeboden internettoegangsdienst als bedoeld in artikel 2, tweede alinea, punt 2, van de netneutraliteitsverordening, interpersoonlijke communicatiedienst of dienst die geheel of hoofdzakelijk bestaat in het overbrengen van signalen zoals transmissiediensten die voor het verlenen van intermachinale diensten en voor omroep worden gebruikt, met uitzondering van diensten waarbij met behulp van elektronische communicatienetwerken of -diensten overgebrachte inhoud wordt geleverd of redactioneel wordt gecontroleerd",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronisch communicatienetwerk",
+      "definition": "transmissiesystemen, waaronder mede begrepen de schakel- of routeringsapparatuur, netwerkelementen die niet actief zijn en andere middelen, die het mogelijk maken signalen over te brengen via kabels, radiogolven, optische of andere elektromagnetische middelen, waaronder satellietnetwerken, vaste en mobiele terrestrische netwerken, elektriciteitsnetten, voor zover deze voor overdracht van signalen worden gebruikt en netwerken voor radio- en televisieomroep en kabeltelevisienetwerken, ongeacht de aard van de overgebrachte informatie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronisch communicatienetwerk met hoge snelheid",
+      "definition": "een openbaar elektronisch communicatienetwerk dat breedbandtoegangsdiensten kan leveren als bedoeld in richtlijn nr. 2014/61/EU",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "fabrikant",
+      "definition": "natuurlijke persoon of rechtspersoon die apparaten of radioapparaten vervaardigt of laat ontwerpen of vervaardigen, en deze apparaten of radioapparaten onder zijn naam of handelsmerk verhandelt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "fulfilmentdienstverlener",
+      "definition": "fulfilmentdienstverlener als bedoeld in artikel 3, onderdeel 11, van verordening (EU) 2019/1020",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "fysieke binnenhuisinfrastructuur",
+      "definition": "fysieke infrastructuur of installaties op de locatie van de eindgebruiker, met inbegrip van elementen die gemeenschappelijke eigendom zijn, die bestemd is om vaste of draadloze toegangsnetwerken onder te brengen, voor zover die netwerken elektronische communicatiediensten kunnen leveren en door middel waarvan het toegangspunt van het gebouw kan worden aangesloten op het aansluitpunt van het netwerk",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "fysieke infrastructuur",
+      "definition": "elk element van een netwerk dat bedoeld is om er andere elementen van een netwerk in onder te brengen zonder dat het zelf een actief element van het netwerk wordt, met uitzondering van elementen van netwerken die worden gebruikt voor de voorziening met voor menselijke consumptie bestemd water als bedoeld in artikel 2, punt 1, van richtlijn 98/83/EG van de Raad van 3 november 1998 betreffende de kwaliteit van voor menselijke consumptie bestemd water (PbEG L 330)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gebruiker",
+      "definition": "natuurlijk persoon of rechtspersoon die gebruik maakt van of verzoekt om een openbare elektronische communicatiedienst",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerd certificaat",
+      "definition": "een gekwalificeerd certificaat voor elektronische handtekeningen als bedoeld in artikel 3, onderdeel 15 van de eidas-verordening, een gekwalificeerd certificaat voor elektronische zegels als bedoeld in artikel 3, onderdeel 30, van de eidas-verordening of een gekwalificeerd certificaat voor websiteauthenticatie als bedoeld in artikel 3, onderdeel 39, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerd middel voor het aanmaken van elektronische handtekeningen",
+      "definition": "gekwalificeerd middel voor het aanmaken van elektronische handtekeningen als bedoeld in artikel 3, onderdeel 23, van de eidas-verordening of voor het aanmaken van elektronische zegels als bedoeld in artikel 3, onderdeel 32, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde verlener van vertrouwensdiensten",
+      "definition": "gekwalificeerde verlener van een vertrouwensdienst als bedoeld in artikel 3, onderdeel 20, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde vertrouwensdienst",
+      "definition": "vertrouwensdienst als bedoeld in artikel 3, onderdeel 17, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gemachtigde",
+      "definition": "in de Europese Unie gevestigde natuurlijke persoon of rechtspersoon die schriftelijk door de fabrikant is gemachtigd om namens hem specifieke taken te vervullen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "in de handel brengen",
+      "definition": "het voor het eerst in de Europese Unie op de markt aanbieden van apparaten of radioapparaten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "importeur",
+      "definition": "in de Europese Unie gevestigde natuurlijke persoon of rechtspersoon die apparaten of radioapparaten uit een derde land in de Europese Unie in de handel brengt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ingebruikneming",
+      "definition": "het eerste gebruik van uitrusting of een radioapparaat in de Europese Unie door de eindgebruiker ervan",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "interconnectie",
+      "definition": "specifiek type toegang dat wordt gerealiseerd tussen exploitanten van openbare netwerken, inhoudende het fysiek en logisch verbinden van openbare elektronische communicatienetwerken die door dezelfde of een andere onderneming worden gebruikt om het de gebruikers van een onderneming mogelijk te maken te communiceren met die van dezelfde of van een andere onderneming of toegang te hebben tot diensten die worden aangeboden door een betrokken partij of een andere onderneming die toegang heeft tot het netwerk",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Internationaal Telecommunicatieverdrag",
+      "definition": "het op 22 december 1992 te Genève tot stand gekomen Statuut en Verdrag van de Internationale Unie voor Telecommunicatie met de daarbij behorende bijlagen en reglementen (Trb. 1993, 138), de op 14 oktober 1994 te Kyoto tot stand gekomen Akten van wijziging van het Statuut en het Verdrag van de Internationale Unie voor Telecommunicatie (Trb. 1995, 201) en de op 6 november 1998 te Minneapolis tot stand gekomen Akten van wijziging van het Statuut en het Verdrag van de Internationale Unie voor Telecommunicatie (Trb. 2001, 90)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "internettoegangsdienst",
+      "definition": "internettoegangsdienst als bedoeld in artikel 2, onder 2, van de netneutraliteitsverordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "interpersoonlijke communicatiedienst",
+      "definition": "gewoonlijk tegen vergoeding aangeboden dienst die directe persoonlijke en interactieve uitwisseling van informatie via elektronische communicatienetwerken tussen een eindig aantal personen mogelijk maakt, waarbij de personen die de communicatie starten of eraan deelnemen bepalen wie de ontvangers zijn, met uitzondering van een dienst die persoonlijke en interactieve communicatie mogelijk maakt uitsluitend als bijkomstig kenmerk dat onlosmakelijk is verbonden met een andere dienst",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ITU",
+      "definition": "Internationale Unie voor Telecommunicatie.",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kabels",
+      "definition": "fysieke geleidingsdraden bestemd voor de rechtstreekse overdracht van signalen tussen punten en de bij deze fysieke geleidingsdraden behorende ondergrondse ondersteuningswerken, beschermingswerken en signaalinrichtingen, alsmede inrichtingen, bestemd om daarin verbinding tot stand te brengen tussen fysieke geleidingsdraden in, op of boven openbare gronden enerzijds en fysieke geleidingsdraden in gebouwen en daarmee één geheel vormende gronden anderzijds dan wel tussen laatstgenoemde fysieke geleidingsdraden onderling",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kleine onderneming",
+      "definition": "onderneming waarop artikel 396, eerste lid, van Boek 2 van het Burgerlijk Wetboek, van toepassing is",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "marktdeelnemer",
+      "definition": "de fabrikant, de gemachtigde, de importeur of de distributeur",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "micro-onderneming",
+      "definition": "onderneming waarop artikel 395a, eerste lid, van Boek 2 van het Burgerlijk Wetboek, van toepassing is",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nationale regelgevende instantie van een andere lidstaat",
+      "definition": "nationale regelgevende instantie van een andere lidstaat van de Europese Unie die krachtens het recht van die lidstaat is belast met de uitvoering van een of meer taken van nationale regelgevende instanties als bedoeld in artikel 5, eerste lid, van richtlijn (EU) 2018/1972",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netneutraliteitsverordening",
+      "definition": "op grond van artikel 114 van het Verdrag betreffende de werking van de Europese Unie vastgestelde verordening van het Europees Parlement en de Raad van de Europese Unie betreffende open internettoegang",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerk met zeer hoge capaciteit",
+      "definition": "elektronisch communicatienetwerk dat ten minste tot aan het verdeelpunt bij de te bedienen locatie geheel uit optische vezelelementen bestaat, of dat onder de gebruikelijke piekuuromstandigheden vergelijkbare netwerkprestaties kan leveren wat betreft beschikbare neer- en opgaande bandbreedte, robuustheid, parameters voor fouten, en tijdsduur en de variatie daarin, waarbij voor de beoordeling of sprake is van vergelijkbare netwerkprestaties niet relevant is of eindgebruikers verschillen in netwerkprestaties ervaren die het gevolg zijn van verschillen in de wijze waarop het netwerk uiteindelijk is verbonden met het netwerkaansluitpunt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerkaansluitpunt",
+      "definition": "fysiek punt waarop een eindgebruiker de toegang tot een elektronisch communicatienetwerk wordt geboden; in het geval van netwerken met schakelings- of routeringsfuncties wordt het netwerkaansluitpunt bepaald door middel van een specifiek netwerkadres, dat met een abonneenummer of -naam kan zijn verbonden",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "noodhulpdienst",
+      "definition": "een publieke dienst belast met hulpverleningstaken die onmiddellijk spoedhulp verleent in situaties waarin met name sprake is van direct gevaar voor lijf en leden, de individuele gezondheid of volksgezondheid of de individuele of openbare veiligheid, eigendommen van particulieren of de overheid of het milieu",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "notificatierichtlijn",
+      "definition": "richtlijn 2015/1535/EU van het Europees Parlement en de Raad van de Europese Unie van 9 september 2015 betreffende een informatieprocedure op het gebied van technische voorschriften en regels betreffende de diensten van de informatiemaatschappij (PbEU 2015 L 241)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummer",
+      "definition": "cijfers, letter of andere symbolen, al dan niet in combinatie, die bestemd zijn voor toegang tot of identificatie van op een elektronisch communicatienetwerk aangeslotenen, netwerkbeheerders, diensten, elektronische communicatienetwerken, netwerkaansluitpunten of andere netwerkelementen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummergebaseerde interpersoonlijke communicatiedienst",
+      "definition": "interpersoonlijke communicatiedienst die verbinding maakt met openbaar toegewezen nummervoorraden, te weten een nummer of een aantal nummers in nationale of internationale nummerplannen, of die communicatie mogelijk maakt met een nummer of een aantal nummers in nationale of internationale nummerplannen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummergebruiker",
+      "definition": "degene die een nummer gebruikt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummerhouder",
+      "definition": "degene aan wie de Autoriteit Consument en Markt op aanvraag een nummer heeft toegekend",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummeridentificatie",
+      "definition": "a. faciliteit om het nummer van het oproepende netwerkaansluitpunt dan wel een nummer waarmee een individuele gebruiker kan worden geïdentificeerd aan het opgeroepen netwerkaansluitpunt te verstrekken, voordat de verbinding tot stand wordt gebracht; b. faciliteit om het nummer van het opgeroepen netwerkaansluitpunt dan wel het nummer waarmee een individuele gebruiker kan worden geïdentificeerd aan het oproepende netwerkaansluitpunt te verstrekken, voordat de verbinding tot stand wordt gebracht",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "nummeronafhankelijke interpersoonlijke communicatiedienst",
+      "definition": "een interpersoonlijke communicatiedienst die geen verbinding maakt met openbaar toegewezen nummervoorraden, te weten een nummer of een aantal nummers in nationale of internationale nummerplannen, of die geen communicatie mogelijk maakt met een nummer of een aantal nummers in nationale of internationale nummerplannen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onderneming",
+      "definition": "onderneming in de zin van artikel 101, eerste lid, van het Verdrag betreffende de werking van de Europese Unie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onderneming die beschikt over een aanmerkelijke marktmacht",
+      "definition": "onderneming die alleen of tezamen met andere ondernemingen over een economische kracht beschikt die haar in staat stelt zich in belangrijke mate onafhankelijk van haar concurrenten, klanten en uiteindelijk consumenten te gedragen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "online interface",
+      "definition": "online interface als bedoeld in artikel 3, onderdeel 15, van verordening (EU) 2019/1020",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "op de markt aanbieden",
+      "definition": "het in het kader van een handelsactiviteit, al dan niet tegen betaling, verstrekken van apparaten of radioapparaten met het oog op distributie, consumptie of gebruik op de markt van de Europese Unie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbaar telecommunicatienetwerk",
+      "definition": "elektronisch communicatienetwerk dat geheel of gedeeltelijk wordt gebruikt om openbare telecommunicatiediensten aan te bieden, voor zover het netwerk niet gebruikt wordt voor het verspreiden van programma's",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbaar elektronisch communicatienetwerk",
+      "definition": "elektronisch communicatienetwerk dat geheel of hoofdzakelijk wordt gebruikt om openbare elektronische communicatiediensten aan te bieden, waaronder mede wordt begrepen een netwerk, bestemd voor het verspreiden van programma's voor zover dit aan het publiek geschiedt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbare gronden",
+      "definition": "a. openbare wegen met inbegrip van de daartoe behorende stoepen, glooiingen, bermen, sloten, bruggen, viaducten, tunnels, duikers, beschoeiingen en andere werken; b. wateren met de daartoe behorende bruggen, plantsoenen, pleinen en andere plaatsen, die voor eenieder toegankelijk zijn",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbare elektronische communicatiedienst",
+      "definition": "elektronische communicatiedienst die beschikbaar is voor het publiek",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbare betaaltelefoon",
+      "definition": "voor het publiek toegankelijk telefoontoestel waarmee uitgaande gesprekken gevoerd kunnen worden en waarvan de betaling voor het gebruik kan geschieden door middel van munten, krediet- of debetkaarten of vooruitbetaalde telefoonkaarten",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbare telecommunicatiedienst",
+      "definition": "voor het publiek beschikbare dienst die geheel of gedeeltelijk bestaat in het overbrengen van signalen via een elektronisch communicatienetwerk, voor zover deze dienst niet bestaat uit het verspreiden van programma's",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Onze Minister",
+      "definition": "Onze Minister van Economische Zaken en Klimaat",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "organisatie zonder winstoogmerk",
+      "definition": "organisatie zonder winstoogmerk die op twee opeenvolgende balansdata, zonder onderbreking nadien op twee opeenvolgende balansdata, heeft voldaan aan ten minste twee van de volgende vereisten: a. de waarde van de activa volgens de balans met toelichting bedraagt, op de grondslag van verkrijgings- en vervaardigingsprijs, niet meer dan € 6.000.000; b. de netto-omzet over het boekjaar bedraagt niet meer dan € 12.000.000; c. het gemiddeld aantal werknemers over het boekjaar bedraagt minder dan 50",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overstappen",
+      "definition": "wisselen door een abonnee tussen een overdragende en een ontvangende aanbieder voor de levering van een openbare elektronische communicatiedienst die de abonnee op het moment van sluiten van de overeenkomst met de ontvangende aanbieder afneemt van een overdragende aanbieder op grond van een tussen de abonnee en de overdragende aanbieder gesloten overeenkomst",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "programma",
+      "definition": "programma als bedoeld in artikel 1.1 van de Mediawet 2008",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "programmadienst",
+      "definition": "dienst die geheel of hoofdzakelijk bestaat uit het aanbieden van programma’s aan het algemene publiek of een deel daarvan",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "radioapparaten",
+      "definition": "een elektrisch of elektronisch product dat: a. doelbewust radiogolven uitzendt of ontvangt ten behoeve van radiocommunicatie of radiodeterminatie, of b. moet worden aangevuld met een accessoire om doelbewust radiogolven te kunnen uitzenden en ontvangen ten behoeve van radiocommunicatie of radiodeterminatie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "radiocommunicatie",
+      "definition": "communicatie door middel van radiogolven",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "radiodeterminatie",
+      "definition": "het vaststellen van de positie, snelheid of andere kenmerken van een object of het verkrijgen van informatie over deze parameters door middel van de voortplantingseigenschappen van radiogolven",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "radiogolven",
+      "definition": "elektromagnetische golven met frequenties van lager dan 3000 GHz, die zich in de ruimte voortplanten zonder kunstmatige geleider",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "richtlijn (EU) 2018/1972",
+      "definition": "Richtlijn (EU) 2018/1972 van het Europees Parlement en de Raad van 11 december 2018 tot vaststelling van het Europees wetboek voor elektronische communicatie (herschikking) (PbEU 2018, L 321)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "richtlijn nr. 2014/61/EU",
+      "definition": "Richtlijn van het Europees Parlement en de Raad van de Europese Unie van 15 mei 2014 inzake maatregelen ter verlaging van kosten van de aanleg van elektronischecommunicatienetwerken met hoge snelheid (PbEU 2014 L 155)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "roamingverordening",
+      "definition": "op grond van artikel 114 van het Verdrag betreffende de werking van de Europese Unie vastgestelde verordening van het Europees Parlement en de Raad van de Europese Unie betreffende roaming op openbare mobiele-communicatienetwerken binnen de Unie, en de op grond van die verordening door de Europese Commissie vastgestelde uitvoeringshandelingen",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "schadelijke interferentie",
+      "definition": "interferentie die het functioneren van een radionavigatiedienst of van andere veiligheidsvoorzieningen in gevaar brengt, of die een overeenkomstig de geldende internationale, communautaire of nationale voorschriften werkende radiocommunicatiedienst op een andere wijze ernstig verslechtert, hindert of herhaaldelijk onderbreekt",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "spraakcommunicatiedienst",
+      "definition": "voor het publiek beschikbare elektronische communicatiedienst voor direct of indirect uitgaande en binnenkomende nationale of nationale en internationale gesprekken, met behulp van een nummer of een aantal nummers in een nationaal of internationaal nummerplan",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "systeem voor voorwaardelijke toegang",
+      "definition": "elke technische maatregel of regeling of elk authenticatiesysteem waarbij toegang tot een beschermde radio- of televisie-omroepdienst in begrijpelijke vorm afhankelijk wordt gemaakt van een abonnement of een andere vorm van voorafgaande individuele machtiging",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "terugroepen",
+      "definition": "maatregel waarmee wordt beoogd apparaten of radioapparaten te doen terugkeren die al aan de eindgebruiker ter beschikking waren gesteld",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "toegang",
+      "definition": "het aan een andere onderneming beschikbaar stellen van netwerkonderdelen, bijbehorende faciliteiten of diensten onder uitdrukkelijke voorwaarden, al dan niet op exclusieve basis, ten behoeve van het aanbieden van elektronische communicatiediensten, het aanbieden van diensten voor de informatiemaatschappij of het verspreiden van programma’s aan het publiek, door die onderneming",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "toegangspunt",
+      "definition": "een in of buiten het gebouw gelegen fysiek punt dat toegankelijk is voor ondernemingen die openbare elektronische communicatienetwerken aanbieden of waaraan een vergunning is verleend om openbare elektronische communicatienetwerken aan te bieden, en waar het netwerk kan worden aangesloten op de voor hoge snelheid bestemde fysieke binnenhuisinfrastructuur",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "toezichthoudend orgaan",
+      "definition": "toezichthoudend orgaan als bedoeld in artikel 46 ter, eerste lid, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "transnationale markt",
+      "definition": "bij besluit als bedoeld in artikel 65, eerste lid, van richtlijn (EU) 2018/1972, gedefinieerde markt die de Europese Unie of een aanzienlijk, zich over meer dan één lidstaat uitstrekkend, deel daarvan beslaat",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "uit de handel nemen",
+      "definition": "maatregel waarmee wordt beoogd te voorkomen dat apparaten of radioapparaten die zich in de toeleveringsketen bevinden, op de markt worden aangeboden",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "uitrusting",
+      "definition": "elk apparaat of vaste installatie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vaste installatie",
+      "definition": "een specifieke combinatie van verschillende soorten apparaten en eventuele andere inrichtingen, die samengebouwd, geïnstalleerd en bestemd zijn voor permanent gebruik op een van te voren vastgestelde locatie",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verlener van vertrouwensdiensten",
+      "definition": "verlener van vertrouwensdiensten als bedoeld in artikel 3, onderdeel 19, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verordening (EU) 2019/1020",
+      "definition": "Verordening (EU) 2019/1020 van het Europees Parlement en de Raad van 20 juni 2019 betreffende markttoezicht en conformiteit van producten en tot wijziging van Richtlijn 2004/42/EG en de Verordeningen (EG) nr. 765/2008 en (EU) nr. 305/2011 (PbEU 2019, L 169)",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertrouwensdienst",
+      "definition": "vertrouwensdienst als bedoeld in artikel 3, onderdeel 16, van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertrouwenslijst",
+      "definition": "vertrouwenslijst als bedoeld in artikel 22 van de eidas-verordening",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "voor hoge snelheid bestemde fysieke binnenhuisinfrastructuur",
+      "definition": "fysieke binnenhuisinfrastructuur die bestemd is om elementen van elektronische communicatienetwerken met hoge snelheid onder te brengen of het leveren van die netwerken mogelijk te maken.",
+      "paragraph": null,
+      "article": "1.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van een openbaar elektronisch communicatienetwerk",
+      "definition": "degene die in eigen naam en voor eigen rekening kabels ten dienste van een dergelijk netwerk aanlegt, instandhoudt en opruimt.",
+      "paragraph": null,
+      "article": "5.1",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "marktconforme kosten",
+      "definition": "kosten zoals deze door een onderneming onder normale omstandigheden in een markteconomie op de desbetreffende markt worden gemaakt.",
+      "paragraph": "4",
+      "article": "5.7",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "netwerkexploitant",
+      "definition": "een aanbieder van 1°. een openbaar elektronisch communicatienetwerk, of 2°. fysieke infrastructuur waarmee een dienst wordt geleverd die bestaat uit vervoer of uit de productie, het transport of de distributie van gas, elektriciteit, straatverlichting, verwarming en water",
+      "paragraph": null,
+      "article": "5a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "coördinatie",
+      "definition": "coördinatie als bedoeld in artikel 5 van richtlijn nr. 2014/61/EU",
+      "paragraph": null,
+      "article": "5a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "civiele werken",
+      "definition": "het product van een geheel van bouwkundige of civieltechnische werken dat bestemd is om als zodanig een economische of technische functie te vervullen en dat een of meer elementen van een fysieke infrastructuur omvat.",
+      "paragraph": null,
+      "article": "5a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "grond",
+      "definition": "a. dat de fysieke infrastructuur technisch of economisch ongeschikt is voor de aanleg, van elementen van een openbaar elektronisch communicatienetwerk met hoge snelheid; b. dat er, rekening houdend met de toekomstige behoeften aan ruimte van de netwerkexploitant, onvoldoende ruimte beschikbaar is voor de aanleg van elementen van een openbaar elektronisch communicatienetwerk met hoge snelheid; c. redenen van veiligheid of volksgezondheid; d. redenen van integriteit en veiligheid van alle reeds aangelegde netwerken of van kritieke nationale infrastructuur; e. een risico van ernstige verstoring van de geplande elektronische communicatiediensten wanneer andere diensten via dezelfde infrastructuur worden verstrekt; f. dat de netwerkexploitant beschikt over levensvatbare alternatieve middelen voor het verlenen van wholesaletoegang tot fysieke netwerkinfrastructuur die geschikt zijn voor het aanbieden van elektronische communicatienetwerken met hoge snelheid, op voorwaarde dat de toegang onder billijke en redelijke voorwaarden wordt verleend.",
+      "paragraph": "2",
+      "article": "5a.4",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "redelijke vergoeding voor medegebruik van antenne-opstelpunten voor omroep",
+      "definition": "de vergoeding efficiënt, transparant en niet-discriminatoir is, en de kosten van de werkelijk afgenomen capaciteit weerspiegelt. Daarbij draagt de aanbieder die aan het verzoek tot medegebruik voldoet bij geschillen de bewijslast voor de redelijkheid van de vergoeding.",
+      "paragraph": "2",
+      "article": "5a.5",
+      "document": "BWBR0009950",
+      "pattern": "is_sprake"
+    },
+    {
+      "term": "publieke infrastructuur",
+      "definition": "a. onder zeggenschap van een publiekrechtelijke rechtspersoon staand openbaar gebouw; b. onder zeggenschap van een publiekrechtelijke rechtspersoon staande fysieke infrastructuur; c. onder zeggenschap van een publiekrechtelijke rechtspersoon staande installatie die onderdeel is van het straatmeubilair.",
+      "paragraph": null,
+      "article": "5c.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "grond",
+      "definition": "a. de publieke infrastructuur is technisch niet geschikt voor toegangspunten met klein bereik; b. de publieke infrastructuur is niet noodzakelijk voor de verbinding van toegangspunten met klein bereik met een backbonenetwerk; c. redenen van veiligheid; d. redenen van integriteit en veiligheid van alle reeds aangelegde netwerken of van kritieke nationale infrastructuur; e. een risico van ernstige verstoring van de geplande elektronische communicatiediensten wanneer andere diensten via dezelfde infrastructuur worden verstrekt.",
+      "paragraph": "2",
+      "article": "5c.3",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "openbare onderneming",
+      "definition": "onderneming waarop een krachtens het publiekrecht ingestelde rechtspersoon rechtstreeks of middellijk een dominerende invloed kan uitoefenen.",
+      "paragraph": "1",
+      "article": "6a.20",
+      "document": "BWBR0009950",
+      "pattern": "verstaan_onder"
+    },
+    {
+      "term": "eindgebruiker",
+      "definition": "een natuurlijk persoon of rechtspersoon die gebruik maakt of verzoekt om een programmadienst.",
+      "paragraph": "4",
+      "article": "6a.21",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "overeenkomst op afstand",
+      "definition": "overeenkomst die tussen een aanbieder van een openbare elektronische communicatiedienst en een eindgebruiker wordt gesloten in het kader van een georganiseerd systeem voor verkoop of dienstverlening op afstand zonder gelijktijdige persoonlijke aanwezigheid van aanbieder en eindgebruiker en waarbij, tot en met het moment van het sluiten van de overeenkomst, uitsluitend gebruik wordt gemaakt van een of meer middelen voor communicatie op afstand.",
+      "paragraph": "1",
+      "article": "7.2b",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "alarmnummer",
+      "definition": "een nummer dat in een nummerplan als bedoeld in artikel 4.1, eerste lid, bestemd is als alarmnummer.",
+      "paragraph": "2",
+      "article": "7.7",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "consument",
+      "definition": "natuurlijke persoon die een elektronische communicatiedienst afneemt voor andere doeleinden dan zijn handels-, bedrijfs-, ambachts-, of beroepsactiviteit",
+      "paragraph": null,
+      "article": "7a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "dienstverlener",
+      "definition": "natuurlijke of rechtspersoon die een elektronische communicatiedienst verleent op de markt van de Unie of aanbiedt consumenten in de Unie een dienst te verlenen",
+      "paragraph": null,
+      "article": "7a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronische communicatiedienst",
+      "definition": "dienst voor elektronische communicatie in de zin van artikel 2, punt 4, van richtlijn (EU) 2018/1972, met uitzondering van transmissiediensten die voor de levering van machine-to-machinediensten worden gebruikt",
+      "paragraph": null,
+      "article": "7a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "richtlijn (EU) 2019/882",
+      "definition": "Richtlijn (EU) 2019/882 van het Europees Parlement en de Raad van 17 april 2019 betreffende de toegankelijkheidsvoorschriften voor producten en diensten (PbEU 2019, L 151).",
+      "paragraph": null,
+      "article": "7a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "schip of luchtvaartuig",
+      "definition": "elk ander drijvend of door de lucht gedragen voorwerp.",
+      "paragraph": "4",
+      "article": "10.17",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "gebruiker",
+      "definition": "een natuurlijke persoon die gebruik maakt van een openbare elektronische communicatiedienst voor particuliere of zakelijke doeleinden zonder noodzakelijkerwijze op die dienst te zijn geabonneerd",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verkeersgegevens",
+      "definition": "gegevens die worden verwerkt voor het overbrengen van communicatie over een elektronisch communicatienetwerk of voor de facturering ervan",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verwerking van verkeersgegevens",
+      "definition": "verwerking als bedoeld in artikel 4, onderdeel 2, van de Algemene verordening gegevensbescherming, met dien verstande dat de desbetreffende handelingen mede betrekking hebben op verkeersgegevens van abonnees die geen natuurlijke personen zijn",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "locatiegegevens",
+      "definition": "gegevens die worden verwerkt in een openbaar elektronisch communicatienetwerk of een openbare elektronische communicatiedienst waarmee de geografische positie van de randapparatuur van een gebruiker van een openbare elektronische communicatiedienst wordt aangegeven",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "communicatie",
+      "definition": "informatie die wordt uitgewisseld of overgebracht tussen een eindig aantal partijen door middel van een openbare elektronische communicatiedienst; dit omvat niet de informatie die via een omroepdienst over een elektronisch communicatienetwerk wordt overgebracht, behalve wanneer de informatie kan worden gerelateerd aan de identificeerbare abonnee of gebruiker die de informatie ontvangt",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "oproep",
+      "definition": "een door middel van een openbare elektronische communicatiedienst tot stand gebrachte verbinding die spraakcommunicatie tussen gebruikers of abonnees over en weer mogelijk maakt",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "toestemming van een gebruiker of abonnee",
+      "definition": "toestemming van een betrokkene als bedoeld in artikel 4, onderdeel 11, van de Algemene verordening gegevensbescherming, met dien verstande dat de toestemming mede betrekking kan hebben op gegevens van abonnees die geen natuurlijke personen zijn",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "dienst met toegevoegde waarde",
+      "definition": "dienst die de verwerking vereist van verkeersgegevens of locatiegegevens, niet zijnde verkeersgegevens, en die verder gaat dan hetgeen noodzakelijk is voor de overbrenging van een communicatie of de facturering daarvan",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronisch bericht",
+      "definition": "tekst-, spraak-, geluids- of beeldbericht dat over een openbaar elektronisch communicatienetwerk wordt verzonden en in het netwerk of in de randapparatuur van de ontvanger kan worden opgeslagen tot het door de ontvanger wordt opgehaald",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "inbreuk in verband met persoonsgegevens",
+      "definition": "een inbreuk op de beveiliging die resulteert in een onbedoelde of onwettige vernietiging, verlies of wijziging van, of een niet geautoriseerde toegang tot persoonsgegevens die zijn verstuurd, opgeslagen of anderszins verwerkt in verband met de levering van een openbare elektronische communicatiedienst in de Europese Unie.",
+      "paragraph": null,
+      "article": "11.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "geschil",
+      "definition": "een geschil inzake de vraag of, indien de in dat lid bedoelde houders van een vergunning, aanbieders, aanbieders en ondernemingen, onderscheidenlijk ondernemingen een overeenkomst hebben gesloten op basis van een bij of krachtens deze wet op een of meer van hen rustende verplichting, de ter zake daarvan tussen hen bestaande verbintenissen, of de wijze waarop die verbintenissen worden nagekomen strijdig zijn, onderscheidenlijk strijdig is met het bij of krachtens deze wet bepaalde.",
+      "paragraph": "2",
+      "article": "12.2",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "gegevens",
+      "definition": "de verkeers- en locatiegegevens, bedoeld in artikel 11.1, onderdeel b respectievelijk onderdeel d, alsmede de daarmee verband houdende gegevens die nodig zijn om de abonnee of gebruiker te identificeren",
+      "paragraph": "1",
+      "article": "13.2a",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "oproeppoging zonder resultaat",
+      "definition": "een communicatie waarbij een telefoonoproep wel tot een verbinding heeft geleid, maar onbeantwoord is gebleven of via het netwerkbeheer is beantwoord.",
+      "paragraph": "1",
+      "article": "13.2a",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aandeel",
+      "definition": "aandeel als bedoeld in artikel 5:33, eerste lid, onderdeel b, van de Wet op het financieel toezicht",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aandelenbelang",
+      "definition": "bepaalde hoeveelheid aandelen",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aangesloten instelling",
+      "definition": "aangesloten instelling als bedoeld in artikel 1 van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beursgenoteerde telecommunicatiepartij",
+      "definition": "telecommunicatiepartij waarvan de aandelen zijn toegelaten tot de handel op een gereglementeerde markt",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beursgenoteerde betrokken partij",
+      "definition": "betrokken partij waarvan aandelen zijn toegelaten tot de handel op een gereglementeerde markt",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "betrokken partij",
+      "definition": "telecommunicatiepartij waarop een verbod als bedoeld in artikel 14a.4, eerste lid, betrekking heeft",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bewaarder van een beleggingsinstelling",
+      "definition": "bewaarder van een icbe als bedoeld in artikel 1:1 van de Wet op het financieel toezicht of entiteit met als statutaire doelstelling het houden van de juridische eigendom al dan niet tezamen met het bewaren en administreren van aandelen of zeggenschap van een beleggingsfonds of een fonds voor collectieve beleggingen in effecten",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bijkantoor",
+      "definition": "onderdeel van een niet in Nederland gevestigde rechtspersoon, dat duurzaam in Nederland aanwezig is en geen eigen rechtspersoonlijkheid heeft",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "centraal instituut",
+      "definition": "centraal instituut als bedoeld in artikel 1 van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "depot",
+      "definition": "rekening met een aandelenbelang of rekening waarin een aandelenbelang tot uitdrukking komt die beroepsmatig en anders dan als aandeelhouder wordt geadministreerd of aangehouden, waaronder een verzameldepot, een girodepot, een depot van een instelling in het buitenland of een depot van een buitenlandse instelling met een functie vergelijkbaar met die van het centraal instituut",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gereglementeerde markt",
+      "definition": "gereglementeerde markt als bedoeld in artikel 1:1 van de Wet op het financieel toezicht of een daarmee vergelijkbaar systeem uit een staat die geen lid is van de Europese Unie dan wel partij is bij de Overeenkomst betreffende de Europese Economische Ruimte",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "girodepot",
+      "definition": "girodepot als bedoeld in artikel 34, eerste lid, van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "instelling in het buitenland",
+      "definition": "instelling als bedoeld in artikel 49a, onderdeel b, van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "intermediair",
+      "definition": "intermediair als bedoeld in artikel 1 van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "internetknooppunt",
+      "definition": "internetknooppunt als bedoeld in richtlijn (EU) 2016/1148 van het Europees Parlement en de Raad van 6 juli 2016 houdende maatregelen voor een hoog gemeenschappelijk niveau van beveiliging van netwerk- en informatiesystemen in de Unie (PbEU 2016, L 194)",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "multilaterale handelsfaciliteit",
+      "definition": "multilaterale handelsfaciliteit als bedoeld in artikel 1:1 van de Wet op het financieel toezicht",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ongewenst persoon",
+      "definition": "persoon of entiteit die is onderworpen aan beperkende maatregelen krachtens: a. hoofdstuk VII van het Handvest van de Verenigde Naties; b. artikel 215 van het Verdrag betreffende de werking van de Europese Unie; c. de Sanctiewet 1977",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overwegende zeggenschap",
+      "definition": "overwegende zeggenschap in de zin van artikel 14a.3",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "personen met wie in onderling overleg wordt gehandeld",
+      "definition": "natuurlijke personen, rechtspersonen of vennootschappen met wie, onderscheidenlijk waarmee wordt samengewerkt op grond van een overeenkomst met als doel het verwerven van overwegende zeggenschap in een naamloze vennootschap als bedoeld in de definitie van personen met wie in onderling overleg wordt gehandeld, in artikel 1:1 van de Wet op het financieel toezicht",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "publiek belang",
+      "definition": "het belang van de openbare orde of de openbare veiligheid, bedoeld in de artikelen 45, derde lid, 52, eerste lid, en 65, eerste lid, onderdeel b, van het Verdrag betreffende de werking van de Europese Unie en de wezenlijke belangen van veiligheid van de staat, bedoeld in artikel 346, eerste lid, onderdeel a, van het Verdrag betreffende de werking van de Europese Unie",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "stemmen",
+      "definition": "a. bij een beursgenoteerde partij: stemmen als bedoeld in artikel 5:33, eerste lid, onderdeel d, van de Wet op het financieel toezicht, met inbegrip van stemmen waarover een persoon beschikt of geacht wordt te beschikken op grond van artikel 5:45, eerste tot en met elfde lid, van de Wet op het financieel toezicht; b. bij een niet-beursgenoteerde partij: stemmen die op aandelen kunnen worden uitgebracht, waarbij artikel 5:33, eerste lid, onderdeel d, en 5:45, eerste tot en met elfde lid, van de Wet op het financieel toezicht van overeenkomstige toepassing is; c. bij een vereniging of coöperatie: stemmen die kunnen worden uitgebracht in de algemene vergadering, waarbij artikel 5:45, vijfde, zesde en negende lid, van de Wet op het financieel toezicht van overeenkomstige toepassing is",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "telecommunicatiepartij",
+      "definition": "bijkantoor of een in Nederland gevestigde rechtspersoon, eenmanszaak of vennootschap, zijnde een aanbieder of houder van overwegende zeggenschap in een aanbieder van: a. een elektronisch communicatienetwerk of -dienst; b. een hostingdienst, internetknooppunt, vertrouwensdienst of datacenter, met uitzondering van datacenters uitsluitend of hoofdzakelijk voor eigen gebruik; of c. een bij algemene maatregel van bestuur aangewezen categorie netwerken of diensten",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verzameldepot",
+      "definition": "verzameldepot als bedoeld in artikel 9, eerste lid, van de Wet giraal effectenverkeer",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "zeggenschap",
+      "definition": "stemmen, deelname in een vennootschap of eigendom van een eenmanszaak.",
+      "paragraph": null,
+      "article": "14a.1",
+      "document": "BWBR0009950",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overwegende zeggenschap",
+      "definition": "de houder of verkrijger van die zeggenschap na de verkrijging: a. alleen of tezamen met personen met wie in onderling overleg wordt gehandeld, rechtstreeks of middellijk over ten minste 30 procent van de stemmen in de algemene vergadering van een rechtspersoon beschikt; b. al dan niet krachtens overeenkomst met anderen, alleen of samen met personen met wie in onderling overleg wordt gehandeld, meer dan de helft van de bestuurders of van de commissarissen van een rechtspersoon kan benoemen of ontslaan, ook indien alle stemgerechtigden stemmen; c. beschikt over een of meer aandelen met een bijzonder statutair recht inzake de zeggenschap; d. beschikt over een bijkantoor, zijnde een telecommunicatiepartij; e. als vennoot volledig jegens schuldeisers aansprakelijk wordt voor de schulden van de onder eigen naam optredende vennootschap, of f. eigenaar is van een eenmanszaak.",
+      "paragraph": null,
+      "article": "14a.3",
+      "document": "BWBR0009950",
+      "pattern": "is_sprake"
+    },
+    {
+      "term": "relevante invloed in de telecommunicatiesector",
+      "definition": "misbruik of opzettelijke uitval van de telecommunicatiepartij, bedoeld in het eerste lid, en eventuele andere telecommunicatiepartijen waarin de houder of verkrijger of de groep waarvan de houder of verkrijger deel uitmaakt overwegende zeggenschap houdt of verkrijgt, kan leiden tot: a. een onrechtmatige inbreuk op de vertrouwelijkheid van de communicatie, danwel een onderbreking van de internettoegangsdienst of telefoondienst van meer dan een bij algemene maatregel van bestuur te bepalen aantal eindgebruikers; b. een onderbreking van de beschikbaarheid of verificatie van bij algemene maatregel van bestuur genoemde diensten en toepassingen die worden geleverd via het internet voor zover die diensten een bij die algemene maatregel van bestuur te bepalen drempelwaarde overschrijden; c. een onderbreking van de beschikbaarheid, betrouwbaarheid of vertrouwelijkheid van een bij algemene maatregel van bestuur aangewezen product of dienst ten behoeve van een publieke taak op het gebied van nationale veiligheid, defensie, de handhaving van de rechtsorde dan wel hulpverlening; d. een onrechtmatige inbreuk of onderbreking als bedoeld in de onderdelen a of b met betrekking tot een combinatie van diensten en toepassingen als bedoeld in die onderdelen die tezamen een bij die algemene maatregel van bestuur gestelde drempelwaarde overschrijden; e. andere bij algemene maatregel van bestuur genoemde ernstige gevolgen met betrekking tot de continuïteit van dienstverlening door een telecommunicatiepartij dan wel de vertrouwelijkheid van communicatie.",
+      "paragraph": "3",
+      "article": "14a.4",
+      "document": "BWBR0009950",
+      "pattern": "is_sprake"
+    },
+    {
+      "term": "uitgevende instelling",
+      "definition": "een beursgenoteerde telecommunicatiepartij",
+      "paragraph": "2",
+      "article": "14a.5",
+      "document": "BWBR0009950",
+      "pattern": "onder_verstaan"
+    }
+  ]
+}

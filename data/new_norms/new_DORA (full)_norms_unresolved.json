@@ -9,6 +9,46 @@
   "reason": "validation_failed",
   "pass1": null,
   "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "32022R2554",
+  "article": "28",
+  "paragraph_number": "9",
+  "paragraph_index": 8,
+  "unit_text": "De ETA’s ontwikkelen via het Gemengd Comité ontwerpen van technische uitvoeringsnormen voor de vaststelling van standaardmodellen ten behoeve van het in lid 3 bedoelde informatieregister, waarin informatie wordt opgenomen inzake het gebruik van ICT-diensten die voor alle contractuele overeenkomsten van toepassing is. De ETA’s leggen deze ontwerpen van technische uitvoeringsnormen uiterlijk op 17 januari 2024 voor aan de Commissie.\n\nAan de Commissie wordt de bevoegdheid verleend om de in de eerste alinea bedoelde technische uitvoeringsnormen vast te stellen overeenkomstig artikel 15 van de Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "32022R2554",
+  "article": "26",
+  "paragraph_number": "11",
+  "paragraph_index": 10,
+  "unit_text": "De ETA’s ontwikkelen, in overeenstemming met de ECB gemeenschappelijke ontwerpen van technische reguleringsnormen overeenkomstig het Tiber-EU-kader, tot nadere bepaling van:\n\na) de voor de toepassing van lid 8, tweede alinea, gebruikte criteria;\n\nb) de vereisten en normen inzake het inzetten van interne testers;\n\nc) de vereisten met betrekking tot:\n\ni) het toepassingsgebied van de in lid 2 bedoelde TLPT;\n\nii) de te volgen testmethodologie en -aanpak voor elke specifieke fase van het testproces;\n\niii) de resultaten, de afsluitings- en de correctiefase van de tests;\n\nd) het soort samenwerking op het gebied van toezicht evenals andere relevante vormen van samenwerking die noodzakelijk zijn voor de uitvoering van TLPT en ter facilitering van wederzijdse erkenning van die tests, in het geval van financiële entiteiten die in meer dan een lidstaat actief zijn, teneinde een passend niveau van betrokkenheid van toezichthouders en een flexibele uitvoering mogelijk te maken rekening houdend met de specifieke kenmerken van financiële subsectoren of lokale financiële markten.\n\nBij het ontwikkelen van die ontwerpen van technische reguleringsnormen, houden de ETA’s terdege rekening met elk specifiek kenmerk dat voortvloeit uit de specifieke aard van de activiteiten in verschillende financiëledienstensectoren.\n\nDe ETA’s leggen deze ontwerpen van technische reguleringsnormen uiterlijk op 17 juli 2024 voor aan de Commissie.\n\nAan de Commissie wordt de bevoegdheid gedelegeerd om deze verordening aan te vullen door de in de eerste alinea bedoelde technische reguleringsnormen vast te stellen overeenkomstig de artikelen 10 tot en met 14 van de Verordeningen (EU) nr. 1093/2010, (EU) nr. 1094/2010 en (EU) nr. 1095/2010.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "32022R2554",
+  "article": "11",
+  "paragraph_number": "6",
+  "paragraph_index": 5,
+  "unit_text": "In het kader van hun alomvattend ICT-risicobeheer testen financiële entiteiten:\n\na) ten minste jaarlijks en in geval van substantiële wijzigingen in ICT-systemen die kritieke of belangrijke functies ondersteunen, de ICT-bedrijfscontinuïteitsplannen en de ICT-respons- en herstelplannen met betrekking tot ICT-systemen die kritieke of belangrijke functies ondersteunen;\n\nb) de overeenkomstig artikel 14 opgestelde crisiscommunicatieplannen.\n\nVoor de toepassing van de eerste alinea, punt a), nemen andere financiële entiteiten dan micro-ondernemingen in de testplannen scenario’s op van cyberaanvallen en omschakelingen tussen de primaire ICT-infrastructuur en de reservecapaciteit, backups en reservefaciliteiten die noodzakelijk zijn om te voldoen aan de in artikel 12 bedoelde verplichtingen.\n\nFinanciële entiteiten evalueren regelmatig hun ICT-bedrijfscontinuïteitsbeleid en hun ICT-respons- en herstelplannen, rekening houdend met de resultaten van de overeenkomstig de eerste alinea uitgevoerde tests en de aanbevelingen die voortvloeien uit audits of toezichtbeoordelingen.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
   "drop_reason": "no_grounded_pass"
  }
 ]

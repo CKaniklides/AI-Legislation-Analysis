@@ -1,0 +1,248 @@
+{
+  "document": "BWBR0048156",
+  "terms": [
+    "aangewezen organisatie",
+    "attribuut",
+    "authenticatie",
+    "authenticatiedienst",
+    "bedrijfs- en organisatiemiddel",
+    "betrouwbaarheidsniveau",
+    "eIDAS-verordening",
+    "elektronische dienstverlening",
+    "erkende dienst",
+    "identificatiemiddel",
+    "machtigingsdienst",
+    "middelenuitgever",
+    "online identiteit",
+    "ontsluitende dienst",
+    "Onze Minister",
+    "privaat identificatiemiddel",
+    "publiek identificatiemiddel",
+    "toegelaten identificatiemiddel",
+    "bestuursorganen",
+    "aangewezen organisaties",
+    "rechterlijke instanties",
+    "toegankelijke wijze van ontsluiten",
+    "onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon",
+    "bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+    "organen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht"
+  ],
+  "definitions": [
+    {
+      "term": "aangewezen organisatie",
+      "definition": "organisatie als bedoeld in artikel 2, tweede lid",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "attribuut",
+      "definition": "uniek kenmerk of gegeven van een natuurlijke persoon, onderneming of rechtspersoon",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "authenticatie",
+      "definition": "elektronisch proces voor de verificatie en bevestiging van de identiteit van een natuurlijke persoon, onderneming of rechtspersoon",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "authenticatiedienst",
+      "definition": "partij die op basis van een identificatiemiddel een authenticatieverklaring afgeeft",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bedrijfs- en organisatiemiddel",
+      "definition": "identificatiemiddel voor een onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon dat wordt uitgegeven aan een natuurlijke persoon die blijkens een aan dat middel gekoppelde of te koppelen machtiging van een erkende machtigingsdienst bevoegd is om namens die onderneming of rechtspersoon te handelen en waarmee deze onderneming of rechtspersoon toegang kan krijgen tot elektronische dienstverlening",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "betrouwbaarheidsniveau",
+      "definition": "mate waarin vertrouwen kan worden gesteld in een identificatiemiddel",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "eIDAS-verordening",
+      "definition": "Verordening (EU) nr. 910/2014 van het Europees Parlement en de Raad van 23 juli 2014 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt en tot intrekking van Richtlijn 1999/93/EG (Pb EU 2014, L 257) en de krachtens deze verordening vastgestelde uitvoeringshandelingen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronische dienstverlening",
+      "definition": "verlening van elektronische diensten aan natuurlijke personen, ondernemingen of rechtspersonen ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, door een bestuursorgaan als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht of een aangewezen organisatie",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "erkende dienst",
+      "definition": "middelenuitgever, authenticatiedienst, ontsluitende dienst of machtigingsdienst die is erkend op grond van artikel 9 of 11 van deze wet.",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "identificatiemiddel",
+      "definition": "elektronisch middel dat persoonsidentificatiegegevens bevat en gebruikt wordt voor de authenticatie van een natuurlijke persoon, rechtspersoon of onderneming die toegang wenst tot elektronische dienstverlening",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "machtigingsdienst",
+      "definition": "partij die ten behoeve van toegang tot dienstverlening een elektronische verklaring afgeeft waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon optreedt namens een andere natuurlijke persoon, onderneming of rechtspersoon",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "middelenuitgever",
+      "definition": "partij die zorg draagt voor de uitgifte van erkende identificatiemiddelen aan natuurlijke personen, rechtspersonen of ondernemingen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "online identiteit",
+      "definition": "de voorziening, bedoeld in artikel 5, eerste lid, onder g",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ontsluitende dienst",
+      "definition": "partij die het elektronisch verkeer tussen een bestuursorgaan of aangewezen organisatie en erkende authenticatiediensten, middelenuitgevers en machtigingsdiensten routeert teneinde toegang tot elektronische dienstverlening te faciliteren",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Onze Minister",
+      "definition": "Onze Minister van Binnenlandse Zaken en Koninkrijksrelaties",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "privaat identificatiemiddel",
+      "definition": "niet van rijkswege uitgegeven aan een natuurlijke persoon, onderneming of rechtspersoon verstrekt identificatiemiddel",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "publiek identificatiemiddel",
+      "definition": "van rijkswege uitgegeven aan een natuurlijke persoon verstrekt identificatiemiddel",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "toegelaten identificatiemiddel",
+      "definition": "identificatiemiddel voor een natuurlijke persoon dat is aangewezen of erkend ingevolge artikel 9.",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0048156",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bestuursorganen",
+      "definition": "bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht.",
+      "paragraph": "1",
+      "article": "2",
+      "document": "BWBR0048156",
+      "pattern": "hieronder_verstaan"
+    },
+    {
+      "term": "aangewezen organisaties",
+      "definition": "a. de organisaties behorende tot een in de bijlage bij deze wet aangewezen categorie, en b. de organisaties die bij besluit, als bedoeld in het zesde lid, zijn aangewezen.",
+      "paragraph": "2",
+      "article": "2",
+      "document": "BWBR0048156",
+      "pattern": "hieronder_verstaan"
+    },
+    {
+      "term": "rechterlijke instanties",
+      "definition": "a. de gerechten bedoeld in artikel 2 van de Wet op de Rechterlijke Organisatie; b. de Afdeling bestuursrechtspraak van de Raad van State; c. het College van Beroep voor het bedrijfsleven; d. de Centrale Raad van Beroep.",
+      "paragraph": "3",
+      "article": "2",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "toegankelijke wijze van ontsluiten",
+      "definition": "toevoeging aan de met de authenticatie van het betrokken identificatiemiddel ontvangen set persoonsidentificatiegegevens van een burgerservicenummer of andere aan de natuurlijke persoon, onderneming of rechtspersoon gekoppelde gegevens, voor zover die gegevens noodzakelijk zijn om de betrokken natuurlijke persoon, onderneming of rechtspersoon ten behoeve van het verrichten van de elektronische dienstverlening in hun systemen te herkennen en voor zover die gegevens niet middels een andere voorziening op betrouwbare wijze toegevoegd kunnen worden aan de bij de toegang met identificatiemiddelen, bedoeld in het tweede lid, onderdeel a, verkregen persoonsidentificatiegegevens.",
+      "paragraph": "3",
+      "article": "5",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "onderneming of rechtspersoon als bedoeld in artikel 5 onderscheidenlijk 6 van de Handelsregisterwet 2007 of een op grond van artikel 8, aanhef en onderdeel a, van die wet aangewezen rechtspersoon",
+      "definition": "onderneming of rechtspersoon als bedoeld in artikel 3 onderscheidenlijk 4 van de Handelsregisterwet 2009 BES».",
+      "paragraph": "1",
+      "article": "22b",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "bestuursorganen als bedoeld in artikel 1:1, eerste lid, onderdeel a, van de Algemene wet bestuursrecht",
+      "definition": "bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».",
+      "paragraph": "2",
+      "article": "22b",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "rechterlijke instanties",
+      "definition": "a. de Gerechten in eerste aanleg, bedoeld in artikel 1, onderdeel f, van de Rijkswet Gemeenschappelijk Hof van Justitie; b. het Hof, bedoeld in artikel 1, onderdeel e, van de Rijkswet Gemeenschappelijk Hof van Justitie; c. de Hoge Raad, bedoeld in artikel 1, onderdeel h, van de Rijkswet Gemeenschappelijk Hof van Justitie.",
+      "paragraph": "3",
+      "article": "22b",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "bestuursorganen",
+      "definition": "bestuursorganen als bedoeld in artikel 2, eerste lid, van de Wet administratieve rechtspraak BES».",
+      "paragraph": "4",
+      "article": "22b",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "organen, personen en colleges als bedoeld in artikel 1:1, tweede lid, van de Algemene wet bestuursrecht",
+      "definition": "organen als bedoeld in artikel 2, eerste lid, onderdelen a tot en met d, van de Wet administratieve rechtspraak BES».",
+      "paragraph": "5",
+      "article": "22b",
+      "document": "BWBR0048156",
+      "pattern": "onder_verstaan"
+    }
+  ]
+}

@@ -1,1 +1,80 @@
-[]
+[
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "7",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Bij ministeriële regeling worden voorwaarden gesteld en vereiste kwalificaties benoemd waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken, om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens, alsmede regels ten aanzien van de procedure die tot een benoeming als bedoeld in het derde lid leidt.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "8",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens, met dien verstande dat:\n\na.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de andere leden van de Autoriteit persoonsgegevens door de voorzitter van de Autoriteit persoonsgegevens wordt opgelegd;\n\nb.\nhet in artikel 46c, onderdeel b, genoemde verbod zich in een onderhoud of een gesprek in te laten met partijen of hun advocaten of gemachtigden of een bijzondere inlichting of schriftelijk stuk van hen aan te nemen, niet op de voorzitter en de andere leden van de Autoriteit persoonsgegevens van toepassing is;\n\nc.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de voorzitter van de Autoriteit persoonsgegevens door de president van het gerechtshof Den Haag wordt opgelegd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "33",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Gelet op artikel 10 van de verordening mogen persoonsgegevens van strafrechtelijke aard worden verwerkt, indien:\n\na.\nde verwerking geschiedt door organen die krachtens de wet zijn belast met de toepassing van het strafrecht, dan wel door verwerkingsverantwoordelijken die deze hebben verkregen krachtens de Wet politiegegevens of de Wet justitiële en strafvorderlijke gegevens;\n\nb.\nde verwerking geschiedt door en ten behoeve van publiekrechtelijke samenwerkingsverbanden van verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken, indien:\n\n1°.\nde verwerking noodzakelijk is voor de uitvoering van de taak van deze verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken; en\n\n2°.\nbij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad; of\n\nc.\nde verwerking noodzakelijk is in aanvulling op de verwerking van gegevens over gezondheid, bedoeld in artikel 30, derde lid, aanhef en onderdeel a, met het oog op een goede behandeling of verzorging van de betrokkene.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "33",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Gelet op artikel 10 van de verordening mogen persoonsgegevens van strafrechtelijke aard worden verwerkt, indien:\n\na.\nde verwerking geschiedt door organen die krachtens de wet zijn belast met de toepassing van het strafrecht, dan wel door verwerkingsverantwoordelijken die deze hebben verkregen krachtens de Wet politiegegevens of de Wet justitiële en strafvorderlijke gegevens;\n\nb.\nde verwerking geschiedt door en ten behoeve van publiekrechtelijke samenwerkingsverbanden van verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken, indien:\n\n1°.\nde verwerking noodzakelijk is voor de uitvoering van de taak van deze verwerkingsverantwoordelijken of groepen van verwerkingsverantwoordelijken; en\n\n2°.\nbij de uitvoering is voorzien in zodanige waarborgen dat de persoonlijke levenssfeer van de betrokkene niet onevenredig wordt geschaad; of\n\nc.\nde verwerking noodzakelijk is in aanvulling op de verwerking van gegevens over gezondheid, bedoeld in artikel 30, derde lid, aanhef en onderdeel a, met het oog op een goede behandeling of verzorging van de betrokkene.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": [],
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "single_pass_empty_unconfirmed"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "7",
+  "paragraph_number": "5",
+  "paragraph_index": 4,
+  "unit_text": "Bij ministeriële regeling worden voorwaarden gesteld en vereiste kwalificaties benoemd waaraan een kandidaat dient te voldoen respectievelijk waarover deze dient te beschikken, om benoemd te kunnen worden als lid van de Autoriteit persoonsgegevens, alsmede regels ten aanzien van de procedure die tot een benoeming als bedoeld in het derde lid leidt.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ },
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0040940",
+  "article": "8",
+  "paragraph_number": null,
+  "paragraph_index": null,
+  "unit_text": "De artikelen 46c, met uitzondering van onderdeel b, 46ca, met uitzondering van het eerste lid, onderdeel b, 46d, tweede lid, 46f, 46g, 46i, met uitzondering van het eerste lid, onderdeel c, en zesde lid, 46j, 46l, eerste en derde lid, 46m, met uitzondering van onderdeel d, 46n, 46o en 46p van de Wet rechtspositie rechterlijke ambtenaren zijn van overeenkomstige toepassing op de voorzitter en de andere leden van de Autoriteit persoonsgegevens, met dien verstande dat:\n\na.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de andere leden van de Autoriteit persoonsgegevens door de voorzitter van de Autoriteit persoonsgegevens wordt opgelegd;\n\nb.\nhet in artikel 46c, onderdeel b, genoemde verbod zich in een onderhoud of een gesprek in te laten met partijen of hun advocaten of gemachtigden of een bijzondere inlichting of schriftelijk stuk van hen aan te nemen, niet op de voorzitter en de andere leden van de Autoriteit persoonsgegevens van toepassing is;\n\nc.\nde disciplinaire maatregel bedoeld in artikel 46ca, eerste lid, onderdeel a, ten aanzien van de voorzitter van de Autoriteit persoonsgegevens door de president van het gerechtshof Den Haag wordt opgelegd.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ }
+]

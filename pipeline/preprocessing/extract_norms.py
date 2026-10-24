@@ -515,10 +515,11 @@ SOURCES = [
         in_scope=lambda p: True,
     ),
     SourceSpec(
-        label="Telecommunicatiewet, Hoofdstuk 11 only (privacy/ePrivacy provisions)",
+        # Whole law since 23 Oct 2026 (was Hoofdstuk 11 only), so all ten laws are extracted alike.
+        label="Telecommunicatiewet (full)",
         path="data/laws/telecom/BWBR0009950_2026-08-15_provisions.json",
         get_provisions=lambda root: root,
-        in_scope=lambda p: bool(p.get("chapter")) and "Hoofdstuk 11" in p["chapter"],
+        in_scope=lambda p: True,
     ),
     SourceSpec(
         label="Uitvoeringswet dataverordening (full)",
@@ -592,7 +593,18 @@ def _atomic_write_json(path: Path, data) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    os.replace(tmp, path)
+    # On Windows the swap fails with "Access is denied" while another process (virus
+    # scanner, indexer, editor) briefly holds the target open; the unit's paid answer was
+    # then lost and re-offered (seen 23 Oct 2026). Retry for a few seconds first.
+    import time
+    for attempt in range(10):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError:
+            if attempt == 9:
+                raise
+            time.sleep(0.5 * (attempt + 1))
 
 
 def _load_root(spec: SourceSpec):
@@ -1313,7 +1325,10 @@ def main():
     client = None
     if not args.dry_run:
         from openai import OpenAI
-        client = OpenAI()   # reads OPENAI_API_KEY from the environmenthqPqA1OzcTCs3wpkxQ' # Inser key here
+        # reads OPENAI_API_KEY from the environment (.env); never put a key in code.
+        # The 2-minute timeout (23 Oct 2026): without it one stuck request held the whole run
+        # for the library default (10 minutes per attempt, with retries).
+        client = OpenAI(timeout=120.0, max_retries=2)
     if args.retry_queue:
         retry_queue(client, args.model, args.reasoning_effort, args.concurrency, args.only)
         return

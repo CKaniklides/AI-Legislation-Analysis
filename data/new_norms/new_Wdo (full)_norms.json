@@ -307,30 +307,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "5",
-    "paragraph_index": 4,
-    "norm_index": 0,
-    "deontic": "DELEGATION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kunnen",
-     "worden verwijderd"
-    ],
-    "action_lemma": "verwijderen",
-    "object": "categorieën van organisaties van de bijlage, bedoeld in het tweede lid onderdeel a",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "8",
     "paragraph_index": 7,
     "norm_index": 0,
@@ -348,6 +324,30 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "6",
+    "paragraph_index": 5,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden aangewezen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "een organisatie",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "die elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+    ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
    },
@@ -387,7 +387,7 @@
      "kunnen",
      "worden toegevoegd"
     ],
-    "action_lemma": "toevoegen",
+    "action_lemma": "categorieën toevoegen",
     "object": "categorieën van organisaties",
     "recipient": [
      "aan de bijlage"
@@ -398,70 +398,32 @@
     "conditions": [
      "indien die categorie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
     ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "DELEGATION",
-     "actor": null,
-     "trigger_event": null,
-     "action_span": [
-      "kunnen",
-      "worden toegevoegd"
-     ],
-     "action_lemma": "categorieën toevoegen",
-     "object": "categorieën van organisaties",
-     "recipient": [
-      "aan de bijlage"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": [
-      "indien die categorie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
-     ]
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
-    "number": "6",
-    "paragraph_index": 5,
+    "number": "5",
+    "paragraph_index": 4,
     "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
+    "deontic": "DELEGATION",
+    "actor": null,
     "trigger_event": null,
     "action_span": [
-     "kan",
-     "worden aangewezen"
+     "kunnen",
+     "worden verwijderd"
     ],
-    "action_lemma": "aanwijzen",
-    "object": "een organisatie",
+    "action_lemma": "verwijderen",
+    "object": "categorieën van organisaties van de bijlage, bedoeld in het tweede lid onderdeel a",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "die elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+     "indien die categorie niet langer elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
     ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "COMPETENCE",
-     "actor": "Onze Minister",
-     "trigger_event": null,
-     "action_span": [
-      "kan",
-      "worden aangewezen"
-     ],
-     "action_lemma": "aanwijzen",
-     "object": "een organisatiedie elektronische diensten verleent waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    }
   ],
   "features": {
@@ -658,9 +620,9 @@
    }
   ],
   "_empty_paragraph_indices_v2": [
-   2,
    0,
-   1
+   1,
+   2
   ]
  },
  {
@@ -909,11 +871,8 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -935,11 +894,8 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -960,20 +916,17 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
     "number": "4",
     "paragraph_index": 3,
     "norm_index": 3,
-    "deontic": "OBLIGATION",
+    "deontic": "DELEGATION",
     "actor": null,
-    "trigger_event": "In voorkomend geval",
+    "trigger_event": null,
     "action_span": [
      "worden gesteld"
     ],
@@ -983,26 +936,11 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "DELEGATION",
-     "actor": null,
-     "trigger_event": "In voorkomend geval",
-     "action_span": [
-      "worden gesteld"
-     ],
-     "action_lemma": "regels stellen",
-     "object": "regels",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    },
-    "deontic_alternative": "DELEGATION"
+    "conditions": [
+     "In voorkomend geval"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -1013,8 +951,7 @@
     "actor": null,
     "trigger_event": null,
     "action_span": [
-     "kan",
-     "worden bepaald"
+     "kan worden bepaald"
     ],
     "action_lemma": "bepalen",
     "object": null,
@@ -1023,11 +960,8 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -1038,8 +972,7 @@
     "actor": null,
     "trigger_event": null,
     "action_span": [
-     "kan",
-     "worden bepaald"
+     "kan worden bepaald"
     ],
     "action_lemma": "bepalen",
     "object": null,
@@ -1048,11 +981,8 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    }
   ],
   "features": {
@@ -1225,29 +1155,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Bestuursorganen en aangewezen organisaties",
-    "trigger_event": null,
-    "action_span": [
-     "overleggen"
-    ],
-    "action_lemma": "overleggen",
-    "object": "een verklaring van een auditor waaruit blijkt of zij voldoen aan de in het eerste lid bedoelde regels",
-    "recipient": [
-     "aan Onze Minister"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "1",
     "paragraph_index": 0,
     "norm_index": 0,
@@ -1260,6 +1167,29 @@
     "action_lemma": "voldoen",
     "object": "aan bij of krachtens algemene maatregel van bestuur te stellen regels",
     "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Bestuursorganen en aangewezen organisaties",
+    "trigger_event": null,
+    "action_span": [
+     "overleggen"
+    ],
+    "action_lemma": "overleggen",
+    "object": "een verklaring van een auditor",
+    "recipient": [
+     "aan Onze Minister"
+    ],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
@@ -1467,27 +1397,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "draagt zorg voor"
-    ],
-    "action_lemma": "zorg dragen voor",
-    "object": "een voorziening",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "1",
     "paragraph_index": 0,
     "norm_index": 0,
@@ -1530,49 +1439,22 @@
    },
    {
     "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
+    "number": "2",
+    "paragraph_index": 1,
     "norm_index": 0,
     "deontic": "OBLIGATION",
-    "actor": "De Dienst Wegverkeer",
+    "actor": "Onze Minister",
     "trigger_event": null,
     "action_span": [
-     "draagt",
-     "zorg"
+     "draagt zorg voor"
     ],
     "action_lemma": "zorg dragen voor",
-    "object": "het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs",
+    "object": "een voorziening",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 1,
-    "deontic": "DELEGATION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kunnen",
-     "worden opgedragen"
-    ],
-    "action_lemma": "taken opdragen",
-    "object": "overige taken",
-    "recipient": [
-     "Aan de Dienst Wegverkeer"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "die samenhangen met het plaatsen van een publiek identificatiemiddel op het rijbewijs"
-    ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
    },
@@ -1626,9 +1508,9 @@
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
-     "deontic": "COMPETENCE",
+     "deontic": "DELEGATION",
      "actor": null,
      "trigger_event": null,
      "action_span": [
@@ -1641,8 +1523,77 @@
      ],
      "deadline_raw": null,
      "thresholds": [],
+     "conditions": []
+    },
+    "deontic_alternative": "DELEGATION"
+   },
+   {
+    "schema_version": 2,
+    "number": "4",
+    "paragraph_index": 3,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De Dienst Wegverkeer",
+    "trigger_event": null,
+    "action_span": [
+     "draagt",
+     "zorg voor"
+    ],
+    "action_lemma": "zorg dragen voor",
+    "object": "het plaatsen van een publiek identificatiemiddel op betrouwbaarheidsniveau hoog op het rijbewijs",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "4",
+    "paragraph_index": 3,
+    "norm_index": 1,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "worden opgedragen"
+    ],
+    "action_lemma": "taken opdragen",
+    "object": "overige taken",
+    "recipient": [
+     "Aan de Dienst Wegverkeer"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "DELEGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "kunnen",
+      "worden opgedragen"
+     ],
+     "action_lemma": "taken opdragen",
+     "object": "overige taken",
+     "recipient": [
+      "Aan de Dienst Wegverkeer"
+     ],
+     "deadline_raw": null,
+     "thresholds": [],
      "conditions": [
-      "met het oog op de inrichting, beschikbaarstelling, instandhouding, werking en beveiliging van de generieke digitale infrastructuur"
+      "die samenhangen met het plaatsen van een publiek identificatiemiddel op het rijbewijs"
      ]
     }
    }
@@ -1863,30 +1814,8 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
+     "Bij elektronische dienstverlening waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
      "indien gebruik wordt gemaakt van identificatiemiddelen die ten minste het voor de betreffende dienstverlening vereiste betrouwbaarheidsniveau hebben"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Bestuursorganen en aangewezen organisaties",
-    "trigger_event": null,
-    "action_span": [
-     "bepalen"
-    ],
-    "action_lemma": "bepalen",
-    "object": "voor welke door hen te verlenen elektronische diensten machtiging op een bepaald betrouwbaarheidsniveau vereist is",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "volgens bij ministeriële regeling te stellen regels"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -1934,6 +1863,29 @@
     "thresholds": [],
     "conditions": [
      "op bij die regeling gestelde wijze"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Bestuursorganen en aangewezen organisaties",
+    "trigger_event": null,
+    "action_span": [
+     "bepalen"
+    ],
+    "action_lemma": "bepalen",
+    "object": "voor welke door hen te verlenen elektronische diensten machtiging op een bepaald betrouwbaarheidsniveau vereist is",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "volgens bij ministeriële regeling te stellen regels"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -2218,29 +2170,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "bestuursorganen, aangewezen organisaties en rechterlijke instanties",
-    "trigger_event": null,
-    "action_span": [
-     "accepteren"
-    ],
-    "action_lemma": "accepteren",
-    "object": "alle erkende bedrijfs- en organisatiemiddelen",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien en voor zover dat middel wordt gebruikt in de toegang van een door die natuurlijke persoon gemachtigde houder die met dat middel handelt namens een onderneming of rechtspersoon"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "4",
     "paragraph_index": 3,
     "norm_index": 0,
@@ -2259,6 +2188,29 @@
     "thresholds": [],
     "conditions": [
      "indien acceptatie van niet-toegelaten identificatiemiddelen onder uitsluiting van toegelaten identificatiemiddelen noodzakelijk is gelet op de aard van de dienstverlening of de aard van de doelgroep"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "bestuursorganen, aangewezen organisaties en rechterlijke instanties",
+    "trigger_event": null,
+    "action_span": [
+     "accepteren"
+    ],
+    "action_lemma": "accepteren",
+    "object": "alle erkende bedrijfs- en organisatiemiddelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien en voor zover dat middel wordt gebruikt in de toegang van een door die natuurlijke persoon gemachtigde houder die met dat middel handelt namens een onderneming of rechtspersoon"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -2304,7 +2256,7 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+     "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -2327,7 +2279,7 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
+     "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -2350,7 +2302,7 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
+     "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
      "indien dit is bepaald bij besluit van Onze Minister in overeenstemming met Onze Minister die het mede aangaat"
     ],
     "extraction_model": "gpt-5.6-luna",
@@ -2377,29 +2329,8 @@
      "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
      "uitsluitend"
     ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": "Bestuursorganen",
-     "trigger_event": null,
-     "action_span": [
-      "accepteren"
-     ],
-     "action_lemma": "accepteren",
-     "object": null,
-     "recipient": [
-      "bij hun elektronische dienstverlening aan natuurlijke personen"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": [
-      "waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
-      "uitsluitend"
-     ]
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -2422,10 +2353,8 @@
      "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
      "uitsluitend"
     ],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -2448,10 +2377,8 @@
      "bij hun elektronische dienstverlening aan natuurlijke personen waarvoor authenticatie op betrouwbaarheidsniveau substantieel of hoog vereist is",
      "uitsluitend"
     ],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    }
   ],
   "features": {
@@ -2665,6 +2592,32 @@
   "norms": [
    {
     "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden bepaald"
+    ],
+    "action_lemma": "bepalen",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "anders dan diensten ter uitoefening van een publieke taak",
+     "in het algemeen belang",
+     "waarbij het burgerservicenummer wordt verwerkt"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "1",
     "paragraph_index": 0,
     "norm_index": 0,
@@ -2684,48 +2637,27 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
-    "norm_index": 0,
-    "deontic": "DELEGATION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kan worden bepaald"
-    ],
-    "action_lemma": "bepalen",
-    "object": "dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens kan worden gebruikt voor de toegang tot daarbij bepaalde elektronische diensten, anders dan diensten ter uitoefening van een publieke taak, in het algemeen belang of waarbij het burgerservicenummer wordt verwerkt, van aangewezen organisaties",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
-     "deontic": "DELEGATION",
+     "deontic": "PROHIBITION",
      "actor": null,
      "trigger_event": null,
      "action_span": [
-      "kan",
-      "worden bepaald"
+      "worden",
+      "gebruikt"
      ],
-     "action_lemma": "bepalen",
-     "object": null,
-     "recipient": [],
+     "action_lemma": "gebruiken",
+     "object": "Een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b",
+     "recipient": [
+      "voor de toegang tot elektronische dienstverlening door bestuursorganen en aangewezen organisaties"
+     ],
      "deadline_raw": null,
      "thresholds": [],
      "conditions": [
-      "anders dan diensten ter uitoefening van een publieke taak",
-      "in het algemeen belang",
-      "waarbij het burgerservicenummer wordt verwerkt"
+      "uitsluitend"
      ]
     }
    },
@@ -2747,13 +2679,11 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [
-     "in overeenstemming met Onze Minister die het aangaat"
-    ],
+    "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "DELEGATION",
      "actor": "Onze Minister",
@@ -2764,9 +2694,7 @@
      ],
      "action_lemma": "bepalen",
      "object": "dat een publiek identificatiemiddel en de voorziening, bedoeld in artikel 5, eerste lid, onderdeel b, tevens ten behoeve van aangewezen organisaties kan worden gebruikt voor het verlenen van toegang tot een systeem voor de elektronische uitwisseling van gegevens waarbij het burgerservicenummer wordt verwerkt, anders dan een systeem voor elektronische dienstverlening",
-     "recipient": [
-      "ten behoeve van aangewezen organisaties"
-     ],
+     "recipient": [],
      "deadline_raw": null,
      "thresholds": [],
      "conditions": [
@@ -2964,42 +2892,17 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
+    "number": "4",
+    "paragraph_index": 3,
     "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
+    "deontic": "OBLIGATION",
+    "actor": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
     "trigger_event": null,
     "action_span": [
-     "laat",
-     "toe"
+     "voldoet"
     ],
-    "action_lemma": "toelaten",
-    "object": "een private ontsluitende dienst",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 1,
-    "deontic": "COMPETENCE",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "worden opgelegd"
-    ],
-    "action_lemma": "opleggen",
-    "object": "ontsluiting van alle toegelaten middelen",
+    "action_lemma": "voldoen",
+    "object": "aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
@@ -3010,18 +2913,17 @@
    },
    {
     "schema_version": 2,
-    "number": "9",
-    "paragraph_index": 8,
-    "norm_index": 0,
-    "deontic": "DELEGATION",
-    "actor": null,
+    "number": "4",
+    "paragraph_index": 3,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "De eisen",
     "trigger_event": null,
     "action_span": [
-     "worden",
-     "gesteld"
+     "behelzen"
     ],
-    "action_lemma": "regels stellen",
-    "object": "nadere regels",
+    "action_lemma": "behelzen",
+    "object": "in ieder geval een leveringsplicht en regels inzake te hanteren tarieven",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
@@ -3050,7 +2952,6 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "bij dit besluit",
      "voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen"
     ],
     "extraction_model": "gpt-5.6-luna",
@@ -3079,6 +2980,157 @@
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "9",
+    "paragraph_index": 8,
+    "norm_index": 0,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "worden",
+     "gesteld"
+    ],
+    "action_lemma": "regels stellen",
+    "object": "nadere regels",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "laat",
+     "toe"
+    ],
+    "action_lemma": "toelaten",
+    "object": "een private ontsluitende dienst",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "laat",
+      "toe"
+     ],
+     "action_lemma": "toelaten",
+     "object": "een private ontsluitende dienst",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien dit noodzakelijk is voor de continuïteit van de elektronische dienstverlening door bestuursorganen en aangewezen organisaties en de dienst voldoet aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+     ]
+    },
+    "deontic_alternative": "OBLIGATION"
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden opgelegd"
+    ],
+    "action_lemma": "opleggen",
+    "object": "ontsluiting van alle toegelaten middelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "COMPETENCE",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "kan",
+      "worden opgelegd"
+     ],
+     "action_lemma": "opleggen",
+     "object": "ontsluiting van alle toegelaten middelen",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "wijst",
+     "aan"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "een publiek identificatiemiddel",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "wijst",
+      "aan"
+     ],
+     "action_lemma": "aanwijzen",
+     "object": "een publiek identificatiemiddel",
+     "recipient": [
+      "als toegelaten identificatiemiddel"
+     ],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
+     ]
+    },
+    "deontic_alternative": "OBLIGATION"
    },
    {
     "schema_version": 2,
@@ -3111,8 +3163,50 @@
     "number": "6",
     "paragraph_index": 5,
     "norm_index": 1,
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": "Alvorens te beslissen op een aanvraag",
+    "action_span": [
+     "kan",
+     "worden gevraagd"
+    ],
+    "action_lemma": "vragen",
+    "object": "een advies als bedoeld in artikel 9 van die wet",
+    "recipient": [
+     "om een advies als bedoeld in artikel 9 van die wet"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "COMPETENCE",
+     "actor": "het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur",
+     "trigger_event": "Alvorens te beslissen op een aanvraag",
+     "action_span": [
+      "kan",
+      "worden gevraagd"
+     ],
+     "action_lemma": "vragen",
+     "object": "een advies als bedoeld in artikel 9 van die wet",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    },
+    "deontic_alternative": "COMPETENCE"
+   },
+   {
+    "schema_version": 2,
+    "number": "6",
+    "paragraph_index": 5,
+    "norm_index": 2,
     "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
+    "actor": "Hij",
     "trigger_event": null,
     "action_span": [
      "weigert"
@@ -3132,7 +3226,7 @@
     "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "COMPETENCE",
-     "actor": "Hij",
+     "actor": "Onze Minister",
      "trigger_event": null,
      "action_span": [
       "weigert"
@@ -3146,92 +3240,6 @@
       "indien zwaarwegende redenen zich tegen erkenning verzetten"
      ]
     }
-   },
-   {
-    "schema_version": 2,
-    "number": "6",
-    "paragraph_index": 5,
-    "norm_index": 2,
-    "deontic": "COMPETENCE",
-    "actor": "het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur",
-    "trigger_event": "Alvorens te beslissen op een aanvraag",
-    "action_span": [
-     "kan",
-     "worden gevraagd"
-    ],
-    "action_lemma": "advies vragen",
-    "object": "een advies als bedoeld in artikel 9 van die wet",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'action_lemma', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "PERMISSION",
-     "actor": null,
-     "trigger_event": "Alvorens te beslissen op een aanvraag",
-     "action_span": [
-      "kan",
-      "worden gevraagd"
-     ],
-     "action_lemma": "vragen",
-     "object": "om een advies als bedoeld in artikel 9 van die wet",
-     "recipient": [
-      "het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    },
-    "deontic_alternative": "PERMISSION"
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "wijst",
-     "aan"
-    ],
-    "action_lemma": "aanwijzen",
-    "object": "een publiek identificatiemiddel",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
-    ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": "Onze Minister",
-     "trigger_event": null,
-     "action_span": [
-      "wijst",
-      "aan"
-     ],
-     "action_lemma": "aanwijzen",
-     "object": "een publiek identificatiemiddel",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": [
-      "indien dit middel voldoet aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
-     ]
-    },
-    "deontic_alternative": "OBLIGATION"
    },
    {
     "schema_version": 2,
@@ -3323,7 +3331,6 @@
     "actor": "de houder",
     "trigger_event": null,
     "action_span": [
-     "kan",
      "worden verplicht",
      "voort te zetten"
     ],
@@ -3334,19 +3341,19 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
+     "Bij schorsing en intrekking",
      "voor zover dat nodig is om continuïteit van betrouwbare toegang tot elektronische dienstverlening te borgen"
     ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": "de houder",
-     "trigger_event": "Bij schorsing en intrekking",
+     "trigger_event": null,
      "action_span": [
-      "worden",
-      "verplicht",
+      "worden verplicht",
       "voort te zetten"
      ],
      "action_lemma": "voortzetten",
@@ -3361,74 +3368,51 @@
    },
    {
     "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
+    "number": "5",
+    "paragraph_index": 4,
     "norm_index": 0,
     "deontic": "OBLIGATION",
-    "actor": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
-    "trigger_event": null,
+    "actor": null,
+    "trigger_event": "Bij de aanvraag voor een erkenning",
     "action_span": [
-     "voldoet"
+     "wordt",
+     "gevoegd"
     ],
-    "action_lemma": "voldoen",
-    "object": "aan de voor hem bij of krachtens algemene maatregel van bestuur gestelde eisen en aan de aan de erkenning verbonden voorschriften en beperkingen",
+    "action_lemma": "voegen",
+    "object": "een verklaring",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 1,
-    "deontic": "OBLIGATION",
-    "actor": "De eisen",
-    "trigger_event": null,
-    "action_span": [
-     "behelzen"
-    ],
-    "action_lemma": "behelzen",
-    "object": "in ieder geval een leveringsplicht en regels inzake te hanteren tarieven",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 2,
-    "deontic": "OBLIGATION",
-    "actor": "Een houder van een erkenning als bedoeld in het tweede of derde lid",
-    "trigger_event": null,
-    "action_span": [
-     "voldoet"
-    ],
-    "action_lemma": "voldoen",
-    "object": "aan de aan de erkenning verbonden voorschriften en beperkingen",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "schema_version": 2,
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 1,
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden ontleend"
+    ],
+    "action_lemma": "ontlenen",
+    "object": "het vermoeden",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
    },
    {
     "schema_version": 2,
@@ -3451,7 +3435,7 @@
     "conditions": [
      "indien dit middel en de middelenuitgever of de authenticatiedienst die het uitgeeft voldoen aan de bij of krachtens algemene maatregel van bestuur gestelde eisen met betrekking tot de werking, beveiliging en betrouwbaarheid"
     ],
-    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "extraction_model": "gpt-5.6-terra (reasoning:medium)",
     "human_verified": false
    }
   ],
@@ -4001,38 +3985,37 @@
     "conditions": [
      "indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels"
     ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "8",
-    "paragraph_index": 7,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "weigert"
-    ],
-    "action_lemma": "weigeren",
-    "object": "een aanvraag tot erkenning",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien zwaarwegende redenen zich tegen erkenning verzetten"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "erkent"
+     ],
+     "action_lemma": "erkennen",
+     "object": "een middelenuitgever",
+     "recipient": [
+      "met betrekking tot een door die dienst uit te geven bedrijfs- en organisatiemiddel",
+      "en het bijbehorende betrouwbaarheidsniveau"
+     ],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien de dienst en het middel voldoen aan de daartoe bij of krachtens algemene maatregel van bestuur gestelde regels"
+     ]
+    },
+    "deontic_alternative": "OBLIGATION"
    },
    {
     "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
-    "deontic": "OBLIGATION",
+    "deontic": "COMPETENCE",
     "actor": "Onze Minister",
     "trigger_event": null,
     "action_span": [
@@ -4052,7 +4035,7 @@
     "extraction_uncertain": true,
     "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
-     "deontic": "COMPETENCE",
+     "deontic": "OBLIGATION",
      "actor": "Onze Minister",
      "trigger_event": null,
      "action_span": [
@@ -4067,7 +4050,7 @@
       "indien de dienst voldoet aan de daartoe voor dat betrouwbaarheidsniveau bij of krachtens algemene maatregel van bestuur gestelde regels"
      ]
     },
-    "deontic_alternative": "COMPETENCE"
+    "deontic_alternative": "OBLIGATION"
    },
    {
     "schema_version": 2,
@@ -4086,19 +4069,22 @@
     "recipient": [
      "het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur"
     ],
-    "deadline_raw": null,
-    "deadline": null,
+    "deadline_raw": "Alvorens te beslissen op een aanvraag tot erkenning",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "Alvorens te beslissen op een aanvraag tot erkenning"
+    },
     "thresholds": [],
-    "conditions": [
-     "Alvorens te beslissen op een aanvraag tot erkenning"
-    ],
+    "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['actor', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw', 'recipient', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "PERMISSION",
-     "actor": "het Bureau bevordering integriteitsbeoordelingen, bedoeld in artikel 8 van de Wet bevordering integriteitsbeoordelingen door het openbaar bestuur",
+     "actor": null,
      "trigger_event": null,
      "action_span": [
       "kan",
@@ -4106,7 +4092,9 @@
      ],
      "action_lemma": "vragen",
      "object": "een advies als bedoeld in artikel 9 van die wet",
-     "recipient": [],
+     "recipient": [
+      "om een advies als bedoeld in artikel 9 van die wet"
+     ],
      "deadline_raw": null,
      "thresholds": [],
      "conditions": [
@@ -4116,12 +4104,80 @@
    },
    {
     "schema_version": 2,
+    "number": "8",
+    "paragraph_index": 7,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "weigert"
+    ],
+    "action_lemma": "weigeren",
+    "object": "een aanvraag tot erkenning",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien zwaarwegende redenen zich tegen erkenning verzetten"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "weigert"
+     ],
+     "action_lemma": "weigeren",
+     "object": "een aanvraag tot erkenning",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": [
+      "indien zwaarwegende redenen zich tegen erkenning verzetten"
+     ]
+    },
+    "deontic_alternative": "OBLIGATION"
+   },
+   {
+    "schema_version": 2,
+    "number": "8",
+    "paragraph_index": 7,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "bestaat"
+    ],
+    "action_lemma": "bestaan",
+    "object": "ernstig gevaar",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dat de erkenning mede zal worden gebruikt om strafbare feiten te plegen of uit strafbare feiten verkregen of te verkrijgen voordelen te benutten of anderszins de betrouwbaarheid en veiligheid van het Nederlandse stelsel voor elektronische dienstverlening in gevaar komt"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
     "number": "5",
     "paragraph_index": 4,
     "norm_index": 0,
     "deontic": "OBLIGATION",
     "actor": null,
-    "trigger_event": null,
+    "trigger_event": "Bij de aanvraag om erkenning",
     "action_span": [
      "wordt",
      "verstrekt"
@@ -4129,14 +4185,19 @@
     "action_lemma": "verstrekken",
     "object": "een certificaat van conformiteit",
     "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
+    "deadline_raw": "in elk geval",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "in elk geval"
+    },
     "thresholds": [],
     "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": null,
@@ -4147,12 +4208,12 @@
      ],
      "action_lemma": "verstrekken",
      "object": "een certificaat van conformiteit",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": [
+     "recipient": [
       "Bij de aanvraag om erkenning"
-     ]
+     ],
+     "deadline_raw": "in elk geval",
+     "thresholds": [],
+     "conditions": []
     }
    },
    {
@@ -4467,6 +4528,32 @@
   "norms": [
    {
     "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "aanwijzen"
+    ],
+    "action_lemma": "aanwijzen",
+    "object": "een attribuut",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen als bedoeld in artikel 15, eerste lid",
+     "ten behoeve van bepaalde elektronische dienstverlening op het niveau substantieel of hoog",
+     "daartoe door de op grond van artikel 11 erkende diensten moeten worden gehanteerd"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "3",
     "paragraph_index": 2,
     "norm_index": 0,
@@ -4485,30 +4572,6 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 0,
-    "deontic": "DELEGATION",
-    "actor": null,
-    "trigger_event": "Indien een attribuut wordt aangewezen",
-    "action_span": [
-     "worden",
-     "gesteld"
-    ],
-    "action_lemma": "regels stellen",
-    "object": "regels",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening"
-    ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
    },
@@ -4556,25 +4619,24 @@
    },
    {
     "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
+    "number": "4",
+    "paragraph_index": 3,
     "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": "Indien een attribuut wordt aangewezen",
     "action_span": [
-     "kan",
-     "aanwijzen"
+     "worden",
+     "gesteld"
     ],
-    "action_lemma": "aanwijzen",
-    "object": "een attribuut",
+    "action_lemma": "regels stellen",
+    "object": "regels",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "dat naar zijn oordeel van belang is voor de identificatie van ondernemingen of rechtspersonen als bedoeld in artikel 15, eerste lid",
-     "ten behoeve van bepaalde elektronische dienstverlening op het niveau substantieel of hoog"
+     "voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening"
     ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
@@ -4584,22 +4646,24 @@
    },
    {
     "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
+    "number": "4",
+    "paragraph_index": 3,
     "norm_index": 1,
     "deontic": "OBLIGATION",
-    "actor": "de op grond van artikel 11 erkende diensten",
-    "trigger_event": null,
+    "actor": "de erkende diensten",
+    "trigger_event": "Indien een attribuut wordt aangewezen",
     "action_span": [
-     "moeten worden gehanteerd"
+     "moet worden betrokken"
     ],
-    "action_lemma": "hanteren",
-    "object": "een attribuut",
+    "action_lemma": "betrekken",
+    "object": "het aangewezen attribuut",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [],
+    "conditions": [
+     "voor zover dat nodig is voor een betrouwbare toegang van ondernemingen of rechtspersonen tot elektronische dienstverlening"
+    ],
     "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
@@ -4840,92 +4904,6 @@
    },
    {
     "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Een krachtens artikel 11 erkende dienst",
-    "trigger_event": null,
-    "action_span": [
-     "voldoet"
-    ],
-    "action_lemma": "voldoen",
-    "object": "aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 1,
-    "deontic": "OBLIGATION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "behelzen"
-    ],
-    "action_lemma": "behelzen",
-    "object": "in ieder geval een leveringsplicht",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 2,
-    "deontic": "PERMISSION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kunnen",
-     "behelzen"
-    ],
-    "action_lemma": "behelzen",
-    "object": "regels inzake te hanteren tarieven",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 3,
-    "deontic": "OBLIGATION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "is",
-     "van overeenkomstige toepassing"
-    ],
-    "action_lemma": null,
-    "object": "Artikel 11, derde lid",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "3",
     "paragraph_index": 2,
     "norm_index": 0,
@@ -4977,6 +4955,69 @@
    },
    {
     "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Een erkende ontsluitende dienst",
+    "trigger_event": null,
+    "action_span": [
+     "ontsluit"
+    ],
+    "action_lemma": "ontsluiten",
+    "object": "alle erkende bedrijfs- en organisatiemiddelen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
+    "actor": "Een erkende ontsluitende dienst",
+    "trigger_event": null,
+    "action_span": [
+     "ontsluit"
+    ],
+    "action_lemma": "ontsluiten",
+    "object": "alle door erkende machtigingsdiensten afgegeven elektronische verklaringen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 2,
+    "deontic": "OBLIGATION",
+    "actor": "Een erkende ontsluitende dienst",
+    "trigger_event": null,
+    "action_span": [
+     "ontsluit"
+    ],
+    "action_lemma": "ontsluiten",
+    "object": "alle op grond van artikel 12 aangewezen attributen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "6",
     "paragraph_index": 5,
     "norm_index": 0,
@@ -5023,17 +5064,17 @@
    },
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
+    "number": "1",
+    "paragraph_index": 0,
     "norm_index": 0,
     "deontic": "OBLIGATION",
-    "actor": "Een erkende ontsluitende dienst",
+    "actor": "Een krachtens artikel 11 erkende dienst",
     "trigger_event": null,
     "action_span": [
-     "ontsluit"
+     "voldoet"
     ],
-    "action_lemma": "ontsluiten",
-    "object": "alle door erkende machtigingsdiensten afgegeven elektronische verklaringen waaruit blijkt dat een natuurlijke persoon, onderneming of rechtspersoon gemachtigd is namens de onderneming of rechtspersoon, bedoeld in artikel 15, eerste lid, op te treden bij de toegang tot elektronische dienstverlening",
+    "action_lemma": "voldoen",
+    "object": "aan de voor de betrokken dienst bij of krachtens algemene maatregel van bestuur gestelde regels en aan de aan de erkenning of aanwijzing verbonden voorschriften en beperkingen",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
@@ -5047,49 +5088,107 @@
    },
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
+    "number": "1",
+    "paragraph_index": 0,
     "norm_index": 1,
     "deontic": "OBLIGATION",
-    "actor": "Een erkende ontsluitende dienst",
+    "actor": null,
     "trigger_event": null,
     "action_span": [
-     "ontsluit"
+     "behelzen"
     ],
-    "action_lemma": "ontsluiten",
-    "object": "alle erkende bedrijfs- en organisatiemiddelen",
+    "action_lemma": "behelzen",
+    "object": "in ieder geval een leveringsplicht",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
    },
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
+    "number": "1",
+    "paragraph_index": 0,
     "norm_index": 2,
-    "deontic": "OBLIGATION",
-    "actor": "Een erkende ontsluitende dienst",
+    "deontic": "PERMISSION",
+    "actor": null,
     "trigger_event": null,
     "action_span": [
-     "ontsluit"
+     "kunnen",
+     "behelzen"
     ],
-    "action_lemma": "ontsluiten",
-    "object": "alle op grond van artikel 12 aangewezen attributen",
+    "action_lemma": "behelzen",
+    "object": "regels inzake te hanteren tarieven",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "DELEGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "kunnen",
+      "behelzen"
+     ],
+     "action_lemma": "behelzen",
+     "object": "regels inzake te hanteren tarieven",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    },
+    "deontic_alternative": "DELEGATION"
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 3,
+    "deontic": "OBLIGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "is",
+     "van overeenkomstige toepassing"
+    ],
+    "action_lemma": null,
+    "object": "Artikel 11, derde lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "DELEGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "is",
+      "van overeenkomstige toepassing"
+     ],
+     "action_lemma": null,
+     "object": "Artikel 11, derde lid",
+     "recipient": [],
+     "deadline_raw": null,
+     "thresholds": [],
+     "conditions": []
+    },
+    "deontic_alternative": "DELEGATION"
    },
    {
     "schema_version": 2,
@@ -5105,14 +5204,16 @@
     ],
     "action_lemma": "geven",
     "object": "bindende aanwijzingen",
-    "recipient": [],
+    "recipient": [
+     "een erkende dienst"
+    ],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [
      "Indien dit naar zijn oordeel voor een betrouwbare toegang van ondernemingen en rechtspersonen tot elektronische dienstverlening noodzakelijk is"
     ],
-    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "extraction_model": "gpt-5.6-terra (reasoning:medium)",
     "human_verified": false
    },
    {
@@ -5134,7 +5235,7 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "gpt-5.6-luna (reasoning:medium)",
+    "extraction_model": "gpt-5.6-terra (reasoning:medium)",
     "human_verified": false
    }
   ],
@@ -5391,6 +5492,107 @@
   "norms": [
    {
     "schema_version": 2,
+    "number": "7",
+    "paragraph_index": 6,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "De erkende dienst waarvan de erkenning wordt ingetrokken of overgedragen",
+    "trigger_event": null,
+    "action_span": [
+     "draagt",
+     "zorg voor"
+    ],
+    "action_lemma": "zorg dragen voor",
+    "object": "alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend",
+    "recipient": [
+     "aan Onze Minister"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": "Gelijktijdig met een besluit tot intrekking",
+    "action_span": [
+     "kan",
+     "opleggen"
+    ],
+    "action_lemma": "opleggen",
+    "object": "de verplichting",
+    "recipient": [
+     "de betrokken dienst"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "intrekken"
+    ],
+    "action_lemma": "intrekken",
+    "object": "een erkenning",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 2,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "schorsen"
+    ],
+    "action_lemma": "schorsen",
+    "object": "een erkenning",
+    "recipient": [],
+    "deadline_raw": "voor een bij dat besluit te bepalen periode",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "voor een bij dat besluit te bepalen periode"
+    },
+    "thresholds": [],
+    "conditions": [
+     "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
@@ -5413,54 +5615,6 @@
      "from": null,
      "raw": "gedurende een door Onze Minister te bepalen periode"
     },
-    "thresholds": [],
-    "conditions": [
-     "voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "5",
-    "paragraph_index": 4,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
-    "action_span": [
-     "kan",
-     "wijzigen en bepalen"
-    ],
-    "action_lemma": "wijzigen en bepalen",
-    "object": "de voorschriften en beperkingen, verbonden aan de oorspronkelijke erkenning",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "5",
-    "paragraph_index": 4,
-    "norm_index": 1,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
-    "action_span": [
-     "kan",
-     "opleggen"
-    ],
-    "action_lemma": "opleggen",
-    "object": "de verplichting",
-    "recipient": [
-     "de verzoekende dienst"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
     "thresholds": [],
     "conditions": [
      "voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen"
@@ -5520,35 +5674,11 @@
    },
    {
     "schema_version": 2,
-    "number": "7",
-    "paragraph_index": 6,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "De erkende dienst waarvan de erkenning wordt ingetrokken of overgedragen",
-    "trigger_event": null,
-    "action_span": [
-     "draagt",
-     "zorg voor"
-    ],
-    "action_lemma": "zorg dragen voor",
-    "object": "alle door hem opgeslagen informatie en gegevens die noodzakelijk was voor de uitvoering van de activiteiten waarvoor hij was erkend",
-    "recipient": [
-     "aan Onze Minister"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "6",
     "paragraph_index": 5,
     "norm_index": 0,
     "deontic": "OBLIGATION",
-    "actor": "de erkenning van de bedrijfs- en organisatiemiddelen die door die middelenuitgever worden uitgegeven",
+    "actor": null,
     "trigger_event": "Met de intrekking van een erkenning van een middelenuitgever",
     "action_span": [
      "vervalt"
@@ -5560,24 +5690,10 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": null,
-     "trigger_event": "Met de intrekking van een erkenning van een middelenuitgever",
-     "action_span": [
-      "vervalt"
-     ],
-     "action_lemma": "vervallen",
-     "object": "de erkenning van de bedrijfs- en organisatiemiddelen die door die middelenuitgever worden uitgegeven",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    }
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
    },
    {
     "schema_version": 2,
@@ -5590,7 +5706,7 @@
     "action_span": [
      "doet"
     ],
-    "action_lemma": "mededelen",
+    "action_lemma": "doen",
     "object": "mededeling",
     "recipient": [
      "in de Staatscourant"
@@ -5598,13 +5714,11 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [
-     "Van een besluit als bedoeld in dit artikel"
-    ],
+    "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": "Onze Minister",
@@ -5635,11 +5749,9 @@
     "action_span": [
      "voegt"
     ],
-    "action_lemma": "voegen",
+    "action_lemma": "toevoegen",
     "object": "een beëindigingsplan",
-    "recipient": [
-     "bij zijn verzoek"
-    ],
+    "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
@@ -5647,7 +5759,7 @@
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": "De erkende dienst",
@@ -5683,7 +5795,9 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [],
+    "conditions": [
+     "aan het beëindigingsplan"
+    ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": false,
@@ -5697,7 +5811,7 @@
     "norm_index": 2,
     "deontic": "COMPETENCE",
     "actor": null,
-    "trigger_event": "op verzoek van de erkende dienst",
+    "trigger_event": null,
     "action_span": [
      "kan",
      "worden ingetrokken"
@@ -5708,11 +5822,13 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [],
+    "conditions": [
+     "op verzoek van de erkende dienst"
+    ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'trigger_event', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "PERMISSION",
      "actor": "De erkende dienst",
@@ -5734,108 +5850,38 @@
    },
    {
     "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
+    "number": "5",
+    "paragraph_index": 4,
     "norm_index": 0,
     "deontic": "COMPETENCE",
     "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "intrekken"
-    ],
-    "action_lemma": "intrekken",
-    "object": "een erkenning",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
-    ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 1,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "schorsen"
-    ],
-    "action_lemma": "schorsen",
-    "object": "een erkenning",
-    "recipient": [],
-    "deadline_raw": "voor een bij dat besluit te bepalen periode",
-    "deadline": {
-     "value": null,
-     "unit": null,
-     "from": null,
-     "raw": "voor een bij dat besluit te bepalen periode"
-    },
-    "thresholds": [],
-    "conditions": [
-     "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
-    ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "COMPETENCE",
-     "actor": "Onze Minister",
-     "trigger_event": null,
-     "action_span": [
-      "kan",
-      "schorsen"
-     ],
-     "action_lemma": "schorsen",
-     "object": "een erkenning",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": [
-      "indien niet wordt voldaan aan het bepaalde bij of krachtens de artikelen 11 en 13, de aan een erkenning verbonden voorschriften of beperkingen, aan een krachtens artikel 13, vijfde lid, gegeven bindende aanwijzing of in geval van zwaarwegende redenen als bedoeld in artikel 11, achtste lid"
-     ]
-    }
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 2,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
+    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
     "action_span": [
      "kan",
      "opleggen"
     ],
     "action_lemma": "opleggen",
-    "object": "de verplichting",
-    "recipient": [
-     "de betrokken dienst"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
+    "object": "de verzoekende dienst de verplichting",
+    "recipient": [],
+    "deadline_raw": "gedurende een door Onze Minister te bepalen periode",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gedurende een door Onze Minister te bepalen periode"
+    },
     "thresholds": [],
-    "conditions": [],
+    "conditions": [
+     "voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen"
+    ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "COMPETENCE",
      "actor": "Onze Minister",
-     "trigger_event": "Gelijktijdig met een besluit tot intrekking",
+     "trigger_event": null,
      "action_span": [
       "kan",
       "opleggen"
@@ -5843,12 +5889,78 @@
      "action_lemma": "opleggen",
      "object": "de verplichting",
      "recipient": [
-      "de betrokken dienst"
+      "de verzoekende dienst"
      ],
+     "deadline_raw": "gedurende een door Onze Minister te bepalen periode",
+     "thresholds": [],
+     "conditions": [
+      "voor zover dat nodig is om continuïteit van betrouwbare toegang door ondernemingen en rechtspersonen tot elektronische dienstverlening te borgen"
+     ]
+    }
+   },
+   {
+    "schema_version": 2,
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 1,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
+    "action_span": [
+     "kan",
+     "wijzigen"
+    ],
+    "action_lemma": "wijzigen",
+    "object": "de voorschriften en beperkingen, verbonden aan de oorspronkelijke erkenning",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma', 'trigger_event']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "COMPETENCE",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "kan",
+      "wijzigen",
+      "en bepalen"
+     ],
+     "action_lemma": "wijzigen en bepalen",
+     "object": "de voorschriften en beperkingen",
+     "recipient": [],
      "deadline_raw": null,
      "thresholds": [],
      "conditions": []
     }
+   },
+   {
+    "schema_version": 2,
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 2,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": "Bij het besluit tot toestemming voor overdracht",
+    "action_span": [
+     "kan",
+     "bepalen"
+    ],
+    "action_lemma": "bepalen",
+    "object": null,
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -6193,101 +6305,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Een bestuursorgaan of aangewezen organisatie",
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "weigeren"
-    ],
-    "action_lemma": "weigeren",
-    "object": "de toegang tot elektronische dienstverlening",
-    "recipient": [
-     "een natuurlijk persoon die een onderneming drijft"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien aan dat middel het voor de dienstverlening noodzakelijke nummer ter identificatie van de onderneming niet is verbonden"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "7",
-    "paragraph_index": 6,
-    "norm_index": 0,
-    "deontic": "PROHIBITION",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "wordt niet genomen"
-    ],
-    "action_lemma": "nemen",
-    "object": "Een besluit als bedoeld in het vijfde lid",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "ten aanzien van een bedrijfs- of organisatiemiddel dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 0,
-    "deontic": "EXEMPTION",
-    "actor": "een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is",
-    "trigger_event": null,
-    "action_span": [
-     "is niet van toepassing"
-    ],
-    "action_lemma": null,
-    "object": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "het aanmaken van en de toegang tot een beveiligde elektronische postbus die deel uitmaakt van de elektronische omgeving van het centraal loket, bedoeld in artikel 1 van de Dienstenwet"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 1,
-    "deontic": "EXEMPTION",
-    "actor": "een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is",
-    "trigger_event": null,
-    "action_span": [
-     "is niet van toepassing"
-    ],
-    "action_lemma": null,
-    "object": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "elektronische dienstverlening die plaatsvindt via het centraal loket, bedoeld in artikel 1 van de Dienstenwet"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
@@ -6335,6 +6352,97 @@
    },
    {
     "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 0,
+    "deontic": "EXEMPTION",
+    "actor": "het aanmaken van en de toegang tot een beveiligde elektronische postbus die deel uitmaakt van de elektronische omgeving van het centraal loket, bedoeld in artikel 1 van de Dienstenwet, voor een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is",
+    "trigger_event": null,
+    "action_span": [
+     "is niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 1,
+    "deontic": "EXEMPTION",
+    "actor": "elektronische dienstverlening die plaatsvindt via het centraal loket, bedoeld in artikel 1 van de Dienstenwet, aan een dienstenverrichter als bedoeld in artikel 1 van de Dienstenwet, die niet in Nederland gevestigd is",
+    "trigger_event": null,
+    "action_span": [
+     "is niet van toepassing"
+    ],
+    "action_lemma": null,
+    "object": "De plicht om uitsluitend de in het tweede lid bedoelde identificatiemiddelen en verklaringen te accepteren",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "4",
+    "paragraph_index": 3,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Een bestuursorgaan of aangewezen organisatie",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "weigeren"
+    ],
+    "action_lemma": "weigeren",
+    "object": "de toegang tot elektronische dienstverlening",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "in afwijking van artikel 7, eerste lid, onderdeel a, onderscheidenlijk tweede lid, onderdeel a",
+     "indien aan dat middel het voor de dienstverlening noodzakelijke nummer ter identificatie van de onderneming niet is verbonden"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "7",
+    "paragraph_index": 6,
+    "norm_index": 0,
+    "deontic": "PROHIBITION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "wordt",
+     "niet genomen"
+    ],
+    "action_lemma": "nemen",
+    "object": "Een besluit als bedoeld in het vijfde lid",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "dat niet voldoet aan de voor het betrouwbaarheidsniveau substantieel of hoog gestelde eisen ten aanzien van veiligheid en betrouwbaarheid"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "5",
     "paragraph_index": 4,
     "norm_index": 0,
@@ -6352,13 +6460,11 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [
-     "In geval ten behoeve van elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep het gebruik van een ander bedrijfs- of organisatiemiddel dan een erkend bedrijfs- of organisatiemiddel gewenst is, gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep"
+     "In geval ten behoeve van elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep het gebruik van een ander bedrijfs- of organisatiemiddel dan een erkend bedrijfs- of organisatiemiddel gewenst is",
+     "gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep"
     ],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
@@ -6373,7 +6479,9 @@
     ],
     "action_lemma": "gebruiken",
     "object": "een bedrijfs- of organisatiemiddel",
-    "recipient": [],
+    "recipient": [
+     "voor de toegang tot die dienstverlening"
+    ],
     "deadline_raw": "voor een bij dat besluit te bepalen periode",
     "deadline": {
      "value": null,
@@ -6383,30 +6491,38 @@
     },
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['object']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "PERMISSION",
-     "actor": null,
-     "trigger_event": null,
-     "action_span": [
-      "gebruikt mag worden"
-     ],
-     "action_lemma": "gebruiken",
-     "object": null,
-     "recipient": [],
-     "deadline_raw": "voor een bij dat besluit te bepalen periode",
-     "thresholds": [],
-     "conditions": []
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
     "number": "6",
     "paragraph_index": 5,
     "norm_index": 0,
+    "deontic": "PERMISSION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kunnen",
+     "worden verbonden"
+    ],
+    "action_lemma": "verbinden",
+    "object": "voorschriften",
+    "recipient": [
+     "Aan het besluit"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "6",
+    "paragraph_index": 5,
+    "norm_index": 1,
     "deontic": "OBLIGATION",
     "actor": null,
     "trigger_event": null,
@@ -6414,72 +6530,14 @@
      "wordt bepaald"
     ],
     "action_lemma": "bepalen",
-    "object": "op welke dienstverlening, beroepsgroep en bestuursorganen of aangewezen organisaties de aanwijzing betrekking heeft",
+    "object": null,
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['object']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": null,
-     "trigger_event": null,
-     "action_span": [
-      "wordt bepaald"
-     ],
-     "action_lemma": "bepalen",
-     "object": null,
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    }
-   },
-   {
-    "schema_version": 2,
-    "number": "6",
-    "paragraph_index": 5,
-    "norm_index": 1,
-    "deontic": "COMPETENCE",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "kunnen",
-     "worden verbonden"
-    ],
-    "action_lemma": "voorschriften verbinden",
-    "object": "voorschriften",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "PERMISSION",
-     "actor": null,
-     "trigger_event": null,
-     "action_span": [
-      "kunnen",
-      "worden verbonden"
-     ],
-     "action_lemma": "voorschriften verbinden",
-     "object": "voorschriften",
-     "recipient": [
-      "Aan het besluit"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    },
-    "deontic_alternative": "PERMISSION"
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    }
   ],
   "features": {
@@ -7109,31 +7167,22 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "8",
-    "paragraph_index": 7,
+    "number": "2",
+    "paragraph_index": 1,
     "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
+    "deontic": "OBLIGATION",
+    "actor": "de bij besluit van Onze Minister aangewezen ambtenaren",
     "trigger_event": null,
     "action_span": [
-     "kan",
-     "opleggen"
+     "zijn belast"
     ],
-    "action_lemma": "opleggen",
-    "object": "een bestuurlijke boete",
-    "recipient": [
-     "degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid",
-     "daartoe opdracht heeft gegeven",
-     "feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid"
-    ],
+    "action_lemma": "belasten",
+    "object": "het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15 door bestuursorganen op het niveau van de provincies",
+    "recipient": [],
     "deadline_raw": null,
     "deadline": null,
-    "thresholds": [
-     "ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie"
-    ],
-    "conditions": [
-     "per overtreding die is begaan"
-    ],
+    "thresholds": [],
+    "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
    },
@@ -7160,46 +7209,6 @@
    },
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "de bij besluit van Onze Minister aangewezen ambtenaren",
-    "trigger_event": null,
-    "action_span": [
-     "zijn belast"
-    ],
-    "action_lemma": "belasten",
-    "object": "het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15 door bestuursorganen op het niveau van de provincies",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "COMPETENCE",
-     "actor": "de bij besluit van Onze Minister aangewezen ambtenaren",
-     "trigger_event": null,
-     "action_span": [
-      "zijn belast"
-     ],
-     "action_lemma": "belasten",
-     "object": "het toezicht op de naleving van het bepaalde bij of krachtens de artikelen 3, 6, 7, 8, eerste lid en 15",
-     "recipient": [
-      "door bestuursorganen op het niveau van de provincies"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    },
-    "deontic_alternative": "COMPETENCE"
-   },
-   {
-    "schema_version": 2,
     "number": "6",
     "paragraph_index": 5,
     "norm_index": 0,
@@ -7208,35 +7217,10 @@
     "trigger_event": null,
     "action_span": [
      "wordt",
-     "mededeling gedaan"
+     "gedaan"
     ],
     "action_lemma": "mededeling doen",
-    "object": "een besluit als bedoeld in het eerste, tweede, vierde en vijfde lid",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "plaatsing in de Staatscourant"
-    ],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "de bij besluit van Onze Minister die het aangaat aangewezen ambtenaren",
-    "trigger_event": null,
-    "action_span": [
-     "zijn belast"
-    ],
-    "action_lemma": "belasten",
-    "object": "het toezicht op de naleving van het bepaalde bij of krachtens artikel 3 door overheidsorganen op het niveau van het Rijk en van het bepaalde bij of krachtens de artikelen 6, 7, 8, eerste lid, en 15 door bestuursorganen op het niveau van het Rijk en door de aangewezen organisaties",
+    "object": "mededeling",
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
@@ -7246,6 +7230,59 @@
     "human_verified": false,
     "extraction_uncertain": true,
     "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+   },
+   {
+    "schema_version": 2,
+    "number": "8",
+    "paragraph_index": 7,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "opleggen"
+    ],
+    "action_lemma": "opleggen",
+    "object": "een bestuurlijke boete",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [
+     "ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie"
+    ],
+    "conditions": [
+     "degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid",
+     "daartoe opdracht heeft gegeven",
+     "feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['recipient', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "COMPETENCE",
+     "actor": "Onze Minister",
+     "trigger_event": null,
+     "action_span": [
+      "kan",
+      "opleggen"
+     ],
+     "action_lemma": "opleggen",
+     "object": "een bestuurlijke boete",
+     "recipient": [
+      "degene die handelt in strijd met het bepaalde bij of krachtens artikel 9, vierde, zevende of achtste lid, 11, 13 en 14, tweede en derde lid",
+      "daartoe opdracht heeft gegeven",
+      "feitelijk leiding geeft aan de rechtspersoon die in strijd met het bepaalde bij of krachtens artikel 13, eerste, tweede, derde of vierde lid"
+     ],
+     "deadline_raw": null,
+     "thresholds": [
+      "ten hoogste het bedrag dat is vastgesteld voor de vijfde categorie"
+     ],
+     "conditions": [
+      "per overtreding die is begaan"
+     ]
+    }
    }
   ],
   "features": {
@@ -7424,7 +7461,8 @@
   "_empty_paragraph_indices_v2": [
    2,
    4,
-   6
+   6,
+   0
   ]
  },
  {
@@ -7567,55 +7605,6 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "onderbreken"
-    ],
-    "action_lemma": "onderbreken",
-    "object": "de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "kan",
-     "onderbreken",
-     "doen onderbreken"
-    ],
-    "action_lemma": "onderbreken",
-    "object": "de toegang tot elektronische dienstverlening van een bestuursorgaan of een aangewezen organisatie",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "indien sprake is van:"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
     "number": "3",
     "paragraph_index": 2,
     "norm_index": 0,
@@ -7666,9 +7655,62 @@
    },
    {
     "schema_version": 2,
+    "number": "4",
+    "paragraph_index": 3,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "onderbreken"
+    ],
+    "action_lemma": "onderbreken",
+    "object": "de toegang tot elektronische dienstverlening via een welbepaald toegelaten identificatiemiddel of erkend bedrijfs- en organisatiemiddel",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bij het vermoeden van misbruik of oneigenlijk gebruik van het desbetreffende middel"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Een bestuursorgaan of een aangewezen organisatie",
+    "trigger_event": null,
+    "action_span": [
+     "stelt",
+     "in kennis"
+    ],
+    "action_lemma": "in kennis stellen",
+    "object": "een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
+    "recipient": [
+     "Onze Minister"
+    ],
+    "deadline_raw": "onverwijld",
+    "deadline": {
+     "value": null,
+     "unit": "qualitative_urgent",
+     "from": null,
+     "raw": "onverwijld"
+    },
+    "thresholds": [],
+    "conditions": [],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "2",
+    "paragraph_index": 1,
+    "norm_index": 1,
     "deontic": "OBLIGATION",
     "actor": "Het bestuursorgaan of de aangewezen organisatie",
     "trigger_event": null,
@@ -7682,72 +7724,33 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": "Het bestuursorgaan of de aangewezen organisatie",
-     "trigger_event": null,
-     "action_span": [
-      "verstrekt"
-     ],
-     "action_lemma": "verstrekken",
-     "object": "alle benodigde informatie",
-     "recipient": [
-      "daarbij"
-     ],
-     "deadline_raw": null,
-     "thresholds": [],
-     "conditions": []
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
-    "number": "2",
-    "paragraph_index": 1,
-    "norm_index": 1,
-    "deontic": "OBLIGATION",
-    "actor": "Een bestuursorgaan of een aangewezen organisatie",
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "COMPETENCE",
+    "actor": "Onze Minister",
     "trigger_event": null,
     "action_span": [
-     "stelt",
-     "in kennis"
+     "kan",
+     "onderbreken",
+     "doen onderbreken"
     ],
-    "action_lemma": "in kennis stellen",
-    "object": "Onze Minister",
+    "action_lemma": "onderbreken",
+    "object": "de toegang tot elektronische dienstverlening van een bestuursorgaan of een aangewezen organisatie",
     "recipient": [],
-    "deadline_raw": "onverwijld",
-    "deadline": {
-     "value": null,
-     "unit": "qualitative_urgent",
-     "from": null,
-     "raw": "onverwijld"
-    },
+    "deadline_raw": null,
+    "deadline": null,
     "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'recipient']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": "Een bestuursorgaan of een aangewezen organisatie",
-     "trigger_event": null,
-     "action_span": [
-      "stelt",
-      "in kennis"
-     ],
-     "action_lemma": "in kennis stellen",
-     "object": "een inbreuk op de beveiliging of de integriteit van een eigen elektronische dienst of van misbruik of oneigenlijk gebruik van de toegang tot de eigen elektronische dienstverlening",
-     "recipient": [
-      "Onze Minister"
-     ],
-     "deadline_raw": "onverwijld",
-     "thresholds": [],
-     "conditions": []
-    }
+    "conditions": [
+     "indien sprake is van:"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    }
   ],
   "features": {
@@ -7941,6 +7944,31 @@
   "norms": [
    {
     "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "OBLIGATION",
+    "actor": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten",
+    "trigger_event": null,
+    "action_span": [
+     "verstrekken"
+    ],
+    "action_lemma": "verstrekken",
+    "object": "de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen",
+    "recipient": [
+     "aan Onze Minister"
+    ],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "desgevraagd en uit eigen beweging"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
@@ -7962,31 +7990,6 @@
     "thresholds": [],
     "conditions": [
      "voor zover dit noodzakelijk is voor een goede uitoefening van hun taken of te verlenen diensten in het kader van deze wet"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Bestuursorganen en aangewezen organisaties, op grond van artikel 9, tweede of derde lid, toegelaten houders van een erkenning en op grond van artikel 11 erkende middelenuitgevers en diensten",
-    "trigger_event": null,
-    "action_span": [
-     "verstrekken"
-    ],
-    "action_lemma": "verstrekken",
-    "object": "de gegevens en inlichtingen die hij nodig heeft om maatregelen te kunnen nemen om inbreuk op de veilige en betrouwbare toegang tot elektronische dienstverlening te voorkomen of beëindigen",
-    "recipient": [
-     "aan Onze Minister"
-    ],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [],
-    "conditions": [
-     "desgevraagd en uit eigen beweging"
     ],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
@@ -8493,8 +8496,10 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
+    "extraction_model": "conservative-default (single pass; the other failed validation)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "only one of two extraction passes produced a verbatim-grounded result; this rests on a single unconfirmed reading -- revisit if it ends up inside an actual candidate finding."
    }
   ],
   "features": {
@@ -8989,8 +8994,8 @@
    }
   ],
   "_empty_paragraph_indices_v2": [
-   1,
    0,
+   1,
    2,
    3,
    4
@@ -9344,7 +9349,7 @@
     "norm_index": 0,
     "deontic": "OBLIGATION",
     "actor": "Onze Minister",
-    "trigger_event": "na de inwerkingtreding van deze wet",
+    "trigger_event": "de inwerkingtreding van deze wet",
     "action_span": [
      "zendt"
     ],
@@ -9365,24 +9370,9 @@
     "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": "Onze Minister",
-     "trigger_event": "na de inwerkingtreding van deze wet",
-     "action_span": [
-      "zendt"
-     ],
-     "action_lemma": "zenden",
-     "object": "een verslag over de doeltreffendheid en de effecten van deze wet in de praktijk",
-     "recipient": [
-      "aan de Staten-Generaal"
-     ],
-     "deadline_raw": "binnen drie jaar",
-     "thresholds": [],
-     "conditions": []
-    }
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
    },
    {
     "schema_version": 2,
@@ -9402,7 +9392,9 @@
     "deadline_raw": null,
     "deadline": null,
     "thresholds": [],
-    "conditions": [],
+    "conditions": [
+     "In het bijzonder"
+    ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
@@ -9420,9 +9412,7 @@
      "recipient": [],
      "deadline_raw": null,
      "thresholds": [],
-     "conditions": [
-      "In het bijzonder"
-     ]
+     "conditions": []
     }
    }
   ],
@@ -9635,7 +9625,7 @@
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
-    "deontic": "OBLIGATION",
+    "deontic": "EXEMPTION",
     "actor": "Een ontsluitende dienst of een machtigingsdienst",
     "trigger_event": null,
     "action_span": [
@@ -9656,52 +9646,42 @@
     "conditions": [
      "die onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten"
     ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": true,
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'action_lemma']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": "Een ontsluitende dienst of een machtigingsdienst",
+     "trigger_event": null,
+     "action_span": [
+      "wordt",
+      "geacht erkend te zijn"
+     ],
+     "action_lemma": "erkennen",
+     "object": null,
+     "recipient": [],
+     "deadline_raw": "gedurende een periode van 18 maanden",
+     "thresholds": [],
+     "conditions": [
+      "die onmiddellijk voor inwerkingtreding van deze wet partij was bij een privaat stelsel van afspraken met de Staat aangaande elektronische toegangsdiensten"
+     ]
+    },
+    "deontic_alternative": "OBLIGATION"
    },
    {
     "schema_version": 2,
     "number": "5",
     "paragraph_index": 4,
     "norm_index": 0,
-    "deontic": "COMPETENCE",
-    "actor": null,
-    "trigger_event": "voor inwerkingtreding van artikel 11",
-    "action_span": [
-     "werd gebruikt"
-    ],
-    "action_lemma": "gebruiken",
-    "object": "een bedrijfs- of organisatiemiddel",
-    "recipient": [
-     "voor elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep"
-    ],
-    "deadline_raw": "gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet",
-    "deadline": {
-     "value": null,
-     "unit": null,
-     "from": "inwerkingtreding van deze wet",
-     "raw": "gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet"
-    },
-    "thresholds": [],
-    "conditions": [
-     "gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep"
-    ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
-   },
-   {
-    "schema_version": 2,
-    "number": "5",
-    "paragraph_index": 4,
-    "norm_index": 1,
     "deontic": "EXEMPTION",
-    "actor": null,
+    "actor": "Deze erkenning van rechtswege",
     "trigger_event": null,
     "action_span": [
      "vervalt"
     ],
     "action_lemma": "vervallen",
-    "object": "Deze erkenning van rechtswege",
+    "object": null,
     "recipient": [],
     "deadline_raw": "na 18 maanden, gerekend van de dag na inwerkingtreding van deze wet",
     "deadline": {
@@ -9714,56 +9694,64 @@
     "conditions": [
      "of zoveel eerder als Onze Minister dat middel op grond van artikel 15, vijfde lid, heeft aangewezen"
     ],
-    "extraction_model": "gpt-5.6-luna",
-    "human_verified": false
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
    },
    {
     "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 0,
-    "deontic": "COMPETENCE",
+    "number": "5",
+    "paragraph_index": 4,
+    "norm_index": 1,
+    "deontic": "OBLIGATION",
     "actor": null,
-    "trigger_event": null,
+    "trigger_event": "voor inwerkingtreding van artikel 11",
     "action_span": [
-     "is toegetreden"
+     "werd gebruikt"
     ],
-    "action_lemma": "toetreden",
-    "object": "het private stelsel",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
-    "thresholds": [
-     "niveau 4",
-     "niveau 3",
-     "niveau 2",
-     "niveau 2+"
+    "action_lemma": "gebruiken",
+    "object": "Een bedrijfs- of organisatiemiddel",
+    "recipient": [
+     "door een bestuursorgaan of aangewezen organisatie"
     ],
+    "deadline_raw": "gedurende een periode van ten hoogste 18 maanden",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "gedurende een periode van ten hoogste 18 maanden"
+    },
+    "thresholds": [],
     "conditions": [
-     "Voor erkenning overeenkomstig dit overgangsrecht"
+     "voor elektronische dienstverlening",
+     "aan een specifieke doelgroep",
+     "gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep"
     ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma', 'object', 'thresholds']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['deontic', 'actor', 'object', 'deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "COMPETENCE",
-     "actor": null,
-     "trigger_event": null,
+     "actor": "Een bedrijfs- of organisatiemiddel",
+     "trigger_event": "voor inwerkingtreding van artikel 11",
      "action_span": [
-      "wordt",
-      "geacht erkend te zijn"
+      "werd gebruikt"
      ],
-     "action_lemma": null,
-     "object": "een dienst of middel",
-     "recipient": [],
-     "deadline_raw": null,
+     "action_lemma": "gebruiken",
+     "object": null,
+     "recipient": [
+      "voor elektronische dienstverlening door een bestuursorgaan of aangewezen organisatie aan een specifieke doelgroep"
+     ],
+     "deadline_raw": "gedurende een periode van ten hoogste 18 maanden, gerekend van de dag na inwerkingtreding van deze wet",
      "thresholds": [],
      "conditions": [
-      "Voor erkenning overeenkomstig dit overgangsrecht",
-      "dat is toegetreden tot het private stelsel op niveau 4, niveau 3, niveau 2 of niveau 2+"
+      "gelet op de aard van de dienstverlening of de aard van het door de doelgroep uitgeoefende bedrijf of beroep"
      ]
-    }
+    },
+    "deontic_alternative": "COMPETENCE"
    },
    {
     "schema_version": 2,
@@ -9780,19 +9768,19 @@
     "action_lemma": null,
     "object": null,
     "recipient": [],
-    "deadline_raw": "gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van dit artikel",
+    "deadline_raw": "gedurende een periode van 18 maanden",
     "deadline": {
      "value": null,
      "unit": null,
-     "from": "inwerkingtreding van dit artikel",
-     "raw": "gedurende een periode van 18 maanden, gerekend van de dag na inwerkingtreding van dit artikel"
+     "from": null,
+     "raw": "gedurende een periode van 18 maanden"
     },
     "thresholds": [],
     "conditions": [],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": "Een middelenuitgever of authenticatiedienst",
@@ -9802,11 +9790,13 @@
       "geacht erkend te zijn"
      ],
      "action_lemma": null,
-     "object": null,
+     "object": "het bedrijfs- en organisatiemiddel dat door hem in het kader van die afspraken wordt uitgegeven",
      "recipient": [],
      "deadline_raw": "gedurende een periode van 18 maanden",
      "thresholds": [],
-     "conditions": []
+     "conditions": [
+      "onmiddellijk voor inwerkingtreding van dit artikel partij was bij een privaat stelsel van afspraken aangaande elektronische toegangsdiensten met de Staat"
+     ]
     }
    },
    {
@@ -9815,14 +9805,14 @@
     "paragraph_index": 0,
     "norm_index": 1,
     "deontic": "OBLIGATION",
-    "actor": null,
+    "actor": "het betrokken bedrijfs- en organisatiemiddel",
     "trigger_event": null,
     "action_span": [
      "wordt",
      "geacht een erkend bedrijfs- en organisatiemiddel te zijn"
     ],
     "action_lemma": null,
-    "object": "het betrokken bedrijfs- en organisatiemiddel",
+    "object": null,
     "recipient": [],
     "deadline_raw": "Gedurende die 18 maanden",
     "deadline": {
@@ -9831,14 +9821,16 @@
      "from": null,
      "raw": "Gedurende die 18 maanden"
     },
-    "thresholds": [],
+    "thresholds": [
+     "niveau 1"
+    ],
     "conditions": [
      "met uitzondering van een bedrijfs- en organisatiemiddel dat binnen het stelsel functioneert op het niveau 1"
     ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['actor', 'object']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['thresholds']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
      "deontic": "OBLIGATION",
      "actor": "het betrokken bedrijfs- en organisatiemiddel",
@@ -10016,7 +10008,8 @@
    }
   ],
   "_empty_paragraph_indices_v2": [
-   3
+   3,
+   2
   ]
  },
  {
@@ -10150,7 +10143,7 @@
      "wordt niet eerder gedaan"
     ],
     "action_lemma": "doen",
-    "object": "Een voordracht voor een krachtens de artikelen 4, 5, vijfde en zesde lid, 9, 11, 13 en 22 te stellen algemene maatregel van bestuur",
+    "object": "Een voordracht",
     "recipient": [],
     "deadline_raw": "vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
     "deadline": {
@@ -10177,7 +10170,7 @@
      "niet eerder gedaan"
     ],
     "action_lemma": "doen",
-    "object": "De voordracht",
+    "object": "De voordracht voor een krachtens artikel 16, vierde lid, vast te stellen algemene maatregel van bestuur",
     "recipient": [],
     "deadline_raw": "vier weken nadat het ontwerp aan beide kamers der Staten-Generaal is overgelegd",
     "deadline": {
@@ -10200,7 +10193,7 @@
     "norm_index": 0,
     "deontic": "OBLIGATION",
     "actor": null,
-    "trigger_event": "Indien het voorstel van wet wordt ingetrokken of indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen",
+    "trigger_event": "Indien het voorstel van wet wordt ingetrokken",
     "action_span": [
      "wordt",
      "ingetrokken"
@@ -10250,36 +10243,6 @@
     "number": "3",
     "paragraph_index": 2,
     "norm_index": 2,
-    "deontic": "COMPETENCE",
-    "actor": null,
-    "trigger_event": null,
-    "action_span": [
-     "wordt",
-     "vastgesteld"
-    ],
-    "action_lemma": "vaststellen",
-    "object": "een tijdstip",
-    "recipient": [],
-    "deadline_raw": "nadat vier weken na de overlegging zijn verstreken",
-    "deadline": {
-     "value": null,
-     "unit": null,
-     "from": "vier weken na de overlegging zijn verstreken",
-     "raw": "nadat vier weken na de overlegging zijn verstreken"
-    },
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
-   },
-   {
-    "schema_version": 2,
-    "number": "3",
-    "paragraph_index": 2,
-    "norm_index": 3,
     "deontic": "OBLIGATION",
     "actor": null,
     "trigger_event": null,
@@ -10303,23 +10266,48 @@
     ],
     "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
+    "extraction_uncertain": false,
+    "uncertainty_note": null,
+    "alternative_reading": null
+   },
+   {
+    "schema_version": 2,
+    "number": "3",
+    "paragraph_index": 2,
+    "norm_index": 3,
+    "deontic": "COMPETENCE",
+    "actor": null,
+    "trigger_event": "nadat vier weken na de overlegging zijn verstreken",
+    "action_span": [
+     "wordt",
+     "vastgesteld"
+    ],
+    "action_lemma": "vaststellen",
+    "object": "Hij",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld"
+    ],
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
+    "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'thresholds', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "uncertainty_note": "two independent extraction passes disagreed on ['object', 'trigger_event', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
     "alternative_reading": {
-     "deontic": "OBLIGATION",
+     "deontic": "COMPETENCE",
      "actor": null,
-     "trigger_event": "binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld",
+     "trigger_event": null,
      "action_span": [
       "wordt",
-      "ingediend"
+      "vastgesteld"
      ],
-     "action_lemma": "indienen",
-     "object": "een daartoe strekkende voorstel van wet",
+     "action_lemma": "vaststellen",
+     "object": "een tijdstip",
      "recipient": [],
-     "deadline_raw": "zo spoedig mogelijk",
-     "thresholds": [
-      "tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers"
-     ],
+     "deadline_raw": null,
+     "thresholds": [],
      "conditions": []
     }
    },
@@ -10330,7 +10318,7 @@
     "norm_index": 4,
     "deontic": "OBLIGATION",
     "actor": null,
-    "trigger_event": "een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen",
+    "trigger_event": "indien een van de Kamers der Staten-Generaal besluit het voorstel niet aan te nemen",
     "action_span": [
      "wordt",
      "ingetrokken"
@@ -10342,10 +10330,27 @@
     "deadline": null,
     "thresholds": [],
     "conditions": [],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
+    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
     "human_verified": false,
     "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
+    "uncertainty_note": "two independent extraction passes disagreed on ['action_lemma', 'object', 'trigger_event', 'deadline_raw', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+    "alternative_reading": {
+     "deontic": "OBLIGATION",
+     "actor": null,
+     "trigger_event": null,
+     "action_span": [
+      "treedt",
+      "in werking"
+     ],
+     "action_lemma": "in werking treden",
+     "object": null,
+     "recipient": [],
+     "deadline_raw": "nadat vier weken na de overlegging zijn verstreken",
+     "thresholds": [],
+     "conditions": [
+      "tenzij binnen die termijn door of namens een van de Kamers of door tenminste een vijfde van het grondwettelijk aantal leden van een van de Kamers de wens te kennen wordt gegeven dat het onderwerp van de algemene maatregel van bestuur bij wet wordt geregeld"
+     ]
+    }
    }
   ],
   "features": {
@@ -10508,26 +10513,29 @@
   "norms": [
    {
     "schema_version": 2,
-    "number": "1",
-    "paragraph_index": 0,
+    "number": "4",
+    "paragraph_index": 3,
     "norm_index": 0,
-    "deontic": "DELEGATION",
-    "actor": null,
+    "deontic": "OBLIGATION",
+    "actor": "Onze Minister",
     "trigger_event": null,
     "action_span": [
-     "kan",
-     "worden afgeweken"
+     "zendt"
     ],
-    "action_lemma": "afwijken",
-    "object": "de bij of krachtens deze wet geldende bepalingen",
-    "recipient": [],
-    "deadline_raw": null,
-    "deadline": null,
+    "action_lemma": "zenden",
+    "object": "een verslag over de doeltreffendheid en de effecten van het experiment, alsmede een standpunt inzake de voortzetting anders dan als experiment",
+    "recipient": [
+     "aan de Staten-Generaal"
+    ],
+    "deadline_raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
+    "deadline": {
+     "value": null,
+     "unit": null,
+     "from": null,
+     "raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid"
+    },
     "thresholds": [],
-    "conditions": [
-     "bij wijze van experiment",
-     "met het oog op het onderzoeken van nieuwe methoden waarmee authenticatie doeltreffender en veiliger kan plaatsvinden"
-    ],
+    "conditions": [],
     "extraction_model": "gpt-5.6-luna",
     "human_verified": false
    },
@@ -10553,107 +10561,53 @@
      "raw": "ten hoogste vier jaar"
     },
     "thresholds": [
-     "vier jaar"
+     "ten hoogste vier jaar"
     ],
     "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "two independent extraction passes disagreed on ['deadline_raw']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
-    "alternative_reading": {
-     "deontic": "OBLIGATION",
-     "actor": null,
-     "trigger_event": null,
-     "action_span": [
-      "duurt"
-     ],
-     "action_lemma": "duren",
-     "object": "Een experiment als bedoeld in het eerste lid",
-     "recipient": [],
-     "deadline_raw": null,
-     "thresholds": [
-      "ten hoogste vier jaar"
-     ],
-     "conditions": []
-    }
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
+   },
+   {
+    "schema_version": 2,
+    "number": "1",
+    "paragraph_index": 0,
+    "norm_index": 0,
+    "deontic": "DELEGATION",
+    "actor": null,
+    "trigger_event": null,
+    "action_span": [
+     "kan",
+     "worden afgeweken"
+    ],
+    "action_lemma": "afwijken",
+    "object": "de bij of krachtens deze wet geldende bepalingen",
+    "recipient": [],
+    "deadline_raw": null,
+    "deadline": null,
+    "thresholds": [],
+    "conditions": [
+     "bij wijze van experiment",
+     "met het oog op het onderzoeken van nieuwe methoden waarmee authenticatie doeltreffender en veiliger kan plaatsvinden"
+    ],
+    "extraction_model": "gpt-5.6-luna",
+    "human_verified": false
    },
    {
     "schema_version": 2,
     "number": "2",
     "paragraph_index": 1,
     "norm_index": 0,
-    "deontic": "DELEGATION",
+    "deontic": "OBLIGATION",
     "actor": null,
     "trigger_event": "Bij toepassing van het eerste lid",
     "action_span": [
      "wordt geregeld"
     ],
     "action_lemma": "regelen",
-    "object": "door welke bestuursorganen of aangewezen organisaties, op welke wijze en gedurende welke periode van de wet wordt afgeweken",
+    "object": null,
     "recipient": [],
     "deadline_raw": null,
     "deadline": null,
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": true,
-    "uncertainty_note": "only one of two extraction passes found this norm (the passes found a different number of norms in this unit); kept by the non-suppressing default -- revisit if it ends up inside an actual candidate finding."
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 0,
-    "deontic": "OBLIGATION",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "zendt"
-    ],
-    "action_lemma": "zenden",
-    "object": "een verslag over de doeltreffendheid en de effecten van het experiment",
-    "recipient": [
-     "aan de Staten-Generaal"
-    ],
-    "deadline_raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
-    "deadline": {
-     "value": null,
-     "unit": null,
-     "from": null,
-     "raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid"
-    },
-    "thresholds": [],
-    "conditions": [],
-    "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
-    "human_verified": false,
-    "extraction_uncertain": false,
-    "uncertainty_note": null,
-    "alternative_reading": null
-   },
-   {
-    "schema_version": 2,
-    "number": "4",
-    "paragraph_index": 3,
-    "norm_index": 1,
-    "deontic": "OBLIGATION",
-    "actor": "Onze Minister",
-    "trigger_event": null,
-    "action_span": [
-     "zendt"
-    ],
-    "action_lemma": "zenden",
-    "object": "een standpunt inzake de voortzetting anders dan als experiment",
-    "recipient": [
-     "aan de Staten-Generaal"
-    ],
-    "deadline_raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid",
-    "deadline": {
-     "value": null,
-     "unit": null,
-     "from": null,
-     "raw": "negen maanden voor het einde van de werkingsduur van een algemene maatregel van bestuur als bedoeld in het eerste lid"
-    },
     "thresholds": [],
     "conditions": [],
     "extraction_model": "conservative-default (found by one of two passes; see uncertainty_note)",

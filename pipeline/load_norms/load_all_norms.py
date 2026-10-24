@@ -105,11 +105,14 @@ SOURCES = [
     Source("data/new_norms/new_Wdo_norms_merged.json"),
     Source("data/new_norms/new_Telecommunicatiewet_norms_merged.json"),
     Source("data/new_norms/new_Uitvoeringswet_norms_merged.json"),
-    Source("data/laws/gdpr/32016R0679_original_provisions.json"),
-    Source("data/laws/nis2/32022L2555_original_provisions.json"),
-    Source("data/laws/dora/32022R2554_original_provisions.json"),
-    Source("data/laws/ai_act/32024R1689_original_provisions.json"),
-    Source("Datasets/Dutch Laws/bijlage35_dataset.json", "BWBR0049497", _bijlage35_provisions),
+    # Since 23 Oct 2026 the EU laws and Bijlage 35 also come from the new extractor, so all
+    # ten laws share one extraction run (they used to come from the first-generation norms
+    # stored in the corpus files).
+    Source("data/new_norms/new_GDPR_norms_merged.json"),
+    Source("data/new_norms/new_NIS2_norms_merged.json"),
+    Source("data/new_norms/new_DORA_norms_merged.json"),
+    Source("data/new_norms/new_AI_Act_norms_merged.json"),
+    Source("data/new_norms/new_Bijlage35_norms_merged.json", "BWBR0049497", _bijlage35_provisions),
 ]
 
 # Hand-built datasets carry no graph uid; rebuild it using graph.py's naming convention.

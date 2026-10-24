@@ -13,3 +13,10 @@ ui/fonts/*.woff2
 ui/fonts/*.ttf
 ui/fonts/*.otf
 data/conflict/action_scores.json
+
+# Large, regenerable outputs of the candidate filter and backup caches (over or near the GitHub file limit)
+data/conflict_all/combined_pair_scores.jsonl
+data/conflict_all/stageA_pairs.json
+data/conflict_all/**/*.npz
+data/conflict_all/object/object_pair_scores.jsonl
+data/cache/*.before_*.json

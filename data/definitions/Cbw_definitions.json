@@ -1,0 +1,582 @@
+{
+  "document": "BWBR0052872",
+  "terms": [
+    "Aanbeveling 2003/361/EG",
+    "aanbieder van beheerde beveiligingsdiensten",
+    "aanbieder van beheerde diensten",
+    "belangrijke entiteit",
+    "beveiliging van netwerk- en informatiesystemen",
+    "beveiligingsscan",
+    "bevoegde autoriteit",
+    "bevoegde autoriteit van een andere lidstaat van de Europese Unie",
+    "bijna-incident",
+    "centraal contactpunt",
+    "centraal contactpunt van een andere lidstaat van de Europese Unie",
+    "CER-richtlijn",
+    "cloudcomputingdienst",
+    "coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden",
+    "CSIRT",
+    "CSIRT van een andere lidstaat van de Europese Unie",
+    "CSIRT-netwerk",
+    "cyberbeveiliging",
+    "cyberdreiging",
+    "datacentrumdienst",
+    "digitale dienst",
+    "DNS-dienstverlener",
+    "domeinnaamsysteem (DNS)",
+    "elektronisch communicatienetwerk",
+    "elektronische communicatiedienst",
+    "Enisa",
+    "entiteit",
+    "entiteit die domeinnaamregistratiediensten verleent",
+    "essentiële entiteit",
+    "gekwalificeerde verlener van vertrouwensdiensten",
+    "gekwalificeerde vertrouwensdienst",
+    "hoofdvestiging",
+    "ICT-dienst",
+    "ICT-product",
+    "incident",
+    "internetknooppunt",
+    "kwetsbaarheid",
+    "netwerk voor de levering van inhoud",
+    "netwerk- en informatiesysteem",
+    "NIS2-richtlijn",
+    "norm",
+    "onderzoeksorganisatie",
+    "onlinemarktplaats",
+    "onlinezoekmachine",
+    "Onze Minister",
+    "openbaar elektronisch communicatienetwerk",
+    "overheidsinstantie",
+    "platform voor sociale netwerkdiensten",
+    "register voor topleveldomeinnamen",
+    "Richtlijn (EU) 2018/1972",
+    "risico",
+    "root-naamserver",
+    "samenwerkingsgroep",
+    "significant incident",
+    "significante cyberdreiging",
+    "verlener van vertrouwensdiensten",
+    "Verordening (EG) nr. 300/2008",
+    "Verordening (EU) nr. 910/2014",
+    "Verordening (EU) 2018/1139",
+    "Verordening (EU) 2022/2554",
+    "vertegenwoordiger",
+    "vertrouwensdienst",
+    "op afstand"
+  ],
+  "definitions": [
+    {
+      "term": "Aanbeveling 2003/361/EG",
+      "definition": "Aanbeveling 2003/361/EG van de Commissie van 6 mei 2003 betreffende de definitie van kleine, middelgrote en micro-ondernemingen (PbEU 2003, L 124)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van beheerde beveiligingsdiensten",
+      "definition": "een aanbieder van beheerde diensten die bijstand biedt of verleent voor activiteiten die verband houden met risicobeheer op het gebied van cyberbeveiliging",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "aanbieder van beheerde diensten",
+      "definition": "een entiteit die diensten verleent die verband houden met de installatie, het beheer, de exploitatie of het onderhoud van ICT-producten, -netwerken, -infrastructuur, -toepassingen of andere netwerk- en informatiesystemen, via bijstand of actieve administratie bij de klant ter plaatse of op afstand",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "belangrijke entiteit",
+      "definition": "een entiteit als bedoeld in artikel 12 of 13",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiliging van netwerk- en informatiesystemen",
+      "definition": "het vermogen van netwerk- en informatiesystemen om op een bepaald niveau van betrouwbaarheid weerstand te bieden aan elke gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die door of via deze netwerk- en informatiesystemen worden aangeboden, in gevaar kan brengen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "beveiligingsscan",
+      "definition": "technisch onderzoek van netwerk- en informatiesystemen om inzicht te krijgen in kwetsbaarheden en risico’s van deze systemen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bevoegde autoriteit",
+      "definition": "de bevoegde autoriteit, bedoeld in artikel 8, eerste lid, van de NIS2-richtlijn en bedoeld in artikel 15",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bevoegde autoriteit van een andere lidstaat van de Europese Unie",
+      "definition": "een bevoegde autoriteit van een andere lidstaat van de Europese Unie als bedoeld in artikel 8, eerste lid, van de NIS2-richtlijn en die als zodanig is aangewezen in het nationale recht van die andere lidstaat",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "bijna-incident",
+      "definition": "een gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die worden aangeboden door of toegankelijk zijn via netwerk- en informatiesystemen, in gevaar had kunnen brengen, maar die met succes is voorkomen of zich niet heeft voorgedaan",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "centraal contactpunt",
+      "definition": "het centrale contactpunt, bedoeld in artikel 8, derde lid, van de NIS2-richtlijn en bedoeld in artikel 14",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "centraal contactpunt van een andere lidstaat van de Europese Unie",
+      "definition": "het centrale contactpunt van een andere lidstaat van de Europese Unie als bedoeld in artikel 8, derde lid, van de NIS2-richtlijn en dat als zodanig is aangewezen in het nationale recht van die andere lidstaat",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "CER-richtlijn",
+      "definition": "Richtlijn (EU) 2022/2557 van het Europees Parlement en de Raad van 14 december 2022 betreffende de weerbaarheid van kritieke entiteiten en tot intrekking van Richtlijn 2008/114/EG van de Raad (PbEU 2022, L 333)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cloudcomputingdienst",
+      "definition": "een digitale dienst die administratie op aanvraag en brede toegang op afstand tot een schaalbare en elastische pool van deelbare computerbronnen mogelijk maakt, ook wanneer die bronnen over verschillende locaties verspreid zijn",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden",
+      "definition": "de coördinator met het oog op een gecoördineerde bekendmaking van kwetsbaarheden, bedoeld in artikel 12, eerste lid, van de NIS2-richtlijn en bedoeld in artikel 17",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "CSIRT",
+      "definition": "een Computer security incident response team, bedoeld in artikel 10 van de NIS2-richtlijn en bedoeld in artikel 16",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "CSIRT van een andere lidstaat van de Europese Unie",
+      "definition": "een CSIRT van een andere lidstaat van de Europese Unie als bedoeld in artikel 10 van de NIS2-richtlijn en dat als zodanig is aangewezen in het nationale recht van die andere lidstaat",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "CSIRT-netwerk",
+      "definition": "het netwerk van CSIRT’s, genoemd in artikel 15 van de NIS2-richtlijn",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberbeveiliging",
+      "definition": "de activiteiten die nodig zijn om netwerk- en informatiesystemen, de gebruikers van dergelijke systemen, en andere personen die getroffen worden door cyberdreigingen, te beschermen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "cyberdreiging",
+      "definition": "elke potentiële omstandigheid, gebeurtenis of actie die netwerk- en informatiesystemen, de gebruikers van dergelijke systemen en andere personen kan schaden, verstoren of op andere wijze negatief kan beïnvloeden",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "datacentrumdienst",
+      "definition": "een dienst die structuren of groepen van structuren omvat die bestemd zijn voor de gecentraliseerde accommodatie, de interconnectie en de exploitatie van IT en netwerkapparatuur die diensten op het gebied van gegevensopslag, -verwerking en -transport aanbiedt, samen met alle faciliteiten en infrastructuren voor energiedistributie en omgevingscontrole",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "digitale dienst",
+      "definition": "elke dienst van de informatiemaatschappij, dat wil zeggen elke dienst die gewoonlijk tegen vergoeding, langs elektronische weg, op afstand en op individueel verzoek van een afnemer van diensten wordt verricht, waarbij onder «op afstand» wordt verstaan: een dienst die wordt geleverd zonder dat de partijen gelijktijdig aanwezig zijn, onder «langs elektronische weg» wordt verstaan: een dienst die wordt verzonden en ontvangen via elektronische apparatuur voor de verwerking (met inbegrip van digitale compressie) en de opslag van gegevens, en die geheel via draden, radio, optische middelen of andere elektromagnetische middelen wordt verzonden, doorgeleid en ontvangen, en onder «op individueel verzoek van een afnemer van diensten» wordt verstaan: een dienst die op individueel verzoek via de transmissie van gegevens wordt geleverd",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "DNS-dienstverlener",
+      "definition": "een entiteit die openbare recursieve domeinnaamomzettingsdiensten voor interneteindgebruikers verleent, of die gezaghebbende domeinnaamomzettingsdiensten voor gebruik door derden, met uitzondering van root-naamservers, verleent",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "domeinnaamsysteem (DNS)",
+      "definition": "een hiërarchisch gedistribueerd naamgevingssysteem dat het mogelijk maakt internetdiensten en -bronnen te identificeren, waardoor eindgebruikersapparaten in staat worden gesteld routing- en connectiviteitsdiensten op het internet te gebruiken om die diensten en bronnen te bereiken",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronisch communicatienetwerk",
+      "definition": "hetgeen hieronder wordt verstaan in artikel 1.1 van de Telecommunicatiewet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "elektronische communicatiedienst",
+      "definition": "hetgeen hieronder wordt verstaan in artikel 1.1 van de Telecommunicatiewet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Enisa",
+      "definition": "het Agentschap van de Europese Unie voor cyberbeveiliging, genoemd in titel II van Verordening (EU) 2019/881 van het Europees Parlement en de Raad van 17 april 2019 inzake Enisa (het Agentschap van de Europese Unie voor cyberbeveiliging), en inzake de certificering van de cyberbeveiliging van informatie- en communicatietechnologie en tot intrekking van Verordening (EU) nr. 526/2013 (de cyberbeveiligingsverordening) (PbEU 2019, L 151)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "entiteit",
+      "definition": "een natuurlijk persoon, een rechtspersoon, een overheidsinstantie, een maatschap als bedoeld in artikel 1655 van boek 7A van het Burgerlijk Wetboek, een vennootschap onder firma als bedoeld in artikel 16 van het Wetboek van Koophandel en een commanditaire vennootschap als bedoeld in artikel 19 van het Wetboek van Koophandel, alsmede een samenwerkingsverband naar buitenlands recht dat met één van deze rechtsvormen vergelijkbaar is",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "entiteit die domeinnaamregistratiediensten verleent",
+      "definition": "een registrator of een agent die namens registrators optreedt, zoals een aanbieder van privacy- of proxy-registratiediensten of wederverkoper",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "essentiële entiteit",
+      "definition": "een entiteit als bedoeld in de artikelen 8, 9, 10 of 11",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde verlener van vertrouwensdiensten",
+      "definition": "een verlener van vertrouwensdiensten die één of meerdere gekwalificeerde vertrouwensdiensten verleent en van het toezichthoudende orgaan, bedoeld in artikel 46 ter van de Verordening (EU) nr. 910/2014, de status van gekwalificeerde heeft gekregen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "gekwalificeerde vertrouwensdienst",
+      "definition": "een vertrouwensdienst die voldoet aan de toepasselijke eisen zoals vastgelegd in Verordening (EU) nr. 910/2014",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "hoofdvestiging",
+      "definition": "de hoofdvestiging van een entiteit, bedoeld in artikel 26, tweede lid, van de NIS2-richtlijn",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-dienst",
+      "definition": "een dienst die volledig of hoofdzakelijk bestaat in de verzending, opslag, opvraging of verwerking van gegevens door middel van netwerk- en informatiesystemen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "ICT-product",
+      "definition": "een element of groep elementen van een netwerk- of informatiesysteem",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "incident",
+      "definition": "een gebeurtenis die de beschikbaarheid, authenticiteit, integriteit of vertrouwelijkheid van opgeslagen, verzonden of verwerkte gegevens of van de diensten die worden aangeboden door of toegankelijk zijn via netwerk- en informatiesystemen, in gevaar brengt",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "internetknooppunt",
+      "definition": "een netwerkfaciliteit die de interconnectie van meer dan twee onafhankelijke netwerken (autonome systemen) mogelijk maakt, voornamelijk ter vergemakkelijking van de uitwisseling van internetverkeer, die alleen interconnectie voor autonome systemen biedt en die niet vereist dat het internetverkeer dat tussen een paar deelnemende autonome systemen verloopt, via een derde autonoom systeem verloopt, noch dat verkeer wijzigt of anderszins verstoort",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "kwetsbaarheid",
+      "definition": "een zwakheid, vatbaarheid of gebrek van ICT-producten of ICT-diensten die door een cyberdreiging kan worden uitgebuit",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerk voor de levering van inhoud",
+      "definition": "een netwerk van geografisch verspreide servers met het oog op een hoge beschikbaarheid, toegankelijkheid of snelle levering van digitale inhoud en diensten aan internetgebruikers ten behoeve van aanbieders van inhoud en diensten",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "netwerk- en informatiesysteem",
+      "definition": "a. een elektronisch communicatienetwerk; of b. elk apparaat of elke groep van onderling verbonden of verwante apparaten, waarvan er een of meer, op grond van een programma, een automatische verwerking van digitale gegevens uitvoeren; of c. digitale gegevens die worden opgeslagen, verwerkt, opgehaald of verzonden met behulp van de in punten a. en b. bedoelde elementen met het oog op de werking, het gebruik, de bescherming en het onderhoud ervan",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "NIS2-richtlijn",
+      "definition": "Richtlijn (EU) 2022/2555 van het Europees Parlement en de Raad van 14 december 2022 betreffende maatregelen voor een hoog gezamenlijk niveau van cyberbeveiliging in de Unie, tot wijziging van Verordening (EU) nr. 910/2014 en Richtlijn (EU) 2018/1972 en tot intrekking van Richtlijn (EU) 2016/1148(PbEU 2022, L 333)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "norm",
+      "definition": "een door een erkende normalisatie-instelling vastgestelde technische specificatie voor herhaalde of voortdurende toepassing, waarvan de naleving niet verplicht is en die tot een van de volgende categorieën behoort: a. «internationale norm»: een door een internationale normalisatie-instelling vastgestelde norm; b. «Europese norm»: een door een Europese normalisatieorganisatie vastgestelde norm; c. «geharmoniseerde norm»: een Europese norm die op verzoek van de Commissie is vastgesteld met het oog op de toepassing van harmonisatiewetgeving van de Unie; d. «nationale norm»: een door een nationale normalisatie-instelling vastgestelde norm",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onderzoeksorganisatie",
+      "definition": "een entiteit die als hoofddoel heeft het verrichten van toegepast onderzoek of experimentele ontwikkeling met het oog op de exploitatie van de resultaten van dat onderzoek voor commerciële doeleinden, met uitsluiting van onderwijsinstellingen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onlinemarktplaats",
+      "definition": "een dienst die gebruikmaakt van software, waaronder een website, een deel van een website of een door of namens een handelaar beheerde applicatie, en die consumenten in staat stelt op afstand overeenkomsten te sluiten met andere handelaren of consumenten",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "onlinezoekmachine",
+      "definition": "een digitale dienst die het gebruikers mogelijk maakt zoekvragen in te voeren om zoekacties uit te voeren op in beginsel alle websites of alle websites in een bepaalde taal, op basis van een zoekvraag over eender welk onderwerp in de vorm van een trefwoord, een gesproken opdracht, een frase of andere input, en die resultaten in eender welk formaat oplevert met informatie over de opgevraagde inhoud",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Onze Minister",
+      "definition": "Onze Minister van Justitie en Veiligheid",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "openbaar elektronisch communicatienetwerk",
+      "definition": "hetgeen hieronder wordt verstaan in artikel 1.1 van de Telecommunicatiewet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "overheidsinstantie",
+      "definition": "een entiteit die overeenkomstig het Nederlands recht als zodanig in Nederland is erkend, met uitzondering van de rechtbanken, de gerechtshoven, de Hoge Raad, het College van Beroep voor het bedrijfsleven, de Centrale Raad van Beroep, de Afdeling bestuursrechtspraak van de Raad van State, de beide Kamers der Staten-Generaal en De Nederlandsche Bank N.V., en die aan de volgende criteria voldoet: a. zij is opgericht om te voorzien in behoeften van algemeen belang en heeft geen industrieel of commercieel karakter; b. zij heeft rechtspersoonlijkheid of mag volgens de wet namens een andere entiteit met rechtspersoonlijkheid optreden; c. zij wordt grotendeels gefinancierd door de staat, regionale autoriteiten of andere publiekrechtelijke organen, is onderworpen aan beheerstoezicht door die autoriteiten of organen, of heeft een bestuurs-, leidinggevend of toezichthoudend orgaan waarvan de leden voor meer dan de helft door de staat, regionale autoriteiten of andere publiekrechtelijke organen worden benoemd; en d. zij heeft de bevoegdheid om ten aanzien van natuurlijke personen of rechtspersonen administratieve of regelgevende besluiten te nemen die van invloed zijn op hun rechten op het grensoverschrijdende verkeer van personen, goederen, diensten of kapitaal",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "platform voor sociale netwerkdiensten",
+      "definition": "een platform dat eindgebruikers in staat stelt zich met elkaar te verbinden, te delen, te ontdekken en met elkaar te communiceren via meerdere apparaten, met name via chats, posts, video’s en aanbevelingen",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "register voor topleveldomeinnamen",
+      "definition": "een entiteit waaraan een specifieke topleveldomeinnaam is gedelegeerd en die verantwoordelijk is voor het beheer van de topleveldomeinnaam, met inbegrip van de registratie van domeinnamen onder de topleveldomeinnaam en de technische exploitatie van de topleveldomeinnaam, met inbegrip van de exploitatie van de naamservers, het onderhoud van de databases en de verdeling van de zonebestanden van de topleveldomeinnaam over de naamservers, ongeacht of die activiteiten door de entiteit zelf worden uitgevoerd of worden uitbesteed, maar met uitzondering van situaties waarin topleveldomeinnamen uitsluitend voor eigen gebruik worden aangewend door een register",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Richtlijn (EU) 2018/1972",
+      "definition": "Richtlijn (EU) 2018/1972 van het Europees Parlement en de Raad van 11 december 2018 tot vaststelling van het Europees wetboek voor elektronische communicatie (PbEU 2018, L 321)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "risico",
+      "definition": "de mogelijkheid van verlies of verstoring als gevolg van een incident, wat wordt uitgedrukt als een combinatie van de omvang van een dergelijk verlies of verstoring en de waarschijnlijkheid dat het incident zich voordoet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "root-naamserver",
+      "definition": "een gezaghebbende naamserver voor de root-zone van het domeinnaamsysteem (DNS) van het internet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "samenwerkingsgroep",
+      "definition": "de samenwerkingsgroep, bedoeld in artikel 14 van de NIS2-richtlijn",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "significant incident",
+      "definition": "een incident als bedoeld in artikel 25, tweede lid",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "significante cyberdreiging",
+      "definition": "een cyberdreiging waarvan op basis van de technische kenmerken kan worden aangenomen dat zij ernstige gevolgen kan hebben voor de netwerk- en informatiesystemen van een entiteit of de gebruikers van de diensten van de entiteit door het veroorzaken van aanzienlijke materiële of immateriële schade",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "verlener van vertrouwensdiensten",
+      "definition": "een natuurlijke persoon of rechtspersoon die een of meer vertrouwensdiensten verleent als een gekwalificeerde of als een niet-gekwalificeerde verlener van vertrouwensdiensten",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Verordening (EG) nr. 300/2008",
+      "definition": "Verordening (EG) nr. 300/2008 van het Europees Parlement en de Raad van 11 maart 2008 inzake gemeenschappelijke regels op het gebied van de beveiliging van de burgerluchtvaart en tot intrekking van Verordening (EG) nr. 2320/2002(PbEU 2008, L 97)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Verordening (EU) nr. 910/2014",
+      "definition": "Verordening (EU) nr. 910/2014 van het Europees Parlement en de Raad van 23 juli 2014 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt en tot intrekking van Richtlijn 1999/93/EG(PbEU 2014, L 257), zoals laatstelijk gewijzigd bij Verordening (EU) 2024/1183 van het Europees Parlement en de Raad van 11 april 2024 tot wijziging van Verordening (EU) nr. 910/2014, wat betreft de vaststelling van het Europees kader voor digitale identiteit (PbEU 2024, L 1183)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Verordening (EU) 2018/1139",
+      "definition": "Verordening (EU) 2018/1139 van het Europees Parlement en de Raad van 4 juli 2018 inzake gemeenschappelijke regels op het gebied van burgerluchtvaart en tot oprichting van een Agentschap van de Europese Unie voor de veiligheid van de luchtvaart, en tot wijziging van de Verordeningen (EG) nr. 2111/2005, (EG) nr. 1008/2008, (EU) nr. 996/2010, (EU) nr. 376/2014 en de Richtlijnen 2014/30/EU en 2014/53/EU van het Europees Parlement en de Raad, en tot intrekking van de Verordeningen (EG) nr. 552/2004 en (EG) nr. 216/2008 van het Europees Parlement en de Raad en Verordening (EEG) nr. 3922/91 van de Raad (PbEU 2018, L 212)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Verordening (EU) 2022/2554",
+      "definition": "Verordening (EU) 2022/2554 van het Europees Parlement en de Raad van 14 december 2022 betreffende digitale operationele weerbaarheid voor de financiële sector en tot wijziging van Verordeningen (EG) nr. 1060/2009, (EU) nr. 648/2012, (EU) nr. 600/2014, (EU) nr. 909/2014 en (EU) 2016/1011(PbEU 2022, L 333)",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertegenwoordiger",
+      "definition": "een in de Europese Unie gevestigde natuurlijk persoon of rechtspersoon die uitdrukkelijk is aangewezen om op te treden namens een DNS-dienstverlener, een register voor topleveldomeinnamen, een entiteit die domeinnaamregistratiediensten verleent, een aanbieder van cloudcomputingdiensten, een aanbieder van datacentrumdiensten, een aanbieder van een netwerk voor de levering van inhoud, een aanbieder van beheerde diensten, een aanbieder van beheerde beveiligingsdiensten, of een aanbieder van een onlinemarktplaats, van een onlinezoekmachine of van een platform voor socialenetwerkdiensten die niet in de Unie is gevestigd, en die door een bevoegde autoriteit of een CSIRT kan worden aangesproken in plaats van de entiteit zelf met betrekking tot de verplichtingen van die entiteit uit hoofde van deze wet",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "vertrouwensdienst",
+      "definition": "een elektronische dienst die gewoonlijk tegen betaling wordt verricht en uit één van de volgende elementen bestaat: a. het uitgeven van certificaten voor elektronische handtekeningen, certificaten voor elektronische zegels, certificaten voor websiteauthenticatie of certificaten voor het verlenen van andere vertrouwensdiensten; b. het valideren van certificaten voor elektronische handtekeningen, certificaten voor elektronische zegels, certificaten voor websiteauthenticatie of certificaten voor het verlenen van andere vertrouwensdiensten; c. het aanmaken van elektronische handtekeningen of elektronische zegels; d. het valideren van elektronische handtekeningen of elektronische zegels; e. het bewaren van elektronische handtekeningen, elektronische zegels, certificaten voor elektronische handtekeningen of certificaten voor elektronische zegels; f. het beheer van middelen voor het op afstand aanmaken van elektronische handtekeningen of middelen voor het op afstand aanmaken van elektronische zegels; g. het uitgeven van elektronische attesteringen van attributen; h. het valideren van elektronische attesteringen van attributen; i. het aanmaken van elektronische tijdstempels; j. het valideren van elektronische tijdstempels; k. het verlenen van diensten voor elektronisch aangetekende bezorging; l. het valideren van gegevens die via diensten voor elektronisch aangetekende bezorging zijn verzonden en het bewijs daarvoor; m. het elektronisch archiveren van elektronische gegevens en elektronische documenten; n. het opslaan van elektronische gegevens in elektronische registers.",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "lijst"
+    },
+    {
+      "term": "op afstand",
+      "definition": "een dienst die wordt geleverd zonder dat de partijen gelijktijdig aanwezig zijn, onder «langs elektronische weg» wordt verstaan: een dienst die wordt verzonden en ontvangen via elektronische apparatuur voor de verwerking (met inbegrip van digitale compressie) en de opslag van gegevens, en die geheel via draden, radio, optische middelen of andere elektromagnetische middelen wordt verzonden, doorgeleid en ontvangen, en onder «op individueel verzoek van een afnemer van diensten» wordt verstaan: een dienst die op individueel verzoek via de transmissie van gegevens wordt geleverd",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0052872",
+      "pattern": "onder_verstaan"
+    },
+    {
+      "term": "CSIRT",
+      "definition": "Onze Minister of de andere instantie, bedoeld in het eerste lid.",
+      "paragraph": "3",
+      "article": "96",
+      "document": "BWBR0052872",
+      "pattern": "onder_verstaan"
+    }
+  ]
+}

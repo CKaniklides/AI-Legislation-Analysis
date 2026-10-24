@@ -1,0 +1,34 @@
+{
+  "document": "BWBR0051796",
+  "terms": [
+    "Autoriteit Consument en Markt",
+    "Autoriteit persoonsgegevens",
+    "dataverordening"
+  ],
+  "definitions": [
+    {
+      "term": "Autoriteit Consument en Markt",
+      "definition": "Autoriteit Consument en Markt als bedoeld in artikel 2, eerste lid, van de Instellingswet Autoriteit Consument en Markt",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0051796",
+      "pattern": "lijst"
+    },
+    {
+      "term": "Autoriteit persoonsgegevens",
+      "definition": "Autoriteit persoonsgegevens als bedoeld in artikel 6, eerste lid, van de Uitvoeringswet Algemene verordening gegevensbescherming",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0051796",
+      "pattern": "lijst"
+    },
+    {
+      "term": "dataverordening",
+      "definition": "Verordening (EU) 2023/2854 van het Europees Parlement en de Raad van 13 december 2023 betreffende geharmoniseerde regels inzake eerlijke toegang tot en eerlijk gebruik van data en tot wijziging van Verordening (EU) 2017/2394 en Richtlijn (EU) 2020/1828 (Dataverordening).",
+      "paragraph": null,
+      "article": "1",
+      "document": "BWBR0051796",
+      "pattern": "lijst"
+    }
+  ]
+}

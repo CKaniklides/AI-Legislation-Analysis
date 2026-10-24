@@ -196,28 +196,28 @@
        "norm_index": 0,
        "deontic": "COMPETENCE",
        "actor": "De bevoegde autoriteit",
-       "trigger_event": null,
+       "trigger_event": "bij een overtreding van het bij of krachtens de verordening bepaalde",
        "action_span": [
         "kan",
         "openbaar maken"
        ],
        "action_lemma": "openbaar maken",
        "object": "de overtreding en de naam van de overtreder",
-       "recipient": [],
+       "recipient": [
+        "door middel van een openbare verklaring"
+       ],
        "deadline_raw": null,
        "deadline": null,
        "thresholds": [],
-       "conditions": [
-        "bij een overtreding van het bij of krachtens de verordening bepaalde"
-       ],
+       "conditions": [],
        "extraction_model": "conservative-default (two passes disagreed; see uncertainty_note)",
        "human_verified": false,
        "extraction_uncertain": true,
-       "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'recipient', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
+       "uncertainty_note": "two independent extraction passes disagreed on ['trigger_event', 'conditions']; the stored reading follows the non-suppressing default and the other reading is kept in alternative_reading -- revisit if this norm ends up inside an actual candidate finding.",
        "alternative_reading": {
         "deontic": "COMPETENCE",
         "actor": "De bevoegde autoriteit",
-        "trigger_event": "bij een overtreding van het bij of krachtens de verordening bepaalde",
+        "trigger_event": null,
         "action_span": [
          "kan",
          "openbaar maken"
@@ -229,7 +229,9 @@
         ],
         "deadline_raw": null,
         "thresholds": [],
-        "conditions": []
+        "conditions": [
+         "bij een overtreding van het bij of krachtens de verordening bepaalde"
+        ]
        }
       }
      ],

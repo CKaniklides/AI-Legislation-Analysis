@@ -1,0 +1,15 @@
+[
+ {
+  "schema_version": 2,
+  "instrument_id": "BWBR0052872",
+  "article": "65",
+  "paragraph_number": "1",
+  "paragraph_index": 0,
+  "unit_text": "Bij of krachtens algemene maatregel van bestuur worden regels gesteld over de periode gedurende welke de persoonsgegevens die bij of krachtens deze wet zijn verwerkt, worden bewaard.",
+  "reason": "validation_failed",
+  "pass1": null,
+  "pass2": null,
+  "retried_with": "gpt-5.6-luna",
+  "drop_reason": "no_grounded_pass"
+ }
+]
