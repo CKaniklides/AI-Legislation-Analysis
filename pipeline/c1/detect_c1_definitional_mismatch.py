@@ -300,7 +300,7 @@ def main():
     args = ap.parse_args()
 
     from openai import OpenAI
-    client = OpenAI()
+    client = OpenAI(timeout=120.0, max_retries=6)  # 23 Oct 2026: a network outage failed 1,109 calls with the default 2 retries;
 
     entries = load_definitions_with_article()
     print(f"{len(entries)} usable defined terms across all instruments", flush=True)

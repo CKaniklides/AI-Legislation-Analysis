@@ -1,0 +1,98 @@
+[
+ {
+  "finding_id": "F-C1-TEN-0c908e5fea46",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.92,
+  "issue": null,
+  "pair": "BWBR0040940 47a(3) <-> 32016R0679 22(3)"
+ },
+ {
+  "finding_id": "F-C1-TEN-363993efca96",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.94,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 13(3)"
+ },
+ {
+  "finding_id": "F-C1-TEN-572f14c16708",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.94,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 27(1)"
+ },
+ {
+  "finding_id": "F-C1-TEN-6c293c8de955",
+  "old": "direct_conflict",
+  "new": "compatible",
+  "confidence": 0.9,
+  "issue": null,
+  "pair": "32016R0679 42(6) <-> 32024R1689 10(5)"
+ },
+ {
+  "finding_id": "F-C1-TEN-78e9216e5654",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.94,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 14(3)"
+ },
+ {
+  "finding_id": "F-C1-TEN-796c72a14199",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.91,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 26(2)"
+ },
+ {
+  "finding_id": "F-C1-TEN-a292c0dbf305",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.96,
+  "issue": null,
+  "pair": "BWBR0040940 47a(3) <-> 32016R0679 21(1)"
+ },
+ {
+  "finding_id": "F-C1-TEN-b736678c1c36",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.93,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 27(1)"
+ },
+ {
+  "finding_id": "F-C1-TEN-bfd50db2f486",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.97,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 14(1)"
+ },
+ {
+  "finding_id": "F-C1-TEN-d28acae7f114",
+  "old": "direct_conflict",
+  "new": "compatible",
+  "confidence": 0.96,
+  "issue": null,
+  "pair": "BWBR0048156 9(6) <-> BWBR0048156 11(3)"
+ },
+ {
+  "finding_id": "F-C1-TEN-f40050327375",
+  "old": "direct_conflict",
+  "new": "missing_context",
+  "confidence": 0.87,
+  "issue": null,
+  "pair": "BWBR0048156 19(1) <-> BWBR0009950 11.10(4)"
+ },
+ {
+  "finding_id": "F-C1-TEN-f5b99dd75bff",
+  "old": "rights_vs_system_duties_tension",
+  "new": "compatible",
+  "confidence": 0.93,
+  "issue": null,
+  "pair": "32016R0679 22(1) <-> 32024R1689 14(4)"
+ }
+]

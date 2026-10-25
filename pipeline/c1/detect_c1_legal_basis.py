@@ -239,7 +239,10 @@ def build_candidates(records, bases, letters):
 
 
 def _key(pid):
-    return f"{VERSION}::{MODEL}::{EFFORT}::{pid}"
+    # Second-generation norms get their own namespace (23 Oct 2026): the pair id is built from
+    # the norms' positions, so a new norm at an old norm's position would read its verdict.
+    gen = "::g2" if c1.NORMS_GENERATION == 2 else ""
+    return f"{VERSION}{gen}::{MODEL}::{EFFORT}::{pid}"
 
 
 def load_cache():
@@ -323,10 +326,15 @@ def append_findings(cands):
     added = Counter()
     for pid, (a, b, stratum) in cands.items():
         e = cache.get(_key(pid))
+        # The control pairs are unrelated AI Act duties chosen to measure false positives
+        # (23 Oct 2026: 11 of 72 flagged on the second-generation norms). They stay in the cache
+        # and in the summary above, but are not review items (decided with the user).
+        if stratum == "control":
+            continue
         if e and e["verdict"]["verdict"] in SUBTYPES:
             data["findings"].append(build_finding(a, b, stratum, e))
             added[f"{SUBTYPES[e['verdict']['verdict']]} ({stratum})"] += 1
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    c1.atomic_write_json(path, data)   # never a plain write: a killed run would truncate it
     print(f"appended legal-basis findings: {dict(added)}", flush=True)
 
 

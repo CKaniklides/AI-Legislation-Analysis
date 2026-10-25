@@ -146,6 +146,22 @@ SOURCES = [
      lambda r: r["bijlage_35"]["substantive_text"]["provisions"]),
 ]
 
+# Which norms the pipeline reads (23 Oct 2026). 1 = the first-generation norms stored in the
+# corpus files above (what every result so far was built on); 2 = the second-generation norms
+# of the new extractor, converted by pipeline/load_norms/build_v2_corpus.py into the same
+# format under data/laws_v2/ (same relative paths, Bijlage 35 under data/laws_v2/Datasets/).
+# C2, C4 and the interface builders read SOURCES too, so this one setting switches them all.
+NORMS_GENERATION = int(os.environ.get("NORMS_GENERATION", "1"))
+
+
+def corpus_path(rel: str) -> str:
+    if NORMS_GENERATION == 1:
+        return rel
+    return rel.replace("data/laws/", "data/laws_v2/", 1) if rel.startswith("data/laws/") else "data/laws_v2/" + rel
+
+
+SOURCES = [(corpus_path(rel), get) for rel, get in SOURCES]
+
 
 @dataclass
 class NormRecord:
@@ -604,9 +620,21 @@ def atomic_write_json(path: Path, obj, indent: Optional[int] = 1) -> None:
     half-written file. The temp file sits in the same directory on purpose -- os.replace is
     only atomic within a filesystem.
     """
-    tmp = path.with_name(path.name + ".tmp")
+    # A temp name per thread and process (23 Oct 2026): parallel workers saving the same cache
+    # used one shared ".tmp" and collided on Windows ("being used by another process"), which
+    # stopped the legal-basis run. The swap is retried for a few seconds, since a virus scanner
+    # or indexer can briefly hold the target open on Windows.
+    tmp = path.with_name(f"{path.name}.{os.getpid()}.{threading.get_ident()}.tmp")
     tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=indent), encoding="utf-8")
-    os.replace(tmp, path)
+    for attempt in range(10):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError:
+            if attempt == 9:
+                raise
+            import time
+            time.sleep(0.5 * (attempt + 1))
 
 
 # Post-snapshot amendment registry (2026-10-02). ADR-0004 scoped the Digital Omnibus
@@ -850,10 +878,27 @@ def _is_authority_term(term: str) -> bool:
     regardless of what a later citation clause or proper name happens to contain."""
     norm = _normalize_recipient(term)
     head_terms = GENERIC_AUTHORITY_TERMS | set(AUTHORITY_ALIASES.keys())
+    if NORMS_GENERATION == 2:
+        # Second-generation recipients keep their preposition and are often not a party at all
+        # ("aan een vergunning", "aan de verplichting tot ..."), so "not excluded" no longer
+        # means "an authority": 115 false competence_competition findings on 24 Oct 2026. An
+        # authority must be identified positively: a known authority name, or a head word the
+        # candidate filter's actor table classes as an authority, body, institution or state.
+        norm = re.sub(r"^(aan|bij|tot|door|voor|naar|tegenover)\s+(de|het|een)?\s*", "", norm).strip()
+        if any(norm == head or norm.startswith(head + " ") or norm.startswith(head + ",") for head in head_terms):
+            return True
+        return _actor_head_class(norm) in ("authority", "body", "institution", "state")
     if any(norm == head or norm.startswith(head + " ") or norm.startswith(head + ",")
            for head in head_terms):
         return True
     return not any(bad in norm for bad in NON_AUTHORITY_RECIPIENT_TERMS)
+
+
+def _actor_head_class(phrase: str) -> "str | None":
+    """Broad actor class of a phrase's head word, from the candidate filter's actor table."""
+    sys.path.insert(0, str(ROOT / "pipeline" / "candidate_filter" / "actor"))
+    from actor_lexicon import head_class, term_head
+    return head_class(term_head(phrase)) if phrase else None
 
 
 def _normalize_recipient(s: str) -> str:
@@ -1654,7 +1699,17 @@ def _normalize_ws(s: str) -> str:
 def _verbatim_in(span: Optional[str], source_text: str) -> bool:
     if span is None:
         return True  # nothing claimed, nothing to check
-    return _normalize_ws(span) in _normalize_ws(source_text)
+    # A quote shortened with "..." or "…" (23 Oct 2026: 419 of 522 C2 findings failed only on
+    # this) is verbatim when every piece occurs in the source, in the same order. The cut stays
+    # visible to the reader; nothing is accepted that the provision does not literally say.
+    pieces = [p for p in (_normalize_ws(x) for x in re.split(r"\.{3,}|…", span)) if p]
+    text, pos = _normalize_ws(source_text), 0
+    for piece in pieces or [_normalize_ws(span)]:
+        i = text.find(piece, pos)
+        if i < 0:
+            return False
+        pos = i + len(piece)
+    return True
 
 
 def _consistency_issue(v: DutyConflictVerdict, text_a: str, text_b: str) -> Optional[str]:
@@ -2087,10 +2142,57 @@ def build_finding(a: NormRecord, b: NormRecord, candidate: dict, subtype: str,
         # regulatory judgement this pipeline can't make from text alone; surfaced so a
         # reviewer sees it rather than treating this as an unqualified contradiction.
         "unresolved_exception": unresolved_exception,
+        # Where the pair came from: C1's own generator, or the candidate filter's selection
+        # (--pairs-from, 23 Oct 2026), with its rank, score and selection tier.
+        "candidate_source": candidate.get("candidate_source", "c1_generator"),
+        "candidate_filter": candidate.get("candidate_filter"),
         "extracted_on": date.today().isoformat(),
         "human_verified": False,
         "report_eligible": False,
     }
+
+
+def candidates_from_queue(records: list[NormRecord], g: nx.MultiDiGraph, path: Path) -> list[dict]:
+    """The pairs the candidate filter selected (pipeline/candidate_filter, select_LLM_candidates.py),
+    as candidate dicts in generate_candidates()'s shape, so the rest of C1 runs unchanged.
+
+    Added 23 Oct 2026, when the corpus moved to the second-generation norms: C1's own generator
+    produced 183,371 AI-judged pairs on them, far beyond any budget, while the filter ranks every
+    pair on action, object and actor and keeps a fixed budget plus a random calibration sample.
+    The filter has already decided which pairs are worth a look, so C1's actor gate is not
+    applied again; the signal flags are still computed, because they feed routing and the
+    finding's criteria. A selected norm C1 does not load (a deontic outside ELIGIBLE_DEONTICS,
+    or no addressee type even after inference) cannot be judged by the strict test and is
+    counted, not silently dropped."""
+    by_id = {r.norm.get("filter_norm_id"): r for r in records if r.norm.get("filter_norm_id")}
+    out, skipped = [], Counter()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        a, b = by_id.get(row["norm_a"]), by_id.get(row["norm_b"])
+        if a is None or b is None:
+            skipped["norm not eligible for the strict test"] += 1
+            continue
+        cross = a.instrument_id != b.instrument_id
+        out.append({
+            "a": a, "b": b,
+            "graph_hit": _graph_connected(g, a.graph_uid, b.graph_uid),
+            "trigger_hit": cross and _trigger_keyword_hit(a, b),
+            "semantic_hit": False,
+            "concept_hit": cross and _concept_pair_hit(a, b),
+            "risk_classification_hit": cross and _risk_classification_hit(a, b),
+            "automation_oversight_hit": cross and _automated_decision_oversight_hit(a, b),
+            "standard_benchmark_hit": cross and _standard_benchmark_hit(a, b),
+            "actor_relation": _compute_actor_relation(a, b),
+            "candidate_source": "c1_signal" if row.get("selection") == "c1_signal" else "candidate_filter",
+            "candidate_filter": {k: row.get(k) for k in ("pair_id", "rank", "selection", "combined",
+                                                         "calibration_band", "action_relation",
+                                                         "object_key", "actor_score", "c1_signals")},
+        })
+    print(f"  {len(out)} pair(s) from the candidate filter ({path}); skipped: {dict(skipped) or 'none'}",
+          flush=True)
+    return out
 
 
 def _prepare_candidate(c: dict, exceptions: list[dict]) -> dict:
@@ -2126,6 +2228,9 @@ def main():
                      help="parallel duty_conflict LLM adjudication calls -- these are "
                           "independent network requests, not local computation, so this "
                           "is the actual lever for run time, not local CPU/GPU")
+    ap.add_argument("--pairs-from", type=Path, default=None, metavar="QUEUE",
+                    help="judge only the pairs in this candidate-filter review queue "
+                         "(e.g. data/conflict_all/review_queue.jsonl) instead of generating candidates")
     ap.add_argument("--semantic-k", type=int, default=8,
                      help="cross-instrument nearest-neighbour budget per norm for the "
                           "semantic candidate signal (see similarity.py)")
@@ -2165,7 +2270,7 @@ def main():
     args = ap.parse_args()
 
     from openai import OpenAI
-    client = OpenAI()  # needed even in --dry-run: embeddings are cheap, adjudication isn't
+    client = OpenAI(timeout=120.0, max_retries=6)  # 23 Oct 2026: a network outage failed 1,109 calls with the default 2 retries;  # needed even in --dry-run: embeddings are cheap, adjudication isn't
 
     print("Loading norms and the citation graph...", flush=True)
     records = load_all_norm_records()
@@ -2175,7 +2280,7 @@ def main():
     reverse_reference_index = _build_reverse_reference_index(records)
 
     semantic_pairs = None
-    if not args.no_semantic:
+    if not args.no_semantic and not args.pairs_from:
         import similarity
         print(f"  embedding {len(records)} norms for semantic candidate matching "
               f"(model: {similarity.EMBEDDING_MODEL}, top-{args.semantic_k} cross-"
@@ -2190,7 +2295,8 @@ def main():
           f"load_conditional_exceptions -- currently just the 'artikelen X tot en met "
           f"Y' pattern, item 7's scoped starting point)", flush=True)
 
-    candidates = generate_candidates(records, g, semantic_pairs)
+    candidates = (candidates_from_queue(records, g, ROOT / args.pairs_from) if args.pairs_from
+                  else generate_candidates(records, g, semantic_pairs))
     print(f"  {len(candidates)} candidate pair(s) after actor_relation gate + "
           f"(graph adjacency OR trigger-keyword match OR semantic similarity OR "
           f"concept-pair match OR risk-classification-keyword match)", flush=True)

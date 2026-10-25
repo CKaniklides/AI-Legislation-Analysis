@@ -84,7 +84,12 @@ SUBTYPES = {"legal_tension", "missing_context"} | NAMED_SUBTYPES
 
 
 def _key(cfg, pid):
-    return f"{VERSION}::{cfg[0]}::{cfg[1]}::{pid}"
+    # Second-generation norms get their own namespace (23 Oct 2026): a pair id is built from
+    # (law, article, paragraph, number, norm index), so a new norm at the same position as an
+    # old one would otherwise read the old norm's verdict. It also re-judges every pair of the
+    # first second-generation run, which had been made without the definitions context.
+    gen = "::g2" if c1.NORMS_GENERATION == 2 else ""
+    return f"{VERSION}{gen}::{cfg[0]}::{cfg[1]}::{pid}"
 
 
 def _flagged(entry):
@@ -99,11 +104,14 @@ def final_verdicts(cache=None):
     """pair_id -> {"final": verdict|RECHECK|PENDING, "source": luna|terra, "entry": entry}."""
     cache = load_cache() if cache is None else cache
     out = {}
+    # Only this norm generation's luna entries (24 Oct 2026). The key used to be split at fixed
+    # positions, which skipped every "::g2" entry and instead read first-generation verdicts whose
+    # pair id happened to match a second-generation pair (a different norm at the same position).
+    prefix = _key(LUNA, "")
     for k in cache:
-        parts = k.split("::")
-        if parts[0] != VERSION or parts[1] != LUNA[0]:
+        if not k.startswith(prefix):
             continue
-        pid = parts[3]
+        pid = k[len(prefix):]
         luna = cache[k]
         terra = cache.get(_key(TERRA, pid))
         if terra is not None and not terra["needs_recheck_reason"]:
@@ -126,8 +134,11 @@ def superseded_finding_ids(final):
     return {f"F-C1-{pid}" for pid, f in final.items() if f["final"] not in ("PENDING", "RECHECK")}
 
 
-def build_pair_map(client, records):
+def build_pair_map(client, records, pairs_from=None):
     g = nx.read_gexf(DATA / "graph.gexf")
+    if pairs_from:   # the same pair set the strict pass judged (23 Oct 2026, second-generation norms)
+        return {c1._pair_id(c["a"], c["b"]): (c["a"], c["b"])
+                for c in c1.candidates_from_queue(records, g, ROOT / pairs_from)}
     import similarity
     sp = similarity.semantic_candidate_pairs(client, [r.text for r in records], k=8,
                                              groups=[r.instrument_id for r in records], k_within=3)
@@ -334,14 +345,17 @@ def main():
                      help="comma-separated pair_ids always kept under --limit -- for pinning "
                           "ground-truth pairs into a pilot so its output can be scored, not "
                           "merely eyeballed")
+    ap.add_argument("--pairs-from", type=Path, default=None, metavar="QUEUE",
+                     help="take the pairs from this pair set (as detect_c1_contradiction.py "
+                          "--pairs-from) instead of regenerating C1's candidates")
     args = ap.parse_args()
 
     from dotenv import load_dotenv
     load_dotenv(ROOT / ".env")
     from openai import OpenAI
-    client = OpenAI()
+    client = OpenAI(timeout=120.0, max_retries=6)  # 23 Oct 2026: a network outage failed 1,109 calls with the default 2 retries;
     records = c1.load_all_norm_records()
-    pair_map = build_pair_map(client, records)
+    pair_map = build_pair_map(client, records, args.pairs_from)
     if args.append_findings_only:
         append_findings(pair_map)
         return

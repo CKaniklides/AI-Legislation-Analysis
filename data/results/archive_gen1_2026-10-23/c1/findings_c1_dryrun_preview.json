@@ -1,0 +1,2082 @@
+{
+ "findings": [
+  {
+   "finding_id": "F-C1-89037e769a2f",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)",
+    "recipients share only a generic role name (e.g. 'competent authority'), not a specific named body -- the two may or may not be the same authority"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art26@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "26",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 24,
+    "deadline_b_hours": 72,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-bdf30131d2dd",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (arithmetic, no AI)",
+    "recipient identity confirmed by name",
+    "both norms cleanly extracted",
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 24,
+    "deadline_b_hours": 72,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": "In afwijking van het eerste lid dient een essentiële entiteit of belangrijke entiteit die een vertrouwensdienst aanbiedt onverwijld of, indien dat niet mogelijk is, binnen 24 uur nadat zij kennis heeft gekregen van het significante incident een melding van het significante incident in bij haar CSIRT en haar bevoegde autoriteit als dat incident gevolgen heeft voor de verlening van haar vertrouwensdienst",
+    "result": "noted_not_suppressed"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-d95ec16dd7d6",
+   "category": "contradiction",
+   "subtype": "standard_collision",
+   "status": "candidate",
+   "confidence_tier": 2,
+   "confidence_label": "Medium",
+   "confidence_reasons": [
+    "both deadlines are 'no later than' ceilings -- complying with the stricter one satisfies both; a CONFIRMED DIFFERENCE, not a confirmed incompatibility (see build_finding's incompatibility_established)",
+    "recipients share only a generic role name (e.g. 'competent authority'), not a specific named body -- the two may or may not be the same authority"
+   ],
+   "incompatibility_established": false,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0052872:art27@2026-08-15",
+     "instrument_id": "BWBR0052872",
+     "article": "27",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "eu:32022L2555:art23@original",
+     "instrument_id": "32022L2555",
+     "article": "23",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "trigger_keyword_match",
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "deadline_a_hours": 72,
+    "deadline_b_hours": 24,
+    "delta_hours": 48,
+    "joint_compliance_possible": true,
+    "compliance_note": "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both"
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-2c6f41aaabbc",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met andere toezichthouders"
+    ],
+    "recipient_b": [
+     "aan elkaar"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-71d6ef724b6b",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art6@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "6",
+     "paragraph_number": "2",
+     "norm_index": 1,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met andere toezichthouders"
+    ],
+    "recipient_b": [
+     "aan elkaar"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": "Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+    "result": "noted_not_suppressed"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-0ee3778d539e",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met andere toezichthouders"
+    ],
+    "recipient_b": [
+     "met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-1942bef0f4cb",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met andere toezichthouders"
+    ],
+    "recipient_b": [
+     "met deze bevoegde autoriteiten"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-931b9ccc6f99",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met deze toezichthouders"
+    ],
+    "recipient_b": [
+     "aan elkaar"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-ef59a37d3ef9",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art6@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "6",
+     "paragraph_number": "2",
+     "norm_index": 1,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met deze toezichthouders"
+    ],
+    "recipient_b": [
+     "aan elkaar"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": "Onverminderd artikel 19, tweede lid, van de Uitvoeringswet Algemene verordening gegevensbescherming en artikel 7, derde lid, onderdeel a, van de Instellingswet Autoriteit Consument en Markt zijn de Autoriteit Consument en Markt en de Autoriteit persoonsgegevens bevoegd uit eigen beweging en desgevraagd verplicht aan elkaar de gegevens te verstrekken die noodzakelijk zijn voor de uitvoering van deze wet",
+    "result": "noted_not_suppressed"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-62933a72f058",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met deze toezichthouders"
+    ],
+    "recipient_b": [
+     "met andere bevoegde autoriteiten als bedoeld in artikel 37, vijfde lid, onderdelen g en h, van de dataverordening"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-ab78f1ff30aa",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0051796:art7@2025-11-21",
+     "instrument_id": "BWBR0051796",
+     "article": "7",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "met deze toezichthouders"
+    ],
+    "recipient_b": [
+     "met deze bevoegde autoriteiten"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-04c57f60a7ce",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art19@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "19",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "eu:32016R0679:art58@original",
+     "instrument_id": "32016R0679",
+     "article": "58",
+     "paragraph_number": "3",
+     "norm_index": 2,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "aan elkaar"
+    ],
+    "recipient_b": [
+     "aan andere instellingen en organen",
+     "aan de regering van de lidstaat",
+     "aan het nationaal parlement",
+     "aan het publiek"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-2e7a979b7b82",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art20@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "20",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "eu:32024R1689:art75@original",
+     "instrument_id": "32024R1689",
+     "article": "75",
+     "paragraph_number": "3",
+     "norm_index": 2,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "bij de Afdeling bestuursrechtspraak van de Raad van State"
+    ],
+    "recipient_b": [
+     "bij het AI-bureau"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-3594d6f50519",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art20@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "20",
+     "paragraph_number": "1",
+     "norm_index": 0,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "eu:32024R1689:art77@original",
+     "instrument_id": "32024R1689",
+     "article": "77",
+     "paragraph_number": "3",
+     "norm_index": 1,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "bij de Afdeling bestuursrechtspraak van de Raad van State"
+    ],
+    "recipient_b": [
+     "bij de markttoezichtautoriteit"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-1e19658ecd61",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art33@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "33",
+     "paragraph_number": "6",
+     "norm_index": 1,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.14@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.14",
+     "paragraph_number": "2",
+     "norm_index": 1,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "different_actors_same_process",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan de vergunning"
+    ],
+    "recipient_b": [
+     "aan een vergunning voor het gebruik van frequentieruimte ten behoeve van elektronische communicatienetwerken en- diensten"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-8ffb0476b6c1",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art33@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "33",
+     "paragraph_number": "6",
+     "norm_index": 1,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.14@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.14",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "different_actors_same_process",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan de vergunning"
+    ],
+    "recipient_b": [
+     "aan een vergunning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-286c1f6278cd",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art33@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "33",
+     "paragraph_number": "6",
+     "norm_index": 1,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art10.16@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "10.16",
+     "paragraph_number": "1",
+     "norm_index": 2,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "different_actors_same_process",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan de vergunning"
+    ],
+    "recipient_b": [
+     "Aan een vergunning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-dfc6d0f94098",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0040940:art33@2026-09-01",
+     "instrument_id": "BWBR0040940",
+     "article": "33",
+     "paragraph_number": "6",
+     "norm_index": 1,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art11.12@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "11.12",
+     "paragraph_number": "3",
+     "norm_index": 1,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "different_actors_same_process",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan de vergunning"
+    ],
+    "recipient_b": [
+     "Aan een ontheffing"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-3369a0c72d4e",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.5a@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.5a",
+     "paragraph_number": "3",
+     "norm_index": 0,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "aan de toewijzing"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-60f70c2359bc",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.5b@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.5b",
+     "paragraph_number": "5",
+     "norm_index": 0,
+     "paragraph_index": 4
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "aan de voorlopige toewijzing"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-cbc292017a69",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.8a@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.8a",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "aan de transitievergunning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-231b9a05b769",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art4.2@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "4.2",
+     "paragraph_number": "5",
+     "norm_index": 1,
+     "paragraph_index": 4
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "aan een toekenning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-a128f3dcdc74",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art6.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6.4",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "Aan een verplichting als bedoeld in het eerste lid"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-54e3351bfeb6",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art7.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "7.4",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "Aan de verplichting"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-ae5ef5043932",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0048156:art11@2025-11-11",
+     "instrument_id": "BWBR0048156",
+     "article": "11",
+     "paragraph_number": "6",
+     "norm_index": 0,
+     "paragraph_index": 5
+    },
+    {
+     "uid": "nl:BWBR0009950:art11.12@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "11.12",
+     "paragraph_number": "3",
+     "norm_index": 1,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een erkenning"
+    ],
+    "recipient_b": [
+     "Aan een ontheffing"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-f75a29d315d2",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art3.5@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.5",
+     "paragraph_number": null,
+     "norm_index": 1,
+     "paragraph_index": null
+    },
+    {
+     "uid": "nl:BWBR0009950:art4.2@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "4.2",
+     "paragraph_number": "5",
+     "norm_index": 1,
+     "paragraph_index": 4
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "aan de toewijzing"
+    ],
+    "recipient_b": [
+     "aan een toekenning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-8efa521d822e",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art3.5@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.5",
+     "paragraph_number": null,
+     "norm_index": 1,
+     "paragraph_index": null
+    },
+    {
+     "uid": "nl:BWBR0009950:art10.16@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "10.16",
+     "paragraph_number": "1",
+     "norm_index": 2,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "aan de toewijzing"
+    ],
+    "recipient_b": [
+     "Aan een vergunning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-4dd96fcaf320",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art3.14@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.14",
+     "paragraph_number": "2",
+     "norm_index": 1,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "nl:BWBR0009950:art3.14@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "3.14",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "aan een vergunning voor het gebruik van frequentieruimte ten behoeve van elektronische communicatienetwerken en- diensten"
+    ],
+    "recipient_b": [
+     "aan een vergunning"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-acd1bc448a2e",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art4.2@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "4.2",
+     "paragraph_number": "5",
+     "norm_index": 1,
+     "paragraph_index": 4
+    },
+    {
+     "uid": "nl:BWBR0009950:art7.7@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "7.7",
+     "paragraph_number": "5",
+     "norm_index": 1,
+     "paragraph_index": 4
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "aan een toekenning"
+    ],
+    "recipient_b": [
+     "aan een ontheffing"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-10a90f5492e9",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art6.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6.4",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "nl:BWBR0009950:art6a.6@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.6",
+     "paragraph_number": "3",
+     "norm_index": 0,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een verplichting als bedoeld in het eerste lid"
+    ],
+    "recipient_b": [
+     "aan de verplichting, bedoeld in het eerste lid"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-e97c521c8b52",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art6.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6.4",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "nl:BWBR0009950:art6a.13@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.13",
+     "paragraph_number": "5",
+     "norm_index": 0,
+     "paragraph_index": 4
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een verplichting als bedoeld in het eerste lid"
+    ],
+    "recipient_b": [
+     "Aan de verplichtingen, bedoeld in het eerste en tweede lid"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-95bb6d48abe0",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 1,
+   "confidence_label": "High",
+   "confidence_reasons": [
+    "deterministic comparison (a direct lookup, no AI)",
+    "recipient identity confirmed as two distinct named bodies",
+    "both norms cleanly extracted"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art6.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6.4",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "nl:BWBR0009950:art7.4@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "7.4",
+     "paragraph_number": "4",
+     "norm_index": 0,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency",
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "Aan een verplichting als bedoeld in het eerste lid"
+    ],
+    "recipient_b": [
+     "Aan de verplichting"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-8998c9145363",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art6a.2@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.2",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0009950:art6a.4a@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.4a",
+     "paragraph_number": "3",
+     "norm_index": 0,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "ieder van hen"
+    ],
+    "recipient_b": [
+     "ten aanzien van de elementen, bedoeld in het tweede lid"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-c3e43b1be872",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "nl:BWBR0009950:art6a.2@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.2",
+     "paragraph_number": "1",
+     "norm_index": 1,
+     "paragraph_index": 0
+    },
+    {
+     "uid": "nl:BWBR0009950:art6a.4d@2026-08-15",
+     "instrument_id": "BWBR0009950",
+     "article": "6a.4d",
+     "paragraph_number": "3",
+     "norm_index": 0,
+     "paragraph_index": 2
+    }
+   ],
+   "scope": "internal_coherence",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "graph_adjacency"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "ieder van hen"
+    ],
+    "recipient_b": [
+     "ten aanzien van netwerkelementen"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-712c2eddef77",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art60@original",
+     "instrument_id": "32016R0679",
+     "article": "60",
+     "paragraph_number": "2",
+     "norm_index": 0,
+     "paragraph_index": 1
+    },
+    {
+     "uid": "eu:32022L2555:art37@original",
+     "instrument_id": "32022L2555",
+     "article": "37",
+     "paragraph_number": "1",
+     "norm_index": 6,
+     "paragraph_index": 0
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "wederzijdse bijstand overeenkomstig artikel 61"
+    ],
+    "recipient_b": [
+     "een andere bevoegde autoriteit"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  },
+  {
+   "finding_id": "F-C1-df73aeead80f",
+   "category": "contradiction",
+   "subtype": "competence_competition",
+   "status": "candidate",
+   "confidence_tier": 3,
+   "confidence_label": "Low",
+   "confidence_reasons": [
+    "one or both norms were finalized with the conservative default after Stage 6's two extraction passes disagreed (extraction_uncertain)"
+   ],
+   "incompatibility_established": true,
+   "challenge": null,
+   "provisions": [
+    {
+     "uid": "eu:32016R0679:art66@original",
+     "instrument_id": "32016R0679",
+     "article": "66",
+     "paragraph_number": "3",
+     "norm_index": 0,
+     "paragraph_index": 2
+    },
+    {
+     "uid": "eu:32022L2555:art32@original",
+     "instrument_id": "32022L2555",
+     "article": "32",
+     "paragraph_number": "4",
+     "norm_index": 16,
+     "paragraph_index": 3
+    }
+   ],
+   "scope": "cross_law",
+   "actor_relation": "same_actor",
+   "currency_warning": null,
+   "criteria_fired": [
+    "semantic_similarity"
+   ],
+   "deterministic_result": {
+    "recipient_a": [
+     "het Comité"
+    ],
+    "recipient_b": [
+     "door de bevoegde organen of rechterlijke instanties"
+    ]
+   },
+   "llm_adjudication": null,
+   "needs_recheck_reason": null,
+   "resolution_filter": {
+    "checked": true,
+    "deference_found": null,
+    "result": "unresolved"
+   },
+   "unresolved_exception": null,
+   "extracted_on": "2026-10-23",
+   "human_verified": false,
+   "report_eligible": false
+  }
+ ],
+ "suppressed": []
+}

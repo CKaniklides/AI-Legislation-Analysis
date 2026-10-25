@@ -1,0 +1,662 @@
+{
+ "summary": {
+  "CONTROL": {
+   "n": 30,
+   "flips": 8,
+   "flip_types": {
+    "INSUFFICIENT_EVIDENCE->NOT_A_CONFLICT": 8
+   },
+   "fresh_CONTRADICTION": 0
+  },
+  "CONTEXT": {
+   "n": 30,
+   "flips": 8,
+   "flip_types": {
+    "NOT_A_CONFLICT->INSUFFICIENT_EVIDENCE": 1,
+    "INSUFFICIENT_EVIDENCE->NOT_A_CONFLICT": 7
+   },
+   "fresh_CONTRADICTION": 0
+  },
+  "SWAP": {
+   "n": 30,
+   "flips": 10,
+   "flip_types": {
+    "NOT_A_CONFLICT->INSUFFICIENT_EVIDENCE": 1,
+    "INSUFFICIENT_EVIDENCE->NOT_A_CONFLICT": 9
+   },
+   "fresh_CONTRADICTION": 0
+  }
+ },
+ "rows": [
+  {
+   "arm": "CONTROL",
+   "pair_id": "d481291c8e69",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "6b8300196268",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "0bf856fe8475",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "5419ea095643",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "2524189eff11",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "ab8929cd184a",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "87519e38670b",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "ef0f41e4087b",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "4c882e42d025",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "80ae8b39de19",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "c6bbce42aa56",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "b390bd561201",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "0b0eee342eb4",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "646eb9ab6602",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "9bbce2b482b6",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "f7471ab9ee3a",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "e4cfdfd20dc4",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "fe0219c24dea",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "dcfb76a743eb",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "310104494ea0",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "1e585b4b60c1",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "58c2f7e7c88f",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "77ef6d635c49",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "e120d207592c",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "0ac17aa86c08",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "6d1fc7b10e95",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "c349c56338cb",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "f36368fcf670",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "ef08061e26d5",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTROL",
+   "pair_id": "823ff034ae4c",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "a6c7e7337f4a",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "56e7d19a023d",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "68c3b05cdd16",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "5a82ad6a010f",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "6f635568d4dc",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "32be45cf4f3c",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "78d5dfd0f2dd",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "543292b0e71d",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "b0763e17deb7",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "7e06394b1c81",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "d36aa54c4447",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "010c99e8c845",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "05a771307d55",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "ad290001ab19",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "fc033fd4c763",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "bc2219a31697",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "d5f96200a849",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "fd0c198795b4",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "f69faa847c9d",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "10ab49b28c27",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "432a979605ad",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "b06672ff08fa",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "f728f0987fd9",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "f281eebb5461",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "4688c1183260",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "0098caa9c823",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "bf7cdd2fcbe3",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "8970cefed188",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "eac3737c2fe8",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": false
+  },
+  {
+   "arm": "CONTEXT",
+   "pair_id": "e35e6718c691",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": false
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "c7d5597b3781",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "801d355dbd52",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "833dbab57661",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "191a22d2e55a",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "ebd87854b6a1",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "8b31d0a0af94",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "62f7f09f2890",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "503a6374aee3",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "0208113e966e",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "e323b65c56ad",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "c7f4f3039a64",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "8b25a9f96305",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "6270337c333c",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "f2db486d16ea",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "ad367a622f05",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "f434b6640828",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "627559a55dfc",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "674c2f726b0e",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "a7b74f64c5fb",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "91fa372cb013",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "d28acae7f114",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "e8fb73e61325",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "18d03745fd5b",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "e9004a294985",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "20d962794cdb",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "INSUFFICIENT_EVIDENCE",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "3d3dd300f278",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "ddb18b2c7eec",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "a14bc0819d5d",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "fe8f6a7d1784",
+   "cached": "NOT_A_CONFLICT",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  },
+  {
+   "arm": "SWAP",
+   "pair_id": "e793822b368f",
+   "cached": "INSUFFICIENT_EVIDENCE",
+   "fresh": "NOT_A_CONFLICT",
+   "swapped": true
+  }
+ ]
+}

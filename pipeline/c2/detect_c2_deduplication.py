@@ -386,7 +386,7 @@ def _cosine_scores(client, texts: list[str], pairs: set) -> list[tuple[int, int,
 
 def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
                     c1_labelled: set, semantic_k: int = 6,
-                    semantic_k_within: int = 3
+                    semantic_k_within: int = 3, extra_pairs: Optional[set] = None
                     ) -> tuple[list[tuple[c1.NormRecord, c1.NormRecord, dict]], dict, int]:
     # No longer requires a non-empty trigger_event up front (2026-09-24 fix, per external
     # review -- a real, confirmed bug): _gate_text() already covers trigger_event+action
@@ -450,7 +450,18 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
         if _documentation_keyword_hit(a, b):
             documentation_hit_idx.add((i, j))
 
-    candidate_idx = semantic_hit_idx | keyword_hit_idx | penalty_hit_idx | impact_hit_idx | documentation_hit_idx
+    # Pairs from the candidate filter (--pairs-from, 24 Oct 2026): its ranking had only been
+    # judged by C1, and only 8 of its cross-law pairs were among C2's own candidates. They join
+    # as one more signal and pass exactly the same checks below.
+    filter_hit_idx = set()
+    if extra_pairs:
+        pos = {r.norm.get("filter_norm_id"): i for i, r in enumerate(obligations)}
+        for x, y in extra_pairs:
+            if x in pos and y in pos:
+                filter_hit_idx.add(tuple(sorted((pos[x], pos[y]))))
+
+    candidate_idx = (semantic_hit_idx | keyword_hit_idx | penalty_hit_idx | impact_hit_idx
+                     | documentation_hit_idx | filter_hit_idx)
 
     drop_counts = {"too_generic_trigger": len(all_obligations) - len(obligations),
                    "addressee_mismatch": 0, "same_instrument": 0, "vertical": 0,
@@ -475,7 +486,8 @@ def generate_pairs(client, records: list[c1.NormRecord], g: nx.MultiDiGraph,
             continue
         signals = {"semantic_hit": (i, j) in semantic_hit_idx, "keyword_hit": (i, j) in keyword_hit_idx,
                    "penalty_hit": (i, j) in penalty_hit_idx, "impact_hit": (i, j) in impact_hit_idx,
-                   "documentation_hit": (i, j) in documentation_hit_idx}
+                   "documentation_hit": (i, j) in documentation_hit_idx,
+                   "filter_hit": (i, j) in filter_hit_idx}
         pairs.append((a, b, signals))
 
     return pairs, drop_counts, len(candidate_idx)
@@ -860,6 +872,8 @@ def build_finding(a: c1.NormRecord, b: c1.NormRecord, burden: dict, verdict: Dup
         criteria.append("impact_assessment_keyword_family_match")
     if signals.get("documentation_hit"):
         criteria.append("documentation_keyword_family_match")
+    if signals.get("filter_hit"):
+        criteria.append("candidate_filter_selection")
     return {
         "finding_id": f"F-C2-{c1._pair_id(a, b)}",
         "category": "deduplication",
@@ -942,10 +956,18 @@ def main():
     ap.add_argument("--semantic-k-within", type=int, default=3,
                      help="within-instrument nearest-neighbour budget -- separate and "
                           "smaller, same rationale as C1's own --semantic-k-within")
+    ap.add_argument("--pairs-from", type=Path, default=None,
+                     help="also judge the pairs in this candidate-filter queue file (norm_a, "
+                          "norm_b as filter norm ids; second-generation norms only)")
     args = ap.parse_args()
+    extra_pairs = None
+    if args.pairs_from:
+        extra_pairs = {(r["norm_a"], r["norm_b"]) for r in map(json.loads,
+                       args.pairs_from.read_text(encoding="utf-8").splitlines())
+                       if r.get("selection") not in ("c1_signal", "c1_deterministic")}
 
     from openai import OpenAI
-    client = OpenAI()
+    client = OpenAI(timeout=120.0, max_retries=6)  # 23 Oct 2026: a network outage failed 1,109 calls with the default 2 retries;
 
     print("Loading norms and the citation graph...", flush=True)
     records = c1.load_all_norm_records()
@@ -963,7 +985,7 @@ def main():
           f"keyword-family match (see module docstring), all gated on addressee_type "
           f"match...", flush=True)
     pairs, drop_counts, n_candidates = generate_pairs(
-        client, records, g, c1_labelled, args.semantic_k, args.semantic_k_within)
+        client, records, g, c1_labelled, args.semantic_k, args.semantic_k_within, extra_pairs)
     print(f"  {drop_counts['too_generic_trigger']} norm(s) excluded before matching "
           f"(trigger_event+action too short/generic, <{MIN_TRIGGER_CONTENT_WORDS} "
           f"combined content words)", flush=True)
@@ -994,7 +1016,10 @@ def main():
     cache_lock = threading.Lock()
 
     def _cache_key(a: c1.NormRecord, b: c1.NormRecord) -> str:
-        return f"{C2_ADJUDICATION_VERSION}::{args.model}::{c1._pair_id(a, b)}"
+        # Second-generation norms get their own namespace (23 Oct 2026): the pair id is built from
+        # the norms' positions, so a new norm at an old norm's position would read its verdict.
+        gen = "::g2" if c1.NORMS_GENERATION == 2 else ""
+        return f"{C2_ADJUDICATION_VERSION}{gen}::{args.model}::{c1._pair_id(a, b)}"
 
     findings = []
 
@@ -1042,8 +1067,10 @@ def main():
 
     for a, b, signals in cached_p:
         entry = cache[_cache_key(a, b)]
-        result = PairAdjudicationResult(DuplicationVerdict(**entry["verdict"]),
-                                         entry["needs_recheck_reason"])
+        verdict = DuplicationVerdict(**entry["verdict"])
+        # Re-checked on every read (23 Oct 2026), so an improved check (quotes shortened with
+        # "...") applies to cached verdicts too instead of the reason stored at call time.
+        result = PairAdjudicationResult(verdict, _consistency_issue(verdict, a.text, b.text))
         _handle(a, b, signals, result, tag="[cached] ")
 
     print(f"  adjudicating {len(to_call_p)} pair(s) with {args.concurrency} concurrent "
