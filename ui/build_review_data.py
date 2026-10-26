@@ -70,6 +70,9 @@ SUBCATEGORIES = {
         ("standard_collision", bi("Verschillende termijnen", "Different deadlines"),
          bi("Dezelfde plicht kent in twee bepalingen een andere termijn.",
             "The same duty carries a different deadline in two provisions.")),
+        ("threshold_mismatch", bi("Verschillende boetebedragen", "Different fine amounts"),
+         bi("Voor hetzelfde soort overtreding noemen twee bepalingen een ander maximumbedrag.",
+            "Two provisions set a different maximum amount for the same kind of violation.")),
         ("classification_mismatch", bi("Verschillende risico-indeling", "Different risk classification"),
          bi("Twee wetten gebruiken verschillende toetsen om te bepalen wanneer extra waarborgen gelden.",
             "Two laws use different tests to decide when extra safeguards apply.")),
@@ -310,6 +313,12 @@ def raw_explanation(f: dict, category: str) -> dict:
         x["case_for"] = (f"The same duty has a deadline of {det.get('deadline_a_hours')} hours in provision A "
                          f"and {det.get('deadline_b_hours')} hours in provision B.")
         x["case_against"] = det.get("compliance_note")
+    elif st == "threshold_mismatch":
+        x["summary"] = "Two provisions set a different maximum amount for the same kind of violation."
+        x["case_for"] = (f"Provision A sets a maximum of €{det.get('value_a'):,.0f}, provision B a maximum of "
+                         f"€{det.get('value_b'):,.0f}, a difference of €{det.get('delta'):,.0f}."
+                         if det.get("kind") == "euro" else
+                         f"Provision A sets {det.get('value_a')}, provision B {det.get('value_b')}.")
     else:
         x["summary"] = llm.get("shared_subject")
         x["case_for"] = llm.get("strongest_case_for_tension")
@@ -325,7 +334,62 @@ def raw_explanation(f: dict, category: str) -> dict:
 _FIXED_ENGLISH = {
     "competence_competition": {"summary", "case_for"},
     "standard_collision": {"summary", "case_for", "case_against"},
+    "threshold_mismatch": {"summary", "case_for"},
 }
+
+_DEADLINE_NOTE = {   # detect_c1_contradiction's fixed compliance_note, as written there
+    "both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both":
+        bi("Beide termijnen zijn uiterste termijnen; wie de strengste termijn haalt, voldoet aan beide.",
+           "Both deadlines are 'no later than' ceilings; complying with the stricter one satisfies both."),
+}
+
+
+def _euro_nl(v) -> str:
+    return "€ " + f"{v:,.0f}".replace(",", ".")
+
+
+def fixed_sentence(f: dict, field: str) -> "dict | None":
+    """The sentences raw_explanation() writes from computed facts, in BOTH languages (25 Oct 2026).
+    They used to be written in English only and translated by the model, which left 'Provision A'
+    in the Dutch text and in one case returned the English unchanged. Kept in step with
+    raw_explanation(); None where no fixed sentence exists, so the model's translation stays."""
+    det = f.get("deterministic_result") or {}
+    st = f.get("subtype")
+    raw = raw_explanation(f, "contradiction").get(field)
+    if st == "competence_competition":
+        ra, rb = "; ".join(det.get("recipient_a") or []), "; ".join(det.get("recipient_b") or [])
+        if field == "summary":
+            return bi("Twee bepalingen geven een vergelijkbare bevoegdheid aan verschillende autoriteiten.", raw)
+        if field == "case_for":
+            return bi(f"Beide bepalingen geven een vergelijkbare bevoegdheid, maar aan verschillend genoemde autoriteiten: ‘{ra}’ en ‘{rb}’.", raw)
+    if st == "standard_collision":
+        if field == "summary":
+            return bi("Voor dezelfde plicht gelden twee verschillende termijnen.", raw)
+        if field == "case_for":
+            return bi(f"Dezelfde plicht heeft een termijn van {det.get('deadline_a_hours')} uur in bepaling A "
+                      f"en {det.get('deadline_b_hours')} uur in bepaling B.", raw)
+        if field == "case_against":
+            return _DEADLINE_NOTE.get(raw)
+    if st == "threshold_mismatch":
+        if field == "summary":
+            return bi("Twee bepalingen noemen een ander maximumbedrag voor hetzelfde soort overtreding.", raw)
+        if field == "case_for" and det.get("kind") == "euro":
+            return bi(f"Bepaling A noemt een maximum van {_euro_nl(det.get('value_a'))}, bepaling B een maximum van "
+                      f"{_euro_nl(det.get('value_b'))}: een verschil van {_euro_nl(det.get('delta'))}.", raw)
+        if field == "case_for":
+            return bi(f"Bepaling A noemt {det.get('value_a')}, bepaling B {det.get('value_b')}.", raw)
+    return None
+
+
+_PROVISION_AB = re.compile(r"\b([Pp])rovision ([AB])\b")
+
+
+def _dutch_ab(text: dict) -> dict:
+    """'provision A' left untranslated in a Dutch text becomes 'bepaling A'."""
+    if text and text.get("nl"):
+        text = dict(text)
+        text["nl"] = _PROVISION_AB.sub(lambda m: ("Bepaling " if m.group(1) == "P" else "bepaling ") + m.group(2), text["nl"])
+    return text
 
 
 def explanation_key(finding_id: str, raw: dict) -> str:
@@ -366,8 +430,11 @@ def instance_view(f: dict, category: str) -> dict:
         return out
 
     def both(field):
+        fixed = fixed_sentence(f, field) if field in fixed_english else None
+        if fixed:
+            return fixed
         if e and e.get(field):
-            return keep_original(e[field], raw.get(field), "en" if field in fixed_english else None)
+            return _dutch_ab(keep_original(e[field], raw.get(field), "en" if field in fixed_english else None))
         return bi(raw[field], raw[field]) if raw.get(field) else None
 
     notes = []
@@ -450,7 +517,8 @@ def build() -> dict:
                        "Provisions that are no longer used or have lost their legal basis.")},
         {"id": "simplification", "live": False, "subcategories": [], "questions": [],
          "title": bi("Vereenvoudiging", "Simplification"),
-         "summary": bi("Bepalingen die moeilijker te lezen zijn dan nodig.", "Provisions that are harder to read than they need to be.")},
+         "summary": bi("Elke wet in gewone taal, regel voor regel gecontroleerd en door u goed te keuren.",
+                       "Each law in plain language, checked line by line, for you to approve.")},
     ]
     return {"generated_on": date.today().isoformat(), "categories": cats}
 

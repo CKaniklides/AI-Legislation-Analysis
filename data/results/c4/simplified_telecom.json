@@ -1094,7 +1094,7 @@
       ]
      },
      {
-      "nl": "Een aanbieder mag communicatie niet afluisteren, onderscheppen of controleren, behalve in the limited cases set by law. Verkeersgegevens moeten worden verwijderd of anoniem gemaakt zodra zij niet meer nodig zijn voor het overbrengen van communicatie. Gebruik voor facturering, bepaalde eigen activiteiten of diensten met toegevoegde waarde is alleen toegestaan onder de voorwaarden van de wet.",
+      "nl": "Een aanbieder mag communicatie niet afluisteren, onderscheppen of controleren, behalve in de beperkte gevallen die de wet noemt. Verkeersgegevens moeten worden verwijderd of anoniem gemaakt zodra zij niet meer nodig zijn voor het overbrengen van communicatie. Gebruik voor facturering, bepaalde eigen activiteiten of diensten met toegevoegde waarde is alleen toegestaan onder de voorwaarden van de wet.",
       "en": "A provider may not listen to, intercept or monitor communications, except in the limited cases set by law. Traffic data must be deleted or anonymised as soon as they are no longer needed to transmit communications. Use for billing, certain own activities or value-added services is allowed only under the Act's conditions.",
       "articles": [
        "11.2a",
@@ -1111,7 +1111,7 @@
       ]
      },
      {
-      "nl": "De Autoriteit Consument en Markt houdt toezicht op veel regels in deze wet. De Autoriteit persoonsgegevens houdt toezicht op meldingen van bepaalde datalekken en op persoonsgegevens van trust-service providers. Toezichthouders may impose enforcement measures and, for the rules they supervise, administrative fines under the Act.",
+      "nl": "De Autoriteit Consument en Markt houdt toezicht op veel regels in deze wet. De Autoriteit persoonsgegevens houdt toezicht op meldingen van bepaalde datalekken en op persoonsgegevens bij aanbieders van vertrouwensdiensten. Toezichthouders kunnen handhavingsmaatregelen opleggen en, voor de regels waarop zij toezicht houden, bestuurlijke boetes op grond van de wet.",
       "en": "The Netherlands Authority for Consumers and Markets supervises many rules in this Act. The Dutch Data Protection Authority supervises reports of certain personal-data breaches and personal data held by trust-service providers. Supervisors may impose enforcement measures and, for the rules they supervise, administrative fines under the Act.",
       "articles": [
        "11.3a",
@@ -1593,7 +1593,7 @@
     },
     {
      "id": "in_short1",
-     "nl": "Een aanbieder mag communicatie niet afluisteren, onderscheppen of controleren, behalve in the limited cases set by law. Verkeersgegevens moeten worden verwijderd of anoniem gemaakt zodra zij niet meer nodig zijn voor het overbrengen van communicatie. Gebruik voor facturering, bepaalde eigen activiteiten of diensten met toegevoegde waarde is alleen toegestaan onder de voorwaarden van de wet.",
+     "nl": "Een aanbieder mag communicatie niet afluisteren, onderscheppen of controleren, behalve in de beperkte gevallen die de wet noemt. Verkeersgegevens moeten worden verwijderd of anoniem gemaakt zodra zij niet meer nodig zijn voor het overbrengen van communicatie. Gebruik voor facturering, bepaalde eigen activiteiten of diensten met toegevoegde waarde is alleen toegestaan onder de voorwaarden van de wet.",
      "en": "A provider may not listen to, intercept or monitor communications, except in the limited cases set by law. Traffic data must be deleted or anonymised as soon as they are no longer needed to transmit communications. Use for billing, certain own activities or value-added services is allowed only under the Act's conditions.",
      "articles": [
       "11.2a",
@@ -1640,7 +1640,7 @@
     },
     {
      "id": "in_short3",
-     "nl": "De Autoriteit Consument en Markt houdt toezicht op veel regels in deze wet. De Autoriteit persoonsgegevens houdt toezicht op meldingen van bepaalde datalekken en op persoonsgegevens van trust-service providers. Toezichthouders may impose enforcement measures and, for the rules they supervise, administrative fines under the Act.",
+     "nl": "De Autoriteit Consument en Markt houdt toezicht op veel regels in deze wet. De Autoriteit persoonsgegevens houdt toezicht op meldingen van bepaalde datalekken en op persoonsgegevens bij aanbieders van vertrouwensdiensten. Toezichthouders kunnen handhavingsmaatregelen opleggen en, voor de regels waarop zij toezicht houden, bestuurlijke boetes op grond van de wet.",
      "en": "The Netherlands Authority for Consumers and Markets supervises many rules in this Act. The Dutch Data Protection Authority supervises reports of certain personal-data breaches and personal data held by trust-service providers. Supervisors may impose enforcement measures and, for the rules they supervise, administrative fines under the Act.",
      "articles": [
       "11.3a",
@@ -4822,7 +4822,7 @@
       ]
      },
      {
-      "nl": "Bij een volledige netwerkstoring die langer duurt dan de period set by ministerial rules, must the provider compensate affected subscribers, either automatically or on request. The minimum amount per day is set by ministerial rules. There is no right to compensation if the failure results from a flood, terrorist attack or war.",
+      "nl": "Bij een volledige netwerkstoring die langer duurt dan de periode die bij ministeriële regeling is vastgesteld, moet de aanbieder getroffen abonnees schadeloosstellen, automatisch of op verzoek. Het minimumbedrag per dag wordt bij ministeriële regeling vastgesteld. Er is geen recht op vergoeding als de storing het gevolg is van een overstroming, een terroristische aanslag of oorlog.",
       "en": "If a complete network failure lasts longer than the period set by ministerial rules, the provider must compensate affected subscribers, automatically or on request. The minimum amount per day is set by ministerial rules. There is no right to compensation if the failure results from a flood, terrorist attack or war.",
       "articles": [
        "7.1a"
@@ -4838,7 +4838,7 @@
       ]
      },
      {
-      "nl": "Een consument may cancel free of charge if the actual performance of a relevant communication or programme service is seriously and continually, or regularly, different from the performance stated in the contract. This does not cover internet access services or number-independent interpersonal communication services.",
+      "nl": "Een consument mag kosteloos opzeggen als de werkelijke prestatie van een relevante communicatie- of programmadienst ernstig en voortdurend, of regelmatig, afwijkt van de prestatie die in het contract staat. Dit geldt niet voor internettoegangsdiensten en nummeronafhankelijke interpersoonlijke communicatiediensten.",
       "en": "A consumer may cancel free of charge if the actual performance of a relevant communication or programme service is seriously and continually, or regularly, different from the performance stated in the contract. This does not cover internet access services or number-independent interpersonal communication services.",
       "articles": [
        "7.2ac"
@@ -4860,7 +4860,7 @@
       ]
      },
      {
-      "nl": "Aanbieders must publish clear, complete and machine-readable information about internet and public interpersonal communication services. At least one independent, free comparison tool must be available for comparing prices, tariffs and, where relevant, service quality. Providers must also give end users with disabilities access and choices equal to those offered to most other users.",
+      "nl": "Aanbieders moeten duidelijke, volledige en machineleesbare informatie publiceren over internetdiensten en openbare interpersoonlijke communicatiediensten. Er moet ten minste één onafhankelijk, gratis vergelijkingsinstrument beschikbaar zijn om prijzen, tarieven en, waar relevant, de kwaliteit van de dienst te vergelijken. Aanbieders moeten eindgebruikers met een beperking ook toegang en keuzemogelijkheden bieden die gelijkwaardig zijn aan die voor de meeste andere gebruikers.",
       "en": "Providers must publish clear, complete and machine-readable information about internet and public interpersonal communication services. At least one independent, free comparison tool must be available for comparing prices, tariffs and, where relevant, service quality. Providers must also give end users with disabilities access and choices equal to those offered to most other users.",
       "articles": [
        "7.3",
@@ -4962,7 +4962,7 @@
     },
     {
      "id": "line2",
-     "nl": "Bij een volledige netwerkstoring die langer duurt dan de period set by ministerial rules, must the provider compensate affected subscribers, either automatically or on request. The minimum amount per day is set by ministerial rules. There is no right to compensation if the failure results from a flood, terrorist attack or war.",
+     "nl": "Bij een volledige netwerkstoring die langer duurt dan de periode die bij ministeriële regeling is vastgesteld, moet de aanbieder getroffen abonnees schadeloosstellen, automatisch of op verzoek. Het minimumbedrag per dag wordt bij ministeriële regeling vastgesteld. Er is geen recht op vergoeding als de storing het gevolg is van een overstroming, een terroristische aanslag of oorlog.",
      "en": "If a complete network failure lasts longer than the period set by ministerial rules, the provider must compensate affected subscribers, automatically or on request. The minimum amount per day is set by ministerial rules. There is no right to compensation if the failure results from a flood, terrorist attack or war.",
      "articles": [
       "7.1a"
@@ -5011,7 +5011,7 @@
     },
     {
      "id": "line4",
-     "nl": "Een consument may cancel free of charge if the actual performance of a relevant communication or programme service is seriously and continually, or regularly, different from the performance stated in the contract. This does not cover internet access services or number-independent interpersonal communication services.",
+     "nl": "Een consument mag kosteloos opzeggen als de werkelijke prestatie van een relevante communicatie- of programmadienst ernstig en voortdurend, of regelmatig, afwijkt van de prestatie die in het contract staat. Dit geldt niet voor internettoegangsdiensten en nummeronafhankelijke interpersoonlijke communicatiediensten.",
      "en": "A consumer may cancel free of charge if the actual performance of a relevant communication or programme service is seriously and continually, or regularly, different from the performance stated in the contract. This does not cover internet access services or number-independent interpersonal communication services.",
      "articles": [
       "7.2ac"
@@ -5081,7 +5081,7 @@
     },
     {
      "id": "line7",
-     "nl": "Aanbieders must publish clear, complete and machine-readable information about internet and public interpersonal communication services. At least one independent, free comparison tool must be available for comparing prices, tariffs and, where relevant, service quality. Providers must also give end users with disabilities access and choices equal to those offered to most other users.",
+     "nl": "Aanbieders moeten duidelijke, volledige en machineleesbare informatie publiceren over internetdiensten en openbare interpersoonlijke communicatiediensten. Er moet ten minste één onafhankelijk, gratis vergelijkingsinstrument beschikbaar zijn om prijzen, tarieven en, waar relevant, de kwaliteit van de dienst te vergelijken. Aanbieders moeten eindgebruikers met een beperking ook toegang en keuzemogelijkheden bieden die gelijkwaardig zijn aan die voor de meeste andere gebruikers.",
      "en": "Providers must publish clear, complete and machine-readable information about internet and public interpersonal communication services. At least one independent, free comparison tool must be available for comparing prices, tariffs and, where relevant, service quality. Providers must also give end users with disabilities access and choices equal to those offered to most other users.",
      "articles": [
       "7.3",
@@ -5371,7 +5371,7 @@
       ]
      },
      {
-      "nl": "Voor consumenten moeten deze diensten en voorzieningen betaalbaar zijn. Rules can set their quality, nature and price.",
+      "nl": "Voor consumenten moeten deze diensten en voorzieningen betaalbaar zijn. Bij regels kunnen de kwaliteit, de aard en de prijs ervan worden vastgesteld.",
       "en": "For consumers, these services and facilities must be affordable. Rules can set their quality, nature and price.",
       "articles": [
        "9.1"
@@ -5473,7 +5473,7 @@
     },
     {
      "id": "line2",
-     "nl": "Voor consumenten moeten deze diensten en voorzieningen betaalbaar zijn. Rules can set their quality, nature and price.",
+     "nl": "Voor consumenten moeten deze diensten en voorzieningen betaalbaar zijn. Bij regels kunnen de kwaliteit, de aard en de prijs ervan worden vastgesteld.",
      "en": "For consumers, these services and facilities must be affordable. Rules can set their quality, nature and price.",
      "articles": [
       "9.1"
@@ -11696,7 +11696,7 @@
         "en": "Is there no agreement two months after the notice was sent? The provider, owner or manager can then ask the Netherlands Authority for Consumers and Markets for a decision within two weeks."
        },
        {
-        "nl": "De Autoriteit Consument en Markt beslist zo snel mogelijk, uiterlijk binnen twee maanden na ontvangst van het verzoek. Nadere rules may be set for the written notice.",
+        "nl": "De Autoriteit Consument en Markt beslist zo snel mogelijk, uiterlijk binnen twee maanden na ontvangst van het verzoek. Over de schriftelijke kennisgeving kunnen nadere regels worden gesteld.",
         "en": "The Netherlands Authority for Consumers and Markets decides as soon as possible, no later than two months after receiving the request. Further rules may be set for the written notice."
        }
       ]
@@ -11763,15 +11763,15 @@
         "en": "When communication is seriously obstructed or disrupted, a network provider may carry out urgent cable maintenance without following the normal procedures. The provider must report the work beforehand to the person who must allow it."
        },
        {
-        "nl": "Voor werk op openbare grond meldt de aanbieder dit vooraf ook aan de burgemeester, of aan een authorised official. Die official informs the mayor as soon as possible.",
+        "nl": "Voor werk op openbare grond meldt de aanbieder dit vooraf ook aan de burgemeester, of aan een daartoe aangewezen ambtenaar. Die ambtenaar informeert de burgemeester zo snel mogelijk.",
         "en": "For work on public land, the provider must also report this beforehand to the mayor, or to an authorised official. That official informs the mayor as soon as possible."
        },
        {
-        "nl": "Bij gevaar, fear of danger or concerns for public order, the mayor may require work at another time. The decision is taken immediately after the notice is received.",
+        "nl": "Bij gevaar, vrees voor gevaar of zorgen over de openbare orde kan de burgemeester eisen dat het werk op een ander tijdstip plaatsvindt. Het besluit wordt direct na ontvangst van de melding genomen.",
         "en": "In case of danger, fear of danger or concerns for public order, the mayor may require the work at another time. The decision is taken immediately after receiving the notice."
        },
        {
-        "nl": "For safety reasons, the municipal council may designate areas where this emergency rule does not apply.",
+        "nl": "Om veiligheidsredenen kan de gemeenteraad gebieden aanwijzen waar deze noodregeling niet geldt.",
         "en": "For safety reasons, the municipal council may designate areas where this emergency rule does not apply."
        }
       ]
@@ -11784,19 +11784,19 @@
       },
       "points": [
        {
-        "nl": "De netwerkaanbieder vergoedt schade caused by installing, maintaining or removing cables to the person who must allow the work.",
+        "nl": "De netwerkaanbieder vergoedt de schade die het aanleggen, onderhouden of verwijderen van kabels veroorzaakt aan degene die het werk moet gedogen.",
         "en": "The network provider compensates damage caused by installing, maintaining or removing cables to the person who must allow the work."
        },
        {
-        "nl": "Voor owners and managers of public land, compensation is limited to market-based costs of facilities and additional market-based maintenance costs.",
+        "nl": "Voor eigenaren en beheerders van openbare grond is de vergoeding beperkt tot de marktconforme kosten van voorzieningen en de extra marktconforme onderhoudskosten.",
         "en": "For owners and managers of public land, compensation is limited to market-based costs of facilities and additional market-based maintenance costs."
        },
        {
-        "nl": "After the work, the provider restores the land to its former state, unless the person who must allow it wants to do this themselves. The provider pays the necessary market-based restoration costs.",
+        "nl": "Na het werk brengt de aanbieder de grond in de oude staat terug, tenzij degene die het werk moet gedogen dit zelf wil doen. De aanbieder betaalt de noodzakelijke marktconforme herstelkosten.",
         "en": "After the work, the provider restores the land to its former state, unless the person who must allow it wants to do this themselves. The provider pays the necessary market-based restoration costs."
        },
        {
-        "nl": "Market-based costs are costs that a business would normally incur in a market economy on that market.",
+        "nl": "Marktconforme kosten zijn kosten die een onderneming in een markteconomie op die markt normaal zou maken.",
         "en": "Market-based costs are costs that a business would normally incur in a market economy on that market."
        }
       ]
@@ -11821,12 +11821,12 @@
         "en": "If the announced work does not take place afterwards, the provider may recover its costs. For a new request within five years, the requester pays the costs."
        },
        {
-        "nl": "In other cases, the provider need only take measures if the requester pays. Measures must normally be taken within sixteen weeks; a cable move must be completed within twaalf weken after a suitable location becomes available.",
+        "nl": "In andere gevallen hoeft de aanbieder alleen maatregelen te nemen als de verzoeker betaalt. De maatregelen moeten in de regel binnen zestien weken worden genomen; een kabelverplaatsing moet binnen twaalf weken nadat een geschikte locatie beschikbaar is, zijn voltooid.",
         "en": "In other cases, the provider need take measures only if the requester pays. Measures must normally be taken within sixteen weeks; a cable move must be completed within twelve weeks after a suitable location becomes available."
        },
        {
-        "nl": "The request describes the buildings or works and, for a cable move where possible, proposes a new cable location.",
-        "en": "Het verzoek beschrijft de gebouwen of werken en stelt bij kabelverplaatsing, voor zover mogelijk, een nieuwe kabelplaats voor."
+        "nl": "Het verzoek beschrijft de gebouwen of werken en stelt bij kabelverplaatsing, voor zover mogelijk, een nieuwe kabelplaats voor.",
+        "en": "The request describes the buildings or works and, for a cable move where possible, proposes a new cable location."
        }
       ]
      },
@@ -11884,7 +11884,7 @@
         "en": "In case of a serious communication obstruction or disruption, the provider may cut back roots immediately. The owner or manager must receive written notice as soon as possible, no later than the day after the work."
        },
        {
-        "nl": "De aanbieder vergoedt schade caused by cutting back roots.",
+        "nl": "De aanbieder vergoedt de schade die door het snoeien van wortels ontstaat.",
         "en": "The provider compensates damage caused by cutting back roots."
        }
       ]
@@ -11914,11 +11914,11 @@
         "en": "The subdistrict court in the area where the property is mainly located decides damage claims and the amount of costs for cable measures. This applies regardless of the amount claimed."
        },
        {
-        "nl": "Tegen de uitspraak van de kantonrechter is hoger beroep mogelijk. De gewone civil procedure rules apply unless this article says otherwise.",
+        "nl": "Tegen de uitspraak van de kantonrechter is hoger beroep mogelijk. De gewone regels van het burgerlijk procesrecht gelden, tenzij dit artikel anders bepaalt.",
         "en": "An appeal against the subdistrict court’s decision is possible. The ordinary civil procedure rules apply unless this article states otherwise."
        },
        {
-        "nl": "Werk aan kabels may proceed before agreement or a court decision on compensation or costs.",
+        "nl": "Werk aan kabels mag doorgaan voordat er overeenstemming of een rechterlijke uitspraak over vergoeding of kosten is.",
         "en": "Cable work may proceed before there is agreement or a court decision on compensation or costs."
        }
       ]
@@ -11935,11 +11935,11 @@
         "en": "Does a municipality itself provide a public communications network or service, or have an interest or control in one? Then people preparing the municipal consent may not be involved in that activity."
        },
        {
-        "nl": "Een plan om direct of indirect zulke netwerken of diensten aan te bieden, wordt openbaar gemaakt with reasons and information on where and when more information is available.",
+        "nl": "Een plan om direct of indirect zulke netwerken of diensten aan te bieden, wordt openbaar gemaakt, met redenen en met informatie over waar en wanneer meer informatie beschikbaar is.",
         "en": "A plan to provide such networks or services directly or indirectly must be made public with reasons and information on where and when more information is available."
        },
        {
-        "nl": "Burgemeester en wethouders mogen ondernemingen waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open, non-discriminatory access to a network in which it is involved.",
+        "nl": "Burgemeester en wethouders mogen ondernemingen waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open en niet-discriminerende toegang tot een netwerk waarbij zij betrokken is.",
         "en": "The municipal executive may not favour businesses in which the municipality is involved when giving consent. The municipality promotes open, non-discriminatory access to a network in which it is involved."
        }
       ]
@@ -12167,7 +12167,7 @@
     },
     {
      "id": "art5.3_2",
-     "nl": "De Autoriteit Consument en Markt beslist zo snel mogelijk, uiterlijk binnen twee maanden na ontvangst van het verzoek. Nadere rules may be set for the written notice.",
+     "nl": "De Autoriteit Consument en Markt beslist zo snel mogelijk, uiterlijk binnen twee maanden na ontvangst van het verzoek. Over de schriftelijke kennisgeving kunnen nadere regels worden gesteld.",
      "en": "The Netherlands Authority for Consumers and Markets decides as soon as possible, no later than two months after receiving the request. Further rules may be set for the written notice.",
      "articles": [
       "5.3"
@@ -12387,7 +12387,7 @@
     },
     {
      "id": "art5.6_1",
-     "nl": "Voor werk op openbare grond meldt de aanbieder dit vooraf ook aan de burgemeester, of aan een authorised official. Die official informs the mayor as soon as possible.",
+     "nl": "Voor werk op openbare grond meldt de aanbieder dit vooraf ook aan de burgemeester, of aan een daartoe aangewezen ambtenaar. Die ambtenaar informeert de burgemeester zo snel mogelijk.",
      "en": "For work on public land, the provider must also report this beforehand to the mayor, or to an authorised official. That official informs the mayor as soon as possible.",
      "articles": [
       "5.6"
@@ -12409,7 +12409,7 @@
     },
     {
      "id": "art5.6_2",
-     "nl": "Bij gevaar, fear of danger or concerns for public order, the mayor may require work at another time. The decision is taken immediately after the notice is received.",
+     "nl": "Bij gevaar, vrees voor gevaar of zorgen over de openbare orde kan de burgemeester eisen dat het werk op een ander tijdstip plaatsvindt. Het besluit wordt direct na ontvangst van de melding genomen.",
      "en": "In case of danger, fear of danger or concerns for public order, the mayor may require the work at another time. The decision is taken immediately after receiving the notice.",
      "articles": [
       "5.6"
@@ -12431,7 +12431,7 @@
     },
     {
      "id": "art5.6_3",
-     "nl": "For safety reasons, the municipal council may designate areas where this emergency rule does not apply.",
+     "nl": "Om veiligheidsredenen kan de gemeenteraad gebieden aanwijzen waar deze noodregeling niet geldt.",
      "en": "For safety reasons, the municipal council may designate areas where this emergency rule does not apply.",
      "articles": [
       "5.6"
@@ -12453,7 +12453,7 @@
     },
     {
      "id": "art5.7_0",
-     "nl": "De netwerkaanbieder vergoedt schade caused by installing, maintaining or removing cables to the person who must allow the work.",
+     "nl": "De netwerkaanbieder vergoedt de schade die het aanleggen, onderhouden of verwijderen van kabels veroorzaakt aan degene die het werk moet gedogen.",
      "en": "The network provider compensates damage caused by installing, maintaining or removing cables to the person who must allow the work.",
      "articles": [
       "5.7"
@@ -12475,7 +12475,7 @@
     },
     {
      "id": "art5.7_1",
-     "nl": "Voor owners and managers of public land, compensation is limited to market-based costs of facilities and additional market-based maintenance costs.",
+     "nl": "Voor eigenaren en beheerders van openbare grond is de vergoeding beperkt tot de marktconforme kosten van voorzieningen en de extra marktconforme onderhoudskosten.",
      "en": "For owners and managers of public land, compensation is limited to market-based costs of facilities and additional market-based maintenance costs.",
      "articles": [
       "5.7"
@@ -12497,7 +12497,7 @@
     },
     {
      "id": "art5.7_2",
-     "nl": "After the work, the provider restores the land to its former state, unless the person who must allow it wants to do this themselves. The provider pays the necessary market-based restoration costs.",
+     "nl": "Na het werk brengt de aanbieder de grond in de oude staat terug, tenzij degene die het werk moet gedogen dit zelf wil doen. De aanbieder betaalt de noodzakelijke marktconforme herstelkosten.",
      "en": "After the work, the provider restores the land to its former state, unless the person who must allow it wants to do this themselves. The provider pays the necessary market-based restoration costs.",
      "articles": [
       "5.7"
@@ -12519,7 +12519,7 @@
     },
     {
      "id": "art5.7_3",
-     "nl": "Market-based costs are costs that a business would normally incur in a market economy on that market.",
+     "nl": "Marktconforme kosten zijn kosten die een onderneming in een markteconomie op die markt normaal zou maken.",
      "en": "Market-based costs are costs that a business would normally incur in a market economy on that market.",
      "articles": [
       "5.7"
@@ -12610,7 +12610,7 @@
     },
     {
      "id": "art5.8_3",
-     "nl": "In other cases, the provider need only take measures if the requester pays. Measures must normally be taken within sixteen weeks; a cable move must be completed within twaalf weken after a suitable location becomes available.",
+     "nl": "In andere gevallen hoeft de aanbieder alleen maatregelen te nemen als de verzoeker betaalt. De maatregelen moeten in de regel binnen zestien weken worden genomen; een kabelverplaatsing moet binnen twaalf weken nadat een geschikte locatie beschikbaar is, zijn voltooid.",
      "en": "In other cases, the provider need take measures only if the requester pays. Measures must normally be taken within sixteen weeks; a cable move must be completed within twelve weeks after a suitable location becomes available.",
      "articles": [
       "5.8"
@@ -12623,7 +12623,7 @@
        "en": "The sixteen-week period is a firm final deadline, not merely a usual one."
       },
       "suggestion": {
-       "nl": "In other cases, the provider need only take measures if the requester pays. Measures must be taken no later than sixteen weeks after the request; a cable move must be completed within twaalf weken after a suitable location becomes available.",
+       "nl": "In andere gevallen hoeft de aanbieder alleen maatregelen te nemen als de verzoeker betaalt. De maatregelen moeten uiterlijk zestien weken na het verzoek zijn genomen; een kabelverplaatsing moet binnen twaalf weken nadat een geschikte locatie beschikbaar is, zijn voltooid.",
        "en": "In other cases, the provider need take measures only if the requester pays. Measures must be taken no later than sixteen weeks after the request; a cable move must be completed within twelve weeks after a suitable location becomes available."
       }
      },
@@ -12635,8 +12635,8 @@
     },
     {
      "id": "art5.8_4",
-     "nl": "The request describes the buildings or works and, for a cable move where possible, proposes a new cable location.",
-     "en": "Het verzoek beschrijft de gebouwen of werken en stelt bij kabelverplaatsing, voor zover mogelijk, een nieuwe kabelplaats voor.",
+     "nl": "Het verzoek beschrijft de gebouwen of werken en stelt bij kabelverplaatsing, voor zover mogelijk, een nieuwe kabelplaats voor.",
+     "en": "The request describes the buildings or works and, for a cable move where possible, proposes a new cable location.",
      "articles": [
       "5.8"
      ],
@@ -12814,7 +12814,7 @@
     },
     {
      "id": "art5.11_2",
-     "nl": "De aanbieder vergoedt schade caused by cutting back roots.",
+     "nl": "De aanbieder vergoedt de schade die door het snoeien van wortels ontstaat.",
      "en": "The provider compensates damage caused by cutting back roots.",
      "articles": [
       "5.11"
@@ -12880,7 +12880,7 @@
     },
     {
      "id": "art5.13_1",
-     "nl": "Tegen de uitspraak van de kantonrechter is hoger beroep mogelijk. De gewone civil procedure rules apply unless this article says otherwise.",
+     "nl": "Tegen de uitspraak van de kantonrechter is hoger beroep mogelijk. De gewone regels van het burgerlijk procesrecht gelden, tenzij dit artikel anders bepaalt.",
      "en": "An appeal against the subdistrict court’s decision is possible. The ordinary civil procedure rules apply unless this article states otherwise.",
      "articles": [
       "5.13"
@@ -12902,7 +12902,7 @@
     },
     {
      "id": "art5.13_2",
-     "nl": "Werk aan kabels may proceed before agreement or a court decision on compensation or costs.",
+     "nl": "Werk aan kabels mag doorgaan voordat er overeenstemming of een rechterlijke uitspraak over vergoeding of kosten is.",
      "en": "Cable work may proceed before there is agreement or a court decision on compensation or costs.",
      "articles": [
       "5.13"
@@ -12946,7 +12946,7 @@
     },
     {
      "id": "art5.14_1",
-     "nl": "Een plan om direct of indirect zulke netwerken of diensten aan te bieden, wordt openbaar gemaakt with reasons and information on where and when more information is available.",
+     "nl": "Een plan om direct of indirect zulke netwerken of diensten aan te bieden, wordt openbaar gemaakt, met redenen en met informatie over waar en wanneer meer informatie beschikbaar is.",
      "en": "A plan to provide such networks or services directly or indirectly must be made public with reasons and information on where and when more information is available.",
      "articles": [
       "5.14"
@@ -12968,7 +12968,7 @@
     },
     {
      "id": "art5.14_2",
-     "nl": "Burgemeester en wethouders mogen ondernemingen waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open, non-discriminatory access to a network in which it is involved.",
+     "nl": "Burgemeester en wethouders mogen ondernemingen waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open en niet-discriminerende toegang tot een netwerk waarbij zij betrokken is.",
      "en": "The municipal executive may not favour businesses in which the municipality is involved when giving consent. The municipality promotes open, non-discriminatory access to a network in which it is involved.",
      "articles": [
       "5.14"
@@ -12981,7 +12981,7 @@
        "en": "The ban on favouring applies only to businesses that provide public communications networks."
       },
       "suggestion": {
-       "nl": "Burgemeester en wethouders mogen ondernemingen die openbare communicatienetwerken aanbieden en waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open, non-discriminatory access to a network in which it is involved.",
+       "nl": "Burgemeester en wethouders mogen ondernemingen die openbare communicatienetwerken aanbieden en waarin de gemeente betrokken is niet bevoordelen bij instemming. De gemeente bevordert open en niet-discriminerende toegang tot een netwerk waarbij zij betrokken is.",
        "en": "The municipal executive may not favour businesses that provide public communications networks and in which the municipality is involved when giving consent. The municipality promotes open, non-discriminatory access to a network in which it is involved."
       }
      },
@@ -14568,7 +14568,7 @@
         "en": "For bands for public tasks, the minister may not adopt or amend the plan without a needs-substantiation plan submitted no more than one year earlier."
        },
        {
-        "nl": "Deze regels gelden niet als een treaty, an international organisation's decision or an EU institution's decision requires the plan or change. Zij gelden ook niet voor wijzigingen van ondergeschikte aard.",
+        "nl": "Deze regels gelden niet als een verdrag, een besluit van een internationale organisatie of een besluit van een EU-instelling het plan of de wijziging vereist. Zij gelden ook niet voor wijzigingen van ondergeschikte aard.",
         "en": "These rules do not apply where a treaty, a decision of an international organisation, or an EU institution's decision requires the plan or change. They also do not apply to minor changes."
        },
        {
@@ -15328,7 +15328,7 @@
     },
     {
      "id": "art3.3_2",
-     "nl": "Deze regels gelden niet als een treaty, an international organisation's decision or an EU institution's decision requires the plan or change. Zij gelden ook niet voor wijzigingen van ondergeschikte aard.",
+     "nl": "Deze regels gelden niet als een verdrag, een besluit van een internationale organisatie of een besluit van een EU-instelling het plan of de wijziging vereist. Zij gelden ook niet voor wijzigingen van ondergeschikte aard.",
      "en": "These rules do not apply where a treaty, a decision of an international organisation, or an EU institution's decision requires the plan or change. They also do not apply to minor changes.",
      "articles": [
       "3.3"
@@ -21460,7 +21460,7 @@
         "en": "The designation applies to a defined area and for no more than ten years. The Minister may designate different undertakings for different services, facilities or areas."
        },
        {
-        "nl": "Nadere regels gelden wanneer een onderneming is aangewezen. Die regels kunnen taken en bevoegdheden geven aan the Netherlands Authority for Consumers and Markets (ACM).",
+        "nl": "Nadere regels gelden wanneer een onderneming is aangewezen. Die regels kunnen taken en bevoegdheden geven aan de Autoriteit Consument en Markt (ACM).",
         "en": "Further rules apply when an undertaking has been designated. Those rules may give tasks and powers to the Netherlands Authority for Consumers and Markets (ACM)."
        }
       ]
@@ -21700,7 +21700,7 @@
     },
     {
      "id": "art9.2_2",
-     "nl": "Nadere regels gelden wanneer een onderneming is aangewezen. Die regels kunnen taken en bevoegdheden geven aan the Netherlands Authority for Consumers and Markets (ACM).",
+     "nl": "Nadere regels gelden wanneer een onderneming is aangewezen. Die regels kunnen taken en bevoegdheden geven aan de Autoriteit Consument en Markt (ACM).",
      "en": "Further rules apply when an undertaking has been designated. Those rules may give tasks and powers to the Netherlands Authority for Consumers and Markets (ACM).",
      "articles": [
       "9.2"

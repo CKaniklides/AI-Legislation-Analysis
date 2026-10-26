@@ -151,7 +151,7 @@ def main():
     from dotenv import load_dotenv
     load_dotenv(ROOT / ".env")
     from openai import OpenAI
-    client = OpenAI()
+    client = OpenAI(timeout=120.0, max_retries=6)  # bridges short network outages (23 Oct 2026)
     lock = threading.Lock()
     done = failed = 0
     with ThreadPoolExecutor(max_workers=args.concurrency) as ex:

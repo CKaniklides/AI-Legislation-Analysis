@@ -677,3 +677,9 @@ button.pnode:hover { border-color: var(--blue-500); }
   .doc .pmap { break-inside: avoid; max-width: 580px; }
   .doc li { margin: 1px 0; } .doc .box { margin: 6px 0; padding: 6px 11px; }
 }
+
+/* Phones (26 Oct 2026): long labels and lists of article numbers wrap instead of running off the screen. */
+@media (max-width: 560px) {
+  .pill { white-space: normal; max-width: 100%; }
+  .doc .r { white-space: normal; }
+}

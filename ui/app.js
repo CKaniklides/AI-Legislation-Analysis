@@ -18,8 +18,8 @@
       mStepsH: 'From law text to a finding',
       mS1: 'Read the laws', mS1t: 'Ten Dutch and EU laws are collected from wetten.overheid.nl and EUR-Lex and split into articles and paragraphs.',
       mS2: 'Record every rule', mS2t: 'An AI model writes down each rule in the same fixed form: who must do what, when, by which deadline, and for whom.',
-      mS3: 'Choose pairs worth comparing', mS3t: 'Rules are only paired when there is a reason: they cite each other, use the same terms, mean something similar, or point in opposite directions.',
-      mS4: 'Judge each pair', mS4t: 'Countable differences, like deadlines, are calculated. Other pairs are judged by an AI model, and a stronger model re-checks what it flags.',
+      mS3: 'Choose pairs worth comparing', mS3t: 'Rules are only paired when there is a reason: they are similar in meaning (what they require, about what, from whom), or a targeted legal signal fires, such as two reporting duties after the same incident.',
+      mS4: 'Judge each pair', mS4t: 'Countable differences, like deadlines, are calculated. Other pairs are judged by an AI model, and a stronger model re-checks what it flags, plus a random sample of what it lets pass.',
       mS5: 'Filter and sort', mS5t: 'Pairs that are not a problem, or where one rule explicitly gives way to the other, are removed. The rest are sorted by certainty and grouped per pair of articles.',
       mTypesH: 'What each label means', mTypesP: 'Every finding carries one label. The number is how many questions currently have that label.',
       mSupportH: 'How sure the system is', mSupportP: 'The bars next to a finding show how well it is supported. Questions are listed with the best-supported first.',
@@ -30,12 +30,13 @@
       mP5: 'The finding rests on text that has since been amended. Check the current text first.',
       mModelsH: 'AI models used', mModelsP: 'All models are from OpenAI. The AI only reads and judges; it never changes the legal text.',
       mModel: 'Model', mRole: 'What it does',
-      mLuna: 'Records the rules in each law, makes the first check of every pair, and writes the explanations in Dutch and English.',
-      mTerra: 'Re-checks the pairs the first check flags, and checks questions about legal basis. Slower and more careful.',
+      mLuna: 'Records the rules in each law, makes the first check of every pair, judges questions about legal basis, and writes the explanations in Dutch and English.',
+      mTerra: 'Re-checks every pair the first check flags, plus a random sample of the pairs it lets pass, and records the rules in paragraphs the first model could not read reliably. Slower and more careful.',
       mEmbed: 'Finds rules with a similar meaning, even when they use different words. It does not judge anything.',
+      mE5: 'Runs on the project’s own computer. Measures how similar two rules are in meaning, to choose which pairs are worth comparing. It does not judge anything.',
       mLimitsH: 'What the system does not do yet',
-      mL1: 'About 12,400 of roughly 31,150 candidate pairs have been judged so far. The rest are still waiting.',
-      mL2: 'The Telecommunicatiewet is only partly processed: rules were recorded for 25 of its 380 articles.',
+      mL1: 'Not every possible pair of rules is compared. Of about 3.9 million possible pairs, about 11,000 were selected and judged for contradictions and about 7,700 for duplications. A problem in a pair that was not selected is not found.',
+      mL2: 'Only duties, prohibitions and powers are compared. Permissions, rights and delegations are not, and outdated provisions are not checked yet.',
       mL3: 'No finding has been confirmed by a Ministry lawyer yet. That is what your accept and decline decisions are for.',
       mL4: 'The AI can misread a rule. Every finding shows the original legal text so you can check it yourself.',
       mVersionsH: 'Which versions of the laws', mVersionsP: 'The laws and the exact version of each are listed on the overview, under “The laws that were compared”.',
@@ -44,6 +45,11 @@
       aPitch: 'Compare Dutch and EU digital law, review the possible conflicts and duplications, and record your decisions.', aFoot: 'TU Delft · Joint Interdisciplinary Project 2026',
       aName: 'Full name', aEmail: 'Email address', aPassword: 'Password', aPasswordHint: 'At least 8 characters.', aShow: 'Show', aHide: 'Hide', aWorking: 'One moment…',
       aNoAccount: 'No account yet?', aHaveAccount: 'Already have an account?', aModes: 'Sign in or create an account', aDemo: 'Test mode: any email address and password will work.',
+      nTitle: 'Who is reviewing?', nSub: 'This is a test set-up. Enter your name, and your role if you like; every decision you make is saved with them.',
+      nName: 'Your name', nRole: 'Your role or occupation (optional)', nRoleHint: 'For example: legislative lawyer, policy officer, supervisor, researcher.',
+      nStart: 'Start reviewing', nNote: 'To continue later, enter exactly the same name: your earlier decisions come back.',
+      nErrName: 'Enter your name.', nErrRole: 'Enter your role or occupation.',
+      nRoles: ['Legislative lawyer', 'Policy officer', 'Supervisor / regulator', 'Researcher', 'Student'],
       aErrName: 'Enter your name.', aErrEmail: 'Enter a valid email address.', aErrPassword: 'Enter your password.', aErrShort: 'Choose a password of at least 8 characters.',
       aErrExists: 'An account with this email address already exists. Sign in instead.', aErrLogin: 'The email address or password is not correct.',
       aErrLocked: 'Too many attempts. Wait a minute and try again.', aErrServer: 'Something went wrong. Check that the review server is running.',
@@ -58,7 +64,7 @@
       s3: 'Accept or decline', s3t: 'Accept if it is a real issue. Decline if it is not, or if the system misread the law.',
       s4: 'Say why when you decline', s4t: 'A short reason is required for every decline. You can change or remove a decision later.',
       against: 'against', reasonRequired: 'Reason required', notAvailable: 'Not yet available', open: 'Open {a}', goodToKnow: 'Frequently Asked Questions',
-      f1q: 'How are the questions ordered?', f1a: 'By how well supported they are. Four bars means the difference was calculated directly from the text with no AI judgement. Three bars means two independent AI checks agreed. Two bars means one AI check looked at it.',
+      f1q: 'How are the questions ordered?', f1a: 'By how well supported they are. Four bars means the difference was calculated directly from the text with no AI judgement. Three bars means two independent AI checks agreed. Two bars means one AI check looked at it. One bar means the AI checks disagreed.',
       f2q: 'Why does one question cover several provision pairs?', f2a: 'Two long articles can raise the same question paragraph by paragraph. Instead of showing it thirteen times, the workspace groups it into one question. You decide once, and can decide a single pair separately when it differs.',
       f3q: 'What language is everything in?', f3a: 'Legal text is always shown in the original Dutch. The interface and all explanations follow the language switch at the top right.',
       f4q: 'Can I change a decision?', f4a: 'Yes, at any time. Open the question and choose Edit decision or Remove decision. Earlier versions are kept in a log, so nothing is lost.',
@@ -91,8 +97,8 @@
       mStepsH: 'Van wettekst naar bevinding',
       mS1: 'De wetten inlezen', mS1t: 'Tien Nederlandse en Europese wetten worden opgehaald van wetten.overheid.nl en EUR-Lex en opgedeeld in artikelen en leden.',
       mS2: 'Elke regel vastleggen', mS2t: 'Een AI-model legt elke regel vast in dezelfde vaste vorm: wie moet wat doen, wanneer, binnen welke termijn en voor wie.',
-      mS3: 'Paren kiezen die het vergelijken waard zijn', mS3t: 'Regels worden alleen gekoppeld als daar een reden voor is: ze verwijzen naar elkaar, gebruiken dezelfde begrippen, betekenen iets vergelijkbaars of wijzen een andere kant op.',
-      mS4: 'Elk paar beoordelen', mS4t: 'Telbare verschillen, zoals termijnen, worden berekend. Andere paren beoordeelt een AI-model, en een sterker model controleert wat het markeert opnieuw.',
+      mS3: 'Paren kiezen die het vergelijken waard zijn', mS3t: 'Regels worden alleen gekoppeld als daar een reden voor is: ze lijken inhoudelijk op elkaar (wat ze vragen, waarover, van wie), of een gericht juridisch signaal slaat aan, zoals twee meldplichten na hetzelfde incident.',
+      mS4: 'Elk paar beoordelen', mS4t: 'Telbare verschillen, zoals termijnen, worden berekend. Andere paren beoordeelt een AI-model, en een sterker model controleert opnieuw wat het markeert, plus een willekeurige steekproef van wat het laat passeren.',
       mS5: 'Filteren en sorteren', mS5t: 'Paren die geen probleem zijn, of waarbij de ene regel uitdrukkelijk voorrang geeft aan de andere, worden verwijderd. De rest wordt gesorteerd op zekerheid en per paar artikelen gegroepeerd.',
       mTypesH: 'Wat elk label betekent', mTypesP: 'Elke bevinding heeft één label. Het getal is het aantal vragen dat nu dat label heeft.',
       mSupportH: 'Hoe zeker het systeem is', mSupportP: 'De balkjes bij een bevinding laten zien hoe goed die onderbouwd is. Vragen staan op volgorde, best onderbouwd eerst.',
@@ -103,12 +109,13 @@
       mP5: 'De bevinding berust op tekst die inmiddels is gewijzigd. Controleer eerst de geldende tekst.',
       mModelsH: 'Gebruikte AI-modellen', mModelsP: 'Alle modellen zijn van OpenAI. De AI leest en beoordeelt alleen; ze wijzigt nooit de wettekst.',
       mModel: 'Model', mRole: 'Wat het doet',
-      mLuna: 'Legt de regels in elke wet vast, doet de eerste controle van elk paar en schrijft de toelichtingen in het Nederlands en Engels.',
-      mTerra: 'Controleert de paren die de eerste controle markeert opnieuw, en beoordeelt vragen over de rechtsgrond. Trager en zorgvuldiger.',
+      mLuna: 'Legt de regels in elke wet vast, doet de eerste controle van elk paar, beoordeelt vragen over de rechtsgrond en schrijft de toelichtingen in het Nederlands en Engels.',
+      mTerra: 'Controleert elk paar dat de eerste controle markeert opnieuw, plus een willekeurige steekproef van de paren die zij laat passeren, en legt de regels vast in leden die het eerste model niet betrouwbaar kon lezen. Trager en zorgvuldiger.',
       mEmbed: 'Vindt regels met een vergelijkbare betekenis, ook als ze andere woorden gebruiken. Het beoordeelt zelf niets.',
+      mE5: 'Draait op de eigen computer van het project. Meet hoe vergelijkbaar twee regels inhoudelijk zijn, om te kiezen welke paren het vergelijken waard zijn. Het beoordeelt zelf niets.',
       mLimitsH: 'Wat het systeem nog niet doet',
-      mL1: 'Ongeveer 12.400 van de circa 31.150 kandidaat-paren zijn tot nu toe beoordeeld. De rest wacht nog.',
-      mL2: 'De Telecommunicatiewet is maar deels verwerkt: van 25 van de 380 artikelen zijn de regels vastgelegd.',
+      mL1: 'Niet elk mogelijk paar regels wordt vergeleken. Van de circa 3,9 miljoen mogelijke paren zijn er ongeveer 11.000 geselecteerd en beoordeeld op tegenstrijdigheden en ongeveer 7.700 op dubbelingen. Een probleem in een paar dat niet is geselecteerd, wordt niet gevonden.',
+      mL2: 'Alleen plichten, verboden en bevoegdheden worden vergeleken. Toestemmingen, rechten en delegaties niet, en verouderde bepalingen worden nog niet gecontroleerd.',
       mL3: 'Nog geen enkele bevinding is bevestigd door een jurist van het ministerie. Daarvoor zijn uw beslissingen bedoeld.',
       mL4: 'De AI kan een regel verkeerd lezen. Bij elke bevinding staat de oorspronkelijke wettekst, zodat u het zelf kunt controleren.',
       mVersionsH: 'Welke versies van de wetten', mVersionsP: 'De wetten en de precieze versie van elk staan op het overzicht, onder ‘De wetten die zijn vergeleken’.',
@@ -117,6 +124,11 @@
       aPitch: 'Vergelijk Nederlands en Europees digitaal recht, beoordeel mogelijke tegenstrijdigheden en dubbelingen, en leg uw beslissingen vast.', aFoot: 'TU Delft · Joint Interdisciplinary Project 2026',
       aName: 'Volledige naam', aEmail: 'E-mailadres', aPassword: 'Wachtwoord', aPasswordHint: 'Minstens 8 tekens.', aShow: 'Toon', aHide: 'Verberg', aWorking: 'Een moment…',
       aNoAccount: 'Nog geen account?', aHaveAccount: 'Heeft u al een account?', aModes: 'Inloggen of een account aanmaken', aDemo: 'Testmodus: elk e-mailadres en wachtwoord werkt.',
+      nTitle: 'Wie beoordeelt er?', nSub: 'Dit is een testomgeving. Vul uw naam in, en desgewenst uw functie; elke beslissing die u neemt wordt daarmee opgeslagen.',
+      nName: 'Uw naam', nRole: 'Uw functie of beroep (optioneel)', nRoleHint: 'Bijvoorbeeld: wetgevingsjurist, beleidsmedewerker, toezichthouder, onderzoeker.',
+      nStart: 'Begin met beoordelen', nNote: 'Wilt u later verdergaan? Vul precies dezelfde naam in: uw eerdere beslissingen komen terug.',
+      nErrName: 'Vul uw naam in.', nErrRole: 'Vul uw functie of beroep in.',
+      nRoles: ['Wetgevingsjurist', 'Beleidsmedewerker', 'Toezichthouder', 'Onderzoeker', 'Student'],
       aErrName: 'Vul uw naam in.', aErrEmail: 'Vul een geldig e-mailadres in.', aErrPassword: 'Vul uw wachtwoord in.', aErrShort: 'Kies een wachtwoord van minstens 8 tekens.',
       aErrExists: 'Er bestaat al een account met dit e-mailadres. Log in plaats daarvan in.', aErrLogin: 'Het e-mailadres of wachtwoord klopt niet.',
       aErrLocked: 'Te veel pogingen. Wacht een minuut en probeer het opnieuw.', aErrServer: 'Er ging iets mis. Controleer of de reviewserver draait.',
@@ -131,7 +143,7 @@
       s3: 'Accepteer of wijs af', s3t: 'Accepteer als het een echt punt is. Wijs af als dat niet zo is, of als het systeem de wet verkeerd heeft gelezen.',
       s4: 'Leg uit waarom u afwijst', s4t: 'Bij elke afwijzing is een korte reden verplicht. U kunt een beslissing later wijzigen of verwijderen.',
       against: 'tegenover', reasonRequired: 'Reden verplicht', notAvailable: 'Nog niet beschikbaar', open: 'Open {a}', goodToKnow: 'Veelgestelde vragen',
-      f1q: 'Hoe zijn de vragen geordend?', f1a: 'Op hoe goed ze onderbouwd zijn. Vier balkjes betekent dat het verschil direct uit de tekst is berekend, zonder AI-oordeel. Drie balkjes betekent dat twee onafhankelijke AI-controles het eens waren. Twee balkjes betekent dat één AI-controle ernaar heeft gekeken.',
+      f1q: 'Hoe zijn de vragen geordend?', f1a: 'Op hoe goed ze onderbouwd zijn. Vier balkjes betekent dat het verschil direct uit de tekst is berekend, zonder AI-oordeel. Drie balkjes betekent dat twee onafhankelijke AI-controles het eens waren. Twee balkjes betekent dat één AI-controle ernaar heeft gekeken. Eén balkje betekent dat de AI-controles het oneens waren.',
       f2q: 'Waarom omvat één vraag meerdere paren van bepalingen?', f2a: 'Twee lange artikelen kunnen lid voor lid dezelfde vraag oproepen. In plaats van die dertien keer te tonen, groepeert de werkomgeving ze tot één vraag. U beslist één keer en kunt een afzonderlijk paar apart beoordelen als dat afwijkt.',
       f3q: 'In welke taal is alles?', f3a: 'Wettekst wordt altijd in het oorspronkelijke Nederlands getoond. De interface en alle toelichtingen volgen de taalkeuze rechtsboven.',
       f4q: 'Kan ik een beslissing wijzigen?', f4a: 'Ja, altijd. Open de vraag en kies Beslissing bewerken of Beslissing verwijderen. Eerdere versies blijven in een logboek bewaard, dus er gaat niets verloren.',
@@ -356,9 +368,9 @@
             h('span', { class: 'sc-name', text: r.name }), h('span', { class: 'sc-count', text: r.done + '/' + r.total }),
             progressBar(r)));
         }))),
-      // A guest (test mode) is this browser; signing out would only start a new, empty guest.
       h('div', { class: 'whoami' }, h('span', { text: t('signedInAs') }), h('b', { text: reviewer() }),
-        ME && ME.guest ? null : h('button', { class: 'linkbtn', type: 'button', onclick: signOut }, t('aLogout'))),
+        ME && ME.role ? h('span', { text: ME.role }) : null,
+        h('button', { class: 'linkbtn', type: 'button', onclick: signOut }, t('aLogout'))),
       h('button', { class: 'linkbtn', type: 'button', onclick: function () { keysDialog.showModal(); } }, t('shortcuts'))
     ]);
   }
@@ -497,7 +509,7 @@
     }));
     var models = h('div', { class: 'card tablewrap' }, h('table', { class: 'cmp' },
       h('thead', null, h('tr', null, h('th', { scope: 'col', text: t('mModel') }), h('th', { scope: 'col', text: t('mRole') }))),
-      h('tbody', null, [['GPT-5.6 Luna', 'mLuna'], ['GPT-5.6 Terra', 'mTerra'], ['text-embedding-3-small', 'mEmbed']].map(function (m) {
+      h('tbody', null, [['GPT-5.6 Luna', 'mLuna'], ['GPT-5.6 Terra', 'mTerra'], ['text-embedding-3-small', 'mEmbed'], ['multilingual-e5-large', 'mE5']].map(function (m) {
         return h('tr', null, h('th', { scope: 'row', text: m[0] }), h('td', { text: t(m[1]) }));
       }))));
     return [
@@ -887,7 +899,7 @@
   // ---------- sign in / create account ----------
   // Shown instead of the workspace until the server knows who is reviewing. On success the page
   // reloads, so the workspace always starts from a clean, signed-in state.
-  var authMode = 'login', authVals = {}, DEMO = false;
+  var authMode = 'login', authVals = {}, DEMO = false, NAME_MODE = false;
   function showAuth() {
     document.querySelector('.shell').hidden = true;
     document.getElementById('auth').hidden = false;
@@ -921,6 +933,52 @@
       if (el) { el.setAttribute('aria-invalid', 'true'); el.focus(); }
     }
     function setMode(m) { authMode = m; renderAuth(); var first = box.querySelector('input'); if (first) first.focus(); }
+    if (NAME_MODE) {
+      // Test set-up: a name and a role, both required; no email or password.
+      var go = h('button', { class: 'btn primary', type: 'submit' }, t('nStart'));
+      var roleField = field('role', 'text', t('nRole'), 'organization-title', t('nRoleHint'));
+      var roleInput = roleField.querySelector('input');
+      roleInput.setAttribute('list', 'auth-roles');
+      roleInput.setAttribute('spellcheck', 'true');
+      var nameForm = h('form', { novalidate: true, onsubmit: function (ev) {
+        ev.preventDefault();
+        var body = { name: val('name').trim(), role: val('role').trim() };
+        if (body.name.length < 2) return fail('nErrName', 'name');
+        go.disabled = true; go.textContent = t('aWorking');
+        fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+          .then(function (r) { return r.json().then(function (j) { if (!r.ok) throw new Error(j.code || 'server'); }); })
+          .then(function () { location.reload(); })
+          .catch(function (e) {
+            go.disabled = false; go.textContent = t('nStart');
+            var map = { invalid_name: ['nErrName', 'name'], invalid_role: ['nErrRole', 'role'] };
+            var m = map[e.message] || ['aErrServer', null];
+            fail(m[0], m[1]);
+          });
+      } },
+        field('name', 'text', t('nName'), 'name'),
+        roleField,
+        h('datalist', { id: 'auth-roles' }, (STR[LANG].nRoles || STR.en.nRoles).map(function (r) { return h('option', { value: r }); })),
+        err, go);
+      var langN = h('div', { class: 'langsw', role: 'group', 'aria-label': t('language') }, [['nl', 'Nederlands', 'NL'], ['en', 'English', 'EN']].map(function (x) {
+        return h('button', { type: 'button', lang: x[0], 'aria-pressed': String(LANG === x[0]), title: x[1], 'aria-label': x[1], onclick: function () {
+          LANG = x[0]; try { localStorage.setItem('lang', LANG); } catch (e) { /* ignore */ } renderAuth();
+        } }, x[2]);
+      }));
+      document.title = t('nTitle') + ' – ' + t('title');
+      append(box, [
+        h('aside', { class: 'auth-brand' },
+          h('div', { class: 'brand', translate: 'no' }, h('span', { text: t('title') })),
+          h('div', null, h('h1', { text: t('heroTitle') }), h('p', { text: t('aPitch') })),
+          h('small', { text: t('aFoot') })),
+        h('section', { class: 'auth-main' }, langN,
+          h('div', { class: 'card auth-card' },
+            h('h2', { text: t('nTitle') }),
+            h('p', { class: 'sub', text: t('nSub') }),
+            nameForm,
+            h('p', { class: 'aswitch', text: t('nNote') })))
+      ]);
+      return;
+    }
     var submit = h('button', { class: 'btn primary', type: 'submit' }, t(signup ? 'aCreate' : 'aLogin'));
     var form = h('form', { novalidate: true, onsubmit: function (ev) {
       ev.preventDefault();
@@ -987,7 +1045,7 @@
 
   // Nothing loads until someone is signed in: the server refuses the data otherwise.
   fetch('/api/me').then(function (r) {
-    if (r.status === 401) { return r.json().then(function (j) { DEMO = !!j.demo; }, function () {}).then(showAuth); }
+    if (r.status === 401) { return r.json().then(function (j) { NAME_MODE = j.mode === 'name'; }, function () {}).then(showAuth); }
     if (!r.ok) throw new Error();
     return r.json().then(function (me) { ME = me; startApp(); });
   }).catch(loadFailed);

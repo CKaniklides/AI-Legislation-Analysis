@@ -51,12 +51,14 @@ SESSIONS = REVIEW / "sessions.json"
 COOKIE = f"lr_session_{PORT}"          # per port, so two local copies of the tool keep separate sign-ins
 SESSION_SECONDS = 14 * 24 * 3600
 MIN_PASSWORD = 8
-# Test mode (on while the tool is being tested): nobody has to sign in. A first visit gets its own
-# anonymous reviewer ("Reviewer 3"), remembered by a cookie in that browser, so reviews still stay
-# private per person. The sign-in form, if used, accepts any email and password. Start the server
-# with REVIEW_DEMO_LOGIN=0 to require real accounts.
+# Test set-up (the default, 25 Oct 2026): sign in with a name and, optionally, a role; no email or
+# password. Every decision is saved with both, so it can be traced to a person. The account is
+# keyed by the name, so entering the same name again (in any browser) continues the same review;
+# the role is updated to the latest one given. Start the server with REVIEW_DEMO_LOGIN=0 to require
+# real accounts (email and password) instead.
 DEMO_LOGIN = os.environ.get("REVIEW_DEMO_LOGIN", "1") != "0"
-GUEST_SECONDS = 365 * 24 * 3600         # a guest is one browser; a short session would lose their reviews
+NAME_SESSION_SECONDS = 60 * 24 * 3600   # long enough for a test round; signing in again only needs the name
+MAX_NAME, MAX_ROLE = 80, 120
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 _AUTH_LOCK = threading.Lock()
 _FAILED = {}                            # email -> (wrong tries, since); five in a minute locks that email for the minute
@@ -198,6 +200,7 @@ class Handler(SimpleHTTPRequestHandler):
                         "edit": {k: v.strip() for k, v in it["edit"].items()} if it.get("edit") else None,
                         "comment": comment,
                         "reviewer": (it.get("reviewer") or "").strip() or None,
+                        "reviewer_role": it.get("reviewer_role"),
                         "decided_at": now,
                     }
                     reviews[it["id"]] = entry
@@ -252,6 +255,7 @@ class Handler(SimpleHTTPRequestHandler):
                     "reason": body.get("reason") if body["decision"] == "decline" else None,
                     "justification": (body.get("justification") or "").strip() or None,
                     "reviewer": (body.get("reviewer") or "").strip() or None,
+                    "reviewer_role": body.get("reviewer_role"),
                     "question_id": body.get("question_id"),
                     "decided_at": now,
                 }
@@ -277,7 +281,11 @@ class Handler(SimpleHTTPRequestHandler):
         if not s or s["expires"] < _now():
             return None
         u = _read(USERS).get(s["email"])
-        return {"name": u["name"], "email": s["email"], "guest": bool(u.get("guest"))} if u else None
+        # In the test set-up only a name-and-role sign-in counts: older anonymous guest sessions and
+        # test accounts from before 25 Oct 2026 must go through the sign-in screen again.
+        if not u or (DEMO_LOGIN and not u.get("name_login")):
+            return None
+        return {"name": u["name"], "email": s["email"], "role": u.get("role"), "guest": False}
 
     def _start_session(self, email: str, payload: dict, seconds: int = SESSION_SECONDS):
         token = secrets.token_urlsafe(32)
@@ -287,15 +295,22 @@ class Handler(SimpleHTTPRequestHandler):
             _write(SESSIONS, sessions)
         return self._json(200, payload, cookie=f"{COOKIE}={token}; Path=/; HttpOnly; SameSite=Strict; Max-Age={seconds}")
 
-    def _start_guest(self):
-        """Test mode: an anonymous reviewer for this browser, so nobody has to type anything."""
+    def _name_login(self, body: dict):
+        """Test set-up: a name and a role, both required. The same name continues the same review."""
+        name = " ".join(str(body.get("name") or "").split())[:MAX_NAME]
+        role = " ".join(str(body.get("role") or "").split())[:MAX_ROLE]
+        if len(name) < 2:
+            return self._json(400, {"code": "invalid_name"})
+        role = role or None                    # optional (25 Oct 2026): only the name is required
+        key = "name:" + name.casefold()
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
         with _AUTH_LOCK:
             users = _read(USERS)
-            email = f"guest-{secrets.token_hex(6)}@guest"
-            name = f"Reviewer {sum(1 for u in users.values() if u.get('guest')) + 1}"
-            users[email] = {"name": name, "guest": True, "created": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+            u = users.get(key) or {"name": name, "created": now, "name_login": True}
+            u["role"], u["last_login"] = role, now
+            users[key] = u
             _write(USERS, users)
-        return self._start_session(email, {"name": name, "email": email, "guest": True}, GUEST_SECONDS)
+        return self._start_session(key, {"name": u["name"], "role": role, "email": key}, NAME_SESSION_SECONDS)
 
     def _auth_post(self, path: str, body: dict):
         if path == "/api/logout":
@@ -306,20 +321,10 @@ class Handler(SimpleHTTPRequestHandler):
                     sessions.pop(hashlib.sha256(token.encode()).hexdigest(), None)
                     _write(SESSIONS, sessions)
             return self._json(200, {"ok": True}, cookie=f"{COOKIE}=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0")
+        if DEMO_LOGIN:
+            return self._name_login(body)
         email = (body.get("email") or "").strip().lower()
         password = body.get("password") or ""
-        if DEMO_LOGIN:
-            email = email or "test@example.nl"
-            name = " ".join(str(body.get("name") or "").split())[:80] or email.split("@")[0].replace(".", " ").title() or "Test user"
-            with _AUTH_LOCK:
-                users = _read(USERS)
-                if email not in users:
-                    salt = secrets.token_hex(16)
-                    users[email] = {"name": name, "salt": salt, "hash": _hash(password or "test", salt),
-                                    "created": datetime.now(timezone.utc).isoformat(timespec="seconds"), "test_account": True}
-                    _write(USERS, users)
-                name = users[email]["name"]
-            return self._start_session(email, {"name": name, "email": email})
         if not EMAIL.match(email) or not isinstance(password, str):
             return self._json(400, {"code": "invalid"})
         if path == "/api/signup":
@@ -355,7 +360,7 @@ class Handler(SimpleHTTPRequestHandler):
             u = self._user()
             if u:
                 return self._json(200, u)
-            return self._start_guest() if DEMO_LOGIN else self._json(401, {"code": "signed_out", "demo": False})
+            return self._json(401, {"code": "signed_out", "mode": "name" if DEMO_LOGIN else "accounts"})
         # The page itself loads for everyone (it shows the sign-in screen); the data does not.
         self._me = self._user()
         if (path.startswith("/api/") or path.startswith("/data/")) and not self._me:
@@ -376,10 +381,10 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(401, {"code": "signed_out"})
         # Decisions are recorded under the signed-in account, never under a name typed in the page.
         if isinstance(body, dict):
-            body["reviewer"] = user["name"]
+            body["reviewer"], body["reviewer_role"] = user["name"], user.get("role")
             for it in body.get("items") or []:
                 if isinstance(it, dict):
-                    it["reviewer"] = user["name"]
+                    it["reviewer"], it["reviewer_role"] = user["name"], user.get("role")
         self._body = json.dumps(body).encode("utf-8")
         return self._do_post()
 
@@ -393,5 +398,5 @@ if __name__ == "__main__":
         sys.exit("ui/data/review_data.json is missing. Run: python ui/build_review_data.py")
     print(f"Review interface: http://localhost:{PORT}   (Ctrl+C to stop)")
     if DEMO_LOGIN:
-        print("Test mode: any email and password signs in. Set REVIEW_DEMO_LOGIN=0 to require real accounts.")
+        print("Test set-up: sign in with a name and a role. Set REVIEW_DEMO_LOGIN=0 to require real accounts.")
     ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
