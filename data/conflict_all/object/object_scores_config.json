@@ -1,0 +1,24 @@
+{
+  "data": "data/conflict_all/object",
+  "norms": "norm_keys.jsonl",
+  "stage_a": "data/conflict_all/stageA_pairs.json",
+  "out": "object_pair_scores.jsonl",
+  "spec_out": "key_specificity.csv",
+  "w_head": 1.0,
+  "w_eurovoc": 0.9,
+  "w_tail": 0.8,
+  "w_noun": 0.7,
+  "combine": "max",
+  "min_score": 0.0,
+  "threshold": 0.5,
+  "n_norms": null,
+  "N": 4499,
+  "weights": {
+    "head": 1.0,
+    "eurovoc": 0.9,
+    "tail": 0.8,
+    "noun": 0.7
+  },
+  "stage_a_pairs": 3933462,
+  "stage_a_norms_without_keys": 760
+}
